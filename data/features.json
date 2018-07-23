@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Explore the Diversity of Cells Within Your Sample",
+    "image_link": "/images/Cell-Type-Discovery-small.png",
+    "css_class": "cell-type-discovery",
+    "video_link_tag": "3nMcI4Hxm7c&t=0s",
+    "_more_link": "/features/interactive-data-visualization/",
+    "description": "Load data from any platform and filter outlier cells. Normalize expression values across samples and platforms. Identify and explore sub-populations with a sample and across multiple samples."
+
+  },
+  {
+    "title": "Discover New Marker Genes that Distinguish Cell Types",
+    "image_link": "/images/Biomarkers-small.png",
+    "css_class": "biomarkers",
+    "_more_link": "/features/visual-programming/",
+    "_video_link_tag": "lb-x36xqJ-E?start=6",
+    "description": "Identify signature genes for each subpopulation using multiple methods. Use gene ontology enrichment to explore the biological meaning and identify cell types."
+  },
+  {
+    "title": "Predict New Cell Types Based on Marker Genes",
+    "image_link": "/images/Population-Prediction-small.png",
+    "css_class": "population-prediction",
+    "description": "Build classifiers to identify the cell type of each subpopulation. Use classifier on new data samples to predict cell types and focus on interesting cell type populations.",
+    "_more_link": "/features/education-in-data-science/"
+  }
+]

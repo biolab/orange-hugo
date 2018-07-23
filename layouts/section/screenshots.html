@@ -1,0 +1,23 @@
+<section id="features" class="features section custom-reduce-padding-2 screenshots">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 title">
+                    <h1 class="title">Screenshots</h1>
+                </div>
+                <div id="visage" class="content imgcontent">
+                {{ range .Site.Data.screenshots}}
+                    <div class="item col-md-4 col-sm-6 col-xs-12 screenshot-container">
+                        <div class="content">
+                            <div class="screenshot">
+                                <a href="/screenshots_img/{{.id}}.png">
+                                    <img class="screenshot-image" alt="{{.title }}" src="/screenshots_img/{{.id}}.thumb.png">
+                                </a>
+                            </div>
+                            <p class="screenshot-title">{{ .title }}</p>
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+</section>

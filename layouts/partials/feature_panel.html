@@ -1,0 +1,49 @@
+
+<section id="features" class="features section">
+        <a id="Orange-Features" class="features-anchor"></a>
+        <div class="container">
+            
+           {{ range .Pages.ByWeight }}
+            <div class="feature-panel row {{ .Params.css_class }}">
+        <div class='content col-md-6 col-xs-12 feature-description panel-left pull-{{if (eq .Params.text_position "right") }}right{{else }}left{{ end }}'>
+            <h2 class="feature-title">
+            
+
+            {{ if .Params.more_link }}
+                <a href="{{ .Params.more_link }}">{{ .Title }}</a>
+                {{else}}
+                {{ .Title }}
+                {{ end }}
+            </h2>
+            <p class="feature-text">{{ .Content }}</p>
+            <div class="more">
+                {{ if .Params.more_link }}
+                <a href="{{ .Params.more_link }}">
+                    <div class="learn-more feature-block">
+
+                        <div class="feature-block feature-link">Learn More</div>
+                    </div>
+                </a>
+                {{ end }}
+
+                {{ if .Params.video_link_tag }}
+                    {{ if .Params.more_link }}
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    {{ end }}
+                <a class="lightbox" href="https://www.youtube.com/watch?v={{ .Params.video_link_tag }}&autoplay=1">
+                    <div class="feature-block feature-link">Watch Video</div>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        <div class='content col-xs-12 feature-image {{ if (eq .Params.text_position "right")}}{{ else }}panel-right{{ end}}'>
+            {{ if .Params.more_link }}<a href="{{ .Params.more_link }}">{{end}}
+                <img class='image {{ if (eq .Params.text_position "right") }}right{{else }}left{{ end }}' src="{{ .Params.image_link }}">
+            {{ if .Params.more_link }}</a>{{end}}
+        </div>
+        
+
+    </div>            
+            {{end}}
+        </div>
+    </section>

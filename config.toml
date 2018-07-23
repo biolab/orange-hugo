@@ -1,0 +1,28 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "features"
+    name = "Features"
+    url = "/features/"
+    weight = -130
+
+  [[menu.main]]
+    name = "Screenshots"
+    url = "/screenshots/"
+    weight = -120
+
+  [[menu.main]]
+    identifier = "download"
+    name = "Download"
+    url = "/download/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = -100

@@ -1,0 +1,36 @@
+<!--
+When constructing images, use lowercase only for file names.
+Separate words in file names with "-".
+To prepare the image files with transparency and a thumbnail image,
+use trim.py from orange-tools.
+-->
+
+<screenshots>
+    <screenshot id="aml-tsne" title="Landscape of cells in t-SNE plot."
+                rank="10">
+    </screenshot>
+    <screenshot id="aml-tsne-boxplot"
+		title="Analysis of cluster cell type."
+                rank="20">
+    </screenshot>
+    <screenshot id="markers-tsne"
+		title="Cells with high expression of marker genes."
+                rank="30">
+    </screenshot>
+    <screenshot id="clustering"
+		title="K-means clustering and silhouette scoring."
+                rank="40">
+    </screenshot>
+    <screenshot id="gene-scoring"
+		title="Gene scoring and selection."
+                rank="50">
+    </screenshot>
+    <screenshot id="cross-validation"
+		title="Cross-validation of cell type prediction."
+                rank="60">
+    </screenshot>
+    <screenshot id="go-enrichment"
+		title="GO enrichment of candidate marker genes."
+                rank="70">
+    </screenshot>
+</screenshots>
