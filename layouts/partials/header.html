@@ -1,11 +1,8 @@
- 
-
-{{ partial "head.html" . }}
  <header id="top" class="header navbar-fixed-top">
-        <div class="container">
-            <h1 class="logo pull-left">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
                 <a id="header-orangelogo" href="/">
-                    <img id="logo-image" class="logo-image" src="/images/Single-Cell_Logo.png" alt="Logo">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
                 </a>
             </h1><!--//logo-->
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -19,13 +16,14 @@
                 </div><!--//navbar-header-->
                <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-<!--                             <li class="active nav-item sr-only"><a id="header-home-link2" href="/">Home</a></li>
- -->                            <!-- <li class="nav-item"><a id="header-home-link" href="/">Home</a></li>
-                        <li class="nav-item"><a id="header-screenshots-link" href="{% url 'screenshots' %}">Screenshots</a></li>
-                        <li class="nav-item"><a id="header-download-link" href="{% url 'download' %}">Download</a></li>
-                        <li class="nav-item"><a id="header-docs-link" href="{% url 'docs' %}">Docs</a></li> -->
+
                         {{ range .Site.Menus.main }}
-                    <li class="nav-item"><a id="header-screenshots-link" href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ if (eq .Name "Features") }}
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>                            
+                        {{else}}
+                            <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{end}}
+                    
                     {{end}}
                     </ul><!--//nav-->
                 </div>

@@ -1,9 +1,6 @@
 +++
-title = "Single Cell Analysis"
+title = "Orange"
 url = "/"
 listing = true
-description = "for Everyone"
+description = ""
 +++
-
-
-Empowering researchers and clinicians to gain insights from single cell experiments with interactive data visualization and easy to use but powerful machine learning methods to classify and model single cell data.
