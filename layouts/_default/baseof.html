@@ -1,0 +1,15 @@
+<html>    
+    {{ partial "head.html" . }}
+    <body>
+
+    {{ partial "header.html" . }}
+    <div id="main">
+        <div class="container-fluid clear-top">
+            {{ block "main" .}}
+
+            {{end}}
+        </div>
+    </div>
+    {{ partial "footer.html" . }}
+    </body>
+</html>
