@@ -724,3 +724,9 @@ ul li.no-bullet {
 .container .promo {
     background-color: inherit;
 }
+
+.footer-page{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
