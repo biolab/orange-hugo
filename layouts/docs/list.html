@@ -1,6 +1,23 @@
 {{ define "main"}}
-<div>
-    
-</div>
+
+<section id="documentation" class="features section custom-reduce-padding-2">
+    <div class="container padding-top-page" style="background-color: white;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h1 class="title">{{ .Title }}</h1>
+                    <div class="content">
+                    {{ range .Pages.ByWeight }}
+                        <div class="col-md-12 col-xs-12 doc-section" >
+                            <img class="docs-image" src="{{ .Params.image }}" style="margin-bottom: 30px;">
+                            {{ .Content }}
+                        </div>
+                    {{ end }}
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 {{end }}
