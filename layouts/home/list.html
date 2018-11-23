@@ -76,5 +76,26 @@
     </div>
 </section>
 
+<section id="testimonials" class="features section">
+    <div class="container">
+        <div class="row testimonial-list">
+             {{range (where .Pages "Type" "testimonials")}}
+                <div class="content col-md-4 col-sm-12 item">
+                    <div class="img-container">
+                        <img src="{{ .Params.image }}">
+                    </div>
+                    <h3 class="item-title">
+                        {{ .Params.title }}<br>
+                        <span class="extra">{{ .Params.position }}</span><br>
+                        <span class="extra">{{ .Params.institution }}</span>
+                    </h3>
+                    <p class="feature-text">"{{ .Params.text }}"</p>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>
+
+
 
 {{end }}
