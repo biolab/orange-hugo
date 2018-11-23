@@ -33,7 +33,7 @@
         <a id="Orange-Features" class="features-anchor" style="padding-top: 20px;"></a>
     <div class="container">
             
-        {{ range .Pages.ByWeight }}
+        {{ range (where .Pages.ByWeight "Type" "feature")}}
         <div class="feature-panel row" >
         	<div class='content col-md-6 col-xs-12 feature-description pull-{{if (eq .Params.thumbnailImagePosition "left")}}right{{else}}left{{ end }}'>
             <h2 class="feature-title">

@@ -1,5 +1,6 @@
 +++
 title= "Teachers and Students Love It"
+type = "feature"
 image= "/images/iadv_data_mining_02_scaled.png"
 weight = 40
 learnMore = true
