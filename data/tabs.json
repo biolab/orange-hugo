@@ -1,0 +1,5 @@
+[
+{"icon":"windows", "title":"Windows", "os":"windows"},
+{"icon":"apple", "title":"macOS", "os":"macos"},
+{"icon":"linux", "title": "Linux / Source", "os":"linux"}
+]
