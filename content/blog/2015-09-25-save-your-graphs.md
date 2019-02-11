@@ -11,15 +11,17 @@ tags=["graph" ,"png" ,"save" ,"svg" ,"visualization" ]
 
 If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
 
-[![](/images/2015/09/blog-save-graph.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog-save-graph.png) "Save Graph" will save visualizations to your computer.
+![](/images/2015/09/blog-save-graph.png)
+
+"Save Graph" will save visualizations to your computer.
 
 
 
 Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).
 
-[![](/images/2015/09/blog-save-graph2.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog-save-graph2.png) Widgets with the "Save Graph" option.
+![](/images/2015/09/blog-save-graph2.png)
+
+Widgets with the "Save Graph" option.
 
 
 

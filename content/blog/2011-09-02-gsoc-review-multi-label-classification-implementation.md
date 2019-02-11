@@ -27,71 +27,51 @@ Fortunately, benefiting from the Tab file format, the ExampleTable can store mul
 
 #### Transformation methods
 
-
-
-
-
-	  * br – Binary Relevance Learner (Tsoumakas & Katakis, 2007)
-	  * lp – Label Powerset Classification (Tsoumakas & Katakis, 2007)
+* br – Binary Relevance Learner (Tsoumakas & Katakis, 2007)
+* lp – Label Powerset Classification (Tsoumakas & Katakis, 2007)
 
 
 
 #### Algorithm Adaptation methods
 
 
-
-
-
-	  * mlknn – Multi-kNN Classification (Zhang & Zhou, 2007)
-	  * brknn – BR-kNN Classification (Spyromitros et al. 2008)
-
+* mlknn – Multi-kNN Classification (Zhang & Zhou, 2007)
+* brknn – BR-kNN Classification (Spyromitros et al. 2008)
 
 
 #### Evaluation methods
 
 
-
-
-
-	  * mlc_hamming_loss – Example-based Hamming Loss (Schapire and Singer 2000)
-	  * mlc_accuracy, mlc_precision, mlc_recall – Example-based accuracy, precision, recall (Godbole & Sarawagi, 2004)
+* mlc_hamming_loss – Example-based Hamming Loss (Schapire and Singer 2000)
+* mlc_accuracy, mlc_precision, mlc_recall – Example-based accuracy, precision, recall (Godbole & Sarawagi, 2004)
 
 
 
 #### Widgets
 
 
-
-
-
-	  * OWBR – Widget for Binary Relevance Learner
-	  * OWLP – Widget for Label Powerset Classification
-	  * OWMLkNN – Widget for Multi-kNN Classification
-	  * OWBRkNN – Widget for BR-kNN Classification
-	  * OWTestLearner – Widget for Evaluation
+* OWBR – Widget for Binary Relevance Learner
+* OWLP – Widget for Label Powerset Classification
+* OWMLkNN – Widget for Multi-kNN Classification
+* OWBRkNN – Widget for BR-kNN Classification
+* OWTestLearner – Widget for Evaluation
 
 
 
 #### File Format Extension
 
 
-
-
-
-	  * extend the loadARFF function to support sparse Weka format
-	  * new support [mulan xml and arff format](http://mulan.sourceforge.net/format.html)
+* extend the loadARFF function to support sparse Weka format
+* new support [mulan xml and arff format](http://mulan.sourceforge.net/format.html)
 
 
 
 ### Plan for the future
 
 
-
-
-
-	  * add more classification methods for multi-label, such as PT1 to PT6
-	  * add feature extraction method
-	  * add ranking-based evaluation methods
+* add more classification methods for multi-label, such as PT1 to PT6
+* add feature extraction method
+* add ranking-based evaluation methods
 
 
 

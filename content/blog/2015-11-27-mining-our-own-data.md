@@ -17,29 +17,25 @@ Here we have some preliminary results that we've managed to gather in the past t
 
 We've downloaded our data from Typeform and appended some background information such as OS and browser. Let's see what we've got in the Data Table widget.
 
-[![](/images/2015/11/blog-results7.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results7.png)
+![](/images/2015/11/blog-results7.png)
 
 
 
 Ok, this is our entire data table. Here we also have the data on people who completed the survey and who didn't. First, let's organize the data properly. We'll do this with Select Columns widget.
 
-[![](/images/2015/11/blog-results.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results.png)
+![](/images/2015/11/blog-results.png)
 
 
 
 We removed all the meta attributes as they are not very relevant for our analysis. Next we moved the 'completed' attribute into target variable, thus making it our class variable.
 
-[![](/images/2015/11/blog-results21.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results21.png)
+![](/images/2015/11/blog-results21.png)
 
 
 
 Now we would like to see some basic distributions from our data.
 
-[![](/images/2015/11/blog-results3.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results3.png)
+![](/images/2015/11/blog-results3.png)
 
 
 
@@ -47,22 +43,19 @@ Interesting. Most of our users are working on Windows, a few on Mac and very few
 
 Let's investigate further. Now we want to know more about those people who actually completed the survey. Let's use Select Columns again, this time removing os_type, os_name, agent_name and completed from our data and keeping just the answers. We made "Where do you work?" our class variable, but we could use either one of the three. Another trick is to set in directly in Distributions widget under 'Group by'.
 
-[![](/images/2015/11/blog-results4.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results4.png)
+![](/images/2015/11/blog-results4.png)
 
 
 
 Ok, let's again use Distributions - this is such a simple way to get a good sense of your data.
 
-[![](/images/2015/11/blog-results5.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results5.png)
+![](/images/2015/11/blog-results5.png)
 
 
 
 Obviously out of those who found out about Orange in college, most are students, but what's interesting here is that there are so many. We can also see that out of those who found us on the web, most come from the private sector, followed by academia and researchers. Good. How about the other question?
 
-[![](/images/2015/11/blog-results6.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results6.png)
+![](/images/2015/11/blog-results6.png)
 
 
 
@@ -70,8 +63,7 @@ Again, results are not particularly shocking, but it's great to confirm your hyp
 
 A quick look at the Mosaic Display will give us a good overview:
 
-[![](/images/2015/11/blog-results81.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results81.png)
+![](/images/2015/11/blog-results81.png)
 
 
 
@@ -81,8 +73,7 @@ Our final workflow:
 
 
 
-[![](/images/2015/11/blog-results121.png)
-](http://blog.biolab.si/wp-content/uploads/2015/11/blog-results121.png)
+![](/images/2015/11/blog-results121.png)
 
 
 

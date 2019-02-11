@@ -11,7 +11,7 @@ tags=["classification" ,"example" ,"python" ,"Tree Learner" ]
 
 Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily **classify data** with Orange.
 
-First we’re going to create a [new data table](http://blog.biolab.si/2015/08/07/creating-a-new-data-table-in-orange-through-python/) with 10 fruits as our instances.
+First we’re going to create a [new data table](/blog/2015-08-07-creating-a-new-data-table-in-orange-through-python/) with 10 fruits as our instances.
 
     
     <code><span style="font-weight: 400;">import Orange

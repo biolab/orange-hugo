@@ -11,26 +11,43 @@ tags=["gsoc" ,"summit" ]
 
 On 22th and 23th October 2011 there was [Google Summer of Code](https://code.google.com/soc/) [Mentor Summit](http://gsoc-wiki.osuosl.org/index.php/2011) in [Mountain View, California](http://en.wikipedia.org/wiki/Mountain_View,_California). Google Summer of Code is Google's program for encouraging students to work on open-source projects during their summer break. Because this year Orange participated in this program too, we decided to participate also in this summit and get to know other mentors, other open-source projects and organizations, exchange our experiences, learn something new, and improve our connections and collaborations with others.
 
-[![](/images/2011/12/31/img_1593_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1593_1.jpg)[![](/images/2011/12/31/img_1538_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1538_1.jpg)[![](/images/2011/12/31/img_1548_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1548_1.jpg)[![](/images/2011/12/31/img_1554_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1554_1.jpg)[![](/images/2011/12/31/img_1559_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1559_1.jpg)[![](/images/2011/12/31/img_1563_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1563_1.jpg)[![](/images/2011/12/31/img_1569_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1569_1.jpg)[![](/images/2011/12/31/img_1571_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1571_1.jpg)[![](/images/2011/12/31/img_1578_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1578_1.jpg)[![](/images/2011/12/31/img_1582_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1582_1.jpg)[![](/images/2011/12/31/img_1592_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1592_1.jpg)[![](/images/2011/12/31/img_1595_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1595_1.jpg)[![](/images/2011/12/31/img_1596_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1596_1.jpg)[![](/images/2011/12/31/img_1551_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1551_1.jpg)[![](/images/2011/12/31/img_1567_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1567_1.jpg)[![](/images/2011/12/31/img_1575_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1575_1.jpg)[![](/images/2011/12/31/img_1591_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1591_1.jpg)[![](/images/2011/12/31/img_1594_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1594_1.jpg)[![](/images/2011/12/31/img_1597_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/12/31/img_1597_1.jpg)
+![](/images/2011/12/31/img_1593_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1538_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1548_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1554_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1559_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1563_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1569_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1571_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1578_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+[![](/images/2011/12/31/img_1582_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1592_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1595_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1596_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1551_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1567_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1575_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1591_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1594_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+
+![](/images/2011/12/31/img_1597_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
 
 We went to the meeting together with another Slovenian open-source project: _[wlan slovenija](http://wlan-si.net/)_, an open wireless network initiative. Because the summit itself was held at Google's premises, where taking photographs was forbidden, photos are mostly from the trip there itself and area around the buildings. There are some [photos by others](http://gsoc-wiki.osuosl.org/index.php/Photos_2011) available.
 

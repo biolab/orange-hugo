@@ -13,22 +13,18 @@ tags=["bioinformatics" ,"workshop" ]
 
 All these thanks to the invitation of Andrew Lemire, a manager of a shared high-throughput genomics resource, and Dr. Vilas Menon, a mathematician specializing in quantitative genomics. With Andy and Vilas, we have been collaborating in the past few months on trying to devise a simple and intuitive tool for analysis of single-cell gene expression data. Single cell high-throughput technology is one of the latest approaches that allow us to see what is happening within a single cell, and it does that by simultaneously scanning through potentially thousands of cells. That generates loads of data, and apparently, we have been trying to fit Orange for single-cell data analysis task.
 
-[![](/images/2018/03/hhmi-annoucement.jpg)
-](https://blog.biolab.si/wp-content/uploads/2018/03/hhmi-annoucement.jpg)
+![](/images/2018/03/hhmi-annoucement.jpg)
 
 Namely, in the past half a year, we have been perfecting an add-on for Orange with components for single-cell analysis. This endeavor became so vital that we have even designed a new installation of Orange, called [scOrange](http://singlecell.biolab.si). With everything still in prototype stage, we had enough courage to present the tool at Janelia, first through a seminar, and the next day within a five-hour lecture that I gave together with Martin Strazar, a PhD student and bioinformatics expert from my lab. Many labs are embarking on single cell technology at Janelia, and by the crowd that gathered at both events, it looks like that everyone was there.
 
-[![](/images/2018/03/hhmi-seminar.jpg)
-](https://blog.biolab.si/wp-content/uploads/2018/03/hhmi-seminar.jpg)
+![](/images/2018/03/hhmi-seminar.jpg)
 
-[![](/images/2018/03/hhmi-workshop.jpg)
-](https://blog.biolab.si/wp-content/uploads/2018/03/hhmi-workshop.jpg)
+![](/images/2018/03/hhmi-workshop.jpg)
 
 Orange, or rather, [scOrange](http://singlecell.biolab.si), worked as expected, and hands-on workshop was smooth, despite testing the software on some rather large data sets. Our Orange add-on for single-cell analytics is still in early stage of development, but already has some advanced features like biomarker discovery and tools for characterization of cell clusters that may help in revealing hidden relations between genes and phenotypes. Thanks to Andy and Vilas, Janelia proved an excellent proving ground for [scOrange](http://singlecell.biolab.si), and we are looking forward to our next hands-on single-cell analytics workshop in Houston.
 
-[![](/images/2018/03/hhmi-tsne-visualisation.png)
-](https://blog.biolab.si/wp-content/uploads/2018/03/hhmi-tsne-visualisation.png)
+![](/images/2018/03/hhmi-tsne-visualisation.png)
 
 
 
-**Related:** [Hands-On Data Mining Course in Houston](https://blog.biolab.si/2016/09/15/data-mining-in-houston-2/)
+**Related:** [Hands-On Data Mining Course in Houston](/blog/2016-09-15-data-mining-in-houston-2/)

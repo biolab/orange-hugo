@@ -24,28 +24,24 @@ Of course not. We were invited to the workshop to show that there are data scien
 
 
 
-**Related:** [Teaching data science with Orange](http://orange.biolab.si/features/education-in-data-science/)
+**Related:** [Teaching data science with Orange](/features/education-in-data-science/)
 
 
 We claimed that with such tools, it takes only a few days to train users to master basic and intermediate concepts of data science. And we claimed that this could be done without diving into complex mathematics and statistics.
 
-[![](/images/2016/11/ess-big-data-for-owners.jpg)
-](http://blog.biolab.si/wp-content/uploads/2016/11/ess-big-data-for-owners.jpg)
+![](/images/2016/11/ess-big-data-for-owners.jpg)
 
 Part of our presentation was a demo in [Orange](http://orange.biolab.si) that showed few tricks we use in such training. The presentation  included:
 
-
-
- 	  * a case study of interactive data exploration by building and visualizing classification tree and forests, and mapping parts of the model to the projection in a scatter plot,
- 	  * a demo how fun it is to draw a data set and then use it to teach about clustering,
- 	  * a presentation how trained deep model can be used to explore and cluster images.
+* a case study of interactive data exploration by building and visualizing classification tree and forests, and mapping parts of the model to the projection in a scatter plot,
+* a demo how fun it is to draw a data set and then use it to teach about clustering,
+* a presentation how trained deep model can be used to explore and cluster images.
 
 
 
-**Related:** [Data Mining Course at Baylor College of Medicine in Houston](http://blog.biolab.si/2016/09/15/data-mining-in-houston-2/)
+**Related:** [Data Mining Course at Baylor College of Medicine in Houston](/blog/2016-09-15-data-mining-in-houston-2/)
 
 
-[![](/images/2016/11/ess-big-data-cow.jpg)
-](http://blog.biolab.si/wp-content/uploads/2016/11/ess-big-data-cow.jpg)
+![](/images/2016/11/ess-big-data-cow.jpg)
 
 The Eurostat meeting was very interesting and packed with new ideas. Our thanks to Boro Nikić for inviting us, and thanks to attendees of our session for the many questions and requests we have received during presentation and after the meeting.

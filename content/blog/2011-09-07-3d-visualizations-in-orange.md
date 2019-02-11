@@ -17,22 +17,19 @@ Widgets I worked on and are reasonably usable:
 
 #### ScatterPlot3D
 
-[![](/images/2011/09/06/scatterplot3d.png__160x160_q95_crop_subject_location-291%2C305.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/09/06/scatterplot3d.png)
+![](/images/2011/09/06/scatterplot3d.png__160x160_q95_crop_subject_location-291%2C305.jpg)
 
 Its GUI has the same options as the ordinary ScatterPlot (2D),with an additional dropdown for the third attribute (Z) and some new checkboxes (e.g. 2D/3D symbols). The data can be easily rotated, translated and scaled.Supports zoom levels and selections as well. VizRank works.Thanks to hardware acceleration, ScatterPlot3D is quite responsive even with largerdatasets (30k examples).
 
 #### LinProj3D
 
-[![](/images/2011/09/06/linproj3d.png__160x160_q95_crop.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/09/06/linproj3d.png)
+![](/images/2011/09/06/linproj3d.png__160x160_q95_crop.jpg)
 
 LinProj3D is displayed using dark theme (themes are available in all 3D widgets).
 
 #### Sphereviz3D
 
-[![](/images/2011/09/06/sphereviz.png__160x160_q95_crop.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/09/06/sphereviz.png)
+![](/images/2011/09/06/sphereviz.png__160x160_q95_crop.jpg)
 
 Sphereviz3D has 2D symbols option enabled (also available in all 3D widgets). VizRank has been modified to work with three dimensions; PCA and SPCA options under FreeViz return first three most important components when used in these widgets.
 

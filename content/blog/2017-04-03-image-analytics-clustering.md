@@ -25,38 +25,31 @@ Let's see this on an example.
 
 Here we have 19 [images of domestic animals](http://tinyurl.com/images-domestic-animals). First, download the images and unzip them. Then use Import Images widget from Orange's Image Analytics add-on and open the directory containing the images.
 
-[![](/images/2017/04/ImportImages.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/ImportImages.png)
+![](/images/2017/04/ImportImages.png)
 
 We can visualize images in Image Viewer widget. Here is our workflow so far, with images shown in Image Viewer:
 
-[![](/images/2017/04/image-viewer.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/image-viewer.png)
+![](/images/2017/04/image-viewer.png)
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.07.36.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.07.36.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.07.36.png)
 
 But what do we see in a data table? Only some useless description of images (file name, the location of the file, its size, and the image width and height).
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.11.06.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.11.06.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.11.06.png)
 
 This cannot help us with machine learning. As I said before, we need numbers. To acquire numerical representation of these images, we will send the images to Image Embedding widget.
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.15.50.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.15.50.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.15.50.png)
 
 Great! Now we have the numbers we wanted. There are 2048 of them (columns n0 to n2047). From now on, we can apply all the standard machine learning techniques, say, clustering.
 
 Let us measure the distance between these images and see which are the most similar. We used Distances widget to measure the distance. Normally, cosine distance works best for images, but you can experiment on your own. Then we passed the distance matrix to Hierarchical Clustering to visualize similar pairs in a dendrogram.
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.20.38.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.20.38.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.20.38.png)
 
 This looks very promising! All the right animals are grouped together. But I can't see the results so well in the dendrogram. I want to see the images - with Image Viewer!
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.23.38.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.23.38.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.23.38.png)
 
 So cool! All the cow family is grouped together! Now we can click on different branches of the dendrogram and observe which animals belong to which group.
 
@@ -64,13 +57,11 @@ But I know what you are going to say. You are going to say I am cheating. That I
 
 I will prove you wrong. I will take a new cow, say, the most famous cow in Europe - Milka cow.
 
-[![](/images/2017/03/milka_cow_by_miki3d.jpg)
-](https://blog.biolab.si/wp-content/uploads/2017/03/milka_cow_by_miki3d.jpg)
+![](/images/2017/03/milka_cow_by_miki3d.jpg)
 
 This image is quite different from the other images - it doesn't have a white background, it's a real (yet photoshopped) photo and the cow is facing us. Will the Image Embedding find the right numerical representation for this cow?
 
-[![](/images/2017/03/Screen-Shot-2017-03-29-at-10.30.41.png)
-](https://blog.biolab.si/wp-content/uploads/2017/03/Screen-Shot-2017-03-29-at-10.30.41.png)
+![](/images/2017/03/Screen-Shot-2017-03-29-at-10.30.41.png)
 
 Indeed it has. Milka is nicely put together with all the other cows.
 

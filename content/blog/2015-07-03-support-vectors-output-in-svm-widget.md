@@ -19,5 +19,6 @@ Now feel free to try it with your own data set!
 
 
 
-[![](/images/2015/07/svm-with-support-vectors.png)
-](http://blog.biolab.si/wp-content/uploads/2015/07/svm-with-support-vectors.png) Support vectors output of SVM widget with Iris data set.
+![](/images/2015/07/svm-with-support-vectors.png)
+
+Support vectors output of SVM widget with Iris data set.

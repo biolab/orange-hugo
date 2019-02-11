@@ -15,5 +15,6 @@ Since Orange 3.0 is still in the development mode, you will find a smaller selec
 
 
 
-[![](/images/2015/05/blog2-compile.png)
-](http://blog.biolab.si/wp-content/uploads/2015/05/blog2-compile.png) Orange 3.0 can read Excel files.
+![](/images/2015/05/blog2-compile.png)
+
+Orange 3.0 can read Excel files.

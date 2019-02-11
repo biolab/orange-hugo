@@ -15,8 +15,8 @@ But there’s more. We are currently hosting an expert on data fusion from the U
 
 
 
-[![](/images/2015/05/7.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/05/7.jpg) prof. dr. Yves Moreau - Prioritization of candidate disease genes and drug—target interactions by genomic data fusion
+![](/images/2015/05/7.jpg)
 
-[![](/images/2015/05/8.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/05/8.jpg)
+prof. dr. Yves Moreau - Prioritization of candidate disease genes and drug—target interactions by genomic data fusion
+
+![](/images/2015/05/8.jpg)

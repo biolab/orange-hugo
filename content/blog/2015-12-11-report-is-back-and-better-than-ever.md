@@ -20,27 +20,21 @@ Save Graph just got company - a **Report button**! Report works in most widgets,
 Why is Report so great?
 
 
+1. Display data and graphs used in your workflow. Whatever you do with your data will be put in the report upon a click of a button.
 
-
-
-	  1. Display data and graphs used in your workflow. Whatever you do with your data will be put in the report upon a click of a button.
-
-[![](/images/2015/12/report1.png)
-](http://blog.biolab.si/wp-content/uploads/2015/12/report1.png)
+![](/images/2015/12/report1.png)
 
 
 
 2. Write comments below each section in your workflow. Put down whatever matters for your research - pitfalls and advantages of a model, why this methodology works, amazing discoveries, etc.
 
-[![](/images/2015/12/report2.png)
-](http://blog.biolab.si/wp-content/uploads/2015/12/report2.png)
+![](/images/2015/12/report2.png)
 
 
 
 3. Access your workflows. Every step of the analysis recorded in the Report is saved as a workflow and can be accessed by clicking on the Orange icon. Have you spent hours analyzing your data only to find out you made a wrong turn somewhere along the way? No problem. Report saves workflows for each step of the analysis. Perhaps you would like to go back and start again from Bo Plot? Click on the Orange icon next to Box Plot and you will be taken to the workflow you had when you placed that widget in the report. Completely stress-free!
 
-[![](/images/2015/12/report5.png)
-](http://blog.biolab.si/wp-content/uploads/2015/12/report5.png)
+![](/images/2015/12/report5.png)
 
 
 

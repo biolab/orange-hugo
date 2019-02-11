@@ -43,7 +43,6 @@ Here are the first few lines from a data set:
         5        Albert      Matrix      4
         ...
 
-
 **The third row is mandatory in this kind of datasets***, in order to know which attributes correspond to the users (row=1) and which ones to the items (col=1). For the case of big datasets, users and items must be specified as continuous attributes due to efficiency issues. (*Note: If the meta attributes _row_ or _col_, some simple heuristics will be applied: users=_column 0_, items=_column 1_, class=_last column_)
 
 Here are the first few lines from a data set :
@@ -274,14 +273,14 @@ This add-on includes several configurations that can be used to modify the updat
 
 
 
- 	  * [SGD](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#stochastic-gradient-descent): Classical SGD update.
- 	  * [Momentum](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#momentum): SGD with inertia.
- 	  * [Nesterov momentum](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#nesterov-s-accelerated-gradient): A Momentum that "looks ahead".
- 	  * [AdaGrad](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adagradient): Optimizer that adapts its learning rating during the process.
- 	  * [RMSProp](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#rmsprop): "Leaky" AdaGrad.
- 	  * [AdaDelta](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adadelta): Extension of Adagrad that seeks to reduce its aggressive.
- 	  * [Adam](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adam): Similar to AdaGrad and RMSProp but with an exponentially decaying average of past gradients.
- 	  * [Adamax](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adamax): Similar to Adam, but taking the maximum between the gradient and the velocity.
+* [SGD](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#stochastic-gradient-descent): Classical SGD update.
+* [Momentum](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#momentum): SGD with inertia.
+* [Nesterov momentum](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#nesterov-s-accelerated-gradient): A Momentum that "looks ahead".
+* [AdaGrad](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adagradient): Optimizer that adapts its learning rating during the process.
+* [RMSProp](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#rmsprop): "Leaky" AdaGrad.
+* [AdaDelta](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adadelta): Extension of Adagrad that seeks to reduce its aggressive.
+* [Adam](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adam): Similar to AdaGrad and RMSProp but with an exponentially decaying average of past gradients.
+* [Adamax](http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adamax): Similar to Adam, but taking the maximum between the gradient and the velocity.
 
 
 

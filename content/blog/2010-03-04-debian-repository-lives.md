@@ -30,7 +30,6 @@ Packages are not signed as they are made automatically so you will probably be w
 Those packages will probably work also on other Debian-based Linux distributions like Ubuntu, but have not yet been tested there. Please test it and report how it goes.
 
 You can also get source of those packages with this command:
-
     
     apt-get source python-orange-svn
 

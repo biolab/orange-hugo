@@ -15,6 +15,6 @@ We were giving out Orange stickers (with the URL) to the poster's visitors. Ther
 
 See the poster in action on the photo taken by Gregor Rot.
 
-[![](/images/2011/08/03/orange-poster-pic.png__160x160_q95_crop.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/08/03/markotoplak_velikost_a0.pdf)[![](/images/2011/08/03/slika_poster.jpg__160x160_q95_crop.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/08/03/slika_poster.jpg)
+![](/images/2011/08/03/orange-poster-pic.png__160x160_q95_crop.jpg)
+
+![](/images/2011/08/03/slika_poster.jpg__160x160_q95_crop.jpg)

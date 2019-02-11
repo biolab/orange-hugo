@@ -25,13 +25,10 @@ The information is collected anonymously for the users that opted-in. We will us
 
 
 **There are four different ways of adding a widget to the canvas,**
-
-
-
- 	  * clicking it in the sidebar,
- 	  * dragging it from the sidebar,
- 	  * searching for it by right-clicking on canvas,
- 	  * extending the workflow by dragging the communication channel from a widget.
+* clicking it in the sidebar,
+* dragging it from the sidebar,
+* searching for it by right-clicking on canvas,
+* extending the workflow by dragging the communication channel from a widget.
 
 
 
@@ -43,12 +40,13 @@ A workflow extend action.
 Among Orange users, the most popular way of adding a new widget is by dragging the communication line from the output widget – we think this is the most efficient way of using Orange too. However, the patterns vary among different widgets.
 
 ![](/images/2018/11/widgets-add-type.png)
+
 How users add widgets to canvas, from 20,775 add widget events.
 
 
 
 Users tend to add root nodes such as File via a click or drag from the sidebar, while adding leaf nodes such as Data Table via extension from another widget.
-<table style="width: 20%; border-collapse: collapse; border-style: hidden;" border="1" >
+<table style="width: 80%; border-collapse: collapse; border-style: hidden;" border="1" >
 <tbody >
 <tr >
 
@@ -89,15 +87,15 @@ Initially, widget addition events were planned to include a 'time since applicat
 
 
 
- 	  * Date
- 	  * Orange version
- 	  * Operating system
- 	  * Widget addition events, each entailing:
+  * Date
+  * Orange version
+  * Operating system
+  * Widget addition events, each entailing:
 
- 	    * Widget name
- 	    * Type of addition (Click, Drag, Search or Extend)
- 	    * (Other widget name), if type is Extend
- 	    * (Query), if type is Search or Extend
+    * Widget name
+    * Type of addition (Click, Drag, Search or Extend)
+    * (Other widget name), if type is Extend
+    * (Query), if type is Search or Extend
 
 
 

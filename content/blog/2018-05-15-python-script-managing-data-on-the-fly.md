@@ -19,8 +19,8 @@ There might be a time when you need to apply a function to all your attributes. 
 
 First, open File widget and load _geo-gds360.tab_ from _Browse documentation data sets_. This data set has 9485 features, so imagine having to transform each feature individually.
 
-[![](/images/2018/05/Screen-Shot-2018-05-11-at-12.18.56.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/Screen-Shot-2018-05-11-at-12.18.56.png)
+![](/images/2018/05/Screen-Shot-2018-05-11-at-12.18.56.png)
+
 
 Instead, we will connect Python Script to File and use a simple script to apply the same transformation to all attributes.
 
@@ -35,23 +35,23 @@ Instead, we will connect Python Script to File and use a simple script to apply 
 
 This is really simple. Use in_data.X, which accesses all features in the data set, to transform the data with np.log (or any other numpy function). Set out_data to new_X and, voila, the transformed data is on the output. In a few lines we have instantly handled all 9485 features.
 
-[![](/images/2018/05/Screen-Shot-2018-05-11-at-13.32.25.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/Screen-Shot-2018-05-11-at-13.32.25.png)
+![](/images/2018/05/Screen-Shot-2018-05-11-at-13.32.25.png)
 
 You can inspect the data before and after transformation in a Data Table widget.
 
-[![](/images/2018/05/Screen-Shot-2018-05-11-at-13.33.28.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/Screen-Shot-2018-05-11-at-13.33.28.png) Original data.
+![](/images/2018/05/Screen-Shot-2018-05-11-at-13.33.28.png)
 
-[![](/images/2018/05/Screen-Shot-2018-05-11-at-13.33.38.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/Screen-Shot-2018-05-11-at-13.33.38.png) Log-transformed data.
+Original data.
+
+![](/images/2018/05/Screen-Shot-2018-05-11-at-13.33.38.png)
+
+Log-transformed data.
 
 
 
 This is it. Now we can do our standard analysis on the transformed data. Even better! We can save our script and use it in Python Script widget any time we want.
 
-[![](/images/2018/05/Screen-Shot-2018-05-15-at-10.13.26.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/Screen-Shot-2018-05-15-at-10.13.26.png)
+![](/images/2018/05/Screen-Shot-2018-05-15-at-10.13.26.png)
 
 For your convenience I have already added the [download id="2083"], so you can download and use it instantly!
 

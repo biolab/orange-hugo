@@ -13,21 +13,13 @@ The last summer, student Wencan Luo participated in [Google Summer of Code](http
 
 You can load multi-label tab-delimited data (e.g. [emotions.tab](http://orange.biolab.si/trac/intertrac/export%3Atrunk/orange/doc/datasets/emotions.tab)) just like any other [tab-delimited data](/doc/reference/Orange.data.formats/#tab-delimited-format):
 
-
-
-
     
     <span class="o">>>></span> zoo <span class="o">=</span> Orange<span class="o">.</span>data<span class="o">.</span>Table<span class="p">(</span><span class="s">'zoo'</span><span class="p">)</span>            <span class="c"># single-target</span>
     <span class="o">>>></span> emotions <span class="o">=</span> Orange<span class="o">.</span>data<span class="o">.</span>Table<span class="p">(</span><span class="s">'emotions'</span><span class="p">)</span>  <span class="c"># multi-label</span>
 
 
 
-
-
 The difference is that now zoo's domain has a non-empty class_var field, while a list of emotions' labels can be obtained through it's domain's class_vars:
-
-
-
 
     
     <span class="o">>>></span> zoo<span class="o">.</span>domain<span class="o">.</span>class_var
@@ -41,13 +33,7 @@ The difference is that now zoo's domain has a non-empty class_var field, while a
      EnumVariable <span class="s">'angry-aggresive'</span><span class="o">></span>
 
 
-
-
-
 A simple example of a [multi-label classification](/doc/reference/Orange.multilabel/) learner is a "binary relevance" learner. Let's try it out.
-
-
-
 
     
     <span class="o">>>></span> learner <span class="o">=</span> Orange<span class="o">.</span>multilabel<span class="o">.</span>BinaryRelevanceLearner<span class="p">()</span>
@@ -65,21 +51,15 @@ A simple example of a [multi-label classification](/doc/reference/Orange.multila
 
 
 
-
-
 Real values of label variables of emotions[0] instance can be obtained by calling emotions[0].get_classes(), which is analogous to the get_class method in the single-target case.
 
 For multi-label classification, we can also perform testing like usual, however, [specialised evaluation measures](/doc/reference/Orange.evaluation.scoring/#scoring-for-multilabel-classification) have to be used:
-
-
 
 
     
     <span class="o">>>></span> test <span class="o">=</span> Orange<span class="o">.</span>evaluation<span class="o">.</span>testing<span class="o">.</span>cross_validation<span class="p">([</span>learner<span class="p">],</span> emotions<span class="p">)</span>
     <span class="o">>>></span> Orange<span class="o">.</span>evaluation<span class="o">.</span>scoring<span class="o">.</span>mlc_hamming_loss<span class="p">(</span>test<span class="p">)</span>
     <span class="p">[</span><span class="mf">0.2228780213603148</span><span class="p">]</span>
-
-
 
 
 

@@ -13,8 +13,7 @@ Janez and I have recently returned from a two-week stay in Moscow, Russian Feder
 
 It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.
 
-[![](/images/2018/05/20180420_213316.jpg)
-](https://blog.biolab.si/wp-content/uploads/2018/05/20180420_213316.jpg)
+![](/images/2018/05/20180420_213316.jpg)
 
 One of the things we did was compute minimum cost of misclassifications. The story goes like this. Sara is a doctor and has data on 303 patients with _heart disease_ (Orange's heart-disease.tab data set). She used some classifiers and now has to decide how many patients to send for further tests. Naive Bayes classifier, for example, returned probabilities of a patient being sick (column Naive Bayes 1). For each threshold in probabilites, she will compute how many false positives (patients declared sick when healthy) and how many false negatives (patients declared healthy when sick) a classifiers returns. Each mistake is associated with a cost. Now she wants to find out, how many patients to send for tests (what probability threshold to choose) so that her cost is the lowest.
 
@@ -103,7 +102,6 @@ At the end, we can also plot the cost to patients sent curve.
     </code>
 
 
-[![](/images/2018/05/image-1.png)
-](https://blog.biolab.si/wp-content/uploads/2018/05/image-1.png)
+![](/images/2018/05/image-1.png)
 
 You can download the IPython Notebook here: [download id="2053"].

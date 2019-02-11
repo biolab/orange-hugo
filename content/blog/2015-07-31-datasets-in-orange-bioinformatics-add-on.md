@@ -12,8 +12,7 @@ tags=["add-on" ,"bioinformatics" ,"data sets" ,"dictyExpress" ,"GenExpress" ,
 
 As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a **bioinformatics add-on**, which is our specialty.
 
-[![](/images/2015/07/bioinformatics-blog.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/07/bioinformatics-blog.jpg)
+![](/images/2015/07/bioinformatics-blog.jpg)
 
 Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - **dictyExpress**, **GEO Data Sets**, **PIPAx** and **GenExpress**. [GEO Data Sets](http://www.ncbi.nlm.nih.gov/gds) are sourced from NCBI, [PIPAx](http://pipa.biolab.si/hp/) and [dictyExpress](http://dictyexpress.biolab.si/) from two Biolab projects, and finally [GenExpress](https://www.genialis.com/genexpress/) from Genialis. A lot of the data is freely accessible, while you will need a user account for the rest.
 
@@ -21,8 +20,9 @@ Once you open the widget, select the experiments you wish to use for your analys
 
 
 
-[![](/images/2015/07/BioinfoDatasets.png)
-](http://blog.biolab.si/wp-content/uploads/2015/07/BioinfoDatasets.png) Three widgets with experiment data libraries.
+![](/images/2015/07/BioinfoDatasets.png)
+
+Three widgets with experiment data libraries.
 
 
 

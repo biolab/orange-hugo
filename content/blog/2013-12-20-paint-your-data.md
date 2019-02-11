@@ -13,17 +13,14 @@ One of the widgets I enjoy very much when teaching introductory course in data m
 
 Like in the following workflow where I drew three clusters which were indeed recognized by [k-means clustering](http://docs.orange.biolab.si/latest/widgets/rst/unsupervized/kmeansclustering). Notice that silhouette scoring correctly identified even the number of clusters. And I also drew the clustered data in the Scatterplot to check if the clusters are indeed where they should be.
 
-[![](/images/2013/12/20/paintdata-k-means-ok_1.png__600x1000_q95_upscale.png)
-](http://blog.biolab.si/wp-content/uploads/2013/12/20/paintdata-k-means-ok_1.png)
+![](/images/2013/12/20/paintdata-k-means-ok_1.png__600x1000_q95_upscale.png)
 
 Or like in the workflow below where k-means fails miserably (but someother clustering technique would not).
 
-[![](/images/2013/12/20/paintdata-k-means-notok.png__600x1000_q95_upscale.jpg)
-](http://blog.biolab.si/wp-content/uploads/2013/12/20/paintdata-k-means-notok.png)
+![](/images/2013/12/20/paintdata-k-means-notok.png__600x1000_q95_upscale.jpg)
 
 [Paint Data](http://docs.orange.biolab.si/latest/widgets/rst/data/paintdata) can also be used in supervised setting, for classification tasks. We can set the intended number of classes, and then chose any of these to paint the data. Below I have used it to create the datasets to check the behavior of several classifiers.
 
-[![](/images/2013/12/20/paintdata-supervised_1.png__600x1000_q95_upscale.png)
-](http://blog.biolab.si/wp-content/uploads/2013/12/20/paintdata-supervised_1.png)
+![](/images/2013/12/20/paintdata-supervised_1.png__600x1000_q95_upscale.png)
 
 There are tons of other workflows where [Paint Data](http://docs.orange.biolab.si/latest/widgets/rst/data/paintdata) can be useful. Give it a try!

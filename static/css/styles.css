@@ -889,9 +889,7 @@ blockquote {
     font-size: 36px;
 }
 
-body {
-    background-image: url('/images/bg.png'); background-repeat: repeat-x;
-}
+
 
 .cover-image {
     background: url('/images/scorange-web-750.png');
@@ -900,9 +898,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  body {
-    background-image: url('/images/bg2.png'); background-repeat: repeat-x;
-  }
 
   #main-page-download-button {
     display: none;
@@ -995,4 +990,41 @@ h2.docs-subtitle {
 
 .downloads .icon-item a, .downloads .icon-item a:hover {
   color: #4c85c5;
+}
+
+.search-field{
+  
+  margin-top: -18px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+
+.search-result-title{
+  font-size:21px; 
+
+}
+
+.example input[type=text] {
+  float: right;
+  /*padding: 10px;*/
+  height: 30px;
+  min-height: 10px !important;
+  font-size: 15px;
+  border: 1px solid grey;
+  width: 30%;
+  /*background: #f1f1f1;*/
+}
+
+/* Style the submit button */
+.example button {
+  /*float: left;*/
+  /*padding: 10px;*/
+  height: 30px;
+  width: 30px;
+  background: #ffbc44;
+  color: white;
+  font-size: 16px;
+  border: 1px solid grey;
+   /* Prevent double borders */
+  cursor: pointer;
 }

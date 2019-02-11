@@ -13,8 +13,7 @@ So you have painted two data sets and loaded another one from a file, and now yo
 
 **Say no more! Look no further!** Here is the new **Hub widget**!
 
-[![](/images/2015/09/blog21.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog21.png)
+![](/images/2015/09/blog21.png)
 
 
 
@@ -24,8 +23,7 @@ The **Hub widget** treats all types with the strictest equality.
 
 (It also adheres to all applicable EU policies with respect to gender equality, and does not use cookies.)
 
-[![](/images/2015/09/blog11.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog11.png)
+![](/images/2015/09/blog11.png)
 
 The **Hub widget** works like charm and is like the amazing _cast-to-void-and-back-to-anything_ idiom in C. This strongful MacGyver of widgets can (almost) convert classification tree into data, or preprocessor into experimental results without ever touching the data. With its amazing capabilities, the **Hub widget** has the potential to cause an even greater havoc in your workflows than the famous **Merge data** widget.
 

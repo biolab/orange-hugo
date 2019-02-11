@@ -13,8 +13,9 @@ Happy news for all passionate Orange users! We’ve uploaded documentation for o
 
 
 
-[![](/images/2015/09/blog2.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog2.png) Right click and select "Help" or press F1.
+![](/images/2015/09/blog2.png)
+
+Right click and select "Help" or press F1.
 
 ** **
 
@@ -22,8 +23,9 @@ It’s easy to use. To learn more about a particular wigdet, click on the widget
 
 
 
-[![](/images/2015/09/blog1.png)
-](http://blog.biolab.si/wp-content/uploads/2015/09/blog1.png) Widget documentation.
+![](/images/2015/09/blog1.png)
+
+Widget documentation.
 
 ** **
 

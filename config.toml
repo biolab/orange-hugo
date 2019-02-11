@@ -1,14 +1,18 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+paginate = 5 #frontpage pagination
+title = "Orange"
+disqusShortname = "localblog-2"
 
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
 
 [menu]
 
   [[menu.main]]
     identifier = "features"
     name = "Features"
-    url = "/features/"
+    url = "/#features"
     weight = -130
 
   [[menu.main]]
@@ -31,3 +35,7 @@ title = "My New Hugo Site"
     name = "Blog"
     url = "/blog/"
     weight = -90
+
+
+
+

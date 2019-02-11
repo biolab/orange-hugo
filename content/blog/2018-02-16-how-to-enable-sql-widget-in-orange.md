@@ -12,7 +12,7 @@ tags=["big data" ,"database" ,"installation" ,"psycopg2" ,"sql" ]
 A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
 
 
-Related: [SQL for Orange](https://blog.biolab.si/2015/10/19/sql-for-orange/)
+Related: [SQL for Orange](/blog/2015-10-19-sql-for-orange/)
 
 
 
@@ -49,7 +49,7 @@ And for Linux: [psycopg2-2.7.4-cp36-cp36m-manylinux1_x86_64.whl](https://pypi.py
 
 Then open the add-on dialog in Orange (Options --> Add-ons) and drag and drop the downloaded wheel into the add-on list. At the bottom, you will see psycopg2 with the tick next to it.
 
-[![](/images/2018/02/Screen-Shot-2018-02-16-at-14.19.51.png)
-](https://blog.biolab.si/wp-content/uploads/2018/02/Screen-Shot-2018-02-16-at-14.19.51.png)
+![](/images/2018/02/Screen-Shot-2018-02-16-at-14.19.51.png)
+
 
 Click OK to run the installation. Then re-start Orange and connect to your database with SQL widget. If you have any questions, drop them in the comment section!

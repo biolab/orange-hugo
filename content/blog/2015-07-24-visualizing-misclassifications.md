@@ -18,15 +18,17 @@ Here we have three confusion matrices for **[Naive Bayes](https://en.wikipedia.o
 
 
 
-[![](/images/2015/07/Misclassification-matrices.png)
-](http://blog.biolab.si/wp-content/uploads/2015/07/Misclassification-matrices.png) Three misclassification matrices (Naive Bayes, Classification Tree and Logistic Regression)
+![](/images/2015/07/Misclassification-matrices.png)
+
+Three misclassification matrices (Naive Bayes, Classification Tree and Logistic Regression)
 
 
 
 We see that **Classification Tree** did the best with only 9 misclassified instances. To see which instances were assigned a false class, we select ‘_Misclassified_’ option in the widget, which highlights misclassifications and feeds them to the **Scatter Plot** widget. In the graph we thus see the entire data set presented with empty dots and the selected misclassifications with full dots.
 
-[![](/images/2015/07/misclassification-schema-scatterplot.png)
-](http://blog.biolab.si/wp-content/uploads/2015/07/misclassification-schema-scatterplot.png) Visualization of misclassified instances in scatter plot.
+![](/images/2015/07/misclassification-schema-scatterplot.png)
+
+Visualization of misclassified instances in scatter plot.
 
 
 

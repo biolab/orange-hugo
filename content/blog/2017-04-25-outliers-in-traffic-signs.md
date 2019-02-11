@@ -14,7 +14,7 @@ Say I am given a collection of images of traffic signs, and would like to find w
 I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a [traffic-signs-w.tab](http://file.biolab.si/datasets/traffic-signs-rw.tab) data set.
 
 
-**Related:** [Viewing images](https://blog.biolab.si/2014/04/29/viewing-images/)
+**Related:** [Viewing images](/blog/2014-04-29-viewing-images/)
 
 
 
@@ -29,28 +29,25 @@ I have assembled a small set of regulatory and warning traffic signs and stored 
 
 The easiest way to display the images is by loading this data file with File widget and then passing the data to the Image Viewer,
 
-[![](/images/2017/04/traffic-signs-file-image-viewer.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/traffic-signs-file-image-viewer.png)
+![](/images/2017/04/traffic-signs-file-image-viewer.png)
 
 Opening the Image Viewer allows me to see the images:
 
-[![](/images/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png)
+![](/images/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png)
 
 Note that initially the data table we have loaded contains no valuable features on which we can do any machine learning. It includes just a category of traffic sign, its name, and the link to its image.
 
-[![](/images/2017/04/traffic-signs-data-table2.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/traffic-signs-data-table2.png)
+![](/images/2017/04/traffic-signs-data-table2.png)
+
 
 We will use deep-network embedding to turn these images into numbers to describe them with 2048 real-valued features. Then, we will use Silhouette Plot to find which traffic signs are outliers in their own group. We would like to select these and visualize them in the Image Viewer.
 
 
-**Related:** [All I see is silhouette](https://blog.biolab.si/2016/03/23/all-i-see-is-silhouette/)
+**Related:** [All I see is silhouette](/blog/2016-03-23-all-i-see-is-silhouette/)
 
 
 Our final workflow, with selection of three biggest outliers (we used shift-click to select its corresponding silhouettes in the Silhouette Plot), is:
 
-[![](/images/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png)
-](https://blog.biolab.si/wp-content/uploads/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png)
+![](/images/2017-04-Screen-Shot-2017-04-25-at-10.08.56.png)
 
 Isn't this great? Turns out that traffic signs were carefully designed, such that the three outliers are indeed the signs we should never miss. It is great that we can now reconfirm this design choice by deep learning-based embedding and by using some straightforward machine learning tricks such as Silhouette Plot.

@@ -11,5 +11,4 @@ tags=["badges" ]
 
 Orange badges are here! They come in two flavors. Tasty!
 
-[![](/images/2011/09/04/img_1173_1.jpg__160x160_q95_crop.jpg)
-](http://blog.biolab.si/wp-content/uploads/2011/09/04/img_1173_1.jpg)
+![](/images/2011/09/04/img_1173_1.jpg__160x160_q95_crop.jpg)

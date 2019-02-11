@@ -21,17 +21,15 @@ Since the goal was to make the code in modules and widgets oblivious to the stor
 
 We went through the code of Orange 2.7 and identified the common operations on the data. We found that all data access belongs into the following types:
 
-
-
-	  1. basic aggregates like mean, variance, median, minimal and maximal value,
-	  2. distributions of discrete and continuous variables, values at percentiles,
-	  3. contingency matrices,
-	  4. covariance matrices,
-	  5. filtering of rows based on various criteria, including random sampling,
-	  6. selection of columns,
-	  7. construction of variables from values of other variables,
-	  8. matrices of distances (e.g. Euclidean) between all row pairs,
-	  9. individual data rows.
+1. basic aggregates like mean, variance, median, minimal and maximal value,
+2. distributions of discrete and continuous variables, values at percentiles,
+3. contingency matrices,
+4. covariance matrices,
+5. filtering of rows based on various criteria, including random sampling,
+6. selection of columns,
+7. construction of variables from values of other variables,
+8. matrices of distances (e.g. Euclidean) between all row pairs,
+9. individual data rows.
 
 Points 1 to 4 are typical examples of what cannot be done on client but can be efficiently done in the database. The storage (a class derived from Table) now provides specialized methods for computing aggregates, distributions and contingencies, which use numpy for in-memory data and SQL for the data on the database.
 

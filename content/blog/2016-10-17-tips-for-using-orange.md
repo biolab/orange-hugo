@@ -19,11 +19,9 @@ TIP #2: **Make use of Orange documentation.**
 
 You can access it in three ways:
 
-
-
- 	  1. Press F1 when the widget is selected. This will open help screen.
- 	  2. Select Widget - Help when the widget is selected. It works the same as above.
- 	  3. Visit online [documentation](http://orange.biolab.si/toolbox/).
+1. Press F1 when the widget is selected. This will open help screen.
+2. Select Widget - Help when the widget is selected. It works the same as above.
+3. Visit online [documentation](http://orange.biolab.si/toolbox/).
 
 
 
@@ -31,9 +29,7 @@ TIP #3:** Embed your help screen.**
 
 Drag and drop help screen to the side of your Orange canvas. It will become embedded in the canvas. You can also make it narrower, allowing for a full-size analysis while exploring the docs.
 
-[![](/images/2016/10/Embed-Help.png)
-](http://blog.biolab.si/2016/10/17/tips-for-using-orange/embed-help/)
-
+![](/images/2016/10/Embed-Help.png)
 
 
 TIP #4: **Use right-click.**
@@ -52,11 +48,9 @@ TIP #6: **Hide control pane.**
 
 Once you've set the parameters, you'd probably want to focus just on visualizations. There's a simple way to do this in Orange. Click on the split between the control pane and visualization pane - you should see a hand appearing instead of a cursor. Click and observe how the control pane gets hidden away neatly. To make it reappear, click the split again.
 
-[![](/images/2016/10/Panel1.jpg)
-](http://blog.biolab.si/2016/10/17/tips-for-using-orange/panel1/)
+![](/images/2016/10/Panel1.jpg)
 
-[![](/images/2016/10/Panel2.jpg)
-](http://blog.biolab.si/2016/10/17/tips-for-using-orange/panel2/)
+![](/images/2016/10/Panel2.jpg)
 
 
 
@@ -70,8 +64,7 @@ TIP #8: **Find your plot.**
 
 Scrolled around and lost the plot? Zoomed in too much? To re-position the plot click 'Reset zoom' and the visualization will jump snugly into the visualization pane. Comes in handy when browsing the subsets and trying to see the bigger picture every now and then.
 
-[![](/images/2016/10/zoom-pan-1.png)
-](http://blog.biolab.si/2016/10/17/tips-for-using-orange/zoom-pan-2/)
+![](/images/2016/10/zoom-pan-1.png)
 
 
 
@@ -87,8 +80,7 @@ TIP #10: **Use Educational add-on.**
 
 To learn about how some algorithms work, use [Orange3-Educational](https://github.com/biolab/orange3-educational) add-on. It contains 4 widgets that will help you get behind the scenes of some famous algorithms. And since they're interactive, they're also a lot of fun!
 
-[![](/images/2016/10/educational.png)
-](http://blog.biolab.si/2016/10/17/tips-for-using-orange/educational/)
+![](/images/2016/10/educational.png)
 
 
 

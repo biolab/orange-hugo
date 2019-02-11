@@ -14,11 +14,8 @@ These days, we (Blaz Zupan and Marinka Zitnik, with full background support of e
 
 We have opted for the hands-on course and a running it as a workshop. The lectures include a new, development version of [Orange 3](http://orange.biolab.si/orange3/), and mix it with [numpy](http://www.numpy.org), [scikit-learn](http://scikit-learn.org/stable/), [matplotlib](http://matplotlib.org), [networkx](https://networkx.github.io) and bunch of other libraries. Course themes are classification, clustering, data projection and network analysis.
 
-[![](/images/2015/02/pavia-group.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/02/pavia-group.jpg)
+![](/images/2015/02/pavia-group.jpg)
 
-[![](/images/2015/02/pavia-rail.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/02/pavia-rail.jpg)
+![](/images/2015/02/pavia-rail.jpg)
 
-[![](/images/2015/02/pavia-class.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/02/pavia-class.jpg)
+![](/images/2015/02/pavia-class.jpg)

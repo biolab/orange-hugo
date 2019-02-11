@@ -15,5 +15,4 @@ Recently Orange and one of its inventors, [Blaž Zupan](http://www.ne100.org/cha
 
 This nomination is a great validation of our efforts and it only makes us work harder. Because every research should be fruitful and fun!
 
-[![](/images/2016/11/adv_data_mining-02-1.png)
-](http://blog.biolab.si/2016/11/18/top-100-changemakers-in-central-and-eastern-europe/adv_data_mining-02-2/)
+![](/images/2016/11/adv_data_mining-02-1.png)

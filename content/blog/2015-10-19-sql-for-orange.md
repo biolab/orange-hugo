@@ -27,8 +27,7 @@ If you’re on Mac or Linux, install _psycopg2_ with [this](http://initd.org/psy
 
 
 
-[![](/images/2015/10/SQLTable.jpg)
-](http://blog.biolab.si/wp-content/uploads/2015/10/SQLTable.jpg)
+![](/images/2015/10/SQLTable.jpg)
 
 Upon opening Orange, you will be able to see a lovely new icon - **SQL Table**. Then just connect to your server and off you go!
 

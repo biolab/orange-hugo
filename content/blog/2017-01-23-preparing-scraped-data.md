@@ -12,7 +12,7 @@ tags=["BeautifulSoup" ,"Line Chart" ,"scraping" ,"Timeseries" ,"to csv" ,"urllib
 One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I'll show you how to easily get the data from the web and transfer it to a file Orange can read.
 
 
-**Related:** [Creating a new data table in Orange through Python](http://blog.biolab.si/2015/08/07/creating-a-new-data-table-in-orange-through-python/)
+**Related:** [Creating a new data table in Orange through Python](/blog/2015-08-07-creating-a-new-data-table-in-orange-through-python/)
 
 
 
@@ -117,22 +117,19 @@ This is the entire code:
 
 
 
-**Related:** [Scripting with Time Variable](http://blog.biolab.si/2016/06/10/scripting-with-time-variable/)
+**Related:** [Scripting with Time Variable](/blog/2016-06-10-scripting-with-time-variable/)
 
 
 
 
 Now let's load this in Orange. File widget can easily read .csv formats and also correctly identifies the two column types, datetime and numeric. A quick glance into the Data Table...
 
-[![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png)
-](http://blog.biolab.si/wp-content/uploads/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png)
+![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png)
 
 Everything looks ok. We can use [Timeseries add-on](https://github.com/biolab/orange3-timeseries) to inspect how many blogs we've written each month since 2010. Connect **As Timeseries** widget to File. Orange will automatically suggest to use Date as our time variable. Finally, we'll plot the data with **Line Chart**. This is the curve of our blog activity.
 
-[![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png)
-](http://blog.biolab.si/wp-content/uploads/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png)
+![](/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png)
 
-[![](/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png)
-](http://blog.biolab.si/wp-content/uploads/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png)
+![](/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png)
 
 The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!
