@@ -724,3 +724,45 @@ ul li.no-bullet {
 .container .promo {
     background-color: inherit;
 }
+
+
+
+/*.center {
+  margin-left:auto; 
+  margin-right:0;
+  width: auto;
+  border: 3px solid #73AD21;
+
+}*/
+.center-pag {
+  text-align: center;
+}
+
+.pagination1 {
+  display: inline-block;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.pagination1 a {
+  color: black;
+  float: left;
+  font-size: 12px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination1 a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+.pagination-current{
+    background-color: #ffbc44 !important;
+    border:1px solid #ffbc44 !important;
+}
+
+.pagination1 a:hover:not(.active) {background-color: #ddd;}
+
