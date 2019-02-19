@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-paginate = 5 #frontpage pagination
+paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "localblog-2"
 
