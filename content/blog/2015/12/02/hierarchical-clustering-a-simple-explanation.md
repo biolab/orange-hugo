@@ -23,7 +23,7 @@ First steps of hierarchical clustering.
 
 Euclidean distance is calculated as:
 
-![](http://www.improvedoutcomes.com/docs/WebSiteDocs/image/diagram_euclidean_distance_metric.gif)
+![](https://www.improvedoutcomes.com/docs/WebSiteDocs/image/diagram_euclidean_distance_metric.gif)
 
 
 Naturally, the shorter the distance the more similar the two instances are. In the beginning, all instances are in their own particular clusters. Then we seek for the closest instances of every instance in the plot. We pin down the closest instance and make a cluster of the original and the closest instance. Now we repeat the process again. What is the closest instances to our new cluster –> add it to the cluster –> find the closest instance. We repeat this procedure until all the instances are grouped in one single cluster.
