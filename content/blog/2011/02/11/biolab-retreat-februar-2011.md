@@ -15,78 +15,18 @@ Overall summary of the retreat: first commit ([revision 9743](http://orange.biol
 
 Some photos to give you a taste how it was.
 
-![](/images/2011/06/24/img_0292_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
 
-![](/images/2011/06/24/img_0293_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0360_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0364_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0373_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0325_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0327_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0303_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0304_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0306_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0322_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0324_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0338_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0346_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0350_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0359_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0374_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0375_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0379_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0381_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0382_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0383_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0384_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0294_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0295_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0297_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0388_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0392_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0394_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0396_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0400_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0273_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0285_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0277_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0281_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0284_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0290_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
-
-![](/images/2011/06/24/img_0291_1.jpg__160x160_q95_crop-True_upscale-False.jpg)
+|![](/images/2011/06/24/img_0292_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0293_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0360_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| ![](/images/2011/06/24/img_0364_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0373_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0325_1.jpg__160x160_q95_crop-True_upscale-False.jpg) |
+| ![](/images/2011/06/24/img_0327_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0303_1.jpg__160x160_q95_crop-True_upscale-False.jpg)| ![](/images/2011/06/24/img_0304_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0306_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0322_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0324_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0338_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0346_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0350_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0359_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0374_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0375_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0379_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0381_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0382_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0383_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0384_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0294_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0295_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0297_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0388_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0392_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0394_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0396_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0400_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0273_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0285_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0277_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0281_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0284_1.jpg__160x160_q95_crop-True_upscale-False.jpg)|
+| ![](/images/2011/06/24/img_0290_1.jpg__160x160_q95_crop-True_upscale-False.jpg) | ![](/images/2011/06/24/img_0291_1.jpg__160x160_q95_crop-True_upscale-False.jpg)

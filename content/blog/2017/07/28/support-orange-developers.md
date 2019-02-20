@@ -14,7 +14,7 @@ Do you love Orange? Do you think it is the best thing since sliced bread? Want t
 Nothing says thank you like a fresh supply of ice cream and now you can help us stock our fridge with your generous donations. 🍦🍦🍦
 
 
-
+[Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J)
 
 Support open source software and the team behind Orange. We promise to squander all your contributions purely on ice cream. Can't have a development sprint without proper refreshments! ;)
 
