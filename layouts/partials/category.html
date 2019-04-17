@@ -1,12 +1,11 @@
-{{ define "main"}}
 <section id="features" class="features section padding-bottom ">
     <div class="container page-background getting-started" style="padding-top:120px ">
         <div style="text-align: center">
-           <h2 style="font-size: 34px;" >
+           <h2 style="font-size: 34px;margin-top: 0px;" >
               Orange Blog
            </h2>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
+    <div class="row" style="padding-left: 20px; margin-top:20px !important;">
       <div class="col-xs-12 col-md-12 content" style="display: inline;">
          <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
         <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
@@ -16,10 +15,11 @@
       
     </div>
     <div style="margin-top: 5px;padding-left: 20px;" id="myUL">
-        <ul >
+        <ul>
             <span>Categories: </span>
+          {{ $tag := .Data.Term}}
           {{ range first 10 .Site.Taxonomies.categories.ByCount }}
-            <li style="display: inline;text-transform: capitalize;"><a href="/categories/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            <li style="display: inline;text-transform: capitalize;" ><a href="/categories/{{ .Name | urlize }}" class="{{ if eq $tag .Name }}active-tag{{ end }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
     </div>
@@ -29,8 +29,8 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
     {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "blog") "IsPage" true) }}
     {{ range $index, $element := .Paginator.Pages }}
-        <div class="row">
-         {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
+        <div class=" row">
+            {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
             {{ if eq (mod $index 2) 0 }}
             <div class='content col-md-6 col-xs-12 feature-description pull-left' style="padding-top: 60px;">
             {{else}}
@@ -38,11 +38,8 @@
             {{end}}
             {{else}}
             <div class='content col-md-12 col-xs-12 feature-description' >
-
             {{end}}
-                <p class="feature-text">Author: {{ .Params.author }}, {{ .Date.Format "Jan 2, 2006" }}</p>
-                <!-- <p class="feature-text"></p> -->
-                <!-- {{ .Date.Format "02 January" }} -->
+            <p class="feature-text">Author: {{ .Params.author }}, {{ .Date.Format "Jan 2, 2006" }}</p>
                 <h2 class="workflow-title">
                     {{ .Title }}
                 </h2>
@@ -54,25 +51,22 @@
                {{end}}
 
              </p>
-                <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                <div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">
                     Categories:
                     {{range .Params.categories}}
                     <a class="tag-workflow" href="/categories/{{ . | urlize }}">{{ . }}</a>
                     {{end}}
                 </div>
-                <div class="getting-started-button">
+                <div class="getting-started-button" >
                         
-                    
                     <a href="{{ .Permalink }}" class="no-break-buttons">
                     <div class="learn-more feature-block">
-                        
                         <div class="feature-block feature-link">Read More</div>
                         <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
                 </a>
-                    &nbsp;&nbsp;
+                    <!-- &nbsp;&nbsp; -->
                 </div>
-               
                 </div>
             <div class='content col-md-6 col-xs-12 {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}' style="padding: 20px;padding-top: 0px;">
                 <img src="{{.Params.thumbImage}}" class="workflow-image" >
@@ -92,6 +86,8 @@
 
 
 </section>
+
+
 <script type="text/javascript">
     function check_key(e){
         if(e.keyCode == 13) {
@@ -101,27 +97,24 @@
             if(document.getElementById('search-input').value.length <= 1){
                 $("#post_nor").show();
                 $("#search-results").hide();
-                $("#pagination").show();
             }
         }  
     }
 
   function search_content(){
-    
+    var url = window.location.pathname.split('/')
+    var tag_param = url.pop() || url.pop();
     var param = document.getElementById('search-input').value;
-
-     $("#pagination").hide();
 
     if (param.trim() ==""){
         $("#post_nor").show();
         $("#search-results").hide();
-        $("#pagination").show();
     }
     else{
         $("#post_nor").hide();
     
 
-        var results  = search(param);
+        var results  = search_categories(tag_param,param);
         console.log(results)
         $("#search-results").show();
         var search_results = document.getElementById('search-results')
@@ -131,15 +124,14 @@
         }
         else{
         search_results.innerHTML = "";
-
         var html_el = ""
+        
 
         for(var page in results){
             html_el += '<div class="row">';
             if (results[page].image == '<no value>'){
                html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
             }
-
             else if (page % 2 == 0){
                 html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 60px;">';
             }
@@ -158,13 +150,17 @@
 
             }
 
-            html_el += '<div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">Categories:'
+            html_el += '<div class="tags" id="tags" style="padding-bottom: 10px;text-transform: capitalize;">Categories:'
                     for(var cat in results[page].categories){
+                    // console.log(results[page].categories[cat])
                     html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
                 }
             html_el +='</div>'
             html_el += '<div class="getting-started-button">'
             html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+            // results[page].download != "" && results[page].download != '<no value>'
+             
+
 
             html_el += '</div></div>'
             var position = "";
@@ -175,7 +171,7 @@
             else{
                 html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
             }
-            // if (results[page].images.length >1){
+            // if (results[page].image.length >1){
             //     html_el+= '<div id="myCarousel'+page+'" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
             //         for(var img in results[page].images){
             //             html_el+= '<div class="item'
@@ -209,7 +205,7 @@
 
             // }
             // else{
-            if (results[page].image!= '<no value>'){
+            if (results[page].image != '<no value>'){
                 html_el += '<img class="image'+position+'" src="'+results[page].image+'" style="padding:40px;"></div>'
             }
 
@@ -219,10 +215,18 @@
             html_el += "</div> </div><hr/>"
         }
         search_results.innerHTML += html_el;
-      }
-    }
-    }
 
+
+        }
+        // ele = document.getElementById("tags")
+        // ele = ele.getElementsByTagName("a").style.textTransform="capitalize"
+        // console.log(ele.length)
+        
+        // for (i = 0; i <ele.length ; i++) { 
+        //   console.log(ele[i].style.textTransform = "capitalize")
+        // }
+        }
+        }
      
    </script>
    <script type="text/javascript" src="/js/lunr.js"></script>
@@ -230,4 +234,3 @@
       var baseurl = "{{.Site.BaseURL}}";
    </script>
    <script type="text/javascript" src="/js/search.js"></script>
-{{end}}

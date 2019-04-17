@@ -11,37 +11,58 @@ function initLunr() {
     };
 
     // First retrieve the index file
-    $.getJSON("/index.json")
+    $.getJSON(baseurl +"blog.json")
         .done(function(index) {
             pagesIndex =   index;
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
-            lunrIndex = new lunr.Index
-            lunrIndex.ref("uri");
-            lunrIndex.field('title', {
-                boost: 20
+            lunrIndex = lunr(function () {
+            this.ref("uri");
+            this.field('title', {
+                boost: 50
             });
-            lunrIndex.field('longExcerpt', {
-                boost: 15
+            this.field('categories', {
+                boost: 30
             });
-            lunrIndex.field('categories', {
+            this.field('longExcerpt', {
                 boost: 10
             });
-            lunrIndex.field("content", {
-                boost: 5
-            });
+            // this.field('content', {
+            //     boost: 1
+            // });
+              pagesIndex.forEach(function (doc) {
+                this.add(doc)
+              }, this)
+            })
 
             // Feed lunr with each file and let lunr actually index them
-            pagesIndex.forEach(function(page) {
-                lunrIndex.add(page);
-            });
-            lunrIndex.pipeline.remove(lunrIndex.stemmer)
+            // pagesIndex.forEach(function(page) {
+            //     lunrIndex.add(page);
+            // });
+            // lunrIndex.pipeline.remove(lunrIndex.stemmer)
         })
         .fail(function(jqxhr, textStatus, error) {
             var err = textStatus + ", " + error;
             console.error("Error getting Hugo index file:", err);
         });
 }
+
+
+function search_categories(category, search_param) {
+    var search_by_categories = lunrIndex.search('categories:'+ category)
+
+    var search_by_params = lunrIndex.search(search_param)
+    var intersection_of_results= search_by_categories.filter(a => search_by_params.some(b => a.ref === b.ref));  
+    
+    return intersection_of_results.map(function(result) {
+            return pagesIndex.filter(function(page) {
+                return page.uri === result.ref;
+            })[0];
+            });
+    
+
+}
+
 
 /**
  * Trigger a search in lunr and transform the result
@@ -68,37 +89,3 @@ function search(query) {
 
 // Let's get started
 initLunr();
-$( document ).ready(function() {
-    var searchList = new autoComplete({
-        /* selector for the search box element */
-        selector: $("#search-input").get(0),
-        /* source is the callback to perform the search */
-        source: function(term, response) {
-            response(search(term));
-        },
-        /* renderItem displays individual search results */
-        renderItem: function(item, term) {
-            var numContextWords = 2;
-            var text = item.content.match(
-                "(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}" +
-                    term+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
-            item.context = text;
-
-            return '<div class="autocomplete-suggestion" ' +
-                'data-term="' + term + '" ' +
-                'data-title="' + item.title + '" ' +
-                'data-uri="'+ item.uri + '" ' +
-                'data-longExcerpt="'+ item.longExcerpt + '" ' +
-                'data-context="' + item.context + '">' +
-                '» ' + item.title +
-                '<div class="context">' +
-                (item.context || '') +'</div>' +
-                '</div>';
-        },
-        /* onSelect callback fires when a search suggestion is chosen */
-        onSelect: function(e, term, item) {
-            console.log(item.getAttribute('data-val'));
-            location.href = item.getAttribute('data-uri');
-        }
-    });
-});

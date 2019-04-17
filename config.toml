@@ -4,8 +4,22 @@ paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "localblog-2"
 
+[outputFormats]
+  [outputFormats.workflow]
+    mediaType = "application/json"
+    baseName = "workflow"
+    notAlternative = true
+  [outputFormats.blog]
+    mediaType = "application/json"
+    baseName = "blog"
+    notAlternative = true
+
 [outputs]
-  home = [ "HTML", "RSS", "JSON"]
+  home = [ "HTML", "workflow", "blog"]
+
+
+[taxonomies]
+  category = "categories"
 
 [menu]
 

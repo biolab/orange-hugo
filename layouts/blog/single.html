@@ -16,10 +16,7 @@
         {{ end }}
         
         <div class="entry-meta">
-          <span class="date">{{ .Date.Format "02 January" }}</span>	<span>  </span>
-
-          
-
+          <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>	<span>  </span>
 
           {{ range .Params.categories }}
           <span class="category">
