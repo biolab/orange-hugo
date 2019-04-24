@@ -889,9 +889,7 @@ blockquote {
     font-size: 36px;
 }
 
-body {
-    background-image: url('/images/bg.png'); background-repeat: repeat-x;
-}
+
 
 .cover-image {
     background: url('/images/scorange-web-750.png');
@@ -900,9 +898,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  body {
-    background-image: url('/images/bg2.png'); background-repeat: repeat-x;
-  }
 
   #main-page-download-button {
     display: none;
