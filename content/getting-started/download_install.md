@@ -5,7 +5,7 @@ button =  true
 thumbnailImagePosition = "right"
 weight = 10
 buttonURL = "/download/"
-buttonText = "Download scOrange"
+buttonText = "Download Orange"
 +++
 
 
