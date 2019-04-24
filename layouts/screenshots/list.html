@@ -1,6 +1,49 @@
 {{ define "main"}}
-<div>
-    
+<div class="no-padding-con">
+<div class="container-fluid ">
+<section id="features" class="features section screenshots">
+        <div class="container padding-top-page">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 title">
+                    <h1 class="title">Screenshots</h1>
+                </div>
+                <div id="visage" class="content imgcontent">
+                {{ range sort .Pages .Params.weight}}
+                    <div class="item col-md-4 col-sm-6 col-xs-12 screenshot-container">
+                        <div id="content" class="content">
+                            <div class="screenshot">
+                                <a href="{{.Params.image}}">
+                                    <img class="screenshot-image" alt="{{.Title }}" src="{{ .Params.thumbnailImage}}">
+                                </a>
+                            </div>
+                            <p class="screenshot-title">{{ .Title }}</p>
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+</section>
+</div>
 </div>
 
-{{end }}
+<script type="text/javascript">
+	$(document).ready(function () {
+        $('#visage').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '80%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+});
+	
+</script>
+{{ end }}
+
