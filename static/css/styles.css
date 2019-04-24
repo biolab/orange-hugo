@@ -1019,6 +1019,33 @@ svg{
   }
 }
 
+
+@media (min-width: 1350px) {
+  .downloadsize{
+    padding-left:25%;
+    padding-right:25%;
+  }
+}
+
+
+@media (max-width: 1349px) {
+  .downloadsize{
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+
+/*@media (min-width: 1350px) {
+  .downloados .row {
+    margin-top: 50px;
+  }
+  .cover-image {
+    background: url('/images/scorange-web-1170.png');
+    background-position: center;
+
+  }
+}*/
+
 /* Custom */
 pre {
     overflow-x: auto;

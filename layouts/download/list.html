@@ -1,10 +1,11 @@
 {{ define "main"}}
+
 <section id="features" class="features section downloads ">
-        <div class="container-fluid downloados" style="margin-top: 40px">
+        <div class="container-fluid downloados downloadsize" style="margin-top: 50px">
             <div class="row">
-                <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11" style="padding: 0px !important;">
+                <div class="" style="padding: 0px !important;">
                     {{ range .Site.Data.tabs}}
-                    <div class="icon-item col-xl-1 col-lg-2 col-md-3 col-sm-3 col-xs-6 text-center" >
+                    <div class="icon-item col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
                         <a onclick="windows({{.os}})" href="#{{.os}}">
                             <div id="{{.os}}1" class="icon">
                                 <i class="fa fa-{{ .icon }} jsonly icon-button"></i>
@@ -19,16 +20,16 @@
 
         <div class="container-fluid">
             <div class="row col">
-            <div id="win" class=" download-os ">
-                <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11">
+            <div id="win" class=" download-os downloadsize">
+                <div class="">
                     <div class="content">
                         <h2>Download the latest version for Windows</h2>
-                        <a id="recommended-download" style="margin-top: 10px" class="btn btn-warning big-button-base" onclick="windows()" href="https://service.biolab.si/install/?os=windows">
-                            Download scOrange
+                        <a id="recommended-download" style="margin-top: 10px" class="btn btn-warning big-button-base" onclick="windows()" href="https://service.biolab.si/download/orange?platform=win">
+                            Download Orange
                         </a>
 
                         <h3><a id="standalone"></a>Standalone installer</h3>
-                        <a href="https://service.biolab.si/install/?os=windows">scOrange-win_amd64.exe (64 bit)</a><br />
+                        <a href="https://service.biolab.si/download/orange?platform=win">Orange-win_amd64.exe (64 bit)</a><br />
                         <p>Can be used without administrative priviledges.</p>
                         <h3><a id="anaconda"></a>Anaconda</h3>
                         <p>If you are using python provided by <a href="https://www.continuum.io/downloads">Anaconda</a>
@@ -41,18 +42,22 @@
                         <p>Orange can also be installed from the Python Package Index:</p>
                         <pre><code>pip install orange3</code></pre>
                     </div>
+                    <div class="content">
+                        <h2>Installing add-ons</h2>
+                        <p>Additional features can be added to Orange by installing add-ons. You can find add-on manager in Options menu.</p>
+                    </div>
             </div>
         </div>
 
-        <div id="mac" class=" mac download-os">
-                 <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11" >
+        <div id="mac" class=" mac download-os downloadsize">
+                 <div class="" >
                    <div class="content">
                         <h2>Download the latest version for Mac</h2>
-                        <a id="recommended-download" onclick="mac()" style="margin-top: 10px" class="btn btn-warning big-button-base" href="https://service.biolab.si/install/?os=mac">
-                            Download scOrange
+                        <a id="recommended-download" onclick="mac()" style="margin-top: 10px" class="btn btn-warning big-button-base" href="https://service.biolab.si/download/orange?platform=mac">
+                            Download Orange
                         </a>
                         <h3><a id="standalone"></a>Bundle</h3>
-                        <a href="https://service.biolab.si/install/?os=mac">scOrange.dmg</a><br/>
+                        <a href="https://service.biolab.si/download/orange?platform=mac">Orange.dmg</a><br/>
                         <p>A universal bundle with everything packed in and ready to use.</p>
 
                         <h3><a id="anaconda"></a>Anaconda</h3>
@@ -67,11 +72,15 @@
                         <pre><code>pip install orange3</code></pre>
                 
                  </div>
+                 <div class="content">
+                        <h2>Installing add-ons</h2>
+                        <p>Additional features can be added to Orange by installing add-ons. You can find add-on manager in Options menu.</p>
+                    </div>
 
             </div>
         </div>
-        <div id="lin" class=" mac download-os">
-                 <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11" >
+        <div id="lin" class=" mac download-os downloadsize">
+                 <div class="" >
                    <div class="content">
                     <h2>Linux / Source</h2>
 
@@ -99,6 +108,10 @@
                     <pre><code>python -m Orange.canvas</code></pre>
                 
                  </div>
+                 <div class="content">
+                        <h2>Installing add-ons</h2>
+                        <p>Additional features can be added to Orange by installing add-ons. You can find add-on manager in Options menu.</p>
+                    </div>
 
             </div>
         </div>
@@ -199,5 +212,6 @@
         }
         </script>
     </section>
+
 
 {{ end }}
