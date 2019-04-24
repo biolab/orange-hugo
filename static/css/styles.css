@@ -911,10 +911,7 @@ blockquote {
     font-size: 36px;
 }
 
-/*body {
-    background-image: url('/images/bg.png'); background-repeat: repeat-x;
-    background-color: #cde2ea;
-}*/
+
 
 .blog-home{
   background-color: #EEEEEE;
@@ -925,7 +922,6 @@ blockquote {
 .blog-home .more-link{
   color: black !important;
 }
-
 /*.blog-mark */
 svg{
   fill: #ffbc44;
@@ -937,9 +933,6 @@ svg{
 }
 
 @media (max-width: 991px) {
-  body {
-    /*background-image: url('/images/bg2.png'); background-repeat: repeat-x;*/
-  }
   .downloados .row {
     margin-top: 50px;
   }
@@ -957,7 +950,6 @@ svg{
   .footer-pad{
     padding-left: 5% !important;
   }
-
   #main-page-download-button {
     display: none;
   }
@@ -1046,14 +1038,6 @@ h2.docs-subtitle {
   color: #4c85c5;
 }
 
-
-
-
-
-
-
-/*      asdasdasdasdasdasd _-__________________
-*/
 
 
 /* your styles go here */

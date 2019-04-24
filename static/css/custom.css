@@ -766,6 +766,10 @@ ul li.no-bullet {
     background-color: inherit;
 }
 
+.footer-page{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 
 .container-fluid{
     padding: 0;
