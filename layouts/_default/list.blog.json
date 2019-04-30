@@ -1,0 +1,19 @@
+[{{ range $index, $page := where .Pages.ByDate.Reverse  "Section" "blog" }}
+{{- if ne $page.Type "json" -}}
+{{- if and $index (gt $index 0) -}},{{- end }}
+{
+	"uri": "{{ $page.Permalink }}",
+	"title": "{{ htmlEscape $page.Title}}",
+	"categories": [{{ range $tindex, $category := $page.Params.categories }}{{ if $tindex }}, {{ end }}"{{ $category| htmlEscape }}"{{ end }}],
+	"description": "{{ htmlEscape .Description}}",
+	"content": {{$page.Plain | jsonify}},
+	"image" : "{{ $page.Params.image}}",
+	"thumbImage" : "{{ .Params.thumbImage}}",
+	"shortExcerpt" : "{{ .Params.shortExcerpt}}",
+	"longExcerpt" : "{{ if .Params.longExcerpt}} {{.Params.longExcerpt}} {{else}} {{$page.Summary | jsonify}} {{end}}",
+	"author" : "{{ $page.Params.author}}",
+	"summary" : {{ $page.Summary | jsonify}},
+	"date" : {{ $page.Date.Format "Jan 2, 2006" }}
+}
+{{- end -}}
+{{- end -}}]

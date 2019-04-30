@@ -1,14 +1,32 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+paginate = 10 #frontpage pagination
+title = "Orange"
+disqusShortname = "localblog-2"
 
+[outputFormats]
+  [outputFormats.workflow]
+    mediaType = "application/json"
+    baseName = "workflow"
+    notAlternative = true
+  [outputFormats.blog]
+    mediaType = "application/json"
+    baseName = "blog"
+    notAlternative = true
+
+[outputs]
+  home = [ "HTML", "workflow", "blog"]
+
+
+[taxonomies]
+  category = "categories"
 
 [menu]
 
   [[menu.main]]
     identifier = "features"
     name = "Features"
-    url = "/features/"
+    url = "/#features"
     weight = -130
 
   [[menu.main]]
@@ -26,3 +44,12 @@ title = "My New Hugo Site"
     name = "Docs"
     url = "/docs/"
     weight = -100
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = -90
+
+
+
+
