@@ -1,0 +1,234 @@
+{{ define "main"}}
+<section id="features" class="features section padding-bottom ">
+    <div class="container page-background getting-started" style="padding-top:120px ">
+        <div style="text-align: center">
+           <h2 style="font-size: 34px;" >
+              Orange Blog
+           </h2>
+        </div>
+    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
+      <div class="col-xs-12 col-md-12 content" style="display: inline;">
+         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
+        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+            <i class="fa fa-search"></i>
+        </button>
+      </div>
+      
+    </div>
+    <div style="margin-top: 5px;padding-left: 20px;" id="myUL">
+        <ul >
+            <span>Categories: </span>
+          {{ range first 10 .Site.Taxonomies.categories.ByCount }}
+            <li style="display: inline;text-transform: capitalize;"><a href="/categories/{{ .Name | urlize }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
+    {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "blog") "IsPage" true) }}
+    {{ range $index, $element := .Paginator.Pages }}
+        <div class="row">
+         {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
+            {{ if eq (mod $index 2) 0 }}
+            <div class='content col-md-6 col-xs-12 feature-description pull-left' style="padding-top: 60px;">
+            {{else}}
+            <div class='content col-md-6 col-xs-12 feature-description pull-right' style="padding-top: 60px;">
+            {{end}}
+            {{else}}
+            <div class='content col-md-12 col-xs-12 feature-description' >
+
+            {{end}}
+                <p class="feature-text">Author: {{ .Params.author }}, {{ .Date.Format "Jan 2, 2006" }}</p>
+                <!-- <p class="feature-text"></p> -->
+                <!-- {{ .Date.Format "02 January" }} -->
+                <h2 class="workflow-title">
+                    {{ .Title }}
+                </h2>
+                <p class="feature-text">
+                  {{ if and (isset .Params "longExcerpt") .Params.longExcerpt }}
+                {{ .Params.longExcerpt }}
+               {{else}}
+               {{ .Summary }}
+               {{end}}
+
+             </p>
+                <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                    Categories:
+                    {{range .Params.categories}}
+                    <a class="tag-workflow" href="/categories/{{ . | urlize }}">{{ . }}</a>
+                    {{end}}
+                </div>
+                <div class="getting-started-button">
+                        
+                    
+                    <a href="{{ .Permalink }}" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                    &nbsp;&nbsp;
+                </div>
+               
+                </div>
+            <div class='content col-md-6 col-xs-12 {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}' style="padding: 20px;padding-top: 0px;">
+                <img src="{{.Params.thumbImage}}" class="workflow-image" >
+            </div>
+            
+              
+            
+            </div>
+            <hr/>
+            <!-- </div> -->
+{{end}}
+{{ partial "pagination.html" . }}
+    </div>
+    
+    
+
+</div>
+
+
+</section>
+<script type="text/javascript">
+    function check_key(e){
+        if(e.keyCode == 13) {
+            search_content();
+        }
+        else if(e.keyCode == 8){
+            if(document.getElementById('search-input').value.length <= 1){
+                $("#post_nor").show();
+                $("#search-results").hide();
+                $("#pagination").show();
+            }
+        }  
+    }
+
+  function search_content(){
+    
+    var param = document.getElementById('search-input').value;
+
+     $("#pagination").hide();
+
+    if (param.trim() ==""){
+        $("#post_nor").show();
+        $("#search-results").hide();
+        $("#pagination").show();
+    }
+    else{
+        $("#post_nor").hide();
+    
+
+        var results  = search(param);
+        console.log(results)
+        $("#search-results").show();
+        var search_results = document.getElementById('search-results')
+        if (results.length<1){
+            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
+        // var html_el = ""
+        }
+        else{
+        search_results.innerHTML = "";
+
+        var html_el = ""
+
+        for(var page in results){
+            html_el += '<div class="row">';
+            if (results[page].image == '<no value>'){
+               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
+            }
+
+            else if (page % 2 == 0){
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 60px;">';
+            }
+            else{
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 60px;">';
+            }
+            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
+            html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
+
+            
+            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
+                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
+            }
+            else{
+            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
+
+            }
+
+            html_el += '<div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">Categories:'
+                    for(var cat in results[page].categories){
+                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
+                }
+            html_el +='</div>'
+            html_el += '<div class="getting-started-button">'
+            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+
+            html_el += '</div></div>'
+            var position = "";
+            
+            if (page % 2 == 0){
+                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
+            }
+            else{
+                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
+            }
+            // if (results[page].images.length >1){
+            //     html_el+= '<div id="myCarousel'+page+'" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
+            //         for(var img in results[page].images){
+            //             html_el+= '<div class="item'
+            //             if(img==0){
+            //                 html_el += 'active">'
+            //             }
+            //             else{
+            //                 html_el+= '>'
+            //             }
+
+            //            html_el += '<img src="'+results[page].images[img]+'" class="workflow-image" ></div>'
+                      
+            //         }
+            //         html_el += '</div>'
+            //     html_el += '<ol class="carousel-indicators" >'
+            //         for(var img in results[page].images){
+            //          html_el += '<li data-target="#myCarousel'+page+'" data-slide-to="'+img+'" class="'
+            //             if(img==0){
+            //                     html_el += 'active">'
+            //                 }
+            //             else{
+            //                 html_el+= '>'
+            //             }
+            //             html_el +='</li>'
+            //         }
+            //     html_el+='</ol>'
+
+            //     html_el += '<a class="left carousel-control" href="#myCarousel'+page+'" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
+                
+            //     html_el += '<a class="right carousel-control" href="#myCarousel'+page+'" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
+
+            // }
+            // else{
+            if (results[page].image!= '<no value>'){
+                html_el += '<img class="image'+position+'" src="'+results[page].image+'" style="padding:40px;"></div>'
+            }
+
+            // }
+
+            
+            html_el += "</div> </div><hr/>"
+        }
+        search_results.innerHTML += html_el;
+      }
+    }
+    }
+
+     
+   </script>
+   <script type="text/javascript" src="/js/lunr.js"></script>
+   <script type="text/javascript">
+      var baseurl = "{{.Site.BaseURL}}";
+   </script>
+   <script type="text/javascript" src="/js/search.js"></script>
+{{end}}
