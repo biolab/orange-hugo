@@ -2,6 +2,17 @@ baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
+[outputFormats]
+  [outputFormats.workflow]
+    mediaType = "application/json"
+    baseName = "workflow"
+    notAlternative = true
+
+[outputs]
+  home = [ "HTML", "workflow"]
+
+[taxonomies]
+  tag = "tags"
 
 [menu]
 
@@ -17,12 +28,18 @@ title = "My New Hugo Site"
     weight = -120
 
   [[menu.main]]
+    identifier = "workflows"
+    name = "Workflows"
+    url = "/workflows/"
+    weight = -110
+
+  [[menu.main]]
     identifier = "download"
     name = "Download"
     url = "/download/"
-    weight = -110
+    weight = -100
 
   [[menu.main]]
     name = "Docs"
     url = "/docs/"
-    weight = -100
+    weight = -90
