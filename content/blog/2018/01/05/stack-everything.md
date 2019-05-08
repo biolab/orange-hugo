@@ -5,8 +5,6 @@ draft= false
 title="Stack Everything!"
 type="blog"
 categories=["classification" ,"examples" ,"widget" ]
-tags=["knn" ,"stacking" ]
-
 +++
 
 We all know that sometimes many is better than few. Therefore we are happy to introduce the Stack widget. It is available in [Prototypes add-on](https://github.com/biolab/orange3-prototypes) for now.

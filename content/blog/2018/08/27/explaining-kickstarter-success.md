@@ -5,8 +5,6 @@ draft= false
 title="Explaining Kickstarter Success"
 type="blog"
 categories=["addons" ,"orange3" ,"prediction" ,"widget" ]
-tags=["explain predictions" ,"explanatory ML" ,"prototype" ,"widget" ]
-
 +++
 
 On Kickstarter most app ideas don't get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.

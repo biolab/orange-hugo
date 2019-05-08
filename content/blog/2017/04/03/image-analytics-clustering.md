@@ -5,8 +5,6 @@ draft= false
 title="Image Analytics: Clustering"
 type="blog"
 categories=["addons" ,"analysis" ,"clustering" ,"embedding" ,"images" ,"interactive  data visualization" ,"orange3" ,"unsupervised" ]
-tags=["clustering" ,"embeddings" ,"hierarchical clustering" ,"image analysis" ,"image analytics" ,"image embedding" ,"imagenet" ]
-
 +++
 
 Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.

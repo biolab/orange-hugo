@@ -5,9 +5,6 @@ draft= false
 title="Text Analysis: New Features"
 type="blog"
 categories=["analysis" ,"dataloading" ,"examples" ,"features" ,"orange3" ,"release"  ,"text mining" ,"version" ,"widget" ,"workshop" ]
-tags=["import documents" ,"import text" ,"sentiment analysis" ,"text" ,"text mining"
-  ,"textual analysis" ,"topic modelling" ]
-
 +++
 
 As always, we've been working hard to bring you new functionalities and improvements. Recently, we've released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._

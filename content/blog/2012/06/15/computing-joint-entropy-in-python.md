@@ -5,8 +5,6 @@ draft= false
 title="Computing joint entropy (in Python)"
 type="blog"
 categories=["orange3" ,"python" ]
-tags=["entropy" ,"python" ]
-
 +++
 
 How I wrote a beautiful, general, and super fast joint entropy method (in Python).

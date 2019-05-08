@@ -5,8 +5,6 @@ draft= false
 title="GSoC Review: MF - Matrix Factorization Techniques for Data Mining"
 type="blog"
 categories=["gsoc" ,"matrixfactorization" ]
-tags=["gsoc" ,"matrixfactorization" ]
-
 +++
 
 MF - Matrix Factorization Techniques for Data Mining is a Python scripting library which includes a number of published matrix factorization algorithms, initialization methods, quality and performance measures and facilitates the combination of these to produce new strategies. The library represents a unified and efficient interface to matrix factorization algorithms and methods.

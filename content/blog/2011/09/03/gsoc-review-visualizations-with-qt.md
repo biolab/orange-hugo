@@ -5,8 +5,6 @@ draft= false
 title="GSoC Review: Visualizations with Qt"
 type="blog"
 categories=["gsoc" ,"plot" ,"qt" ,"visualization" ]
-tags=["gsoc" ,"plot" ,"qt" ,"visualization" ]
-
 +++
 
 During the course of this summer, I created a new plotting library for Orange plot, replacing the use of PyQwt. I can say that I have succesfully completed my project, but the library (and especially the visualization widgets) could still use some more work. The new library supports a similar interface, so little change is needed to convert individual widgets, but it also has several advantages over the old implementation:  

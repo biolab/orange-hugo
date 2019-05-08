@@ -5,8 +5,6 @@ draft= false
 title="Text Workshops in Ljubljana"
 type="blog"
 categories=["addons" ,"text mining" ,"update" ,"workshop" ]
-tags=["corpora" ,"lexicon" ,"sentiment analysis" ,"slovenian" ,"text mining" ,"workshop"]
-
 +++
 
 In the past month, we had two workshops that focused on text mining. The first one, [Faksi v praksi](https://www.kc.uni-lj.si/novice/poletna-ola-faksi-v-praksi.html), was organized by the [University of Ljubljana Career Centers](https://kc.uni-lj.si/domov.html), where high school students learned about what we do at the [Faculty of Computer and Information Science](https://fri.uni-lj.si/en). We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs. This time, we did not only cluster documents, but also built predictive models, explored predictions in nomogram, plotted documents on a map and discovered how to find the emotion in a tweet.

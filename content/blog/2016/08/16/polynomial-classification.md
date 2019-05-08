@@ -5,9 +5,6 @@ draft= false
 title="Visualization of Classification Probabilities"
 type="blog"
 categories=["addons" ,"classification" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
-tags=["classification" ,"educational" ,"gsoc" ,"gsoc2016" ,"orange3" ,"polynomial"
-  ,"widget" ]
-
 +++
 
 _This is a guest blog from the Google Summer of Code project._

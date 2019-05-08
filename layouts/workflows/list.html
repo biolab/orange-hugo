@@ -4,7 +4,7 @@
     <div class="container page-background getting-started">
         <div style="text-align: center">
            <h2 style="font-size: 34px;margin-top: 0px;" >
-              scOrange Workflows
+              Orange Workflows
            </h2>
         </div>
     <div class="row" style="padding-left: 20px;">
@@ -32,9 +32,9 @@
     {{ range $index, $element := .Paginator.Pages }}
         <div class=" row">
             {{ if eq (mod $index 2) 0 }}
-            <div class='content col-md-6 col-xs-12 feature-description pull-left' style="padding-top: 60px;">
+            <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
             {{else}}
-            <div class='content col-md-6 col-xs-12 feature-description pull-right' style="padding-top: 60px;">
+            <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
             {{end}}
                 <h2 class="workflow-title">
                     {{ .Title }}
@@ -149,7 +149,7 @@
         $("#post_nor").hide();
     
 
-        var results  = search(param);
+        var results  = search_workflow(param);
         
         $("#search-results").show();
         var search_results = document.getElementById('search-results')
@@ -159,14 +159,15 @@
         else{
         search_results.innerHTML = "";
         var html_el = ""
+        console.log(results)
 
         for(var page in results){
             html_el += '<div class="row">';
             if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left">';
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left text-workflow" >';
             }
             else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right">';
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right text-workflow">';
             }
             html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
 

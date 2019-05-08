@@ -33,9 +33,9 @@
     {{ range $index, $element := .Paginator.Pages }}
         <div class=" row">
             {{ if eq (mod $index 2) 0 }}
-            <div class='content col-md-6 col-xs-12 feature-description pull-left' style="padding-top: 60px;">
+            <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
             {{else}}
-            <div class='content col-md-6 col-xs-12 feature-description pull-right' style="padding-top: 60px;">
+            <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
             {{end}}
                 <h2 class="workflow-title">
                     {{ .Title }}
@@ -167,10 +167,10 @@
         for(var page in results){
             html_el += '<div class="row">';
             if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left">';
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left text-workflow">';
             }
             else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right">';
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right text-workflow">';
             }
             html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
 

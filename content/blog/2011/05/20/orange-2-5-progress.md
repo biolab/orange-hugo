@@ -5,8 +5,6 @@ draft= false
 title="Orange 2.5 progress"
 type="blog"
 categories=["orange25" ]
-tags=["orange25" ]
-
 +++
 
 We decided that we should reorganize Orange to provide more intuitive interface to the scripting interface. The next release, Orange 2.5 is getting better every day. But fear not, dear reader, we are working hard to ensure that your scripts will still work.

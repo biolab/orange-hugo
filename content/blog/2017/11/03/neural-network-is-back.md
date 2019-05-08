@@ -5,8 +5,6 @@ draft= false
 title="Neural Network is Back!"
 type="blog"
 categories=["classification" ,"neuralnetwork" ,"orange3" ,"regression" ,"widget"  ]
-tags=["classification" ,"neural networks" ,"orange3" ,"predictive model" ,"regression" ,"widget" ]
-
 +++
 
 We know you've missed it. We've been getting many requests to bring back Neural Network widget, but we also had many reservations about it.

@@ -6,8 +6,6 @@ title="Rule Induction (Part I - Scripting)"
 type="blog"
 categories=["classification" ,"gsoc2016" ,"orange3" ]
 post_format=["Quote" ]
-tags=["cn2" ,"gsoc" ,"predictive induction" ,"rule induction" ,"rules" ]
-
 +++
 
 _This is a guest blog from the Google Summer of Code project._

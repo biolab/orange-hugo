@@ -5,8 +5,6 @@ draft= false
 title="Orange badges are here!"
 type="blog"
 categories=["orange3" ]
-tags=["badges" ]
-
 +++
 
 Orange badges are here! They come in two flavors. Tasty!

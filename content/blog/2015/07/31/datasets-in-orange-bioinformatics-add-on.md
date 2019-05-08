@@ -5,8 +5,6 @@ draft= false
 title="Datasets in Orange Bioinformatics Add-On"
 type="blog"
 categories=["addons" ,"analysis" ,"bioinformatics" ,"bioorange" ,"data" ,"dataloading"  ]
-tags=["add-on" ,"bioinformatics" ,"data sets" ,"dictyExpress" ,"GenExpress" ,
-"GEO data sets" ,"PIPAx" ]
 
 +++
 

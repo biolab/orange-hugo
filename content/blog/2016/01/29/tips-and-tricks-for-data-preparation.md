@@ -5,8 +5,6 @@ draft= false
 title="Tips and Tricks for Data Preparation"
 type="blog"
 categories=["data" ,"dataloading" ]
-tags=["csv" ,"data" ,"excel" ,"purging" ,"sublime" ]
-
 +++
 
 Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier. 

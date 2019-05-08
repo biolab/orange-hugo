@@ -8,17 +8,15 @@ disqusShortname = "localblog-2"
   [outputFormats.workflow]
     mediaType = "application/json"
     baseName = "workflow"
-    notAlternative = true
   [outputFormats.blog]
     mediaType = "application/json"
     baseName = "blog"
-    notAlternative = true
 
 [outputs]
   home = [ "HTML", "workflow", "blog"]
 
-
 [taxonomies]
+  tag = "tags"
   category = "categories"
 
 [menu]

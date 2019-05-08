@@ -5,8 +5,6 @@ draft= false
 title="Data Fusion Tutorial at the [BC]^2"
 type="blog"
 categories=["bioinformatics" ,"data-fusion" ,"orange3" ]
-tags=["bioinformatics" ,"data-fusion" ,"tutorial" ]
-
 +++
 
 We are excited to host a three-hour tutorial on data fusion at the [Basel Computational Biology Conference](http://www.bc2.ch/2015/). To this end we have prepared a series of [short lectures notes](http://helikoid.si/bc215/bc2-handouts.pdf) that accompany the recently developed [Data Fusion Add-on for Orange](/blog/2015/06/05/data-fusion-add-on-for-orange/).

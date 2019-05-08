@@ -5,8 +5,6 @@ draft= false
 title="SQL for Orange"
 type="blog"
 categories=["data" ,"orange3" ,"sql" ]
-tags=["psycopg2" ,"sql" ,"sqltable" ]
-
 +++
 
 We bet you've always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don't worry, we're coming to the rescue.

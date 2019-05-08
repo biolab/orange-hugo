@@ -5,8 +5,6 @@ draft= false
 title="Overfitting and Regularization"
 type="blog"
 categories=["analysis" ,"education" ,"examples" ,"orange3" ,"overfitting" ,"plot"  ,"regression" ,"tutorial" ]
-tags=["coefficients" ,"overfitting" ,"polynomial" ,"regression" ,"regularization"]
-
 +++
 
 A week ago I used [Orange](http://orange.biolab.si) to explain the effects of regularization. This was the second lecture in the Data Mining class, the first one was on linear regression. My introduction to the benefits of regularization used a simple data set with a single input attribute and a continuous class. I drew a data set in Orange, and then used Polynomial Regression widget (from Prototypes add-on) to plot the linear fit. This widget can also expand the data set by adding columns with powers of original attribute x, thereby augmenting the training set with x^p, where x is our original attribute and p an integer going from 2 to K. The polynomial expansion of data sets allows linear regression model to nicely fit the data, and with higher K to overfit it to extreme, especially if the number of data points in the training set is low.

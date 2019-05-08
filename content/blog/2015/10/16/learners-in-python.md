@@ -5,8 +5,6 @@ draft= false
 title="Learners in Python"
 type="blog"
 categories=["classification" ,"examples" ,"orange3" ,"python" ,"scripting" ]
-tags=["classification" ,"orange3" ,"predictions" ,"probability" ,"python" ]
-
 +++
 
 We've already written about [classifying instances in Python](/blog/2015/08/14/classifying-instances-with-orange-in-python/). However, it's always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.

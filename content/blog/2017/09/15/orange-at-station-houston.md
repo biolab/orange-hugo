@@ -5,8 +5,6 @@ draft= false
 title="Orange at Station Houston"
 type="blog"
 categories=["clustering" ,"images" ,"orange3" ,"workshop" ]
-tags=["beginner" ,"houston" ,"workshop" ]
-
 +++
 
 With over 262 member companies, [Station Houston](http://stationhouston.com) is the largest hub for tech startups in Houston.

@@ -5,8 +5,6 @@ draft= false
 title="Earth - Multivariate adaptive regression splines"
 type="blog"
 categories=["regression" ]
-tags=["earth" ,"mars" ,"regression" ]
-
 +++
 
 There have recently been some additions to the lineup of Orange learners. One of these is Orange.regression.earth.EarthLearner. It is an Orange interface to the [Earth](http://www.milbo.users.sonic.net/earth/) library written by Stephen Milborrow implementing [Multivariate adaptive regression splines](http://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines).

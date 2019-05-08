@@ -5,9 +5,6 @@ draft= false
 title="Text Preprocessing"
 type="blog"
 categories=["orange3" ,"preprocessing" ,"text mining" ,"visualization" ]
-tags=["grimms tales" ,"preprocess" ,"preprocessing" ,"text analytics" ,"text mining"
-  ,"word cloud" ]
-
 +++
 
 In data mining, preprocessing is key. And in text mining, it is the key and the door. In other words, it's the most vital step in the analysis.

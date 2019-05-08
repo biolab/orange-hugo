@@ -5,8 +5,6 @@ draft= false
 title="Association Rules in Orange"
 type="blog"
 categories=["addons" ,"analysis" ,"association rules" ,"business intelligence" ,"examples"  ,"orange3" ,"toolbox" ]
-tags=["association" ,"basket" ,"business" ,"itemsets" ,"rules" ]
-
 +++
 
 Orange is welcoming back one of its more exciting add-ons: [Associate](https://pypi.python.org/pypi/Orange3-Associate)! [Association rules](https://en.wikipedia.org/wiki/Association_rule_learning) can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!

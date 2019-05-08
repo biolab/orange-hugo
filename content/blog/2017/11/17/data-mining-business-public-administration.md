@@ -5,9 +5,6 @@ draft= false
 title="Data Mining for Business and Public Administration"
 type="blog"
 categories=["business intelligence" ,"clustering" ,"examples" ,"workshop" ]
-tags=["business intelligence" ,"clustering" ,"customer segmentation" ,
-"hierarchical clustering" ,"workshop" ]
-
 +++
 
 We've been having a blast with recent Orange workshops. While Blaž was getting tanned in India, Anže and I went to the charming Liverpool to hold a session for business school professors on how to teach business with Orange.

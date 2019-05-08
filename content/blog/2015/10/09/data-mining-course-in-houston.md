@@ -5,8 +5,6 @@ draft= false
 title="Data Mining Course in Houston"
 type="blog"
 categories=["dataloading" ,"education" ,"orange3" ,"visualization" ,"workshop" ]
-tags=["baylor" ,"BCM" ,"googlesheets" ,"orange3" ]
-
 +++
 
 We have just completed an Introduction to Data Mining, a graduate course at [Baylor College of Medicine](https://www.bcm.edu) in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.

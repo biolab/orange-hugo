@@ -5,8 +5,6 @@ draft= false
 title="New canvas"
 type="blog"
 categories=["canvas" ,"features" ]
-tags=["bundles" ,"canvas" ,"install" ,"orange2" ]
-
 +++
 
 Orange Canvas, a visual programming environment for Orange, has been around for a while. Integrating new and new features degraded the quality of code to a point where further development proved to be a daunting task. With ever increasing number of widgets, the existing widget toolbar is becoming harder and harder to use, but improving it is really hard. For that reason, we decided Orange needs a new Canvas, a rewrite, that would keep all of the feature of the existing one, but introduce the needed structure and modularity to the source code.

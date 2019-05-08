@@ -6,9 +6,6 @@ title="How to Properly Test Models"
 type="blog"
 categories=["analysis" ,"classification" ,"education" ,"overfitting" ,
 "predictive  analytics" ,"scoring" ,"workshop" ]
-tags=["overfitting" ,"predictive modelling" ,"surs" ,"test data" ,"training data"
-  ,"validation data" ,"workshop" ]
-
 +++
 
 On Monday we finished the second part of the workshop for the [Statistical Office](http://www.stat.si/StatWeb/en) of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!

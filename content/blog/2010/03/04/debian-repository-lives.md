@@ -5,7 +5,6 @@ draft= false
 title="Debian repository lives!"
 type="blog"
 categories=["debian" ,"distribution" ,"download" ,"packaging" ]
-tags=["debian" ,"distribution" ,"download" ,"packaging" ]
 
 +++
 

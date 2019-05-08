@@ -1104,6 +1104,12 @@ h2.docs-subtitle {
   cursor: pointer;
 }
 
+/*#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}*/
+
 #myUL ul{
   padding-left: 0px !important;
 }
@@ -1146,9 +1152,22 @@ h2.docs-subtitle {
 
 
 .active-tag {
-    background-color: rgb(224, 165, 40, 0.9) !important;
+    background-color: rgb(33,150,243, 0.3) !important;
+}
+
+.workflow-image{
+  padding:20px;
+  width: 500px;
+  height: 300px;
 }
 
 #post_nor .row {
-    margin-top: 50px !important;
+    margin-top: 10px !important;
   }
+
+#search_results .row{
+  margin-top: 10px !important;
+}
+.text-workflow{
+  padding-top: 60px;
+}

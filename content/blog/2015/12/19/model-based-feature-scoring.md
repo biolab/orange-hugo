@@ -5,8 +5,6 @@ draft= false
 title="Model-Based Feature Scoring"
 type="blog"
 categories=["analysis" ,"classification" ,"features" ,"regression" ,"scoring" ]
-tags=["features" ,"ranking" ,"regression" ,"scoring" ]
-
 +++
 
 Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression. Same holds for feature weight: any change of parameters of the modeling techniques would change the resulting feature scores.

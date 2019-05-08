@@ -5,8 +5,6 @@ draft= false
 title="Text Analysis Workshop at Digital Humanities 2017"
 type="blog"
 categories=["classification" ,"conference" ,"education" ,"interactive data visualization"  ,"workshop" ]
-tags=["dh2017" ,"digital humanities" ,"orange" ,"text analysis" ,"text mining" ,"workshop"]
-
 +++
 
 How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?

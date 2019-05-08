@@ -4,9 +4,7 @@ date= '2016-06-10 12:37:50+00:00'
 draft= false
 title="Scripting with Time Variable"
 type="blog"
-categories=["data" ,"examples" ,"scripting" ]
-tags=["datatable" ,"datetime" ,"orange3" ,"python3" ,"timevariable" ]
-
+categories=["data" ,"examples" ,"scripting", "orange3" ]
 +++
 
 It's always fun to play around with data. And since Orange can, as of a few months ago, read temporal data, we decided to parse some data we had and put it into Orange.

@@ -5,8 +5,6 @@ draft= false
 title="New in Orange: Partial least squares regression"
 type="blog"
 categories=["multitarget" ,"pls" ,"regression" ]
-tags=["multitarget" ,"pls" ,"regression" ]
-
 +++
 
 [Partial least squares regression](http://en.wikipedia.org/wiki/Partial_least_squares_regression) is a regression technique which supports multiple response variables. PLS regression is very popular in areas such as bioinformatics, chemometrics etc. where the number of observations is usually less than the number of measured variables and where there exists multicollinearity among the predictor variables. In such situations, standard regression techniques would usually fail. The PLS regression is now available in Orange (see [documentation](/doc/reference/Orange.regression.pls))!

@@ -5,9 +5,6 @@ draft= false
 title="Model replaces Classify and Regression"
 type="blog"
 categories=["classification" ,"features" ,"interface" ,"orange3" ,"prediction" ,"predictive  analytics" ,"regression" ,"toolbox" ,"update" ]
-tags=["classification tree" ,"classify" ,"decision tree" ,"model" ,
-"prediction models" ,"predictive modelling" ,"regression" ,"regression tree" ]
-
 +++
 
 Did you recently wonder where did Classification Tree go? Or what happened to Majority?

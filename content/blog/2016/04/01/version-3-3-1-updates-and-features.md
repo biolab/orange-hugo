@@ -5,7 +5,6 @@ draft= false
 title="Version 3.3.1 - Updates and Features"
 type="blog"
 categories=["distribution" ,"orange3" ,"release" ,"version" ]
-tags=["datetime" ,"distance" ,"distancematrix" ,"distancetransformation" ,"rankscores" ,"report" ,"timevariable" ,"version3.3.1" ]
 
 +++
 

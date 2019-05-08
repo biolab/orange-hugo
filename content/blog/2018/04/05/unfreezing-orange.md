@@ -5,8 +5,6 @@ draft= false
 title="Unfreezing Orange"
 type="blog"
 categories=["neuralnetwork" ,"orange3" ,"parallelization" ,"performance" ,"programming"  ,"python" ,"qt" ]
-tags=["neural networks" ,"parallelization" ,"programming" ,"qt" ,"responsiveness"]
-
 +++
 
 Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.

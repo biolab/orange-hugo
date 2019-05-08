@@ -5,8 +5,6 @@ draft= false
 title="Brief History of Orange, Praise to Donald Michie"
 type="blog"
 categories=["history" ]
-tags=["history" ,"michie" ]
-
 +++
 
 [Informatica](http://www.informatica.si/) has recently published [our paper on the history of Orange](http://www.informatica.si/PDF/37-1/09_Demsar%20-%20Orange%20-%20Data%20Mining%20Fruitful%20and%20Fun%20-%20A%20Historical%20Perspective.pdf). The paper is a post-publication from a [Conference on 100 Years of Alan Turing and 20 Years of Slovene AI Society](http://videolectures.net/is2012_turingslais2012/), where Janez Demšar gave a [talk](http://videolectures.net/is2012_demsar_orange/) on the topics.

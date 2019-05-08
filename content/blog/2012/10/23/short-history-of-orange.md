@@ -5,8 +5,6 @@ draft= false
 title="Short history of Orange"
 type="blog"
 categories=["future" ,"history" ]
-tags=["future" ,"history" ]
-
 +++
 
 Few weeks back we celebrated [20 years of Slovene Artificial Intelligence Society](http://ailab.ijs.si/dunja/TuringSLAIS-2012/). I have much enjoyed Ivan Bratko's talk on AI history, and his account of events as triggered by late Donald Michie. Many interesting talks followed, including highlights by Stephen Muggleton and Claude Sammut.

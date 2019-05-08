@@ -5,8 +5,6 @@ draft= false
 title="Updated Widget Documentation"
 type="blog"
 categories=["documentation" ,"orange3" ,"widget" ]
-tags=["documentation" ,"help" ,"widgets" ]
-
 +++
 
 Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.

@@ -5,8 +5,6 @@ draft= false
 title="Hierarchical Clustering: A Simple Explanation"
 type="blog"
 categories=["clustering" ,"education" ,"plot" ]
-tags=["clustering" ,"distance" ,"euclidean" ,"hiearchicalclustering" ]
-
 +++
 
 One of the key techniques of exploratory data mining is clustering – separating instances into distinct groups based on some measure of similarity. We can estimate the similarity between two data instances through euclidean (pythagorean), manhattan (sum of absolute differences between coordinates) and mahalanobis distance (distance from the mean by standard deviation), or, say, through Pearson correlation or Spearman correlation.

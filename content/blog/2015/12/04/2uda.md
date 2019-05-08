@@ -5,8 +5,6 @@ draft= false
 title="2UDA"
 type="blog"
 categories=["sql" ]
-tags=["2uda" ,"postgresql" ,"psycopg2" ]
-
 +++
 
 In one of the [previous blog posts](/blog/2015/10/19/sql-for-orange/) we mentioned that installing the optional dependency _psycopg2_ allows Orange to connect to [PostgreSQL](http://www.postgresql.org/) databases and work directly on the data stored there.

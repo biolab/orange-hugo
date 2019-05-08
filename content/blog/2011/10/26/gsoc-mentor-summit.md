@@ -5,8 +5,6 @@ draft= false
 title="GSoC Mentor Summit"
 type="blog"
 categories=["gsoc" ]
-tags=["gsoc" ,"summit" ]
-
 +++
 
 On 22th and 23th October 2011 there was [Google Summer of Code](https://code.google.com/soc/) [Mentor Summit](http://gsoc-wiki.osuosl.org/index.php/2011) in [Mountain View, California](http://en.wikipedia.org/wiki/Mountain_View,_California). Google Summer of Code is Google's program for encouraging students to work on open-source projects during their summer break. Because this year Orange participated in this program too, we decided to participate also in this summit and get to know other mentors, other open-source projects and organizations, exchange our experiences, learn something new, and improve our connections and collaborations with others.

@@ -5,8 +5,6 @@ draft= false
 title="Data Fusion Add-on for Orange"
 type="blog"
 categories=["addons" ,"bioinformatics" ,"data-fusion" ,"orange3" ]
-tags=["data-fusion" ,"orange3" ,"predictive modelling" ,"recommendation systems"]
-
 +++
 
 Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for **predictive modelling** and **recommendation systems**.

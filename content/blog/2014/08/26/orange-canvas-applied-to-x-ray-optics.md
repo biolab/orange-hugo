@@ -5,8 +5,6 @@ draft= false
 title="Orange Canvas applied to x-ray optics"
 type="blog"
 categories=["computervision" ]
-tags=["optics" ,"orange canvas" ]
-
 +++
 
 Orange Canvas is being appropriated by guys who would like to use it as graphical environment for simulating x-ray optics.

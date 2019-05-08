@@ -5,8 +5,6 @@ draft= false
 title="Miniconda Installer"
 type="blog"
 categories=["distribution" ,"download" ,"orange3" ]
-tags=["anaconda" ,"installer" ,"miniconda" ,"orange" ]
-
 +++
 
 Orange has a new friend! It's Miniconda, Anaconda's little sister.
