@@ -1,6 +1,30 @@
 {{ define "main"}}
-<div>
-    
-</div>
 
-{{end }}
+<section class="features section padding-bottom " style="padding-top: 100px;">
+    <div class="container page-background getting-started">
+       {{ range .Pages.ByWeight }}
+    	<div class="row">
+	        <div class='content col-md-6 col-xs-12 feature-description pull-{{if (eq .Params.thumbnailImagePosition "left")}}right{{else}}left{{ end }}'>
+	            <h2 class="feature-title">
+	                {{ .Title }}
+	            </h2>
+	            <p class="feature-text">{{ .Content }}</p>
+	            <div class="getting-started-button">
+	                {{ if isset .Params "button"}}
+	                 {{ if .Params.button }}
+	                <a class="btn btn-warning" href="{{.Params.buttonURL}}">{{.Params.buttonText}}
+	                    </a>
+	                    {{end}}
+	                    {{end}}
+	            </div>
+	        </div>
+	        <div class='content col-md-6 col-xs-12 {{if (eq .Params.thumbnailImagePosition "left") }}{{else }}panel-left{{ end }}'>
+	                <img class='image {{.Params.thumbnailImagePosition}}' src="{{ .Params.image}}" style="padding:40px;">
+	        </div>
+		</div>
+        {{ end }}
+        
+   </div>
+</section>
+
+{{ end }}
