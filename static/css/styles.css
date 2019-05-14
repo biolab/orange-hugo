@@ -1022,16 +1022,23 @@ svg{
 
 @media (min-width: 1350px) {
   .downloadsize{
-    padding-left:25%;
-    padding-right:25%;
+    padding-left:8%;
+    padding-right:8%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .downloadsize{
+    padding-left:10%;
+    padding-right:10%;
   }
 }
 
 
 @media (max-width: 1349px) {
   .downloadsize{
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:8%;
+    padding-right:8%;
   }
 }
 
