@@ -5,8 +5,6 @@ draft= false
 title="This year five students participate in Google Summer of Code"
 type="blog"
 categories=["gsoc" ]
-tags=["gsoc" ]
-
 +++
 
 This year five students have been accepted to participate in [Google Summer of Code](https://www.google-melange.com/gsoc/homepage/google/gsoc2012) and contribute to Orange in their summer time. Congratulations!  

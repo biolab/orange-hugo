@@ -1,4 +1,4 @@
-[{{ range $index, $page := where .Pages.ByDate.Reverse  "Section" "blog" }}
+[{{ range $index, $page := where .Pages.ByDate.Reverse  "Type" "blog" }}
 {{- if ne $page.Type "json" -}}
 {{- if and $index (gt $index 0) -}},{{- end }}
 {

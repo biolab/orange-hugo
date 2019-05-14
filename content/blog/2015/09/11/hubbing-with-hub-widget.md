@@ -5,8 +5,6 @@ draft= false
 title="Hubbing with the Hub widget"
 type="blog"
 categories=["addons" ,"data" ,"download" ,"orange3" ,"widget" ]
-tags=["add-on" ,"hub" ,"prototype" ,"widget" ]
-
 +++
 
 So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the **Paint data** widget and the **File** widget back and forth whenever you switch between them?

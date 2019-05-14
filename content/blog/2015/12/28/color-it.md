@@ -5,8 +5,6 @@ draft= false
 title="Color it!"
 type="blog"
 categories=["orange3" ,"plot" ,"visualization" ,"widget" ]
-tags=["color" ,"plot" ,"visualization" ,"widget" ]
-
 +++
 
 Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!

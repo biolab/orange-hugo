@@ -5,8 +5,6 @@ draft= false
 title="Biolab retreat Februar 2011"
 type="blog"
 categories=["bohinj" ,"orange25" ,"retreat" ]
-tags=["bohinj" ,"orange25" ,"retreat" ]
-
 +++
 
 From Wednesday, 2nd February 2011, to Saturday, 5th February 2011, we have been on working retreat at [Lake Bohinj](http://en.wikipedia.org/wiki/Lake_Bohinj). The whole [Bioinformatics Laboratory](http://www.biolab.si/) of the [Faculty of Computer and Information technology](http://www.fri.uni-lj.si/) has temporary moved to a nice house just few meters from the lake, enjoing the nature and without any distractions. Plan: working on the next version of Orange, [Orange 2.5](http://orange.biolab.si/trac/intertrac/wiki%3AOrange25) and documentation rewrite. Orange 2.5 will have a better and restructured Python scripting interface along with great and shinny documentation.

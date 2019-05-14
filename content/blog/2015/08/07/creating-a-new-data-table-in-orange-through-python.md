@@ -5,8 +5,6 @@ draft= false
 title="Creating a new data table in Orange through Python"
 type="blog"
 categories=["data" ,"examples" ,"python" ]
-tags=["data" ,"data table" ,"dataloading" ,"python" ]
-
 +++
 
 **IMPORT DATA**

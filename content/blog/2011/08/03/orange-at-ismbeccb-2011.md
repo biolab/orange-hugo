@@ -5,8 +5,6 @@ draft= false
 title="Orange at ISMB/ECCB 2011"
 type="blog"
 categories=["bioinformatics" ,"bioorange" ,"conference" ]
-tags=["bioinformatics" ,"bioorange" ,"conference" ]
-
 +++
 
 We presented the [Orange Bioinformatics add-on](/bio/) at the [ISMB/ECCB](http://www.iscb.org/ismbeccb2011/) conference in Vienna, a joined event covering both 19th Annual International Conference on Intelligent Systems for Molecular Biology and 10th European Conference on Computational Biology.

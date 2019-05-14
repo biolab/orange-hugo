@@ -5,7 +5,6 @@ draft= false
 title="Network Add-on Published in JSS"
 type="blog"
 categories=["addons" ,"network" ]
-
 +++
 
 NetExplorer, a widget for network exploration, was in orange for over 5 years. Several network analysis widgets were added to Orange since, and we decided to move the entire network functionality to an [Orange Network add-on](https://pypi.python.org/pypi/Orange-Network).

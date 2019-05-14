@@ -5,8 +5,6 @@ draft= false
 title="Interactive k-Means"
 type="blog"
 categories=["addons" ,"clustering" ,"education" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
-tags=["addon" ,"educational" ,"gsoc" ,"gsoc2016" ,"kmeans" ,"orange3" ,"widget"]
-
 +++
 
 _This is a guest blog from the Google Summer of Code project._

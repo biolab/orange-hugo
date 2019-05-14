@@ -5,8 +5,6 @@ draft= false
 title="Orange is Getting Smarter"
 type="blog"
 categories=["analysis" ,"interface" ,"orange3" ]
-tags=["edit links" ,"interface" ,"ux" ,"widgets" ]
-
 +++
 
 In the past few months, Orange has been getting smarter and sleeker.

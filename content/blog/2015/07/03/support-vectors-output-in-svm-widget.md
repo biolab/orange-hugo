@@ -5,8 +5,6 @@ draft= false
 title="Support vectors output in SVM widget"
 type="blog"
 categories=["classification" ,"orange3" ,"visualization" ]
-tags=["classification" ,"support vectors" ,"svm" ,"visualization" ]
-
 +++
 
 Did you know that the widget for **support vector machines** (SVM) classifier can output support vectors? And that you can visualise these in any other Orange widget? In the context of all other data sets, this could provide some extra insight into how this popular classification algorithm works and what it actually does.

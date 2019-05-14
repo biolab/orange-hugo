@@ -5,8 +5,6 @@ draft= false
 title="Installing Add-ons Works Again"
 type="blog"
 categories=["addons" ,"download" ,"pypi" ,"release" ,"update" ]
-tags=["add-ons" ,"installation" ,"pip" ,"pypi" ]
-
 +++
 
 Dear Orange users,

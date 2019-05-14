@@ -5,8 +5,6 @@ draft= false
 title="Orange has been accepted into GSoC 2011"
 type="blog"
 categories=["gsoc" ]
-tags=["gsoc" ]
-
 +++
 
 This year Orange has been accepted into the [Google summer of Code](http://socghop.appspot.com/gsoc/homepage/google/gsoc2011) program as a mentoring organization. It is one of [175 open-source organizations/projects/groups](http://socghop.appspot.com/gsoc/accepted_orgs/google/gsoc2011) which will this year mentor students while they will be working on those accepted open source projects.

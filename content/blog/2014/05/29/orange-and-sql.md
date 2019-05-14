@@ -5,8 +5,6 @@ draft= false
 title="Orange and SQL"
 type="blog"
 categories=["orange3" ]
-tags=["axle" ,"orange3" ,"sql" ]
-
 +++
 
 Orange 3.0 will also support working with data stored in a database.

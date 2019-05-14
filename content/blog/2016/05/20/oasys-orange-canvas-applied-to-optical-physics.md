@@ -4,9 +4,7 @@ date= '2016-05-20 08:05:21+00:00'
 draft= false
 title="Oasys: Orange Canvas applied to Optical Physics"
 type="blog"
-categories=["canvas" ]
-tags=["elettra" ,"esrf" ,"oasys" ,"orangecanvas" ,"physics" ,"synchrotron" ]
-
+categories=["elettra" ,"esrf" ,"oasys" ,"orangecanvas" ,"physics" ,"synchrotron" ]
 +++
 
 This week we’re hosting experts in optical physics from [Elettra Sincrotrone Trieste](https://www.elettra.eu/) and [European Synchrotron Radiation Facility](http://www.esrf.eu/) in our laboratory. For a long time they have been interested in developing a user interface that integrates different simulation tools and data analysis software within one environment. It all came true with Orange Canvas and the [OASYS system](http://www.elettra.eu/oasys.html). We’ve already [written about this](/blog/2014/08/26/orange-canvas-applied-to-x-ray-optics/) two years ago, when the idea first came up. Now the actual software is ready and is being used by researchers for everyday analysis and prototyping.

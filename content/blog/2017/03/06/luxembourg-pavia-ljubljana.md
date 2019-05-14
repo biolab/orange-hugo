@@ -5,9 +5,6 @@ draft= false
 title="Orange Workshops: Luxembourg, Pavia, Ljubljana"
 type="blog"
 categories=["bioinformatics" ,"education" ,"embedding" ,"orange3" ,"workshop" ]
-tags=["bioinformatics" ,"explanation of predictions" ,"GOMapMan Ontology" ,
-"machine learning" ,"statistics" ,"workshop" ]
-
 +++
 
 February was a month of [Orange](http://orange.biolab.si) workshops.

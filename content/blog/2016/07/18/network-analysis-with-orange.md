@@ -5,8 +5,6 @@ draft= false
 title="Network Analysis with Orange"
 type="blog"
 categories=["addons" ,"analysis" ,"examples" ,"network" ,"orange3" ,"visualization"  ]
-tags=["distances" ,"edges" ,"graph" ,"network" ,"nodes" ]
-
 +++
 
 Visualizing relations between data instances can tell us a lot about our data. Let's see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it's about the principle. :) We've got two data files: one is a distance file with distance scores already calculated by [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index) and the other is a standard conferences.tab file.

@@ -5,9 +5,6 @@ draft= false
 title="Visualizing Misclassifications"
 type="blog"
 categories=["analysis" ,"classification" ,"visualization" ]
-tags=["classification" ,"confusion matrix" ,"misclassified instances" ,
-"scatter plot" ,"visualization" ]
-
 +++
 
 In data mining **[classification](https://en.wikipedia.org/wiki/Statistical_classification)** is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.

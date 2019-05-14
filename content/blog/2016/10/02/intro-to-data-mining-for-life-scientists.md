@@ -5,8 +5,6 @@ draft= false
 title="Intro to Data Mining for Life Scientists"
 type="blog"
 categories=["bioinformatics" ,"bioorange" ,"education" ,"orange3" ,"tutorial" ,"workshop"  ]
-tags=["bioinformatics" ,"datamining" ,"education" ,"workshop" ]
-
 +++
 
 [RNA Club Munich](http://www.helmholtz-muenchen.de/rna-club/index.html) has organized [Molecular Life of Stem Cells Conference](https://www.stemcells2016.org) in Ljubljana this past Thursday, Friday and Saturday. They asked us to organize a [four-hour workshop on data mining](https://www.stemcells2016.org/program/workshops/2-introduction-to-data-mining/index.html). And here we were: four of us, Ajda, Anze, Marko and myself (Blaz) run a workshop for 25 students with molecular biology and biochemistry background.

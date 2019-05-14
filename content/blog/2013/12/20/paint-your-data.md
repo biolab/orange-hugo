@@ -5,8 +5,6 @@ draft= false
 title="Paint Your Data"
 type="blog"
 categories=["data" ,"visualization" ]
-tags=["data" ,"visualization" ]
-
 +++
 
 One of the widgets I enjoy very much when teaching introductory course in data mining is the [Paint Data](http://docs.orange.biolab.si/latest/widgets/rst/data/paintdata) widget. When painting in this widget I would intentionally include some clusters, or intentionally obscure them. Or draw them in any strange shape. Then I would discuss with students if these clusters are identified by [k-means clustering](http://docs.orange.biolab.si/latest/widgets/rst/unsupervized/kmeansclustering) or by hierarchical clustering. We would also discuss automatic scoring of the quality of clusters, come up with the idea of a [silhouette](http://en.wikipedia.org/wiki/Silhouette_(clustering)) (ok, already invented, but helps if you get this idea on your own as well). And then we would play with various data sets and clustering techniques and their parameters in Orange.

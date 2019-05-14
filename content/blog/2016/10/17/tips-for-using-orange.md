@@ -5,8 +5,6 @@ draft= false
 title="10 Tips and Tricks for Using Orange"
 type="blog"
 categories=["documentation" ,"education" ,"features" ,"interface" ,"orange3" ]
-tags=["documentation" ,"orange3" ,"tips" ,"tricks" ,"tutorial" ]
-
 +++
 
 TIP #1: **Follow tutorials and example workflows to get started.**

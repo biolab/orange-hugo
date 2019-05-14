@@ -5,8 +5,6 @@ draft= false
 title="Outliers in Traffic Signs"
 type="blog"
 categories=["addons" ,"analysis" ,"images" ,"interactive data visualization" ,"orange3"  ,"visualization" ]
-tags=["image analytics" ,"image embedding" ,"silhouette" ,"silhouette plot" ]
-
 +++
 
 Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.

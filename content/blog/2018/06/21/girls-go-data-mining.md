@@ -5,8 +5,6 @@ draft= false
 title="Girls Go Data Mining"
 type="blog"
 categories=["clustering" ,"education" ,"interactive data visualization" ,"workshop"  ]
-tags=["box plot" ,"connection" ,"data mining" ,"girls" ,"girls go data mining" ,"output" ,"workshop" ]
-
 +++
 
 This week we held our first Girls Go Data Mining workshop. The workshop brought together curious women and intuitively introduced them to essential data mining and machine learning concepts. Of course, we used Orange to explore visualizations, build predictive models, perform clustering and dive into text analysis. The workshop was supported by [NumFocus](https://www.numfocus.org/) through their [small development grant](https://www.numfocus.org/programs/grants-sponsored-events) initiative and we hope to repeat it next year with even more ladies attending!

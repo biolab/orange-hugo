@@ -5,8 +5,6 @@ draft= false
 title="Data loading speedups"
 type="blog"
 categories=["dataloading" ,"performance" ]
-tags=["dataloading" ,"performance" ]
-
 +++
 
 Orange has been loading data faster since the end of February, especially if there are many attributes in the file.

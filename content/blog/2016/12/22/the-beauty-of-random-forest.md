@@ -5,9 +5,6 @@ draft= false
 title="The Beauty of Random Forest"
 type="blog"
 categories=["classification" ,"interactive data visualization" ,"orange3" ,"regression"  ,"tree" ,"visualization" ]
-tags=["classification tree" ,"Pythagoras trees" ,"pythagoreantree" ,"random forest"
-  ,"regression tree" ,"visualization" ]
-
 +++
 
 It is the time of the year when we adore Christmas trees. But these are not the only trees we, at Orange team, think about. In fact, through almost life-long professional deformation of being a data scientist, when I think about trees I would often think about classification and regression trees. And they can be beautiful as well. Not only for their elegance in explaining the hidden patterns, but aesthetically, when rendered in Orange. And even more beautiful then a single tree is Orange's rendering of a forest, that is, a random forest.

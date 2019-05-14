@@ -5,8 +5,6 @@ draft= false
 title="Orange team wins JRS 2012 Data Mining Competition"
 type="blog"
 categories=["competition" ,"prediction" ]
-tags=["competition" ,"jrs" ,"medline" ,"predictions" ]
-
 +++
 
 Lead by Jure Žbontar, the team from University of Ljubljana wins over 126 other entrants in an [international competition in predictive data analytics](http://tunedit.org/challenge/JRS12Contest?m=summary).

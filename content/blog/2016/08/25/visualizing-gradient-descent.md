@@ -5,8 +5,6 @@ draft= false
 title="Visualizing Gradient Descent"
 type="blog"
 categories=["addons" ,"education" ,"gsoc2016" ,"interactive data visualization"  ,"orange3" ]
-tags=["education" ,"gradient descent" ,"gsoc" ,"interactive visualization" ,"stochastic"]
-
 +++
 
 _This is a guest blog from the Google Summer of Code project._

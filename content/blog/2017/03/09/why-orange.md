@@ -5,8 +5,6 @@ draft= false
 title="Why Orange?"
 type="blog"
 categories=["data" ,"examples" ,"youtube" ]
-tags=["iris" ,"orange3" ,"video" ,"zoo" ]
-
 +++
 
 Why is Orange so great? Because it helps people solve problems quickly and efficiently.

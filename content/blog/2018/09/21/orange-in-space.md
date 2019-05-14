@@ -5,8 +5,6 @@ draft= false
 title="Orange in Space"
 type="blog"
 categories=["addons" ,"infraorange" ,"infrared spectra" ,"python" ,"spectroscopy"  ]
-tags=["asteroid" ,"hayabusa2" ,"hyperspectra" ,"ryugu" ,"spectroscopy" ]
-
 +++
 
 Did you know that Orange has already been to space? [Rosario Brunetto](https://www.ias.u-psud.fr/en/content/team-members-0) ([IAS-Orsay](https://www.ias.u-psud.fr/), France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the [JAXA Hayabusa2](http://global.jaxa.jp/projects/sat/hayabusa2/) team. The [Hayabusa2](https://en.wikipedia.org/wiki/Hayabusa2) asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data. And of course, a part of the analysis of Hayabusa's space data has been done in Orange!

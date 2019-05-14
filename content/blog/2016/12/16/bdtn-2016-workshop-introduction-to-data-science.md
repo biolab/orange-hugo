@@ -5,8 +5,6 @@ draft= false
 title="BDTN 2016 Workshop: Introduction to Data Science"
 type="blog"
 categories=["education" ,"interactive data visualization" ,"tutorial" ,"workshop"  ]
-tags=["bdtn2016" ,"classification" ,"clustering" ,"embeddings" ,"image analytics"
-  ,"workshop" ]
 
 +++
 

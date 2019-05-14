@@ -5,8 +5,6 @@ draft= false
 title="Making recommendations"
 type="blog"
 categories=["addons" ,"business intelligence" ,"gsoc2016" ,"orange3" ,"recommender  system" ]
-tags=["brismf" ,"recommendation" ,"recommender system" ,"svd" ,"trustsvd" ]
-
 +++
 
 _This is a guest blog from the Google Summer of Code project._

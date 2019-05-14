@@ -5,8 +5,6 @@ draft= false
 title="Celebrity Lookalike or How to Make Students Love Machine Learning"
 type="blog"
 categories=["education" ,"images" ,"interactive data visualization" ,"orange3" ]
-tags=["demo" ,"education" ,"embeddings" ,"imagenet" ,"neighbors" ]
-
 +++
 
 Recently we've been participating at [Days of Computer Science](http://www.tms.si/index.php?e_id=484&lang=2), organized by the Museum of Post and Telecommunications and the Faculty of Computer and Information Science, University of Ljubljana, Slovenia. The project brought together pupils and students from around the country and hopefully showed them what computer science is mostly about. Most children would think programming is just typing lines of code. But it's more than that. It's a way of thinking, a way to solve problems creatively and efficiently. And even better, computer science can be used for solving a great variety of problems.

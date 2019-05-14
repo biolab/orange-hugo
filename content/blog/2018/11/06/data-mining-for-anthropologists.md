@@ -5,8 +5,6 @@ draft= false
 title="Data Mining for Anthropologists?"
 type="blog"
 categories=["education" ,"text mining" ,"workshop" ]
-tags=["anthropology" ,"data ethnography" ,"text mining" ,"workshop" ,"wwna" ]
-
 +++
 
 This weekend we were in Lisbon, Portugal, at the [Why the World Needs Anthropologists](https://www.applied-anthropology.com/) conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry. I was there to hold a workshop on Data Ethnography, an approach that tries to combine methods from data science and anthropology into a fruitful interdisciplinary mix!

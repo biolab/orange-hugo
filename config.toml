@@ -8,17 +8,15 @@ disqusShortname = "localblog-2"
   [outputFormats.workflow]
     mediaType = "application/json"
     baseName = "workflow"
-    notAlternative = true
   [outputFormats.blog]
     mediaType = "application/json"
     baseName = "blog"
-    notAlternative = true
 
 [outputs]
   home = [ "HTML", "workflow", "blog"]
 
-
 [taxonomies]
+  tag = "tags"
   category = "categories"
 
 [menu]
@@ -35,15 +33,21 @@ disqusShortname = "localblog-2"
     weight = -120
 
   [[menu.main]]
+    identifier = "workflows"
+    name = "Workflows"
+    url = "/workflows/"
+    weight = -110
+
+  [[menu.main]]
     identifier = "download"
     name = "Download"
     url = "/download/"
-    weight = -110
+    weight = -100
 
   [[menu.main]]
     name = "Docs"
     url = "/docs/"
-    weight = -100
+    weight = -90
 
   [[menu.main]]
     name = "Blog"

@@ -5,8 +5,6 @@ draft= false
 title="k-Means & Silhouette Score"
 type="blog"
 categories=["clustering" ,"tutorial" ,"unsupervised" ,"youtube" ]
-tags=["clustering" ,"inliers" ,"k-means" ,"outliers" ,"silhouette" ,"tutorial" ,"youtube"]
-
 +++
 
 k-Means is one of the most popular unsupervised learning algorithms for finding interesting groups in our data. It can be useful in customer segmentation, finding gene families, determining document types, improving human resource management and so on.

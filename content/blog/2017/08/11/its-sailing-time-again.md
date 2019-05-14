@@ -5,8 +5,6 @@ draft= false
 title="It's Sailing Time (Again)"
 type="blog"
 categories=["classification" ,"tree" ]
-tags=["classification" ,"classification tree" ,"data sampling" ,"random forest"]
-
 +++
 
 Every fall I teach a course on Introduction to Data Mining. And while the course is really on statistical learning and its applications, I also venture into [classification trees](https://en.wikipedia.org/wiki/Decision_tree_learning). For several reasons. First, I can introduce [information gain](https://en.wikipedia.org/wiki/Information_gain_ratio) and with it feature scoring and ranking. Second, classification trees are one of the first machine learning approaches co-invented by engineers ([Ross Quinlan](https://en.wikipedia.org/wiki/Ross_Quinlan)) and statisticians ([Leo Breiman, Jerome Friedman, Charles J. Stone, Richard A. Olshen](https://www.amazon.com/Classification-Regression-Wadsworth-Statistics-Probability/dp/0412048418/ref=sr_1_1?ie=UTF8&qid=1501848607&sr=8-1&keywords=classification+and+regression+trees)). And finally, because they make the base of random forests, one of the most accurate machine learning models for smaller and mid-size data sets.

@@ -5,8 +5,6 @@ draft= false
 title="Debian packages for Squeeze"
 type="blog"
 categories=["debian" ,"distribution" ,"download" ,"packaging" ]
-tags=["debian" ,"distribution" ,"download" ,"packaging" ]
-
 +++
 
 We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your **/etc/apt/sources.list** to:

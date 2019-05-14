@@ -5,8 +5,6 @@ draft= false
 title="From Surveys to Orange"
 type="blog"
 categories=["data" ,"dataloading" ,"orange3" ,"workshop" ]
-tags=["data" ,"ministry" ,"questionnaire" ,"survey" ,"workshop" ]
-
 +++
 
 Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?

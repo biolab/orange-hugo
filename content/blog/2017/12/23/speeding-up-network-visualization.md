@@ -5,8 +5,6 @@ draft= false
 title="Speeding Up Network Visualization"
 type="blog"
 categories=["addons" ,"network" ,"visualization" ]
-tags=["algorithm" ,"force" ,"layout" ,"speed" ]
-
 +++
 
 The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.

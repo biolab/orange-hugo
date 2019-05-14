@@ -5,9 +5,6 @@ draft= false
 title="Univariate GSoC Success"
 type="blog"
 categories=["analysis" ,"data" ,"distribution" ,"gsoc" ,"gsoc2016" ,"plot" ,"visualization"  ]
-tags=["boxplot" ,"distribution" ,"featureconstructor" ,"featureengineering" ,"gsoc"
-  ,"gsoc2016" ,"univariate" ]
-
 +++
 
 [Google Summer of Code](https://developers.google.com/open-source/gsoc/) application period has come to an end. We've received 34 applications, some of which were of truly high quality. Now it's upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We've gathered data from our Google Form application and gave it a quick view in Orange.

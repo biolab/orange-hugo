@@ -5,8 +5,6 @@ draft= false
 title="Diving Into Car Registration Data"
 type="blog"
 categories=["addons" ,"analysis" ,"interactive data visualization" ,"orange3" ,"visualization"  ]
-tags=["choropleth" ,"geo" ,"map" ,"open data" ,"orange3" ,"visualization" ]
-
 +++
 
 Last week, we presented Orange at the [Festival of Open Data](https://podatki.gov.si/content/festival-odprtih-podatkov-2017), a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.

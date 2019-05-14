@@ -5,8 +5,6 @@ draft= false
 title="Report is back! (and better than ever)"
 type="blog"
 categories=["analysis" ,"data" ,"orange3" ,"report" ]
-tags=["analysis" ,"report" ]
-
 +++
 
 

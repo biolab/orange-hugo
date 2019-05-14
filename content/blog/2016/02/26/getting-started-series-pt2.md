@@ -5,8 +5,6 @@ draft= false
 title="Getting Started Series: Part Two"
 type="blog"
 categories=["tutorial" ,"youtube" ]
-tags=["orange3" ,"start" ,"tutorial" ]
-
 +++
 
 We've recently published two more videos in our Getting Started with Orange series. The series is intended to introduce beginners to Orange and teach them how to use its components.

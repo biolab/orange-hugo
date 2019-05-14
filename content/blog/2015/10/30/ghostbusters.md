@@ -5,8 +5,6 @@ draft= false
 title="Ghostbusters"
 type="blog"
 categories=["analysis" ,"data" ,"distribution" ,"orange3" ]
-tags=["distribution" ,"gaussian" ,"halloween" ,"mds" ,"outliers" ,"paranormal" ]
-
 +++
 
 Ok, we’ve just recently stumbled across [an interesting article](http://www.isixsigma.com/tools-templates/normality/dealing-non-normal-data-strategies-and-tools/) on how to deal with non normal (non-Gaussian distributed) data.

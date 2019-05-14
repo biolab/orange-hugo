@@ -5,8 +5,6 @@ draft= false
 title="My First Orange Widget"
 type="blog"
 categories=["examples" ,"orange3" ,"programming" ,"widget" ]
-tags=["gui" ,"orange widget" ,"owwidget" ,"programming" ,"pyqt" ,"widgets" ]
-
 +++
 
 Recently, I took on a daunting task - programming my first widget. I'm not a programmer or a computer science grad, but I've been looking at Orange code for almost two years now and I thought I could handle it.

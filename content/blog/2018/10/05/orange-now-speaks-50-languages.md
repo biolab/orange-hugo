@@ -5,8 +5,6 @@ draft= false
 title="Orange Now Speaks 50 Languages"
 type="blog"
 categories=["preprocessing" ,"text mining" ]
-tags=["lemmatization" ,"text mining" ,"text preprocessing" ,"tokenization" ,"udpipe"]
-
 +++
 
 In the past couple of weeks we have been working hard on introducing a better language support for the Text add-on. Until recently, Orange supported only a limited number of languages, mostly English and some bigger languages, such as Spanish, German, Arabic, Russian... Language support was most evident in the list of stopwords, normalization and POS tagging.

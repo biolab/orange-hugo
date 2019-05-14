@@ -5,8 +5,6 @@ draft= false
 title="Orange with Spectroscopy Add-on Workshop"
 type="blog"
 categories=["addons" ,"education" ,"examples" ,"infrared spectra" ,"workshop" ]
-tags=["infraorange" ,"spectral orange" ,"spectroscopy" ,"workshop" ]
-
 +++
 
 We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. [Spectroscopy add-on](https://www.tandfonline.com/doi/full/10.1080/08940886.2017.1338424?src=recsys) is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
