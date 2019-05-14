@@ -53,6 +53,11 @@ disqusShortname = "localblog-2"
     name = "Blog"
     url = "/blog/"
     weight = -90
+    
+  [[menu.main]]
+    name = "Training"
+    url = "/training/"
+    weight = -80
 
 
 
