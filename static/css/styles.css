@@ -427,8 +427,7 @@ blockquote {
 }
 .promo .overview {
   margin-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
 }
 .promo .overview h1 {
   font-size: 30px;
@@ -938,9 +937,9 @@ svg{
     margin-top: 50px;
   }
   
-  .container{
+  /*.container{
     padding: 0px !important;
-  }
+  }*/
   .header-pad{
     padding-left: 5% !important;
   }
@@ -982,6 +981,9 @@ svg{
   }
   .intro{
     padding: 0px !important;
+  }
+  #search-input{
+    width: 90% !important;
   }
 
   /*#features .feature-panel img {
@@ -1146,13 +1148,13 @@ h2.docs-subtitle {
   border-radius: 4px !important;
   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  padding-bottom: 10px; 
+  /*padding-bottom: 10px; */
 }
 
 .search-button-workflow{
   /*float: right;*/
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
   padding: 10px;
   background: #2196F3;
   color: white;
@@ -1160,6 +1162,7 @@ h2.docs-subtitle {
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
+  padding-top: 10px;
 }
 
 /*#myUL {
@@ -1206,6 +1209,7 @@ h2.docs-subtitle {
   display: inline;
   border-radius: 5px;
   margin-right:2px;
+  white-space:pre;
 }
 
 
@@ -1239,6 +1243,14 @@ h2.docs-subtitle {
   color:orange;
 }
 
+.categoriesList{
+  margin-top: 5px;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.tags{
+  line-height: 30px;
+}
 .home-page-blog{
   padding-left:20px !important;
   padding-right:0px !important;

@@ -1,25 +1,24 @@
 <section id="features" class="features section padding-bottom ">
-    <div class="container page-background getting-started" style="padding-top:120px ">
+    <div class="container page-background getting-started" >
         <div style="text-align: center">
-           <h2 style="font-size: 34px;margin-top: 0px;" >
+           <h2 style="font-size: 34px;" >
               Orange Blog
            </h2>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;">
+    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
       <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
+         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
         <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
             <i class="fa fa-search"></i>
         </button>
       </div>
       
     </div>
-    <div style="margin-top: 5px;padding-left: 20px;" id="myUL">
+    <div class="categoriesList" id="myUL">
         <ul>
             <span>Categories: </span>
-          {{ $tag := .Data.Term}}
           {{ range first 10 .Site.Taxonomies.categories.ByCount }}
-            <li style="display: inline;text-transform: capitalize;" ><a href="/categories/{{ .Name | urlize }}" class="{{ if eq $tag .Name }}active-tag{{ end }}">{{ .Name }}</a></li>
+            <li style="display: inline;text-transform: capitalize;"><a href="/categories/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
           {{ end }}
         </ul>
     </div>
@@ -68,9 +67,12 @@
                     <!-- &nbsp;&nbsp; -->
                 </div>
                 </div>
+            {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
+
             <div class='content col-md-6 col-xs-12 {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}' style="padding: 20px;padding-top: 0px;">
                 <img src="{{.Params.thumbImage}}" class="workflow-image" >
             </div>
+            {{end}}
             
               
             
