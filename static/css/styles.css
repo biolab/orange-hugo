@@ -296,7 +296,7 @@ blockquote {
   vertical-align: middle;
 }
 .header .main-nav button {
-  background: #4c85c5;
+  background: #E19C14;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -427,7 +427,8 @@ blockquote {
 }
 .promo .overview {
   margin-top: 10px;
-  padding-right: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .promo .overview h1 {
   font-size: 30px;
@@ -1232,7 +1233,9 @@ h2.docs-subtitle {
 .text-workflow{
   padding-top: 60px;
 }
-.active{
+.intro{
+  padding-bottom: 20px !important;
+}.active{
   color:orange;
 }
 
