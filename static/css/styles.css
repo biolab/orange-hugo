@@ -936,6 +936,9 @@ svg{
   .downloados .row {
     margin-top: 50px;
   }
+  .offset-header{
+    padding-bottom: 0 !important;
+  }
 
   .text-workflow{
     padding-top: 0px !important;
