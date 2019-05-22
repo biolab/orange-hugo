@@ -80,7 +80,7 @@
             <div class="more">
                 {{ if .Params.learnMore }}
                 <a href="{{ .Permalink }}" class="no-break-buttons">
-                    <div class="learn-more feature-block">
+                    <div class="learn-more feature-block link-buttons">
                         <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                         <div class="feature-block feature-link">Learn More</div>
                     </div>
@@ -92,8 +92,10 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;
                     {{ end }}
                 <a class="lightbox no-break-buttons" href="https://www.youtube.com/watch?v={{ .Params.video }}&autoplay=1" target="_blank" >
+                    <div class="link-buttons">
                     <div class="feature-block fa fa-play-circle-o jsonly"></div>
                     <div class="feature-block feature-link">Watch Video</div>
+                </div>
                 </a>
                 {{ end }}
             </div>
