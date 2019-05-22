@@ -621,7 +621,7 @@ blockquote {
   position: relative;
   width: 90px;
   height: 90px;
-  border: 3px solid #4c85c5;
+  border: 3px solid #E19C14;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -637,18 +637,18 @@ blockquote {
   transition: transform ease-out 0.2s, background 0.3s;
 }
 .features .icon:hover {
-  background: #4c85c5;
+  background: #E19C14;
   color: #fff;
 }
 .features .icon:hover .fa {
-  color: #cce2ea;
+  color: #FFF;
   -webkit-transform: scale(0.93);
   -moz-transform: scale(0.93);
   -ms-transform: scale(0.93);
   -o-transform: scale(0.93);
 }
 .features .icon .fa {
-  color: #4c85c5;
+  color: #E19C14;
   font-size: 48px;
   display: table-cell;
   text-align: center;
@@ -1009,12 +1009,49 @@ svg{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .downloados .row {
+    margin-top: 50px;
+  }
   .cover-image {
     background: url('/images/orange_title_scaled.png');
     background-position: center;
 
   }
 }
+
+
+@media (min-width: 1350px) {
+  .downloadsize{
+    padding-left:8%;
+    padding-right:8%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .downloadsize{
+    padding-left:10%;
+    padding-right:10%;
+  }
+}
+
+
+@media (max-width: 1349px) {
+  .downloadsize{
+    padding-left:8%;
+    padding-right:8%;
+  }
+}
+
+/*@media (min-width: 1350px) {
+  .downloados .row {
+    margin-top: 50px;
+  }
+  .cover-image {
+    background: url('/images/scorange-web-1170.png');
+    background-position: center;
+
+  }
+}*/
 
 /* Custom */
 pre {
@@ -1035,7 +1072,7 @@ h2.docs-subtitle {
 }
 
 .downloads .icon-item a, .downloads .icon-item a:hover {
-  color: #4c85c5;
+  color: #E19C14;
 }
 .search-field{
   

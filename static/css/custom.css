@@ -63,9 +63,9 @@ h6, .h6 {
 
 .btn-warning {
     color: #fff;
-    background-color: #f49111;
+    background-color: #E19C14;
     border: solid 2px;
-    border-color: #f49111;
+    border-color: #E19C14;
 }
 
 .btn-warning:hover {
@@ -208,7 +208,7 @@ ul.files li {
     font-size: 16px;
 }
 .icon-addons i {
-    color: #212121;
+    color: #E19C14;
 }
 .icon-addons #icon-i-hover:hover {
     color: #E19C14;
@@ -236,12 +236,12 @@ h3.custom-accordion-title {
     color: #E19C14;
 }
 .features .icon-selected {
-    background: #4c85c5;
-    color: #4c85c5;
+    background: #E19C14;
+    color: #E19C14;
     position: relative;
     width: 90px;
     height: 90px;
-    border: 4px solid #4c85c5;
+    border: 4px solid #E19C14;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -254,7 +254,7 @@ h3.custom-accordion-title {
     transition: transform ease-out 0.2s, background 0.3s;
 }
 .features .icon-selected .fa {
-    color: #cce2ea;
+    color: white;
     font-size: 48px;
     display: table-cell;
     text-align: center;
