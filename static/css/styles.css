@@ -1215,3 +1215,12 @@ h2.docs-subtitle {
 .active{
   color:orange;
 }
+
+.single-widget img{
+  width: 70%;
+}
+
+.single-widget{
+  font-weight: lighter !important;
+  text-decoration: none !important;
+}
