@@ -1,0 +1,301 @@
+{{ define "main"}}
+
+<section id="promo" class="promo section offset-header has-pattern">
+        <div class="container intro">
+            <div class="row">
+                <div class="overview">
+                    <div class="col-sm-5 col-xs-12 titlebox intro-text">
+                        <h1 class="title firstpagetitle">Classroom Training</h1>
+                        <div class="content">
+                            <p class="bigsummary summary" style="font-style: italic">
+                                We offer data science classes on request.
+                                <br><br>
+                            </p>
+                            <p class="bigsummary summary">
+                            Anyone can do data science! Our on demand courses will show you how. After only a few hours of in-class training you will understand key machine learning algorithms and be able to apply them to a wide range of problems. No coding, no math - just visualizations and interactive data exploration!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--// iPhone starts - default/only view -->
+                    <div class="phone iphone col-sm-6 col-xs-12 titleimage pull-right">
+                        <div class="iphone-holder phone-holder">
+                            <div class="iphone-holder-inner">
+                                <img class="landing-image" alt="Orange Data Mining" src="/images/orange_education.png">
+                            </div><!--//iphone-holder-inner-->
+                        </div><!--//iphone-holder-->
+                    </div><!--//iphone-->
+                    <!--// iPhone ends -->
+
+                </div><!--//overview-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//promo-->
+    <section class="container-fluid" id="first-section">
+        <div class="container" style=" padding-bottom: 50px;" >
+            <div class="row">
+                <div style="text-align: center;">
+                <h1 class="title firstpagetitle sectiontitle">Pick the right course for you</h1>
+                <p class="title firstpagetitle sectiontitle">or <a href="/contact/">contact us</a> for a custom-designed course.</p>
+                </div>
+                <div class="section-heading" id="section-heading">
+                    <div class="col-md-4" style="text-align: center;">
+                    <a class="course left-heading active" href="#introduction-to-data-mining" id="intro" onclick='change("intro")' >Introduction to Data Mining</a>
+                </div>
+                   <div class="col-md-4" style="text-align: center;"> 
+                    <a href="#text-mining-for-social-sciences" class="course center-heading" id="text" onclick='change("text")' >Text Mining for Social Sciences</a> </div>
+                   <div class="col-md-4" style="text-align: center;">
+                    <a href="#data-mining-for-business" class="course right-heading" id="data-business" onclick='change("bus")' >Data Mining for Business
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="introduction" >
+            <div class="container container-left">
+            <div class="row">
+                <div class="col-sm-6 upper-left">
+
+                    <h3>Why should you attend?</h3>
+                    <ul class="bottom-margin">
+                        <li>You will learn about data visualisation and machine learning.</li>
+                        <li>After completing the course, you will be able to analyze your own data and use them to develop predictive models.</li>
+                        <li>The course will be hands-on, we will work on examples and do case studies. No boring PowerPoints.</li>
+                    </ul>
+
+                    <h3>Course content</h3>
+                    <ul class="bottom-margin">
+                        <li>Data exploration and visualization.
+                        </li>
+                        <li>Clustering, uncovering of groups in data.
+                        </li>
+                        <li>Classification and predictive modeling.
+                        </li>
+                        <li>Analysis of survey data, data from marketing, and voting data.
+                        </li>
+                    </ul>
+                    <h3>Included</h3>
+                    <ul class="bottom-margin">
+                        <li>One-day 5-hour hands-on course on key approaches of data science</li>
+                        <li>Lecture notes (~40 pages) with extra explanations, illustrations and examples</li>
+                        <li>Free software and data sets used during the course</li>
+                        <li>Certificate of attendance</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="edu-image" src="/images/Intro-to-Data-Mining.jpg">
+                    <h3>Price</h3>
+                    <ul class="bottom-margin">
+                        <li>800 EUR / 900 USD per attendee.</li>
+                        <li><a href="/contact/">Contact us</a> for group discounts or off-site courses.</li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul class="bottom-margin">
+                        <li>No prior knowledge on data science, machine learning, or statistics is required.</li>
+                        <li>Bring your own laptop.</li>
+                    </ul>
+
+                    <br>
+                    <a class="btn btn-warning" href="/contact/" >Get in Touch</a>
+                </div>
+            </div>
+            <br>
+            <div class="row panel-body-wrapper" style="padding-bottom: 50px">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 panel-body-image">
+                    <img src="/images/janez_demsar.png">
+                </div>
+                <div class="col-sm-7 panel-body-quote panel-quote">
+                    <p class="quote-text">»Playing with data is fun. It's like a detective story, where data gives you clues and you dig ever deeper into the mystery until finding the hidden treasure, the cunning murderer, or the mischievous gene.«</p>
+                    <p>Janez Demšar, lecturer</p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        </div>
+        <div class="row" id="textMining" style="display: none">
+            <div class="container container-left">
+            <div class="row">
+                <div class="col-sm-6 upper-left">
+                    <h3>Why should you attend?</h3>
+                    <ul class="bottom-margin">
+                        <li>You will learn about essential approaches in text mining for text preprocessing, visualization, and explorative analysis.
+                        </li>
+                        <li>After completing the course, you will be able to mine your own text data and identify most suitable methods for your text analysis problems.
+                        </li>
+                        <li>The course will be hands-on and will introduce data science concepts and methods through the analysis of real-life data.
+                        </li>
+                    </ul>
+
+                    <h3>Course content</h3>
+                    <ul class="bottom-margin">
+                        <li>Loading the data, corpus-retrieval techniques.
+                        </li>
+                        <li>Text preprocessing and automatic syntactic annotation.
+                        </li>
+                        <li>Text clustering and segmentation.
+                        </li>
+                        <li>Machine learning and text mining techniques for social sciences.
+                        </li>
+                        <li>Case studies.
+                        </li>
+                    </ul>
+
+                    <h3>Included:</h3>
+                    <ul class="bottom-margin">
+                        <li>One-day 5-hour hands-on course on key approaches of data science.</li>
+                        <li>Lecture notes (~40 pages) with extra explanations, illustrations and examples.</li>
+                        <li>Free software and data sets used during the course.</li>
+                        <li>Certificate of attendance.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="edu-image" src="/images/Text_Mining.jpg">
+
+                    <h3>Price</h3>
+                    <ul class="bottom-margin">
+                        <li>800 EUR / 900 USD per attendee.</li>
+                        <li><a href="/contact/">Contact us</a> for group discounts or off-site courses.</li>
+                    </ul>
+
+                    <h3>Requirements</h3>
+                    <ul class="bottom-margin">
+                        <li>No prior knowledge on data science, machine learning, or statistics is required.</li>
+                        <li>Bring your own laptop.</li>
+                    </ul>
+
+                    <br>
+                    <a class="btn btn-warning" href="/contact/">Get in Touch</a>
+                </div>
+            </div>
+            <br>
+            <div class="row panel-body-wrapper" style="padding-bottom: 50px">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 panel-body-image">
+                    <img src="/images/emaface.jpg">
+                </div>
+                <div class="col-sm-7 panel-body-quote panel-quote">
+                    <p class="quote-text">»Text mining has been indispensable in writing my MA thesis. I've been able to visualize my data, perform MDS analysis and connect different works of literature varying in genre, type and subject matter.«</p>
+                    <p>Ema Karo, literary comparatist and editor</p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row" id="business" style="display: none">
+            <div class="container container-left">
+            <div class="row">
+                <div class="col-sm-6 upper-left">
+                    <h3>Why should you attend?</h3>
+                    <ul class="bottom-margin">
+                        <li>
+                            You will learn about latest data science and machine learning approaches that specifically address business problems.
+                        </li>
+                        <li>After completing the course, you will be able to predict churn, segment customers, detect brand sentiment and recommend shopping carts.
+                        </li>
+                        <li>We will emphasize on intuition. No complex math, statistics, or programming.</li>
+                        <li>The course will be hands-on, we will work on examples and do case studies. No boring PowerPoints.
+                        </li>
+                    </ul>
+
+                    <h3>Course content</h3>
+                    <ul class="bottom-margin">
+                        <li>Data exploration and preprocessing.
+                        </li>
+                        <li>Key statistical analyses through intelligent visualizations.
+                        </li>
+                        <li>Clustering and customer segmentation.
+                        </li>
+                        <li>Classification, predictive modeling, and churn prediction.
+                        </li>
+                        <li>Overfitting, how to do predictions properly. Model scoring end evaluation.
+                        </li>
+                        <li>Text mining for business, brand monitoring and sentiment analysis.</li>
+                        <li>Essentials of image analytics.</li>
+                    </ul>
+
+                    <h3>Included</h3>
+                    <ul class="bottom-margin">
+                        <li>Two day (5-hours per day) course on data mining and machine learning.</li>
+                        <li>Lecture notes (~80 pages) with extra explanations, illustrations and examples.</>
+                        <li>Free software and data sets used during the course.</li>
+                        <li>Certificate of attendance.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="edu-image" src="/images/Data-Mining-for-Business.jpg">
+                    <h3>Price</h3>
+                    <ul class="bottom-margin">
+                        <li>1600 EUR / 1800 USD per attendee.</li>
+                        <li><a href="/contact/">Contact us</a> for group discounts or off-site courses.</li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul class="bottom-margin">
+                        <li>No prior knowledge on data science, machine learning, or statistics is required.</li>
+                        <li>Bring your own laptop.</li>
+                    </ul>
+
+                    <br>
+                    <a class="btn btn-warning" href="/contact/">Get in Touch</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        </div>
+                        
+    </section>
+
+<script type="text/javascript">
+    var element = document.getElementById("intro");
+    element.classList.remove("active")
+    var element = document.getElementById("text");
+    element.classList.remove("active")
+    var element = document.getElementById("data-business");
+    element.classList.remove("active")
+    var hash = $(location).attr('hash');
+    if (hash != ''){
+        if(hash == '#introduction-to-data-mining' ){
+            $("#introduction").show();
+            $("#textMining").hide();
+            $("#business").hide();
+            var element = document.getElementById("intro");
+            element.classList.add("active")
+
+        }
+        else if (hash == '#text-mining-for-social-sciences'){
+            $("#introduction").hide();
+            $("#textMining").show();
+            $("#business").hide();
+            var element = document.getElementById("text");
+            element.classList.add("active")
+
+        }
+        else if(hash == '#data-mining-for-business'){
+            $("#introduction").hide();
+            $("#textMining").hide();
+            $("#business").show();
+            var element = document.getElementById("data-business");
+            element.classList.add("active")
+
+        }
+    }
+    
+    function change(hash){
+       
+        if(hash=="intro"){
+            location.hash = "#introduction-to-data-mining"
+        }
+        else if(hash=="text"){
+            location.hash = "#text-mining-for-social-sciences"
+        }
+        else if(hash=="bus"){
+            location.hash = "#data-mining-for-business"
+        }
+        
+        location.reload();
+        }
+</script>
+
+{{end}}

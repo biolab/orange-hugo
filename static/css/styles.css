@@ -1201,10 +1201,17 @@ h2.docs-subtitle {
 #post_nor .row {
     margin-top: 10px !important;
   }
+.course{
+  color: black;
+  cursor: pointer;
+}
 
 #search_results .row{
   margin-top: 10px !important;
 }
 .text-workflow{
   padding-top: 60px;
+}
+.active{
+  color:orange;
 }
