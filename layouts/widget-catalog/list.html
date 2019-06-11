@@ -1,0 +1,83 @@
+{{ define "main"}}
+<section id="features" class="features section padding-bottom">
+   <div id="widgets" class="container page-background search-widgets">
+   	<div class="row">
+      <div class="col-xs-12 col-md-12 content" style="padding-bottom: 10px;">
+         <input type="text" class="jsonly search-widget" id="search-box" placeholder="Quick Search" tabindex="1" autofocus />
+      </div>
+     </div>
+      <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12">
+          {{ if $.Site.Data.widgets}}
+
+            {{ range $key, $value := $.Site.Data.widgets }}
+            <h2 class="widget-topic">{{ $key }}</h2>
+            <div class="toctree-wrapper compound">
+               <ul>
+                  {{range $value}}
+                  <li class="toctree-l1">
+
+                     <a href="{{ .url }}">
+                     <img alt="{{ .title }}" src="/{{ .icon }}"/>
+                     </a>
+                     <a class="reference internal" href="{{ .url }}">
+                     {{ .title }}
+                     </a>
+                  </li>
+                  {{end}}
+               </ul>
+            </div>
+            {{ end }}
+            {{end}}
+
+         </div>
+      </div>
+   </div>
+
+<script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/js/trieSearchWeb.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            'use strict';
+            // read widget.json file
+            $.getJSON("/widgets.json", function(json) {
+    		var WIDGET_JS = json;
+    		var WIDG_JS = {}
+			var widget_idx = 0
+			for (var field_key in WIDGET_JS){
+				var field_val = WIDGET_JS[field_key];
+        
+			    for (var widget in field_val){
+			        //  Widget name
+			        var key = field_val[widget].title;
+			        WIDG_JS[key] = widget_idx
+			        //  Widget keywords
+			        for ( var keyword in field_val[widget].keywords){
+                var key = field_val[widget].keywords[keyword]
+			            WIDG_JS[key] = widget_idx
+			        }
+			        widget_idx += 1
+			    }
+
+			    }
+			var data_for_trie = WIDG_JS;
+      var options = {
+                // Minimum search key length
+                min: 1,
+                ignoreCase: true,
+                indexField: 'index',
+                // Split word by space, -, _, and capital letters
+                splitOnRegEx: /([ \-:_]+|(?![a-z])(?=[A-Z]))/g
+            };
+            // make trie and populate with objects objects
+            var trie = new window.TrieSearch('name', options);
+            trie.addFromObject(data_for_trie);
+            // save trie structure to window
+            window.trie = trie;
+			});
+            
+        });
+    </script>
+    <script type="text/javascript" src="/js/trieUtil.js" ></script>
+</section>
+{{end}}
