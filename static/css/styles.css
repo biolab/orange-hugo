@@ -969,6 +969,13 @@ svg{
     margin-left: 0;
     max-height: inherit ;
   }
+  .titleimage img.left,
+  .titleimage img.right {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-height: inherit ;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -1032,6 +1039,9 @@ svg{
 
 
 @media (min-width: 1350px) {
+  .feature-title, .promo .row h1.firstpagetitle {
+    font-size: 34px !important;
+  }
   .downloadsize{
     padding-left:8%;
     padding-right:8%;
@@ -1047,6 +1057,9 @@ svg{
 
 
 @media (max-width: 1349px) {
+  .titleimage{
+    padding-top: 50px;
+  }
   .feature-title, .promo .row h1.firstpagetitle {
     font-size: 32px !important;
   }
@@ -1311,4 +1324,89 @@ h2.docs-subtitle {
 #features .row{
   margin-right:0px !important;
   margin-left: 0px !important;
+}
+
+
+#promo .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+
+#features .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .feature-title, .promo .row h1.firstpagetitle {
+    font-size: 28px !important;
+  }
+  #features .feature-panel .content {
+    font-size: 16px !important;
+  }
+
+  .overview .content p {
+    font-size: 16px !important;
+  }
+  .feature-image{
+    padding-top: 10px;
+    width: 55%;
+    text-align:center;
+    float: none !important;
+    margin-right: auto;
+    margin-left:auto;
+  }
+  .titleimage img {
+  
+    max-width: 55% !important;
+    text-align:center;
+}
+.titleimage{
+    padding-top: 10px;
+  }
+}
+
+
+
+@media (max-width: 568px) {
+  .feature-description{
+    padding-bottom: 20px;
+  }
+  .feature-image{
+    margin-top: 100px !important;
+    width: 70%;
+    text-align:center;
+    float: none !important;
+    margin-right: auto !important;
+    margin-left:auto !important;
+  }
+  .titleimage img {
+  
+    max-width: 70% !important;
+    text-align:center;
+}
+.titleimage{
+    padding-top: 10px;
+  }
+}
+
+.titleimage{
+margin-top: auto;
+  margin-bottom: auto;
+}
+
+.titleimage img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 300px;
+  max-width: 100%;
+
+  }
+
+.titleimage img.left {
+  padding: 0 40px 10px 0;
+}
+.titleimage img.right {
+  padding: 0 10px 10px 0;
 }
