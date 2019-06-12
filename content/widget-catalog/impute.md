@@ -1,9 +1,3 @@
-+++
-"title" = "Impute"
-"icon" = "icons/impute.png"
-"keywords" = "[]"
-"category" = "Data"
-+++
 Impute
 ======
 

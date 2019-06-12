@@ -1,9 +1,3 @@
-+++
-"title" = "Louvain Clustering"
-"icon" = "icons/louvainclustering.png"
-"keywords" = "[]"
-"category" = "Unsupervised"
-+++
 Louvain Clustering
 ==================
 
@@ -20,7 +14,7 @@ Groups items using the Louvain clustering algorithm.
 
 The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges. Finally, a [modularity optimization](https://en.wikipedia.org/wiki/Louvain_Modularity) community detection algorithm is applied to the graph to retrieve clusters of highly interconnected nodes. The widget outputs a new dataset in which the cluster index is used as a meta attribute.
 
-![](/images/Louvain-stamped.png)
+![](images/Louvain-stamped.png)
 
 1. PCA processing is typically applied to the original data to remove noise.
 2. The distance metric is used for finding specified number of nearest neighbors.
@@ -33,7 +27,7 @@ Example
 
 *Louvain Clustering* converts the dataset into a graph, where it finds highly interconnected nodes. We can visualize the graph itself using the **Network Explorer** from the Network addon.
 
-![](/images/Louvain-Example.png)
+![](images/Louvain-Example.png)
 
 References
 ----------
