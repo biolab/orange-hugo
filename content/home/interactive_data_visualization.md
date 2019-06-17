@@ -1,6 +1,5 @@
 +++
 title = "Interactive Data Visualization"
-type = "feature"
 image = "/images/interactive_data_vis_01_scaled.png"
 learnMore = true
 weight = 20

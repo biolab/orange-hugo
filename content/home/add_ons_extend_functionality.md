@@ -1,6 +1,5 @@
 +++
 title = "Add-ons Extend Functionality"
-type = "feature"
 image = "/images/add_ons_scaled.png"
 video = "OANsA6fMJKg?start=6"
 weight = 50

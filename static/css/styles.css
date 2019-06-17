@@ -1418,3 +1418,12 @@ margin-top: auto;
     padding-right: 20px
   }
 }
+.entry-title {
+    font-size: 30px !important;
+    font-weight: normal !important;
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.entry-content{
+  font-weight: lighter !important;
+}

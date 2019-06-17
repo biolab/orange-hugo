@@ -65,10 +65,9 @@
 <section id="features" class="features section background-features padding-features" >
         <a id="Orange-Features" class="features-anchor" style="padding-top: 20px;"></a>
     <div class="container">
-            
-        {{ range (where .Pages.ByWeight "Type" "feature")}}
+        {{ range where .Pages.ByWeight "Type" "!=" "testimonials" }}
         <div class="feature-panel row" >
-        	<div class='content col-lg-4 col-md-6 col-sm-6 col-xs-12 feature-description pull-{{if (eq .Params.thumbnailImagePosition "left")}}right{{else}}left{{ end }}'>
+        	<div class='content col-lg-6 col-md-6 col-sm-6 col-xs-12 feature-description pull-{{if (eq .Params.thumbnailImagePosition "left")}}right{{else}}left{{ end }}'>
             <h2 class="feature-title">
             {{ if .Params.learnMore}}
                 <a href="{{ .Permalink }}">{{ .Title }}</a>

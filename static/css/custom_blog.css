@@ -36,7 +36,7 @@ Tracks is distributed under the terms of the GNU GPL
 }
 
 .site-title, .menu-unset > ul a,
-.menu-primary-items a, .excerpt-meta, .entry-meta, .excerpt-title, .entry-title, .more-link, .pagination, .further-reading,
+.menu-primary-items a, .excerpt-meta, .entry-meta, .excerpt-title, .more-link, .pagination, .further-reading,
 .entry-categories,
 .entry-tags, .author-meta .author span, .comments-number h2, .comment-author .author-name, .site-footer h1, .design-credit, .widget-title, .widget li, .menu-footer-items a, .menu-secondary-items a {
   text-transform: uppercase;
@@ -693,7 +693,7 @@ a img {
   color: #38312f;
 }
 
-.excerpt-title, .entry-title {
+.excerpt-title{
   letter-spacing: 0.04em;
   font-size: 1.313em;
   /* 21px / 16px */
@@ -814,7 +814,7 @@ a img {
     width: 100%;
   }
 
-  .excerpt-title, .entry-title {
+  .excerpt-title{
     font-size: 1.875em;
     /* 30px */
     line-height: 1.6;

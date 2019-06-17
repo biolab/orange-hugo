@@ -1,6 +1,5 @@
 +++
 title = "Visual Programming"
-type = "feature"
 image = "/images/visual_programming_01_scaled.png"
 learnMore = true
 thumbnailImagePosition = "right"
