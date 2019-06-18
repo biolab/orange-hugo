@@ -15,7 +15,7 @@
       
     </div>
     <div class="categoriesList" id="myUL">
-        <ul>
+        <ul style="width: 90%;">
             <span>Categories: </span>
           {{ range first 10 .Site.Taxonomies.categories.ByCount }}
             <li style="display: inline;text-transform: capitalize;"><a href="/categories/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
@@ -68,13 +68,10 @@
                 </div>
                 </div>
             {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
-
             <div class='content col-md-6 col-xs-12 {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}' style="padding: 20px;padding-top: 0px;">
                 <img src="{{.Params.thumbImage}}" class="workflow-image" >
             </div>
             {{end}}
-            
-              
             
             </div>
             <hr/>
@@ -118,7 +115,7 @@
     
 
         var results  = search_categories(tag_param,param);
-        console.log(results)
+        // console.log(results)
         $("#search-results").show();
         var search_results = document.getElementById('search-results')
         if (results.length<1){
@@ -129,10 +126,11 @@
         search_results.innerHTML = "";
         var html_el = ""
         
-
+        
         for(var page in results){
             html_el += '<div class="row">';
-            if (results[page].image == '<no value>'){
+            console.log(results[page].image)
+            if (results[page].image == ''){
                html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
             }
             else if (page % 2 == 0){
@@ -174,41 +172,8 @@
             else{
                 html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
             }
-            // if (results[page].image.length >1){
-            //     html_el+= '<div id="myCarousel'+page+'" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
-            //         for(var img in results[page].images){
-            //             html_el+= '<div class="item'
-            //             if(img==0){
-            //                 html_el += 'active">'
-            //             }
-            //             else{
-            //                 html_el+= '>'
-            //             }
-
-            //            html_el += '<img src="'+results[page].images[img]+'" class="workflow-image" ></div>'
-                      
-            //         }
-            //         html_el += '</div>'
-            //     html_el += '<ol class="carousel-indicators" >'
-            //         for(var img in results[page].images){
-            //          html_el += '<li data-target="#myCarousel'+page+'" data-slide-to="'+img+'" class="'
-            //             if(img==0){
-            //                     html_el += 'active">'
-            //                 }
-            //             else{
-            //                 html_el+= '>'
-            //             }
-            //             html_el +='</li>'
-            //         }
-            //     html_el+='</ol>'
-
-            //     html_el += '<a class="left carousel-control" href="#myCarousel'+page+'" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
-                
-            //     html_el += '<a class="right carousel-control" href="#myCarousel'+page+'" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
-
-            // }
-            // else{
-            if (results[page].image != '<no value>'){
+           
+            if (results[page].image != ''){
                 html_el += '<img class="image'+position+'" src="'+results[page].image+'" style="padding:40px;"></div>'
             }
 
@@ -221,13 +186,7 @@
 
 
         }
-        // ele = document.getElementById("tags")
-        // ele = ele.getElementsByTagName("a").style.textTransform="capitalize"
-        // console.log(ele.length)
-        
-        // for (i = 0; i <ele.length ; i++) { 
-        //   console.log(ele[i].style.textTransform = "capitalize")
-        // }
+
         }
         }
      

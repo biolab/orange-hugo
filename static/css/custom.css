@@ -803,7 +803,7 @@ blockquote cite {
 }
 
 .getting-started{
-    padding-top: 50px;
+    padding-top: 50px !important;
 }
 .padding-top-page {
     padding-top: 20px;

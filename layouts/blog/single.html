@@ -16,11 +16,13 @@
         {{ end }}
         
         <div class="entry-meta">
-          <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>	<span>  </span>
 
-          {{ range .Params.categories }}
+          <span>Categories: </span>
+          {{ range $index, $element := .Params.categories }}
           <span class="category">
-            <span> / </span>
+            {{if gt $index 0 }}
+            <span> | </span>
+            {{end}}
 
             <a href="/categories{{ . | relURL }}">{{ . }}</a>
           </span>
@@ -32,10 +34,11 @@
           <h1 class='entry-title'> {{ .Title }}</h1>
           <span class="author-blog ">
             {{ if .Params.author }}
-            Author: {{ .Params.author | default ""}}
+            By: {{ .Params.author | default ""}},
             {{ else }}
             {{ .Params.author | default "" }}
-            {{ end }}
+            {{ end }} 
+            {{ .Date.Format "Jan 2, 2006" }}
           </span>
         </div>
 

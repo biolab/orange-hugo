@@ -39,7 +39,7 @@ Tracks is distributed under the terms of the GNU GPL
 .menu-primary-items a, .excerpt-meta, .entry-meta, .excerpt-title, .entry-title, .more-link, .pagination, .further-reading,
 .entry-categories,
 .entry-tags, .author-meta .author span, .comments-number h2, .comment-author .author-name, .site-footer h1, .design-credit, .widget-title, .widget li, .menu-footer-items a, .menu-secondary-items a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.08em;
   font-weight: 700;
 }
@@ -2609,4 +2609,27 @@ li.pingback:first-child {
   padding-top: 10px; 
   text-align: center !important;
 }
+
+.entry-content p{
+  font-weight: lighter !important;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif' !important;
+}
+
+ .entry-title {
+  font-size: 30px !important;
+  font-weight: normal !important;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif' !important;
+}
+
+ .entry-header {
+  font-weight: normal !important;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif' !important;
+}
+
+ .entry-content article{
+  font-weight: lighter !important;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif' !important;
+}
+
+
 
