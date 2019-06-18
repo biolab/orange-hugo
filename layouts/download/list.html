@@ -1,16 +1,16 @@
 {{ define "main"}}
 
 <section id="features" class="features section downloads ">
-        <div class="container-fluid downloados downloadsize" style="margin-top: 50px">
-            <div class="row">
-                <div class="" style="padding: 0px !important;">
+        <div class="container-fluid downloados downloadsize" style="margin-top: 50px;">
+            <div class="row" style="padding: 0px !important;text-align: center;">
+                <div class="dow" style="display: inline-block; width: 80%;">
                     {{ range .Site.Data.tabs}}
-                    <div class="icon-item col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                    <div class="icon-item col-xl-4 col-lg-4 col-md-4 col-sm-4  col-xs-4 text-center" >
                         <a onclick="windows({{.os}})" href="#{{.os}}">
                             <div id="{{.os}}1" class="icon">
                                 <i class="fa fa-{{ .icon }} jsonly icon-button"></i>
                             </div><!--//icon-->
-                            <h2 class="content title">{{ .title }}</h2>
+                            <h2 class="content title" style="margin:20px 0px !important;">{{ .title }}</h2>
                         </a>
                     </div><!--//item-->
                 {{end}}
