@@ -3,24 +3,24 @@
 <section id="features" class="features section padding-bottom ">
     <div class="container page-background getting-started">
         <div style="text-align: center">
-           <h2 style="font-size: 34px;margin-top: 0px;" >
+           <h2 style="font-size: 34px;margin-top: 15px;" >
               Orange Workflows
            </h2>
         </div>
     <div class="row" style="padding-left: 20px;">
       <div class="col-xs-12 col-md-12 content" style="margin-top: 20px;  display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search workflows" tabindex="1" onkeydown="check_key(event)" autofocus />
+         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search workflows" tabindex="1" onkeydown="check_key(event)" autofocus />
         <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
             <i class="fa fa-search"></i>
         </button>
       </div>
       
     </div>
-    <div style="margin-top: 5px;padding-left: 20px;" id="myUL">
+    <div style="margin-top: 5px;padding-left: 20px;" id="myUL" class="tags">
         <ul >
             <span>Tags: </span>
           {{ range first 10 .Site.Taxonomies.tags.ByCount }}
-            <li style="display: inline;text-transform: capitalize;"><a href="/tags/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow" href="/tags/{{ .Name | urlize }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
     </div>

@@ -299,6 +299,16 @@ h3.custom-accordion-title {
     .features .content .screenshot-container p.screenshot-title {
         margin-top: 20px;
     }
+    .features{
+    padding-top: 5px !important;
+    }
+    .padding-features{
+        padding-bottom: 10px !important;
+    }
+    .features .feature-panel{
+        margin-bottom:5px !important;
+        padding: 0 !important;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     #features div.screenshot-container div.content {
@@ -800,7 +810,7 @@ blockquote cite {
 }
 
 .padding-features{
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .padding-doc{

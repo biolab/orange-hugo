@@ -296,7 +296,7 @@ blockquote {
   vertical-align: middle;
 }
 .header .main-nav button {
-  background: #4c85c5;
+  background: #E19C14;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -428,6 +428,7 @@ blockquote {
 .promo .overview {
   margin-top: 10px;
   padding-right: 30px;
+  padding-left: 20px;
 }
 .promo .overview h1 {
   font-size: 30px;
@@ -936,10 +937,17 @@ svg{
   .downloados .row {
     margin-top: 50px;
   }
-  
-  .container{
-    padding: 0px !important;
+  .offset-header{
+    padding-bottom: 0 !important;
   }
+
+  .text-workflow{
+    padding-top: 0px !important;
+  }
+  
+  /*.container{
+    padding: 0px !important;
+  }*/
   .header-pad{
     padding-left: 5% !important;
   }
@@ -956,6 +964,13 @@ svg{
 
   .features .feature-image img.left,
   .features .feature-image img.right {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-height: inherit ;
+  }
+  .titleimage img.left,
+  .titleimage img.right {
     padding: 0 0 10px 0;
     margin-right: 0;
     margin-left: 0;
@@ -981,6 +996,9 @@ svg{
   }
   .intro{
     padding: 0px !important;
+  }
+  #search-input{
+    width: 90% !important;
   }
 
   /*#features .feature-panel img {
@@ -1021,6 +1039,9 @@ svg{
 
 
 @media (min-width: 1350px) {
+  .feature-title, .promo .row h1.firstpagetitle {
+    font-size: 34px !important;
+  }
   .downloadsize{
     padding-left:8%;
     padding-right:8%;
@@ -1036,6 +1057,9 @@ svg{
 
 
 @media (max-width: 1349px) {
+  .titleimage{
+    padding-top: 50px;
+  }
   .feature-title, .promo .row h1.firstpagetitle {
     font-size: 32px !important;
   }
@@ -1145,13 +1169,13 @@ h2.docs-subtitle {
   border-radius: 4px !important;
   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  padding-bottom: 10px; 
+  /*padding-bottom: 10px; */
 }
 
 .search-button-workflow{
   /*float: right;*/
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
   padding: 10px;
   background: #2196F3;
   color: white;
@@ -1159,6 +1183,7 @@ h2.docs-subtitle {
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
+  padding-top: 10px;
 }
 
 /*#myUL {
@@ -1205,6 +1230,7 @@ h2.docs-subtitle {
   display: inline;
   border-radius: 5px;
   margin-right:2px;
+  white-space:pre;
 }
 
 
@@ -1232,11 +1258,25 @@ h2.docs-subtitle {
 .text-workflow{
   padding-top: 60px;
 }
-.active{
+.intro{
+  padding-bottom: 20px !important;
+}.active{
   color:orange;
 }
 
-.home-page-blog{
+.categoriesList{
+  margin-top: 5px;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.tags{
+  line-height: 30px;
+}
+
+.link-buttons{
+  display: inline-block;
+  white-space: nowrap;
+}.home-page-blog{
   padding-left:20px !important;
   padding-right:0px !important;
   padding-top: 20px !important;
@@ -1284,4 +1324,97 @@ h2.docs-subtitle {
 #features .row{
   margin-right:0px !important;
   margin-left: 0px !important;
+}
+
+
+#promo .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+
+#features .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .feature-title, .promo .row h1.firstpagetitle {
+    font-size: 28px !important;
+  }
+  #features .feature-panel .content {
+    font-size: 16px !important;
+  }
+
+  .overview .content p {
+    font-size: 16px !important;
+  }
+  .feature-image{
+    padding-top: 10px;
+    width: 55%;
+    text-align:center;
+    float: none !important;
+    margin-right: auto;
+    margin-left:auto;
+  }
+  .titleimage img {
+  
+    max-width: 55% !important;
+    text-align:center;
+}
+.titleimage{
+    padding-top: 10px;
+  }
+}
+
+
+
+@media (max-width: 568px) {
+  .feature-description{
+    padding-bottom: 20px;
+  }
+  .feature-image{
+    margin-top: 100px !important;
+    width: 70%;
+    text-align:center;
+    float: none !important;
+    margin-right: auto !important;
+    margin-left:auto !important;
+  }
+  .titleimage img {
+  
+    max-width: 70% !important;
+    text-align:center;
+}
+.titleimage{
+    padding-top: 10px;
+  }
+}
+
+.titleimage{
+margin-top: auto;
+  margin-bottom: auto;
+}
+
+.titleimage img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 300px;
+  max-width: 100%;
+
+  }
+
+.titleimage img.left {
+  padding: 0 40px 10px 0;
+}
+.titleimage img.right {
+  padding: 0 10px 10px 0;
+}
+
+@media (max-width: 844px) {
+  .dow{
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px
+  }
 }
