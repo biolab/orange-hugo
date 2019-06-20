@@ -19,7 +19,13 @@ Transposes a data table.
 
 **Transpose** widget transposes data table.
 
-![](/images/transpose-stamped.png)
+
+\
+
+{{% figure src="/images/transpose-stamped.png" %}}
+\
+\
+
 
 Example
 -------

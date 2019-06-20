@@ -20,7 +20,7 @@ Preprocesses data with selected methods.
 
 Preprocessing is crucial for achieving better-quality analysis results. The **Preprocess** widget offers several preprocessing methods that can be combined in a single preprocessing pipeline. Some methods are available as separate widgets, which offer advanced techniques and greater parameter tuning.
 
-![](/images/Preprocess-Stamped.png)
+![](/images/preprocess-stamped.png)
 
 1. List of preprocessors. Double click the preprocessors you wish to use and shuffle their order by dragging them up or down. You can also add preprocessors by dragging them from the left menu to the right.
 2. Preprocessing pipeline.
@@ -78,4 +78,4 @@ Finally, **Predictions** also needs the data to predict on. We will use the outp
 
 Notice how we send the remaining data directly to **Predictions** without applying any preprocessing. This is because Orange handles preprocessing on new data internally to prevent any errors in the model construction. The exact same preprocessor that was used on the training data will be used for predictions. The same process applies to [Test & Score](../evaluation/testandscore.md).
 
-![](../evaluation//images/Predictions-Example2.png)
+![](/images/Predictions-Example2.png)
