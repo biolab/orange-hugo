@@ -1,15 +1,15 @@
 +++
 author="Ajda Pretnar"
-date= '2019-01-04 09:25:58+00:00'
+date= '2019-01-04'
 draft= false
 title="How to Abuse p-Values in Correlations"
 type="blog"
-thumbImage = ""
+thumbImage = "/blog_img/2019/1/4/correlations.png"
 image = ""
 categories=["correlations", "NHTS", "null hypothesis", "p-value", "statistics"]
-shortExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set."
+shortExcerpt = "Why doesn't Orange show p-values for correlations coefficients? To save you from data dredging and Texas sharpshooter fallacy..."
 
-longExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’."
+longExcerpt = "We have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?"
 +++
 
 In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.

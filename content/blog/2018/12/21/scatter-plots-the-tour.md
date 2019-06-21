@@ -1,13 +1,14 @@
 +++
 author="Ajda Pretnar"
-date= '2018-12-21 09:25:58+00:00'
+date= '2018-12-21'
 draft= false
 title="Scatter Plots: the Tour"
 type="blog"
+thumbImage = "/blog_img/2018/12/21/scatter-blog.png"
 categories=["interactive visualization", "scatter plot", "visualization"]
-shortExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set."
+shortExcerpt = "Scatter Plot has recently been renovated and it is time to present some essential tricks for working with the widget!"
 
-longExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’."
+longExcerpt = "Scatter Plot has recently been renovated (under the hood and in GUI), so now it is time to present some essential tricks for working with the cool visualization!"
 +++
 
 
@@ -16,13 +17,19 @@ Scatter plots are surely one of the best loved visualizations in Orange. Very of
 Our favorite still remains the Informative Projections button. This button helps you find interesting visualizations from all the combinations of your data variables. But what does interesting mean? Well, let us look at an example. Which of the two visualizations tells you more about the data?
 
 \
-
-
-{{% figure src="/blog_img/2018/12/21/iris1.png" width="50%" %}}
+<div id="image-table">
+    <table>
+	    <tr>
+    	    <td style="padding:5px">
+        	    {{% figure src="/blog_img/2018/12/21/iris1.png" %}}
+      	    </td>
+            <td style="padding:5px">
+            	{{% figure src="/blog_img/2018/12/21/iris2.png" %}}
+             </td>
+        </tr>
+    </table>
+</div>
 \
-\
-
-	
 
 We’d say it is the right one. Why? Because now we know that the combination of petal length and petal width nicely separates the classes!
 
@@ -33,7 +40,7 @@ In scatter plot, you can set also the color of the data points (class is selecte
 \
 
 
-{{% figure src="/blog_img/2018/12/21/iris2.png" width="70%" %}}
+{{% figure src="/blog_img/2018/12/21/heart-disease.png" width="70%" %}}
 \
 \
 
@@ -43,11 +50,11 @@ You might notice, that in the current version of Orange, you can no longer selec
 \
 
 
-{{% figure src="/blog_img/2018/12/21/iris3.png" width="70%" %}}
+{{% figure src="/blog_img/2018/12/21/titanic.png" width="70%" %}}
 \
 \
 
-	 		 	
+
 Above, we have presented the same information for titanic data set in different visualizations, that are particularly suitable for categorical variables.
 
 Scatter plot also enables so cool tricks. Just like in most visualizations in Orange, I can select a part of the data and observe the subset downstream. Or the other way around. I have a particular subset I wish to observe and I can pass it to Scatter Plot widget, which will highlight selected data instances.

@@ -1,23 +1,24 @@
 +++
 author="Ajda Pretnar"
-date= '2019-06-03 09:25:58+00:00'
+date= '2019-06-03'
 draft= false
 title="Gene Expression Profiles with Line Plot"
 type="blog"
+thumbImage = "/blog_img/2019/6/3/gene-blog.png"
 categories=["bioinformatics", "gene expression", "line plot"]
-shortExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set."
+shortExcerpt = "We show how to explore gene expression profiles with the new Line Plot widget."
 
-longExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’."
+longExcerpt = "Line Plot shows profiles of data instances – each instance is a line in the plot and its profile are values across all variables in the data. We show how to explore gene expression profiles."
 +++
 
-Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’.
+Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a 'profile'.
 
 The widget can show four types of information – individual data profiles (lines), data range, mean profile and error bars. It has the same cool features of other Orange visualizations – it is interactive, meaning you can select a subset of data instances from the plot, it allows grouping by a discrete variable, and it highlights an incoming data subset.
 
 Related: {{< link_new url="/blog/2018/12/21/scatter-plots-the-tour/" name="Scatter Plot: The Tour">}}
 
 
-Let us check a simple example. We will use brown-selected data, which is a data on gene expression of baker’s yeast. To observe gene expression profiles, we will use Line Plot.
+Let us check a simple example. We will use brown-selected data, which is a data on gene expression of baker's yeast. To observe gene expression profiles, we will use Line Plot.
 
 \
 \

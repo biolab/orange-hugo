@@ -1,13 +1,14 @@
 +++
 author="Blaz Zupan"
-date= '2019-03-01 09:25:58+00:00'
+date= '2019-03-01'
 draft= false
 title="Single-Cell Data Science for Everyone"
 type="blog"
+thumbImage = "/blog_img/2019/3/1/2019-pavia-blog.jpg"
 categories=["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
-shortExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set."
+shortExcerpt = "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."
 
-longExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’."
+longExcerpt = "We have been in Pavia, Italy, to carry out a five-hour workshop covered both the essentials of data analysis and single cell analytics. The topics included working with marker genes, differential expression analysis, and interpretation of clusters through gene ontology analysis."
 +++
 Molecular biologists have in the past twenty years invented technologies that can collect abundant experimental data. One such technique is single-cell RNA-seq, which, very simplified, can measure the activity of genes in possibly large collections of cells. The interpretation of such data can tell us about the heterogeneity of cells, cell types, or provide information on their development.
 

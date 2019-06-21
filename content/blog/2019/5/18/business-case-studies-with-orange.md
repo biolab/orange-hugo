@@ -1,18 +1,17 @@
 +++
 author="Ajda Pretnar"
-date= '2019-05-18 09:25:58+00:00'
+date= '2019-05-18'
 draft= false
 title="Business Case Studies with Orange"
 type="blog"
+thumbImage = "/blog_img/2019/5/18/wartsila-blog.jpg"
 categories=["business intelligence", "HR", "logistic regression", "nomogram", "predictive models"]
-shortExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set."
+shortExcerpt = "At the latest workshop we demonstrated how to predict, which employees are most likely to resign in the future."
 
-longExcerpt = "Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a ‘profile’."
+longExcerpt = "At the latest workshop in Italy we taught the participants how to identify relevant business use cases and how to predict, which employees are most likely to resign in the future."
 +++
 
-Previous week Blaz, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. 
-{{< link_new url="https://www.wartsila.com/" name="Wärtsilä">}} is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its 
-{{< link_new url="https://www.wartsila.com/ita/en/about" name="subsidiary in Trieste">}} is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.
+Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. {{< link_new url="https://www.wartsila.com/" name="Wärtsilä">}} is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its {{< link_new url="https://www.wartsila.com/ita/en/about" name="subsidiary in Trieste">}} is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.
 
 \
 
