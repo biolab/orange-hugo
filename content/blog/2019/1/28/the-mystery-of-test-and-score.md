@@ -19,7 +19,7 @@ The widget generally accepts <b>two inputs – Data and Learner</b>. Data is the
 \
 
 
-{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" width="60%"%}}
+{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" width="40%"%}}
 \
 \
 
@@ -40,6 +40,6 @@ Another scenario is when you have several examples from the same object, for exa
 \
 
 
-{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" width="80%"%}}
+{{% figure src="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" width="70%"%}}
 \
 \

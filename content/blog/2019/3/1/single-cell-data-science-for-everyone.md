@@ -18,7 +18,7 @@ Typical analysis toolboxes for single-cell data are available in R and Python an
 \
 
 
-{{% figure src="/blog_img/2019/3/1/2019-pavia-group.jpg" %}}
+{{% figure src="/blog_img/2019/3/1/2019-pavia-group.jpg" width="80%" %}}
 \
 \
 
@@ -30,6 +30,6 @@ I want to thank {{< link_new url="http://www.labmedinfo.org/people/bellazzi" nam
 \
 
 
-{{% figure src="/blog_img/2019/3/1/2019-pizzoccheri.jpg" %}}
+{{% figure src="/blog_img/2019/3/1/2019-pizzoccheri.jpg" width="80%"%}}
 \
 \

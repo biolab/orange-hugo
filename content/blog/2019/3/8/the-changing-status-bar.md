@@ -19,7 +19,7 @@ Consider the Neighbors widget. The widget considers the input data and reference
 \
 
 
-{{% figure src="/blog_img/2019/3/8/changing-status-bar.png" %}}
+{{% figure src="/blog_img/2019/3/8/changing-status-bar.png" width="70%"%}}
 \
 \
 

@@ -17,7 +17,7 @@ In a parallel universe, not so far from ours, Orange’s Correlation widget look
 \
 
 
-{{% figure src="/blog_img/2019/1/4/correlations-p-values-1.png" width="50%"%}}
+{{% figure src="/blog_img/2019/1/4/correlations-p-values-1.png" width="40%"%}}
 \
 \
 

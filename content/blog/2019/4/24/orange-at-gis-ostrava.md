@@ -28,7 +28,7 @@ Admittedly, there was not much GIS in my presentations, as I – as planned – 
 \
 
 
-{{% figure src="/blog_img/2019/4/24/ostrava-workshop-2.png" %}}
+{{% figure src="/blog_img/2019/4/24/ostrava-workshop-2.png" width="80%"%}}
 \
 \
 
