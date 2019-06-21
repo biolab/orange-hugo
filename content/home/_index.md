@@ -1,7 +1,6 @@
 +++
 title = "Data Mining"
 url = "/"
-listing = true
 description = "Fruitful and Fun"
 +++
 
