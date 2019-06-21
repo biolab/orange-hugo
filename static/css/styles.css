@@ -365,6 +365,9 @@ blockquote {
     .footer {
         position: absolute;
     }
+    #loop-container{
+      padding-top:50px !important;
+    }
 }
 
 .docfooter {
@@ -1326,6 +1329,83 @@ h2.docs-subtitle {
   margin-left: 0px !important;
 }
 
+
+#promo .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+
+#features .row{
+  margin-right:0px !important;
+  margin-left: 0px !important;
+}
+.workflow-image{
+  padding-bottom:0px !important;
+}
+.blog-content{
+  padding-top: 20px !important;
+}
+
+.image-container{
+  padding: 10px !important;
+  padding-top: 0px !important;
+}
+#search-input{
+    width: 80% !important;
+  }
+
+.home-page-blog .excerpt{
+
+   padding-bottom: 0;
+
+   margin-bottom:30px;
+ }
+
+
+.home-page-blog .excerpt-content{
+  padding-bottom: 0;
+}
+
+.home-page-blog .excerpt-meta{
+padding-top: 10px;
+}
+
+.tag-workflow{
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color:white; /* Grey background color */
+  padding: 6px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 12px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: inline;
+  border-radius: 5px;
+  margin-right:2px;
+  white-space:pre;
+
+}
+
+
+.active-tag {
+    background-color: rgb(33,150,243, 0.3) !important;
+}
+
+.workflow-image{
+  padding:20px;
+  width: 500px;
+  height: 300px;
+}
+
+.categoriesList{
+  margin-top: 5px;
+  padding-left: 40px;
+  line-height: 30px;
+  padding-right: 40px;
+}
+
+.tags{
+  line-height: 30px;
+}
 
 #promo .row{
   margin-right:0px !important;
