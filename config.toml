@@ -59,6 +59,9 @@ disqusShortname = "localblog-2"
     url = "/training/"
     weight = -80
 
-
+  [[menu.main]]
+    name = "Donate"
+    url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
+    weight = -70
 
 
