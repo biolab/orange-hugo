@@ -1507,3 +1507,15 @@ margin-top: auto;
 .entry-content{
   font-weight: lighter !important;
 }
+.docs-image{
+  /*width: 80%;*/
+  height: 158px !important;
+}
+
+.docs-style h2{
+  font-size: 24px !important;
+}
+
+.docs-style p{
+  font-size: 16px !important;
+}
