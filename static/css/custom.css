@@ -799,7 +799,7 @@ blockquote cite {
 }
 
 .search-widgets{
-    padding-top: 80px;
+    padding-top: 80px !important;
 }
 
 .getting-started{
