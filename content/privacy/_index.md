@@ -5,11 +5,9 @@ url = "/privacy/"
 
 ##### Last updated: 14.1.2016
 
-##### Laboratory of Bioinformatics, Faculty of Computer and Information Science, University of Ljubljana (''us'', ''we'', or ''ours'') operates http://orange.biolab.si (the ''Site''). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.
+##### Laboratory of Bioinformatics, Faculty of Computer and Information Science, University of Ljubljana (''us'', ''we'', or ''ours'') operates https://orange.biolab.si (the ''Site''). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site.
 
 ##### We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.
-
-
 
 ## Information Collection and Use
 
@@ -32,18 +30,9 @@ The security of your Personal Information is important to us, but remember that 
 ## Changes to this Privacy Policy
 
 This Privacy Policy is effective as of 14.1.2016 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
-   	
+
 We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgement of the modifications and your consent to abide and be bound by the modified Privacy Policy.
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us through the 
-{{< link_new url="/contact/" name="contact form">}} on our website.
-
-
-
-
-
-
-
-
+If you have any questions about this Privacy Policy, please contact us through the {{< link_new url="/contact/" name="contact form">}} on our website.
