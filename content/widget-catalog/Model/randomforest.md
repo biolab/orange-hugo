@@ -25,7 +25,7 @@ Predict using an ensemble of decision trees.
 
 **Random Forest** works for both classification and regression tasks.
 
-![](/images/RandomForest-stamped.png)
+![](/images/model/RandomForest-stamped.png)
 
 1. Specify the name of the model. The default name is "Random Forest".
 2. Specify how many decision trees will be included in the forest (*Number of trees in the forest*), and how many attributes will be arbitrarily drawn for consideration at each node. If the latter is not specified (option *Number of attributes...* left unchecked), this number is equal to the square root of the number of attributes in the data. You can also choose to fix the seed for tree generation (*Fixed seed for random generator*), which enables replicability of the results.
@@ -36,13 +36,13 @@ Predict using an ensemble of decision trees.
 Examples
 --------
 
-For classification tasks, we use *iris* dataset. Connect it to [Predictions](../evaluation/predictions.md). Then, connect [File](../data/file.md) to **Random Forest** and [Tree](../model/tree.md) and connect them further to [Predictions](../evaluation/predictions.md). Finally, observe the predictions for the two models.
+For classification tasks, we use *iris* dataset. Connect it to [Predictions](/widget-catalog/evaluation/predictions). Then, connect [File](/widget-catalog/data/file) to **Random Forest** and [Tree](/widget-catalog/model/tree) and connect them further to [Predictions](/widget-catalog/evaluation/predictions). Finally, observe the predictions for the two models.
 
-![](/images/RandomForest-classification.png)
+![](/images/model/RandomForest-classification.png)
 
-For regressions tasks, we will use *housing* data. Here, we will compare different models, namely **Random Forest**, [Linear Regression](../model/linearregression.md) and [Constant](../model/constant.md), in the [Test & Score](../evaluation/testandscore.md) widget.
+For regressions tasks, we will use *housing* data. Here, we will compare different models, namely **Random Forest**, [Linear Regression](/widget-catalog/model/linearregression) and [Constant](/widget-catalog/model/constant), in the [Test & Score](/widget-catalog/evaluation/testandscore) widget.
 
-![](/images/RandomForest-regression.png)
+![](/images/model/RandomForest-regression.png)
 
 References
 ----------

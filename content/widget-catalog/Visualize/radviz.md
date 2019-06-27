@@ -25,12 +25,12 @@ Radviz (Hoffman et al. 1997) is a non-linear multi-dimensional visualization tec
 
 The snapshot shown below shows a Radviz widget with a visualization of the dataset from functional genomics (Brown et al. 2000). In this particular visualization the data instances are colored according to the corresponding class, and the visualization space is colored according to the computed class probability. Notice that the particular visualization very nicely separates data instances of different class, making the visualization interesting and potentially informative.
 
-![](/images/Radviz-Brown.png)
+![](/images/visualize/Radviz-Brown.png)
 
-Just like all point-based visualizations, this widget includes tools for intelligent data visualization (VizRank, see Leban et al. 2006) and an interface for explorative data analysis - selection of data points in visualization. Just like the [Scatter Plot](../visualize/scatterplot.md) widget, it can be used to find a set of variables that would result in an interesting visualization. The Radviz graph above is according to this definition an example of a very good visualization, while the one below - where we show an VizRank's interface (*Suggest features* button)
+Just like all point-based visualizations, this widget includes tools for intelligent data visualization (VizRank, see Leban et al. 2006) and an interface for explorative data analysis - selection of data points in visualization. Just like the [Scatter Plot](/widget-catalog/visualize/scatterplot) widget, it can be used to find a set of variables that would result in an interesting visualization. The Radviz graph above is according to this definition an example of a very good visualization, while the one below - where we show an VizRank's interface (*Suggest features* button)
 with a list of 3-attribute visualizations and their scores - is not.
 
-![](/images/Radviz-Brown-2.png)
+![](/images/visualize/Radviz-Brown-2.png)
 
 References
 ----------

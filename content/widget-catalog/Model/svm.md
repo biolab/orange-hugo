@@ -26,7 +26,7 @@ For regression tasks, **SVM** performs linear regression in a high dimension fea
 
 The widget works for both classification and regression tasks.
 
-![](/images/SVM-stamped.png)
+![](/images/model/SVM-stamped.png)
 
 1. The learner can be given a name under which it will appear in other widgets. The default name is "SVM".
 2. SVM type with test error settings. *SVM* and *ν-SVM* are based on different minimization of the error function. On the right side, you can set test error bounds:
@@ -47,13 +47,13 @@ The widget works for both classification and regression tasks.
 Examples
 --------
 
-In the first (regression) example, we have used *housing* dataset and split the data into two data subsets (*Data Sample* and *Remaining Data*) with [Data Sampler](../data/datasampler.md). The sample was sent to SVM which produced a *Model*, which was then used in [Predictions](../evaluation/predictions.md) to predict the values in *Remaining Data*. A similar schema can be used if the data is already in two separate files; in this case, two [File](../data/file.md) widgets would be used instead of the [File](../data/file.md) - [Data Sampler](../data/datasampler.md) combination.
+In the first (regression) example, we have used *housing* dataset and split the data into two data subsets (*Data Sample* and *Remaining Data*) with [Data Sampler](/widget-catalog/data/datasampler). The sample was sent to SVM which produced a *Model*, which was then used in [Predictions](/widget-catalog/evaluation/predictions) to predict the values in *Remaining Data*. A similar schema can be used if the data is already in two separate files; in this case, two [File](/widget-catalog/data/file) widgets would be used instead of the [File](/widget-catalog/data/file) - [Data Sampler](/widget-catalog/data/datasampler) combination.
 
-![](/images/SVM-Predictions.png)
+![](/images/model/SVM-Predictions.png)
 
-The second example shows how to use **SVM** in combination with [Scatter Plot](../visualize/scatterplot.md). The following workflow trains a SVM model on *iris* data and outputs support vectors, which are those data instances that were used as support vectors in the learning phase. We can observe which are these data instances in a scatter plot visualization. Note that for the workflow to work correctly, you must set the links between widgets as demonstrated in the screenshot below.
+The second example shows how to use **SVM** in combination with [Scatter Plot](/widget-catalog/visualize/scatterplot). The following workflow trains a SVM model on *iris* data and outputs support vectors, which are those data instances that were used as support vectors in the learning phase. We can observe which are these data instances in a scatter plot visualization. Note that for the workflow to work correctly, you must set the links between widgets as demonstrated in the screenshot below.
 
-![](/images/SVM-support-vectors.png)
+![](/images/model/SVM-support-vectors.png)
 
 References
 ----------

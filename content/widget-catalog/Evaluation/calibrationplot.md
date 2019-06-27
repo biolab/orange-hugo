@@ -15,7 +15,7 @@ Shows the match between classifiers' probability predictions and actual class pr
 
 The [Calibration Plot](https://en.wikipedia.org/wiki/Calibration_curve)plots class probabilities against those predicted by the classifier(s).
 
-![](/images/CalibrationPlot-stamped.png)
+![](/images/evaluation/CalibrationPlot-stamped.png)
 
 1. Select the desired target class from the drop down menu.
 2. Choose which classifiers to plot. The diagonal represents optimal behavior; the closer the classifier's curve gets, the more accurate its prediction probabilities are. Thus we would use this widget to see whether a classifier is overly optimistic (gives predominantly positive results) or pessimistic (gives predominantly negative results).
@@ -26,8 +26,8 @@ The [Calibration Plot](https://en.wikipedia.org/wiki/Calibration_curve)plots cla
 Example
 -------
 
-At the moment, the only widget which gives the right type of signal needed by the **Calibration Plot** is [Test & Score](../evaluation/testandscore.md). The Calibration Plot will hence always follow Test & Score and, since it has no outputs, no other widgets follow it.
+At the moment, the only widget which gives the right type of signal needed by the **Calibration Plot** is [Test & Score](/widget-catalog/evaluation/testandscore). The Calibration Plot will hence always follow Test & Score and, since it has no outputs, no other widgets follow it.
 
-Here is a typical example, where we compare three classifiers (namely [Naive Bayes](../model/naivebayes.md), [Tree](../model/tree.md) and [Constant](../model/constant.md)) and input them into [Test & Score](../evaluation/testandscore.md). We used the *Titanic* dataset. Test & Score then displays evaluation results for each classifier. Then we draw **Calibration Plot** and [ROC Analysis](../evaluation/rocanalysis.md) widgets from Test & Score to further analyze the performance of classifiers. **Calibration Plot** enables you to see prediction accuracy of class probabilities in a plot.
+Here is a typical example, where we compare three classifiers (namely [Naive Bayes](/widget-catalog/model/naivebayes), [Tree](/widget-catalog/model/tree) and [Constant](/widget-catalog/model/constant)) and input them into [Test & Score](/widget-catalog/evaluation/testandscore). We used the *Titanic* dataset. Test & Score then displays evaluation results for each classifier. Then we draw **Calibration Plot** and [ROC Analysis](/widget-catalog/evaluation/rocanalysis) widgets from Test & Score to further analyze the performance of classifiers. **Calibration Plot** enables you to see prediction accuracy of class probabilities in a plot.
 
-![](/images/CalibrationPlot-example.png)
+![](/images/evaluation/CalibrationPlot-example.png)

@@ -19,7 +19,7 @@ Create class attribute from a string attribute.
 
 **Create Class** creates a new class attribute from an existing discrete or string attribute. The widget matches the string value of the selected attribute and constructs a new user-defined value for matching instances.
 
-![](/images/CreateClass-stamped.png)
+![](/images/data/CreateClass-stamped.png)
 
 1. The attribute the new class is constructed from.
 2. Matching:
@@ -39,6 +39,6 @@ Here is a simple example with the *auto-mpg* dataset. Pass the data to **Create 
 
 We named our new class column *car_brand* and we matched at the beginning of the string.
 
-![](/images/CreateClass-example.png)
+![](/images/data/CreateClass-example.png)
 
-Finally, we can observe the new column in a [Data Table](../data/datatable.md) or use the value as color in the [Scatter Plot](../visualize/scatterplot.md).
+Finally, we can observe the new column in a [Data Table](/widget-catalog/data/datatable) or use the value as color in the [Scatter Plot](/widget-catalog/visualize/scatterplot).

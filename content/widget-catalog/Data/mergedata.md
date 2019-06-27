@@ -22,7 +22,7 @@ The **Merge Data** widget is used to horizontally merge two datasets, based on v
 
 Merging is done by values of selected (merging) attributes. First, the value of the merging attribute from Data is taken and instances from Extra Data are searched for matching values. If more than a single instance from Extra Data was to be found, the attribute is removed from available merging attributes.
 
-![](/images/MergeData-stamped.png)
+![](/images/data/MergeData-stamped.png)
 
 1. Information on Data
 2. Information on Extra Data
@@ -37,14 +37,14 @@ Merging is done by values of selected (merging) attributes. First, the value of 
 Example
 -------
 
-Merging two datasets results in appending new attributes to the original file, based on a selected common attribute. In the example below, we wanted to merge the **zoo.tab** file containing only factual data with [zoo-with-images.tab](http://file.biolab.si/datasets/zoo-with-images.tab) containing images. Both files share a common string attribute *names*. Now, we create a workflow connecting the two files. The *zoo.tab* data is connected to **Data** input of the **Merge Data** widget, and the *zoo-with-images.tab* data to the **Extra Data** input. Outputs of the **Merge Data** widget is then connected to the [Data Table](../data/datatable.md) widget. In the latter, the **Merged Data** channels are shown, where image attributes are added to the original data.
+Merging two datasets results in appending new attributes to the original file, based on a selected common attribute. In the example below, we wanted to merge the **zoo.tab** file containing only factual data with [zoo-with-images.tab](http://file.biolab.si/datasets/zoo-with-images.tab) containing images. Both files share a common string attribute *names*. Now, we create a workflow connecting the two files. The *zoo.tab* data is connected to **Data** input of the **Merge Data** widget, and the *zoo-with-images.tab* data to the **Extra Data** input. Outputs of the **Merge Data** widget is then connected to the [Data Table](/widget-catalog/data/datatable) widget. In the latter, the **Merged Data** channels are shown, where image attributes are added to the original data.
 
-![](/images/MergeData-Example.png)
+![](/images/data/MergeData-Example.png)
 
 The case where we want to include all instances in the output, even those where no match by attribute *names* was found, is shown in the following workflow.
 
-![](/images/MergeData-Example2.png)
+![](/images/data/MergeData-Example2.png)
 
 The third type of merging is shown in the next workflow. The output consist of both inputs, with unknown values assigned where no match was found.
 
-![](/images/MergeData-Example3.png)
+![](/images/data/MergeData-Example3.png)

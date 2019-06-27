@@ -19,7 +19,7 @@ Turns discrete attributes into continuous dummy variables.
 
 The **Continuize** widget receives a data set in the input and outputs the same data set in which the discrete attributes (including binary attributes) are replaced with continuous ones.
 
-![](/images/Continuize-stamped.png)
+![](/images/data/Continuize-stamped.png)
 
 1. [Continuization methods](https://en.wikipedia.org/wiki/Continuity_correction), which define the treatment of multivalued discrete attributes. Say that we have a discrete attribute status with the values low, middle and high, listed in that order. Options for their transformation are:
 
@@ -39,10 +39,10 @@ The **Continuize** widget receives a data set in the input and outputs the same 
 Examples
 --------
 
-First, let's see what is the output of the **Continuize** widget. We feed the original data (the *Heart disease* data set) into the [Data Table](../data/datatable) and see how they look like. Then we continuize the discrete values and observe them in another [Data Table](../data/datatable).
+First, let's see what is the output of the **Continuize** widget. We feed the original data (the *Heart disease* data set) into the [Data Table](/widget-catalog/data/datatable) and see how they look like. Then we continuize the discrete values and observe them in another [Data Table](/widget-catalog/data/datatable).
 
-![](/images/Continuize-Example1.png)
+![](/images/data/Continuize-Example1.png)
 
 In the second example, we show a typical use of this widget - in order to properly plot the linear projection of the data, discrete attributes need to be converted to continuous ones and that is why we put the data through the **Continuize** widget before drawing it. The attribute "*chest pain*" originally had four values and was transformed into three continuous attributes; similar happened to gender, which was transformed into a single attribute "*gender=female*".
 
-![](/images/Continuize-Example2.png)
+![](/images/data/Continuize-Example2.png)

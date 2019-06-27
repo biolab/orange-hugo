@@ -24,7 +24,7 @@ The [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (short for "Adaptive boos
 
 **AdaBoost** works for both classification and regression.
 
-![](/images/AdaBoost-stamped.png)
+![](/images/model/AdaBoost-stamped.png)
 
 1. The learner can be given a name under which it will appear in other widgets. The default name is "AdaBoost".
 2. Set the parameters. The base estimator is a tree and you can set:
@@ -40,10 +40,10 @@ The [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (short for "Adaptive boos
 Examples
 --------
 
-For classification, we loaded the *iris* dataset. We used *AdaBoost*, [Tree](../model/tree.md) and [Logistic Regression](../model/logisticregression.md) and evaluated the models' performance in [Test & Score](../evaluation/testandscore.md).
+For classification, we loaded the *iris* dataset. We used *AdaBoost*, [Tree](/widget-catalog/model/tree) and [Logistic Regression](/widget-catalog/model/logisticregression) and evaluated the models' performance in [Test & Score](/widget-catalog/evaluation/testandscore).
 
-![](/images/AdaBoost-classification.png)
+![](/images/model/AdaBoost-classification.png)
 
-For regression, we loaded the *housing* dataset, sent the data instances to two different models (**AdaBoost** and [Tree](../model/tree.md)) and output them to the [Predictions](../evaluation/predictions.md) widget.
+For regression, we loaded the *housing* dataset, sent the data instances to two different models (**AdaBoost** and [Tree](/widget-catalog/model/tree)) and output them to the [Predictions](/widget-catalog/evaluation/predictions) widget.
 
-![](/images/AdaBoost-regression.png)
+![](/images/model/AdaBoost-regression.png)

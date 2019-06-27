@@ -19,11 +19,11 @@ A tree algorithm with forward pruning.
 - Learner: decision tree learning algorithm
 - Model: trained model
 
-**Tree** is a simple algorithm that splits the data into nodes by class purity. It is a precursor to [Random Forest](../model/randomforest.md). Tree in Orange is designed in-house and can handle both discrete and continuous datasets.
+**Tree** is a simple algorithm that splits the data into nodes by class purity. It is a precursor to [Random Forest](/widget-catalog/model/randomforest). Tree in Orange is designed in-house and can handle both discrete and continuous datasets.
 
 It can also be used for both classification and regression tasks.
 
-![](/images/Tree-stamped.png)
+![](/images/model/Tree-stamped.png)
 
 1. The learner can be given a name under which it will appear in other widgets. The default name is "Tree".
 2. Tree parameters:
@@ -37,14 +37,14 @@ It can also be used for both classification and regression tasks.
 Examples
 --------
 
-There are two typical uses for this widget. First, you may want to induce a model and check what it looks like in [Tree Viewer](../visualize/treeviewer.md).
+There are two typical uses for this widget. First, you may want to induce a model and check what it looks like in [Tree Viewer](/widget-catalog/visualize/treeviewer).
 
-![](/images/Tree-classification-visualize.png)
+![](/images/model/Tree-classification-visualize.png)
 
-The second schema trains a model and evaluates its performance against [Logistic Regression](../model/logisticregression.md).
+The second schema trains a model and evaluates its performance against [Logistic Regression](/widget-catalog/model/logisticregression).
 
-![](/images/Tree-classification-model.png)
+![](/images/model/Tree-classification-model.png)
 
-We used the *iris* dataset in both examples. However, **Tree** works for regression tasks as well. Use *housing* dataset and pass it to **Tree**. The selected tree node from [Tree Viewer](../visualize/treeviewer.md) is presented in the [Scatter Plot](../visualize/scatterplot.md) and we can see that the selected examples exhibit the same features.
+We used the *iris* dataset in both examples. However, **Tree** works for regression tasks as well. Use *housing* dataset and pass it to **Tree**. The selected tree node from [Tree Viewer](/widget-catalog/visualize/treeviewer) is presented in the [Scatter Plot](/widget-catalog/visualize/scatterplot) and we can see that the selected examples exhibit the same features.
 
-![](/images/Tree-regression-subset.png)
+![](/images/model/Tree-regression-subset.png)

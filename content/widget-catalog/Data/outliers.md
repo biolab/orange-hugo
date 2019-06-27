@@ -21,7 +21,7 @@ Simple outlier detection by comparing distances between instances.
 
 The **Outliers** widget applies one of the two methods for outlier detection. Both methods apply classification to the dataset, one with SVM (multiple kernels) and the other with elliptical envelope. *One-class SVM with non-linear kernels (RBF)* performs well with non-Gaussian distributions, while *Covariance estimator* works only for data with Gaussian distribution.
 
-![](/images/Outliers-stamped.png)
+![](/images/data/Outliers-stamped.png)
 
 1. Information on the input data, number of inliers and outliers based on the selected model.
 2. Select the *Outlier detection method*:
@@ -37,6 +37,6 @@ The **Outliers** widget applies one of the two methods for outlier detection. Bo
 Example
 -------
 
-Below, is a simple example of how to use this widget. We used the *Iris* dataset to detect the outliers. We chose the *one class SVM with non-linear kernel (RBF)* method, with Nu set at 20% (less training errors, more support vectors). Then we observed the outliers in the [Data Table](../data/datatable.md) widget, while we sent the inliers to the [Scatter Plot](../visualize/scatterplot.md).
+Below, is a simple example of how to use this widget. We used the *Iris* dataset to detect the outliers. We chose the *one class SVM with non-linear kernel (RBF)* method, with Nu set at 20% (less training errors, more support vectors). Then we observed the outliers in the [Data Table](/widget-catalog/data/datatable) widget, while we sent the inliers to the [Scatter Plot](/widget-catalog/visualize/scatterplot).
 
-![](/images/Outliers-Example.png)
+![](/images/data/Outliers-Example.png)

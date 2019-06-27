@@ -21,7 +21,7 @@ Predict according to the nearest training instances.
 
 The **kNN** widget uses the [kNN algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) that searches for k closest training examples in feature space and uses their average as prediction.
 
-![](/images/kNN-stamped.png)
+![](/images/model/kNN-stamped.png)
 
 1. A name under which it will appear in other widgets. The default name is "kNN".
 2. Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.
@@ -39,10 +39,10 @@ The **kNN** widget uses the [kNN algorithm](https://en.wikipedia.org/wiki/K-near
 Examples
 --------
 
-The first example is a classification task on *iris* dataset. We compare the results of [k-Nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) with the default model [Constant](../model/constant.md), which always predicts the majority class.
+The first example is a classification task on *iris* dataset. We compare the results of [k-Nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) with the default model [Constant](/widget-catalog/model/constant), which always predicts the majority class.
 
-![](/images/Constant-classification.png)
+![](/images/model/Constant-classification.png)
 
-The second example is a regression task. This workflow shows how to use the *Learner* output. For the purpose of this example, we used the *housing* dataset. We input the **kNN** prediction model into [Predictions](../evaluation/predictions.md) and observe the predicted values.
+The second example is a regression task. This workflow shows how to use the *Learner* output. For the purpose of this example, we used the *housing* dataset. We input the **kNN** prediction model into [Predictions](/widget-catalog/evaluation/predictions) and observe the predicted values.
 
-![](/images/kNN-regression.png)
+![](/images/model/kNN-regression.png)

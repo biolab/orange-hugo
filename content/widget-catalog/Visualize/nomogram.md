@@ -24,7 +24,7 @@ When there are too many attributes in the plotted dataset, only best ranked ones
 
 The probability for the chosen target class is computed by '1-vs-all' principle, which should be taken in consideration when dealing with multiclass data (alternating probabilities do not sum to 1). To avoid this inconvenience, you can choose to normalize probabilities.
 
-![](/images/Nomogram-NaiveBayes.png)
+![](/images/visualize/Nomogram-NaiveBayes.png)
 
 1. Select the target class you want to model the probability for. Select, whether you want to normalize the probabilities or not.
 2. By default Scale is set to Log odds ration. For easier understanding and interpretation option *Point scale* can be used. The unit is obtained by re-scaling the log odds so that the maximal absolute log odds ratio in the nomogram represents 100 points.
@@ -37,18 +37,18 @@ Continuous attributes can be plotted in 2D (only for Logistic Regression).
 Examples
 --------
 
-The **Nomogram** widget should be used immediately after trained classifier widget (e.g. [Naive Bayes](../model/naivebayes.md) or [Logistics Regression](../model/logisticregression.md)). It can also be passed a data instance using any widget that enables selection (e.g. [Data Table](../data/datatable.md)) as shown in the workflow below.
+The **Nomogram** widget should be used immediately after trained classifier widget (e.g. [Naive Bayes](/widget-catalog/model/naivebayes) or [Logistics Regression](/widget-catalog/model/logisticregression)). It can also be passed a data instance using any widget that enables selection (e.g. [Data Table](/widget-catalog/data/datatable)) as shown in the workflow below.
 
-![](/images/Nomogram-Example.png)
+![](/images/visualize/Nomogram-Example.png)
 
 Referring to the Titanic dataset once again, 1490 (68%) passengers on Titanic out of 2201 died. To make a prediction, the contribution of each attribute is measured as a point score and the individual point scores are summed to determine the probability. When the value of the attribute is unknown, its contribution is 0 points. Therefore, not knowing anything about the passenger, the total point score is 0 and the corresponding probability equals the unconditional prior. The nomogram in the example shows the case when we know that the passenger is a male adult from the first class. The points sum to -0.36, with a corresponding probability of not surviving of about 53%.
 
 #### Features output
 
-The second example shows how to use the Features output. Let us use *heart_disease* data for this exercise and load it in the File widget. Now connect File to [Naive Bayes](../model/naivebayes.md) (or [Logistic Regression](../model/logisticregression.md)) and add Nomogram to Naive Bayes. Finally, connect File to [Select Columns](../data/selectcolumns.md).
+The second example shows how to use the Features output. Let us use *heart_disease* data for this exercise and load it in the File widget. Now connect File to [Naive Bayes](/widget-catalog/model/naivebayes) (or [Logistic Regression](/widget-catalog/model/logisticregression)) and add Nomogram to Naive Bayes. Finally, connect File to [Select Columns](/widget-catalog/data/selectcolumns).
 
 Select Columns selects a subset of variables, while Nomogram shows the top scoring variables for the trained classifier. To filter the data by the variables selected in the Nomogram, connect Nomogram to Select Columns as shown below. Nomogram will pass a list of selected variables to Select Columns, which will retain only the variables from the list. For this to work, you have to press *Use input features* in Select Columns (or tick it to always apply it).
 
 We have selected the top 5 variables in Nomogram and used Select Columns to retain only those variables.
 
-![](/images/Nomogram-Features.png)
+![](/images/visualize/Nomogram-Features.png)

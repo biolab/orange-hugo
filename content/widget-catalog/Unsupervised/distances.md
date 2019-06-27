@@ -25,7 +25,7 @@ The resulting distance matrix can be fed further to [Hierarchical Clustering](hi
 
 Distances work well with Orange add-ons, too. The distance matrix can be fed to Network from Distances (Network add-on) to convert the matrix into a graph and to Duplicate Detection (Text add-on) to find duplicate documents in the corpus.
 
-![](/images/Distances-stamped.png)
+![](/images/unsupervised/Distances-stamped.png)
 
 1. Choose whether to measure distances between rows or columns.
 2. Choose the *Distance Metric*:
@@ -47,14 +47,14 @@ Distances work well with Orange add-ons, too. The distance matrix can be fed to 
 Examples
 --------
 
-The first example shows a typical use of the **Distances** widget. We are using the *iris.tab* data from the [File](../data/file.md) widget. We compute distances between data instances (rows) and pass the result to the [Hierarchical Clustering](hierarchicalclustering.md). This is a simple workflow to find groups of data instances.
+The first example shows a typical use of the **Distances** widget. We are using the *iris.tab* data from the [File](/widget-catalog/data/file) widget. We compute distances between data instances (rows) and pass the result to the [Hierarchical Clustering](hierarchicalclustering.md). This is a simple workflow to find groups of data instances.
 
-![](/images/Distances-Example1-rows.png)
+![](/images/unsupervised/Distances-Example1-rows.png)
 
 Alternatively, we can compute distance between columns and find how similar our features are.
 
-![](/images/Distances-Example1-columns.png)
+![](/images/unsupervised/Distances-Example1-columns.png)
 
 The second example shows how to visualize the resulting distance matrix. A nice way to observe data similarity is in a [Distance Map](distancemap.md) or in [MDS](mds.md).
 
-![](/images/Distances-Example2.png)
+![](/images/unsupervised/Distances-Example2.png)

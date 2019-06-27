@@ -23,7 +23,7 @@ The CN2 algorithm is a classification technique designed for the efficient induc
 
 **CN2 Rule Induction** works only for classification.
 
-![](/images/CN2-stamped.png)
+![](/images/model/CN2-stamped.png)
 
 1. Name under which the learner appears in other widgets. The default name is *CN2 Rule Induction*.
 2. *Rule ordering*:
@@ -48,13 +48,13 @@ The CN2 algorithm is a classification technique designed for the efficient induc
 Examples
 --------
 
-For the example below, we have used *zoo* dataset and passed it to **CN2 Rule Induction**. We can review and interpret the built model with [CN2 Rule Viewer](../visualize/cn2ruleviewer.md) widget.
+For the example below, we have used *zoo* dataset and passed it to **CN2 Rule Induction**. We can review and interpret the built model with [CN2 Rule Viewer](/widget-catalog/visualize/cn2ruleviewer) widget.
 
-![](/images/CN2-visualize.png)
+![](/images/model/CN2-visualize.png)
 
-The second workflow tests evaluates **CN2 Rule Induction** and [Tree](../model/tree.md) in [Test & Score](../evaluation/testandscore.md).
+The second workflow tests evaluates **CN2 Rule Induction** and [Tree](/widget-catalog/model/tree) in [Test & Score](/widget-catalog/evaluation/testandscore).
 
-![](/images/CN2-classification.png)
+![](/images/model/CN2-classification.png)
 
 References
 ----------

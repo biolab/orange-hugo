@@ -19,7 +19,7 @@ Transforms distances in a dataset.
 
 The **Distances Transformation** widget is used for the normalization and inversion of distance matrices. The normalization of data is necessary to bring all the variables into proportion with one another.
 
-![](/images/DistanceTransformation-stamped.png)
+![](/images/unsupervised/DistanceTransformation-stamped.png)
 
 1. Choose the type of [Normalization](https://en.wikipedia.org/wiki/Normalization_\(statistics\)):
    - **No normalization**
@@ -38,6 +38,6 @@ The **Distances Transformation** widget is used for the normalization and invers
 Example
 -------
 
-In the snapshot below, you can see how transformation affects the distance matrix. We loaded the *Iris* dataset and calculated the distances between rows with the help of the [Distances](../unsupervised/distances.md) widget. In order to demonstrate how **Distance Transformation** affects the [Distance Matrix](../unsupervised/distancematrix.md), we created the workflow below and compared the transformed distance matrix with the "original" one.
+In the snapshot below, you can see how transformation affects the distance matrix. We loaded the *Iris* dataset and calculated the distances between rows with the help of the [Distances](/widget-catalog/unsupervised/distances) widget. In order to demonstrate how **Distance Transformation** affects the [Distance Matrix](/widget-catalog/unsupervised/distancematrix), we created the workflow below and compared the transformed distance matrix with the "original" one.
 
-![](/images/DistanceTransformation-Example.png)
+![](/images/unsupervised/DistanceTransformation-Example.png)

@@ -20,7 +20,7 @@ Groups items using a hierarchical clustering algorithm.
 
 The widget computes [hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering) of arbitrary types of objects from a matrix of distances and shows a corresponding [dendrogram](https://en.wikipedia.org/wiki/Dendrogram).
 
-![](/images/HierarchicalClustering-stamped.png)
+![](/images/unsupervised/HierarchicalClustering-stamped.png)
 
 1. The widget supports four ways of measuring distances between clusters:
    - **Single linkage** computes the distance between the closest elements of the two clusters
@@ -42,10 +42,10 @@ The widget computes [hierarchical clustering](https://en.wikipedia.org/wiki/Hier
 Examples
 --------
 
-The workflow below shows the output of **Hierarchical Clustering** for the *Iris* dataset in [Data Table](../data/datatable.md) widget. We see that if we choose *Append cluster IDs* in hierarchical clustering, we can see an additional column in the **Data Table** named *Cluster*. This is a way to check how hierarchical clustering clustered individual instances.
+The workflow below shows the output of **Hierarchical Clustering** for the *Iris* dataset in [Data Table](/widget-catalog/data/datatable) widget. We see that if we choose *Append cluster IDs* in hierarchical clustering, we can see an additional column in the **Data Table** named *Cluster*. This is a way to check how hierarchical clustering clustered individual instances.
 
-![](/images/HierarchicalClustering-Example.png)
+![](/images/unsupervised/HierarchicalClustering-Example.png)
 
-In the second example, we loaded the *Iris* dataset again, but this time we added the [Scatter Plot](../visualize/scatterplot.md), showing all the instances from the [File](../data/file.md) widget, while at the same time receiving the selected instances signal from **Hierarchical Clustering**. This way we can observe the position of the selected cluster(s) in the projection.
+In the second example, we loaded the *Iris* dataset again, but this time we added the [Scatter Plot](/widget-catalog/visualize/scatterplot), showing all the instances from the [File](/widget-catalog/data/file) widget, while at the same time receiving the selected instances signal from **Hierarchical Clustering**. This way we can observe the position of the selected cluster(s) in the projection.
 
-![](/images/HierarchicalClustering-Example2.png)
+![](/images/unsupervised/HierarchicalClustering-Example2.png)

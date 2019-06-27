@@ -17,7 +17,7 @@ The **Distributions** widget displays the [value distribution](https://en.wikipe
 
 For discrete attributes, the graph displayed by the widget shows how many times (e.g., in how many instances) each attribute value appears in the data. If the data contains a class variable, class distributions for each of the attribute values will be displayed as well (like in the snapshot below). In order to create this graph, we used the *Zoo* dataset.
 
-![](/images/Distributions-Disc-stamped.png)
+![](/images/visualize/Distributions-Disc-stamped.png)
 
 1. A list of variables for distributions display
 2. If *Bin continuous variables* is ticked, the widget will discretize continuous variables by assigning them to intervals. The number of intervals is set by precision scale. Alternatively, you can set smoothness for the distribution curves of continuous variables.
@@ -30,8 +30,8 @@ For continuous attributes, the attribute values are displayed as a function grap
 
 For the purpose of this example, we used the *Iris* dataset.
 
-![](/images/Distributions-Cont.png)
+![](/images/visualize/Distributions-Cont.png)
 
 In class-less domains, the bars are displayed in gray. Here we set *Bin continuous variables into 10 bins*, which distributes variables into 10 intervals and displays averages of these intervals as histograms (see 2. above). We used the *Housing* dataset.
 
-![](/images/Distributions-NoClass.png)
+![](/images/visualize/Distributions-NoClass.png)

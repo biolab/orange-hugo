@@ -19,7 +19,7 @@ Add new features to your dataset.
 
 The **Feature Constructor** allows you to manually add features (columns) into your dataset. The new feature can be a computation of an existing one or a combination of several (addition, subtraction, etc.). You can choose what type of feature it will be (discrete, continuous or string) and what its parameters are (name, value, expression). For continuous variables you only have to construct an expression in Python.
 
-![](/images/feature-constructor1-stamped.png)
+![](/images/data/feature-constructor1-stamped.png)
 
 1. List of constructed variables
 2. Add or remove variables
@@ -32,7 +32,7 @@ The **Feature Constructor** allows you to manually add features (columns) into y
 
 For discrete variables, however, there's a bit more work. First add or remove the values you want for the new feature. Then select the base value and the expression. In the example below, we have constructed an expression with 'if lower than' and defined three conditions; the program ascribes 0 (which we renamed to lower) if the original value is lower than 6, 1 (mid) if it is lower than 7 and 2 (higher) for all the other values. Notice that we use an underscore for the feature name (e.g. petal\_length).
 
-![](/images/feature-constructor2-stamped.png)
+![](/images/data/feature-constructor2-stamped.png)
 
 1. List of variable definitions
 2. Add or remove variables
@@ -47,9 +47,9 @@ For discrete variables, however, there's a bit more work. First add or remove th
 Example
 -------
 
-With the **Feature Constructor** you can easily adjust or combine existing features into new ones. Below, we added one new discrete feature to the *Titanic* dataset. We created a new attribute called *Financial status* and set the values to be *rich* if the person belongs to the first class (status = first) and *not rich* for everybody else. We can see the new dataset with [Data Table](../data/datatable.md) widget.
+With the **Feature Constructor** you can easily adjust or combine existing features into new ones. Below, we added one new discrete feature to the *Titanic* dataset. We created a new attribute called *Financial status* and set the values to be *rich* if the person belongs to the first class (status = first) and *not rich* for everybody else. We can see the new dataset with [Data Table](/widget-catalog/data/datatable) widget.
 
-![](/images/FeatureConstructor-Example.png)
+![](/images/data/FeatureConstructor-Example.png)
 
 Hints
 -----

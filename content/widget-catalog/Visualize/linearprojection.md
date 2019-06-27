@@ -25,7 +25,7 @@ This widget displays [linear projections](https://en.wikipedia.org/wiki/Projecti
 
 Consider, for a start, a projection of the *Iris* dataset shown below. Notice that it is the sepal width and sepal length that already separate *Iris setosa* from the other two, while the petal length is the attribute best separating *Iris versicolor* from *Iris virginica*.
 
-![](/images/linear-projection-stamped.png)
+![](/images/visualize/linear-projection-stamped.png)
 
 1. Axes in the projection that are displayed and other available axes.
 2. Optimize your projection by using **Suggest Features**. This feature scores attributes by average classification accuracy and returns the top scoring attributes with a simultaneous visualization update.
@@ -43,9 +43,9 @@ Consider, for a start, a projection of the *Iris* dataset shown below. Notice th
 Example
 -------
 
-The **Linear Projection** widget works just like other visualization widgets. Below, we connected it to the [File](../data/file.md) widget to see the set projected on a 2-D plane. Then we selected the data for further analysis and connected it to the [Data Table](../data/datatable.md) widget to see the details of the selected subset.
+The **Linear Projection** widget works just like other visualization widgets. Below, we connected it to the [File](/widget-catalog/data/file) widget to see the set projected on a 2-D plane. Then we selected the data for further analysis and connected it to the [Data Table](/widget-catalog/data/datatable) widget to see the details of the selected subset.
 
-![](/images/LinearProjection-example.png)
+![](/images/visualize/LinearProjection-example.png)
 
 References
 ----------

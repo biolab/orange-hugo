@@ -1,6 +1,6 @@
 +++
 "title" = "t-SNE"
-"icon" = "icons/tsne.png"
+"icon" = "icons/tSNE.png"
 "keywords" = "[]"
 "category" = "Unsupervised"
 +++
@@ -21,7 +21,7 @@ Two-dimensional data projection with t-SNE.
 
 The **t-SNE** widget plots the data with a t-distributed stochastic neighbor embedding method. [t-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.
 
-![](/images/tSNE-stamped.png)
+![](/images/unsupervised/tSNE-stamped.png)
 
 1. Number of iterations for optimization and the measure of [perplexity](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html). Press Start to (re-)run the optimization.
 2. Select the number of PCA components used for projection.
@@ -46,4 +46,4 @@ Pass the markers and k-Means results to **Score Cells** widget and select *geneN
 
 In **t-SNE**, use *Scores* attribute to color the points and set their size. We see that killer cells are nicely clustered together and that t-SNE indeed found subpopulations.
 
-![](/images/tSNE-Example.png)
+![](/images/unsupervised/tSNE-Example.png)

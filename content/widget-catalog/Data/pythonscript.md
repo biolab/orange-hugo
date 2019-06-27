@@ -37,7 +37,7 @@ For instance the following script would simply pass on all signals it receives:
 
 Note: You should not modify the input objects in place.
 
-![](/images/PythonScript-stamped.png)
+![](/images/data/PythonScript-stamped.png)
 
 1. Info box contains names of basic operators for Orange Python script.
 2. The *Library* control can be used to manage multiple scripts. Pressing "+" will add a new entry and open it in the *Python script* editor. When the script is modified, its entry in the *Library* will change to indicate it has unsaved changes. Pressing *Update* will save the script (keyboard shortcut "Ctrl+S"). A script can be removed by selecting it and pressing the "-" button.
@@ -58,7 +58,7 @@ One can, for example, do batch filtering by attributes. We used zoo.tab for the 
                     in_data.domain.class_vars)
     out_data = Table(domain, in_data)
 
-![](/images/PythonScript-filtering.png)
+![](/images/data/PythonScript-filtering.png)
 
 The second example shows how to round all the values in a few lines of code. This time we used wine.tab and rounded all the values to whole numbers.
 
@@ -67,7 +67,7 @@ The second example shows how to round all the values in a few lines of code. Thi
     #copy, otherwise input data will be overwritten
     np.round(out_data.X, 0, out_data.X)
 
-![](/images/PythonScript-round.png)
+![](/images/data/PythonScript-round.png)
 
 The third example introduces some Gaussian noise to the data. Again we make a copy of the input data, then walk through all the values with a double for loop and add random noise.
 
@@ -79,7 +79,7 @@ The third example introduces some Gaussian noise to the data. Again we make a co
         inst[f] += random.gauss(0, 0.02)
     out_data = new_data
 
-![](/images/PythonScript-gauss.png)
+![](/images/data/PythonScript-gauss.png)
 
 The final example uses Orange3-Text add-on. **Python Script** is very useful for custom preprocessing in text mining, extracting new features from strings, or utilizing advanced *nltk* or *gensim* functions. Below, we simply tokenized our input data from *deerwester.tab* by splitting them by whitespace.
 
@@ -91,4 +91,4 @@ The final example uses Orange3-Text add-on. **Python Script** is very useful for
 
 You can add a lot of other preprocessing steps to further adjust the output. The output of **Python Script** can be used with any widget that accepts the type of output your script produces. In this case, connection is green, which signalizes the right type of input for Word Cloud widget.
 
-![](/images/PythonScript-Example3.png)
+![](/images/data/PythonScript-Example3.png)

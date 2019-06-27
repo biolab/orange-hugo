@@ -23,7 +23,7 @@ After purging an attribute, it may become single-valued or, in extreme case, hav
 
 A different issue is the order of attribute values: if the data is read from a file in a format in which values are not declared in advance, they are sorted “in order of appearance”. Sometimes we would prefer to have them sorted alphabetically.
 
-![](/images/PurgeDomain-stamped.png)
+![](/images/data/PurgeDomain-stamped.png)
 
 1. Purge attributes.
 2. Purge classes.
@@ -42,6 +42,6 @@ Example
 
 The **Purge Domain** widget would typically appear after data filtering, for instance when selecting a subset of visualized examples.
 
-In the above schema, we play with the *adult.tab* dataset: we visualize it and select a portion of the data, which contains only four out of the five original classes. To get rid of the empty class, we put the data through **Purge Domain** before going on to the [Box Plot](../visualize/boxplot.md) widget. The latter shows only the four classes which are in the **Purge Data** output. To see the effect of data purification, uncheck *Remove unused class variable values* and observe the effect this has on [Box Plot](../visualize/boxplot.md).
+In the above schema, we play with the *adult.tab* dataset: we visualize it and select a portion of the data, which contains only four out of the five original classes. To get rid of the empty class, we put the data through **Purge Domain** before going on to the [Box Plot](/widget-catalog/visualize/boxplot) widget. The latter shows only the four classes which are in the **Purge Data** output. To see the effect of data purification, uncheck *Remove unused class variable values* and observe the effect this has on [Box Plot](/widget-catalog/visualize/boxplot).
 
-![](/images/PurgeDomain-example.png)
+![](/images/data/PurgeDomain-example.png)

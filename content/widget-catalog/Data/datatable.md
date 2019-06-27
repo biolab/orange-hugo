@@ -19,7 +19,7 @@ Displays attribute-value data in a spreadsheet.
 
 The **Data Table** widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. The widget also supports manual selection of data instances.
 
-![](/images/DataTable-stamped.png)
+![](/images/data/DataTable-stamped.png)
 
 1. The name of the dataset (usually the input data file). Data
    instances are in rows and their attribute values in columns. In this
@@ -38,10 +38,10 @@ The **Data Table** widget receives one or more datasets in its input and present
 Example
 -------
 
-We used two [File](../data/file.md) widgets to read the *Iris* and *Glass* dataset (provided in Orange distribution), and send them to the **Data Table** widget.
+We used two [File](/widget-catalog/data/file) widgets to read the *Iris* and *Glass* dataset (provided in Orange distribution), and send them to the **Data Table** widget.
 
-![](/images/DataTable-Schema.png)
+![](/images/data/DataTable-Schema.png)
 
 Selected data instances in the first **Data Table** are passed to the second **Data Table**. Notice that we can select which dataset to view (iris or glass). Changing from one dataset to another alters the communicated selection of data instances if *Commit on any change* is selected.
 
-![](/images/DataTable-Example.png)
+![](/images/data/DataTable-Example.png)

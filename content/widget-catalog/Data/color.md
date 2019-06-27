@@ -19,7 +19,7 @@ Set color legend for variables.
 
 The **Color** widget enables you to set the color legend in your visualizations according to your own preferences. This option provides you with the tools for emphasizing your results and offers a great variety of color options for presenting your data. It can be combined with most visualizations widgets.
 
-![](/images/Color-stamped.png)
+![](/images/data/Color-stamped.png)
 
 1. A list of discrete variables. You can set the color of each variable by double-clicking on it and opening the *Color palette* or the *Select color* window. The widget also enables text-editing. By clicking on a variable, you can change its name.
 2. A list of continuous variables. You can customize the color gradients by double-clicking on them. The widget also enables text-editing. By clicking on a variable, you can change its name. If you hover over the right side side of the gradient, *Copy to all* appears. You can then apply your customized color gradient to all variables.
@@ -29,7 +29,7 @@ The **Color** widget enables you to set the color legend in your visualizations 
 Discrete variables
 ------------------
 
-![](/images/Color-palette-discrete-stamped.png)
+![](/images/data/Color-palette-discrete-stamped.png)
 
 1. Choose a desired color from the palette of basic colors.
 2. Move the cursor to choose a custom color from the color palette.
@@ -43,7 +43,7 @@ Discrete variables
 Numeric variables
 -----------------
 
-![](/images/Color-palette-numeric-stamped.png)
+![](/images/data/Color-palette-numeric-stamped.png)
 
 1. Choose a gradient from your saved profiles. The default profile is already set.
 2. The gradient palette
@@ -55,11 +55,11 @@ Numeric variables
 Example
 -------
 
-We chose to work with the *Iris* data set. We opened the color palette and selected three new colors for the three types of Irises. Then we opened the [Scatter Plot](../visualize/scatterplot.md) widget and viewed the changes made to the scatter plot.
+We chose to work with the *Iris* data set. We opened the color palette and selected three new colors for the three types of Irises. Then we opened the [Scatter Plot](/widget-catalog/visualize/scatterplot) widget and viewed the changes made to the scatter plot.
 
-![](/images/Color-Example-1.png)
+![](/images/data/Color-Example-1.png)
 
 For our second example, we wished to demonstrate the use of the **Color** widget with continuous variables. We put different types of Irises on the x axis and petal length on the y axis. We created a new color gradient and named it greed (green + red).
 In order to show that sepal length is not a deciding factor in differentiating between different types of Irises, we chose to color the points according to sepal width.
 
-![](/images/Color-Example-2.png)
+![](/images/data/Color-Example-2.png)

@@ -13,7 +13,7 @@ Load a model from an input file.
 
 - Model: trained model
 
-![](/images/LoadModel-stamped.png)
+![](/images/model/LoadModel-stamped.png)
 
 1. Choose from a list of previously used models.
 2. Browse for saved models.
@@ -22,6 +22,6 @@ Load a model from an input file.
 Example
 -------
 
-When you want to use a custom-set model that you've saved before, open the **Load Model** widget and select the desired file with the *Browse* icon. This widget loads the existing model into [Predictions](../evaluation/predictions.md) widget. Datasets used with **Load Model** have to contain compatible attributes!
+When you want to use a custom-set model that you've saved before, open the **Load Model** widget and select the desired file with the *Browse* icon. This widget loads the existing model into [Predictions](/widget-catalog/evaluation/predictions) widget. Datasets used with **Load Model** have to contain compatible attributes!
 
-![](/images/LoadModel-example.png)
+![](/images/model/LoadModel-example.png)

@@ -19,7 +19,7 @@ Groups items using the k-Means clustering algorithm.
 
 The widget applies the [k-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) algorithm to the data and outputs a new dataset in which the cluster index is used as a class attribute. The original class attribute, if it exists, is moved to meta attributes. Scores of clustering results for various k are also shown in the widget.
 
-![](/images/kMeans-stamped.png)
+![](/images/unsupervised/kMeans-stamped.png)
 
 1. Select the number of clusters.
    - **Fixed**: algorithm clusters data in a specified number of clusters.
@@ -41,26 +41,26 @@ Examples
 
 We are going to explore the widget with the following schema.
 
-![](/images/K-MeansClustering-Schema.png)
+![](/images/unsupervised/K-MeansClustering-Schema.png)
 
-First, we load the *Iris* dataset, divide it into three clusters and show it in the [Data Table](../data/datatable.md), where we can observe which instance went into which cluster. The interesting parts are the [Scatter Plot](../visualize/scatterplot.md) and [Select Rows](../data/selectrows.md).
+First, we load the *Iris* dataset, divide it into three clusters and show it in the [Data Table](/widget-catalog/data/datatable), where we can observe which instance went into which cluster. The interesting parts are the [Scatter Plot](/widget-catalog/visualize/scatterplot) and [Select Rows](/widget-catalog/data/selectrows).
 
 Since **k-Means** added the cluster index as a class attribute, the scatter plot will color the points according to the clusters they are in.
 
-![](/images/kMeans-Scatterplot.png)
+![](/images/unsupervised/kMeans-Scatterplot.png)
 
-What we are really interested in is how well the clusters induced by the (unsupervised) clustering algorithm match the actual classes in the data. We thus take [Select Rows](../data/selectrows.md) widget, in which we can select individual classes and have the corresponding points marked in the scatter plot. The match is perfect for *setosa*, and pretty good for the other two classes.
+What we are really interested in is how well the clusters induced by the (unsupervised) clustering algorithm match the actual classes in the data. We thus take [Select Rows](/widget-catalog/data/selectrows) widget, in which we can select individual classes and have the corresponding points marked in the scatter plot. The match is perfect for *setosa*, and pretty good for the other two classes.
 
-![](/images/K-MeansClustering-Example.png)
+![](/images/unsupervised/K-MeansClustering-Example.png)
 
-You may have noticed that we left the **Remove unused values/attributes** and **Remove unused classes** in [Select Rows](../data/selectrows.md) unchecked. This is important: if the widget modifies the attributes, it outputs a list of modified instances and the scatter plot cannot compare them to the original data.
+You may have noticed that we left the **Remove unused values/attributes** and **Remove unused classes** in [Select Rows](/widget-catalog/data/selectrows) unchecked. This is important: if the widget modifies the attributes, it outputs a list of modified instances and the scatter plot cannot compare them to the original data.
 
-Perhaps a simpler way to test the match between clusters and the original classes is to use the [Distributions](../visualize/distributions.md) widget.
+Perhaps a simpler way to test the match between clusters and the original classes is to use the [Distributions](/widget-catalog/visualize/distributions) widget.
 
-![](/images/K-MeansClustering-Schema2.png)
+![](/images/unsupervised/K-MeansClustering-Schema2.png)
 
-The only (minor) problem here is that this widget only visualizes normal (and not meta) attributes. We solve this by using [Select Columns](../data/selectcolumns.md): we reinstate the original class *Iris* as the class and put the cluster index among the attributes.
+The only (minor) problem here is that this widget only visualizes normal (and not meta) attributes. We solve this by using [Select Columns](/widget-catalog/data/selectcolumns): we reinstate the original class *Iris* as the class and put the cluster index among the attributes.
 
 The match is perfect for *setosa*: all instances of setosa are in the third cluster (blue). 48 *versicolors* are in the second cluster (red), while two ended up in the first. For *virginicae*, 36 are in the first cluster and 14 in the second.
 
-![](/images/K-MeansClustering-Example2.png)
+![](/images/unsupervised/K-MeansClustering-Example2.png)

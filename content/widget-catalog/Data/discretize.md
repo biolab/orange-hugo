@@ -19,7 +19,7 @@ Discretizes continuous attributes from an input dataset.
 
 The **Discretize** widget [discretizes](https://en.wikipedia.org/wiki/Discretization) continuous attributes with a selected method.
 
-![](/images/Discretize-All-stamped.png)
+![](/images/data/Discretize-All-stamped.png)
 
 1. The basic version of the widget is rather simple. It allows choosing between three different discretizations.
    - [Entropy-MDL](http://ijcai.org/Past%20Proceedings/IJCAI-93-VOL2/PDF/022.pdf), invented by Fayyad and Irani is a top-down discretization, which recursively splits the attribute at a cut maximizing information gain, until the gain is lower than the minimal description length of the cut. This discretization can result in an arbitrary number of intervals, including a single interval, in which case the attribute is discarded as useless (removed).
@@ -37,4 +37,4 @@ Example
 In the schema below, we show the *Iris* dataset with continuous attributes
 (as in the original data file) and with discretized attributes.
 
-![](/images/Discretize-Example.png)
+![](/images/data/Discretize-Example.png)

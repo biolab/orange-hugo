@@ -20,11 +20,11 @@ Visualizes distances between items.
 
 The **Distance Map** visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.
 
-Distances are most often those between instances ("*rows*" in the [Distances](../unsupervised/distances.md) widget) or attributes ("*columns*" in Distances widget). The only suitable input for **Distance Map** is the [Distances](../unsupervised/distances.md) widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the **Distances** widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you [Continuize](../data/continuize.md) them first.
+Distances are most often those between instances ("*rows*" in the [Distances](/widget-catalog/unsupervised/distances) widget) or attributes ("*columns*" in Distances widget). The only suitable input for **Distance Map** is the [Distances](/widget-catalog/unsupervised/distances) widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the **Distances** widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you [Continuize](/widget-catalog/data/continuize) them first.
 
 The snapshot shows distances between columns in the *heart disease* data, where smaller distances are represented with light and larger with dark orange. The matrix is symmetric and the diagonal is a light shade of orange - no attribute is different from itself. Symmetricity is always assumed, while the diagonal may also be non-zero.
 
-![](/images/DistanceMap-stamped.png)
+![](/images/unsupervised/DistanceMap-stamped.png)
 
 1. *Element sorting* arranges elements in the map by
    - None (lists instances as found in the dataset)
@@ -42,7 +42,7 @@ Normally, a color palette is used to visualize the entire range of distances app
 
 Below, we visualized the most correlated attributes (distances by columns) in the *heart disease* dataset by setting the color threshold for high distances to the minimum. We get a predominantly black square, where attributes with the lowest distance scores are represented by a lighter shade of the selected color schema (in our case: orange). Beside the diagonal line, we see that in our example *ST by exercise* and *major vessels colored* are the two attributes closest together.
 
-![](/images/DistanceMap-Highlighted.png)
+![](/images/unsupervised/DistanceMap-Highlighted.png)
 
 The user can select a region in the map with the usual click-and-drag of the cursor. When a part of the map is selected, the widget outputs all items from the selected cells.
 
@@ -51,8 +51,8 @@ Examples
 
 The first workflow shows a very standard use of the **Distance Map** widget. We select 70% of the original *Iris* data as our sample and view the distances between rows in **Distance Map**.
 
-![](/images/DistanceMap-Example1.png)
+![](/images/unsupervised/DistanceMap-Example1.png)
 
-In the second example, we use the *heart disease* data again and select a subset of women only from the [Scatter Plot](../visualize/scatterplot.md). Then, we visualize distances between columns in the **Distance Map**. Since the subset also contains some discrete data, the [Distances](../unsupervised/distances.md) widget warns us it will ignore the discrete features, thus we will see only continuous instances/attributes in the map.
+In the second example, we use the *heart disease* data again and select a subset of women only from the [Scatter Plot](/widget-catalog/visualize/scatterplot). Then, we visualize distances between columns in the **Distance Map**. Since the subset also contains some discrete data, the [Distances](/widget-catalog/unsupervised/distances) widget warns us it will ignore the discrete features, thus we will see only continuous instances/attributes in the map.
 
-![](/images/DistanceMap-Example.png)
+![](/images/unsupervised/DistanceMap-Example.png)

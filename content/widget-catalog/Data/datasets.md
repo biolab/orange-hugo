@@ -15,7 +15,7 @@ Load a dataset from an online repository.
 
 **Datasets** widget retrieves selected dataset from the server and sends it to the output. File is downloaded to the local memory and thus instantly available even without the internet connection. Each dataset is provided with a description and information on the data size, number of instances, number of variables, target and tags.
 
-![](/images/Datasets-stamped.png)
+![](/images/data/Datasets-stamped.png)
 
 1. Information on the number of datasets available and the number of them downloaded to the local memory.
 2. Content of available datasets. Each dataset is described with the size, number of instances and variables, type of the target variable and tags.
@@ -25,6 +25,6 @@ Load a dataset from an online repository.
 Example
 -------
 
-Orange workflows can start with **Datasets** widget instead of **File** widget. In the example below, the widget retrieves a dataset from an online repository (Kickstarter data), which is subsequently sent to both the [Data Table](../data/datatable) and the [Distributions](../visualize/distributions).
+Orange workflows can start with **Datasets** widget instead of **File** widget. In the example below, the widget retrieves a dataset from an online repository (Kickstarter data), which is subsequently sent to both the [Data Table](/widget-catalog/data/datatable) and the [Distributions](/widget-catalog/visualize/distributions).
 
-![](/images/Datasets-Workflow.png)
+![](/images/data/Datasets-Workflow.png)

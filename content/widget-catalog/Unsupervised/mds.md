@@ -26,13 +26,13 @@ In the input, the widget needs either a dataset or a matrix of distances. When v
 
 The algorithm iteratively moves the points around in a kind of a simulation of a physical model: if two points are too close to each other (or too far away), there is a force pushing them apart (or together). The change of the point’s position at each time interval corresponds to the sum of forces acting on it.
 
-![](/images/MDS-zoo-stamped.png)
+![](/images/unsupervised/MDS-zoo-stamped.png)
 
 1. The widget redraws the projection during optimization. Optimization is run automatically in the beginning and later by pushing *Start*.
    - **Max iterations**: The optimization stops either when the projection changes only minimally at the last iteration or when a maximum number of iterations has been reached.
    - **Initialization**: PCA (Torgerson) positions the initial points along principal coordinate axes. *Random* sets the initial points to a random position and then readjusts them.
    - **Refresh**: Set how often you want to refresh the visualization. It can be at *Every iteration*, *Every 5/10/25/50 steps* or never (*None*). Setting a lower refresh interval makes the animation more visually appealing, but can be slow if the number of points is high.
-2. Defines how the points are visualized. These options are available only when visualizing distances between rows (selected in the [Distances](../unsupervised/distances.md) widget).
+2. Defines how the points are visualized. These options are available only when visualizing distances between rows (selected in the [Distances](/widget-catalog/unsupervised/distances) widget).
    - **Color**: Color of points by attribute (gray for continuous, colored for discrete).
    - **Shape**: Shape of points by attribute (only for discrete).
    - **Size**: Set the size of points (*Same size* or select an attribute) or let the size depend on the value of the continuous attribute the point represents (Stress).
@@ -72,7 +72,7 @@ the **MDS** widget, where we see the *Iris* data displayed in a
 2-dimensional plane. We can see the appended coordinates in the `Data
 Table <../data/datatable>` widget.
 
-![](/images/MDS-Example.png)
+![](/images/unsupervised/MDS-Example.png)
 
 # References
 

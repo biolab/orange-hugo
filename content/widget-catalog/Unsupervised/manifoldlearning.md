@@ -17,13 +17,13 @@ Nonlinear dimensionality reduction.
 
 - Transformed Data: dataset with reduced coordinates
 
-[Manifold Learning](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction) is a technique which finds a non-linear manifold within the higher-dimensional space. The widget then outputs new coordinates which correspond to a two-dimensional space. Such data can be later visualized with [Scatter Plot](../visualize/scatterplot.md) or other visualization widgets.
+[Manifold Learning](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction) is a technique which finds a non-linear manifold within the higher-dimensional space. The widget then outputs new coordinates which correspond to a two-dimensional space. Such data can be later visualized with [Scatter Plot](/widget-catalog/visualize/scatterplot) or other visualization widgets.
 
-![](/images/manifold-learning-stamped.png)
+![](/images/unsupervised/manifold-learning-stamped.png)
 
 1. Method for manifold learning:
    - [t-SNE](http://scikit-learn.org/stable/modules/manifold.html#t-distributed-stochastic-neighbor-embedding-t-sne)
-   - [MDS](http://scikit-learn.org/stable/modules/manifold.html#multi-dimensional-scaling-mds), see also [MDS widget](../unsupervised/mds.md)
+   - [MDS](http://scikit-learn.org/stable/modules/manifold.html#multi-dimensional-scaling-mds), see also [MDS widget](/widget-catalog/unsupervised/mds)
    - [Isomap](http://scikit-learn.org/stable/modules/manifold.html#isomap)
    - [Locally Linear Embedding](http://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding)
    - [Spectral Embedding](http://scikit-learn.org/stable/modules/manifold.html#spectral-embedding)
@@ -58,13 +58,13 @@ Nonlinear dimensionality reduction.
 
 **Manifold Learning** widget produces different embeddings for high-dimensional data.
 
-![](/images/collage-manifold.png)
+![](/images/unsupervised/collage-manifold.png)
 
 From left to right, top to bottom: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding.
 
 Example
 -------
 
-*Manifold Learning* widget transforms high-dimensional data into a lower dimensional approximation. This makes it great for visualizing datasets with many features. We used *voting.tab* to map 16-dimensional data onto a 2D graph. Then we used [Scatter Plot](../visualize/scatterplot.md) to plot the embeddings.
+*Manifold Learning* widget transforms high-dimensional data into a lower dimensional approximation. This makes it great for visualizing datasets with many features. We used *voting.tab* to map 16-dimensional data onto a 2D graph. Then we used [Scatter Plot](/widget-catalog/visualize/scatterplot) to plot the embeddings.
 
-![](/images/manifold-learning-example.png)
+![](/images/unsupervised/manifold-learning-example.png)

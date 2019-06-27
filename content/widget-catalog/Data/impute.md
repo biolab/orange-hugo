@@ -1,3 +1,9 @@
++++
+"title" = "Impute"
+"icon" = "icons/impute.png"
+"keywords" = "[]"
+"category" = "Data"
++++
 Impute
 ======
 
@@ -14,7 +20,7 @@ Replaces unknown values in the data.
 
 Some Orange's algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The default imputation is (1-NN).
 
-![](/images/impute-stamped.png)
+![](/images/data/impute-stamped.png)
 
 1. In the top-most box, *Default method*, the user can specify a general imputation technique for all attributes.
    - **Don't Impute** does nothing with the missing values.
@@ -33,6 +39,6 @@ Some Orange's algorithms and visualizations cannot handle unknown values in the 
 Example
 -------
 
-To demonstrate how the **Impute** widget works, we played around with the *Iris* dataset and deleted some of the data. We used the **Impute** widget and selected the *Model-based imputer* to impute the missing values. In another [Data Table](../data/datatable.md), we see how the question marks turned into distinct values ("Iris-setosa, "Iris-versicolor").
+To demonstrate how the **Impute** widget works, we played around with the *Iris* dataset and deleted some of the data. We used the **Impute** widget and selected the *Model-based imputer* to impute the missing values. In another [Data Table](/widget-catalog/data/datatable), we see how the question marks turned into distinct values ("Iris-setosa, "Iris-versicolor").
 
-![](/images/Impute-Example.png)
+![](/images/data/Impute-Example.png)

@@ -19,7 +19,7 @@ Plots a heat map for a pair of attributes.
 
 [Heat map](https://en.wikipedia.org/wiki/Heat_map) is a graphical method for visualizing attribute values by class in a two-way matrix. It only works on datasets containing continuous variables. The values are represented by color: the higher a certain value is, the darker the represented color. By combining class and attributes on x and y axes, we see where the attribute values are the strongest and where the weakest, thus enabling us to find typical features (discrete) or value range (continuous) for each class.
 
-![](/images/HeatMap-stamped.png)
+![](/images/visualize/HeatMap-stamped.png)
 
 1. The color scheme legend. **Low** and **High** are thresholds for the color palette (low for attributes with low values and high for attributes with high values).
 2. Merge data.
@@ -42,11 +42,11 @@ Example
 
 The **Heat Map** below displays attribute values for the *Housing* dataset. The aforementioned dataset concerns the housing values in the suburbs of Boston.
 
-The first thing we see in the map are the 'B' and 'Tax' attributes, which are the only two colored in dark orange. The 'B' attribute provides information on the proportion of blacks by town and the 'Tax' attribute informs us about the full-value property-tax rate per $10,000. In order to get a clearer heat map, we then use the [Select Columns](../data/selectcolumns.md) widget and remove the two attributes from the dataset. Then we again feed the data to the **Heat map**. The new projection offers additional information.
+The first thing we see in the map are the 'B' and 'Tax' attributes, which are the only two colored in dark orange. The 'B' attribute provides information on the proportion of blacks by town and the 'Tax' attribute informs us about the full-value property-tax rate per $10,000. In order to get a clearer heat map, we then use the [Select Columns](/widget-catalog/data/selectcolumns) widget and remove the two attributes from the dataset. Then we again feed the data to the **Heat map**. The new projection offers additional information.
 
 By removing 'B' and 'Tax', we can see other deciding factors, namely 'Age' and 'ZN'. The ‘Age’ attribute provides information on the proportion of owner-occupied units built prior to 1940 and the 'ZN' attribute informs us about the proportion of non-retail business acres per town.
 
-![](/images/HeatMap-Example1.png)
+![](/images/visualize/HeatMap-Example1.png)
 
 The **Heat Map** widget is a nice tool for discovering relevant features in the data.  By removing some of the more pronounced features, we came across new information, which was hiding in the background.
 

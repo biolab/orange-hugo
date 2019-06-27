@@ -16,7 +16,7 @@ Displays information on a selected dataset.
 A simple widget that presents information on dataset size, features,
 targets, meta attributes, and location.
 
-![](/images/data-info-stamped.png)
+![](/images/data/data-info-stamped.png)
 
 1. Information on dataset size
 2. Information on discrete and continuous features
@@ -28,6 +28,6 @@ targets, meta attributes, and location.
 Example
 -------
 
-Below, we compare the basic statistics of two **Data Info** widgets - one with information on the entire dataset and the other with information on the (manually) selected subset from the [Scatter Plot](../visualize/scatterplot.md) widget. We used the *Iris* dataset.
+Below, we compare the basic statistics of two **Data Info** widgets - one with information on the entire dataset and the other with information on the (manually) selected subset from the [Scatter Plot](/widget-catalog/visualize/scatterplot) widget. We used the *Iris* dataset.
 
-![](/images/DataInfo-Example.png)
+![](/images/data/DataInfo-Example.png)

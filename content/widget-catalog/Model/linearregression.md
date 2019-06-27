@@ -24,7 +24,7 @@ The **Linear Regression** widget constructs a learner/predictor that learns a [l
 
 Linear regression works only on regression tasks.
 
-![](/images/LinearRegression-stamped.png)
+![](/images/model/LinearRegression-stamped.png)
 
 1. The learner/predictor name
 2. Choose a model to train:
@@ -38,6 +38,6 @@ Linear regression works only on regression tasks.
 Example
 -------
 
-Below, is a simple workflow with *housing* dataset. We trained **Linear Regression** and [Random Forest](../model/randomforest.md) and evaluated their performance in [Test & Score](../evaluation/testandscore.md).
+Below, is a simple workflow with *housing* dataset. We trained **Linear Regression** and [Random Forest](/widget-catalog/model/randomforest) and evaluated their performance in [Test & Score](/widget-catalog/evaluation/testandscore).
 
-![](/images/LinearRegression-regression.png)
+![](/images/model/LinearRegression-regression.png)
