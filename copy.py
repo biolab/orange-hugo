@@ -151,7 +151,7 @@ def build_json(filename):
                 json_content[widget_obj["category"]] = []
             json_content[widget_obj["category"]].append(widget_obj)
             widget_obj['url'] = url = widget_obj['title'].lower().replace(" ", "").replace("-","")
-
+            # widget_obj['order'] = 1
 
     with open('data/widgets.json', 'w') as outfile:
         json.dump(json_content, outfile)

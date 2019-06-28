@@ -14,7 +14,7 @@
             <h2 class="widget-topic">{{ $key }}</h2>
             <div class="toctree-wrapper compound">
                <ul>
-                  {{range $value}}
+                  {{range sort $value "order"}}
                   <li class="toctree-l1">
 
                      <a href="{{ lower .category}}/{{ .url }}">
