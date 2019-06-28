@@ -1,5 +1,5 @@
 +++
-"title" = "k-Means Clustering"
+"title" = "k-Means"
 "icon" = "icons/k-means.png"
 "keywords" = "[]"
 "category" = "Unsupervised"

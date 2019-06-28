@@ -1,5 +1,5 @@
 +++
-"title" = "Createclass"
+"title" = "Create Class"
 "icon" = "icons/create-class.png"
 "keywords" = "[]"
 "category" = "Data"

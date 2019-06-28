@@ -1,5 +1,5 @@
 +++
-"title" = "Editdomain"
+"title" = "Edit Domain"
 "icon" = "icons/edit-domain.png"
 "keywords" = "[]"
 "category" = "Data"
