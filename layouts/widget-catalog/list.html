@@ -14,13 +14,13 @@
             <h2 class="widget-topic">{{ $key }}</h2>
             <div class="toctree-wrapper compound">
                <ul>
-                  {{range $value}}
+                  {{range sort $value "order"}}
                   <li class="toctree-l1">
 
-                     <a href="{{ .url }}">
+                     <a href="{{ lower .category}}/{{ .url }}">
                      <img alt="{{ .title }}" src="/{{ .icon }}"/>
                      </a>
-                     <a class="reference internal" href="{{ .url }}">
+                     <a class="reference internal" href="{{lower .category}}/{{ .url }}">
                      {{ .title }}
                      </a>
                   </li>
