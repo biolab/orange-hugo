@@ -1519,3 +1519,8 @@ margin-top: auto;
 .docs-style p{
   font-size: 16px !important;
 }
+
+.no-pad-training{
+  margin-left: 0px !important;
+  margin-right: 0px !important; 
+}

@@ -10,7 +10,7 @@
 	"image" : "{{ $page.Params.image}}",
 	"thumbImage" : "{{ .Params.thumbImage}}",
 	"shortExcerpt" : "{{ .Params.shortExcerpt}}",
-	"longExcerpt" : {{ if .Params.longExcerpt}} {{.Params.longExcerpt}} {{else}} {{$page.Summary | jsonify}} {{end}},
+	"longExcerpt" : {{ if .Params.longExcerpt}} {{.Params.longExcerpt | jsonify}} {{else}} {{$page.Summary | jsonify}} {{end}},
 	"author" : "{{ $page.Params.author}}",
 	"summary" : {{ $page.Summary | jsonify}},
 	"date" : {{ ($page.Date.Format "Jan 2, 2006" ) | jsonify}}
