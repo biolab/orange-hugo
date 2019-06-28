@@ -1180,10 +1180,11 @@ h2.docs-subtitle {
   width: 40px;
   height: 35px;
   padding: 10px;
-  background: #2196F3;
+  background: #E19C14;
   color: white;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid #E19C14;
+  border-radius: 4px;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
   padding-top: 10px;
@@ -1351,7 +1352,7 @@ h2.docs-subtitle {
   padding-top: 0px !important;
 }
 #search-input{
-    width: 80% !important;
+    width: 90% !important;
   }
 
 .home-page-blog .excerpt{
