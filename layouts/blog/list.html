@@ -8,7 +8,7 @@
         </div>
     <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
       <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
+         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
         <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
             <i class="fa fa-search"></i>
         </button>
@@ -30,7 +30,7 @@
     {{ $paginator := .Paginate (where (where .Pages.ByDate.Reverse "Type" "blog") "IsPage" true) }}
     {{ range $index, $element := .Paginator.Pages }}
         <div class="row">
-         {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
+         {{ if .Params.thumbImage }}
             {{ if eq (mod $index 2) 0 }}
             <div class='content col-md-6 col-xs-12 feature-description pull-left  blog-content' style="padding-top: 60px;">
             {{else}}
@@ -72,9 +72,9 @@
                 </div>
                
                 </div>
-                {{ if and (isset .Params "thumbImage") .Params.thumbImage }}
+                {{ if  .Params.thumbImage }}
             <div class='content col-md-6 col-xs-12 image-containter {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}'>
-                <img src="{{.Params.thumbImage}}" class="workflow-image" >
+                <img src="{{ .Params.thumbImage }}" class="workflow-image" >
             </div>
             {{end}}
             
