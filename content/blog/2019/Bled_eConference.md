@@ -13,7 +13,7 @@ longExcerpt = "We held a short workshop covering the basics of Data Science for 
 
 At the invitation of dr. Mirjana Kljajić, we participated in the [32nd Bled eConference](http://bledconference.org/index.php/about/). The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
 
-{{% figure src="/blog_img/2019/2019-06-28_bled1.png" caption="Photo by [Aljaž Ferencek](https://www.linkedin.com/in/aljazferencek/?originalSubdomain=si)"%}}
+{{% figure src="/blog_img/2019/2019-06-28_bled1.png" caption="Photo by Aljaž Ferencek." %}}
 \
 
 We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set. One of the classic exercises for such courses includes using the *Attrition - Train* and *Attrition - Predict* data sets from the Datasets widget and answering the following questions:
