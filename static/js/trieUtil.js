@@ -24,6 +24,13 @@ jQuery(document).ready(function ($) {
 
         // make search
         var results = window.trie.get(textval);
+        if (textval != "" && results.length == 0){
+            $( "#results" ).show()
+
+        }
+        else{
+            $( "#results" ).hide()
+        }
 
         // convert results to dictionary
         var resDict = {};
