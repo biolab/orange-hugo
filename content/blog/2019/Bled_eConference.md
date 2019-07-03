@@ -5,6 +5,7 @@ draft= false
 title="Orange at 32nd Bled eConference"
 type="blog"
 thumbImage = "/blog_img/2019/2019-06-28_bled-small.png"
+frontPageImage = "/blog_img/2019/2019-06-28_bled-small.png"
 categories=["workshop", "education", "data science"]
 shortExcerpt = "We held a short workshop for the participants of the 32nd Bled eConference."
 
