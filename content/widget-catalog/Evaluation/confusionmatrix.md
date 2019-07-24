@@ -1,5 +1,5 @@
 +++
-"title" = "Predictions"
+"title" = "Confusion Matrix"
 "icon" = "icons/confusion-matrix.png"
 "keywords" = "[]"
 "category" = "Evaluation"
