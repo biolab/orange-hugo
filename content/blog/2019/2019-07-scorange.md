@@ -12,7 +12,7 @@ thumbImage = "/blog_img/2019/scorange-annotation-thumb.png"
 frontPageImage = "/blog_img/2019/scorange-annotation-thumb.png"
 categories=["education", "bioinformatics"]
 shortExcerpt = "One of Orange's latest features is its add-on for single-cell data analytics."
-# longExcerpt = ""
+# longExcerpt = "Our entry to this year's largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day."
 +++
 Our entry to this year's largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day.
 
