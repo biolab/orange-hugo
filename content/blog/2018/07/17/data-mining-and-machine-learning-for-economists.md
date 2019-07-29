@@ -46,7 +46,8 @@ And inspect the results in a box plot. Seems like the selected cluster stands ou
 
 Of course, when we are talking about countries one naturally wants to see them on a map! That is easy. We will use the Geo add-on. First, we need to convert all the country names to geographical coordinates. We will do this with Geocoding, where we will encode column Country to latitude and longitude. Remember to use the same output as before, that is Data to Data.
 
-![](/images/2018/07/Screen-Shot-2018-07-17-at-10.52.29.png)
+{{% figure src="/images/2018/07/Screen-Shot-2018-07-17-at-10.52.29.png" width="500" %}}
+\
 
 Use Encode to convert a column with region identifiers (in our case Country) to latitude/longitude pairs.
 

@@ -46,6 +46,6 @@ We will use deep-network embedding to turn these images into numbers to describe
 
 Our final workflow, with selection of three biggest outliers (we used shift-click to select its corresponding silhouettes in the Silhouette Plot), is:
 
-![](/images/2017-04-Screen-Shot-2017-04-25-at-10.08.56.png)
+![](/images/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png)
 
 Isn't this great? Turns out that traffic signs were carefully designed, such that the three outliers are indeed the signs we should never miss. It is great that we can now reconfirm this design choice by deep learning-based embedding and by using some straightforward machine learning tricks such as Silhouette Plot.
