@@ -17,7 +17,7 @@ Obviously, when we say teach business, we mean how to do data mining for busines
 
 For this purpose, we have made some updates to our Associate add-on and added a new data set to Data Sets widget which can be used for customer segmentation and discovering which item groups are frequently bought together. Like this:
 
-![](/images/2017/11/Screen-Shot-2017-11-17-at-13.06.22.png)
+{{% figure src="/images/2017/11/Screen-Shot-2017-11-17-at-13.06.22.png" width="400" %}}
 
 We load the _Online Retail_ data set.
 
@@ -25,7 +25,7 @@ We load the _Online Retail_ data set.
 
 Since we have transactions in rows and items in columns, we have to transpose the data table in order to compute distances between items (rows). We could also simply ask Distances widget to compute distances between columns instead of rows. Then we send the transposed data table to Distances and compute cosine distance between items (cosine distance will only tell us, which items are purchased together, disregarding the amount of items purchased).
 
-![](/images/2017/11/Screen-Shot-2017-11-17-at-13.10.24.png)
+{{% figure src="/images/2017/11/Screen-Shot-2017-11-17-at-13.10.24.png" width="300" %}}
 
 Finally, we observe the discovered clusters in Hierarchical Clustering. Seems like mugs and decorative signs are frequently bought together. Why so? Select the group in Hierarchical Clustering and observe the cluster in a Data Table. Consider this an exercise in data exploration. :)
 

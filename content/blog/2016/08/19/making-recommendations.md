@@ -71,17 +71,17 @@ Here are the first few lines from a data set :
 
 This step is pretty simple. To train a model we have to load the data as is described above and connect it to the learner. (_Don't forget to click apply_)
 
-![](/images/2016/08/data-to-brismf.png)
+{{% figure src="/images/2016/08/data-to-brismf.png" width="300" %}}
 
 
 If the model uses side information, we only need to add an extra file.
 
-![](/images/2016/08/TrustSVD-1.png)
+{{% figure src="/images/2016/08/TrustSVD-1.png" width="300" %}}
 
 
 In addition, we can set the parameters of our model by double-clicking it:
 
-![](/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png)
+{{% figure src="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" width="400" %}}
 
 
 By using a fixed seed, we make random numbers predictable. Therefore, this feature is useful if we want to compare results in a deterministic way.
@@ -106,8 +106,7 @@ Still, cross-validation is a robust way to see how our model is performing. I co
 
 We can add a baseline leaner to [Test&Score](http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html) and select the model we want to apply.
 
-![](/images/2016/08/Baselines.png)
-
+{{% figure src="/images/2016/08/Baselines.png" width="300" %}}
 
 
 ### Making recommendations
@@ -115,7 +114,7 @@ We can add a baseline leaner to [Test&Score](http://docs.orange.biolab.si/3/visu
 
 The prediction flow is exactly the same as in [Orange3](http://orange.biolab.si).
 
-![](/images/2016/08/Recommendation-predictions.png)
+{{% figure src="/images/2016/08/Recommendation-predictions.png" width="400" %}}
 
 
 
@@ -123,8 +122,6 @@ The prediction flow is exactly the same as in [Orange3](http://orange.biolab.si)
 
 
 ![](/images/2016/08/all-rank-dis.png)
-
-
 
 
 Once we've output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the _item-feature matrix_ by simply connecting Data Table with selected instances to the widget [Scatter Plot](http://docs.orange.biolab.si/3/visual-programming/widgets/visualize/scatterplot.html).
