@@ -74,7 +74,9 @@
                 </div>
                 {{ if  .Params.thumbImage }}
             <div class='content col-md-6 col-xs-12 image-containter {{if eq (mod $index 2) 0}}panel-left {{else }}{{ end }}'>
-                <img src="{{ .Params.thumbImage }}" class="workflow-image" >
+                <a href="{{ .Permalink }}">
+                <img src="{{ .Params.thumbImage }}" class="workflow-image" href="{{ .Permalink }}">
+            </a>
             </div>
             {{end}}
             
@@ -82,7 +84,6 @@
             
             </div>
             <hr/>
-            <!-- </div> -->
 {{end}}
 {{ partial "pagination.html" . }}
     </div>
@@ -128,7 +129,6 @@
         var search_results = document.getElementById('search-results')
         if (results.length<1){
             search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
-        // var html_el = ""
         }
         else{
         search_results.innerHTML = "";
@@ -147,8 +147,8 @@
             else{
                 html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
             }
-            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
+            html_el += '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: '+results[page].author +', '+results[page].date+'</p>'
+            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
 
             
             if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
@@ -169,42 +169,6 @@
 
             html_el += '</div></div>'
             
-            
-            // if (results[page].images.length >1){
-            //     html_el+= '<div id="myCarousel'+page+'" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
-            //         for(var img in results[page].images){
-            //             html_el+= '<div class="item'
-            //             if(img==0){
-            //                 html_el += 'active">'
-            //             }
-            //             else{
-            //                 html_el+= '>'
-            //             }
-
-            //            html_el += '<img src="'+results[page].images[img]+'" class="workflow-image" ></div>'
-                      
-            //         }
-            //         html_el += '</div>'
-            //     html_el += '<ol class="carousel-indicators" >'
-            //         for(var img in results[page].images){
-            //          html_el += '<li data-target="#myCarousel'+page+'" data-slide-to="'+img+'" class="'
-            //             if(img==0){
-            //                     html_el += 'active">'
-            //                 }
-            //             else{
-            //                 html_el+= '>'
-            //             }
-            //             html_el +='</li>'
-            //         }
-            //     html_el+='</ol>'
-
-            //     html_el += '<a class="left carousel-control" href="#myCarousel'+page+'" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
-                
-            //     html_el += '<a class="right carousel-control" href="#myCarousel'+page+'" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
-
-            // }
-            // else
-
 
             if (page % 2 == 0){
                 html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
@@ -213,12 +177,10 @@
                 html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
 
             }
-            console.log(results[page])
              if (results[page].thumbImage != ''){
-                html_el += '<img src="'+ results[page].thumbImage+'" class="workflow-image" >'
+                html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
             }
 
-            // }
 
             
             html_el += "</div> </div><hr/>"

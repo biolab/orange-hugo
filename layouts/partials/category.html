@@ -17,9 +17,22 @@
     <div class="categoriesList" id="myUL">
         <ul style="width: 90%;">
             <span>Categories: </span>
-          {{ range first 10 .Site.Taxonomies.categories.ByCount }}
-            <li style="display: inline;"><a href="/categories/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
+            {{ $tag := .Data.Term}}
+            {{ $.Scratch.Set "check" false }}
+            {{ $categories := first 10 (where .Site.Taxonomies.categories "Name" "not in" "$tag" ).ByCount}}
+          {{ range $categories}}
+          {{if in .Name $tag}}
+          {{ $.Scratch.Set "check" true }}
+            
+            {{end}}
+            <li style="display: inline;"><a href="/categories/{{ .Name | urlize }}" class="{{ if eq $tag .Name }}active-tag{{ end }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
+
           {{ end }}
+          {{if eq ($.Scratch.Get "check") false}}
+          <li style="display: inline;"><a href="/categories/{{ $tag | urlize }}" class="active-tag" style="margin-top: 20px !important;">{{ $tag }}</a></li>
+          {{end}}
+
+
         </ul>
     </div>
 
@@ -38,10 +51,10 @@
             {{else}}
             <div class='content col-md-12 col-xs-12 feature-description' >
             {{end}}
-            <p class="feature-text">Author: {{ .Params.author }}, {{ .Date.Format "Jan 2, 2006" }}</p>
-                <h2 class="workflow-title">
-                    {{ .Title }}
-                </h2>
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: {{ .Params.author }}, {{ .Date.Format "Jan 2, 2006" }}</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="{{ .Permalink }}" > {{ .Title }}</a>
+                    </h2>
                 <p class="feature-text">
                   {{ if .Params.longExcerpt }}
                 {{ .Params.longExcerpt }}
@@ -50,7 +63,7 @@
                {{end}}
 
              </p>
-                <div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">
+                <div class="tags"  style="padding-bottom: 10px;">
                     Categories:
                     {{range .Params.categories}}
                     <a class="tag-workflow" href="/categories/{{ . | urlize }}">{{ . }}</a>
@@ -136,7 +149,7 @@
                 html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
             }
             html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
+            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
 
             
             if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
@@ -168,7 +181,7 @@
             }
            
             if (results[page].thumbImage != ''){
-                html_el += '<img class="workflow-image" src="'+results[page].thumbImage+'"></div>'
+               html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
             }
 
 
