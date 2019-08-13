@@ -37,6 +37,7 @@
 
 <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/trieSearchWeb.js"></script>
+    <script type="text/javascript" src="/js/trieUtil.js" ></script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
             'use strict';
@@ -44,41 +45,45 @@
             $.getJSON("/widgets.json", function(json) {
     		var WIDGET_JS = json;
     		var WIDG_JS = {}
-			var widget_idx = 0
-			for (var field_key in WIDGET_JS){
-				var field_val = WIDGET_JS[field_key];
-        
-			    for (var widget in field_val){
-			        //  Widget name
-			        var key = field_val[widget].title;
-			        WIDG_JS[key] = widget_idx
-			        //  Widget keywords
-			        for ( var keyword in field_val[widget].keywords){
-                var key = field_val[widget].keywords[keyword]
-			            WIDG_JS[key] = widget_idx
-			        }
-			        widget_idx += 1
-			    }
+  			var widget_idx = 0
+  			for (var field_key in WIDGET_JS){
 
-			    }
-			var data_for_trie = WIDG_JS;
-      var options = {
-                // Minimum search key length
-                min: 1,
-                ignoreCase: true,
-                indexField: 'index',
-                // Split word by space, -, _, and capital letters
-                splitOnRegEx: /([ \-:_]+|(?![a-z])(?=[A-Z]))/g
-            };
-            // make trie and populate with objects objects
-            var trie = new window.TrieSearch('name', options);
-            trie.addFromObject(data_for_trie);
-            // save trie structure to window
-            window.trie = trie;
-			});
+
+  				var field_val = WIDGET_JS[field_key];
+          field_val.sort((a,b) => (a.order > b.order) ? 1 : ((b.order > a.order) ? -1 : 0));
+          
+  			    for (var widget in field_val){
+  			        //  Widget name
+  			        var key = field_val[widget].title;
+  			        WIDG_JS[key] = widget_idx
+  			        //  Widget keywords
+  			        for ( var keyword in field_val[widget].keywords){
+                  var key = field_val[widget].keywords[keyword]
+  			            WIDG_JS[key] = widget_idx
+  			        }
+  			        widget_idx += 1
+  			    }
+
+  			    }
+  			var data_for_trie = WIDG_JS;
+        var options = {
+                  // Minimum search key length
+                  cache:false,
+                  min: 1,
+                  ignoreCase: true,
+                  indexField: undefined,
+                  // Split word by space, -, _, and capital letters
+                  splitOnRegEx: /([ \-:_]+|(?![a-z])(?=[A-Z]))/g
+              };
+              // make trie and populate with objects objects
+              var trie = new window.TrieSearch('name', options);
+              trie.addFromObject(data_for_trie);
+
+              // save trie structure to window
+              window.trie = trie;
+  			});
             
         });
     </script>
-    <script type="text/javascript" src="/js/trieUtil.js" ></script>
 </section>
 {{end}}
