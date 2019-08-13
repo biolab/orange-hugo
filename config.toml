@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "en-us"
 paginate = 10 #frontpage pagination
 title = "Orange"
-disqusShortname = "localblog-2"
+disqusShortname = "orange-4"
 
 [outputFormats]
   [outputFormats.workflow]
@@ -20,7 +20,6 @@ disqusShortname = "localblog-2"
   category = "categories"
 
 [menu]
-
   [[menu.main]]
     identifier = "features"
     name = "Features"
