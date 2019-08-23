@@ -858,3 +858,30 @@ blockquote cite {
 
 .pagination1 a:hover:not(.active) {background-color: #ddd;}
 
+.faq {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    height: 100px;
+    /*width: 200px;*/
+    min-width: 190px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+
+    /*box-shadow: 2px 5px rgb(225,156,20, 0.9);*/
+}
+.faq:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}
+.activefaq{
+    background-color: rgb(225,156,20, 1);
+    color: white;
+    font-weight: 500 !important;
+}
+
+.faqC{
+    text-align: center;
+}
