@@ -895,3 +895,7 @@ blockquote cite {
 .faqC{
     text-align: center;
 }
+
+.panel-body{
+    font-weight: 300;
+}
