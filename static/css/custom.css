@@ -862,15 +862,21 @@ blockquote cite {
     margin-right: 25px;
     margin-bottom: 25px;
     height: 100px;
-    /*width: 200px;*/
+    line-height: 100px;
     min-width: 190px;
     border: 1px solid;
     border-radius: 5px;
-    padding: 10px;
     background-color: white;
     transition: transform .2s; /* Animation */
+    background-color: #f5f5f5;
+}
+.faq h2{
+    margin:auto;
+    line-height:100px;
+    vertical-align:middle;
+    /*margin:0 !important;*/
+    
 
-    /*box-shadow: 2px 5px rgb(225,156,20, 0.9);*/
 }
 .faq:hover {
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -879,7 +885,10 @@ blockquote cite {
 .activefaq{
     background-color: rgb(225,156,20, 1);
     color: white;
-    font-weight: 500 !important;
+    
+}
+.activefaq h2{
+    font-weight: bold !important;
 }
 
 .faqC{

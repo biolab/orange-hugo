@@ -291,8 +291,8 @@ function troubleshooting(){
     $("#button3").removeClass("activefaq");
     $("#button4").removeClass("activefaq");
     $("#education, #aboutus, #aboutorange").hide()
-    $("#troubleshooting").toggle();
-    $("#button1").toggleClass('activefaq');
+    $("#troubleshooting").show();
+    $("#button1").addClass('activefaq');
     
 }
 
@@ -301,8 +301,8 @@ function education(){
     $("#button3").removeClass("activefaq");
     $("#button4").removeClass("activefaq");
     $("#troubleshooting, #aboutus, #aboutorange").hide()
-    $("#education").toggle();
-    $("#button2").toggleClass('activefaq');
+    $("#education").show();
+    $("#button2").addClass('activefaq');
 }
 
 function aboutorange(){
@@ -310,18 +310,10 @@ function aboutorange(){
     $("#button2").removeClass("activefaq");
     $("#button4").removeClass("activefaq");
     $("#troubleshooting, #aboutus, #education").hide()
-    $("#aboutorange").toggle();
-    $("#button3").toggleClass('activefaq');
+    $("#aboutorange").show();
+    $("#button3").addClass('activefaq');
 }
 
-function aboutus(){
-    $("#button1").removeClass("activefaq");
-    $("#button2").removeClass("activefaq");
-    $("#button3").removeClass("activefaq");
-    $("#troubleshooting, #aboutorange, #education").hide()
-    $("#aboutus").toggle();
-    $("#button4").toggleClass('activefaq');
-}
 
 </script>
 
