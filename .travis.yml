@@ -1,0 +1,25 @@
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_0.49.2_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - rm -rf public 2> /dev/null
+    - rm *.deb
+
+script:
+    - hugo
+      # - echo 'orange.biolab.si' > public/CNAME
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  verbose: true
+  local-dir: public
+  target_branch: gh-pages
+  on:
+    branch: master
