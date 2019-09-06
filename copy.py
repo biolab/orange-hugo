@@ -3,6 +3,7 @@ import shutil
 import json
 import os
 import re
+import sys
 
 """
 Generates string of values which is later added to .md files.
@@ -47,7 +48,6 @@ location of the .md file
 
 """
 def copy_images(path,filename):
-    # print(path, filename, "---- image")
     category = filename.split("/")[-2]
     with open(path+filename, 'r+') as f:
         content = f.read()
@@ -163,16 +163,18 @@ def build_json(filename):
 
     return widgets
 
+if len(sys.argv) <2:
+    print("No args given")
 
 # find widgets_data.json file in submodule
-files = glob.glob('external/**/widget_data.json', recursive=True)
+files = glob.glob('external/'+sys.argv[1]+'/**/widget_data.json', recursive=True)
 # if no file found, exit
 if len(files) < 1:
     print("Can't find widget_data.json file.")
     exit()
 json_content = {}
 
-path = files[0].split("widget_data")[0]
+path = files[0].split("widget_data")[0]+"widgets"
 file = files[0]
 
 location = "content/widget-catalog/"
@@ -185,9 +187,7 @@ with open(file, 'r+') as f:
     # for each widget in widget_data.json file generate FrontMatter and copy .md file and icon image
     for widget in widgets:
         widget_data = widgets[widget]
-        tm = widget_data['file'].split("/")[-2:]
-        t = "/"
-        s = t.join(tm).lower()
+        s = widget_data['file'].split("widgets")[1]
         text = add_front_matter(path+s, widgets_data[widget_data['title']])
         copy_images(path,s)
 
@@ -200,12 +200,12 @@ with open(file, 'r+') as f:
             tmp.close()
         icons = widget_data['icon'].split("/")[-3:]
         b = "/"
-        icons_path = t.join(tm)
+        icons_path = b.join(icons)
         image_path = "static/"+'/'.join(widget_data['icon'].split('/')[:-1])+"/"
         try:
-            shutil.copy2(path + icons_path, image_path)
+            shutil.copy2(path+"/" + icons_path, image_path)
         except IOError as e:
             os.makedirs(image_path, exist_ok=True)
-            shutil.copy2(path +icons_path, image_path)
+            shutil.copy2(path+"/" +icons_path, image_path)
 
 print("Copy script: finished. \nAll wdigets have been copied.")
