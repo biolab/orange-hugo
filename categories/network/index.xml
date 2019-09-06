@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Orange</title>
+    <link>/categories/network/</link>
+    <description>Recent content in Network on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Dec 2017 17:05:52 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speeding Up Network Visualization</title>
+      <link>/blog/2017/12/23/speeding-up-network-visualization/</link>
+      <pubDate>Sat, 23 Dec 2017 17:05:52 +0000</pubDate>
+      
+      <guid>/blog/2017/12/23/speeding-up-network-visualization/</guid>
+      <description>The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.
+The goal of force-directed methods is to draw connected nodes close to each other as if the edges that connect the nodes were acting as springs. We also don&amp;rsquo;t want all nodes crowded in a single point, but would rather have them spaced evenly.</description>
+    </item>
+    
+    <item>
+      <title>Network Analysis with Orange</title>
+      <link>/blog/2016/07/18/network-analysis-with-orange/</link>
+      <pubDate>Mon, 18 Jul 2016 13:42:34 +0000</pubDate>
+      
+      <guid>/blog/2016/07/18/network-analysis-with-orange/</guid>
+      <description>Visualizing relations between data instances can tell us a lot about our data. Let&amp;rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&amp;rsquo;s about the principle.</description>
+    </item>
+    
+    <item>
+      <title>Network Add-on Published in JSS</title>
+      <link>/blog/2013/06/03/network-add-on-published-in-jss/</link>
+      <pubDate>Mon, 03 Jun 2013 20:15:00 +0000</pubDate>
+      
+      <guid>/blog/2013/06/03/network-add-on-published-in-jss/</guid>
+      <description>NetExplorer, a widget for network exploration, was in orange for over 5 years. Several network analysis widgets were added to Orange since, and we decided to move the entire network functionality to an Orange Network add-on.
+We recently published a paper Interactive Network Exploration with Orange in the Journal of Statistical Software. We invite you to read the tutorial on network exploration. It is aimed for beginners in this topic, and includes detailed explanation with images.</description>
+    </item>
+    
+    <item>
+      <title>NetworkX in Orange</title>
+      <link>/blog/2011/07/29/networkx-in-orange/</link>
+      <pubDate>Fri, 29 Jul 2011 18:56:00 +0000</pubDate>
+      
+      <guid>/blog/2011/07/29/networkx-in-orange/</guid>
+      <description>NetworkX – a popular open-source python library for network analysis has finally found its way into Orange. It is now used as a base class for network representation in all Orange modules and widgets. By that, we offered to the widespread network community a fruitful and fun way to visualize and explore networks, using their existing NetworkX scripts. It has never been easier to combine network analysis and visualization with existing machine learning and data discovery methods.</description>
+    </item>
+    
+  </channel>
+</rss>

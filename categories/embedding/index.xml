@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedding on Orange</title>
+    <link>/categories/embedding/</link>
+    <description>Recent content in Embedding on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2018 10:32:28 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/embedding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image Analytics Workshop at AIUCD 2018</title>
+      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
+      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      
+      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
+      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics: Clustering</title>
+      <link>/blog/2017/04/03/image-analytics-clustering/</link>
+      <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
+      
+      <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
+      <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
+For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
+    </item>
+    
+    <item>
+      <title>Orange Workshops: Luxembourg, Pavia, Ljubljana</title>
+      <link>/blog/2017/03/06/luxembourg-pavia-ljubljana/</link>
+      <pubDate>Mon, 06 Mar 2017 21:35:49 +0000</pubDate>
+      
+      <guid>/blog/2017/03/06/luxembourg-pavia-ljubljana/</guid>
+      <description>February was a month of Orange workshops.
+Ljubljana: Biologists We (Tomaž, Martin and I) have started in Ljubljana with a hands-on course for the COST Action FA1405 Systems Biology Training School. This was a four hour workshop with an introduction to classification and clustering, and then with application of machine learning to analysis of gene expression data on a plant called Arabidopsis. The organization of this course has even inspired us for a creation of a new widget GOMapMan Ontology that was added to Bioinformatics add-on.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction by Manifold Learning</title>
+      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
+      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
+      
+      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
+      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Manifold Learning widget has a simple interface with powerful features.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
+    </item>
+    
+  </channel>
+</rss>

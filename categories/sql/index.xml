@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on Orange</title>
+    <link>/categories/sql/</link>
+    <description>Recent content in Sql on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Feb 2018 13:20:06 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to enable SQL widget in Orange</title>
+      <link>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</link>
+      <pubDate>Fri, 16 Feb 2018 13:20:06 +0000</pubDate>
+      
+      <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
+      <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
+Related: SQL for Orange
+Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+    </item>
+    
+    <item>
+      <title>2UDA</title>
+      <link>/blog/2015/12/04/2uda/</link>
+      <pubDate>Fri, 04 Dec 2015 07:20:12 +0000</pubDate>
+      
+      <guid>/blog/2015/12/04/2uda/</guid>
+      <description>In one of the previous blog posts we mentioned that installing the optional dependency psycopg2 allows Orange to connect to PostgreSQL databases and work directly on the data stored there. It is also possible to transfer a whole table to the client machine, keep it in the local memory, and continue working with it as with any other Orange data set loaded from a file. But the true power of this feature lies in the ability of Orange to leave the bulk of the data on the server, delegate some of the computations to the database, and transfer only the needed results.</description>
+    </item>
+    
+    <item>
+      <title>SQL for Orange</title>
+      <link>/blog/2015/10/19/sql-for-orange/</link>
+      <pubDate>Mon, 19 Oct 2015 12:36:04 +0000</pubDate>
+      
+      <guid>/blog/2015/10/19/sql-for-orange/</guid>
+      <description>We bet you&amp;rsquo;ve always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don&amp;rsquo;t worry, we&amp;rsquo;re coming to the rescue.
+The key to SQL files is installation of &amp;lsquo;psycopg2&amp;rsquo; library in Python.
+WINDOWS
+Go to this website and download psycopg2 package. Once your .whl file has downloaded, go to the file directory and run command prompt. Enter “pip install [file name]” and run it.</description>
+    </item>
+    
+    <item>
+      <title>Working with SQL data in Orange 3</title>
+      <link>/blog/2015/05/05/working-with-sql-data-in-orange-3/</link>
+      <pubDate>Tue, 05 May 2015 07:20:47 +0000</pubDate>
+      
+      <guid>/blog/2015/05/05/working-with-sql-data-in-orange-3/</guid>
+      <description>Orange 3 is slowly, but steadily, gaining support for working with data stored in a SQL database. The main focus is to allow huge data sets that do not fit into RAM to be analyzed and visualized efficiently. Many widgets already recognize the type of input data and perform the necessary computations intelligently. This means that data is not downloaded from the database and analyzed locally, but is retained on the remote server, with the computation tasks translated into SQL queries and offloaded to the database engine.</description>
+    </item>
+    
+    <item>
+      <title>Orange and AXLE project</title>
+      <link>/blog/2013/09/02/orange-and-axle-project/</link>
+      <pubDate>Mon, 02 Sep 2013 21:27:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/02/orange-and-axle-project/</guid>
+      <description>Our group at University of Ljubljana is a partner in the EU 7FP project Advanced Analytics for Extremely Large European Databases (AXLE). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recommender  System on Orange</title>
+    <link>/categories/recommender-system/</link>
+    <description>Recent content in Recommender  System on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Aug 2016 20:42:59 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/recommender-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making recommendations</title>
+      <link>/blog/2016/08/19/making-recommendations/</link>
+      <pubDate>Fri, 19 Aug 2016 20:42:59 +0000</pubDate>
+      
+      <guid>/blog/2016/08/19/making-recommendations/</guid>
+      <description>This is a guest blog from the Google Summer of Code project.
+Recommender systems are everywhere, we can find them on YouTube, Amazon, Netflix, iTunes,&amp;hellip; This is because they are crucial component in a competitive retail services.
+How can I know what you may like if I have almost no information about you? The answer: taking Collaborative filtering (CF) approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</description>
+    </item>
+    
+  </channel>
+</rss>

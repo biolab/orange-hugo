@@ -1,0 +1,965 @@
+<html>    
+    <head>
+    <title>Orange – Dataloading Data Mining Fruitful and Fun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+  
+
+      <section id="features" class="features section padding-bottom ">
+    <div class="container page-background getting-started" >
+        <div style="text-align: center">
+           <h2 style="font-size: 34px;" >
+              Orange Blog
+           </h2>
+        </div>
+    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
+      <div class="col-xs-12 col-md-12 content" style="display: inline;">
+         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
+        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+            <i class="fa fa-search"></i>
+        </button>
+      </div>
+      
+    </div>
+    <div class="categoriesList" id="myUL">
+        <ul style="width: 90%;">
+            <span>Categories: </span>
+            
+            
+            
+          
+          
+            <li style="display: inline;"><a href="/categories/orange3" class="" style="margin-top: 20px !important;">orange3</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/visualization" class="" style="margin-top: 20px !important;">visualization</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/analysis" class="" style="margin-top: 20px !important;">analysis</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/addons" class="" style="margin-top: 20px !important;">addons</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/workshop" class="" style="margin-top: 20px !important;">workshop</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/education" class="" style="margin-top: 20px !important;">education</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/examples" class="" style="margin-top: 20px !important;">examples</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/classification" class="" style="margin-top: 20px !important;">classification</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/data" class="" style="margin-top: 20px !important;">data</a></li>
+
+          
+          
+            <li style="display: inline;"><a href="/categories/gsoc" class="" style="margin-top: 20px !important;">gsoc</a></li>
+
+          
+          
+          <li style="display: inline;"><a href="/categories/dataloading" class="active-tag" style="margin-top: 20px !important;">dataloading</a></li>
+          
+
+
+        </ul>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
+    
+    
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Jun 12, 2018</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2018/06/12/from-surveys-to-orange/" > From Surveys to Orange</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
+Related: Analyzing Surveys
+We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2018/06/12/from-surveys-to-orange/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Oct 26, 2017</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2017/10/26/analyzing-surveys/" > Analyzing Surveys</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                    
+                    <a class="tag-workflow" href="/categories/clustering">clustering</a>
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                    
+                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2017/10/26/analyzing-surveys/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Aug 4, 2017</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2017/08/04/text-analysis-new-features/" > Text Analysis: New Features</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               As always, we&rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+Related: Text Preprocessing
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/examples">examples</a>
+                    
+                    <a class="tag-workflow" href="/categories/features">features</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                    <a class="tag-workflow" href="/categories/release">release</a>
+                    
+                    <a class="tag-workflow" href="/categories/text-mining">text mining</a>
+                    
+                    <a class="tag-workflow" href="/categories/version">version</a>
+                    
+                    <a class="tag-workflow" href="/categories/widget">widget</a>
+                    
+                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2017/08/04/text-analysis-new-features/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Jan 23, 2017</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2017/01/23/preparing-scraped-data/" > Preparing Scraped Data</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+Related: Creating a new data table in Orange through Python
+First, we&rsquo;ll have to do some scripting. We&rsquo;ll use a couple of Python libraries - urllib.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/addons">addons</a>
+                    
+                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/examples">examples</a>
+                    
+                    <a class="tag-workflow" href="/categories/python">python</a>
+                    
+                    <a class="tag-workflow" href="/categories/scripting">scripting</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2017/01/23/preparing-scraped-data/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Jan 29, 2016</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2016/01/29/tips-and-tricks-for-data-preparation/" > Tips and Tricks for Data Preparation</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
+ Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&rsquo;ll keep coming back to in your editor is &lsquo;Replace&rsquo; function that allows you to replace specified values with different ones.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2016/01/29/tips-and-tricks-for-data-preparation/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: BLAZ, Oct 9, 2015</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2015/10/09/data-mining-course-in-houston/" > Data Mining Course in Houston</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
+This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/education">education</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                    
+                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2015/10/09/data-mining-course-in-houston/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Jul 31, 2015</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/" > Datasets in Orange Bioinformatics Add-On</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/addons">addons</a>
+                    
+                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                    
+                    <a class="tag-workflow" href="/categories/bioinformatics">bioinformatics</a>
+                    
+                    <a class="tag-workflow" href="/categories/bioorange">bioorange</a>
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, May 29, 2015</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2015/05/29/excel-files-in-orange-3-0/" > Excel files in Orange 3.0</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               Orange 3.0 version comes with an exciting feature that will simplify reading your data. If the old Orange required conversion from Excel into either tab-delimited or comma-separated files, the new version allows you to open plain .xlsx format data sets in the program. Naturally, the .txt and .csv files are still readable in Orange, so feel free to use data sets in any of the above-mentioned formats.
+Since Orange 3.0 is still in the development mode, you will find a smaller selection of widgets available at the moment, but give it a go and see how it works for Excel type data and whether the existing widgets are sufficient for your data analysis.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2015/05/29/excel-files-in-orange-3-0/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: BLAZ, Jan 18, 2015</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2015/01/18/loading-your-data/" > Loading your data</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               By a popular demand, we have just published a tutorial on how to load the data table into Orange. Besides its own .tab format, Orange can load any tab or comma delimited data set. The details are though in writing header rows that tell Orange about the type and domain of each attribute. The tutorial is a step-by-step description on how to do this and how to transfer the data from popular spreadsheet programs like Excel.
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/data">data</a>
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2015/01/18/loading-your-data/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+        <div class=" row">
+            
+            <div class='content col-md-12 col-xs-12 feature-description' >
+            
+            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: BIOLAB, Sep 2, 2013</p>
+                    <h2 class="workflow-title" style="margin-top: 10px !important">
+                        <a href="/blog/2013/09/02/orange-and-axle-project/" > Orange and AXLE project</a>
+                    </h2>
+                <p class="feature-text">
+                  
+               Our group at University of Ljubljana is a partner in the EU 7FP project Advanced Analytics for Extremely Large European Databases (AXLE). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).
+               
+
+             </p>
+                <div class="tags"  style="padding-bottom: 10px;">
+                    Categories:
+                    
+                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                    
+                    <a class="tag-workflow" href="/categories/features">features</a>
+                    
+                    <a class="tag-workflow" href="/categories/future">future</a>
+                    
+                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                    
+                    <a class="tag-workflow" href="/categories/sql">sql</a>
+                    
+                </div>
+                <div class="getting-started-button" >
+                        
+                    <a href="/blog/2013/09/02/orange-and-axle-project/" class="no-break-buttons">
+                    <div class="learn-more feature-block">
+                        <div class="feature-block feature-link">Read More</div>
+                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+            
+            
+            </div>
+            <hr/>
+
+
+
+
+<div class="center-pag">
+<div class="pagination1">
+
+    
+        
+       
+        
+
+        
+             
+            <a  href="/categories/dataloading/" class="page-link pagination-current">1</a>
+            
+        
+            
+             
+            
+            <a href="/categories/dataloading/page/2/" class="page-link">2</a>
+            
+        
+
+        
+        <a href="/categories/dataloading/page/2/" rel="next" class="page-link">Next ›</a>
+        
+
+        
+    </ul>
+
+</div>
+</div>
+
+
+    </div>
+    
+    
+
+</div>
+
+
+</section>
+
+
+<script type="text/javascript">
+    function check_key(e){
+        if(e.keyCode == 13) {
+            search_content();
+        }
+        else if(e.keyCode == 8){
+            if(document.getElementById('search-input').value.length <= 1){
+                $("#post_nor").show();
+                $("#search-results").hide();
+            }
+        }  
+    }
+
+  function search_content(){
+    var url = window.location.pathname.split('/')
+    var tag_param = url.pop() || url.pop();
+    var param = document.getElementById('search-input').value;
+
+    if (param.trim() ==""){
+        $("#post_nor").show();
+        $("#search-results").hide();
+    }
+    else{
+        $("#post_nor").hide();
+    
+
+        var results  = search_categories(tag_param,param);
+        $("#search-results").show();
+        var search_results = document.getElementById('search-results')
+        if (results.length<1){
+            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
+        }
+        else{
+        search_results.innerHTML = "";
+        var html_el = ""
+        
+        
+        for(var page in results){
+            html_el += '<div class="row">';
+            console.log(results[page].image)
+            if (results[page].thumbImage == ''){
+               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
+            }
+            else if (page % 2 == 0){
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
+            }
+            else{
+                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
+            }
+            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
+            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
+
+            
+            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
+                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
+            }
+            else{
+            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
+
+            }
+
+            html_el += '<div class="tags" id="tags" style="padding-bottom: 10px;">Categories:'
+                    for(var cat in results[page].categories){
+                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
+                }
+            html_el +='</div>'
+            html_el += '<div class="getting-started-button">'
+            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+             
+
+
+            html_el += '</div></div>'
+            var position = "";
+            
+            if (page % 2 == 0){
+                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
+            }
+            else{
+                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
+            }
+           
+            if (results[page].thumbImage != ''){
+               html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
+            }
+
+
+            
+            html_el += "</div> </div><hr/>"
+        }
+        search_results.innerHTML += html_el;
+
+
+        }
+
+        }
+        }
+     
+   </script>
+   <script type="text/javascript" src="/js/lunr.js"></script>
+   <script type="text/javascript">
+      var baseurl = "";
+   </script>
+   <script type="text/javascript" src="/js/search.js"></script>
+
+      
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-pad">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 26 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-26-doctoral_summer_school/">Doctoral Summer School</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 25 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-25-scorange/">Orange at ISMB/ECCB 2019</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

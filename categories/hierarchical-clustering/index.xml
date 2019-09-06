@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hierarchical Clustering on Orange</title>
+    <link>/categories/hierarchical-clustering/</link>
+    <description>Recent content in Hierarchical Clustering on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/hierarchical-clustering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange at GIS Ostrava</title>
+      <link>/blog/2019/4/24/orange-at-gis-ostrava/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/4/24/orange-at-gis-ostrava/</guid>
+      <description>Ostrava is a city in the north-east of the Czech Republic and is the capital of the Moravian-Silesian Region. GIS Ostrava is a yearly conference organized by Jiří Horák and his team at the Technical University of Ostrava. University has a nice campus with a number of new developments. I have learned that this is the largest university campus in central and eastern Europe, as most of the universities, like mine, are city universities with buildings dispersed around the city.</description>
+    </item>
+    
+  </channel>
+</rss>

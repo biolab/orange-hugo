@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scoring on Orange</title>
+    <link>/categories/scoring/</link>
+    <description>Recent content in Scoring on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 12:26:44 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/scoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Properly Test Models</title>
+      <link>/blog/2017/11/29/how-to-properly-test-models/</link>
+      <pubDate>Wed, 29 Nov 2017 12:26:44 +0000</pubDate>
+      
+      <guid>/blog/2017/11/29/how-to-properly-test-models/</guid>
+      <description>On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
+One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&amp;rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.</description>
+    </item>
+    
+    <item>
+      <title>Model-Based Feature Scoring</title>
+      <link>/blog/2015/12/19/model-based-feature-scoring/</link>
+      <pubDate>Sat, 19 Dec 2015 19:27:51 +0000</pubDate>
+      
+      <guid>/blog/2015/12/19/model-based-feature-scoring/</guid>
+      <description>Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression.</description>
+    </item>
+    
+  </channel>
+</rss>

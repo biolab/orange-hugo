@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toolbox on Orange</title>
+    <link>/categories/toolbox/</link>
+    <description>Recent content in Toolbox on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Apr 2017 14:27:44 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/toolbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Model replaces Classify and Regression</title>
+      <link>/blog/2017/04/07/model-replaces-classify-and-regression/</link>
+      <pubDate>Fri, 07 Apr 2017 14:27:44 +0000</pubDate>
+      
+      <guid>/blog/2017/04/07/model-replaces-classify-and-regression/</guid>
+      <description>Did you recently wonder where did Classification Tree go? Or what happened to Majority?
+Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
+This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.</description>
+    </item>
+    
+    <item>
+      <title>Association Rules in Orange</title>
+      <link>/blog/2016/04/25/association-rules-in-orange/</link>
+      <pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate>
+      
+      <guid>/blog/2016/04/25/association-rules-in-orange/</guid>
+      <description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
+The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description>
+    </item>
+    
+    <item>
+      <title>JMLR Publishes Article on Orange</title>
+      <link>/blog/2013/10/03/jmlr-publishes-article-on-orange/</link>
+      <pubDate>Thu, 03 Oct 2013 02:50:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/03/jmlr-publishes-article-on-orange/</guid>
+      <description>Journal of Machine Learning Research has just published our paper on Orange. In the paper we focus on its Python scripting part. We have last reported on Orange scripting at ECML/PKDD 2004. The manuscript was well received (over 270 citations on Google Scholar), but it is now entirely outdated. This was also our only formal publication on Orange scripting. With publication in JMLR this is now a current description of Orange and will be, for a while :-), Orange’s primary reference.</description>
+    </item>
+    
+  </channel>
+</rss>

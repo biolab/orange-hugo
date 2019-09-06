@@ -1,0 +1,404 @@
+<html>    
+    <head>
+    <title>Orange – Python Script Data Mining Fruitful and Fun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="python-script">Python Script</h1>
+
+<p>Extends functionalities through Python scripting.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Data (Orange.data.Table): input dataset bound to <code>in_data</code> variable</li>
+<li>Learner (Orange.classification.Learner): input learner bound to <code>in_learner</code> variable</li>
+<li>Classifier (Orange.classification.Learner): input classifier bound to <code>in_classifier</code> variable</li>
+<li>Object: input Python object bound to <code>in_object</code> variable</li>
+</ul>
+
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Data (Orange.data.Table): dataset retrieved from <code>out_data</code> variable</li>
+<li>Learner (Orange.classification.Learner): learner retrieved from <code>out_learner</code> variable</li>
+<li>Classifier (Orange.classification.Learner): classifier retrieved from <code>out_classifier</code> variable</li>
+<li>Object: Python object retrieved from <code>out_object</code> variable</li>
+</ul>
+
+<p><strong>Python Script</strong> widget can be used to run a python script in the input, when a suitable functionality is not implemented in an existing widget. The script has <code>in_data</code>, <code>in_distance</code>, <code>in_learner</code>, <code>in_classifier</code> and <code>in_object</code> variables (from input signals) in its local namespace. If a signal is not connected or it did not yet receive any data, those variables contain <code>None</code>.</p>
+
+<p>After the script is executed variables from the script’s local namespace are extracted and used as outputs of the widget. The widget can be further connected to other widgets for visualizing the output.</p>
+
+<p>For instance the following script would simply pass on all signals it receives:</p>
+
+<pre><code>out_data = in_data
+out_distance = in_distance
+out_learner = in_learner
+out_classifier = in_classifier
+out_object = in_object
+</code></pre>
+
+<p>Note: You should not modify the input objects in place.</p>
+
+<p><img src="/images/data/PythonScript-stamped.png" alt="" /></p>
+
+<ol>
+<li>Info box contains names of basic operators for Orange Python script.</li>
+<li>The <em>Library</em> control can be used to manage multiple scripts. Pressing &ldquo;+&rdquo; will add a new entry and open it in the <em>Python script</em> editor. When the script is modified, its entry in the <em>Library</em> will change to indicate it has unsaved changes. Pressing <em>Update</em> will save the script (keyboard shortcut &ldquo;Ctrl+S&rdquo;). A script can be removed by selecting it and pressing the &ldquo;-&rdquo; button.</li>
+<li>Pressing <em>Execute</em> in the <em>Run</em> box executes the script (keyboard shortcut &ldquo;Ctrl+R&rdquo;). Any script output (from <code>print</code>) is captured and displayed in the <em>Console</em> below the script.</li>
+<li>The <em>Python script</em> editor on the left can be used to edit a script (it supports some rudimentary syntax highlighting).</li>
+<li>Console displays the output of the script.</li>
+</ol>
+
+<h2 id="examples">Examples</h2>
+
+<p>Python Script widget is intended to extend functionalities for advanced users.</p>
+
+<p>One can, for example, do batch filtering by attributes. We used zoo.tab for the example and we filtered out all the attributes that have more than 5 discrete values. This in our case removed only &lsquo;leg&rsquo; attribute, but imagine an example where one would have many such attributes.</p>
+
+<pre><code>from Orange.data import Domain, Table
+domain = Domain([attr for attr in in_data.domain.attributes
+                 if attr.is_continuous or len(attr.values) &lt;= 5],
+                in_data.domain.class_vars)
+out_data = Table(domain, in_data)
+</code></pre>
+
+<p><img src="/images/data/PythonScript-filtering.png" alt="" /></p>
+
+<p>The second example shows how to round all the values in a few lines of code. This time we used wine.tab and rounded all the values to whole numbers.</p>
+
+<pre><code>import numpy as np
+out_data = in_data.copy()
+#copy, otherwise input data will be overwritten
+np.round(out_data.X, 0, out_data.X)
+</code></pre>
+
+<p><img src="/images/data/PythonScript-round.png" alt="" /></p>
+
+<p>The third example introduces some Gaussian noise to the data. Again we make a copy of the input data, then walk through all the values with a double for loop and add random noise.</p>
+
+<pre><code>import random
+from Orange.data import Domain, Table
+new_data = in_data.copy()
+for inst in new_data:
+  for f in inst.domain.attributes:
+    inst[f] += random.gauss(0, 0.02)
+out_data = new_data
+</code></pre>
+
+<p><img src="/images/data/PythonScript-gauss.png" alt="" /></p>
+
+<p>The final example uses Orange3-Text add-on. <strong>Python Script</strong> is very useful for custom preprocessing in text mining, extracting new features from strings, or utilizing advanced <em>nltk</em> or <em>gensim</em> functions. Below, we simply tokenized our input data from <em>deerwester.tab</em> by splitting them by whitespace.</p>
+
+<pre><code>print('Running Preprocessing ...')
+tokens = [doc.split(' ') for doc in in_data.documents]
+print('Tokens:', tokens)
+out_object = in_data
+out_object.store_tokens(tokens)
+</code></pre>
+
+<p>You can add a lot of other preprocessing steps to further adjust the output. The output of <strong>Python Script</strong> can be used with any widget that accepts the type of output your script produces. In this case, connection is green, which signalizes the right type of input for Word Cloud widget.</p>
+
+<p><img src="/images/data/PythonScript-Example3.png" alt="" /></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-pad">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 26 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-26-doctoral_summer_school/">Doctoral Summer School</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 25 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-25-scorange/">Orange at ISMB/ECCB 2019</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

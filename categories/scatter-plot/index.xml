@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scatter Plot on Orange</title>
+    <link>/categories/scatter-plot/</link>
+    <description>Recent content in Scatter Plot on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/scatter-plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scatter Plots: the Tour</title>
+      <link>/blog/2018/12/21/scatter-plots-the-tour/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2018/12/21/scatter-plots-the-tour/</guid>
+      <description>Scatter plots are surely one of the best loved visualizations in Orange. Very often, when we teach, people go back to scatter plots over and over again to see their data. We took people’s love for scatter plots to the heart and we redesigned them a bit to make them even more friendly.
+Our favorite still remains the Informative Projections button. This button helps you find interesting visualizations from all the combinations of your data variables.</description>
+    </item>
+    
+  </channel>
+</rss>

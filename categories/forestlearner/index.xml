@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forestlearner on Orange</title>
+    <link>/categories/forestlearner/</link>
+    <description>Recent content in Forestlearner on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Mar 2016 09:09:26 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/forestlearner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All I See is Silhouette</title>
+      <link>/blog/2016/03/23/all-i-see-is-silhouette/</link>
+      <pubDate>Wed, 23 Mar 2016 09:09:26 +0000</pubDate>
+      
+      <guid>/blog/2016/03/23/all-i-see-is-silhouette/</guid>
+      <description>Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn&amp;rsquo;t wait to get it into Orange3. And now we did.
+What this visualization displays is the average distance between instances within the cluster and instances in the nearest cluster. For a given data instance, the silhouette close to 1 indicates that the data instance is close to the center of the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Random forest switches to Simple tree learner by default</title>
+      <link>/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/</link>
+      <pubDate>Thu, 08 Dec 2011 15:28:00 +0000</pubDate>
+      
+      <guid>/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/</guid>
+      <description>Random forest classifiers now use Orange.classification.tree.SimpleTreeLearnerby default, which considerably shortens their construction times.
+Using a random forest classifier is easy.
+import Orange iris = Orange.data.Table(&#39;iris&#39;) forest = Orange.ensemble.forest.RandomForestLearner(iris, trees=200) for instance in iris: print forest(instance), instance.get_class()  The example above loads the iris dataset and trains a random forest classifier with 200 trees. The classifier is then used to label all training examples, printing its prediction alongside the actual class value.</description>
+    </item>
+    
+  </channel>
+</rss>

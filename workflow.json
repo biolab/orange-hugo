@@ -1,0 +1,111 @@
+[
+{
+	"uri": "/workflows/file-and-data-table-widget/",
+	"title": "File and Data Table",
+	"content": "The basic data mining units in Orange are called widgets. In this workflow, the File widget reads the data. File widget communicates this data to Data Table widget that shows the data in a spreadsheet. The output of File is connected to the input of Data Table.\n",
+	"images": ["/workflow_images/file-and-data-table-widget.png"],
+	"download": "110-file-and-data-table-widget.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Data Table", "Data Loading"]
+},
+{
+	"uri": "/workflows/scatterplot-data-table/",
+	"title": "Interactive Visualizations",
+	"content": "Most visualizations in Orange are interactive. Scatter Plot for example. Double click its icon to open it and click-and-drag to select a few data points from the plot. Selected data will automatically propagate to Data Table. Double click it to check which data was selected. Change selection and observe the change in the Data Table. This works best if both widgets are open.\n",
+	"images": ["/workflow_images/scatterplot-data-table.png"],
+	"download": "120-scatterplot-data-table.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Scatter Plot", "Visualization"]
+},
+{
+	"uri": "/workflows/data-subsets/",
+	"title": "Visalization of Data Subsets",
+	"content": "Some visualization widget, like Scatter Plot and several data projection widgets, can expose the data instances in the data subset. In this workflow, Scatter Plot visualizes the data from the input data file, but also marks the data points that have been selected in the Data Table (selected rows).\n",
+	"images": ["/workflow_images/scatterplot-visualize-subset.png"],
+	"download": "130-scatterplot-visualize-subset.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Scatter Plot", "Visualization"]
+},
+{
+	"uri": "/workflows/pivot-table/",
+	"title": "Pivot Table",
+	"content": "Pivot Table can help us aggregate and transform the data. This workflow takes Kickstarter projects and aggregates them by month. We can inspect the frequency of the published projects per month and observe the difference between funded and non-funded projects. Try constructing several tables with pivot and experiment with different aggregation methods.\n",
+	"images": ["/workflow_images/pivot-table.png"],
+	"download": "140-pivot-table.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Data", "Pivot Table"]
+},
+{
+	"uri": "/workflows/tree-scatterplot/",
+	"title": "Classification Tree",
+	"content": "This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.\n",
+	"images": ["/workflow_images/tree-scatterplot.png"],
+	"download": "250-tree-scatterplot.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Classification Tree", "Classification"]
+},
+{
+	"uri": "/workflows/principal-component-analysis/",
+	"title": "Principal Component Analysis",
+	"content": "PCA transforms the data into a dataset with uncorrelated variables, also called principal components. PCA widget displays a graph (scree diagram) showing a degree of explained variance by best principal components and allows to interactively set the number of components to be included in the output dataset. In this workflow, we can observe the transformation in the Data Table and in Scatter Plot.\n",
+	"images": ["/workflow_images/pca.png"],
+	"download": "305-pca.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["PCA", "Dimensionality Reduction"]
+},
+{
+	"uri": "/workflows/hierarchical-clustering/",
+	"title": "Hierarchical Clustering",
+	"content": "The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.\n",
+	"images": ["/workflow_images/hierarchical-clustering.png"],
+	"download": "310-clustering.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Hierarchical Clustering", "Clustering"]
+},
+{
+	"uri": "/workflows/cluster-inspection/",
+	"title": "Cluster Inspection",
+	"content": "We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use \u0026lsquo;Order by relevance\u0026rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!\n",
+	"images": ["/workflow_images/cluster-inspection.png"],
+	"download": "315-cluster-inspection.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Clustering", "Hierarchical Clustering", "Box Plot"]
+},
+{
+	"uri": "/workflows/feature-ranking/",
+	"title": "Feature Ranking",
+	"content": "For supervised problems, where data instances are annotated with class labels, we would like to know which are the most informative features. Rank widget provides a table of features and their informativity scores, and supports manual feature selection. In the workflow, we used it to find the best two features (of initial 79 from brown-selected dataset) and display its scatter plot.\n",
+	"images": ["/workflow_images/feature-ranking.png"],
+	"download": "410-feature-ranking.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Feature Ranking", "Feature Selection"]
+},
+{
+	"uri": "/workflows/cross-validation/",
+	"title": "Cross Validation",
+	"content": "How good are supervised data mining methods on your classification dataset? Here\u0026rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.\n",
+	"images": ["/workflow_images/cross-validation.png"],
+	"download": "450-cross-validation.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Cross Validation", "Predictive models", "Classification"]
+},
+{
+	"uri": "/workflows/where-are-misclassifications/",
+	"title": "Where Are Misclassifications",
+	"content": "Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.\n",
+	"images": ["/workflow_images/misclassifications.png"],
+	"download": "470-misclassification-scatterplot.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": ["Confusion Matrix", "Classification", "Scatter Plot"]
+}]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jmlr on Orange</title>
+    <link>/categories/jmlr/</link>
+    <description>Recent content in Jmlr on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Oct 2013 02:50:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/jmlr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JMLR Publishes Article on Orange</title>
+      <link>/blog/2013/10/03/jmlr-publishes-article-on-orange/</link>
+      <pubDate>Thu, 03 Oct 2013 02:50:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/03/jmlr-publishes-article-on-orange/</guid>
+      <description>Journal of Machine Learning Research has just published our paper on Orange. In the paper we focus on its Python scripting part. We have last reported on Orange scripting at ECML/PKDD 2004. The manuscript was well received (over 270 citations on Google Scholar), but it is now entirely outdated. This was also our only formal publication on Orange scripting. With publication in JMLR this is now a current description of Orange and will be, for a while :-), Orange’s primary reference.</description>
+    </item>
+    
+  </channel>
+</rss>

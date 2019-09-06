@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Orange</title>
+    <link>/categories/data-science/</link>
+    <description>Recent content in Data Science on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Doctoral Summer School</title>
+      <link>/blog/2019/2019-07-26-doctoral_summer_school/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-07-26-doctoral_summer_school/</guid>
+      <description>For the second year in a row, the Orange team was a part of the Ljubljana Doctoral Summer School, which is organized by the School of Economics and Business, University of Ljubljana. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.
+   One important lesson is comparing model accuracy.</description>
+    </item>
+    
+    <item>
+      <title>Orange at 32nd Bled eConference</title>
+      <link>/blog/2019/2019-06-28-bled-econference/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-06-28-bled-econference/</guid>
+      <description>At the invitation of dr. Mirjana Kljajić, we participated in the 32nd Bled eConference. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
+    Photo by Aljaž Ferencek.   We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on Orange</title>
+    <link>/categories/analysis/</link>
+    <description>Recent content in Analysis on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2018 19:11:58 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange is Getting Smarter</title>
+      <link>/blog/2018/11/22/orange-is-getting-smarter/</link>
+      <pubDate>Thu, 22 Nov 2018 19:11:58 +0000</pubDate>
+      
+      <guid>/blog/2018/11/22/orange-is-getting-smarter/</guid>
+      <description>In the past few months, Orange has been getting smarter and sleeker.
+Since version 3.15.0, Orange remembers which distinct widgets users like to connect, adjusting the sorting on the widget search menu accordingly. Additionally, there is a new look for the Edit Links window coming soon.
+Orange recently implemented a basic form of opt-in usage tracking, specifically targeting how users add widgets to the canvas.
+Word cloud of widget popularity in Orange.</description>
+    </item>
+    
+    <item>
+      <title>Data Mining Course at Higher School of Economics, Moscow</title>
+      <link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link>
+      <pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate>
+      
+      <guid>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</guid>
+      <description>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&amp;rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
+It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics Workshop at AIUCD 2018</title>
+      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
+      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      
+      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
+      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing multiple variables: FreeViz</title>
+      <link>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</link>
+      <pubDate>Fri, 26 Jan 2018 11:00:09 +0000</pubDate>
+      
+      <guid>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</guid>
+      <description>Scatter plots are great! But sometimes, we need to plot more than two variables to truly understand the data. How can we achieve this, knowing humans can only grasp up to three dimensions? With an optimization of linear projection, of course!
+Orange recently re-introduced FreeViz, an interactive visualization for plotting multiple variables on a 2-D plane.
+Let&amp;rsquo;s load zoo.tab data with File widget and connect FreeViz to it. Zoo data has 16 features describing animals of different types - mammals, amphibians, insects and so on.</description>
+    </item>
+    
+    <item>
+      <title>How to Properly Test Models</title>
+      <link>/blog/2017/11/29/how-to-properly-test-models/</link>
+      <pubDate>Wed, 29 Nov 2017 12:26:44 +0000</pubDate>
+      
+      <guid>/blog/2017/11/29/how-to-properly-test-models/</guid>
+      <description>On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
+One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&amp;rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Surveys</title>
+      <link>/blog/2017/10/26/analyzing-surveys/</link>
+      <pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate>
+      
+      <guid>/blog/2017/10/26/analyzing-surveys/</guid>
+      <description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description>
+    </item>
+    
+    <item>
+      <title>Diving Into Car Registration Data</title>
+      <link>/blog/2017/10/13/diving-into-car-registration-data/</link>
+      <pubDate>Fri, 13 Oct 2017 12:04:32 +0000</pubDate>
+      
+      <guid>/blog/2017/10/13/diving-into-car-registration-data/</guid>
+      <description>Last week, we presented Orange at the Festival of Open Data, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.
+The original dataset is available at theOPSI portal and it consists of 73 files, one for each month since January 2012.</description>
+    </item>
+    
+    <item>
+      <title>Can We Download Orange Faster?</title>
+      <link>/blog/2017/08/28/can-we-download-orange-faster/</link>
+      <pubDate>Mon, 28 Aug 2017 09:16:48 +0000</pubDate>
+      
+      <guid>/blog/2017/08/28/can-we-download-orange-faster/</guid>
+      <description>One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.
+Related: Introduction to Data Mining Course in Houston
+But we have the data and we&amp;rsquo;ve promptly tried to confirm their complaints by analyzing them&amp;hellip; well, in Orange!
+First, let us observe the data. We have 4887 recorded download sessions with one meta feature reporting on the country of the download and four features with time, size, speed in bytes and speed in gigabytes of the download.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis: New Features</title>
+      <link>/blog/2017/08/04/text-analysis-new-features/</link>
+      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
+      
+      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+Related: Text Preprocessing</description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/blog/2017/06/05/nomogram/</link>
+      <pubDate>Mon, 05 Jun 2017 11:39:12 +0000</pubDate>
+      
+      <guid>/blog/2017/06/05/nomogram/</guid>
+      <description>One more exciting visualization has been introduced to Orange - a Nomogram. In general, nomograms are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</description>
+    </item>
+    
+    <item>
+      <title>Outliers in Traffic Signs</title>
+      <link>/blog/2017/04/25/outliers-in-traffic-signs/</link>
+      <pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate>
+      
+      <guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid>
+      <description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
+I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics: Clustering</title>
+      <link>/blog/2017/04/03/image-analytics-clustering/</link>
+      <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
+      
+      <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
+      <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
+For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
+    </item>
+    
+    <item>
+      <title>For When You Want to Transpose a Data Table...</title>
+      <link>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</link>
+      <pubDate>Fri, 03 Feb 2017 13:16:37 +0000</pubDate>
+      
+      <guid>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</guid>
+      <description>Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.
+Since version 3.3.9, Orange has a Transpose widget that flips your data table around. Columns become rows and rows become columns. This is often useful, if you have, say, biological data.
+Related: Datasets in Orange Bioinformatics
+Today we will play around with brown-selected.tab, a data set on gene expression levels for 79 experiments.</description>
+    </item>
+    
+    <item>
+      <title>Preparing Scraped Data</title>
+      <link>/blog/2017/01/23/preparing-scraped-data/</link>
+      <pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate>
+      
+      <guid>/blog/2017/01/23/preparing-scraped-data/</guid>
+      <description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+Related: Creating a new data table in Orange through Python
+First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description>
+    </item>
+    
+    <item>
+      <title>Data Preparation for Machine Learning</title>
+      <link>/blog/2017/01/13/data-preparation-for-machine-learning/</link>
+      <pubDate>Fri, 13 Jan 2017 09:25:58 +0000</pubDate>
+      
+      <guid>/blog/2017/01/13/data-preparation-for-machine-learning/</guid>
+      <description>We&amp;rsquo;ve said it numerous times and we&amp;rsquo;re going to say it again. Data preparation is crucial for any data analysis. If your data is messy, there&amp;rsquo;s no way you can make sense of it, let alone a computer. Computers are great at handling large, even enormous data sets, speedy computing and recognizing patterns. But they fail miserably if you give them the wrong input. Also some classification methods work better with binary values, other with continuous, so it is important to know how to treat your data properly.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction by Manifold Learning</title>
+      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
+      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
+      
+      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
+      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Manifold Learning widget has a simple interface with powerful features.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
+    </item>
+    
+    <item>
+      <title>Data Mining for Political Scientists</title>
+      <link>/blog/2016/11/30/data-mining-for-political-scientists/</link>
+      <pubDate>Wed, 30 Nov 2016 08:24:53 +0000</pubDate>
+      
+      <guid>/blog/2016/11/30/data-mining-for-political-scientists/</guid>
+      <description>Being a political scientist, I did not even hear about data mining before I&amp;rsquo;ve joined Biolab. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!
+But hold on! There are still many social scientists out there who haven&amp;rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning.</description>
+    </item>
+    
+    <item>
+      <title>Network Analysis with Orange</title>
+      <link>/blog/2016/07/18/network-analysis-with-orange/</link>
+      <pubDate>Mon, 18 Jul 2016 13:42:34 +0000</pubDate>
+      
+      <guid>/blog/2016/07/18/network-analysis-with-orange/</guid>
+      <description>Visualizing relations between data instances can tell us a lot about our data. Let&amp;rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&amp;rsquo;s about the principle.</description>
+    </item>
+    
+    <item>
+      <title>Rehaul of Text Mining Add-On</title>
+      <link>/blog/2016/07/05/rehaul-of-text-mining-add-on/</link>
+      <pubDate>Tue, 05 Jul 2016 06:51:55 +0000</pubDate>
+      
+      <guid>/blog/2016/07/05/rehaul-of-text-mining-add-on/</guid>
+      <description>Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we&amp;rsquo;re thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We&amp;rsquo;ve introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.</description>
+    </item>
+    
+    <item>
+      <title>Association Rules in Orange</title>
+      <link>/blog/2016/04/25/association-rules-in-orange/</link>
+      <pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate>
+      
+      <guid>/blog/2016/04/25/association-rules-in-orange/</guid>
+      <description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
+The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description>
+    </item>
+    
+    <item>
+      <title>Univariate GSoC Success</title>
+      <link>/blog/2016/04/14/univariate-gsoc-success/</link>
+      <pubDate>Thu, 14 Apr 2016 08:55:14 +0000</pubDate>
+      
+      <guid>/blog/2016/04/14/univariate-gsoc-success/</guid>
+      <description>Google Summer of Code application period has come to an end. We&amp;rsquo;ve received 34 applications, some of which were of truly high quality. Now it&amp;rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&amp;rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
+First, we needed to preprocess the data a bit, since it came in a messy form of strings.</description>
+    </item>
+    
+    <item>
+      <title>All I See is Silhouette</title>
+      <link>/blog/2016/03/23/all-i-see-is-silhouette/</link>
+      <pubDate>Wed, 23 Mar 2016 09:09:26 +0000</pubDate>
+      
+      <guid>/blog/2016/03/23/all-i-see-is-silhouette/</guid>
+      <description>Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn&amp;rsquo;t wait to get it into Orange3. And now we did.
+What this visualization displays is the average distance between instances within the cluster and instances in the nearest cluster. For a given data instance, the silhouette close to 1 indicates that the data instance is close to the center of the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Overfitting and Regularization</title>
+      <link>/blog/2016/03/12/overfitting-and-regularization/</link>
+      <pubDate>Sat, 12 Mar 2016 16:48:38 +0000</pubDate>
+      
+      <guid>/blog/2016/03/12/overfitting-and-regularization/</guid>
+      <description>A week ago I used Orange to explain the effects of regularization. This was the second lecture in the Data Mining class, the first one was on linear regression. My introduction to the benefits of regularization used a simple data set with a single input attribute and a continuous class. I drew a data set in Orange, and then used Polynomial Regression widget (from Prototypes add-on) to plot the linear fit.</description>
+    </item>
+    
+    <item>
+      <title>Making Predictions</title>
+      <link>/blog/2016/01/22/predictive-analytics-with-orange/</link>
+      <pubDate>Fri, 22 Jan 2016 16:01:36 +0000</pubDate>
+      
+      <guid>/blog/2016/01/22/predictive-analytics-with-orange/</guid>
+      <description>One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.</description>
+    </item>
+    
+    <item>
+      <title>Orange YouTube Tutorials</title>
+      <link>/blog/2016/01/04/orange-youtube-tutorials/</link>
+      <pubDate>Mon, 04 Jan 2016 08:09:24 +0000</pubDate>
+      
+      <guid>/blog/2016/01/04/orange-youtube-tutorials/</guid>
+      <description>It&amp;rsquo;s been a long time coming, but finally we&amp;rsquo;ve created out our first set of YouTube tutorials. In a series &amp;lsquo;Getting Started with Orange&amp;rsquo; we will walk through our software step-by-step. You will learn how to create a workflow, load your data in different formats, visualize and explore the data. These tutorials are meant for complete beginners in both Orange and data mining and come with some handy tricks that will make using Orange very easy.</description>
+    </item>
+    
+    <item>
+      <title>Model-Based Feature Scoring</title>
+      <link>/blog/2015/12/19/model-based-feature-scoring/</link>
+      <pubDate>Sat, 19 Dec 2015 19:27:51 +0000</pubDate>
+      
+      <guid>/blog/2015/12/19/model-based-feature-scoring/</guid>
+      <description>Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression.</description>
+    </item>
+    
+    <item>
+      <title>Report is back! (and better than ever)</title>
+      <link>/blog/2015/12/11/report-is-back-and-better-than-ever/</link>
+      <pubDate>Fri, 11 Dec 2015 09:53:12 +0000</pubDate>
+      
+      <guid>/blog/2015/12/11/report-is-back-and-better-than-ever/</guid>
+      <description>I’m sure you’d agree that reporting your findings when analyzing the data is crucial. Say you have a couple of interesting predictions that you’ve tested with several methods many times and you’d like to share that with the world. Here’s how.
+Save Graph just got company - a Report button! Report works in most widgets, apart from the very obvious ones that simply transmit or display the data (Python Scripting, Edit Domain, Image Viewer, Predictions…).</description>
+    </item>
+    
+    <item>
+      <title>Mining our own data</title>
+      <link>/blog/2015/11/27/mining-our-own-data/</link>
+      <pubDate>Fri, 27 Nov 2015 08:37:03 +0000</pubDate>
+      
+      <guid>/blog/2015/11/27/mining-our-own-data/</guid>
+      <description>Recently we&amp;rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
+Here we have some preliminary results that we&amp;rsquo;ve managed to gather in the past three weeks or so.</description>
+    </item>
+    
+    <item>
+      <title>Ghostbusters</title>
+      <link>/blog/2015/10/30/ghostbusters/</link>
+      <pubDate>Fri, 30 Oct 2015 15:07:34 +0000</pubDate>
+      
+      <guid>/blog/2015/10/30/ghostbusters/</guid>
+      <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
+Let’s check the distribution in Distributions widget.
+Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+    </item>
+    
+    <item>
+      <title>Save your graphs!</title>
+      <link>/blog/2015/09/25/save-your-graphs/</link>
+      <pubDate>Fri, 25 Sep 2015 08:00:15 +0000</pubDate>
+      
+      <guid>/blog/2015/09/25/save-your-graphs/</guid>
+      <description>If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
+&amp;ldquo;Save Graph&amp;rdquo; will save visualizations to your computer.
+Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).</description>
+    </item>
+    
+    <item>
+      <title>Datasets in Orange Bioinformatics Add-On</title>
+      <link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link>
+      <pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate>
+      
+      <guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid>
+      <description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Misclassifications</title>
+      <link>/blog/2015/07/24/visualizing-misclassifications/</link>
+      <pubDate>Fri, 24 Jul 2015 08:03:40 +0000</pubDate>
+      
+      <guid>/blog/2015/07/24/visualizing-misclassifications/</guid>
+      <description>In data mining classification is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.
+In Orange an easy way to classify your data is to select several classification widgets (e.g. Naive Bayes, Classification Tree and Linear Regression), compare the prediction quality of each learner with Test Learners and Confusion Matrix and then use the best performing classifier on a new data set for classification.</description>
+    </item>
+    
+    <item>
+      <title>Explorative data analysis with Hierarchical Clustering</title>
+      <link>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</link>
+      <pubDate>Mon, 20 Jul 2015 07:21:04 +0000</pubDate>
+      
+      <guid>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</guid>
+      <description>Today we will write about cluster analysis with Hierarchical Clustering widget. We use a well-known Iris data set, which contains 150 Iris flowers, each belonging to one of the three species (setosa, versicolor and virginica). To an untrained eye the three species are very alike, so how could we best tell them apart? The data set contains measurements of sepal and petal dimensions (width and length) and we assume that these gives rise to interesting clustering.</description>
+    </item>
+    
+    <item>
+      <title>NetworkX in Orange</title>
+      <link>/blog/2011/07/29/networkx-in-orange/</link>
+      <pubDate>Fri, 29 Jul 2011 18:56:00 +0000</pubDate>
+      
+      <guid>/blog/2011/07/29/networkx-in-orange/</guid>
+      <description>NetworkX – a popular open-source python library for network analysis has finally found its way into Orange. It is now used as a base class for network representation in all Orange modules and widgets. By that, we offered to the widespread network community a fruitful and fun way to visualize and explore networks, using their existing NetworkX scripts. It has never been easier to combine network analysis and visualization with existing machine learning and data discovery methods.</description>
+    </item>
+    
+  </channel>
+</rss>

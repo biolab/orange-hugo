@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conference on Orange</title>
+    <link>/categories/conference/</link>
+    <description>Recent content in Conference on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2018 10:32:28 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image Analytics Workshop at AIUCD 2018</title>
+      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
+      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      
+      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
+      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis Workshop at Digital Humanities 2017</title>
+      <link>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</link>
+      <pubDate>Tue, 08 Aug 2017 14:56:43 +0000</pubDate>
+      
+      <guid>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</guid>
+      <description>How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?
+It seems so, especially when Orange is involved.
+Yesterday, on August 7, we held a 3-hour workshop on text mining and text analysis for a large crowd of esteemed researchers at Digital Humanities 2017 in Montreal, Canada. Surely, after 3 hours everyone was exhausted, both the audience and the lecturers.</description>
+    </item>
+    
+    <item>
+      <title>Orange at Eurostat&#39;s Big Data Workshop</title>
+      <link>/blog/2016/11/02/orange-at-eurostats-big-data-workshop/</link>
+      <pubDate>Wed, 02 Nov 2016 12:22:59 +0000</pubDate>
+      
+      <guid>/blog/2016/11/02/orange-at-eurostats-big-data-workshop/</guid>
+      <description>A Eurostat&amp;rsquo;s Big Data Workshop recently took place in Ljubljana. In a presentation we have showcased Orange as a tool to teach data science.
+The meeting was organised by Statistical Office of Slovenia and by Eurostat, a Statistical Office of the European Union, and was a primary gathering of representatives from national statistical institutes joined within European Statistical System. The meeting discussed possibilities that big data offers to modern statistics and the role it could play in statistical offices around the world.</description>
+    </item>
+    
+    <item>
+      <title>Orange workshops around the world</title>
+      <link>/blog/2015/06/19/435/</link>
+      <pubDate>Fri, 19 Jun 2015 10:40:43 +0000</pubDate>
+      
+      <guid>/blog/2015/06/19/435/</guid>
+      <description>Even though the summer is nigh, we are hardly going to catch a summer break this year. Orange team is busy holding workshops around the world to present the latest widgets and data mining tools to the public. Last week we had a very successful tutorial at [BC]2 in Basel, Switzerland, where Marinka and Blaž presented data fusion. A part of the tutorial was a hands-on workshop with Orange’s new add-on for data fusion.</description>
+    </item>
+    
+    <item>
+      <title>Orange at ISMB/ECCB 2011</title>
+      <link>/blog/2011/08/03/orange-at-ismbeccb-2011/</link>
+      <pubDate>Wed, 03 Aug 2011 09:14:00 +0000</pubDate>
+      
+      <guid>/blog/2011/08/03/orange-at-ismbeccb-2011/</guid>
+      <description>We presented the Orange Bioinformatics add-on at the ISMB/ECCB conference in Vienna, a joined event covering both 19th Annual International Conference on Intelligent Systems for Molecular Biology and 10th European Conference on Computational Biology.
+We were giving out Orange stickers (with the URL) to the poster&amp;rsquo;s visitors. There was some interest; in the end we gave out about 10 of them, mostly to biologists, who were excited to perform some of the analysis themselves.</description>
+    </item>
+    
+  </channel>
+</rss>

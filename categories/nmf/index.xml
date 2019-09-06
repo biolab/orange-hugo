@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nmf on Orange</title>
+    <link>/categories/nmf/</link>
+    <description>Recent content in Nmf on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Feb 2013 13:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/nmf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange NMF add-on</title>
+      <link>/blog/2013/02/06/orange-nmf-add-on/</link>
+      <pubDate>Wed, 06 Feb 2013 13:47:00 +0000</pubDate>
+      
+      <guid>/blog/2013/02/06/orange-nmf-add-on/</guid>
+      <description>Nimfa, a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own add-on.
+Nimfa provides a plethora of initialization and factorization algorithms, quality measures along with examples on real-world and synthetic data sets. However, until now the analysis was possible only through Python scripting. A recent increase of interest in NMF techniques motivated Fajwel Fogel (a PhD student from INRIA, Paris, SIERRA team) to design and implement several widgets that deal with missing data in target matrices, their normalizations, viewing and assessing the quality of matrix factors returned by different matrix factorization algorithms.</description>
+    </item>
+    
+  </channel>
+</rss>

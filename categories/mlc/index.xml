@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mlc on Orange</title>
+    <link>/categories/mlc/</link>
+    <description>Recent content in Mlc on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jan 2012 12:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/mlc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Multi-label classification (and Multi-target prediction) in Orange</title>
+      <link>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</link>
+      <pubDate>Mon, 09 Jan 2012 12:41:00 +0000</pubDate>
+      
+      <guid>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</guid>
+      <description>The last summer, student Wencan Luo participated in Google Summer of Code to implement Multi-label Classification in Orange. He provided a framework, implemented a few algorithms and some prototype widgets. His work has been &amp;ldquo;hidden&amp;rdquo; in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet &amp;hellip;) and added a more general support for multi-target prediction.
+You can load multi-label tab-delimited data (e.</description>
+    </item>
+    
+  </channel>
+</rss>

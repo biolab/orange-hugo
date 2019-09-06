@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Retreat on Orange</title>
+    <link>/categories/retreat/</link>
+    <description>Recent content in Retreat on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Feb 2011 13:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/retreat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Biolab retreat Februar 2011</title>
+      <link>/blog/2011/02/11/biolab-retreat-februar-2011/</link>
+      <pubDate>Fri, 11 Feb 2011 13:41:00 +0000</pubDate>
+      
+      <guid>/blog/2011/02/11/biolab-retreat-februar-2011/</guid>
+      <description>From Wednesday, 2nd February 2011, to Saturday, 5th February 2011, we have been on working retreat at Lake Bohinj. The whole Bioinformatics Laboratory of the Faculty of Computer and Information technology has temporary moved to a nice house just few meters from the lake, enjoing the nature and without any distractions. Plan: working on the next version of Orange, Orange 2.5 and documentation rewrite. Orange 2.5 will have a better and restructured Python scripting interface along with great and shinny documentation.</description>
+    </item>
+    
+  </channel>
+</rss>

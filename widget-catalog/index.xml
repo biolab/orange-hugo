@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Widget catalog on Orange</title>
+    <link>/widget-catalog/</link>
+    <description>Recent content in Widget catalog on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/widget-catalog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/widget-catalog/unsupervised/louvainclustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/louvainclustering/</guid>
+      <description>Louvain Clustering Groups items using the Louvain clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute Graph (with the Network addon): the weighted k-nearest neighbor graph  The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges.</description>
+    </item>
+    
+    <item>
+      <title>Adaboost</title>
+      <link>/widget-catalog/model/adaboost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/adaboost/</guid>
+      <description>AdaBoost An ensemble meta-algorithm that combines weak learners and adapts to the &amp;lsquo;hardness&amp;rsquo; of each training sample.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s) Learner: learning algorithm  Outputs
+ Learner: AdaBoost learning algorithm Model: trained model  The AdaBoost (short for &amp;ldquo;Adaptive boosting&amp;rdquo;) widget is a machine-learning algorithm, formulated by Yoav Freund and Robert Schapire. It can be used with other learning algorithms to boost their performance. It does so by tweaking the weak learners.</description>
+    </item>
+    
+    <item>
+      <title>Box Plot</title>
+      <link>/widget-catalog/visualize/boxplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/boxplot/</guid>
+      <description>Box Plot Shows distribution of attribute values.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Box Plot widget shows the distributions of attribute values. It is a good practice to check any new data with this widget to quickly discover any anomalies, such as duplicated values (e.g. gray and grey), outliers, and alike.</description>
+    </item>
+    
+    <item>
+      <title>CN2 Rule Induction</title>
+      <link>/widget-catalog/model/cn2ruleinduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/cn2ruleinduction/</guid>
+      <description>CN2 Rule Induction Induce rules from data using CN2 algorithm.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: CN2 learning algorithm CN2 Rule Classifier: trained model  The CN2 algorithm is a classification technique designed for the efficient induction of simple, comprehensible rules of form &amp;ldquo;if cond then predict class&amp;rdquo;, even in domains where noise may be present.
+CN2 Rule Induction works only for classification.</description>
+    </item>
+    
+    <item>
+      <title>CN2 Rule Viewer</title>
+      <link>/widget-catalog/visualize/cn2ruleviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/cn2ruleviewer/</guid>
+      <description>CN2 Rule Viewer CN2 Rule Viewer
+Inputs
+ Data: dataset to filter CN2 Rule Classifier: CN2 Rule Classifier, including a list of induced rules  Outputs
+ Filtered Data: data instances covered by all selected rules  A widget that displays CN2 classification rules. If data is also connected, upon rule selection, one can analyze which instances abide to the conditions.
+ Original order of induced rules can be restored.</description>
+    </item>
+    
+    <item>
+      <title>Calibration Plot</title>
+      <link>/widget-catalog/evaluation/calibrationplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/calibrationplot/</guid>
+      <description>Calibration Plot Shows the match between classifiers&amp;rsquo; probability predictions and actual class probabilities.
+Inputs
+ Evaluation Results: results of testing classification algorithms  The Calibration Plotplots class probabilities against those predicted by the classifier(s).
+ Select the desired target class from the drop down menu. Choose which classifiers to plot. The diagonal represents optimal behavior; the closer the classifier&amp;rsquo;s curve gets, the more accurate its prediction probabilities are. Thus we would use this widget to see whether a classifier is overly optimistic (gives predominantly positive results) or pessimistic (gives predominantly negative results).</description>
+    </item>
+    
+    <item>
+      <title>Color</title>
+      <link>/widget-catalog/data/color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/color/</guid>
+      <description>Color Set color legend for variables.
+Inputs
+ Data: input data set  Outputs
+ Data: data set with a new color legend  The Color widget enables you to set the color legend in your visualizations according to your own preferences. This option provides you with the tools for emphasizing your results and offers a great variety of color options for presenting your data. It can be combined with most visualizations widgets.</description>
+    </item>
+    
+    <item>
+      <title>Concatenate</title>
+      <link>/widget-catalog/data/concatenate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/concatenate/</guid>
+      <description>Concatenate Concatenates data from multiple sources.
+Inputs
+ Primary Data: data set that defines the attribute set Additional Data: additional data set  Outputs
+ Data: concatenated data  The widget concatenates multiple sets of instances (data sets). The merge is “vertical”, in a sense that two sets of 10 and 5 instances yield a new set of 15 instances.
+ Set the attribute merging method. Add the identification of source data sets to the output data set.</description>
+    </item>
+    
+    <item>
+      <title>Confusion Matrix</title>
+      <link>/widget-catalog/evaluation/confusionmatrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/confusionmatrix/</guid>
+      <description>Predictions Shows proportions between the predicted and actual class.
+Inputs
+ Evaluation results: results of testing classification algorithms  Outputs
+ Selected Data: data subset selected from confusion matrix Data: data with the additional information on whether a data instance was selected  The Confusion Matrix gives the number/proportion of instances between the predicted and actual class. The selection of the elements in the matrix feeds the corresponding instances into the output signal.</description>
+    </item>
+    
+    <item>
+      <title>Constant</title>
+      <link>/widget-catalog/model/constant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/constant/</guid>
+      <description>Constant Predict the most frequent class or mean value from the training set.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: majority/mean learning algorithm Model: trained model  This learner produces a model that always predicts themajority for classification tasks and mean value for regression tasks.
+For classification, when predicting the class value with Predictions, the widget will return relative frequencies of the classes in the training set.</description>
+    </item>
+    
+    <item>
+      <title>Continuize</title>
+      <link>/widget-catalog/data/continuize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/continuize/</guid>
+      <description>Continuize Turns discrete attributes into continuous dummy variables.
+Inputs
+ Data: input data set  Outputs
+ Data: data set with continuized instances  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete attributes (including binary attributes) are replaced with continuous ones.
+ Continuization methods, which define the treatment of multivalued discrete attributes. Say that we have a discrete attribute status with the values low, middle and high, listed in that order.</description>
+    </item>
+    
+    <item>
+      <title>Correlations</title>
+      <link>/widget-catalog/data/correlations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/correlations/</guid>
+      <description>Correlations Compute all pairwise attribute correlations.
+Inputs
+ Data: input dataset  Outputs
+ Data: input dataset Features: selected pair of features Correlations: data table with correlation scores  Correlations computes Pearson or Spearman correlation scores for all pairs of features in a dataset. These methods can only detect monotonic relationship.
+ Correlation measure:  Pairwise Pearson correlation. Pairwise Spearman correlation.  Filter for finding attribute pairs. A list of attribute pairs with correlation coefficient.</description>
+    </item>
+    
+    <item>
+      <title>Correspondence Analysis</title>
+      <link>/widget-catalog/unsupervised/correspondenceanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/correspondenceanalysis/</guid>
+      <description>Correspondence Analysis Correspondence analysis for categorical multivariate data.
+Inputs
+ Data: input dataset  Correspondence Analysis (CA) computes the CA linear transformation of the input data. While it is similar to PCA, CA computes linear transformation on discrete rather than on continuous data.
+ Select the variables you want to see plotted. Select the component for each axis. Inertia values (percentage of independence from transformation, i.e. variables are in the same dimension).</description>
+    </item>
+    
+    <item>
+      <title>Create Class</title>
+      <link>/widget-catalog/data/createclass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/createclass/</guid>
+      <description>Create Class Create class attribute from a string attribute.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with a new class variable  Create Class creates a new class attribute from an existing discrete or string attribute. The widget matches the string value of the selected attribute and constructs a new user-defined value for matching instances.
+ The attribute the new class is constructed from. Matching:  Name: the name of the new class value Substring: regex-defined substring that will match the values from the above-defined attribute Instances: the number of instances matching the substring Press &amp;lsquo;+&amp;rsquo; to add a new class value  Name of the new class column.</description>
+    </item>
+    
+    <item>
+      <title>Datainfo</title>
+      <link>/widget-catalog/data/datainfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/datainfo/</guid>
+      <description>Data Info Displays information on a selected dataset.
+Inputs
+ Data: input dataset  A simple widget that presents information on dataset size, features, targets, meta attributes, and location.
+ Information on dataset size Information on discrete and continuous features Information on targets Information on meta attributes Information on where the data is stored Produce a report.  Example Below, we compare the basic statistics of two Data Info widgets - one with information on the entire dataset and the other with information on the (manually) selected subset from the Scatter Plot widget.</description>
+    </item>
+    
+    <item>
+      <title>Datasampler</title>
+      <link>/widget-catalog/data/datasampler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/datasampler/</guid>
+      <description>Data Sampler Selects a subset of data instances from an input dataset.
+Inputs
+ Data: input dataset  Outputs
+ Data Sample: sampled data instances Remaining Data: out-of-sample data  The Data Sampler widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processed after the input dataset is provided and Sample Data is pressed.</description>
+    </item>
+    
+    <item>
+      <title>Datasets</title>
+      <link>/widget-catalog/data/datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/datasets/</guid>
+      <description>Datasets Load a dataset from an online repository.
+Outputs
+ Data: output dataset  Datasets widget retrieves selected dataset from the server and sends it to the output. File is downloaded to the local memory and thus instantly available even without the internet connection. Each dataset is provided with a description and information on the data size, number of instances, number of variables, target and tags.
+ Information on the number of datasets available and the number of them downloaded to the local memory.</description>
+    </item>
+    
+    <item>
+      <title>Datatable</title>
+      <link>/widget-catalog/data/datatable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/datatable/</guid>
+      <description>Data Table Displays attribute-value data in a spreadsheet.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the table  The Data Table widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. The widget also supports manual selection of data instances.
+ The name of the dataset (usually the input data file).</description>
+    </item>
+    
+    <item>
+      <title>Discretize</title>
+      <link>/widget-catalog/data/discretize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/discretize/</guid>
+      <description>Discretize Discretizes continuous attributes from an input dataset.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with discretized values  The Discretize widget discretizes continuous attributes with a selected method.
+ The basic version of the widget is rather simple. It allows choosing between three different discretizations.  Entropy-MDL, invented by Fayyad and Irani is a top-down discretization, which recursively splits the attribute at a cut maximizing information gain, until the gain is lower than the minimal description length of the cut.</description>
+    </item>
+    
+    <item>
+      <title>Distance File</title>
+      <link>/widget-catalog/unsupervised/distancefile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/distancefile/</guid>
+      <description>Distance File Loads an existing distance file.
+Outputs
+ Distance File: distance matrix   Choose from a list of previously saved distance files. Browse for saved distance files. Reload the selected distance file. Information about the distance file (number of points, labelled/unlabelled). Browse documentation datasets. Produce a report.  Example When you want to use a custom-set distance file that you&amp;rsquo;ve saved before, open the Distance File widget and select the desired file with the Browse icon.</description>
+    </item>
+    
+    <item>
+      <title>Distance Map</title>
+      <link>/widget-catalog/unsupervised/distancemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/distancemap/</guid>
+      <description>Distance Map Visualizes distances between items.
+Inputs
+ Distances: distance matrix  Outputs
+ Data: instances selected from the matrix Features: attributes selected from the matrix  The Distance Map visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.
+Distances are most often those between instances (&amp;rdquo;rows&amp;rdquo; in the Distances widget) or attributes (&amp;rdquo;columns&amp;rdquo; in Distances widget).</description>
+    </item>
+    
+    <item>
+      <title>Distance Matrix</title>
+      <link>/widget-catalog/unsupervised/distancematrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/distancematrix/</guid>
+      <description>Distance Matrix Visualizes distance measures in a distance matrix.
+Inputs
+ Distances: distance matrix  Outputs
+ Distances: distance matrix Table: distance measures in a distance matrix  The Distance Matrix widget creates a distance matrix, which is a two-dimensional array containing the distances, taken pairwise, between the elements of a set. The number of elements in the dataset defines the size of the matrix. Data matrices are essential for hierarchical clustering and they are extremely useful in bioinformatics as well, where they are used to represent protein structures in a coordinate-independent manner.</description>
+    </item>
+    
+    <item>
+      <title>Distance Transformation</title>
+      <link>/widget-catalog/unsupervised/distancetransformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/distancetransformation/</guid>
+      <description>Distance Transformation Transforms distances in a dataset.
+Inputs
+ Distances: distance matrix  Outputs
+ Distances: transformed distance matrix  The Distances Transformation widget is used for the normalization and inversion of distance matrices. The normalization of data is necessary to bring all the variables into proportion with one another.
+ Choose the type of Normalization:  No normalization To interval [0, 1] To interval [-1, 1] Sigmoid function: 1/(1+exp(-X))  Choose the type of Inversion:  No inversion -X 1 - X max(X) - X 1/X  Produce a report.</description>
+    </item>
+    
+    <item>
+      <title>Distances</title>
+      <link>/widget-catalog/unsupervised/distances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/distances/</guid>
+      <description>Distances Computes distances between rows/columns in a dataset.
+Inputs
+ Data: input dataset  Outputs
+ Distances: distance matrix  The Distances widget computes distances between rows or columns in a dataset. By default, the data will be normalized to ensure equal treatment of individual features. Normalization is always done column-wise.
+Sparse data can only be used with Euclidean, Manhattan and Cosine metric.
+The resulting distance matrix can be fed further to Hierarchical Clustering for uncovering groups in the data, to Distance Map or Distance Matrix for visualizing the distances (Distance Matrix can be quite slow for larger data sets), to MDS for mapping the data instances using the distance matrix and finally, saved with Save Distance Matrix.</description>
+    </item>
+    
+    <item>
+      <title>Distributions</title>
+      <link>/widget-catalog/visualize/distributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/distributions/</guid>
+      <description>Distributions Displays value distributions for a single attribute.
+Inputs
+ Data: input dataset  The Distributions widget displays the value distribution of discrete or continuous attributes. If the data contains a class variable, distributions may be conditioned on the class.
+For discrete attributes, the graph displayed by the widget shows how many times (e.g., in how many instances) each attribute value appears in the data. If the data contains a class variable, class distributions for each of the attribute values will be displayed as well (like in the snapshot below).</description>
+    </item>
+    
+    <item>
+      <title>Edit Domain</title>
+      <link>/widget-catalog/data/editdomain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/editdomain/</guid>
+      <description>Edit Domain Rename features and their values.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with edited domain  This widget can be used to edit/change a dataset&amp;rsquo;s domain.
+ All features (including meta attributes) from the input dataset are listed in the Variables list. Selecting one feature displays an editor on the right. Change the name of the feature. Change the value names for discrete features in the Values list box.</description>
+    </item>
+    
+    <item>
+      <title>Feature Constructor</title>
+      <link>/widget-catalog/data/featureconstructor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/featureconstructor/</guid>
+      <description>Feature Constructor Add new features to your dataset.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with additional features  The Feature Constructor allows you to manually add features (columns) into your dataset. The new feature can be a computation of an existing one or a combination of several (addition, subtraction, etc.). You can choose what type of feature it will be (discrete, continuous or string) and what its parameters are (name, value, expression).</description>
+    </item>
+    
+    <item>
+      <title>Feature Statistics</title>
+      <link>/widget-catalog/data/featurestatistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/featurestatistics/</guid>
+      <description>Feature Statistics Show basic statistics for data features.
+Inputs
+ Data: input data  Outputs
+ Reduced data: table containing only selected features Statistics: table containing statistics of the selected features  The Feature Statistics widget provides a quick way to inspect and find interesting features in a given data set.
+The Feature Statistics widget on the heart-disease data set. The feature exerc ind ang was manually changed to a meta variable for illustration purposes.</description>
+    </item>
+    
+    <item>
+      <title>File</title>
+      <link>/widget-catalog/data/file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/file/</guid>
+      <description>File Reads attribute-value data from an input file.
+Outputs
+ Data: dataset from the file  The File widget reads the input data file (data table with data instances) and sends the dataset to its output channel. The history of most recently opened files is maintained in the widget. The widget also includes a directory with sample datasets that come pre-installed with Orange.
+The widget reads data from Excel (.</description>
+    </item>
+    
+    <item>
+      <title>FreeViz</title>
+      <link>/widget-catalog/visualize/freeviz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/freeviz/</guid>
+      <description>FreeViz Displays FreeViz projection.
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected Components: FreeViz vectors  FreeViz uses a paradigm borrowed from particle physics: points in the same class attract each other, those from different class repel each other, and the resulting forces are exerted on the anchors of the attributes, that is, on unit vectors of each of the dimensional axis.</description>
+    </item>
+    
+    <item>
+      <title>Heat Map</title>
+      <link>/widget-catalog/visualize/heatmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/heatmap/</guid>
+      <description>Heat Map Plots a heat map for a pair of attributes.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the plot  Heat map is a graphical method for visualizing attribute values by class in a two-way matrix. It only works on datasets containing continuous variables. The values are represented by color: the higher a certain value is, the darker the represented color. By combining class and attributes on x and y axes, we see where the attribute values are the strongest and where the weakest, thus enabling us to find typical features (discrete) or value range (continuous) for each class.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Clustering</title>
+      <link>/widget-catalog/unsupervised/hierarchicalclustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/hierarchicalclustering/</guid>
+      <description>Hierarchical Clustering Groups items using a hierarchical clustering algorithm.
+Inputs
+ Distances: distance matrix  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram.
+ The widget supports four ways of measuring distances between clusters:  Single linkage computes the distance between the closest elements of the two clusters Average linkage computes the average distance between elements of the two clusters Weighted linkage uses the WPGMA method Complete linkage computes the distance between the clusters&amp;rsquo; most distant elements  Labels of nodes in the dendrogram can be chosen in the Annotation box.</description>
+    </item>
+    
+    <item>
+      <title>Impute</title>
+      <link>/widget-catalog/data/impute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/impute/</guid>
+      <description>Impute Replaces unknown values in the data.
+Inputs
+ Data: input dataset Learner: learning algorithm for imputation  Outputs
+ Data: dataset with imputed values  Some Orange&amp;rsquo;s algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The default imputation is (1-NN).
+ In the top-most box, Default method, the user can specify a general imputation technique for all attributes.</description>
+    </item>
+    
+    <item>
+      <title>Lift Curve</title>
+      <link>/widget-catalog/evaluation/liftcurve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/liftcurve/</guid>
+      <description>Lift Curve Measures the performance of a chosen classifier against a random classifier.
+Inputs
+ Evaluation Results: results of testing classification algorithms  The Lift curve shows the relation between the number of instances which were predicted positive and those that are indeed positive and thus measures the performance of a chosen classifier against a random classifier. The graph is constructed with the cumulative number of cases (in descending order of probability) on the x-axis and the cumulative number of true positives on the y-axis.</description>
+    </item>
+    
+    <item>
+      <title>Line Plot</title>
+      <link>/widget-catalog/visualize/lineplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/lineplot/</guid>
+      <description>Line Plot Visualization of data profiles (e.g., time series).
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  Line plot a type of plot which displays the data as a series of points, connected by straight line segments. It only works for numerical data, while categorical can be used for grouping of the data points.</description>
+    </item>
+    
+    <item>
+      <title>Linear Projection</title>
+      <link>/widget-catalog/visualize/linearprojection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/linearprojection/</guid>
+      <description>Linear Projection A linear projection method with explorative data analysis.
+Inputs
+ Data: input dataset Data Subset: subset of instances Projection: custom projection vectors  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected Components: projection vectors  This widget displays linear projections of class-labeled data. It supports various types of projections such as circular, linear discriminant analysis, principal component analysis, and custom projection.</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression</title>
+      <link>/widget-catalog/model/linearregression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/linearregression/</guid>
+      <description>Linear Regression A linear regression algorithm with optional L1 (LASSO), L2 (ridge) or L1L2 (elastic net) regularization.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: linear regression learning algorithm Model: trained model Coefficients: linear regression coefficients  The Linear Regression widget constructs a learner/predictor that learns a linear function from its input data. The model can identify the relationship between a predictor xi and the response variable y.</description>
+    </item>
+    
+    <item>
+      <title>Load Model</title>
+      <link>/widget-catalog/model/loadmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/loadmodel/</guid>
+      <description>Load Model Load a model from an input file.
+Outputs
+ Model: trained model   Choose from a list of previously used models. Browse for saved models. Reload the selected model.  Example When you want to use a custom-set model that you&amp;rsquo;ve saved before, open the Load Model widget and select the desired file with the Browse icon. This widget loads the existing model into Predictions widget. Datasets used with Load Model have to contain compatible attributes!</description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>/widget-catalog/model/logisticregression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/logisticregression/</guid>
+      <description>Logistic Regression The logistic regression classification algorithm with LASSO (L1) or ridge (L2) regularization.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: logistic regression learning algorithm Model: trained model Coefficients: logistic regression coefficients  Logistic Regression learns a Logistic Regression model from the data. It only works for classification tasks.
+ A name under which the learner appears in other widgets. The default name is &amp;ldquo;Logistic Regression&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>MDS</title>
+      <link>/widget-catalog/unsupervised/mds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/mds/</guid>
+      <description>MDS Multidimensional scaling (MDS) projects items onto a plane fitted to given distances between points.
+Inputs
+ Data: input dataset Distances: distance matrix Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: dataset with MDS coordinates  Multidimensional scaling is a technique which finds a low-dimensional (in our case a two-dimensional) projection of points, where it tries to fit distances between points as well as possible.</description>
+    </item>
+    
+    <item>
+      <title>Manifold Learning</title>
+      <link>/widget-catalog/unsupervised/manifoldlearning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/manifoldlearning/</guid>
+      <description>Manifold Learning Nonlinear dimensionality reduction.
+Inputs
+ Data: input dataset  Outputs
+ Transformed Data: dataset with reduced coordinates  Manifold Learning is a technique which finds a non-linear manifold within the higher-dimensional space. The widget then outputs new coordinates which correspond to a two-dimensional space. Such data can be later visualized with Scatter Plot or other visualization widgets.
+ Method for manifold learning:  t-SNE MDS, see also MDS widget Isomap Locally Linear Embedding Spectral Embedding  Set parameters for the method:  t-SNE (distance measures):  Euclidean distance Manhattan Chebyshev Jaccard Mahalanobis Cosine  MDS (iterations and initialization):  max iterations: maximum number of optimization interactions initialization: method for initialization of the algorithm (PCA or random)  Isomap:  number of neighbors  Locally Linear Embedding:  method: standard modified hessian eigenmap local number of neighbors max iterations  Spectral Embedding:  affinity: nearest neighbors RFB kernel   Output: the number of reduced features (components).</description>
+    </item>
+    
+    <item>
+      <title>Merge Data</title>
+      <link>/widget-catalog/data/mergedata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/mergedata/</guid>
+      <description>Merge Data Merges two datasets, based on values of selected attributes.
+Inputs
+ Data: input dataset Extra Data: additional dataset  Outputs
+ Data: dataset with features added from extra data  The Merge Data widget is used to horizontally merge two datasets, based on values of selected attributes. In the input, two datasets are required, data and extra data. The widget allows selection of an attribute from each domain, which will be used to perform the merging.</description>
+    </item>
+    
+    <item>
+      <title>Mosaic Display</title>
+      <link>/widget-catalog/visualize/mosaicdisplay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/mosaicdisplay/</guid>
+      <description>Mosaic Display Display data in a mosaic plot.
+Inputs
+ Data: input dataset Data subset: subset of instances  Outputs
+ Selected data: instances selected from the plot  The Mosaic plot is a graphical representation of a two-way frequency table or a contingency table. It is used for visualizing data from two or more qualitative variables and was introduced in 1981 by Hartigan and Kleiner and expanded and refined by Friendly in 1994.</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes</title>
+      <link>/widget-catalog/model/naivebayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/naivebayes/</guid>
+      <description>Naive Bayes A fast and simple probabilistic classifier based on Bayes&amp;rsquo; theorem with the assumption of feature independence.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: naive bayes learning algorithm Model: trained model  Naive Bayes learns a Naive Bayesian model from the data. It only works for classification tasks.
+This widget has two options: the name under which it will appear in other widgets and producing a report.</description>
+    </item>
+    
+    <item>
+      <title>Neighbors</title>
+      <link>/widget-catalog/data/neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/neighbors/</guid>
+      <description>Neighbors Compute nearest neighbors in data according to reference.
+Inputs
+ Data: An input data set. Reference: A reference data instance for neighbor computation.  Outputs
+ Neighbors: A data table of nearest neighbors according to reference.  The Neighbors widget computes nearest neighbors for a given reference and for a given distance measure.
+ Information on the input data. Distance measure for computing neighbors. Supported measures are: Euclidean, Manhattan, Mahalanobis, Cosine, Jaccard, Spearman, absolute Spearman, Pearson, absolute Pearson.</description>
+    </item>
+    
+    <item>
+      <title>Neural Network</title>
+      <link>/widget-catalog/model/neuralnetwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/neuralnetwork/</guid>
+      <description>Neural Network A multi-layer perceptron (MLP) algorithm with backpropagation.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: multi-layer perceptron learning algorithm Model: trained model  The Neural Network widget uses sklearn&amp;rsquo;s Multi-layer Perceptron algorithm that can learn non-linear models as well as linear.
+ A name under which it will appear in other widgets. The default name is &amp;ldquo;Neural Network&amp;rdquo;. Set model parameters:  Neurons per hidden layer: defined as the ith element represents the number of neurons in the ith hidden layer.</description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/widget-catalog/visualize/nomogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/nomogram/</guid>
+      <description>Nomogram Nomograms for visualization of Naive Bayes and Logistic Regression classifiers.
+Inputs
+ Classifier: trained classifier Data: input dataset  Outputs
+ Features: selected variables, 10 by default  The Nomogram enables some classifier&amp;rsquo;s (more precisely Naive Bayes classifier and Logistic Regression classifier) visual representation. It offers an insight into the structure of the training data and effects of the attributes on the class probabilities. Besides visualization of the classifier, the widget offers interactive support for prediction of class probabilities.</description>
+    </item>
+    
+    <item>
+      <title>Outliers</title>
+      <link>/widget-catalog/data/outliers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/outliers/</guid>
+      <description>Outliers Simple outlier detection by comparing distances between instances.
+Inputs
+ Data: input dataset Distances: distance matrix  Outputs
+ Outliers: instances scored as outliers Inliers: instances not scored as outliers  The Outliers widget applies one of the two methods for outlier detection. Both methods apply classification to the dataset, one with SVM (multiple kernels) and the other with elliptical envelope. One-class SVM with non-linear kernels (RBF) performs well with non-Gaussian distributions, while Covariance estimator works only for data with Gaussian distribution.</description>
+    </item>
+    
+    <item>
+      <title>PCA</title>
+      <link>/widget-catalog/unsupervised/pca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/pca/</guid>
+      <description>PCA PCA linear transformation of input data.
+Inputs
+ Data: input dataset  Outputs
+ Transformed Data: PCA transformed data Components: Eigenvectors.  Principal Component Analysis (PCA) computes the PCA linear transformation of the input data. It outputs either a transformed dataset with weights of individual instances or weights of principal components.
+ Select how many principal components you wish in your output. It is best to choose as few as possible with variance covered as high as possible.</description>
+    </item>
+    
+    <item>
+      <title>Paint Data</title>
+      <link>/widget-catalog/data/paintdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/paintdata/</guid>
+      <description>Paint Data Paints data on a 2D plane. You can place individual data points or use a brush to paint larger datasets.
+Outputs
+ Data: dataset as painted in the plot  The widget supports the creation of a new dataset by visually placing data points on a two-dimension plane. Data points can be placed on the plane individually (Put) or in a larger number by brushing (Brush). Data points can belong to classes if the data is intended to be used in supervised learning.</description>
+    </item>
+    
+    <item>
+      <title>Predictions</title>
+      <link>/widget-catalog/evaluation/predictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/predictions/</guid>
+      <description>Predictions Shows models&amp;rsquo; predictions on the data.
+Inputs
+ Data: input dataset Predictors: predictors to be used on the data  Outputs
+ Predictions: data with added predictions Evaluation Results: results of testing classification algorithms  The widget receives a dataset and one or more predictors (predictive models, not learning algorithms - see the example below). It outputs the data and the predictions.
+ Information on the input, namely the number of instances to predict, the number of predictors and the task (classification or regression).</description>
+    </item>
+    
+    <item>
+      <title>Preprocess</title>
+      <link>/widget-catalog/data/preprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/preprocess/</guid>
+      <description>Preprocess Preprocesses data with selected methods.
+Inputs
+ Data: input dataset  Outputs
+ Preprocessor: preprocessing method Preprocessed Data: data preprocessed with selected methods  Preprocessing is crucial for achieving better-quality analysis results. The Preprocess widget offers several preprocessing methods that can be combined in a single preprocessing pipeline. Some methods are available as separate widgets, which offer advanced techniques and greater parameter tuning.
+ List of preprocessors. Double click the preprocessors you wish to use and shuffle their order by dragging them up or down.</description>
+    </item>
+    
+    <item>
+      <title>Purge Domain</title>
+      <link>/widget-catalog/data/purgedomain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/purgedomain/</guid>
+      <description>Purge Domain Removes unused attribute values and useless attributes, sorts the remaining values.
+Inputs
+ Data: input dataset  Outputs
+ Data: filtered dataset  Definitions of nominal attributes sometimes contain values which don’t appear in the data. Even if this does not happen in the original data, filtering the data, selecting exemplary subsets and alike can remove all examples for which the attribute has some particular value. Such values clutter data presentation, especially various visualizations, and should be removed.</description>
+    </item>
+    
+    <item>
+      <title>Pythagorean Forest</title>
+      <link>/widget-catalog/visualize/pythagoreanforest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/pythagoreanforest/</guid>
+      <description>Pythagorean Forest Pythagorean forest for visualizing random forests.
+Inputs
+ Random Forest: tree models from random forest  Outputs
+ Tree: selected tree model  Pythagorean Forest shows all learned decision tree models from Random Forest widget. It displays them as Pythagorean trees, each visualization pertaining to one randomly constructed tree. In the visualization, you can select a tree and display it in Pythagorean Tree widget. The best tree is the one with the shortest and most strongly colored branches.</description>
+    </item>
+    
+    <item>
+      <title>Pythagorean Tree</title>
+      <link>/widget-catalog/visualize/pythagoreantree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/pythagoreantree/</guid>
+      <description>Pythagorean Tree Pythagorean tree visualization for classification or regression trees.
+Inputs
+ Tree: tree model Selected Data: instances selected from the tree  Pythagorean Trees are plane fractals that can be used to depict general tree hierarchies as presented in an article by Fabian Beck and co-authors. In our case, they are used for visualizing and exploring tree models, such as Tree.
+ Information on the input tree model. Visualization parameters:  Depth: set the depth of displayed trees.</description>
+    </item>
+    
+    <item>
+      <title>Python Script</title>
+      <link>/widget-catalog/data/pythonscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/pythonscript/</guid>
+      <description>Python Script Extends functionalities through Python scripting.
+Inputs
+ Data (Orange.data.Table): input dataset bound to in_data variable Learner (Orange.classification.Learner): input learner bound to in_learner variable Classifier (Orange.classification.Learner): input classifier bound to in_classifier variable Object: input Python object bound to in_object variable  Outputs
+ Data (Orange.data.Table): dataset retrieved from out_data variable Learner (Orange.classification.Learner): learner retrieved from out_learner variable Classifier (Orange.classification.Learner): classifier retrieved from out_classifier variable Object: Python object retrieved from out_object variable  Python Script widget can be used to run a python script in the input, when a suitable functionality is not implemented in an existing widget.</description>
+    </item>
+    
+    <item>
+      <title>ROC Analysis</title>
+      <link>/widget-catalog/evaluation/rocanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/rocanalysis/</guid>
+      <description>ROC Analysis Plots a true positive rate against a false positive rate of a test.
+Inputs
+ Evaluation Results: results of testing classification algorithms  The widget shows ROC curves for the tested models and the corresponding convex hull. It serves as a mean of comparison between classification models. The curve plots a false positive rate on an x-axis (1-specificity; probability that target=1 when true value=0) against a true positive rate on a y-axis (sensitivity; probability that target=1 when true value=1).</description>
+    </item>
+    
+    <item>
+      <title>Radviz</title>
+      <link>/widget-catalog/visualize/radviz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/radviz/</guid>
+      <description>Radviz Radviz vizualization with explorative data analysis and intelligent data visualization enhancements.
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected Components: Radviz vectors  Radviz (Hoffman et al. 1997) is a non-linear multi-dimensional visualization technique that can display data defined by three or more variables in a 2-dimensional projection.</description>
+    </item>
+    
+    <item>
+      <title>Random Forest</title>
+      <link>/widget-catalog/model/randomforest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/randomforest/</guid>
+      <description>Random Forest Predict using an ensemble of decision trees.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: random forest learning algorithm Model: trained model  Random forest is an ensemble learning method used for classification, regression and other tasks. It was first proposed by Tin Kam Ho and further developed by Leo Breiman (Breiman, 2001) and Adele Cutler.
+Random Forest builds a set of decision trees.</description>
+    </item>
+    
+    <item>
+      <title>Randomize</title>
+      <link>/widget-catalog/data/randomize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/randomize/</guid>
+      <description>Randomize Shuffles classes, attributes and/or metas of an input dataset.
+Inputs
+ Data: input dataset  Outputs
+ Data: randomized dataset  The Randomize widget receives a dataset in the input and outputs the same dataset in which the classes, attributes or/and metas are shuffled.
+ Select group of columns of the dataset you want to shuffle. Select proportion of the dataset you want to shuffle. Produce replicable output. If Apply automatically is ticked, changes are committed automatically.</description>
+    </item>
+    
+    <item>
+      <title>Rank</title>
+      <link>/widget-catalog/data/rank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/rank/</guid>
+      <description>Rank Ranking of attributes in classification or regression datasets.
+Inputs
+ Data: input dataset Scorer: models for feature scoring  Outputs
+ Reduced Data: dataset with selected attributes  The Rank widget considers class-labeled datasets (classification or regression) and scores the attributes according to their correlation with the class. Rank accepts also models for scoring, such as linear regression, logistic regression, random forest, SGD, etc.
+ Select attributes from the data table.</description>
+    </item>
+    
+    <item>
+      <title>SQL Table</title>
+      <link>/widget-catalog/data/sqltable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/sqltable/</guid>
+      <description>SQL Table Reads data from an SQL database.
+Outputs
+ Data: dataset from the database  The SQL widget accesses data stored in an SQL database. It can connect to PostgreSQL (requires psycopg2 module) or SQL Server (requires pymssql module).
+To handle large databases, Orange attempts to execute a part of the computation in the database itself without downloading the data. This only works with PostgreSQL database and requires quantile and tsm_system_time extensions installed on server.</description>
+    </item>
+    
+    <item>
+      <title>SVM</title>
+      <link>/widget-catalog/model/svm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/svm/</guid>
+      <description>SVM Support Vector Machines map inputs to higher-dimensional feature spaces.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: linear regression learning algorithm Model: trained model Support Vectors: instances used as support vectors  Support vector machine (SVM) is a machine learning technique that separates the attribute space with a hyperplane, thus maximizing the margin between the instances of different classes or class values. The technique often yields supreme predictive performance results.</description>
+    </item>
+    
+    <item>
+      <title>Save Data</title>
+      <link>/widget-catalog/data/save/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/save/</guid>
+      <description>Save Data Saves data to a file.
+Inputs
+ Data: input dataset  The Save Data widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as a tab-delimited or a comma-separated file.
+The widget does not save the data every time it receives a new signal in the input as this would constantly (and, mostly, inadvertently) overwrite the file.</description>
+    </item>
+    
+    <item>
+      <title>Save Data</title>
+      <link>/widget-catalog/data/savedata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/savedata/</guid>
+      <description>Save Data Saves data to a file.
+Inputs
+ Data: input dataset  The Save Data widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as a tab-delimited or a comma-separated file.
+The widget does not save the data every time it receives a new signal in the input as this would constantly (and, mostly, inadvertently) overwrite the file.</description>
+    </item>
+    
+    <item>
+      <title>Save Distance Matrix</title>
+      <link>/widget-catalog/unsupervised/savedistancematrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/savedistancematrix/</guid>
+      <description>Save Distance Matrix Saves a distance matrix.
+Inputs
+ Distances: distance matrix   By clicking Save, you choose from previously saved distance matrices. Alternatively, tick the box on the left side of the Save button and changes will be communicated automatically. By clicking Save as, you save the distance matrix to your computer, you only need to enter the name of the file and click Save. The distance matrix will be saved as type .</description>
+    </item>
+    
+    <item>
+      <title>Save Model</title>
+      <link>/widget-catalog/model/savemodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/savemodel/</guid>
+      <description>Save Model Save a trained model to an output file.
+Inputs
+ Model: trained model   Choose from previously saved models. Save the created model with the Browse icon. Click on the icon and enter the name of the file. The model will be saved to a pickled file.  Save the model.  Example When you want to save a custom-set model, feed the data to the model (e.</description>
+    </item>
+    
+    <item>
+      <title>Scatter Plot</title>
+      <link>/widget-catalog/visualize/scatterplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/scatterplot/</guid>
+      <description>Scatter Plot Scatter plot visualization with explorative analysis and intelligent data visualization enhancements.
+Inputs
+ Data: input dataset Data Subset: subset of instances Features: list of attributes  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Scatter Plot widget provides a 2-dimensional scatter plot visualization for both continuous and discrete-valued attributes. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis.</description>
+    </item>
+    
+    <item>
+      <title>Select Columns</title>
+      <link>/widget-catalog/data/selectcolumns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/selectcolumns/</guid>
+      <description>Select Columns Manual selection of data attributes and composition of data domain.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with columns as set in the widget  The Select Columns widget is used to manually compose your data domain. The user can decide which attributes will be used and how. Orange distinguishes between ordinary attributes, (optional) class attributes and meta attributes. For instance, for building a classification model, the domain would be composed of a set of attributes and a discrete class attribute.</description>
+    </item>
+    
+    <item>
+      <title>Select Rows</title>
+      <link>/widget-catalog/data/selectrows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/selectrows/</guid>
+      <description>Select Rows Selects data instances based on conditions over data features.
+Inputs
+ Data: input dataset  Outputs
+ Matching Data: instances that match the conditions Non-Matching Data: instances that do not match the conditions Data: data with an additional column showing whether a instance is selected  This widget selects a subset from an input dataset, based on user-defined conditions. Instances that match the selection rule are placed in the output Matching Data channel.</description>
+    </item>
+    
+    <item>
+      <title>Select by Data Index</title>
+      <link>/widget-catalog/data/select-by-data-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/select-by-data-index/</guid>
+      <description>Select by Data Index Match instances by index from data subset.
+Inputs
+ Data: reference data set Data Subset: subset to match  Outputs
+ Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by Data Index enables matching the data by indices.</description>
+    </item>
+    
+    <item>
+      <title>Select by Data Index</title>
+      <link>/widget-catalog/data/selectbydataindex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/selectbydataindex/</guid>
+      <description>Select by Data Index Match instances by index from data subset.
+Inputs
+ Data: reference data set Data Subset: subset to match  Outputs
+ Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by Data Index enables matching the data by indices.</description>
+    </item>
+    
+    <item>
+      <title>Sieve Diagram</title>
+      <link>/widget-catalog/visualize/sievediagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/sievediagram/</guid>
+      <description>Sieve Diagram Plots a sieve diagram for a pair of attributes.
+Inputs
+ Data: input dataset  A Sieve Diagram is a graphical method for visualizing frequencies in a two-way contingency table and comparing them to expected frequencies under assumption of independence. It was proposed by Riedwyl and Schüpbach in a technical report in 1983 and later called a parquet diagram (Riedwyl and Schüpbach 1994). In this display, the area of each rectangle is proportional to the expected frequency, while the observed frequency is shown by the number of squares in each rectangle.</description>
+    </item>
+    
+    <item>
+      <title>Silhouette Plot</title>
+      <link>/widget-catalog/visualize/silhouetteplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/silhouetteplot/</guid>
+      <description>Silhouette Plot A graphical representation of consistency within clusters of data.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Silhouette Plot widget offers a graphical representation of consistency within clusters of data and provides the user with the means to visually assess cluster quality. The silhouette score is a measure of how similar an object is to its own cluster in comparison to other clusters and is crucial in the creation of a silhouette plot.</description>
+    </item>
+    
+    <item>
+      <title>Stacking</title>
+      <link>/widget-catalog/model/stacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/stacking/</guid>
+      <description>Stacking Stack multiple models.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s) Learners: learning algorithm Aggregate: model aggregation method  Outputs
+ Learner: aggregated (stacked) learning algorithm Model: trained model  Stacking is an ensemble method that computes a meta model from several base models. The Stacking widget has the Aggregate input, which provides a method for aggregating the input models. If no aggregation input is given the default methods are used.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic Gradient Descent</title>
+      <link>/widget-catalog/model/stochasticgradient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/stochasticgradient/</guid>
+      <description>Stochastic Gradient Descent Minimize an objective function using a stochastic approximation of gradient descent.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: stochastic gradient descent learning algorithm Model: trained model  The Stochastic Gradient Descent widget uses stochastic gradient descent that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic Gradient Descent</title>
+      <link>/widget-catalog/model/stochasticgradientdescent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/stochasticgradientdescent/</guid>
+      <description>Stochastic Gradient Descent Minimize an objective function using a stochastic approximation of gradient descent.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: stochastic gradient descent learning algorithm Model: trained model  The Stochastic Gradient Descent widget uses stochastic gradient descent that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function.</description>
+    </item>
+    
+    <item>
+      <title>Test and Score</title>
+      <link>/widget-catalog/evaluation/testandscore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluation/testandscore/</guid>
+      <description>Test and Score Tests learning algorithms on data.
+Inputs
+ Data: input dataset Test Data: separate data for testing Learner: learning algorithm(s)  Outputs
+ Evaluation Results: results of testing classification algorithms  The widget tests learning algorithms. Different sampling schemes are available, including using separate test data. The widget does two things. First, it shows a table with different classifier performance measures, such as classification accuracy and area under the curve.</description>
+    </item>
+    
+    <item>
+      <title>Transform</title>
+      <link>/widget-catalog/transform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/transform/</guid>
+      <description>Transform Given dataset and preprocessor transforms the dataset.
+Inputs
+ Data: input dataset Preprocessor: preprocessor for transformation  Outputs
+ Transformed Data: transformed dataset  Transform maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use transform to map the new data into the PCA space created from the original data.</description>
+    </item>
+    
+    <item>
+      <title>Transpose</title>
+      <link>/widget-catalog/data/transpose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/transpose/</guid>
+      <description>Transpose Transposes a data table.
+Inputs
+ Data: input dataset  Outputs
+ Data: transposed dataset  Transpose widget transposes data table.
+Example This is a simple workflow showing how to use Transpose. Connect the widget to File widget. The output of Transpose is a transposed data table with rows as columns and columns as rows. You can observe the result in a Data Table.</description>
+    </item>
+    
+    <item>
+      <title>Tree</title>
+      <link>/widget-catalog/model/tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/tree/</guid>
+      <description>Tree A tree algorithm with forward pruning.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: decision tree learning algorithm Model: trained model  Tree is a simple algorithm that splits the data into nodes by class purity. It is a precursor to Random Forest. Tree in Orange is designed in-house and can handle both discrete and continuous datasets.
+It can also be used for both classification and regression tasks.</description>
+    </item>
+    
+    <item>
+      <title>Tree Viewer</title>
+      <link>/widget-catalog/visualize/treeviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/treeviewer/</guid>
+      <description>Tree Viewer A visualization of classification and regression trees.
+Inputs
+ Tree: decision tree  Outputs
+ Selected Data: instances selected from the tree node Data: data with an additional column showing whether a point is selected  This is a versatile widget with 2-D visualization of classification and regression trees. The user can select a node, instructing the widget to output the data associated with the node, thus enabling explorative data analysis.</description>
+    </item>
+    
+    <item>
+      <title>Venn Diagram</title>
+      <link>/widget-catalog/visualize/venndiagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/venndiagram/</guid>
+      <description>Venn Diagram Plots a Venn diagram for two or more data subsets.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the plot  The Venn Diagram widget displays logical relations between datasets. This projection shows two or more datasets represented by circles of different colors. The intersections are subsets that belong to more than one dataset. To further analyze or visualize the subset, click on the intersection.</description>
+    </item>
+    
+    <item>
+      <title>k-Means</title>
+      <link>/widget-catalog/unsupervised/kmeansclustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/kmeansclustering/</guid>
+      <description>k-Means Clustering Groups items using the k-Means clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute  The widget applies the k-Means clustering algorithm to the data and outputs a new dataset in which the cluster index is used as a class attribute. The original class attribute, if it exists, is moved to meta attributes. Scores of clustering results for various k are also shown in the widget.</description>
+    </item>
+    
+    <item>
+      <title>kNN</title>
+      <link>/widget-catalog/model/knn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/knn/</guid>
+      <description>kNN Predict according to the nearest training instances.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: kNN learning algorithm Model: trained model  The kNN widget uses the kNN algorithm that searches for k closest training examples in feature space and uses their average as prediction.
+ A name under which it will appear in other widgets. The default name is &amp;ldquo;kNN&amp;rdquo;. Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.</description>
+    </item>
+    
+    <item>
+      <title>t-SNE</title>
+      <link>/widget-catalog/unsupervised/tsne/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/tsne/</guid>
+      <description>t-SNE Two-dimensional data projection with t-SNE.
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The t-SNE widget plots the data with a t-distributed stochastic neighbor embedding method. t-SNE is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.</description>
+    </item>
+    
+  </channel>
+</rss>

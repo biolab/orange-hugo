@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matrixfactorization on Orange</title>
+    <link>/categories/matrixfactorization/</link>
+    <description>Recent content in Matrixfactorization on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Feb 2013 13:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/matrixfactorization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange NMF add-on</title>
+      <link>/blog/2013/02/06/orange-nmf-add-on/</link>
+      <pubDate>Wed, 06 Feb 2013 13:47:00 +0000</pubDate>
+      
+      <guid>/blog/2013/02/06/orange-nmf-add-on/</guid>
+      <description>Nimfa, a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own add-on.
+Nimfa provides a plethora of initialization and factorization algorithms, quality measures along with examples on real-world and synthetic data sets. However, until now the analysis was possible only through Python scripting. A recent increase of interest in NMF techniques motivated Fajwel Fogel (a PhD student from INRIA, Paris, SIERRA team) to design and implement several widgets that deal with missing data in target matrices, their normalizations, viewing and assessing the quality of matrix factors returned by different matrix factorization algorithms.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Review: MF - Matrix Factorization Techniques for Data Mining</title>
+      <link>/blog/2011/09/01/gsoc-review-mf-matrix-factorization-techniques-for-data-mining/</link>
+      <pubDate>Thu, 01 Sep 2011 23:48:00 +0000</pubDate>
+      
+      <guid>/blog/2011/09/01/gsoc-review-mf-matrix-factorization-techniques-for-data-mining/</guid>
+      <description>MF - Matrix Factorization Techniques for Data Mining is a Python scripting library which includes a number of published matrix factorization algorithms, initialization methods, quality and performance measures and facilitates the combination of these to produce new strategies. The library represents a unified and efficient interface to matrix factorization algorithms and methods.
+The MF works with numpy dense matrices and scipy sparse matrices (where this is possible to save on space).</description>
+    </item>
+    
+    <item>
+      <title>Orange GSoC: MF Techniques for Data Mining</title>
+      <link>/blog/2011/06/24/orange-gsoc-mf-techniques-for-data-mining/</link>
+      <pubDate>Fri, 24 Jun 2011 22:10:00 +0000</pubDate>
+      
+      <guid>/blog/2011/06/24/orange-gsoc-mf-techniques-for-data-mining/</guid>
+      <description>I am one of three students who are working on GSoC projects for Orange this year. The objective of the project Matrix Factorization Techniques for Data Mining is to provide the Orange community with a unified and efficient interface to matrix factorization algorithms and methods.
+For that purpose I have been developing a library which will include a number of published factorization algorithms and initialization methods and will facilitate combinations of these to produce new strategies.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflows on Orange</title>
+    <link>/workflows/</link>
+    <description>Recent content in Workflows on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/workflows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workflow template</title>
+      <link>/workflows/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/template/</guid>
+      <description>Load the data from scOrange single cell database, see the expression values in a spreadsheet, and use Louvain clustering to find cell groups. Visualize cell landscape in a t-SNE projection and inspect the results of clustering. Select a subset of cells in t-SNE to examine their type or gene expression statistics in the Box Plot. Find enriched Gene Ontology terms, which hint on cell types.</description>
+    </item>
+    
+    <item>
+      <title>File and Data Table</title>
+      <link>/workflows/file-and-data-table-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/file-and-data-table-widget/</guid>
+      <description>The basic data mining units in Orange are called widgets. In this workflow, the File widget reads the data. File widget communicates this data to Data Table widget that shows the data in a spreadsheet. The output of File is connected to the input of Data Table.</description>
+    </item>
+    
+    <item>
+      <title>Interactive Visualizations</title>
+      <link>/workflows/scatterplot-data-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/scatterplot-data-table/</guid>
+      <description>Most visualizations in Orange are interactive. Scatter Plot for example. Double click its icon to open it and click-and-drag to select a few data points from the plot. Selected data will automatically propagate to Data Table. Double click it to check which data was selected. Change selection and observe the change in the Data Table. This works best if both widgets are open.</description>
+    </item>
+    
+    <item>
+      <title>Visalization of Data Subsets</title>
+      <link>/workflows/data-subsets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/data-subsets/</guid>
+      <description>Some visualization widget, like Scatter Plot and several data projection widgets, can expose the data instances in the data subset. In this workflow, Scatter Plot visualizes the data from the input data file, but also marks the data points that have been selected in the Data Table (selected rows).</description>
+    </item>
+    
+    <item>
+      <title>Pivot Table</title>
+      <link>/workflows/pivot-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/pivot-table/</guid>
+      <description>Pivot Table can help us aggregate and transform the data. This workflow takes Kickstarter projects and aggregates them by month. We can inspect the frequency of the published projects per month and observe the difference between funded and non-funded projects. Try constructing several tables with pivot and experiment with different aggregation methods.</description>
+    </item>
+    
+    <item>
+      <title>Classification Tree</title>
+      <link>/workflows/tree-scatterplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/tree-scatterplot/</guid>
+      <description>This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.</description>
+    </item>
+    
+    <item>
+      <title>Inspecting Outliers with Silhouette</title>
+      <link>/workflows/outliers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/outliers/</guid>
+      <description>Silhouette Plot shows how &amp;lsquo;well-centered&amp;rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris&amp;rsquo; class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.</description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis</title>
+      <link>/workflows/principal-component-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/principal-component-analysis/</guid>
+      <description>PCA transforms the data into a dataset with uncorrelated variables, also called principal components. PCA widget displays a graph (scree diagram) showing a degree of explained variance by best principal components and allows to interactively set the number of components to be included in the output dataset. In this workflow, we can observe the transformation in the Data Table and in Scatter Plot.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Clustering</title>
+      <link>/workflows/hierarchical-clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/hierarchical-clustering/</guid>
+      <description>The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.</description>
+    </item>
+    
+    <item>
+      <title>Cluster Inspection</title>
+      <link>/workflows/cluster-inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/cluster-inspection/</guid>
+      <description>We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use &amp;lsquo;Order by relevance&amp;rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!</description>
+    </item>
+    
+    <item>
+      <title>Feature Ranking</title>
+      <link>/workflows/feature-ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/feature-ranking/</guid>
+      <description>For supervised problems, where data instances are annotated with class labels, we would like to know which are the most informative features. Rank widget provides a table of features and their informativity scores, and supports manual feature selection. In the workflow, we used it to find the best two features (of initial 79 from brown-selected dataset) and display its scatter plot.</description>
+    </item>
+    
+    <item>
+      <title>Train and Test Data</title>
+      <link>/workflows/data-sampler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/data-sampler/</guid>
+      <description>In building predictive models it is important to have a separate train and test data sets in order to avoid overfitting and to properly score the models. Here we use Data Sampler to split the data into training and test data, use training data for building a model and, finally, test on test data. Try several other classifiers to see how the scores change.</description>
+    </item>
+    
+    <item>
+      <title>Cross Validation</title>
+      <link>/workflows/cross-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/cross-validation/</guid>
+      <description>How good are supervised data mining methods on your classification dataset? Here&amp;rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.</description>
+    </item>
+    
+    <item>
+      <title>Where Are Misclassifications</title>
+      <link>/workflows/where-are-misclassifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/where-are-misclassifications/</guid>
+      <description>Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.</description>
+    </item>
+    
+  </channel>
+</rss>

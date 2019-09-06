@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Canvas on Orange</title>
+    <link>/categories/canvas/</link>
+    <description>Recent content in Canvas on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Oct 2016 10:09:56 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/canvas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Story of Shadow and Orange</title>
+      <link>/blog/2016/10/10/the-story-of-shadow-and-orange/</link>
+      <pubDate>Mon, 10 Oct 2016 10:09:56 +0000</pubDate>
+      
+      <guid>/blog/2016/10/10/the-story-of-shadow-and-orange/</guid>
+      <description>This is a long story. I remember when started my PhD in Italy. There I met a researcher and he said to me: »You should do some simulations on x-ray optics beamline.« »Yes, but how should I do that?« He gave me a big tape, it was 1986. I soon realized it was all code. But it was a code called Shadow.
+I started to look at the code, to play with it, do some simulations… Soon my boss told me:</description>
+    </item>
+    
+    <item>
+      <title>New canvas</title>
+      <link>/blog/2013/02/14/new-canvas/</link>
+      <pubDate>Thu, 14 Feb 2013 14:37:00 +0000</pubDate>
+      
+      <guid>/blog/2013/02/14/new-canvas/</guid>
+      <description>Orange Canvas, a visual programming environment for Orange, has been around for a while. Integrating new and new features degraded the quality of code to a point where further development proved to be a daunting task. With ever increasing number of widgets, the existing widget toolbar is becoming harder and harder to use, but improving it is really hard. For that reason, we decided Orange needs a new Canvas, a rewrite, that would keep all of the feature of the existing one, but introduce the needed structure and modularity to the source code.</description>
+    </item>
+    
+  </channel>
+</rss>

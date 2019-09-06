@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Images on Orange</title>
+    <link>/categories/images/</link>
+    <description>Recent content in Images on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2018 10:32:28 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image Analytics Workshop at AIUCD 2018</title>
+      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
+      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      
+      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
+      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
+    </item>
+    
+    <item>
+      <title>Orange at Station Houston</title>
+      <link>/blog/2017/09/15/orange-at-station-houston/</link>
+      <pubDate>Fri, 15 Sep 2017 21:29:23 +0000</pubDate>
+      
+      <guid>/blog/2017/09/15/orange-at-station-houston/</guid>
+      <description>With over 262 member companies, Station Houston is the largest hub for tech startups in Houston.
+One of its members is also Genialis, a life science data exploration company that emerged from our lab and is now delivering pipelines and user-friendly apps for analytics in systems biology.
+Thanks to the invitation by the director of operations Alex de la Fuente, we gave a seminar on Data Science for Everyone. We spoke about how Orange can support anyone to learn about data science and then use machine learning on their own data.</description>
+    </item>
+    
+    <item>
+      <title>Outliers in Traffic Signs</title>
+      <link>/blog/2017/04/25/outliers-in-traffic-signs/</link>
+      <pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate>
+      
+      <guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid>
+      <description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
+I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics: Clustering</title>
+      <link>/blog/2017/04/03/image-analytics-clustering/</link>
+      <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
+      
+      <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
+      <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
+For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
+    </item>
+    
+    <item>
+      <title>Celebrity Lookalike or How to Make Students Love Machine Learning</title>
+      <link>/blog/2016/11/25/celebrity-lookalike-or-how-to-make-students-love-machine-learning/</link>
+      <pubDate>Fri, 25 Nov 2016 14:55:39 +0000</pubDate>
+      
+      <guid>/blog/2016/11/25/celebrity-lookalike-or-how-to-make-students-love-machine-learning/</guid>
+      <description>Recently we&amp;rsquo;ve been participating at Days of Computer Science, organized by the Museum of Post and Telecommunications and the Faculty of Computer and Information Science, University of Ljubljana, Slovenia. The project brought together pupils and students from around the country and hopefully showed them what computer science is mostly about. Most children would think programming is just typing lines of code. But it&amp;rsquo;s more than that. It&amp;rsquo;s a way of thinking, a way to solve problems creatively and efficiently.</description>
+    </item>
+    
+    <item>
+      <title>Save your graphs!</title>
+      <link>/blog/2015/09/25/save-your-graphs/</link>
+      <pubDate>Fri, 25 Sep 2015 08:00:15 +0000</pubDate>
+      
+      <guid>/blog/2015/09/25/save-your-graphs/</guid>
+      <description>If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
+&amp;ldquo;Save Graph&amp;rdquo; will save visualizations to your computer.
+Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).</description>
+    </item>
+    
+    <item>
+      <title>Viewing Images</title>
+      <link>/blog/2014/04/29/viewing-images/</link>
+      <pubDate>Tue, 29 Apr 2014 21:28:00 +0000</pubDate>
+      
+      <guid>/blog/2014/04/29/viewing-images/</guid>
+      <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+    </item>
+    
+  </channel>
+</rss>

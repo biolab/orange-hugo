@@ -1,0 +1,466 @@
+<html>    
+    <head>
+    <title>Orange – Image Analytics: Clustering Data Mining Fruitful and Fun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+  <div id="overflow-container" class="overflow-container">
+
+  <div id="loop-container" class="loop-container">
+
+        
+
+      <div class="post type-post status-publish format-standard hentry category-standard category-travel entry full-without-featured odd excerpt-1 no-image">
+
+        
+        
+        <div class="entry-meta">
+
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+
+            <a href="/categories/addons">addons</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/analysis">analysis</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/clustering">clustering</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/embedding">embedding</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/images">images</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/interactive%20%20data%20visualization">interactive  data visualization</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/orange3">orange3</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/unsupervised">unsupervised</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> Image Analytics: Clustering</h1>
+          <span class="author-blog ">
+            
+            By: AJDA,
+             
+            Apr 3, 2017
+          </span>
+        </div>
+
+        <div class="entry-container">
+          <div class="entry-content md" >
+            <article>
+              <p>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.</p>
+
+<p>For retrieving numbers from unstructured data, <a href="http://orange.biolab.si">Orange</a> can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</p>
+
+<p><strong>Related:</strong> <a href="https://www.youtube.com/watch?v=Iu8g2Twjn9U">Video on image clustering</a></p>
+
+<p>Here, we give an example of image embedding and show how easy is to use it in Orange. Technically, Orange would send the image to the server, where the server would push an image through a pre-trained deep neural network, like <a href="https://www.tensorflow.org/tutorials/image_recognition">Google&rsquo;s Inception v3</a>. Deep networks were most often trained with some special purpose in mind. Inception v3, for instance, can classify images into any of <a href="http://image-net.org/challenges/LSVRC/2014/browse-synsets">1000 image classes</a>. We can disregard the classification, consider instead the penultimate layer of the network with 2048 nodes (numbers) and use that for image&rsquo;s vector-based representation.</p>
+
+<p>Let&rsquo;s see this on an example.</p>
+
+<p>Here we have 19 <a href="http://tinyurl.com/images-domestic-animals">images of domestic animals</a>. First, download the images and unzip them. Then use Import Images widget from Orange&rsquo;s Image Analytics add-on and open the directory containing the images.</p>
+
+<p><img src="/images/2017/04/ImportImages.png" alt="" /></p>
+
+<p>We can visualize images in Image Viewer widget. Here is our workflow so far, with images shown in Image Viewer:</p>
+
+<p><img src="/images/2017/04/image-viewer.png" alt="" /></p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.07.36.png" alt="" /></p>
+
+<p>But what do we see in a data table? Only some useless description of images (file name, the location of the file, its size, and the image width and height).</p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.11.06.png" alt="" /></p>
+
+<p>This cannot help us with machine learning. As I said before, we need numbers. To acquire numerical representation of these images, we will send the images to Image Embedding widget.</p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.15.50.png" alt="" /></p>
+
+<p>Great! Now we have the numbers we wanted. There are 2048 of them (columns n0 to n2047). From now on, we can apply all the standard machine learning techniques, say, clustering.</p>
+
+<p>Let us measure the distance between these images and see which are the most similar. We used Distances widget to measure the distance. Normally, cosine distance works best for images, but you can experiment on your own. Then we passed the distance matrix to Hierarchical Clustering to visualize similar pairs in a dendrogram.</p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.20.38.png" alt="" /></p>
+
+<p>This looks very promising! All the right animals are grouped together. But I can&rsquo;t see the results so well in the dendrogram. I want to see the images - with Image Viewer!</p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.23.38.png" alt="" /></p>
+
+<p>So cool! All the cow family is grouped together! Now we can click on different branches of the dendrogram and observe which animals belong to which group.</p>
+
+<p>But I know what you are going to say. You are going to say I am cheating. That I intentionally selected similar images to trick you.</p>
+
+<p>I will prove you wrong. I will take a new cow, say, the most famous cow in Europe - Milka cow.</p>
+
+<p><img src="/images/2017/03/milka_cow_by_miki3d.jpg" alt="" /></p>
+
+<p>This image is quite different from the other images - it doesn&rsquo;t have a white background, it&rsquo;s a real (yet photoshopped) photo and the cow is facing us. Will the Image Embedding find the right numerical representation for this cow?</p>
+
+<p><img src="/images/2017/03/Screen-Shot-2017-03-29-at-10.30.41.png" alt="" /></p>
+
+<p>Indeed it has. Milka is nicely put together with all the other cows.</p>
+
+<p>Image analytics is such an exciting field in machine learning and now Orange is a part of it too! You need to install the Image Analytics add on and you are all set for your research!</p>
+
+            </article>
+          </div>
+          
+
+
+</div>
+</div>
+</div>
+</div>
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-pad">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 26 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-26-doctoral_summer_school/">Doctoral Summer School</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 25 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-25-scorange/">Orange at ISMB/ECCB 2019</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
