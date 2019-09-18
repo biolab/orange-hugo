@@ -17,9 +17,10 @@ from Orange.canvas.config import Config as OConfig
 
 
 class WidgetCatalog:
-    def __init__(self, output_dir, image_url_prefix):
+    def __init__(self, output_dir, image_url_prefix, categories):
         self.output_dir = output_dir
         self.image_url_prefix = image_url_prefix
+        self.categories = categories
 
         QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
         QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
@@ -50,6 +51,8 @@ class WidgetCatalog:
 
         result = []
         for category in self.registry.categories():
+            if self.categories is not None and category.name not in self.categories:
+                continue
             widgets = []
             result.append((category.name, widgets))
             for widget in category.widgets:
@@ -138,10 +141,17 @@ if __name__ == '__main__':
                       help="prefix to prepend to image urls")
     parser.add_option('--output', dest="output",
                       help="path where widgets.json will be created")
+    parser.add_option('--categories', dest="categories",
+                      help="An optional comma-separated list of categories")
 
     options, args = parser.parse_args()
     if not options.output:
         parser.error("Please specify the output dir")
 
-    w = WidgetCatalog(output_dir=options.output, image_url_prefix=options.prefix)
+    categories = None
+    if options.categories:
+        categories = options.categories.split(",")
+
+    w = WidgetCatalog(output_dir=options.output, image_url_prefix=options.prefix,
+                      categories=categories)
     w.create()
