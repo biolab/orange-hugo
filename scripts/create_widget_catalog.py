@@ -1,15 +1,15 @@
-from copy import copy
 import json
-from os import path, makedirs
+import os
+from os import path
+from pathlib import Path
 
-from AnyQt.QtGui import QImage, QPainter
-from AnyQt.QtWidgets import QGraphicsScene, QApplication, QWidget, QGraphicsView, QHBoxLayout
-from AnyQt.QtCore import QRectF, Qt, QTimer
+from AnyQt.QtWidgets import QGraphicsScene, QApplication
+from AnyQt.QtCore import Qt, QTimer
 # QWebEngineWidgets must be imported before QCoreApplication is created.
 # It will fail with an import error if imported (first time) after.
 import AnyQt.QtWebEngineWidgets  # pylint: disable=unused-import
 
-from orangecanvas.canvas.items import NodeItem
+from orangecanvas.resources import icon_loader
 from orangecanvas.help import HelpManager
 from orangecanvas.registry import WidgetRegistry
 
@@ -44,10 +44,6 @@ class WidgetCatalog:
 
     def create(self):
         print("Generating catalog")
-        try:
-            makedirs(path.join(self.output_dir, "icons"))
-        except FileExistsError:
-            pass
 
         result = []
         for category in self.registry.categories():
@@ -56,11 +52,14 @@ class WidgetCatalog:
             widgets = []
             result.append((category.name, widgets))
             for widget in category.widgets:
+                iconfn = icon_loader.from_description(widget).find(widget.icon)
+                icon = Path(iconfn).relative_to(os.getcwd()).as_posix()
                 widgets.append({
                     "text": widget.name,
                     "doc": self.__get_help(widget),
-                    "img": self.__get_icon(widget, category),
-                    "keyword": widget.keywords,
+                    "icon": icon,
+                    "background": category.background,
+                    "keywords": widget.keywords,
                 })
 
         with open(path.join(self.output_dir, "widgets.json"), 'wt') as f:
@@ -78,59 +77,12 @@ class WidgetCatalog:
             cat.widgets = widgets
         return widget_registry
 
-    def __get_icon(self, widget, category=None):
-        # Set remove inputs/outputs so the "ears" are not drawn
-        widget = copy(widget)
-        widget.inputs = []
-        widget.outputs = []
-
-        w = IconWidget()
-        w.set_widget(widget, category)
-        w.show()
-        #self.app.processEvents()
-        filename = "icons/{}.png".format(widget.qualified_name)
-        w.render_as_png(path.join(self.output_dir, filename))
-        w.hide()
-
-        if self.image_url_prefix:
-            return self.image_url_prefix + filename
-        else:
-            return filename
-
     def __get_help(self, widget):
         query = dict(id=widget.qualified_name)
         try:
             return self.help_manager.search(query).url()
         except KeyError:
             return None
-
-
-class IconWidget(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setLayout(QHBoxLayout())
-        self.layout().setContentsMargins(0, 0, 0, 0)
-        self.setFixedSize(50, 50)
-
-        view = QGraphicsView()
-        self.layout().addWidget(view)
-        self.scene = QGraphicsScene(view)
-        view.setScene(self.scene)
-
-    def set_widget(self, widget_description, category_description):
-        node = NodeItem(widget_description)
-        if category_description is not None:
-            node.setWidgetCategory(category_description)
-        self.scene.addItem(node)
-
-    def render_as_png(self, filename):
-        img = QImage(50, 50, QImage.Format_ARGB32)
-        img.fill(Qt.transparent)
-        painter = QPainter(img)
-        painter.setRenderHint(QPainter.Antialiasing, 1)
-        self.scene.render(painter, QRectF(0, 0, 50, 50), QRectF(-25, -25, 50, 50))
-        painter.end()
-        img.save(filename)
 
 
 if __name__ == '__main__':
@@ -146,7 +98,7 @@ if __name__ == '__main__':
 
     options, args = parser.parse_args()
     if not options.output:
-        parser.error("Please specify the output dir")
+        options.output = "."
 
     categories = None
     if options.categories:
