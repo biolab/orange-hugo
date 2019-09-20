@@ -2,6 +2,7 @@ import glob
 import shutil
 import json
 import os
+from os import path
 import re
 import sys
 
@@ -18,7 +19,7 @@ widget:
 """
 print("Copy script: started.")
 
-def add_front_matter(filename,widget):
+def add_front_matter(filename, widget):
     front_matter = "+++\n"
 
     with open(filename, 'r+') as f:
@@ -129,61 +130,105 @@ def change_references(content, filename):
             content = content.replace(ref, st)
     return content
 
-"""
-Build json file for widget catalog from widget_data.json.
 
-Parameters
-----------
-filename:
-    The location of the file widget_data.json
+from AnyQt.QtWidgets import QGraphicsScene
+from PyQt5.QtCore import QRectF, QSize, QSizeF, QPointF
+from PyQt5.QtGui import QColor, QPainter, QImage, QIcon
 
-"""
+from orangecanvas.registry import (
+    WidgetDescription,
+    CategoryDescription,
+)
+
+from orangecanvas.canvas.items import NodeItem
+
+def save_widget_icon(
+    background,
+    icon: str,
+    outname: str,
+    export_size=QSize(100, 100),
+    format="png",
+):
+    # create fake windget and category descriptions
+    widget_description = WidgetDescription("", "", icon=None, qualified_name="orangecanvas")
+    category = CategoryDescription(background=background)
+    item = NodeItem(widget_description)
+    qicon = QIcon()
+    qicon.addFile(icon)
+    item.setIcon(qicon)
+    item.setWidgetCategory(category)
+    iconItem = item.icon_item
+    shapeItem = item.shapeItem
+
+    shapeSize = export_size
+    iconSize = QSize(export_size.width() * 3 / 4, export_size.height() * 3 / 4)
+
+    rect = QRectF(
+        QPointF(-shapeSize.width() / 2, -shapeSize.height() / 2), QSizeF(shapeSize)
+    )
+    shapeItem.setShapeRect(rect)
+    iconItem.setIconSize(iconSize)
+    iconItem.setPos(-iconSize.width() / 2, -iconSize.height() / 2)
+
+    image = QImage(export_size, QImage.Format_ARGB32)
+    image.fill(QColor("#00FFFFFF"))
+    painter = QPainter(image)
+
+    painter.setRenderHint(QPainter.Antialiasing, 1)
+
+    scene = QGraphicsScene()
+    scene.addItem(shapeItem)
+
+    scene.render(painter, QRectF(image.rect()), scene.sceneRect())
+    painter.end()
+
+    if not image.save(outname, format, 100):
+        print("Failed to save " + outname)
 
 
-def build_json(filename):
-    json_content = {}
-    widgets = {}
-    with open(filename, 'r+') as f:
-        widgets = json.loads(f.read())
-        for widget in widgets:
-            widget_obj = widgets[widget]
-            if widget_obj["category"] not in json_content:
-                json_content[widget_obj["category"]] = []
-            json_content[widget_obj["category"]].append(widget_obj)
-            widget_obj['url'] = url = widget_obj['title'].lower().replace(" ", "").replace("-","")
-            # widget_obj['order'] = 1
+add_doc_path = sys.argv[1]
+
+to_location = "content/widget-catalog/"
+
+from AnyQt.QtWidgets import QApplication
+app = QApplication([])
+
+with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
+    widgets_json = json.loads(f.read())
+
+    from collections import defaultdict
+    webpage_json = defaultdict(list)
+
+    for cat, widgets in widgets_json:
+        for w in widgets:
+            print(w)
+            wd = {}
+            wd["order"] = len(webpage_json[cat])
+            wd["title"] = w["text"]
+            wd["category"] = cat
+            wd["keywords"] = w["keywords"]
+
+            wd["background"] = w["background"]
+            icon_svg = path.join(add_doc_path, w["icon"])
+            icon_png = "widget-icons/%s-%s.png" % (cat, w["text"])
+            save_widget_icon(w["background"], icon_svg, "static/" + icon_png)
+            wd["icon"] = icon_png
+
+            wd["file"] = "visual-programming/source/widgets/data/color.md"  # FIXME
+            wd["url"] = "color"  # FIXME
+
+            webpage_json[cat].append(wd)
+
+    s = json.dumps(webpage_json, indent=1)
 
     with open('data/widgets.json', 'w') as outfile:
-        json.dump(json_content, outfile)
-        outfile.close()
+        json.dump(webpage_json, outfile, indent=1)
 
     with open('static/widgets.json', 'w') as outfile:
-        json.dump(json_content, outfile)
-        outfile.close()
+        json.dump(webpage_json, outfile, indent=1)
 
-    return widgets
+    sys.exit(0)
 
-if len(sys.argv) <2:
-    print("No args given")
-
-# find widgets_data.json file in submodule
-files = glob.glob('external/'+sys.argv[1]+'/**/widget_data.json', recursive=True)
-# if no file found, exit
-if len(files) < 1:
-    print("Can't find widget_data.json file.")
-    exit()
-json_content = {}
-
-path = files[0].split("widget_data")[0]+"widgets"
-file = files[0]
-
-location = "content/widget-catalog/"
-
-widgets_data = build_json(file)
-
-# open widget_data.json file
-with open(file, 'r+') as f:
-    widgets = json.loads(f.read())
     # for each widget in widget_data.json file generate FrontMatter and copy .md file and icon image
     for widget in widgets:
         widget_data = widgets[widget]
