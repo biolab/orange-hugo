@@ -6,36 +6,15 @@ from os import path
 import re
 import sys
 
-"""
-Generates string of values which is later added to .md files.
-
-Parameters
-----------
-filename:
-    The location of the widget .md file.
-widget: 
-    JSON object of widget data.
-
-"""
 print("Copy script: started.")
 
-def add_front_matter(filename, widget):
-    front_matter = "+++\n"
 
-    with open(filename, 'r+') as f:
-        content = f.read()
-        for element in widget:
-            if 'url' in element:
-                continue
-            elif 'file' not in element:
-                if element == 'icon':
-                    front_matter += '"' + element + '" = "icons/' + str(widget[element].split('/')[-1]) + '"\n'
-                else:
-                    front_matter += '"'+element+'" = "' + str(widget[element]) + '"\n'
-        front_matter += "+++\n"
-        front_matter += content.replace("images/", "/images/")
-    return front_matter
-
+def front_matter(widget):
+    return """+++
+"title" = "%s"
+"category" = "%s"
++++
+""" % (widget["title"], widget["category"])
 
 """
 Copy images for widget catalog from external module.
@@ -201,7 +180,7 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
 
     for cat, widgets in widgets_json:
         for w in widgets:
-            print(w)
+            print(cat, w["text"])
             wd = {}
             wd["order"] = len(webpage_json[cat])
             wd["title"] = w["text"]
@@ -214,8 +193,27 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
             save_widget_icon(w["background"], icon_svg, "static/" + icon_png)
             wd["icon"] = icon_png
 
-            wd["file"] = "visual-programming/source/widgets/data/color.md"  # FIXME
-            wd["url"] = "color"  # FIXME
+            if w["doc"]:
+                md_file = path.join(add_doc_path, w["doc"])
+                print(md_file)
+                md = open(md_file, "rt").read()
+                print(md)
+
+                f = front_matter(wd)
+
+                # FIXME spaces (and other strange chars) in categories?
+                loc = path.join(to_location, cat.lower())
+                if not os.path.exists(loc):
+                    os.makedirs(loc)
+
+                # FIXME spaces (and others) in title
+                widget_name = wd["title"].lower()
+                with open(path.join(loc, widget_name + ".md"), 'wt') as of:
+                    #text = change_references(text, s)
+                    of.write(front_matter(wd) + md)
+                    of.close()
+
+                wd["url"] = widget_name
 
             webpage_json[cat].append(wd)
 
@@ -227,13 +225,11 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
     with open('static/widgets.json', 'w') as outfile:
         json.dump(webpage_json, outfile, indent=1)
 
-    sys.exit(0)
+    """
+        # copied from front matter
+        #front_matter += content.replace("images/", "/images/")
+        #return front_matter
 
-    # for each widget in widget_data.json file generate FrontMatter and copy .md file and icon image
-    for widget in widgets:
-        widget_data = widgets[widget]
-        s = widget_data['file'].split("widgets")[1]
-        text = add_front_matter(path+s, widgets_data[widget_data['title']])
         copy_images(path,s)
 
         loc = location+s.split("/")[0]
@@ -252,5 +248,6 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
         except IOError as e:
             os.makedirs(image_path, exist_ok=True)
             shutil.copy2(path+"/" +icons_path, image_path)
+    """
 
 print("Copy script: finished. \nAll wdigets have been copied.")
