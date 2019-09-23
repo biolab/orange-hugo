@@ -1,0 +1,5 @@
+{{ range $.Site.Data.faq.faq }}
+<h4 class="panel-title">{{.question}}</h4>
+
+<p>{{.answer}}</p>
+{{ end }}

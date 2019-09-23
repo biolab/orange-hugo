@@ -1,0 +1,32 @@
+[[Troubleshooting]]
+
+  [[faq]]
+    question = "I am having trouble installing Orange."
+    answer = "Make sure you are downloading the latest version. You can also try to download a standalone installer or Anaconda distribution. Still no luck? Check our issue tracker for similar issues or report a new one."
+
+
+  [[faq]]
+    question = "I am having trouble installing an add-on."
+    answer = "Make sure you are using the latest version of Orange. Encountering issues, please raise them on the relevant add-on's issue tracker. Alternatively, you can try with Anaconda distribution and install the add-on in the terminal. You can use pip or conda to install a package directly."
+
+[[Education]]
+
+  [[faq]]
+    question = "I am having trouble installing Orange."
+    answer = "Make sure you are downloading the latest version. You can also try to download a standalone installer or Anaconda distribution. Still no luck? Check our issue tracker for similar issues or report a new one."
+
+
+  [[faq]]
+    question = "I am having trouble installing an add-on."
+    answer = "Make sure you are using the latest version of Orange. Encountering issues, please raise them on the relevant add-on's issue tracker. Alternatively, you can try with Anaconda distribution and install the add-on in the terminal. You can use pip or conda to install a package directly."
+
+[[AboutOrange]]
+
+  [[faq]]
+    question = "I am having trouble installing Orange."
+    answer = "Make sure you are downloading the latest version. You can also try to download a standalone installer or Anaconda distribution. Still no luck? Check our issue tracker for similar issues or report a new one."
+
+
+  [[faq]]
+    question = "I am having trouble installing an add-on."
+    answer = "Make sure you are using the latest version of Orange. Encountering issues, please raise them on the relevant add-on's issue tracker. Alternatively, you can try with Anaconda distribution and install the add-on in the terminal. You can use pip or conda to install a package directly."
