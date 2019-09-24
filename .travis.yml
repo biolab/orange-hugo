@@ -1,17 +1,25 @@
+language: python
+
+dist: xenial
+
 addons:
   apt:
     packages:
       - python-pygments
+      - libxkbcommon-x11-0  # for PyQt 5.12
 
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_0.49.2_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
     - rm -rf public 2> /dev/null
     - rm *.deb
+    - pip install -U setuptools pip
+    - pip install orange-canvas-core pyqt5
 
 script:
+    - bash scripts/build-widget-catalog.sh
     - hugo
-      # - echo 'orange.biolab.si' > public/CNAME
+    # - echo 'orange.biolab.si' > public/CNAME
 
 deploy:
   provider: pages
