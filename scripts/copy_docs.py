@@ -137,7 +137,10 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
             wd["background"] = w["background"]
             icon_svg = path.join(add_doc_path, w["icon"])
             icon_png = "widget-icons/%s-%s.png" % (cat, w["text"])
-            save_widget_icon(w["background"], icon_svg, "static/" + icon_png)
+            icon_file = path.join("static", icon_png)
+            if not path.exists(path.dirname(icon_file)):
+                os.makedirs(path.dirname(icon_file))
+            save_widget_icon(w["background"], icon_svg, icon_file)
             wd["icon"] = icon_png
 
             if w["doc"]:
