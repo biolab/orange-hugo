@@ -6,6 +6,13 @@ from os import path
 import re
 import sys
 
+from urllib.parse import urlparse
+
+
+def is_absolute(url):
+    return bool(urlparse(url).netloc)
+
+
 print("Copy script: started.")
 
 
@@ -27,86 +34,40 @@ path:
 location of the .md file
 
 """
-def copy_images(path,filename):
-    category = filename.split("/")[-2]
-    with open(path+filename, 'r+') as f:
-        content = f.read()
-
-        regex_images = "!\[\]\((.*?)\)"
-        loc = filename.split("/")
-        location = ""
-        for element in loc[:-1]:
-            location+=element+"/"
-
-        
-        locationFrom = path+location
-        locationTo = "static/images/"
-        regex_ref = "\[.*?\]\((..\/.*?)\)"
-        matches_ref =  re.findall(regex_ref,content)
-        matches = re.findall(regex_images,content)
-        for match in matches:
-            if ".." in match:
-                tmp = match.split("/")
-                # st = "/images/"+tmp[1]+"/"+tmp[-1]
-                try:
-                    shutil.copy2(locationFrom+match, locationTo+tmp[1]+"/"+match.split("/")[-1])
-                except IOError as e:
-                    folders = '/'.join(match.split("/")[:-1])
-                    os.makedirs(locationTo+tmp[1])
-                    shutil.copy2(locationFrom+match,locationTo+tmp[1]+"/"+match.split("/")[-1])
-            else:
-
-                try:
-                    shutil.copy2(locationFrom+match, locationTo+category+"/"+match.split("/")[-1])
-                except IOError as e:
-                    folders = '/'.join(match.split("/")[:-1])
-                    os.makedirs(locationTo+category)
-                    shutil.copy2(locationFrom+match,locationTo+category+"/"+match.split("/")[-1])
-
-
-"""
-Change image and link references to new strucutre.
-
-Parameters
-----------
-filename:
-    Name of the .md file
-content:
-    content of the .md file
-
-"""
-def change_references(content, filename):
-    regex_ref = "\[.*?\]\((..\/.*?)\)"
-    matches_ref =  re.findall(regex_ref,content)
-    for ref in matches_ref:
-        if ".png" in ref or ".jpg" in ref:
-            continue
-        elif "loading-your-data" in ref:
-            content = content.replace(ref, "https://docs.biolab.si//3/visual-programming/loading-your-data/index.html")
-        else:
-            tmp = ref.split("/")
-            # if "-" in tmp[0]:
-            st = "/".join(tmp[1:])
-            if ".md" in st:
-                st = "/widget-catalog/"+st[:-3].lower().replace(" ", "").replace("-","")
-            else: 
-                st = "/widget-catalog/"+st.lower().replace(" ", "").replace("-","")
-            content = content.replace(ref, st)
-        
-    category = filename.split("/")[-2]
-    regex_images = "!\[\]\((.*?)\)"
+def copy_images(name, content, source, dest):
+    regex_images = "!\[.*\]\((.*?)\)"
     matches = re.findall(regex_images,content)
-    # print(matches)
-    for ref in matches:
-        if ".." in ref:
-            tmp = ref.split("/")
-            st = "/images/"+tmp[1]+"/"+tmp[-1]
-            content = content.replace(ref, st)
-        else:
-            tmp = ref.split("/")
-            st = "/".join(tmp[1:])
-            st = "/images/"+category+"/"+tmp[-1]
-            content = content.replace(ref, st)
+    for match in matches:
+        if not is_absolute(match):
+            source_file = path.join(source, match)
+            dest_dir = path.dirname(path.join(dest, match))
+
+            if not path.exists(dest_dir):
+                os.makedirs(dest_dir)
+
+            try:
+                shutil.copy2(source_file, dest_dir)
+            except FileNotFoundError:
+                print("ERROR (%s): image" % name, source_file, "does not exist")
+
+
+def change_references(md_file, content, category, dest):
+
+    regex_ref = "\[.*\]\((.*?)\)"
+    matches_ref = re.findall(regex_ref, content)
+    for ref in matches_ref:
+        if not is_absolute(ref):
+            if "loading-your-data" in ref:
+                content = content.replace(ref, "https://docs.biolab.si//3/visual-programming/loading-your-data/index.html")
+            elif ref.endswith(".md") and not ref.startswith("/"):
+                new = "../" + ref[:-3] + "/"
+                content = content.replace(ref, new)
+            elif not ref.startswith("/"):
+                new = "../" + ref
+                content = content.replace(ref, new)
+            else:
+                print("WARNING (%s): not handled" % md_file, ref)
+
     return content
 
 
@@ -168,6 +129,7 @@ def save_widget_icon(
 add_doc_path = sys.argv[1]
 
 to_location = "content/widget-catalog/"
+to_location_static = "static/widget-catalog/"
 
 from AnyQt.QtWidgets import QApplication
 app = QApplication([])
@@ -180,7 +142,6 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
 
     for cat, widgets in widgets_json:
         for w in widgets:
-            print(cat, w["text"])
             wd = {}
             wd["order"] = len(webpage_json[cat])
             wd["title"] = w["text"]
@@ -195,25 +156,34 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
 
             if w["doc"]:
                 md_file = path.join(add_doc_path, w["doc"])
-                print(md_file)
                 md = open(md_file, "rt").read()
-                print(md)
 
                 f = front_matter(wd)
 
+                category = cat.lower()
+
+                copy_images(md_file,
+                            md,
+                            path.dirname(md_file),
+                            path.join(to_location_static, category))
+
+                md = change_references(md_file,
+                                       md,
+                                       category,
+                                       path.join(to_location_static, category))
+
                 # FIXME spaces (and other strange chars) in categories?
-                loc = path.join(to_location, cat.lower())
+                loc = path.join(to_location, category)
                 if not os.path.exists(loc):
                     os.makedirs(loc)
 
-                # FIXME spaces (and others) in title
-                widget_name = wd["title"].lower()
-                with open(path.join(loc, widget_name + ".md"), 'wt') as of:
-                    #text = change_references(text, s)
+                url = path.basename(md_file)[:-3]
+
+                with open(path.join(loc, url + ".md"), 'wt') as of:
                     of.write(front_matter(wd) + md)
                     of.close()
 
-                wd["url"] = widget_name
+                wd["url"] = url
 
             webpage_json[cat].append(wd)
 
@@ -225,29 +195,4 @@ with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
     with open('static/widgets.json', 'w') as outfile:
         json.dump(webpage_json, outfile, indent=1)
 
-    """
-        # copied from front matter
-        #front_matter += content.replace("images/", "/images/")
-        #return front_matter
-
-        copy_images(path,s)
-
-        loc = location+s.split("/")[0]
-        if not os.path.exists(loc):
-            os.makedirs(loc)
-        with open(location+s, 'w') as tmp:
-            text = change_references(text, s)
-            tmp.write(text)
-            tmp.close()
-        icons = widget_data['icon'].split("/")[-3:]
-        b = "/"
-        icons_path = b.join(icons)
-        image_path = "static/"+'/'.join(widget_data['icon'].split('/')[:-1])+"/"
-        try:
-            shutil.copy2(path+"/" + icons_path, image_path)
-        except IOError as e:
-            os.makedirs(image_path, exist_ok=True)
-            shutil.copy2(path+"/" +icons_path, image_path)
-    """
-
-print("Copy script: finished. \nAll wdigets have been copied.")
+print("Copy script: finished")
