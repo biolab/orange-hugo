@@ -23,20 +23,10 @@ def front_matter(widget):
 +++
 """ % (widget["title"], widget["category"])
 
-"""
-Copy images for widget catalog from external module.
 
-Parameters
-----------
-filename:
-    Name of the .md file
-path:
-location of the .md file
-
-"""
 def copy_images(name, content, source, dest):
     regex_images = "!\[.*\]\((.*?)\)"
-    matches = re.findall(regex_images,content)
+    matches = re.findall(regex_images, content)
     for match in matches:
         if not is_absolute(match):
             source_file = path.join(source, match)
@@ -52,7 +42,6 @@ def copy_images(name, content, source, dest):
 
 
 def change_references(md_file, content, category, dest):
-
     regex_ref = "\[.*\]\((.*?)\)"
     matches_ref = re.findall(regex_ref, content)
     for ref in matches_ref:
@@ -73,7 +62,7 @@ def change_references(md_file, content, category, dest):
 
 from AnyQt.QtWidgets import QGraphicsScene
 from PyQt5.QtCore import QRectF, QSize, QSizeF, QPointF
-from PyQt5.QtGui import QColor, QPainter, QImage, QIcon
+from PyQt5.QtGui import QColor, QPainter, QImage
 
 from orangecanvas.registry import (
     WidgetDescription,
@@ -90,12 +79,9 @@ def save_widget_icon(
     format="png",
 ):
     # create fake windget and category descriptions
-    widget_description = WidgetDescription("", "", icon=None, qualified_name="orangecanvas")
+    widget_description = WidgetDescription("", "", icon=icon, qualified_name="orangecanvas")
     category = CategoryDescription(background=background)
     item = NodeItem(widget_description)
-    qicon = QIcon()
-    qicon.addFile(icon)
-    item.setIcon(qicon)
     item.setWidgetCategory(category)
     iconItem = item.icon_item
     shapeItem = item.shapeItem
