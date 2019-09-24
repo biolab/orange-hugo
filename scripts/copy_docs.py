@@ -122,7 +122,7 @@ def save_widget_icon(
     scene.render(painter, QRectF(image.rect()), scene.sceneRect())
     painter.end()
 
-    if not image.save(outname, format, 100):
+    if not image.save(outname, format, 80):
         print("Failed to save " + outname)
 
 
