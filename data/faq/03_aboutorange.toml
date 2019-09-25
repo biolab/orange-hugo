@@ -1,0 +1,31 @@
+[[item]]
+    question = "What types of data does Orange support?"
+    answer = """Core Orange supports Excel, comma- and tab-delimited files (.xlsx, .csv, .tab). It also reads online data, such as Google Spreadsheets. SQL widget supports PostgreSQL and MSSQL databases. <br><br>Add-ons can load additional formats. For example, Orange3-ImageAnalytics add-on can import images (.jpg, .tiff, .png) and Orange3-Text add-on can import text files (.txt, .docx, .pdf)."""
+
+[[item]]
+    question = "There’s a feature I wish to see in Orange."
+    answer = """Please submit a pull request with the feature. We welcome all contributions! Once you've made a PR, developer(s) will leave comments and when everything is fixed and tested, the pull request will be merged into Orange. See our <a href="https://orange.biolab.si/contributing/"> Contribute guide </a> for more information.<br><br>If you are not a developer, you can submit a feature request to our <a href="https://github.com/biolab/orange3/issues">issue tracker</a>. Describe what you wish to see in Orange and, if possible, provide a visual example. Before submitting a new feature request, check if someone has already requested the same feature. Upvote the request with a +1 and/or add your comment. Only consider opening a new request if you cannot find a corresponding existing request."""
+
+[[item]]
+    question = "I want to use Orange on big data."
+    answer = """Orange provides the SQL widget, which samples data instances and enables exploratory data analysis on large datasets. You need <a href="http://initd.org/psycopg/">psycopg2</a> module installed to be able to see the widget. Install it directly in Python with <code>pip install psycopg2</code> command. You can also use <a href="https://www.2ndquadrant.com/en/resources/2uda/">2UDA package</a> for easier installation. Please note that Orange supports only PostgreSQL and MSSQL databases for now."""
+
+[[item]]
+    question = "Can I export Orange workflow as a Python script?"
+    answer = """Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard </a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits."""
+
+[[item]]
+    question = "I wish to propose a collaboration and/or a project with the Orange team."
+    answer = """Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> and we will respond as soon as we can."""
+
+[[item]]
+    question = "I wish to develop a widget / an add-on for Orange."
+    answer = """We are always happy to receive contributions! Development documentation for <a href="http://orange-development.readthedocs.io/"> widgets</a> and <a href="https://github.com/biolab/orange3-example-addon">add-ons</a> is available on the web. Next, submit a pull request and our team will review it. If you have specific questions, use <a href="https://discord.gg/47gRDUQ">Discord</a> for direct communication with the developers."""
+
+[[item]]
+    question = "I wish to commission a custom module and/or an add-on for Orange."
+    answer = """Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> to discuss the idea and rates."""
+
+[params]
+    title = "About Orange"
+    func = "aboutorange"
