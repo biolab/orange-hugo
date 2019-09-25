@@ -209,7 +209,7 @@
 
 <p>The widget works for both classification and regression tasks.</p>
 
-<p><img src="/images/model/SVM-stamped.png" alt="" /></p>
+<p><img src="../images/SVM-stamped.png" alt="" /></p>
 
 <ol>
 <li>The learner can be given a name under which it will appear in other widgets. The default name is &ldquo;SVM&rdquo;.</li>
@@ -243,13 +243,13 @@
 
 <h2 id="examples">Examples</h2>
 
-<p>In the first (regression) example, we have used <em>housing</em> dataset and split the data into two data subsets (<em>Data Sample</em> and <em>Remaining Data</em>) with <a href="/widget-catalog/data/datasampler">Data Sampler</a>. The sample was sent to SVM which produced a <em>Model</em>, which was then used in <a href="/widget-catalog/evaluation/predictions">Predictions</a> to predict the values in <em>Remaining Data</em>. A similar schema can be used if the data is already in two separate files; in this case, two <a href="/widget-catalog/data/file">File</a> widgets would be used instead of the <a href="/widget-catalog/data/file">File</a> - <a href="/widget-catalog/data/datasampler">Data Sampler</a> combination.</p>
+<p>In the first (regression) example, we have used <em>housing</em> dataset and split the data into two data subsets (<em>Data Sample</em> and <em>Remaining Data</em>) with <a href="../../data/datasampler/">Data Sampler</a>. The sample was sent to SVM which produced a <em>Model</em>, which was then used in <a href="../evaluate/predictions.md">Predictions</a> to predict the values in <em>Remaining Data</em>. A similar schema can be used if the data is already in two separate files; in this case, two <a href="../data/file.md">File</a> widgets would be used instead of the <a href="../data/file.md">File</a> - <a href="../../data/datasampler/">Data Sampler</a> combination.</p>
 
-<p><img src="/images/model/SVM-Predictions.png" alt="" /></p>
+<p><img src="../images/SVM-Predictions.png" alt="" /></p>
 
-<p>The second example shows how to use <strong>SVM</strong> in combination with <a href="/widget-catalog/visualize/scatterplot">Scatter Plot</a>. The following workflow trains a SVM model on <em>iris</em> data and outputs support vectors, which are those data instances that were used as support vectors in the learning phase. We can observe which are these data instances in a scatter plot visualization. Note that for the workflow to work correctly, you must set the links between widgets as demonstrated in the screenshot below.</p>
+<p>The second example shows how to use <strong>SVM</strong> in combination with <a href="../../visualize/scatterplot/">Scatter Plot</a>. The following workflow trains a SVM model on <em>iris</em> data and outputs support vectors, which are those data instances that were used as support vectors in the learning phase. We can observe which are these data instances in a scatter plot visualization. Note that for the workflow to work correctly, you must set the links between widgets as demonstrated in the screenshot below.</p>
 
-<p><img src="/images/model/SVM-support-vectors.png" alt="" /></p>
+<p><img src="../images/SVM-support-vectors.png" alt="" /></p>
 
 <h2 id="references">References</h2>
 

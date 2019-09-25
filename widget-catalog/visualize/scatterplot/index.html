@@ -205,7 +205,7 @@
 
 <p>The <strong>Scatter Plot</strong> widget provides a 2-dimensional scatter plot visualization for both continuous and discrete-valued attributes. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis. Various properties of the graph, like color, size and shape of the points, axis titles, maximum point size and jittering can be adjusted on the left side of the widget. A snapshot below shows the scatter plot of the <em>Iris</em> dataset with the coloring matching of the class attribute.</p>
 
-<p><img src="/images/visualize/Scatterplot-Iris-stamped.png" alt="" /></p>
+<p><img src="../images/Scatterplot-Iris-stamped.png" alt="" /></p>
 
 <ol>
 <li>Select the x and y attribute. Optimize your projection by using <strong>Rank Projections</strong>. This feature scores attribute pairs by average classification accuracy and returns the top scoring pair with a simultaneous visualization update. Set <a href="https://en.wikipedia.org/wiki/Jitter">jittering</a> to prevent the dots overlapping. If <em>Jitter continuous values</em> is ticked, continuous instances will be dispersed.</li>
@@ -228,11 +228,11 @@
 
 <p>For discrete attributes, jittering circumvents the overlap of points which have the same value for both axes, and therefore the density of points in the region corresponds better to the data. As an example, the scatter plot for the Titanic dataset, reporting on the gender of the passengers and the traveling class is shown below; without jittering, the scatter plot would display only eight distinct points.</p>
 
-<p><img src="/images/visualize/Scatterplot-Titanic.png" alt="" /></p>
+<p><img src="../images/Scatterplot-Titanic.png" alt="" /></p>
 
 <p>Here is an example of the <strong>Scatter Plot</strong> widget if the <em>Show class density</em> and <em>Show regression line</em> boxes are ticked.</p>
 
-<p><img src="/images/visualize/Scatterplot-ClassDensity.png" alt="" /></p>
+<p><img src="../images/Scatterplot-ClassDensity.png" alt="" /></p>
 
 <h2 id="intelligent-data-visualization">Intelligent Data Visualization</h2>
 
@@ -246,7 +246,7 @@
 
 <p>Below, there is an example demonstrating the utility of ranking. The first scatter plot projection was set as the default sepal width to sepal length plot (we used the Iris dataset for simplicity). Upon running <em>Find Informative Projections</em> optimization, the scatter plot converted to a much better projection of petal width to petal length plot.</p>
 
-<p><img src="/images/visualize/ScatterPlotExample-Ranking.png" alt="" /></p>
+<p><img src="../images/ScatterPlotExample-Ranking.png" alt="" /></p>
 
 <h2 id="selection">Selection</h2>
 
@@ -254,21 +254,21 @@
 
 <p>Signal data outputs a data table with an additional column that contains group indices.</p>
 
-<p><img src="/images/visualize/ScatterPlot-selection.png" alt="" /></p>
+<p><img src="../images/ScatterPlot-selection.png" alt="" /></p>
 
 <h2 id="explorative-data-analysis">Explorative Data Analysis</h2>
 
 <p>The <strong>Scatter Plot</strong>, as the rest of Orange widgets, supports zooming-in and out of part of the plot and a manual selection of data instances. These functions are available in the lower left corner of the widget.</p>
 
-<p>The default tool is <em>Select</em>, which selects data instances within the chosen rectangular area. <em>Pan</em> enables you to move the scatter plot around the pane. With <em>Zoom</em> you can zoom in and out of the pane with a mouse scroll, while <em>Reset zoom</em> resets the visualization to its optimal size. An example of a simple schema, where we selected data instances from a rectangular region and sent them to the <a href="/widget-catalog/data/datatable">Data Table</a> widget, is shown below. Notice that the scatterplot doesn&rsquo;t show all 52 data instances, because some data instances overlap (they have the same values for both attributes used).</p>
+<p>The default tool is <em>Select</em>, which selects data instances within the chosen rectangular area. <em>Pan</em> enables you to move the scatter plot around the pane. With <em>Zoom</em> you can zoom in and out of the pane with a mouse scroll, while <em>Reset zoom</em> resets the visualization to its optimal size. An example of a simple schema, where we selected data instances from a rectangular region and sent them to the <a href="../../data/datatable/">Data Table</a> widget, is shown below. Notice that the scatterplot doesn&rsquo;t show all 52 data instances, because some data instances overlap (they have the same values for both attributes used).</p>
 
-<p><img src="/images/visualize/ScatterPlotExample-Explorative.png" alt="" /></p>
+<p><img src="../images/ScatterPlotExample-Explorative.png" alt="" /></p>
 
 <h2 id="example">Example</h2>
 
-<p>The <strong>Scatter Plot</strong> can be combined with any widget that outputs a list of selected data instances. In the example below, we combine <a href="/widget-catalog/model/tree">Tree</a> and <strong>Scatter Plot</strong> to display instances taken from a chosen decision tree node (clicking on any node of the tree will send a set of selected data instances to the scatterplot and mark selected instances with filled symbols).</p>
+<p>The <strong>Scatter Plot</strong> can be combined with any widget that outputs a list of selected data instances. In the example below, we combine <a href="../../model/tree/">Tree</a> and <strong>Scatter Plot</strong> to display instances taken from a chosen decision tree node (clicking on any node of the tree will send a set of selected data instances to the scatterplot and mark selected instances with filled symbols).</p>
 
-<p><img src="/images/visualize/ScatterPlotExample-Classification.png" alt="" /></p>
+<p><img src="../images/ScatterPlotExample-Classification.png" alt="" /></p>
 
 <h2 id="references">References</h2>
 

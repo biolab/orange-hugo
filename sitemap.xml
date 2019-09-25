@@ -1173,10 +1173,6 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/unsupervised/louvainclustering/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/adaboost/</loc>
   </url>
   
@@ -1196,6 +1192,10 @@
     <loc>/categories/analysis/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/data/applydomain/</loc>
   </url>
   
   <url>
@@ -1257,7 +1257,11 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/calibrationplot/</loc>
+    <loc>/widget-catalog/data/csvfileimport/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/evaluate/calibrationplot/</loc>
   </url>
   
   <url>
@@ -1335,7 +1339,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/confusionmatrix/</loc>
+    <loc>/widget-catalog/evaluate/confusionmatrix/</loc>
   </url>
   
   <url>
@@ -1380,6 +1384,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/unsupervised/dbscan/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/data/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1397,6 +1405,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/data/datainfo/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/data-loading/</loc>
     <priority>0</priority>
   </url>
@@ -1411,6 +1423,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/data/datasampler/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/data-science/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1422,7 +1438,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/data/datainfo/</loc>
+    <loc>/widget-catalog/data/datatable/</loc>
   </url>
   
   <url>
@@ -1432,15 +1448,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/data/datasampler/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/datasets/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/data/datatable/</loc>
   </url>
   
   <url>
@@ -1766,7 +1774,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/liftcurve/</loc>
+    <loc>/widget-catalog/evaluate/liftcurve/</loc>
   </url>
   
   <url>
@@ -1805,6 +1813,10 @@
     <loc>/categories/loo/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/unsupervised/louvainclustering/</loc>
   </url>
   
   <url>
@@ -2011,6 +2023,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/data/pivot/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/plot/</loc>
     <lastmod>2016-07-29T11:52:54+00:00</lastmod>
     <priority>0</priority>
@@ -2029,7 +2045,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/predictions/</loc>
+    <loc>/widget-catalog/evaluate/predictions/</loc>
   </url>
   
   <url>
@@ -2116,7 +2132,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/rocanalysis/</loc>
+    <loc>/widget-catalog/evaluate/rocanalysis/</loc>
   </url>
   
   <url>
@@ -2188,10 +2204,6 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/data/savedata/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/unsupervised/savedistancematrix/</loc>
   </url>
   
@@ -2249,7 +2261,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/data/selectbydataindex/</loc>
+    <loc>/widget-catalog/unsupervised/selforganizingmap/</loc>
   </url>
   
   <url>
@@ -2310,10 +2322,6 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/model/stochasticgradientdescent/</loc>
-  </url>
-  
-  <url>
     <loc>/categories/summer-school/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -2342,7 +2350,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/evaluation/testandscore/</loc>
+    <loc>/widget-catalog/evaluate/testandscore/</loc>
   </url>
   
   <url>
@@ -2359,10 +2367,6 @@
   
   <url>
     <loc>/training/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/transform/</loc>
   </url>
   
   <url>
@@ -2461,7 +2465,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/unsupervised/kmeansclustering/</loc>
+    <loc>/widget-catalog/unsupervised/kmeans/</loc>
   </url>
   
   <url>

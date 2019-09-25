@@ -196,9 +196,9 @@
 
 <p>The <strong>File</strong> widget <a href="https://docs.biolab.si//3/visual-programming/loading-your-data/index.html">reads the input data file</a> (data table with data instances) and sends the dataset to its output channel. The history of most recently opened files is maintained in the widget. The widget also includes a directory with sample datasets that come pre-installed with Orange.</p>
 
-<p>The widget reads data from Excel (<strong>.xlsx</strong>), simple tab-delimited (<strong>.txt</strong>), comma-separated files (<strong>.csv</strong>) or URLs.</p>
+<p>The widget reads data from Excel (<strong>.xlsx</strong>), simple tab-delimited (<strong>.txt</strong>), comma-separated files (<strong>.csv</strong>) or URLs. For other formats see <a href="../#other-formats">Other Formats</a> section.</p>
 
-<p><img src="/images/data/File-stamped.png" alt="" /></p>
+<p><img src="../images/File-stamped.png" alt="" /></p>
 
 <ol>
 <li>Browse through previously opened data files, or load any of the sample ones.<br /></li>
@@ -213,11 +213,11 @@
 
 <h2 id="example">Example</h2>
 
-<p>Most Orange workflows would probably start with the <strong>File</strong> widget. In the schema below, the widget is used to read the data that is sent to both the <a href="/widget-catalog/data/datatable">Data Table</a> and the <a href="/widget-catalog/visualize/boxplot">Box Plot</a> widget.</p>
+<p>Most Orange workflows would probably start with the <strong>File</strong> widget. In the schema below, the widget is used to read the data that is sent to both the <a href="../data/datatable.md">Data Table</a> and the <a href="../../visualize/boxplot/">Box Plot</a> widget.</p>
 
-<p><img src="/images/data/File-Workflow.png" alt="" /></p>
+<p><img src="../images/File-Workflow.png" alt="" /></p>
 
-<h2 id="loading-your-data">Loading your data</h2>
+<h3 id="loading-your-data">Loading your data</h3>
 
 <ul>
 <li>Orange can import any comma, .xlsx or tab-delimited data file or URL. Use the <strong>File</strong> widget and then, if needed, select class and meta attributes.</li>
@@ -225,9 +225,23 @@
 <li>Orange&rsquo;s native format is a tab-delimited text file with three header rows. The first row contains attribute names, the second the type (<em>continuous</em>, <em>discrete</em> or <em>string</em>), and the third the optional element (<em>class</em>, <em>meta</em> or <em>time</em>).</li>
 </ul>
 
-<p><img src="/images/data/spreadsheet-simple-head1.png" alt="" /></p>
+<p><img src="../images/spreadsheet-simple-head1.png" alt="" /></p>
 
 <p>Read more on loading your data <a href="https://docs.biolab.si//3/visual-programming/loading-your-data/index.html">here</a>.</p>
+
+<h3 id="other-formats">Other Formats</h3>
+
+<p>Supported formats and the widgets to load them:</p>
+
+<ul>
+<li>distance matrix: <a href="../../unsupervised/distancefile/">Distance File</a></li>
+<li>predictive model: <a href="../../model/loadmodel/">Load Model</a></li>
+<li>network: Network File from Network add-on</li>
+<li>images: Import Images from Image Analytics add-on</li>
+<li>text/corpus: Corpus or Import Documents from Text add-on</li>
+<li>single cell data: Load Data from Single Cell add-on</li>
+<li>several spectroscopy files: Multifile from Spectroscopy add-on</li>
+</ul>
 
                     </div>
                 </div>

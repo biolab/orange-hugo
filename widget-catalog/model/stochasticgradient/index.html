@@ -204,7 +204,7 @@
 
 <p>The <strong>Stochastic Gradient Descent</strong> widget uses <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">stochastic gradient descent</a> that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function. For regression, it returns predictors as minimizers of the sum, i.e. M-estimators, and is especially useful for large-scale and sparse datasets.</p>
 
-<p><img src="/images/model/StochasticGradientDescent-stamped.png" alt="" /></p>
+<p><img src="../images/StochasticGradientDescent-stamped.png" alt="" /></p>
 
 <ol>
 <li>Specify the name of the model. The default name is &ldquo;SGD&rdquo;.</li>
@@ -259,13 +259,13 @@
 
 <h2 id="examples">Examples</h2>
 
-<p>For the classification task, we will use <em>iris</em> dataset and test two models on it. We connected <a href="/widget-catalog/model/stochasticgradient">Stochastic Gradient Descent</a> and <a href="/widget-catalog/model/tree">Tree</a> to <a href="/widget-catalog/evaluation/testandscore">Test &amp; Score</a>. We also connected <a href="/widget-catalog/data/file">File</a> to <strong>Test &amp; Score</strong> and observed model performance in the widget.</p>
+<p>For the classification task, we will use <em>iris</em> dataset and test two models on it. We connected <a href="../model/stochasticgradient.md">Stochastic Gradient Descent</a> and <a href="../model/tree.md">Tree</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also connected <a href="../../data/file/">File</a> to <strong>Test &amp; Score</strong> and observed model performance in the widget.</p>
 
-<p><img src="/images/model/StochasticGradientDescent-classification.png" alt="" /></p>
+<p><img src="../images/StochasticGradientDescent-classification.png" alt="" /></p>
 
-<p>For the regression task, we will compare three different models to see which predict what kind of results. For the purpose of this example, the <em>housing</em> dataset is used. We connect the <a href="/widget-catalog/data/file">File</a> widget to <strong>Stochastic Gradient Descent</strong>, <a href="/widget-catalog/model/linearregression">Linear Regression</a> and <a href="/widget-catalog/model/knn">kNN</a> widget and all four to the <a href="/widget-catalog/evaluation/predictions">Predictions</a> widget.</p>
+<p>For the regression task, we will compare three different models to see which predict what kind of results. For the purpose of this example, the <em>housing</em> dataset is used. We connect the <a href="../../data/file/">File</a> widget to <strong>Stochastic Gradient Descent</strong>, <a href="../model/linearregression.md">Linear Regression</a> and <a href="../model/knn.md">kNN</a> widget and all four to the <a href="../../evaluate/predictions/">Predictions</a> widget.</p>
 
-<p><img src="/images/model/StochasticGradientDescent-regression.png" alt="" /></p>
+<p><img src="../images/StochasticGradientDescent-regression.png" alt="" /></p>
 
                     </div>
                 </div>

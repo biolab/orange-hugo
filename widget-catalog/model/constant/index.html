@@ -204,13 +204,13 @@
 
 <p>This learner produces a model that always predicts the<a href="https://en.wikipedia.org/wiki/Predictive_modelling#Majority_classifier">majority</a> for classification tasks and <a href="https://en.wikipedia.org/wiki/Mean">mean value</a> for regression tasks.</p>
 
-<p>For classification, when predicting the class value with <a href="/widget-catalog/evaluation/predictions">Predictions</a>, the widget will return relative frequencies of the classes in the training set. When there are two or more majority classes, the classifier chooses the predicted class randomly, but always returns the same class for a particular example.</p>
+<p>For classification, when predicting the class value with <a href="../../evaluate/predictions/">Predictions</a>, the widget will return relative frequencies of the classes in the training set. When there are two or more majority classes, the classifier chooses the predicted class randomly, but always returns the same class for a particular example.</p>
 
 <p>For regression, it <em>learns</em> the mean of the class variable and returns a predictor with the same mean value.</p>
 
 <p>The widget is typically used as a baseline for other models.</p>
 
-<p><img src="/images/model/Constant-stamped.png" alt="" /></p>
+<p><img src="../images/Constant-stamped.png" alt="" /></p>
 
 <p>This widget provides the user with two options:</p>
 
@@ -223,13 +223,13 @@
 
 <h2 id="examples">Examples</h2>
 
-<p>In a typical classification example, we would use this widget to compare the scores of other learning algorithms (such as kNN) with the default scores. Use <em>iris</em> dataset and connect it to <a href="/widget-catalog/evaluation/testandscore">Test &amp; Score</a>. Then connect <strong>Constant</strong> and <a href="/widget-catalog/model/knn">kNN</a> to <a href="/widget-catalog/evaluation/testandscore">Test &amp; Score</a> and observe how well <a href="/widget-catalog/model/knn">kNN</a> performs against a constant baseline.</p>
+<p>In a typical classification example, we would use this widget to compare the scores of other learning algorithms (such as kNN) with the default scores. Use <em>iris</em> dataset and connect it to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. Then connect <strong>Constant</strong> and <a href="../../model/knn/">kNN</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a> and observe how well <a href="../../model/knn/">kNN</a> performs against a constant baseline.</p>
 
-<p><img src="/images/model/Constant-classification.png" alt="" /></p>
+<p><img src="../images/Constant-classification.png" alt="" /></p>
 
-<p>For regression, we use <strong>Constant</strong> to construct a predictor in <a href="/widget-catalog/evaluation/predictions">Predictions</a>. We used the <em>housing</em> dataset. In <strong>Predictions</strong>, you can see that <em>Mean Learner</em> returns one (mean) value for all instances.</p>
+<p>For regression, we use <strong>Constant</strong> to construct a predictor in <a href="../../evaluate/predictions/">Predictions</a>. We used the <em>housing</em> dataset. In <strong>Predictions</strong>, you can see that <em>Mean Learner</em> returns one (mean) value for all instances.</p>
 
-<p><img src="/images/model/Constant-regression.png" alt="" /></p>
+<p><img src="../images/Constant-regression.png" alt="" /></p>
 
                     </div>
                 </div>

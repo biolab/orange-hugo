@@ -1,0 +1,390 @@
+<html>    
+    <head>
+    <title>Orange – Pivot Table Data Mining Fruitful and Fun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="pivot-table">Pivot Table</h1>
+
+<p>Reshape data table based on column values.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Data: input data set</li>
+</ul>
+
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Pivot Table: contingency matrix as shown in the widget</li>
+<li>Filtered Data: subset selected from the plot</li>
+<li>Grouped Data: aggregates over groups defined by row values</li>
+</ul>
+
+<p><strong>Pivot Table</strong> summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The widget also allows selecting a subset from the table and grouping by row values, which have to be a discrete variable. Data with only numeric variables cannot be displayed in the table.</p>
+
+<p><img src="../images/Pivot-stamped.png" alt="" /></p>
+
+<ol>
+<li>Discrete or numeric variable used for row values. Numeric variables are considered as integers.</li>
+<li>Discrete variable used for column values. Variable values will appear as columns in the table.</li>
+<li>Values used for aggregation. Aggregated values will appear as cells in the table.</li>
+<li>Aggregation methods:
+
+<ul>
+<li>For any variable type:
+
+<ul>
+<li><em>Count</em>: number of instances with the given row and column value.</li>
+<li><em>Count defined</em>: number of instances where the aggregation value is defined.</li>
+</ul></li>
+<li>For numeric variables:
+
+<ul>
+<li><em>Sum</em>: sum of values.</li>
+<li><em>Mean</em>: average of values.</li>
+<li><em>Mode</em>: most frequent value of the subset.</li>
+<li><em>Min</em>: smallest value.</li>
+<li><em>Max</em>: highest value.</li>
+<li><em>Median</em>: middle value.</li>
+<li><em>Var</em>: variance of the subset.</li>
+</ul></li>
+<li>For discrete variables:
+
+<ul>
+<li><em>Majority</em>: most frequent value of the subset.</li>
+</ul></li>
+</ul></li>
+<li>Tick the box on the left to automatically output any changes. Alternatively, press <em>Apply</em> .</li>
+</ol>
+
+<h2 id="discrete-variables">Discrete variables</h2>
+
+<p><img src="../images/Pivot-discrete.png" alt="" /></p>
+
+<p>Example of a pivot table with only discrete variables selected. We are using <em>heart-disease</em> data set for this example. Rows correspond to values of <em>diameter narrowing</em> variable. Our columns are values of <em>gender</em>, namely female and male. We are using <em>thal</em> as values in our cells.</p>
+
+<p>We have selected <em>Count</em> and <em>Majority</em> as aggregation methods. In the pivot table, we can see the number of instances that do not have diameter narrowing and are female. There are 72 such patients. Concurrently, there are 92 male patients that don&rsquo;t have diameter narrowing. Thal values don&rsquo;t have any effect here, we are just counting occurrences in the data.</p>
+
+<p>The second row shows majority. This means most female patients that don&rsquo;t have diameter narrowing have normal thal results. Conversely, female patients that have diameter narrowing most often have reversable defect.</p>
+
+<h2 id="numeric-variables">Numeric variables</h2>
+
+<p><img src="../images/Pivot-continuous.png" alt="" /></p>
+
+<p>Example of a pivot table with numeric variables. We are using <em>heart-disease</em> data set for this example. Rows correspond to values of <em>diameter narrowing</em> variable. Our columns are values of <em>gender</em>, namely female and male. We are using <em>rest SBP</em> as values in our cells.</p>
+
+<p>We have selected <em>Count</em>, <em>Sum</em> and <em>Median</em> as aggregation methods. Under <em>Count</em>, we see there are 72 female patients that don&rsquo;t have diameter narrowing, same as before for discrete values. What is different are the sum and median aggregations. We see that the sum of resting systolic blood pressure for female patients that don&rsquo;t have diameter narrowing is 9269 and the median value is 130.</p>
+
+<h2 id="example">Example</h2>
+
+<p>We are using <em>Forest Fires</em> for this example. The data is loaded in the <a href="../../data/datasets/">Datasets</a> widget and passed to <strong>Pivot Table</strong>. <em>Forest Fires</em> datasets reports forest fires by the month and day they happened. We can aggregate all occurrences of forest fires by selecting <em>Count</em> as aggregation method and using <em>month</em> as row and <em>day</em> as column values. Since we are using <em>Count</em>, <em>Values</em> variable will have no effect.</p>
+
+<p>We can plot the counts in <a href="../visualize/lineplot.md">Line Plot</a>. But first, let us organize our data a bit. With <a href="../data/editdomain.md">Edit Domain</a>, we will reorder rows values so that months will appear in the correct order, namely from January to December. To do the same for columns, we will use <a href="../../data/selectcolumns/">Select Columns</a> and reorder day to go from Monday to Sunday.</p>
+
+<p>Finally, our data is ready. Let us pass it to <strong>Line Plot</strong>. We can see that forest fires are most common in August and September, while their frequency is higher during the weekend than during weekdays.</p>
+
+<p><img src="../images/Pivot-example.png" alt="" /></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-pad">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/47gRDUQ" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 26 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-26-doctoral_summer_school/">Doctoral Summer School</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 25 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-25-scorange/">Orange at ISMB/ECCB 2019</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

@@ -205,7 +205,7 @@
 
 <p><strong>Select by Data Index</strong> enables matching the data by indices. Each row in a data set has an index and given a subset, this widget can match these indices to indices from the reference data. Most often it is used to retrieve the original data from the transformed data (say, from PCA space).</p>
 
-<p><img src="/images/data/Select-by-Data-Index-stamped.png" alt="" /></p>
+<p><img src="../images/Select-by-Data-Index-stamped.png" alt="" /></p>
 
 <ol>
 <li>Information on the reference data set. This data is used as index reference.</li>
@@ -214,13 +214,13 @@
 
 <h2 id="example">Example</h2>
 
-<p>A typical use of <strong>Select by Data Index</strong> is to retrieve the original data after a transformation. We will load <em>iris.tab</em> data in the <a href="/widget-catalog/data/file">File</a> widget. Then we will transform this data with <a href="/widget-catalog/unsupervised/pca">PCA</a>. We can project the transformed data in a <a href="/widget-catalog/visualize/scatterplot">Scatter Plot</a>, where we can only see PCA components and not the original features.</p>
+<p>A typical use of <strong>Select by Data Index</strong> is to retrieve the original data after a transformation. We will load <em>iris.tab</em> data in the <a href="../data/file.md">File</a> widget. Then we will transform this data with <a href="../unsupervised/PCA.md">PCA</a>. We can project the transformed data in a <a href="../../visualize/scatterplot/">Scatter Plot</a>, where we can only see PCA components and not the original features.</p>
 
-<p>Now we will select an interesting subset (we could also select the entire data set). If we observe it in a <a href="/widget-catalog/data/datatable">Data Table</a>, we can see that the data is transformed. If we would like to see this data with the original features, we will have to retrieve them with <strong>Select by Data Index</strong>.</p>
+<p>Now we will select an interesting subset (we could also select the entire data set). If we observe it in a <a href="../../data/datatable/">Data Table</a>, we can see that the data is transformed. If we would like to see this data with the original features, we will have to retrieve them with <strong>Select by Data Index</strong>.</p>
 
-<p>Connect the original data and the subset from <a href="/widget-catalog/visualize/scatterplot">Scatter Plot</a> to <strong>Select by Data Index</strong>. The widget will match the indices of the subset with the indices of the reference (original) data and output the matching reference data. A final inspection in another <a href="/widget-catalog/data/datatable">Data Table</a> confirms the data on the output is from the original data space.</p>
+<p>Connect the original data and the subset from <a href="../../visualize/scatterplot/">Scatter Plot</a> to <strong>Select by Data Index</strong>. The widget will match the indices of the subset with the indices of the reference (original) data and output the matching reference data. A final inspection in another <a href="../../data/datatable/">Data Table</a> confirms the data on the output is from the original data space.</p>
 
-<p><img src="/images/data/Select-by-Data-Index-Example1.png" alt="" /></p>
+<p><img src="../images/Select-by-Data-Index-Example1.png" alt="" /></p>
 
                     </div>
                 </div>

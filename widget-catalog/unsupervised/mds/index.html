@@ -209,7 +209,7 @@
 
 <p>The algorithm iteratively moves the points around in a kind of a simulation of a physical model: if two points are too close to each other (or too far away), there is a force pushing them apart (or together). The change of the point’s position at each time interval corresponds to the sum of forces acting on it.</p>
 
-<p><img src="/images/unsupervised/MDS-zoo-stamped.png" alt="" /></p>
+<p><img src="../images/MDS-zoo-stamped.png" alt="" /></p>
 
 <ol>
 <li>The widget redraws the projection during optimization. Optimization is run automatically in the beginning and later by pushing <em>Start</em>.
@@ -219,7 +219,7 @@
 <li><strong>Initialization</strong>: PCA (Torgerson) positions the initial points along principal coordinate axes. <em>Random</em> sets the initial points to a random position and then readjusts them.</li>
 <li><strong>Refresh</strong>: Set how often you want to refresh the visualization. It can be at <em>Every iteration</em>, <em>Every 5/10/25/50 steps</em> or never (<em>None</em>). Setting a lower refresh interval makes the animation more visually appealing, but can be slow if the number of points is high.</li>
 </ul></li>
-<li>Defines how the points are visualized. These options are available only when visualizing distances between rows (selected in the <a href="/widget-catalog/unsupervised/distances">Distances</a> widget).
+<li>Defines how the points are visualized. These options are available only when visualizing distances between rows (selected in the <a href="../../unsupervised/distances/">Distances</a> widget).
 
 <ul>
 <li><strong>Color</strong>: Color of points by attribute (gray for continuous, colored for discrete).</li>
@@ -266,7 +266,7 @@ the <strong>MDS</strong> widget, where we see the <em>Iris</em> data displayed i
 2-dimensional plane. We can see the appended coordinates in the <code>Data
 Table &lt;../data/datatable&gt;</code> widget.</p>
 
-<p><img src="/images/unsupervised/MDS-Example.png" alt="" /></p>
+<p><img src="../images/MDS-Example.png" alt="" /></p>
 
 <h1 id="references">References</h1>
 

@@ -1,6 +1,6 @@
 <html>    
     <head>
-    <title>Orange – Datasampler Data Mining Fruitful and Fun</title>
+    <title>Orange – Data Sampler Data Mining Fruitful and Fun</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
@@ -203,7 +203,7 @@
 
 <p>The <strong>Data Sampler</strong> widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processed after the input dataset is provided and <em>Sample Data</em> is pressed.</p>
 
-<p><img src="/images/data/DataSampler-stamped.png" alt="" /></p>
+<p><img src="../images/DataSampler-stamped.png" alt="" /></p>
 
 <ol>
 <li>Information on the input and output dataset.</li>
@@ -225,25 +225,25 @@ input dataset.</li>
 
 <h2 id="examples">Examples</h2>
 
-<p>First, let&rsquo;s see how the <strong>Data Sampler</strong> works. We will use the <em>iris</em> data from the <a href="/widget-catalog/data/file">File</a> widget. We see there are 150 instances in the data. We sampled the data with the <strong>Data Sampler</strong> widget and we chose to go with a fixed sample size of 5 instances for simplicity. We can observe the sampled data in the <a href="/widget-catalog/data/datatable">Data Table</a> widget (Data Table (in-sample)). The second <a href="/widget-catalog/data/datatable">Data Table</a> (Data Table (out-of-sample)) shows the remaining 145 instances that weren&rsquo;t in the sample. To output the out-of-sample data, double-click the connection between the widgets and rewire the output to <em>Remaining Data &ndash;&gt; Data</em>.</p>
+<p>First, let&rsquo;s see how the <strong>Data Sampler</strong> works. We will use the <em>iris</em> data from the <a href="../../data/file/">File</a> widget. We see there are 150 instances in the data. We sampled the data with the <strong>Data Sampler</strong> widget and we chose to go with a fixed sample size of 5 instances for simplicity. We can observe the sampled data in the <a href="../../data/datatable/">Data Table</a> widget (Data Table (in-sample)). The second <a href="../../data/datatable/">Data Table</a> (Data Table (out-of-sample)) shows the remaining 145 instances that weren&rsquo;t in the sample. To output the out-of-sample data, double-click the connection between the widgets and rewire the output to <em>Remaining Data &ndash;&gt; Data</em>.</p>
 
-<p><img src="/images/data/DataSampler-Example1.png" alt="" /></p>
+<p><img src="../images/DataSampler-Example1.png" alt="" /></p>
 
-<p>Now, we will use the <strong>Data Sampler</strong> to split the data into training and testing part. We are using the <em>iris</em> data, which we loaded with the <a href="/widget-catalog/data/file">File</a> widget. In <strong>Data Sampler</strong>, we split the data with <em>Fixed proportion of data</em>, keeping 70% of data instances in the sample.</p>
+<p>Now, we will use the <strong>Data Sampler</strong> to split the data into training and testing part. We are using the <em>iris</em> data, which we loaded with the <a href="../../data/file/">File</a> widget. In <strong>Data Sampler</strong>, we split the data with <em>Fixed proportion of data</em>, keeping 70% of data instances in the sample.</p>
 
-<p>Then we connected two outputs to the <a href="/widget-catalog/evaluation/testandscore">Test &amp; Score</a> widget, <em>Data Sample &ndash;&gt; Data</em> and <em>Remaining Data &ndash;&gt; Test Data</em>. Finally, we added <a href="/widget-catalog/model/logisticregression">Logistic Regression</a> as the learner. This runs logistic regression on the Data input and evaluates the results on the Test Data.</p>
+<p>Then we connected two outputs to the <a href="../evaluate/testandscore.md">Test &amp; Score</a> widget, <em>Data Sample &ndash;&gt; Data</em> and <em>Remaining Data &ndash;&gt; Test Data</em>. Finally, we added <a href="../../model/logisticregression/">Logistic Regression</a> as the learner. This runs logistic regression on the Data input and evaluates the results on the Test Data.</p>
 
-<p><img src="/images/data/DataSampler-Example2.png" alt="" /></p>
+<p><img src="../images/DataSampler-Example2.png" alt="" /></p>
 
 <h2 id="over-undersampling">Over/Undersampling</h2>
 
-<p><strong>Data Sampler</strong> can also be used to oversample a minority class or undersample majority class in the data. Let us show an example for oversampling. First, separate the minority class using a <a href="/widget-catalog/data/selectrows">Select Rows</a> widget. We are using the <em>iris</em> data from the <a href="/widget-catalog/data/file">File</a> widget. The data set has 150 data instances, 50 of each class. Let us oversample, say, <em>iris-setosa</em>.</p>
+<p><strong>Data Sampler</strong> can also be used to oversample a minority class or undersample majority class in the data. Let us show an example for oversampling. First, separate the minority class using a <a href="../data/selectrows.md">Select Rows</a> widget. We are using the <em>iris</em> data from the <a href="../../data/file/">File</a> widget. The data set has 150 data instances, 50 of each class. Let us oversample, say, <em>iris-setosa</em>.</p>
 
 <p>In <strong>Select Rows</strong>, set the condition to <em>iris is iris-setosa</em>. This will output 50 instances of the <em>iris-setosa</em> class. Now, connect <em>Matching Data</em> into the <strong>Data Sampler</strong>, select <em>Fixed sample size</em>, set it to, say, 100 and select <em>Sample with replacement</em>. Upon pressing <em>Sample Data</em>, the widget will output 100 instances of <em>iris-setosa</em> class, some of which will be duplicated (because we used <em>Sample with replacement</em>).</p>
 
-<p>Finally, use <a href="/widget-catalog/data/concatenate">Concatenate</a> to join the oversampled instances and the <em>Unmatched Data</em> output of the <strong>Select Rows</strong> widget. This outputs a data set with 200 instances. We can observe the final results in the <a href="/widget-catalog/visualize/distributions">Distributions</a>.</p>
+<p>Finally, use <a href="../data/concatenate">Concatenate</a> to join the oversampled instances and the <em>Unmatched Data</em> output of the <strong>Select Rows</strong> widget. This outputs a data set with 200 instances. We can observe the final results in the <a href="../../visualize/distributions">Distributions</a>.</p>
 
-<p><img src="/images/data/DataSampler-Example-OverUnderSampling.png" alt="" /></p>
+<p><img src="../images/DataSampler-Example-OverUnderSampling.png" alt="" /></p>
 
                     </div>
                 </div>

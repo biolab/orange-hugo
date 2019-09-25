@@ -11,19 +11,7 @@
     
     
     <item>
-      <title></title>
-      <link>/widget-catalog/unsupervised/louvainclustering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/unsupervised/louvainclustering/</guid>
-      <description>Louvain Clustering Groups items using the Louvain clustering algorithm.
-Inputs
- Data: input dataset  Outputs
- Data: dataset with cluster index as a class attribute Graph (with the Network addon): the weighted k-nearest neighbor graph  The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges.</description>
-    </item>
-    
-    <item>
-      <title>Adaboost</title>
+      <title>AdaBoost</title>
       <link>/widget-catalog/model/adaboost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -32,6 +20,18 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s) Learner: learning algorithm  Outputs
  Learner: AdaBoost learning algorithm Model: trained model  The AdaBoost (short for &amp;ldquo;Adaptive boosting&amp;rdquo;) widget is a machine-learning algorithm, formulated by Yoav Freund and Robert Schapire. It can be used with other learning algorithms to boost their performance. It does so by tweaking the weak learners.</description>
+    </item>
+    
+    <item>
+      <title>Apply Domain</title>
+      <link>/widget-catalog/data/applydomain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/applydomain/</guid>
+      <description>Apply Domain Given dataset and template transforms the dataset.
+Inputs
+ Data: input dataset Template Data: template for transforming the dataset  Outputs
+ Transformed Data: transformed dataset  Apply Domain maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use Apply Domain to map the new data into the PCA space created from the original data.</description>
     </item>
     
     <item>
@@ -73,11 +73,23 @@ Inputs
     </item>
     
     <item>
-      <title>Calibration Plot</title>
-      <link>/widget-catalog/evaluation/calibrationplot/</link>
+      <title>CSV File Import</title>
+      <link>/widget-catalog/data/csvfileimport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/calibrationplot/</guid>
+      <guid>/widget-catalog/data/csvfileimport/</guid>
+      <description>CSV File Import Import a data table from a CSV formatted file.
+Outputs
+ Data: dataset from the .csv file Data Frame: pandas DataFrame object  The CSV File Import widget reads comma-separated files and sends the dataset to its output channel. File separators can be commas, semicolons, spaces, tabs or manually-defined delimiters. The history of most recently opened files is maintained in the widget.
+Data Frame output can be used in the Python Script widget by connecting it to the in_object input (e.</description>
+    </item>
+    
+    <item>
+      <title>Calibration Plot</title>
+      <link>/widget-catalog/evaluate/calibrationplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluate/calibrationplot/</guid>
       <description>Calibration Plot Shows the match between classifiers&amp;rsquo; probability predictions and actual class probabilities.
 Inputs
  Evaluation Results: results of testing classification algorithms  The Calibration Plotplots class probabilities against those predicted by the classifier(s).
@@ -111,11 +123,11 @@ Inputs
     
     <item>
       <title>Confusion Matrix</title>
-      <link>/widget-catalog/evaluation/confusionmatrix/</link>
+      <link>/widget-catalog/evaluate/confusionmatrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/confusionmatrix/</guid>
-      <description>Predictions Shows proportions between the predicted and actual class.
+      <guid>/widget-catalog/evaluate/confusionmatrix/</guid>
+      <description>Confusion Matrix Shows proportions between the predicted and actual class.
 Inputs
  Evaluation results: results of testing classification algorithms  Outputs
  Selected Data: data subset selected from confusion matrix Data: data with the additional information on whether a data instance was selected  The Confusion Matrix gives the number/proportion of instances between the predicted and actual class. The selection of the elements in the matrix feeds the corresponding instances into the output signal.</description>
@@ -186,7 +198,19 @@ Inputs
     </item>
     
     <item>
-      <title>Datainfo</title>
+      <title>DBSCAN</title>
+      <link>/widget-catalog/unsupervised/dbscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/dbscan/</guid>
+      <description>DBSCAN Groups items using the DBSCAN clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute  The widget applies the DBSCAN clustering algorithm to the data and outputs a new dataset with cluster indices as a meta attribute. The widget also shows the sorted graph with distances to k-th nearest neighbors. With k values set to Core point neighbors as suggested in the methods article.</description>
+    </item>
+    
+    <item>
+      <title>Data Info</title>
       <link>/widget-catalog/data/datainfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -198,7 +222,7 @@ Inputs
     </item>
     
     <item>
-      <title>Datasampler</title>
+      <title>Data Sampler</title>
       <link>/widget-catalog/data/datasampler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -207,6 +231,19 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Data Sample: sampled data instances Remaining Data: out-of-sample data  The Data Sampler widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processed after the input dataset is provided and Sample Data is pressed.</description>
+    </item>
+    
+    <item>
+      <title>Data Table</title>
+      <link>/widget-catalog/data/datatable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/datatable/</guid>
+      <description>Data Table Displays attribute-value data in a spreadsheet.
+Inputs
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the table  The Data Table widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. The widget also supports manual selection of data instances.
+ The name of the dataset (usually the input data file).</description>
     </item>
     
     <item>
@@ -219,19 +256,6 @@ Inputs
 Outputs
  Data: output dataset  Datasets widget retrieves selected dataset from the server and sends it to the output. File is downloaded to the local memory and thus instantly available even without the internet connection. Each dataset is provided with a description and information on the data size, number of instances, number of variables, target and tags.
  Information on the number of datasets available and the number of them downloaded to the local memory.</description>
-    </item>
-    
-    <item>
-      <title>Datatable</title>
-      <link>/widget-catalog/data/datatable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/data/datatable/</guid>
-      <description>Data Table Displays attribute-value data in a spreadsheet.
-Inputs
- Data: input dataset  Outputs
- Selected Data: instances selected from the table  The Data Table widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. The widget also supports manual selection of data instances.
- The name of the dataset (usually the input data file).</description>
     </item>
     
     <item>
@@ -424,10 +448,10 @@ Inputs
     
     <item>
       <title>Lift Curve</title>
-      <link>/widget-catalog/evaluation/liftcurve/</link>
+      <link>/widget-catalog/evaluate/liftcurve/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/liftcurve/</guid>
+      <guid>/widget-catalog/evaluate/liftcurve/</guid>
       <description>Lift Curve Measures the performance of a chosen classifier against a random classifier.
 Inputs
  Evaluation Results: results of testing classification algorithms  The Lift curve shows the relation between the number of instances which were predicted positive and those that are indeed positive and thus measures the performance of a chosen classifier against a random classifier. The graph is constructed with the cumulative number of cases (in descending order of probability) on the x-axis and the cumulative number of true positives on the y-axis.</description>
@@ -494,6 +518,18 @@ Inputs
     </item>
     
     <item>
+      <title>Louvain Clustering</title>
+      <link>/widget-catalog/unsupervised/louvainclustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/louvainclustering/</guid>
+      <description>Louvain Clustering Groups items using the Louvain clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute Graph (with the Network addon): the weighted k-nearest neighbor graph  The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges.</description>
+    </item>
+    
+    <item>
       <title>MDS</title>
       <link>/widget-catalog/unsupervised/mds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -527,7 +563,7 @@ Inputs
       <description>Merge Data Merges two datasets, based on values of selected attributes.
 Inputs
  Data: input dataset Extra Data: additional dataset  Outputs
- Data: dataset with features added from extra data  The Merge Data widget is used to horizontally merge two datasets, based on values of selected attributes. In the input, two datasets are required, data and extra data. The widget allows selection of an attribute from each domain, which will be used to perform the merging.</description>
+ Data: dataset with features added from extra data  The Merge Data widget is used to horizontally merge two datasets, based on the values of selected attributes (columns). In the input, two datasets are required, data and extra data. Rows from the two data sets are matched by the values of pairs of attributes, chosen by the user.</description>
     </item>
     
     <item>
@@ -563,9 +599,8 @@ This widget has two options: the name under which it will appear in other widget
       <guid>/widget-catalog/data/neighbors/</guid>
       <description>Neighbors Compute nearest neighbors in data according to reference.
 Inputs
- Data: An input data set. Reference: A reference data instance for neighbor computation.  Outputs
- Neighbors: A data table of nearest neighbors according to reference.  The Neighbors widget computes nearest neighbors for a given reference and for a given distance measure.
- Information on the input data. Distance measure for computing neighbors. Supported measures are: Euclidean, Manhattan, Mahalanobis, Cosine, Jaccard, Spearman, absolute Spearman, Pearson, absolute Pearson.</description>
+ Data: An input data set. Reference: A reference data for neighbor computation.  Outputs
+ Neighbors: A data table of nearest neighbors according to reference.  The Neighbors widget computes nearest neighbors for a given reference and for a given distance measure. The reference can be either one instance or more instances. In the case with one reference widget outputs closest n instances from data where n is set by the Number of neighbors option in the widget.</description>
     </item>
     
     <item>
@@ -630,11 +665,23 @@ Outputs
     </item>
     
     <item>
-      <title>Predictions</title>
-      <link>/widget-catalog/evaluation/predictions/</link>
+      <title>Pivot Table</title>
+      <link>/widget-catalog/data/pivot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/predictions/</guid>
+      <guid>/widget-catalog/data/pivot/</guid>
+      <description>Pivot Table Reshape data table based on column values.
+Inputs
+ Data: input data set  Outputs
+ Pivot Table: contingency matrix as shown in the widget Filtered Data: subset selected from the plot Grouped Data: aggregates over groups defined by row values  Pivot Table summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The widget also allows selecting a subset from the table and grouping by row values, which have to be a discrete variable.</description>
+    </item>
+    
+    <item>
+      <title>Predictions</title>
+      <link>/widget-catalog/evaluate/predictions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/evaluate/predictions/</guid>
       <description>Predictions Shows models&amp;rsquo; predictions on the data.
 Inputs
  Data: input dataset Predictors: predictors to be used on the data  Outputs
@@ -705,10 +752,10 @@ Inputs
     
     <item>
       <title>ROC Analysis</title>
-      <link>/widget-catalog/evaluation/rocanalysis/</link>
+      <link>/widget-catalog/evaluate/rocanalysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/rocanalysis/</guid>
+      <guid>/widget-catalog/evaluate/rocanalysis/</guid>
       <description>ROC Analysis Plots a true positive rate against a false positive rate of a test.
 Inputs
  Evaluation Results: results of testing classification algorithms  The widget shows ROC curves for the tested models and the corresponding convex hull. It serves as a mean of comparison between classification models. The curve plots a false positive rate on an x-axis (1-specificity; probability that target=1 when true value=0) against a true positive rate on a y-axis (sensitivity; probability that target=1 when true value=1).</description>
@@ -802,18 +849,6 @@ The widget does not save the data every time it receives a new signal in the inp
     </item>
     
     <item>
-      <title>Save Data</title>
-      <link>/widget-catalog/data/savedata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/data/savedata/</guid>
-      <description>Save Data Saves data to a file.
-Inputs
- Data: input dataset  The Save Data widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as a tab-delimited or a comma-separated file.
-The widget does not save the data every time it receives a new signal in the input as this would constantly (and, mostly, inadvertently) overwrite the file.</description>
-    </item>
-    
-    <item>
       <title>Save Distance Matrix</title>
       <link>/widget-catalog/unsupervised/savedistancematrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -884,15 +919,15 @@ Inputs
     </item>
     
     <item>
-      <title>Select by Data Index</title>
-      <link>/widget-catalog/data/selectbydataindex/</link>
+      <title>Self-Organizing Map</title>
+      <link>/widget-catalog/unsupervised/selforganizingmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/data/selectbydataindex/</guid>
-      <description>Select by Data Index Match instances by index from data subset.
+      <guid>/widget-catalog/unsupervised/selforganizingmap/</guid>
+      <description>Self-Organizing Map Computation of a self-organizing map.
 Inputs
- Data: reference data set Data Subset: subset to match  Outputs
- Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by Data Index enables matching the data by indices.</description>
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  A self-organizing map (SOM) is a type of artificial neural network (ANN) that is trained using unsupervised learning to produce a two-dimensional, discretized representation of the data. It is a method to do dimensionality reduction.</description>
     </item>
     
     <item>
@@ -943,39 +978,15 @@ Inputs
     </item>
     
     <item>
-      <title>Stochastic Gradient Descent</title>
-      <link>/widget-catalog/model/stochasticgradientdescent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/model/stochasticgradientdescent/</guid>
-      <description>Stochastic Gradient Descent Minimize an objective function using a stochastic approximation of gradient descent.
-Inputs
- Data: input dataset Preprocessor: preprocessing method(s)  Outputs
- Learner: stochastic gradient descent learning algorithm Model: trained model  The Stochastic Gradient Descent widget uses stochastic gradient descent that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function.</description>
-    </item>
-    
-    <item>
       <title>Test and Score</title>
-      <link>/widget-catalog/evaluation/testandscore/</link>
+      <link>/widget-catalog/evaluate/testandscore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/evaluation/testandscore/</guid>
+      <guid>/widget-catalog/evaluate/testandscore/</guid>
       <description>Test and Score Tests learning algorithms on data.
 Inputs
  Data: input dataset Test Data: separate data for testing Learner: learning algorithm(s)  Outputs
  Evaluation Results: results of testing classification algorithms  The widget tests learning algorithms. Different sampling schemes are available, including using separate test data. The widget does two things. First, it shows a table with different classifier performance measures, such as classification accuracy and area under the curve.</description>
-    </item>
-    
-    <item>
-      <title>Transform</title>
-      <link>/widget-catalog/transform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/transform/</guid>
-      <description>Transform Given dataset and preprocessor transforms the dataset.
-Inputs
- Data: input dataset Preprocessor: preprocessor for transformation  Outputs
- Transformed Data: transformed dataset  Transform maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use transform to map the new data into the PCA space created from the original data.</description>
     </item>
     
     <item>
@@ -1030,11 +1041,11 @@ Inputs
     
     <item>
       <title>k-Means</title>
-      <link>/widget-catalog/unsupervised/kmeansclustering/</link>
+      <link>/widget-catalog/unsupervised/kmeans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/unsupervised/kmeansclustering/</guid>
-      <description>k-Means Clustering Groups items using the k-Means clustering algorithm.
+      <guid>/widget-catalog/unsupervised/kmeans/</guid>
+      <description>k-Means Groups items using the k-Means clustering algorithm.
 Inputs
  Data: input dataset  Outputs
  Data: dataset with cluster index as a class attribute  The widget applies the k-Means clustering algorithm to the data and outputs a new dataset in which the cluster index is used as a class attribute. The original class attribute, if it exists, is moved to meta attributes. Scores of clustering results for various k are also shown in the widget.</description>

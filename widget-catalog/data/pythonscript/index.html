@@ -221,7 +221,7 @@ out_object = in_object
 
 <p>Note: You should not modify the input objects in place.</p>
 
-<p><img src="/images/data/PythonScript-stamped.png" alt="" /></p>
+<p><img src="../images/PythonScript-stamped.png" alt="" /></p>
 
 <ol>
 <li>Info box contains names of basic operators for Orange Python script.</li>
@@ -244,7 +244,7 @@ domain = Domain([attr for attr in in_data.domain.attributes
 out_data = Table(domain, in_data)
 </code></pre>
 
-<p><img src="/images/data/PythonScript-filtering.png" alt="" /></p>
+<p><img src="../images/PythonScript-filtering.png" alt="" /></p>
 
 <p>The second example shows how to round all the values in a few lines of code. This time we used wine.tab and rounded all the values to whole numbers.</p>
 
@@ -254,7 +254,7 @@ out_data = in_data.copy()
 np.round(out_data.X, 0, out_data.X)
 </code></pre>
 
-<p><img src="/images/data/PythonScript-round.png" alt="" /></p>
+<p><img src="../images/PythonScript-round.png" alt="" /></p>
 
 <p>The third example introduces some Gaussian noise to the data. Again we make a copy of the input data, then walk through all the values with a double for loop and add random noise.</p>
 
@@ -267,7 +267,7 @@ for inst in new_data:
 out_data = new_data
 </code></pre>
 
-<p><img src="/images/data/PythonScript-gauss.png" alt="" /></p>
+<p><img src="../images/PythonScript-gauss.png" alt="" /></p>
 
 <p>The final example uses Orange3-Text add-on. <strong>Python Script</strong> is very useful for custom preprocessing in text mining, extracting new features from strings, or utilizing advanced <em>nltk</em> or <em>gensim</em> functions. Below, we simply tokenized our input data from <em>deerwester.tab</em> by splitting them by whitespace.</p>
 
@@ -280,7 +280,7 @@ out_object.store_tokens(tokens)
 
 <p>You can add a lot of other preprocessing steps to further adjust the output. The output of <strong>Python Script</strong> can be used with any widget that accepts the type of output your script produces. In this case, connection is green, which signalizes the right type of input for Word Cloud widget.</p>
 
-<p><img src="/images/data/PythonScript-Example3.png" alt="" /></p>
+<p><img src="../images/PythonScript-Example3.png" alt="" /></p>
 
                     </div>
                 </div>

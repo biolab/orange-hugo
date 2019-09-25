@@ -203,11 +203,11 @@
 
 <p>The <strong>Distance Map</strong> visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.</p>
 
-<p>Distances are most often those between instances (&rdquo;<em>rows</em>&rdquo; in the <a href="/widget-catalog/unsupervised/distances">Distances</a> widget) or attributes (&rdquo;<em>columns</em>&rdquo; in Distances widget). The only suitable input for <strong>Distance Map</strong> is the <a href="/widget-catalog/unsupervised/distances">Distances</a> widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the <strong>Distances</strong> widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you <a href="/widget-catalog/data/continuize">Continuize</a> them first.</p>
+<p>Distances are most often those between instances (&rdquo;<em>rows</em>&rdquo; in the <a href="../../unsupervised/distances/">Distances</a> widget) or attributes (&rdquo;<em>columns</em>&rdquo; in Distances widget). The only suitable input for <strong>Distance Map</strong> is the <a href="../../unsupervised/distances/">Distances</a> widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the <strong>Distances</strong> widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you <a href="../../data/continuize/">Continuize</a> them first.</p>
 
 <p>The snapshot shows distances between columns in the <em>heart disease</em> data, where smaller distances are represented with light and larger with dark orange. The matrix is symmetric and the diagonal is a light shade of orange - no attribute is different from itself. Symmetricity is always assumed, while the diagonal may also be non-zero.</p>
 
-<p><img src="/images/unsupervised/DistanceMap-stamped.png" alt="" /></p>
+<p><img src="../images/DistanceMap-stamped.png" alt="" /></p>
 
 <ol>
 <li><em>Element sorting</em> arranges elements in the map by
@@ -233,7 +233,7 @@
 
 <p>Below, we visualized the most correlated attributes (distances by columns) in the <em>heart disease</em> dataset by setting the color threshold for high distances to the minimum. We get a predominantly black square, where attributes with the lowest distance scores are represented by a lighter shade of the selected color schema (in our case: orange). Beside the diagonal line, we see that in our example <em>ST by exercise</em> and <em>major vessels colored</em> are the two attributes closest together.</p>
 
-<p><img src="/images/unsupervised/DistanceMap-Highlighted.png" alt="" /></p>
+<p><img src="../images/DistanceMap-Highlighted.png" alt="" /></p>
 
 <p>The user can select a region in the map with the usual click-and-drag of the cursor. When a part of the map is selected, the widget outputs all items from the selected cells.</p>
 
@@ -241,11 +241,11 @@
 
 <p>The first workflow shows a very standard use of the <strong>Distance Map</strong> widget. We select 70% of the original <em>Iris</em> data as our sample and view the distances between rows in <strong>Distance Map</strong>.</p>
 
-<p><img src="/images/unsupervised/DistanceMap-Example1.png" alt="" /></p>
+<p><img src="../images/DistanceMap-Example1.png" alt="" /></p>
 
-<p>In the second example, we use the <em>heart disease</em> data again and select a subset of women only from the <a href="/widget-catalog/visualize/scatterplot">Scatter Plot</a>. Then, we visualize distances between columns in the <strong>Distance Map</strong>. Since the subset also contains some discrete data, the <a href="/widget-catalog/unsupervised/distances">Distances</a> widget warns us it will ignore the discrete features, thus we will see only continuous instances/attributes in the map.</p>
+<p>In the second example, we use the <em>heart disease</em> data again and select a subset of women only from the <a href="../visualize/scatterplot.md">Scatter Plot</a>. Then, we visualize distances between columns in the <strong>Distance Map</strong>. Since the subset also contains some discrete data, the <a href="../../unsupervised/distances/">Distances</a> widget warns us it will ignore the discrete features, thus we will see only continuous instances/attributes in the map.</p>
 
-<p><img src="/images/unsupervised/DistanceMap-Example.png" alt="" /></p>
+<p><img src="../images/DistanceMap-Example.png" alt="" /></p>
 
                     </div>
                 </div>

@@ -204,11 +204,11 @@
 
 <p>Sparse data can only be used with Euclidean, Manhattan and Cosine metric.</p>
 
-<p>The resulting distance matrix can be fed further to <a href="/widget-catalog/unsupervised/hierarchicalclustering">Hierarchical Clustering</a> for uncovering groups in the data, to <a href="/widget-catalog/unsupervised/distancemap">Distance Map</a> or <a href="/widget-catalog/unsupervised/distancematrix">Distance Matrix</a> for visualizing the distances (Distance Matrix can be quite slow for larger data sets), to <a href="/widget-catalog/unsupervised/mds">MDS</a> for mapping the data instances using the distance matrix and finally, saved with <a href="/widget-catalog/unsupervised/savedistancematrix">Save Distance Matrix</a>. Distance file can be loaded with <a href="/widget-catalog/unsupervised/distancefile">Distance File</a>.</p>
+<p>The resulting distance matrix can be fed further to <a href="../hierarchicalclustering/">Hierarchical Clustering</a> for uncovering groups in the data, to <a href="distancemap.md">Distance Map</a> or <a href="distancematrix.md">Distance Matrix</a> for visualizing the distances (Distance Matrix can be quite slow for larger data sets), to <a href="../mds/">MDS</a> for mapping the data instances using the distance matrix and finally, saved with <a href="savedistancematrix.md">Save Distance Matrix</a>. Distance file can be loaded with <a href="../distancefile/">Distance File</a>.</p>
 
 <p>Distances work well with Orange add-ons, too. The distance matrix can be fed to Network from Distances (Network add-on) to convert the matrix into a graph and to Duplicate Detection (Text add-on) to find duplicate documents in the corpus.</p>
 
-<p><img src="/images/unsupervised/Distances-stamped.png" alt="" /></p>
+<p><img src="../images/Distances-stamped.png" alt="" /></p>
 
 <ol>
 <li>Choose whether to measure distances between rows or columns.</li>
@@ -234,17 +234,17 @@
 
 <h2 id="examples">Examples</h2>
 
-<p>The first example shows a typical use of the <strong>Distances</strong> widget. We are using the <em>iris.tab</em> data from the <a href="/widget-catalog/data/file">File</a> widget. We compute distances between data instances (rows) and pass the result to the <a href="/widget-catalog/unsupervised/hierarchicalclustering">Hierarchical Clustering</a>. This is a simple workflow to find groups of data instances.</p>
+<p>The first example shows a typical use of the <strong>Distances</strong> widget. We are using the <em>iris.tab</em> data from the <a href="../data/file.md">File</a> widget. We compute distances between data instances (rows) and pass the result to the <a href="../hierarchicalclustering/">Hierarchical Clustering</a>. This is a simple workflow to find groups of data instances.</p>
 
-<p><img src="/images/unsupervised/Distances-Example1-rows.png" alt="" /></p>
+<p><img src="../images/Distances-Example1-rows.png" alt="" /></p>
 
 <p>Alternatively, we can compute distance between columns and find how similar our features are.</p>
 
-<p><img src="/images/unsupervised/Distances-Example1-columns.png" alt="" /></p>
+<p><img src="../images/Distances-Example1-columns.png" alt="" /></p>
 
-<p>The second example shows how to visualize the resulting distance matrix. A nice way to observe data similarity is in a <a href="/widget-catalog/unsupervised/distancemap">Distance Map</a> or in <a href="/widget-catalog/unsupervised/mds">MDS</a>.</p>
+<p>The second example shows how to visualize the resulting distance matrix. A nice way to observe data similarity is in a <a href="distancemap.md">Distance Map</a> or in <a href="../mds/">MDS</a>.</p>
 
-<p><img src="/images/unsupervised/Distances-Example2.png" alt="" /></p>
+<p><img src="../images/Distances-Example2.png" alt="" /></p>
 
                     </div>
                 </div>

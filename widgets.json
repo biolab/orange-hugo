@@ -1,1 +1,917 @@
-{"Data": [{"title": "Color", "file": "visual-programming/source/widgets/data/color.md", "icon": "visual-programming/source/widgets/data/icons/color.png", "keywords": [], "category": "Data", "order": 23, "url": "color"}, {"title": "Concatenate", "file": "visual-programming/source/widgets/data/concatenate.md", "icon": "visual-programming/source/widgets/data/icons/concatenate.png", "keywords": [], "category": "Data", "order": 13, "url": "concatenate"}, {"title": "Continuize", "file": "visual-programming/source/widgets/data/continuize.md", "icon": "visual-programming/source/widgets/data/icons/continuize.png", "keywords": [], "category": "Data", "order": 24, "url": "continuize"}, {"title": "Correlations", "file": "visual-programming/source/widgets/data/correlations.md", "icon": "visual-programming/source/widgets/data/icons/correlations.png", "keywords": [], "category": "Data", "order": 11, "url": "correlations"}, {"title": "Create Class", "file": "visual-programming/source/widgets/data/createclass.md", "icon": "visual-programming/source/widgets/data/icons/create-class.png", "keywords": [], "category": "Data", "order": 25, "url": "createclass"}, {"title": "Data Info", "file": "visual-programming/source/widgets/data/datainfo.md", "icon": "visual-programming/source/widgets/data/icons/data-info.png", "keywords": [], "category": "Data", "order": 6, "url": "datainfo"}, {"title": "Data Sampler", "file": "visual-programming/source/widgets/data/datasampler.md", "icon": "visual-programming/source/widgets/data/icons/data-sampler.png", "keywords": [], "category": "Data", "order": 7, "url": "datasampler"}, {"title": "Datasets", "file": "visual-programming/source/widgets/data/datasets.md", "icon": "visual-programming/source/widgets/data/icons/datasets.png", "keywords": [], "category": "Data", "order": 2, "url": "datasets"}, {"title": "Data Table", "file": "visual-programming/source/widgets/data/datatable.md", "icon": "visual-programming/source/widgets/data/icons/data-table.png", "keywords": [], "category": "Data", "order": 4, "url": "datatable"}, {"title": "Discretize", "file": "visual-programming/source/widgets/data/discretize.md", "icon": "visual-programming/source/widgets/data/icons/discretize.png", "keywords": [], "category": "Data", "order": 26, "url": "discretize"}, {"title": "Edit Domain", "file": "visual-programming/source/widgets/data/editdomain.md", "icon": "visual-programming/source/widgets/data/icons/edit-domain.png", "keywords": [], "category": "Data", "order": 21, "url": "editdomain"}, {"title": "Feature Constructor", "file": "visual-programming/source/widgets/data/featureconstructor.md", "icon": "visual-programming/source/widgets/data/icons/feature-constructor.png", "keywords": [], "category": "Data", "order": 27, "url": "featureconstructor"}, {"title": "File", "file": "visual-programming/source/widgets/data/file.md", "icon": "visual-programming/source/widgets/data/icons/file.png", "keywords": [], "category": "Data", "order": 1, "url": "file"}, {"title": "Impute", "file": "visual-programming/source/widgets/data/impute.md", "icon": "visual-programming/source/widgets/data/icons/impute.png", "keywords": [], "category": "Data", "order": 19, "url": "impute"}, {"title": "Merge Data", "file": "visual-programming/source/widgets/data/mergedata.md", "icon": "visual-programming/source/widgets/data/icons/merge-data.png", "keywords": [], "category": "Data", "order": 12, "url": "mergedata"}, {"title": "Neighbors", "file": "visual-programming/source/widgets/data/neighbors.md", "icon": "visual-programming/source/widgets/data/icons/neighbors.png", "keywords": [], "category": "Data", "order": 29, "url": "neighbors"}, {"title": "Outliers", "file": "visual-programming/source/widgets/data/outliers.md", "icon": "visual-programming/source/widgets/data/icons/outliers.png", "keywords": [], "category": "Data", "order": 20, "url": "outliers"}, {"title": "Paint Data", "file": "visual-programming/source/widgets/data/paintdata.md", "icon": "visual-programming/source/widgets/data/icons/paint-data.png", "keywords": [], "category": "Data", "order": 5, "url": "paintdata"}, {"title": "Preprocess", "file": "visual-programming/source/widgets/data/preprocess.md", "icon": "visual-programming/source/widgets/data/icons/preprocess.png", "keywords": [], "category": "Data", "order": 17, "url": "preprocess"}, {"title": "Purge Domain", "file": "visual-programming/source/widgets/data/purgedomain.md", "icon": "visual-programming/source/widgets/data/icons/purge-domain.png", "keywords": [], "category": "Data", "order": 30, "url": "purgedomain"}, {"title": "Python Script", "file": "visual-programming/source/widgets/data/pythonscript.md", "icon": "visual-programming/source/widgets/data/icons/python-script.png", "keywords": [], "category": "Data", "order": 22, "url": "pythonscript"}, {"title": "Randomize", "file": "visual-programming/source/widgets/data/randomize.md", "icon": "visual-programming/source/widgets/data/icons/randomize.png", "keywords": [], "category": "Data", "order": 16, "url": "randomize"}, {"title": "Rank", "file": "visual-programming/source/widgets/data/rank.md", "icon": "visual-programming/source/widgets/data/icons/rank.png", "keywords": [], "category": "Data", "order": 10, "url": "rank"}, {"title": "Save Data", "file": "visual-programming/source/widgets/data/save.md", "icon": "visual-programming/source/widgets/data/icons/save.png", "keywords": [], "category": "Data", "order": 31, "url": "savedata"}, {"title": "Select by Data Index", "file": "visual-programming/source/widgets/data/select-by-data-index.md", "icon": "visual-programming/source/widgets/data/icons/select-by-data-index.png", "keywords": [], "category": "Data", "order": 14, "url": "selectbydataindex"}, {"title": "Select Columns", "file": "visual-programming/source/widgets/data/selectcolumns.md", "icon": "visual-programming/source/widgets/data/icons/select-columns.png", "keywords": [], "category": "Data", "order": 8, "url": "selectcolumns"}, {"title": "Select Rows", "file": "visual-programming/source/widgets/data/selectrows.md", "icon": "visual-programming/source/widgets/data/icons/select-rows.png", "keywords": [], "category": "Data", "order": 9, "url": "selectrows"}, {"title": "SQL Table", "file": "visual-programming/source/widgets/data/sqltable.md", "icon": "visual-programming/source/widgets/data/icons/sql-table.png", "keywords": [], "category": "Data", "order": 3, "url": "sqltable"}, {"title": "Transpose", "file": "visual-programming/source/widgets/data/transpose.md", "icon": "visual-programming/source/widgets/data/icons/transpose.png", "keywords": [], "category": "Data", "order": 15, "url": "transpose"}], "Evaluation": [{"title": "Calibration Plot", "file": "visual-programming/source/widgets/evaluation/calibrationplot.md", "icon": "visual-programming/source/widgets/evaluation/icons/calibration-plot.png", "keywords": [], "category": "Evaluation", "order": 6, "url": "calibrationplot"}, {"title": "Predictions", "file": "visual-programming/source/widgets/evaluation/confusionmatrix.md", "icon": "visual-programming/source/widgets/evaluation/icons/confusion-matrix.png", "keywords": [], "category": "Evaluation", "order": 2, "url": "predictions"}, {"title": "Lift Curve", "file": "visual-programming/source/widgets/evaluation/liftcurve.md", "icon": "visual-programming/source/widgets/evaluation/icons/lift-curve.png", "keywords": [], "category": "Evaluation", "order": 5, "url": "liftcurve"}, {"title": "ROC Analysis", "file": "visual-programming/source/widgets/evaluation/rocanalysis.md", "icon": "visual-programming/source/widgets/evaluation/icons/roc-analysis.png", "keywords": [], "category": "Evaluation", "order": 4, "url": "rocanalysis"}, {"title": "Test and Score", "file": "visual-programming/source/widgets/evaluation/testandscore.md", "icon": "visual-programming/source/widgets/evaluation/icons/test-and-score.png", "keywords": [], "category": "Evaluation", "order": 1, "url": "testandscore"}], "Model": [{"title": "Adaboost", "file": "visual-programming/source/widgets/model/adaboost.md", "icon": "visual-programming/source/widgets/model/icons/adaboost.png", "keywords": [], "category": "Model", "order": 10, "url": "adaboost"}, {"title": "CN2 Rule Induction", "file": "visual-programming/source/widgets/model/cn2ruleinduction.md", "icon": "visual-programming/source/widgets/model/icons/cn2ruleinduction.png", "keywords": [], "category": "Model", "order": 2, "url": "cn2ruleinduction"}, {"title": "Constant", "file": "visual-programming/source/widgets/model/constant.md", "icon": "visual-programming/source/widgets/model/icons/constant.png", "keywords": [], "category": "Model", "order": 1, "url": "constant"}, {"title": "kNN", "file": "visual-programming/source/widgets/model/knn.md", "icon": "visual-programming/source/widgets/model/icons/knn.png", "keywords": [], "category": "Model", "order": 3, "url": "knn"}, {"title": "Linear Regression", "file": "visual-programming/source/widgets/model/linearregression.md", "icon": "visual-programming/source/widgets/model/icons/linear-regression.png", "keywords": [], "category": "Model", "order": 7, "url": "linearregression"}, {"title": "Load Model", "file": "visual-programming/source/widgets/model/loadmodel.md", "icon": "visual-programming/source/widgets/model/icons/load-model.png", "keywords": [], "category": "Model", "order": 15, "url": "loadmodel"}, {"title": "Logistic Regression", "file": "visual-programming/source/widgets/model/logisticregression.md", "icon": "visual-programming/source/widgets/model/icons/logistic-regression.png", "keywords": [], "category": "Model", "order": 8, "url": "logisticregression"}, {"title": "Naive Bayes", "file": "visual-programming/source/widgets/model/naivebayes.md", "icon": "visual-programming/source/widgets/model/icons/naive-bayes.png", "keywords": [], "category": "Model", "order": 9, "url": "naivebayes"}, {"title": "Neural Network", "file": "visual-programming/source/widgets/model/neuralnetwork.md", "icon": "visual-programming/source/widgets/model/icons/neural-network.png", "keywords": [], "category": "Model", "order": 11, "url": "neuralnetwork"}, {"title": "Random Forest", "file": "visual-programming/source/widgets/model/randomforest.md", "icon": "visual-programming/source/widgets/model/icons/random-forest.png", "keywords": [], "category": "Model", "order": 5, "url": "randomforest"}, {"title": "Save Model", "file": "visual-programming/source/widgets/model/savemodel.md", "icon": "visual-programming/source/widgets/model/icons/save-model.png", "keywords": [], "category": "Model", "order": 14, "url": "savemodel"}, {"title": "Stacking", "file": "visual-programming/source/widgets/model/stacking.md", "icon": "visual-programming/source/widgets/model/icons/stacking.png", "keywords": [], "category": "Model", "order": 13, "url": "stacking"}, {"title": "Stochastic Gradient Descent", "file": "visual-programming/source/widgets/model/stochasticgradient.md", "icon": "visual-programming/source/widgets/model/icons/stochastic-gradient.png", "keywords": [], "category": "Model", "order": 12, "url": "stochasticgradientdescent"}, {"title": "SVM", "file": "visual-programming/source/widgets/model/svm.md", "icon": "visual-programming/source/widgets/model/icons/svm.png", "keywords": [], "category": "Model", "order": 6, "url": "svm"}, {"title": "Tree", "file": "visual-programming/source/widgets/model/tree.md", "icon": "visual-programming/source/widgets/model/icons/tree.png", "keywords": [], "category": "Model", "order": 4, "url": "tree"}], "Unsupervised": [{"title": "PCA", "file": "visual-programming/source/widgets/unsupervised/PCA.md", "icon": "visual-programming/source/widgets/unsupervised/icons/pca.png", "keywords": [], "category": "Unsupervised", "order": 10, "url": "pca"}, {"title": "Correspondence Analysis", "file": "visual-programming/source/widgets/unsupervised/correspondenceanalysis.md", "icon": "visual-programming/source/widgets/unsupervised/icons/correspondence-analysis.png", "keywords": [], "category": "Unsupervised", "order": 10, "url": "correspondenceanalysis"}, {"title": "Distance File", "file": "visual-programming/source/widgets/unsupervised/distancefile.md", "icon": "visual-programming/source/widgets/unsupervised/icons/distance-file.png", "keywords": [], "category": "Unsupervised", "order": 1, "url": "distancefile"}, {"title": "Distance Map", "file": "visual-programming/source/widgets/unsupervised/distancemap.md", "icon": "visual-programming/source/widgets/unsupervised/icons/distance-map.png", "keywords": [], "category": "Unsupervised", "order": 4, "url": "distancemap"}, {"title": "Distance Matrix", "file": "visual-programming/source/widgets/unsupervised/distancematrix.md", "icon": "visual-programming/source/widgets/unsupervised/icons/distance-matrix.png", "keywords": [], "category": "Unsupervised", "order": 2, "url": "distancematrix"}, {"title": "Distances", "file": "visual-programming/source/widgets/unsupervised/distances.md", "icon": "visual-programming/source/widgets/unsupervised/icons/distances.png", "keywords": [], "category": "Unsupervised", "order": 11, "url": "distances"}, {"title": "Distance Transformation", "file": "visual-programming/source/widgets/unsupervised/distancetransformation.md", "icon": "visual-programming/source/widgets/unsupervised/icons/distance-transformation.png", "keywords": [], "category": "Unsupervised", "order": 12, "url": "distancetransformation"}, {"title": "Hierarchical Clustering", "file": "visual-programming/source/widgets/unsupervised/hierarchicalclustering.md", "icon": "visual-programming/source/widgets/unsupervised/icons/hierarchical-clustering.png", "keywords": [], "category": "Unsupervised", "order": 5, "url": "hierarchicalclustering"}, {"title": "k-Means Clustering", "file": "visual-programming/source/widgets/unsupervised/kmeansclustering.md", "icon": "visual-programming/source/widgets/unsupervised/icons/k-means.png", "keywords": [], "category": "Unsupervised", "order": 6, "url": "kmeansclustering"}, {"title": "Manifold Learning", "file": "visual-programming/source/widgets/unsupervised/manifoldlearning.md", "icon": "visual-programming/source/widgets/unsupervised/icons/manifold-learning.png", "keywords": [], "category": "Unsupervised", "order": 8, "url": "manifoldlearning"}, {"title": "MDS", "file": "visual-programming/source/widgets/unsupervised/mds.md", "icon": "visual-programming/source/widgets/unsupervised/icons/mds.png", "keywords": [], "category": "Unsupervised", "order": 13, "url": "mds"}, {"title": "Save Distance Matrix", "file": "visual-programming/source/widgets/unsupervised/savedistancematrix.md", "icon": "visual-programming/source/widgets/unsupervised/icons/save-distance-matrix.png", "keywords": [], "category": "Unsupervised", "order": 14, "url": "savedistancematrix"}, {"title": "t-SNE", "file": "visual-programming/source/widgets/unsupervised/tsne.md", "icon": "visual-programming/source/widgets/unsupervised/icons/tSNE.png", "keywords": [], "category": "Unsupervised", "order": 3, "url": "tsne"}], "Visualize": [{"title": "Box Plot", "file": "visual-programming/source/widgets/visualize/boxplot.md", "icon": "visual-programming/source/widgets/visualize/icons/box-plot.png", "keywords": [], "category": "Visualize", "order": 2, "url": "boxplot"}, {"title": "CN2 Rule Viewer", "file": "visual-programming/source/widgets/visualize/cn2ruleviewer.md", "icon": "visual-programming/source/widgets/visualize/icons/cn2ruleviewer.png", "keywords": [], "category": "Visualize", "order": 16, "url": "cn2ruleviewer"}, {"title": "Distributions", "file": "visual-programming/source/widgets/visualize/distributions.md", "icon": "visual-programming/source/widgets/visualize/icons/distributions.png", "keywords": [], "category": "Visualize", "order": 3, "url": "distributions"}, {"title": "FreeViz", "file": "visual-programming/source/widgets/visualize/freeviz.md", "icon": "visual-programming/source/widgets/visualize/icons/freeviz.png", "keywords": [], "category": "Visualize", "order": 8, "url": "freeviz"}, {"title": "Heat Map", "file": "visual-programming/source/widgets/visualize/heatmap.md", "icon": "visual-programming/source/widgets/visualize/icons/heat-map.png", "keywords": [], "category": "Visualize", "order": 11, "url": "heatmap"}, {"title": "Linear Projection", "file": "visual-programming/source/widgets/visualize/linearprojection.md", "icon": "visual-programming/source/widgets/visualize/icons/linear-projection.png", "keywords": [], "category": "Visualize", "order": 9, "url": "linearprojection"}, {"title": "Line Plot", "file": "visual-programming/source/widgets/visualize/lineplot.md", "icon": "visual-programming/source/widgets/visualize/icons/line-plot.png", "keywords": [], "category": "Visualize", "order": 5, "url": "lineplot"}, {"title": "Mosaic Display", "file": "visual-programming/source/widgets/visualize/mosaicdisplay.md", "icon": "visual-programming/source/widgets/visualize/icons/mosaic-display.png", "keywords": [], "category": "Visualize", "order": 7, "url": "mosaicdisplay"}, {"title": "Nomogram", "file": "visual-programming/source/widgets/visualize/nomogram.md", "icon": "visual-programming/source/widgets/visualize/icons/nomogram.png", "keywords": [], "category": "Visualize", "order": 17, "url": "nomogram"}, {"title": "Pythagorean Forest", "file": "visual-programming/source/widgets/visualize/pythagoreanforest.md", "icon": "visual-programming/source/widgets/visualize/icons/pythagorean-forest.png", "keywords": [], "category": "Visualize", "order": 15, "url": "pythagoreanforest"}, {"title": "Pythagorean Tree", "file": "visual-programming/source/widgets/visualize/pythagoreantree.md", "icon": "visual-programming/source/widgets/visualize/icons/pythagorean-tree.png", "keywords": [], "category": "Visualize", "order": 14, "url": "pythagoreantree"}, {"title": "Radviz", "file": "visual-programming/source/widgets/visualize/radviz.md", "icon": "visual-programming/source/widgets/visualize/icons/radviz.png", "keywords": [], "category": "Visualize", "order": 10, "url": "radviz"}, {"title": "Scatter Plot", "file": "visual-programming/source/widgets/visualize/scatterplot.md", "icon": "visual-programming/source/widgets/visualize/icons/scatter-plot.png", "keywords": [], "category": "Visualize", "order": 4, "url": "scatterplot"}, {"title": "Sieve Diagram", "file": "visual-programming/source/widgets/visualize/sievediagram.md", "icon": "visual-programming/source/widgets/visualize/icons/sieve-diagram.png", "keywords": [], "category": "Visualize", "order": 6, "url": "sievediagram"}, {"title": "Silhouette Plot", "file": "visual-programming/source/widgets/visualize/silhouetteplot.md", "icon": "visual-programming/source/widgets/visualize/icons/silhouette-plot.png", "keywords": [], "category": "Visualize", "order": 13, "url": "silhouetteplot"}, {"title": "Tree Viewer", "file": "visual-programming/source/widgets/visualize/treeviewer.md", "icon": "visual-programming/source/widgets/visualize/icons/tree-viewer.png", "keywords": [], "category": "Visualize", "order": 1, "url": "treeviewer"}, {"title": "Venn Diagram", "file": "visual-programming/source/widgets/visualize/venndiagram.md", "icon": "visual-programming/source/widgets/visualize/icons/venn-diagram.png", "keywords": [], "category": "Visualize", "order": 12, "url": "venndiagram"}]}
+{
+ "Data": [
+  {
+   "order": 0,
+   "title": "File",
+   "category": "Data",
+   "keywords": [
+    "file",
+    "load",
+    "read",
+    "open"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-File.png",
+   "url": "file"
+  },
+  {
+   "order": 1,
+   "title": "CSV File Import",
+   "category": "Data",
+   "keywords": [
+    "file",
+    "load",
+    "read",
+    "open",
+    "csv"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-CSV File Import.png",
+   "url": "csvfileimport"
+  },
+  {
+   "order": 2,
+   "title": "Datasets",
+   "category": "Data",
+   "keywords": [
+    "online"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Datasets.png",
+   "url": "datasets"
+  },
+  {
+   "order": 3,
+   "title": "SQL Table",
+   "category": "Data",
+   "keywords": [
+    "load"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-SQL Table.png",
+   "url": "sqltable"
+  },
+  {
+   "order": 4,
+   "title": "Data Table",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Data Table.png",
+   "url": "datatable"
+  },
+  {
+   "order": 5,
+   "title": "Paint Data",
+   "category": "Data",
+   "keywords": [
+    "create",
+    "draw"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Paint Data.png",
+   "url": "paintdata"
+  },
+  {
+   "order": 6,
+   "title": "Data Info",
+   "category": "Data",
+   "keywords": [
+    "information",
+    "inspect"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Data Info.png",
+   "url": "datainfo"
+  },
+  {
+   "order": 7,
+   "title": "Data Sampler",
+   "category": "Data",
+   "keywords": [
+    "random"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Data Sampler.png",
+   "url": "datasampler"
+  },
+  {
+   "order": 8,
+   "title": "Select Columns",
+   "category": "Data",
+   "keywords": [
+    "filter"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Select Columns.png",
+   "url": "selectcolumns"
+  },
+  {
+   "order": 9,
+   "title": "Select Rows",
+   "category": "Data",
+   "keywords": [
+    "filter"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Select Rows.png",
+   "url": "selectrows"
+  },
+  {
+   "order": 10,
+   "title": "Pivot Table",
+   "category": "Data",
+   "keywords": [
+    "pivot",
+    "group",
+    "aggregate"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Pivot Table.png",
+   "url": "pivot"
+  },
+  {
+   "order": 11,
+   "title": "Rank",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Rank.png",
+   "url": "rank"
+  },
+  {
+   "order": 12,
+   "title": "Correlations",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Correlations.png",
+   "url": "correlations"
+  },
+  {
+   "order": 13,
+   "title": "Merge Data",
+   "category": "Data",
+   "keywords": [
+    "join"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Merge Data.png",
+   "url": "mergedata"
+  },
+  {
+   "order": 14,
+   "title": "Concatenate",
+   "category": "Data",
+   "keywords": [
+    "append",
+    "join",
+    "extend"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Concatenate.png",
+   "url": "concatenate"
+  },
+  {
+   "order": 15,
+   "title": "Select by Data Index",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Select by Data Index.png",
+   "url": "select-by-data-index"
+  },
+  {
+   "order": 16,
+   "title": "Transpose",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Transpose.png",
+   "url": "transpose"
+  },
+  {
+   "order": 17,
+   "title": "Randomize",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Randomize.png",
+   "url": "randomize"
+  },
+  {
+   "order": 18,
+   "title": "Preprocess",
+   "category": "Data",
+   "keywords": [
+    "process"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Preprocess.png",
+   "url": "preprocess"
+  },
+  {
+   "order": 19,
+   "title": "Apply Domain",
+   "category": "Data",
+   "keywords": [
+    "transform"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Apply Domain.png",
+   "url": "applydomain"
+  },
+  {
+   "order": 20,
+   "title": "Impute",
+   "category": "Data",
+   "keywords": [
+    "substitute",
+    "missing"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Impute.png",
+   "url": "impute"
+  },
+  {
+   "order": 21,
+   "title": "Outliers",
+   "category": "Data",
+   "keywords": [
+    "inlier"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Outliers.png",
+   "url": "outliers"
+  },
+  {
+   "order": 22,
+   "title": "Edit Domain",
+   "category": "Data",
+   "keywords": [
+    "rename",
+    "drop",
+    "reorder",
+    "order"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Edit Domain.png",
+   "url": "editdomain"
+  },
+  {
+   "order": 23,
+   "title": "Python Script",
+   "category": "Data",
+   "keywords": [
+    "file",
+    "program"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Python Script.png",
+   "url": "pythonscript"
+  },
+  {
+   "order": 24,
+   "title": "Color",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Color.png",
+   "url": "color"
+  },
+  {
+   "order": 25,
+   "title": "Continuize",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Continuize.png",
+   "url": "continuize"
+  },
+  {
+   "order": 26,
+   "title": "Create Class",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Create Class.png",
+   "url": "createclass"
+  },
+  {
+   "order": 27,
+   "title": "Discretize",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Discretize.png",
+   "url": "discretize"
+  },
+  {
+   "order": 28,
+   "title": "Feature Constructor",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Feature Constructor.png",
+   "url": "featureconstructor"
+  },
+  {
+   "order": 29,
+   "title": "Feature Statistics",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Feature Statistics.png",
+   "url": "featurestatistics"
+  },
+  {
+   "order": 30,
+   "title": "Neighbors",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Neighbors.png",
+   "url": "neighbors"
+  },
+  {
+   "order": 31,
+   "title": "Purge Domain",
+   "category": "Data",
+   "keywords": [
+    "remove",
+    "delete",
+    "unused"
+   ],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Purge Domain.png",
+   "url": "purgedomain"
+  },
+  {
+   "order": 32,
+   "title": "Save Data",
+   "category": "Data",
+   "keywords": [],
+   "background": "#FFD39F",
+   "icon": "widget-icons/Data-Save Data.png",
+   "url": "save"
+  }
+ ],
+ "Visualize": [
+  {
+   "order": 0,
+   "title": "Tree Viewer",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Tree Viewer.png",
+   "url": "treeviewer"
+  },
+  {
+   "order": 1,
+   "title": "Box Plot",
+   "category": "Visualize",
+   "keywords": [
+    "whisker"
+   ],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Box Plot.png",
+   "url": "boxplot"
+  },
+  {
+   "order": 2,
+   "title": "Distributions",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Distributions.png",
+   "url": "distributions"
+  },
+  {
+   "order": 3,
+   "title": "Scatter Plot",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Scatter Plot.png",
+   "url": "scatterplot"
+  },
+  {
+   "order": 4,
+   "title": "Line Plot",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Line Plot.png",
+   "url": "lineplot"
+  },
+  {
+   "order": 5,
+   "title": "Sieve Diagram",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Sieve Diagram.png",
+   "url": "sievediagram"
+  },
+  {
+   "order": 6,
+   "title": "Mosaic Display",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Mosaic Display.png",
+   "url": "mosaicdisplay"
+  },
+  {
+   "order": 7,
+   "title": "FreeViz",
+   "category": "Visualize",
+   "keywords": [
+    "viz"
+   ],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-FreeViz.png",
+   "url": "freeviz"
+  },
+  {
+   "order": 8,
+   "title": "Linear Projection",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Linear Projection.png",
+   "url": "linearprojection"
+  },
+  {
+   "order": 9,
+   "title": "Radviz",
+   "category": "Visualize",
+   "keywords": [
+    "viz"
+   ],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Radviz.png",
+   "url": "radviz"
+  },
+  {
+   "order": 10,
+   "title": "Heat Map",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Heat Map.png",
+   "url": "heatmap"
+  },
+  {
+   "order": 11,
+   "title": "Venn Diagram",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Venn Diagram.png",
+   "url": "venndiagram"
+  },
+  {
+   "order": 12,
+   "title": "Silhouette Plot",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Silhouette Plot.png",
+   "url": "silhouetteplot"
+  },
+  {
+   "order": 13,
+   "title": "Pythagorean Tree",
+   "category": "Visualize",
+   "keywords": [
+    "fractal"
+   ],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Pythagorean Tree.png",
+   "url": "pythagoreantree"
+  },
+  {
+   "order": 14,
+   "title": "Pythagorean Forest",
+   "category": "Visualize",
+   "keywords": [
+    "fractal"
+   ],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Pythagorean Forest.png",
+   "url": "pythagoreanforest"
+  },
+  {
+   "order": 15,
+   "title": "CN2 Rule Viewer",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-CN2 Rule Viewer.png",
+   "url": "cn2ruleviewer"
+  },
+  {
+   "order": 16,
+   "title": "Nomogram",
+   "category": "Visualize",
+   "keywords": [],
+   "background": "#FFB7B1",
+   "icon": "widget-icons/Visualize-Nomogram.png",
+   "url": "nomogram"
+  }
+ ],
+ "Model": [
+  {
+   "order": 0,
+   "title": "Constant",
+   "category": "Model",
+   "keywords": [
+    "majority",
+    "mean"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Constant.png",
+   "url": "constant"
+  },
+  {
+   "order": 1,
+   "title": "CN2 Rule Induction",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-CN2 Rule Induction.png",
+   "url": "cn2ruleinduction"
+  },
+  {
+   "order": 2,
+   "title": "Calibrated Learner",
+   "category": "Model",
+   "keywords": [
+    "calibration",
+    "threshold"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Calibrated Learner.png"
+  },
+  {
+   "order": 3,
+   "title": "kNN",
+   "category": "Model",
+   "keywords": [
+    "k nearest",
+    "knearest",
+    "neighbor",
+    "neighbour"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-kNN.png",
+   "url": "knn"
+  },
+  {
+   "order": 4,
+   "title": "Tree",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Tree.png",
+   "url": "tree"
+  },
+  {
+   "order": 5,
+   "title": "Random Forest",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Random Forest.png",
+   "url": "randomforest"
+  },
+  {
+   "order": 6,
+   "title": "SVM",
+   "category": "Model",
+   "keywords": [
+    "support vector machines"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-SVM.png",
+   "url": "svm"
+  },
+  {
+   "order": 7,
+   "title": "Linear Regression",
+   "category": "Model",
+   "keywords": [
+    "ridge",
+    "lasso",
+    "elastic net"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Linear Regression.png",
+   "url": "linearregression"
+  },
+  {
+   "order": 8,
+   "title": "Logistic Regression",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Logistic Regression.png",
+   "url": "logisticregression"
+  },
+  {
+   "order": 9,
+   "title": "Naive Bayes",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Naive Bayes.png",
+   "url": "naivebayes"
+  },
+  {
+   "order": 10,
+   "title": "AdaBoost",
+   "category": "Model",
+   "keywords": [
+    "boost"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-AdaBoost.png",
+   "url": "adaboost"
+  },
+  {
+   "order": 11,
+   "title": "Neural Network",
+   "category": "Model",
+   "keywords": [
+    "mlp"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Neural Network.png",
+   "url": "neuralnetwork"
+  },
+  {
+   "order": 12,
+   "title": "Stochastic Gradient Descent",
+   "category": "Model",
+   "keywords": [
+    "sgd"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Stochastic Gradient Descent.png",
+   "url": "stochasticgradient"
+  },
+  {
+   "order": 13,
+   "title": "Stacking",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Stacking.png",
+   "url": "stacking"
+  },
+  {
+   "order": 14,
+   "title": "Save Model",
+   "category": "Model",
+   "keywords": [],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Save Model.png",
+   "url": "savemodel"
+  },
+  {
+   "order": 15,
+   "title": "Load Model",
+   "category": "Model",
+   "keywords": [
+    "file",
+    "open"
+   ],
+   "background": "#FAC1D9",
+   "icon": "widget-icons/Model-Load Model.png",
+   "url": "loadmodel"
+  }
+ ],
+ "Evaluate": [
+  {
+   "order": 0,
+   "title": "Test and Score",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-Test and Score.png",
+   "url": "testandscore"
+  },
+  {
+   "order": 1,
+   "title": "Predictions",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-Predictions.png",
+   "url": "predictions"
+  },
+  {
+   "order": 2,
+   "title": "Confusion Matrix",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-Confusion Matrix.png",
+   "url": "confusionmatrix"
+  },
+  {
+   "order": 3,
+   "title": "ROC Analysis",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-ROC Analysis.png",
+   "url": "rocanalysis"
+  },
+  {
+   "order": 4,
+   "title": "Lift Curve",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-Lift Curve.png",
+   "url": "liftcurve"
+  },
+  {
+   "order": 5,
+   "title": "Calibration Plot",
+   "category": "Evaluate",
+   "keywords": [],
+   "background": "#C3F3F3",
+   "icon": "widget-icons/Evaluate-Calibration Plot.png",
+   "url": "calibrationplot"
+  }
+ ],
+ "Unsupervised": [
+  {
+   "order": 0,
+   "title": "Distance File",
+   "category": "Unsupervised",
+   "keywords": [
+    "load",
+    "read",
+    "open"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Distance File.png",
+   "url": "distancefile"
+  },
+  {
+   "order": 1,
+   "title": "Distance Matrix",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Distance Matrix.png",
+   "url": "distancematrix"
+  },
+  {
+   "order": 2,
+   "title": "t-SNE",
+   "category": "Unsupervised",
+   "keywords": [
+    "tsne"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-t-SNE.png",
+   "url": "tsne"
+  },
+  {
+   "order": 3,
+   "title": "Distance Map",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Distance Map.png",
+   "url": "distancemap"
+  },
+  {
+   "order": 4,
+   "title": "Hierarchical Clustering",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Hierarchical Clustering.png",
+   "url": "hierarchicalclustering"
+  },
+  {
+   "order": 5,
+   "title": "k-Means",
+   "category": "Unsupervised",
+   "keywords": [
+    "kmeans",
+    "clustering"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-k-Means.png",
+   "url": "kmeans"
+  },
+  {
+   "order": 6,
+   "title": "Louvain Clustering",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Louvain Clustering.png",
+   "url": "louvainclustering"
+  },
+  {
+   "order": 7,
+   "title": "DBSCAN",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-DBSCAN.png",
+   "url": "DBSCAN"
+  },
+  {
+   "order": 8,
+   "title": "Manifold Learning",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Manifold Learning.png",
+   "url": "manifoldlearning"
+  },
+  {
+   "order": 9,
+   "title": "PCA",
+   "category": "Unsupervised",
+   "keywords": [
+    "principal component analysis",
+    "linear transformation"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-PCA.png",
+   "url": "PCA"
+  },
+  {
+   "order": 10,
+   "title": "Correspondence Analysis",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Correspondence Analysis.png",
+   "url": "correspondenceanalysis"
+  },
+  {
+   "order": 11,
+   "title": "Distances",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Distances.png",
+   "url": "distances"
+  },
+  {
+   "order": 12,
+   "title": "Distance Transformation",
+   "category": "Unsupervised",
+   "keywords": [],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Distance Transformation.png",
+   "url": "distancetransformation"
+  },
+  {
+   "order": 13,
+   "title": "MDS",
+   "category": "Unsupervised",
+   "keywords": [
+    "multidimensional scaling",
+    "multi dimensional scaling"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-MDS.png",
+   "url": "mds"
+  },
+  {
+   "order": 14,
+   "title": "Save Distance Matrix",
+   "category": "Unsupervised",
+   "keywords": [
+    "distance matrix",
+    "save"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Save Distance Matrix.png",
+   "url": "savedistancematrix"
+  },
+  {
+   "order": 15,
+   "title": "Self-Organizing Map",
+   "category": "Unsupervised",
+   "keywords": [
+    "SOM"
+   ],
+   "background": "#CAE1EF",
+   "icon": "widget-icons/Unsupervised-Self-Organizing Map.png",
+   "url": "selforganizingmap"
+  }
+ ]
+}

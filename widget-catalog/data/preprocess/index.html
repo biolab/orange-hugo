@@ -203,7 +203,7 @@
 
 <p>Preprocessing is crucial for achieving better-quality analysis results. The <strong>Preprocess</strong> widget offers several preprocessing methods that can be combined in a single preprocessing pipeline. Some methods are available as separate widgets, which offer advanced techniques and greater parameter tuning.</p>
 
-<p><img src="/images/data/Preprocess-Stamped.png" alt="" /></p>
+<p><img src="../images/preprocess-stamped.png" alt="" /></p>
 
 <ol>
 <li>List of preprocessors. Double click the preprocessors you wish to use and shuffle their order by dragging them up or down. You can also add preprocessors by dragging them from the left menu to the right.</li>
@@ -213,7 +213,7 @@
 
 <h2 id="preprocessors">Preprocessors</h2>
 
-<p><img src="/images/data/Preprocess1-stamped.png" alt="" /></p>
+<p><img src="../images/Preprocess1-stamped.png" alt="" /></p>
 
 <ol>
 <li>Discretization of continuous values:
@@ -244,40 +244,40 @@
 <li>Select relevant features:
 
 <ul>
-<li>Similar to <a href="/widget-catalog/data/rank">Rank</a>, this preprocessor outputs only the most informative features. Score can be determined by information gain, <a href="https://en.wikipedia.org/wiki/Information_gain_ratio">gain ratio</a>, <a href="https://en.wikipedia.org/wiki/Gini_coefficient">gini index</a>, <a href="https://en.wikipedia.org/wiki/Relief_(feature_selection)">ReliefF</a>, <a href="https://www.aaai.org/Papers/ICML/2003/ICML03-111.pdf">fast correlation based filter</a>, <a href="https://en.wikipedia.org/wiki/One-way_analysis_of_variance">ANOVA</a>, <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution">Chi2</a>, <a href="http://lkm.fri.uni-lj.si/rmarko/papers/robnik03-mlj.pdf">RReliefF</a>, and <a href="http://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-using-selectfrommodel">Univariate Linear Regression</a>.</li>
+<li>Similar to <a href="../data/rank.md">Rank</a>, this preprocessor outputs only the most informative features. Score can be determined by information gain, <a href="https://en.wikipedia.org/wiki/Information_gain_ratio">gain ratio</a>, <a href="https://en.wikipedia.org/wiki/Gini_coefficient">gini index</a>, <a href="https://en.wikipedia.org/wiki/Relief_(feature_selection)">ReliefF</a>, <a href="https://www.aaai.org/Papers/ICML/2003/ICML03-111.pdf">fast correlation based filter</a>, <a href="https://en.wikipedia.org/wiki/One-way_analysis_of_variance">ANOVA</a>, <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution">Chi2</a>, <a href="http://lkm.fri.uni-lj.si/rmarko/papers/robnik03-mlj.pdf">RReliefF</a>, and <a href="http://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-using-selectfrommodel">Univariate Linear Regression</a>.</li>
 <li><em>Strategy</em> refers to how many variables should be on the output. <em>Fixed</em> returns a fixed number of top scored variables, while <em>Percentile</em> return the selected top percent of the features.</li>
 </ul></li>
 </ol>
 
-<p><img src="/images/data/Preprocess2-stamped.png" alt="" /></p>
+<p><img src="../images/Preprocess2-stamped.png" alt="" /></p>
 
 <ol>
 <li><em>Select random features</em> outputs either a fixed number of features from the original data or a percentage. This is mainly used for advanced testing and educational purposes.</li>
 <li>Normalize adjusts values to a common scale. Center values by mean or median or omit centering altogether. Similar for scaling, one can scale by SD (standard deviation), by span or not at all.</li>
 <li>Randomize instances. Randomize classes shuffles class values and destroys connection between instances and class. Similarly, one can randomize features or meta data. If replicable shuffling is on, randomization results can be shared and repeated with a saved workflow. This is mainly used for advanced testing and educational purposes.</li>
-<li>Principal component analysis outputs results of a PCA transformation. Similar to the <a href="/widget-catalog/unsupervised/pca">PCA</a> widget.</li>
+<li>Principal component analysis outputs results of a PCA transformation. Similar to the <a href="../../unsupervised/PCA/">PCA</a> widget.</li>
 <li><a href="https://en.wikipedia.org/wiki/CUR_matrix_approximation">CUR matrix decomposition</a> is a dimensionality reduction method, similar to SVD.</li>
 </ol>
 
 <h2 id="examples">Examples</h2>
 
-<p>In the first example, we have used the <em>heart_disease.tab</em> dataset available in the dropdown menu of the <a href="/widget-catalog/data/file">File</a> widget. then we used <strong>Preprocess</strong> to impute missing values and normalize features. We can observe the changes in the <a href="/widget-catalog/data/datatable">Data Table</a> and compare it to the non-processed data.</p>
+<p>In the first example, we have used the <em>heart_disease.tab</em> dataset available in the dropdown menu of the <a href="../../data/file/">File</a> widget. then we used <strong>Preprocess</strong> to impute missing values and normalize features. We can observe the changes in the <a href="../../data/datatable/">Data Table</a> and compare it to the non-processed data.</p>
 
-<p><img src="/images/data/Preprocess-Example1.png" alt="" /></p>
+<p><img src="../images/Preprocess-Example1.png" alt="" /></p>
 
 <p>In the second example, we show how to use <strong>Preprocess</strong> for predictive modeling.</p>
 
-<p>This time we are using the <em>heart_disease.tab</em> data from the <a href="/widget-catalog/data/file">File</a> widget. You can access the data through the dropdown menu. This is a dataset with 303 patients that came to the doctor suffering from a chest pain. After the tests were done, some patients were found to have diameter narrowing and others did not (this is our class variable).</p>
+<p>This time we are using the <em>heart_disease.tab</em> data from the <a href="../../data/file/">File</a> widget. You can access the data through the dropdown menu. This is a dataset with 303 patients that came to the doctor suffering from a chest pain. After the tests were done, some patients were found to have diameter narrowing and others did not (this is our class variable).</p>
 
-<p>The heart disease data have some missing values and we wish to account for that. First, we will split the data set into train and test data with <a href="/widget-catalog/data/datasampler">Data Sampler</a>.</p>
+<p>The heart disease data have some missing values and we wish to account for that. First, we will split the data set into train and test data with <a href="../../data/datasampler/">Data Sampler</a>.</p>
 
-<p>Then we will send the <em>Data Sample</em> into <a href="/widget-catalog/data/preprocess">Preprocess</a>. We will use <em>Impute Missing Values</em>, but you can try any combination of preprocessors on your data. We will send preprocessed data to <a href="/widget-catalog/model/logisticregression">Logistic Regression</a> and the constructed model to <strong>Predictions</strong>.</p>
+<p>Then we will send the <em>Data Sample</em> into <a href="../data/preprocess.md">Preprocess</a>. We will use <em>Impute Missing Values</em>, but you can try any combination of preprocessors on your data. We will send preprocessed data to <a href="../../model/logisticregression/">Logistic Regression</a> and the constructed model to <strong>Predictions</strong>.</p>
 
-<p>Finally, <strong>Predictions</strong> also needs the data to predict on. We will use the output of <a href="/widget-catalog/data/datasampler">Data Sampler</a> for prediction, but this time not the <em>Data Sample</em>, but the <em>Remaining Data</em>, this is the data that wasn&rsquo;t used for training the model.</p>
+<p>Finally, <strong>Predictions</strong> also needs the data to predict on. We will use the output of <a href="../../data/datasampler/">Data Sampler</a> for prediction, but this time not the <em>Data Sample</em>, but the <em>Remaining Data</em>, this is the data that wasn&rsquo;t used for training the model.</p>
 
-<p>Notice how we send the remaining data directly to <strong>Predictions</strong> without applying any preprocessing. This is because Orange handles preprocessing on new data internally to prevent any errors in the model construction. The exact same preprocessor that was used on the training data will be used for predictions. The same process applies to <a href="/widget-catalog/evaluation/testandscore">Test &amp; Score</a>.</p>
+<p>Notice how we send the remaining data directly to <strong>Predictions</strong> without applying any preprocessing. This is because Orange handles preprocessing on new data internally to prevent any errors in the model construction. The exact same preprocessor that was used on the training data will be used for predictions. The same process applies to <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
 
-<p><img src="/images/evaluation/Predictions-Example2.png" alt="" /></p>
+<p><img src="../../evaluate/images/Predictions-Example2.png" alt="" /></p>
 
                     </div>
                 </div>
