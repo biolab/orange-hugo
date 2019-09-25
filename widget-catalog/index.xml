@@ -35,6 +35,20 @@ Inputs
     </item>
     
     <item>
+      <title>Average Spectra</title>
+      <link>/widget-catalog/spectroscopy/average/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/average/</guid>
+      <description>Average Spectra Average spectra.
+Inputs
+ Data: input dataset  Outputs
+ Averages: averaged dataset  The Average Spectra widget enables you to calculate average spectra. It can output the average of the entire dataset, or average into groups defined by a Categorical feature.
+Use Group by to output averages defined by a Categorical feature.
+Columns of non-Numerical data will return a value if every row in that group has the same value, otherwise it will return Unknown.</description>
+    </item>
+    
+    <item>
       <title>Box Plot</title>
       <link>/widget-catalog/visualize/boxplot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -434,6 +448,19 @@ Inputs
     </item>
     
     <item>
+      <title>HyperSpectra</title>
+      <link>/widget-catalog/spectroscopy/hyperspectra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/hyperspectra/</guid>
+      <description>HyperSpectra Plots 2D map of hyperspectra.
+Inputs
+ Data: input dataset  Outputs
+ Selection: spectra from selected area Data: dataset with information whether a spectrum was selected or not  The HyperSpectra widget plots hyperspectra that were read from the .map file. To use this widget with infrared spectral data, you need to transform it with Reshape Map widget.
+At the top, HyperSpectra shows a 2D map of a slice of the spectra.</description>
+    </item>
+    
+    <item>
       <title>Impute</title>
       <link>/widget-catalog/data/impute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -444,6 +471,44 @@ Inputs
  Data: input dataset Learner: learning algorithm for imputation  Outputs
  Data: dataset with imputed values  Some Orange&amp;rsquo;s algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The default imputation is (1-NN).
  In the top-most box, Default method, the user can specify a general imputation technique for all attributes.</description>
+    </item>
+    
+    <item>
+      <title>Integrate Spectra</title>
+      <link>/widget-catalog/spectroscopy/integrate-spectra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/integrate-spectra/</guid>
+      <description>Integrate Spectra Integrate spectra in various ways.
+Inputs
+ Data: input dataset  Outputs
+ Integrated Data: data with integrals appended Preprocessor: preprocessing method  The Integrate Spectra widget allows you to add integrals to your data by selecting regions of interest and integrating them with several methods.
+ Add integral:  Integral from 0: Integral from baseline: Peak from 0: Peak from baseline: Closest value: X-value of maximum from 0: X-value of maximum from baseline  Toggle preview.</description>
+    </item>
+    
+    <item>
+      <title>Interferogram to Spectrum</title>
+      <link>/widget-catalog/spectroscopy/interferogram-to-spectrum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/interferogram-to-spectrum/</guid>
+      <description> Interferogram to Spectrum Performs Fast Fourier Transform on an interferogram, including zero filling, apodization and phase correction.
+Inputs
+ Interferogram: input interferogram  Outputs
+ Spectra: dataset with spectra Phases: phases  </description>
+    </item>
+    
+    <item>
+      <title>Interpolate</title>
+      <link>/widget-catalog/spectroscopy/interpolate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/interpolate/</guid>
+      <description>Interpolate Interpolate spectra.
+Inputs
+ Data: input dataset Points: a reference data set  Outputs
+ Interpolated Data: aligned dataset  The Interpolate widget enables you to align datasets with different wavenumbers. It has automatic interpolation or you can provide the reference data set to align with.
+ Enable automatic interpolation: creates a new domain, which consequently enables interpolation of values on test data. Linear interval:  Min: minimum cutoff Max: maximum cutoff Delta: the difference between the cutoffs  Reference data: the data is aligned to the reference data  Examples The first example shows how to use Interpolate to align the train and test data set of spectral data.</description>
     </item>
     
     <item>
@@ -579,6 +644,18 @@ Inputs
     </item>
     
     <item>
+      <title>Multifile</title>
+      <link>/widget-catalog/spectroscopy/multifile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/multifile/</guid>
+      <description>Multifile Read data from input files and send a data table to the output.
+Outputs
+ Data: a data table of all the loaded files  The Multifile widget loads data from different sources and works like Concatenate widget for spectroscopy. The widget will output a union of attributes and features, with missing values for non-matching wavenumbers. To interpolate missing data, use the Interpolate widget.
+ Loaded files. Load local files.</description>
+    </item>
+    
+    <item>
       <title>Naive Bayes</title>
       <link>/widget-catalog/model/naivebayes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -703,6 +780,18 @@ Inputs
     </item>
     
     <item>
+      <title>Preprocess Spectra</title>
+      <link>/widget-catalog/spectroscopy/preprocess-spectra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/preprocess-spectra/</guid>
+      <description>Preprocess Spectra Construct a data preprocessing pipeline.
+Inputs
+ Data: input data set Reference: a reference data set used in some preprocessing methods  Outputs
+ Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applied several preprocessing methods to spectral data. You select the preprocessing method from the list and press the triangle button on the right to apply it. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</description>
+    </item>
+    
+    <item>
       <title>Purge Domain</title>
       <link>/widget-catalog/data/purgedomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -810,6 +899,19 @@ Inputs
  Data: input dataset Scorer: models for feature scoring  Outputs
  Reduced Data: dataset with selected attributes  The Rank widget considers class-labeled datasets (classification or regression) and scores the attributes according to their correlation with the class. Rank accepts also models for scoring, such as linear regression, logistic regression, random forest, SGD, etc.
  Select attributes from the data table.</description>
+    </item>
+    
+    <item>
+      <title>Reshape Map</title>
+      <link>/widget-catalog/spectroscopy/reshape-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/reshape-map/</guid>
+      <description> Reshape Map Builds or modifies the shape of the input dataset to create 2D maps from series data or change the dimensions of existing 2D datasets.
+Inputs
+ Data: input dataset  Outputs
+ Map Data: data as a map  The Reshape Map widget transforms the input data to a map.
+ Map shape:  The X dimension. The Y dimension.  Send data automatically or press Send.  </description>
     </item>
     
     <item>
@@ -951,6 +1053,19 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Silhouette Plot widget offers a graphical representation of consistency within clusters of data and provides the user with the means to visually assess cluster quality. The silhouette score is a measure of how similar an object is to its own cluster in comparison to other clusters and is crucial in the creation of a silhouette plot.</description>
+    </item>
+    
+    <item>
+      <title>Spectra</title>
+      <link>/widget-catalog/spectroscopy/spectra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/spectra/</guid>
+      <description>Spectra Visually explore series of spectra with no spatial information.
+Inputs
+ Data: input dataset Data Subset:subset of the data  Outputs
+ Selection: selected spectra  The Spectra widget allows visual exploration of multiple spectra. To output some spectra, select them by clicking. For multiple selection, hold the modifier key (Ctrl or Cmd) or use line selection (see the plot options menu). Selected spectra will appear dashed.
+ Open the plot options menu A spectrum The X and Y position of the cursor The legend (appears only is spectra are colored)  Navigation</description>
     </item>
     
     <item>

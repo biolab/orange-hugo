@@ -1211,6 +1211,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/spectroscopy/average/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/bioinformatics/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1281,13 +1285,13 @@
   </url>
   
   <url>
-    <loc>/categories/classification/</loc>
-    <lastmod>2018-05-03T11:37:28+00:00</lastmod>
+    <loc>/tags/classification/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/classification/</loc>
+    <loc>/categories/classification/</loc>
+    <lastmod>2018-05-03T11:37:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1297,13 +1301,13 @@
   </url>
   
   <url>
-    <loc>/categories/clustering/</loc>
-    <lastmod>2018-07-17T09:20:50+00:00</lastmod>
+    <loc>/tags/clustering/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/clustering/</loc>
+    <loc>/categories/clustering/</loc>
+    <lastmod>2018-07-17T09:20:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1373,13 +1377,13 @@
   </url>
   
   <url>
-    <loc>/categories/cross-validation/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+    <loc>/tags/cross-validation/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/cross-validation/</loc>
+    <loc>/categories/cross-validation/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1388,13 +1392,13 @@
   </url>
   
   <url>
-    <loc>/categories/data/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <loc>/tags/data/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/data/</loc>
+    <loc>/categories/data/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1673,13 +1677,13 @@
   </url>
   
   <url>
-    <loc>/categories/hierarchical-clustering/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <loc>/tags/hierarchical-clustering/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hierarchical-clustering/</loc>
+    <loc>/categories/hierarchical-clustering/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1697,6 +1701,10 @@
     <loc>/categories/hr/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/hyperspectra/</loc>
   </url>
   
   <url>
@@ -1734,6 +1742,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/spectroscopy/integrate-spectra/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/interactive-data-visualization/</loc>
     <lastmod>2017-04-03T12:36:22+00:00</lastmod>
     <priority>0</priority>
@@ -1755,6 +1767,14 @@
     <loc>/categories/interface/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/interferogram-to-spectrum/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/interpolate/</loc>
   </url>
   
   <url>
@@ -1845,6 +1865,10 @@
   
   <url>
     <loc>/widget-catalog/visualize/mosaicdisplay/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/multifile/</loc>
   </url>
   
   <url>
@@ -2012,13 +2036,13 @@
   </url>
   
   <url>
-    <loc>/categories/pivot-table/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <loc>/tags/pivot-table/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/pivot-table/</loc>
+    <loc>/categories/pivot-table/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2061,18 +2085,22 @@
   </url>
   
   <url>
+    <loc>/tags/predictive-models/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/predictive-models/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/predictive-models/</loc>
-    <priority>0</priority>
+    <loc>/widget-catalog/data/preprocess/</loc>
   </url>
   
   <url>
-    <loc>/widget-catalog/data/preprocess/</loc>
+    <loc>/widget-catalog/spectroscopy/preprocess-spectra/</loc>
   </url>
   
   <url>
@@ -2176,6 +2204,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/spectroscopy/reshape-map/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/retreat/</loc>
     <lastmod>2011-02-11T13:41:00+00:00</lastmod>
     <priority>0</priority>
@@ -2212,13 +2244,13 @@
   </url>
   
   <url>
-    <loc>/categories/scatter-plot/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <loc>/tags/scatter-plot/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/scatter-plot/</loc>
+    <loc>/categories/scatter-plot/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2287,6 +2319,10 @@
     <loc>/categories/single-cell/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/spectra/</loc>
   </url>
   
   <url>
@@ -2416,13 +2452,13 @@
   </url>
   
   <url>
-    <loc>/categories/visualization/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <loc>/tags/visualization/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/visualization/</loc>
+    <loc>/categories/visualization/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

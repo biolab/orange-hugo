@@ -1,917 +1,942 @@
-{
- "Data": [
-  {
-   "order": 0,
-   "title": "File",
-   "category": "Data",
-   "keywords": [
-    "file",
-    "load",
-    "read",
-    "open"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-File.png",
-   "url": "file"
-  },
-  {
-   "order": 1,
-   "title": "CSV File Import",
-   "category": "Data",
-   "keywords": [
-    "file",
-    "load",
-    "read",
-    "open",
-    "csv"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-CSV File Import.png",
-   "url": "csvfileimport"
-  },
-  {
-   "order": 2,
-   "title": "Datasets",
-   "category": "Data",
-   "keywords": [
-    "online"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Datasets.png",
-   "url": "datasets"
-  },
-  {
-   "order": 3,
-   "title": "SQL Table",
-   "category": "Data",
-   "keywords": [
-    "load"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-SQL Table.png",
-   "url": "sqltable"
-  },
-  {
-   "order": 4,
-   "title": "Data Table",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Data Table.png",
-   "url": "datatable"
-  },
-  {
-   "order": 5,
-   "title": "Paint Data",
-   "category": "Data",
-   "keywords": [
-    "create",
-    "draw"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Paint Data.png",
-   "url": "paintdata"
-  },
-  {
-   "order": 6,
-   "title": "Data Info",
-   "category": "Data",
-   "keywords": [
-    "information",
-    "inspect"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Data Info.png",
-   "url": "datainfo"
-  },
-  {
-   "order": 7,
-   "title": "Data Sampler",
-   "category": "Data",
-   "keywords": [
-    "random"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Data Sampler.png",
-   "url": "datasampler"
-  },
-  {
-   "order": 8,
-   "title": "Select Columns",
-   "category": "Data",
-   "keywords": [
-    "filter"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Select Columns.png",
-   "url": "selectcolumns"
-  },
-  {
-   "order": 9,
-   "title": "Select Rows",
-   "category": "Data",
-   "keywords": [
-    "filter"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Select Rows.png",
-   "url": "selectrows"
-  },
-  {
-   "order": 10,
-   "title": "Pivot Table",
-   "category": "Data",
-   "keywords": [
-    "pivot",
-    "group",
-    "aggregate"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Pivot Table.png",
-   "url": "pivot"
-  },
-  {
-   "order": 11,
-   "title": "Rank",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Rank.png",
-   "url": "rank"
-  },
-  {
-   "order": 12,
-   "title": "Correlations",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Correlations.png",
-   "url": "correlations"
-  },
-  {
-   "order": 13,
-   "title": "Merge Data",
-   "category": "Data",
-   "keywords": [
-    "join"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Merge Data.png",
-   "url": "mergedata"
-  },
-  {
-   "order": 14,
-   "title": "Concatenate",
-   "category": "Data",
-   "keywords": [
-    "append",
-    "join",
-    "extend"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Concatenate.png",
-   "url": "concatenate"
-  },
-  {
-   "order": 15,
-   "title": "Select by Data Index",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Select by Data Index.png",
-   "url": "select-by-data-index"
-  },
-  {
-   "order": 16,
-   "title": "Transpose",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Transpose.png",
-   "url": "transpose"
-  },
-  {
-   "order": 17,
-   "title": "Randomize",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Randomize.png",
-   "url": "randomize"
-  },
-  {
-   "order": 18,
-   "title": "Preprocess",
-   "category": "Data",
-   "keywords": [
-    "process"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Preprocess.png",
-   "url": "preprocess"
-  },
-  {
-   "order": 19,
-   "title": "Apply Domain",
-   "category": "Data",
-   "keywords": [
-    "transform"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Apply Domain.png",
-   "url": "applydomain"
-  },
-  {
-   "order": 20,
-   "title": "Impute",
-   "category": "Data",
-   "keywords": [
-    "substitute",
-    "missing"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Impute.png",
-   "url": "impute"
-  },
-  {
-   "order": 21,
-   "title": "Outliers",
-   "category": "Data",
-   "keywords": [
-    "inlier"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Outliers.png",
-   "url": "outliers"
-  },
-  {
-   "order": 22,
-   "title": "Edit Domain",
-   "category": "Data",
-   "keywords": [
-    "rename",
-    "drop",
-    "reorder",
-    "order"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Edit Domain.png",
-   "url": "editdomain"
-  },
-  {
-   "order": 23,
-   "title": "Python Script",
-   "category": "Data",
-   "keywords": [
-    "file",
-    "program"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Python Script.png",
-   "url": "pythonscript"
-  },
-  {
-   "order": 24,
-   "title": "Color",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Color.png",
-   "url": "color"
-  },
-  {
-   "order": 25,
-   "title": "Continuize",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Continuize.png",
-   "url": "continuize"
-  },
-  {
-   "order": 26,
-   "title": "Create Class",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Create Class.png",
-   "url": "createclass"
-  },
-  {
-   "order": 27,
-   "title": "Discretize",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Discretize.png",
-   "url": "discretize"
-  },
-  {
-   "order": 28,
-   "title": "Feature Constructor",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Feature Constructor.png",
-   "url": "featureconstructor"
-  },
-  {
-   "order": 29,
-   "title": "Feature Statistics",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Feature Statistics.png",
-   "url": "featurestatistics"
-  },
-  {
-   "order": 30,
-   "title": "Neighbors",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Neighbors.png",
-   "url": "neighbors"
-  },
-  {
-   "order": 31,
-   "title": "Purge Domain",
-   "category": "Data",
-   "keywords": [
-    "remove",
-    "delete",
-    "unused"
-   ],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Purge Domain.png",
-   "url": "purgedomain"
-  },
-  {
-   "order": 32,
-   "title": "Save Data",
-   "category": "Data",
-   "keywords": [],
-   "background": "#FFD39F",
-   "icon": "widget-icons/Data-Save Data.png",
-   "url": "save"
-  }
+[
+ [
+  "Data",
+  [
+   {
+    "title": "File",
+    "category": "Data",
+    "keywords": [
+     "file",
+     "load",
+     "read",
+     "open"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-File.png",
+    "url": "file"
+   },
+   {
+    "title": "CSV File Import",
+    "category": "Data",
+    "keywords": [
+     "file",
+     "load",
+     "read",
+     "open",
+     "csv"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-CSV File Import.png",
+    "url": "csvfileimport"
+   },
+   {
+    "title": "Datasets",
+    "category": "Data",
+    "keywords": [
+     "online"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Datasets.png",
+    "url": "datasets"
+   },
+   {
+    "title": "SQL Table",
+    "category": "Data",
+    "keywords": [
+     "load"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-SQL Table.png",
+    "url": "sqltable"
+   },
+   {
+    "title": "Data Table",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Data Table.png",
+    "url": "datatable"
+   },
+   {
+    "title": "Paint Data",
+    "category": "Data",
+    "keywords": [
+     "create",
+     "draw"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Paint Data.png",
+    "url": "paintdata"
+   },
+   {
+    "title": "Data Info",
+    "category": "Data",
+    "keywords": [
+     "information",
+     "inspect"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Data Info.png",
+    "url": "datainfo"
+   },
+   {
+    "title": "Data Sampler",
+    "category": "Data",
+    "keywords": [
+     "random"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Data Sampler.png",
+    "url": "datasampler"
+   },
+   {
+    "title": "Select Columns",
+    "category": "Data",
+    "keywords": [
+     "filter"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Select Columns.png",
+    "url": "selectcolumns"
+   },
+   {
+    "title": "Select Rows",
+    "category": "Data",
+    "keywords": [
+     "filter"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Select Rows.png",
+    "url": "selectrows"
+   },
+   {
+    "title": "Pivot Table",
+    "category": "Data",
+    "keywords": [
+     "pivot",
+     "group",
+     "aggregate"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Pivot Table.png",
+    "url": "pivot"
+   },
+   {
+    "title": "Rank",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Rank.png",
+    "url": "rank"
+   },
+   {
+    "title": "Correlations",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Correlations.png",
+    "url": "correlations"
+   },
+   {
+    "title": "Merge Data",
+    "category": "Data",
+    "keywords": [
+     "join"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Merge Data.png",
+    "url": "mergedata"
+   },
+   {
+    "title": "Concatenate",
+    "category": "Data",
+    "keywords": [
+     "append",
+     "join",
+     "extend"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Concatenate.png",
+    "url": "concatenate"
+   },
+   {
+    "title": "Select by Data Index",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Select by Data Index.png",
+    "url": "select-by-data-index"
+   },
+   {
+    "title": "Transpose",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Transpose.png",
+    "url": "transpose"
+   },
+   {
+    "title": "Randomize",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Randomize.png",
+    "url": "randomize"
+   },
+   {
+    "title": "Preprocess",
+    "category": "Data",
+    "keywords": [
+     "process"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Preprocess.png",
+    "url": "preprocess"
+   },
+   {
+    "title": "Apply Domain",
+    "category": "Data",
+    "keywords": [
+     "transform"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Apply Domain.png",
+    "url": "applydomain"
+   },
+   {
+    "title": "Impute",
+    "category": "Data",
+    "keywords": [
+     "substitute",
+     "missing"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Impute.png",
+    "url": "impute"
+   },
+   {
+    "title": "Outliers",
+    "category": "Data",
+    "keywords": [
+     "inlier"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Outliers.png",
+    "url": "outliers"
+   },
+   {
+    "title": "Edit Domain",
+    "category": "Data",
+    "keywords": [
+     "rename",
+     "drop",
+     "reorder",
+     "order"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Edit Domain.png",
+    "url": "editdomain"
+   },
+   {
+    "title": "Python Script",
+    "category": "Data",
+    "keywords": [
+     "file",
+     "program"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Python Script.png",
+    "url": "pythonscript"
+   },
+   {
+    "title": "Color",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Color.png",
+    "url": "color"
+   },
+   {
+    "title": "Continuize",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Continuize.png",
+    "url": "continuize"
+   },
+   {
+    "title": "Create Class",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Create Class.png",
+    "url": "createclass"
+   },
+   {
+    "title": "Discretize",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Discretize.png",
+    "url": "discretize"
+   },
+   {
+    "title": "Feature Constructor",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Feature Constructor.png",
+    "url": "featureconstructor"
+   },
+   {
+    "title": "Feature Statistics",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Feature Statistics.png",
+    "url": "featurestatistics"
+   },
+   {
+    "title": "Neighbors",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Neighbors.png",
+    "url": "neighbors"
+   },
+   {
+    "title": "Purge Domain",
+    "category": "Data",
+    "keywords": [
+     "remove",
+     "delete",
+     "unused"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Purge Domain.png",
+    "url": "purgedomain"
+   },
+   {
+    "title": "Save Data",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Save Data.png",
+    "url": "save"
+   }
+  ]
  ],
- "Visualize": [
-  {
-   "order": 0,
-   "title": "Tree Viewer",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Tree Viewer.png",
-   "url": "treeviewer"
-  },
-  {
-   "order": 1,
-   "title": "Box Plot",
-   "category": "Visualize",
-   "keywords": [
-    "whisker"
-   ],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Box Plot.png",
-   "url": "boxplot"
-  },
-  {
-   "order": 2,
-   "title": "Distributions",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Distributions.png",
-   "url": "distributions"
-  },
-  {
-   "order": 3,
-   "title": "Scatter Plot",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Scatter Plot.png",
-   "url": "scatterplot"
-  },
-  {
-   "order": 4,
-   "title": "Line Plot",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Line Plot.png",
-   "url": "lineplot"
-  },
-  {
-   "order": 5,
-   "title": "Sieve Diagram",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Sieve Diagram.png",
-   "url": "sievediagram"
-  },
-  {
-   "order": 6,
-   "title": "Mosaic Display",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Mosaic Display.png",
-   "url": "mosaicdisplay"
-  },
-  {
-   "order": 7,
-   "title": "FreeViz",
-   "category": "Visualize",
-   "keywords": [
-    "viz"
-   ],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-FreeViz.png",
-   "url": "freeviz"
-  },
-  {
-   "order": 8,
-   "title": "Linear Projection",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Linear Projection.png",
-   "url": "linearprojection"
-  },
-  {
-   "order": 9,
-   "title": "Radviz",
-   "category": "Visualize",
-   "keywords": [
-    "viz"
-   ],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Radviz.png",
-   "url": "radviz"
-  },
-  {
-   "order": 10,
-   "title": "Heat Map",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Heat Map.png",
-   "url": "heatmap"
-  },
-  {
-   "order": 11,
-   "title": "Venn Diagram",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Venn Diagram.png",
-   "url": "venndiagram"
-  },
-  {
-   "order": 12,
-   "title": "Silhouette Plot",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Silhouette Plot.png",
-   "url": "silhouetteplot"
-  },
-  {
-   "order": 13,
-   "title": "Pythagorean Tree",
-   "category": "Visualize",
-   "keywords": [
-    "fractal"
-   ],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Pythagorean Tree.png",
-   "url": "pythagoreantree"
-  },
-  {
-   "order": 14,
-   "title": "Pythagorean Forest",
-   "category": "Visualize",
-   "keywords": [
-    "fractal"
-   ],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Pythagorean Forest.png",
-   "url": "pythagoreanforest"
-  },
-  {
-   "order": 15,
-   "title": "CN2 Rule Viewer",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-CN2 Rule Viewer.png",
-   "url": "cn2ruleviewer"
-  },
-  {
-   "order": 16,
-   "title": "Nomogram",
-   "category": "Visualize",
-   "keywords": [],
-   "background": "#FFB7B1",
-   "icon": "widget-icons/Visualize-Nomogram.png",
-   "url": "nomogram"
-  }
+ [
+  "Visualize",
+  [
+   {
+    "title": "Tree Viewer",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Tree Viewer.png",
+    "url": "treeviewer"
+   },
+   {
+    "title": "Box Plot",
+    "category": "Visualize",
+    "keywords": [
+     "whisker"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Box Plot.png",
+    "url": "boxplot"
+   },
+   {
+    "title": "Distributions",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Distributions.png",
+    "url": "distributions"
+   },
+   {
+    "title": "Scatter Plot",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Scatter Plot.png",
+    "url": "scatterplot"
+   },
+   {
+    "title": "Line Plot",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Line Plot.png",
+    "url": "lineplot"
+   },
+   {
+    "title": "Sieve Diagram",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Sieve Diagram.png",
+    "url": "sievediagram"
+   },
+   {
+    "title": "Mosaic Display",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Mosaic Display.png",
+    "url": "mosaicdisplay"
+   },
+   {
+    "title": "FreeViz",
+    "category": "Visualize",
+    "keywords": [
+     "viz"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-FreeViz.png",
+    "url": "freeviz"
+   },
+   {
+    "title": "Linear Projection",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Linear Projection.png",
+    "url": "linearprojection"
+   },
+   {
+    "title": "Radviz",
+    "category": "Visualize",
+    "keywords": [
+     "viz"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Radviz.png",
+    "url": "radviz"
+   },
+   {
+    "title": "Heat Map",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Heat Map.png",
+    "url": "heatmap"
+   },
+   {
+    "title": "Venn Diagram",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Venn Diagram.png",
+    "url": "venndiagram"
+   },
+   {
+    "title": "Silhouette Plot",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Silhouette Plot.png",
+    "url": "silhouetteplot"
+   },
+   {
+    "title": "Pythagorean Tree",
+    "category": "Visualize",
+    "keywords": [
+     "fractal"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Pythagorean Tree.png",
+    "url": "pythagoreantree"
+   },
+   {
+    "title": "Pythagorean Forest",
+    "category": "Visualize",
+    "keywords": [
+     "fractal"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Pythagorean Forest.png",
+    "url": "pythagoreanforest"
+   },
+   {
+    "title": "CN2 Rule Viewer",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-CN2 Rule Viewer.png",
+    "url": "cn2ruleviewer"
+   },
+   {
+    "title": "Nomogram",
+    "category": "Visualize",
+    "keywords": [],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Nomogram.png",
+    "url": "nomogram"
+   }
+  ]
  ],
- "Model": [
-  {
-   "order": 0,
-   "title": "Constant",
-   "category": "Model",
-   "keywords": [
-    "majority",
-    "mean"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Constant.png",
-   "url": "constant"
-  },
-  {
-   "order": 1,
-   "title": "CN2 Rule Induction",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-CN2 Rule Induction.png",
-   "url": "cn2ruleinduction"
-  },
-  {
-   "order": 2,
-   "title": "Calibrated Learner",
-   "category": "Model",
-   "keywords": [
-    "calibration",
-    "threshold"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Calibrated Learner.png"
-  },
-  {
-   "order": 3,
-   "title": "kNN",
-   "category": "Model",
-   "keywords": [
-    "k nearest",
-    "knearest",
-    "neighbor",
-    "neighbour"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-kNN.png",
-   "url": "knn"
-  },
-  {
-   "order": 4,
-   "title": "Tree",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Tree.png",
-   "url": "tree"
-  },
-  {
-   "order": 5,
-   "title": "Random Forest",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Random Forest.png",
-   "url": "randomforest"
-  },
-  {
-   "order": 6,
-   "title": "SVM",
-   "category": "Model",
-   "keywords": [
-    "support vector machines"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-SVM.png",
-   "url": "svm"
-  },
-  {
-   "order": 7,
-   "title": "Linear Regression",
-   "category": "Model",
-   "keywords": [
-    "ridge",
-    "lasso",
-    "elastic net"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Linear Regression.png",
-   "url": "linearregression"
-  },
-  {
-   "order": 8,
-   "title": "Logistic Regression",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Logistic Regression.png",
-   "url": "logisticregression"
-  },
-  {
-   "order": 9,
-   "title": "Naive Bayes",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Naive Bayes.png",
-   "url": "naivebayes"
-  },
-  {
-   "order": 10,
-   "title": "AdaBoost",
-   "category": "Model",
-   "keywords": [
-    "boost"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-AdaBoost.png",
-   "url": "adaboost"
-  },
-  {
-   "order": 11,
-   "title": "Neural Network",
-   "category": "Model",
-   "keywords": [
-    "mlp"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Neural Network.png",
-   "url": "neuralnetwork"
-  },
-  {
-   "order": 12,
-   "title": "Stochastic Gradient Descent",
-   "category": "Model",
-   "keywords": [
-    "sgd"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Stochastic Gradient Descent.png",
-   "url": "stochasticgradient"
-  },
-  {
-   "order": 13,
-   "title": "Stacking",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Stacking.png",
-   "url": "stacking"
-  },
-  {
-   "order": 14,
-   "title": "Save Model",
-   "category": "Model",
-   "keywords": [],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Save Model.png",
-   "url": "savemodel"
-  },
-  {
-   "order": 15,
-   "title": "Load Model",
-   "category": "Model",
-   "keywords": [
-    "file",
-    "open"
-   ],
-   "background": "#FAC1D9",
-   "icon": "widget-icons/Model-Load Model.png",
-   "url": "loadmodel"
-  }
+ [
+  "Model",
+  [
+   {
+    "title": "Constant",
+    "category": "Model",
+    "keywords": [
+     "majority",
+     "mean"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Constant.png",
+    "url": "constant"
+   },
+   {
+    "title": "CN2 Rule Induction",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-CN2 Rule Induction.png",
+    "url": "cn2ruleinduction"
+   },
+   {
+    "title": "Calibrated Learner",
+    "category": "Model",
+    "keywords": [
+     "calibration",
+     "threshold"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Calibrated Learner.png"
+   },
+   {
+    "title": "kNN",
+    "category": "Model",
+    "keywords": [
+     "k nearest",
+     "knearest",
+     "neighbor",
+     "neighbour"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-kNN.png",
+    "url": "knn"
+   },
+   {
+    "title": "Tree",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Tree.png",
+    "url": "tree"
+   },
+   {
+    "title": "Random Forest",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Random Forest.png",
+    "url": "randomforest"
+   },
+   {
+    "title": "SVM",
+    "category": "Model",
+    "keywords": [
+     "support vector machines"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-SVM.png",
+    "url": "svm"
+   },
+   {
+    "title": "Linear Regression",
+    "category": "Model",
+    "keywords": [
+     "ridge",
+     "lasso",
+     "elastic net"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Linear Regression.png",
+    "url": "linearregression"
+   },
+   {
+    "title": "Logistic Regression",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Logistic Regression.png",
+    "url": "logisticregression"
+   },
+   {
+    "title": "Naive Bayes",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Naive Bayes.png",
+    "url": "naivebayes"
+   },
+   {
+    "title": "AdaBoost",
+    "category": "Model",
+    "keywords": [
+     "boost"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-AdaBoost.png",
+    "url": "adaboost"
+   },
+   {
+    "title": "Neural Network",
+    "category": "Model",
+    "keywords": [
+     "mlp"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Neural Network.png",
+    "url": "neuralnetwork"
+   },
+   {
+    "title": "Stochastic Gradient Descent",
+    "category": "Model",
+    "keywords": [
+     "sgd"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Stochastic Gradient Descent.png",
+    "url": "stochasticgradient"
+   },
+   {
+    "title": "Stacking",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Stacking.png",
+    "url": "stacking"
+   },
+   {
+    "title": "Save Model",
+    "category": "Model",
+    "keywords": [],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Save Model.png",
+    "url": "savemodel"
+   },
+   {
+    "title": "Load Model",
+    "category": "Model",
+    "keywords": [
+     "file",
+     "open"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Load Model.png",
+    "url": "loadmodel"
+   }
+  ]
  ],
- "Evaluate": [
-  {
-   "order": 0,
-   "title": "Test and Score",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-Test and Score.png",
-   "url": "testandscore"
-  },
-  {
-   "order": 1,
-   "title": "Predictions",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-Predictions.png",
-   "url": "predictions"
-  },
-  {
-   "order": 2,
-   "title": "Confusion Matrix",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-Confusion Matrix.png",
-   "url": "confusionmatrix"
-  },
-  {
-   "order": 3,
-   "title": "ROC Analysis",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-ROC Analysis.png",
-   "url": "rocanalysis"
-  },
-  {
-   "order": 4,
-   "title": "Lift Curve",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-Lift Curve.png",
-   "url": "liftcurve"
-  },
-  {
-   "order": 5,
-   "title": "Calibration Plot",
-   "category": "Evaluate",
-   "keywords": [],
-   "background": "#C3F3F3",
-   "icon": "widget-icons/Evaluate-Calibration Plot.png",
-   "url": "calibrationplot"
-  }
+ [
+  "Evaluate",
+  [
+   {
+    "title": "Test and Score",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Test and Score.png",
+    "url": "testandscore"
+   },
+   {
+    "title": "Predictions",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Predictions.png",
+    "url": "predictions"
+   },
+   {
+    "title": "Confusion Matrix",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Confusion Matrix.png",
+    "url": "confusionmatrix"
+   },
+   {
+    "title": "ROC Analysis",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-ROC Analysis.png",
+    "url": "rocanalysis"
+   },
+   {
+    "title": "Lift Curve",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Lift Curve.png",
+    "url": "liftcurve"
+   },
+   {
+    "title": "Calibration Plot",
+    "category": "Evaluate",
+    "keywords": [],
+    "background": "#C3F3F3",
+    "icon": "widget-icons/Evaluate-Calibration Plot.png",
+    "url": "calibrationplot"
+   }
+  ]
  ],
- "Unsupervised": [
-  {
-   "order": 0,
-   "title": "Distance File",
-   "category": "Unsupervised",
-   "keywords": [
-    "load",
-    "read",
-    "open"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Distance File.png",
-   "url": "distancefile"
-  },
-  {
-   "order": 1,
-   "title": "Distance Matrix",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Distance Matrix.png",
-   "url": "distancematrix"
-  },
-  {
-   "order": 2,
-   "title": "t-SNE",
-   "category": "Unsupervised",
-   "keywords": [
-    "tsne"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-t-SNE.png",
-   "url": "tsne"
-  },
-  {
-   "order": 3,
-   "title": "Distance Map",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Distance Map.png",
-   "url": "distancemap"
-  },
-  {
-   "order": 4,
-   "title": "Hierarchical Clustering",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Hierarchical Clustering.png",
-   "url": "hierarchicalclustering"
-  },
-  {
-   "order": 5,
-   "title": "k-Means",
-   "category": "Unsupervised",
-   "keywords": [
-    "kmeans",
-    "clustering"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-k-Means.png",
-   "url": "kmeans"
-  },
-  {
-   "order": 6,
-   "title": "Louvain Clustering",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Louvain Clustering.png",
-   "url": "louvainclustering"
-  },
-  {
-   "order": 7,
-   "title": "DBSCAN",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-DBSCAN.png",
-   "url": "DBSCAN"
-  },
-  {
-   "order": 8,
-   "title": "Manifold Learning",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Manifold Learning.png",
-   "url": "manifoldlearning"
-  },
-  {
-   "order": 9,
-   "title": "PCA",
-   "category": "Unsupervised",
-   "keywords": [
-    "principal component analysis",
-    "linear transformation"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-PCA.png",
-   "url": "PCA"
-  },
-  {
-   "order": 10,
-   "title": "Correspondence Analysis",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Correspondence Analysis.png",
-   "url": "correspondenceanalysis"
-  },
-  {
-   "order": 11,
-   "title": "Distances",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Distances.png",
-   "url": "distances"
-  },
-  {
-   "order": 12,
-   "title": "Distance Transformation",
-   "category": "Unsupervised",
-   "keywords": [],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Distance Transformation.png",
-   "url": "distancetransformation"
-  },
-  {
-   "order": 13,
-   "title": "MDS",
-   "category": "Unsupervised",
-   "keywords": [
-    "multidimensional scaling",
-    "multi dimensional scaling"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-MDS.png",
-   "url": "mds"
-  },
-  {
-   "order": 14,
-   "title": "Save Distance Matrix",
-   "category": "Unsupervised",
-   "keywords": [
-    "distance matrix",
-    "save"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Save Distance Matrix.png",
-   "url": "savedistancematrix"
-  },
-  {
-   "order": 15,
-   "title": "Self-Organizing Map",
-   "category": "Unsupervised",
-   "keywords": [
-    "SOM"
-   ],
-   "background": "#CAE1EF",
-   "icon": "widget-icons/Unsupervised-Self-Organizing Map.png",
-   "url": "selforganizingmap"
-  }
+ [
+  "Unsupervised",
+  [
+   {
+    "title": "Distance File",
+    "category": "Unsupervised",
+    "keywords": [
+     "load",
+     "read",
+     "open"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Distance File.png",
+    "url": "distancefile"
+   },
+   {
+    "title": "Distance Matrix",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Distance Matrix.png",
+    "url": "distancematrix"
+   },
+   {
+    "title": "t-SNE",
+    "category": "Unsupervised",
+    "keywords": [
+     "tsne"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-t-SNE.png",
+    "url": "tsne"
+   },
+   {
+    "title": "Distance Map",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Distance Map.png",
+    "url": "distancemap"
+   },
+   {
+    "title": "Hierarchical Clustering",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Hierarchical Clustering.png",
+    "url": "hierarchicalclustering"
+   },
+   {
+    "title": "k-Means",
+    "category": "Unsupervised",
+    "keywords": [
+     "kmeans",
+     "clustering"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-k-Means.png",
+    "url": "kmeans"
+   },
+   {
+    "title": "Louvain Clustering",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Louvain Clustering.png",
+    "url": "louvainclustering"
+   },
+   {
+    "title": "DBSCAN",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-DBSCAN.png",
+    "url": "DBSCAN"
+   },
+   {
+    "title": "Manifold Learning",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Manifold Learning.png",
+    "url": "manifoldlearning"
+   },
+   {
+    "title": "PCA",
+    "category": "Unsupervised",
+    "keywords": [
+     "principal component analysis",
+     "linear transformation"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-PCA.png",
+    "url": "PCA"
+   },
+   {
+    "title": "Correspondence Analysis",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Correspondence Analysis.png",
+    "url": "correspondenceanalysis"
+   },
+   {
+    "title": "Distances",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Distances.png",
+    "url": "distances"
+   },
+   {
+    "title": "Distance Transformation",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Distance Transformation.png",
+    "url": "distancetransformation"
+   },
+   {
+    "title": "MDS",
+    "category": "Unsupervised",
+    "keywords": [
+     "multidimensional scaling",
+     "multi dimensional scaling"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-MDS.png",
+    "url": "mds"
+   },
+   {
+    "title": "Save Distance Matrix",
+    "category": "Unsupervised",
+    "keywords": [
+     "distance matrix",
+     "save"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Save Distance Matrix.png",
+    "url": "savedistancematrix"
+   },
+   {
+    "title": "Self-Organizing Map",
+    "category": "Unsupervised",
+    "keywords": [
+     "SOM"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Self-Organizing Map.png",
+    "url": "selforganizingmap"
+   }
+  ]
+ ],
+ [
+  "Spectroscopy",
+  [
+   {
+    "title": "Spectra",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Spectra.png",
+    "url": "spectra"
+   },
+   {
+    "title": "HyperSpectra",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-HyperSpectra.png",
+    "url": "hyperspectra"
+   },
+   {
+    "title": "Spectral Series",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Spectral Series.png"
+   },
+   {
+    "title": "Interpolate",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Interpolate.png",
+    "url": "interpolate"
+   },
+   {
+    "title": "Preprocess Spectra",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Preprocess Spectra.png",
+    "url": "preprocess-spectra"
+   },
+   {
+    "title": "Integrate Spectra",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Integrate Spectra.png",
+    "url": "integrate-spectra"
+   },
+   {
+    "title": "Multifile",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Multifile.png",
+    "url": "multifile"
+   },
+   {
+    "title": "Average Spectra",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Average Spectra.png",
+    "url": "average"
+   },
+   {
+    "title": "Bin",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Bin.png"
+   },
+   {
+    "title": "Interferogram to Spectrum",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Interferogram to Spectrum.png",
+    "url": "interferogram-to-spectrum"
+   },
+   {
+    "title": "Reshape Map",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Reshape Map.png",
+    "url": "reshape-map"
+   },
+   {
+    "title": "Align Stack",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Align Stack.png"
+   }
+  ]
  ]
-}
+]
