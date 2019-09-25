@@ -1,4 +1,3 @@
-import glob
 import shutil
 import json
 import os
@@ -6,14 +5,12 @@ from os import path
 import re
 import sys
 
+from collections import defaultdict
 from urllib.parse import urlparse
 
 
 def is_absolute(url):
     return bool(urlparse(url).netloc)
-
-
-print("Copy script: started.")
 
 
 def front_matter(widget):
@@ -112,7 +109,55 @@ def save_widget_icon(
         print("Failed to save " + outname)
 
 
-add_doc_path = sys.argv[1]
+def process_widget(cat, w, webpage_json):
+    wd = {}
+    wd["order"] = len(webpage_json[cat])
+    wd["title"] = w["text"]
+    wd["category"] = cat
+    wd["keywords"] = w["keywords"]
+
+    wd["background"] = w["background"]
+    icon_svg = path.join(add_doc_path, w["icon"])
+    icon_png = "widget-icons/%s-%s.png" % (cat, w["text"])
+    icon_file = path.join("static", icon_png)
+    if not path.exists(path.dirname(icon_file)):
+        os.makedirs(path.dirname(icon_file))
+    save_widget_icon(w["background"], icon_svg, icon_file)
+    wd["icon"] = icon_png
+
+    if w["doc"]:
+        md_file = path.join(add_doc_path, w["doc"])
+        md = open(md_file, "rt").read()
+
+        category = cat.lower()
+
+        copy_images(md_file,
+                    md,
+                    path.dirname(md_file),
+                    path.join(to_location_static, category))
+
+        md = change_references(md_file,
+                               md,
+                               category,
+                               path.join(to_location_static, category))
+
+        # FIXME spaces (and other strange chars) in categories?
+        loc = path.join(to_location, category)
+        if not os.path.exists(loc):
+            os.makedirs(loc)
+
+        url = path.basename(md_file)[:-3]
+
+        with open(path.join(loc, url + ".md"), 'wt') as of:
+            of.write(front_matter(wd) + md)
+            of.close()
+
+        wd["url"] = url
+
+    webpage_json[cat].append(wd)
+
+
+print("Copy script: started.")
 
 to_location = "content/widget-catalog/"
 to_location_static = "static/widget-catalog/"
@@ -120,68 +165,21 @@ to_location_static = "static/widget-catalog/"
 from AnyQt.QtWidgets import QApplication
 app = QApplication([])
 
-with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
-    widgets_json = json.loads(f.read())
+webpage_json = defaultdict(list)
 
-    from collections import defaultdict
-    webpage_json = defaultdict(list)
+for add_doc_path in sys.argv[1:]:
+    with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
+        widgets_json = json.loads(f.read())
+        for cat, widgets in widgets_json:
+            for w in widgets:
+                process_widget(cat, w, webpage_json)
 
-    for cat, widgets in widgets_json:
-        for w in widgets:
-            wd = {}
-            wd["order"] = len(webpage_json[cat])
-            wd["title"] = w["text"]
-            wd["category"] = cat
-            wd["keywords"] = w["keywords"]
+s = json.dumps(webpage_json, indent=1)
 
-            wd["background"] = w["background"]
-            icon_svg = path.join(add_doc_path, w["icon"])
-            icon_png = "widget-icons/%s-%s.png" % (cat, w["text"])
-            icon_file = path.join("static", icon_png)
-            if not path.exists(path.dirname(icon_file)):
-                os.makedirs(path.dirname(icon_file))
-            save_widget_icon(w["background"], icon_svg, icon_file)
-            wd["icon"] = icon_png
+with open('data/widgets.json', 'w') as outfile:
+    json.dump(webpage_json, outfile, indent=1)
 
-            if w["doc"]:
-                md_file = path.join(add_doc_path, w["doc"])
-                md = open(md_file, "rt").read()
-
-                f = front_matter(wd)
-
-                category = cat.lower()
-
-                copy_images(md_file,
-                            md,
-                            path.dirname(md_file),
-                            path.join(to_location_static, category))
-
-                md = change_references(md_file,
-                                       md,
-                                       category,
-                                       path.join(to_location_static, category))
-
-                # FIXME spaces (and other strange chars) in categories?
-                loc = path.join(to_location, category)
-                if not os.path.exists(loc):
-                    os.makedirs(loc)
-
-                url = path.basename(md_file)[:-3]
-
-                with open(path.join(loc, url + ".md"), 'wt') as of:
-                    of.write(front_matter(wd) + md)
-                    of.close()
-
-                wd["url"] = url
-
-            webpage_json[cat].append(wd)
-
-    s = json.dumps(webpage_json, indent=1)
-
-    with open('data/widgets.json', 'w') as outfile:
-        json.dump(webpage_json, outfile, indent=1)
-
-    with open('static/widgets.json', 'w') as outfile:
-        json.dump(webpage_json, outfile, indent=1)
+with open('static/widgets.json', 'w') as outfile:
+    json.dump(webpage_json, outfile, indent=1)
 
 print("Copy script: finished")
