@@ -10,12 +10,13 @@
          <div class="col-md-12 col-sm-12 col-xs-12" >
           <h3 id="results" style="display: none;margin-top: 0px !important">No widgets match your search.</h3>
           {{ if $.Site.Data.widgets}}
-
-            {{ range $key, $value := $.Site.Data.widgets }}
+            {{ range $.Site.Data.widgets }}
+            {{$key := index . 0 }}
+            {{$value := index . 1 }}
             <h2 class="widget-topic">{{ $key }}</h2>
             <div class="toctree-wrapper compound">
                <ul>
-                  {{range sort $value "order"}}
+                  {{range $value}}
                   <li class="toctree-l1">
                       {{ if .url }}<a href="{{ lower .category}}/{{ .url }}">{{end}}
                       <img alt="{{ .title }}" src="/{{ .icon }}"/>
@@ -45,12 +46,8 @@
     		var WIDGET_JS = json;
     		var WIDG_JS = {}
   			var widget_idx = 0
-  			for (var field_key in WIDGET_JS){
-
-
-  				var field_val = WIDGET_JS[field_key];
-          field_val.sort((a,b) => (a.order > b.order) ? 1 : ((b.order > a.order) ? -1 : 0));
-          
+  			for (var i in WIDGET_JS){
+  				var field_val = WIDGET_JS[i][1];
   			    for (var widget in field_val){
   			        //  Widget name
   			        var key = field_val[widget].title;
@@ -62,7 +59,6 @@
   			        }
   			        widget_idx += 1
   			    }
-
   			    }
   			var data_for_trie = WIDG_JS;
         var options = {

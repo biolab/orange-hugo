@@ -110,8 +110,15 @@ def save_widget_icon(
 
 
 def process_widget(cat, w, webpage_json):
+
+    for c, cat_list in webpage_json:
+        if cat == c:
+            break
+    else:
+        cat_list = []
+        webpage_json.append((cat, cat_list))
+
     wd = {}
-    wd["order"] = len(webpage_json[cat])
     wd["title"] = w["text"]
     wd["category"] = cat
     wd["keywords"] = w["keywords"]
@@ -154,7 +161,7 @@ def process_widget(cat, w, webpage_json):
 
         wd["url"] = url
 
-    webpage_json[cat].append(wd)
+    cat_list.append(wd)
 
 
 print("Copy script: started.")
@@ -165,7 +172,7 @@ to_location_static = "static/widget-catalog/"
 from AnyQt.QtWidgets import QApplication
 app = QApplication([])
 
-webpage_json = defaultdict(list)
+webpage_json = []
 
 for add_doc_path in sys.argv[1:]:
     with open(path.join(add_doc_path, "widgets.json"), 'rt') as f:
