@@ -1242,10 +1242,12 @@ h2.docs-subtitle {
     background-color: rgb(33,150,243, 0.3) !important;
 }
 
-.workflow-image{
-  padding:20px;
-  width: 500px;
-  height: 300px;
+.workflow-image {
+  padding-bottom:0px !important;
+  padding: 20px;
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
 }
 
 #post_nor .row {
@@ -1340,9 +1342,7 @@ h2.docs-subtitle {
   margin-right:0px !important;
   margin-left: 0px !important;
 }
-.workflow-image{
-  padding-bottom:0px !important;
-}
+
 .blog-content{
   padding-top: 20px !important;
 }
@@ -1389,12 +1389,6 @@ padding-top: 10px;
 
 .active-tag {
     background-color: rgb(33,150,243, 0.3) !important;
-}
-
-.workflow-image{
-  padding:20px;
-  width: 500px;
-  height: 300px;
 }
 
 .categoriesList{
