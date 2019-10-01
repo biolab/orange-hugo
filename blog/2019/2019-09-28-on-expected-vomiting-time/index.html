@@ -1,0 +1,547 @@
+<html>    
+    <head>
+    <title>Orange – On Expected Vomiting Time Data Mining Fruitful and Fun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container header-pad" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_new.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+  <div id="overflow-container" class="overflow-container">
+
+  <div id="loop-container" class="loop-container">
+
+        
+
+      <div class="post type-post status-publish format-standard hentry category-standard category-travel entry full-without-featured odd excerpt-1 no-image">
+
+        
+        
+        <div class="entry-meta">
+
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+
+            <a href="/categories/model%20performance">model performance</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/confusion%20matrix">confusion matrix</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+
+            <a href="/categories/education">education</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> On Expected Vomiting Time</h1>
+          <span class="author-blog ">
+            
+            By: Janez Demšar,
+             
+            Sep 28, 2019
+          </span>
+        </div>
+
+        <div class="entry-container">
+          <div class="entry-content md" >
+            <article>
+              
+
+<p>We just finished a lecture and a student came with a question. The lecture was, in short, about how predictive models compute probabilities; to use a model for making decisions, we must find a threshold that will minimize the cost, maximize the profit, strike a good balance between sensitivity and specificity, or increase the general human well-being in some other way. So this student came with a question about something I didn&rsquo;t explain well, and she gave me one last chance.</p>
+
+<p>I had some data that looked like this.</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">ID</th>
+<th align="center">&nbsp;&nbsp;&nbsp;predicted prob.&nbsp;&nbsp;&nbsp;</th>
+<th align="center">аctual class</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">0.984</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">2</td>
+<td align="center">0.907</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">3</td>
+<td align="center">0.881</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">4</td>
+<td align="center">0.865</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">5</td>
+<td align="center">0.815</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">6</td>
+<td align="center">0.741</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">7</td>
+<td align="center">0.735</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">8</td>
+<td align="center">0.635</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">9</td>
+<td align="center">0.582</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">10</td>
+<td align="center">0.480</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">11</td>
+<td align="center">0.413</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">12</td>
+<td align="center">0.317</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">13</td>
+<td align="center">0.287</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">14</td>
+<td align="center">0.225</td>
+<td align="center">n</td>
+</tr>
+
+<tr>
+<td align="right">15</td>
+<td align="center">0.216</td>
+<td align="center">p</td>
+</tr>
+
+<tr>
+<td align="right">16</td>
+<td align="center">0.183</td>
+<td align="center">n</td>
+</tr>
+</tbody>
+</table>
+
+<p><p></p>
+
+<p>The data is made up, so I had to make up its meaning to form an example. In the rush of a moment, I succumbed to classics: &ldquo;<em>For each of those 16 people you predicted the probability for being sick. Whom are you going to give the cure?</em>&rdquo; Her answer was in line with the best manners of modern medical practice (who cares about bacteria becoming resistant to antibiotics?): &ldquo;<em>To all!</em>&rdquo; I didn&rsquo;t expect this, but anyway planned to continue with emphasizing that this medicine is not harmless: &ldquo;<em>People who take it will vomit for one week.</em>&rdquo; She turned by 180 degrees: &ldquo;<em>Oh, no. To nobody!</em>&rdquo; I didn&rsquo;t expect this either, but it still led nicely to my next condition: &ldquo;<em>But if a person is indeed sick and you don&rsquo;t give him the drug, he&rsquo;ll vomit for four weeks.</em>&ldquo;</p>
+
+<p>Decision making becomes much more interesting when both options have consequences.</p>
+
+<p>So, to restate:</p>
+
+<ul>
+<li>if you give the medicine to anybody, sick or healthy, he vomits for a week;</li>
+<li>if you don&rsquo;t give the cure to a sick person, he vomits for four weeks &ndash; and you can no longer help him after he starts.</li>
+</ul>
+
+<h2 id="optimal-threshold">Optimal threshold</h2>
+
+<p>To solve the problem, we had to compute the <em>expected vomiting time</em>. This being a fairly new medical term, we need to define it. For instance, what would be the <em>expected vomiting time</em> for a person who is sick with a probability of 0.865? If we have 1000 people with such probability of being sick, 865 will vomit (for four weeks) and 135 won&rsquo;t.</p>
+
+<ul>
+<li>If we don&rsquo;t give these 1000 people the medicine, 865 will vomit for 4 weeks, hence the total vomiting time will be 4 x 865 = 3460 weeks, or 3.460 weeks per person, where the average includes those who are not vomiting. This is of course the same as if we just multiplied 4 x 0.865, without multiplying and then dividing by 1000.</li>
+<li>If we give these 1000 people the medicine, all 1000 will vomit for a week, thus totaling 1000 weeks of vomiting or, obviously, 1 week per person.</li>
+</ul>
+
+<p>The latter option is better. Administering the medicine will reduce the <em>expected vomiting time</em> (per person) from 3.460 weeks to 1 week. Well done.</p>
+
+<p>What about people with 0.216 probability of being sick? Expected vomiting time of such persons is 4 x 0.216 = 0.864, which is less than a week. No drug for them. (The poor bloke with the 0.216 probability is actually sick. But we don&rsquo;t know this yet. S..t happens. I mean, vomit happens.)</p>
+
+<p>Obviously, the optimal threshold here is 0.250, which gives the expected vomiting time of 1 week, with or without the drug. We should administer the drug to all except the last three people in the list.</p>
+
+<p>We could have computed this threshold even before having the model. It is a property of the disease and the drug, not the model.</p>
+
+<p>For an extra task, compute the expected vomiting time with a threshold of 0.25. Note that you can&rsquo;t assume that 25&nbsp;% of untreated people will vomit for 4 weeks: some of those below the 0.25 threshold may also have just 12&nbsp;% or 3&nbsp;% chance of being sick. Assume a uniform probability distribution.</p>
+
+<h2 id="optimal-threshold-for-the-model">Optimal threshold for the model</h2>
+
+<p>We have so far used just probabilities and ignored the information whether somebody is sick (p) or not (n), which is given in the third column. We also assumed that predicted probabilities were correct because we had nothing else to go by.</p>
+
+<p>Now let us take the true status into account. It will allow us to compute the actual vomiting times when using this concrete model at particular thresholds.</p>
+
+<p>If we indeed used the threshold of 0.25 and administered the drug to the first 13 people, we&rsquo;d have 13 people vomiting for 1 week, and the poor guy #15 suffering for 4, which gives us (well, which gives <em>them</em>) the total vomiting time of 13 + 4 = 17 weeks, or <sup>17</sup>&frasl;<sub>16</sub> = 1.0625 per person.</p>
+
+<p>If we instead used a threshold of 0.2, 15 people would vomit for 1 week and nobody for 4 weeks. This reduces total vomiting time to 15 weeks.</p>
+
+<p>(The actual story we developed with the student was slightly different, but roughly at this point, a student who was doing something else and has just started listening to our debate about expected and total vomiting times, interrupted us with: &ldquo;<em>Who are all these people and why are they vomiting?</em>&rdquo; We had to explain that nobody is vomiting and that we (that is: I) just have a <em>sick</em> sense for examples.)</p>
+
+<p>But there&rsquo;s an even better threshold. If we give the drug only to people whose probability is at least 0.48, 10 people will vomit for one week and the poor guy #15 for four weeks, giving us a total of 14 weeks of vomiting. Or <sup>14</sup>&frasl;<sub>16</sub> = 0.875 weeks per person.</p>
+
+<p>We shouldn&rsquo;t go any higher. Every sick person whom we don&rsquo;t give a drug needs to be counterbalanced by at least three healthy people being freed from a one-week ordeal, and there are not enough healthy persons left above 0.48.</p>
+
+<p>In this way, we simulated what would happen if we used this model on the population represented by this sample of people. So if we use it in practice and our goal is to reduce the total (or average) vomiting time, we know to administer the drug to everybody with p &ge; 0.48.</p>
+
+<p>Why the discrepancy? Why isn&rsquo;t the threshold that we computed above, 0.250, also the optimal threshold? 0.250 would be the optimal threshold if predicted probabilities were true probabilities. Model&rsquo;s may be badly calibrated. While there exist methods for fixing their calibration (though not with so little data), we here took a more direct approach and computed the threshold for probabilities as predicted by our model.</p>
+
+<h3 id="pedagogical-moral">Pedagogical Moral</h3>
+
+<p>The nice thing about the story is that we didn&rsquo;t care about classification accuracy. Oh, yes, after fixing the threshold to 0.48, we can compute it (it&rsquo;s <sup>11</sup>&frasl;<sub>16</sub> &ndash; just count the p&rsquo;s above and n&rsquo;s below the threshold). We also see that the probability of administering a drug to a healthy person (and making him needlessly hug the toilet for seven days) is 40&nbsp;%, because in our sample, we had 4 such cases out of 10 whom we gave the drug. We call such poor victims <em>false positives</em>, and 40 % is the <em>false discovery rate</em>. The miserables whom we don&rsquo;t give the drug though we should, are <em>false negatives</em>. The <em>false omission rate</em> (being sick if you&rsquo;re not given a drug) is <sup>1</sup>&frasl;<sub>6</sub>. The probability of not being given the drug if you&rsquo;re sick (<em>miss rate</em> or <em>false negative rate</em>) is <sup>1</sup>&frasl;<sub>7</sub>. I&rsquo;m of course just copying this from Wikipedia. Nobody knows the entire list of names.</p>
+
+<p>As a lecturer, I believe that emphasizing this list of names too much may do more harm than good. I usually show them the list just to say that all these things have names, but then try to compute something meaningful and not fancy-named. Try forcing them to learn the list and then give them a task like above. They&rsquo;ll likely spend the entire exam guessing whether you want them to compute <em>specificity</em> or <em>critical success index</em> &ndash; instead of simply computing the <em>expected vomiting time</em>. Which is not even on Wikipedia.</p>
+
+<p>Yet.</p>
+
+            </article>
+          </div>
+          
+
+
+</div>
+</div>
+</div>
+</div>
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-pad">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/47gRDUQ" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 28 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-09-28-on-expected-vomiting-time/">On Expected Vomiting Time</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 26 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-07-26-doctoral_summer_school/">Doctoral Summer School</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

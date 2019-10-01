@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/blog/2019/2019-09-28-on-expected-vomiting-time/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-08-27-pivot-table/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
@@ -1228,7 +1233,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1339,6 +1344,12 @@
   
   <url>
     <loc>/tags/confusion-matrix/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/confusion-matrix/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1526,7 +1537,7 @@
   
   <url>
     <loc>/categories/education/</loc>
-    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1864,6 +1875,12 @@
   </url>
   
   <url>
+    <loc>/categories/model-performance/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/visualize/mosaicdisplay/</loc>
   </url>
   
@@ -1955,7 +1972,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

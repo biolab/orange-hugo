@@ -147,6 +147,15 @@
     </item>
     
     <item>
+      <title>Confusion Matrix</title>
+      <link>/categories/confusion-matrix/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/confusion-matrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Correlations</title>
       <link>/categories/correlations/</link>
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
@@ -239,7 +248,7 @@
     <item>
       <title>Education</title>
       <link>/categories/education/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/education/</guid>
       <description></description>
@@ -557,6 +566,15 @@
       <pubDate>Mon, 09 Jan 2012 12:41:00 +0000</pubDate>
       
       <guid>/categories/mlc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model Performance</title>
+      <link>/categories/model-performance/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/model-performance/</guid>
       <description></description>
     </item>
     
