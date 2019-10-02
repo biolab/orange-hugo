@@ -180,49 +180,14 @@
 <section class="features section padding-bottom footer-page">
         <div class="container page-background" style="text-align: center; margin-top: 80px;">
 
-            <div class="row text-center" style="text-align: center;">
-                <div class="col-*-12" style="margin: auto;">
-                
-                
-                
-                    
-                    
-                    
-                    <div class="col-xl col-md col-sm-auto col-xs-auto faq activefaq" style="display: inline-block;"
-                        id="button1" onclick="troubleshooting()">
-                        <h2>Troubleshooting</h2>
-                    </div>
-                    
-                
-                    
-                    
-                    
-                    <div class="col-xl col-md col-sm-auto col-xs-auto faq " style="display: inline-block;"
-                        id="button2" onclick="education()">
-                        <h2>Education</h2>
-                    </div>
-                    
-                
-                    
-                    
-                    
-                    <div class="col-xl col-md col-sm-auto col-xs-auto faq " style="display: inline-block;"
-                        id="button3" onclick="aboutorange()">
-                        <h2>About Orange</h2>
-                    </div>
-                    
-                
-                </div>
-            </div>
             
             
             
-            
-                
                 
                 
                 <div class="container faqC" id="troubleshooting" style="text-align: left;">
                     <div class="panel-group" id="faqAccordion1">
+                        <h2>Troubleshooting</h2>
                     
                         
                             <div class="panel panel-default">
@@ -295,9 +260,9 @@
             
                 
                 
-                
-                <div class="container faqC" id="education" style="display: none; text-align: left;">
+                <div class="container faqC" id="education" style="text-align: left;">
                     <div class="panel-group" id="faqAccordion2">
+                        <h2>Education</h2>
                     
                         
                             <div class="panel panel-default">
@@ -385,9 +350,9 @@
             
                 
                 
-                
-                <div class="container faqC" id="aboutorange" style="display: none; text-align: left;">
+                <div class="container faqC" id="aboutorange" style="text-align: left;">
                     <div class="panel-group" id="faqAccordion3">
+                        <h2>About Orange</h2>
                     
                         
                             <div class="panel panel-default">
@@ -508,29 +473,6 @@
     </div>
 </section>
 
-<script type="text/javascript">
-    function troubleshooting() {
-        $("#button2").removeClass("activefaq");
-        $("#button3").removeClass("activefaq");
-        $("#education, #aboutorange").hide()
-        $("#troubleshooting").show();
-        $("#button1").addClass('activefaq');
-    }
-    function education() {
-        $("#button1").removeClass("activefaq");
-        $("#button3").removeClass("activefaq");
-        $("#troubleshooting, #aboutorange").hide()
-        $("#education").show();
-        $("#button2").addClass('activefaq');
-    }
-    function aboutorange() {
-        $("#button1").removeClass("activefaq");
-        $("#button2").removeClass("activefaq");
-        $("#troubleshooting, #education").hide()
-        $("#aboutorange").show();
-        $("#button3").addClass('activefaq');
-    }
-</script>
 
 
         </div>
