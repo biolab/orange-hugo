@@ -3,31 +3,14 @@
 <section class="features section padding-bottom footer-page">
         <div class="container page-background" style="text-align: center; margin-top: 80px;">
 
-            <div class="row text-center" style="text-align: center;">
-                <div class="col-*-12" style="margin: auto;">
-                {{/* the .Scratch.Set needed to count iterations */}}
-                {{ $.Scratch.Set "counter-outer" 1 }}
-                {{ range $faq := .Site.Data.faq }}
-                    {{ $index := $.Scratch.Get "counter-outer" }}
-                    {{ $func := $faq.params.func }}
-                    {{ $active := (cond (eq $index 1) "activefaq" "") }}
-                    <div class="col-xl col-md col-sm-auto col-xs-auto faq {{ $active }}" style="display: inline-block;"
-                        id="button{{ $index }}" onclick="{{ $func | safeJS }}()">
-                        <h2>{{ $faq.params.title }}</h2>
-                    </div>
-                    {{ $.Scratch.Set "counter-outer" (add ($.Scratch.Get "counter-outer") 1) }}
-                {{ end }}
-                </div>
-            </div>
-            
             {{ $.Scratch.Set "counter-outer" 1 }}
             {{ $.Scratch.Set "counter-inner" 1 }}
             {{ range $faq := .Site.Data.faq }}
                 {{ $index := $.Scratch.Get "counter-outer" }}
-                {{ $style := (cond (eq $index 1) "text-align: left;" "display: none; text-align: left;") }}
                 {{ $buttonId := .params.func }}
-                <div class="container faqC" id="{{ $buttonId }}" style="{{ $style  | safeCSS }}">
+                <div class="container faqC" id="{{ $buttonId }}" style="text-align: left;">
                     <div class="panel-group" id="faqAccordion{{ $index }}">
+                        <h2>{{ $faq.params.title }}</h2>
                     {{ range .item }}
                         {{ $id := $.Scratch.Get "counter-inner" }}
                             <div class="panel panel-default">
@@ -52,28 +35,5 @@
     </div>
 </section>
 
-<script type="text/javascript">
-    function troubleshooting() {
-        $("#button2").removeClass("activefaq");
-        $("#button3").removeClass("activefaq");
-        $("#education, #aboutorange").hide()
-        $("#troubleshooting").show();
-        $("#button1").addClass('activefaq');
-    }
-    function education() {
-        $("#button1").removeClass("activefaq");
-        $("#button3").removeClass("activefaq");
-        $("#troubleshooting, #aboutorange").hide()
-        $("#education").show();
-        $("#button2").addClass('activefaq');
-    }
-    function aboutorange() {
-        $("#button1").removeClass("activefaq");
-        $("#button2").removeClass("activefaq");
-        $("#troubleshooting, #education").hide()
-        $("#aboutorange").show();
-        $("#button3").addClass('activefaq');
-    }
-</script>
 
 {{end}}
