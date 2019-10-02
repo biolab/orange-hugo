@@ -30,10 +30,12 @@ a:hover {
   text-decoration: none;
   color: #f69111;
 }
+
 .container{
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .btn {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -951,9 +953,9 @@ svg{
   /*.container{
     padding: 0px !important;
   }*/
-  .header-pad{
+  /* .header-pad{
     padding-left: 5% !important;
-  }
+  } */
   .intro{
     padding: 0px !important;
     padding-left: 5% !important;
@@ -1069,6 +1071,13 @@ svg{
   .downloadsize{
     padding-left:8%;
     padding-right:8%;
+  }
+}
+
+  @media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1338,10 +1347,6 @@ h2.docs-subtitle {
   margin-left: 0px !important;
 }
 
-#features .row{
-  margin-right:0px !important;
-  margin-left: 0px !important;
-}
 
 .blog-content{
   padding-top: 20px !important;
@@ -1407,10 +1412,6 @@ padding-top: 10px;
   margin-left: 0px !important;
 }
 
-#features .row{
-  margin-right:0px !important;
-  margin-left: 0px !important;
-}
 
 @media (max-width: 768px) {
   .feature-title, .promo .row h1.firstpagetitle {

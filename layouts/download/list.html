@@ -1,11 +1,11 @@
 {{ define "main"}}
 
 <section id="features" class="features section downloads ">
-        <div class="container-fluid downloados downloadsize" style="margin-top: 50px;">
+        <div class="container downloados" style="margin-top: 50px;">
             <div class="row" style="padding: 0px !important;text-align: center;">
                 <div class="dow" style="display: inline-block; width: 80%;">
                     {{ range .Site.Data.tabs}}
-                    <div class="icon-item col-xl-4 col-lg-4 col-md-4 col-sm-4  col-xs-4 text-center" >
+                    <div class="icon-item col-xl-4 col-lg-4 col-md-4 col-sm-4  col-xs-14 text-center" >
                         <a onclick="windows({{.os}})" href="#{{.os}}">
                             <div id="{{.os}}1" class="icon">
                                 <i class="fa fa-{{ .icon }} jsonly icon-button"></i>
@@ -18,9 +18,9 @@
             </div><!--//row-->
         </div><!--//container-->
 
-        <div class="container-fluid" style="padding-bottom: 40px;">
+        <div class="container" style="padding-bottom: 40px;">
             <div class="row col">
-            <div id="win" class=" download-os downloadsize">
+            <div id="win" class=" download-os">
                 <div class="">
                     <div class="content">
                         <h2>Download the latest version for Windows</h2>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-            <div id="mac" class=" mac download-os downloadsize">
+            <div id="mac" class=" mac download-os">
                 <div class="" >
                     <div class="content">
                         <h2>Download the latest version for Mac</h2>
@@ -78,7 +78,7 @@
                 </div>
             </div>
     
-        <div id="lin" class=" mac download-os downloadsize">
+        <div id="lin" class=" mac download-os">
                  <div class="" >
                    <div class="content">
                     <h2>Linux / Source</h2>
