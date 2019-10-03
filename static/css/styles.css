@@ -1485,7 +1485,7 @@ margin-top: auto;
   .dow {
     width: 100% !important;  
   }
-  .col-xs-4 {
+  .dow > .col-xs-4 {
     padding-left: 0px;
     padding-right: 0px;
   }
