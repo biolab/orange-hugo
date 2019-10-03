@@ -1481,13 +1481,16 @@ margin-top: auto;
   padding: 0 10px 10px 0;
 }
 
-@media (max-width: 844px) {
-  .dow{
-    width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px
+@media (max-width: 600px) {
+  .dow {
+    width: 100% !important;  
+  }
+  .col-xs-4 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
+
 .entry-title {
     font-size: 30px !important;
     font-weight: normal !important;
