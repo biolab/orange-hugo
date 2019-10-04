@@ -113,6 +113,25 @@
 
         </div>
         <script type="text/javascript">
+            const Http = new XMLHttpRequest();
+            const url='https://service.biolab.si/download/version';
+            Http.open("GET", url+"?"+"domain=orange");
+            Http.send();
+
+            Http.onload = (e) => {
+                try {
+                  versions = JSON.parse(Http.responseText)
+                }
+                catch(err) {
+                  versions = null
+                }
+                if (versions != null){
+                    var win = document.getElementById("recommended-download-win");
+                    win.textContent += versions.win;
+                    var mac = document.getElementById("recommended-download-mac");
+                    mac.textContent += versions.mac;
+                }
+            }
             hash = window.location.hash.substr(1);
 
             if (hash == ""){
