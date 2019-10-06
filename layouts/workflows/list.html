@@ -1,14 +1,14 @@
 {{ define "main"}}
 
-<section id="features" class="container section offset-header">
-    <div class="container getting-started">
+<section id="features" class="section offset-header">
+    <div class="container remove-padding-l-r">
         <div style="text-align: center">
             <h2 style="font-size: 34px;margin-top: 15px;">
                 Orange Workflows
             </h2>
         </div>
-        <div class="row" style="padding-left: 20px; margin-top:20px !important;">
-            <div class="col-xs-12 col-md-12 content" style="display: inline;">
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
                 <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;"
                     placeholder="Search blog by categories, title and description." tabindex="1"
                     onkeydown="check_key(event)" autofocus />
@@ -16,9 +16,8 @@
                     <i class="fa fa-search"></i>
                 </button>
             </div>
-
         </div>
-        <div class="categoriesList" id="myUL">
+        <div class="categoriesList col-lg-12" id="myUL">
             <ul>
                 <span>Tags: </span>
                 {{ range first 10 .Site.Taxonomies.tags.ByCount }}
@@ -27,10 +26,9 @@
                 {{ end }}
             </ul>
         </div>
-
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">
+        <div class="col-lg-12" id="search-results" style="display: none;">
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
+        <div id="post_nor">
             {{ $paginator := .Paginate (where (where .Pages.ByWeight.Reverse "Type" "workflows") "IsPage" true) }}
             {{ range $index, $element := .Paginator.Pages }}
             <div class=" row">
@@ -60,9 +58,7 @@
                             </a>
                             &nbsp;&nbsp;
                             {{ end }}
-
                             {{ if .Params.video }}
-
                             <a class="lightbox no-break-buttons" href="{{ .Params.video }}" target="_blank">
                                 <div class="feature-block fa fa-play-circle-o jsonly">
                                 </div>
@@ -70,9 +66,7 @@
                             </a>
                             &nbsp;&nbsp;
                             {{ end }}
-
                             {{ if .Params.blog }}
-
                             <a class="lightbox no-break-buttons"
                                 href="https://singlecell.biolab.si/blog/{{ .Params.blog }}">
                                 <div class="feature-block fa fa-book jsonly"></div>
@@ -82,12 +76,10 @@
                             {{ end }}
                         </div>
                     </div>
-
                     <div class='content col-md-6 col-xs-12 {{if (eq .Params.thumbnailImagePosition "left") }}{{else }}panel-left{{ end }}'
                         style="padding: 20px;padding-top: 0px;">
                         {{if gt (len .Params.images) 1}}
                         <div id="myCarousel{{$index}}" class="carousel slide" data-interval="false">
-
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner workflow-slider">
                                 {{range $id, $element := .Params.images}}
@@ -103,8 +95,6 @@
                                     class="{{if eq $id 0}}active {{else}}{{end}}"></li>
                                 {{end}}
                             </ol>
-
-
                             <!-- Left and right controls -->
                             <a class="left carousel-control" href="#myCarousel{{$index}}" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" style="color: black;"></span>
@@ -118,16 +108,11 @@
                         <img src="{{$image}}" class="workflow-image">
                         {{end}}
                     </div>
-
                 </div>
                 <hr />
-
                 {{end}}
             </div>
-
-
         </div>
-
 </section>
 
 
