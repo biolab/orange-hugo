@@ -460,9 +460,14 @@ h3.custom-accordion-title {
     padding-right: 20px;
 }
 
-.testimonial-list .item .item-title {
+.testimonial-list .item {
     text-align: center;
-    padding-top:0;
+}
+
+.item-title {
+    text-align: center;
+    padding:0;
+    line-height: 1.4;
 }
 
 .testimonial-list .item .feature-text {
