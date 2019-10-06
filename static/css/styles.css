@@ -31,9 +31,16 @@ a:hover {
   color: #f69111;
 }
 
-.container{
-  padding-left: 0px;
-  padding-right: 0px;
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+  width: 1200px;
+  }
 }
 
 .btn {
@@ -1068,23 +1075,6 @@ svg{
   }
 }
 
-  @media (max-width: 768px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/*@media (min-width: 1350px) {
-  .downloados .row {
-    margin-top: 50px;
-  }
-  .cover-image {
-    background: url('/images/scorange-web-1170.png');
-    background-position: center;
-
-  }
-}*/
 
 /* Custom */
 pre {
