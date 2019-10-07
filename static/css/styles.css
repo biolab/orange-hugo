@@ -38,8 +38,8 @@ a:hover {
 }
 
 .remove-padding-l-r {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 @media (min-width: 1200px) {
@@ -378,9 +378,6 @@ blockquote {
 @media (min-width: 992px) {
     .footer {
         position: absolute;
-    }
-    #loop-container{
-      padding-top:50px !important;
     }
 }
 
