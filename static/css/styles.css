@@ -30,10 +30,12 @@ a:hover {
   text-decoration: none;
   color: #f69111;
 }
+
 .container{
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .btn {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -274,7 +276,7 @@ blockquote {
 }
 #logo-image {
     position: absolute;
-    top: 29px;
+    top: 23px;
     max-height: 86px;
 }
 .header h1.logo {
@@ -946,14 +948,8 @@ svg{
 
   .text-workflow{
     padding-top: 0px !important;
-  }
-  
-  /*.container{
-    padding: 0px !important;
-  }*/
-  .header-pad{
-    padding-left: 5% !important;
-  }
+  } 
+
   .intro{
     padding: 0px !important;
     padding-left: 5% !important;
@@ -1069,6 +1065,13 @@ svg{
   .downloadsize{
     padding-left:8%;
     padding-right:8%;
+  }
+}
+
+  @media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1242,10 +1245,12 @@ h2.docs-subtitle {
     background-color: rgb(33,150,243, 0.3) !important;
 }
 
-.workflow-image{
-  padding:20px;
-  width: 500px;
-  height: 300px;
+.workflow-image {
+  padding-bottom:0px !important;
+  padding: 20px;
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
 }
 
 #post_nor .row {
@@ -1280,22 +1285,12 @@ h2.docs-subtitle {
 .link-buttons{
   display: inline-block;
   white-space: nowrap;
-}.home-page-blog{
-  padding-left:20px !important;
-  padding-right:0px !important;
-  padding-top: 20px !important;
-  padding-bottom: 20px;
-  font-weight: lighter !important;
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif' !important;
-
 }
+
 .title-home-page-blog{
   padding-bottom:10px !important;
 }
-.home-page-blog-image{
-  height: 190px;
-  width: 300px;
-}
+
 .single-widget img{
   width: 35%;
   height:auto;
@@ -1336,13 +1331,7 @@ h2.docs-subtitle {
   margin-left: 0px !important;
 }
 
-#features .row{
-  margin-right:0px !important;
-  margin-left: 0px !important;
-}
-.workflow-image{
-  padding-bottom:0px !important;
-}
+
 .blog-content{
   padding-top: 20px !important;
 }
@@ -1355,7 +1344,7 @@ h2.docs-subtitle {
     width: 90% !important;
   }
 
-.home-page-blog .excerpt{
+.excerpt{
 
    padding-bottom: 0;
 
@@ -1363,11 +1352,11 @@ h2.docs-subtitle {
  }
 
 
-.home-page-blog .excerpt-content{
+.excerpt-content{
   padding-bottom: 0;
 }
 
-.home-page-blog .excerpt-meta{
+.excerpt-meta{
 padding-top: 10px;
 }
 
@@ -1391,12 +1380,6 @@ padding-top: 10px;
     background-color: rgb(33,150,243, 0.3) !important;
 }
 
-.workflow-image{
-  padding:20px;
-  width: 500px;
-  height: 300px;
-}
-
 .categoriesList{
   margin-top: 5px;
   padding-left: 40px;
@@ -1413,10 +1396,6 @@ padding-top: 10px;
   margin-left: 0px !important;
 }
 
-#features .row{
-  margin-right:0px !important;
-  margin-left: 0px !important;
-}
 
 @media (max-width: 768px) {
   .feature-title, .promo .row h1.firstpagetitle {
@@ -1492,13 +1471,16 @@ margin-top: auto;
   padding: 0 10px 10px 0;
 }
 
-@media (max-width: 844px) {
-  .dow{
-    width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px
+@media (max-width: 600px) {
+  .dow {
+    width: 100% !important;  
+  }
+  .dow > .col-xs-4 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
+
 .entry-title {
     font-size: 30px !important;
     font-weight: normal !important;
@@ -1524,4 +1506,31 @@ margin-top: auto;
 .no-pad-training{
   margin-left: 0px !important;
   margin-right: 0px !important; 
+}
+
+/* Last 3 featured blogs on Home page */
+
+.home-page-newest-blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.home-page-blog {
+  grid-column: span 1;
+  padding-top: 20px !important;
+  padding-bottom: 20px;
+  font-weight: lighter !important;
+}
+
+.home-page-blog-image {
+  max-height: 220px;
+  width: 300px;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .home-page-blog {
+    grid-column: span 3;
+  }
 }

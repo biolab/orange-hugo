@@ -12,7 +12,7 @@ shortExcerpt = "A cautionary tale of imaginary friend who made to many hypothesi
 longExcerpt = "A cautionary tale of imaginary friend who made to many hypothesis to test - and how Orange is no different"
 +++
 
-A word of warning. When teaching in the US, I'm careful enough to avoid saying things like "*consider a binary variable, for instance, gender*". But I'm writing this from Russia, where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can also get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
+A word of warning. When teaching in the US, I am careful enough to not propose things like "*consider a binary variable, for instance, gender*". But I'm currently in Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
 
 <center>* * *</center>
 
@@ -40,7 +40,7 @@ Next day he came again. And the next. And the following day, too. He just wouldn
 
 We agreed that even some of 1000 random (non-)relations are bound to be related by chance, so I couldn't request that he beats all my random pairs. We decided that we will consider a relation significant, if its Pearson correlation coefficient is so large that only 5% of random relations exceed it. With his samples of size 100, my experiments showed that this value was 0.204. So 5% it was. I thought it safe enough, he thought it fair enough.
 
-We agreed that we now have a perfect test. One that we would both trust.
+We now had a perfect test. One that we would both trust.
 
 Nothing happened for a few days. I believed I essentially won. He knew that we had a method for detecting his bullshit so he won't bother me again (so soon and so often).
 

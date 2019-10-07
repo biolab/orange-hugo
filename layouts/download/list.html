@@ -1,11 +1,11 @@
 {{ define "main"}}
 
 <section id="features" class="features section downloads ">
-        <div class="container-fluid downloados downloadsize" style="margin-top: 50px;">
+        <div class="container downloados" style="margin-top: 50px;">
             <div class="row" style="padding: 0px !important;text-align: center;">
                 <div class="dow" style="display: inline-block; width: 80%;">
                     {{ range .Site.Data.tabs}}
-                    <div class="icon-item col-xl-4 col-lg-4 col-md-4 col-sm-4  col-xs-4 text-center" >
+                    <div class="icon-item col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" >
                         <a onclick="windows({{.os}})" href="#{{.os}}">
                             <div id="{{.os}}1" class="icon">
                                 <i class="fa fa-{{ .icon }} jsonly icon-button"></i>
@@ -18,9 +18,9 @@
             </div><!--//row-->
         </div><!--//container-->
 
-        <div class="container-fluid" style="padding-bottom: 40px;">
+        <div class="container" style="padding-bottom: 40px;">
             <div class="row col">
-            <div id="win" class=" download-os downloadsize">
+            <div id="win" class=" download-os">
                 <div class="">
                     <div class="content">
                         <h2>Download the latest version for Windows</h2>
@@ -28,8 +28,8 @@
                             Download Orange
                         </a>
 
-                        <h3><a id="standalone"></a>Standalone installer</h3>
-                        <a id="recommended-download" href="https://service.biolab.si/download/orange?platform=win">Orange-win_amd64.exe (64 bit)</a><br />
+                        <h3><a id="standalone"></a>Standalone installer (default)</h3>
+                        <a id="recommended-download" href="https://service.biolab.si/download/orange?platform=win">Orange3-Miniconda-x86_64.exe (64 bit)</a><br />
                         <p>Can be used without administrative priviledges.</p>
                         <h3><a id="anaconda"></a>Anaconda</h3>
                         <p>If you are using python provided by <a href="https://docs.conda.io/en/latest/miniconda.html">Anaconda</a>
@@ -44,12 +44,16 @@
 
                         <h3>Installing add-ons</h3>
                         <p>Additional features can be added to Orange by installing add-ons. You can find add-on manager in Options menu.</p>
+
+                        <h3>Download archive</h3>
+                        <p>Download older versions from <a href="https://download.biolab.si/download/files/">our archive</a>.</p>
+
                     </div>
                 </div>
             </div>
         </div>
 
-            <div id="mac" class=" mac download-os downloadsize">
+            <div id="mac" class=" mac download-os">
                 <div class="" >
                     <div class="content">
                         <h2>Download the latest version for Mac</h2>
@@ -74,11 +78,15 @@
 
                         <h3>Installing add-ons</h3>
                         <p>Additional features can be added to Orange by installing add-ons. You can find add-on manager in Options menu.</p>
+
+                        <h3>Download archive</h3>
+                        <p>Download older versions from <a href="https://download.biolab.si/download/files/">our archive</a>.</p>
+
                     </div>
                 </div>
             </div>
     
-        <div id="lin" class=" mac download-os downloadsize">
+        <div id="lin" class=" mac download-os">
                  <div class="" >
                    <div class="content">
                     <h2>Linux / Source</h2>
@@ -113,6 +121,25 @@
 
         </div>
         <script type="text/javascript">
+            const Http = new XMLHttpRequest();
+            const url='https://service.biolab.si/download/version';
+            Http.open("GET", url+"?"+"domain=orange");
+            Http.send();
+
+            Http.onload = (e) => {
+                try {
+                  versions = JSON.parse(Http.responseText)
+                }
+                catch(err) {
+                  versions = null
+                }
+                if (versions != null){
+                    var win = document.getElementById("recommended-download-win");
+                    win.textContent += versions.win;
+                    var mac = document.getElementById("recommended-download-mac");
+                    mac.textContent += versions.mac;
+                }
+            }
             hash = window.location.hash.substr(1);
 
             if (hash == ""){
