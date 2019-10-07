@@ -900,10 +900,9 @@ blockquote cite {
     font-weight: 300;
 }
 
-
 @media(min-width: 630px) {
     #overflow-container > .container {
-        width: 630;
+        width: 630px;
     }
 }
 
