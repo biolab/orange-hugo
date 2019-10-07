@@ -1354,7 +1354,7 @@
   
   <url>
     <loc>/categories/confusion-matrix/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1724,6 +1724,12 @@
   </url>
   
   <url>
+    <loc>/categories/hypothesis-testing/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/icons/</loc>
     <lastmod>2012-04-09T11:25:00+00:00</lastmod>
     <priority>0</priority>
@@ -1881,7 +1887,7 @@
   
   <url>
     <loc>/categories/model-performance/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1896,6 +1902,12 @@
   <url>
     <loc>/categories/multilabel/</loc>
     <lastmod>2012-01-09T12:41:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/multiple-hypothesis-testing/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2016,7 +2028,7 @@
   
   <url>
     <loc>/categories/p-value/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2361,6 +2373,12 @@
   
   <url>
     <loc>/widget-catalog/model/stacking/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/statistical-significance/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

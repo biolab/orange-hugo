@@ -149,7 +149,7 @@
     <item>
       <title>Confusion Matrix</title>
       <link>/categories/confusion-matrix/</link>
-      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/confusion-matrix/</guid>
       <description></description>
@@ -426,6 +426,15 @@
     </item>
     
     <item>
+      <title>Hypothesis Testing</title>
+      <link>/categories/hypothesis-testing/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/hypothesis-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Icons</title>
       <link>/categories/icons/</link>
       <pubDate>Mon, 09 Apr 2012 11:25:00 +0000</pubDate>
@@ -572,7 +581,7 @@
     <item>
       <title>Model Performance</title>
       <link>/categories/model-performance/</link>
-      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/model-performance/</guid>
       <description></description>
@@ -584,6 +593,15 @@
       <pubDate>Mon, 09 Jan 2012 12:41:00 +0000</pubDate>
       
       <guid>/categories/multilabel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple Hypothesis Testing</title>
+      <link>/categories/multiple-hypothesis-testing/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/multiple-hypothesis-testing/</guid>
       <description></description>
     </item>
     
@@ -716,7 +734,7 @@
     <item>
       <title>P Value</title>
       <link>/categories/p-value/</link>
-      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/p-value/</guid>
       <description></description>
@@ -998,6 +1016,15 @@
       <pubDate>Fri, 16 Feb 2018 13:20:06 +0000</pubDate>
       
       <guid>/categories/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Significance</title>
+      <link>/categories/statistical-significance/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/statistical-significance/</guid>
       <description></description>
     </item>
     
