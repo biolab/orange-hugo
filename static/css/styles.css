@@ -556,6 +556,10 @@ blockquote {
   font-weight: 300;
 }
 
+.content > p {
+  font-weight: 300;
+}
+
 /* ======= Features Section ======= */
 .features h1.title  {
   margin: 40px 0 10px;
