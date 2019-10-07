@@ -608,6 +608,10 @@ blockquote {
   font-weight: lighter;
   color: black;
 }
+.features-blog h2 a {
+  font-weight: lighter;
+  color: black;
+}
 
 .features .more a {
   padding: 24px 0;
