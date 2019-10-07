@@ -12,7 +12,7 @@ shortExcerpt = "A cautionary tale of imaginary friend who made too many hypothes
 longExcerpt = "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
 +++
 
-A word of warning. When teaching in the US, I am careful enough to not propose things like "*consider a binary variable, for instance, gender*". But I'm currently in Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
+A word of warning. When teaching in the US, I am careful enough to not say things like "*consider a binary variable, for instance, gender*". But I'm writing this from Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
 
 <center>* * *</center>
 
