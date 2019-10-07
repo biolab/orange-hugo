@@ -12,7 +12,7 @@ shortExcerpt = "Computing meaningful performance scores of models should be crea
 longExcerpt = "A report of an interesting ending of a lecture about setting probability thresholds for predictive models"
 +++
 
-A word of warning. When teaching in the US, I am careful enough to not propose things like "*consider a binary variable, for instance, gender*". But I'm currently in Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I ocassionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
+A word of warning. When teaching in the US, I am careful enough to not propose things like "*consider a binary variable, for instance, gender*". But I'm currently in Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say "shit", which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f... all you want). This blog entry targets Russian audience.
 
 <center>* * *</center>
 
@@ -33,7 +33,7 @@ x = numpy.random.randint(0, 2, (100, 2))
 out_data = Orange.data.Table.from_numpy(None, x, None)
 ```
 
-The script imports the needed modules, constructs the matrix of random integers betwwen 0 and 2 (including 0, but without 2) with 100 rows and 2 columns, and prepares an Orange data table from this matrix. The first `None` is for "domain", that is names of variables and their types; since we pass `None`, so Orange will use some defaults. `x` is my data, and the last `None` is for the target, which we don't need.
+The script imports the needed modules, constructs the matrix of random integers between 0 and 2 (including 0, but without 2) with 100 rows and 2 columns, and prepares an Orange data table from this matrix. The first `None` is for "domain", that is names of variables and their types; since we pass `None`, so Orange will use some defaults. `x` is my data, and the last `None` is for the target, which we don't need.
 
 As I ran the script, Python Script created the data and Correlations computed Demšar's ... I mean Pearson's correlation coefficient. It gave me 0.084. And his number was way worse, 0.012. I ran it again. And again. Always larger than his 0.012. I told him that I can run it for 1000 times, but then I saw it's more practical to construct 45 columns by changing the third line to
 
@@ -45,15 +45,15 @@ This gave me 990 pairs. A large majority of them was larger than 0.012 that he p
 
 I opened a beer about two minutes later, after closing the doors behind him. I earned it.
 
-Next day he came again. And the next. And the following day, too. He just wouldn't give up. And I kept opening beers until his fifth day's relation indeed had a BS score of 0.22 (and luckily made some sense -- women tend to recognize more colors than men). I argued that 0.22 is still low, but he forced me to look into my corelations and, damn, only 32 out of 1000 *random* relations were so strongly correlated. I had to yield this time: I confessed that random, uncorrelated variables were unlikely to give such strong BS scores.
+Next day he came again. And the next. And the following day, too. He just wouldn't give up. And I kept opening beers until his fifth day's relation indeed had a BS score of 0.22 (and luckily made some sense -- women tend to recognize more colors than men). I argued that 0.22 is still low, but he forced me to look into my correlations and, damn, only 32 out of 1000 *random* relations were so strongly correlated. I had to yield this time: I confessed that random, uncorrelated variables were unlikely to give such strong BS scores.
 
 We agreed that even some of 1000 random (non-)relations are bound to be related by chance, so I couldn't request that he beats all my random pairs. We decided that we will consider a relation significant, if its Pearson correlation coefficient is so large that only 5% of random relations exceed it. I thought it safe enough, he thought it fair enough.
 
 We agreed that we now have a perfect test. One that we would both trust.
 
-Nothing happenned for a few days. I believed I essentially won. He knew that we had a method for detecting his bullshit so he won't bother me again (so soon and so often).
+Nothing happened for a few days. I believed I essentially won. He knew that we had a method for detecting his bullshit so he won't bother me again (so soon and so often).
 
-Or so I thought. Several days later he brought me some more relations to check. Total rubbish, but some were really strong. Then he confessed he made up the data for those. It made no sense why he would do this -- and then even confess. But when I looked into the data I realized he was trying to guess my secret formula! To the looks of it, he actually suceeded. I made a stand there and then. I made him swear he would never ever make up false data. Ever. Again. Or it was the last time I talk with him.
+Or so I thought. Several days later he brought me some more relations to check. Total rubbish, but some were really strong. Then he confessed he made up the data for those. It made no sense why he would do this -- and then even confess. But when I looked into the data I realized he was trying to guess my secret formula! To the looks of it, he actually succeeded. I made a stand there and then. I made him swear he would never ever make up false data. Ever. Again. Or it was the last time I talk with him.
 
 A day passed. He came grinning so I knew something was up. Eating carrots helps against missing a bus. It beat all except top 2% of my random relations.
 
@@ -65,7 +65,7 @@ The worst thing was that he wasn't doing this (only) to tease me. He sincerely b
 
 He thanked for the beer and promised to come again tomorrow. And the day after, too. Now that we are collaborators.
 
-Чёрт! (Another confession: I'm writing this at Patriarch ponds, sitting on a bench with my face towards the pond and my back towards Malaya bronnaya.) 
+Чёрт! (Another confession: I'm writing this at Patriarch ponds, sitting on a bench with my face towards the pond and my back towards Malaya bronnaya.)
 
 I had some serious thinking to do.
 
@@ -73,10 +73,10 @@ Next day he came, as promised. He told me about the latest relation he found. I 
 
 I instead asked him how many variables he has. Like, for every person he knows whether she or he smokes, wears socks at work, speaks any Hungarian, ... how many different things? He said 154.
 
-"*Oh, this is quite a collection. Good work*", I kept chatting while typing something into a calculator. "*So you must have identified around 590 'statistically significant' relations in your list, haven't you?*" He was significanly less happy hearing this.
+"*Oh, this is quite a collection. Good work*", I kept chatting while typing something into a calculator. "*So you must have identified around 590 'statistically significant' relations in your list, haven't you?*" He was significantly less happy hearing this.
 
--  "*592,*" he said. "*But -- hey, how did you know?*"
-- "*People with strange beards like mine tend to have telephatic abilities.*"
+- "*592,*" he said. "*But -- hey, how did you know?*"
+- "*People with strange beards like mine tend to have telepathic abilities.*"
 - "*What?*"
 - "*Не шалю, никого не трогаю, починяю примус.*"
 
@@ -90,19 +90,19 @@ x = numpy.random.randint(0, 2, (100, 154))
 
 so that you simulate *his* data, and check how many pairs of *random* variables have a correlation above 0.204. It should be around 590. You will essentially "replicate" his work, except without collecting any data. In any case, you'll get around 590 correlations above the required threshold.
 
-But I wrote that I typed the numbers into a calculator. Sure. I don't need Orange for this. With 154 variables, there are 154 * 153 / 2 = 11781 pairs. Since we agreed he can present any relation from the top 5%, he has 11781 * 0.05 = 590 relations to show. There must be around 5% relations in the top 5% of relations.
+But I wrote that I typed the numbers into a calculator. Sure. I don't need Orange for this. With 154 variables, there are 154 \* 153 / 2 = 11781 pairs. Since we agreed he can present any relation from the top 5%, he has 11781 \* 0.05 = 590 relations to show. There must be around 5% relations in the top 5% of relations.
 
 <center>* * *</center>
 
 The story of course follows the dogma of hypothesis testing. We test a relation by computing some statistics, like Pearson correlation coefficient, and compare it with the value of this statistics that we would get on random data of this kind. This can be done like here. We generate a great number of random cases and compute the statistics for each. If the tested hypothesis beats all except 3 % of random ones, we say p = 0.03, meaning that "there is only 3% probability that a randomly generated hypothesis would reach such a high score".
 
-There is of course a faster way to test the significance of the Pearson correlation coefficient. Pearson was a smart guy (and my calling its correlaation coefficient a "bullshit score" shouldn't be taken out of the context of the story). Distribution of Pearson correlations for random data is known, so p-values can be computed analytically, without simulation. We nevertheless used the simulation in this story to make it more evident what significance testing actually does.
+There is of course a faster way to test the significance of the Pearson correlation coefficient. Pearson was a smart guy (and my calling its correlation coefficient a "bullshit score" shouldn't be taken out of the context of the story). Distribution of Pearson correlations for random data is known, so p-values can be computed analytically, without simulation. We nevertheless used the simulation in this story to make it more evident what significance testing actually does.
 
 The story is not without flaws. The 11891 hypotheses are not unrelated. More importantly, when I wrote that the guy went home unhappy (though grudging), I implied that I proved the lack of correlation. With the common null-hypotheses testing you cannot prove the null-hypothesis (in my case: the hypothesis that there is no correlation). Applied properly, he can win (if my test proves the correlation), or we call it a draw. I can't win.
 
 The moral of the story is that statistical tests should not be used in the way we use them here. They are not a magic bullet for testing the correctness of hypotheses. There is not just one but two problems here.
 
-If the test requires beating 95 % of my random relations, it will incorrectly recognize 5 % of relations as significant. This is pretty obvious: the top 5 % of my relations beat the remaining 95 %. His random relations will be equally succesful, by pure chance. I knew the test was not failsafe. But he cheated: he checked all his relations and brought me those that passed the test. This is the skill of the Texas sharpshooter: shooting first, and drawing targets around holes next. He just found the relations that were successful by chance. For this reason, statistical hypothesis testing requires that you form the hypothesis first, and only then test it on the data.
+If the test requires beating 95 % of my random relations, it will incorrectly recognize 5 % of relations as significant. This is pretty obvious: the top 5 % of my relations beat the remaining 95 %. His random relations will be equally successful, by pure chance. I knew the test was not failsafe. But he cheated: he checked all his relations and brought me those that passed the test. This is the skill of the Texas sharpshooter: shooting first, and drawing targets around holes next. He just found the relations that were successful by chance. For this reason, statistical hypothesis testing requires that you form the hypothesis first, and only then test it on the data.
 
 But even he wouldn't cheat and he would pick pairs at random, with 5 % threshold, 1 of 20 hypothesis would still be successful by chance, so he would be happy once every full moon, assuming he'd take weekends off. In statistics, this is called multiple hypotheses testing. You have to account for randomly "successful" hypotheses by using various corrections. Let us mention just the Bonferroni correction as the simplest example.
 
@@ -112,7 +112,7 @@ But this is an Orange blog, so let us use what we learned to show a problem in (
 
 Try this scheme.
 
-{{% figure src="/blog_img/2019/2019-09-29-scheme.png" caption="" %}} \
+{{% figure src="/blog_img/2019/2019-09-29-scheme.png" caption="" width="500px" %}} \
 
 The Python Script widget still contains
 
@@ -125,9 +125,9 @@ out_data = Orange.data.Table.from_numpy(None, x, None)
 
 Connection between Correlations and Distribution has to be wired so that it uses Correlation's output "Correlations" not "Data". Correlations now shows the distribution of Pearson correlation coefficients on this data. Correlation coefficient is significant if it's in the 5 % tail of this distribution. You can fit some curve to this if you wish.
 
-{{% figure src="/blog_img/2019/2019-09-29-distributions.png" caption="" %}} \
+{{% figure src="/blog_img/2019/2019-09-29-distribution.png" caption="" %}} \
 
-Sieve demonstrates the problem. Open it and click Score Combinations. It will order the pairs according to their significance. For every pair we select, Sieve will also show its chi-square and the corresponding p-value (at the bottom left). Predictably, the first 50 pairs have p-values below 0.05. By using Score Combinations and picking the top ones, we commiting the same mistake as the imaginary friend. (Sieve does not compute Pearson coefficients but chi squares, yet in this context the two statistics are completely related. You can check that Correlations and VizRank show the same order of pairs.)
+Sieve demonstrates the problem. Open it and click Score Combinations. It will order the pairs according to their significance. For every pair we select, Sieve will also show its chi-square and the corresponding p-value (at the bottom left). Predictably, the first 50 pairs have p-values below 0.05. By using Score Combinations and picking the top ones, we are committing the same mistake as the imaginary friend. (Sieve does not compute Pearson coefficients but chi squares, yet in this context the two statistics are completely related. You can check that Correlations and VizRank show the same order of pairs.)
 
 So using Score Combinations (or similar buttons in other widgets) and then claiming it found and proved some relation, is exactly what my friend was doing.
 
