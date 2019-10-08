@@ -1,6 +1,6 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Predictive  Analytics</title>
+    <title>Orange Data Mining - Preprocess Text</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
@@ -176,304 +176,122 @@
     <div id="main">
         <div class="container-fluid clear-top">
             
-  
 
-      <section id="features" class="features section padding-bottom ">
-    <div class="container page-background getting-started" >
-        <div style="text-align: center">
-           <h2 style="font-size: 34px;" >
-              Orange Blog
-           </h2>
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="preprocess-text">Preprocess Text</h1>
+
+<p>Preprocesses corpus with selected methods.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Corpus: A collection of documents.</li>
+</ul>
+
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Corpus: Preprocessed corpus.</li>
+</ul>
+
+<p><strong>Preprocess Text</strong> splits your text into smaller units (tokens), filters them, runs <a href="https://en.wikipedia.org/wiki/Stemming">normalization</a> (stemming, lemmatization), creates <a href="https://en.wikipedia.org/wiki/N-gram">n-grams</a> and tags tokens with <a href="https://en.wikipedia.org/wiki/Part_of_speech">part-of-speech</a> labels. Steps in the analysis are applied sequentially and can be turned on or off.</p>
+
+<p><img src="../images/Preprocess-Text-stamped.png" alt="" /></p>
+
+<ol>
+<li><strong>Information on preprocessed data</strong>.
+<em>Document count</em> reports on the number of documents on the input.
+<em>Total tokens</em> counts all the tokens in corpus.
+<em>Unique tokens</em> excludes duplicate tokens and reports only on unique tokens in the corpus.</li>
+<li><strong>Transformation</strong> transforms input data. It applies lowercase transformation by default.
+
+<ul>
+<li><em>Lowercase</em> will turn all text to lowercase.</li>
+<li><em>Remove accents</em> will remove all diacritics/accents in text.
+naïve → naive</li>
+<li><em>Parse html</em> will detect html tags and parse out text only.
+&lt;a href&hellip;&gt;Some text&lt;/a&gt; → Some text</li>
+<li><em>Remove urls</em> will remove urls from text.
+This is a <a href="http://orange.biolab.si/">http://orange.biolab.si/</a> url. → This is a url.</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Tokenization_(lexical_analysis)">Tokenization </a> is the method of breaking the text into smaller components (words, sentences, bigrams).
+
+<ul>
+<li><em>Word &amp; Punctuation</em> will split the text by words and keep punctuation symbols.
+This example. → (This), (example), (.)</li>
+<li><em>Whitespace</em> will split the text by whitespace only.
+This example. → (This), (example.)</li>
+<li><em>Sentence</em> will split the text by full stop, retaining only full sentences.
+This example. Another example. → (This example.), (Another example.)</li>
+<li><a href="https://en.wikipedia.org/wiki/Regular_expression">Regexp</a> will split the text by provided regex. It splits by words only by default (omits punctuation).</li>
+<li><em>Tweet</em> will split the text by pre-trained Twitter model, which keeps hashtags, emoticons and other special symbols.
+This example. :-) #simple → (This), (example), (.), (:-)), (#simple)</li>
+</ul></li>
+<li><strong>Normalization</strong> applies stemming and lemmatization to words. (I&rsquo;ve always loved cats. → I have alway love cat.) For languages other than English use Snowball Stemmer (offers languages available in its NLTK implementation).
+
+<ul>
+<li><a href="https://tartarus.org/martin/PorterStemmer/">Porter Stemmer</a> applies the original Porter stemmer.</li>
+<li><a href="http://snowballstem.org/">Snowball Stemmer</a> applies an improved version of Porter stemmer (Porter2). Set the language for normalization, default is English.</li>
+<li><a href="http://wordnet.princeton.edu/">WordNet Lemmatizer</a> applies a networks of cognitive synonyms to tokens based on a large lexical database of English.</li>
+</ul></li>
+<li><strong>Filtering</strong> removes or keeps a selection of words.
+
+<ul>
+<li><em>Stopwords</em> removes stopwords from text (e.g. removes &lsquo;and&rsquo;, &lsquo;or&rsquo;, &lsquo;in&rsquo;&hellip;). Select the language to filter by, English is set as default. You can also load your own list of stopwords provided in a simple *.txt file with one stopword per line.
+<img src="../images/stopwords.png" alt="" />
+Click &lsquo;browse&rsquo; icon to select the file containing stopwords. If the file was properly loaded, its name will be displayed next to pre-loaded stopwords. Change &lsquo;English&rsquo; to &lsquo;None&rsquo; if you wish to filter out only the provided stopwords. Click &lsquo;reload&rsquo; icon to reload the list of stopwords.</li>
+<li><em>Lexicon</em> keeps only words provided in the file. Load a *.txt file with one word per line to use as lexicon. Click &lsquo;reload&rsquo; icon to reload the lexicon.</li>
+<li><em>Regexp</em> removes words that match the regular expression. Default is set to remove punctuation.</li>
+<li><em>Document frequency</em> keeps tokens that appear in not less than and not more than the specified number / percentage of documents. If you provide integers as parameters, it keeps only tokens that appear in the specified number of documents. E.g. DF = (3, 5) keeps only tokens that appear in 3 or more and 5 or less documents. If you provide floats as parameters, it keeps only tokens that appear in the specified percentage of documents. E.g. DF = (0.3, 0.5) keeps only tokens that appear in 30% to 50% of documents. Default returns all tokens.</li>
+<li><em>Most frequent tokens</em> keeps only the specified number of most frequent tokens. Default is a 100 most frequent tokens.</li>
+</ul></li>
+<li><strong>N-grams Range</strong> creates n-grams from tokens. Numbers specify the range of n-grams. Default returns one-grams and two-grams.</li>
+<li><strong>POS Tagger</strong> runs part-of-speech tagging on tokens.
+
+<ul>
+<li><a href="https://spacy.io/blog/part-of-speech-pos-tagger-in-python">Averaged Perceptron Tagger</a> runs POS tagging with Matthew Honnibal&rsquo;s averaged perceptron tagger.</li>
+<li><a href="http://web.mit.edu/6.863/www/fall2012/projects/writeups/max-entropy-nltk.pdf">Treebank POS Tagger (MaxEnt)</a> runs POS tagging with a trained Penn Treebank model.</li>
+<li><a href="http://nlp.stanford.edu/software/tagger.shtml#Download">Stanford POS Tagger</a> runs a log-linear part-of-speech tagger designed by Toutanova et al. Please download it from the provided website and load it in Orange. You have to load the language-specific model in Model and load <em>stanford-postagger.jar</em> in the Tagger section.</li>
+</ul></li>
+<li>Produce a report.</li>
+<li>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
+</ol>
+
+<p><strong>Note</strong>! Preprocess Text applies preprocessing steps in the order they are listed. This means it will first transform the text, then apply tokenization, POS tags, normalization, filtering and finally constructs n-grams based on given tokens. This is especially important for WordNet Lemmatizer since it requires POS tags for proper normalization.</p>
+
+<h2 id="useful-regular-expressions">Useful Regular Expressions</h2>
+
+<p>Here are some useful regular expressions for quick filtering:</p>
+
+<p><code>\bword\b</code>: matches exact word
+<code>\w+</code>: matches only words, no punctuation
+<code>\b(B|b)\w+\b</code>: matches words beginning with the letter b
+<code>\w{4,}</code>: matches words that are longer than 4 characters<br />
+<code>\b\w+(Y|y)\b</code>: matches words ending with the letter y</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>In the first example we will observe the effects of preprocessing on our text. We are working with <em>book-excerpts.tab</em> that we&rsquo;ve loaded with <a href="corpus-widget.md">Corpus</a> widget. We have connected <strong>Preprocess Text</strong> to <strong>Corpus</strong> and retained default preprocessing methods (lowercase, per-word tokenization and stopword removal). The only additional parameter we&rsquo;ve added as outputting only the first 100 most frequent tokens. Then we connected <strong>Preprocess Text</strong> with <a href="../wordcloud/">Word Cloud</a> to observe words that are the most frequent in our text. Play around with different parameters, to see how they transform the output.</p>
+
+<p><img src="../images/Preprocess-Text-Example1.png" alt="" /></p>
+
+<p>The second example is slightly more complex. We first acquired our data with <a href="../twitter-widget/">Twitter</a> widget. We quired the internet for tweets from users @HillaryClinton and @realDonaldTrump and got their tweets from the past two weeks, 242 in total.</p>
+
+<p><img src="../images/Preprocess-Text-Example2.png" alt="" /></p>
+
+<p>In <strong>Preprocess Text</strong> there&rsquo;s <em>Tweet</em> tokenization available, which retains hashtags, emojis, mentions and so on. However, this tokenizer doesn&rsquo;t get rid of punctuation, thus we expanded the Regexp filtering with symbols that we wanted to get rid of. We ended up with word-only tokens, which we displayed in <a href="../wordcloud/">Word Cloud</a>. Then we created a schema for predicting author based on tweet content, which is explained in more details in the documentation for <a href="../twitter-widget/">Twitter</a> widget.</p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
-      <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
-        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-            <i class="fa fa-search"></i>
-        </button>
-      </div>
-      
-    </div>
-    <div class="categoriesList" id="myUL">
-        <ul style="width: 90%;">
-            <span>Categories: </span>
-            
-            
-            
-          
-          
-            <li style="display: inline;"><a href="/categories/orange3" class="" style="margin-top: 20px !important;">orange3</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/visualization" class="" style="margin-top: 20px !important;">visualization</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/analysis" class="" style="margin-top: 20px !important;">analysis</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/addons" class="" style="margin-top: 20px !important;">addons</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/workshop" class="" style="margin-top: 20px !important;">workshop</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/education" class="" style="margin-top: 20px !important;">education</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/examples" class="" style="margin-top: 20px !important;">examples</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/classification" class="" style="margin-top: 20px !important;">classification</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/data" class="" style="margin-top: 20px !important;">data</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/gsoc" class="" style="margin-top: 20px !important;">gsoc</a></li>
-
-          
-          
-          <li style="display: inline;"><a href="/categories/predictive--analytics" class="active-tag" style="margin-top: 20px !important;">predictive--analytics</a></li>
-          
-
-
-        </ul>
-    </div>
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
-    
-    
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Nov 29, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/11/29/how-to-properly-test-models/" > How to Properly Test Models</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
-One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/overfitting">overfitting</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/scoring">scoring</a>
-                    
-                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/11/29/how-to-properly-test-models/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Apr 7, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" > Model replaces Classify and Regression</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Did you recently wonder where did Classification Tree go? Or what happened to Majority?
-Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
-This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/features">features</a>
-                    
-                    <a class="tag-workflow" href="/categories/interface">interface</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/prediction">prediction</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/regression">regression</a>
-                    
-                    <a class="tag-workflow" href="/categories/toolbox">toolbox</a>
-                    
-                    <a class="tag-workflow" href="/categories/update">update</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-
-
-
-    </div>
-    
-    
-
-</div>
-
-
-</section>
-
-
-<script type="text/javascript">
-    function check_key(e){
-        if(e.keyCode == 13) {
-            search_content();
-        }
-        else if(e.keyCode == 8){
-            if(document.getElementById('search-input').value.length <= 1){
-                $("#post_nor").show();
-                $("#search-results").hide();
-            }
-        }  
-    }
-
-  function search_content(){
-    var url = window.location.pathname.split('/')
-    var tag_param = url.pop() || url.pop();
-    var param = document.getElementById('search-input').value;
-
-    if (param.trim() ==""){
-        $("#post_nor").show();
-        $("#search-results").hide();
-    }
-    else{
-        $("#post_nor").hide();
-    
-
-        var results  = search_categories(tag_param,param);
-        $("#search-results").show();
-        var search_results = document.getElementById('search-results')
-        if (results.length<1){
-            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
-        }
-        else{
-        search_results.innerHTML = "";
-        var html_el = ""
-        
-        
-        for(var page in results){
-            html_el += '<div class="row">';
-            console.log(results[page].image)
-            if (results[page].thumbImage == ''){
-               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
-            }
-            else if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
-            }
-            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
-
-            
-            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
-                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
-            }
-            else{
-            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
-
-            }
-
-            html_el += '<div class="tags" id="tags" style="padding-bottom: 10px;">Categories:'
-                    for(var cat in results[page].categories){
-                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
-                }
-            html_el +='</div>'
-            html_el += '<div class="getting-started-button">'
-            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
-             
-
-
-            html_el += '</div></div>'
-            var position = "";
-            
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
-            }
-           
-            if (results[page].thumbImage != ''){
-               html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
-            }
-
-
-            
-            html_el += "</div> </div><hr/>"
-        }
-        search_results.innerHTML += html_el;
-
-
-        }
-
-        }
-        }
-     
-   </script>
-   <script type="text/javascript" src="/js/lunr.js"></script>
-   <script type="text/javascript">
-      var baseurl = "";
-   </script>
-   <script type="text/javascript" src="/js/search.js"></script>
-
-      
-
+    </section>
 
         </div>
     </div>

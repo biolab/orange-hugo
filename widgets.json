@@ -938,5 +938,174 @@
     "icon": "widget-icons/Spectroscopy-Align Stack.png"
    }
   ]
+ ],
+ [
+  "Text Mining",
+  [
+   {
+    "title": "Corpus",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Corpus.png",
+    "url": "corpus-widget"
+   },
+   {
+    "title": "Import Documents",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Import Documents.png",
+    "url": "importdocuments"
+   },
+   {
+    "title": "The Guardian",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-The Guardian.png",
+    "url": "guardian-widget"
+   },
+   {
+    "title": "NY Times",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-NY Times.png",
+    "url": "nytimes"
+   },
+   {
+    "title": "Pubmed",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Pubmed.png",
+    "url": "pubmed"
+   },
+   {
+    "title": "Twitter",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Twitter.png",
+    "url": "twitter-widget"
+   },
+   {
+    "title": "Wikipedia",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Wikipedia.png",
+    "url": "wikipedia-widget"
+   },
+   {
+    "title": "Preprocess Text",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Preprocess Text.png",
+    "url": "preprocesstext"
+   },
+   {
+    "title": "Bag of Words",
+    "category": "Text Mining",
+    "keywords": [
+     "BOW"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Bag of Words.png",
+    "url": "bagofwords-widget"
+   },
+   {
+    "title": "Similarity Hashing",
+    "category": "Text Mining",
+    "keywords": [
+     "SimHash"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Similarity Hashing.png",
+    "url": "similarityhashing"
+   },
+   {
+    "title": "Sentiment Analysis",
+    "category": "Text Mining",
+    "keywords": [
+     "emotion"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Sentiment Analysis.png",
+    "url": "sentimentanalysis"
+   },
+   {
+    "title": "Tweet Profiler",
+    "category": "Text Mining",
+    "keywords": [
+     "Twitter"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Tweet Profiler.png",
+    "url": "tweetprofiler"
+   },
+   {
+    "title": "Topic Modelling",
+    "category": "Text Mining",
+    "keywords": [
+     "LDA"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Topic Modelling.png",
+    "url": "topicmodelling-widget"
+   },
+   {
+    "title": "Corpus Viewer",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Corpus Viewer.png",
+    "url": "corpusviewer"
+   },
+   {
+    "title": "Word Cloud",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Word Cloud.png",
+    "url": "wordcloud"
+   },
+   {
+    "title": "Concordance",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Concordance.png",
+    "url": "concordance"
+   },
+   {
+    "title": "Document Map",
+    "category": "Text Mining",
+    "keywords": [
+     "GeoMap"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Document Map.png",
+    "url": "docmap"
+   },
+   {
+    "title": "Word Enrichment",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Word Enrichment.png",
+    "url": "wordenrichment"
+   },
+   {
+    "title": "Duplicate Detection",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Duplicate Detection.png",
+    "url": "duplicatedetection"
+   }
+  ]
  ]
 ]

@@ -1,6 +1,6 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Predictive  Analytics</title>
+    <title>Orange Data Mining - Corpus Viewer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
@@ -176,304 +176,64 @@
     <div id="main">
         <div class="container-fluid clear-top">
             
-  
 
-      <section id="features" class="features section padding-bottom ">
-    <div class="container page-background getting-started" >
-        <div style="text-align: center">
-           <h2 style="font-size: 34px;" >
-              Orange Blog
-           </h2>
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="corpus-viewer">Corpus Viewer</h1>
+
+<p>Displays corpus content.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Corpus: A collection of documents.</li>
+</ul>
+
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Corpus: Documents containing the queried word.</li>
+</ul>
+
+<p><strong>Corpus Viewer</strong> is meant for viewing text files (instances of Corpus). It will always output an instance of corpus. If <em>RegExp</em> filtering is used, the widget will output only matching documents.</p>
+
+<p><img src="../images/Corpus-Viewer-stamped.png" alt="" /></p>
+
+<ol>
+<li><em>Information</em>:
+
+<ul>
+<li><em>Documents</em>: number of documents on the input</li>
+<li><em>Preprocessed</em>: if preprocessor is used, the result is True, else False. Reports also on the number of tokens and types (unique tokens).</li>
+<li><em>POS tagged</em>: if POS tags are on the input, the result is True, else False.</li>
+<li><em>N-grams range</em>: if N-grams are set in <a href="../preprocesstext/">Preprocess Text</a>, results are reported, default is 1-1 (one-grams).</li>
+<li><em>Matching</em>: number of documents matching the <em>RegExp Filter</em>. All documents are output by default.</li>
+</ul></li>
+<li><em>RegExp Filter</em>: <a href="https://docs.python.org/3/library/re.html">Python regular expression</a> for filtering documents. By default no documents are filtered (entire corpus is on the output).</li>
+<li><em>Search Features</em>: features by which the RegExp Filter is filtering. Use Ctrl (Cmd) to select multiple features.</li>
+<li><em>Display Features</em>: features that are displayed in the viewer. Use Ctrl (Cmd) to select multiple features.</li>
+<li><em>Show Tokens &amp; Tags</em>: if tokens and POS tag are present on the input, you can check this box to display them.</li>
+<li>If <em>Auto commit is on</em>, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
+</ol>
+
+<h2 id="example">Example</h2>
+
+<p><em>Corpus Viewer</em> can be used for displaying all or some documents in corpus. In this example, we will first load <em>book-excerpts.tab</em>, that already comes with the add-on, into <a href="corpus-widget.md">Corpus</a> widget. Then we will preprocess the text into words, filter out the stopwords, create bi-grams and add POS tags (more on preprocessing in <a href="../preprocesstext/">Preprocess Text</a>. Now we want to see the results of preprocessing. In <em>Corpus Viewer</em> we can see, how many unique tokens we got and what they are (tick <em>Show Tokens &amp; Tags</em>). Since we used also POS tagger to show part-of-speech labels, they will be displayed alongside tokens underneath the text.</p>
+
+<p>Now we will filter out just the documents talking about a character Bill. We use regular expression <em>\bBill\b</em> to find the documents containing only the word Bill. You can output matching or non-matching documents, view them in another <em>Corpus Viewer</em> or further analyse them.</p>
+
+<p><img src="../images/Corpus-Viewer-Example.png" alt="" /></p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
-      <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
-        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-            <i class="fa fa-search"></i>
-        </button>
-      </div>
-      
-    </div>
-    <div class="categoriesList" id="myUL">
-        <ul style="width: 90%;">
-            <span>Categories: </span>
-            
-            
-            
-          
-          
-            <li style="display: inline;"><a href="/categories/orange3" class="" style="margin-top: 20px !important;">orange3</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/visualization" class="" style="margin-top: 20px !important;">visualization</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/analysis" class="" style="margin-top: 20px !important;">analysis</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/addons" class="" style="margin-top: 20px !important;">addons</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/workshop" class="" style="margin-top: 20px !important;">workshop</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/education" class="" style="margin-top: 20px !important;">education</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/examples" class="" style="margin-top: 20px !important;">examples</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/classification" class="" style="margin-top: 20px !important;">classification</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/data" class="" style="margin-top: 20px !important;">data</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/gsoc" class="" style="margin-top: 20px !important;">gsoc</a></li>
-
-          
-          
-          <li style="display: inline;"><a href="/categories/predictive--analytics" class="active-tag" style="margin-top: 20px !important;">predictive--analytics</a></li>
-          
-
-
-        </ul>
-    </div>
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
-    
-    
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Nov 29, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/11/29/how-to-properly-test-models/" > How to Properly Test Models</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
-One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/overfitting">overfitting</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/scoring">scoring</a>
-                    
-                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/11/29/how-to-properly-test-models/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Apr 7, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" > Model replaces Classify and Regression</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Did you recently wonder where did Classification Tree go? Or what happened to Majority?
-Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
-This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/features">features</a>
-                    
-                    <a class="tag-workflow" href="/categories/interface">interface</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/prediction">prediction</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/regression">regression</a>
-                    
-                    <a class="tag-workflow" href="/categories/toolbox">toolbox</a>
-                    
-                    <a class="tag-workflow" href="/categories/update">update</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-
-
-
-    </div>
-    
-    
-
-</div>
-
-
-</section>
-
-
-<script type="text/javascript">
-    function check_key(e){
-        if(e.keyCode == 13) {
-            search_content();
-        }
-        else if(e.keyCode == 8){
-            if(document.getElementById('search-input').value.length <= 1){
-                $("#post_nor").show();
-                $("#search-results").hide();
-            }
-        }  
-    }
-
-  function search_content(){
-    var url = window.location.pathname.split('/')
-    var tag_param = url.pop() || url.pop();
-    var param = document.getElementById('search-input').value;
-
-    if (param.trim() ==""){
-        $("#post_nor").show();
-        $("#search-results").hide();
-    }
-    else{
-        $("#post_nor").hide();
-    
-
-        var results  = search_categories(tag_param,param);
-        $("#search-results").show();
-        var search_results = document.getElementById('search-results')
-        if (results.length<1){
-            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
-        }
-        else{
-        search_results.innerHTML = "";
-        var html_el = ""
-        
-        
-        for(var page in results){
-            html_el += '<div class="row">';
-            console.log(results[page].image)
-            if (results[page].thumbImage == ''){
-               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
-            }
-            else if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
-            }
-            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
-
-            
-            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
-                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
-            }
-            else{
-            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
-
-            }
-
-            html_el += '<div class="tags" id="tags" style="padding-bottom: 10px;">Categories:'
-                    for(var cat in results[page].categories){
-                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
-                }
-            html_el +='</div>'
-            html_el += '<div class="getting-started-button">'
-            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
-             
-
-
-            html_el += '</div></div>'
-            var position = "";
-            
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
-            }
-           
-            if (results[page].thumbImage != ''){
-               html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
-            }
-
-
-            
-            html_el += "</div> </div><hr/>"
-        }
-        search_results.innerHTML += html_el;
-
-
-        }
-
-        }
-        }
-     
-   </script>
-   <script type="text/javascript" src="/js/lunr.js"></script>
-   <script type="text/javascript">
-      var baseurl = "";
-   </script>
-   <script type="text/javascript" src="/js/search.js"></script>
-
-      
-
+    </section>
 
         </div>
     </div>

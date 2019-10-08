@@ -49,6 +49,18 @@ Columns of non-Numerical data will return a value if every row in that group has
     </item>
     
     <item>
+      <title>Bag of Words</title>
+      <link>/widget-catalog/text-mining/bagofwords-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/bagofwords-widget/</guid>
+      <description>Bag of Words Generates a bag of words from the input corpus.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Corpus with bag of words features appended.  Bag of Words model creates a corpus with word counts for each data instance (document). The count can be either absolute, binary (contains or does not contain) or sublinear (logarithm of the term frequency). Bag of words model is required in combination with Word Enrichment and could be used for predictive modelling.</description>
+    </item>
+    
+    <item>
       <title>Box Plot</title>
       <link>/widget-catalog/visualize/boxplot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -136,6 +148,18 @@ Inputs
     </item>
     
     <item>
+      <title>Concordance</title>
+      <link>/widget-catalog/text-mining/concordance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/concordance/</guid>
+      <description>Concordance Display the context of the word.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Selected Documents: Documents containing the queried word. Concordances: A table of concordances.  Concordance finds the queried word in a text and displays the context in which this word is used. Results in a single color come from the same document. The widget can output selected documents for further analysis or a table of concordances for the queried word.</description>
+    </item>
+    
+    <item>
       <title>Confusion Matrix</title>
       <link>/widget-catalog/evaluate/confusionmatrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -171,6 +195,32 @@ Inputs
  Data: input data set  Outputs
  Data: data set with continuized instances  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete attributes (including binary attributes) are replaced with continuous ones.
  Continuization methods, which define the treatment of multivalued discrete attributes. Say that we have a discrete attribute status with the values low, middle and high, listed in that order.</description>
+    </item>
+    
+    <item>
+      <title>Corpus</title>
+      <link>/widget-catalog/text-mining/corpus-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/corpus-widget/</guid>
+      <description>Corpus Load a corpus of text documents, (optionally) tagged with categories.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents.  Corpus widget reads text corpora from files and sends a corpus instance to its output channel. History of the most recently opened files is maintained in the widget. The widget also includes a directory with sample corpora that come pre-installed with the add-on.
+The widget reads data from Excel (.</description>
+    </item>
+    
+    <item>
+      <title>Corpus Viewer</title>
+      <link>/widget-catalog/text-mining/corpusviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/corpusviewer/</guid>
+      <description>Corpus Viewer Displays corpus content.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Documents containing the queried word.  Corpus Viewer is meant for viewing text files (instances of Corpus). It will always output an instance of corpus. If RegExp filtering is used, the widget will output only matching documents.
+ Information:  Documents: number of documents on the input Preprocessed: if preprocessor is used, the result is True, else False.</description>
     </item>
     
     <item>
@@ -361,6 +411,31 @@ For discrete attributes, the graph displayed by the widget shows how many times 
     </item>
     
     <item>
+      <title>Document Map</title>
+      <link>/widget-catalog/text-mining/docmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/docmap/</guid>
+      <description>Document Map Displays geographic locations mentioned in the text.
+Inputs
+ Data: Data set.  Outputs
+ Corpus: Documents containing mentions of selected geographical regions.  Document Map widget shows geolocations from textual (string) data. It finds mentions of geographic names (countries and capitals) and displays distributions (frequency of mentions) of these names on a map. It works with any Orange widget that outputs a data table and that contains at least one string attribute.</description>
+    </item>
+    
+    <item>
+      <title>Duplicate Detection</title>
+      <link>/widget-catalog/text-mining/duplicatedetection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/duplicatedetection/</guid>
+      <description>Duplicate Detection Detect &amp;amp; remove duplicates from a corpus.
+Inputs
+ Distances: A distance matrix.  Outputs
+ Corpus Without Duplicated: Corpus with duplicates removed. Duplicates Cluster: Documents belonging to selected cluster. Corpus: Corpus with appended cluster labels.  Duplicate Detection uses clustering to find duplicates in the corpus. It is great with the Twitter widget for removing retweets and other similar documents.
+To set the level of similarity, drag the line vertical line left or right in the visualization.</description>
+    </item>
+    
+    <item>
       <title>Edit Domain</title>
       <link>/widget-catalog/data/editdomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -458,6 +533,19 @@ Inputs
  Data: input dataset  Outputs
  Selection: spectra from selected area Data: dataset with information whether a spectrum was selected or not  The HyperSpectra widget plots hyperspectra that were read from the .map file. To use this widget with infrared spectral data, you need to transform it with Reshape Map widget.
 At the top, HyperSpectra shows a 2D map of a slice of the spectra.</description>
+    </item>
+    
+    <item>
+      <title>Import Documents</title>
+      <link>/widget-catalog/text-mining/importdocuments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/importdocuments/</guid>
+      <description>Import Documents Import text documents from folders.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the local machine.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.
+ Folder being loaded. Load folder from a local machine. Reload the data.</description>
     </item>
     
     <item>
@@ -656,6 +744,18 @@ Outputs
     </item>
     
     <item>
+      <title>NY Times</title>
+      <link>/widget-catalog/text-mining/nytimes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/nytimes/</guid>
+      <description>NY Times Loads data from the New York Times&amp;rsquo; Article Search API.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the New York Times newspaper.  NYTimes widget loads data from New York Times&amp;rsquo; Article Search API. You can query NYTimes articles from September 18, 1851 to today, but the API limit is set to allow retrieving only a 1000 documents per query. Define which features to use for text mining, Headline and Abstract being selected by default.</description>
+    </item>
+    
+    <item>
       <title>Naive Bayes</title>
       <link>/widget-catalog/model/naivebayes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -789,6 +889,32 @@ Inputs
 Inputs
  Data: input data set Reference: a reference data set used in some preprocessing methods  Outputs
  Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applied several preprocessing methods to spectral data. You select the preprocessing method from the list and press the triangle button on the right to apply it. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</description>
+    </item>
+    
+    <item>
+      <title>Preprocess Text</title>
+      <link>/widget-catalog/text-mining/preprocesstext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/preprocesstext/</guid>
+      <description>Preprocess Text Preprocesses corpus with selected methods.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Preprocessed corpus.  Preprocess Text splits your text into smaller units (tokens), filters them, runs normalization (stemming, lemmatization), creates n-grams and tags tokens with part-of-speech labels. Steps in the analysis are applied sequentially and can be turned on or off.
+ Information on preprocessed data. Document count reports on the number of documents on the input.</description>
+    </item>
+    
+    <item>
+      <title>Pubmed</title>
+      <link>/widget-catalog/text-mining/pubmed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/pubmed/</guid>
+      <description>Pubmed Fetch data from PubMed journals.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the PubMed online service.  PubMed comprises more than 26 million citations for biomedical literature from MEDLINE, life science journals, and online books. The widget allows you to query and retrieve these entries. You can use regular search or construct advanced queries.
+ Enter a valid e-mail to retrieve queries. Regular search:  Author: queries entries from a specific author.</description>
     </item>
     
     <item>
@@ -1033,6 +1159,19 @@ Inputs
     </item>
     
     <item>
+      <title>Sentiment Analysis</title>
+      <link>/widget-catalog/text-mining/sentimentanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/sentimentanalysis/</guid>
+      <description>Sentiment Analysis Predict sentiment from text.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu Hu and Vader sentiment modules from NLTK. Both of them are lexicon-based. For Liu Hu, you can choose English or Slovenian version.
+ Method:  Liu Hu: lexicon-based sentiment analysis (supports English and Slovenian) Vader: lexicon- and rule-based sentiment analysis  Produce a report.</description>
+    </item>
+    
+    <item>
       <title>Sieve Diagram</title>
       <link>/widget-catalog/visualize/sievediagram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1053,6 +1192,19 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Silhouette Plot widget offers a graphical representation of consistency within clusters of data and provides the user with the means to visually assess cluster quality. The silhouette score is a measure of how similar an object is to its own cluster in comparison to other clusters and is crucial in the creation of a silhouette plot.</description>
+    </item>
+    
+    <item>
+      <title>Similarity Hashing</title>
+      <link>/widget-catalog/text-mining/similarityhashing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/similarityhashing/</guid>
+      <description>Similarity Hashing Computes documents hashes.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Corpus with simhash value as attributes.  Similarity Hashing is a widget that transforms documents into similarity vectors. The widget uses SimHash method from from Moses Charikar.
+ Set Simhash size (how many attributes will be on the output, corresponds to bits of information) and shingle length (how many tokens are used in a shingle).</description>
     </item>
     
     <item>
@@ -1105,6 +1257,31 @@ Inputs
     </item>
     
     <item>
+      <title>The Guardian</title>
+      <link>/widget-catalog/text-mining/guardian-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/guardian-widget/</guid>
+      <description>The Guardian Fetching data from The Guardian Open Platform.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the Guardian newspaper.  Guardian retrieves articles from the Guardian newspaper via their API. For the widget to work, you need to provide the API key, which you can get at their access platform.
+ Insert the API key for the widget to work.   Provide the query and set the time frame from which to retrieve the articles.</description>
+    </item>
+    
+    <item>
+      <title>Topic Modelling</title>
+      <link>/widget-catalog/text-mining/topicmodelling-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/topicmodelling-widget/</guid>
+      <description>Topic Modelling Topic modelling with Latent Dirichlet Allocation, Latent Semantic Indexing or Hierarchical Dirichlet Process.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Corpus with topic weights appended. Topics: Selected topics with word weights. All Topics: Topic weights by tokens.  Topic Modelling discovers abstract topics in a corpus based on clusters of words found in each document and their respective frequency. A document typically contains multiple topics in different proportions, thus the widget also reports on the topic weight per document.</description>
+    </item>
+    
+    <item>
       <title>Transpose</title>
       <link>/widget-catalog/data/transpose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1143,6 +1320,31 @@ Inputs
     </item>
     
     <item>
+      <title>Tweet Profiler</title>
+      <link>/widget-catalog/text-mining/tweetprofiler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/tweetprofiler/</guid>
+      <description>Tweet Profiler Detect Ekman&amp;rsquo;s, Plutchik&amp;rsquo;s or Profile of Mood States&amp;rsquo; emotions in tweets.
+Inputs
+ Corpus: A collection of tweets (or other documents).  Outputs
+ Corpus: A corpus with information on the sentiment of each document.  Tweet Profiler retrieves information on sentiment from the server for each given tweet (or document). The widget sends data to the server, where a model computes emotion probabilities and/or scores. The widget support three classifications of emotion, namely Ekman&amp;rsquo;s, Plutchik&amp;rsquo;s and Profile of Mood States (POMS).</description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/widget-catalog/text-mining/twitter-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/twitter-widget/</guid>
+      <description>Twitter Fetching data from The Twitter Search API.
+Inputs
+ None  Outputs
+ Corpus: A collection of tweets from the Twitter API.  Twitter widget enables querying tweets through Twitter API. You can query by content, author or both and accumulate results should you wish to create a larger data set. The widget only supports REST API and allows queries for up to two weeks back.
+ To begin your queries, insert Twitter key and secret.</description>
+    </item>
+    
+    <item>
       <title>Venn Diagram</title>
       <link>/widget-catalog/visualize/venndiagram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1152,6 +1354,43 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Selected Data: instances selected from the plot  The Venn Diagram widget displays logical relations between datasets. This projection shows two or more datasets represented by circles of different colors. The intersections are subsets that belong to more than one dataset. To further analyze or visualize the subset, click on the intersection.</description>
+    </item>
+    
+    <item>
+      <title>Wikipedia</title>
+      <link>/widget-catalog/text-mining/wikipedia-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/wikipedia-widget/</guid>
+      <description>Wikipedia Fetching data from MediaWiki RESTful web service API.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the Wikipedia.  Wikipedia widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.
+ Query parameters:  Query word list, where each query is listed in a new line. Language of the query. English is set by default. Number of articles to retrieve per query (range 1-25).</description>
+    </item>
+    
+    <item>
+      <title>Word Cloud</title>
+      <link>/widget-catalog/text-mining/wordcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/wordcloud/</guid>
+      <description>Word Cloud Generates a word cloud from corpus.
+Inputs
+ Topic: Selected topic. Corpus: A collection of documents.  Outputs
+ Corpus: Documents that match the selection. Word: Selected word that can be used as query in Concordance.  Word Cloud displays tokens in the corpus, their size denoting the frequency of the word in corpus. Words are listed by their frequency (weight) in the widget. The widget outputs documents, containing selected tokens from the word cloud.</description>
+    </item>
+    
+    <item>
+      <title>Word Enrichment</title>
+      <link>/widget-catalog/text-mining/wordenrichment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/wordenrichment/</guid>
+      <description>Word Enrichment Word enrichment analysis for selected documents.
+Inputs
+ Corpus: A collection of documents. Selected Data: Selected instances from corpus.  Outputs
+ None  Word Enrichment displays a list of words with lower p-values (higher significance) for a selected subset compared to the entire corpus. Lower p-value indicates a higher likelihood that the word is significant for the selected subset (not randomly occurring in a text). FDR (False Discovery Rate) is linked to p-value and reports on the expected percent of false predictions in the set of predictions, meaning it account for false positives in list of low p-values.</description>
     </item>
     
     <item>

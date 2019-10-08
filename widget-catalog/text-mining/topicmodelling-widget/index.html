@@ -1,6 +1,6 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Predictive  Analytics</title>
+    <title>Orange Data Mining - Topic Modelling</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
@@ -176,304 +176,92 @@
     <div id="main">
         <div class="container-fluid clear-top">
             
-  
 
-      <section id="features" class="features section padding-bottom ">
-    <div class="container page-background getting-started" >
-        <div style="text-align: center">
-           <h2 style="font-size: 34px;" >
-              Orange Blog
-           </h2>
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="topic-modelling">Topic Modelling</h1>
+
+<p>Topic modelling with Latent Dirichlet Allocation, Latent Semantic Indexing or Hierarchical Dirichlet Process.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Corpus: A collection of documents.</li>
+</ul>
+
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Corpus: Corpus with topic weights appended.</li>
+<li>Topics: Selected topics with word weights.</li>
+<li>All Topics: Topic weights by tokens.</li>
+</ul>
+
+<p><strong>Topic Modelling</strong> discovers abstract topics in a corpus based on clusters of words found in each document and their respective frequency. A document typically contains multiple topics in different proportions, thus the widget also reports on the topic weight per document.</p>
+
+<p><img src="../images/Topic-Modelling-stamped.png" alt="" /></p>
+
+<ol>
+<li>Topic modelling algorithm:
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Indexing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hierarchical_Dirichlet_process">Hierarchical Dirichlet Process</a></li>
+</ul></li>
+<li>Parameters for the algorithm. LSI and LDA accept only the number of topics modelled, with the default set to 10. HDP, however, has more parameters. As this algorithm is computationally very demanding, we recommend you to try it on a subset or set all the required parameters in advance and only then run the algorithm (connect the input to the widget).
+
+<ul>
+<li>First level concentration (γ): distribution at the first (corpus) level of Dirichlet Process</li>
+<li>Second level concentration (α): distribution at the second (document) level of Dirichlet Process</li>
+<li>The topic Dirichlet (α): concentration parameter used for the topic draws</li>
+<li>Top level truncation (Τ): corpus-level truncation (no of topics)</li>
+<li>Second level truncation (Κ): document-level truncation (no of topics)</li>
+<li>Learning rate (κ): step size</li>
+<li>Slow down parameter (τ)</li>
+</ul></li>
+<li>Produce a report.</li>
+<li>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
+</ol>
+
+<h2 id="example">Example</h2>
+
+<p>In the first example, we present a simple use of the <strong>Topic Modelling</strong> widget. First we load <em>grimm-tales-selected.tab</em> data set and use <a href="../preprocesstext/">Preprocess Text</a> to tokenize by words only and remove stopwords. Then we connect <strong>Preprocess Text</strong> to <strong>Topic Modelling</strong>, where we use a simple <em>Latent Semantic Indexing</em> to find 10 topics in the text.</p>
+
+<p><img src="../images/Topic-Modelling-Example1.png" alt="" /></p>
+
+<p>LSI provides both positive and negative weights per topic. A positive weight means the word is highly representative of a topic, while a negative weight means the word is highly unrepresentative of a topic (the less it occurs in a text, the more likely the topic). Positive words are colored green and negative words are colored red.</p>
+
+<p>We then select the first topic and display the most frequent words in the topic in <a href="../wordcloud/">Word Cloud</a>. We also connected <strong>Preprocess Text</strong> to <strong>Word Cloud</strong> in order to be able to output selected documents. Now we can select a specific word in the word cloud, say <em>little</em>. It will be colored red and also highlighted in the word list on the left.</p>
+
+<p>Now we can observe all the documents containing the word <em>little</em> in <a href="../corpusviewer/">Corpus Viewer</a>.</p>
+
+<p>In the second example, we will look at the correlation between topics and words/documents. Connect <strong>Topic Modelling</strong> to <strong>Heat Map</strong>. Ensure the link is set to <em>All Topics</em> - <em>Data</em>. <strong>Topic Modelling</strong> will output a matrix of topic weights by words from text (more precisely, tokens).</p>
+
+<p>We can observe the output in a <strong>Data Table</strong>. Tokens are in rows and retrieved topics in columns. Values represent how much a word is represented in a topic.</p>
+
+<p><img src="../images/Topic-Modelling-DataTable.png" alt="" /></p>
+
+<p>To visualize this matrix, open <strong>Heat Map</strong>. Select <em>Merge by k-means</em> and <em>Cluster</em> - <em>Rows</em> to merge similar rows into one and sort them by similarity, which makes the visualization more compact.</p>
+
+<p>In the upper part of the visualization, we have words that highly define topics 1-3 and in the lower part those that define topics 5 and 10.</p>
+
+<p>We can similarly observe topic representation across documents. We connect another <strong>Heat Map</strong> to <strong>Topic Modelling</strong> and set link to <em>Corpus</em> - <em>Data</em>. We set <em>Merge</em> and <em>Cluster</em> as above.</p>
+
+<p>In this visualization we see how much is a topic represented in a document. Looks like Topic 1 is represented almost across the entire corpus, while other topics are more specific. To observe a specific set of document, select either a clustering node or a row in the visualization. Then pass the data to <a href="../corpusviewer/">Corpus Viewer</a>.</p>
+
+<p><img src="../images/Topic-Modelling-Example2.png" alt="" /></p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
-      <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
-        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-            <i class="fa fa-search"></i>
-        </button>
-      </div>
-      
-    </div>
-    <div class="categoriesList" id="myUL">
-        <ul style="width: 90%;">
-            <span>Categories: </span>
-            
-            
-            
-          
-          
-            <li style="display: inline;"><a href="/categories/orange3" class="" style="margin-top: 20px !important;">orange3</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/visualization" class="" style="margin-top: 20px !important;">visualization</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/analysis" class="" style="margin-top: 20px !important;">analysis</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/addons" class="" style="margin-top: 20px !important;">addons</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/workshop" class="" style="margin-top: 20px !important;">workshop</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/education" class="" style="margin-top: 20px !important;">education</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/examples" class="" style="margin-top: 20px !important;">examples</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/classification" class="" style="margin-top: 20px !important;">classification</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/data" class="" style="margin-top: 20px !important;">data</a></li>
-
-          
-          
-            <li style="display: inline;"><a href="/categories/gsoc" class="" style="margin-top: 20px !important;">gsoc</a></li>
-
-          
-          
-          <li style="display: inline;"><a href="/categories/predictive--analytics" class="active-tag" style="margin-top: 20px !important;">predictive--analytics</a></li>
-          
-
-
-        </ul>
-    </div>
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
-    
-    
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Nov 29, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/11/29/how-to-properly-test-models/" > How to Properly Test Models</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
-One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/overfitting">overfitting</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/scoring">scoring</a>
-                    
-                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/11/29/how-to-properly-test-models/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-        <div class=" row">
-            
-            <div class='content col-md-12 col-xs-12 feature-description' >
-            
-            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Apr 7, 2017</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" > Model replaces Classify and Regression</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Did you recently wonder where did Classification Tree go? Or what happened to Majority?
-Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
-This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.
-               
-
-             </p>
-                <div class="tags"  style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/features">features</a>
-                    
-                    <a class="tag-workflow" href="/categories/interface">interface</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/prediction">prediction</a>
-                    
-                    <a class="tag-workflow" href="/categories/predictive--analytics">predictive  analytics</a>
-                    
-                    <a class="tag-workflow" href="/categories/regression">regression</a>
-                    
-                    <a class="tag-workflow" href="/categories/toolbox">toolbox</a>
-                    
-                    <a class="tag-workflow" href="/categories/update">update</a>
-                    
-                </div>
-                <div class="getting-started-button" >
-                        
-                    <a href="/blog/2017/04/07/model-replaces-classify-and-regression/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                </div>
-                </div>
-            
-            
-            </div>
-            <hr/>
-
-
-
-
-    </div>
-    
-    
-
-</div>
-
-
-</section>
-
-
-<script type="text/javascript">
-    function check_key(e){
-        if(e.keyCode == 13) {
-            search_content();
-        }
-        else if(e.keyCode == 8){
-            if(document.getElementById('search-input').value.length <= 1){
-                $("#post_nor").show();
-                $("#search-results").hide();
-            }
-        }  
-    }
-
-  function search_content(){
-    var url = window.location.pathname.split('/')
-    var tag_param = url.pop() || url.pop();
-    var param = document.getElementById('search-input').value;
-
-    if (param.trim() ==""){
-        $("#post_nor").show();
-        $("#search-results").hide();
-    }
-    else{
-        $("#post_nor").hide();
-    
-
-        var results  = search_categories(tag_param,param);
-        $("#search-results").show();
-        var search_results = document.getElementById('search-results')
-        if (results.length<1){
-            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
-        }
-        else{
-        search_results.innerHTML = "";
-        var html_el = ""
-        
-        
-        for(var page in results){
-            html_el += '<div class="row">';
-            console.log(results[page].image)
-            if (results[page].thumbImage == ''){
-               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
-            }
-            else if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
-            }
-            html_el += '<p class="feature-text">Author: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
-
-            
-            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
-                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
-            }
-            else{
-            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
-
-            }
-
-            html_el += '<div class="tags" id="tags" style="padding-bottom: 10px;">Categories:'
-                    for(var cat in results[page].categories){
-                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
-                }
-            html_el +='</div>'
-            html_el += '<div class="getting-started-button">'
-            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
-             
-
-
-            html_el += '</div></div>'
-            var position = "";
-            
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
-            }
-           
-            if (results[page].thumbImage != ''){
-               html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
-            }
-
-
-            
-            html_el += "</div> </div><hr/>"
-        }
-        search_results.innerHTML += html_el;
-
-
-        }
-
-        }
-        }
-     
-   </script>
-   <script type="text/javascript" src="/js/lunr.js"></script>
-   <script type="text/javascript">
-      var baseurl = "";
-   </script>
-   <script type="text/javascript" src="/js/search.js"></script>
-
-      
-
+    </section>
 
         </div>
     </div>
