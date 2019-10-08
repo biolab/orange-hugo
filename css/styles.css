@@ -31,9 +31,21 @@ a:hover {
   color: #f69111;
 }
 
-.container{
-  padding-left: 0px;
-  padding-right: 0px;
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+
+.remove-padding-l-r {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+  width: 1200px;
+  }
 }
 
 .btn {
@@ -367,9 +379,6 @@ blockquote {
     .footer {
         position: absolute;
     }
-    #loop-container{
-      padding-top:50px !important;
-    }
 }
 
 .docfooter {
@@ -544,6 +553,10 @@ blockquote {
   font-weight: 300;
 }
 
+.content > p {
+  font-weight: 300;
+}
+
 /* ======= Features Section ======= */
 .features h1.title  {
   margin: 40px 0 10px;
@@ -589,6 +602,10 @@ blockquote {
 }
 
 .features h2 a {
+  font-weight: lighter;
+  color: black;
+}
+.features-blog h2 a {
   font-weight: lighter;
   color: black;
 }
@@ -1068,23 +1085,6 @@ svg{
   }
 }
 
-  @media (max-width: 768px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/*@media (min-width: 1350px) {
-  .downloados .row {
-    margin-top: 50px;
-  }
-  .cover-image {
-    background: url('/images/scorange-web-1170.png');
-    background-position: center;
-
-  }
-}*/
 
 /* Custom */
 pre {
@@ -1275,7 +1275,6 @@ h2.docs-subtitle {
 
 .categoriesList{
   margin-top: 5px;
-  padding-left: 20px;
   line-height: 30px;
 }
 .tags{
@@ -1380,12 +1379,6 @@ padding-top: 10px;
     background-color: rgb(33,150,243, 0.3) !important;
 }
 
-.categoriesList{
-  margin-top: 5px;
-  padding-left: 40px;
-  line-height: 30px;
-  padding-right: 40px;
-}
 
 .tags{
   line-height: 30px;

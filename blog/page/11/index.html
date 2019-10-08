@@ -176,548 +176,539 @@
     <div id="main">
         <div class="container-fluid clear-top">
             
-<section id="features" class="features section padding-bottom ">
-    <div class="container page-background getting-started" >
+<section id="features" class="features-blog section offset-header">
+    <div class="container remove-padding-l-r">
         <div style="text-align: center">
-           <h2 style="font-size: 34px;" >
-              Orange Blog
-           </h2>
+            <h2 style="font-size: 34px;">
+                Orange Blog
+            </h2>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
-      <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
-        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-            <i class="fa fa-search"></i>
-        </button>
-      </div>
-      
-    </div>
-    <div class="categoriesList" id="myUL">
-        <ul >
-            <span>Categories: </span>
-          
-            <li style="display: inline;"><a href="/categories/orange3" style="margin-top: 20px !important;">orange3</a></li>
-          
-            <li style="display: inline;"><a href="/categories/visualization" style="margin-top: 20px !important;">visualization</a></li>
-          
-            <li style="display: inline;"><a href="/categories/analysis" style="margin-top: 20px !important;">analysis</a></li>
-          
-            <li style="display: inline;"><a href="/categories/addons" style="margin-top: 20px !important;">addons</a></li>
-          
-            <li style="display: inline;"><a href="/categories/workshop" style="margin-top: 20px !important;">workshop</a></li>
-          
-            <li style="display: inline;"><a href="/categories/education" style="margin-top: 20px !important;">education</a></li>
-          
-            <li style="display: inline;"><a href="/categories/examples" style="margin-top: 20px !important;">examples</a></li>
-          
-            <li style="display: inline;"><a href="/categories/classification" style="margin-top: 20px !important;">classification</a></li>
-          
-            <li style="display: inline;"><a href="/categories/data" style="margin-top: 20px !important;">data</a></li>
-          
-            <li style="display: inline;"><a href="/categories/gsoc" style="margin-top: 20px !important;">gsoc</a></li>
-          
-        </ul>
-    </div>
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
-    
-    
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: LAN, Dec 4, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/12/04/2uda/" > 2UDA</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               In one of the previous blog posts we mentioned that installing the optional dependency psycopg2 allows Orange to connect to PostgreSQL databases and work directly on the data stored there. It is also possible to transfer a whole table to the client machine, keep it in the local memory, and continue working with it as with any other Orange data set loaded from a file. But the true power of this feature lies in the ability of Orange to leave the bulk of the data on the server, delegate some of the computations to the database, and transfer only the needed results.
-               
-
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/sql">sql</a>
-                    
-                </div>
-                <div class="getting-started-button">
-                        
-                    
-                    <a href="/blog/2015/12/04/2uda/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
-                    </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
-                
-            
-              
-            
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
+                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
+                    placeholder="Search blog by categories, title and description." tabindex="1"
+                    onkeydown="check_key(event)" autofocus />
+                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+                    <i class="fa fa-search"></i>
+                </button>
             </div>
-            <hr/>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
+        </div>
+        <div class="categoriesList col-lg-12" id="myUL">
+            <ul>
+                <span>Categories: </span>
+                
+                <li style="display: inline;"><a href="/categories/orange3"
+                        style="margin-top: 20px !important;">orange3</a></li>
+                
+                <li style="display: inline;"><a href="/categories/visualization"
+                        style="margin-top: 20px !important;">visualization</a></li>
+                
+                <li style="display: inline;"><a href="/categories/analysis"
+                        style="margin-top: 20px !important;">analysis</a></li>
+                
+                <li style="display: inline;"><a href="/categories/addons"
+                        style="margin-top: 20px !important;">addons</a></li>
+                
+                <li style="display: inline;"><a href="/categories/workshop"
+                        style="margin-top: 20px !important;">workshop</a></li>
+                
+                <li style="display: inline;"><a href="/categories/education"
+                        style="margin-top: 20px !important;">education</a></li>
+                
+                <li style="display: inline;"><a href="/categories/examples"
+                        style="margin-top: 20px !important;">examples</a></li>
+                
+                <li style="display: inline;"><a href="/categories/classification"
+                        style="margin-top: 20px !important;">classification</a></li>
+                
+                <li style="display: inline;"><a href="/categories/data"
+                        style="margin-top: 20px !important;">data</a></li>
+                
+                <li style="display: inline;"><a href="/categories/gsoc"
+                        style="margin-top: 20px !important;">gsoc</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-lg-12" id="search-results" style="display: none;">
+        </div>
+        <div id="post_nor">
             
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Dec 2, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/12/02/hierarchical-clustering-a-simple-explanation/" > Hierarchical Clustering: A Simple Explanation</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               One of the key techniques of exploratory data mining is clustering – separating instances into distinct groups based on some measure of similarity. We can estimate the similarity between two data instances through euclidean (pythagorean), manhattan (sum of absolute differences between coordinates) and mahalanobis distance (distance from the mean by standard deviation), or, say, through Pearson correlation or Spearman correlation.
+            
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: LAN, Dec 4, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/12/04/2uda/"> 2UDA</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                In one of the previous blog posts we mentioned that installing the optional dependency psycopg2 allows Orange to connect to PostgreSQL databases and work directly on the data stored there. It is also possible to transfer a whole table to the client machine, keep it in the local memory, and continue working with it as with any other Orange data set loaded from a file. But the true power of this feature lies in the ability of Orange to leave the bulk of the data on the server, delegate some of the computations to the database, and transfer only the needed results.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/sql">sql</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/12/04/2uda/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Dec 2, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/12/02/hierarchical-clustering-a-simple-explanation/"> Hierarchical Clustering: A Simple Explanation</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                One of the key techniques of exploratory data mining is clustering – separating instances into distinct groups based on some measure of similarity. We can estimate the similarity between two data instances through euclidean (pythagorean), manhattan (sum of absolute differences between coordinates) and mahalanobis distance (distance from the mean by standard deviation), or, say, through Pearson correlation or Spearman correlation.
 Our main goal when clustering data is to get groups of data instances where:
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/clustering">clustering</a>
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/plot">plot</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/clustering">clustering</a>
+                                
+                                <a class="tag-workflow" href="/categories/education">education</a>
+                                
+                                <a class="tag-workflow" href="/categories/plot">plot</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/12/02/hierarchical-clustering-a-simple-explanation/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/12/02/hierarchical-clustering-a-simple-explanation/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Nov 27, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/11/27/mining-our-own-data/" > Mining our own data</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Recently we&rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Nov 27, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/11/27/mining-our-own-data/"> Mining our own data</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Recently we&rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
 Here we have some preliminary results that we&rsquo;ve managed to gather in the past three weeks or so.
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/data">data</a>
-                    
-                    <a class="tag-workflow" href="/categories/distribution">distribution</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/categories/data">data</a>
+                                
+                                <a class="tag-workflow" href="/categories/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/11/27/mining-our-own-data/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/11/27/mining-our-own-data/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Oct 30, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/10/30/ghostbusters/" > Ghostbusters</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 30, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/30/ghostbusters/"> Ghostbusters</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
 Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/data">data</a>
-                    
-                    <a class="tag-workflow" href="/categories/distribution">distribution</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/categories/data">data</a>
+                                
+                                <a class="tag-workflow" href="/categories/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/10/30/ghostbusters/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/10/30/ghostbusters/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Oct 19, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/10/19/sql-for-orange/" > SQL for Orange</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               We bet you&rsquo;ve always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don&rsquo;t worry, we&rsquo;re coming to the rescue.
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 19, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/19/sql-for-orange/"> SQL for Orange</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We bet you&rsquo;ve always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don&rsquo;t worry, we&rsquo;re coming to the rescue.
 The key to SQL files is installation of &lsquo;psycopg2&rsquo; library in Python.
 WINDOWS
 Go to this website and download psycopg2 package. Once your .whl file has downloaded, go to the file directory and run command prompt. Enter “pip install [file name]” and run it.
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/data">data</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/sql">sql</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/data">data</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/categories/sql">sql</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/10/19/sql-for-orange/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/10/19/sql-for-orange/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Oct 16, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/10/16/learners-in-python/" > Learners in Python</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               We&rsquo;ve already written about classifying instances in Python. However, it&rsquo;s always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 16, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/16/learners-in-python/"> Learners in Python</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We&rsquo;ve already written about classifying instances in Python. However, it&rsquo;s always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.
 TRAINING THE CLASSIFIER
 We start with simply importing Orange module into Python and loading our data set.
 &gt;&gt;&gt;&gt; import Orange &gt;&gt;&gt;&gt; data = Orange.data.Table(&quot;titanic&quot;)  We are using &lsquo;titanic.tab&rsquo; data. You can load any data set you want, but it does have to have a categorical class variable (for numeric targets use regression).
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/classification">classification</a>
-                    
-                    <a class="tag-workflow" href="/categories/examples">examples</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/python">python</a>
-                    
-                    <a class="tag-workflow" href="/categories/scripting">scripting</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/classification">classification</a>
+                                
+                                <a class="tag-workflow" href="/categories/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/categories/python">python</a>
+                                
+                                <a class="tag-workflow" href="/categories/scripting">scripting</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/10/16/learners-in-python/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/10/16/learners-in-python/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: BLAZ, Oct 9, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/10/09/data-mining-course-in-houston/" > Data Mining Course in Houston</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BLAZ, Oct 9, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/09/data-mining-course-in-houston/"> Data Mining Course in Houston</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
 This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
-                    
-                    <a class="tag-workflow" href="/categories/workshop">workshop</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/dataloading">dataloading</a>
+                                
+                                <a class="tag-workflow" href="/categories/education">education</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                                
+                                <a class="tag-workflow" href="/categories/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/10/09/data-mining-course-in-houston/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/10/09/data-mining-course-in-houston/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 2, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/02/a-visit-from-the-tilburg-university/"> A visit from the Tilburg University</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Biolab is currently hosting two amazing data scientists from the Tilburg University - dr. Marie Nilsen and dr. Eric Postma, who are preparing a 20-lecture MOOC on data science for non-technical audience. A part of the course will use Orange. The majority of their students is coming from humanities, law, economy and behavioral studies, thus we are discussing options and opportunities for adapting Orange for social scientists. Another great thing is that the course is designed for beginner level data miners, showcasing that anybody can mine the data and learn from it.
+                                
 
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Oct 2, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/10/02/a-visit-from-the-tilburg-university/" > A visit from the Tilburg University</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               Biolab is currently hosting two amazing data scientists from the Tilburg University - dr. Marie Nilsen and dr. Eric Postma, who are preparing a 20-lecture MOOC on data science for non-technical audience. A part of the course will use Orange. The majority of their students is coming from humanities, law, economy and behavioral studies, thus we are discussing options and opportunities for adapting Orange for social scientists. Another great thing is that the course is designed for beginner level data miners, showcasing that anybody can mine the data and learn from it.
-               
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/education">education</a>
+                                
+                                <a class="tag-workflow" href="/categories/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/categories/overfitting">overfitting</a>
+                                
+                                <a class="tag-workflow" href="/categories/regression">regression</a>
+                                
+                                <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/education">education</a>
-                    
-                    <a class="tag-workflow" href="/categories/examples">examples</a>
-                    
-                    <a class="tag-workflow" href="/categories/overfitting">overfitting</a>
-                    
-                    <a class="tag-workflow" href="/categories/regression">regression</a>
-                    
-                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
-                    
-                </div>
-                <div class="getting-started-button">
+
+                                <a href="/blog/2015/10/02/a-visit-from-the-tilburg-university/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/10/02/a-visit-from-the-tilburg-university/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Sep 25, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/09/25/save-your-graphs/" > Save your graphs!</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Sep 25, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/09/25/save-your-graphs/"> Save your graphs!</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
 &ldquo;Save Graph&rdquo; will save visualizations to your computer.
 Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/analysis">analysis</a>
-                    
-                    <a class="tag-workflow" href="/categories/images">images</a>
-                    
-                    <a class="tag-workflow" href="/categories/visualization">visualization</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/categories/images">images</a>
+                                
+                                <a class="tag-workflow" href="/categories/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/09/25/save-your-graphs/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/09/25/save-your-graphs/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
+                    <hr />
+                    
+            <div class="row">
                 
-            
-              
-            
-            </div>
-            <hr/>
+                        <div class='content col-md-12 col-xs-12 feature-description'>
 
-        <div class="row">
-         
-            <div class='content col-md-12 col-xs-12 feature-description' >
-
-            
-                 <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: AJDA, Sep 11, 2015</p>
-                    <h2 class="workflow-title" style="margin-top: 10px !important">
-                        <a href="/blog/2015/09/11/hubbing-with-hub-widget/" > Hubbing with the Hub widget</a>
-                    </h2>
-                <p class="feature-text">
-                  
-               So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Sep 11, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/09/11/hubbing-with-hub-widget/"> Hubbing with the Hub widget</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
 Say no more! Look no further! Here is the new Hub widget!
 Hub widget is the most versatile widget available so far.
-               
+                                
 
-             </p>
-                <div class="tags" style="padding-bottom: 10px;">
-                    Categories:
-                    
-                    <a class="tag-workflow" href="/categories/addons">addons</a>
-                    
-                    <a class="tag-workflow" href="/categories/data">data</a>
-                    
-                    <a class="tag-workflow" href="/categories/download">download</a>
-                    
-                    <a class="tag-workflow" href="/categories/orange3">orange3</a>
-                    
-                    <a class="tag-workflow" href="/categories/widget">widget</a>
-                    
-                </div>
-                <div class="getting-started-button">
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/categories/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/categories/data">data</a>
+                                
+                                <a class="tag-workflow" href="/categories/download">download</a>
+                                
+                                <a class="tag-workflow" href="/categories/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/categories/widget">widget</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/09/11/hubbing-with-hub-widget/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
                         
-                    
-                    <a href="/blog/2015/09/11/hubbing-with-hub-widget/" class="no-break-buttons">
-                    <div class="learn-more feature-block">
-                        
-                        <div class="feature-block feature-link">Read More</div>
-                        <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div>
                     </div>
-                </a>
-                    &nbsp;&nbsp;
-                </div>
-               
-                </div>
-                
-            
-              
-            
-            </div>
-            <hr/>
-
-
+                    <hr />
+                    
+                    
 
 
 <div class="center-pag">
@@ -809,117 +800,113 @@ Hub widget is the most versatile widget available so far.
 </div>
 
 
+                </div>
+            </div>
+        </div>
     </div>
-    
-    
-
-</div>
-
 
 </section>
 <script type="text/javascript">
-    function check_key(e){
-        if(e.keyCode == 13) {
+    function check_key(e) {
+        if (e.keyCode == 13) {
             search_content();
-        }
-        else if(e.keyCode == 8){
-            if(document.getElementById('search-input').value.length <= 1){
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
                 $("#post_nor").show();
                 $("#search-results").hide();
                 $("#pagination").show();
             }
-        }  
-    }
-
-  function search_content(){
-    
-    var param = document.getElementById('search-input').value;
-
-     $("#pagination").hide();
-
-    if (param.trim() ==""){
-        $("#post_nor").show();
-        $("#search-results").hide();
-        $("#pagination").show();
-    }
-    else{
-        $("#post_nor").hide();
-    
-
-        var results  = search(param);
-        console.log(results)
-        $("#search-results").show();
-        var search_results = document.getElementById('search-results')
-        if (results.length<1){
-            search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
         }
-        else{
-        search_results.innerHTML = "";
+    }
 
-        var html_el = ""
+    function search_content() {
 
-        for(var page in results){
-            html_el += '<div class="row">';
-            if (results[page].thumbImage == ''){
-               html_el +='<div class="content col-md-12 col-xs-12 feature-description" >'
-            }
+        var param = document.getElementById('search-input').value;
 
-            else if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
-            }
-            html_el += '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: '+results[page].author +', '+results[page].date+'</p>'
-            html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="'+results[page].uri+'">'+results[page].title+'</a></h2>'
+        $("#pagination").hide();
 
-            
-            if (results[page].longExcerpt != '' && results[page].longExcerpt!='<no value>'){
-                html_el += '<p class="feature-text">'+results[page].longExcerpt+'</p>'
-            }
-            else{
-            html_el += '<p class="feature-text">'+results[page].summary+'</p>'
+        if (param.trim() == "") {
+            $("#post_nor").show();
+            $("#search-results").hide();
+            $("#pagination").show();
+        } else {
+            $("#post_nor").hide();
 
-            }
 
-            html_el += '<div class="tags" style="padding-bottom: 10px;">Categories:'
-                    for(var cat in results[page].categories){
-                    html_el += '<a class="tag-workflow" href="/categories/'+results[page].categories[cat]+'">'+results[page].categories[cat]+'</a>'
+            var results = search(param);
+            console.log(results)
+            $("#search-results").show();
+            var search_results = document.getElementById('search-results')
+            if (results.length < 1) {
+                search_results.innerHTML = '<div style="padding: 20px 10px"> No blog posts found. </div>';
+            } else {
+                search_results.innerHTML = "";
+
+                var html_el = ""
+
+                for (var page in results) {
+                    html_el += '<div class="row">';
+                    if (results[page].thumbImage == '') {
+                        html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
+                    } else if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
+                    } else {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
+                    }
+                    html_el +=
+                        '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
+                        results[page].author + ', ' + results[page].date + '</p>'
+                    html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="' + results[
+                        page].uri + '">' + results[page].title + '</a></h2>'
+
+
+                    if (results[page].longExcerpt != '' && results[page].longExcerpt != '<no value>') {
+                        html_el += '<p class="feature-text">' + results[page].longExcerpt + '</p>'
+                    } else {
+                        html_el += '<p class="feature-text">' + results[page].summary + '</p>'
+
+                    }
+
+                    html_el += '<div class="tags" style="padding-bottom: 10px;">Categories:'
+                    for (var cat in results[page].categories) {
+                        html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
+                            results[page].categories[cat] + '</a>'
+                    }
+                    html_el += '</div>'
+                    html_el += '<div class="getting-started-button">'
+                    html_el += '<a href="' + results[page].uri +
+                        '" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+
+                    html_el += '</div></div>'
+
+
+                    if (page % 2 == 0) {
+                        html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                    } else {
+                        html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+
+                    }
+                    if (results[page].thumbImage != '') {
+                        html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
+                            '" class="workflow-image" ></a>'
+                    }
+
+
+
+                    html_el += "</div> </div><hr/>"
                 }
-            html_el +='</div>'
-            html_el += '<div class="getting-started-button">'
-            html_el+= '<a href="'+results[page].uri+'" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
-
-            html_el += '</div></div>'
-            
-
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                search_results.innerHTML += html_el;
             }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
-
-            }
-             if (results[page].thumbImage != ''){
-                html_el += '<a href="'+results[page].uri+'"><img src="'+ results[page].thumbImage+'" class="workflow-image" ></a>'
-            }
-
-
-            
-            html_el += "</div> </div><hr/>"
         }
-        search_results.innerHTML += html_el;
-      }
     }
-    }
-
-     
-   </script>
-   <script type="text/javascript" src="/js/lunr.js"></script>
-   <script type="text/javascript">
-      var baseurl = "";
-   </script>
-   <script type="text/javascript" src="/js/search.js"></script>
+</script>
+<script type="text/javascript" src="/js/lunr.js"></script>
+<script type="text/javascript">
+    var baseurl = "";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
 
         </div>
     </div>
