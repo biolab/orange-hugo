@@ -137,6 +137,7 @@ def process_widget(cat, w, webpage_json):
         md = open(md_file, "rt").read()
 
         category = cat.lower()
+        category = category.replace(" ", "-")
 
         copy_images(md_file,
                     md,
@@ -148,7 +149,6 @@ def process_widget(cat, w, webpage_json):
                                category,
                                path.join(to_location_static, category))
 
-        # FIXME spaces (and other strange chars) in categories?
         loc = path.join(to_location, category)
         if not os.path.exists(loc):
             os.makedirs(loc)

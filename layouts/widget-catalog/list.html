@@ -18,10 +18,10 @@
                <ul>
                   {{range $value}}
                   <li class="toctree-l1">
-                      {{ if .url }}<a href="{{ lower .category}}/{{ .url }}">{{end}}
+                      {{ if .url }}<a href="{{ lower .category | urlize }}/{{ .url }}">{{end}}
                       <img alt="{{ .title }}" src="/{{ .icon }}"/>
                       {{ if .url }}</a>{{end}}
-                      {{ if .url }}<a href="{{ lower .category}}/{{ .url }}">{{end}}
+                      {{ if .url }}<a href="{{ lower .category| urlize }}/{{ .url }}">{{end}}
                       <div class="reference internal">{{ .title }}</div>
                       {{ if .url }}</a>{{end}}
                   </li>
