@@ -230,7 +230,7 @@
                 
             </ul>
         </div>
-        <div class="col-lg-12" id="search-results" style="display: none;">
+        <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
             
@@ -310,7 +310,7 @@
             $("#search-results").show();
             var search_results = document.getElementById('search-results')
             if (results.length < 1) {
-                search_results.innerHTML = '<div style="padding: 30px 10px;"> No workflows found.</div>';
+                search_results.innerHTML = '<div style="padding: 30px 15px;"> No workflows found.</div>';
             } else {
                 search_results.innerHTML = "";
                 var html_el = ""
