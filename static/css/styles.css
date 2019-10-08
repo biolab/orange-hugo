@@ -42,9 +42,9 @@ a:hover {
   padding-right: 0px !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1185px) {
   .container {
-  width: 1200px;
+  width: 1170px;
   }
 }
 
