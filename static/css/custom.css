@@ -808,7 +808,7 @@ blockquote cite {
 }
 
 .getting-started{
-    padding-top: 50px !important;
+    padding-top: 20px
 }
 .padding-top-page {
     padding-top: 20px;
@@ -904,3 +904,10 @@ blockquote cite {
 .panel-body{
     font-weight: 300;
 }
+
+@media(min-width: 630px) {
+    #overflow-container > .container {
+        width: 630px;
+    }
+}
+
