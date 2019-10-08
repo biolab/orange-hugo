@@ -17,5 +17,5 @@ XVFBARGS="-screen 0 1280x1024x24"
 
 catchsegv xvfb-run -a -s "$XVFBARGS" python scripts/copy_docs.py \
   external/orange3/doc/ \
-  external/orange-spectroscopy/doc/
-  external/oraneg3-text/doc/
+  external/orange-spectroscopy/doc/ \
+  external/orange3-text/doc/
