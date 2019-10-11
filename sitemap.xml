@@ -1279,6 +1279,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/model/calibratedlearner/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/evaluate/calibrationplot/</loc>
   </url>
   

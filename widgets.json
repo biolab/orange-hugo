@@ -507,7 +507,8 @@
      "threshold"
     ],
     "background": "#FAC1D9",
-    "icon": "widget-icons/Model-Calibrated Learner.png"
+    "icon": "widget-icons/Model-Calibrated Learner.png",
+    "url": "calibratedlearner"
    },
    {
     "title": "kNN",

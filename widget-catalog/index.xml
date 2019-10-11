@@ -111,6 +111,19 @@ Data Frame output can be used in the Python Script widget by connecting it to th
     </item>
     
     <item>
+      <title>Calibrated Learner</title>
+      <link>/widget-catalog/model/calibratedlearner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/calibratedlearner/</guid>
+      <description>Calibrated Learner Wraps another learner with probability calibration and decision threshold optimization.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s) Base Learner: learner to calibrate  Outputs
+ Learner: calibrated learning algorithm Model: trained model using the calibrated learner  This learner produces a model that calibrates the distribution of class probabilities and optimizes decision threshold. The widget works only for binary classification tasks.
+ The name under which it will appear in other widgets.</description>
+    </item>
+    
+    <item>
       <title>Calibration Plot</title>
       <link>/widget-catalog/evaluate/calibrationplot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
