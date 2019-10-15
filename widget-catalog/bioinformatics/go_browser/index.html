@@ -1,0 +1,435 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - GO Browser</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+<section id="features" class="features section padding-bottom">
+        <div class="container page-background">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="content privacy padding-doc single-widget">
+                        
+
+<h1 id="go-browser">GO Browser</h1>
+
+<p>Provides access to Gene Ontology database.</p>
+
+<p><strong>Inputs</strong>
+- Cluster Data: Data on clustered genes.
+- Reference Data: Data with genes for the reference set (optional).</p>
+
+<p><strong>Outputs</strong>
+- Data on Selected Genes: Data on genes from the selected GO node.
+- Enrichment Report: Data on GO enrichment analysis.</p>
+
+<p><strong>GO Browser</strong> widget provides access to <a href="http://geneontology.org/">Gene Ontology database</a>. Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology. The widget takes any data on genes as an input (it is best to input statistically significant genes, for example from the output of the <strong>Differential Expression</strong> widget) and shows a ranked list of GO terms with p-values. This is a great tool for finding biological processes that are over- or under-represented in a particular gene set. The user can filter input data by selecting terms in a list.</p>
+
+<p><img src="../images/go_browser/GO-Browser-stamped.png" alt="" /></p>
+
+<p><strong>INPUT tab</strong></p>
+
+<ol>
+<li>Information on the input data set. <em>Ontology/Annotation Info</em>
+reports the current status of the GO database.</li>
+<li>Select the reference. You can either have the <em>entire genome</em> as
+reference or a <em>reference set</em> from the input.</li>
+
+<li><p>Select the ontology where you want to calculate the enrichment.
+There are three <em>Aspect</em> options:</p>
+
+<ul>
+<li><a href="http://geneontology.org/page/biological-process-ontology-guidelines">Biological
+process</a></li>
+<li><a href="http://geneontology.org/page/cellular-component-ontology-guidelines">Cellular
+component</a>)</li>
+<li><a href="http://geneontology.org/page/molecular-function-ontology-guidelines">Molecular
+function</a></li>
+</ul></li>
+
+<li><p>A ranked tree (upper pane) and list (lower pane) of GO terms for the
+selected aspect:</p>
+
+<ul>
+<li><strong>GO term</strong></li>
+<li><strong>Cluster</strong>: number of genes from the input that are also
+annotated to a particular GO term (and its proportion in all the
+genes from that term).</li>
+<li><strong>Reference</strong>: number of genes that are annotated to a
+particular GO term (and its proportion in the entire genome).</li>
+<li><strong>P-value</strong>: probability of seeing as many or more genes at
+random. The closer the p-value is to zero, the more significant
+a particular GO term is. Value is written in <a href="https://en.wikipedia.org/wiki/Scientific_notation#E_notation">e
+notation</a>).</li>
+<li><strong>FDR</strong>: <a href="https://en.wikipedia.org/wiki/False_discovery_rate">false discovery
+rate</a> - a
+multiple testing correction that means a proportion of false
+discoveries among all discoveries up to that FDR value.</li>
+<li><strong>Genes</strong>: genes in a biological process.</li>
+<li><a href="http://geneontology.org/page/go-enrichment-analysis">Enrichment</a>
+level</li>
+</ul></li>
+</ol>
+
+<p><img src="../images/go_browser/Filter-Select.png" alt="" /></p>
+
+<p><strong>FILTER tab</strong></p>
+
+<ol>
+<li><p><em>Filter GO Term Nodes</em> by:</p>
+
+<ul>
+<li><strong>Genes</strong> is a minimal number of genes mapped to a term</li>
+<li><strong>P-value</strong> is a max term p-value</li>
+<li><strong>FDR</strong>: is a max term <a href="https://en.wikipedia.org/wiki/False_discovery_rate">false discovery
+rate</a></li>
+</ul></li>
+
+<li><p><em>Significance test</em> specifies distribution to use for null
+hypothesis:</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Binomial_distribution">Binomial</a>:
+use a binomial distribution</li>
+<li><a href="https://en.wikipedia.org/wiki/Hypergeometric_distribution">Hypergeometric</a>:
+use a hypergeometric distribution</li>
+</ul></li>
+
+<li><p><a href="http://geneontology.org/page/guide-go-evidence-codes">Evidence codes in
+annotation</a>
+show how the annotation to a particular term is supported.</p></li>
+</ol>
+
+<p><strong>SELECT tab</strong></p>
+
+<ol>
+<li><p><em>Annotated genes</em> outputs genes that are:</p>
+
+<ul>
+<li><strong>Directly or Indirectly</strong> annotated (direct and inherited
+annotations)</li>
+<li><strong>Directly</strong> annotated (inherited annotations won&rsquo;t be in the
+output)</li>
+</ul></li>
+
+<li><p><em>Output</em>:</p>
+
+<ul>
+<li><strong>All selected genes</strong>: outputs genes annotated to all selected
+GO terms</li>
+<li><strong>Term-specific genes</strong>: outputs genes that appear in only one
+of selected GO terms</li>
+<li><strong>Common term genes</strong>: outputs genes common to all selected GO
+terms</li>
+<li><strong>Add GO Term as class</strong>: adds GO terms as class attribute</li>
+</ul></li>
+</ol>
+
+<h2 id="example">Example</h2>
+
+<p>In the example below we have used <strong>GEO Data Sets</strong> widget, in which we
+have selected <em>Caffeine effects: time course and dose response</em> data set, and connected it to a <strong>Differential Expression</strong>. Differential
+analysis allows us to select genes with the highest statistical
+relevance (we used ANOVA scoring and agent label) and feed them to <strong>GO Browser</strong>. This
+widget lists four biological processes for our selected genes. Say we
+are interested in finding out more about <em>monosaccharide transmembrane transport</em> as
+this term has a high enrichment rate. To learn more about which genes
+are annotated to this GO term, select it in the view and observe the results in a <strong>Data Table</strong>, where we
+see all the genes participating in this process listed. The other output of <strong>GO Browser</strong> widget is enrichment report, which we observe in the second <strong>Data Table</strong>.</p>
+
+<p><img src="../images/go_browser/GO-Browser-Example.png" alt="" /></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 29 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-09-29-of-carrots-horses-and-fear-of-heights/">Of Carrots and Horses and the Fear of Heights</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 28 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-09-28-on-expected-vomiting-time/">On Expected Vomiting Time</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-08-27-pivot-table/">Aggregate, Group By and Pivot with... Pivot Table!</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

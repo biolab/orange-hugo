@@ -1108,5 +1108,641 @@
     "url": "duplicatedetection"
    }
   ]
+ ],
+ [
+  "Bioinformatics",
+  [
+   {
+    "title": "Databases Update",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Databases Update.png",
+    "url": "databases_update"
+   },
+   {
+    "title": "GEO Data Sets",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-GEO Data Sets.png",
+    "url": "geo_data_sets"
+   },
+   {
+    "title": "dictyExpress",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-dictyExpress.png",
+    "url": "dicty_express"
+   },
+   {
+    "title": "Genes",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Genes.png",
+    "url": "genes"
+   },
+   {
+    "title": "Differential Expression",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Differential Expression.png",
+    "url": "differential_expression"
+   },
+   {
+    "title": "GO Browser",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-GO Browser.png",
+    "url": "go_browser"
+   },
+   {
+    "title": "KEGG Pathways",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-KEGG Pathways.png",
+    "url": "kegg_pathways"
+   },
+   {
+    "title": "Gene Set Enrichment",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Gene Set Enrichment.png",
+    "url": "gene_set_enrichment"
+   },
+   {
+    "title": "Gene Sets",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Gene Sets.png"
+   },
+   {
+    "title": "Cluster Analysis",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Cluster Analysis.png",
+    "url": "cluster_analysis"
+   },
+   {
+    "title": "Volcano Plot",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Volcano Plot.png",
+    "url": "volcano_plot"
+   },
+   {
+    "title": "Homologs",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Homologs.png"
+   },
+   {
+    "title": "Marker Genes",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Marker Genes.png",
+    "url": "marker_genes"
+   },
+   {
+    "title": "Annotator",
+    "category": "Bioinformatics",
+    "keywords": [
+     "annotate"
+    ],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Annotator.png",
+    "url": "annotate_projection"
+   }
+  ]
+ ],
+ [
+  "Single Cell",
+  [
+   {
+    "title": "Load Data",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Load Data.png",
+    "url": "load_data"
+   },
+   {
+    "title": "Single Cell Datasets",
+    "category": "Single Cell",
+    "keywords": [
+     "online"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Single Cell Datasets.png",
+    "url": "single_cell_datasets"
+   },
+   {
+    "title": "Dropout Gene Selection",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Dropout Gene Selection.png"
+   },
+   {
+    "title": "Filter",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Filter.png",
+    "url": "filter"
+   },
+   {
+    "title": "Single Cell Preprocess",
+    "category": "Single Cell",
+    "keywords": [
+     "process"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Single Cell Preprocess.png",
+    "url": "single_cell_preprocess"
+   },
+   {
+    "title": "Batch Effect Removal",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Batch Effect Removal.png",
+    "url": "batch_effect_removal"
+   },
+   {
+    "title": "Align Datasets",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Align Datasets.png",
+    "url": "align_datasets"
+   },
+   {
+    "title": "Score Genes",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Score Genes.png",
+    "url": "score_genes"
+   },
+   {
+    "title": "Score Cells",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Score Cells.png",
+    "url": "score_cells"
+   },
+   {
+    "title": "Dot Matrix",
+    "category": "Single Cell",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Single Cell-Dot Matrix.png",
+    "url": "dot_matrix"
+   }
+  ]
+ ],
+ [
+  "Image Analytics",
+  [
+   {
+    "title": "Import Images",
+    "category": "Image Analytics",
+    "keywords": [
+     "import",
+     "image",
+     "import image",
+     "read",
+     "load"
+    ],
+    "background": "#F7F5A8",
+    "icon": "widget-icons/Image Analytics-Import Images.png",
+    "url": "importimages"
+   },
+   {
+    "title": "Image Viewer",
+    "category": "Image Analytics",
+    "keywords": [
+     "image viewer",
+     "viewer",
+     "image"
+    ],
+    "background": "#F7F5A8",
+    "icon": "widget-icons/Image Analytics-Image Viewer.png",
+    "url": "imageviewer"
+   },
+   {
+    "title": "Image Embedding",
+    "category": "Image Analytics",
+    "keywords": [
+     "embedding",
+     "image",
+     "image embedding"
+    ],
+    "background": "#F7F5A8",
+    "icon": "widget-icons/Image Analytics-Image Embedding.png",
+    "url": "imageembedding"
+   },
+   {
+    "title": "Image Grid",
+    "category": "Image Analytics",
+    "keywords": [
+     "image",
+     "grid",
+     "similarity"
+    ],
+    "background": "#F7F5A8",
+    "icon": "widget-icons/Image Analytics-Image Grid.png",
+    "url": "imagegrid"
+   },
+   {
+    "title": "Save Images",
+    "category": "Image Analytics",
+    "keywords": [
+     "save",
+     "saveimages",
+     "save images",
+     "images"
+    ],
+    "background": "#F7F5A8",
+    "icon": "widget-icons/Image Analytics-Save Images.png"
+   }
+  ]
+ ],
+ [
+  "Networks",
+  [
+   {
+    "title": "Network File",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network File.png",
+    "url": "networkfile"
+   },
+   {
+    "title": "Network Explorer",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network Explorer.png",
+    "url": "networkexplorer"
+   },
+   {
+    "title": "Network Generator",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network Generator.png",
+    "url": "networkgenerator"
+   },
+   {
+    "title": "Network Analysis",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network Analysis.png",
+    "url": "networkanalysis"
+   },
+   {
+    "title": "Network Clustering",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network Clustering.png",
+    "url": "networkclustering"
+   },
+   {
+    "title": "Network Of Groups",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network Of Groups.png",
+    "url": "networkofgroups"
+   },
+   {
+    "title": "Network From Distances",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Network From Distances.png",
+    "url": "networkfromdistances"
+   },
+   {
+    "title": "Single Mode",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Single Mode.png",
+    "url": "singlemode"
+   },
+   {
+    "title": "Save Network",
+    "category": "Networks",
+    "keywords": [],
+    "background": "#C0FF97",
+    "icon": "widget-icons/Networks-Save Network.png"
+   }
+  ]
+ ],
+ [
+  "Geo",
+  [
+   {
+    "title": "Geocoding",
+    "category": "Geo",
+    "keywords": [],
+    "background": "#a0eaa0",
+    "icon": "widget-icons/Geo-Geocoding.png",
+    "url": "geocoding"
+   },
+   {
+    "title": "Geo Map",
+    "category": "Geo",
+    "keywords": [],
+    "background": "#a0eaa0",
+    "icon": "widget-icons/Geo-Geo Map.png",
+    "url": "geomap"
+   },
+   {
+    "title": "Choropleth Map",
+    "category": "Geo",
+    "keywords": [],
+    "background": "#a0eaa0",
+    "icon": "widget-icons/Geo-Choropleth Map.png",
+    "url": "choroplethmap"
+   }
+  ]
+ ],
+ [
+  "Educational",
+  [
+   {
+    "title": "Google Sheets",
+    "category": "Educational",
+    "keywords": [
+     "google sheets",
+     "load google sheets",
+     "sheets",
+     "load data"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Google Sheets.png",
+    "url": "google-sheets"
+   },
+   {
+    "title": "EnKlik Anketa",
+    "category": "Educational",
+    "keywords": [
+     "1ka",
+     "load data",
+     "load survey",
+     "survey"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-EnKlik Anketa.png",
+    "url": "enklik-anketa"
+   },
+   {
+    "title": "Interactive k-Means",
+    "category": "Educational",
+    "keywords": [
+     "kmeans",
+     "clustering",
+     "interactive"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Interactive k-Means.png",
+    "url": "interactive-kmeans"
+   },
+   {
+    "title": "Gradient Descent",
+    "category": "Educational",
+    "keywords": [
+     "gradient descent",
+     "optimization",
+     "gradient"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Gradient Descent.png",
+    "url": "gradient-descent"
+   },
+   {
+    "title": "Polynomial Regression",
+    "category": "Educational",
+    "keywords": [
+     "polynomial regression",
+     "regression",
+     "regression visualization",
+     "polynomial features"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Polynomial Regression.png",
+    "url": "polynomial-regression"
+   },
+   {
+    "title": "Polynomial Classification",
+    "category": "Educational",
+    "keywords": [
+     "polynomial classification",
+     "classification",
+     "class",
+     "classification visualization",
+     "polynomial features"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Polynomial Classification.png",
+    "url": "polynomial-classification"
+   },
+   {
+    "title": "Pie Chart",
+    "category": "Educational",
+    "keywords": [
+     "pie chart",
+     "chart",
+     "visualisation"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Pie Chart.png",
+    "url": "pie-chart"
+   },
+   {
+    "title": "Random Data",
+    "category": "Educational",
+    "keywords": [
+     "random data",
+     "data",
+     "data generation"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Educational-Random Data.png",
+    "url": "random-data"
+   }
+  ]
+ ],
+ [
+  "Time Series",
+  [
+   {
+    "title": "Yahoo Finance",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Yahoo Finance.png",
+    "url": "yahoo_finance"
+   },
+   {
+    "title": "As Timeseries",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-As Timeseries.png",
+    "url": "as_timeseries"
+   },
+   {
+    "title": "Interpolate",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Interpolate.png",
+    "url": "interpolate"
+   },
+   {
+    "title": "Moving Transform",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Moving Transform.png",
+    "url": "moving_transform"
+   },
+   {
+    "title": "Line Chart",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Line Chart.png",
+    "url": "line_chart"
+   },
+   {
+    "title": "Periodogram",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Periodogram.png",
+    "url": "periodogram"
+   },
+   {
+    "title": "Correlogram",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Correlogram.png",
+    "url": "correlogram"
+   },
+   {
+    "title": "Spiralogram",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Spiralogram.png",
+    "url": "spiralogram"
+   },
+   {
+    "title": "Granger Causality",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Granger Causality.png",
+    "url": "granger_causality"
+   },
+   {
+    "title": "ARIMA Model",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-ARIMA Model.png",
+    "url": "arima"
+   },
+   {
+    "title": "VAR Model",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-VAR Model.png",
+    "url": "var"
+   },
+   {
+    "title": "Model Evaluation",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Model Evaluation.png",
+    "url": "model_evaluation"
+   },
+   {
+    "title": "Time Slice",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Time Slice.png"
+   },
+   {
+    "title": "Aggregate",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Aggregate.png",
+    "url": "aggregate"
+   },
+   {
+    "title": "Difference",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Difference.png",
+    "url": "difference"
+   },
+   {
+    "title": "Seasonal Adjustment",
+    "category": "Time Series",
+    "keywords": [],
+    "background": "#33aaff",
+    "icon": "widget-icons/Time Series-Seasonal Adjustment.png",
+    "url": "seasonal_adjustment"
+   }
+  ]
+ ],
+ [
+  "Associate",
+  [
+   {
+    "title": "Frequent Itemsets",
+    "category": "Associate",
+    "keywords": [],
+    "background": "#cccc66",
+    "icon": "widget-icons/Associate-Frequent Itemsets.png",
+    "url": "frequentitemsets"
+   },
+   {
+    "title": "Association Rules",
+    "category": "Associate",
+    "keywords": [],
+    "background": "#cccc66",
+    "icon": "widget-icons/Associate-Association Rules.png",
+    "url": "associationrules"
+   }
+  ]
  ]
 ]

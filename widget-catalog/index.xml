@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>ARIMA Model</title>
+      <link>/widget-catalog/time-series/arima/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/arima/</guid>
+      <description>ARIMA Model Model the time series using ARMA, ARIMA, or ARIMAX model.
+Inputs
+ Time series: Time series as output by As Timeseries widget. Exogenous data: Time series of additional independent variables that can be used in an ARIMAX model.  Outputs
+ Time series model: The ARIMA model fitted to input time series. Forecast: The forecast time series. Fitted values: The values that the model was actually fitted to, equals to original values - residuals.</description>
+    </item>
+    
+    <item>
       <title>AdaBoost</title>
       <link>/widget-catalog/model/adaboost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,6 +35,42 @@ Inputs
     </item>
     
     <item>
+      <title>Aggregate</title>
+      <link>/widget-catalog/time-series/aggregate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/aggregate/</guid>
+      <description>Aggregate Aggregate data by second, minute, hour, day, week, month, or year.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series: Aggregated time series.  Aggregate joins together instances at the same level of granularity. In other words, if aggregating by day, all instances from the same day will be merged into one. Aggregation function can be defined separately based on the type of the attribute.</description>
+    </item>
+    
+    <item>
+      <title>Align Datasets</title>
+      <link>/widget-catalog/single-cell/align_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/align_datasets/</guid>
+      <description>Align Datasets Alignment of multiple datasets with a diagram of correlation visualization.
+Inputs - Data: single cell dataset
+Outputs - Transformed Data: aligned data - Genes per n. Components
+ Data source indicator Number of components for canonical correlation analysis. Number of shared genes and the scoring method for alignment. Scoring can be done with Pearson, Spearman and Biweights midcorrelation. Tick the box to use the percent of quantile normalization and dynamic time warping.</description>
+    </item>
+    
+    <item>
+      <title>Annotator</title>
+      <link>/widget-catalog/bioinformatics/annotate_projection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/annotate_projection/</guid>
+      <description>Annotator The widget provides an option to annotate cells with cell types based on marker genes.
+Inputs - Reference Data: Data set with gene expression values. - Secondary Data: Subset of instances (optional). - Genes: Marker genes.
+Outputs - Selected Data: Instances selected from the plot. - Data: Data with additional columns with annotations, clusters, and projection
+This widget receives gene expression data together with mapping to a two-dimensional space and marker genes.</description>
+    </item>
+    
+    <item>
       <title>Apply Domain</title>
       <link>/widget-catalog/data/applydomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -32,6 +80,28 @@ Inputs
 Inputs
  Data: input dataset Template Data: template for transforming the dataset  Outputs
  Transformed Data: transformed dataset  Apply Domain maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use Apply Domain to map the new data into the PCA space created from the original data.</description>
+    </item>
+    
+    <item>
+      <title>As Timeseries</title>
+      <link>/widget-catalog/time-series/as_timeseries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/as_timeseries/</guid>
+      <description>../A../s../ ../T../i../m../e../s../e../r../i../e../s../ ../=../=../=../=../=../=../=../=../=../=../=../=../=../ ../ ../R../e../i../n../t../e../r../p../r../e../t../ ../a../ ../../../T../a../b../l../e../../../ ../o../b../j../e../c../t../ ../a../s../ ../a../ ../[../T../i../m../e../s../e../r../i../e../s../]../(../)../ ../o../b../j../e../c../t../&amp;hellip;/ ../ ../../../I../n../p../u../t../s../../../ ../ ../-../ ../D../a../t../a../:../ ../A../n../y../ ../d../a../t../a../ ../t../a../b../l../e../&amp;hellip;/ ../ ../../../O../u../t../p../u../t../s../../../ ../ ../-../ ../T../i../m../e../ ../s../e../r../i../e../s../:../ ../D../a../t../a../ ../t../a../b../l../e../ ../r../e../i../n../t../e../r../p../r../e../t../e../d../ ../a../s../ ../t../i../m../e../ ../s../e../r../i../e../s../&amp;hellip;/ ../ ../T../h../i../s../ ../w../i../d../g../e../t../ ../r../e../i../n../t../e../r../p../r../e../t../s../ ../a../n../y../ ../d../a../t../a../ ../t../a../b../l../e../ ../a../s../ ../a../ ../t../i../m../e../ ../s../e../r../i../e../s../,../ ../s../o../ ../i../t../ ../c../a../n../ ../b../e../ ../u../s../e../d../ ../w../i../t../h../ ../t../h../e../ ../r../e../s../t../ ../o../f../ ../t../h../e../ ../w../i../d../g../e../t../s../ ../i../n../ ../t../h../i../s../ ../a../d../d../-../o../n../&amp;hellip;/ ../I../n../ ../t../h../e../ ../w../i../d../g../e../t../,../ ../y../o../u../ ../c../a../n../ ../s../e../t../ ../w../h../i../c../h../ ../d../a../t../a../ ../a../t../t../r../i../b../u../t../e../ ../r../e../p../r../e../s../e../n../t../s../ ../t../h../e../ ../t../i../m../e../ ../v../a../r../i../a../b../l../e../&amp;hellip;/ .</description>
+    </item>
+    
+    <item>
+      <title>Association Rules</title>
+      <link>/widget-catalog/associate/associationrules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/associate/associationrules/</guid>
+      <description>Association Rules Induction of association rules.
+Inputs
+ Data: Data set  Outputs
+ Matching Data: Data instances matching the criteria.  This widget implements FP-growth frequent pattern mining algorithm [1] with bucketing optimization [2] for conditional databases of few items. For inducing classification rules, it generates rules for the entire itemset and skips the rules where the consequent does not match one of the class&amp;rsquo; values.
+ Information on the data set.</description>
     </item>
     
     <item>
@@ -58,6 +128,17 @@ Columns of non-Numerical data will return a value if every row in that group has
 Inputs
  Corpus: A collection of documents.  Outputs
  Corpus: Corpus with bag of words features appended.  Bag of Words model creates a corpus with word counts for each data instance (document). The count can be either absolute, binary (contains or does not contain) or sublinear (logarithm of the term frequency). Bag of words model is required in combination with Word Enrichment and could be used for predictive modelling.</description>
+    </item>
+    
+    <item>
+      <title>Batch Effect Removal</title>
+      <link>/widget-catalog/single-cell/batch_effect_removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/batch_effect_removal/</guid>
+      <description>Batch Effect Removal Batch effect normalization on Single Cell data set.
+Data - Data: Single cell dataset.
+Outputs - Data: Single cell dataset.</description>
     </item>
     
     <item>
@@ -133,6 +214,31 @@ Inputs
 Inputs
  Evaluation Results: results of testing classification algorithms  The Calibration Plotplots class probabilities against those predicted by the classifier(s).
  Select the desired target class from the drop down menu. Choose which classifiers to plot. The diagonal represents optimal behavior; the closer the classifier&amp;rsquo;s curve gets, the more accurate its prediction probabilities are. Thus we would use this widget to see whether a classifier is overly optimistic (gives predominantly positive results) or pessimistic (gives predominantly negative results).</description>
+    </item>
+    
+    <item>
+      <title>Choropleth Map</title>
+      <link>/widget-catalog/geo/choroplethmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/geo/choroplethmap/</guid>
+      <description>Choropleth Map A thematic map in which areas are shaded in proportion to the measurement of the statistical variable being displayed.
+Inputs - Data: An input data set.
+Outputs - Selected Data: A subset of instances selected from the map. - Data: Data set with an appended meta attribute specifying selected and unselected data.
+Choropleth provides an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region.</description>
+    </item>
+    
+    <item>
+      <title>Cluster Analysis</title>
+      <link>/widget-catalog/bioinformatics/cluster_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/cluster_analysis/</guid>
+      <description>Cluster Analysis Display differentially expressed genes that characterize the cluster.
+Inputs - Data: Data set. - Custom Gene Sets: Genes to compare.
+Outputs - Selected Data: Data selected in the widget.
+Cluster Analysis widget displays differentially expressed genes that characterize the cluster, and corresponding gene terms that describe differentially expressed genes.
+ Info Cluster Indicator Batch Indicator Gene Scoring Gene Sets Custom Gene Sets Filter Genes Filter Gene Sets  Example TODO: Example</description>
     </item>
     
     <item>
@@ -250,6 +356,18 @@ Inputs
     </item>
     
     <item>
+      <title>Correlogram</title>
+      <link>/widget-catalog/time-series/correlogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/correlogram/</guid>
+      <description>Correlogram Visualize variables&amp;rsquo; auto-correlation.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  In this widget, you can visualize the autocorrelation coefficients for the selected time series.
+ Select the series to calculate autocorrelation for. See the autocorrelation coefficients. Choose to calculate the coefficients using partial autocorrelation function (PACF) instead. Choose to plot the 95% significance interval (dotted horizontal line). Coefficients that are outside of this interval might be significant.</description>
+    </item>
+    
+    <item>
       <title>Correspondence Analysis</title>
       <link>/widget-catalog/unsupervised/correspondenceanalysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -324,6 +442,19 @@ Inputs
     </item>
     
     <item>
+      <title>Databases Update</title>
+      <link>/widget-catalog/bioinformatics/databases_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/databases_update/</guid>
+      <description>Databases Update Updates local systems biology databases, like gene ontologies, annotations, gene names, protein interaction networks, and similar.
+Inputs - None
+Outputs - None
+With the bioinformatics add-on you can access several databases directly from Orange. The widget can also be used to update and manage locally stored databases. To get a more detailed information on the particular database hover on its name.
+ Find the desired database. A list of available databases described with data source, update availability, date of your last update and file size.</description>
+    </item>
+    
+    <item>
       <title>Datasets</title>
       <link>/widget-catalog/data/datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -333,6 +464,30 @@ Inputs
 Outputs
  Data: output dataset  Datasets widget retrieves selected dataset from the server and sends it to the output. File is downloaded to the local memory and thus instantly available even without the internet connection. Each dataset is provided with a description and information on the data size, number of instances, number of variables, target and tags.
  Information on the number of datasets available and the number of them downloaded to the local memory.</description>
+    </item>
+    
+    <item>
+      <title>Difference</title>
+      <link>/widget-catalog/time-series/difference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/difference/</guid>
+      <description>Difference Make the time series stationary by replacing it with 1st or 2nd order discrete difference along its values.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series: Differences of input time series.   Order of differencing. Can be 1 or 2. The shift before differencing. Value of 1 equals to discrete differencing. You can use higher values to compute the difference between now and this many steps ahead.</description>
+    </item>
+    
+    <item>
+      <title>Differential Expression</title>
+      <link>/widget-catalog/bioinformatics/differential_expression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/differential_expression/</guid>
+      <description>Differential Expression Plots differential gene expression for selected experiments.
+Inputs - Data: Data set.
+Outputs - Data Subset: Differentially expressed genes. - Remaining Data Subset: Genes that were not differentially expressed. - Selected Genes: Genes from the select data with scores appended.
+This widget plots a differential gene expression graph for a sample target. It takes gene expression data as an input (from dictyExpress, GEO Data Sets, etc.) and outputs a selected data subset (normally the most interesting genes).</description>
     </item>
     
     <item>
@@ -436,6 +591,17 @@ Inputs
     </item>
     
     <item>
+      <title>Dot Matrix</title>
+      <link>/widget-catalog/single-cell/dot_matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/dot_matrix/</guid>
+      <description>Dot Matrix Perform cluster analysis.
+Inputs - Data: Single cell dataset.
+Outputs - Selected Data - Data: Single cell dataset. - Contingency Table</description>
+    </item>
+    
+    <item>
       <title>Duplicate Detection</title>
       <link>/widget-catalog/text-mining/duplicatedetection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -459,6 +625,18 @@ Inputs
  Data: input dataset  Outputs
  Data: dataset with edited domain  This widget can be used to edit/change a dataset&amp;rsquo;s domain.
  All features (including meta attributes) from the input dataset are listed in the Variables list. Selecting one feature displays an editor on the right. Change the name of the feature. Change the value names for discrete features in the Values list box.</description>
+    </item>
+    
+    <item>
+      <title>EnKlik Anketa</title>
+      <link>/widget-catalog/educational/enklik-anketa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/enklik-anketa/</guid>
+      <description>EnKlik Anketa Import data from EnKlikAnketa (1ka.si) public URL.
+Outputs
+ Data: survey results  The EnKlik Anketa widget retrieves survey results obtained from the EnKlikAnketa service. You need to create a public link to to retrieve the results. Go to the survey you wish to retrieve, then select Data (Podatki) tab and create a public link (javna povezava) at the top right corner.
+Then insert the link into the Public link URL field.</description>
     </item>
     
     <item>
@@ -499,6 +677,19 @@ The widget reads data from Excel (.</description>
     </item>
     
     <item>
+      <title>Filter</title>
+      <link>/widget-catalog/single-cell/filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/filter/</guid>
+      <description>Filter Filter cells/genes.
+Inputs - Data: input dataset
+Outputs - Data: filtered dataset
+The Filter widget filters cells or genes by the number of positive measurements. One can select genes in visualization to remove the unfrequent and overly frequent cells/genes.
+ Information on the input and output. Filter by cells (rows), genes (columns) or data (remove zero measurments). If the box is ticked, data points are displayed. Filter by lower and upper threshold.</description>
+    </item>
+    
+    <item>
       <title>FreeViz</title>
       <link>/widget-catalog/visualize/freeviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -508,6 +699,128 @@ The widget reads data from Excel (.</description>
 Inputs
  Data: input dataset Data Subset: subset of instances  Outputs
  Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected Components: FreeViz vectors  FreeViz uses a paradigm borrowed from particle physics: points in the same class attract each other, those from different class repel each other, and the resulting forces are exerted on the anchors of the attributes, that is, on unit vectors of each of the dimensional axis.</description>
+    </item>
+    
+    <item>
+      <title>Frequent Itemsets</title>
+      <link>/widget-catalog/associate/frequentitemsets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/associate/frequentitemsets/</guid>
+      <description>Frequent Itemsets Finds frequent itemsets in the data.
+Inputs
+ Data: Data set  Outputs
+ Matching Data: Data instances matching the criteria.  The widget finds frequent items in a data set based on a measure of support for the rule.
+ Information on the data set. &amp;lsquo;Expand all&amp;rsquo; expands the frequent itemsets tree, while &amp;lsquo;Collapse all&amp;rsquo; collapses it. In Find itemsets by you can set criteria for itemset search:  Minimal support: a minimal ratio of data instances that must support (contain) the itemset for it to be generated.</description>
+    </item>
+    
+    <item>
+      <title>GEO Data Sets</title>
+      <link>/widget-catalog/bioinformatics/geo_data_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/geo_data_sets/</guid>
+      <description>GEO Data Sets Provides access to data sets from gene expression omnibus GEO DataSets.
+Inputs - None
+Outputs - Expression data: Data set selected in the widget with genes or samples in rows.
+GEO DataSets is a database of gene expression curated profiles maintained by NCBI and included in the Gene Expression Omnibus. This Orange widget provides access to all its data sets and outputs a data set selected for further processing.</description>
+    </item>
+    
+    <item>
+      <title>GO Browser</title>
+      <link>/widget-catalog/bioinformatics/go_browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/go_browser/</guid>
+      <description>GO Browser Provides access to Gene Ontology database.
+Inputs - Cluster Data: Data on clustered genes. - Reference Data: Data with genes for the reference set (optional).
+Outputs - Data on Selected Genes: Data on genes from the selected GO node. - Enrichment Report: Data on GO enrichment analysis.
+GO Browser widget provides access to Gene Ontology database. Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology.</description>
+    </item>
+    
+    <item>
+      <title>Gene Set Enrichment</title>
+      <link>/widget-catalog/bioinformatics/gene_set_enrichment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/gene_set_enrichment/</guid>
+      <description>Gene Set Enrichment Enrich gene sets.
+Inputs - Data: Data set. - Custom Gene Sets: Genes to compare. - Reference Genes: Genes used as reference.
+Outputs - Matched Genes: Gene that match.
+TODO Description.
+ Info Custom Gene Set Term Column Reference Gene Sets If Commit Automatically is ticked, results will be automatically sent to the output. Alternatively, press Commit. Filtering.  Example TODO Example</description>
+    </item>
+    
+    <item>
+      <title>Genes</title>
+      <link>/widget-catalog/bioinformatics/genes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/genes/</guid>
+      <description>Genes Match input gene ID&amp;rsquo;s with corresponding Entrez ID&amp;rsquo;s.
+Inputs - Data: Data set.
+Outputs - Data: Instances with meta data that the user has manually selected in the widget. - Genes: All genes from the input with included gene info summary and matcher result.
+To work with widgets in the bioinformatics add-on data sets must be properly annotated. We need to specify: - Location of genes in a table (rows, columns) - ID from the NCBI Gene database (Entrez ID) - Organism (Taxonomy ID)</description>
+    </item>
+    
+    <item>
+      <title>Geo Map</title>
+      <link>/widget-catalog/geo/geomap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/geo/geomap/</guid>
+      <description>Geo Map Show data points on a world map.
+Inputs - Data: Data set. - Data Subset: A subset of instances from the input data set. - Learner: A learning algorithm (classification or regression).
+Outputs - Selected Data: A subset of instances that the user has manually selected from the map. - Data: Data set with an appended meta attribute specifying selected and unselected data.
+Geo Map widget maps geo-spatial data on a world map.</description>
+    </item>
+    
+    <item>
+      <title>Geocoding</title>
+      <link>/widget-catalog/geo/geocoding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/geo/geocoding/</guid>
+      <description>Geocoding Encode region names into geographical coordinates, or reverse-geocode latitude and longitude pairs into regions.
+Inputs - Data: An input data set.
+Outputs - Coded Data: Data set with new meta attributes.
+Geocoding widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return the latitude and longitude of geometric centre.
+ Use region names to extract the corresponding latitude/longitude pairs:  Region identifier: attribute with the information on region names.</description>
+    </item>
+    
+    <item>
+      <title>Google Sheets</title>
+      <link>/widget-catalog/educational/google-sheets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/google-sheets/</guid>
+      <description>Google Sheets Read data from a Google Sheets spreadsheet.
+Outputs
+ Data: data set from the Google Sheets service.  Description The widget reads data from the Google Sheets service. To use the widget, click the Share button in a selected spreadsheet, copy the provided link and paste it into the widget&amp;rsquo;s URL line. Press enter to load the data. To observe the data in real time, use the Reload function.</description>
+    </item>
+    
+    <item>
+      <title>Gradient Descent</title>
+      <link>/widget-catalog/educational/gradient-descent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/gradient-descent/</guid>
+      <description>Gradient Descent Educational widget that shows the gradient descent algorithm on a logistic or linear regression.
+Inputs
+ Data: input data set  Outputs
+ Data: data with columns selected in the widget Classifier: model produced at the current step of the algorithm. Coefficients: coefficients at the current step of the algorithm.  Description This widget incrementally shows steps of gradient descent for a logistic or linear regression. Gradient descent is demonstrated on two attributes that are selected by the user.</description>
+    </item>
+    
+    <item>
+      <title>Granger Causality</title>
+      <link>/widget-catalog/time-series/granger_causality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/granger_causality/</guid>
+      <description>Granger Causality Test if one time series Granger-causes (i.e. can be an indicator of) another time series.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  This widgets performs a series of statistical tests to determine the series that cause other series so we can use the former to forecast the latter.
+ Desired level of confidence. Maximum lag to test to. Runs the test. Denotes the minimum lag at which one series can be said to cause another.</description>
     </item>
     
     <item>
@@ -549,6 +862,42 @@ At the top, HyperSpectra shows a 2D map of a slice of the spectra.</description>
     </item>
     
     <item>
+      <title>Image Embedding</title>
+      <link>/widget-catalog/image-analytics/imageembedding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/image-analytics/imageembedding/</guid>
+      <description>Image Embedding Image embedding through deep neural networks.
+Inputs
+ Images: List of images.  Outputs
+ Embeddings: Images represented with a vector of numbers. Skipped Images: List of images where embeddings were not calculated.  Image Embedding reads images and uploads them to a remote server or evaluate them locally. Deep learning models are used to calculate a feature vector for each image. It returns an enhanced data table with additional columns (image descriptors).</description>
+    </item>
+    
+    <item>
+      <title>Image Grid</title>
+      <link>/widget-catalog/image-analytics/imagegrid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/image-analytics/imagegrid/</guid>
+      <description>Image Grid Displays images in a similarity grid.
+Inputs
+ Embeddings: Image embeddings from Image Embedding widget. Data Subset: A subset of embeddings or images.  Outputs
+ Images: Images from the dataset with an additional column specifying if the image is selected or the group, if there are several. Selected Images: Selected images with an additional column specifying the group.  The Image Grid widget can display images from a dataset in a similarity grid - images with similar content are placed closer to each other.</description>
+    </item>
+    
+    <item>
+      <title>Image Viewer</title>
+      <link>/widget-catalog/image-analytics/imageviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/image-analytics/imageviewer/</guid>
+      <description>Image Viewer Displays images that come with a data set.
+Inputs
+ Data: A data set with images.  Outputs
+ Data: Images that come with the data. Selected images: Images selected in the widget.  The Image Viewer widget can display images from a data set, which are stored locally or on the internet. The widget will look for an attribute with type=image in the third header row. It can be used for image comparison, while looking for similarities or discrepancies between selected data instances (e.</description>
+    </item>
+    
+    <item>
       <title>Import Documents</title>
       <link>/widget-catalog/text-mining/importdocuments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -559,6 +908,18 @@ Inputs
  None  Outputs
  Corpus: A collection of documents from the local machine.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.
  Folder being loaded. Load folder from a local machine. Reload the data.</description>
+    </item>
+    
+    <item>
+      <title>Import Images</title>
+      <link>/widget-catalog/image-analytics/importimages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/image-analytics/importimages/</guid>
+      <description>Import Images Import images from a directory(s).
+Outputs
+ Data: Dataset describing one image in each row.  Import Images walks through a directory and returs one row per located image. Columns include image name, path to image, width, height and image size. Column with image path is later used as an attribute for image visualization and embedding.
+ Currently loaded folder. Select the folder to load. Click Reload to update imported images.</description>
     </item>
     
     <item>
@@ -588,6 +949,18 @@ Inputs
     </item>
     
     <item>
+      <title>Interactive k-Means</title>
+      <link>/widget-catalog/educational/interactive-kmeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/interactive-kmeans/</guid>
+      <description>Interactive k-Means Educational widget that shows the working of a k-means clustering.
+Inputs
+ Data: input data set  Outputs
+ Data: data set with cluster annotation Centroids: centroids position  Description The aim of this widget is to show the working of a k-means clustering algorithm on two attributes from a data set. The widget applies k-means clustering to the selected two attributes step by step. Users can step through the algorithm and see how it works.</description>
+    </item>
+    
+    <item>
       <title>Interferogram to Spectrum</title>
       <link>/widget-catalog/spectroscopy/interferogram-to-spectrum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -613,6 +986,30 @@ Inputs
     </item>
     
     <item>
+      <title>Interpolate</title>
+      <link>/widget-catalog/time-series/interpolate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/interpolate/</guid>
+      <description>Interpolate Induce missing values in the time series by interpolation.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series: The input time series with the chosen default interpolation method for when the algorithms require interpolated time series (without missing values). Interpolated time series: The input time series with any missing values interpolated according to the chosen interpolation method.  Most time series algorithms assume, you don&amp;rsquo;t have any missing values in your data.</description>
+    </item>
+    
+    <item>
+      <title>KEGG Pathways</title>
+      <link>/widget-catalog/bioinformatics/kegg_pathways/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/kegg_pathways/</guid>
+      <description>KEGG Pathways Diagrams of molecular interactions, reactions, and relations.
+Inputs - Data: Data set. - Reference: Referential data set.
+Outputs - Selected Data: Data subset. - Unselected Data: Remaining data.
+KEGG Pathways widget displays diagrams of molecular interactions, reactions and relations from the KEGG Pathways Database. It takes data on gene expression as an input, matches the genes to the biological processes and displays a list of corresponding pathways. To explore the pathway, the user can click on any process from the list or arrange them by P-value to get the most relevant processes at the top.</description>
+    </item>
+    
+    <item>
       <title>Lift Curve</title>
       <link>/widget-catalog/evaluate/liftcurve/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -621,6 +1018,18 @@ Inputs
       <description>Lift Curve Measures the performance of a chosen classifier against a random classifier.
 Inputs
  Evaluation Results: results of testing classification algorithms  The Lift curve shows the relation between the number of instances which were predicted positive and those that are indeed positive and thus measures the performance of a chosen classifier against a random classifier. The graph is constructed with the cumulative number of cases (in descending order of probability) on the x-axis and the cumulative number of true positives on the y-axis.</description>
+    </item>
+    
+    <item>
+      <title>Line Chart</title>
+      <link>/widget-catalog/time-series/line_chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/line_chart/</guid>
+      <description>Line Chart Visualize time series&amp;rsquo; sequence and progression in the most basic time series visualization imaginable.
+Inputs
+ Time series: Time series as output by As Timeseries widget. Forecast: Time series forecast as output by one of the models (like VAR or ARIMA).  You can visualize the time series in this widget.
+ Stack a new line chart below the current charts. Remove the associated stacked chart. Type of chart to draw.</description>
     </item>
     
     <item>
@@ -657,6 +1066,16 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s)  Outputs
  Learner: linear regression learning algorithm Model: trained model Coefficients: linear regression coefficients  The Linear Regression widget constructs a learner/predictor that learns a linear function from its input data. The model can identify the relationship between a predictor xi and the response variable y.</description>
+    </item>
+    
+    <item>
+      <title>Load Data</title>
+      <link>/widget-catalog/single-cell/load_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/load_data/</guid>
+      <description>Load Data Load samples for multi-sample analysis.
+Outputs - Data: Single cell dataset.</description>
     </item>
     
     <item>
@@ -721,6 +1140,23 @@ Inputs
     </item>
     
     <item>
+      <title>Marker Genes</title>
+      <link>/widget-catalog/bioinformatics/marker_genes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/marker_genes/</guid>
+      <description>Marker Genes Widget provides access to a public database of marker genes.
+Outputs - Genes
+Database sources:
+ PanglaoDB
+Oscar Franzén, Li-Ming Gan, Johan L M Björkegren, PanglaoDB: a web server for exploration of mouse and human single-cell RNA sequencing data, Database, Volume 2019, 2019, baz046, https://doi.org/10.1093/database/baz046
+  
+ CellMarker
+CellMarker: a manually curated resource of cell markers in human and mouse. Nucleic Acids Research. 2018.
+  Data is preprocessed in Orange readable format and it is hosted here.</description>
+    </item>
+    
+    <item>
       <title>Merge Data</title>
       <link>/widget-catalog/data/mergedata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -733,6 +1169,17 @@ Inputs
     </item>
     
     <item>
+      <title>Model Evaluation</title>
+      <link>/widget-catalog/time-series/model_evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/model_evaluation/</guid>
+      <description>Model Evaluation Evaluate different time series&amp;rsquo; models.
+Inputs
+ Time series: Time series as output by As Timeseries widget. Time series model(s): The time series model(s) to evaluate (e.g. VAR or ARIMA).  Evaluate different time series&amp;rsquo; models. by comparing the errors they make in terms of: root mean squared error (RMSE), median absolute error (MAE), mean absolute percent error (MAPE), prediction of change in direction (POCID), coefficient of determination (R²), Akaike information criterion (AIC), and Bayesian information criterion (BIC).</description>
+    </item>
+    
+    <item>
       <title>Mosaic Display</title>
       <link>/widget-catalog/visualize/mosaicdisplay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -742,6 +1189,19 @@ Inputs
 Inputs
  Data: input dataset Data subset: subset of instances  Outputs
  Selected data: instances selected from the plot  The Mosaic plot is a graphical representation of a two-way frequency table or a contingency table. It is used for visualizing data from two or more qualitative variables and was introduced in 1981 by Hartigan and Kleiner and expanded and refined by Friendly in 1994.</description>
+    </item>
+    
+    <item>
+      <title>Moving Transform</title>
+      <link>/widget-catalog/time-series/moving_transform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/moving_transform/</guid>
+      <description>Moving Transform Apply rolling window functions to the time series. Use this widget to get a series&amp;rsquo; mean.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series: The input time series with the added series&amp;rsquo; transformations.  In this widget, you define what aggregation functions to run over the time series and with what window sizes.
+ Define a new transformation. Remove the selected transformation.</description>
     </item>
     
     <item>
@@ -791,6 +1251,91 @@ This widget has two options: the name under which it will appear in other widget
 Inputs
  Data: An input data set. Reference: A reference data for neighbor computation.  Outputs
  Neighbors: A data table of nearest neighbors according to reference.  The Neighbors widget computes nearest neighbors for a given reference and for a given distance measure. The reference can be either one instance or more instances. In the case with one reference widget outputs closest n instances from data where n is set by the Number of neighbors option in the widget.</description>
+    </item>
+    
+    <item>
+      <title>Network Analysis</title>
+      <link>/widget-catalog/networks/networkanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkanalysis/</guid>
+      <description>Network Analysis Statistical analysis of network data.
+Inputs
+ Network: An instance of Network Graph. Items: Properties of a network file.  Outputs
+ Network: An instance of Network Graph with appended information. Items: New properties of a network file.  Network Analysis widget computes node-level and graph-level summary statistics for the network. It outputs a network with the new computed statistics and an extended item data table (node-level indices only).</description>
+    </item>
+    
+    <item>
+      <title>Network Clustering</title>
+      <link>/widget-catalog/networks/networkclustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkclustering/</guid>
+      <description>Network Clustering Detect clusters in a network.
+Inputs
+ Network: An instance of Network Graph.  Outputs
+ Network: An instance of Network Graph with clustering information appended.  Network Clustering widget finds clusters in a network. Clustering works with two algorithms, one from Raghavan et al. (2007), which uses label propagation to find appropriate clusters, and one from Leung et al. (2009), which builds upon the work from Raghavan and adds hop attenuation as a parameters for cluster formation.</description>
+    </item>
+    
+    <item>
+      <title>Network Explorer</title>
+      <link>/widget-catalog/networks/networkexplorer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkexplorer/</guid>
+      <description>Network Explorer Visually explore the network and its properties.
+Inputs
+ Network: An instance of Network Graph. Node Subset: A subset of vertices. Node Data: Information on vertices. Node Distances: Data on distances between nodes.  Outputs
+ Selected sub-network: A network of selected nodes. Distance Matrix: Distance matrix. Selected Items: Information on selected vertices. Highlighted Items: Information on highlighted vertices. Remaining Items: Information on remaining items (not selected or highlighted).</description>
+    </item>
+    
+    <item>
+      <title>Network File</title>
+      <link>/widget-catalog/networks/networkfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkfile/</guid>
+      <description>Network File Read network graph file in Pajek format.
+Outputs
+ Network: An instance of Network Graph. Items: Properties of a network file.  Network File widget reads network files and sends the input data to its output channel. History of the most recently opened files in maintained in the widget. The widget also includes a directory with sample data sets that come pre-installed with the add-on.
+The widget reads data in .</description>
+    </item>
+    
+    <item>
+      <title>Network From Distances</title>
+      <link>/widget-catalog/networks/networkfromdistances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkfromdistances/</guid>
+      <description>Network From Distances Constructs a network from distances between instances.
+Inputs
+ Distances: A distance matrix.  Outputs
+ Network: An instance of Network Graph. Data: Attribute-valued data set. Distances: A distance matrix.  Network from Distances constructs a network graph from a given distance matrix. Graph is constructed by connecting nodes from the matrix where the distance between nodes is below the given threshold. In other words, all instances with a distance lower than the selected threshold, will be connected.</description>
+    </item>
+    
+    <item>
+      <title>Network Generator</title>
+      <link>/widget-catalog/networks/networkgenerator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkgenerator/</guid>
+      <description>Network Generator Construct example graphs.
+Outputs
+ Generated Network: An instance of Network Graph.  Network Generator constructs exemplary networks. It is mostly intended for teaching/learning about networks.
+Graph options:
+ Path: a graph that can be drawn so that all of its vertices and edges lie on a single straight line. Cycle: a graph that consists of a single cycle, i.e. some number of vertices (at least 3) are connected in a closed chain.</description>
+    </item>
+    
+    <item>
+      <title>Network Of Groups</title>
+      <link>/widget-catalog/networks/networkofgroups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/networkofgroups/</guid>
+      <description>Network Of Groups Group instances by feature and connect related groups.
+Inputs
+ Network: An instance of network graph. Data: Properties of a network graph.  Outputs:
+ Network: A grouped network graph. Data: Properties of the group network graph.  Network of Groups is the network version of the group-by operation. Nodes with the same values of the attribute, selected in the dropdown, will be represented as a single node.</description>
     </item>
     
     <item>
@@ -855,6 +1400,31 @@ Outputs
     </item>
     
     <item>
+      <title>Periodogram</title>
+      <link>/widget-catalog/time-series/periodogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/periodogram/</guid>
+      <description>Periodogram Visualize time series&amp;rsquo; cycles, seasonality, periodicity, and most significant periods.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  In this widget, you can visualize the most significant periods of the time series.
+ Select the series to calculate the periodogram for. See the periods and their respective relative power spectral density estimates.  Periodogram for non-equispaced series is calculated using Lomb-Scargle method.
+See also Correlogram</description>
+    </item>
+    
+    <item>
+      <title>Pie Chart</title>
+      <link>/widget-catalog/educational/pie-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/pie-chart/</guid>
+      <description>Pie Chart The widget for visualizing discrete attributes in the pie chart.
+Inputs
+ Data: input data set  The aim of this widget is to demonstrate that pie charts are a terrible visualization. Please don&amp;rsquo;t use it for any other purpose.
+ Select the attribute you want to visualize. Select the attribute which is used to split data in more charts. Check if you want pies to be exploded (parts of the pie will have space in between).</description>
+    </item>
+    
+    <item>
       <title>Pivot Table</title>
       <link>/widget-catalog/data/pivot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -864,6 +1434,30 @@ Outputs
 Inputs
  Data: input data set  Outputs
  Pivot Table: contingency matrix as shown in the widget Filtered Data: subset selected from the plot Grouped Data: aggregates over groups defined by row values  Pivot Table summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The widget also allows selecting a subset from the table and grouping by row values, which have to be a discrete variable.</description>
+    </item>
+    
+    <item>
+      <title>Polynomial Classification</title>
+      <link>/widget-catalog/educational/polynomial-classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/polynomial-classification/</guid>
+      <description>Polynomial Classification Educational widget that visually demonstrates classification in two classes for any classifier.
+Inputs
+ Data: input data set Preprocessor: data preprocessors Learner: classification algorithm used in the widget. Default set to Logistic Regression Learner.  Outputs
+ Learner: classification algorithm used in the widget Classifier: trained classifier Coefficients: classifier coefficients if it has them  Description This widget interactively shows classification probabilities for classification in two classes using color gradient and contour lines for any classifiers from the Model section.</description>
+    </item>
+    
+    <item>
+      <title>Polynomial Regression</title>
+      <link>/widget-catalog/educational/polynomial-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/polynomial-regression/</guid>
+      <description>Polynomial Regression Educational widget that interactively shows regression line for different regressors.
+Inputs
+ Data: input data set. It needs at least two continuous attributes. Preprocessor: data preprocessors Learner: regression algorithm used in the widget. Default set to Linear Regression.  Outputs
+ Learner: regression algorithm used in the widget Predictor: trained regressor Coefficients: regressor coefficients if any  Description This widget interactively shows the regression line using any of the regressors from the Model module.</description>
     </item>
     
     <item>
@@ -1002,6 +1596,19 @@ Inputs
     </item>
     
     <item>
+      <title>Random Data</title>
+      <link>/widget-catalog/educational/random-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/educational/random-data/</guid>
+      <description>Random Data Generate random data sample.
+Inputs
+ None  Outputs
+ Data: randomly generated data  Random Data allows creating random data sets, where variables correspond to the selected distributions. The user can specify the number of rows (samples) and the number of variables for each distribution. Distributions from the Scipy&amp;rsquo;s stats module are used.
+ Normal: A normal continuous random variable. Set the number of variables, the mean and the variance.</description>
+    </item>
+    
+    <item>
       <title>Random Forest</title>
       <link>/widget-catalog/model/randomforest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1124,6 +1731,42 @@ Inputs
     </item>
     
     <item>
+      <title>Score Cells</title>
+      <link>/widget-catalog/single-cell/score_cells/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/score_cells/</guid>
+      <description>Score Cells Add a cell score based on the given set of genes.
+Inputs
+ Data: input dataset Genes: dataset with gene names  Outputs
+ Data: dataset with a meta column reporting on cell scores  Score Cells scores the cells (rows) in the input data based on expression of input marker genes. Input data has to include gene names in column headers (as attribute names). The score is computed independently for each cell and is equal to the maximum expression of the marker genes.</description>
+    </item>
+    
+    <item>
+      <title>Score Genes</title>
+      <link>/widget-catalog/single-cell/score_genes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/score_genes/</guid>
+      <description>Score Genes Gene scoring based on statistics of their expression profiles or information content about cell types.
+Inputs - Data: input dataset - Scorer: (multiple) prediction model(s)
+Outputs - Reduced Data: expression data containing selected genes - Scores: gene scores
+The Score Genes widget considers gene expression data with genes in columns and single cell expression profiles in rows. It scores the genes based on statistics of gene expression. For examples, it can sort the genes by their mean expression.</description>
+    </item>
+    
+    <item>
+      <title>Seasonal Adjustment</title>
+      <link>/widget-catalog/time-series/seasonal_adjustment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/seasonal_adjustment/</guid>
+      <description>Seasonal Adjustment Decompose the time series into seasonal, trend, and residual components.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series: Original time series with some additional columns: seasonal component, trend component, residual component, and seasonally adjusted time series.   Length of the season in periods (e.g. 12 for monthly data). Time series decomposition model, additive or multiplicative. The series to seasonally adjust.</description>
+    </item>
+    
+    <item>
       <title>Select Columns</title>
       <link>/widget-catalog/data/selectcolumns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1221,6 +1864,40 @@ Inputs
     </item>
     
     <item>
+      <title>Single Cell Datasets</title>
+      <link>/widget-catalog/single-cell/single_cell_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/single_cell_datasets/</guid>
+      <description>Single Cell Datasets Load a single cell data from an online repository.
+Outputs - Data: A single cell dataset containing cells and their gene expression or gene markers.
+Single Cell Datasets retrieves a selected data set from the data base server and sends the data to the output. Gene expression data sets include cells in rows and genes in columns. The data set file is downloaded to the local memory, and for subsequent requests instantly available even without the internet connection.</description>
+    </item>
+    
+    <item>
+      <title>Single Cell Preprocess</title>
+      <link>/widget-catalog/single-cell/single_cell_preprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/single-cell/single_cell_preprocess/</guid>
+      <description>Single Cell Preprocess Preprocess Single Cell data set.
+Inputs - Data: Single cell dataset.
+Outputs - Preprocessed Data: Preprocessed dataset.</description>
+    </item>
+    
+    <item>
+      <title>Single Mode</title>
+      <link>/widget-catalog/networks/singlemode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/networks/singlemode/</guid>
+      <description>Single Mode Convert multimodal graphs to single modal.
+Inputs
+ Network: An instance of a bipartite network graph.  Outputs
+ Network: An instance of single network graph.  Single Mode works with bipartite networks, where subsets are marked with a binary discrete attribute. The widget outputs a network where nodes represent the selected value (e.g. persons) and edges the remaining value (e.g. event). The widget also works with non-binary discrete attributes, but will treat them as binary (one-versus-all).</description>
+    </item>
+    
+    <item>
       <title>Spectra</title>
       <link>/widget-catalog/spectroscopy/spectra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1231,6 +1908,18 @@ Inputs
  Data: input dataset Data Subset:subset of the data  Outputs
  Selection: selected spectra  The Spectra widget allows visual exploration of multiple spectra. To output some spectra, select them by clicking. For multiple selection, hold the modifier key (Ctrl or Cmd) or use line selection (see the plot options menu). Selected spectra will appear dashed.
  Open the plot options menu A spectrum The X and Y position of the cursor The legend (appears only is spectra are colored)  Navigation</description>
+    </item>
+    
+    <item>
+      <title>Spiralogram</title>
+      <link>/widget-catalog/time-series/spiralogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/spiralogram/</guid>
+      <description>Spiralogram Visualize variables&amp;rsquo; auto-correlation.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Visualize time series&amp;rsquo; periodicity in a spiral heatmap.
+ Unit of the vertical axis. Options are: years, months, or days (as present in the series), months of year, days of week, days of month, days of year, weeks of year, weeks of month, hours of day, minutes of hour. Unit of the radial axis (options are the same as for (1)).</description>
     </item>
     
     <item>
@@ -1358,6 +2047,18 @@ Inputs
     </item>
     
     <item>
+      <title>VAR Model</title>
+      <link>/widget-catalog/time-series/var/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/var/</guid>
+      <description>VAR Model Model the time series using vector autoregression (VAR) model.
+Inputs
+ Time series: Time series as output by As Timeseries widget.  Outputs
+ Time series model: The VAR model fitted to input time series. Forecast: The forecast time series. Fitted values: The values that the model was actually fitted to, equals to original values - residuals. Residuals: The errors the model made at each step.  Using this widget, you can model the time series using VAR model.</description>
+    </item>
+    
+    <item>
       <title>Venn Diagram</title>
       <link>/widget-catalog/visualize/venndiagram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1367,6 +2068,19 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Selected Data: instances selected from the plot  The Venn Diagram widget displays logical relations between datasets. This projection shows two or more datasets represented by circles of different colors. The intersections are subsets that belong to more than one dataset. To further analyze or visualize the subset, click on the intersection.</description>
+    </item>
+    
+    <item>
+      <title>Volcano Plot</title>
+      <link>/widget-catalog/bioinformatics/volcano_plot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/volcano_plot/</guid>
+      <description>Volcano Plot Plots significance versus fold-change for gene expression rates.
+Inputs - Data: Input data set.
+Outputs - Selected Data: Data subset.
+Volcano plot is a graphical method for visualizing changes in replicate data. The widget plots a binary logarithm of fold-change on the x-axis versus statistical significance (negative base 10 logarithm of p-value) on the y-axis.
+Volcano Plot is useful for a quick visual identification of statistically significant data (genes).</description>
     </item>
     
     <item>
@@ -1404,6 +2118,31 @@ Inputs
 Inputs
  Corpus: A collection of documents. Selected Data: Selected instances from corpus.  Outputs
  None  Word Enrichment displays a list of words with lower p-values (higher significance) for a selected subset compared to the entire corpus. Lower p-value indicates a higher likelihood that the word is significant for the selected subset (not randomly occurring in a text). FDR (False Discovery Rate) is linked to p-value and reports on the expected percent of false predictions in the set of predictions, meaning it account for false positives in list of low p-values.</description>
+    </item>
+    
+    <item>
+      <title>Yahoo Finance</title>
+      <link>/widget-catalog/time-series/yahoo_finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/yahoo_finance/</guid>
+      <description>Yahoo Finance Generate time series from Yahoo Finance stock market data.
+Outputs
+ Time series: Time series table of open, high, low, close (OHLC) prices, volume and adjusted close price.  This widget fetches historical stock market data from Yahoo Finance and outputs it as a time series data table.
+ Stock (e.g. GOOG) or index (e.g. DJI) symbol you are interested in. Date range you are interested in. Desired resolution of the time series.</description>
+    </item>
+    
+    <item>
+      <title>dictyExpress</title>
+      <link>/widget-catalog/bioinformatics/dicty_express/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/dicty_express/</guid>
+      <description>dictyExpress Gives access to dictyExpress databases.
+Inputs - None
+Outputs - Data: Selected experiment (time-course gene expression data).
+dictyExpress widget gives a direct access to the dictyExpress database. It allows you to download the data from selected experiments in Dictyostelium by Baylor College of Medicine. The widget requires internet connection to work.
+ Log into the database to access personal files. Define the output. Genes from experiments can be either in rows or in columns.</description>
     </item>
     
     <item>

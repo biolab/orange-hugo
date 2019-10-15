@@ -1183,6 +1183,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/arima/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/model/adaboost/</loc>
   </url>
   
@@ -1199,9 +1203,21 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/aggregate/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/single-cell/align_datasets/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/analysis/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/annotate_projection/</loc>
   </url>
   
   <url>
@@ -1215,9 +1231,17 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/as_timeseries/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/association-rules/</loc>
     <lastmod>2016-04-25T07:46:33+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/associate/associationrules/</loc>
   </url>
   
   <url>
@@ -1226,6 +1250,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/bagofwords-widget/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/single-cell/batch_effect_removal/</loc>
   </url>
   
   <url>
@@ -1299,6 +1327,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/geo/choroplethmap/</loc>
+  </url>
+  
+  <url>
     <loc>/citation/</loc>
   </url>
   
@@ -1316,6 +1348,10 @@
   <url>
     <loc>/tags/classification-tree/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/cluster_analysis/</loc>
   </url>
   
   <url>
@@ -1405,6 +1441,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/correlogram/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/unsupervised/correspondenceanalysis/</loc>
   </url>
   
@@ -1482,6 +1522,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/bioinformatics/databases_update/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/dataloading/</loc>
     <lastmod>2018-06-12T07:54:17+00:00</lastmod>
     <priority>0</priority>
@@ -1495,6 +1539,14 @@
     <loc>/categories/debian/</loc>
     <lastmod>2011-09-13T00:32:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/difference/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/differential_expression/</loc>
   </url>
   
   <url>
@@ -1551,6 +1603,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/single-cell/dot_matrix/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/download/</loc>
     <lastmod>2018-04-23T08:34:47+00:00</lastmod>
     <priority>0</priority>
@@ -1584,6 +1640,10 @@
     <loc>/categories/embedding/</loc>
     <lastmod>2018-02-02T10:32:28+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/enklik-anketa/</loc>
   </url>
   
   <url>
@@ -1645,6 +1705,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/single-cell/filter/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/forestlearner/</loc>
     <lastmod>2016-03-23T09:09:26+00:00</lastmod>
     <priority>0</priority>
@@ -1655,9 +1719,21 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/associate/frequentitemsets/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/future/</loc>
     <lastmod>2013-09-02T21:27:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/geo_data_sets/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/go_browser/</loc>
   </url>
   
   <url>
@@ -1677,6 +1753,14 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/bioinformatics/gene_set_enrichment/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/genes/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/genomics/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1689,6 +1773,14 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/geo/geomap/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/geo/geocoding/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/</loc>
   </url>
   
@@ -1696,6 +1788,18 @@
     <loc>/categories/gis/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/google-sheets/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/gradient-descent/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/granger_causality/</loc>
   </url>
   
   <url>
@@ -1770,6 +1874,18 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/image-analytics/imageembedding/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/image-analytics/imagegrid/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/image-analytics/imageviewer/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/images/</loc>
     <lastmod>2018-02-02T10:32:28+00:00</lastmod>
     <priority>0</priority>
@@ -1777,6 +1893,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/importdocuments/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/image-analytics/importimages/</loc>
   </url>
   
   <url>
@@ -1818,6 +1938,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/educational/interactive-kmeans/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/interface/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
     <priority>0</priority>
@@ -1832,9 +1956,17 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/interpolate/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/jmlr/</loc>
     <lastmod>2013-10-03T02:50:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/kegg_pathways/</loc>
   </url>
   
   <url>
@@ -1849,6 +1981,10 @@
   
   <url>
     <loc>/widget-catalog/evaluate/liftcurve/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/line_chart/</loc>
   </url>
   
   <url>
@@ -1867,6 +2003,10 @@
   
   <url>
     <loc>/widget-catalog/model/linearregression/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/single-cell/load_data/</loc>
   </url>
   
   <url>
@@ -1902,6 +2042,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/bioinformatics/marker_genes/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/matrixfactorization/</loc>
     <lastmod>2013-02-06T13:47:00+00:00</lastmod>
     <priority>0</priority>
@@ -1918,6 +2062,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/model_evaluation/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/model-performance/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1925,6 +2073,10 @@
   
   <url>
     <loc>/widget-catalog/visualize/mosaicdisplay/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/moving_transform/</loc>
   </url>
   
   <url>
@@ -1965,6 +2117,34 @@
     <loc>/categories/network/</loc>
     <lastmod>2017-12-23T17:05:52+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkanalysis/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkclustering/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkexplorer/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkfile/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkfromdistances/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkgenerator/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/networkofgroups/</loc>
   </url>
   
   <url>
@@ -2100,9 +2280,17 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/periodogram/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/physics/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/pie-chart/</loc>
   </url>
   
   <url>
@@ -2130,6 +2318,14 @@
     <loc>/categories/pls/</loc>
     <lastmod>2012-02-02T16:21:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/polynomial-classification/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/educational/polynomial-regression/</loc>
   </url>
   
   <url>
@@ -2246,6 +2442,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/educational/random-data/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/model/randomforest/</loc>
   </url>
   
@@ -2343,6 +2543,14 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/single-cell/score_cells/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/single-cell/score_genes/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/scoring/</loc>
     <lastmod>2017-11-29T12:26:44+00:00</lastmod>
     <priority>0</priority>
@@ -2356,6 +2564,10 @@
     <loc>/categories/scripting/</loc>
     <lastmod>2018-05-15T09:15:58+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/seasonal_adjustment/</loc>
   </url>
   
   <url>
@@ -2408,6 +2620,18 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/single-cell/single_cell_datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/single-cell/single_cell_preprocess/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/networks/singlemode/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/spectroscopy/spectra/</loc>
   </url>
   
@@ -2415,6 +2639,10 @@
     <loc>/categories/spectroscopy/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/time-series/spiralogram/</loc>
   </url>
   
   <url>
@@ -2550,6 +2778,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/var/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/visualize/venndiagram/</loc>
   </url>
   
@@ -2568,6 +2800,10 @@
     <loc>/categories/visualization/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/volcano_plot/</loc>
   </url>
   
   <url>
@@ -2615,9 +2851,17 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/yahoo_finance/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/youtube/</loc>
     <lastmod>2018-05-09T08:19:34+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/bioinformatics/dicty_express/</loc>
   </url>
   
   <url>
