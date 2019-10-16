@@ -236,6 +236,10 @@
 <li><p>Access help.</p></li>
 </ol>
 
+<h2 id="embedders">Embedders</h2>
+
+<p>The <strong>Inception v3</strong> we are using is available <a href="http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz">here</a>. The only difference is that we are not using the final predictions, but the penultimate layer of the model, which represents images with vectors. A simple example of how to use the model can be found <a href="https://github.com/tensorflow/models/blob/1af55e018eebce03fb61bba9959a04672536107d/tutorials/image/imagenet/classify_image.py">here</a>. An <a href="https://www.nature.com/articles/s41467-019-12397-x">article</a> by Godec et al. (2019) explains how the embeddings work and how to use it in Orange.</p>
+
 <h2 id="example">Example</h2>
 
 <p>Let us first import images from a folder with <a href="../importimages/">Import Images</a>. We have three images of an orange, a banana and a strawberry in a folder called Fruits. From <strong>Import Images</strong> we will send a data table containing a column with image paths to <strong>Image Embedding</strong>.</p>
