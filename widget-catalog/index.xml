@@ -1708,6 +1708,18 @@ Inputs
     </item>
     
     <item>
+      <title>Save Images</title>
+      <link>/widget-catalog/image-analytics/saveimages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/image-analytics/saveimages/</guid>
+      <description>Save Images Save images in the directory structure.
+Inputs
+ Data: images to save.  Save Images is a simple widget that saves images sent to its input. Images will be saved as separate files in their own directory. When a class is present in the data, images will be saved in subdirectories based on the class variable.
+ Attribute containing the path to the image. If Scale images to is ticked, images will be resized to the size used in the selected embedder:  Inception v3: 299x299 SqueezeNet: 227x227 VGG-16: 224x224 VGG-19: 224x224 Painters: 256x256 DeepLoc: 64x64 openface: 256x256  File format to save images in.</description>
+    </item>
+    
+    <item>
       <title>Save Model</title>
       <link>/widget-catalog/model/savemodel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

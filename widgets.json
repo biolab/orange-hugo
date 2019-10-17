@@ -1377,7 +1377,8 @@
      "images"
     ],
     "background": "#F7F5A8",
-    "icon": "widget-icons/Image Analytics-Save Images.png"
+    "icon": "widget-icons/Image Analytics-Save Images.png",
+    "url": "saveimages"
    }
   ]
  ],
