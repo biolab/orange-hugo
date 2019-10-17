@@ -371,10 +371,6 @@ blockquote {
   min-height: 260px;
 }
 
-/*.docs-devs {*/
-  /*padding: 0 40px;*/
-/*}*/
-
 @media (min-width: 992px) {
     .footer {
         position: absolute;
@@ -432,9 +428,6 @@ blockquote {
   position: relative;
 }
 /* ======= Promo Section ======= */
-/*.promo {
-  background-color: #fff;
-}*/
 
 .promo .container {
   padding-bottom: 15px;
@@ -499,38 +492,7 @@ blockquote {
 .promo .overview .note p {
   padding-top: 30px;
 }
-/*.promo .overview .note .left-arrow {
-  position: absolute;
-  left: 60px;
-  bottom: 15px;
-  display: inline-block;
-  background: url('../images/arrows/up-arrow-left.png') no-repeat left top;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  width: 63px;
-  height: 69px;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-}
-.promo .overview .note .right-arrow {
-  position: absolute;
-  right: 60px;
-  bottom: 15px;
-  display: inline-block;
-  background: url('../images/arrows/up-arrow-right.png') no-repeat right top;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  width: 63px;
-  height: 58px;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-}*/
+
 .promo .iphone {
   position: relative;
 }
@@ -746,9 +708,6 @@ blockquote {
   margin-top: 50px;
 }
 /* ======= FAQ Section ======= */
-./*faq {
-  padding: 80px 0;
-}*/
 
 .faq.grey {
   background-color: #f5f5f5;
@@ -1017,14 +976,6 @@ svg{
     width: 90% !important;
   }
 
-  /*#features .feature-panel img {
-    display: none;
-  }*/
-
- /* #features .feature-panel-getting-started img {
-    display: none;
-  }*/
-
   #features .feature-panel {
     padding-top: inherit;
     background-repeat: no-repeat !important;
@@ -1096,10 +1047,6 @@ p.indent {
     margin-left: 50px;
 }
 
-/*input#search-box {
-    margin-top: 60px;
-}*/
-
 h2.docs-subtitle {
     min-height: 50px;
 }
@@ -1121,19 +1068,15 @@ h2.docs-subtitle {
 
 .example input[type=text] {
   float: right;
-  /*padding: 10px;*/
   height: 30px;
   min-height: 10px !important;
   font-size: 15px;
   border: 1px solid grey;
   width: 30%;
-  /*background: #f1f1f1;*/
-}
+ }
 
 /* Style the submit button */
 .example button {
-  /*float: left;*/
-  /*padding: 10px;*/
   height: 30px;
   width: 30px;
   background: #ffbc44;
@@ -1175,7 +1118,6 @@ h2.docs-subtitle {
   border-radius: 4px !important;
   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  /*padding-bottom: 10px; */
 }
 
 .search-button-workflow{
@@ -1192,12 +1134,6 @@ h2.docs-subtitle {
   cursor: pointer;
   padding-top: 10px;
 }
-
-/*#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}*/
 
 #myUL ul{
   padding-left: 0px !important;
@@ -1224,7 +1160,6 @@ h2.docs-subtitle {
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
-
 
 .tag-workflow{
   border: 1px solid #ddd; /* Add a border to all links */
@@ -1304,21 +1239,6 @@ h2.docs-subtitle {
   font-weight: lighter !important;
   text-decoration: none !important;
 }
-/*@media (max-width: 850px){
-  .landing-image {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 400px;
-
-}
-}*/
-
-#promo .row{
-  margin-right:0px !important;
-  margin-left: 0px !important;
-}
-
 
 #promo .row{
   margin-right:0px !important;
@@ -1479,7 +1399,6 @@ margin-top: auto;
   font-weight: lighter !important;
 }
 .docs-image{
-  /*width: 80%;*/
   height: 158px !important;
 }
 
