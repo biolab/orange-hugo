@@ -47,6 +47,11 @@ a:hover {
   }
 }
 
+.remove-padding-l-r {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .btn {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
