@@ -905,9 +905,12 @@ blockquote cite {
     font-weight: 300;
 }
 
-@media(min-width: 630px) {
+@media(min-width: 700px) {
     #overflow-container > .container {
-        width: 630px;
+        width: 700px;
     }
 }
 
+.blog-font-size {
+    font-size: 19px;
+}
