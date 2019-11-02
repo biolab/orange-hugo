@@ -224,10 +224,11 @@
 <li><a href="https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient">Pearson</a> (linear correlation between the values, remapped as a distance in a [0, 1] interval)</li>
 <li><a href="https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient">Pearson absolute</a> (linear correlation between the absolute values, remapped as a distance in a [0, 1] interval)</li>
 <li><a href="https://en.wikipedia.org/wiki/Hamming_distance">Hamming</a> (the number of features at which the corresponding values are different)</li>
+<li><a href="https://en.wikipedia.org/wiki/Bhattacharyya_distance">Bhattacharyya distance</a> (Similarity between two probability distributions, not a real distance as it doesn&rsquo;t obey triangle inequality.)</li>
 </ul></li>
 </ol>
 
-<p>Normalize the features. Normalization is always done column-wise.
+<p>Normalize the features. Normalization is always done column-wise. Values are zero centered and scaled.
    In case of missing values, the widget automatically imputes the average value of the row or the column.
    The widget works for both numeric and categorical data. In case of categorical data, the distance is 0 if the two values are the same (&lsquo;green&rsquo; and &lsquo;green&rsquo;) and 1 if they are not (&lsquo;green&rsquo; and &lsquo;blue&rsquo;).
 3. Tick <em>Apply Automatically</em> to automatically commit changes to other widgets. Alternatively, press &lsquo;<em>Apply</em>&rsquo;.</p>
