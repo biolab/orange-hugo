@@ -186,62 +186,46 @@
 
 <h1 id="geo-map">Geo Map</h1>
 
-<p>Show data points on a world map.</p>
+<p>Show data points on a map.</p>
 
-<p><strong>Inputs</strong>
--  Data: Data set.
--  Data Subset: A subset of instances from the input data set.
--  Learner: A learning algorithm (classification or regression).</p>
+<p><strong>Inputs</strong></p>
 
-<p><strong>Outputs</strong>
--  Selected Data: A subset of instances that the user has manually selected from the map.
--  Data: Data set with an appended meta attribute specifying selected and unselected data.</p>
+<ul>
+<li>Data: input dataset</li>
+<li>Data Subset: subset of instances</li>
+</ul>
 
-<p><strong>Geo Map</strong> widget maps geo-spatial data on a world map. It only works on data sets containing latitude and longitude variables. It also enables class predictions when a learner is provided on the input.</p>
+<p><strong>Outputs</strong></p>
+
+<ul>
+<li>Selected Data: instances selected from the plot</li>
+<li>Data: data with an additional column showing whether a point is selected</li>
+</ul>
+
+<p><strong>Geo Map</strong> widget visualizes geo-spatial data on a map. It works on datasets containing latitude and longitude variables in WGS 84 (EPSG:4326) format. We can use it much like we use Scatter Plot widget.</p>
 
 <p><img src="../images/GeoMap-stamped.png" alt="" /></p>
 
 <ol>
-<li><p>Define map properties:</p>
+<li>Set the type of map: <a href="http://www.openstreetmap.org">OpenStreetMap</a>, Black and White, Topographic, Satellite, Print, Dark.</li>
+<li>Set latitude and longitude attributes, if the widget didn&rsquo;t recognize them automatically. Latitude values should be between -85.0511(S) and 85.0511(N) (a limitation of the projections onto flat maps) and longitude values between -180(W) and 180(E).</li>
+<li>Set color, shape, size and label to differentiate between points. Set symbol size, opacity and jittering for all data points.</li>
+<li>Adjust <em>plot properties</em>:
 
 <ul>
-<li>Set the type of <em>map</em>: Black and White, <a href="http://www.openstreetmap.org">OpenStreetMap</a>, Topographic, Satellite, Print, Light, Dark, Railyways and Watercolor.</li>
-<li>Set latitude and longitude attributes, if the widget didn&rsquo;t recognize them automatically. Latitude values should be between -90(S) and 90(N) and longitude values between -180(W) and 180(E).</li>
+<li><em>Show color region</em> colors the graph by class (color must be selected).</li>
+<li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
+<li><em>Freeze map</em> freezes the map so it doesn&rsquo;t update when input data changes.</li>
 </ul></li>
-
-<li><p>Overlay:</p>
-
-<ul>
-<li>Set the target (class) for predictive mapping. A learner has to be provided on the input. The classifier is trained on latitude and longitude pairs only (i.e. it maps lat/lon pairs to the selected attribute).</li>
-</ul></li>
-
-<li><p>Set point parameters:</p>
-
-<ul>
-<li><em>Color</em>: color of data points by attribute values</li>
-<li><em>Label</em>: label data points with an attribute (available when zoomed in)</li>
-<li><em>Shape</em>: shape of data points by attribute (available when zoomed in)</li>
-<li><em>Size</em>: size of data points by attribute</li>
-<li>Opacity: set transparency of data points</li>
-<li>Symbol size: size of data points (small to large)</li>
-<li>Jittering: disperse overlaid data points</li>
-<li>Cluster points: cluster neighboring points with <a href="https://github.com/Leaflet/Leaflet.markercluster">naive greedy clustering</a> (available when less than 600 points are in view)</li>
-</ul></li>
-
-<li><p>If <em>Send Selection Automatically</em> is ticked, changes are communicated automatically. Alternatively, click <em>Send Selection</em>. <em>Save image</em> saves the image to your computer in a .svg or .png format.</p></li>
+<li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the graph. The manual selection of data instances works as an angular/square selection tool. Scroll in or out for zoom.</li>
+<li>If <em>Send automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send</em>.</li>
 </ol>
-
-<p><em>Note:</em> To select a subset of points from the map, hold Shift and draw a rectangle around the point you want to output.</p>
 
 <h2 id="examples">Examples</h2>
 
-<p>In the first example we will model class predictions on a map. We will use <em>philadelphia-crime</em> data set, load it with <strong>File</strong> widget and connect it to <strong>Map</strong>. We can already observe the mapped points in Map. Now, we connect <strong>Tree</strong> to Map and set target variable to Type. This will display the predicted type of crime for a specific region of Philadelphia city (each region will be colored with a corresponding color code, explained in a legend on the right).</p>
+<p>In this simple example we visualize the <em>Philadelphia Crime</em> dataset that we can find in the <strong>Datasets</strong> widget. We connect the output of that widget to the <strong>Map</strong> widget. Latitude and longitude variables get automatically detected and we additionally select the crime type variable for color. We can observe how different crimes are more present in specific areas of the city.</p>
 
-<p><img src="../images/GeoMap-classification.png" alt="" /></p>
-
-<p>The second example uses <a href="https://raw.githubusercontent.com/ajdapretnar/datasets/master/data/global_airports.csv">global-airports.csv</a> data. Say we somehow want to predict the altitude of the area based soley on the latitude and longitude. We again load the data with <strong>File</strong> widget and connect it to Map. Then we use a regressor, say, <strong>kNN</strong> and connect it to Map as well. Now we set target to altitude and use Black and White map type. The model guessed the Himalaya, but mades some errors elsewhere.</p>
-
-<p><img src="../images/GeoMap-regression.png" alt="" /></p>
+<p><img src="../images/GeoMap-Example.png" alt="" /></p>
 
                     </div>
                 </div>

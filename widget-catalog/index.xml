@@ -769,10 +769,10 @@ To work with widgets in the bioinformatics add-on data sets must be properly ann
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/geo/geomap/</guid>
-      <description>Geo Map Show data points on a world map.
-Inputs - Data: Data set. - Data Subset: A subset of instances from the input data set. - Learner: A learning algorithm (classification or regression).
-Outputs - Selected Data: A subset of instances that the user has manually selected from the map. - Data: Data set with an appended meta attribute specifying selected and unselected data.
-Geo Map widget maps geo-spatial data on a world map.</description>
+      <description>Geo Map Show data points on a map.
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  Geo Map widget visualizes geo-spatial data on a map. It works on datasets containing latitude and longitude variables in WGS 84 (EPSG:4326) format. We can use it much like we use Scatter Plot widget.</description>
     </item>
     
     <item>
