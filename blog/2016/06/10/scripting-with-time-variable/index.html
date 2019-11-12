@@ -237,13 +237,14 @@ new_date = str(datetime.datetime.strptime(date, &quot;%d.%m.%Y %H:%M:%S&quot;))
 <p>Do this for all your datetime attributes. This will transform them into strings that Orange&rsquo;s TimeVariable can read. Then create a new data table:</p>
 
 <pre><code>import Orange
-domain = Orange.data.Domain([TimeVariable.make(&quot;timestamp&quot;)])
-timestamps = [&quot;&lt;code&gt;2013-03-13 13:13:31&quot;, &quot;&lt;/code&gt;&lt;code&gt;2014-04-14 14:14:41&quot;, &quot;&lt;/code&gt;&lt;code&gt;2015-05-15 15:15:51&quot;&lt;/code&gt;]
+from Orange.data import Domain, TimeVariable
+domain = Domain([TimeVariable(&quot;timestamp&quot;)])
+timestamps = [&quot;2013-03-13 13:13:31&quot;, &quot;2014-04-14 14:14:41&quot;, &quot;2015-05-15 15:15:51&quot;]
 #create a new TimeVariable object
 time_var = TimeVariable()
 #it's important to parse strings into floats with var.parse(i)
 #list(zip(data)) then transforms the list into a 2d list of lists
-time_data = Orange.data.Table(domain, list(zip(var.parse(i) for i in timestamps)))
+time_data = Orange.data.Table(domain, list(zip(time_var.parse(i) for i in timestamps)))
 </code></pre>
 
 <p>Now say you have some original data you want to append your new data to.</p>
