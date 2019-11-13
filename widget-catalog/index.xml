@@ -375,8 +375,9 @@ Inputs
       <guid>/widget-catalog/unsupervised/correspondenceanalysis/</guid>
       <description>Correspondence Analysis Correspondence analysis for categorical multivariate data.
 Inputs
- Data: input dataset  Correspondence Analysis (CA) computes the CA linear transformation of the input data. While it is similar to PCA, CA computes linear transformation on discrete rather than on continuous data.
- Select the variables you want to see plotted. Select the component for each axis. Inertia values (percentage of independence from transformation, i.e. variables are in the same dimension).</description>
+ Data: input dataset  Outputs
+ Coordinates: coordinates of all components  Correspondence Analysis (CA) computes the CA linear transformation of the input data. While it is similar to PCA, CA computes linear transformation on discrete rather than on continuous data.
+ Select the variables you want to see plotted. Select the component for each axis. Inertia values (percentage of independence from transformation, i.</description>
     </item>
     
     <item>
