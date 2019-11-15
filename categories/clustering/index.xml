@@ -6,10 +6,19 @@
     <description>Recent content in Clustering on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jul 2018 09:20:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/clustering/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Explaining Customer Segments for Business</title>
+      <link>/blog/2019/2019-11-15-telekom-workshop/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-11-15-telekom-workshop/</guid>
+      <description>Last month we held a workshop for a large Slovenian Telco company. Their two key questions were - what machine learning techniques can we use on our data and how do we explain the models afterwards. So the workshop focused on three use cases - product segmentation, modeling churn, and clustering customers. With any kind of models, especially unsupervised ones, we often get the question - but how can we explain the clusters?</description>
+    </item>
     
     <item>
       <title>Data Mining and Machine Learning for Economists</title>
