@@ -1,4 +1,16 @@
 {{ define "main"}}
+<div id="course-popup" class=" popup">
+    <div class="popup-content">
+        <button id="btn-popup-close" class=" btn-popup-close">&times;</button>
+        <h2>NEW: Data Science email course [FREE]</h2>
+        <p>24% of Orange users want to learn more about data science (survey, 2017, n=6000). We want to help. Join
+            out email course and get weekly tips.</p>
+
+        <button class="btn-email-course"
+            onclick="window.open('https://mailtrain.biolab.si/subscription/JVS_UVh-8','_blank')">Join the 4-week
+            email course now</button>
+    </div>
+</div>
 
 <section id="features" class="features section downloads ">
     <div class="container downloados" style="margin-top: 50px;">
@@ -245,6 +257,30 @@
                 els[i].classList.remove('icon-selected');
             }
         }
+
+        // Popup
+
+        const popupClose = document.getElementById("btn-popup-close");
+        const popup = document.getElementById("course-popup");
+
+        document.onkeydown = function (e) {
+            if (e.key === "Escape") {
+                popup.style.display = "none";
+            }
+        };
+
+        popupClose.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        document.getElementById("recommended-download-win").addEventListener("click", openPopup);
+        document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
+
+        function openPopup() {
+            window.setTimeout(() => {
+                popup.style.display = "block";
+            }, 2000);
+        };
     </script>
 </section>
 
