@@ -6,10 +6,20 @@
     <description>Recent content in Workshop on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/workshop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Explaining Models: Workshop in Belgrade</title>
+      <link>/blog/2019/2019-11-20-belgrade-workshop/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-11-20-belgrade-workshop/</guid>
+      <description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.
+   First, let us load the titanic data with the Datasets widget.</description>
+    </item>
     
     <item>
       <title>Explaining Customer Segments for Business</title>

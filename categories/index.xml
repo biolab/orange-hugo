@@ -57,6 +57,15 @@
     </item>
     
     <item>
+      <title>Belgrade</title>
+      <link>/categories/belgrade/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/belgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bioinformatics</title>
       <link>/categories/bioinformatics/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
@@ -104,7 +113,7 @@
     <item>
       <title>Classification</title>
       <link>/categories/classification/</link>
-      <pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/classification/</guid>
       <description></description>
@@ -215,6 +224,15 @@
       <pubDate>Tue, 13 Sep 2011 00:32:00 +0000</pubDate>
       
       <guid>/categories/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decision Tree</title>
+      <link>/categories/decision-tree/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/decision-tree/</guid>
       <description></description>
     </item>
     
@@ -615,6 +633,15 @@
     </item>
     
     <item>
+      <title>Naive Bayes</title>
+      <link>/categories/naive-bayes/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/naive-bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>/categories/network/</link>
       <pubDate>Sat, 23 Dec 2017 17:05:52 +0000</pubDate>
@@ -662,7 +689,7 @@
     <item>
       <title>Nomogram</title>
       <link>/categories/nomogram/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/nomogram/</guid>
       <description></description>
@@ -1184,7 +1211,7 @@
     <item>
       <title>Workshop</title>
       <link>/categories/workshop/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/workshop/</guid>
       <description></description>

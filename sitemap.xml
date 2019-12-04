@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/blog/2019/2019-11-20-belgrade-workshop/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-11-15-telekom-workshop/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
@@ -1262,6 +1267,12 @@
   </url>
   
   <url>
+    <loc>/categories/belgrade/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/bioinformatics/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1275,7 +1286,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1340,13 +1351,13 @@
   </url>
   
   <url>
-    <loc>/tags/classification/</loc>
+    <loc>/categories/classification/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/classification/</loc>
-    <lastmod>2018-05-03T11:37:28+00:00</lastmod>
+    <loc>/tags/classification/</loc>
     <priority>0</priority>
   </url>
   
@@ -1360,13 +1371,13 @@
   </url>
   
   <url>
-    <loc>/tags/clustering/</loc>
+    <loc>/categories/clustering/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/clustering/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    <loc>/tags/clustering/</loc>
     <priority>0</priority>
   </url>
   
@@ -1401,13 +1412,13 @@
   </url>
   
   <url>
-    <loc>/tags/confusion-matrix/</loc>
+    <loc>/categories/confusion-matrix/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/confusion-matrix/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+    <loc>/tags/confusion-matrix/</loc>
     <priority>0</priority>
   </url>
   
@@ -1458,13 +1469,13 @@
   </url>
   
   <url>
-    <loc>/tags/cross-validation/</loc>
+    <loc>/categories/cross-validation/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/cross-validation/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+    <loc>/tags/cross-validation/</loc>
     <priority>0</priority>
   </url>
   
@@ -1473,13 +1484,13 @@
   </url>
   
   <url>
-    <loc>/tags/data/</loc>
+    <loc>/categories/data/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/data/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <loc>/tags/data/</loc>
     <priority>0</priority>
   </url>
   
@@ -1543,6 +1554,12 @@
   <url>
     <loc>/categories/debian/</loc>
     <lastmod>2011-09-13T00:32:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/decision-tree/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1830,13 +1847,13 @@
   </url>
   
   <url>
-    <loc>/tags/hierarchical-clustering/</loc>
+    <loc>/categories/hierarchical-clustering/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/hierarchical-clustering/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <loc>/tags/hierarchical-clustering/</loc>
     <priority>0</priority>
   </url>
   
@@ -2111,6 +2128,12 @@
   </url>
   
   <url>
+    <loc>/categories/naive-bayes/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/model/naivebayes/</loc>
   </url>
   
@@ -2182,7 +2205,7 @@
   
   <url>
     <loc>/categories/nomogram/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2210,7 +2233,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2299,13 +2322,13 @@
   </url>
   
   <url>
-    <loc>/tags/pivot-table/</loc>
+    <loc>/categories/pivot-table/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/pivot-table/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <loc>/tags/pivot-table/</loc>
     <priority>0</priority>
   </url>
   
@@ -2356,13 +2379,13 @@
   </url>
   
   <url>
-    <loc>/tags/predictive-models/</loc>
+    <loc>/categories/predictive-models/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/predictive-models/</loc>
-    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <loc>/tags/predictive-models/</loc>
     <priority>0</priority>
   </url>
   
@@ -2531,13 +2554,13 @@
   </url>
   
   <url>
-    <loc>/tags/scatter-plot/</loc>
+    <loc>/categories/scatter-plot/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/scatter-plot/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <loc>/tags/scatter-plot/</loc>
     <priority>0</priority>
   </url>
   
@@ -2807,13 +2830,13 @@
   </url>
   
   <url>
-    <loc>/tags/visualization/</loc>
+    <loc>/categories/visualization/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/visualization/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <loc>/tags/visualization/</loc>
     <priority>0</priority>
   </url>
   
@@ -2861,7 +2884,7 @@
   
   <url>
     <loc>/categories/workshop/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
