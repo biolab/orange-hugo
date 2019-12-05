@@ -1396,9 +1396,9 @@ h2.docs-subtitle {
 }
 
 .single-widget img {
-  width: 35%;
+  width: 100%;
   height: auto;
-  /*max-height:600px;*/
+  padding: 10px 0;
 }
 
 .single-widget ul {
