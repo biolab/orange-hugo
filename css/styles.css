@@ -1631,3 +1631,124 @@ h2.docs-subtitle {
     grid-column: span 3;
   }
 }
+
+
+/*======   Download Pop-up   ======*/
+
+:root {
+  --popup-blue: #008cff;
+}
+
+.popup {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(117, 117, 117, 0.15);
+  animation: 1s ease-out show-popup;
+}
+
+@keyframes show-popup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-content {
+  padding: 28px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--popup-blue);
+  color: white;
+  width: 560px;
+}
+
+.popup-img {
+  padding-right: 28px;
+  width: 140px;
+  float: left;
+}
+
+.popup-content p {
+  font-size: 2.4rem;
+  margin: 40px 0;
+  font-weight: 300;
+}
+
+.popup-content h2 {
+  margin: 0;
+  padding-right: 75px;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  font-weight: 500;
+}
+
+
+.btn-email-course {
+  padding: 10px 35px;
+  background: white;
+  color: var(--popup-blue);
+  font-size: 2.6rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-popup-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 38px 28px;
+  font-size: 4rem;
+  line-height: 0;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 590px) {
+
+  .popup-content {
+    width: 90vw;
+    width: calc(100vw - 30px);
+    font-size: 60%;
+  }
+
+  .popup-img {
+    display: none;
+  }
+
+  .btn-popup-close {
+    font-size: 3.3rem;
+  }
+
+
+  .popup-content p {
+    font-size: 1.7rem;
+
+  }
+
+  .popup-content h2 {
+    font-size: 2.4rem;
+  }
+
+
+  .btn-email-course {
+    font-size: 1.8rem;
+  }
+
+
+}
