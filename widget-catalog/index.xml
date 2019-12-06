@@ -309,11 +309,12 @@ For classification, when predicting the class value with Predictions, the widget
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/data/continuize/</guid>
-      <description>Continuize Turns discrete attributes into continuous dummy variables.
+      <description>Continuize Turns discrete variables (attributes) into numeric (&amp;ldquo;continuous&amp;rdquo;) dummy variables.
 Inputs
  Data: input data set  Outputs
- Data: data set with continuized instances  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete attributes (including binary attributes) are replaced with continuous ones.
- Continuization methods, which define the treatment of multivalued discrete attributes. Say that we have a discrete attribute status with the values low, middle and high, listed in that order.</description>
+ Data: transformed data set  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete variables (including binary variables) are replaced with continuous ones.
+ Define the treatment of non-binary categorical variables.
+Examples in this section will assume that we have a discrete attribute status with the values low, middle and high, listed in that order.</description>
     </item>
     
     <item>
@@ -2080,7 +2081,7 @@ Inputs
       <description>Venn Diagram Plots a Venn diagram for two or more data subsets.
 Inputs
  Data: input dataset  Outputs
- Selected Data: instances selected from the plot  The Venn Diagram widget displays logical relations between datasets. This projection shows two or more datasets represented by circles of different colors. The intersections are subsets that belong to more than one dataset. To further analyze or visualize the subset, click on the intersection.</description>
+ Selected Data: instances selected from the plot Data: entire data with a column indicating whether an instance was selected or not  The Venn Diagram widget displays logical relations between datasets by showing the number of common data instances (rows) or the number of shared features (columns). Selecting a part of the visualization outputs the corresponding instances or features.</description>
     </item>
     
     <item>
