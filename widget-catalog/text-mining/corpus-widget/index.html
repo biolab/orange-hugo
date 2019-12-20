@@ -186,12 +186,12 @@
 
 <h1 id="corpus">Corpus</h1>
 
-<p>Load a corpus of text documents, (optionally) tagged with categories.</p>
+<p>Load a corpus of text documents, (optionally) tagged with categories, or change the data input signal to the corpus.</p>
 
 <p><strong>Inputs</strong></p>
 
 <ul>
-<li>None</li>
+<li>Data: Input data (optional)</li>
 </ul>
 
 <p><strong>Outputs</strong></p>
@@ -200,19 +200,24 @@
 <li>Corpus: A collection of documents.</li>
 </ul>
 
-<p><strong>Corpus</strong> widget reads text corpora from files and sends a corpus instance to its output channel. History of the most recently opened files is maintained in the widget. The widget also includes a directory with sample corpora that come pre-installed with the add-on.</p>
+<p><strong>Corpus</strong> widget can work in two modes:
+ - When no data on input, it reads text corpora from files and sends a corpus instance to its output channel. History of the most recently opened files is maintained in the widget. The widget also includes a directory with sample corpora that come pre-installed with the add-on.
+   The widget reads data from Excel (<strong>.xlsx</strong>), comma-separated (<strong>.csv</strong>) and native tab-delimited (<strong>.tab</strong>) files.</p>
 
-<p>The widget reads data from Excel (<strong>.xlsx</strong>), comma-separated (<strong>.csv</strong>) and native tab-delimited (<strong>.tab</strong>) files.</p>
-
-<p><img src="../images/Corpus-stamped.png" alt="" /></p>
+<ul>
+<li>When the user provides data to the input, it transforms data into the corpus. Users can select which features are used as text features.
+<img src="../images/Corpus-stamped.png" alt="" /></li>
+</ul>
 
 <ol>
 <li>Browse through previously opened data files, or load any of the sample ones.</li>
 <li>Browse for a data file.</li>
 <li>Reloads currently selected data file.</li>
-<li>Information on the loaded data set.</li>
+<li>Select the variable that is shown as a document title in Corpus Viewer.</li>
 <li>Features that will be used in text analysis.</li>
-<li>Features that won&rsquo;t be used in text analysis and serve as labels or class.</li>
+<li>Features that won&rsquo;t be used in text analysis.</li>
+<li>Browse through the datasets that come together with an add-on.</li>
+<li>Access help, make a report and get information on the loaded data set.</li>
 </ol>
 
 <p>You can drag and drop features between the two boxes and also change the order in which they appear.</p>
@@ -223,8 +228,8 @@
 
 <p><img src="../images/Corpus-Example1.png" alt="" /></p>
 
-<p>The second example demonstrates how to quickly visualize your corpus with <a href="../wordcloud/">Word Cloud</a>. We could connect <strong>Word Cloud</strong> directly to <strong>Corpus</strong>, but instead we decided to apply some preprocessing
-with <a href="../preprocesstext/">Preprocess Text</a>. We are again working with <em>book-excerpts.tab</em>. We&rsquo;ve put all text to lowercase, tokenized (split) the text to words only, filtered out English stopwords and selected a 100 most frequent tokens.</p>
+<p>The second example demonstrates how to quickly visualize your corpus with <a href="../wordcloud/">Word Cloud</a>. We could connect <strong>Word Cloud</strong> directly to <strong>Corpus</strong>, but instead, we decided to apply some preprocessing
+with <a href="../preprocesstext/">Preprocess Text</a>. We are again working with <em>book-excerpts.tab</em>. We&rsquo;ve put all text to lowercase, tokenized (split) the text to words only, filtered out English stopwords and selected 100 most frequent tokens.</p>
 
 <p><img src="../images/Corpus-Example2.png" alt="" /></p>
 

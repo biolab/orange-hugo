@@ -526,7 +526,9 @@
    {
     "title": "Tree",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "Classification Tree"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Tree.png",
     "url": "tree"
