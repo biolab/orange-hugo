@@ -1,8 +1,8 @@
 +++
 type = "testimonials"
-title = "Riccardo Bellazzi, Ph.D."
-image = "/images/Bellazzi_Riccardo_small.jpg"
-position = "Chair, Centre for Health Technologies"
-institution = "University of Pavia, Italy"
-text = "Orange is a great teaching tool, and students love it, because it is easy to use and it allows devoting attention to the high-level conceptual aspects of data mining. The program successfully helps to introduce data analytics to users with no programming experience."
+title = "Francesca Vitali, Ph.D."
+image = "/images/Vitali_Francesca_small.png"
+position = "Research Assistant Professor"
+institution = "Center for Biomedical Informatics & Biostatistics, The University of Arizona"
+text = "I teach Orange workshops monthly to a diverse audience, from undergrad students to expert researchers. Orange is very intuitive, and, by the end of the workshop, the participants are able to perform complex data visualization and basic machine learning analyses. Most of our attendees have been able to incorporate this tool in their research practice."
 +++
