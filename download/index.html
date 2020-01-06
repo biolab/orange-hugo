@@ -476,7 +476,13 @@
         document.getElementById("recommended-download-win").addEventListener("click", openPopup);
         document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
 
+        var popupShown = false;
         function openPopup() {
+            if(popupShown) {
+                return;
+            }
+            popupShown = true;
+
             window.setTimeout(() => {
                 popup.style.display = "block";
             }, 2000);
