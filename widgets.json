@@ -644,7 +644,10 @@
    {
     "title": "Test and Score",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "Cross Validation",
+     "CV"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Test and Score.png",
     "url": "testandscore"
