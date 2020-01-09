@@ -473,7 +473,7 @@
     <item>
       <title>Images</title>
       <link>/categories/images/</link>
-      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/images/</guid>
       <description></description>
@@ -638,6 +638,15 @@
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/naive-bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neighbors</title>
+      <link>/categories/neighbors/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/neighbors/</guid>
       <description></description>
     </item>
     

@@ -1,5 +1,19 @@
 [
 {
+	"uri": "/blog/2020/2020-01-08-neighbors-images/",
+	"title": "Look-alike Images",
+	"categories": ["neighbors", "images"],
+	"description": "",
+	"content": "There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.\nRelated: Image Analytics Workshop at AIUCD 2018\nHere I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:\n   We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget. To use your own collection of images, check out our YouTube video on image clustering to see how to prepare it. In the Dataset widget, filter the data sets to list only those that include images:\n   I will use Bone Healing image set from our recent Nature Communications paper. In the workflow, we first embed the images in the vector space. We send all the embedded images to the Neighbors widget through its input data channel and display them in Image Viewer. In the viewer, we can select an image. Image Viewer sends its output \u0026ndash; the selected image \u0026ndash; to the reference channel of the Neighbors widget. I have instructed this widget to send out three data items that are the most similar to the item in the reference, and on the output excluded the reference item:\n   Image Viewer (1) at the end of the pipeline displays three images that are most like the chosen image:\n   Any other set of images works as well. Here is our image look-alike for traffic signs:\n   We skipped any details on image embedding, measuring distances and so on. For more on these, check out our recent paper in Nature Communications or see our set of image analytics videos on YouTube.\n",
+	"image" : "",
+	"thumbImage" : "/blog_img/2020/2020-01-08-neighbors-images-small.png",
+	"shortExcerpt" : "We show how to use Neighbors widget on image embedding space to find image look-alikes.",
+	"longExcerpt" :  "We show how to use Neighbors widget on image embedding space to find image look-alikes." ,
+	"author" : "Blaž Zupan",
+	"summary" : "There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.\nRelated: Image Analytics Workshop at AIUCD 2018\nHere I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:\n   We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.",
+	"date" : "Jan 8, 2020"
+},
+{
 	"uri": "/blog/2019/2019-11-20-belgrade-workshop/",
 	"title": "Explaining Models: Workshop in Belgrade",
 	"categories": ["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"],
