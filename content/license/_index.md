@@ -15,8 +15,6 @@ Orange documentation, content on its website and other non-code content are all 
 
 Orange Widgets and Canvas are based on Qt, which is distributed under GPL 3.0 (as well as LGPL 2.1, see {{< link_new url="https://www.qt.io/licensing/" name="https://www.qt.io/licensing/">}}.
 
-Random numbers in Orange are computed with Shaw Cookus' implementation of Mersenne twister. CRC 32 is computed by the code published by Richard A. Ellingson.
-
 Orange add-ons may have additional licensing requirements. Please, see their respective license files.
 
 If you want to cite Orange or give it an attribution, you can find more information {{< link_new url="/citation/" name="here">}}.
