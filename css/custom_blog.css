@@ -906,7 +906,7 @@ a img {
 }
 
 .entry-content {
-  margin: 3em 0;
+  margin: 4em 0;
 }
 .entry-content img.full-width {
   position: relative;
@@ -1107,7 +1107,7 @@ a img {
   }
 
   .entry-content {
-    margin-top: 4.5em;
+    margin-top: 4em;
   }
   .entry-content img.full-width {
     width: 150%;
@@ -1252,6 +1252,8 @@ li.pingback:first-child {
   font-weight: 400;
   letter-spacing: 0;
 }
+
+
 
 /* 600px */
 @media all and (min-width: 37.5em) {
@@ -2624,6 +2626,7 @@ li.pingback:first-child {
  .entry-header {
   font-weight: normal !important;
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif' !important;
+  padding-top: 1em;
 }
 
  .entry-content article{
@@ -2631,5 +2634,6 @@ li.pingback:first-child {
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif' !important;
 }
 
-
-
+figure {
+  padding: 35px 0;
+}
