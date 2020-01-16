@@ -120,6 +120,15 @@
     </item>
     
     <item>
+      <title>Cloud</title>
+      <link>/categories/cloud/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Clustering</title>
       <link>/categories/clustering/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
@@ -957,6 +966,15 @@
     </item>
     
     <item>
+      <title>Remote</title>
+      <link>/categories/remote/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/remote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Report</title>
       <link>/categories/report/</link>
       <pubDate>Fri, 11 Dec 2015 09:53:12 +0000</pubDate>
@@ -1016,6 +1034,15 @@
       <pubDate>Tue, 15 May 2018 09:15:58 +0000</pubDate>
       
       <guid>/categories/scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>/categories/server/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/server/</guid>
       <description></description>
     </item>
     

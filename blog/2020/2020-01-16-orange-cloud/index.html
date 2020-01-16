@@ -1,0 +1,393 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Orange in the Cloud</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/categories/cloud">cloud</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/server">server</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/remote">remote</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Orange in the Cloud</h1>
+          <span class="author-blog">
+            
+            By: Andrej Čopar,
+            
+            Jan 16, 2020
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <p>Many problems are too big and require too much processing power to be efficiently processed on your laptop or PC. In such cases, the data is usually transferred to a remote server and processed using custom code, which is often time consuming. Now, there is a way to run Orange on a remote server so that you can keep using its interactive graphical interface. We will show you how to run Orange on the remote server so that you can use it through your web browser.</p>
+
+<p>
+<figure>
+    
+        <img src="/blog_img/2020/2020-01-16-weborange.png" />
+    
+    
+</figure>
+
+</p>
+
+<p>In a nutshell, you browser opens a remote desktop connection to an Orange instance that runs inside a docker container on a remote server. Now let us go into more details.</p>
+
+<p>In our configuration we used several different technologies such as <a href="https://www.docker.com/">Docker</a> and <a href="https://guacamole.apache.org/">Apache Guacamole</a>, which are shown in the diagram. First, you need to set up <a href="https://nginx.org/en/">Nginx</a> (or alternatively <a href="https://httpd.apache.org/">Apache web server</a>), which is used to ensure that all communication to the server is SSL encrypted. This is very important, because remote desktop protocols such as <a href="https://en.wikipedia.org/wiki/Remote_Desktop_Protocol">Remote Desktop protocol (RDP)</a> and <a href="https://en.wikipedia.org/wiki/Virtual_Network_Computing">Virtual network computing (VNC)</a> are not encrypted. Failure to do so will expose your data to anyone listening on the network.</p>
+
+<p>
+<figure>
+    
+        <img src="/blog_img/2020/2020-01-16-stack.png" />
+    
+    
+</figure>
+
+</p>
+
+<p>Nginx redirects you to the <a href="https://guacamole.apache.org/">Apache Guacamole</a> web application. In Guacamole you can manage multiple users and specify which of your Orange instances each user has access to. Guacamole then connects you to a selected <a href="https://github.com/biolab/orange-docker">Orange-docker</a> container through an RDP or VNC connection. Once it is connected, you can see the remote desktop in your browser. You can use Orange just like on a local computer (see the image above), although you may need a few minutes to get used to the Linux environment.</p>
+
+<p>Dockers allow you to run many lightweight isolated Linux containers on the same machine. We prepared a <a href="https://github.com/biolab/orange-docker">docker image</a> that comes pre-configured with graphical desktop environment, a remote desktop server, Orange application and a few convenience applications (Libre Office, web browsers). You can run many isolated Orange-docker containers, so each user can work on a different project. When users collaborate on a project, they can connect to the same instance and share the same screen (read-only or full access). You can upload and download your data to and from the remote server using drag &amp; drop feature or the side menu. Alternatively you can transfer the data with one of the web browsers that are provided in the container.</p>
+
+<p>There are many other benefits to running Orange on the server infrastructure. First, <strong>Orange can stay open and continue to process the data</strong> even when you are offline. Second, you can <strong>access the same workflow from any computer</strong>. Third, multiple users can <strong>interactively collaborate on the same workflow</strong>. Finally, you do not have to keep the data on a local computer and <strong>you do not need to install Orange on a local computer</strong>. Note that this is a self-hosted solution, which means that all your data remains on the servers under your control.</p>
+
+<p>For a complete installation guide and more details see <a href="https://github.com/biolab/orange-docker">orange-docker</a> Github repository.</p>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 16 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-01-16-orange-cloud/">Orange in the Cloud</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 08 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-01-08-neighbors-images/">Look-alike Images</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 20 Nov </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2019/2019-11-20-belgrade-workshop/">Explaining Models: Workshop in Belgrade</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
