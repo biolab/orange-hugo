@@ -220,7 +220,7 @@
 </ul></li>
 <li>For classification, <em>Target class</em> can be selected at the bottom of the widget. When <em>Target class</em> is (Average over classes), methods return scores that are weighted averages over all classes. For example, in case of the classifier with 3 classes, scores are computed for class 1 as a target class, class 2 as a target class, and class 3 as a target class. Those scores are averaged with weights based on the class size to retrieve the final score.</li>
 <li>Produce a report.</li>
-<li>The widget will compute a number of performance statistics:
+<li>The widget will compute a number of performance statistics, which can be shown or hidden by right-clicking the columns:
 
 <ul>
 <li>Classification
@@ -243,6 +243,8 @@
 <li><a href="../&lt;https://en.wikipedia.org/wiki/Coefficient_of_determination">R2</a> is interpreted as the proportion of the variance in the dependent variable that is predictable from the independent variable.</li>
 </ul></li>
 </ul></li>
+<li>Choose the score for pairwise comparison of models and the region of practical equivalence (ROPE), in which differences are considered negligible.</li>
+<li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. If ROPE is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the Bayesian interpretation of the t-test; (paper: <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z,16-305.html">https://link.springer.com/article/10.1007/s10994-015-5486-z,16-305.html</a>, shorter introduction: <a href="https://baycomp.readthedocs.io/en/latest/introduction.html">https://baycomp.readthedocs.io/en/latest/introduction.html</a>).</li>
 </ol>
 
 <h2 id="example">Example</h2>
