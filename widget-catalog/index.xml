@@ -1740,7 +1740,7 @@ Inputs
       <description>Scatter Plot Scatter plot visualization with explorative analysis and intelligent data visualization enhancements.
 Inputs
  Data: input dataset Data Subset: subset of instances Features: list of attributes  Outputs
- Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Scatter Plot widget provides a 2-dimensional scatter plot visualization for both continuous and discrete-valued attributes. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis.</description>
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The Scatter Plot widget provides a 2-dimensional scatter plot visualization for continuous attributes. The data is displayed as a collection of points, each having the value of the x-axis attribute determining the position on the horizontal axis and the value of the y-axis attribute determining the position on the vertical axis.</description>
     </item>
     
     <item>

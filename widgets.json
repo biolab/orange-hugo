@@ -93,7 +93,10 @@
     "title": "Select Columns",
     "category": "Data",
     "keywords": [
-     "filter"
+     "filter",
+     "attributes",
+     "target",
+     "variable"
     ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Select Columns.png",
