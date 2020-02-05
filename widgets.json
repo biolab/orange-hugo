@@ -322,7 +322,9 @@
    {
     "title": "Save Data",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "export"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Save Data.png",
     "url": "save"
