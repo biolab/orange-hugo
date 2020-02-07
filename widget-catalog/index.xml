@@ -250,7 +250,8 @@ Cluster Analysis widget displays differentially expressed genes that characteriz
       <description>Color Set color legend for variables.
 Inputs
  Data: input data set  Outputs
- Data: data set with a new color legend  The Color widget enables you to set the color legend in your visualizations according to your own preferences. This option provides you with the tools for emphasizing your results and offers a great variety of color options for presenting your data. It can be combined with most visualizations widgets.</description>
+ Data: data set with a new color legend  The Color widget sets the color legend for visualizations.
+ A list of discrete variables. Set the color of each variable by double-clicking on it. The widget also enables renaming variables by clicking on their names. A list of continuous variables. Click on the color strip to choose a different palette.</description>
     </item>
     
     <item>

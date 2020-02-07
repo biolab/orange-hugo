@@ -200,58 +200,42 @@
 <li>Data: data set with a new color legend</li>
 </ul>
 
-<p>The <strong>Color</strong> widget enables you to set the color legend in your visualizations according to your own preferences. This option provides you with the tools for emphasizing your results and offers a great variety of color options for presenting your data. It can be combined with most visualizations widgets.</p>
+<p>The <strong>Color</strong> widget sets the color legend for visualizations.</p>
 
 <p><img src="../images/Color-stamped.png" alt="" /></p>
 
 <ol>
-<li>A list of discrete variables. You can set the color of each variable by double-clicking on it and opening the <em>Color palette</em> or the <em>Select color</em> window. The widget also enables text-editing. By clicking on a variable, you can change its name.</li>
-<li>A list of continuous variables. You can customize the color gradients by double-clicking on them. The widget also enables text-editing. By clicking on a variable, you can change its name. If you hover over the right side side of the gradient, <em>Copy to all</em> appears. You can then apply your customized color gradient to all variables.</li>
+<li>A list of discrete variables. Set the color of each variable by double-clicking on it. The widget also enables renaming variables by clicking on their names.</li>
+<li>A list of continuous variables. Click on the color strip to choose a different palette. To use the same palette for all variables, change it for one variable and click <em>Copy to all</em> that appears on the right. The widget also enables renaming variables by clicking on their names.</li>
 <li>Produce a report.</li>
 <li>Apply changes. If <em>Apply automatically</em> is ticked, changes will be communicated automatically. Alternatively, just click <em>Apply</em>.</li>
 </ol>
 
-<h2 id="discrete-variables">Discrete variables</h2>
+<p><img src="../images/Color-Continuous_unindexed.png" alt="" /></p>
 
-<p><img src="../images/Color-palette-discrete-stamped.png" alt="" /></p>
-
-<ol>
-<li>Choose a desired color from the palette of basic colors.</li>
-<li>Move the cursor to choose a custom color from the color palette.</li>
-<li>Choose a custom color from your previously saved color choices.</li>
-<li>Specify the custom color by:
+<p>Palettes for numeric variables are grouped and tagged by their properties.</p>
 
 <ul>
-<li>entering the red, green, and blue components of the color as values between 0 (darkest) and 255 (brightest)</li>
-<li>entering the hue, saturation and luminescence components of the color as values in the range 0 to 255</li>
-</ul></li>
-<li>Add the created color to your custom colors.</li>
-<li>Click <em>OK</em> to save your choices or <em>Cancel</em> to exit the the color palette.</li>
-</ol>
+<li><p>Diverging palettes have two colors on its ends and a central color (white or black) in the middle. Such palettes are particularly useful when the the values can be positive or negative, as some widgets (for instance the Heat map) will put the 0 at the middle point in the palette.</p></li>
 
-<h2 id="numeric-variables">Numeric variables</h2>
+<li><p>Linear palettes are constructed so that human perception of the color change is linear with the change of the value.</p></li>
 
-<p><img src="../images/Color-palette-numeric-stamped.png" alt="" /></p>
+<li><p>Color blind palettes cover different types of color blindness, and can also be linear or diverging.</p></li>
 
-<ol>
-<li>Choose a gradient from your saved profiles. The default profile is already set.</li>
-<li>The gradient palette</li>
-<li>Select the left side of the gradient. Double clicking the color opens the <em>Select Color</em> window.</li>
-<li>Select the right side of the gradient. Double clicking the color opens the <em>Select Color</em> window.</li>
-<li>Pass through black.</li>
-<li>Click <em>OK</em> to save your choices or <em>Cancel</em> to exit the color palette.</li>
-</ol>
+<li><p>In isoluminant palettes, all colors have equal brightness.</p></li>
+
+<li><p>Rainbow palettes are particularly nice in widgets that bin numeric values in visualizations.</p></li>
+</ul>
 
 <h2 id="example">Example</h2>
 
-<p>We chose to work with the <em>Iris</em> data set. We opened the color palette and selected three new colors for the three types of Irises. Then we opened the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget and viewed the changes made to the scatter plot.</p>
+<p>We chose to work with the <em>heart_disease</em> data set. We opened the color palette and selected two new colors for diameter narrowing variable. Then we opened the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget and viewed the changes made to the scatter plot.</p>
 
-<p><img src="../images/Color-Example-1.png" alt="" /></p>
+<p><img src="../images/Color-Example-Discrete.png" alt="" /></p>
 
-<p>For our second example, we wished to demonstrate the use of the <strong>Color</strong> widget with continuous variables. We put different types of Irises on the x axis and petal length on the y axis. We created a new color gradient and named it greed (green + red).
-In order to show that sepal length is not a deciding factor in differentiating between different types of Irises, we chose to color the points according to sepal width.</p>
+<p>To see the effect of color palettes for numeric variables, we color the points in the scatter plot by cholesterol and change the palette for this attribute in the Color widget.</p>
 
-<p><img src="../images/Color-Example-2.png" alt="" /></p>
+<p><img src="../images/Color-Example-Continuous.png" alt="" /></p>
 
                     </div>
                 </div>
