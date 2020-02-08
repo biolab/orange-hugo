@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/blog/2020/2020-01-29-machine-anthropology/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-01-16-orange-cloud/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url>
@@ -1241,6 +1246,12 @@
   </url>
   
   <url>
+    <loc>/categories/anthropology/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/data/applydomain/</loc>
   </url>
   
@@ -1283,6 +1294,12 @@
   </url>
   
   <url>
+    <loc>/categories/big-data/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/bioinformatics/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1296,7 +1313,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -2080,6 +2097,12 @@
   </url>
   
   <url>
+    <loc>/categories/machine/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/unsupervised/manifoldlearning/</loc>
   </url>
   
@@ -2259,7 +2282,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2349,7 +2372,7 @@
   
   <url>
     <loc>/categories/pivot-table/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

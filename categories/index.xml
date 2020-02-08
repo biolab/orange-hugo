@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Anthropology</title>
+      <link>/categories/anthropology/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/anthropology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Article</title>
       <link>/categories/article/</link>
       <pubDate>Fri, 18 Nov 2016 13:28:09 +0000</pubDate>
@@ -62,6 +71,15 @@
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/belgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Big Data</title>
+      <link>/categories/big-data/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/big-data/</guid>
       <description></description>
     </item>
     
@@ -588,6 +606,15 @@
     </item>
     
     <item>
+      <title>Machine</title>
+      <link>/categories/machine/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/machine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Matrixfactorization</title>
       <link>/categories/matrixfactorization/</link>
       <pubDate>Wed, 06 Feb 2013 13:47:00 +0000</pubDate>
@@ -824,7 +851,7 @@
     <item>
       <title>Pivot Table</title>
       <link>/categories/pivot-table/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/pivot-table/</guid>
       <description></description>
