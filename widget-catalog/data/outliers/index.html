@@ -186,13 +186,12 @@
 
 <h1 id="outliers">Outliers</h1>
 
-<p>Simple outlier detection by comparing distances between instances.</p>
+<p>Outlier detection widget.</p>
 
 <p><strong>Inputs</strong></p>
 
 <ul>
 <li>Data: input dataset</li>
-<li>Distances: distance matrix</li>
 </ul>
 
 <p><strong>Outputs</strong></p>
@@ -200,37 +199,59 @@
 <ul>
 <li>Outliers: instances scored as outliers</li>
 <li>Inliers: instances not scored as outliers</li>
+<li>Data: input dataset appended <em>Outlier</em> variable</li>
 </ul>
 
-<p>The <strong>Outliers</strong> widget applies one of the two methods for outlier detection. Both methods apply classification to the dataset, one with SVM (multiple kernels) and the other with elliptical envelope. <em>One-class SVM with non-linear kernels (RBF)</em> performs well with non-Gaussian distributions, while <em>Covariance estimator</em> works only for data with Gaussian distribution.</p>
+<p>The <strong>Outliers</strong> widget applies one of the four methods for outlier detection. All methods apply classification to the dataset. <em>One-class SVM with non-linear kernels (RBF)</em> performs well with non-Gaussian distributions, while <em>Covariance estimator</em> works only for data with Gaussian distribution. One efficient way to perform outlier detection on moderately high dimensional datasets is to use the <em>Local Outlier Factor</em> algorithm. The algorithm computes a score reflecting the degree of abnormality of the observations. It measures the local density deviation of a given data point with respect to its neighbors. Another efficient way of performing outlier detection in high-dimensional datasets is to use random forests (<em>Isolation Forest</em>).</p>
 
 <p><img src="../images/Outliers-stamped.png" alt="" /></p>
 
 <ol>
-<li>Information on the input data, number of inliers and outliers based on the selected model.</li>
-<li>Select the <em>Outlier detection method</em>:
+<li>Method for outlier detection:
+
+<ul>
+<li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html">One Class SVM</a></li>
+<li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html">Covariance Estimator</a></li>
+<li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html">Local Outlier Factor</a></li>
+<li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html">Isolation Forest</a></li>
+</ul></li>
+<li>Set parameters for the method:
 
 <ul>
 <li><strong>One class SVM with non-linear kernel (RBF)</strong>: classifies data as similar or different from the core class:
 
 <ul>
-<li><strong>Nu</strong> is a parameter for the upper bound on the fraction of training errors and a lower bound of the fraction of support vectors</li>
-<li><strong>Kernel coefficient</strong> is a gamma parameter, which specifies how much influence a single data instance has</li>
+<li><em>Nu</em> is a parameter for the upper bound on the fraction of training errors and a lower bound of the fraction of support vectors</li>
+<li><em>Kernel coefficient</em> is a gamma parameter, which specifies how much influence a single data instance has</li>
 </ul></li>
-<li><strong>Covariance estimator</strong>: fits ellipsis to central points with Mahalanobis distance metric
+<li><strong>Covariance estimator</strong>: fits ellipsis to central points with Mahalanobis distance metric:
 
 <ul>
-<li><strong>Contamination</strong> is the proportion of outliers in the dataset</li>
-<li><strong>Support fraction</strong> specifies the proportion of points included in the estimate</li>
+<li><em>Contamination</em> is the proportion of outliers in the dataset</li>
+<li><em>Support fraction</em> specifies the proportion of points included in the estimate</li>
+</ul></li>
+<li><strong>Local Outlier Factor</strong>: obtains local density from the k-nearest neighbors:
+
+<ul>
+<li><em>Contamination</em> is the proportion of outliers in the dataset</li>
+<li><em>Neighbors</em> represents number of neighbors</li>
+<li><em>Metric</em> is the distance measure</li>
+</ul></li>
+<li><strong>Isolation Forest</strong>: isolates observations by randomly selecting a feature and then randomly selecting a split value between the maximum and minimum values of the selected feature:
+
+<ul>
+<li><em>Contamination</em> is the proportion of outliers in the dataset</li>
+<li><em>Replicabe training</em> fixes random seed</li>
 </ul></li>
 </ul></li>
+<li>If <em>Apply automatically</em> is ticked, changes will be propagated automatically. Alternatively, click <em>Apply</em>.</li>
 <li>Produce a report.</li>
-<li>Click <em>Detect outliers</em> to output the data.</li>
+<li>Number of instances on the input, followed by number of instances scored as inliers.</li>
 </ol>
 
 <h2 id="example">Example</h2>
 
-<p>Below, is a simple example of how to use this widget. We used the <em>Iris</em> dataset to detect the outliers. We chose the <em>one class SVM with non-linear kernel (RBF)</em> method, with Nu set at 20% (less training errors, more support vectors). Then we observed the outliers in the <a href="../data/datatable.md">Data Table</a> widget, while we sent the inliers to the <a href="../../visualize/scatterplot/">Scatter Plot</a>.</p>
+<p>Below is an example of how to use this widget. We used subset (<em>versicolor</em> and <em>virginica</em> instances) of the <em>Iris</em> dataset to detect the outliers. We chose the <em>Local Outlier Factor</em> method, with <em>Euclidean</em> distance. Then we observed the annotated instances in the <a href="../visualize/scatterplot.md">Scatter Plot</a> widget. In the next step we used the <em>setosa</em> instances to demonstrate novelty detection using <a href="../../data/applydomain/">Apply Domain</a> widget. After concatenating both outputs we examined the outliers in the <em>Scatter Plot (1)</em>.</p>
 
 <p><img src="../images/Outliers-Example.png" alt="" /></p>
 
