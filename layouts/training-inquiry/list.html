@@ -2,8 +2,8 @@
 <section id="promo" class="promo section offset-header has-pattern">
     <div class="container intro column" style="padding-top: 40px !important; font-size:16px !important;">
         <div class="col-sm-9 col-12 col-md-7 col-lg-7">
-        <form action="https://service.biolab.si/contact/training" method="POST" id="send_mail">
-        <!-- <form action="http://127.0.0.1:5000/contact/training" method="POST" id="send_mail"> -->
+        <!-- <form action="https://service.biolab.si/contact/training" method="POST" id="send_mail"> -->
+        <form action="http://127.0.0.1:5000/contact/training" method="POST" id="send_mail">
 
         <div class="form-group row">
           <label for="colFormLabelSm" class="col-sm-4 col-md-5 col-form-label col-form-label-sm">Course:</label>
@@ -63,7 +63,7 @@
         <div class="form-group row">
           <label  class="col-sm-4 col-md-5  col-form-label" for="colFormLabel">Location:</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" id="colFormLabel" name="location" placeholder="Enter location">
+            <input type="text" class="form-control" id="colFormLabel" name="location" placeholder="Enter location" required>
           </div>
           <!-- <div class="col-sm-5"></div> -->
         </div>
@@ -71,7 +71,8 @@
         <div class="form-group row">
           <label for="colFormLabelLg" class="col-sm-4 col-md-5  col-form-label col-form-label-lg">Email:</label>
           <div class="col-sm-7">
-            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" name="E-mail" placeholder="Enter mail for contact">
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" name="E-mail" placeholder="Enter mail for contact" required>
+            <!-- value="orange.biolab@gmail.com"> -->
           </div>
         </div>
         <div class="form-group row">
@@ -129,19 +130,30 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="col-md-offset-5 col-md-5 col-sm-offset-4 col-sm-5">    
               <div class="g-recaptcha" data-sitekey="6LeVIasUAAAAAAbB0ysHrMNa6h6qdFNhIBNzDP1P"></div>
                   <span id="captcha" style="color:red" />
             </div>
-        </div>
+        </div> -->
         <input class="form-control" type="hidden" id="subject" name="Page" value="orange">
         <div class="form-group" style="margin-top: 30px;">
             <div class="col-md-offset-5 col-md-5 col-sm-offset-5 col-sm-5">
                 <button type="submit" class="btn btn-theme" value="Submit">Submit</button>
+                <img src='/images/loading.gif' width="40" height="40" id ="loading" style="display: none">
             </div>
         </div>
-        <input class="form-control" type="hidden" id="price" name="price">
+        <div class="form-group" style="margin-top: 30px;">
+          <div class="col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7" id="success" style="padding-top: 5px; display: none;">
+            <i class="fa fa-check-circle" style="font-size:18px;color:green"></i> <span style="font-size:14px;"> The  training inquiry was successfully sent </span>
+          </div>
+          <div class="col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7" id="error" style="padding-top: 5px; display: none; ">
+            <i class="fa fa-times-circle" style="font-size:18px;color:red"></i>
+              <span style="font-size:14px;"> Something went wrong, please try again. </span>
+          </div>
+
+        </div>
+        <input class="form-control" type="hidden" id="price" name="price" >
         </form>
       </div>
    
@@ -151,7 +163,10 @@
 
     </div>
  </div>
+
+
 </section>
+
 <script type="text/javascript">
 
     const course = {'introduction': 800, 'textmining': 800, 'business': 1600};
@@ -197,7 +212,7 @@
       var $price = $("#total");
       $price.val(cost*discount_).html(formatter.format(cost *discount_) + " €");
 
-      $("#price").val(cost*discount);
+      $("#price").val(cost*discount_);
 
       var $participant = $("#participant");
       $participant.val(num_of_participants).html(formatter.format(course[selected]) + " € x "+ num);
@@ -229,22 +244,45 @@
       calculate();
     });
 
-    $('#send_mail').submit(function(event){
+    // $('#send_mail').submit(function(event){
+    //             event.preventDefault();
 
-                var v = grecaptcha.getResponse();
-                if(v.length == 0)
-                {
-                    event.preventDefault();
-                    document.getElementById('captcha').innerHTML="You can't leave Captcha Code";
-                    return false;
-                }
-                else
-                {
-                    document.getElementById('captcha').innerHTML="Captcha completed";
-                    return true; 
-                }
-            });
+    //   var v = grecaptcha.getResponse();
+    //   if(v.length == 0)
+    //   {
+    //       document.getElementById('captcha').innerHTML="You can't leave Captcha Code";
+    //       return ;
+    //   }
+    // });
+        
+    
+    $('#send_mail')
+        .ajaxForm({
+            url : $(this).attr("action"), // or whatever
+            dataType : 'json',
+            type: 'POST',
+            beforeSend: function(){
+              // Show image container
+            $("#loading").show();
+            },
+            success : function (response, status) {
 
+            $("#error").hide()
+            $("#success").show()
+
+            },
+            error: function(response) {
+              $("#success").hide()
+              $("#error").show()
+            },
+            complete:function(data){
+            $("#loading").hide();
+            }
+        })
+
+
+      // };
+        
 
 
 </script>
