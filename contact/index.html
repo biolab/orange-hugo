@@ -47,6 +47,7 @@
  
 
     <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
     <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/plugins/detectmobilebrowser.js"></script>
     <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
@@ -221,40 +222,54 @@
                             <textarea class="form-control" id="message" name='Message' rows="7" required></textarea>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-1 col-md-10 col-sm-offset-3 col-sm-9">
-                            <div class="g-recaptcha" data-sitekey="6LeVIasUAAAAAAbB0ysHrMNa6h6qdFNhIBNzDP1P"></div>
-                        <span id="captcha" style="margin-left:100px;color:red" />
-                        </div>
-                    </div>
+                    
                     <input class="form-control" type="hidden" id="subject" name="Page" value="orange">
 
                     <div class="form-group">
                         <div class="col-md-offset-1 col-md-10 col-sm-offset-3 col-sm-9">
                             <button type="submit" class="btn btn-theme" value="Submit">Submit</button>
+                            <img src='/images/loading.gif' width="40" height="40" id ="loading" style="display: none">
                         </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px;">
+                      <div class="col-md-offset-1 col-md-10 col-sm-offset-3 col-sm-9" id="success" style="padding-top: 5px; display: none;">
+                        <i class="fa fa-check-circle" style="font-size:18px;color:green"></i> <span style="font-size:14px;"> The contact mail was successfully sent.</span>
+                      </div>
+                      <div class="col-md-offset-1 col-md-10 col-sm-offset-3 col-sm-9" id="error" style="padding-top: 5px; display: none; ">
+                        <i class="fa fa-times-circle" style="font-size:18px;color:red"></i>
+                          <span style="font-size:14px;"> Something went wrong, please try again. </span>
+                      </div>
+
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <script type="text/javascript">
-       
-            $('#send_mail').submit(function(event){
 
-                var v = grecaptcha.getResponse();
-                if(v.length == 0)
-                {
-                    event.preventDefault();
-                    document.getElementById('captcha').innerHTML="You can't leave Captcha Code";
-                    return false;
-                }
-                else
-                {
-                    document.getElementById('captcha').innerHTML="Captcha completed";
-                    return true; 
-                }
-            });
+       
+            $('#send_mail')
+                .ajaxForm({
+                    url : $(this).attr("action"),
+                    dataType : 'json',
+                    type: 'POST',
+                    beforeSend: function(){
+                        $("#loading").show();
+                    },
+                    success : function (response, status) {
+                        $('#send_mail')[0].reset()
+                        $("#error").hide()
+                        $("#success").show()
+
+                    },
+                    error: function(response) {
+                        $("#success").hide()
+                        $("#error").show()
+                    },
+                    complete:function(data){
+                        $("#loading").hide();
+                    }
+                })
                 
             
         
