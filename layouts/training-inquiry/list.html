@@ -266,14 +266,14 @@
             $("#loading").show();
             },
             success : function (response, status) {
-
-            $("#error").hide()
-            $("#success").show()
+              $('#send_mail')[0].reset();
+            $("#error").hide();
+            $("#success").show();
 
             },
             error: function(response) {
               $("#success").hide()
-              $("#error").show()
+              $("#error").show();
             },
             complete:function(data){
             $("#loading").hide();
