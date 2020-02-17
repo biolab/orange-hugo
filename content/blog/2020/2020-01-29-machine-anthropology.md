@@ -13,7 +13,7 @@ longExcerpt = "At the recent Machine Anthropology workshop we used Orange to exp
 
 For those unfamiliar with the field, cultural anthropology is the study of human cultures, practices and habits in a holistic and comparative manner. Its core method is ethnographic fieldwork, which means researchers spend a long time in the field with their subjects, live with them, talk with them, socialize with them, and observe relationships and behaviours. But recently, anthropology has begun to use also machine learning and data mining as a part of its method. The subdiscipline is called computational anthropology (combining ethnographic fieldwork *with* big data) or machine anthropology (ethnography *as* big data).
 
-Related: {{< link_new url="hblog/2018/11/06/data-mining-for-anthropologists/" name="Data Mining for Anthropologists">}}
+Related: {{< link_new url="/blog/2018/11/06/data-mining-for-anthropologists/" name="Data Mining for Anthropologists">}}
 
 {{< figure src="/blog_img/2020/2020-01-29-MA-big.png" >}}
 

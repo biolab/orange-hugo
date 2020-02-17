@@ -14,7 +14,7 @@ longExcerpt = "We show how to use Neighbors widget on image embedding space to f
 
 There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 
-Related: {{< link_new url="blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/" name="Image Analytics Workshop at AIUCD 2018">}}
+Related: {{< link_new url="/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/" name="Image Analytics Workshop at AIUCD 2018">}}
 
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
 

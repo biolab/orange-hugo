@@ -14,7 +14,7 @@ longExcerpt = "How to teach text mining and data science to the 9th grade studen
 
 The [IdeenExpo](https://www.ideenexpo.de/) is a biennial participatory event for children, adolescents and young adults taking place in Hanover, Germany. Companies, research organizations, schools and universities participate to show young people the possibilities of the modern working world and gain their interest in technologies and natural sciences. As a part of one of the biggest research-computing-centers in North Germany the [GWDG](https://www.gwdg.de/home) (Gesellschaft für wissenschaftliche Datenverarbeitung mbh Göttingen) took a part in that event to present the possibilities of Data Science and how its methods can be used in different areas.
 
-Related: {{< link_new url="blog/2018/09/11/text-workshops-in-ljubljana/" name="Text Workshops in Ljubljana">}}
+Related: {{< link_new url="/blog/2018/09/11/text-workshops-in-ljubljana/" name="Text Workshops in Ljubljana">}}
 
 Our goal was to give the 9th grade students a 60-minute hands-on introduction to some possible real-life use cases. As we were working with Orange3 now for some time, we decided to use it in our workshop, because it has the great benefit of being able to do data analysis without the need to write code, which wouldn't have worked in a 60 minute workshop.
 
