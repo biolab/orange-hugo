@@ -914,3 +914,10 @@ blockquote cite {
 .blog-font-size {
     font-size: 16px;
 }
+
+
+.centerModal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;

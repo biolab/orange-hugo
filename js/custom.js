@@ -63,14 +63,14 @@ jQuery(document).ready(function ($) {
 
     // Allow colorbox and dynamic image resizing only when using
     // non-mobile devices
-    if (!jQuery.browser.mobile) {
-        setYouTubeDimensions();
+    // if (!jQuery.browser.mobile) {
+    //     setYouTubeDimensions();
 
-        $(window).on('resize', function () {
-            setYouTubeDimensions();
-        });
-    }
-    else {
-        disableDownloadButton();
-    }
+    //     $(window).on('resize', function () {
+    //         setYouTubeDimensions();
+    //     });
+    // }
+    // else {
+    //     disableDownloadButton();
+    // }
 });
