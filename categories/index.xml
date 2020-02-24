@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Anaconda</title>
+      <link>/categories/anaconda/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Analysis</title>
       <link>/categories/analysis/</link>
       <pubDate>Thu, 22 Nov 2018 19:11:58 +0000</pubDate>
@@ -525,6 +534,15 @@
     </item>
     
     <item>
+      <title>Installation</title>
+      <link>/categories/installation/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Interactive  Data Visualization</title>
       <link>/categories/interactive-data-visualization/</link>
       <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
@@ -674,6 +692,15 @@
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/naive-bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Navigator</title>
+      <link>/categories/navigator/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/navigator/</guid>
       <description></description>
     </item>
     
