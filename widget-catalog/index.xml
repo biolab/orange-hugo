@@ -1986,6 +1986,18 @@ Inputs
     </item>
     
     <item>
+      <title>Tile File</title>
+      <link>/widget-catalog/spectroscopy/tilefile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/spectroscopy/tilefile/</guid>
+      <description>Tile File Read data tile-by-tile from input file(s), preprocess the spectra, and send a data table to the output.
+Inputs
+ Preprocessor: A preprocessor list from the Preprocess Spectra widget  Outputs
+ Data: preprocessed dataset read from the input file(s)  The Tilefile widgets loads data from compatible mosaic spectral images and applies the supplied preprocessor(s) to the data. The preprocessing is applied one mosaic tile at a time, and the resulting processed dataset is combined into a single Data Table.</description>
+    </item>
+    
+    <item>
       <title>Topic Modelling</title>
       <link>/widget-catalog/text-mining/topicmodelling-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -911,6 +911,14 @@
     "url": "multifile"
    },
    {
+    "title": "Tile File",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Tile File.png",
+    "url": "tilefile"
+   },
+   {
     "title": "Average Spectra",
     "category": "Spectroscopy",
     "keywords": [],

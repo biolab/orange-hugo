@@ -1,6 +1,6 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Multifile</title>
+    <title>Orange Data Mining - Tile File</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
@@ -185,38 +185,59 @@
                     <div class="content privacy padding-doc single-widget">
                         
 
-<h1 id="multifile">Multifile</h1>
+<h1 id="tile-file">Tile File</h1>
 
-<p>Read data from input files and send a data table to the output.</p>
+<p>Read data tile-by-tile from input file(s), preprocess the spectra, and send a data table to the output.</p>
+
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Preprocessor: A preprocessor list from the Preprocess Spectra widget</li>
+</ul>
 
 <p><strong>Outputs</strong></p>
 
 <ul>
-<li>Data: a data table of all the loaded files</li>
+<li>Data: preprocessed dataset read from the input file(s)</li>
 </ul>
 
-<p>The <strong>Multifile</strong> widget loads data from different sources and works like <strong>Concatenate</strong> widget for spectroscopy. The widget will output a union of attributes and features, with missing values for non-matching wavenumbers. To interpolate missing data, use the <strong>Interpolate</strong> widget.</p>
+<p>The <strong>Tilefile</strong> widgets loads data from compatible mosaic spectral images and applies the supplied
+preprocessor(s) to the data. The preprocessing is applied one mosaic tile at a time, and the resulting
+processed dataset is combined into a single Data Table.</p>
 
-<p><img src="../images/Multifile-stamped.png" alt="" /></p>
+<p>At least one of the preprocessors should reduce the dataset size (such as <strong>Cut</strong>, <strong>Integrate</strong>) to take
+advantage of this file loader and reduce total memory usage.</p>
+
+<p>By default, the widget will not load the dataset automatically. This prevents loading a large dataset into
+memory before the desired preprocessor chain is configured. Press the &ldquo;Reload&rdquo; button to load the data.</p>
+
+<p><img src="../images/Tilefile-stamped.png" alt="" /></p>
 
 <ol>
-<li>Loaded files.</li>
-<li>Load local files.</li>
-<li>Remove the selected file.</li>
-<li>Clear all files.</li>
-<li>Label the concatenated data.</li>
-<li>Reload the files.</li>
-<li>Domain editor. Features can be edited by double-clicking on them. The user can change the attribute names, select the type of variable per each attribute (<em>Continuous</em>, <em>Nominal</em>, <em>String</em>, <em>Datetime</em>), and choose how to further define the attributes (as <em>Features</em>, <em>Targets</em> or <em>Meta</em>). The user can also decide to ignore an attribute.</li>
-<li>Add Multifile to the report. Apply to commit the changes.</li>
+<li>Browse through previously opened data files, or load any of the sample ones.</li>
+<li>Browse for a data file.</li>
+<li>(Re)loads currently selected data file.</li>
+<li>Insert data from URL addresses.</li>
+<li>Information on the preprocessed dataset: dataset size, number and types of data features.</li>
+<li>Additional information on the features in the preprocessed dataset. Features can be edited by double-clicking on them. The user can change the attribute names, select the type of variable per each attribute (Continuous, Nominal, String, Datetime), and choose how to further define the attributes (as Features, Targets or Meta). The user can also decide to ignore an attribute.</li>
+<li>Browse documentation datasets.</li>
+<li>Information on the applied preprocessor list.</li>
+<li>Produce a report.</li>
 </ol>
 
 <h2 id="example">Example</h2>
 
-<p>Here is a simple example on how to use the <strong>Multifile</strong> widget. We have loaded two data set that were stored on our local machine. We used the folder icon to access the files and load them. Now our files are displayed in the top box. We have labelled the files <em>collagen</em>, make it clear what it is about.</p>
+<p>Here is a simple example on how to use the <strong>Tilefile</strong> widget. We configured a preprocessor list in
+<strong>Preprocess Spectra</strong> and connected the <strong>Preprocessor</strong> output to the input on the <strong>Tilefile</strong> widget.
+We have loaded a mosaic data set that was stored on our local machine. We used the folder icon to access
+the file and load them. We check the preprocessor that will be applied and press &ldquo;Reload&rdquo; to load the data.
+Now information about the preprocessed dataset is displayed in the info box and domain editor.</p>
 
-<p>We can observe the concatenated data in the <strong>Spectra</strong> widget or in a <strong>Data Table</strong>.</p>
+<p>We can observe the preprocessed data in the <strong>HyperSpectra</strong> widget or in a <strong>Data Table</strong>.</p>
 
-<p><img src="../images/Multifile-Example.png" alt="" /></p>
+<p><img src="../images/Tilefile-Example.png" alt="" /></p>
+
+<p>This example workflow can be found in <em>Help/Example Workflows</em>.</p>
 
                     </div>
                 </div>
