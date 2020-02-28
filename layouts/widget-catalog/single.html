@@ -1,14 +1,102 @@
 {{ define "main"}}
 
 <section id="features" class="features section padding-bottom">
-        <div class="container page-background">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="content privacy padding-doc single-widget">
-                        {{.Content}}
-                    </div>
+    <div class="container page-background">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3" id="sidebar" style="padding-top: 5%;">
+                <div class="sticky-top">
+            <h2> <b> Widgets </b> </h2>
+            {{ if $.Site.Data.widgets}}
+            {{ range $.Site.Data.widgets }}
+            {{$key := index . 0 }}
+            {{$value := index . 1 }}
+                <div style="font-size:18px;cursor: pointer; padding-top: 10px;" id="{{ $key }}-main" onclick='openl("{{ $key }}")'>{{ $key }} 
+                    <i class="fa fa-angle-down" id="side-icon"></i>
+                </div>
+                <div style="display: none;" id="{{ $key }}">
+                    <ul >
+                        {{range $value}}
+                        {{ if .url }}
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/{{ lower .category| urlize }}/{{ .url }}">
+                      <div class="reference internal" style="cursor: pointer;" >{{ .title }}</div>
+                      </a>
+                  </li>{{end}}
+                  {{end}}
+                    </ul>
+                </div>
+            {{end}}
+            {{end}}
+            </div>
+        </div>
+            <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
+                <div class="content privacy padding-doc single-widget docscontent">
+                    {{.Content}}
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<script src="/plugins/underscore.js"></script>
+
+<script type="text/javascript">
+    var url = window.location.href.split("/")
+
+    var url_cat = url[url.length -2];
+
+    $.getJSON("/widgets.json", function(json) {
+
+        for (var i = 0; i < json.length; i++){
+            var obj = json[i][1];
+            var cat = json[i][0];
+            for (var key in obj){
+                if (obj[key].url == url_cat ){
+                    var show_ = $("[id='"+cat+"']");
+                    show_.show(200);
+                    $("[id='"+cat+"-main']").css('text-decoration', 'underline');
+                    $("[id='"+cat+"-main'] > i").replaceWith('<i class="fa fa-angle-up" id="side-icon"></i>')
+                    which = cat;
+                    break;
+                }
+            }
+        }
+    });
+
+    var which = ""; 
+    function openl(ele){
+        if (which != ele){
+        if ( which != ""){
+            var hide_ = $("[id='"+which+"']");
+            $("[id='"+which+"-main']").css('text-decoration', 'none');
+            $("[id='"+which+"-main'] > i").replaceWith('<i class="fa fa-angle-down" id="side-icon"></i>')
+            hide_.hide(200);
+            var show_ = $("[id='"+ele+"']");
+            show_.show(200);
+            $("[id='"+ele+"-main'] > i").replaceWith('<i class="fa fa-angle-up" id="side-icon"></i>')
+            $("[id='"+ele+"-main']").css('text-decoration', 'underline');
+            which = ele;
+        }
+        else{
+            var show_ = $("[id='"+ele+"']");
+            show_.show(200);
+            $("[id='"+ele+"-main']").css('text-decoration', 'underline');
+            $("[id='"+ele+"-main'] > i").replaceWith('<i class="fa fa-angle-up" id="side-icon"></i>')
+            which = ele;
+        }
+    }else{
+        var hide_ = $("[id='"+which+"']");
+        $("[id='"+which+"-main']").css('text-decoration', 'none');
+        $("[id='"+which+"-main'] > i").replaceWith('<i class="fa fa-angle-down" id="side-icon"></i>')
+        hide_.hide(200);
+        which= ""
+    }
+        
+
+    };
+    // }
+
+
+</script>
 {{end}}
+
+
