@@ -1396,7 +1396,7 @@ h2.docs-subtitle {
 }
 
 .single-widget img {
-  width: 35%;
+  width: auto;
   height: auto;
   /*max-height:600px;*/
 }
@@ -1755,3 +1755,22 @@ h2.docs-subtitle {
 
 
 }
+
+@media screen and (max-width: 995px) {
+    #sidebar {
+        display: none !important;
+    }
+    .docscontent{
+      padding-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .paddoc{
+      padding-top: 5% !important;
+
+    }
+}
+
+
