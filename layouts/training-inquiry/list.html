@@ -130,15 +130,15 @@
             </div>
         </div>
 
-        <!-- <div class="form-group">
-            <div class="col-md-offset-5 col-md-5 col-sm-offset-4 col-sm-5">    
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-6 col-sm-offset-4 col-sm-7">    
               <div class="g-recaptcha" data-sitekey="6LeVIasUAAAAAAbB0ysHrMNa6h6qdFNhIBNzDP1P"></div>
                   <span id="captcha" style="color:red" />
             </div>
-        </div> -->
+        </div>
         <input class="form-control" type="hidden" id="subject" name="Page" value="orange">
         <div class="form-group" style="margin-top: 30px;">
-            <div class="col-md-offset-5 col-md-5 col-sm-offset-5 col-sm-5">
+            <div class="col-md-offset-5 col-md-5 col-sm-offset-5 col-sm-5" style="padding-top: 10px">
                 <button type="submit" class="btn btn-theme" value="Submit">Submit</button>
                 <img src='/images/loading.gif' width="40" height="40" id ="loading" style="display: none">
             </div>
@@ -244,24 +244,21 @@
       calculate();
     });
 
-    // $('#send_mail').submit(function(event){
-    //             event.preventDefault();
-
-    //   var v = grecaptcha.getResponse();
-    //   if(v.length == 0)
-    //   {
-    //       document.getElementById('captcha').innerHTML="You can't leave Captcha Code";
-    //       return ;
-    //   }
-    // });
-        
-    
+            
     $('#send_mail')
         .ajaxForm({
-            url : $(this).attr("action"), // or whatever
+            url : $(this).attr("action"),
             dataType : 'json',
             type: 'POST',
             beforeSend: function(){
+              var v = grecaptcha.getResponse();
+              if(v.length == 0)
+              {
+                  document.getElementById('captcha').innerHTML="Please verify that you are not a robot.";
+                  document.getElementById('submit').blur();
+                  return false;
+
+              }
               // Show image container
             $("#loading").show();
             },
@@ -280,8 +277,6 @@
             }
         })
 
-
-      // };
         
 
 
