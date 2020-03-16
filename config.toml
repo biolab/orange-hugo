@@ -3,6 +3,8 @@ languageCode = "en-us"
 paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "orange-4"
+[params]
+  version = "3.24.1"
 
 [outputFormats]
   [outputFormats.workflow]
