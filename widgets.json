@@ -635,7 +635,8 @@
     "category": "Model",
     "keywords": [
      "file",
-     "open"
+     "open",
+     "model"
     ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Load Model.png",
