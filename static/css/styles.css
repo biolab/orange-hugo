@@ -1774,3 +1774,20 @@ h2.docs-subtitle {
 }
 
 
+img.sidework {
+    float: left;
+    margin-left: -70px;
+}
+
+img.tooltippic {
+    float: right;
+    margin-right: -70px;
+
+}
+
+img.tooltippic, img.sidework {
+    max-height: 60px;
+    max-width: 60px;
+}
+
+
