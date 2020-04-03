@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We know you&rsquo;ve missed it. We&rsquo;ve been getting many requests to bring back Neural Network widget, but we also had many reservations about it.</p>
 
 <p>Neural networks are powerful and great, but to do them right is not straight-forward. And to do them right in the context of a GUI-based visual programming tool like Orange is a twisted double helix of a roller coaster.</p>
@@ -248,6 +251,7 @@
 
 <p>Have fun with the new widget!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -271,7 +275,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

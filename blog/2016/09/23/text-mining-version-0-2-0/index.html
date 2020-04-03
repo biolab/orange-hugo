@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="https://github.com/biolab/orange3-text">Orange3-Text</a> has just recently been polished, updated and enhanced! Our GSoC student Alexey has <a href="/blog/2016/07/05/rehaul-of-text-mining-add-on/">helped us greatly</a> to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.</p>
 
 <p>Wikipedia widget allows retrieving sources from Wikipedia API and can handle multiple queries. It serves as an easy data gathering source and it&rsquo;s great for exploring text mining techniques. Here we&rsquo;ve simply queried Wikipedia for articles on Slovenia and Germany and displayed them in Corpus Viewer.</p>
@@ -287,6 +290,7 @@
 
 <p>This is just a brief overview of what one can do with the new Orange text mining functionalities. Of course, these are just exemplary workflows. If you did textual analysis with great results using any of these widgets, feel free to share it with us! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -310,7 +314,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

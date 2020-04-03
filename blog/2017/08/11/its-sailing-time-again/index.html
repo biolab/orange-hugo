@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Every fall I teach a course on Introduction to Data Mining. And while the course is really on statistical learning and its applications, I also venture into <a href="https://en.wikipedia.org/wiki/Decision_tree_learning">classification trees</a>. For several reasons. First, I can introduce <a href="https://en.wikipedia.org/wiki/Information_gain_ratio">information gain</a> and with it feature scoring and ranking. Second, classification trees are one of the first machine learning approaches co-invented by engineers (<a href="https://en.wikipedia.org/wiki/Ross_Quinlan">Ross Quinlan</a>) and statisticians (<a href="https://www.amazon.com/Classification-Regression-Wadsworth-Statistics-Probability/dp/0412048418/ref=sr_1_1?ie=UTF8&amp;qid=1501848607&amp;sr=8-1&amp;keywords=classification+and+regression+trees">Leo Breiman, Jerome Friedman, Charles J. Stone, Richard A. Olshen</a>). And finally, because they make the base of random forests, one of the most accurate machine learning models for smaller and mid-size data sets.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2016/09/15/data-mining-in-houston-2/">Introduction to Data Mining Course in Houston</a></p>
@@ -242,6 +245,7 @@ forecast. Then, on Saturday, I wrote down if she actually went to the Sea.</bloc
 
 <p><img src="/images/2017/08/sailing-sampled-trees.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -265,7 +269,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

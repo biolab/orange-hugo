@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Yesterday was no ordinary day at the Faculty of Computer and Information Science, University of Ljubljana - there was an unusually high proportion of Social Sciences students, researchers and other professionals in our classrooms. It was all because of a Text Analysis for Social Scientists workshop.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2016/11/30/data-mining-for-political-scientists/">Data Mining for Political Scientists</a></p>
@@ -240,6 +243,7 @@ Participants at work.</p>
 
 <p>Here, we&rsquo;d like to thank <a href="https://www.numfocus.org/">NumFocus</a> for providing financial support for the course. This enabled us to bring in students from a wide variety of fields (linguists, geographers, marketers) and prove (once again) that you don&rsquo;t have to be a computer scientists to do machine learning!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -263,7 +267,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

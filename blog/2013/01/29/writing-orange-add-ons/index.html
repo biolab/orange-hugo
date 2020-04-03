@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We officially supported add-ons in Orange 2.6. You should start by checking the <a href="http://orange.biolab.si/addons/">list of available add-ons</a>. We pull those automatically from the <a href="http://pypi.python.org/pypi">PyPi</a>, which is our preferred distribution channel. Try to install an add-on by either:</p>
 
 <ul>
@@ -222,6 +225,7 @@
 
 <p><img src="/images/2013/01/29/orange-add-ons.png__400x382_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -245,7 +249,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

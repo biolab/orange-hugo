@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>It is the time of the year when we adore Christmas trees. But these are not the only trees we, at Orange team, think about. In fact, through almost life-long professional deformation of being a data scientist, when I think about trees I would often think about classification and regression trees. And they can be beautiful as well. Not only for their elegance in explaining the hidden patterns, but aesthetically, when rendered in Orange. And even more beautiful then a single tree is Orange&rsquo;s rendering of a forest, that is, a random forest.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2016/07/29/pythagorean-trees-and-forests/">Pythagorean Trees and Forests</a></p>
@@ -254,6 +257,7 @@
 
 <p>The power of beauty! No wonder random forests are one of the best machine learning tools. Orange renders them according to the idea of Fabian Beck and colleagues who proposed <a href="http://publications.fbeck.com/ivapp14-pythagoras.pdf">Pythagoras trees for visualizations of hierarchies</a>. The actual implementation for classification and regression trees for Orange was created by <a href="https://github.com/pavlin-policar">Pavlin Policar.</a></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -277,7 +281,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

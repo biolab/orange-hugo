@@ -232,19 +232,20 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Molecular biologists have in the past twenty years invented technologies that can collect abundant experimental data. One such technique is single-cell RNA-seq, which, very simplified, can measure the activity of genes in possibly large collections of cells. The interpretation of such data can tell us about the heterogeneity of cells, cell types, or provide information on their development.</p>
 
 <p>Typical analysis toolboxes for single-cell data are available in R and Python and, most notably, include <a href="https://satijalab.org/seurat/" target="_blank">Seurat</a> and <a href="https://scanpy.readthedocs.io/en/stable/" target="_blank">scanpy</a>, but they lack interactive visualizations and simplicity of Orange. Since the fall of 2017, we have been developing an extension of Orange, which is now (almost) ready. It has even been packed into its own installer. The first real test of the software was in early 2018 through <a href="/blog/2018/03/05/single-cell-analytics-workshop-at-hhmi-janelia/" target="_blank">a one day workshop at Janelia Research Campus</a>. On March 6, and with a much more refined version of the software, we have now repeated the hands-on workshop at the University of Pavia.</p>
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/3/1/2019-pavia-group.jpg" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/3/1/2019-pavia-group.jpg" class="blog-image_"> 
+      <img src="/blog_img/2019/3/1/2019-pavia-group.jpg" />
+ </a>
+
+
 
 <br />
 </p>
@@ -255,17 +256,16 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/3/1/2019-pizzoccheri.jpg" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/3/1/2019-pizzoccheri.jpg" class="blog-image_"> 
+      <img src="/blog_img/2019/3/1/2019-pizzoccheri.jpg" />
+ </a>
+
+
 
 <br />
 </p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -289,7 +289,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

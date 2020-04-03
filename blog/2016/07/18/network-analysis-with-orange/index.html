@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Visualizing relations between data instances can tell us a lot about our data. Let&rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&rsquo;s about the principle. :) We&rsquo;ve got two data files: one is a distance file with distance scores already calculated by <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard index</a> and the other is a standard conferences.tab file.</p>
 
 <p><img src="/images/2016/06/conferences.png" alt="" />
@@ -274,6 +277,7 @@ Conferences.tab data file with the type of the publication venue (conference or 
 
 <p>There are many other things you can do with the Networks add-on in Orange. You can color nodes by predictions, highlight misclassifications or output only nodes with certain network parameters. But for today, let this be it.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -297,7 +301,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

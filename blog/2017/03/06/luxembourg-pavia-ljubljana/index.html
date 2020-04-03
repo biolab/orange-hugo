@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               
 
 <p>February was a month of <a href="http://orange.biolab.si">Orange</a> workshops.</p>
@@ -264,6 +267,7 @@
 
 <p>We thank <a href="http://www.labmedinfo.org/people/bellazzi">Riccardo Bellazzi</a>, an organizer of Pavia course, for inviting us. Oh, yeah, the pizza at <a href="http://www.rossopomodoro.it/ristoranti/PAVIA/pavia-citta">Rossopommodoro</a> was great as always, though Michella&rsquo;s pasta al pesto e piselli back at Riccardo&rsquo;s home was even better.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -287,7 +291,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

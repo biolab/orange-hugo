@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">Google Summer of Code</a>.</p>
 
 <p>The add-on will consist of a set of widgets, each with it&rsquo;s own dedicated purpose, which can be seamlessly connected to provide most commonly used image preprocessing functionality.</p>
@@ -234,6 +237,7 @@
 
 <p>Finally, I want to thank the Orange core team for having faith in me and giving me the chance to spend the summer working on an idea I care about. I&rsquo;m very grateful for that and I hope I&rsquo;ll exceed their expectations.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -257,7 +261,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

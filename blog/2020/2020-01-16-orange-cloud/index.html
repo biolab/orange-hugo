@@ -218,15 +218,16 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Many problems are too big and require too much processing power to be efficiently processed on your laptop or PC. In such cases, the data is usually transferred to a remote server and processed using custom code, which is often time consuming. Now, there is a way to run Orange on a remote server so that you can keep using its interactive graphical interface. We will show you how to run Orange on the remote server so that you can use it through your web browser.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2020/2020-01-16-weborange.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2020/2020-01-16-weborange.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-01-16-weborange.png" />
+ </a>
+
+
 
 </p>
 
@@ -234,13 +235,11 @@
 
 <p>In our configuration we used several different technologies such as <a href="https://www.docker.com/">Docker</a> and <a href="https://guacamole.apache.org/">Apache Guacamole</a>, which are shown in the diagram. First, you need to set up <a href="https://nginx.org/en/">Nginx</a> (or alternatively <a href="https://httpd.apache.org/">Apache web server</a>), which is used to ensure that all communication to the server is SSL encrypted. This is very important, because remote desktop protocols such as <a href="https://en.wikipedia.org/wiki/Remote_Desktop_Protocol">Remote Desktop protocol (RDP)</a> and <a href="https://en.wikipedia.org/wiki/Virtual_Network_Computing">Virtual network computing (VNC)</a> are not encrypted. Failure to do so will expose your data to anyone listening on the network.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2020/2020-01-16-stack.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2020/2020-01-16-stack.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-01-16-stack.png" />
+ </a>
+
+
 
 </p>
 
@@ -252,6 +251,7 @@
 
 <p>For a complete installation guide and more details see <a href="https://github.com/biolab/orange-docker">orange-docker</a> Github repository.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -275,7 +275,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This was already the second installment of Introduction to Data Mining Course at <a href="https://www.bcm.edu">Baylor College of Medicine in Houston, Texas</a>. Just <a href="/blog/2015/10/09/data-mining-course-in-houston/">like the last year</a>, the course was packed. About 50 graduate students, post-docs and a few faculty attended, making the course one of the largest elective PhD courses from over a hundred offered at this prestigious medical school.</p>
 
 <p><img src="/images/2016/09/houston-class-2016.jpg" alt="" /></p>
@@ -230,6 +233,7 @@
 
 <p><img src="/images/2016/09/image-analytics-cows.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -253,7 +257,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

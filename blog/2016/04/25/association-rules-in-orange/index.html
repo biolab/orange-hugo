@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange is welcoming back one of its more exciting add-ons: <a href="https://pypi.python.org/pypi/Orange3-Associate">Associate</a>! <a href="https://en.wikipedia.org/wiki/Association_rule_learning">Association rules</a> can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!</p>
 
 <p>The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products. Let&rsquo;s use this widget on real Foodmart 2000 data set.</p>
@@ -291,6 +294,7 @@
 
 <p>Association rules are a powerful way to improve your business by organizing your actual or online store, adjusting marketing strategies to target suitable groups, providing product recommendations and generally understanding your client base better. Just another way Orange can be used as a business intelligence tool!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -314,7 +318,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

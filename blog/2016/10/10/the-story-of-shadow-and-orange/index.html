@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This is a long story. I remember when started my PhD in Italy. There I met a researcher and he said to me: »You should do some simulations on x-ray optics beamline.« »Yes, but how should I do that?« He gave me a big tape, it was 1986. I soon realized it was all code. But it was a code called <a href="http://scripts.iucr.org/cgi-bin/paper?S0909049511026306">Shadow</a>.</p>
 
 <p>I started to look at the code, to play with it, do some simulations… Soon my boss told me:</p>
@@ -248,6 +251,7 @@
 
 <p>&ndash; Manuel Sanchez del Rio</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -271,7 +275,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

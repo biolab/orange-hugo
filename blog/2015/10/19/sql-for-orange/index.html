@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We bet you&rsquo;ve always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don&rsquo;t worry, we&rsquo;re coming to the rescue.</p>
 
 <p>The key to SQL files is installation of &lsquo;<em>psycopg2</em>&rsquo; library in Python.</p>
@@ -234,6 +237,7 @@
 
 <p>Upon opening Orange, you will be able to see a lovely new icon - <strong>SQL Table</strong>. Then just connect to your server and off you go!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -257,7 +261,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>In the past month, we had two workshops that focused on text mining. The first one, <a href="https://www.kc.uni-lj.si/novice/poletna-ola-faksi-v-praksi.html">Faksi v praksi</a>, was organized by the <a href="https://kc.uni-lj.si/domov.html">University of Ljubljana Career Centers</a>, where high school students learned about what we do at the <a href="https://fri.uni-lj.si/en">Faculty of Computer and Information Science</a>. We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs. This time, we did not only cluster documents, but also built predictive models, explored predictions in nomogram, plotted documents on a map and discovered how to find the emotion in a tweet.</p>
 
 <p><img src="/images/2018/09/1_FRI_6838.jpg" alt="" /></p>
@@ -259,6 +262,7 @@
 
 <p>Stay tuned for the information on the release date and the upcoming post on UDPipe infrastructure!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -282,7 +286,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

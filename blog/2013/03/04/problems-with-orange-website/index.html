@@ -204,12 +204,16 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Our servers crashed on Friday, March 1st due to technical problems. The Orange website was offline for several hours and Mac bundle was unaccessible until today.</p>
 
 <p>We are still reviewing if our other services work. If you notice some problems, please ping us.</p>
 
 <p>Stay tuned and fruitful downloading!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -233,7 +237,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

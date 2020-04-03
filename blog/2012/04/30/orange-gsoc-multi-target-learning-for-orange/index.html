@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange already supports multi-target classification, but the current implementation of clustering trees is written in Python. One of the five projects Orange has chosen at this year&rsquo;s Google Summer of Code is the implementation of clustering trees in C. The goal of my project is to speed up the building time of clustering trees and lower their spatial complexity, especially when used in random forests. Implementation will be based on Orange&rsquo;s SimpleTreeLearner and will be integrated with Orange 3.0.</p>
 
 <p>Once the clustering trees are implemented and integrated, documentation and unit tests will be written. Additionally I intend to make an experimental study that will compare the effectiveness of clustering trees with established multi-target classifiers (like PLS and chain classifiers) on benchmark data-sets. I will also work on some additional tasks related to multi-target classification that I had not included in my original proposal but Orange&rsquo;s team thinks would be useful to include. Among these is a chain classifier framework that Orange is currently missing.</p>
@@ -231,6 +234,7 @@
 
 <p>I am a third year undergraduate student at the Faculty of Computer and Information Science in Ljubljana and my project will be mentored by prof. dr. Blaž Zupan. I thank him and the rest of the Orange team for advice and support.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -254,7 +258,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

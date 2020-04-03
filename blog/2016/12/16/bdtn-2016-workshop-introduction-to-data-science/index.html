@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Every year <a href="http://www.bestljubljana.si/">BEST Ljubljana</a> organizes BEST Days of Technology and Sciences, an event hosting a broad variety of workshops, hackathons and lectures for the students of natural sciences and technology. <strong>Introduction to Data Science</strong>, organized by our own Laboratory for Bioinformatics, was this year one of them.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2016/10/02/intro-to-data-mining-for-life-scientists/">Intro to Data Mining for Life Scientists</a></p>
@@ -247,6 +250,7 @@
 
 <p><img src="/images/2016/12/IMG_9224.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -270,7 +274,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

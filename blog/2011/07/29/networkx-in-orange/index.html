@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="http://networkx.lanl.gov/">NetworkX</a> – a popular open-source python library for network analysis has finally found its way into Orange. It is now used as a base class for network representation in all Orange modules and widgets. By that, we offered to the widespread network community a fruitful and fun way to visualize and explore networks, using their existing NetworkX scripts. It has never been easier to combine network analysis and visualization with existing machine learning and data discovery methods.</p>
 
 <p>Complete documentation is available in the <a href="/doc/orange25/Orange.network.html">Orange network headquarters</a>. For a brief overview, take a look at the following example. Let us suppose we would like to analyse the data about patients, having one of two types of leukemia. So, we have a <a href="http://blog.biolab.si/wp-content/uploads/2011/07/29/leukemiagsea.tab">data set</a> with 72 patient, 4600+ gene expressions and a class variable. We also have a vast <a href="images/2011/08/01/genes_biofuncttar.gz">network of human genes</a>, connected if they share a biological function. What we would like to examine is a sub-network with only several hundred most expressed genes from the data set. To show off a bit, we will also use the <a href="/addons/">Orange Bioinformatics add-on</a>. Here is how we do it:</p>
@@ -281,6 +284,7 @@ ow.set_graph(G_sub)
 app.exec_()
 </code></pre>
 
+            </div>
             </article>
           </div>
         </div>
@@ -304,7 +308,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

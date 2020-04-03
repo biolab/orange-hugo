@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for <strong>predictive modelling</strong> and <strong>recommendation systems</strong>.</p>
 
 <p>This widget set can be used either to recommend you the next movie to watch based on your demographic characteristics, movies you gave high scores to, your preferred genre, etc. or to suggest you a set of genes that might be relevant for a particular biological function or process. We envision the add-on to be useful for predictive modeling dealing with <strong>large heterogeneous data compendia</strong>, such as life sciences.</p>
@@ -247,6 +250,7 @@
 
 <p>Data fusion visualized</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -270,7 +274,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

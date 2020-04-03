@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>I’m sure you’d agree that reporting your findings when analyzing the data is crucial. Say you have a couple of interesting predictions that you’ve tested with several methods many times and you’d like to share that with the world. Here’s how.</p>
 
 <p>Save Graph just got company - a <strong>Report button</strong>! Report works in most widgets, apart from the very obvious ones that simply transmit or display the data (Python Scripting, Edit Domain, Image Viewer, Predictions…).</p>
@@ -249,6 +252,7 @@
 <li><p>Open report. To open a saved report file go to File → Open Report. To view the report you’re working on, go to Options → Show report view or click Shift+R.</p></li>
 </ol>
 
+            </div>
             </article>
           </div>
         </div>
@@ -272,7 +276,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

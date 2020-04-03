@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Journal of Machine Learning Research has just published our <a href="http://jmlr.org/papers/v14/demsar13a.html">paper on Orange</a>. In the paper we focus on its Python scripting part. We have last reported on Orange scripting at <a href="http://ecmlpkdd.isti.cnr.it/">ECML/PKDD 2004</a>. The manuscript was well received (over 270 citations on Google Scholar), but it is now entirely outdated. This was also our only formal publication on Orange scripting. With publication in JMLR this is now a current description of Orange and will be, for a while :-), Orange’s primary reference.</p>
 
 <p>Here&rsquo;s a reference:</p>
@@ -249,6 +252,7 @@
 }
 </code></pre>
 
+            </div>
             </article>
           </div>
         </div>
@@ -272,7 +276,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

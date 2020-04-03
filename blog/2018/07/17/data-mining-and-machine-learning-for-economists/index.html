@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.</p>
 
 <p><img src="/images/2018/07/IMG_20180713_092503.jpg" alt="" /></p>
@@ -259,13 +262,11 @@ In Datasets widget we have selected the HDI data set.</p>
 
 <p>Of course, when we are talking about countries one naturally wants to see them on a map! That is easy. We will use the Geo add-on. First, we need to convert all the country names to geographical coordinates. We will do this with Geocoding, where we will encode column Country to latitude and longitude. Remember to use the same output as before, that is Data to Data.</p>
 
-<p>
-<figure>
-    
-        <img src="/images/2018/07/Screen-Shot-2018-07-17-at-10.52.29.png" width="500" />
-    
-    
-</figure>
+<p><a href="/images/2018/07/Screen-Shot-2018-07-17-at-10.52.29.png" class="blog-image_"> 
+      <img src="/images/2018/07/Screen-Shot-2018-07-17-at-10.52.29.png" />
+ </a>
+
+
 
 </p>
 
@@ -283,6 +284,7 @@ In Datasets widget we have selected the HDI data set.</p>
 
 <p>We always try to keep our workshops fresh and interesting and visualizations are the best way to achieve this. Till the next workshop!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -306,7 +308,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

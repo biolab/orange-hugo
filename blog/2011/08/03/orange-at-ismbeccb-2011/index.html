@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We presented the <a href="/bio/">Orange Bioinformatics add-on</a> at the <a href="http://www.iscb.org/ismbeccb2011/">ISMB/ECCB</a> conference in Vienna, a joined event covering both 19th Annual International Conference on Intelligent Systems for Molecular Biology and 10th European Conference on Computational Biology.</p>
 
 <p>We were giving out Orange stickers (with the URL) to the poster&rsquo;s visitors. There was some interest; in the end we gave out about 10 of them, mostly to biologists, who were excited to perform some of the analysis themselves. Among the visitors was also a developer of a similar tool who seemed slightly surprised that something like this already exists, while another was disappointed because Orange only runs locally.</p>
@@ -228,6 +231,7 @@
 
 <p><img src="/images/2011/08/03/slika_poster.jpg__160x160_q95_crop.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -251,7 +255,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

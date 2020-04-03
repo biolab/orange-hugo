@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.</p>
 
 <p>I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a <a href="http://file.biolab.si/datasets/traffic-signs-rw.tab">traffic-signs-w.tab</a> data set.</p>
@@ -271,6 +274,7 @@
 
 <p>Isn&rsquo;t this great? Turns out that traffic signs were carefully designed, such that the three outliers are indeed the signs we should never miss. It is great that we can now reconfirm this design choice by deep learning-based embedding and by using some straightforward machine learning tricks such as Silhouette Plot.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -294,7 +298,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>From Wednesday, 2nd February 2011, to Saturday, 5th February 2011, we have been on working retreat at <a href="http://en.wikipedia.org/wiki/Lake_Bohinj">Lake Bohinj</a>. The whole <a href="http://www.biolab.si/">Bioinformatics Laboratory</a> of the <a href="http://www.fri.uni-lj.si/">Faculty of Computer and Information technology</a> has temporary moved to a nice house just few meters from the lake, enjoing the nature and without any distractions. Plan: working on the next version of Orange, <a href="http://orange.biolab.si/trac/intertrac/wiki%3AOrange25">Orange 2.5</a> and documentation rewrite. Orange 2.5 will have a better and restructured Python scripting interface along with great and shinny documentation.</p>
 
 <p>Overall summary of the retreat: first commit (<a href="http://orange.biolab.si/trac/intertrac/changeset%3A9743">revision 9743</a>) by Marko on Wednesday, last commit (<a href="http://orange.biolab.si/trac/intertrac/changeset%3A10181">revision 10181</a>) by Matija at 1:26:49 on Saturday. This gives 439 revisions made during the retreat.</p>
@@ -308,6 +311,7 @@
 </tbody>
 </table>
 
+            </div>
             </article>
           </div>
         </div>
@@ -331,7 +335,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

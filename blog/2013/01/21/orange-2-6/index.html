@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>A new version of Orange, 2.6, has been uploaded to <a href="http://pypi.python.org/pypi/Orange/2.6/">Python Package Index</a>. Since the version on the Orange website is always up to date (we post daily builds), this may not affect you. Nevertheless, let us explain what we were working on for the last year.</p>
 
 <p>The most important improvement to Orange is an implementation of add-on framework that is much more &ldquo;standard pythonic&rdquo;. As a consequence, the add-on installation procedure has been simplified for both individual users and system administrators. For developers, the new framework eases the development and distribution of add-ons. This enabled us to make first steps towards the goal of removing the rarely used parts of Orange from the core distribution, which will ultimately result in less external dependencies and less warnings on module import. Orange 2.6 lacks the modules for network analysis (Orange.network) and prediction reliability assesment (Orange.reliability), but fear not: you can get them back by <a href="/blog/2012/11/30/the-easy-way-to-install-add-ons/">installing</a> the <a href="http://pypi.python.org/pypi/Orange-Network">Orange-Network</a> and <a href="http://pypi.python.org/pypi/Orange-Reliability">Orange-Reliability</a> add-ons.</p>
@@ -224,6 +227,7 @@
 <li>If you use our daily builds or build orange yourself from the source available in our repository, your version will be 2.6.1.dev-8804fbc. (minor will be larger by one and .dev- suffix will show the source control revision that was used for the build)</li>
 </ul>
 
+            </div>
             </article>
           </div>
         </div>
@@ -247,7 +251,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

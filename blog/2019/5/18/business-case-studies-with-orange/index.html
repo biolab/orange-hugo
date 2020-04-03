@@ -232,17 +232,18 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Previous week Blaž, Robert and I visited Wärtsilä in the lovely Dolina near Trieste, Italy. <a href="https://www.wartsila.com/" target="_blank">Wärtsilä</a> is one of the leading designers of lifecycle power solutions for the global marine and energy markets and its <a href="https://www.wartsila.com/ita/en/about" target="_blank">subsidiary in Trieste</a> is one of the largest Wärtsilä Group engine production plants. We were there to hold a one-day workshop on data mining and machine learning with the aim to identify relevant use cases in business and show how to address them.</p>
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-1.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-1.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-1.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -255,13 +256,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-2.png" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-2.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-2.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -270,13 +269,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-3.png" width="60%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-3.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-3.png" />
+ </a>
+
+
 
 <br />
 <br />
@@ -284,13 +281,11 @@ Seems like Logistic Regression is the winner here, since its AUC score it the hi
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-4.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-4.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-4.png" />
+ </a>
+
+
 
 <br />
 <br />
@@ -298,13 +293,11 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-5.png" width="60%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-5.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-5.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -313,13 +306,11 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-6.png" width="50%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-6.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-6.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -328,13 +319,11 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-7.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-7.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-7.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -343,13 +332,11 @@ A great thing about Logistic Regression is that it is interpretable. We can conn
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-8.png" width="50%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-8.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-8.png" />
+ </a>
+
+
 
 <br />
 <br />
@@ -357,19 +344,18 @@ Seems like John is most likely to leave. He has been at the company for only a y
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/5/18/business-case-9.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/5/18/business-case-9.png" class="blog-image_"> 
+      <img src="/blog_img/2019/5/18/business-case-9.png" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>This is something HR department can work with to design proper policies and keep best talent. The same workflow can be used for churn prediction, process optimization and predicting success of a new product.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -393,7 +379,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

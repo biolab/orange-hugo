@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.</p>
 
 <p>Since version 3.3.9, Orange has a Transpose widget that flips your data table around. Columns become rows and rows become columns. This is often useful, if you have, say, biological data.</p>
@@ -264,6 +267,7 @@
 
 <p>This is because we used the Create Class widget to help us create new class values. Create Class already available in <a href="https://github.com/biolab/orange3-prototypes">Orange3-Prototypes</a> add-on and will be included in a future Orange release. You can learn more about it soon&hellip; :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -287,7 +291,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

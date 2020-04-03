@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>I am one of three students who are working on GSoC projects for Orange this year. The objective of the project Matrix Factorization Techniques for Data Mining is to provide the Orange community with a unified and efficient interface to matrix factorization algorithms and methods.</p>
 
 <p>For that purpose I have been developing a library which will include a number of published factorization algorithms and initialization methods and will facilitate combinations of these to produce new strategies. Extensive documentation with working examples that demonstrate applications, commonly used benchmark data and possibly some visualization methods will be provided to help with the interpretation and comprehension of the factorization results.</p>
@@ -232,6 +235,7 @@
 
 <p>Thanks to the Orange team and mentor prof. dr. Blaz Zupan for support and advice.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -255,7 +259,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

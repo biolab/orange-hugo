@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange Canvas, a visual programming environment for Orange, has been around for a while. Integrating new and new features degraded the quality of code to a point where further development proved to be a daunting task. With ever increasing number of widgets, the existing widget toolbar is becoming harder and harder to use, but improving it is really hard. For that reason, we decided Orange needs a new Canvas, a rewrite, that would keep all of the feature of the existing one, but introduce the needed structure and modularity to the source code.</p>
 
 <p>The project started about a year ago, and more than 20 thousand lines of code later, we have something to show you. As of yesterday, the new canvas was merged to the main Orange repository, where it lives alongside the old one. At the moment, it still lacks a lot of testing, some features are not completely implemented, but the main functionality, i.e. visual programming with widgets and links, should work.</p>
@@ -240,6 +243,7 @@
 
 <p>Nothing will explode, but short of that, anything might happen. If you stumble upon issues or have helpful suggestions, please post them on our <a href="http://orange.biolab.si/trac/newticket?component=new-canvas">issue tracker</a>. There are some known <a href="http://orange.biolab.si/trac/query?status=accepted&amp;status=assigned&amp;status=new&amp;status=reopened&amp;component=new-canvas&amp;col=id&amp;col=summary&amp;col=component&amp;col=type&amp;col=status&amp;col=milestone&amp;order=priority">problems we are aware of</a>; you do not need to report those :).</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -263,7 +267,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

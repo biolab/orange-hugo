@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
 
 <p><a href="http://orange3-educational.readthedocs.io/en/latest/widgets/polynomialclassification.html">Polynomial Classification</a> widget is implemented as a part of my <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> project along with other widgets in educational add-on (see my <a href="/blog/2016/08/12/interactive-k-means/">previous blog</a>). It visualizes probabilities for two-class classification (target vs. rest) using color gradient and contour lines, and it can do so for any Orange learner.</p>
@@ -273,6 +276,7 @@
 
 <p>Overfitting is one of the central problems in machine learning. You are welcome to read our <a href="/blog/2016/03/12/overfitting-and-regularization/">previous blog on this problem and possible solutions</a>.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -296,7 +300,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

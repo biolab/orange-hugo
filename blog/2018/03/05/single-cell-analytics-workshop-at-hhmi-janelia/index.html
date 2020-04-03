@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="https://www.janelia.org">HHMI | Janelia</a> is one of the prettiest researcher campuses I have ever visited. Located in Ashburn, VA, about 20 minutes from Washington Dulles airport, it is conveniently located yet, in a way, secluded from the buzz of the capital. We adored the guest house with a view of the lake, tasty Janelia-style breakfast (hash-browns with two eggs and sausage, plus a bagel with cream cheese) in the on-campus pub, beautifully-designed interiors to foster collaborations and interactions, and late-evening discussions in the in-house pub.</p>
 
 <p>All these thanks to the invitation of Andrew Lemire, a manager of a shared high-throughput genomics resource, and Dr. Vilas Menon, a mathematician specializing in quantitative genomics. With Andy and Vilas, we have been collaborating in the past few months on trying to devise a simple and intuitive tool for analysis of single-cell gene expression data. Single cell high-throughput technology is one of the latest approaches that allow us to see what is happening within a single cell, and it does that by simultaneously scanning through potentially thousands of cells. That generates loads of data, and apparently, we have been trying to fit Orange for single-cell data analysis task.</p>
@@ -222,6 +225,7 @@
 
 <p><strong>Related:</strong> <a href="/blog/2016/09/15/data-mining-in-houston-2/">Hands-On Data Mining Course in Houston</a></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -245,7 +249,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

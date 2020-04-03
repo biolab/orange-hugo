@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We&rsquo;ve said it numerous times and we&rsquo;re going to say it again. Data preparation is crucial for any data analysis. If your data is messy, there&rsquo;s no way you can make sense of it, let alone a computer. Computers are great at handling large, even enormous data sets, speedy computing and recognizing patterns. But they fail miserably if you give them the wrong input. Also some classification methods work better with binary values, other with continuous, so it is important to know how to treat your data properly.</p>
 
 <p>Orange is well equipped for such tasks.</p>
@@ -309,6 +312,7 @@ Empty columns and columns with the same (constant) value were removed.</p>
 
 <p>Of course, don&rsquo;t forget to include all these procedures into your report with the &lsquo;Report&rsquo; button! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -332,7 +336,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

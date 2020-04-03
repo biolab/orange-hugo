@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>One more exciting visualization has been introduced to Orange - a Nomogram. In general, <a href="https://en.wikipedia.org/wiki/Nomogram">nomograms</a> are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</p>
 
 <p>So, how does it work? First, feed the Nomogram a classification model, say, Logistic Regression. We will use the Titanic survival data that comes with Orange for this example (in File widget, choose &ldquo;Browse documentation datasets&rdquo;).</p>
@@ -254,6 +257,7 @@
 
 <p>This makes Nomogram a great widget for understanding the model and for interactive data exploration.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -277,7 +281,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

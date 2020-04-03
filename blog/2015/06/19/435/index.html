@@ -225,12 +225,16 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Even though the summer is nigh, we are hardly going to catch a summer break this year. Orange team is busy holding workshops around the world to present the latest widgets and data mining tools to the public. Last week we had a very successful tutorial at <a href="http://www.bc2.ch/2015/">[BC]2</a> in Basel, Switzerland, where <a href="https://www.facebook.com/marinka.zitnik?fref=ts">Marinka</a> and <a href="https://www.facebook.com/blazzupan.si?fref=ts">Blaž</a> presented data fusion. A part of the tutorial was a hands-on workshop with <a href="/blog/2015/06/05/data-fusion-add-on-for-orange/">Orange’s new add-on for data fusion</a>. Marinka also got an award for the <a href="http://helikoid.si/bc215/zitnik-zupan-bc215.png">poster</a>, where data fusion was used to hunt for <a href="https://en.wikipedia.org/wiki/Dictyostelium_discoideum"><em>Dictyostelium</em></a> bacterial-response genes. This week, we are in <a href="http://www.unipv.eu/site/home.html">Pavia, Italy</a>, also for <a href="https://sites.google.com/site/mcbiworkshop15/">Matrix Computations in Biomedical Informatics Workshop</a> at <a href="http://aime15.aimedicine.info/">AIME 2015</a>, a Conference on Artificial Intelligence in Medicine. During the workshop, we are giving an invited talk on learning latent factor models by data fusion and we’ll also show Orange’s data fusion add-on. Thanks to the workshop organizers, <a href="http://www.labmedinfo.org/people/bellazzi">Riccardo Bellazzi</a>, <a href="http://www.cse.gatech.edu/people/jimeng-sun">Jimeng Sun</a> and <a href="http://researcher.ibm.com/researcher/view.php?person=us-pzhang">Ping Zhang</a>, the workshop program looks great.</p>
 
 <p><img src="/images/2015/06/11206772_958037830914639_8849766904916230749_o.jpg" alt="" /></p>
 
 <p>Blaž with Riccardo and John in Pavia, Italy</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -254,7 +258,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               
 
 <p><strong>SimpleTreeLearner</strong> is an implementation of classification and regression trees that sacrifices flexibility for speed. A benchmark on 42 different datasets reveals that <strong>SimpleTreeLearner</strong> is <strong>11 times faster</strong> than the original <strong>TreeLearner</strong>.</p>
@@ -269,6 +272,7 @@ result = Orange.evaluation.testing.cross_validation([learner], data)
 print 'CA:', Orange.evaluation.scoring.CA(result)[0]
 </code></pre>
 
+            </div>
             </article>
           </div>
         </div>
@@ -292,7 +296,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

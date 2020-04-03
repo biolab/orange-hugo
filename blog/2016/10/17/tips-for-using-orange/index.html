@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>TIP #1: <strong>Follow tutorials and example workflows to get started.</strong></p>
 
 <p>It&rsquo;s difficult to start using new software. Where does one start, especially a total novice in data mining? For this exact reason we&rsquo;ve prepared <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">Getting Started With Orange - YouTube tutorials</a> for complete beginners. Example workflows on the other hand can be accessed via Help - Examples.</p>
@@ -288,6 +291,7 @@
 
 <p><img src="/images/2016/10/educational.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -311,7 +315,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

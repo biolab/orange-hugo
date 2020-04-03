@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="http://en.wikipedia.org/wiki/Partial_least_squares_regression">Partial least squares regression</a> is a regression technique which supports multiple response variables. PLS regression is very popular in areas such as bioinformatics, chemometrics etc. where the number of observations is usually less than the number of measured variables and where there exists multicollinearity among the predictor variables. In such situations, standard regression techniques would usually fail. The PLS regression is now available in Orange (see <a href="/doc/reference/Orange.regression.pls">documentation</a>)!</p>
 
 <p>You can use PLS regression model on single-target or <a href="/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/">multi-target</a> data sets. Simply load the data set <a href="/doc/reference/_downloads/multitarget-synthetic.tab">multitarget-synthetic.tab</a> and see that it contains three predictor variables and four responses using this code.</p>
@@ -272,6 +275,7 @@ for a, p in zip(actual, predicted):
 
 <p>We can see that PLS regression outperforms linear regression when the number of training instances is low. Such situations (low number of instances compared to high number of variables) are quite common when analyzing data sets in bioinformatics. However, with increasing number of training instances, the advantages of PLS regression diminish.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -295,7 +299,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Recently we&rsquo;ve been participating at <a href="http://www.tms.si/index.php?e_id=484&amp;lang=2">Days of Computer Science</a>, organized by the Museum of Post and Telecommunications and the Faculty of Computer and Information Science, University of Ljubljana, Slovenia. The project brought together pupils and students from around the country and hopefully showed them what computer science is mostly about. Most children would think programming is just typing lines of code. But it&rsquo;s more than that. It&rsquo;s a way of thinking, a way to solve problems creatively and efficiently. And even better, computer science can be used for solving a great variety of problems.</p>
 
 <p><strong>Related:</strong> <a href="/features/education-in-data-science/">On teaching data science with Orange</a></p>
@@ -251,6 +254,7 @@
 
 <p>_Note: _<em>Most widgets we have designed for this projects (like Face Detector, Webcam Capture, and Lookalike) are available in <a href="https://github.com/biolab/orange3-prototypes">Orange3-Prototypes</a> and are not actively maintained. They can, however, be used for personal projects and sheer fun. Orange does not own the copyright of the images.</em></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -274,7 +278,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

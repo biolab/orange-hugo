@@ -28,7 +28,7 @@
       <guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid>
       <description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
 
-   Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
+ Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
     </item>
     
   </channel>

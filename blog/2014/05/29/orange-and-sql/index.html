@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange 3.0 will also support working with data stored in a database.</p>
 
 <p>While we have already talked about this some time ago, we here describe some technical details for anybody interested. This is not a thorough tecnical report, its purpose is only to provide an impression about the architecture of the upcoming version of Orange.</p>
@@ -242,6 +245,7 @@
 
 <p>The described activities were funded in part by the European Union&rsquo;s Seventh Framework Programme (FP7/2007-2013) under grant agreement n° 318633.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -265,7 +269,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

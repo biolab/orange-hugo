@@ -204,8 +204,12 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We have added a simple <a href="/contact/">contact form</a> so that you can get in direct contact with us. Please do not misuse it (we will simply ignore you). Support and other general questions should be posted in our <a href="/forum/">forum</a> and for issues with Orange you should use our <a href="/trac/">ticketing system</a> to report them.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -229,7 +233,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

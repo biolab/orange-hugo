@@ -274,6 +274,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Being a political scientist, I did not even hear about data mining before I&rsquo;ve joined <a href="https://www.facebook.com/biolab.si">Biolab</a>. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!</p>
 
 <p>But hold on! There are still many social scientists out there who haven&rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning. So I&rsquo;ve made it my mission to spread the word. And that was the spirit that led me back to my former university - <a href="http://www.politicalsciences.unibo.it/en/index.htm">School of Political Sciences, University of Bologna</a>.</p>
@@ -308,6 +311,7 @@
 
 <p>Finally, we offered a sneak peek of our recent Tweet Profiler widget. Tweet Profiler is intended for sentiment analysis of tweets and can output classes. probabilities and embeddings. The widget is not yet officially available, but will be included in the upcoming release.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -331,7 +335,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

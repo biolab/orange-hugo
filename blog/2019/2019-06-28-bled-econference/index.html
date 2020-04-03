@@ -218,24 +218,16 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>At the invitation of dr. Mirjana Kljajić, we participated in the <a href="http://bledconference.org/index.php/about/">32nd Bled eConference</a>. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-06-28_bled1.png" alt="Photo by Aljaž Ferencek." />
-    
-    
-    <figcaption>
-        <p>
-        Photo by Aljaž Ferencek.
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+<p><a href="/blog_img/2019/2019-06-28_bled1.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-06-28_bled1.png" />
+ </a>
+
+
 
 </p>
 
@@ -250,16 +242,15 @@
 </ul>
 
 <p><br />
+<a href="/blog_img/2019/2019-06-28_econference-exercise.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-06-28_econference-exercise.png" />
+ </a>
 
-<figure>
-    
-        <img src="/blog_img/2019/2019-06-28_econference-exercise.png" />
-    
-    
-</figure>
+
 
 </p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -283,7 +274,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

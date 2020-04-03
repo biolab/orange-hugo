@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>On May 22nd and May 23rd, we (<a href="http://www.biolab.si/en/blaz-zupan/default.html">Blaz Zupan</a> and <a href="http://www.fri.uni-lj.si/en/janez-demsar">Janez Demsar</a>, assisted by <a href="http://www.fri.uni-lj.si/en/marinka-zitnik/default.html">Marinka Zitnik</a> and Balaji Santhanam) have given two hands-on workshops called <a href="https://www.bcm.edu/research/centers/computational-and-integrative-biomedical-research/index.cfm?pmid=25960">Data Mining without Programming</a> at <a href="https://www.bcm.edu/">Baylor College of Medicine</a> in Houston, Texas.</p>
 
 <p>Actually, there was a lot of programming, but no Python or alike. The workshop was designed for biomedical students and Baylor&rsquo;s faculty members. We have presented a visual programming approach for development of data mining workflows for interactive data exploration. A three-hour workshop consisted of <a href="http://goo.gl/vNsk54">15 data mining lessons</a> on visual data exploration, classification, clustering, network analysis, and gene expression analytics. Each lesson focused on a particular data analysis task that the attendees solved with Orange.</p>
@@ -221,6 +224,7 @@
 
 <p><img src="/images/2014/05/26/workshop-b.jpg__610x458_q95_crop_upscale.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -244,7 +248,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

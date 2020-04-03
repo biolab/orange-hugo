@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>If you maybe missed on <a href="https://www.facebook.com/orangedm">our Facebook page</a>: we have made our own fruity t-shirts. They are simply awesome and show to everybody around you that you have a taste! Just check the handsomeness:</p>
 
 <p><img src="/images/2011/06/24/img_0986_1.jpg__160x160_q95_crop.jpg" alt="" /></p>
@@ -214,6 +217,7 @@
 
 <p><img src="/images/2011/06/24/back_1.jpg__160x160_q95_crop.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -237,7 +241,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

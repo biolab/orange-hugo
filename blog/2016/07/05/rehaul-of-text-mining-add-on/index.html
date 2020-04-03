@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we&rsquo;re thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We&rsquo;ve introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.</p>
 
 <p>Twitter widget offers many functionalities. Since we wanted to get tweets from specific authors, we entered their Twitter handles as queries and set &lsquo;Search by Author&rsquo;. We only included Author, Content and Date in the query parameters, as we want to predict the author only on the basis of text.</p>
@@ -300,6 +303,7 @@
 
 <p>Above is the final workflow. Preprocessing on the left. Testing and scoring on the right bottom. Construction of classification tree right and above.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -323,7 +327,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>The possibility of extending functionality of Orange through <a href="http://orange.biolab.si/addons/">add-ons</a> has been present for a long time. In fact, we never provided the <a href="http://orange-bioinformatics.readthedocs.org/en/latest/">toolbox for crunching bioinformatical data</a> as an integral part of Orange; it has always been an add-on. The exact mechanism of distribution of add-ons has changed significantly in the last year to simplify the process for add-on authors and to make it more standards-compliant. Among other things, this enables system administrators to install add-ons system-wide directly from <a href="http://pypi.python.org/pypi?%3Aaction=search&amp;term=orange&amp;submit=search">PyPi</a> using easy_install or pip. Unfortunately there were also negative side effects of this process, notably the temporary breakage of the add-on management dialog within the Orange Canvas.</p>
 
 <p>We are happy to report that this is now being taken care of and you are encouraged to test the functionality.</p>
@@ -232,6 +235,7 @@
 
 <p>Note that the <strong>Orange-Text</strong> add-on requires a compiler and appropriate libraries on your computer, and it as of now still refuses to be installed using the dialog. This is a known bug.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -255,7 +259,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

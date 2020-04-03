@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>A week ago I used <a href="http://orange.biolab.si">Orange</a> to explain the effects of regularization. This was the second lecture in the Data Mining class, the first one was on linear regression. My introduction to the benefits of regularization used a simple data set with a single input attribute and a continuous class. I drew a data set in Orange, and then used Polynomial Regression widget (from Prototypes add-on) to plot the linear fit. This widget can also expand the data set by adding columns with powers of original attribute x, thereby augmenting the training set with x^p, where x is our original attribute and p an integer going from 2 to K. The polynomial expansion of data sets allows linear regression model to nicely fit the data, and with higher K to overfit it to extreme, especially if the number of data points in the training set is low.</p>
 
 <p><img src="/images/2016/03/poly-overfit.png" alt="" /></p>
@@ -293,6 +296,7 @@
 
 <p>That&rsquo;s it. For the class of computer scientists, one may do all this in scripting, but for any other audience, or for any introductory lesson, explaining of regularization with Orange widgets is a lot of fun.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -316,7 +320,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

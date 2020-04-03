@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?</p>
 
 <p>Here&rsquo;s an example. I have considered a subset of animals from the [download id=&ldquo;864&rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes. I have added a new string attribute (&ldquo;images&rdquo;) and declared that this is a meta attribute of the type &ldquo;image&rdquo;. The values of this attribute are links to images on the web:</p>
@@ -234,6 +237,7 @@
 
 <p><img src="/images/2014/04/29/digits-schema.png__610x495_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -257,7 +261,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

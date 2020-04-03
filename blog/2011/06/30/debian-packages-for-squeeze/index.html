@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your <strong>/etc/apt/sources.list</strong> to:</p>
 
 <pre><code>deb http://orange.biolab.si/debian squeeze main
@@ -235,6 +238,7 @@ deb-src http://orange.biolab.si/debian squeeze main
 
 <p>You can read more about Debian packages in our old <a href="/blog/2010/03/04/debian-repository-lives/">blog post</a>.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -258,7 +262,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Did you know that the widget for <strong>support vector machines</strong> (SVM) classifier can output support vectors? And that you can visualise these in any other Orange widget? In the context of all other data sets, this could provide some extra insight into how this popular classification algorithm works and what it actually does.</p>
 
 <p>Ideally, that is, in the case of linear seperability, support vector machines (SVM) find a **hyperplane <strong>with the</strong> largest margin **to any data instance. This margin touches a small number of data instances that are called support vectors.</p>
@@ -230,6 +233,7 @@
 
 <p>Support vectors output of SVM widget with Iris data set.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -253,7 +257,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

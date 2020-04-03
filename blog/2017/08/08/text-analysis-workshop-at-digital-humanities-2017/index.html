@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?</p>
 
 <p>It seems so, especially when Orange is involved.</p>
@@ -257,6 +260,7 @@ Hierarchical Clustering, Image Viewer, Geo Map and Corpus Viewer opened at the s
 
 <p>The workshop was a nice kick-off to an exciting week full of interesting lectures and presentations at Digital Humanities 2017 conference. So much to learn and see!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -280,7 +284,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

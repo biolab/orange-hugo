@@ -57,7 +57,7 @@ If you are an avid Anaconda user and you wish to install Orange with Anaconda Na
       <description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 Related: Image Analytics Workshop at AIUCD 2018
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
-   We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
+ We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@ Here I will show how to use it to display a set of images most similar to a sele
       
       <guid>/blog/2019/2019-11-20-belgrade-workshop/</guid>
       <description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.
-   First, let us load the titanic data with the Datasets widget.</description>
+ First, let us load the titanic data with the Datasets widget.</description>
     </item>
     
     <item>
@@ -104,8 +104,9 @@ Here I will show how to use it to display a set of images most similar to a sele
       
       <guid>/blog/2019/2019-08-27-pivot-table/</guid>
       <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
-   Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
-pandas.DataFrame.agg The first task is computing a simple mean for the column age.</description>
+ Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+pandas.DataFrame.agg The first task is computing a simple mean for the column age.
+In pandas:</description>
     </item>
     
     <item>
@@ -115,7 +116,7 @@ pandas.DataFrame.agg The first task is computing a simple mean for the column ag
       
       <guid>/blog/2019/2019-07-26-doctoral_summer_school/</guid>
       <description>For the second year in a row, the Orange team was a part of the Ljubljana Doctoral Summer School, which is organized by the School of Economics and Business, University of Ljubljana. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.
-   One important lesson is comparing model accuracy.</description>
+ One important lesson is comparing model accuracy.</description>
     </item>
     
     <item>
@@ -125,7 +126,7 @@ pandas.DataFrame.agg The first task is computing a simple mean for the column ag
       
       <guid>/blog/2019/2019-07-25-scorange/</guid>
       <description>Our entry to this year&amp;rsquo;s largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day.
-   Single-cell genomics is driven on revolutionary technology from molecular biology that allows us to peek into inner workings of the individual cell. Single-cell datasets feature thousands of genes and cells and benefit from the analysis that integrates this data with other knowledge sources, like those on the classification of genes, lists of pathways, and sets of cell-type markers.</description>
+ Single-cell genomics is driven on revolutionary technology from molecular biology that allows us to peek into inner workings of the individual cell. Single-cell datasets feature thousands of genes and cells and benefit from the analysis that integrates this data with other knowledge sources, like those on the classification of genes, lists of pathways, and sets of cell-type markers.</description>
     </item>
     
     <item>
@@ -144,7 +145,7 @@ pandas.DataFrame.agg The first task is computing a simple mean for the column ag
       
       <guid>/blog/2019/2019-06-28-bled-econference/</guid>
       <description>At the invitation of dr. Mirjana Kljajić, we participated in the 32nd Bled eConference. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
-    Photo by Aljaž Ferencek.   We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
+ We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
     </item>
     
     <item>
@@ -213,7 +214,7 @@ The widget generally accepts two inputs – Data and Learner. Data is the data s
       <guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid>
       <description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
 
-   Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
+ Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
     </item>
     
     <item>

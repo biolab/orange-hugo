@@ -204,10 +204,14 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This year Orange is again participating in <a href="https://socghop.appspot.com/gsoc/homepage/google/gsoc2012">Google Summer of Code</a> as a mentoring organization. Student proposal submission period is running and the deadline is on 6th April. We have prepared <a href="http://orange.biolab.si/trac/intertrac/wiki%3AGSoC">a page on our Trac</a> with more information about the Google Summer of Code program, especially how the interested students should apply with their proposals. There is also a list of <a href="http://orange.biolab.si/trac/intertrac/wiki%3AGSoC/Ideas">of some ideas we are proposing</a> for this year but feel free to suggest your own ideas how you could contribute to Orange and make it even better.</p>
 
 <p>Google Summer of Code is a <a href="http://www.google.com/">Google</a>-sponsored program where Google stipends students working for a summer job on an open source projects from all around the world. Student is paid $5000 (and a t-shirt!) for approximately two months of work/contribution to the project. More about the program is available on <a href="http://socghop.appspot.com/">its homepage</a>.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -231,7 +235,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

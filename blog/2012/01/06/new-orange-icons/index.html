@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>As new and new widgets with new features are added to Orange, icons for them have to be drawn. Most of the time those are just some quick sketches or even missing altogether. But now we are starting to redraw and unify them. A few of them have already been made.</p>
 
 <p><img src="/images/2012/01/06/featureconstructor_60.png__60x60_q95_crop_upscale.png" alt="" />
@@ -213,6 +216,7 @@
 <img src="/images/2012/01/06/pythonscript_60.png__60x60_q95_crop_upscale.png" alt="" />
 <img src="/images/2012/01/06/basicsvm_60.png__60x60_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -236,7 +240,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

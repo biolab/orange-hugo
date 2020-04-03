@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange Canvas is being appropriated by guys who would like to use it as graphical environment for simulating x-ray optics.</p>
 
 <p>Manuel Sanchez del Rio, from <a href="http://www.esrf.eu/">The European Synchrotron Facility</a> in Grenoble, France, and Luca Rebuffi from <a href="http://www.elettra.trieste.it/">Elettra-Sincrotrone, Trieste</a>, Italy, were looking for a tool that would help them integrate the various tools for x-ray optics simulations, like the popular SHADOW and SRW. They discovered that the data workflow paradigm, like the one used in Orange Canvas, fits their needs perfectly. They took Orange, and replaced the existing widgets with new widgets that represent sources of photons (bending magnets, in the case of ESRF), various optical elements, like lenses and mirrors, and detectors. The channels between the widgets no longer pass data tables, like in the standard Orange, but rays of photons. How cool is this?</p>
@@ -216,6 +219,7 @@
 
 <p><img src="/images/2014/08/26/spie.jpg__600x457_q95_upscale.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -239,7 +243,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

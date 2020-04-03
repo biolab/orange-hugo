@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a &lsquo;profile&rsquo;.</p>
 
 <p>The widget can show four types of information – individual data profiles (lines), data range, mean profile and error bars. It has the same cool features of other Orange visualizations – it is interactive, meaning you can select a subset of data instances from the plot, it allows grouping by a discrete variable, and it highlights an incoming data subset.</p>
@@ -229,13 +232,11 @@
 <p><br />
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/6/3/gene-expression-1.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/6/3/gene-expression-1.png" class="blog-image_"> 
+      <img src="/blog_img/2019/6/3/gene-expression-1.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -244,13 +245,11 @@
 <br />
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/6/3/gene-expression-2.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/6/3/gene-expression-2.png" class="blog-image_"> 
+      <img src="/blog_img/2019/6/3/gene-expression-2.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -261,13 +260,11 @@
 <br />
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/6/3/gene-expression-3.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/6/3/gene-expression-3.png" class="blog-image_"> 
+      <img src="/blog_img/2019/6/3/gene-expression-3.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -276,30 +273,27 @@
 <br />
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/6/3/gene-expression-4.png" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/6/3/gene-expression-4.png" class="blog-image_"> 
+      <img src="/blog_img/2019/6/3/gene-expression-4.png" />
+ </a>
+
+
 
 <br />
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/6/3/gene-expression-5.png" width="50%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/6/3/gene-expression-5.png" class="blog-image_"> 
+      <img src="/blog_img/2019/6/3/gene-expression-5.png" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>This is it. Line Plot is really simple to use and can reveal many interesting things not only for biologists, but for any kind of data analyst. Next week we will talk about how to work with timeseries data in combination with the Line Plot.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -323,7 +317,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -232,17 +232,18 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.</p>
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/1/4/correlations-p-values-1.png" width="40%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/1/4/correlations-p-values-1.png" class="blog-image_"> 
+      <img src="/blog_img/2019/1/4/correlations-p-values-1.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -271,22 +272,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/1/4/TexasSharpShooter.png" alt="Illustration by Dirk-Jan Hoek (CC-BY)." width="50%" />
-    
-    
-    <figcaption>
-        <p>
-        Illustration by Dirk-Jan Hoek (CC-BY).
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+<p><a href="/blog_img/2019/1/4/TexasSharpShooter.png" class="blog-image_"> 
+      <img src="/blog_img/2019/1/4/TexasSharpShooter.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -334,6 +324,7 @@ correlations[int(npairs * 0.30)]
 
 <p>Following this procedure doesn’t save us from <a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank">data dredging</a>. There are still plenty of ways to cheat. It is the most tempting to select the first 100 most correlated pairs (or, actually, any 100 pairs), (re)compute correlations on some new data and publish the top 5 % of these pairs. The official solution for this is a patchwork of various corrections for multiple hypotheses testing, but… Well, they don’t work, but we should say no more here. You know, Christmas ceasefire.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -357,7 +348,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

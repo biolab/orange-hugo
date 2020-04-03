@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/">Creating a new data table in Orange through Python</a></p>
@@ -350,6 +353,7 @@ with open('scraped.csv', 'w') as csvfile:
 
 <p>The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -373,7 +377,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

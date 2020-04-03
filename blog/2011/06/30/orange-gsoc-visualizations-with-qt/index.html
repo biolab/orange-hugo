@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Hello, my name is Miha Čančula and this summer I&rsquo;m working on Orange as part of Google&rsquo;s Summer of Code program, mentored by Miha Štajdohar. My task is to replace the current visualization framework based on Qwt with a custom library, depending only on Qt. This library will better support Orange&rsquo;s very specific visualizations and will replace the unmaintained PyQwt.</p>
 
 <p>I have a lot of experience with Qt and its graphics classes, both in C++ and Python, but I&rsquo;m relatively now to Orange. As a physics student, especially now that I&rsquo;m selecting a computational physics program, this a great learning opportunity for me.</p>
@@ -234,6 +237,7 @@
 
 <p>Currently I&rsquo;m trying to change as many widgets as possible to the new classes. As I said above, I only completed a few of them, but I believe the others won&rsquo;t require too much work.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -257,7 +261,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

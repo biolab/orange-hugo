@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to <a href="https://parlameter.si/">Parlameter</a>).</p>
 
 <p><strong>Related:</strong> <a href="/blog/2016/10/02/intro-to-data-mining-for-life-scientists/">Intro to Data Mining for Life Scientists</a></p>
@@ -280,6 +283,7 @@
 
 <p>You can have fun with <a href="https://raw.githubusercontent.com/ajdapretnar/datasets/master/data/slovenian-national-assembly-eng.tab">these data</a>, too. Let us know if you discover something interesting!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -303,7 +307,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

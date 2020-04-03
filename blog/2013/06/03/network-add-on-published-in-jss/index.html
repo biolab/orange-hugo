@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>NetExplorer, a widget for network exploration, was in orange for over 5 years. Several network analysis widgets were added to Orange since, and we decided to move the entire network functionality to an <a href="https://pypi.python.org/pypi/Orange-Network">Orange Network add-on</a>.</p>
 
 <p>We recently published a paper <a href="http://www.jstatsoft.org/v53/i06">Interactive Network Exploration with Orange</a> in the Journal of Statistical Software. We invite you to read the tutorial on network exploration. It is aimed for beginners in this topic, and includes detailed explanation with images.</p>
@@ -219,6 +222,7 @@
 
 <p><img src="/images/2013/06/04/netexplorer.png__600x417_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -242,7 +246,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

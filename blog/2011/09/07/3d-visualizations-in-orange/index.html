@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               
 
 <p>Over the summer I worked (and still do) on several new 3D visualization widgets as well as a 3D plotting library they use, which will hopefully simplify making more widgets. The library is designed to be similar in terms of API to the new <a href="/blog/2011/09/03/gsoc-review-visualizations-with-qt/">Qt plotting library</a> Noughmad is working on.</p>
@@ -243,6 +246,7 @@
 
 <p>I wrote few technical details <a href="http://matejd.github.com/">here</a>.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -266,7 +270,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

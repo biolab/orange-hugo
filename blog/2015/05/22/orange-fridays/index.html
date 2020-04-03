@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>You might think “casual Fridays” are the best thing since sliced bread. But what if I were to tell you we have “Orange Fridays” at our lab, where lab members focus solely on debugging Orange software and making improvements to existing features. This is because the new developing version of Orange (3.0) still needs certain widgets to be implemented, such as net explorer, radviz, and survey plot.</p>
 
 <p>But there’s more. We are currently hosting an expert on data fusion from the University of Leuven, prof. dr. Yves Moreau, to discuss new venues and niches for the development of Orange. The big debate is how to scale the program to fit large data sets and make it possible to process such sets in a shorter period of time. If you have any ideas and suggestions, please feel free to share them on our <a href="https://stackoverflow.com/questions/tagged/orange">community forum</a>.</p>
@@ -214,6 +217,7 @@
 
 <p><img src="/images/2015/05/8.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -237,7 +241,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

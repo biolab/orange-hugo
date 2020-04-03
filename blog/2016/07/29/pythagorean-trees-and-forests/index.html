@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Classification Trees are great, but how about when they overgrow even your 27&rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.</p>
 
 <p>Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square. Hence Pythagorean Tree. Every square has the color of the prevalent, with opacity indicating the relative proportion of the majority class in the subset. Details are shown in hover balloons.</p>
@@ -276,6 +279,7 @@
 
 <p>Pythagorean trees are a new addition to Orange. Their implementation has been inspired by a recent paper on <a href="http://publications.fbeck.com/ivapp14-pythagoras.pdf">Generalized Pythagoras Trees for Visualizing Hierarchies</a> by Fabian Beck, Michael Burch, Tanja Munz, Lorenzo Di Silvestro and Daniel Weiskopf that was presented in at the 5th International Conference on Information Visualization Theory and Applications in 2014.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -299,7 +303,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

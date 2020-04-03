@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><strong>IMPORT DATA</strong></p>
 
 <p>One of the first tasks in Orange data analysis is of course loading your data. If you are using Orange through Python, this is as easy as riding a bike:</p>
@@ -275,6 +278,7 @@ fruit = DiscreteVariable(&quot;fruit”, values=[”orange&quot;, “apple”, �
 
 <p>Your data is safely stored to your computer (in the Python folder)! Good job!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -298,7 +302,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

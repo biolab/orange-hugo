@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               
 
 <p>Python Script is this mysterious widget most people don&rsquo;t know how to use, even those versed in Python. Python Script is the widget that supplements Orange functionalities with (almost) everything that Python can offer. And it&rsquo;s time we unveil some of its functionalities with a simple example.</p>
@@ -262,6 +265,7 @@ out_data = Table(in_data.domain, new_X, in_data.Y, in_data.metas)
 
 <p>Have a more interesting example with Python Script? We&rsquo;d love to hear about it!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -285,7 +289,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

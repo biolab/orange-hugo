@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn&rsquo;t wait to get it into Orange3. And now we did.</p>
 
 <p>What this visualization displays is the average distance between instances within the cluster and instances in the nearest cluster. For a given data instance, the silhouette close to 1 indicates that the data instance is close to the center of the cluster. Instances with silhouette scores close to 0 are on the border between two clusters. Overall, the quality of the clustering could be assessed by the average silhouette scores of the data instances. But here, we are more interested in the individual silhouettes and their visualization in the silhouette plot.</p>
@@ -275,6 +278,7 @@
 
 <p>Silhouette plot is yet another one of the great visualizations that can help you with data analysis or with understanding certain machine learning concepts. What did we say? Fruitful and fun!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -298,7 +302,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

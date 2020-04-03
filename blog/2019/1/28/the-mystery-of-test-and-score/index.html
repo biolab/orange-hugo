@@ -225,19 +225,20 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Test &amp; Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test &amp; Score widget.</p>
 
 <p>The widget generally accepts two inputs – Data and Learner. Data is the data set that we will be using for modeling, say, iris.tab that is already pre-loaded in the File widget. Learner is any kind of learning algorithm, for example, Logistic Regression. You can only use those learners that support your type of task. If you wish to do classification, you cannot use Linear Regression and for regression you cannot use Logistic Regression. Most other learners support both tasks. You can connect more than one learner to Test &amp; Score.</p>
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" width="40%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" class="blog-image_"> 
+      <img src="/blog_img/2019/1/28/the-mystery-of-test-and-score-1.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -256,17 +257,16 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" class="blog-image_"> 
+      <img src="/blog_img/2019/1/28/the-mystery-of-test-and-score-2.png" />
+ </a>
+
+
 
 <br />
 </p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -290,7 +290,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

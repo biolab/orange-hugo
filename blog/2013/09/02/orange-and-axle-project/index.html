@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Our group at University of Ljubljana is a partner in the EU 7FP project <a href="http://axleproject.eu/">Advanced Analytics for Extremely Large European Databases (AXLE)</a>. The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).</p>
 
 <p>As a result of the project, Orange will be better connected with databases. Currently, all data is stored in working memory, while the forthcoming Orange 3.0 will be able to handle data that is stored in the database. We are working on a parallel computation architecture. Visualization of large data also presents a big challenge: we cannot transfer large amounts of data from the database to the desktop, and on the other hand it is difficult to provide a rich interactive experience if visualizations are created on the server-side. Also, most visualizations are intrinsically unsuitable for large data sets. For instance, the scatter plot represents each data instance with a symbol. Even when the datum is represented with a single pixel, only a few million data points fits on the computer screen. So in the context of big data, we will have to replace scatterplots with heatmaps.</p>
@@ -242,6 +245,7 @@
 
 <p><img src="/images/2013/09/02/boxplot-orange30.png__620x311_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -265,7 +269,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

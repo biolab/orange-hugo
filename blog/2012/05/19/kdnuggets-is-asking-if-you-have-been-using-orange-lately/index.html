@@ -204,10 +204,14 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="http://www.kdnuggets.com/">KDnuggets</a>, one of leading data mining community websites, is having its yearly poll <a href="http://www.kdnuggets.com/2012/05/new-poll-analytics-data-mining-software-used.html">asking its visitors which analytics/data mining software they used in the past 12 months</a>. Among listed is also Orange, our fruity visually pleasing open source pythonic data mining suite. So we are asking you, have you been using Orange lately, that is, in the past 12 months? How do you feel about telling that to the world?</p>
 
 <p>If so, we would also like to hear more about how you are using Orange in your projects, research, competitions, or data mining play. We would be glad to publish your story on our blog, or link to your blog post. Feel free to <a href="/contact/">contact us</a> if you are interested.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -231,7 +235,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

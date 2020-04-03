@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Recently we&rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.</p>
 
 <p>Here we have some preliminary results that we&rsquo;ve managed to gather in the past three weeks or so. Obviously we will use Orange to help us make sense of the data.</p>
@@ -284,6 +287,7 @@
 
 <p>Happy Friday everyone!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -307,7 +311,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

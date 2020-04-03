@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of <a href="https://www.hse.ru/en/ma/sna/">Applied Statistics</a>. This is a new Master&rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.</p>
 
 <p>It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</p>
@@ -337,6 +340,7 @@ ax.set_ylabel('Cost')
 
 <p>You can download the IPython Notebook here: [download id=&ldquo;2053&rdquo;].</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -360,7 +364,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

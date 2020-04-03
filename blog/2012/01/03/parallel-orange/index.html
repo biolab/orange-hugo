@@ -204,10 +204,14 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We attended a <a href="http://nips.cc/">NIPS 2011</a> workshop on <a href="http://biglearn.org/">processing and learning from large scale data</a>. Various presenters showed different tools and frameworks that can be used when developing algorithms suitable for dealing with large scale data, but none of them were written in Python and as such, not useful for Orange. We have been looking for a framework that would help us run code in parallel for some time, but so far with no luck.</p>
 
 <p>We would like to have a framework that is easy to use, can be used in C as well as in Python and supports multi-level map reduce (cross validation can be viewed as map reduce and random forest that is tested is another map-reduce). Prototypes we have created so far solve this problem by inspecting learners that are used in cross-validation and creating all &ldquo;subtasks&rdquo; at the same time. That results in really ugly code we don&rsquo;t want to commit ;). If you know a framework that would suit our needs, want to implement support for parallel computation by yourself (we will apply to <a href="https://code.google.com/soc/">GSoC</a>) or have an idea how to solve this problem, feel free to contact us ;).</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -231,7 +235,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

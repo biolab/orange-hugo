@@ -20,7 +20,7 @@
       <description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 Related: Image Analytics Workshop at AIUCD 2018
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
-   We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
+ We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
     </item>
     
     <item>

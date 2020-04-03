@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>In one of the <a href="/blog/2015/10/19/sql-for-orange/">previous blog posts</a> we mentioned that installing the optional dependency <em>psycopg2</em> allows Orange to connect to <a href="http://www.postgresql.org/">PostgreSQL</a> databases and work directly on the data stored there.
 It is also possible to transfer a whole table to the client machine, keep it in the local memory, and continue working with it as with any other Orange data set loaded from a file. But the true power of this feature lies in the ability of Orange to leave the bulk of the data on the server, delegate some of the computations to the database, and transfer only the needed results. This helps especially when the connection is too slow to transfer all the data and when the data is too big to fit in the memory of the local machine, since SQL databases are much better equipped to work with large quantities of data residing on the disk.</p>
 
@@ -213,6 +216,7 @@ It is also possible to transfer a whole table to the client machine, keep it in 
 
 <p><img src="/images/2015/12/2uda-final-logo_thumbnail.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -236,7 +240,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

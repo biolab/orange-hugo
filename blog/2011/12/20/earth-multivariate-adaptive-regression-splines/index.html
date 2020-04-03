@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>There have recently been some additions to the lineup of Orange learners. One of these is Orange.regression.earth.EarthLearner. It is an Orange interface to the <a href="http://www.milbo.users.sonic.net/earth/">Earth</a> library written by Stephen Milborrow implementing <a href="http://en.wikipedia.org/wiki/Multivariate_adaptive_regression_splines">Multivariate adaptive regression splines</a>.</p>
 
 <p>So lets take it out for a spin on a simple toy dataset (<a href="http://blog.biolab.si/wp-content/uploads/2011/12/13/data.tab">data.tab</a> - created using the Paint Data widget in the Orange Canvas):</p>
@@ -251,6 +254,7 @@ pl.show()
 
 <p>(Edit: Added link to the dataset file)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -274,7 +278,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

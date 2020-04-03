@@ -253,6 +253,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.</p>
 
 <p>For retrieving numbers from unstructured data, <a href="http://orange.biolab.si">Orange</a> can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</p>
@@ -307,6 +310,7 @@
 
 <p>Image analytics is such an exciting field in machine learning and now Orange is a part of it too! You need to install the Image Analytics add on and you are all set for your research!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -330,7 +334,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

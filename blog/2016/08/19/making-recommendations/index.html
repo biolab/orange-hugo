@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               
 
 <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
@@ -279,35 +282,29 @@
 
 <p>This step is pretty simple. To train a model we have to load the data as is described above and connect it to the learner. (<em>Don&rsquo;t forget to click apply</em>)</p>
 
+<a href="/images/2016/08/data-to-brismf.png" class="blog-image_"> 
+      <img src="/images/2016/08/data-to-brismf.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2016/08/data-to-brismf.png" width="300" />
-    
-    
-</figure>
+
 
 
 <p>If the model uses side information, we only need to add an extra file.</p>
 
+<a href="/images/2016/08/TrustSVD-1.png" class="blog-image_"> 
+      <img src="/images/2016/08/TrustSVD-1.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2016/08/TrustSVD-1.png" width="300" />
-    
-    
-</figure>
+
 
 
 <p>In addition, we can set the parameters of our model by double-clicking it:</p>
 
+<a href="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" class="blog-image_"> 
+      <img src="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" width="400" />
-    
-    
-</figure>
+
 
 
 <p>By using a fixed seed, we make random numbers predictable. Therefore, this feature is useful if we want to compare results in a deterministic way.</p>
@@ -322,26 +319,22 @@
 
 <p>We can add a baseline leaner to <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html">Test&amp;Score</a> and select the model we want to apply.</p>
 
+<a href="/images/2016/08/Baselines.png" class="blog-image_"> 
+      <img src="/images/2016/08/Baselines.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2016/08/Baselines.png" width="300" />
-    
-    
-</figure>
+
 
 
 <h3 id="making-recommendations">Making recommendations</h3>
 
 <p>The prediction flow is exactly the same as in <a href="http://orange.biolab.si">Orange3</a>.</p>
 
+<a href="/images/2016/08/Recommendation-predictions.png" class="blog-image_"> 
+      <img src="/images/2016/08/Recommendation-predictions.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2016/08/Recommendation-predictions.png" width="400" />
-    
-    
-</figure>
+
 
 
 <h3 id="analyzing-low-rank-matrices">Analyzing low-rank matrices</h3>
@@ -459,6 +452,7 @@ print('MRR: %.4f' % mrr)
 
 <p>Do you want to learn more about this? Check our <a href="http://orange3-recommendation.readthedocs.io">documentation</a>!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -482,7 +476,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

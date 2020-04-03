@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange 2.7 is out with a major update in the visual programming environment. Redesigned interface, new widgets, welcome screen with workflow browser. Text annotation and arrow lines in workspace. Preloaded workflows with annotations. Widget menu and search can now be activated through key press (open the Settings to make this option available). Extended or minimised widget tab. Improved widget browsing. Enjoy!</p>
 
 <p><img src="/images/2013/05/25/orange27-cv.png__539x387_q95_crop_upscale.jpg" alt="" /></p>
@@ -219,6 +222,7 @@
 
 <p><img src="/images/2013/05/25/orange27-tree.png__551x411_q95_crop_upscale.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -242,7 +246,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

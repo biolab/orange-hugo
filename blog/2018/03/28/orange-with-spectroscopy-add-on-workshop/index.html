@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. <a href="https://www.tandfonline.com/doi/full/10.1080/08940886.2017.1338424?src=recsys">Spectroscopy add-on</a> is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).</p>
 
 <p><img src="/images/2018/03/delavnica-spectroscopy.jpg" alt="" /></p>
@@ -271,6 +274,7 @@ Preprocessor that keeps a part of the spectra cut between 1500 and 1800. No data
 
 <p>This is one of the simplest examples with spectral data. It is basically the same procedure as with standard data - data is fed as data, learner (LR) as learner and preprocessor as preprocessor directly to Test &amp; Score to avoid overfitting. Play around with Spectroscopy add-on and let us know what you think! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -294,7 +298,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

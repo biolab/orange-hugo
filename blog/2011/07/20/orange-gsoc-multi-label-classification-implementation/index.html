@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Multi-label classification is one of the three projects of Google Summer Code 2011 for Orange. The main goal is to extend the Orange to support multi-label, including dataset support, two basic multi-label classifications-problem-transformation methods &amp; algorithm adaptation methods, evaluation measures, GUI support, documentation, testing, and so on.</p>
 
 <p>My name is Wencan Luo, from China. I&rsquo;m very happy to work with my mentor Matija. Until now, we have finished a framework for multi-label support for Orange.</p>
@@ -233,6 +236,7 @@
 <li>testing</li>
 </ul>
 
+            </div>
             </article>
           </div>
         </div>
@@ -256,7 +260,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

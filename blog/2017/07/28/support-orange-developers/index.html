@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Do you love Orange? Do you think it is the best thing since sliced bread? Want to thank all the developers for their hard work?</p>
 
 <p>Nothing says thank you like a fresh supply of ice cream and now you can help us stock our fridge with your generous donations. 🍦🍦🍦</p>
@@ -216,6 +219,7 @@
 
 <p>🍊Orange team🍊</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -239,7 +243,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.</p>
 
 <p><img src="/images/2016/01/predictions_new_interface2.png" alt="" />
@@ -249,6 +252,7 @@ Predictions made by classification tree.</p>
 
 <p>In the left part of the visualization we have the input data set (our measurements) and in the right part the predictions made with classification tree. By default you see probabilities for all three class values and the predicted class. You can of course use other classifiers as well - it would probably make sense to first evaluate classifiers on the existing data set, find the best one for your and then use it on the new data.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -272,7 +276,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

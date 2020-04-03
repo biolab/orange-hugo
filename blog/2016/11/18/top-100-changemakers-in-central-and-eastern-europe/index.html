@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Recently Orange and one of its inventors, <a href="http://www.ne100.org/challenger/blaz-zupan,5828e5617525ba2e7e52446d">Blaž Zupan</a>, have been recognized as one of the top 100 changemakers in the region. A <a href="http://www.ne100.org/">2016 New Europe 100</a> is an annual list of innovators and entrepreneurs in Central and Eastern Europe highlighting novel approaches to pressing problems.</p>
 
 <p><a href="http://orange.biolab.si">Orange</a> has been recognized for <em>making data more approachable</em>, which has been our goal from the get-go. The tool is continually being developed with the end user in mind - someone who wants to analyze his/her data quickly, visually, interactively, and efficiently. We&rsquo;re always thinking hard how to expose valuable information in the data, how to improve the user experience, which defaults are the most appropriate for the method, and, finally, how to intuitively teach people about data mining.</p>
@@ -219,6 +222,7 @@
 
 <p><img src="/images/2016/11/adv_data_mining-02-1.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -242,7 +246,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

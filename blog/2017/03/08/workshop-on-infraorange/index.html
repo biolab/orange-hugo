@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Thanks to the collaboration with synchrotrons <a href="https://www.elettra.trieste.it/">Elettra</a> (Trieste) and <a href="https://www.synchrotron-soleil.fr/">Soleil</a> (Paris), Orange is getting an add-on <a href="https://github.com/markotoplak/orange-infrared">InfraOrange</a>, with widgets for analysis of infrared spectra. Its primary users obviously come from these two institutions, hence we organized the first workshop for InfraOrange at one of them.</p>
 
 <p>Some 20 participants spent the first day of the workshop in Trieste learning the basics of Orange and its use for data mining. With Janez at the helm and Marko assisting in the back, we traversed the standard list of visual and statistical techniques and a bit of unsupervised and supervised learning. The workshop was perhaps a bit unusual as most attendees were already quite familiar with these methods, but most haven&rsquo;t yet used them in such an interactive fashion.</p>
@@ -254,6 +257,7 @@
 
 <p>The future of InfraOrange looks bright and&hellip;. khm&hellip; well, colorful! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -277,7 +281,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

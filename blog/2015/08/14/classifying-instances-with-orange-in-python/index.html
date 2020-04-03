@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily <strong>classify data</strong> with Orange.</p>
 
 <p>First we’re going to create a <a href="/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/">new data table</a> with 10 fruits as our instances.</p>
@@ -297,6 +300,7 @@ tree = tree_learner(data)
 
 <p>You can use your own data set to see how this model works for different data types. Let us know how it goes! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -320,7 +324,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

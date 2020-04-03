@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We are excited to host a three-hour tutorial on data fusion at the <a href="http://www.bc2.ch/2015/">Basel Computational Biology Conference</a>. To this end we have prepared a series of <a href="http://helikoid.si/bc215/bc2-handouts.pdf">short lectures notes</a> that accompany the recently developed <a href="/blog/2015/06/05/data-fusion-add-on-for-orange/">Data Fusion Add-on for Orange</a>.</p>
 
 <p><img src="/images/2015/06/scheme.png" alt="" /></p>
@@ -230,6 +233,7 @@
 
 <p>This post was contributed by Marinka and Blaz.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -253,7 +257,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

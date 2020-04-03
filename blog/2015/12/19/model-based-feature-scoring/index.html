@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression. Same holds for feature weight: any change of parameters of the modeling techniques would change the resulting feature scores.</p>
 
 <p>It would thus be great if we could observe these changes and compare feature ranking provided by various machine learning methods. For this purpose, the Rank widget recently got a new input channel called scorer. We can attach any learner that can provide feature scores to the input of Rank, and then observe the ranking in the Rank table.</p>
@@ -246,6 +249,7 @@
 
 <p><img src="/images/2015/12/lr-coefficients.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -269,7 +273,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

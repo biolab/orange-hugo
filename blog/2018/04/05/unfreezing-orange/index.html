@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.</p>
 
 <p>Not all the widgets freeze, though! Some widgets, like Test &amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress. Some, like Image Embedding, which work with lots of images, even allow interruptions.</p>
@@ -270,6 +273,7 @@
 
 <p>For now, only a few widgets work so that the interface remains responsive. We are still searching for the best way to make existing widgets behave nicely, but responsiveness is now one of our priorities.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -293,7 +297,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

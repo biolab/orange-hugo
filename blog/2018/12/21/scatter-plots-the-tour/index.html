@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Scatter plots are surely one of the best loved visualizations in Orange. Very often, when we teach, people go back to scatter plots over and over again to see their data. We took people’s love for scatter plots to the heart and we redesigned them a bit to make them even more friendly.</p>
 
 <p>Our favorite still remains the Informative Projections button. This button helps you find interesting visualizations from all the combinations of your data variables. But what does interesting mean? Well, let us look at an example. Which of the two visualizations tells you more about the data?</p>
@@ -227,23 +230,19 @@
     <table>
         <tr>
             <td style="padding:5px">
-                
-<figure>
-    
-        <img src="/blog_img/2018/12/21/iris1.png" />
-    
-    
-</figure>
+                <a href="/blog_img/2018/12/21/iris1.png" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/iris1.png" />
+ </a>
+
+
 
             </td>
             <td style="padding:5px">
-                
-<figure>
-    
-        <img src="/blog_img/2018/12/21/iris2.png" />
-    
-    
-</figure>
+                <a href="/blog_img/2018/12/21/iris2.png" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/iris2.png" />
+ </a>
+
+
 
              </td>
         </tr>
@@ -259,13 +258,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2018/12/21/heart-disease.png" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2018/12/21/heart-disease.png" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/heart-disease.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -274,13 +271,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2018/12/21/titanic.png" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2018/12/21/titanic.png" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/titanic.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -291,13 +286,11 @@
 
 <p></p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2018/12/21/iris4.png" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2018/12/21/iris4.png" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/iris4.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -307,13 +300,11 @@
 <p>You can see there are many great thing you can do with Scatter Plot. Finally, we have added a nice touch to the visualization.
 </p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2018/12/21/iris5.gif" width="70%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2018/12/21/iris5.gif" class="blog-image_"> 
+      <img src="/blog_img/2018/12/21/iris5.gif" />
+ </a>
+
+
 
 <br />
 </p>
@@ -322,6 +313,7 @@
 
 <p>Happy holidays, everyone!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -345,7 +337,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

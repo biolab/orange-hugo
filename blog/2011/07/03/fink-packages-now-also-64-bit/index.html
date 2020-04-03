@@ -218,8 +218,12 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="http://www.finkproject.org/">Fink packages</a> (we are using for system-wide Orange installations on Mac OS X) were updated to 64-bit. So if you were using 64-bit Fink installation you will be now able also to use Orange (and our binary Fink repository of already compiled packages). Just use this <a href="/svn/orange/trunk/install-scripts/mac/fink-selfupdate-orange.sh">this installation script</a> to configure your local Fink installation to use our binary Fink repository and add information about Orange packages (they are not available among official Fink packages).</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -243,7 +247,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

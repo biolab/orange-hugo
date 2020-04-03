@@ -18,8 +18,9 @@
       
       <guid>/blog/2019/2019-08-27-pivot-table/</guid>
       <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
-   Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
-pandas.DataFrame.agg The first task is computing a simple mean for the column age.</description>
+ Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+pandas.DataFrame.agg The first task is computing a simple mean for the column age.
+In pandas:</description>
     </item>
     
   </channel>

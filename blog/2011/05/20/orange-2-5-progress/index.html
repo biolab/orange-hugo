@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We decided that we should reorganize Orange to provide more intuitive interface to the scripting interface. The next release, Orange 2.5 is getting better every day. But fear not, dear reader, we are working hard to ensure that your scripts will still work.</p>
 
 <p>In the last morning of the camp in Bohinj we decided to use <strong>undercase_separated</strong> names instead of <strong>CamelCase</strong>. We have been steadily converting them and the <a href="/doc/orange25/Orange.misc.html#deprecation-utility-functions">deprecation utilities</a> by Aleš help a lot. We just list the name changes for class attributes or arguments and their renaming is handled gracefully; they also remain accessible with the old names. Therefore, the code does not need to be duplicated to ensure backwards compatibility.</p>
@@ -245,6 +248,7 @@ for i in range(len(learners)):
 
 <p>In new Orange we only need to import a single module, <strong>Orange</strong>, the root of the new hierarchy.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -268,7 +272,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

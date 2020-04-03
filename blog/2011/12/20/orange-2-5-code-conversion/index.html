@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange 2.5 unifies Orange&rsquo;s C++ core and Python modules into a single module hierarchy. To use the new module hierarchy, import <strong>Orange</strong> instead of <strong>orange</strong> and accompanying <strong>orng</strong>* modules. While we will maintain backward compatibility in 2.* releases, we nevertheless suggest programmers to use the new interface. The provided <a href="http://orange.biolab.si/trac/intertrac/wiki%3AOrange25/RefactoringTool">conversion tool</a> can help refactor your code to use the new interface.</p>
 
 <p>The conversion script, <strong>orange2to25.py</strong>, resides in Orange&rsquo;s main directory. To refactor <strong>accuracy8.py</strong> from the &ldquo;Orange for beginners&rdquo; tutorial run<strong>python orange2to25.py -w -o accuracy8_25.py doc/ofb-rst/code/accuracy8.py</strong>.</p>
@@ -247,6 +250,7 @@ cm = Orange.evaluation.scoring.compute_confusion_matrices(res,
 
 <p>Read more about <a href="http://orange.biolab.si/trac/intertrac/wiki%3AOrange25/RefactoringTool">the refactoring tool on the wiki</a> and on the help page (<strong>python orange2to25.py &ndash;help</strong>).</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -270,7 +274,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

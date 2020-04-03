@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>During the course of this summer, I created a new plotting library for Orange plot, replacing the use of PyQwt. I can say that I have succesfully completed my project, but the library (and especially the visualization widgets) could still use some more work. The new library supports a similar interface, so little change is needed to convert individual widgets, but it also has several advantages over the old implementation:</p>
 
 <ul>
@@ -247,6 +250,7 @@
 
 <p>Finally, I&rsquo;d like to take this opportunity to thank the Orange team, especially my mentor Miha, for accepting me and helping me throughout the summer. It&rsquo;s been an interesting project, and I&rsquo;ll be happy to continue working with the same software and the same team.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -270,7 +274,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

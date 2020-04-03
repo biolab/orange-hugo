@@ -218,19 +218,20 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>The <a href="https://www.ideenexpo.de/">IdeenExpo</a> is a biennial participatory event for children, adolescents and young adults taking place in Hanover, Germany. Companies, research organizations, schools and universities participate to show young people the possibilities of the modern working world and gain their interest in technologies and natural sciences. As a part of one of the biggest research-computing-centers in North Germany the <a href="https://www.gwdg.de/home">GWDG</a> (Gesellschaft für wissenschaftliche Datenverarbeitung mbh Göttingen) took a part in that event to present the possibilities of Data Science and how its methods can be used in different areas.</p>
 
 <p>Related: <a href="/blog/2018/09/11/text-workshops-in-ljubljana/" target="_blank">Text Workshops in Ljubljana</a></p>
 
 <p>Our goal was to give the 9th grade students a 60-minute hands-on introduction to some possible real-life use cases. As we were working with Orange3 now for some time, we decided to use it in our workshop, because it has the great benefit of being able to do data analysis without the need to write code, which wouldn&rsquo;t have worked in a 60 minute workshop.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/twitter-police-workshop-picture.jpeg" width="80%" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/twitter-police-workshop-picture.jpeg" class="blog-image_"> 
+      <img src="/blog_img/2019/twitter-police-workshop-picture.jpeg" />
+ </a>
+
+
 
 </p>
 
@@ -240,22 +241,11 @@
 
 <p>We then collected that comments in a GoogleSheets Table, labeled them and every student opened Orange3 on his or her laptop. The students were asked to explain in their own words how they would train an &ldquo;AI&rdquo; to learn to distinguish between hate and neutral comments and we showed them how this can be translated in an Orange workflow. This way the students already learned that we have to do some preprocessing to filter out uninformative words for example.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/data-science-made-easy-workflow.png" alt="Final workflow." />
-    
-    
-    <figcaption>
-        <p>
-        Final workflow.
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+<p><a href="/blog_img/2019/data-science-made-easy-workflow.png" class="blog-image_"> 
+      <img src="/blog_img/2019/data-science-made-easy-workflow.png" />
+ </a>
+
+
 
 </p>
 
@@ -263,6 +253,7 @@
 
 <p>Orange3 made it possible to develop a model for detecting hate comments in just 60 minutes with students, who had no programming skills. Thanks to the Orange Team!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -286,7 +277,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

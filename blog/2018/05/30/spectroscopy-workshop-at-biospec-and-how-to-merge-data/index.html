@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the <a href="https://www.nmbu.no/en">Norwegian University of Life Sciences</a>. The students from <a href="https://www.nmbu.no/en/faculty/realtek/research/groups/biospectroscopy">BioSpec</a> lab were yet again incredible and we really dug deep into Orange.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/">Orange with Spectroscopy Add-on</a></p>
@@ -280,6 +283,7 @@ Original zoo data set.</p>
 
 <p>Find out more about spectroscopy for Orange on our <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-bPWjDJvJBPZJ6us_KTAD5T">YouTube channel</a> or contribute to the project on <a href="https://github.com/Quasars/orange-spectroscopy">Github</a>.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -303,7 +307,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

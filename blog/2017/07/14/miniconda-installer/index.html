@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange has a new friend! It&rsquo;s Miniconda, Anaconda&rsquo;s little sister.</p>
 
 <p>For a long time, the idea was to utilize the friendly nature of Miniconda to install Orange dependencies, which often misbehaved on some platforms. Miniconda provides Orange with Python 3.6 and conda installer, which is then used to handle everything Orange needs for proper functioning. So sssssss-mooth!</p>
@@ -228,6 +231,7 @@
 
 <p>Happy testing! 🐍|🍊</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -251,7 +255,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

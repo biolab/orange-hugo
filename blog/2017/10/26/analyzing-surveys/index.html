@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the <a href="http://www.mju.gov.si/en/">Ministry of Public Administration</a>, this is only the first in a line of workshops on data science we are preparing for public sector employees.</p>
 
 <p><img src="/images/2017/10/FRI_2422.jpg" alt="" /></p>
@@ -290,6 +293,7 @@ Box Plot separates distributions by Cluster and orders attributes by how well th
 
 <p>Seems like our second cluster (C2) is the sporty one. If we are serving in the public administration, perhaps we can design initiatives targeting cluster C1 to do more sports. It is so easy to analyze the data in Orange!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -313,7 +317,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

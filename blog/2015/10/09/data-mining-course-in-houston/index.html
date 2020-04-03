@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We have just completed an Introduction to Data Mining, a graduate course at <a href="https://www.bcm.edu">Baylor College of Medicine</a> in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.</p>
 
 <p><img src="/images/2015/10/dm-course-baylor.jpg" alt="" /></p>
@@ -250,6 +253,7 @@
 
 <p>The course took advantage of several new widgets in Orange 3, including those for data preprocessing and polynomial regression. The core development team put a lot of effort during the summer to debug and polish this newest version of Orange. Also thanks to the financial support by <a href="http://axleproject.eu/">AXLE EU FP7</a> and <a href="http://cordis.europa.eu/project/rcn/94265_en.html">CARE-MI EU FP7</a>** grants and grants by the <a href="https://www.arrs.gov.si/en/novo.asp">Slovene Research agency</a>, we were able to finish everything in time.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -273,7 +277,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

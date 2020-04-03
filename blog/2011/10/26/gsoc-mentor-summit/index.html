@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>On 22th and 23th October 2011 there was <a href="https://code.google.com/soc/">Google Summer of Code</a> <a href="http://gsoc-wiki.osuosl.org/index.php/2011">Mentor Summit</a> in <a href="http://en.wikipedia.org/wiki/Mountain_View,_California">Mountain View, California</a>. Google Summer of Code is Google&rsquo;s program for encouraging students to work on open-source projects during their summer break. Because this year Orange participated in this program too, we decided to participate also in this summit and get to know other mentors, other open-source projects and organizations, exchange our experiences, learn something new, and improve our connections and collaborations with others.</p>
 
 <table>
@@ -258,6 +261,7 @@
 
 <p>Summit really satisfied all expectations. We have experienced how it is at Google&rsquo;s, meet many new people, sessions were great, presenting a lot of interesting issues within open-source deployment and IT in general, and giving some ideas how to solve them. We meet many other researchers doing open-source science and developing different programs, libraries and having similar problems. We have discussed ways of solving them: how to maintain libraries we all use, how to make our projects survive, once research is completed or funding ends and we move to some other research, etc. Cooperation is the key here, but there is often not much time to do that, as it requires extra time and energy, often not a part of research projects.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -281,7 +285,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

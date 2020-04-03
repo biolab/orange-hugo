@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Orange team is extremely excited to be a part of this year&rsquo;s Google Summer of Code! GSoC is a great opportunity for students around the world to spend their summer contributing to an open-source software, gaining experience and earning money.</p>
 
 <p>Accepted students will help us develop Orange (or other chosen OSS project) from May to August. Each student is expected to select and define a project of his/her interest and will be ascribed a mentor to guide him/her through the entire process.</p>
@@ -238,6 +241,7 @@
 
 <p><img src="/images/2016/03/1.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -261,7 +265,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

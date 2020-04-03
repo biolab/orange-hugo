@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
 
 <p>We’ve all heard the saying, “Rules are meant to be broken.” Regardless of how you might feel about the idea, one thing is certain. Rules must first be learnt. My 2016 <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> project revolves around doing just that. I am developing classification rule induction techniques for <a href="http://orange.biolab.si">Orange</a>, and here describing the code currently available in the <a href="https://github.com/biolab/orange3/pull/1397">pull request</a> and that will become part of official distribution in an upcoming <a href="https://github.com/biolab/orange3/blob/master/CHANGELOG.md">release 3.3.8</a>.</p>
@@ -271,6 +274,7 @@ classifier = learner(data)
 
 <p>Hopefully, the addition to the Orange software suite will benefit both novice and expert users looking advance their knowledge in a particular area of study, through a better understanding of given predictions and underlying argumentation.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -294,7 +298,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

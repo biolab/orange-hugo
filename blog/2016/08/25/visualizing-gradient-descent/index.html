@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
 
 <p>Gradient Descent was implemented as a part of my <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> project and it is available in the <a href="https://github.com/biolab/orange3-educational">Orange3-Educational</a> add-on. It simulates <a href="https://en.wikipedia.org/wiki/Gradient_descent">gradient descent</a> for either <a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic</a> or <a href="https://en.wikipedia.org/wiki/Linear_regression">Linear</a> regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</p>
@@ -265,6 +268,7 @@
 
 <p>The two problems as illustrated above are the reason that many implementations of numerical optimization use adaptive learning rates. We can simulate this in the widget by modifying the learning rate for each step of the optimization.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -288,7 +292,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>k-Means is one of the most popular unsupervised learning algorithms for finding interesting groups in our data. It can be useful in customer segmentation, finding gene families, determining document types, improving human resource management and so on.</p>
 
 <p>But&hellip; have you ever wondered how k-means works? In the following three videos we explain how to construct a data analysis workflow using k-means, how k-means works, how to find a good k value and how silhouette score can help us find the inliers and the outliers.</p>
@@ -253,6 +256,7 @@
 </div>
 
 
+            </div>
             </article>
           </div>
         </div>
@@ -276,7 +280,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

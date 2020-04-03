@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>We&rsquo;ve been having a blast with recent Orange workshops. While Blaž was getting tanned in India, Anže and I went to the charming Liverpool to hold a session for business school professors on how to teach business with Orange.</p>
 
 <p><strong>Related:</strong> <a href="/blog/2017/11/08/orange-in-kolkata-india/">Orange in Kolkata, India</a></p>
@@ -233,13 +236,11 @@
 
 <p>For this purpose, we have made some updates to our Associate add-on and added a new data set to Data Sets widget which can be used for customer segmentation and discovering which item groups are frequently bought together. Like this:</p>
 
+<a href="/images/2017/11/Screen-Shot-2017-11-17-at-13.06.22.png" class="blog-image_"> 
+      <img src="/images/2017/11/Screen-Shot-2017-11-17-at-13.06.22.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2017/11/Screen-Shot-2017-11-17-at-13.06.22.png" width="400" />
-    
-    
-</figure>
+
 
 
 <p>We load the <em>Online Retail</em> data set.</p>
@@ -248,13 +249,11 @@
 
 <p>Since we have transactions in rows and items in columns, we have to transpose the data table in order to compute distances between items (rows). We could also simply ask Distances widget to compute distances between columns instead of rows. Then we send the transposed data table to Distances and compute cosine distance between items (cosine distance will only tell us, which items are purchased together, disregarding the amount of items purchased).</p>
 
+<a href="/images/2017/11/Screen-Shot-2017-11-17-at-13.10.24.png" class="blog-image_"> 
+      <img src="/images/2017/11/Screen-Shot-2017-11-17-at-13.10.24.png" />
+ </a>
 
-<figure>
-    
-        <img src="/images/2017/11/Screen-Shot-2017-11-17-at-13.10.24.png" width="300" />
-    
-    
-</figure>
+
 
 
 <p>Finally, we observe the discovered clusters in Hierarchical Clustering. Seems like mugs and decorative signs are frequently bought together. Why so? Select the group in Hierarchical Clustering and observe the cluster in a Data Table. Consider this an exercise in data exploration. :)</p>
@@ -271,6 +270,7 @@
 
 <p>Workshops are always fun, when you have a curious set of individuals who demand answers! :)</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -294,7 +294,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

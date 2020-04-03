@@ -239,54 +239,49 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>On Monday, Blaž and I held a technical tutorial <em>Data Mining through Visual Programming and Interactive Analytics in Orange</em> at this year&rsquo;s edition of <a href="https://datasciconference.com/technical-tutorials/">Data Science Conference</a> in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&rsquo;re going to explore in continuation.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_workshop.jpg" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-11-20_workshop.jpg" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_workshop.jpg" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>First, let us load the titanic data with the Datasets widget. The data is a simplified version of Kaggle&rsquo;s <a href="https://www.kaggle.com/c/titanic/data">Titanic data set</a>. Instead of 10 variables, we kept just 4 - gender (male or female), age (adult or child), status (first, second, third or crew) and the survival class label (yes or no).</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_datasets.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-11-20_datasets.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_datasets.png" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>Let us build a simple decision tree model with a Tree widget and observe it in a Tree Viewer. I have hidden the bottom branches for simplicity. Let us observe, what gives me the highest probability of survival. Seems like it is best if I travel as female in the first or second class or as a member of the crew. This would give me 92% chance of surviving the trip.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_tree.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-11-20_tree.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_tree.png" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>Ok, what about another classifier. Let&rsquo;s say Naive Bayes. Connect Naive Bayes to Datasets and then Nomogram to Naive Bayes. It seems like I have the best change of surviving the trip if I travel as female in the first class - the chance of surviving is 90%. But why does Naive Bayes say it is bad to travel as a female crew member, while Tree says it is ok?</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_bayes.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-11-20_bayes.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_bayes.png" />
+ </a>
+
+
 
 <br />
 </p>
@@ -295,28 +290,25 @@
 
 <p>Second, if we observe the parameters of the Tree classifier, we see that we asked for a binary tree. So inevitably the variables will fall into two categories - third class (which has a low chance of survival) and everything else. If we uncheck this box, we see that the probability of surviving for female crew is slightly lower - 87%. That is still not too bad, but note that we only have 23 instances for this branch! There were not many female crew members on Titanic, so a sample is fairly small compared to other status values.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_non-binary-tree.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-11-20_non-binary-tree.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_non-binary-tree.png" />
+ </a>
+
+
 
 <br />
 </p>
 
 <p>The key message of this part of the tutorial was that different models work differently and we have to understand what they are telling us and how they were constructed. Luckily, Orange enables us to explore certain models, so we can inspect them and draw conclusions from the best ranked attributes.</p>
 
-
-<figure>
-    
-        <img src="/blog_img/2019/2019-11-20_workflow.png" />
-    
-    
-</figure>
+<a href="/blog_img/2019/2019-11-20_workflow.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-11-20_workflow.png" />
+ </a>
 
 
+
+
+            </div>
             </article>
           </div>
         </div>
@@ -340,7 +332,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

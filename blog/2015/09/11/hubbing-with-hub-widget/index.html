@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the <strong>Paint data</strong> widget and the <strong>File</strong> widget back and forth whenever you switch between them?</p>
 
 <p><strong>Say no more! Look no further!</strong> Here is the new <strong>Hub widget</strong>!</p>
@@ -250,6 +253,7 @@
 
 <p><strong><a href="https://github.com/biolab/orange3-prototypes">Download, install - and start hubbing today !!</a></strong></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -273,7 +277,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

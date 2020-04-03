@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> application period has come to an end. We&rsquo;ve received 34 applications, some of which were of truly high quality. Now it&rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.</p>
 
 <p>First, we needed to preprocess the data a bit, since it came in a messy form of strings. Feature Constructor to the rescue! We wanted to extract the OS usage across users. So we first made three new variables named &lsquo;uses linux&rsquo;, &lsquo;uses windows&rsquo; and &lsquo;uses osx&rsquo; to represent our three new columns. For each column we searched through &lsquo;OS_of_choice_and_why&rsquo;, looked up the value of the column, converted it to string, put the string in lowercase, found mentions of either &lsquo;linux&rsquo;, &lsquo;windows&rsquo; or &lsquo;osx&rsquo;, and voila&hellip;. if a mention occurred in the string, we marked the column with 1, else with 0.</p>
@@ -284,6 +287,7 @@ OSS all the way!</p>
 <p><img src="/images/2016/04/blog3.png" alt="" />
 Some people love dogs and some love cats. Others prefer elephants and butterflies.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -307,7 +311,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

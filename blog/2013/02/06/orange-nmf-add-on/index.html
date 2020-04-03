@@ -218,6 +218,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p><a href="http://nimfa.biolab.si">Nimfa</a>, a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own <a href="http://orange.biolab.si/addons/">add-on</a>.</p>
 
 <p>Nimfa provides a plethora of initialization and factorization algorithms, quality measures along with examples on real-world and synthetic data sets. However, until now the analysis was possible only through Python scripting. A recent increase of interest in NMF techniques motivated Fajwel Fogel (a PhD student from INRIA, Paris, <a href="http://www.di.ens.fr/sierra/">SIERRA team</a>) to design and implement several widgets that deal with missing data in target matrices, their normalizations, viewing and assessing the quality of matrix factors returned by different matrix factorization algorithms. He also provided an implementation of robust singular value decomposition (rSVD). All NMF methods call Nimfa library.</p>
@@ -228,6 +231,7 @@
 
 <p><img src="/images/2013/02/06/lsnmf-addon-demo.png__432x826_q95_crop_upscale.jpg" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -251,7 +255,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

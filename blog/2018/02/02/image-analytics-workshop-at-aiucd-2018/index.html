@@ -246,6 +246,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This week, Primož and I flew to the south of Italy to hold a workshop on <a href="http://www.aiucd2018.uniba.it/workshops.html">Image Analytics through Data Mining</a> at <a href="http://www.aiucd2018.uniba.it/index.html">AIUCD 2018 conference</a>. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.</p>
 
 <p><img src="/images/2018/02/IMG_20180130_172350.jpg" alt="" /></p>
@@ -296,6 +299,7 @@
 
 <p>Voila! The widget has indeed found the second Monet&rsquo;s painting. So useful when you have thousands of images in your archive!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -319,7 +323,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

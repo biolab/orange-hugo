@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>A word of warning. When teaching in the US, I am careful enough to not say things like &ldquo;<em>consider a binary variable, for instance, gender</em>&rdquo;. But I&rsquo;m writing this from Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say &ldquo;shit&rdquo;, which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f&hellip; all you want). This blog entry targets Russian audience.</p>
 
 <p><center>* * *</center></p>
@@ -239,22 +242,18 @@
 
 <p>To do so, I opened Orange and created the following workflow. Widget Random Data from add-on &ldquo;Orange3-Educational&rdquo; provides random data drawn from different distributions. I set it up to prepare two variables drawn from Bernoulli distribution, which is a fancy name for a random column of 0&rsquo;s and 1&rsquo;s. The two variables are discrete, so I attached its output to Continuize to make them numeric. Widget Correlations computes the Demšar&rsquo;s &hellip; I mean &ldquo;Pearson correlation coefficient&rdquo;.</p>
 
-
-<figure>
-    
-        <img src="/blog_img/2019/2019-09-29-random-continuize-correlations.png" />
-    
-    
-</figure>
+<a href="/blog_img/2019/2019-09-29-random-continuize-correlations.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-09-29-random-continuize-correlations.png" />
+ </a>
 
 
 
-<figure>
-    
-        <img src="/blog_img/2019/2019-09-29-random.png" width="50%" />
-    
-    
-</figure>
+
+<a href="/blog_img/2019/2019-09-29-random.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-09-29-random.png" />
+ </a>
+
+
 
 
 <p>I checked the coefficient for my pair of random variables. It gave me 0.084, which is more than the score of his &ndash; to his claim related &ndash; pair, 0.012. I went back to Random Data, generated a different sample, and checked the correlation. And repeated it again. And again. Always larger than his 0.012. I told him that I can run this for 1000 times, but then I saw it&rsquo;s more practical to just construct 45 variables instead of 2 by changing parameter Variables in Random data to 45.</p>
@@ -315,13 +314,11 @@
 
 <p>This being an Orange blog, let us conclude by showing a problem with (careless use of) Orange. Connect Distributions widget to Random data. A dialog will pop-up so you can decide which Correlation&rsquo;s output to use. Connect output &ldquo;Correlations&rdquo; to input &ldquo;Data&rdquo;. Correlations now shows the distribution of Pearson correlation coefficients on this data. Correlation coefficient is significant if it&rsquo;s in the 5 % tail of this distribution. You can fit some curve to this if you wish.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/2019-09-29-distribution.png" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/2019-09-29-distribution.png" class="blog-image_"> 
+      <img src="/blog_img/2019/2019-09-29-distribution.png" />
+ </a>
+
+
  </p>
 
 <p>Now connect Sieve to Random data. Open it and click Score Combinations. It will order the pairs according to their significance. For every pair we select, Sieve will also show its chi-square and the corresponding p-value (at the bottom left). Predictably, the first 50 pairs have p-values below 0.05. By using Score Combinations and picking the top ones, we are making the same mistake as my imaginary friend. (Sieve does not compute Pearson coefficients but chi squares, yet in this context the two statistics are completely related. You can check that Correlations and VizRank show the same order of pairs.)</p>
@@ -332,6 +329,7 @@
 
 <p>Eating a lot of carrots decreases the chances of missing a bus because being more like a rabbit helps you run faster.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -355,7 +353,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

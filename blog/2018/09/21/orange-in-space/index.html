@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Did you know that Orange has already been to space? <a href="https://www.ias.u-psud.fr/en/content/team-members-0">Rosario Brunetto</a> (<a href="https://www.ias.u-psud.fr/">IAS-Orsay</a>, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the <a href="http://global.jaxa.jp/projects/sat/hayabusa2/">JAXA Hayabusa2</a> team. The <a href="https://en.wikipedia.org/wiki/Hayabusa2">Hayabusa2</a> asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data. And of course, a part of the analysis of Hayabusa&rsquo;s space data has been done in Orange!</p>
 
 <p><img src="/images/2018/08/ryugu2.jpg" alt="" />
@@ -259,6 +262,7 @@ k-Means clusters plotted in the HyperSpectra widget.</p>
 
 <p>This is how to easily identify the compositional structure of samples with just a couple of widgets. Orange seems to love going to space and can&rsquo;t wait to get its hands dirty with more astro-data!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -282,7 +286,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

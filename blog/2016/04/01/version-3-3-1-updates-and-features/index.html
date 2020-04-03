@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&rsquo;ve introduced some new functionalities and improved a few old ones.</p>
 
 <p>Here&rsquo;s what&rsquo;s new in this release:</p>
@@ -253,6 +256,7 @@
 
 <p>You can view the entire <a href="https://github.com/biolab/orange3/blob/master/CHANGELOG.md">changelog</a> here. :) Enjoy the improvements!</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -276,7 +280,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

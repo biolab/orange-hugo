@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>On Kickstarter most app ideas don&rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.</p>
 
 <p>But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</p>
@@ -250,6 +253,7 @@ High score means the attribute contributed positively to the the final decision 
 
 <p>And there you have it, an easy way to know what makes your Kickstarter campaign succeed, cell be classified as healthy, or a bank loan approved.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -273,7 +277,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

@@ -204,6 +204,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>When Orange builds a decision tree, candidate attributes are evaluated and the best candidate is chosen. But what if two or more share the first place? Most machine learning systems don&rsquo;t care about it and always take the first, which is unfair and, besides, has strange effects: the induced model and, consequentially, its accuracy depends upon the order of attributes. Which shouldn&rsquo;t be.</p>
 
 <p>This is not an isolated problem. Another instance is when a classifier has to choose between two equally probable classes when there is no additional information (such as classification costs) to help make the prediction. Or selecting random reference examples when computing ReliefF. Returning a modus of a distribution with two or more competing values&hellip;</p>
@@ -218,6 +221,7 @@
 
 <p>To conclude: Orange will sometimes make decisions that will look random. The reason for this is that it is more fair than most of machine learning systems that pick the first (or the last) candidate. But whatever decision is taken, it will be the same if you run the program twice. The message is thus: be aware that this is happenning, but don&rsquo;t care about it.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -241,7 +245,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

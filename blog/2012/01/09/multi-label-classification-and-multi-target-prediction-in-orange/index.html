@@ -225,6 +225,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>The last summer, student Wencan Luo participated in <a href="https://code.google.com/soc/">Google Summer of Code</a> to implement <a href="/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/">Multi-label Classification in Orange</a>. He provided a framework, implemented a few algorithms and some prototype widgets. His work has been &ldquo;hidden&rdquo; in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet &hellip;) and added a more general support for multi-target prediction.</p>
 
 <p>You can load multi-label tab-delimited data (e.g. <a href="http://orange.biolab.si/trac/intertrac/export%3Atrunk/orange/doc/datasets/emotions.tab">emotions.tab</a>) just like any other <a href="/doc/reference/Orange.data.formats/#tab-delimited-format">tab-delimited data</a>:</p>
@@ -273,6 +276,7 @@ EnumVariable 'type'
 
 <p>In one of the following blog posts, a multi-target regression method PLS that is in the process of implementation will be described.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -296,7 +300,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

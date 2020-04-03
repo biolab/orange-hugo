@@ -211,15 +211,16 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Our entry to this year&rsquo;s largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day.</p>
 
-<p>
-<figure>
-    
-        <img src="/blog_img/2019/scorange-martin-at-ismb.jpg" />
-    
-    
-</figure>
+<p><a href="/blog_img/2019/scorange-martin-at-ismb.jpg" class="blog-image_"> 
+      <img src="/blog_img/2019/scorange-martin-at-ismb.jpg" />
+ </a>
+
+
 
 </p>
 
@@ -227,19 +228,18 @@
 
 <p><a href="https://www.iscb.org/ismbeccb2019">ISMB/ECCB 2019</a> is the largest and most prestigious bioinformatics conference. It joins the meetings of International and European and Society for Computational Biology. Martin Stražar, a post-doc at our Bioinformatics Lab in Ljubljana and responsible for much of developments in scOrange, presented <a href="https://singlecell.biolab.si">scOrange</a> in light of its support for case-based teaching and hands-on workshops. During the talk, Martin showcased several scOrange&rsquo;s workflows. The one I liked best includes automatic annotation of cell-types in point-based visualizations.</p>
 
+<a href="/blog_img/2019/scorange-automatic-annotation.png" class="blog-image_"> 
+      <img src="/blog_img/2019/scorange-automatic-annotation.png" />
+ </a>
 
-<figure>
-    
-        <img src="/blog_img/2019/scorange-automatic-annotation.png" width="80%" />
-    
-    
-</figure>
+
 
 
 <p>Martin&rsquo;s presentation was based on our ISMB/ECCB paper just published in Bioinformatics:</p>
 
 <p>Martin Stražar,  Lan Žagar,  Jaka Kokošar,  Vesna Tanko,  Aleš Erjavec,  Pavlin G Poličar, Anže Starič,  Janez Demšar,  Gad Shaulsky,  Vilas Menon,  Andrew Lemire,  Anup Parikh, Blaž Zupan (2019) <a href="https://academic.oup.com/bioinformatics/article/35/14/i4/5529249">scOrange—a tool for hands-on training of concepts from single-cell data analytics</a>, Bioinformatics 35(14):i4–i12.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -263,7 +263,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

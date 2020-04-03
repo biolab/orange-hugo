@@ -232,6 +232,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Last week, we presented Orange at the <a href="https://podatki.gov.si/content/festival-odprtih-podatkov-2017">Festival of Open Data</a>, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.</p>
 
 <p><img src="/images/2017/10/IMG_3530.jpg" alt="" /></p>
@@ -256,6 +259,7 @@
 
 <p><img src="/images/2017/10/Screen-Shot-2017-10-10-at-13.04.47.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -279,7 +283,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

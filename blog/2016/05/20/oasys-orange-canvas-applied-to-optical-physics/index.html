@@ -239,6 +239,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>This week we’re hosting experts in optical physics from <a href="https://www.elettra.eu/">Elettra Sincrotrone Trieste</a> and <a href="http://www.esrf.eu/">European Synchrotron Radiation Facility</a> in our laboratory. For a long time they have been interested in developing a user interface that integrates different simulation tools and data analysis software within one environment. It all came true with Orange Canvas and the <a href="http://www.elettra.eu/oasys.html">OASYS system</a>. We’ve already <a href="/blog/2014/08/26/orange-canvas-applied-to-x-ray-optics/">written about this</a> two years ago, when the idea first came up. Now the actual software is ready and is being used by researchers for everyday analysis and prototyping.</p>
 
 <p>OASYS is basically pure Orange Canvas (Orange but no data mining widgets) that is reconfigured for the needs of optical physicists. What our partners from Italy did (with the help of our lab), was bring optic simulation software used in synchrotron facilities into a single graphical user interface. What is especially incredible is that they managed to transform Orange into a simulation platform for building synchrotron beamlines.</p>
@@ -257,6 +260,7 @@
 
 <p>This is the power of visual programming - providing a user-friendly interface for automating complicated calculations and quick prototyping.</p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -280,7 +284,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

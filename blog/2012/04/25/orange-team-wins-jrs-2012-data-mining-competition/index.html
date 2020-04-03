@@ -211,6 +211,9 @@
         <div class="entry-container remove-padding-l-r">
           <div class="entry-content md">
             <article>
+              <div id="blog_images_">
+
+
               <p>Lead by Jure Žbontar, the team from University of Ljubljana wins over 126 other entrants in an <a href="http://tunedit.org/challenge/JRS12Contest?m=summary">international competition in predictive data analytics</a>.</p>
 
 <p>Jure’s team consisted of several Orange developers and computer science students: Miha Zidar, Blaž Zupan, Gregor Majcen, Marinka Žitnik in Matic Potočnik. To win, the team had to predict topics for 10.000 MedLine documents that were represented with over 25.000 algorithmically derived numerical features. Given was training set of another 10.000 documents in the same representation but each labeled with a set of topics. From the training set the task was to develop a model to predict labels for documents in the test set. A particular challenge was guessing the right number of topics to be associated with the documents, as these, at least in the training set, varied from one to a dozen.</p>
@@ -219,6 +222,7 @@
 
 <p><img src="/images/2012/04/25/2012-jrs-leaderboard-final.png__600x415_q95_crop_upscale.png" alt="" /></p>
 
+            </div>
             </article>
           </div>
         </div>
@@ -242,7 +246,23 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>
