@@ -1649,25 +1649,25 @@
 
 <p>The <em>Learner</em> signal has an uncommon property: it can be connected to more than one widget to test multiple learners with the same procedures.</p>
 
-<p><img src="../images/TestLearners-stamped.png" alt="" /></p>
+<p><img src="../images/TestAndScore-stamped.png" alt="" /></p>
 
 <ol>
 <li>The widget supports various sampling methods.
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross-validation</a> splits the data into a given number of folds (usually 5 or 10). The algorithm is tested by holding out examples from one fold at a time; the model is induced from other folds and examples from the held out fold are classified. This is repeated for all the folds.</li>
-<li><strong>Leave-one-out</strong> is similar, but it holds out one instance at a time, inducing the model from all others and then classifying the held out instances. This method is obviously very stable, reliable&hellip; and very slow.</li>
+<li><strong>Cross validation by feature</strong> performs cross-validation but folds are defined by the selected categorical feature from meta-features.<br /></li>
 <li><strong>Random sampling</strong> randomly splits the data into the training and testing set in the given proportion (e.g. 70:30); the whole procedure is repeated for a specified number of times.</li>
+<li><strong>Leave-one-out</strong> is similar, but it holds out one instance at a time, inducing the model from all others and then classifying the held out instances. This method is obviously very stable, reliable&hellip; and very slow.</li>
 <li><strong>Test on train data</strong> uses the whole dataset for training and then for testing. This method practically always gives wrong results.</li>
 <li><strong>Test on test data</strong>: the above methods use the data from <em>Data</em> signal only. To input another dataset with testing examples (for instance from another file or some data selected in another widget), we select <em>Separate Test Data</em> signal in the communication channel and select Test on test data.</li>
 </ul></li>
 <li>For classification, <em>Target class</em> can be selected at the bottom of the widget. When <em>Target class</em> is (Average over classes), methods return scores that are weighted averages over all classes. For example, in case of the classifier with 3 classes, scores are computed for class 1 as a target class, class 2 as a target class, and class 3 as a target class. Those scores are averaged with weights based on the class size to retrieve the final score.</li>
-<li>Produce a report.</li>
-<li>The widget will compute a number of performance statistics, which can be shown or hidden by right-clicking the columns:
+<li>The widget will compute a number of performance statistics. A few are shown by default. To see others, right-click on the header and select the desired statistic.
 
 <ul>
 <li>Classification
-<img src="../images/TestLearners.png" alt="" />
+<img src="../images/TestAndScore-Classification.png" alt="" />
 
 <ul>
 <li><a href="http://gim.unmc.edu/dxtests/roc3.htm">Area under ROC</a> is the area under the receiver-operating curve.</li>
@@ -1675,26 +1675,36 @@
 <li><a href="https://en.wikipedia.org/wiki/F1_score">F-1</a> is a weighted harmonic mean of precision and recall (see below).</li>
 <li><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> is the proportion of true positives among instances classified as positive, e.g. the proportion of <em>Iris virginica</em> correctly identified as Iris virginica.</li>
 <li><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> is the proportion of true positives among all positive instances in the data, e.g. the number of sick among all diagnosed as sick.</li>
+<li><a href="https://en.wikipedia.org/wiki/Sensitivity_and_specificity">Specificity</a> is the proportion of true negatives among all negative instances, e.g. the number of non-sick among all diagnosed as non-sick.</li>
+<li><a href="https://en.wikipedia.org/wiki/Cross_entropy">LogLoss</a> or cross-entropy loss takes into account the uncertainty of your prediction based on how much it varies from the actual label.</li>
+<li>Train time - cumulative time in seconds used for training models.</li>
+<li>Test time - cumulative time in seconds used for testing models.</li>
 </ul></li>
 <li>Regression
-<img src="../images/TestLearners-regression.png" alt="" />
+<img src="../images/TestAndScore-Regression.png" alt="" />
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mean_squared_error">MSE</a> measures the average of the squares of the errors or deviations (the difference between the estimator and what is estimated).</li>
 <li><a href="https://en.wikipedia.org/wiki/Root_mean_square">RMSE</a> is the square root of the arithmetic mean of the squares of a set of numbers (a measure of imperfection of the fit of the estimator to the data)</li>
 <li><a href="../&lt;https://en.wikipedia.org/wiki/Mean_absolute_error">MAE</a> is used to measure how close forecasts or predictions are to eventual outcomes.</li>
 <li><a href="../&lt;https://en.wikipedia.org/wiki/Coefficient_of_determination">R2</a> is interpreted as the proportion of the variance in the dependent variable that is predictable from the independent variable.</li>
+<li><a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">CVRMSE</a> is RMSE normalized by the mean value of actual values.</li>
+<li>Train time - cumulative time in seconds used for training models.</li>
+<li>Test time - cumulative time in seconds used for testing models.</li>
 </ul></li>
 </ul></li>
 <li>Choose the score for pairwise comparison of models and the region of practical equivalence (ROPE), in which differences are considered negligible.</li>
-<li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. If ROPE is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the Bayesian interpretation of the t-test; (paper: <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z,16-305.html">https://link.springer.com/article/10.1007/s10994-015-5486-z,16-305.html</a>, shorter introduction: <a href="https://baycomp.readthedocs.io/en/latest/introduction.html">https://baycomp.readthedocs.io/en/latest/introduction.html</a>).</li>
+<li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. If negligible difference is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z">Bayesian interpretation of the t-test</a> (<a href="https://baycomp.readthedocs.io/en/latest/introduction.html">shorter introduction</a>).</li>
+<li>Get help and produce a report.</li>
 </ol>
 
 <h2 id="example">Example</h2>
 
 <p>In a typical use of the widget, we give it a dataset and a few learning algorithms and we observe their performance in the table inside the <strong>Test &amp; Score</strong> widget and in the <a href="../evaluate/rocanalysis.md">ROC</a>. The data is often preprocessed before testing; in this case we did some manual feature selection (<a href="../../data/selectcolumns/">Select Columns</a> widget) on <em>Titanic</em> dataset, where we want to know only the sex and status of the survived and omit the age.</p>
 
-<p><img src="../images/TestLearners-example-classification.png" alt="" /></p>
+<p>In the bottom table, we have a pairwise comparison of models. We selected that comparison is based on the <em>area under ROC curve</em> statistic. The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. We can, for example, see that probability for the tree to be better than SVM is almost one, and the probability that tree is better than Naive Bayes is 0.001. Smaller numbers in the table are probabilities that the difference between the pair is negligible based on the negligible threshold 0.1.</p>
+
+<p><img src="../images/TestAndScore-Example.png" alt="" /></p>
 
 <p>Another example of using this widget is presented in the documentation for the <a href="../../evaluate/confusionmatrix/">Confusion Matrix</a> widget.</p>
 

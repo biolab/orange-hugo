@@ -1631,51 +1631,43 @@
 
 <p>A thematic map in which areas are shaded in proportion to the measurement of the statistical variable being displayed.</p>
 
-<p><strong>Inputs</strong>
--  Data: An input data set.</p>
+<p><strong>Inputs</strong></p>
+
+<ul>
+<li>Data: input dataset</li>
+</ul>
 
 <p><strong>Outputs</strong>
--  Selected Data: A subset of instances selected from the map.
--  Data: Data set with an appended meta attribute specifying selected and unselected data.</p>
+-  Selected Data: instances selected from the map.
+-  Data: data with an additional column showing whether a point is selected</p>
 
 <p><strong>Choropleth</strong> provides an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region. There are several levels of granularity available, from countries to states, counties, or municipalities.</p>
 
 <p><img src="../images/Choropleth-stamped.png" alt="" /></p>
 
 <ol>
-<li>Aggregation properties:
+<li>Set latitude and longitude attributes, if the widget didn&rsquo;t recognize them automatically.</li>
+<li>Set <em>Attribute</em> to color the region by. Set <em>Agg.</em> which by default counts the number of occurrences of the region in the data. <em>Count defined</em> shows which regions appear in the data. <em>Sum</em>, <em>Mean</em>, <em>Median</em>, <em>Maximal</em>, <em>Minimal</em> and <em>Std.</em> (standard deviation) work for numeric data, while <em>Mode</em> works for categorical. Set <em>Detail</em> level to countries, states (US)/counties/Bundesländer/provinces or counties (US)/municipalities.</li>
+<li>Adjust plot properties:
 
 <ul>
-<li>Latitude attribute.</li>
-<li>Longitude attribute.</li>
-<li>Attribute to color the region by.</li>
-<li>Aggregation level. Default counts the number of occurences of the region in the data. Count defined shows which regions appear in the data. Sum, mean, median, max, min and standard deviation work for numeric data, while mode works for categorical.</li>
-<li>Administrative level. 0 is for countries, 1 is for states (US)/counties/Bundesländer/provinces, 2 is for counties (US)/municipalities.</li>
+<li><em>Bin width</em> for discretize displayed color.</li>
+<li><em>Opacity</em> sets transparency of regions.</li>
+<li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
 </ul></li>
-<li>Visualization properties:
-
-<ul>
-<li>Color steps defines into how many bins to split numeric data.</li>
-<li>Color quantization defines the coloring scale (equidistant, logarithmic, quantile, k-means).</li>
-<li>Opacity sets transparency of the color.</li>
-<li>If <em>Show legend</em> is off, legend will be hidden.</li>
-<li>If <em>Show map labels</em> is off, region names&rsquo; will be hidden.</li>
-<li>If <em>Show region details in a tooltip</em> is off, hovering over the region won&rsquo;t display anything.</li>
-</ul></li>
-<li>If <em>Send Selection Automatically</em> is on, selection will be commited automatically. Alternatively, press <em>Send Selection</em>.</li>
+<li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the map. The manual selection of data instances works as an angular/square selection tool. Scroll in or out for zoom.</li>
+<li>If <em>Send automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send</em>.</li>
 </ol>
-
-<p>To reset the zoom level, press the target icon in the to left corner of the map. For zoom, use to + and - icons or mouse scroll. To select a region, click on it in the visualization. To select more than one region, hold Shift.</p>
 
 <h2 id="example">Example</h2>
 
-<p>We will use <em>HDI</em> data from the <strong>Datasets</strong> widget. Open the widget, find <em>HDI</em> data, select it and press <em>Send</em>. <strong>Choropleth</strong> widget requires latitude and longitude pairs, so we will use <strong>Geocoding</strong> to extract this information. We used the attribute <em>Country</em> and found lat/lon pairs that <strong>Choropleth</strong> can use.</p>
+<p>We will use <em>HDI</em> data from the <strong>Datasets</strong> widget. Open the widget, find <em>HDI</em> data and double click. <strong>Choropleth</strong> widget requires latitude and longitude pairs, so we will use <strong>Geocoding</strong> to extract this information. We used the attribute <em>Country</em> and found lat/lon pairs that <strong>Choropleth</strong> can use.</p>
 
 <p><strong>Choropleth</strong> will automatically look for attributes named <em>latitude</em>, <em>longitude</em>, <em>lat</em>, <em>lon</em> or similar. It will use them for plotting. Alternatively, set the attributes manually.</p>
 
-<p>Since <em>HDI</em> attribute is our target variable, it will automatically be used for coloring. You can change it in the <em>Attribute</em> dropdown. We have set the level of aggregation to <em>max</em>, but since we have only one value per country, we could use <em>sum</em> or <em>min</em> just as well.</p>
+<p>Since <em>HDI</em> attribute is our target variable, it will automatically be used for coloring. We change it in the <em>Attribute</em> dropdown to <em>Life expectancy</em>. We have set the level of aggregation to <em>Mean</em>, but since we have only one value per country, we could use <em>Sum</em> or <em>Median</em> just as well.</p>
 
-<p>The widget shows HDI values as reported by the United Nations per country. Yellow countries are those with a high HDI and blue ones are the ones with a low HDI value.</p>
+<p>The widget shows life expectancy as reported by the United Nations per country. Yellow countries are those with a high Life expectancy and blue ones are the ones with a low life expectancy.</p>
 
 <p><img src="../images/Choropleth-Example.png" alt="" /></p>
 

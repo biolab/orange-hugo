@@ -223,8 +223,8 @@ Inputs
       
       <guid>/widget-catalog/geo/choroplethmap/</guid>
       <description>Choropleth Map A thematic map in which areas are shaded in proportion to the measurement of the statistical variable being displayed.
-Inputs - Data: An input data set.
-Outputs - Selected Data: A subset of instances selected from the map. - Data: Data set with an appended meta attribute specifying selected and unselected data.
+Inputs
+ Data: input dataset  Outputs - Selected Data: instances selected from the map. - Data: data with an additional column showing whether a point is selected
 Choropleth provides an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region.</description>
     </item>
     
