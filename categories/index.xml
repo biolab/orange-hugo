@@ -210,6 +210,15 @@
     </item>
     
     <item>
+      <title>Covid 19</title>
+      <link>/categories/covid-19/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/covid-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cross Validation</title>
       <link>/categories/cross-validation/</link>
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
@@ -341,6 +350,15 @@
       <pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate>
       
       <guid>/categories/examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feature Construction</title>
+      <link>/categories/feature-construction/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/feature-construction/</guid>
       <description></description>
     </item>
     
@@ -599,7 +617,7 @@
     <item>
       <title>Line Plot</title>
       <link>/categories/line-plot/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/line-plot/</guid>
       <description></description>

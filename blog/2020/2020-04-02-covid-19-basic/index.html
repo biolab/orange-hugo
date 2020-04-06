@@ -1,0 +1,696 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Analysis of Covid-19 Epidemics: Part 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/categories/covid-19">covid-19</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/feature%20construction">feature construction</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/line%20plot">line plot</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Analysis of Covid-19 Epidemics: Part 1</h1>
+          <span class="author-blog">
+            
+            By: Janez Demšar,
+            
+            Mar 2, 2020
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              
+
+<p>These days we are all following the statistics of COVID-19, looking at how our own country is faring and how it&rsquo;s comparing with other countries. Luckily, only a few have a statistically meaningful number of deaths (which solemnly reminds us of the difference between statistical and practical significance!), so we concentrate on the number of confirmed cases.</p>
+
+<p>You&rsquo;re reading the first and most basic blog post from a series in which we will investigate this data using Orange.
+<strong>Most</strong> people are capable of doing <strong>something</strong> in Excel(-like programs), and <strong>some</strong> can do <strong>everything</strong> in Python with pandas and jupyter. I&rsquo;ll show you how <strong>many</strong> people can do <strong>many</strong> things in Orange.</p>
+
+<p>Today, we will see how to get this data into Orange, draw some basic curves, and relate it to other data sources. Don&rsquo;t expect anything dramatic; this will be more about showing some creative ways of connecting a few widgets, and starting to explore the data about COVID-19 epidemics.</p>
+
+<h2 id="getting-the-data">Getting the data</h2>
+
+<p>John Hopkins University collated some COVID-19 information in a machine-readable format and published it <a href="https://github.com/CSSEGISandData/COVID-19">on Github</a>. We will examine the table with <a href="https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv">confirmed cases by regions and countries</a>.</p>
+
+<p>To get the numbers behind the above table, click &ldquo;Raw&rdquo;. Or this link: <a href="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv">https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv</a>. Save the page and you&rsquo;ll have a file to play with.</p>
+
+<a href="/blog_img/2020/2020-04-02-file-widget.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-file-widget.png" class="tooltippic" />
+ </a>
+
+
+
+<p>Easier still, Orange&rsquo;s File widget can load the data directly from the web, and handles a basic .csv file (for more fine-grained options, use CSV File Import). So, for starters, add the File widget to the canvas and copy the above link to the URL field. You can then connect it to a Data Table widget and check that everything&rsquo;s loaded OK. You should see a table with rows corresponding to regions and countries, and columns corresponding to dates, with two additional columns detailing region locations (latitude, longitude).</p>
+
+<p>Note that this is live data, so your results will differ from those we show here.</p>
+
+<h2 id="plot-the-usual-plots">Plot the usual plots</h2>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-01-02.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-01-02.png 2x" class="sidework" />
+ </a>
+
+
+Connect the File to a Line Plot widget to see the graph. By default, Line Plot shows means and ranges, while we are interested in raw lines. Let&rsquo;s click the checkboxes accordingly.</p>
+
+<a href="/blog_img/2020/2020-04-02-lineplot.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-lineplot.png" />
+ </a>
+
+
+
+
+<p>Pretty boring. Anybody can do this in Excel. Orange allows us to play with these curves, though.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-select-line.gif" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-select-line.gif" class="tooltippic" />
+ </a>
+
+
+The curve that grows rapidly but then flattens out &ndash; is probably China, right? To check this, select it. It may be hard to click the curve, so select it by dragging a line across it.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-01-03.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-01-03.png 2x" class="sidework" />
+ </a>
+
+
+Then, connect the Line Plot widget to Data Table, and it will show the data for this curve. You&rsquo;ll learn that this is, of course, the Hubei province – where it all started.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-steep-curves.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-steep-curves.png" class="tooltippic" />
+ </a>
+
+
+What are the fast-rising curves? Select them by dragging a line across them, and check the Data Table widget: these are the US, Iran, Italy, Spain, Germany and France.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-01-04.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-01-04.png 2x" class="sidework" />
+ </a>
+
+
+We can do it the other way around: connect File to Data Table and Data Table to Line Plot, such that the Data Table sends its selected subset of data.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-select-country.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-select-country.png" class="tooltippic" />
+ </a>
+
+
+In the Data Table, you can now find and click your favourite country. Line Plot will now highlight the curve for Slovenia (or whichever country you chose). You can also select multiple countries, like all the Chinese provinces. Or all European countries.</p>
+
+<p>Well, the latter is a bit difficult; there is no data about the continent. There&rsquo;s a trick, though.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-01-05.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-01-05.png 2x" class="sidework" />
+ </a>
+
+
+Replace the Data Table widget with a Scatter Plot widget, and choose Long and Lat for x and y respectively. Zoom in on Europe and select the points by dragging across them. Line Plot will highlight the curves belonging to the countries chosen in the Scatter Plot.
+<a href="/blog_img/2020/2020-04-02-europe-scatter-line-plot.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-europe-scatter-line-plot.png" />
+ </a>
+
+
+</p>
+
+<p>In the case of Slovenia (and possibly your choice as well), we couldn&rsquo;t really see its curve because it&rsquo;s negligent in comparison with others. The only thing we&rsquo;ve learned is that the 327-million-man US have more cases of COVID-19 than a 2-million-man Slovenia. The same goes for Chinese provinces: the only one that sticks out is Hubei. Also, the &ldquo;map&rdquo; we improvised in Scatter Plot was a poor-man&rsquo;s map. Orange has proper geographical support (Orange3-Geo add-on), we&rsquo;ll look at it in-depth in a follow-up post.</p>
+
+<p>The message here regards the essential difference between plotting curves and real data mining: static curves are dead; data mining is <strong>interactive</strong>.</p>
+
+<h2 id="connecting-data-sets">Connecting data sets</h2>
+
+<p>Let&rsquo;s solve the problem of negligible curves for small countries. This is not just about populations: the biggest problem is that confirmed cases are the result of testing, and testing strategies vary by country. Icelanders and Koreans test like crazy, while the number of tests in the US was (initially) so small it was comparable to that of Slovenia (and with it, the number of confirmed cases). The number of tests could thus <strong>normalize</strong> the number of confirmed cases, but this wouldn&rsquo;t do either; the testing isn&rsquo;t equivalent – some countries test more at random, while others save tests for groups at greater risk. And regardless, exact data about the number of tests is not readily available.</p>
+
+<p>So, let&rsquo;s fallback to the number of cases per million inhabitants. Neither this nor the population of countries are present in the data provided by John Hopkins University. We do, however, have another data set at arm&rsquo;s reach: the population of countries (for year 2015) appears in the Worldbank&rsquo;s Human development index (HDI) data.
+<a href="/blog_img/2020/2020-04-02-workflow-02-01.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-01.png 2x" class="sidework" />
+ </a>
+
+
+To load it, use the Datasets widget, find and double-click the HDI data set.
+<a href="/blog_img/2020/2020-04-02-merge-data.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-merge-data.png" class="tooltippic" />
+ </a>
+
+
+Now we&rsquo;re working with two data sets.
+<a href="/blog_img/2020/2020-04-02-workflow-02-02.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-02.png 2x" class="sidework" />
+ </a>
+
+
+Let&rsquo;s merge them using the Merge Data widget: connect both the File widget (with the John Hopkins data), and the Datasets widget (with the HDI data) to Merge Data. Make sure to match the &ldquo;Country/Region&rdquo; feature in COVID-19 data with the &ldquo;Country&rdquo; feature in HDI. It is also important to connect the widgets in this order, so File provides the main data and the Datasets widget augments it with additional annotation columns. If you do it incorrectly, double-click the connections to fix it.</p>
+
+<p>The match is imperfect: some countries appear with different names, for instance, &ldquo;<em>Russia</em>&rdquo; from John Hopkins doesn&rsquo;t match the &ldquo;<em>Russian Federation</em>&rdquo; from HDI, and the John Hopkin&rsquo;s &ldquo;<em>US</em>&rdquo; and doesn&rsquo;t match HDI&rsquo;s &ldquo;<em>United States</em>&rdquo;.</p>
+
+<p>The population of Liechtenstein in millions with one decimal is 0.0; similar for Palau.
+<a href="/blog_img/2020/2020-04-02-workflow-02-03.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-03.png 2x" class="sidework" />
+ </a>
+
+
+To remove countries with unknown or zero population, we continue with Select Rows, where we set the condition &ldquo;Total Population (millions) 2015 is greater than 0&rdquo;.
+<a href="/blog_img/2020/2020-04-02-select-rows.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-select-rows.png" class="tooltippic" />
+ </a>
+
+</p>
+
+<p>Now for some constructive business.
+<a href="/blog_img/2020/2020-04-02-workflow-02-04.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-04.png 2x" class="sidework" />
+ </a>
+
+
+To get the number of cases on some particular day, we use the Feature Constructor widget, where we can input a formula to compute new data columns. In &ldquo;New&rdquo; we select Numeric, type <code>cases per million</code> as the name of the new column, Select Feature &ldquo;3_29_20&rdquo; (or whichever date we&rsquo;d like), add <code>/</code>, and then select &ldquo;Total_Population__millions__2015&rdquo;.
+As a shortcut, you can just copy <code>_3_29_20 / Total_Population__millions__2015</code> into the &ldquo;Expression&hellip;&rdquo; line. (Note that an underscore precedes <code>3_29_20</code>: this way Orange knows that this is not a number but a name of a column.)</p>
+
+<a href="/blog_img/2020/2020-04-02-construct-features.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-construct-features.png" />
+ </a>
+
+
+
+
+<p>Things got crowded, so perhaps we can remove some columns.
+<a href="/blog_img/2020/2020-04-02-workflow-02-05.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-05.png 2x" class="sidework" />
+ </a>
+
+
+We add Select Columns, open it, and remove all columns we don&rsquo;t need right now. We can just select all features (Ctrl-A or Cmd-A) and drag them to the left, and then drag &ldquo;cases per million&rdquo; back to features.
+<a href="/blog_img/2020/2020-04-02-select-columns.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-select-columns.png" class="tooltippic" />
+ </a>
+
+</p>
+
+<p>Finally, add and connect a Data Table.</p>
+
+<a href="/blog_img/2020/2020-04-02-workflow-1-day.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-1-day.png 2x" class="sidework" />
+ </a>
+
+
+
+<p>Sort by the last column and, voilá, you&rsquo;ve ranked countries the number of cases per a million inhabitants.</p>
+
+<a href="/blog_img/2020/2020-04-02-1-day-table.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-1-day-table.png" class="tooltippic" />
+ </a>
+
+
+
+<p>Missing in action: China. The data for China is split into provinces, yet every row is divided by the country&rsquo;s entire population. France seems to have a similar problem: it is given as a single country, but followed by external territories whose numbers are divided by the entire population. Also missing in action: Russia / Russian Federation, and US / United States, as we&rsquo;ve previously explained.</p>
+
+<p>Fixing these glitches will require some manual work.</p>
+
+<h2 id="editing-the-data">Editing the data</h2>
+
+<p>To fix the non-unique country names, we could open one of the two files in Excel and fix discrepancies, but there&rsquo;s no need for it: this is easier done in Orange, which will help us identify the missing countries. They are removed in the Select Rows widget. We hence connect a Data Table to Select Rows, double click the connection and do some editing: click the line between Matching Data and Data to remove it, and drag a line from Unmatched Data to Data.</p>
+
+<a href="/blog_img/2020/2020-04-02-select-rows-link-edit.gif" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-select-rows-link-edit.gif" />
+ </a>
+
+
+
+
+<p>This way, we can see which countries were filtered out. They seem to be absent due to either not being present in HDI, or having too small of a population.</p>
+
+<p>Let&rsquo;s insert an Edit Domain widget between the Datasets widget and Merge Data.</p>
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-06.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-workflow-02-06.png" />
+ </a>
+
+
+
+
+<p>We find and select column <code>Country</code>. Now change its type from Text to Categorical. Note, this is conceptually wrong: &ldquo;<em>Country</em>&rdquo; <em>is</em> a text variable, it contains a name and not a &ldquo;category&rdquo; of country, like the continent or the direction of writing. However, Edit Domain only lets us map its values if we change it to Categorical. And having it as categorical won&rsquo;t hurt.</p>
+
+<a href="/blog_img/2020/2020-04-02-edit-domain-hdi.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-edit-domain-hdi.png" />
+ </a>
+
+
+
+
+<p>After changing the variable type, the widget will show another box, Values, with a mapping of values. Let&rsquo;s look at the countries in the new excluded rows Data Table widget. We see, for instance, &ldquo;Bosnia and Herzegovina&rdquo;. We need to match to how John Hopkins data refers to countries, so go back to Edit Domain, and find &ldquo;Bosnia and Herz.&rdquo;. Double click it and change it to &ldquo;Bosnia and Herzegovina&rdquo;.</p>
+
+<p>Similarly, Czech Rep. should become Czechia, Macedonia is now officially North Macedonia, Russian Federation is Russia, United States is US and Viet Name is Vietnam. John Hopkins has &ldquo;Korea, South&rdquo; and HDI includes just Korea. Based on its high human development index and GDP, we can safely assume that this is the northern one. (Kidding, map this Korea to Korea, South, of course. There&rsquo;s no virus in the other Korea because Kim anticipated it before it even appeared and already invented a cure long ago.)</p>
+
+<p>Now that I&rsquo;ve taught you how to fish, I give you a fish for today: after editing these and all the other countries whose matches I found, I saved it to a <a href="http://file.biolab.si/datasets/HDI-fixed-for-jhu-covid.csv">file you can download and use</a>. Replace the Datasets widget with a File, and load it.</p>
+
+<h2 id="analysis-beyond-population">Analysis beyond population</h2>
+
+<p>Comparing this data with the World Bank&rsquo;s data is great because it allows us to relate the epidemiological data to data about particular countries.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-02-07.png" class="blog-image_"> 
+      <img srcset="/blog_img/2020/2020-04-02-workflow-02-07.png 2x" class="sidework" />
+ </a>
+
+
+In Select Columns, we removed most of the features. Bring back all those that come from HDI. Now connect, say, a Scatter Plot and observe the relation between the number of cases per million and the number of physicians per ten thousand, which is the closest approximation to the capabilities of health systems.</p>
+
+<a href="/blog_img/2020/2020-04-02-scatter-physicians.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-scatter-physicians.png" />
+ </a>
+
+
+
+
+<p>The conclusion here would be that you may want to find yourself in Qatar, Cuba or Greece right now. People are often surprised to see Cuba in such contexts, though Cuba has an excellent public health system and pretty good (though perhaps not entirely unbiased) free education. Seeing this graph, it shouldn&rsquo;t come as a surprise that <a href="https://www.reuters.com/article/us-health-coronavirus-cuba/cuban-doctors-head-to-italy-to-battle-coronavirus-idUSKBN219051">Cuban doctors are heading to Italy and other countries to help fight the epidemics</a>.</p>
+
+<p>A seemingly related measure, Public health expenditure doesn&rsquo;t work here. It is expressed as a percentage of GDP, so it is adjusted for physicians&rsquo; salaries, but not necessarily for the prices of (imported) equipment. Furthermore, higher spending may reflect a more expensive but not necessarily a more efficient health system.</p>
+
+<p>Another potentially interesting factor to follow will be the age of the population. HDI tells us the number of people older than 65 years per 100 people between 15 and 64.</p>
+
+<a href="/blog_img/2020/2020-04-02-scatter-dependency.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-scatter-dependency.png" />
+ </a>
+
+
+
+
+<p>I should have used future tense; the population age <strong>will</strong> be interesting to observe with respect to mortality rate, but not enough countries have a sufficient number of deaths. Let&rsquo;s hope it stays this way.</p>
+
+<p>We will eventually be able to (or &ndash; let&rsquo;s hope we won&rsquo;t) explore the relations between epidemics and other sociodemographic data. Generally, the problem with analyzing this data per country is currently that the disease has mostly spread (or been detected?) in developed countries, resulting in many correlations like the speed of spreading and percentage of urban populations, which may or may not reflect actual causation.</p>
+
+<h2 id="back-to-curves">Back to curves</h2>
+
+<p>What about curves showing the number of confirmed cases per million? We computed the cases per million for a single day, not for all days. While Orange is a general-purpose data mining tool, some operations are too specific to be implemented in widgets. For such cases, we can program some processing in Python, using the Python Script widget.</p>
+
+<p><a href="/blog_img/2020/2020-04-02-workflow-03-01.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-workflow-03-01.png" />
+ </a>
+
+
+
+The start of the sequence is the same as before: we merge the two data sources and remove countries with unknown or zero population.</p>
+
+<p>In Select Columns, we move all variables except daily data from features to metas.</p>
+
+<p>In Python Script, we type the following program and run it:</p>
+
+<pre><code class="language-python">import numpy as np
+import Orange
+
+normalized = in_data.X / in_data[:, &quot;Total Population (millions) 2015&quot;].metas
+
+out_data = Orange.data.Table.from_numpy(
+    in_data.domain,
+    normalized, in_data.Y, in_data.metas)
+</code></pre>
+
+<p><a href="/blog_img/2020/2020-04-02-python-script.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-python-script.png" class="tooltippic" />
+ </a>
+
+
+With <code>in_data[:, &quot;Total Population (millions) 2015&quot;]</code> we take the table corresponding to the column with the population. Since population is now a meta attribute, we take <code>.metas</code>. We divide <code>in_data.X</code> with this column. Finally, we construct a new table named <code>out_data</code>, with the same domain (that is, the same variables), the normalized data, and the original data for target variable(s) and metas.</p>
+
+<p>We get a similar line plot as before, just with proper scale. Observe it. There are two countries with 3000-4000 confirmed cases per million?! Which? Check yourself!</p>
+
+<a href="/blog_img/2020/2020-04-02-lineplot-3.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-02-lineplot-3.png" />
+ </a>
+
+
+
+
+<p>Would you like to see a plot with a logarithmic axis? And Line Plot doesn&rsquo;t support it? (Yet?) The beauty of using the Python script widget is that we can transform the data any way we want. Change the line that computes the normalized data to</p>
+
+<pre><code class="language-python">normalized = np.log10(in_data.X / in_data[:, &quot;Total Population (millions) 2015&quot;].metas)
+</code></pre>
+
+<p>And we have a logarithmic axis (just with wrong labels).</p>
+
+<h2 id="where-from-here">Where from here?</h2>
+
+<p>This data is related to countries. Hence it would be nice to put it on a map. It also deals with time, and core Orange is not well-equipped for it. In the two follow-up posts, we will explore the add-ons for geographical data and for time series.</p>
+
+<hr />
+
+<p>Orange is a multi-platform open-source machine learning and data visualization tool for beginners and experts alike. <a href="https://orange.biolab.si/download">Download Orange</a>, and load and explore your own data sets!</p>
+
+<p>In addition to a variety of learning materials posted online in the form of <a href="https://orange.biolab.si/blog/">blog posts</a>, <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">tutorial videos</a>, we&rsquo;ve created a <a href="https://discord.gg/FWrfeXV">Discord server. Join the community, tell us what you think!</a></p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 02 Mar </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-04-02-covid-19-basic/">Analysis of Covid-19 Epidemics: Part 1</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 24 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-02-24-anaconda-navigator/">Installing with Anaconda Navigator</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 08 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-02-08-lecture-notes/">Orange Lecture Notes</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
