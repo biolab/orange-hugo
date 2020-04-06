@@ -327,7 +327,8 @@ Examples in this section will assume that we have a discrete attribute status wi
       <description>Corpus Load a corpus of text documents, (optionally) tagged with categories, or change the data input signal to the corpus.
 Inputs
  Data: Input data (optional)  Outputs
- Corpus: A collection of documents.  Corpus widget can work in two modes: - When no data on input, it reads text corpora from files and sends a corpus instance to its output channel. History of the most recently opened files is maintained in the widget.</description>
+ Corpus: A collection of documents.  Corpus widget can work in two modes:
+ When no data on input, it reads text corpora from files and sends a corpus instance to its output channel. History of the most recently opened files is maintained in the widget.</description>
     </item>
     
     <item>
