@@ -1,5 +1,17 @@
 <head>
     <title>Orange Data Mining - {{.Page.Title}}</title>
+
+    <!-- Facebook metadata for blog posts -->
+    {{ if .Params.title }}
+    <meta property="og:title" content="{{.Params.title}}">
+    {{ end }}
+    {{ if .Params.shortExcerpt }}
+    <meta property="og:description" content="{{.Params.shortExcerpt}}">
+    {{ end }}
+    {{ if .Params.thumbImage }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{.Params.thumbImage}}">
+    {{ end }}
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Orange Data Mining Toolbox">
