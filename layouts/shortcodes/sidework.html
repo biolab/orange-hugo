@@ -1,4 +1,9 @@
-<a href="{{ .Get `src`}}" class="blog-image_"> 
+{{ if .Page.Params.x2images }}
+<a href="{{ .Get `src`}}" class="blog-image_">
       <img srcset="{{ .Get `src` }} 2x" class="sidework" />
- </a>
-
+</a>
+{{ else }}
+<a href="{{ .Get `src`}}" class="blog-image_">
+      <img src="{{ .Get `src` }}" class="sidework" />
+</a>
+{{ end }}
