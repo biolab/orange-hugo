@@ -1,10 +1,10 @@
 <html>    
     <head>
-    <title>Orange Data Mining - t-SNE</title>
+    <title>Orange Data Mining - Time Slice</title>
 
     
     
-    <meta property="og:title" content="t-SNE">
+    <meta property="og:title" content="Time Slice">
     
     
     
@@ -1640,56 +1640,38 @@
                 <div class="content privacy padding-doc single-widget docscontent">
                     
 
-<h1 id="t-sne">t-SNE</h1>
+<h1 id="time-slice">Time Slice</h1>
 
-<p>Two-dimensional data projection with t-SNE.</p>
+<p>Select a slice of measurements on a time interval.</p>
 
 <p><strong>Inputs</strong></p>
 
 <ul>
-<li>Data: input dataset</li>
-<li>Data Subset: subset of instances</li>
+<li>Data: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
 
 <p><strong>Outputs</strong></p>
 
 <ul>
-<li>Selected Data: instances selected from the plot</li>
-<li>Data: data with an additional column showing whether a point is selected</li>
+<li>Subset: Selected time slice from the time series.</li>
 </ul>
 
-<p>The <strong>t-SNE</strong> widget plots the data with a t-distributed stochastic neighbor embedding method. <a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding">t-SNE</a> is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.</p>
+<p>Time slice is a subset selection widget designed specifically for time series and for interactive visualizations. It enables selecting a subset of the data by date and/or hour. Moreover, it can output data from a sliding window with options for step size and speed of the output change.</p>
 
-<p><img src="../images/tSNE-stamped.png" alt="" /></p>
+<p><img src="../images/time-slice-stamped.png" alt="" /></p>
 
 <ol>
-<li>Number of iterations for optimization and the measure of <a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">perplexity</a>. Press Start to (re-)run the optimization.</li>
-<li>Select the number of PCA components used for projection.</li>
-<li>Set the color of the displayed points (you will get colors for discrete values and grey-scale points for continuous). Set shape, size and label to differentiate between points. Set symbol size and opacity for all data points. Set jittering to randomly disperse data points.</li>
-<li>Adjust <em>plot properties</em>:
-
-<ul>
-<li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
-<li><em>Show all data on mouse hover</em> enables information bubbles if the cursor is placed on a dot.</li>
-<li><em>Show class density</em> colors the graph by class.</li>
-<li><em>Label only selected points</em> allows you to select individual data instances and label them.</li>
-</ul></li>
-<li>If <em>Send selected automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send Selected</em>.</li>
-<li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the graph. The manual selection of data instances works as an angular/square selection tool. Double click to move the projection. Scroll in or out for zoom.</li>
-<li>Access help, save image or produce a report.</li>
+<li>Visual representation of time series with the selected time slice. Click and drag the red lines to adjust the time window, or click and drag the yellow frame to move it around. Alternatively, set the to and from dates below to output the desired subset.</li>
+<li>If <em>Loop playback</em> is selected the data will &lsquo;replay&rsquo; continuously. <em>Custom step size</em> defines how the time slice move. If it is set to, say, <em>1 day</em>, the window will output n + 1 day once it moves. Without the custom step size defined, the slice will move to the next frame of the same size without any overlap.
+Press play to being the sliding window and stop to stop it. Backwards and forwards buttons move the slice by the specified step size.</li>
+<li>Set the speed of the sliding window.</li>
 </ol>
 
 <h2 id="example">Example</h2>
 
-<p>We will use <strong>Single Cell Datasets</strong> widget to load <em>Bone marrow mononuclear cells with AML (sample)</em> data. Then we will pass it through <strong>k-Means</strong> and select 2 clusters from Silhouette Scores. Ok, it looks like there might be two distinct clusters here.</p>
+<p>This simple example uses <a href="yahoo_finance.md">Yahoo Finance</a> widget to retrieve financial data from Yahoo, namely the AMNZ stock index from 2015 to 2020. Next, we will use <strong>Time Slice</strong> to observe how the data changed through time. We can observe the output of Time Slice in <a href="../line_chart/">Line Chart</a>. Press <em>Play</em> in Time Slice and see how Line Chart changes interactively.</p>
 
-<p>But can we find subpopulations in these cells? Let us load <em>Bone marrow mononuclear cells with AML (markers)</em> with <strong>Single Cell Datasets</strong>. Now, pass the marker genes to <strong>Data Table</strong> and select, for example, natural killer cells from the list (NKG7).</p>
-
-<p>Pass the markers and k-Means results to <strong>Score Cells</strong> widget and select <em>geneName</em> to match markers with genes. Finally, add <strong>t-SNE</strong> to visualize the results.</p>
-
-<p>In <strong>t-SNE</strong>, use <em>Scores</em> attribute to color the points and set their size. We see that killer cells are nicely clustered together and that t-SNE indeed found subpopulations.</p>
-
-<p><img src="../images/tSNE-Example.png" alt="" /></p>
+<p><img src="../images/time-slice-example.png" alt="" /></p>
 
                 </div>
             </div>

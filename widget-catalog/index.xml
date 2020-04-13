@@ -2001,6 +2001,18 @@ Inputs
     </item>
     
     <item>
+      <title>Time Slice</title>
+      <link>/widget-catalog/time-series/time_slice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/time_slice/</guid>
+      <description>Time Slice Select a slice of measurements on a time interval.
+Inputs
+ Data: Time series as output by As Timeseries widget.  Outputs
+ Subset: Selected time slice from the time series.  Time slice is a subset selection widget designed specifically for time series and for interactive visualizations. It enables selecting a subset of the data by date and/or hour. Moreover, it can output data from a sliding window with options for step size and speed of the output change.</description>
+    </item>
+    
+    <item>
       <title>Topic Modelling</title>
       <link>/widget-catalog/text-mining/topicmodelling-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

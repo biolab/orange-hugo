@@ -1716,7 +1716,8 @@
     "category": "Time Series",
     "keywords": [],
     "background": "#33aaff",
-    "icon": "widget-icons/Time Series-Time Slice.png"
+    "icon": "widget-icons/Time Series-Time Slice.png",
+    "url": "time_slice"
    },
    {
     "title": "Aggregate",

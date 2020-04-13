@@ -2864,6 +2864,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/time-series/time_slice/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/toolbox/</loc>
     <lastmod>2017-04-07T14:27:44+00:00</lastmod>
     <priority>0</priority>
