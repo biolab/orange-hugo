@@ -1,0 +1,657 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Data Mining COVID-19 Epidemics: Part 2</title>
+
+    
+    
+    <meta property="og:title" content="Data Mining COVID-19 Epidemics: Part 2">
+    
+    
+    <meta property="og:description" content="Visualizing Covid-19 data using maps">
+    
+    
+    <meta property="og:image" content="/blog_img/2020/2020-04-09-choropleth.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_blog.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="/css/widgetcat.css">
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item">
+                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/categories/covid-19">covid-19</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/visualization">visualization</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/addons">addons</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/categories/geo">geo</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Data Mining COVID-19 Epidemics: Part 2</h1>
+          <span class="author-blog">
+            
+            By: Robert Cvitkovič,
+            
+            Apr 7, 2020
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              
+
+<p>Previously on <a href="https://orange.biolab.si/blog/2020/2020-04-02-covid-19-basic/">Data Mining COVID-19 Epidemics: Part 1</a>: we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&rsquo;t dirtied your hands with it yet, check that out first.</p>
+
+<p>In this post, we&rsquo;ll try putting the data on a map. We&rsquo;ll also expand on the &ldquo;data mining is interactive&rdquo; mantra by creating some animations showing the epidemics spread throughout the world.</p>
+
+<h2 id="prerequisite-installing-add-ons">Prerequisite: installing add-ons</h2>
+
+<p>Orange already comes with a great selection of widgets that work with all sorts of data. But sometimes we&rsquo;re faced with a particular data set, such as textual data, time-series, or geographical data, which requires widgets with specific functionality – add-ons to the rescue! Add-ons are packages of widgets specially designed to handle specific data types.</p>
+
+<p>We&rsquo;ll be working with the Geo and Timeseries add-ons. To install them, open <em>Options</em> in the menu bar and select <em>Add-ons</em>. A new window will open, showing a list of officially supported add-ons. Select Orange3-Geo and Orange3-TimeSeries and click <em>OK</em>. After installation,  restart Orange. Check out the new sections in the widget toolbox; you should see some cool new widgets.</p>
+
+<a href="/blog_img/2020/2020-04-09-install-addon.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-install-addon.png" />
+ </a>
+
+
+
+
+<p><strong>Note:</strong> the two add-ons have been revamped very recently. If you already have them, use the Add-ons dialog to upgrade them to the latest version.</p>
+
+<h2 id="from-scatter-plot-to-geo-map">From Scatter Plot to Geo Map</h2>
+
+<p>You should already be familiar with the Scatter Plot widget. In the previous blog post, we used it as an impromptu map by putting latitude and longitude on the axes.</p>
+
+<a href="/blog_img/2020/2020-04-09-scatter-plot.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-scatter-plot.png" />
+ </a>
+
+
+
+
+<p>A better solution is to use Geo Map from the Orange3-Geo add-on. It provides a variety of maps as backgrounds. With them, it&rsquo;s much easier to associate points with locations. To start, first load the <a href="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv">COVID-19 data set</a> using the File widget, <a href="https://orange.biolab.si/blog/2020/2020-04-02-covid-19-basic/">as shown in the previous post</a>. Then, add and connect a Geo Map widget.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-01.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-01.png" class="sidework" />
+</a>
+
+
+
+<p>Latitude and longitude are automatically selected. Below, you can define similar point properties, as in the scatter plot. The size of a point can intuitively represent the number of cases, so let&rsquo;s select the latest date in the <em>Size</em> dropdown. If you&rsquo;re feeling adventurous, try changing the map type to satellite or topological.</p>
+
+<a href="/blog_img/2020/2020-04-09-full-geomap.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-full-geomap.png" />
+ </a>
+
+
+
+
+<p>Just like in Scatter Plot, you can scroll to zoom in and out, and click/drag to select data points. As opposed to using Scatter Plot, showing the points over a map of Europe makes it easier to select the countries we want to inspect.</p>
+
+<a href="/blog_img/2020/2020-04-09-eu-geomap.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-eu-geomap.png" />
+ </a>
+
+
+
+
+<h2 id="the-chloro-chorophl-chloropet-map-with-areas-colored-in">The chloro&hellip; chorophl&hellip; chloropet&hellip;&hellip;. map with areas colored in.</h2>
+
+<p>The map is nice and informative, and it&rsquo;s easy to distinguish larger epidemics from smaller ones. Still, those similarly-sized points on the map represent entire countries from big Russia to small Slovenia. We could, alternatively, represent countries by coloring their surface area. This is a job for Choropleth Map. Let&rsquo;s add it and connect it.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-02.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-02.png" class="sidework" />
+</a>
+
+
+
+<p>This widget is similar to Geo Map, but instead of displaying data as points, it aggregates them into regions (e.g., Country, State, Province), and displays those instead. Under <em>Attribute</em>, select the latest date and under <em>Agg.</em>, select <em>sum</em>. The colored regions now show the sum of confirmed COVID-19 cases for each country.</p>
+
+<p>Try choosing different dates. Notice how China initially experiences rapid growth, followed by a period of stagnation, and how in the past week, the USA overtook all other countries&rsquo; confirmed COVID-19 case count.</p>
+
+<a href="/blog_img/2020/2020-04-09-choropleth.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-choropleth.png" />
+ </a>
+
+
+
+
+<p>A warning that <em>7 points are not in any region</em> refers to some small islands and cruise ships included in the data.</p>
+
+<h2 id="if-a-picture-paints-a-thousand-words-an-animation-paints-a-million">If a picture paints a thousand words, an animation paints a million.</h2>
+
+<p>When working with time-series data, the coolest insights arise from observing trends – how data changes depending on time. Let&rsquo;s animate our maps!</p>
+
+<p>We&rsquo;ll be using a special widget from Orange3-Timeseries: Time Slice, which lets you select data in a time window. It also features a playback function that slowly moves the time window, outputting corresponding data as it goes.</p>
+
+<h3 id="transpose-part-i">Transpose: part I</h3>
+
+<p>Time Slice requires time instances in the form of rows, while our data specifies them in columns. Let&rsquo;s start again with the File widget that loads the data. Move <em>Lat</em> and <em>Long</em> to meta attributes by double-clicking  <em>feature</em> in the <em>Role</em> column and selecting <em>meta</em>. This will tell Orange to exclude them from data manipulations.</p>
+
+<a href="/blog_img/2020/2020-04-09-file.gif" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-file.gif" class="tooltippic" />
+ </a>
+
+
+
+<p>To flip rows and columns, we use the Transpose widget. Connect it to the File widget.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-03.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-03.png" class="sidework" />
+</a>
+
+
+
+<p>Set <em>From variable</em> to <em>Country/Region</em>. Ignore the warning that indices were added to variables with the same name; it won&rsquo;t hurt us.</p>
+
+<a href="/blog_img/2020/2020-04-09-transpose-1.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-transpose-1.png" class="tooltippic" />
+ </a>
+
+
+
+<p>To better understand what just happened, connect a Data Table to Transpose and see the result: rows and columns were swapped. Columns are named after countries (because we chose <em>Country/Region</em> in the Transpose widget), while a new column, <em>Feature name</em>, contains the original names of the columns.</p>
+
+<a href="/blog_img/2020/2020-04-09-table-1.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-table-1.png" />
+ </a>
+
+
+
+
+<p>Right now, Orange is treating values in <em>Feature name</em> as strings. We need to tell Orange that the feature contains timestamps. Let&rsquo;s connect an Edit Domain widget.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-04.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-04.png" class="sidework" />
+</a>
+
+
+
+<p>Scroll to the bottom of <em>Variables</em> and select <em>Feature name</em>. In <em>Edit</em>, change its type to <em>Time</em>. While you&rsquo;re at it, change its name to something meaningful, like <em>date</em>. Finally, click <em>Apply</em></p>
+
+<a href="/blog_img/2020/2020-04-09-edit-domain.gif" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-edit-domain.gif" class="tooltippic" />
+ </a>
+
+
+
+<p>The data is now ready to be processed by Time Slice.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-05.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-05.png" class="sidework" />
+</a>
+
+
+
+<a href="/blog_img/2020/2020-04-09-time-slice.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-time-slice.png" class="tooltippic" />
+ </a>
+
+
+
+<p>The top indicates the currently selected slice of data. You can change the interval by interacting with the histogram, or by adjusting the start and end dates directly below. Let&rsquo;s select a day&rsquo;s slice between the 25th and 26th January 2020.</p>
+
+<p>With a click of the play button, the slice moves, and the data output updates accordingly. To verify that it works, connect a Data Table, and see it in action.</p>
+
+<h3 id="transpose-part-ii">Transpose: part II</h3>
+
+<p>Make sure to stop the Time Slice playback before proceeding. We&rsquo;re almost at the finish line; we just need to transform the data back into its original form. To do so, connect another Transpose widget.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-06.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-06.png" class="sidework" />
+</a>
+
+
+
+<p>Under <em>Future names</em> select <em>Generic</em>, which will name the new column <em>Feature 1</em>.</p>
+
+<a href="/blog_img/2020/2020-04-09-transpose-2.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-transpose-2.png" class="tooltippic" />
+ </a>
+
+
+
+<p>Let&rsquo;s connect a Data Table for a final check of our data before putting it on a map.</p>
+
+<a href="/blog_img/2020/2020-04-09-table-2.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-table-2.png" />
+ </a>
+
+
+
+
+<p>Looking good!</p>
+
+<p>The final step entails connecting the Choropleth Map, selecting <em>Feature 1</em> as <em>Attribute</em>, and <em>Sum</em> as the <em>Agg</em>.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-07.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-07.png" class="sidework" />
+</a>
+
+
+
+<p>To observe the animation, open up both Choropleth and Time Slice at the same time.<br>
+Protip: pressing Ctrl/CMD+Up reveals the workflow, Ctrl/CMD+Down reveals widget windows.</p>
+
+<p>All that&rsquo;s left is to hit play.</p>
+
+<video  controls>
+    <source src="/blog_img/2020/2020-04-09-animation-choropleth.mp4" type="video/mp4">
+</video>
+<br><br>
+
+
+<p>Now that we&rsquo;re familiar with Time Slice, let&rsquo;s use it with Geo Map too. For bonus points, let&rsquo;s also remove countries with zero confirmed cases. That way, the number of points on the map will increase as the virus spreads throughout the world. For this, we&rsquo;ll use a Select Rows widget.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-08.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-08.png" class="sidework" />
+</a>
+
+
+
+<p>Under Conditions, select <em>Feature 1</em>, select <em>is greater than</em>, and type in <em>0</em>.</p>
+
+<a href="/blog_img/2020/2020-04-09-select-rows.gif" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-04-09-select-rows.gif" class="tooltippic" />
+ </a>
+
+
+
+<p>Add and connect a Geo Map widget. Zoom out, so you see the whole world, and on the left side, check <em>Freeze map</em>. This will prevented the map from jumping around as new points are added.</p>
+
+
+<a href="/blog_img/2020/2020-04-09-workflow-09.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-04-09-workflow-09.png" class="sidework" />
+</a>
+
+
+
+<p>Press play once again – let&rsquo;s see what we&rsquo;ve built!</p>
+
+<video  controls>
+    <source src="/blog_img/2020/2020-04-09-animation-geomap.mp4" type="video/mp4">
+</video>
+<br><br>
+
+
+<h2 id="where-from-here">Where from here?</h2>
+
+<p>In the blog, we explained how to turn Orange into an interactive data exploration tool for Covid-19 data! With a few widgets we were able to determine the change in time for the confirmed cases and plot the results on a map.</p>
+
+<p>Time Slice isn&rsquo;t the only widget in the Orange3-Timeseries add-on. Stay tuned for next week&rsquo;s blog, where we&rsquo;ll delve deeper into patterns emerging from time-series data.</p>
+
+<hr />
+
+<p>Orange is a multi-platform open-source machine learning and data visualization tool for beginners and experts alike. <a href="https://orange.biolab.si/download">Download Orange</a>, and load and explore your own data sets!</p>
+
+<p>In addition to a variety of learning materials posted online in the form of
+ <a href="https://orange.biolab.si/blog/">blog posts</a>, <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">tutorial videos</a>, we&rsquo;ve created a Discord server. <a href="https://discord.gg/FWrfeXV">Join the community, tell us what you think!</a></p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 07 Apr </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-04-09-covid-19-part-2/">Data Mining COVID-19 Epidemics: Part 2</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 02 Apr </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-04-02-covid-19-basic/">Data Mining Covid-19 Epidemics: Part 1</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 24 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-02-24-anaconda-navigator/">Installing with Anaconda Navigator</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

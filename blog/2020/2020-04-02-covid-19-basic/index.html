@@ -248,9 +248,10 @@
 
 <p>To get the numbers behind the above table, click &ldquo;Raw&rdquo;. Or this link: <a href="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv">https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv</a>. Save the page and you&rsquo;ll have a file to play with.</p>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-01-01.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-01-01.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-01-01.png 2x" class="sidework" />
- </a>
+</a>
 
 
 Easier still, Orange&rsquo;s File widget can load the data directly from the web, and handles a basic .csv file (for more fine-grained options, use CSV File Import).
@@ -265,9 +266,10 @@ So, for starters, add the File widget to the canvas and copy the above link to t
 
 <h2 id="plot-the-usual-plots">Plot the usual plots</h2>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-01-02.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-01-02.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-01-02.png 2x" class="sidework" />
- </a>
+</a>
 
 
 Connect the File to a Line Plot widget to see the graph. By default, Line Plot shows means and ranges, while we are interested in raw lines. Let&rsquo;s click the checkboxes accordingly.</p>
@@ -288,9 +290,10 @@ Connect the File to a Line Plot widget to see the graph. By default, Line Plot s
 
 The curve that grows rapidly but then flattens out &ndash; is probably China, right? To check this, select it. It may be hard to click the curve, so select it by dragging a line across it.</p>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-01-03.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-01-03.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-01-03.png 2x" class="sidework" />
- </a>
+</a>
 
 
 Then, connect the Line Plot widget to Data Table, and it will show the data for this curve. You&rsquo;ll learn that this is, of course, the Hubei province – where it all started.</p>
@@ -302,9 +305,10 @@ Then, connect the Line Plot widget to Data Table, and it will show the data for 
 
 What are the fast-rising curves? Select them by dragging a line across them, and check the Data Table widget: these are the US, Iran, Italy, Spain, Germany and France.</p>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-01-04.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-01-04.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-01-04.png 2x" class="sidework" />
- </a>
+</a>
 
 
 We can do it the other way around: connect File to Data Table and Data Table to Line Plot, such that the Data Table sends its selected subset of data.</p>
@@ -318,9 +322,10 @@ In the Data Table, you can now find and click your favourite country. Line Plot 
 
 <p>Well, the latter is a bit difficult; there is no data about the continent. There&rsquo;s a trick, though.</p>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-01-05.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-01-05.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-01-05.png 2x" class="sidework" />
- </a>
+</a>
 
 
 Replace the Data Table widget with a Scatter Plot widget, and choose Long and Lat for x and y respectively. Zoom in on Europe and select the points by dragging across them. Line Plot will highlight the curves belonging to the countries chosen in the Scatter Plot.
@@ -340,9 +345,10 @@ Replace the Data Table widget with a Scatter Plot widget, and choose Long and La
 <p>Let&rsquo;s solve the problem of negligible curves for small countries. This is not just about populations: the biggest problem is that confirmed cases are the result of testing, and testing strategies vary by country. Icelanders and Koreans test like crazy, while the number of tests in the US was (initially) so small it was comparable to that of Slovenia (and with it, the number of confirmed cases). The number of tests could thus <strong>normalize</strong> the number of confirmed cases, but this wouldn&rsquo;t do either; the testing isn&rsquo;t equivalent – some countries test more at random, while others save tests for groups at greater risk. And regardless, exact data about the number of tests is not readily available.</p>
 
 <p>So, let&rsquo;s fallback to the number of cases per million inhabitants. Neither this nor the population of countries are present in the data provided by John Hopkins University. We do, however, have another data set at arm&rsquo;s reach: the population of countries (for year 2015) appears in the Worldbank&rsquo;s Human development index (HDI) data.
-<a href="/blog_img/2020/2020-04-02-workflow-02-01.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-01.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-01.png 2x" class="sidework" />
- </a>
+</a>
 
 
 To load it, use the Datasets widget, find and double-click the HDI data set.
@@ -352,9 +358,10 @@ To load it, use the Datasets widget, find and double-click the HDI data set.
 
 
 Now we&rsquo;re working with two data sets.
-<a href="/blog_img/2020/2020-04-02-workflow-02-02.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-02.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-02.png 2x" class="sidework" />
- </a>
+</a>
 
 
 Let&rsquo;s merge them using the Merge Data widget: connect both the File widget (with the John Hopkins data), and the Datasets widget (with the HDI data) to Merge Data. Make sure to match the &ldquo;Country/Region&rdquo; feature in COVID-19 data with the &ldquo;Country&rdquo; feature in HDI. It is also important to connect the widgets in this order, so File provides the main data and the Datasets widget augments it with additional annotation columns. If you do it incorrectly, double-click the connections to fix it.</p>
@@ -362,9 +369,10 @@ Let&rsquo;s merge them using the Merge Data widget: connect both the File widget
 <p>The match is imperfect: some countries appear with different names, for instance, &ldquo;<em>Russia</em>&rdquo; from John Hopkins doesn&rsquo;t match the &ldquo;<em>Russian Federation</em>&rdquo; from HDI, and the John Hopkin&rsquo;s &ldquo;<em>US</em>&rdquo; and doesn&rsquo;t match HDI&rsquo;s &ldquo;<em>United States</em>&rdquo;.</p>
 
 <p>The population of Liechtenstein in millions with one decimal is 0.0; similar for Palau.
-<a href="/blog_img/2020/2020-04-02-workflow-02-03.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-03.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-03.png 2x" class="sidework" />
- </a>
+</a>
 
 
 To remove countries with unknown or zero population, we continue with Select Rows, where we set the condition &ldquo;Total Population (millions) 2015 is greater than 0&rdquo;.
@@ -375,9 +383,10 @@ To remove countries with unknown or zero population, we continue with Select Row
 </p>
 
 <p>Now for some constructive business.
-<a href="/blog_img/2020/2020-04-02-workflow-02-04.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-04.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-04.png 2x" class="sidework" />
- </a>
+</a>
 
 
 To get the number of cases on some particular day, we use the Feature Constructor widget, where we can input a formula to compute new data columns. In &ldquo;New&rdquo; we select Numeric, type <code>cases per million</code> as the name of the new column, Select Feature &ldquo;3_29_20&rdquo; (or whichever date we&rsquo;d like), add <code>/</code>, and then select &ldquo;Total_Population__millions__2015&rdquo;.
@@ -391,9 +400,10 @@ As a shortcut, you can just copy <code>_3_29_20 / Total_Population__millions__20
 
 
 <p>Things got crowded, so perhaps we can remove some columns.
-<a href="/blog_img/2020/2020-04-02-workflow-02-05.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-02-05.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-05.png 2x" class="sidework" />
- </a>
+</a>
 
 
 We add Select Columns, open it, and remove all columns we don&rsquo;t need right now. We can just select all features (Ctrl-A or Cmd-A) and drag them to the left, and then drag &ldquo;cases per million&rdquo; back to features.
@@ -405,9 +415,10 @@ We add Select Columns, open it, and remove all columns we don&rsquo;t need right
 
 <p>Finally, add and connect a Data Table.</p>
 
-<a href="/blog_img/2020/2020-04-02-workflow-1-day.png" class="blog-image_"> 
+
+<a href="/blog_img/2020/2020-04-02-workflow-1-day.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-1-day.png 2x" class="sidework" />
- </a>
+</a>
 
 
 
@@ -464,9 +475,10 @@ We add Select Columns, open it, and remove all columns we don&rsquo;t need right
 
 <p>Comparing this data with the World Bank&rsquo;s data is great because it allows us to relate the epidemiological data to data about particular countries.</p>
 
-<p><a href="/blog_img/2020/2020-04-02-workflow-02-07.png" class="blog-image_"> 
+<p>
+<a href="/blog_img/2020/2020-04-02-workflow-02-07.png" class="blog-image_">
       <img srcset="/blog_img/2020/2020-04-02-workflow-02-07.png 2x" class="sidework" />
- </a>
+</a>
 
 
 In Select Columns, we removed most of the features. Bring back all those that come from HDI. Now connect, say, a Scatter Plot and observe the relation between the number of cases per million and the number of physicians per ten thousand, which is the closest approximation to the capabilities of health systems.</p>
@@ -670,6 +682,15 @@ s.setAttribute('data-timestamp', +new Date());
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 07 Apr </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-04-09-covid-19-part-2/">Data Mining COVID-19 Epidemics: Part 2</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 02 Apr </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-04-02-covid-19-basic/">Data Mining Covid-19 Epidemics: Part 1</a>
@@ -682,15 +703,6 @@ s.setAttribute('data-timestamp', +new Date());
                             <div class="col-md-2"><a class="sitemap-sub"> 24 Feb </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-02-24-anaconda-navigator/">Installing with Anaconda Navigator</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 08 Feb </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: orange" href="/blog/2020/2020-02-08-lecture-notes/">Orange Lecture Notes</a>
                             </div>
                             </div>
                             </li>

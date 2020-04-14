@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/blog/2020/2020-04-09-covid-19-part-2/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-04-02-covid-19-basic/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
@@ -1232,7 +1237,7 @@
   
   <url>
     <loc>/categories/addons/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1334,7 +1339,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1386,7 +1391,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1520,7 +1525,7 @@
   
   <url>
     <loc>/categories/covid-19/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1860,7 +1865,7 @@
   
   <url>
     <loc>/categories/geo/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2327,7 +2332,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2950,7 +2955,7 @@
   
   <url>
     <loc>/categories/visualization/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

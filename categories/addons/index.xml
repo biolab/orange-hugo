@@ -6,10 +6,21 @@
     <description>Recent content in Addons on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Sep 2018 07:32:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/addons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Mining COVID-19 Epidemics: Part 2</title>
+      <link>/blog/2020/2020-04-09-covid-19-part-2/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-04-09-covid-19-part-2/</guid>
+      <description>Previously on Data Mining COVID-19 Epidemics: Part 1: we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t dirtied your hands with it yet, check that out first.
+In this post, we&amp;rsquo;ll try putting the data on a map. We&amp;rsquo;ll also expand on the &amp;ldquo;data mining is interactive&amp;rdquo; mantra by creating some animations showing the epidemics spread throughout the world.
+Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description>
+    </item>
     
     <item>
       <title>Orange in Space</title>
