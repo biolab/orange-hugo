@@ -22,8 +22,8 @@
                             <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>                            
                         {{else}}
                             {{ if (eq .Name "Donate") }}
-                            <li class="nav-item">
-                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
                         </li>
                             {{else}}
                             <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>

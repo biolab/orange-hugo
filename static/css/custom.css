@@ -70,7 +70,7 @@ h6, .h6 {
 
 .btn-warning:hover {
     color: #fff;
-    background-color: #ffbc44;
+    background-color: #ffbc44 !important;
     border: solid 2px;
     border-color: #ffbc44;
 }
@@ -637,8 +637,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .donate {
     font-size: 18px;
-    border: 2px solid #e8e8e8;
-    background-color: #efefef;
+    color: white !important;
     margin-left: 15px;
     padding: 6px 12px !important;
     margin-top: 7px !important;
@@ -648,15 +647,6 @@ a.donate:visited, a.donate:focus {
     border: 2px solid #e8e8e8 !important;
     background-color: #efefef !important;
     color: #444444 !important;
-}
-a.donate:active {
-    box-shadow: none !important;
-}
-a.donate:hover {
-    color: #fff !important;
-    background-color: #E19C14 !important;
-    border: solid 2px !important;
-    border-color: #d99614 !important;
 }
 @media (max-width: 990px) {
     .navbar-header {
