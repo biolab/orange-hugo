@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/blog/2020/2020-4-015-covid-19-part-3/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-04-09-covid-19-part-2/</loc>
     <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
@@ -1237,7 +1242,7 @@
   
   <url>
     <loc>/categories/addons/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1339,7 +1344,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1391,7 +1396,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1525,7 +1530,7 @@
   
   <url>
     <loc>/categories/covid-19/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2332,7 +2337,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2870,7 +2875,7 @@
   
   <url>
     <loc>/categories/time/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2912,6 +2917,12 @@
   
   <url>
     <loc>/widget-catalog/visualize/treeviewer/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/trends/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -2961,7 +2972,7 @@
   
   <url>
     <loc>/categories/visualization/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

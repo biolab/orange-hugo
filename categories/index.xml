@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Addons</title>
       <link>/categories/addons/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/addons/</guid>
       <description></description>
@@ -212,7 +212,7 @@
     <item>
       <title>Covid 19</title>
       <link>/categories/covid-19/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/covid-19/</guid>
       <description></description>
@@ -1229,7 +1229,7 @@
     <item>
       <title>Time</title>
       <link>/categories/time/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/time/</guid>
       <description></description>
@@ -1250,6 +1250,15 @@
       <pubDate>Fri, 11 Aug 2017 08:59:54 +0000</pubDate>
       
       <guid>/categories/tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trends</title>
+      <link>/categories/trends/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/trends/</guid>
       <description></description>
     </item>
     
@@ -1292,7 +1301,7 @@
     <item>
       <title>Visualization</title>
       <link>/categories/visualization/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/visualization/</guid>
       <description></description>
