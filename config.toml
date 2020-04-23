@@ -56,7 +56,7 @@ disqusShortname = "orange-4"
     weight = -90
     
   [[menu.main]]
-    name = "Training"
+    name = "Workshops"
     url = "/training/"
     weight = -80
 
