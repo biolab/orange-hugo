@@ -88,7 +88,11 @@ Inputs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/time-series/as_timeseries/</guid>
-      <description>../A../s../ ../T../i../m../e../s../e../r../i../e../s../ ../=../=../=../=../=../=../=../=../=../=../=../=../=../ ../ ../R../e../i../n../t../e../r../p../r../e../t../ ../a../ ../../../T../a../b../l../e../../../ ../o../b../j../e../c../t../ ../a../s../ ../a../ ../[../T../i../m../e../s../e../r../i../e../s../]../(../)../ ../o../b../j../e../c../t../&amp;hellip;/ ../ ../../../I../n../p../u../t../s../../../ ../ ../-../ ../D../a../t../a../:../ ../A../n../y../ ../d../a../t../a../ ../t../a../b../l../e../&amp;hellip;/ ../ ../../../O../u../t../p../u../t../s../../../ ../ ../-../ ../T../i../m../e../ ../s../e../r../i../e../s../:../ ../D../a../t../a../ ../t../a../b../l../e../ ../r../e../i../n../t../e../r../p../r../e../t../e../d../ ../a../s../ ../t../i../m../e../ ../s../e../r../i../e../s../&amp;hellip;/ ../ ../T../h../i../s../ ../w../i../d../g../e../t../ ../r../e../i../n../t../e../r../p../r../e../t../s../ ../a../n../y../ ../d../a../t../a../ ../t../a../b../l../e../ ../a../s../ ../a../ ../t../i../m../e../ ../s../e../r../i../e../s../,../ ../s../o../ ../i../t../ ../c../a../n../ ../b../e../ ../u../s../e../d../ ../w../i../t../h../ ../t../h../e../ ../r../e../s../t../ ../o../f../ ../t../h../e../ ../w../i../d../g../e../t../s../ ../i../n../ ../t../h../i../s../ ../a../d../d../-../o../n../&amp;hellip;/ ../I../n../ ../t../h../e../ ../w../i../d../g../e../t../,../ ../y../o../u../ ../c../a../n../ ../s../e../t../ ../w../h../i../c../h../ ../d../a../t../a../ ../a../t../t../r../i../b../u../t../e../ ../r../e../p../r../e../s../e../n../t../s../ ../t../h../e../ ../t../i../m../e../ ../v../a../r../i../a../b../l../e../&amp;hellip;/ .</description>
+      <description>As Timeseries Reinterpret a Table object as a Timeseries object.
+Inputs
+ Data: Any data table.  Outputs
+ Time series: Data table reinterpreted as time series.  This widget reinterprets any data table as a time series, so it can be used with the rest of the widgets in this add-on. In the widget, you can set which data attribute represents the time variable.
+ The time attribute, the values of which imply measurements&amp;rsquo; order and spacing.</description>
     </item>
     
     <item>
@@ -579,6 +583,18 @@ The resulting distance matrix can be fed further to Hierarchical Clustering for 
 Inputs
  Data: input dataset  The Distributions widget displays the value distribution of discrete or continuous attributes. If the data contains a class variable, distributions may be conditioned on the class.
 For discrete attributes, the graph displayed by the widget shows how many times (e.g., in how many instances) each attribute value appears in the data. If the data contains a class variable, class distributions for each of the attribute values will be displayed as well (like in the snapshot below).</description>
+    </item>
+    
+    <item>
+      <title>Document Embedding</title>
+      <link>/widget-catalog/text-mining/documentembedding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/documentembedding/</guid>
+      <description>Document Embedding Embeds documents from input corpus into vector space by using pretrained fastText models described in E. Grave, P. Bojanowski, P. Gupta, A. Joulin, T. Mikolov, Learning Word Vectors for 157 Languages. Proceedings of the International Conference on Language Resources and Evaluation, 2018.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Corpus with new features appended.  Document Embedding parses ngrams of each document in corpus, obtains embedding for each ngram using pretrained model for chosen language and obtains one vector for each document by aggregating ngram embeddings using one of offered aggregators.</description>
     </item>
     
     <item>
@@ -1173,10 +1189,10 @@ Inputs
     
     <item>
       <title>Model Evaluation</title>
-      <link>/widget-catalog/time-series/model_evaluation/</link>
+      <link>/widget-catalog/time-series/model_evaluation_w/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/time-series/model_evaluation/</guid>
+      <guid>/widget-catalog/time-series/model_evaluation_w/</guid>
       <description>Model Evaluation Evaluate different time series&amp;rsquo; models.
 Inputs
  Time series: Time series as output by As Timeseries widget. Time series model(s): The time series model(s) to evaluate (e.g. VAR or ARIMA).  Evaluate different time series&amp;rsquo; models. by comparing the errors they make in terms of: root mean squared error (RMSE), median absolute error (MAE), mean absolute percent error (MAPE), prediction of change in direction (POCID), coefficient of determination (R²), Akaike information criterion (AIC), and Bayesian information criterion (BIC).</description>
@@ -1196,10 +1212,10 @@ Inputs
     
     <item>
       <title>Moving Transform</title>
-      <link>/widget-catalog/time-series/moving_transform/</link>
+      <link>/widget-catalog/time-series/moving_transform_w/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/time-series/moving_transform/</guid>
+      <guid>/widget-catalog/time-series/moving_transform_w/</guid>
       <description>Moving Transform Apply rolling window functions to the time series. Use this widget to get a series&amp;rsquo; mean.
 Inputs
  Time series: Time series as output by As Timeseries widget.  Outputs
@@ -1404,10 +1420,10 @@ Outputs
     
     <item>
       <title>Periodogram</title>
-      <link>/widget-catalog/time-series/periodogram/</link>
+      <link>/widget-catalog/time-series/periodogram_w/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/time-series/periodogram/</guid>
+      <guid>/widget-catalog/time-series/periodogram_w/</guid>
       <description>Periodogram Visualize time series&amp;rsquo; cycles, seasonality, periodicity, and most significant periods.
 Inputs
  Time series: Time series as output by As Timeseries widget.  In this widget, you can visualize the most significant periods of the time series.
@@ -1949,6 +1965,19 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s) Learners: learning algorithm Aggregate: model aggregation method  Outputs
  Learner: aggregated (stacked) learning algorithm Model: trained model  Stacking is an ensemble method that computes a meta model from several base models. The Stacking widget has the Aggregate input, which provides a method for aggregating the input models. If no aggregation input is given the default methods are used.</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>/widget-catalog/text-mining/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/statistics/</guid>
+      <description>Statistics Create new statistic variables for documents.
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Corpus: Corpus with additional attributes.  Statistics is a feature constructor widget that adds simple document statistics to a corpus. It supports both standard statistical measures and user-defined variables.
+ Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side.</description>
     </item>
     
     <item>

@@ -1,10 +1,10 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Periodogram</title>
+    <title>Orange Data Mining - Statistics</title>
 
     
     
-    <meta property="og:title" content="Periodogram">
+    <meta property="og:title" content="Statistics">
     
     
     
@@ -162,15 +162,15 @@
                     
                         
                             
-                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
                             
                         
                     
                     
                         
                             
-                            <li class="nav-item">
-                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
                         </li>
                             
                         
@@ -1025,6 +1025,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/documentembedding">
+                      <div class="reference internal" style="cursor: pointer;" >Document Embedding</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/similarityhashing">
                       <div class="reference internal" style="cursor: pointer;" >Similarity Hashing</div>
                       </a>
@@ -1090,6 +1097,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/duplicatedetection">
                       <div class="reference internal" style="cursor: pointer;" >Duplicate Detection</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/statistics">
+                      <div class="reference internal" style="cursor: pointer;" >Statistics</div>
                       </a>
                   </li>
                   
@@ -1516,7 +1530,7 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/time-series/moving_transform">
+                      <a href="/widget-catalog/time-series/moving_transform_w">
                       <div class="reference internal" style="cursor: pointer;" >Moving Transform</div>
                       </a>
                   </li>
@@ -1530,7 +1544,7 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/time-series/periodogram">
+                      <a href="/widget-catalog/time-series/periodogram_w">
                       <div class="reference internal" style="cursor: pointer;" >Periodogram</div>
                       </a>
                   </li>
@@ -1572,7 +1586,7 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/time-series/model_evaluation">
+                      <a href="/widget-catalog/time-series/model_evaluation_w">
                       <div class="reference internal" style="cursor: pointer;" >Model Evaluation</div>
                       </a>
                   </li>
@@ -1640,30 +1654,58 @@
                 <div class="content privacy padding-doc single-widget docscontent">
                     
 
-<h1 id="periodogram">Periodogram</h1>
+<h1 id="statistics">Statistics</h1>
 
-<p>Visualize time series&rsquo; cycles, seasonality, periodicity, and most significant periods.</p>
+<p>Create new statistic variables for documents.</p>
 
 <p><strong>Inputs</strong></p>
 
 <ul>
-<li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
+<li>Corpus: A collection of documents.</li>
 </ul>
 
-<p>In this widget, you can visualize the most significant periods of the time series.</p>
+<p><strong>Outputs</strong></p>
 
-<p><img src="../images/periodogram-stamped.png" alt="" /></p>
+<ul>
+<li>Corpus: Corpus with additional attributes.</li>
+</ul>
+
+<p><strong>Statistics</strong> is a feature constructor widget that adds simple document statistics to a corpus. It supports both standard statistical measures and user-defined variables.</p>
+
+<p><img src="../images/statistics-stamped.png" alt="" /></p>
 
 <ol>
-<li>Select the series to calculate the periodogram for.</li>
-<li>See the periods and their respective relative power spectral density estimates.</li>
+<li><p>Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side. Feature options are:</p>
+
+<ul>
+<li>Words count: number of words in the document.</li>
+<li>Characters count: number of characters in the document.</li>
+<li>N-grams count: number of n-grams. Define n-grams in [Preprocess Text], otherwise only unigrams will be reported.</li>
+<li>Average word length: ratio between character count and the number of words</li>
+<li>Punctuations count: number of punctuations</li>
+<li>Capitals count: number of capital letters</li>
+<li>Vowels count: number of vowels. The default is &lsquo;a, e, i, o, u&rsquo;, but the user can add her own.</li>
+<li>Consonants count: number of consonants. Default is given, but the user can adjust it.</li>
+<li>Per cent unique words: ratio of unique words to all the words (types/tokens).</li>
+<li>Starts with: number of times a token begins with the specified sequence.</li>
+<li>Ends with: number of times a token ends with the specified sequence.</li>
+<li>Contains: number of times a specified sequence is in the token.</li>
+<li>Regex: number of times the provided regular expression matches the token.</li>
+<li>POS tag: count specified POS tags. Requires POS tagged tokens from <a href="../preprocesstext/">Preprocess Text</a>. List of Tree POS tags for English can be found <a href="https://courses.washington.edu/hypertxt/csar-v02/penntable.html">here</a>.</li>
+</ul></li>
+
+<li><p>Press Apply to output corpus with new features.</p></li>
+
+<li><p>Status line with help on the left and input and output on the right.</p></li>
 </ol>
 
-<p>Periodogram for non-equispaced series is calculated using Lomb-Scargle method.</p>
+<h2 id="example">Example</h2>
 
-<h4 id="see-also">See also</h4>
+<p>Here is a simple example how <strong>Statistics</strong> widget works. As it is a basic feature construction widget, it can be used directly after <a href="corpus-widget.md">Corpus</a>. We have added a couple of features, namely word count, character count, percent unique words and number of words containing &lsquo;oran&rsquo;. We can observe the table with additional columns in a <a href="https://orange-visual-programming.readthedocs.io/widgets/data/datatable.html">Data Table</a>.</p>
 
-<p><a href="../correlogram/">Correlogram</a></p>
+<p>We can also use the output of Statistics for predictive modeling with <a href="https://orange-visual-programming.readthedocs.io/widgets/evaluate/testandscore.html">Test and Score</a>. Normally, however, we would use Statistics only to enhance features from the <a href="bagofwords-widget.md">Bag of Words</a> widget. Some features require POS tagged tokens, which can be created with <a href="../preprocesstext/">Preprocess Text</a> widget.</p>
+
+<p><img src="../images/statistics-example.png" alt="" /></p>
 
                 </div>
             </div>

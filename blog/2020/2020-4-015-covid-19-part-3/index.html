@@ -166,15 +166,15 @@
                     
                         
                             
-                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Training</a></li>
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
                             
                         
                     
                     
                         
                             
-                            <li class="nav-item">
-                            <a class="btn donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
                         </li>
                             
                         
@@ -372,7 +372,7 @@ out_data.X[out_data.X==0]= np.nan
 
 <h3 id="scale-free-growth-with-quotient">Scale free growth with quotient</h3>
 
-<p>Difference widget also has the option to output the coefficients. It will allow us to observe the relative growth and compare countries directly.</p>
+<p>Difference widget also has the option to output the quotients. It will allow us to observe the relative growth and compare countries directly.</p>
 
 <a href="/blog_img/2020/2020-04-15-quot-settings.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-15-quot-settings.png" class="tooltippic" />
@@ -393,7 +393,7 @@ out_data.X[out_data.X==0]= np.nan
 
 <h3 id="moving-transform-and-smoothing">Moving transform and smoothing</h3>
 
-<p>Smoothing is usually a part of preprocessing, so insert the Moving Transform widget between As Timeseries and Quotient, and add some moving average transforms, like this:</p>
+<p>Smoothing is usually a part of preprocessing, so insert the Moving Transform widget between As Timeseries and Difference, and add some moving average transforms, like this:</p>
 
 
 <a href="/blog_img/2020/2020-04-15-wf3.png" class="blog-image_">

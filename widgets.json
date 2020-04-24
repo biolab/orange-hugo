@@ -1037,6 +1037,18 @@
     "url": "bagofwords-widget"
    },
    {
+    "title": "Document Embedding",
+    "category": "Text Mining",
+    "keywords": [
+     "embedding",
+     "document embedding",
+     "text"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Document Embedding.png",
+    "url": "documentembedding"
+   },
+   {
     "title": "Similarity Hashing",
     "category": "Text Mining",
     "keywords": [
@@ -1125,6 +1137,14 @@
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Duplicate Detection.png",
     "url": "duplicatedetection"
+   },
+   {
+    "title": "Statistics",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Statistics.png",
+    "url": "statistics"
    }
   ]
  ],
@@ -1645,7 +1665,7 @@
     "keywords": [],
     "background": "#33aaff",
     "icon": "widget-icons/Time Series-Moving Transform.png",
-    "url": "moving_transform"
+    "url": "moving_transform_w"
    },
    {
     "title": "Line Chart",
@@ -1661,7 +1681,7 @@
     "keywords": [],
     "background": "#33aaff",
     "icon": "widget-icons/Time Series-Periodogram.png",
-    "url": "periodogram"
+    "url": "periodogram_w"
    },
    {
     "title": "Correlogram",
@@ -1709,7 +1729,7 @@
     "keywords": [],
     "background": "#33aaff",
     "icon": "widget-icons/Time Series-Model Evaluation.png",
-    "url": "model_evaluation"
+    "url": "model_evaluation_w"
    },
    {
     "title": "Time Slice",
@@ -1730,7 +1750,12 @@
    {
     "title": "Difference",
     "category": "Time Series",
-    "keywords": [],
+    "keywords": [
+     "difference",
+     "derivative",
+     "quotient",
+     "percent change"
+    ],
     "background": "#33aaff",
     "icon": "widget-icons/Time Series-Difference.png",
     "url": "difference"

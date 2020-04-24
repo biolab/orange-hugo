@@ -1681,6 +1681,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/text-mining/documentembedding/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/text-mining/docmap/</loc>
   </url>
   
@@ -2176,7 +2180,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/time-series/model_evaluation/</loc>
+    <loc>/widget-catalog/time-series/model_evaluation_w/</loc>
   </url>
   
   <url>
@@ -2190,7 +2194,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/time-series/moving_transform/</loc>
+    <loc>/widget-catalog/time-series/moving_transform_w/</loc>
   </url>
   
   <url>
@@ -2412,7 +2416,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/time-series/periodogram/</loc>
+    <loc>/widget-catalog/time-series/periodogram_w/</loc>
   </url>
   
   <url>
@@ -2809,6 +2813,10 @@
     <loc>/categories/statistics/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/text-mining/statistics/</loc>
   </url>
   
   <url>
