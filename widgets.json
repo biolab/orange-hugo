@@ -1027,6 +1027,16 @@
     "url": "preprocesstext"
    },
    {
+    "title": "Corpus to Network",
+    "category": "Text Mining",
+    "keywords": [
+     "text, network"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Corpus to Network.png",
+    "url": "corpustonetwork"
+   },
+   {
     "title": "Bag of Words",
     "category": "Text Mining",
     "keywords": [
