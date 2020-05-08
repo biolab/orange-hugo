@@ -413,10 +413,10 @@ Inputs
     
     <item>
       <title>DBSCAN</title>
-      <link>/widget-catalog/unsupervised/dbscan/</link>
+      <link>/widget-catalog/unsupervised/DBSCAN/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/unsupervised/dbscan/</guid>
+      <guid>/widget-catalog/unsupervised/DBSCAN/</guid>
       <description>DBSCAN Groups items using the DBSCAN clustering algorithm.
 Inputs
  Data: input dataset  Outputs
@@ -1408,10 +1408,10 @@ Inputs
     
     <item>
       <title>PCA</title>
-      <link>/widget-catalog/unsupervised/pca/</link>
+      <link>/widget-catalog/unsupervised/PCA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/unsupervised/pca/</guid>
+      <guid>/widget-catalog/unsupervised/PCA/</guid>
       <description>PCA PCA linear transformation of input data.
 Inputs
  Data: input dataset  Outputs
