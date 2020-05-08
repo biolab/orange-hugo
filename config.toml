@@ -3,6 +3,8 @@ languageCode = "en-us"
 paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "orange-4"
+disablePathToLower = "True"
+
 [params]
   version = "3.25.0"
 
