@@ -1689,7 +1689,7 @@
 <ul>
 <li><strong>Fixed proportion of data</strong> returns a selected percentage of the entire data (e.g. 70% of all the data)</li>
 <li><strong>Fixed sample size</strong> returns a selected number of data instances with a chance to set <em>Sample with replacement</em>, which always samples from the entire dataset (does not subtract instances already in the subset). With replacement, you can generate more instances than available in the input dataset.</li>
-<li><a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross Validation</a> partitions data instances into complementary subsets, where you can select the number of folds (subsets) and which fold you want to use as a sample.</li>
+<li><a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross Validation</a> partitions data instances into the specified number of complementary subsets. Following a typical validation schema, all subsets except the one selected by the user are output as Data Sample, and the selected subset goes to Remaining Data. (Note: In older versions, the outputs were swapped. If the widget is loaded from an older workflow, it switches to compatibility mode.)</li>
 <li><a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">Bootstrap</a> infers the sample from the population statistic.</li>
 </ul></li>
 <li><em>Replicable sampling</em> maintains sampling patterns that can be carried
