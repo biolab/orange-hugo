@@ -1668,8 +1668,8 @@
 <p><strong>Inputs</strong></p>
 
 <ul>
-<li>Data: input data set</li>
-<li>Reference: a reference data set used in some preprocessing methods</li>
+<li>Data: required input data set</li>
+<li>Reference: optional reference data set used in some preprocessing methods</li>
 </ul>
 
 <p><strong>Outputs</strong></p>
@@ -1679,22 +1679,23 @@
 <li>Preprocessor: preprocessing methods</li>
 </ul>
 
-<p>The <strong>Preprocess Spectra</strong> widget applied several preprocessing methods to spectral data. You select the preprocessing method from the list and press the triangle button on the right to apply it. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</p>
+<p>The <strong>Preprocess Spectra</strong> widget applies a series of preprocessing methods to spectral data. You can select the preprocessing method from the list and press the triangle button on the right to visualize the result. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</p>
 
-<p>The input data for the selected method are displayed in the top plot, while the preprocessed data are displayed in the bottom plot.</p>
+<p>The input data for the selected method is displayed in the top plot, while the preprocessed data is shown in the bottom plot.</p>
 
 <p>You can observe each preprocessing step by pressing the triangle button on the right. To apply all of then and observe the final result plot, press <em>Final preview</em>. To output the data, press <em>Commit</em>.</p>
 
 <p>The reference data set is processed along the input data: only the first preprocessor uses the reference as on the input. If the reference needs to stay fixed, split your preprocessing methods among multiple <strong>Preprocess Spectra</strong> widgets and connect references accordingly.</p>
 
-<p><img src="../images/Preprocess-Spectra-stamped.png" alt="" /></p>
+<p>Below is an example of the <strong>Preprocess Spectra</strong> widget in action with some explanation of the main features.
+<img src="../images/Preprocess-Spectra-stamped.png" alt="" /></p>
 
 <ol>
-<li>Add a preprocessor.</li>
-<li>Preview plot with its editor menu like in the <a href="../spectra/">Spectra</a> widget.</li>
+<li>Add a preprocessor from the dropdown menu.</li>
+<li>Preview plot with its editor menu like in the <a href="../spectra/">Spectra</a> widget. The top plot shows the data before and the bottom after preprocessing.</li>
 <li>Preview a single preprocessor (the upper plot will show its input, the plot below its output).</li>
-<li>Apply all the steps and observe the final result of preprocessing. Change the number of spectra shown in the plot.</li>
-<li>Press <em>Commit</em> to output the preprocessed data.</li>
+<li>Observe the final result of preprocessing by clicking the <em>Final Preview</em> button. Change the number of spectra shown in the plot.</li>
+<li>Press <em>Commit</em> to calculate and output the preprocessed data.</li>
 </ol>
 
 <h2 id="preprocessing-methods">Preprocessing Methods</h2>
@@ -1705,7 +1706,16 @@
 <li>Gaussian smoothing: apply Gaussian smoothing.</li>
 <li>Savitzky-Golay Filter: apply Savitzky-Golay filter.</li>
 <li>Baseline Correction: correct the baseline</li>
-<li>Normalize Spectra: apply normalization.</li>
+<li>Normalize Spectra: apply normalization.
+
+<ul>
+<li>Vector normalization: calculates the L2 norm</li>
+<li>Min-Max normalization: divides each spectra with its Y<sub>max</sub> - Y<sub>min</sub> range</li>
+<li>Area normalization: provides several methods, also allows the selection of a specific range for the calculation</li>
+<li>Attribute normalization: normalize each spectrum with one of the available pre-calculated attributes</li>
+<li>Standard Normal Variate (SNV): \(\tilde{X}^{SNV}_i = (X_i - \tilde{X}_i) / \sigma_i\)</li>
+<li>Normalize by Reference: divides each spectrum with the reference spectrum on the input</li>
+</ul></li>
 <li>Integrate: compute integrals of selected area. Similar to the <strong>Integrate Spectra</strong> widget.</li>
 <li>PCA denoising: denoise the data with PCA.</li>
 <li>Transmittance to Absorbance: convert from transmittance to absorbance spectra.</li>

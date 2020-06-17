@@ -1525,8 +1525,8 @@ Inputs
       <guid>/widget-catalog/spectroscopy/preprocess-spectra/</guid>
       <description>Preprocess Spectra Construct a data preprocessing pipeline.
 Inputs
- Data: input data set Reference: a reference data set used in some preprocessing methods  Outputs
- Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applied several preprocessing methods to spectral data. You select the preprocessing method from the list and press the triangle button on the right to apply it. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</description>
+ Data: required input data set Reference: optional reference data set used in some preprocessing methods  Outputs
+ Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applies a series of preprocessing methods to spectral data. You can select the preprocessing method from the list and press the triangle button on the right to visualize the result.</description>
     </item>
     
     <item>
