@@ -7,7 +7,7 @@ type = "blog"
 thumbImage = "/blog_img/2020/2020-06-19-edit-domain-small.png"
 frontPageImage = "/blog_img/2020/2020-06-19-edit-domain-small.png"
 categories = ["edit", "domain", "data"]
-shortExcerpt = "How to handle your data with Edit Domain."
+shortExcerpt = "Handle your data with Edit Domain."
 longExcerpt = "How to handle your data with Edit Domain - rename, change type, merge, sort..."
 +++
 
