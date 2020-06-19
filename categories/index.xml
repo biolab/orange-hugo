@@ -230,7 +230,7 @@
     <item>
       <title>Data</title>
       <link>/categories/data/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/data/</guid>
       <description></description>
@@ -300,11 +300,29 @@
     </item>
     
     <item>
+      <title>Domain</title>
+      <link>/categories/domain/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Download</title>
       <link>/categories/download/</link>
       <pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate>
       
       <guid>/categories/download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edit</title>
+      <link>/categories/edit/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/edit/</guid>
       <description></description>
     </item>
     
