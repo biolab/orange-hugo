@@ -246,9 +246,15 @@
           </div>
         </div>
         <div class="form-group row">
+          <label class="col-sm-4 col-md-5 " for="select1" >Online course:</label>
+          <div class="col-sm-4">
+            <input type="checkbox" id="online" name="online" value="Yes" onclick="check()">
+          </div>
+        </div>
+        <div class="form-group row">
           <label  class="col-sm-4 col-md-5  col-form-label" for="colFormLabel">Location:</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" id="colFormLabel" name="location" placeholder="Enter location" required>
+            <input type="text" class="form-control" id="location" name="location" placeholder="Enter location" required>
           </div>
           
         </div>
@@ -353,17 +359,21 @@
 </section>
 
 <script type="text/javascript">
+    function check(){
+      $("#location").get(0).disabled = $("#online").get(0).checked;
+      calculate();
+    }
 
     const course = {'introduction': 800, 'textmining': 800, 'business': 1600};
     const day_costs = {'introduction': 100, 'textmining': 100, 'business': 200};
-    const travel = {'Europe': 500, 'Africa': 1000, 'Asia': 1000, 'North America': 1000, 'South America': 1500, 'Australia and Oceania': 2000};
+    const travel = {'online':0, 'Europe': 500, 'Africa': 1000, 'Asia': 1000, 'North America': 1000, 'South America': 1500, 'Australia and Oceania': 2000};
 
     function calculate(){
       var selected = $('input[type="radio"]:checked')[0].id;
 
 
 
-      var region = $("#select2").val();
+      var region = $("#online").get(0).checked ? 'online'  : $("#select2").val() 
       var num = $("#select1").val();
       var num_of_instructors = 0
       if (num <= 10){
@@ -385,9 +395,18 @@
       }
 
       $("#num_of_lecturers").val(num_of_instructors).html(num_of_instructors);
-      var cost = num*course[selected] + travel[region]*num_of_instructors + day_costs[selected]*num_of_instructors;
+      var cost = num*course[selected] + travel[region]*num_of_instructors 
+
+      
       var num_of_participants = num*course[selected];
-      var travel_exp =travel[region]*num_of_instructors + day_costs[selected]*num_of_instructors; 
+      if ($("#online").get(0).checked == false){
+        cost += day_costs[selected]*num_of_instructors;
+        var travel_exp =travel[region]*num_of_instructors + day_costs[selected]*num_of_instructors; 
+      }
+      else{
+        var travel_exp = 0
+      }
+      
 
       const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -403,12 +422,16 @@
       $participant.val(num_of_participants).html(formatter.format(course[selected]) + " € x "+ num);
 
       var $discount = $("#discount");
-      $discount.val(cost*0.15).html(formatter.format(cost*0.15) + " €");
+      $discount.val(cost*(1-discount_)).html(formatter.format(cost*0.15) + " €");
 
 
       var $travel = $("#travel");
-      $travel.val(cost).html(formatter.format(travel[region]+day_costs[selected]) + " € x "+num_of_instructors  );
-
+      if ($("#online").get(0).checked == false){
+        $travel.val(cost).html(formatter.format(travel[region]+day_costs[selected]) + " € x "+num_of_instructors  );
+      }else{
+         $travel.val(0).html(formatter.format(0) + " € "  );
+      }
+      
 
     }
 
