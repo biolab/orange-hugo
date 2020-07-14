@@ -1774,18 +1774,18 @@ h2.docs-subtitle {
 }
 
 
-img.sidework {
+img.workflow-screenshot {
     /*float: left;*/
     /*margin-left: -70px;*/
 }
 
-img.tooltippic {
+img.window-screenshot {
     /*float: right;*/
     /*margin-right: -70px;*/
   max-height: 500px;
 }
 
-img.tooltippic, img.sidework {
+img.window-screenshot, img.workflow-screenshot {
     /*max-height: 60px;*/
     /*max-width: 60px;*/
   display: block;
