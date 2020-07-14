@@ -274,8 +274,10 @@
             popup.style.display = "none";
         });
 
-        document.getElementById("recommended-download-win").addEventListener("click", openPopup);
-        document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
+        // disabled popup due to mailing server going down
+        // TODO fix mailtrain
+//         document.getElementById("recommended-download-win").addEventListener("click", openPopup);
+//         document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
 
         var popupShown = false;
         function openPopup() {
