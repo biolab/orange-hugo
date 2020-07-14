@@ -1,4 +1,6 @@
 {{ define "main"}}
+
+<!--//
 <div id="course-popup" class="popup">
     <div class="popup-content">
         <button id="btn-popup-close" class=" btn-popup-close">&times;</button>
@@ -12,6 +14,7 @@
             email course now</button>
     </div>
 </div>
+-->
 
 <section id="features" class="features section downloads ">
     <div class="container downloados" style="margin-top: 50px;">
@@ -260,34 +263,34 @@
         }
 
         // Popup
+        // const popupClose = document.getElementById("btn-popup-close");
+        // const popup = document.getElementById("course-popup");
 
-        const popupClose = document.getElementById("btn-popup-close");
-        const popup = document.getElementById("course-popup");
+        // document.onkeydown = function (e) {
+            // if (e.key === "Escape") {
+                // popup.style.display = "none";
+            // }
+        // };
 
-        document.onkeydown = function (e) {
-            if (e.key === "Escape") {
-                popup.style.display = "none";
-            }
-        };
+        // popupClose.addEventListener("click", () => {
+            // popup.style.display = "none";
+        // });
 
-        popupClose.addEventListener("click", () => {
-            popup.style.display = "none";
-        });
+        // document.getElementById("recommended-download-win").addEventListener("click", openPopup);
+        // document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
 
-        document.getElementById("recommended-download-win").addEventListener("click", openPopup);
-        document.getElementById("recommended-download-mac").addEventListener("click", openPopup);
+        // var popupShown = false;
+        // function openPopup() {
+            // if(popupShown) {
+                // return;
+            // }
+            // popupShown = true;
 
-        var popupShown = false;
-        function openPopup() {
-            if(popupShown) {
-                return;
-            }
-            popupShown = true;
+            // window.setTimeout(() => {
+                // popup.style.display = "block";
+            // }, 2000);
+        // };
 
-            window.setTimeout(() => {
-                popup.style.display = "block";
-            }, 2000);
-        };
     </script>
 </section>
 
