@@ -191,18 +191,32 @@
         <form action="https://service.biolab.si/contact/training" method="POST" id="send_mail">
 
         <div class="form-group row">
+          <label  class="col-sm-4 col-md-5  col-form-label" for="colFormLabel">Name:</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label  class="col-sm-4 col-md-5  col-form-label" for="colFormLabel">Affiliation:</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="affiliation" name="affiliation" placeholder="Enter the name of your company/university" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
           <label for="colFormLabelSm" class="col-sm-4 col-md-5 col-form-label col-form-label-sm">Course:</label>
           <div class="col-sm-7 col-12 col-md-7 col-lg-7">
             <div class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input training-radio-button" value="Introduction to Data Mining" 
+              <input type="radio" class="custom-control-input training-radio-button" value="Introduction to Data Mining"
               id="introduction" name="course" checked>
               <label class="custom-control-label" for="introduction">Introduction to Data Mining</label>
               <br>
-              <input type="radio" class="custom-control-input training-radio-button" value="Text Mining for Social Sciences" 
+              <input type="radio" class="custom-control-input training-radio-button" value="Text Mining for Social Sciences"
               id="textmining" name="course">
               <label class="custom-control-label" for="textmining">Text Mining for Social Sciences</label>
               <br>
-              <input type="radio" class="custom-control-input training-radio-button" value="Data Mining for Business" id="business" 
+              <input type="radio" class="custom-control-input training-radio-button" value="Data Mining for Business" id="business"
               name="course">
               <label class="custom-control-label" for="business">Data Mining for Business</label>
             </div>
@@ -232,7 +246,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-sm-4 col-md-5 " for="select2">Country:</label>
+          <label class="col-sm-4 col-md-5 " for="select2">Continent:</label>
           <div class="col-sm-7">
             <select class="form-control " id="select2" name="country">
               <option>Europe</option>
@@ -245,31 +259,25 @@
             </select>
           </div>
         </div>
+
         <div class="form-group row">
           <label class="col-sm-4 col-md-5 " for="select1" >Online course:</label>
           <div class="col-sm-4">
-            <input type="checkbox" id="online" name="online" value="Yes" onclick="check()">
+            <input type="checkbox" id="online" name="online" value="Yes" onclick="calculate()">
           </div>
         </div>
-        <div class="form-group row">
-          <label  class="col-sm-4 col-md-5  col-form-label" for="colFormLabel">Location:</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="location" name="location" placeholder="Enter location" required>
-          </div>
-          
-        </div>
-        
+
         <div class="form-group row">
           <label for="colFormLabelLg" class="col-sm-4 col-md-5  col-form-label col-form-label-lg">Email:</label>
           <div class="col-sm-7">
-            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" name="E-mail" placeholder="Enter mail for contact" required>
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" name="E-mail" placeholder="Enter a contact email" required>
             
           </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-4 col-md-5  col-form-label col-form-label-lg" for="message">Additional questions/requests:</label>
+            <label class="col-sm-4 col-md-5  col-form-label col-form-label-lg" for="message">Message:</label>
             <div class="col-sm-7 ">
-                <textarea class="form-control" id="message" name='message' rows="5" required style="max-width:none !important;"></textarea>
+                <textarea class="form-control" id="message" name='message' rows="5" required style="max-width:none !important; resize: vertical;" placeholder="Write us a message"></textarea>
             </div>
         </div>
 
@@ -322,7 +330,7 @@
         </div>
 
         <div class="form-group">
-            <div class="col-md-offset-5 col-md-6 col-sm-offset-4 col-sm-7">    
+            <div class="col-md-offset-5 col-md-6 col-sm-offset-4 col-sm-7">
               <div class="g-recaptcha" data-sitekey="6LeVIasUAAAAAAbB0ysHrMNa6h6qdFNhIBNzDP1P"></div>
                   <span id="captcha" style="color:red" />
             </div>
@@ -347,7 +355,7 @@
         <input class="form-control" type="hidden" id="price" name="price" >
         </form>
       </div>
-   
+
     <div class="col-sm-3 col-12 col-md-5 col-lg-5" >
         <img src="/images/training.jpg"  style="width: 300px; height: 400px;display:block;
     margin:auto;">
@@ -359,10 +367,6 @@
 </section>
 
 <script type="text/javascript">
-    function check(){
-      $("#location").get(0).disabled = $("#online").get(0).checked;
-      calculate();
-    }
 
     const course = {'introduction': 800, 'textmining': 800, 'business': 1600};
     const day_costs = {'introduction': 100, 'textmining': 100, 'business': 200};
