@@ -355,7 +355,9 @@
    {
     "title": "Distributions",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "histogram"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Distributions.png",
     "url": "distributions"
