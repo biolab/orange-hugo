@@ -6,10 +6,21 @@
     <description>Recent content in Text Mining on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/text-mining/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Detecting Story Arcs with Orange</title>
+      <link>/blog/2020/2020-07-27-story-arcs/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-07-27-story-arcs/</guid>
+      <description>Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.
+Related: Text Workshops in Ljubljana
+We will be using a corpus of Anderson&amp;rsquo;s tales, which is available in the Corpus widget (data set anderson.</description>
+    </item>
     
     <item>
       <title>Data Science Made Easy: How To Identify Hate Comments with AI</title>

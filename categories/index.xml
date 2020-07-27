@@ -201,6 +201,15 @@
     </item>
     
     <item>
+      <title>Corpus</title>
+      <link>/categories/corpus/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/corpus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Correlations</title>
       <link>/categories/correlations/</link>
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
@@ -489,6 +498,15 @@
     </item>
     
     <item>
+      <title>Heat Map</title>
+      <link>/categories/heat-map/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/heat-map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hierarchical Clustering</title>
       <link>/categories/hierarchical-clustering/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
@@ -629,6 +647,15 @@
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/leave-one-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Line Chart</title>
+      <link>/categories/line-chart/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/line-chart/</guid>
       <description></description>
     </item>
     
@@ -1128,6 +1155,15 @@
     </item>
     
     <item>
+      <title>Sentiment Analysis</title>
+      <link>/categories/sentiment-analysis/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/sentiment-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Server</title>
       <link>/categories/server/</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
@@ -1200,6 +1236,15 @@
     </item>
     
     <item>
+      <title>Story Arc</title>
+      <link>/categories/story-arc/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/story-arc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Summer School</title>
       <link>/categories/summer-school/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
@@ -1238,7 +1283,7 @@
     <item>
       <title>Text Mining</title>
       <link>/categories/text-mining/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/text-mining/</guid>
       <description></description>
