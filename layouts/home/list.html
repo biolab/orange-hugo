@@ -97,6 +97,19 @@
                 </div>
                 </a>
                 {{ end }}
+
+                {{ if .Params.link }}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    {{ range .Params.link }}
+                <a class="lightbox no-break-buttons" href="{{ .url }}" target="_blank" >
+                    <div class="link-buttons">
+                    <div class="feature-block fa fa-link jsonly"></div>
+                    <div class="feature-block feature-link">{{ .title }}</div>
+                </div>
+                </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    {{ end }}
+                {{ end }}
             </div>
         	</div>
         	<div class='content col-lg-6 col-md-6 col-sm-6 col-xs-12 feature-image {{if (eq .Params.thumbnailImagePosition "left") }}{{else }}panel-left{{ end }}'>
