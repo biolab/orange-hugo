@@ -8,6 +8,9 @@ disablePathToLower = "True"
 [params]
   version = "3.26.0"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [outputFormats]
   [outputFormats.workflow]
     mediaType = "application/json"
