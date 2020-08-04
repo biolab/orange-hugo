@@ -258,47 +258,27 @@
 
 
               <p>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the <a href="http://www.mju.gov.si/en/">Ministry of Public Administration</a>, this is only the first in a line of workshops on data science we are preparing for public sector employees.</p>
-
-<p><img src="/images/2017/10/FRI_2422.jpg" alt="" /></p>
-
+<p><img src="/images/2017/10/FRI_2422.jpg" alt=""></p>
 <p>For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on. The widget reads data from a Slovenian online survey service <a href="http://english.1ka.si/">OneClick Survey</a> and imports the results directly into Orange.</p>
-
 <p>We have prepared a test survey, which you can import by entering a public link to data into the widget. Here&rsquo;s the link: <a href="https://www.1ka.si/podatki/141025/72F5B3CC/">https://www.1ka.si/podatki/141025/72F5B3CC/</a> . Copy it into the Public link URL line in the widget. Once you press Enter, the widget loads the data and displays retrieved features, just like the File widget.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.29.10.png" alt="" />
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.29.10.png" alt="">
 EnKlik Anketa widget is similar to the File widget. It also enables changing the attribute type and role.</p>
-
 <p>The survey is in Slovenian, but we can use Edit Domain to turn feature names into English equivalent.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.30.53.png" alt="" /></p>
-
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.30.53.png" alt=""></p>
 <p>We renamed attributes in order as they appear in the survey. If you load the survey yourself, you can rename them just like you see here.</p>
-
 <p>As always, we can check the data in a Data Table. We have 41 respondents and 7 questions. Each respondent chose a nickname, which makes it easier to browse the data.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.33.25.png" alt="" /></p>
-
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.33.25.png" alt=""></p>
 <p>Now we can perform familiar clustering to uncover interesting groups in our data. Connect Distances to Edit Domain and Hierarchical Clustering to Distances.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.36.26.png" alt="" /></p>
-
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.36.26.png" alt=""></p>
 <p>Distance from Pipi and Chad to other respondents is very high, which makes them complete outliers.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.36.46.png" alt="" /></p>
-
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.36.46.png" alt=""></p>
 <p>We have two outliers, Pipi and Chad. One is an excessive sportsman (100 h of sport per week) and the other terminally ill (general health -1). Or perhaps they both simply didn&rsquo;t fill out the survey correctly. If we use the Data Table to filter out Pipi and Chad, we get a fairly good clustering.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.41.01.png" alt="" /></p>
-
-<p>We can use Box Plot, to observe what makes each cluster special. Connect Box Plot to Hierarchical Clustering (with the two groups selected), select grouping by_ Cluster_ and tick <em>Order by relevance</em>.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.41.50.png" alt="" />
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.41.01.png" alt=""></p>
+<p>We can use Box Plot, to observe what makes each cluster special. Connect Box Plot to Hierarchical Clustering (with the two groups selected), select grouping by_ Cluster_ and tick _Order by relevance_.</p>
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.41.50.png" alt="">
 Box Plot separates distributions by Cluster and orders attributes by how well they split selected subgroups.</p>
-
-<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.45.32.png" alt="" /></p>
-
+<p><img src="/images/2017/10/Screen-Shot-2017-10-26-at-12.45.32.png" alt=""></p>
 <p>The final workflow.</p>
-
 <p>Seems like our second cluster (C2) is the sporty one. If we are serving in the public administration, perhaps we can design initiatives targeting cluster C1 to do more sports. It is so easy to analyze the data in Orange!</p>
 
             </div>

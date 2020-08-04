@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Widget on Orange</title>
+    <title>widget on Orange</title>
     <link>/categories/widget/</link>
-    <description>Recent content in Widget on Orange</description>
+    <description>Recent content in widget on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Aug 2018 16:02:36 +0000</lastBuildDate>
@@ -48,7 +48,7 @@ Do we make each layer a widget and then stack them?</description>
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -153,7 +153,7 @@ Hub widget is the most versatile widget available so far.</description>
       <guid>/blog/2015/09/04/updated-widget-documentation/</guid>
       <description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
 Right click and select &amp;ldquo;Help&amp;rdquo; or press F1.
- 
+** **
 It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description>
     </item>
     
@@ -165,7 +165,7 @@ It’s easy to use. To learn more about a particular wigdet, click on the widget
       <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
       <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
 2-dimensional scatter plot visualization
-Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘_Start Evaluation_’ to begin ranking.</description>
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Orange</title>
@@ -109,7 +109,8 @@ If you are an avid Anaconda user and you wish to install Orange with Anaconda Na
       <description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 Related: Image Analytics Workshop at AIUCD 2018
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
- We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
+ \
+We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
     </item>
     
     <item>
@@ -118,8 +119,7 @@ Here I will show how to use it to display a set of images most similar to a sele
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/2019/2019-11-20-belgrade-workshop/</guid>
-      <description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.
- First, let us load the titanic data with the Datasets widget.</description>
+      <description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.</description>
     </item>
     
     <item>
@@ -156,7 +156,8 @@ Here I will show how to use it to display a set of images most similar to a sele
       
       <guid>/blog/2019/2019-08-27-pivot-table/</guid>
       <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
- Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+ \
+Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
 pandas.DataFrame.agg The first task is computing a simple mean for the column age.
 In pandas:</description>
     </item>
@@ -168,7 +169,8 @@ In pandas:</description>
       
       <guid>/blog/2019/2019-07-26-doctoral_summer_school/</guid>
       <description>For the second year in a row, the Orange team was a part of the Ljubljana Doctoral Summer School, which is organized by the School of Economics and Business, University of Ljubljana. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.
- One important lesson is comparing model accuracy.</description>
+ 
+\</description>
     </item>
     
     <item>
@@ -178,7 +180,8 @@ In pandas:</description>
       
       <guid>/blog/2019/2019-07-25-scorange/</guid>
       <description>Our entry to this year&amp;rsquo;s largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day.
- Single-cell genomics is driven on revolutionary technology from molecular biology that allows us to peek into inner workings of the individual cell. Single-cell datasets feature thousands of genes and cells and benefit from the analysis that integrates this data with other knowledge sources, like those on the classification of genes, lists of pathways, and sets of cell-type markers.</description>
+ \
+Single-cell genomics is driven on revolutionary technology from molecular biology that allows us to peek into inner workings of the individual cell. Single-cell datasets feature thousands of genes and cells and benefit from the analysis that integrates this data with other knowledge sources, like those on the classification of genes, lists of pathways, and sets of cell-type markers.</description>
     </item>
     
     <item>
@@ -197,7 +200,8 @@ In pandas:</description>
       
       <guid>/blog/2019/2019-06-28-bled-econference/</guid>
       <description>At the invitation of dr. Mirjana Kljajić, we participated in the 32nd Bled eConference. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
- We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
+ \
+We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
     </item>
     
     <item>
@@ -265,8 +269,10 @@ The widget generally accepts two inputs – Data and Learner. Data is the data s
       
       <guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid>
       <description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
-
- Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
+\
+ 
+\
+Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
     </item>
     
     <item>
@@ -460,7 +466,7 @@ We will prove it with a simple classification workflow. First, install Spectrosc
       <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
       <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
 Related: SQL for Orange
-Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+ Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
     </item>
     
     <item>
@@ -624,7 +630,7 @@ Yesterday, on August 7, we held a 3-hour workshop on text mining and text analys
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -978,7 +984,7 @@ We’ve all heard the saying, “Rules are meant to be broken.” Regardless of 
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     
@@ -1047,7 +1053,7 @@ First, we needed to preprocess the data a bit, since it came in a messy form of 
       <guid>/blog/2016/04/01/version-3-3-1-updates-and-features/</guid>
       <description>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&amp;rsquo;ve introduced some new functionalities and improved a few old ones.
 Here&amp;rsquo;s what&amp;rsquo;s new in this release:
- New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
+  New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
     </item>
     
     <item>
@@ -1098,7 +1104,7 @@ The first video explains how to do hierarchical clustering and select interesti
       
       <guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid>
       <description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
- Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
+  Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
     </item>
     
     <item>
@@ -1185,7 +1191,7 @@ Here we have some preliminary results that we&amp;rsquo;ve managed to gather in 
       <guid>/blog/2015/10/30/ghostbusters/</guid>
       <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
-Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
     </item>
     
     <item>
@@ -1261,7 +1267,7 @@ Hub widget is the most versatile widget available so far.</description>
       <guid>/blog/2015/09/04/updated-widget-documentation/</guid>
       <description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
 Right click and select &amp;ldquo;Help&amp;rdquo; or press F1.
- 
+** **
 It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description>
     </item>
     
@@ -1273,7 +1279,7 @@ It’s easy to use. To learn more about a particular wigdet, click on the widget
       <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
       <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
 2-dimensional scatter plot visualization
-Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘_Start Evaluation_’ to begin ranking.</description>
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
     </item>
     
     <item>
@@ -1481,7 +1487,7 @@ Actually, there was a lot of programming, but no Python or alike. The workshop w
       
       <guid>/blog/2014/04/29/viewing-images/</guid>
       <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
-Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
     </item>
     
     <item>
@@ -1656,7 +1662,7 @@ def entropy(*X): return = np.sum(-p * np.log2(p) if p &amp;gt; 0 else 0 for p in
       <description>This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of Google Summer of Code.
 The add-on will consist of a set of widgets, each with it&amp;rsquo;s own dedicated purpose, which can be seamlessly connected to provide most commonly used image preprocessing functionality.
 Here is a list of the widgets:
- Widget for viewing image files (add description)</description>
+ Widget for viewing image files (add description) Widget for resizing an image Widget for rotation/flipping of the image Widget for converting the color mode (RGB, HSV, Grayscale etc.</description>
     </item>
     
     <item>
@@ -1830,7 +1836,7 @@ Practically, this means that now you can install them without manual compiling o
       
       <guid>/blog/2011/09/07/3d-visualizations-in-orange/</guid>
       <description>Over the summer I worked (and still do) on several new 3D visualization widgets as well as a 3D plotting library they use, which will hopefully simplify making more widgets. The library is designed to be similar in terms of API to the new Qt plotting library Noughmad is working on.
-The library uses OpenGL 2&amp;frasl;3: since Khronos deprecated parts of the old OpenGL API (particularly immediate mode and fixed-function functionality) care has been taken to use only capabilities less likely to go away in the years to come.</description>
+The library uses OpenGL 2/3: since Khronos deprecated parts of the old OpenGL API (particularly immediate mode and fixed-function functionality) care has been taken to use only capabilities less likely to go away in the years to come.</description>
     </item>
     
     <item>
@@ -1996,9 +2002,9 @@ In the last morning of the camp in Bohinj we decided to use undercase_separated 
       
       <guid>/blog/2011/04/25/accepted-gsoc-2011-students-announced/</guid>
       <description>Accepted proposals/projects for Google Summer of Code 2011 have been announced. We got 3 students which will this year work on Orange:
- Marinka Žitnik: Matrix Factorization Techniques for Data Mining
- Miha Čančula: 2D visualization using PyQt
- Wencan Luo: Multi-label classification
+  Marinka Žitnik: Matrix Factorization Techniques for Data Mining
+  Miha Čančula: 2D visualization using PyQt
+  Wencan Luo: Multi-label classification
   Congrats to all accepted students. We are looking forward working with you. And for all other students: please apply again next year. Your proposals were good, but we just could not accept everybody.</description>
     </item>
     
@@ -2028,9 +2034,7 @@ In the last morning of the camp in Bohinj we decided to use undercase_separated 
       <guid>/blog/2011/03/28/data-loading-speedups/</guid>
       <description>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.
 Quick comparisons between the old new versions, measured on my computer:
- adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s.
- DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s.
- GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
+ adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s. DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s. GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
     </item>
     
     <item>

@@ -1659,29 +1659,19 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="neighbors">Neighbors</h1>
-
+                    <h1 id="neighbors">Neighbors</h1>
 <p>Compute nearest neighbors in data according to reference.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: An input data set.</li>
 <li>Reference: A reference data for neighbor computation.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Neighbors: A data table of nearest neighbors according to reference.</li>
 </ul>
-
 <p>The <strong>Neighbors</strong> widget computes nearest neighbors for a given reference and for a given distance measure. The reference can be either one instance or more instances. In the case with one reference widget outputs closest <code>n</code> instances from data where <code>n</code> is set by the <strong>Number of neighbors</strong> option in the widget. When reference contains more instances widget computes the combined distance for each data instance as a minimum of distances to each reference. Widget outputs <code>n</code> data instances with lowest combined distance.</p>
-
-<p><img src="../images/neighbours-stamped.png" alt="" /></p>
-
+<p><img src="../images/neighbours-stamped.png" alt=""></p>
 <ol>
 <li>Distance measure for computing neighbors. Supported measures are: Euclidean, Manhattan, Mahalanobis, Cosine, Jaccard, Spearman, absolute Spearman, Pearson, absolute Pearson.</li>
 <li>Number of neighbors on the output.</li>
@@ -1689,24 +1679,15 @@
 <li>Click <em>Apply</em> to commit the changes. To communicate changes automatically tick <em>Apply Automatically</em>.</li>
 <li>Status bar with access to widget help and information on the input and output data.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>In the first example, we used <em>iris</em> data and passed it to <strong>Neighbors</strong> and to <a href="../../data/datatable/">Data Table</a>. In <strong>Data Table</strong>, we selected an instance of iris, that will serve as our reference, meaning we wish to retrieve 10 closest examples to the select data instance. We connect <strong>Data Table</strong> to <strong>Neighbors</strong> as well.</p>
-
 <p>We can observe the results of neighbor computation in <strong>Data Table (1)</strong>, where we can see 10 closest images to our selected iris flower.</p>
-
-<p><img src="../images/neighbours-example1.png" alt="" /></p>
-
+<p><img src="../images/neighbours-example1.png" alt=""></p>
 <p>Now change the selection <strong>Data Table</strong> to multiple examples. As a result, we get instances with closest combined distances to the references. The method computes the combined distance as a minimum of distances to each reference.</p>
-
-<p><img src="../images/neighbours-example-multiple.png" alt="" /></p>
-
+<p><img src="../images/neighbours-example-multiple.png" alt=""></p>
 <p>Another example requires the installation of Image Analytics add-on. We loaded 15 paintings from famous painters with <strong>Import Images</strong> widget and passed them to <strong>Image Embedding</strong>, where we selected <em>Painters</em> embedder.</p>
-
 <p>Then the procedure is the same as above. We passed embedded images to <strong>Image Viewer</strong> and selected a painting from Monet to serve as our reference image. We passed the image to <strong>Neighbors</strong>, where we set the distance measure to <em>cosine</em>, ticked off <em>Exclude reference</em> and set the neighbors to 2. This allows us to find the actual closest neighbor to a reference painting and observe them side by side in <strong>Image Viewer (1)</strong>.</p>
-
-<p><img src="../images/neighbours-example2.png" alt="" /></p>
+<p><img src="../images/neighbours-example2.png" alt=""></p>
 
                 </div>
             </div>

@@ -1659,68 +1659,50 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="confusion-matrix">Confusion Matrix</h1>
-
+                    <h1 id="confusion-matrix">Confusion Matrix</h1>
 <p>Shows proportions between the predicted and actual class.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Evaluation results: results of testing classification algorithms</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: data subset selected from confusion matrix</li>
 <li>Data: data with the additional information on whether a data instance was selected</li>
 </ul>
-
 <p>The <a href="https://en.wikipedia.org/wiki/Confusion_matrix">Confusion Matrix</a> gives the number/proportion of instances between the predicted and actual class. The selection of the elements in the matrix feeds the corresponding instances into the output signal. This way, one can observe which specific instances were misclassified and how.</p>
-
 <p>The widget usually gets the evaluation results from <a href="../../evaluate/testandscore/">Test &amp; Score</a>; an example of the schema is shown below.</p>
-
-<p><img src="../images/ConfusionMatrix-stamped.png" alt="" /></p>
-
+<p><img src="../images/ConfusionMatrix-stamped.png" alt=""></p>
 <ol>
 <li>When evaluation results contain data on multiple learning algorithms, we have to choose one in the <em>Learners</em> box.
 The snapshot shows the confusion matrix for <a href="../../model/tree/">Tree</a> and <a href="../../model/naivebayes/">Naive Bayesian</a> models trained and tested on the <em>iris</em> data. The right-hand side of the widget contains the matrix for the naive Bayesian model (since this model is selected on the left). Each row corresponds to a correct class, while columns represent the predicted classes. For instance, four instances of <em>Iris-versicolor</em> were misclassified as <em>Iris-virginica</em>. The rightmost column gives the number of instances from each class (there are 50 irises of each of the three classes) and the bottom row gives the number of instances classified into each class (e.g., 48 instances were classified into virginica).</li>
 <li>In <em>Show</em>, we select what data we would like to see in the matrix.
-
 <ul>
 <li><strong>Number of instances</strong> shows correctly and incorrectly classified instances numerically.</li>
 <li><strong>Proportions of predicted</strong> shows how many instances classified as, say, <em>Iris-versicolor</em> are in which true class; in the table we can read the 0% of them are actually setosae, 88.5% of those classified as versicolor are versicolors, and 7.7% are virginicae.</li>
 <li><strong>Proportions of actual</strong> shows the opposite relation: of all true versicolors, 92% were classified as versicolors and 8% as virginicae.
-<img src="../images/ConfusionMatrix-propTrue.png" alt="" /></li>
-</ul></li>
+<img src="../images/ConfusionMatrix-propTrue.png" alt=""></li>
+</ul>
+</li>
 <li>In <em>Select</em>, you can choose the desired output.
-
 <ul>
 <li><strong>Correct</strong> sends all correctly classified instances to the output by selecting the diagonal of the matrix.</li>
 <li><strong>Misclassified</strong> selects the misclassified instances.</li>
 <li><strong>None</strong> annuls the selection.
 As mentioned before, one can also select individual cells of the table to select specific kinds of misclassified instances (e.g. the versicolors classified as virginicae).</li>
-</ul></li>
+</ul>
+</li>
 <li>When sending selected instances, the widget can add new attributes, such as predicted classes or their probabilities, if the corresponding options <em>Predictions</em> and/or <em>Probabilities</em> are checked.</li>
 <li>The widget outputs every change if <em>Send Automatically</em> is ticked. If not, the user will need to click <em>Send Selected</em> to commit the changes.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>The following workflow demonstrates what this widget can be used for.</p>
-
-<p><img src="../images/ConfusionMatrix-Schema.png" alt="" /></p>
-
+<p><img src="../images/ConfusionMatrix-Schema.png" alt=""></p>
 <p><a href="../../evaluate/testandscore/">Test &amp; Score</a> gets the data from <a href="../../data/file/">File</a> and two learning algorithms from <a href="../../model/naivebayes/">Naive Bayes</a> and <a href="../../model/tree/">Tree</a>. It performs cross-validation or some other train-and-test procedures to get class predictions by both algorithms for all (or some) data instances. The test results are fed into the <strong>Confusion Matrix</strong>, where we can observe how many instances were misclassified and in which way.</p>
-
 <p>In the output, we used <a href="../../data/datatable/">Data Table</a> to show the instances we selected in the confusion matrix. If we, for instance, click <em>Misclassified</em>, the table will contain all instances which were misclassified by the selected method.</p>
-
 <p>The <a href="../visualize/scatterplot.md">Scatter Plot</a> gets two sets of data. From the <a href="../../data/file/">File</a> widget it gets the complete data, while the confusion matrix sends only the selected data, misclassifications for instance. The scatter plot will show all the data, with bold symbols representing the selected data.</p>
-
-<p><img src="../images/ConfusionMatrix-Example.png" alt="" /></p>
+<p><img src="../images/ConfusionMatrix-Example.png" alt=""></p>
 
                 </div>
             </div>

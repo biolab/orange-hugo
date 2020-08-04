@@ -1659,58 +1659,39 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="interpolate">Interpolate</h1>
-
+                    <h1 id="interpolate">Interpolate</h1>
 <p>Interpolate spectra.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Points: a reference data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Interpolated Data: aligned dataset</li>
 </ul>
-
 <p>The <strong>Interpolate</strong> widget enables you to align datasets with different wavenumbers. It has automatic interpolation or you can provide the reference data set to align with.</p>
-
-<p><img src="../images/Interpolate-stamped.png" alt="" /></p>
-
+<p><img src="../images/Interpolate-stamped.png" alt=""></p>
 <ol>
 <li>Enable automatic interpolation: creates a new domain, which consequently enables interpolation of values on test data.</li>
 <li>Linear interval:
-
 <ul>
 <li>Min: minimum cutoff</li>
 <li>Max: maximum cutoff</li>
 <li>Delta: the difference between the cutoffs</li>
-</ul></li>
+</ul>
+</li>
 <li>Reference data: the data is aligned to the reference data</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>The first example shows how to use <strong>Interpolate</strong> to align the train and test data set of spectral data. We will use <a href="http://file.biolab.si/spectral_data/collagen-interpolate-train.tab">collagen-interpolate-train.tab</a> to train our model. Let us load the data with the <strong>File</strong> widget. Then connect it to <strong>Test &amp; Score</strong> and add a learner, say, <strong>Logistic Regression</strong>. The scores in <strong>Test &amp; Score</strong> look great.</p>
-
 <p>Now we would like to test on a separate data set, which has different wavenumbers. We will use <a href="http://file.biolab.si/spectral_data/collagen-interpolate-test.tab">collagen-interpolate-test.tab</a> for testing. If we connect this data directly to <strong>Test &amp; Score</strong> and select the option <em>Test on test data</em>, our results will be horrible. What has happened?</p>
-
 <p>Well, Orange couldn&rsquo;t find any similarity between the two datasets, since the wavenumbers differ. This is why we need to interpolate first, to align the two data sets to the same scale. I will insert the <strong>Interpolate</strong> widget between <strong>File - Test</strong> and <strong>Test &amp; Score</strong>. I will also provide the <strong>File - Train</strong> as the reference data set and select this as an option in <strong>Interpolate</strong>. Now the results in <strong>Test &amp; Score</strong> are much better.</p>
-
-<p><img src="../../images/Interpolate-Example2.png" alt="" /></p>
-
+<p><img src="../../images/Interpolate-Example2.png" alt=""></p>
 <p>The second use case is a tad more advanced. We will use <strong>Interpolate</strong> to determine how much granularity we can afford to lose in our measurement. Say we wish to perform a diagnostic much faster. Could we measure only every 10th wavenumber? Or every 50th?</p>
-
 <p>We will use the <em>Liver spectroscopy</em> data from the <strong>Datasets</strong> widget. Connect the widget to <strong>Interpolate</strong> and use the <em>Linear interval</em> option. The delta is set to 10. Then observe the performance of predictive models in <strong>Test &amp; Score</strong>. Use any classifier you want; we chose <strong>Logistic Regression</strong> and <strong>Random Forest</strong>. The AUC is quite high.</p>
-
 <p>Now, set the delta to, say, 50 and observe how the AUC changes. Not much. Try setting the delta to 100 or 150. The AUC is still high, which means the classifier is stable even at such a low resolution. This is a nice way to determine how much granularity you can afford to lose to be still able to achieve a good separation between class values.</p>
-
-<p><img src="../../images/Interpolate-Example2.png" alt="" /></p>
+<p><img src="../../images/Interpolate-Example2.png" alt=""></p>
 
                 </div>
             </div>

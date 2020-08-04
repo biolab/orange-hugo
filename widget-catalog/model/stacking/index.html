@@ -1659,45 +1659,31 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="stacking">Stacking</h1>
-
+                    <h1 id="stacking">Stacking</h1>
 <p>Stack multiple models.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 <li>Learners: learning algorithm</li>
 <li>Aggregate: model aggregation method</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: aggregated (stacked) learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p><strong>Stacking</strong> is an ensemble method that computes a meta model from several base models. The <strong>Stacking</strong> widget has the <strong>Aggregate</strong> input, which provides a method for aggregating the input models. If no aggregation input is given the default methods are used. Those are <strong>Logistic Regression</strong> for classification and <strong>Ridge Regression</strong> for regression problems.</p>
-
-<p><img src="../images/Stacking-stamped.png" alt="" /></p>
-
+<p><img src="../images/Stacking-stamped.png" alt=""></p>
 <ol>
 <li>The meta learner can be given a name under which it will appear in other widgets. The default name is “Stack”.</li>
 <li>Click <em>Apply</em> to commit the aggregated model. That will put the new learner in the output and, if the training examples are given, construct a new model and output it as well. To communicate changes automatically tick <em>Apply Automatically</em>.</li>
 <li>Access help and produce a report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>We will use <a href="../data/paintdata.md">Paint Data</a> to demonstrate how the widget is used. We painted a complex dataset with 4 class labels and sent it to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also provided three <a href="../../model/knn/">kNN</a> learners, each with a different parameters (number of neighbors is 5, 10 or 15). Evaluation results are good, but can we do better?</p>
-
 <p>Let&rsquo;s use <strong>Stacking</strong>. <strong>Stacking</strong> requires several learners on the input and an aggregation method. In our case, this is <a href="../../model/logisticregression/">Logistic Regression</a>. A constructed meta learner is then sent to <strong>Test &amp; Score</strong>. Results have improved, even if only marginally. <strong>Stacking</strong> normally works well on complex data sets.</p>
-
-<p><img src="../images/Stacking-Example.png" alt="" /></p>
+<p><img src="../images/Stacking-Example.png" alt=""></p>
 
                 </div>
             </div>

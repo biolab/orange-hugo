@@ -1659,58 +1659,41 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="document-embedding">Document Embedding</h1>
-
+                    <h1 id="document-embedding">Document Embedding</h1>
 <p>Embeds documents from input corpus into vector space by using pretrained
 <a href="https://fasttext.cc/docs/en/crawl-vectors.html">fastText</a> models described in
 E. Grave, P. Bojanowski, P. Gupta, A. Joulin, T. Mikolov,
 Learning Word Vectors for 157 Languages.
 Proceedings of the International Conference on Language Resources and Evaluation, 2018.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Corpus with new features appended.</li>
 </ul>
-
 <p><strong>Document Embedding</strong> parses ngrams of each document in corpus, obtains embedding
 for each ngram using pretrained model for chosen language and obtains one vector for each document by aggregating ngram embeddings using one of offered aggregators. Note that method will work on any ngrams but it will give best results if corpus is preprocessed such that ngrams are words (because model was trained to embed words).</p>
-
-<p><img src="../images/Document-Embedding-stamped.png" alt="" /></p>
-
+<p><img src="../images/Document-Embedding-stamped.png" alt=""></p>
 <ol>
 <li>Widget parameters:
-
 <ul>
 <li>Language: widget will use a model trained on documents in chosen language.</li>
 <li>Aggregator: operation to perform on ngram embeddings to aggregate them into a single document vector.</li>
-</ul></li>
+</ul>
+</li>
 <li>Cancel current execution.</li>
 <li>If <em>Apply automatically</em> is checked, changes in parameters are sent automatically. Alternatively press <em>Apply</em>.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>In first example, we will inspect how the widget works. Load <em>book-excerpts.tab</em> using <a href="../corpus-widget/">Corpus</a> widget and connect it to <strong>Document Embedding</strong>. Check the output data by connecting <strong>Document Embedding</strong> to <strong>Data Table</strong>. We see additional 300 features that we widget has appended.</p>
-
-<p><img src="../images/Document-Embedding-Example1.png" alt="" /></p>
-
+<p><img src="../images/Document-Embedding-Example1.png" alt=""></p>
 <p>In the second example we will try to predict document category. We will keep working on <em>book-excerpts.tab</em> loaded with <a href="../corpus-widget/">Corpus</a> widget and sent through <a href="../preprocesstext/">Preprocess Text</a> with default parameters. Connect <strong>Preprocess Text</strong> to <strong>Document Embedding</strong> to obtain features for predictive modelling. Here we set aggregator to Sum.</p>
-
 <p>Connect <strong>Document Embedding</strong> to <strong>Test and Score</strong> and also connect learner of choice to the left side of <strong>Test and Score</strong>. We chose SVM and changed kernel to Linear. <strong>Test and Score</strong> will now compute performance of each learner on the input. We can see that we achieved great results.</p>
-
 <p>Let&rsquo;s now inspect confusion matrix. Connect <strong>Test and Score</strong> to <strong>Confusion Matrix</strong>.
 Clicking on <em>Select Misclassified</em> will output documents that were misclassified. We can further inspect them by connecting <a href="../corpusviewer/">Corpus Viewer</a> to <strong>Confusion Matrix</strong>.</p>
-
-<p><img src="../images/Document-Embedding-Example2.png" alt="" /></p>
+<p><img src="../images/Document-Embedding-Example2.png" alt=""></p>
 
                 </div>
             </div>

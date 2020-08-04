@@ -1659,77 +1659,63 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="association-rules">Association Rules</h1>
-
+                    <h1 id="association-rules">Association Rules</h1>
 <p>Induction of association rules.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: Data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Matching Data: Data instances matching the criteria.</li>
 </ul>
-
 <p>This widget implements FP-growth <a href="https://en.wikipedia.org/wiki/Association_rule_learning">frequent pattern mining</a> algorithm [1] with bucketing optimization [2] for conditional databases of few items. For inducing classification rules, it generates rules for the entire itemset and skips the rules where the consequent does not match one of the class&rsquo; values.</p>
-
-<p><img src="../images/association-rules-stamped.png" alt="" /></p>
-
+<p><img src="../images/association-rules-stamped.png" alt=""></p>
 <ol>
-<li>Information on the data set.</li>
-<li>In <em>Find association rules</em> you can set criteria for rule induction:
-
+<li>
+<p>Information on the data set.</p>
+</li>
+<li>
+<p>In <em>Find association rules</em> you can set criteria for rule induction:</p>
 <ul>
 <li><strong>Minimal support</strong>: percentage of the entire data set covered by the entire rule (antecedent and consequent).</li>
 <li><strong>Minimal confidence</strong>: proportion of the number of examples which fit the right side (consequent) among those that fit the left side (antecedent).</li>
 <li><strong>Max. number of rules</strong>: limit the number of rules the algorithm generates. Too many rules can slow down the widget considerably.
 If <em>Induce classification (itemset → class) rules</em> is ticked, the widget will only generate rules that have a class value on the right-hand side (consequent) of the rule.
 If <em>Auto find rules is on</em>, the widget will run the search at every change of parameters. Might be slow for data sets with many attributes, so pressing <em>Find rules</em> only when the parameters are set is a good idea.</li>
-</ul></li>
-
-<li><p><em>Filter rules</em> by</p>
-
+</ul>
+</li>
+<li>
+<p><em>Filter rules</em> by</p>
 <ul>
-<li><p><strong>Antecedent</strong>:</p>
-
+<li>
+<p><strong>Antecedent</strong>:</p>
 <ul>
 <li><em>Contains</em>: will filter rules by matching space-separated <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> in antecedent items.</li>
 <li><em>Min. items</em>: minimum number of items that have to appear in an antecedent.</li>
 <li><em>Max. items</em>: maximum number of items that can appear in an antecedent.</li>
-</ul></li>
-
-<li><p><strong>Consequent</strong>:</p>
-
+</ul>
+</li>
+<li>
+<p><strong>Consequent</strong>:</p>
 <ul>
 <li><em>Contains</em>: will filter rules by matching space-separated regular expressions in consequent items.</li>
 <li><em>Min. items</em>: minimum number of items that have to appear in a consequent.</li>
 <li><em>Max. items</em>: maximum number of items that can appear in a consequent.</li>
-</ul></li>
-</ul></li>
-</ol>
-
+</ul>
+</li>
+</ul>
 <p>If <em>Apply these filters in search</em> is ticked, the widget will limit the rule generation only to rules that match the filters. If unchecked, all rules are generated, but only the matching are shown.</p>
-
-<ol>
-<li>If <em>Auto send selection is on</em>, data instances that match the selected association rules are output automatically. Alternatively press <em>Send selection</em>.</li>
+</li>
+<li>
+<p>If <em>Auto send selection is on</em>, data instances that match the selected association rules are output automatically. Alternatively press <em>Send selection</em>.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Association Rules can be used directly with the <a href="../../data/file/">File</a> widget.</p>
-
-<p><img src="../images/association-rules-example1.png" alt="" /></p>
-
+<p><img src="../images/association-rules-example1.png" alt=""></p>
 <h2 id="references-and-further-reading">References and further reading</h2>
-
 <p>[1]: J. Han, J. Pei, Y. Yin, R. Mao. (2004) <a href="https://www.cs.sfu.ca/~jpei/publications/dami03_fpgrowth.pdf">Mining Frequent Patterns without Candidate Generation: A Frequent-Pattern Tree Approach</a>.</p>
-
 <p>[2]: R. Agrawal, C. Aggarwal, V. Prasad. (2000) <a href="http://www.cs.tau.ac.il/~fiat/dmsem03/Depth%20First%20Generation%20of%20Long%20Patterns%20-%202000.pdf">Depth first generation of long patterns</a>.</p>
 
                 </div>

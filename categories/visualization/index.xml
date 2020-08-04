@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visualization on Orange</title>
+    <title>visualization on Orange</title>
     <link>/categories/visualization/</link>
-    <description>Recent content in Visualization on Orange</description>
+    <description>Recent content in visualization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
@@ -158,7 +158,7 @@ Manifold Learning widget offers five embedding techniques based on scikit-learn 
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     
@@ -249,7 +249,7 @@ Save Graph function is available in Paint Data, Image Viewer, all visualization 
       <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
       <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
 2-dimensional scatter plot visualization
-Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘_Start Evaluation_’ to begin ranking.</description>
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
     </item>
     
     <item>
@@ -260,15 +260,6 @@ Orange 2.7 has a wonderful functionality called VizRank, that is now implemented
       <guid>/blog/2015/07/24/visualizing-misclassifications/</guid>
       <description>In data mining classification is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.
 In Orange an easy way to classify your data is to select several classification widgets (e.g. Naive Bayes, Classification Tree and Linear Regression), compare the prediction quality of each learner with Test Learners and Confusion Matrix and then use the best performing classifier on a new data set for classification.</description>
-    </item>
-    
-    <item>
-      <title>Explorative data analysis with Hierarchical Clustering</title>
-      <link>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</link>
-      <pubDate>Mon, 20 Jul 2015 07:21:04 +0000</pubDate>
-      
-      <guid>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</guid>
-      <description>Today we will write about cluster analysis with Hierarchical Clustering widget. We use a well-known Iris data set, which contains 150 Iris flowers, each belonging to one of the three species (setosa, versicolor and virginica). To an untrained eye the three species are very alike, so how could we best tell them apart? The data set contains measurements of sepal and petal dimensions (width and length) and we assume that these gives rise to interesting clustering.</description>
     </item>
     
     <item>
@@ -316,7 +307,7 @@ Ideally, that is, in the case of linear seperability, support vector machines (S
       
       <guid>/blog/2014/04/29/viewing-images/</guid>
       <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
-Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
     </item>
     
     <item>
@@ -335,7 +326,7 @@ Here&amp;rsquo;s an example. I have considered a subset of animals from the [dow
       
       <guid>/blog/2011/09/07/3d-visualizations-in-orange/</guid>
       <description>Over the summer I worked (and still do) on several new 3D visualization widgets as well as a 3D plotting library they use, which will hopefully simplify making more widgets. The library is designed to be similar in terms of API to the new Qt plotting library Noughmad is working on.
-The library uses OpenGL 2&amp;frasl;3: since Khronos deprecated parts of the old OpenGL API (particularly immediate mode and fixed-function functionality) care has been taken to use only capabilities less likely to go away in the years to come.</description>
+The library uses OpenGL 2/3: since Khronos deprecated parts of the old OpenGL API (particularly immediate mode and fixed-function functionality) care has been taken to use only capabilities less likely to go away in the years to come.</description>
     </item>
     
     <item>

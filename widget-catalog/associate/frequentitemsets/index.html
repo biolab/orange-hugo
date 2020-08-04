@@ -1659,56 +1659,43 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="frequent-itemsets">Frequent Itemsets</h1>
-
+                    <h1 id="frequent-itemsets">Frequent Itemsets</h1>
 <p>Finds frequent itemsets in the data.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: Data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Matching Data: Data instances matching the criteria.</li>
 </ul>
-
 <p>The widget finds <a href="https://en.wikipedia.org/wiki/Association_rule_learning">frequent items</a> in a data set based on a measure of
 support for the rule.</p>
-
-<p><img src="../images/frequent-itemsets-stamped.png" alt="" /></p>
-
+<p><img src="../images/frequent-itemsets-stamped.png" alt=""></p>
 <ol>
 <li>Information on the data set. &lsquo;Expand all&rsquo; expands the frequent itemsets tree, while &lsquo;Collapse all&rsquo; collapses it.</li>
 <li>In <em>Find itemsets by</em> you can set criteria for itemset search:
-
 <ul>
 <li><strong>Minimal support</strong>: a minimal ratio of data instances that must support (contain) the itemset for it to be generated. For large data sets it is normal to set a lower minimal support (e.g. between 2%-0.01%).</li>
 <li><strong>Max. number of itemsets</strong>: limits the upward quantity of generated itemsets. Itemsets are generated in no particular order.
 If <em>Auto find itemsets is on</em>, the widget will run the search at every change of parameters. Might be slow for large data sets, so pressing <em>Find itemsets</em> only when the parameters are set is a good idea.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Filter itemsets</em>:
 If you&rsquo;re looking for a specific item or itemsets, filter the results by <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a>. Separate regular expressions by comma to filter by more than one word.
-
 <ul>
 <li><strong>Contains</strong>: will filter itemsets by regular expressions.</li>
 <li><strong>Min. items</strong>: minimum number of items that have to appear in an itemset. If 1, all the itemsets will be displayed. Increasing it to, say, 4, will only display itemsets with four or more items.</li>
 <li><strong>Max. items</strong>: maximum number of items that are to appear in an itemset. If you wish to find, say, only itemsets with less than 5 items in it, you&rsquo;d set this parameter to 5.
 If <em>Apply these filters in search</em> is ticked, the widget will filter the results in real time. Preferably not ticked for large data sets.</li>
-</ul></li>
+</ul>
+</li>
 <li>If <em>Auto send selection is on</em>, changes are communicated automatically.
 Alternatively press <em>Send selection</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Frequent Itemsets can be used directly with the <a href="../../data/file/">File</a> widget.</p>
-
-<p><img src="../images/frequent-itemsets-example1.png" alt="" /></p>
+<p><img src="../images/frequent-itemsets-example1.png" alt=""></p>
 
                 </div>
             </div>

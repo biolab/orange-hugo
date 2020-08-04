@@ -1659,34 +1659,22 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="select-rows">Select Rows</h1>
-
+                    <h1 id="select-rows">Select Rows</h1>
 <p>Selects data instances based on conditions over data features.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Matching Data: instances that match the conditions</li>
 <li>Non-Matching Data: instances that do not match the conditions</li>
 <li>Data: data with an additional column showing whether a instance is selected</li>
 </ul>
-
 <p>This widget selects a subset from an input dataset, based on user-defined conditions. Instances that match the selection rule are placed in the output <em>Matching Data</em> channel.</p>
-
-<p>Criteria for data selection are presented as a collection of conjunct terms (i.e. selected items are those matching all the terms in &lsquo;<em>Conditions</em>&rsquo;).</p>
-
+<p>Criteria for data selection are presented as a collection of conjunct terms (i.e. selected items are those matching all the terms in &lsquo;<em>Conditions</em>').</p>
 <p>Condition terms are defined through selecting an attribute, selecting an operator from a list of operators, and, if needed, defining the value to be used in the condition term. Operators are different for discrete, continuous and string attributes.</p>
-
-<p><img src="../images/SelectRows-stamped.png" alt="" /></p>
-
+<p><img src="../images/SelectRows-stamped.png" alt=""></p>
 <ol>
 <li>Conditions you want to apply, their operators and related values</li>
 <li>Add a new condition to the list of conditions.</li>
@@ -1697,20 +1685,13 @@
 <li>When the <em>Send automatically</em> box is ticked, all changes will be automatically communicated to other widgets.</li>
 <li>Produce a report.</li>
 </ol>
-
 <p>Any change in the composition of the condition will update the information pane (<em>Data Out</em>).</p>
-
 <p>If <em>Send automatically</em> is selected, then the output is updated on any change in the composition of the condition or any of its terms.</p>
-
 <h2 id="example">Example</h2>
-
 <p>In the workflow below, we used the <em>Zoo</em> data from the <a href="../data/file.md">File</a> widget and fed it into the <strong>Select Rows</strong> widget. In the widget, we chose to output only two animal types, namely fish and reptiles. We can inspect both the original dataset and the dataset with selected rows in the <a href="../../data/datatable/">Data Table</a> widget.</p>
-
-<p><img src="../images/SelectRows-Example.png" alt="" /></p>
-
+<p><img src="../images/SelectRows-Example.png" alt=""></p>
 <p>In the next example, we used the data from the <em>Titanic</em> dataset and similarly fed it into the <a href="../../visualize/boxplot/">Box Plot</a> widget. We first observed the entire dataset based on survival. Then we selected only first class passengers in the <strong>Select Rows</strong> widget and fed it again into the <a href="../../visualize/boxplot/">Box Plot</a>. There we could see all the first class passengers listed by their survival rate and grouped by gender.</p>
-
-<p><img src="../images/SelectRows-Workflow.png" alt="" /></p>
+<p><img src="../images/SelectRows-Workflow.png" alt=""></p>
 
                 </div>
             </div>

@@ -251,9 +251,7 @@
 
 
               <p>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily <strong>classify data</strong> with Orange.</p>
-
 <p>First we’re going to create a <a href="/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/">new data table</a> with 10 fruits as our instances.</p>
-
 <pre><code>import Orange
 from Orange.data import *
 
@@ -277,35 +275,23 @@ data=Table(domain, [&lt;/span&gt;
 
 print(data)
 </code></pre>
-
 <p>Now we have to select a model for classification. Among the many learners in Orange library, we decided to use the <strong>Tree Learner</strong> for this example. Since we’re dealing with fruits, we thought it’s only appropriate. :)</p>
-
 <p>Let’s create a learning algorithm and use it to induce the classifier from the data.</p>
-
 <pre><code>tree_learner = Orange.classification.TreeLearner()
 tree = tree_learner(data)
 </code></pre>
-
 <p>Now we can predict what variety <strong>a green fruit</strong> with <strong>3.5 calories</strong> and <strong>2g of fiber</strong> is with the help of our model. To do this, simply call the model and use a list of new data as argument.</p>
-
 <pre><code>print(tree([&quot;green&quot;, 3.5, 2]))
 </code></pre>
-
 <p>Python returns index as a result:</p>
-
 <pre><code>1
 </code></pre>
-
 <p>To check the index, we can call <strong>class variable</strong> values with the corresponding index:</p>
-
 <pre><code>domain.class_var.values[1]
 </code></pre>
-
 <p>Final result:</p>
-
 <pre><code>&quot;apple&quot;
 </code></pre>
-
 <p>You can use your own data set to see how this model works for different data types. Let us know how it goes! :)</p>
 
             </div>

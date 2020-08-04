@@ -1659,71 +1659,44 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="sentiment-analysis">Sentiment Analysis</h1>
-
+                    <h1 id="sentiment-analysis">Sentiment Analysis</h1>
 <p>Predict sentiment from text.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A corpus with information on the sentiment of each document.</li>
 </ul>
-
 <p><strong>Sentiment Analysis</strong> predicts sentiment for each document in a corpus. It uses Liu Hu and Vader sentiment modules from <a href="http://www.nltk.org/api/nltk.sentiment.html">NLTK</a>. Both of them are lexicon-based. For Liu Hu, you can choose English or Slovenian version.</p>
-
-<p><img src="../images/SentimentAnalysis-stamped.png" alt="" /></p>
-
+<p><img src="../images/SentimentAnalysis-stamped.png" alt=""></p>
 <ol>
 <li><em>Method</em>:
-
 <ul>
 <li><em>Liu Hu</em>: lexicon-based sentiment analysis (supports English and Slovenian)</li>
 <li><em>Vader</em>: lexicon- and rule-based sentiment analysis</li>
-</ul></li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>If <em>Auto commit is on</em>, sentiment-tagged corpus is communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><em>Sentiment Analysis</em> can be used for constructing additional features with sentiment prediction from corpus. First, we load <em>Election-2016-tweets.tab</em> in <a href="../corpus-widget/">Corpus</a>. Then we connect <strong>Corpus</strong> to <strong>Sentiment Analysis</strong>. The widget will append 4 new features for Vader method: positive score, negative score, neutral score and compound (combined score).</p>
-
 <p>We can observe new features in a <strong>Data Table</strong>, where we sorted the <em>compound</em> by score. Compound represents the total sentiment of a tweet, where -1 is the most negative and 1 the most positive.</p>
-
-<p><img src="../images/Sentiment-DataTable.png" alt="" /></p>
-
+<p><img src="../images/Sentiment-DataTable.png" alt=""></p>
 <p>Now let us visualize the data. We have some features we are currently not interested in, so we will remove them with <strong>Select Columns</strong>.</p>
-
-<p><img src="../images/Sentiment-SelectColumns.png" alt="" /></p>
-
+<p><img src="../images/Sentiment-SelectColumns.png" alt=""></p>
 <p>Then we will make our corpus a little smaller, so it will be easier to visualize. Pass the data to <strong>Data Sampler</strong> and retain a random 10% of the tweets.</p>
-
-<p><img src="../images/Sentiment-DataSampler.png" alt="" /></p>
-
+<p><img src="../images/Sentiment-DataSampler.png" alt=""></p>
 <p>Now pass the filtered corpus to <strong>Heat Map</strong>. Use <em>Merge by k-means</em> to merge tweets with the same polarity into one line. Then use <em>Cluster</em> by <em>rows</em> to create a clustered visualization where similar tweets are grouped together. Click on a cluster to select a group of tweets - we selected the negative cluster.</p>
-
-<p><img src="../images/Sentiment-HeatMap.png" alt="" /></p>
-
+<p><img src="../images/Sentiment-HeatMap.png" alt=""></p>
 <p>To observe the selected subset, pass the tweets to <a href="../corpusviewer/">Corpus Viewer</a>.</p>
-
-<p><img src="../images/Sentiment-CorpusViewer.png" alt="" /></p>
-
-<p><img src="../images/Sentiment-workflow.png" alt="" /></p>
-
+<p><img src="../images/Sentiment-CorpusViewer.png" alt=""></p>
+<p><img src="../images/Sentiment-workflow.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Hutto, C.J. and E. E. Gilbert (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.</p>
-
 <p>Hu, Minqing and Bing Liu (2004). Mining opinion features in customer reviews. In Proceedings of AAAI Conference on Artificial Intelligence, vol. 4, pp. 755–760. <a href="http://www.aaai.org/Papers/AAAI/2004/AAAI04-119.pdf">Available online.</a></p>
-
 <p>Kadunc, Klemen and Marko Robnik-Šikonja (2016). Analiza mnenj s pomočjo strojnega učenja in slovenskega leksikona sentimenta. Conference on Language Technologies &amp; Digital Humanities, Ljubljana (in Slovene). <a href="http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Kadunc-et-al_Analiza-mnenj-s-pomocjo-strojnega-ucenja.pdf">Available online.</a></p>
 
                 </div>

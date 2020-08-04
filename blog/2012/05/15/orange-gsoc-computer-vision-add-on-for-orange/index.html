@@ -223,26 +223,19 @@
 
 
               <p>This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">Google Summer of Code</a>.</p>
-
 <p>The add-on will consist of a set of widgets, each with it&rsquo;s own dedicated purpose, which can be seamlessly connected to provide most commonly used image preprocessing functionality.</p>
-
 <p>Here is a list of the widgets:</p>
-
 <ul>
-<li>Widget for viewing image files (add description)<br /></li>
-<li>Widget for resizing an image<br /></li>
-<li>Widget for rotation/flipping of the image<br /></li>
-<li>Widget for converting the color mode (RGB, HSV, Grayscale etc.)<br /></li>
-<li>Widget for changing the hue/saturation, brightness/contrast and inverting the image<br /></li>
+<li>Widget for viewing image files (add description)</li>
+<li>Widget for resizing an image</li>
+<li>Widget for rotation/flipping of the image</li>
+<li>Widget for converting the color mode (RGB, HSV, Grayscale etc.)</li>
+<li>Widget for changing the hue/saturation, brightness/contrast and inverting the image</li>
 <li>Widget for generic transformations through convolution with a matrix</li>
 </ul>
-
 <p>Also, if there is enough time left throughout the GSoC period, a face detection widget will be built in order to demonstrate the power of the underlying libraries.</p>
-
 <p>These are all things that have been implemented in Python before. Reimplementing them is of course a rather bad idea, so I will use an library called <a href="http://opencv.willowgarage.com/wiki/">OpenCV</a>. It is written in C++ and has Python bindings, and is the most widely used computer vision library, by far. So the core of the widgets will be written in it, and the GUI using <a href="http://www.riverbankcomputing.co.uk/software/pyqt/intro">PyQT</a>, the library used for building the Orange Canvas.</p>
-
 <p>Although working with images is not Oranges&rsquo; main thing, the knowledge gathered while developing the add-on will be used to improve in a number of ways: finding a general structure for add-ons developed in the future, improving the way they are distributed and the way they are tested.</p>
-
 <p>Finally, I want to thank the Orange core team for having faith in me and giving me the chance to spend the summer working on an idea I care about. I&rsquo;m very grateful for that and I hope I&rsquo;ll exceed their expectations.</p>
 
             </div>

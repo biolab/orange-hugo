@@ -241,67 +241,38 @@
 
 
               <p>For the second year in a row, the Orange team was a part of the <a href="https://summerprogrammes.ef.uni-lj.si/programmes/doctoral_summer_school/">Ljubljana Doctoral Summer School</a>, which is organized by the <a href="http://www.ef.uni-lj.si/en">School of Economics and Business, University of Ljubljana</a>. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.</p>
-
-<p><a href="/blog_img/2019/2019-07-26_ekonomska.jpg" class="blog-image_"> 
+<a href="/blog_img/2019/2019-07-26_ekonomska.jpg" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_ekonomska.jpg" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>One important lesson is comparing model accuracy. Let us load the heart_disease data with the File widget. This is the data on the presence of diameter narrowing (a sign of heart disease) in 303 patients. Now let us sample the data into the training and testing data. We will use Data Sampler for this.</p>
-
-<p><a href="/blog_img/2019/2019-07-26_Data-Sampler.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-07-26_Data-Sampler.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_Data-Sampler.png" />
  </a>
-
-
-
-</p>
-
+<p>\</p>
 <p>Now let&rsquo;s check model accuracy on, say, Tree and Naive Bayes, one of the first two classifiers that we introduce. Connect both outputs of Data Sampler to Test &amp; Score, the first as Data and the second as Test Data.</p>
-
-<p><a href="/blog_img/2019/2019-07-26_Outputs.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-07-26_Outputs.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_Outputs.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>First, check the model accuracy with the <em>Test on train data</em> option. Great scores! Seems like Tree performs almost flawlessly. It must be the better classifier of the two!</p>
-
-<p><a href="/blog_img/2019/2019-07-26_Train.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-07-26_Train.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_Train.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>Ok, just to be sure, let us check the scores on a separate test data set by selecting <em>Test on test data</em>. Oh. This doesn&rsquo;t look good. Tree now performs much worse than Naive Bayes. Why is that?</p>
-
-<p><a href="/blog_img/2019/2019-07-26_Test.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-07-26_Test.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_Test.png" />
  </a>
-
-
-
 <a href="/blog_img/2019/2019-07-26_workflow.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-07-26_workflow.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>We won&rsquo;t answer this directly, but this is one of the homeworks we give the students in order to introduce cross-validation. This is such an important concept that we make sure everyone in the class really understand why we need separate training and testing data.</p>
-
 <p>Feel free to use this exercise in any of your future classes!</p>
 
             </div>

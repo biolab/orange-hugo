@@ -1659,22 +1659,14 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="calibration-plot">Calibration Plot</h1>
-
+                    <h1 id="calibration-plot">Calibration Plot</h1>
 <p>Shows the match between classifiers&rsquo; probability predictions and actual class probabilities.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Evaluation Results: results of testing classification algorithms</li>
 </ul>
-
 <p>The <a href="https://en.wikipedia.org/wiki/Calibration_curve">Calibration Plot</a>plots class probabilities against those predicted by the classifier(s).</p>
-
-<p><img src="../images/CalibrationPlot-stamped.png" alt="" /></p>
-
+<p><img src="../images/CalibrationPlot-stamped.png" alt=""></p>
 <ol>
 <li>Select the desired target class from the drop down menu.</li>
 <li>Choose which classifiers to plot. The diagonal represents optimal behavior; the closer the classifier&rsquo;s curve gets, the more accurate its prediction probabilities are. Thus we would use this widget to see whether a classifier is overly optimistic (gives predominantly positive results) or pessimistic (gives predominantly negative results).</li>
@@ -1682,14 +1674,10 @@
 <li>Press <em>Save Image</em> if you want to save the created image to your computer in a .svg or .png format.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>At the moment, the only widget which gives the right type of signal needed by the <strong>Calibration Plot</strong> is <a href="../../evaluate/testandscore/">Test &amp; Score</a>. The Calibration Plot will hence always follow Test &amp; Score and, since it has no outputs, no other widgets follow it.</p>
-
 <p>Here is a typical example, where we compare three classifiers (namely <a href="../model/naivebayes.md">Naive Bayes</a>, <a href="../model/tree.md">Tree</a> and <a href="../model/constant.md">Constant</a>) and input them into <a href="../../evaluate/testandscore/">Test &amp; Score</a>. We used the <em>Titanic</em> dataset. Test &amp; Score then displays evaluation results for each classifier. Then we draw <strong>Calibration Plot</strong> and <a href="../../evaluate/rocanalysis/">ROC Analysis</a> widgets from Test &amp; Score to further analyze the performance of classifiers. <strong>Calibration Plot</strong> enables you to see prediction accuracy of class probabilities in a plot.</p>
-
-<p><img src="../images/CalibrationPlot-example.png" alt="" /></p>
+<p><img src="../images/CalibrationPlot-example.png" alt=""></p>
 
                 </div>
             </div>

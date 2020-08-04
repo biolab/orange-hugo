@@ -244,17 +244,11 @@
 
 
               <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
-
 <p>Gradient Descent was implemented as a part of my <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> project and it is available in the <a href="https://github.com/biolab/orange3-educational">Orange3-Educational</a> add-on. It simulates <a href="https://en.wikipedia.org/wiki/Gradient_descent">gradient descent</a> for either <a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic</a> or <a href="https://en.wikipedia.org/wiki/Linear_regression">Linear</a> regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</p>
-
 <p>Gradient Descent widget takes <em>data</em> on input and outputs the <em>model</em> and its <em>coefficients</em>.</p>
-
-<p><img src="/images/2016/08/gradient-descent-flow.png" alt="" /></p>
-
+<p><img src="/images/2016/08/gradient-descent-flow.png" alt=""></p>
 <p>The widget displays the value of the cost function given two parameters of the model. For linear regression, we consider feature from the training set with the parameters being the intercept and the slope. For logistic regression, the widget considers two feature and their associated multiplicative parameters, setting the intercept to zero. Screenshot bellow shows gradient descent on a <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris data set</a>, where we consider petal length and sepal width on the input and predict the probability that iris comes from the family of Iris versicolor.</p>
-
-<p><img src="/images/2016/08/gradient-descent1-stamped.png" alt="" /></p>
-
+<p><img src="/images/2016/08/gradient-descent1-stamped.png" alt=""></p>
 <ol>
 <li>The type of the model used (either <em>Logistic regression</em> or <em>Linear regression</em>)</li>
 <li>Input features (one for X and one for Y axis) and the target class</li>
@@ -263,17 +257,11 @@
 <li>Step through the algorithm (steps can be reverted with <em>step back</em> button)</li>
 <li>Run optimization until convergence</li>
 </ol>
-
 <p>Following shows gradient descent for linear regression using <a href="https://archive.ics.uci.edu/ml/datasets/Housing">The Boston Housing Data Set</a> when trying to predict the median value of a house given its age.</p>
-
-<p><img src="/images/2016/08/gradient-descent-age.png" alt="" /></p>
-
+<p><img src="/images/2016/08/gradient-descent-age.png" alt=""></p>
 <p>On the left we use the <a href="https://en.wikipedia.org/wiki/Gradient_descent">regular</a> and on the right the <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">stochastic</a> gradient descent. While the regular descent goes straight to the target, the path of stochastic is not as smooth.</p>
-
 <p>We can use the widget to simulate some dangerous, unwanted behavior of gradient descent. The following screenshots show two extreme cases with too high learning rate where optimization function never converges, and a low learning rate where convergence is painfully slow.</p>
-
-<p><img src="/images/2016/08/gradient-descent-extrems.png" alt="" /></p>
-
+<p><img src="/images/2016/08/gradient-descent-extrems.png" alt=""></p>
 <p>The two problems as illustrated above are the reason that many implementations of numerical optimization use adaptive learning rates. We can simulate this in the widget by modifying the learning rate for each step of the optimization.</p>
 
             </div>

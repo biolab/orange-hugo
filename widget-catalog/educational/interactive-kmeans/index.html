@@ -1659,31 +1659,20 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="interactive-k-means">Interactive k-Means</h1>
-
+                    <h1 id="interactive-k-means">Interactive k-Means</h1>
 <p>Educational widget that shows the working of a k-means clustering.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: data set with cluster annotation</li>
 <li>Centroids: centroids position</li>
 </ul>
-
 <h2 id="description">Description</h2>
-
 <p>The aim of this widget is to show the working of a <a href="https://en.wikipedia.org/wiki/K-means_clustering">k-means clustering algorithm</a> on two attributes from a data set. The widget applies k-means clustering to the selected two attributes step by step. Users can step through the algorithm and see how it works.</p>
-
-<p><img src="../images/interactive-kmeans-stamped.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-stamped.png" alt=""></p>
 <ol>
 <li>Select attributes for <strong>x</strong> and <strong>y</strong> axis.</li>
 <li><em>Number of centroids</em>: set the number of centroids.
@@ -1695,41 +1684,24 @@
 <strong>Speed</strong>: set the speed of automatic stepping.</li>
 <li><em>Save Image</em> saves the image to the computer in a .svg or .png format.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Here are two possible schemas that show how the <strong>Interactive k-Means</strong> widget can be used. You can load the data from <strong>File</strong> or use any other data source, such as <strong>Paint Data</strong>. Interactive k-Means widget also produces a data table with results of clustering and a table with centroids positions. These data can be inspected with the
 <strong>Data Table</strong> widget.</p>
-
-<p><img src="../images/interactive-kmeans-input.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-input.png" alt=""></p>
 <p>Let us demonstrate the working of the widget on <em>Iris</em> data set. We provide the data using <strong>File</strong>. Then we open <strong>Interactive k-Means</strong>. Say, we will demonstrate k-Means on <em>petal length</em> and <em>petal width</em> attributes, so we set them as <em>X</em> and <em>Y</em> parameters. We also decided to perform clustering for 3 clusters. This is set as the <em>Number of centroids</em>.</p>
-
-<p><img src="../images/interactive-kmeans-step1.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step1.png" alt=""></p>
 <p>If we are not satisfied with positions of centroids we can change them with a click on the <strong>Randomize</strong> button. Then we perform the first recomputing of centroids with a click on the <strong>Recompute centroids</strong>. We get the following image.</p>
-
-<p><img src="../images/interactive-kmeans-step2.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step2.png" alt=""></p>
 <p>The next step is to reassign membership of all points to the closest centroid. This is performed with a click on the <strong>Reassign membership</strong> button.</p>
-
-<p><img src="../images/interactive-kmeans-step3.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step3.png" alt=""></p>
 <p>Then we repeat these two steps until the algorithm converges. This is the final result.</p>
-
-<p><img src="../images/interactive-kmeans-step4.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step4.png" alt=""></p>
 <p>Perhaps we are not satisfied with the result because we noticed that maybe classification into 4 clusters would be better. So we decided to add a new centroid. We can do this by increasing the number of centroids in the control menu or with a click on the position in the graph where we want to place the centroid. We decided to add it with a click. The new centroid is the orange one.</p>
-
-<p><img src="../images/interactive-kmeans-step5.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step5.png" alt=""></p>
 <p>Now we can repeat running the algorithm until it converges again, but before that we will move the new centroid to change the behavior of the algorithm. We grabbed the orange centroid and moved it to the desired position.</p>
-
-<p><img src="../images/interactive-kmeans-step6.png" alt="" /></p>
-
+<p><img src="../images/interactive-kmeans-step6.png" alt=""></p>
 <p>Then we press <em>Run</em> and observe the centroids while the algorithm converges again.</p>
-
-<p><img src="../images/interactive-kmeans-step7.png" alt="" /></p>
+<p><img src="../images/interactive-kmeans-step7.png" alt=""></p>
 
                 </div>
             </div>

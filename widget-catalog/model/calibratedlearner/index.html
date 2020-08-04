@@ -1659,62 +1659,50 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="calibrated-learner">Calibrated Learner</h1>
-
+                    <h1 id="calibrated-learner">Calibrated Learner</h1>
 <p>Wraps another learner with probability calibration and decision threshold optimization.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 <li>Base Learner: learner to calibrate</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: calibrated learning algorithm</li>
 <li>Model: trained model using the calibrated learner</li>
 </ul>
-
 <p>This learner produces a model that calibrates the distribution of class probabilities and optimizes decision threshold. The widget works only for binary classification tasks.</p>
-
-<p><img src="../images/Calibrated-Learner-stamped.png" alt="" /></p>
-
+<p><img src="../images/Calibrated-Learner-stamped.png" alt=""></p>
 <ol>
-<li>The name under which it will appear in other widgets. Default name is composed of the learner, calibration and optimization parameters.</li>
-
-<li><p>Probability calibration:</p>
-
+<li>
+<p>The name under which it will appear in other widgets. Default name is composed of the learner, calibration and optimization parameters.</p>
+</li>
+<li>
+<p>Probability calibration:</p>
 <ul>
 <li><a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639">Sigmoid calibration</a></li>
 <li><a href="https://scikit-learn.org/stable/auto_examples/plot_isotonic_regression.html">Isotonic calibration</a></li>
 <li>No calibration</li>
-</ul></li>
-
-<li><p>Decision threshold optimization:</p>
-
+</ul>
+</li>
+<li>
+<p>Decision threshold optimization:</p>
 <ul>
 <li>Optimize classification accuracy</li>
 <li>Optimize F1 score</li>
 <li>No threshold optimization</li>
-</ul></li>
-
-<li><p>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes are committed automatically.</p></li>
+</ul>
+</li>
+<li>
+<p>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes are committed automatically.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>A simple example with <strong>Calibrated Learner</strong>. We are using the <em>titanic</em> data set as the widget requires binary class values (in this case they are &lsquo;survived&rsquo; and &lsquo;not survived&rsquo;).</p>
-
 <p>We will use <a href="../logisticregression/">Logistic Regression</a> as the base learner which will we calibrate with the default settings, that is with sigmoid optimization of distribution values and by optimizing the CA.</p>
-
 <p>Comparing the results with the uncalibrated <strong>Logistic Regression</strong> model we see that the calibrated model performs better.</p>
-
-<p><img src="../images/Calibrated-Learner-Example.png" alt="" /></p>
+<p><img src="../images/Calibrated-Learner-Example.png" alt=""></p>
 
                 </div>
             </div>

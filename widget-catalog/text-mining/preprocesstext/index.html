@@ -1659,35 +1659,24 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="preprocess-text">Preprocess Text</h1>
-
+                    <h1 id="preprocess-text">Preprocess Text</h1>
 <p>Preprocesses corpus with selected methods.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Preprocessed corpus.</li>
 </ul>
-
 <p><strong>Preprocess Text</strong> splits your text into smaller units (tokens), filters them, runs <a href="https://en.wikipedia.org/wiki/Stemming">normalization</a> (stemming, lemmatization), creates <a href="https://en.wikipedia.org/wiki/N-gram">n-grams</a> and tags tokens with <a href="https://en.wikipedia.org/wiki/Part_of_speech">part-of-speech</a> labels. Steps in the analysis are applied sequentially and can be turned on or off.</p>
-
-<p><img src="../images/Preprocess-Text-stamped.png" alt="" /></p>
-
+<p><img src="../images/Preprocess-Text-stamped.png" alt=""></p>
 <ol>
 <li><strong>Information on preprocessed data</strong>.
 <em>Document count</em> reports on the number of documents on the input.
 <em>Total tokens</em> counts all the tokens in corpus.
 <em>Unique tokens</em> excludes duplicate tokens and reports only on unique tokens in the corpus.</li>
 <li><strong>Transformation</strong> transforms input data. It applies lowercase transformation by default.
-
 <ul>
 <li><em>Lowercase</em> will turn all text to lowercase.</li>
 <li><em>Remove accents</em> will remove all diacritics/accents in text.
@@ -1696,9 +1685,9 @@ naïve → naive</li>
 &lt;a href&hellip;&gt;Some text&lt;/a&gt; → Some text</li>
 <li><em>Remove urls</em> will remove urls from text.
 This is a <a href="http://orange.biolab.si/">http://orange.biolab.si/</a> url. → This is a url.</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://en.wikipedia.org/wiki/Tokenization_(lexical_analysis)">Tokenization </a> is the method of breaking the text into smaller components (words, sentences, bigrams).
-
 <ul>
 <li><em>Word &amp; Punctuation</em> will split the text by words and keep punctuation symbols.
 This example. → (This), (example), (.)</li>
@@ -1709,59 +1698,50 @@ This example. Another example. → (This example.), (Another example.)</li>
 <li><a href="https://en.wikipedia.org/wiki/Regular_expression">Regexp</a> will split the text by provided regex. It splits by words only by default (omits punctuation).</li>
 <li><em>Tweet</em> will split the text by pre-trained Twitter model, which keeps hashtags, emoticons and other special symbols.
 This example. :-) #simple → (This), (example), (.), (:-)), (#simple)</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Normalization</strong> applies stemming and lemmatization to words. (I&rsquo;ve always loved cats. → I have alway love cat.) For languages other than English use Snowball Stemmer (offers languages available in its NLTK implementation).
-
 <ul>
 <li><a href="https://tartarus.org/martin/PorterStemmer/">Porter Stemmer</a> applies the original Porter stemmer.</li>
 <li><a href="http://snowballstem.org/">Snowball Stemmer</a> applies an improved version of Porter stemmer (Porter2). Set the language for normalization, default is English.</li>
 <li><a href="http://wordnet.princeton.edu/">WordNet Lemmatizer</a> applies a networks of cognitive synonyms to tokens based on a large lexical database of English.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Filtering</strong> removes or keeps a selection of words.
-
 <ul>
 <li><em>Stopwords</em> removes stopwords from text (e.g. removes &lsquo;and&rsquo;, &lsquo;or&rsquo;, &lsquo;in&rsquo;&hellip;). Select the language to filter by, English is set as default. You can also load your own list of stopwords provided in a simple *.txt file with one stopword per line.
-<img src="../images/stopwords.png" alt="" />
+<img src="../images/stopwords.png" alt="">
 Click &lsquo;browse&rsquo; icon to select the file containing stopwords. If the file was properly loaded, its name will be displayed next to pre-loaded stopwords. Change &lsquo;English&rsquo; to &lsquo;None&rsquo; if you wish to filter out only the provided stopwords. Click &lsquo;reload&rsquo; icon to reload the list of stopwords.</li>
 <li><em>Lexicon</em> keeps only words provided in the file. Load a *.txt file with one word per line to use as lexicon. Click &lsquo;reload&rsquo; icon to reload the lexicon.</li>
 <li><em>Regexp</em> removes words that match the regular expression. Default is set to remove punctuation.</li>
 <li><em>Document frequency</em> keeps tokens that appear in not less than and not more than the specified number / percentage of documents. If you provide integers as parameters, it keeps only tokens that appear in the specified number of documents. E.g. DF = (3, 5) keeps only tokens that appear in 3 or more and 5 or less documents. If you provide floats as parameters, it keeps only tokens that appear in the specified percentage of documents. E.g. DF = (0.3, 0.5) keeps only tokens that appear in 30% to 50% of documents. Default returns all tokens.</li>
 <li><em>Most frequent tokens</em> keeps only the specified number of most frequent tokens. Default is a 100 most frequent tokens.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>N-grams Range</strong> creates n-grams from tokens. Numbers specify the range of n-grams. Default returns one-grams and two-grams.</li>
 <li><strong>POS Tagger</strong> runs part-of-speech tagging on tokens.
-
 <ul>
 <li><a href="https://spacy.io/blog/part-of-speech-pos-tagger-in-python">Averaged Perceptron Tagger</a> runs POS tagging with Matthew Honnibal&rsquo;s averaged perceptron tagger.</li>
 <li><a href="http://web.mit.edu/6.863/www/fall2012/projects/writeups/max-entropy-nltk.pdf">Treebank POS Tagger (MaxEnt)</a> runs POS tagging with a trained Penn Treebank model.</li>
 <li><a href="http://nlp.stanford.edu/software/tagger.shtml#Download">Stanford POS Tagger</a> runs a log-linear part-of-speech tagger designed by Toutanova et al. Please download it from the provided website and load it in Orange. You have to load the language-specific model in Model and load <em>stanford-postagger.jar</em> in the Tagger section.</li>
-</ul></li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
-
 <p><strong>Note</strong>! Preprocess Text applies preprocessing steps in the order they are listed. This means it will first transform the text, then apply tokenization, POS tags, normalization, filtering and finally constructs n-grams based on given tokens. This is especially important for WordNet Lemmatizer since it requires POS tags for proper normalization.</p>
-
 <h2 id="useful-regular-expressions">Useful Regular Expressions</h2>
-
 <p>Here are some useful regular expressions for quick filtering:</p>
-
 <p><code>\bword\b</code>: matches exact word
 <code>\w+</code>: matches only words, no punctuation
 <code>\b(B|b)\w+\b</code>: matches words beginning with the letter b
-<code>\w{4,}</code>: matches words that are longer than 4 characters<br />
+<code>\w{4,}</code>: matches words that are longer than 4 characters<br>
 <code>\b\w+(Y|y)\b</code>: matches words ending with the letter y</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>In the first example we will observe the effects of preprocessing on our text. We are working with <em>book-excerpts.tab</em> that we&rsquo;ve loaded with <a href="corpus-widget.md">Corpus</a> widget. We have connected <strong>Preprocess Text</strong> to <strong>Corpus</strong> and retained default preprocessing methods (lowercase, per-word tokenization and stopword removal). The only additional parameter we&rsquo;ve added as outputting only the first 100 most frequent tokens. Then we connected <strong>Preprocess Text</strong> with <a href="../wordcloud/">Word Cloud</a> to observe words that are the most frequent in our text. Play around with different parameters, to see how they transform the output.</p>
-
-<p><img src="../images/Preprocess-Text-Example1.png" alt="" /></p>
-
+<p><img src="../images/Preprocess-Text-Example1.png" alt=""></p>
 <p>The second example is slightly more complex. We first acquired our data with <a href="../twitter-widget/">Twitter</a> widget. We quired the internet for tweets from users @HillaryClinton and @realDonaldTrump and got their tweets from the past two weeks, 242 in total.</p>
-
-<p><img src="../images/Preprocess-Text-Example2.png" alt="" /></p>
-
+<p><img src="../images/Preprocess-Text-Example2.png" alt=""></p>
 <p>In <strong>Preprocess Text</strong> there&rsquo;s <em>Tweet</em> tokenization available, which retains hashtags, emojis, mentions and so on. However, this tokenizer doesn&rsquo;t get rid of punctuation, thus we expanded the Regexp filtering with symbols that we wanted to get rid of. We ended up with word-only tokens, which we displayed in <a href="../wordcloud/">Word Cloud</a>. Then we created a schema for predicting author based on tweet content, which is explained in more details in the documentation for <a href="../twitter-widget/">Twitter</a> widget.</p>
 
                 </div>

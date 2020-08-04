@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Logistic Regression on Orange</title>
+    <title>logistic regression on Orange</title>
     <link>/categories/logistic-regression/</link>
-    <description>Recent content in Logistic Regression on Orange</description>
+    <description>Recent content in logistic regression on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analysis on Orange</title>
+    <title>analysis on Orange</title>
     <link>/categories/analysis/</link>
-    <description>Recent content in Analysis on Orange</description>
+    <description>Recent content in analysis on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Nov 2018 19:11:58 +0000</lastBuildDate>
@@ -102,7 +102,7 @@ First, let us observe the data. We have 4887 recorded download sessions with one
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -300,7 +300,7 @@ Here we have some preliminary results that we&amp;rsquo;ve managed to gather in 
       <guid>/blog/2015/10/30/ghostbusters/</guid>
       <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
-Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
     </item>
     
     <item>

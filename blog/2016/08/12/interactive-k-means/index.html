@@ -258,26 +258,17 @@
 
 
               <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
-
 <p>As a part of my <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> project I started developing educational widgets and assemble them in an <a href="http://orange3-educational.readthedocs.io/">Educational Add-On</a> for <a href="http://orange.biolab.si">Orange</a>. Educational widgets can be used by students to understand how some key data mining algorithms work and by teachers to demonstrate the working of these algorithms.</p>
-
 <p>Here I describe an educational widget for interactive <a href="https://en.wikipedia.org/wiki/K-means_clustering"><em>k</em>-means clustering</a>, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized. Number of clusters in <em>k</em>-means algorithm is denoted with <em>k</em> and has to be specified manually.</p>
-
 <p>The algorithm starts by randomly positioning the centroids in the data space, and then improving their position by repetition of the following two steps:</p>
-
 <ol>
 <li>Assign each point to the closest centroid.</li>
 <li>Move centroids to the mean position of points assigned to the centroid.</li>
 </ol>
-
 <p>The widget needs the data that can come from <a href="http://orange3.readthedocs.io/en/latest/widgets/data/file.html">File</a> widget, and outputs the information on clusters (Annotated Data) and centroids:</p>
-
-<p><img src="/images/2016/08/kmans_shema.png" alt="" /></p>
-
-<p>Educational widget for k-means works finds clusters based on two continuous features only, all other features are ignored. The screenshot shows plot of an Iris data set and clustering with <em>k</em>=3. That is partially cheating, because we know that iris data set has three classes, so that we can check if clusters correspond well to original classes:</p>
-
-<p><img src="/images/2016/08/kmeans2-stamped.png" alt="" /></p>
-
+<p><img src="/images/2016/08/kmans_shema.png" alt=""></p>
+<p>Educational widget for k-means works finds clusters based on two continuous features only, all other features are ignored. The screenshot shows plot of an Iris data set and clustering with _k_=3. That is partially cheating, because we know that iris data set has three classes, so that we can check if clusters correspond well to original classes:</p>
+<p><img src="/images/2016/08/kmeans2-stamped.png" alt=""></p>
 <ol>
 <li>Select two features that are used in <em>k</em>-means</li>
 <li>Set number of centroids</li>
@@ -289,18 +280,12 @@
 <li>Perform the whole algorithm as fast preview</li>
 <li> Anytime we can change number of centroids with spinner or with click in desired position in the graph.</li>
 </ol>
-
 <p>If we want to see the correspondence of clusters that are denoted by <em>k</em>-means and classes, we can open <em>Data Table</em> widget where we see that all <em>Iris-setosas</em> are clustered in one cluster and but there are just few <em>Iris-versicolor</em> that are classified is same cluster together with <em>Iris-virginica</em> and vice versa.</p>
-
-<p><img src="/images/2016/08/kmeans3-4.png" alt="" /></p>
-
+<p><img src="/images/2016/08/kmeans3-4.png" alt=""></p>
 <p>Interactive k-means works great in combination with <a href="http://orange3.readthedocs.io/en/latest/widgets/data/paintdata.html">Paint Data</a>. There, we can design data sets where k-mains fails, and observe why.</p>
-
-<p><img src="/images/2016/08/kmeans-failt.png" alt="" /></p>
-
+<p><img src="/images/2016/08/kmeans-failt.png" alt=""></p>
 <p>We could also design data sets where k-means fails under specific initialization of centroids. Ah, I did not tell you that you can freely move the centroids and then restart the algorithm. Below we show the case of centroid initialization and how this leads to non-optimal clustering.</p>
-
-<p><img src="/images/2016/08/kmeans-f-join.png" alt="" /></p>
+<p><img src="/images/2016/08/kmeans-f-join.png" alt=""></p>
 
             </div>
             </article>

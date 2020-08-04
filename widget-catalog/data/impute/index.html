@@ -1659,32 +1659,22 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="impute">Impute</h1>
-
+                    <h1 id="impute">Impute</h1>
 <p>Replaces unknown values in the data.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Learner: learning algorithm for imputation</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset with imputed values</li>
 </ul>
-
 <p>Some Orange&rsquo;s algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The default imputation is (1-NN).</p>
-
-<p><img src="../images/impute-stamped.png" alt="" /></p>
-
+<p><img src="../images/impute-stamped.png" alt=""></p>
 <ol>
-<li><p>In the top-most box, <em>Default method</em>, the user can specify a general imputation technique for all attributes.</p>
-
+<li>
+<p>In the top-most box, <em>Default method</em>, the user can specify a general imputation technique for all attributes.</p>
 <ul>
 <li><strong>Don&rsquo;t Impute</strong> does nothing with the missing values.</li>
 <li><strong>Average/Most-frequent</strong> uses the average value (for continuous attributes) or the most common value (for discrete attributes).</li>
@@ -1692,24 +1682,27 @@
 <li><strong>Model-based imputer</strong> constructs a model for predicting the missing value, based on values of other attributes; a separate model is constructed for each attribute. The default model is 1-NN learner, which takes the value from the most similar example (this is sometimes referred to as hot deck imputation). This algorithm can be substituted by one that the user connects to the input signal Learner for Imputation. Note, however, that if there are discrete and continuous attributes in the data, the algorithm needs to be capable of handling them both; at the moment only 1-NN learner can do that. (In the future, when Orange has more regressors, the Impute widget may have separate input signals for discrete and continuous models.)</li>
 <li><strong>Random values</strong> computes the distributions of values for each attribute and then imputes by picking random values from them.</li>
 <li><strong>Remove examples with missing values</strong> removes the example containing missing values. This check also applies to the class attribute if <em>Impute class values</em> is checked.</li>
-</ul></li>
-
-<li><p>It is possible to specify individual treatment for each attribute, which overrides the default treatment set. One can also specify a manually defined value used for imputation. In the screenshot, we decided not to impute the values of &ldquo;<em>normalized-losses</em>&rdquo; and &ldquo;<em>make</em>&rdquo;, the missing values of &ldquo;<em>aspiration</em>&rdquo; will be replaced by random values, while the missing values of &ldquo;<em>body-style</em>&rdquo; and &ldquo;<em>drive-wheels</em>&rdquo; are replaced by &ldquo;<em>hatchback</em>&rdquo; and &ldquo;<em>fwd</em>&rdquo;,respectively. If the values of &ldquo;<em>length</em>&rdquo;, &ldquo;<em>width</em>&rdquo; or &ldquo;<em>height</em>&rdquo; are missing, the example is discarded. Values of all other attributes use the default method set above (model-based imputer, in our case).</p></li>
-
-<li><p>The imputation methods for individual attributes are the same as default methods.</p></li>
-
-<li><p><em>Restore All to Default</em> resets the individual attribute treatments to default.</p></li>
-
-<li><p>Produce a report.</p></li>
-
-<li><p>All changes are committed immediately if <em>Apply automatically</em> is checked. Otherwise, <em>Apply</em> needs to be ticked to apply any new settings.</p></li>
+</ul>
+</li>
+<li>
+<p>It is possible to specify individual treatment for each attribute, which overrides the default treatment set. One can also specify a manually defined value used for imputation. In the screenshot, we decided not to impute the values of &ldquo;<em>normalized-losses</em>&rdquo; and &ldquo;<em>make</em>&rdquo;, the missing values of &ldquo;<em>aspiration</em>&rdquo; will be replaced by random values, while the missing values of &ldquo;<em>body-style</em>&rdquo; and &ldquo;<em>drive-wheels</em>&rdquo; are replaced by &ldquo;<em>hatchback</em>&rdquo; and &ldquo;<em>fwd</em>&quot;,respectively. If the values of &ldquo;<em>length</em>&rdquo;, &ldquo;<em>width</em>&rdquo; or &ldquo;<em>height</em>&rdquo; are missing, the example is discarded. Values of all other attributes use the default method set above (model-based imputer, in our case).</p>
+</li>
+<li>
+<p>The imputation methods for individual attributes are the same as default methods.</p>
+</li>
+<li>
+<p><em>Restore All to Default</em> resets the individual attribute treatments to default.</p>
+</li>
+<li>
+<p>Produce a report.</p>
+</li>
+<li>
+<p>All changes are committed immediately if <em>Apply automatically</em> is checked. Otherwise, <em>Apply</em> needs to be ticked to apply any new settings.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>To demonstrate how the <strong>Impute</strong> widget works, we played around with the <em>Iris</em> dataset and deleted some of the data. We used the <strong>Impute</strong> widget and selected the <em>Model-based imputer</em> to impute the missing values. In another <a href="../../data/datatable/">Data Table</a>, we see how the question marks turned into distinct values (&ldquo;Iris-setosa, &ldquo;Iris-versicolor&rdquo;).</p>
-
-<p><img src="../images/Impute-Example.png" alt="" /></p>
+<p><img src="../images/Impute-Example.png" alt=""></p>
 
                 </div>
             </div>

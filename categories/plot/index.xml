@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plot on Orange</title>
+    <title>plot on Orange</title>
     <link>/categories/plot/</link>
-    <description>Recent content in Plot on Orange</description>
+    <description>Recent content in plot on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jul 2016 11:52:54 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     

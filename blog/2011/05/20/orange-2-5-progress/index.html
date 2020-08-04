@@ -216,11 +216,8 @@
 
 
               <p>We decided that we should reorganize Orange to provide more intuitive interface to the scripting interface. The next release, Orange 2.5 is getting better every day. But fear not, dear reader, we are working hard to ensure that your scripts will still work.</p>
-
 <p>In the last morning of the camp in Bohinj we decided to use <strong>undercase_separated</strong> names instead of <strong>CamelCase</strong>. We have been steadily converting them and the <a href="/doc/orange25/Orange.misc.html#deprecation-utility-functions">deprecation utilities</a> by Aleš help a lot. We just list the name changes for class attributes or arguments and their renaming is handled gracefully; they also remain accessible with the old names. Therefore, the code does not need to be duplicated to ensure backwards compatibility.</p>
-
 <p>A simple example from the documentation of bagging and boosting. The old version first:</p>
-
 <pre><code>import orange, orngEnsemble, orngTree
 import orngTest, orngStat
 
@@ -236,9 +233,7 @@ print &quot;Classification Accuracy:&quot;
 for i in range(len(learners)):
     print (&quot;%15s: %5.3f&quot;) % (learners[i].name, orngStat.CA(results)[i])
 </code></pre>
-
 <p>Orange 2.5 version:</p>
-
 <pre><code>import Orange
 
 tree = Orange.classification.tree.TreeLearner(m_pruning=2, name=&quot;tree&quot;)
@@ -253,7 +248,6 @@ print &quot;Classification Accuracy:&quot;
 for i in range(len(learners)):
     print (&quot;%15s: %5.3f&quot;) % (learners[i].name, Orange.evaluation.scoring.CA(results)[i])
 </code></pre>
-
 <p>In new Orange we only need to import a single module, <strong>Orange</strong>, the root of the new hierarchy.</p>
 
             </div>

@@ -1659,42 +1659,27 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="naive-bayes">Naive Bayes</h1>
-
+                    <h1 id="naive-bayes">Naive Bayes</h1>
 <p>A fast and simple probabilistic classifier based on Bayes&rsquo; theorem with the assumption of feature independence.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: naive bayes learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p><strong>Naive Bayes</strong> learns a <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">Naive Bayesian</a> model from the data. It only works for classification tasks.</p>
-
-<p><img src="../images/NaiveBayes-stamped.png" alt="" /></p>
-
+<p><img src="../images/NaiveBayes-stamped.png" alt=""></p>
 <p>This widget has two options: the name under which it will appear in other widgets and producing a report. The default name is <em>Naive Bayes</em>. When you change it, you need to press <em>Apply</em>.</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>Here, we present two uses of this widget. First, we compare the results of the
 <strong>Naive Bayes</strong> with another model, the <a href="../../model/randomforest/">Random Forest</a>. We connect <em>iris</em> data from <a href="../data/file.md">File</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also connect <strong>Naive Bayes</strong> and <a href="../../model/randomforest/">Random Forest</a> to <strong>Test &amp; Score</strong> and observe their prediction scores.</p>
-
-<p><img src="../images/NaiveBayes-classification.png" alt="" /></p>
-
+<p><img src="../images/NaiveBayes-classification.png" alt=""></p>
 <p>The second schema shows the quality of predictions made with <strong>Naive Bayes</strong>. We feed the <a href="../evaluate/testandscore.md">Test &amp; Score</a> widget a Naive Bayes learner and then send the data to the <a href="../evaluate/confusionmatrix.md">Confusion Matrix</a>. We also connect <a href="../../visualize/scatterplot/">Scatter Plot</a> with <strong>File</strong>. Then we select the misclassified instances in the <strong>Confusion Matrix</strong> and show feed them to <a href="../../visualize/scatterplot/">Scatter Plot</a>. The bold dots in the scatterplot are the misclassified instances from <strong>Naive Bayes</strong>.</p>
-
-<p><img src="../images/NaiveBayes-visualize.png" alt="" /></p>
+<p><img src="../images/NaiveBayes-visualize.png" alt=""></p>
 
                 </div>
             </div>

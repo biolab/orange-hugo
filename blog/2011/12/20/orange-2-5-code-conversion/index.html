@@ -216,11 +216,8 @@
 
 
               <p>Orange 2.5 unifies Orange&rsquo;s C++ core and Python modules into a single module hierarchy. To use the new module hierarchy, import <strong>Orange</strong> instead of <strong>orange</strong> and accompanying <strong>orng</strong>* modules. While we will maintain backward compatibility in 2.* releases, we nevertheless suggest programmers to use the new interface. The provided <a href="http://orange.biolab.si/trac/intertrac/wiki%3AOrange25/RefactoringTool">conversion tool</a> can help refactor your code to use the new interface.</p>
-
 <p>The conversion script, <strong>orange2to25.py</strong>, resides in Orange&rsquo;s main directory. To refactor <strong>accuracy8.py</strong> from the &ldquo;Orange for beginners&rdquo; tutorial run<strong>python orange2to25.py -w -o accuracy8_25.py doc/ofb-rst/code/accuracy8.py</strong>.</p>
-
 <p>The old code</p>
-
 <pre><code>import orange
 import orngTest, orngStat, orngTree
 
@@ -237,9 +234,7 @@ res = orngTest.crossValidation(learners, data, folds=10)
 cm = orngStat.computeConfusionMatrices(res,
         classIndex=data.domain.classVar.values.index('democrat'))
 </code></pre>
-
 <p>is refactored to</p>
-
 <pre><code>import Orange
 
 # set up the learners
@@ -255,7 +250,6 @@ res = Orange.evaluation.testing.cross_validation(learners, data, folds=10)
 cm = Orange.evaluation.scoring.compute_confusion_matrices(res,
         classIndex=data.domain.classVar.values.index('democrat'))
 </code></pre>
-
 <p>Read more about <a href="http://orange.biolab.si/trac/intertrac/wiki%3AOrange25/RefactoringTool">the refactoring tool on the wiki</a> and on the help page (<strong>python orange2to25.py &ndash;help</strong>).</p>
 
             </div>

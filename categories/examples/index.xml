@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Examples on Orange</title>
+    <title>examples on Orange</title>
     <link>/categories/examples/</link>
-    <description>Recent content in Examples on Orange</description>
+    <description>Recent content in examples on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 May 2018 11:37:28 +0000</lastBuildDate>
@@ -58,7 +58,7 @@ Obviously, when we say teach business, we mean how to do data mining for busines
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -131,7 +131,7 @@ Wikipedia widget allows retrieving sources from Wikipedia API and can handle mul
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     

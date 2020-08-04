@@ -1659,32 +1659,21 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="duplicate-detection">Duplicate Detection</h1>
-
+                    <h1 id="duplicate-detection">Duplicate Detection</h1>
 <p>Detect &amp; remove duplicates from a corpus.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Distances: A distance matrix.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus Without Duplicated: Corpus with duplicates removed.</li>
 <li>Duplicates Cluster: Documents belonging to selected cluster.</li>
 <li>Corpus: Corpus with appended cluster labels.</li>
 </ul>
-
 <p><strong>Duplicate Detection</strong> uses clustering to find duplicates in the corpus. It is great with the <a href="../twitter-widget/">Twitter</a> widget for removing retweets and other similar documents.</p>
-
 <p>To set the level of similarity, drag the line vertical line left or right in the visualization. The further left the line, the more similar the documents have to be in order to be considered duplicates. You can also set the threshold manually in the control area.</p>
-
-<p><img src="../images/Duplicate-Detection-stamped.png" alt="" /></p>
-
+<p><img src="../images/Duplicate-Detection-stamped.png" alt=""></p>
 <ol>
 <li>Information on unique and duplicate documents.</li>
 <li>Linkage used for clustering (Single, Average, Complete, Weighted and Ward).</li>
@@ -1692,16 +1681,11 @@
 <li>Cluster labels can be appended as attributes, class or metas.</li>
 <li>List of clusters at the selected threshold. They are sorted by size by default. Click on the cluster to observe its content on the output.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>This simple example uses <em>iris</em> data to find identical data instances. Load <em>iris</em> with the <strong>File</strong> widget and pass it to <strong>Distances</strong>. In <strong>Distances</strong>, use Euclidean distance for computing the distance matrix. Pass distances to <strong>Duplicate Detection</strong>.</p>
-
 <p>It looks like cluster C147 contain three duplicate entries. Let us select it in the widget and observe it in a <strong>Data Table</strong>. Remember to set the output to <em>Duplicates Cluster</em>. IThe three data instances are identical. To use the data set without duplicates, use the first output, <em>Corpus Without Duplicates</em>.</p>
-
 <p>The same procedure can be used also for corpora. Remember to use the <a href="bagofwords-widget.md">Bag of Words</a> between <a href="../corpus-widget/">Corpus</a> and <strong>Distances</strong>.</p>
-
-<p><img src="../images/Duplicate-Detection-Example.png" alt="" /></p>
+<p><img src="../images/Duplicate-Detection-Example.png" alt=""></p>
 
                 </div>
             </div>

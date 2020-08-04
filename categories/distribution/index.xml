@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Distribution on Orange</title>
+    <title>distribution on Orange</title>
     <link>/categories/distribution/</link>
-    <description>Recent content in Distribution on Orange</description>
+    <description>Recent content in distribution on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Jul 2017 13:30:47 +0000</lastBuildDate>
@@ -41,7 +41,7 @@ First, we needed to preprocess the data a bit, since it came in a messy form of 
       <guid>/blog/2016/04/01/version-3-3-1-updates-and-features/</guid>
       <description>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&amp;rsquo;ve introduced some new functionalities and improved a few old ones.
 Here&amp;rsquo;s what&amp;rsquo;s new in this release:
- New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
+  New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ Here we have some preliminary results that we&amp;rsquo;ve managed to gather in 
       <guid>/blog/2015/10/30/ghostbusters/</guid>
       <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
-Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
     </item>
     
     <item>

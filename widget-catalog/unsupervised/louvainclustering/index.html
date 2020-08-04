@@ -1659,29 +1659,19 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="louvain-clustering">Louvain Clustering</h1>
-
+                    <h1 id="louvain-clustering">Louvain Clustering</h1>
 <p>Groups items using the Louvain clustering algorithm.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset with cluster index as a class attribute</li>
 <li>Graph (with the Network addon): the weighted k-nearest neighbor graph</li>
 </ul>
-
 <p>The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges. Finally, a <a href="https://en.wikipedia.org/wiki/Louvain_Modularity">modularity optimization</a> community detection algorithm is applied to the graph to retrieve clusters of highly interconnected nodes. The widget outputs a new dataset in which the cluster index is used as a meta attribute.</p>
-
-<p><img src="../images/Louvain-stamped.png" alt="" /></p>
-
+<p><img src="../images/Louvain-stamped.png" alt=""></p>
 <ol>
 <li>PCA processing is typically applied to the original data to remove noise.</li>
 <li>The distance metric is used for finding specified number of nearest neighbors.</li>
@@ -1689,17 +1679,11 @@
 <li>Resolution is a parameter for the Louvain community detection algorithm that affects the size of the recovered clusters. Smaller resolutions recover smaller, and therefore a larger number of clusters, and conversely, larger values recover clusters containing more data points.</li>
 <li>When <em>Apply Automatically</em> is ticked, the widget will automatically communicate all changes. Alternatively, click <em>Apply</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><em>Louvain Clustering</em> converts the dataset into a graph, where it finds highly interconnected nodes. We can visualize the graph itself using the <strong>Network Explorer</strong> from the Network addon.</p>
-
-<p><img src="../images/Louvain-Example.png" alt="" /></p>
-
+<p><img src="../images/Louvain-Example.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Blondel, Vincent D., et al. &ldquo;Fast unfolding of communities in large networks.&rdquo; Journal of statistical mechanics: theory and experiment 2008.10 (2008): P10008.</p>
-
 <p>Lambiotte, Renaud, J-C. Delvenne, and Mauricio Barahona. &ldquo;Laplacian dynamics and multiscale modular structure in networks.&rdquo; arXiv preprint, arXiv:0812.1770 (2008).</p>
 
                 </div>

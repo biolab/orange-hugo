@@ -1659,37 +1659,28 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="stochastic-gradient-descent">Stochastic Gradient Descent</h1>
-
+                    <h1 id="stochastic-gradient-descent">Stochastic Gradient Descent</h1>
 <p>Minimize an objective function using a stochastic approximation of gradient descent.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: stochastic gradient descent learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p>The <strong>Stochastic Gradient Descent</strong> widget uses <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">stochastic gradient descent</a> that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function. For regression, it returns predictors as minimizers of the sum, i.e. M-estimators, and is especially useful for large-scale and sparse datasets.</p>
-
-<p><img src="../images/StochasticGradientDescent-stamped.png" alt="" /></p>
-
+<p><img src="../images/StochasticGradientDescent-stamped.png" alt=""></p>
 <ol>
-<li>Specify the name of the model. The default name is &ldquo;SGD&rdquo;.</li>
-<li>Algorithm parameters:
-
+<li>
+<p>Specify the name of the model. The default name is &ldquo;SGD&rdquo;.</p>
+</li>
+<li>
+<p>Algorithm parameters:</p>
 <ul>
 <li>Classification loss function:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Hinge_loss">Hinge</a> (linear SVM)</li>
 <li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression">Logistic Regression</a> (logistic regression SGD)</li>
@@ -1700,49 +1691,57 @@
 <li><a href="https://en.wikipedia.org/wiki/Huber_loss">Huber</a> (switches to linear loss beyond ε)</li>
 <li><a href="http://kernelsvm.tripod.com/">Epsilon insensitive</a> (ignores errors within ε, linear beyond it)</li>
 <li><em>Squared epsilon insensitive</em> (loss is squared beyond ε-region).</li>
-</ul></li>
+</ul>
+</li>
 <li>Regression loss function:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mean_squared_error#Regression">Squared Loss</a> (fitted to ordinary least-squares)</li>
 <li><a href="https://en.wikipedia.org/wiki/Huber_loss">Huber</a> (switches to linear loss beyond ε)</li>
 <li><a href="http://kernelsvm.tripod.com/">Epsilon insensitive</a> (ignores errors within ε, linear beyond it)</li>
 <li><em>Squared epsilon insensitive</em> (loss is squared beyond ε-region).</li>
-</ul></li>
-</ul></li>
-<li>Regularization norms to prevent overfitting:
-
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Regularization norms to prevent overfitting:</p>
 <ul>
 <li>None.</li>
 <li><a href="https://en.wikipedia.org/wiki/Taxicab_geometry">Lasso (L1)</a> (L1 leading to sparse solutions)</li>
 <li><a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm">Ridge (L2)</a> (L2, standard regularizer)</li>
 <li><a href="https://en.wikipedia.org/wiki/Elastic_net_regularization">Elastic net</a> (mixing both penalty norms).</li>
-</ul></li>
+</ul>
+<p>Regularization strength defines how much regularization will be applied (the less we regularize, the more we allow the model to fit the data) and the mixing parameter what the ratio between L1 and L2 loss will be (if set to 0 then the loss is L2, if set to 1 then it is L1).</p>
+</li>
+<li>
+<p>Learning parameters.</p>
+<ul>
+<li>Learning rate:
+<ul>
+<li><em>Constant</em>: learning rate stays the same through all epochs (passes)</li>
+<li><a href="http://leon.bottou.org/projects/sgd">Optimal</a>: a heuristic proposed by Leon Bottou</li>
+<li><a href="http://users.ics.aalto.fi/jhollmen/dippa/node22.html">Inverse scaling</a>: earning rate is inversely related to the number of iterations</li>
+</ul>
+</li>
+<li>Initial learning rate.</li>
+<li>Inverse scaling exponent: learning rate decay.</li>
+<li>Number of iterations: the number of passes through the training data.</li>
+<li>If <em>Shuffle data after each iteration</em> is on, the order of data instances is mixed after each pass.</li>
+<li>If <em>Fixed seed for random shuffling</em> is on, the algorithm will use a fixed random seed and enable replicating the results.</li>
+</ul>
+</li>
+<li>
+<p>Produce a report.</p>
+</li>
+<li>
+<p>Press <em>Apply</em> to commit changes. Alternatively, tick the box on the left side of the <em>Apply</em> button and changes will be communicated automatically.</p>
+</li>
 </ol>
-
-<p>Regularization strength defines how much regularization will be applied (the less we regularize, the more we allow the model to fit the data) and the mixing parameter what the ratio between L1 and L2 loss will be (if set to 0 then the loss is L2, if set to 1 then it is L1).
-4. Learning parameters.
-   - Learning rate:
-      - <em>Constant</em>: learning rate stays the same through all epochs (passes)
-      - <a href="http://leon.bottou.org/projects/sgd">Optimal</a>: a heuristic proposed by Leon Bottou
-      - <a href="http://users.ics.aalto.fi/jhollmen/dippa/node22.html">Inverse scaling</a>: earning rate is inversely related to the number of iterations
-   - Initial learning rate.
-   - Inverse scaling exponent: learning rate decay.
-   - Number of iterations: the number of passes through the training data.
-   - If <em>Shuffle data after each iteration</em> is on, the order of data instances is mixed after each pass.
-   - If <em>Fixed seed for random shuffling</em> is on, the algorithm will use a fixed random seed and enable replicating the results.
-5. Produce a report.
-6. Press <em>Apply</em> to commit changes. Alternatively, tick the box on the left side of the <em>Apply</em> button and changes will be communicated automatically.</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>For the classification task, we will use <em>iris</em> dataset and test two models on it. We connected <a href="../model/stochasticgradient.md">Stochastic Gradient Descent</a> and <a href="../model/tree.md">Tree</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also connected <a href="../../data/file/">File</a> to <strong>Test &amp; Score</strong> and observed model performance in the widget.</p>
-
-<p><img src="../images/StochasticGradientDescent-classification.png" alt="" /></p>
-
+<p><img src="../images/StochasticGradientDescent-classification.png" alt=""></p>
 <p>For the regression task, we will compare three different models to see which predict what kind of results. For the purpose of this example, the <em>housing</em> dataset is used. We connect the <a href="../../data/file/">File</a> widget to <strong>Stochastic Gradient Descent</strong>, <a href="../model/linearregression.md">Linear Regression</a> and <a href="../model/knn.md">kNN</a> widget and all four to the <a href="../../evaluate/predictions/">Predictions</a> widget.</p>
-
-<p><img src="../images/StochasticGradientDescent-regression.png" alt="" /></p>
+<p><img src="../images/StochasticGradientDescent-regression.png" alt=""></p>
 
                 </div>
             </div>

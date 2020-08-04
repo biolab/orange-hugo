@@ -223,9 +223,7 @@
 
 
               <p>Random forest classifiers now use <strong>Orange.classification.tree.SimpleTreeLearner</strong>by default, which considerably shortens their construction times.</p>
-
 <p>Using a random forest classifier is easy.</p>
-
 <pre><code>import Orange
 
 iris = Orange.data.Table('iris')
@@ -233,15 +231,10 @@ forest = Orange.ensemble.forest.RandomForestLearner(iris, trees=200)
 for instance in iris:
     print forest(instance), instance.get_class()
 </code></pre>
-
 <p>The example above loads the iris dataset and trains a random forest classifier with 200 trees. The classifier is then used to label all training examples, printing its prediction alongside the actual class value.</p>
-
 <p>Using <strong>SimpleTreeLearner</strong> insted of <strong>TreeLearner</strong> substantially reduces the training time. The image below compares construction times of Random Forest classifiers using a SimpleTreeLearner or a TreeLearner as the base learner.</p>
-
-<p><img src="/images/2011/12/08/forest_construction.png__600x641_q95_crop_upscale.png" alt="" /></p>
-
+<p><img src="/images/2011/12/08/forest_construction.png__600x641_q95_crop_upscale.png" alt=""></p>
 <p>By setting the base_learner parameter to <strong>TreeLearer</strong> it is possible to revert to the original behaviour:</p>
-
 <pre><code>tree_learner = Orange.classification.tree.TreeLearner()
 forest_orig = Orange.ensemble.forest.RandomForestLearner(base_learner=tree_learner)
 </code></pre>

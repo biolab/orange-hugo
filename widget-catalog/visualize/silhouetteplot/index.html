@@ -1659,61 +1659,47 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="silhouette-plot">Silhouette Plot</h1>
-
+                    <h1 id="silhouette-plot">Silhouette Plot</h1>
 <p>A graphical representation of consistency within clusters of data.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 </ul>
-
 <p>The <strong>Silhouette Plot</strong> widget offers a graphical representation of consistency within clusters of data and provides the user with the means to visually assess cluster quality. The silhouette score is a measure of how similar an object is to its own cluster in comparison to other clusters and is crucial in the creation of a silhouette plot. The silhouette score close to 1 indicates that the data instance is close to the center of the cluster and instances possessing the silhouette scores close to 0 are on the border between two clusters.</p>
-
-<p><img src="../images/SilhouettePlot-stamped.png" alt="" /></p>
-
+<p><img src="../images/SilhouettePlot-stamped.png" alt=""></p>
 <ol>
 <li>Choose the distance metric. You can choose between:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean</a> (&ldquo;straight line&rdquo; distance between two points)</li>
 <li><a href="https://en.wiktionary.org/wiki/Manhattan_distance">Manhattan</a> (the sum of absolute differences for all attributes)</li>
 <li><a href="https://en.wiktionary.org/wiki/Cosine_similarity">Cosine</a> (1 - cosine of the angle between two vectors)</li>
-</ul></li>
+</ul>
+</li>
 <li>Select the cluster label. You can decide whether to group the instances by cluster or not.</li>
 <li>Display options:
-
 <ul>
 <li><em>Choose bar width</em>.</li>
 <li><em>Annotations</em>: annotate the silhouette plot.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Save Image</em> saves the created silhouette plot to your computer in a <em>.png</em> or <em>.svg</em> format.</li>
 <li>Produce a report.</li>
 <li>Output:
-
 <ul>
 <li><em>Add silhouette scores</em> (good clusters have higher silhouette scores)</li>
 <li>By clicking <em>Commit</em>, changes are communicated to the output of the widget. Alternatively, tick the box on the left and changes will be communicated automatically.</li>
-</ul></li>
+</ul>
+</li>
 <li>The created silhouette plot.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the snapshot below, we have decided to use the <strong>Silhouette Plot</strong> on the <em>iris</em> dataset. We selected data instances with low silhouette scores and passed them on as a subset to the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget. This visualization only confirms the accuracy of the <strong>Silhouette Plot</strong> widget, as you can clearly see that the subset lies in the border between two clusters.</p>
-
-<p><img src="../images/SilhouettePlot-Example.png" alt="" /></p>
-
+<p><img src="../images/SilhouettePlot-Example.png" alt=""></p>
 <p>If you are interested in other uses of the <strong>Silhouette Plot</strong> widget, feel free to explore our <a href="http://blog.biolab.si/2016/03/23/all-i-see-is-silhouette/">blog post</a>.</p>
 
                 </div>

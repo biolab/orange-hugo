@@ -1659,49 +1659,36 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="discretize">Discretize</h1>
-
+                    <h1 id="discretize">Discretize</h1>
 <p>Discretizes continuous attributes from an input dataset.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset with discretized values</li>
 </ul>
-
 <p>The <strong>Discretize</strong> widget <a href="https://en.wikipedia.org/wiki/Discretization">discretizes</a> continuous attributes with a selected method.</p>
-
-<p><img src="../images/Discretize-All-stamped.png" alt="" /></p>
-
+<p><img src="../images/Discretize-All-stamped.png" alt=""></p>
 <ol>
 <li>The basic version of the widget is rather simple. It allows choosing between three different discretizations.
-
 <ul>
 <li><a href="http://ijcai.org/Past%20Proceedings/IJCAI-93-VOL2/PDF/022.pdf">Entropy-MDL</a>, invented by Fayyad and Irani is a top-down discretization, which recursively splits the attribute at a cut maximizing information gain, until the gain is lower than the minimal description length of the cut. This discretization can result in an arbitrary number of intervals, including a single interval, in which case the attribute is discarded as useless (removed).</li>
 <li><a href="http://www.saedsayad.com/unsupervised_binning.htm">Equal-frequency</a> splits the attribute into a given number of intervals, so that they each contain approximately the same number of instances.</li>
 <li><a href="https://en.wikipedia.org/wiki/Data_binning">Equal-width</a> evenly splits the range between the smallest and the largest observed value. The <em>Number of intervals</em> can be set manually.</li>
 <li>The widget can also be set to leave the attributes continuous or to remove them.</li>
-</ul></li>
+</ul>
+</li>
 <li>To treat attributes individually, go to <strong>Individual Attribute Settings</strong>. They show a specific discretization of each attribute and allow changes. First, the top left list shows the cut-off points for each attribute. In the snapshot, we used the entropy-MDL discretization, which determines the optimal number of intervals automatically; we can see it discretized the age into seven intervals with cut-offs at 21.50, 23.50, 27.50, 35.50, 43.50, 54.50 and 61.50, respectively, while the capital-gain got split into many intervals with several cut-offs. The final weight (fnlwgt), for instance, was left with a single interval and thus removed.
 On the right, we can select a specific discretization method for each attribute. Attribute <em>“fnlwgt”</em> would be removed by the MDL-based discretization, so to prevent its removal, we select the attribute and choose, for instance, <strong>Equal-frequency discretization</strong>. We could also choose to leave the attribute continuous.</li>
 <li>Produce a report.</li>
 <li>Tick <em>Apply automatically</em> for the widget to automatically commit changes. Alternatively, press <em>Apply</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the schema below, we show the <em>Iris</em> dataset with continuous attributes
 (as in the original data file) and with discretized attributes.</p>
-
-<p><img src="../images/Discretize-Example.png" alt="" /></p>
+<p><img src="../images/Discretize-Example.png" alt=""></p>
 
                 </div>
             </div>

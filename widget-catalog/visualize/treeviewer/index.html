@@ -1659,39 +1659,27 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="tree-viewer">Tree Viewer</h1>
-
+                    <h1 id="tree-viewer">Tree Viewer</h1>
 <p>A visualization of classification and regression trees.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Tree: decision tree</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the tree node</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 </ul>
-
 <p>This is a versatile widget with 2-D visualization of <a href="https://en.wikipedia.org/wiki/Decision_tree_learning">classification and regression trees</a>. The user can select a node, instructing the widget to output the data associated with the node, thus enabling explorative data analysis.</p>
-
-<p><img src="../images/TreeViewer-stamped.png" alt="" /></p>
-
+<p><img src="../images/TreeViewer-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input.</li>
 <li>Display options:
-
 <ul>
 <li>Zoom in and zoom out</li>
 <li>Select the tree width. The nodes display information bubbles when hovering over them.</li>
 <li>Select the depth of your tree.</li>
 <li>Select edge width. The edges between the nodes in the tree graph are drawn based on the selected edge width.
-
 <ul>
 <li>All the edges will be of equal width if <em>Fixed</em> is chosen.</li>
 <li>When <em>Relative to root</em> is selected, the width of the edge will
@@ -1702,28 +1690,22 @@ traversing toward the bottom of the tree.</li>
 <li><em>Relative to parent</em> makes the edge width correspond to the proportion
 of instances in the nodes with respect to the instances in their
 parent node.</li>
-</ul></li>
+</ul>
+</li>
 <li>Define the target class, which you can change based on classes in the data.</li>
-</ul></li>
+</ul>
+</li>
 <li>Press <em>Save image</em> to save the created tree graph to your computer as a <em>.svg</em> or <em>.png</em> file.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>Below, is a simple classification schema, where we have read the data, constructed the decision tree and viewed it in our <strong>Tree Viewer</strong>. If both the viewer and <a href="../../model/tree/">Tree</a> are open, any re-run of the tree induction algorithm will immediately affect the visualization. You can thus use this combination to explore how the parameters of the induction algorithm influence the structure of the resulting tree.</p>
-
-<p><img src="../images/TreeViewer-classification.png" alt="" /></p>
-
+<p><img src="../images/TreeViewer-classification.png" alt=""></p>
 <p>Clicking on any node will output the related data instances. This is explored in the schema below that shows the subset in the data table and in the <a href="../visualize/scatterplot.md">Scatter Plot</a>. Make sure that the tree data is passed as a data subset; this can be done by connecting the <strong>Scatter Plot</strong> to the <a href="../../data/file/">File</a> widget first, and connecting it to the <strong>Tree Viewer</strong> widget next. Selected data will be displayed as bold dots.</p>
-
 <p><strong>Tree Viewer</strong> can also export labeled data. Connect <a href="../../data/datatable/">Data Table</a> to <strong>Tree Viewer</strong> and set the link between widgets to <em>Data</em> instead of <em>Selected Data</em>. This will send the entire data to <strong>Data Table</strong> with an additional meta column labeling selected data instances (<em>Yes</em> for selected and <em>No</em> for the remaining).</p>
-
-<p><img src="../images/TreeViewer-selection.png" alt="" /></p>
-
+<p><img src="../images/TreeViewer-selection.png" alt=""></p>
 <p>Finally, <strong>Tree Viewer</strong> can be used also for visualizing regression trees. Connect <a href="../model/randomforest.md">Random Forest</a> to <a href="../../data/file/">File</a> widget using <em>housing.tab</em> dataset. Then connect <a href="../visualize/pythagoreanforest.md">Pythagorean Forest</a> to <strong>Random Forest</strong>. In <strong>Pythagorean Forest</strong> select a regression tree you wish to further analyze and pass it to the <strong>Tree Viewer</strong>. The widget will display the constructed tree. For visualizing larger trees, especially for regression, <a href="../../visualize/pythagoreantree/">Pythagorean Tree</a> could be a better option.</p>
-
-<p><img src="../images/TreeViewer-regression.png" alt="" /></p>
+<p><img src="../images/TreeViewer-regression.png" alt=""></p>
 
                 </div>
             </div>

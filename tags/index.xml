@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Orange</title>
@@ -12,199 +12,199 @@
     
     <item>
       <title>Box Plot</title>
-      <link>/tags/box-plot/</link>
+      <link>/tags/Box-Plot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/box-plot/</guid>
+      <guid>/tags/Box-Plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Classification</title>
-      <link>/tags/classification/</link>
+      <link>/tags/Classification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/classification/</guid>
+      <guid>/tags/Classification/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Classification Tree</title>
-      <link>/tags/classification-tree/</link>
+      <link>/tags/Classification-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/classification-tree/</guid>
+      <guid>/tags/Classification-Tree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clustering</title>
-      <link>/tags/clustering/</link>
+      <link>/tags/Clustering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/clustering/</guid>
+      <guid>/tags/Clustering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Confusion Matrix</title>
-      <link>/tags/confusion-matrix/</link>
+      <link>/tags/Confusion-Matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/confusion-matrix/</guid>
+      <guid>/tags/Confusion-Matrix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cross Validation</title>
-      <link>/tags/cross-validation/</link>
+      <link>/tags/Cross-Validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cross-validation/</guid>
+      <guid>/tags/Cross-Validation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data</title>
-      <link>/tags/data/</link>
+      <link>/tags/Data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data/</guid>
+      <guid>/tags/Data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Loading</title>
-      <link>/tags/data-loading/</link>
+      <link>/tags/Data-Loading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-loading/</guid>
+      <guid>/tags/Data-Loading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Sampler</title>
-      <link>/tags/data-sampler/</link>
+      <link>/tags/Data-Sampler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-sampler/</guid>
+      <guid>/tags/Data-Sampler/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Table</title>
-      <link>/tags/data-table/</link>
+      <link>/tags/Data-Table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-table/</guid>
+      <guid>/tags/Data-Table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dimensionality Reduction</title>
-      <link>/tags/dimensionality-reduction/</link>
+      <link>/tags/Dimensionality-Reduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dimensionality-reduction/</guid>
+      <guid>/tags/Dimensionality-Reduction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Feature Ranking</title>
-      <link>/tags/feature-ranking/</link>
+      <link>/tags/Feature-Ranking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/feature-ranking/</guid>
+      <guid>/tags/Feature-Ranking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Feature Selection</title>
-      <link>/tags/feature-selection/</link>
+      <link>/tags/Feature-Selection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/feature-selection/</guid>
+      <guid>/tags/Feature-Selection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hierarchical Clustering</title>
-      <link>/tags/hierarchical-clustering/</link>
+      <link>/tags/Hierarchical-Clustering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hierarchical-clustering/</guid>
+      <guid>/tags/Hierarchical-Clustering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Outliers</title>
-      <link>/tags/outliers/</link>
+      <link>/tags/Outliers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/outliers/</guid>
+      <guid>/tags/Outliers/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pca</title>
-      <link>/tags/pca/</link>
+      <title>PCA</title>
+      <link>/tags/PCA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pca/</guid>
+      <guid>/tags/PCA/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pivot Table</title>
-      <link>/tags/pivot-table/</link>
+      <link>/tags/Pivot-Table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pivot-table/</guid>
+      <guid>/tags/Pivot-Table/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Predictive Models</title>
-      <link>/tags/predictive-models/</link>
+      <title>Predictive models</title>
+      <link>/tags/Predictive-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/predictive-models/</guid>
+      <guid>/tags/Predictive-models/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scatter Plot</title>
-      <link>/tags/scatter-plot/</link>
+      <link>/tags/Scatter-Plot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/scatter-plot/</guid>
+      <guid>/tags/Scatter-Plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Silhouette</title>
-      <link>/tags/silhouette/</link>
+      <link>/tags/Silhouette/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/silhouette/</guid>
+      <guid>/tags/Silhouette/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>T Sne</title>
-      <link>/tags/t-sne/</link>
+      <title>t-SNE</title>
+      <link>/tags/t-SNE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/t-sne/</guid>
+      <guid>/tags/t-SNE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
-      <link>/tags/visualization/</link>
+      <link>/tags/Visualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/visualization/</guid>
+      <guid>/tags/Visualization/</guid>
       <description></description>
     </item>
     

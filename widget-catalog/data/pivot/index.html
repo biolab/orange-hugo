@@ -1659,45 +1659,33 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="pivot-table">Pivot Table</h1>
-
+                    <h1 id="pivot-table">Pivot Table</h1>
 <p>Reshape data table based on column values.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Pivot Table: contingency matrix as shown in the widget</li>
 <li>Filtered Data: subset selected from the plot</li>
 <li>Grouped Data: aggregates over groups defined by row values</li>
 </ul>
-
 <p><strong>Pivot Table</strong> summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The widget also allows selecting a subset from the table and grouping by row values, which have to be a discrete variable. Data with only numeric variables cannot be displayed in the table.</p>
-
-<p><img src="../images/Pivot-stamped.png" alt="" /></p>
-
+<p><img src="../images/Pivot-stamped.png" alt=""></p>
 <ol>
 <li>Discrete or numeric variable used for row values. Numeric variables are considered as integers.</li>
 <li>Discrete variable used for column values. Variable values will appear as columns in the table.</li>
 <li>Values used for aggregation. Aggregated values will appear as cells in the table.</li>
 <li>Aggregation methods:
-
 <ul>
 <li>For any variable type:
-
 <ul>
 <li><em>Count</em>: number of instances with the given row and column value.</li>
 <li><em>Count defined</em>: number of instances where the aggregation value is defined.</li>
-</ul></li>
+</ul>
+</li>
 <li>For numeric variables:
-
 <ul>
 <li><em>Sum</em>: sum of values.</li>
 <li><em>Mean</em>: average of values.</li>
@@ -1706,43 +1694,31 @@
 <li><em>Max</em>: highest value.</li>
 <li><em>Median</em>: middle value.</li>
 <li><em>Var</em>: variance of the subset.</li>
-</ul></li>
+</ul>
+</li>
 <li>For discrete variables:
-
 <ul>
 <li><em>Majority</em>: most frequent value of the subset.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Tick the box on the left to automatically output any changes. Alternatively, press <em>Apply</em> .</li>
 </ol>
-
 <h2 id="discrete-variables">Discrete variables</h2>
-
-<p><img src="../images/Pivot-discrete.png" alt="" /></p>
-
+<p><img src="../images/Pivot-discrete.png" alt=""></p>
 <p>Example of a pivot table with only discrete variables selected. We are using <em>heart-disease</em> data set for this example. Rows correspond to values of <em>diameter narrowing</em> variable. Our columns are values of <em>gender</em>, namely female and male. We are using <em>thal</em> as values in our cells.</p>
-
 <p>We have selected <em>Count</em> and <em>Majority</em> as aggregation methods. In the pivot table, we can see the number of instances that do not have diameter narrowing and are female. There are 72 such patients. Concurrently, there are 92 male patients that don&rsquo;t have diameter narrowing. Thal values don&rsquo;t have any effect here, we are just counting occurrences in the data.</p>
-
 <p>The second row shows majority. This means most female patients that don&rsquo;t have diameter narrowing have normal thal results. Conversely, female patients that have diameter narrowing most often have reversable defect.</p>
-
 <h2 id="numeric-variables">Numeric variables</h2>
-
-<p><img src="../images/Pivot-continuous.png" alt="" /></p>
-
+<p><img src="../images/Pivot-continuous.png" alt=""></p>
 <p>Example of a pivot table with numeric variables. We are using <em>heart-disease</em> data set for this example. Rows correspond to values of <em>diameter narrowing</em> variable. Our columns are values of <em>gender</em>, namely female and male. We are using <em>rest SBP</em> as values in our cells.</p>
-
 <p>We have selected <em>Count</em>, <em>Sum</em> and <em>Median</em> as aggregation methods. Under <em>Count</em>, we see there are 72 female patients that don&rsquo;t have diameter narrowing, same as before for discrete values. What is different are the sum and median aggregations. We see that the sum of resting systolic blood pressure for female patients that don&rsquo;t have diameter narrowing is 9269 and the median value is 130.</p>
-
 <h2 id="example">Example</h2>
-
 <p>We are using <em>Forest Fires</em> for this example. The data is loaded in the <a href="../../data/datasets/">Datasets</a> widget and passed to <strong>Pivot Table</strong>. <em>Forest Fires</em> datasets reports forest fires by the month and day they happened. We can aggregate all occurrences of forest fires by selecting <em>Count</em> as aggregation method and using <em>month</em> as row and <em>day</em> as column values. Since we are using <em>Count</em>, <em>Values</em> variable will have no effect.</p>
-
 <p>We can plot the counts in <a href="../visualize/lineplot.md">Line Plot</a>. But first, let us organize our data a bit. With <a href="../data/editdomain.md">Edit Domain</a>, we will reorder rows values so that months will appear in the correct order, namely from January to December. To do the same for columns, we will use <a href="../../data/selectcolumns/">Select Columns</a> and reorder day to go from Monday to Sunday.</p>
-
 <p>Finally, our data is ready. Let us pass it to <strong>Line Plot</strong>. We can see that forest fires are most common in August and September, while their frequency is higher during the weekend than during weekdays.</p>
-
-<p><img src="../images/Pivot-example.png" alt="" /></p>
+<p><img src="../images/Pivot-example.png" alt=""></p>
 
                 </div>
             </div>

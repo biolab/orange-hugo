@@ -1659,68 +1659,53 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="network-from-distances">Network From Distances</h1>
-
+                    <h1 id="network-from-distances">Network From Distances</h1>
 <p>Constructs a network from distances between instances.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Distances: A distance matrix.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph.</li>
 <li>Data: Attribute-valued data set.</li>
 <li>Distances: A distance matrix.</li>
 </ul>
-
 <p><strong>Network from Distances</strong> constructs a network graph from a given distance matrix. Graph is constructed by connecting nodes from the matrix where the distance between nodes is below the given threshold. In other words, all instances with a distance lower than the selected threshold, will be connected.</p>
-
-<p><img src="../images/network-from-distances-stamped.png" alt="" /></p>
-
+<p><img src="../images/network-from-distances-stamped.png" alt=""></p>
 <ol>
 <li>Edges:
-
 <ul>
 <li>Distance threshold: a closeness threshold for the formation of edges.</li>
 <li>Percentile: the percentile of data instances to be connected.</li>
 <li><em>Include also closest neighbors</em>: include a number of closest neighbors to the selected instances.</li>
-</ul></li>
+</ul>
+</li>
 <li>Node selection:
-
 <ul>
 <li>Keep all nodes: entire network is on the output.</li>
 <li>Components with at least X nodes: filters out nodes with less than the set number of nodes.</li>
 <li>Largest connected component: keep only the largest cluster.</li>
-</ul></li>
+</ul>
+</li>
 <li>Edge weights:
-
 <ul>
 <li>Proportional to distance: weights are set to reflect the distance (closeness).</li>
 <li>Inverted distance: weights are set to reflect the inverted distance (difference).</li>
-</ul></li>
+</ul>
+</li>
 <li>Information on the constructed network:
-
 <ul>
 <li>Data items on input: number of instances on the input.</li>
 <li>Network nodes: number of nodes in the network (and the percentage of the original data).</li>
 <li>Network edges: number of constructed edges/connections (and the average number of connections per node).</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Network from Distances</strong> creates networks from distance matrices. It can transform data sets from a data table via distance matrix into a network graph. This widget is great for visualizing instance similarity as a graph of connected instances.</p>
-
-<p><img src="../images/network-from-distances-example.png" alt="" /></p>
-
+<p><img src="../images/network-from-distances-example.png" alt=""></p>
 <p>We took <em>iris.tab</em> to visualize instance similarity in a graph. We sent the output of <strong>File</strong> widget to <strong>Distances</strong>, where we computed Euclidean distances between rows (instances). Then we sent the output of <strong>Distances</strong> to <strong>Network from Distances</strong>, where we set the distance threshold (how similar the instances have to be to draw an edge between them) to 0.222. We kept all nodes and set edge weights to <em>proportional to distance</em>.</p>
-
 <p>Then we observed the constructed network in a <a href="../networkexplorer/">Network Explorer</a>. We colored the nodes by <em>iris</em> attribute.</p>
 
                 </div>

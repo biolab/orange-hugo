@@ -1659,56 +1659,38 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="box-plot">Box Plot</h1>
-
+                    <h1 id="box-plot">Box Plot</h1>
 <p>Shows distribution of attribute values.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 </ul>
-
 <p>The <strong>Box Plot</strong> widget shows the distributions of attribute values. It is a good practice to check any new data with this widget to quickly discover any anomalies, such as duplicated values (e.g. gray and grey), outliers, and alike.</p>
-
-<p><img src="../images/BoxPlot-Continuous-stamped.png" alt="" /></p>
-
+<p><img src="../images/BoxPlot-Continuous-stamped.png" alt=""></p>
 <ol>
 <li>Select the variable you want to plot. Tick <em>Order by relevance</em> to order variables by Chi2 or ANOVA over the selected subgroup.</li>
 <li>Choose <em>Subgroups</em> to see <a href="https://en.wikipedia.org/wiki/Box_plot">box plots</a> displayed by a discrete subgroup.</li>
 <li>When instances are grouped by a subgroup, you can change the display mode. Annotated boxes will display the end values, the mean and the median, while compare medians and compare means will, naturally, compare the selected value between subgroups.
-<img src="../images/BoxPlot-Continuous-small.png" alt="continuous" /></li>
+<img src="../images/BoxPlot-Continuous-small.png" alt="continuous"></li>
 <li>The mean (the dark blue vertical line). The thin blue line represents the <a href="http://mathworld.wolfram.com/StandardDeviation.html">standard deviation</a>.</li>
 <li>Values of the first (25%) and the third (75%) quantile. The blue  highlighted area represents the values between the first and the third quartile.</li>
 <li>The median (yellow vertical line).</li>
 <li>If <em>Send automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send</em>.</li>
 <li>Access help, save image or produce a report.</li>
 </ol>
-
 <p>For discrete attributes, the bars represent the number of instances with each particular attribute value. The plot shows the number of different animal types in the <em>Zoo</em> dataset: there are 41 mammals, 13 fish, 20 birds and so on.</p>
-
-<p><img src="../images/BoxPlot-Discrete.png" alt="" /></p>
-
+<p><img src="../images/BoxPlot-Discrete.png" alt=""></p>
 <h2 id="example">Example</h2>
-
 <p>The <strong>Box Plot</strong> widget is most commonly used immediately after the <a href="../../data/file/">File</a> widget to observe the statistical properties of a dataset. In the first example, we have used <em>heart-disease</em> data to inspect our variables.</p>
-
-<p><img src="../images/BoxPlot-Example1.png" alt="" /></p>
-
+<p><img src="../images/BoxPlot-Example1.png" alt=""></p>
 <p><strong>Box Plot</strong> is also useful for finding the properties of a specific dataset, for instance a set of instances manually defined in another widget (e.g. <a href="../visualize/scatterplot.md">Scatter Plot</a> or instances belonging to some cluster or a classification tree node. Let us now use <em>zoo</em> data and create a typical clustering workflow with <a href="../unsupervised/distances.md">Distances</a> and <a href="../../unsupervised/hierarchicalclustering/">Hierarchical Clustering</a>.</p>
-
 <p>Now define the threshold for cluster selection (click on the ruler at the top). Connect <strong>Box Plot</strong> to <strong>Hierarchical Clustering</strong>, tick <em>Order by relevance</em> and select <em>Cluster</em> as a subgroup. This will order attributes by how well they define the selected subgroup, in our case a cluster. Seems like our clusters indeed correspond very well with the animal type!</p>
-
-<p><img src="../images/BoxPlot-Example2.png" alt="" /></p>
+<p><img src="../images/BoxPlot-Example2.png" alt=""></p>
 
                 </div>
             </div>

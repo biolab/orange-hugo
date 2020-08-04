@@ -1659,46 +1659,32 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="network-clustering">Network Clustering</h1>
-
+                    <h1 id="network-clustering">Network Clustering</h1>
 <p>Detect clusters in a network.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph with clustering information appended.</li>
 </ul>
-
 <p><strong>Network Clustering</strong> widget finds clusters in a network. Clustering works with two algorithms, one from Raghavan et al. (2007), which uses label propagation to find appropriate clusters, and one from Leung et al. (2009), which builds upon the work from Raghavan and adds hop attenuation as a parameters for cluster formation.</p>
-
-<p><img src="../images/network-clustering-stamped.png" alt="" /></p>
-
+<p><img src="../images/network-clustering-stamped.png" alt=""></p>
 <ol>
 <li>Max. iterations: maximum number of iteration allowed for the algorithm to run (can converge before reaching the maximum).</li>
 <li>Clustering method:
-
 <ul>
 <li>Label propagation clustering (Raghavan et al., 2007)</li>
 <li>Label propagation clustering (Leung et al., 2009) with hop attenuation.</li>
-</ul></li>
+</ul>
+</li>
 <li>Above appears the information on the number of clusters found. If <em>Auto-commit</em> is ticked, results will be automatically sent to the output. Alternatively, press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Network Clustering</strong> can help you uncover cliques and highly connected groups in a network. First, we will use <a href="networkfile.md">Network File</a> to load <em>lastfm.net</em> data set. Then we will pass the network through <strong>Network Clustering</strong>. The widget found 79 clusters in a network. To visualize the results, use <a href="../networkexplorer/">Network Explorer</a> and set <em>Color</em> attribute to <em>Cluster</em>. This will color network nodes with the corresponding cluster color - this is a great way to visualize highly connected groups in dense networks.</p>
-
 <p>Keep in mind that <strong>Network Explorer</strong> will color the 10 largest clusters and color the rest as &lsquo;Other&rsquo;.</p>
-
-<p><img src="../images/network-clustering-example.png" alt="" /></p>
+<p><img src="../images/network-clustering-example.png" alt=""></p>
 
                 </div>
             </div>

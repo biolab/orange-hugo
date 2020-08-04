@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data on Orange</title>
+    <title>data on Orange</title>
     <link>/categories/data/</link>
-    <description>Recent content in Data on Orange</description>
+    <description>Recent content in data on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
@@ -28,7 +28,8 @@ First of all, what is &amp;lsquo;domain&amp;rsquo;. Domain is like a metadata of
       
       <guid>/blog/2019/2019-08-27-pivot-table/</guid>
       <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
- Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+ \
+Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
 pandas.DataFrame.agg The first task is computing a simple mean for the column age.
 In pandas:</description>
     </item>
@@ -64,7 +65,7 @@ One thing we did was see how to join data from two different sources.</descripti
       <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
       <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
 Related: SQL for Orange
-Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+ Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
     </item>
     
     <item>
@@ -135,7 +136,7 @@ First, we needed to preprocess the data a bit, since it came in a messy form of 
       
       <guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid>
       <description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
- Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
+  Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
     </item>
     
     <item>
@@ -184,7 +185,7 @@ Here we have some preliminary results that we&amp;rsquo;ve managed to gather in 
       <guid>/blog/2015/10/30/ghostbusters/</guid>
       <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
-Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
     </item>
     
     <item>

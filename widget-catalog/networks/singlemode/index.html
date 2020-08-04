@@ -1659,63 +1659,43 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="single-mode">Single Mode</h1>
-
+                    <h1 id="single-mode">Single Mode</h1>
 <p>Convert multimodal graphs to single modal.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Network: An instance of a bipartite network graph.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Network: An instance of single network graph.</li>
 </ul>
-
 <p><strong>Single Mode</strong> works with bipartite networks, where subsets are marked with a binary discrete attribute. The widget outputs a network where nodes represent the selected value (e.g. persons) and edges the remaining value (e.g. event). The widget also works with non-binary discrete attributes, but will treat them as binary (one-versus-all).</p>
-
-<p><img src="../images/Single-Mode-stamped.png" alt="" /></p>
-
+<p><img src="../images/Single-Mode-stamped.png" alt=""></p>
 <ol>
 <li>Mode indicator:
-
 <ul>
 <li><em>Feature</em>: discrete feature labeling network subsets.</li>
 <li><em>Connect</em>: value used as nodes.</li>
 <li><em>by</em>: value used as edges.</li>
-</ul></li>
+</ul>
+</li>
 <li>Edge weights: compute weights for the output network.</li>
 <li>Information on the output network.</li>
 </ol>
-
 <p>####Edge weights</p>
-
-<p><img src="../images/Single-Mode-weights.png" alt="" /></p>
-
+<p><img src="../images/Single-Mode-weights.png" alt=""></p>
 <ul>
 <li><em>No weights</em>: all weights are set to 1.</li>
 <li><em>Number of connections</em>: weights correspond to the number of common connections (e.g. events the two people participated in).</li>
 <li><em>Weighted number of connections</em>: weights correspond to the sum of  the product of original edge weights that connect each person with the event.</li>
 </ul>
-
 <p>For details and for description of other options, see Vlado Batagelj&rsquo;s <a href="http://vladowiki.fmf.uni-lj.si/lib/exe/fetch.php?media=pajek:ev:pdf:na07.pdf">Introduction to Network Science using Pajek</a>, section 7, page 38.</p>
-
 <h2 id="example">Example</h2>
-
 <p>For this example we have used the famous <em>davis</em> data set that describes ladies from the south of the United States and the events they have participated in. The network thus consists of nodes that are either persons or events. Node role is described in the attribute <em>role</em>. We load the network with <a href="../networkfile/">Network File</a>.</p>
-
 <p>We see the original file in <a href="../networkexplorer/">Network Explorer</a>. The blue nodes are events and the red ones are persons. Events are attended by persons. A node connects a person with the event, if the person attended the event. Now we can observe which people attended the same event or, conversely, which events were attended by the same people.</p>
-
 <p>In <strong>Single Mode</strong> we set the feature describing the role of the nodes. It so happens that our attribute is named <em>role</em>. We connect persons (nodes) with the events they attended (edges). Edge weight will be the number of connections in common. In translation, edge weights will be the number of events both people attended.</p>
-
 <p><strong>Network Explorer (1)</strong> shows the final network.</p>
-
-<p><img src="../images/Single-Mode-Example.png" alt="" /></p>
+<p><img src="../images/Single-Mode-Example.png" alt=""></p>
 
                 </div>
             </div>

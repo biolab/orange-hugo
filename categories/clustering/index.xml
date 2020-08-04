@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clustering on Orange</title>
+    <title>clustering on Orange</title>
     <link>/categories/clustering/</link>
-    <description>Recent content in Clustering on Orange</description>
+    <description>Recent content in clustering on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
@@ -166,7 +166,7 @@ The widget enables you to draw your data on a 2-D plane. You can name the x and 
       
       <guid>/blog/2014/04/29/viewing-images/</guid>
       <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
-Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
     </item>
     
   </channel>

@@ -1659,46 +1659,29 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="document-map">Document Map</h1>
-
+                    <h1 id="document-map">Document Map</h1>
 <p>Displays geographic locations mentioned in the text.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: Data set.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Documents containing mentions of selected geographical regions.</li>
 </ul>
-
 <p><strong>Document Map</strong> widget shows geolocations from textual (string) data. It finds mentions of geographic names (countries and capitals) and displays distributions (frequency of mentions) of these names on a map. It works with any Orange widget that outputs a data table and that contains at least one string attribute. The widget outputs selected data instances, that is all documents containing mentions of a selected country (or countries).</p>
-
-<p><img src="../images/DocMap-stamped.png" alt="" /></p>
-
+<p><img src="../images/DocMap-stamped.png" alt=""></p>
 <ol>
 <li>Select the meta attribute you want to search geolocations by. The widget will find all mentions of geolocations in a text and display distributions on a map.</li>
 <li>Select the type of map you wish to display. The options are <em>World</em>, <em>Europe</em> and <em>USA</em>. You can zoom in and out of the map by pressing + and - buttons on a map or by mouse scroll.</li>
 <li>The legend for the geographic distribution of data. Countries with the boldest color are most often mentioned in the selected region attribute (highest frequency).</li>
 </ol>
-
 <p>To select documents mentioning a specific country, click on a country and the widget will output matching documents. To select more than one country hold Ctrl/Cmd upon selection.</p>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Document Map</strong> widget can be used for simply visualizing distributions of geolocations or for a more complex interactive data analysis. Here, we&rsquo;ve queried <a href="nytimes.md">NY Times</a> for articles on Slovenia for the time period of the last year (2015-2016). First we checked the results with <a href="../corpusviewer/">Corpus Viewer</a>.</p>
-
-<p><img src="../images/DocMap-Example.png" alt="" /></p>
-
+<p><img src="../images/DocMap-Example.png" alt=""></p>
 <p>Then we sent the data to <strong>Document Map</strong> to see distributions of geolocations by <em>country</em> attribute. The attribute already contains country tags for each article, which is why <strong>NY Times</strong> is great in combinations with <strong>Document Map</strong>. We selected Germany, which sends all the documents tagged with Germany to the output. Remember, we queried <strong>NY Times</strong> for articles on Slovenia.</p>
-
 <p>We can again inspect the output with <strong>Corpus Viewer</strong>. But there&rsquo;s a more interesting way of visualizing the data. We&rsquo;ve sent selected documents to <a href="../preprocesstext/">Preprocess Text</a>, where we&rsquo;ve tokenized text to words and removed stopwords.</p>
-
 <p>Finally, we can inspect the top words appearing in last year&rsquo;s documents on Slovenia and mentioning also Germany with <a href="../wordcloud/">Word Cloud</a>.</p>
 
                 </div>

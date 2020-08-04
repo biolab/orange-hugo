@@ -1659,51 +1659,36 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="correlations">Correlations</h1>
-
+                    <h1 id="correlations">Correlations</h1>
 <p>Compute all pairwise attribute correlations.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Features: selected pair of features</li>
 <li>Correlations: data table with correlation scores</li>
 </ul>
-
 <p><strong>Correlations</strong> computes Pearson or Spearman correlation scores for all pairs of features in a dataset. These methods can only detect monotonic relationship.</p>
-
-<p><img src="../images/Correlations-stamped.png" alt="" /></p>
-
+<p><img src="../images/Correlations-stamped.png" alt=""></p>
 <ol>
 <li>Correlation measure:
-
 <ul>
 <li>Pairwise <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson</a> correlation.</li>
 <li>Pairwise <a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman</a> correlation.</li>
-</ul></li>
+</ul>
+</li>
 <li>Filter for finding attribute pairs.</li>
 <li>A list of attribute pairs with correlation coefficient. Press <em>Finished</em> to stop computation for large datasets.</li>
 <li>Access widget help and produce report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Correlations can be computed only for numeric (continuous) features, so we will use <em>housing</em> as an example data set. Load it in the <a href="../file/">File</a> widget and connect it to <strong>Correlations</strong>. Positively correlated feature pairs will be at the top of the list and negatively correlated will be at the bottom.</p>
-
-<p><img src="../images/Correlations-links.png" alt="" /></p>
-
+<p><img src="../images/Correlations-links.png" alt=""></p>
 <p>Go to the most negatively correlated pair, DIS-NOX. Now connect <a href="../../visualize/scatterplot/">Scatter Plot</a> to <strong>Correlations</strong> and set two outputs, Data to Data and Features to Features. Observe how the feature pair is immediately set in the scatter plot. Looks like the two features are indeed negatively correlated.</p>
-
-<p><img src="../images/Correlations-Example.png" alt="" /></p>
+<p><img src="../images/Correlations-Example.png" alt=""></p>
 
                 </div>
             </div>

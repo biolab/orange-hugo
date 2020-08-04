@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pypi on Orange</title>
+    <title>pypi on Orange</title>
     <link>/categories/pypi/</link>
-    <description>Recent content in Pypi on Orange</description>
+    <description>Recent content in pypi on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate>
@@ -32,7 +32,7 @@ In order to make the add-on installer work (again), please download the latest v
       <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
       <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
 Related: SQL for Orange
-Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+ Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
     </item>
     
     <item>

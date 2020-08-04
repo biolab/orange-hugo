@@ -1659,32 +1659,21 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="network-analysis">Network Analysis</h1>
-
+                    <h1 id="network-analysis">Network Analysis</h1>
 <p>Statistical analysis of network data.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph.</li>
 <li>Items: Properties of a network file.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph with appended information.</li>
 <li>Items: New properties of a network file.</li>
 </ul>
-
 <p><strong>Network Analysis</strong> widget computes node-level and graph-level summary statistics for the network. It outputs a network with the new computed statistics and an extended item data table (node-level indices only).</p>
-
 <p>####Graph level</p>
-
-<p><img src="../images/Network-Analysis-graph.png" alt="" /></p>
-
+<p><img src="../images/Network-Analysis-graph.png" alt=""></p>
 <ul>
 <li>Number of nodes: number of vertices in a network.</li>
 <li>Number of edges: number of connections in a network.</li>
@@ -1696,11 +1685,8 @@
 <li>Number of strongly connected components: parts of network where every vertex is reachable from every other vertex (for directed graphs only).</li>
 <li>Number of weakly connected components: parts of network where replacing all of its directed edges with undirected edges produces a connected (undirected) graph (for directed graphs only).</li>
 </ul>
-
 <p>####Node level</p>
-
-<p><img src="../images/Network-Analysis-nodes.png" alt="" /></p>
-
+<p><img src="../images/Network-Analysis-nodes.png" alt=""></p>
 <ul>
 <li>Degree: number of edges per node.</li>
 <li>In-degree: number of incoming edges in a directed graph.</li>
@@ -1711,14 +1697,10 @@
 <li>Out-degree centrality: ratio of outgoing edges from a node in directed graph.</li>
 <li>Closeness centrality: distance to all other nodes.</li>
 </ul>
-
 <h2 id="example">Example</h2>
-
 <p>This simple example shows how <strong>Network Analysis</strong> can enrich the workflow. We have used <em>lastfm.net</em> as our input network from <a href="../networkfile/">Network File</a> and sent it to <strong>Network Analysis</strong>. We&rsquo;ve decided to compute <em>degree</em>, <em>degree centrality</em> and <em>closeness centrality</em> at node level.</p>
-
 <p>We can visualize the network in <a href="../networkexplorer/">Network Explorer</a>. In the widget we color by <em>best tag</em>, as is the default for this data set. But now we can also set the size of the nodes to correspond to the computed <em>Degree centrality</em>. This is a great way to visualize the properties of the network.</p>
-
-<p><img src="../images/network-analysis-example.png" alt="" /></p>
+<p><img src="../images/network-analysis-example.png" alt=""></p>
 
                 </div>
             </div>

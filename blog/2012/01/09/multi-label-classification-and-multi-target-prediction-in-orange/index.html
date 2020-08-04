@@ -237,15 +237,11 @@
 
 
               <p>The last summer, student Wencan Luo participated in <a href="https://code.google.com/soc/">Google Summer of Code</a> to implement <a href="/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/">Multi-label Classification in Orange</a>. He provided a framework, implemented a few algorithms and some prototype widgets. His work has been &ldquo;hidden&rdquo; in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet &hellip;) and added a more general support for multi-target prediction.</p>
-
 <p>You can load multi-label tab-delimited data (e.g. <a href="http://orange.biolab.si/trac/intertrac/export%3Atrunk/orange/doc/datasets/emotions.tab">emotions.tab</a>) just like any other <a href="/doc/reference/Orange.data.formats/#tab-delimited-format">tab-delimited data</a>:</p>
-
 <pre><code>&gt;&gt;&gt; zoo = Orange.data.Table('zoo')            # single-target
 &gt;&gt;&gt; emotions = Orange.data.Table('emotions')  # multi-label
 </code></pre>
-
 <p>The difference is that now zoo&rsquo;s domain has a non-empty <strong>class_var</strong> field, while a list of <strong>emotions</strong>&rsquo; labels can be obtained through it&rsquo;s domain&rsquo;s <strong>class_vars</strong>:</p>
-
 <pre><code>&gt;&gt;&gt; zoo.domain.class_var
 EnumVariable 'type'
 &gt;&gt;&gt; emotions.domain.class_vars
@@ -256,9 +252,7 @@ EnumVariable 'type'
  EnumVariable 'sad-lonely',
  EnumVariable 'angry-aggresive'&gt;
 </code></pre>
-
 <p>A simple example of a <a href="/doc/reference/Orange.multilabel/">multi-label classification</a> learner is a &ldquo;binary relevance&rdquo; learner. Let&rsquo;s try it out.</p>
-
 <pre><code>&gt;&gt;&gt; learner = Orange.multilabel.BinaryRelevanceLearner()
 &gt;&gt;&gt; classifier = learner(emotions)
 &gt;&gt;&gt; classifier(emotions[0])
@@ -272,16 +266,12 @@ EnumVariable 'type'
 [&lt;1.000, 0.000&gt;, &lt;0.881, 0.119&gt;, &lt;0.000, 1.000&gt;,
  &lt;0.046, 0.954&gt;, &lt;0.000, 1.000&gt;, &lt;1.000, 0.000&gt;]
 </code></pre>
-
 <p>Real values of label variables of <strong>emotions[0]</strong> instance can be obtained by calling <strong>emotions[0].get_classes()</strong>, which is analogous to the <strong>get_class</strong> method in the single-target case.</p>
-
 <p>For multi-label classification, we can also perform testing like usual, however, <a href="/doc/reference/Orange.evaluation.scoring/#scoring-for-multilabel-classification">specialised evaluation measures</a> have to be used:</p>
-
 <pre><code>&gt;&gt;&gt; test = Orange.evaluation.testing.cross_validation([learner], emotions)
 &gt;&gt;&gt; Orange.evaluation.scoring.mlc_hamming_loss(test)
 [0.2228780213603148]
 </code></pre>
-
 <p>In one of the following blog posts, a multi-target regression method PLS that is in the process of implementation will be described.</p>
 
             </div>

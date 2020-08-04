@@ -1659,63 +1659,48 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="knn">kNN</h1>
-
+                    <h1 id="knn">kNN</h1>
 <p>Predict according to the nearest training instances.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: kNN learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p>The <strong>kNN</strong> widget uses the <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">kNN algorithm</a> that searches for k closest training examples in feature space and uses their average as prediction.</p>
-
-<p><img src="../images/kNN-stamped.png" alt="" /></p>
-
+<p><img src="../images/kNN-stamped.png" alt=""></p>
 <ol>
 <li>A name under which it will appear in other widgets. The default name is &ldquo;kNN&rdquo;.</li>
 <li>Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.
-
 <ul>
 <li>Metric can be:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean</a> (&ldquo;straight line&rdquo;, distance between two points)</li>
 <li><a href="https://en.wikipedia.org/wiki/Taxicab_geometry">Manhattan</a> (sum of absolute differences of all attributes)</li>
 <li><a href="https://en.wikipedia.org/wiki/Chebyshev_distance">Maximal</a> (greatest of absolute differences between attributes)</li>
 <li><a href="https://en.wikipedia.org/wiki/Mahalanobis_distance">Mahalanobis</a> (distance between point and distribution).</li>
-</ul></li>
+</ul>
+</li>
 <li>The <em>Weights</em> you can use are:
-
 <ul>
 <li><strong>Uniform</strong>: all points in each neighborhood are weighted equally.</li>
 <li><strong>Distance</strong>: closer neighbors of a query point have a greater influence than the neighbors further away.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>When you change one or more settings, you need to click <em>Apply</em>, which will put a new learner on the output and, if the training examples are given, construct a new model and output it as well. Changes can also be applied automatically by clicking the box on the left side of the <em>Apply</em> button.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>The first example is a classification task on <em>iris</em> dataset. We compare the results of <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-Nearest neighbors</a> with the default model <a href="../../model/constant/">Constant</a>, which always predicts the majority class.</p>
-
-<p><img src="../images/Constant-classification.png" alt="" /></p>
-
+<p><img src="../images/Constant-classification.png" alt=""></p>
 <p>The second example is a regression task. This workflow shows how to use the <em>Learner</em> output. For the purpose of this example, we used the <em>housing</em> dataset. We input the <strong>kNN</strong> prediction model into <a href="../../evaluate/predictions/">Predictions</a> and observe the predicted values.</p>
-
-<p><img src="../images/kNN-regression.png" alt="" /></p>
+<p><img src="../images/kNN-regression.png" alt=""></p>
 
                 </div>
             </div>

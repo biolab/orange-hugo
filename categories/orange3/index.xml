@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Orange3 on Orange</title>
+    <title>orange3 on Orange</title>
     <link>/categories/orange3/</link>
-    <description>Recent content in Orange3 on Orange</description>
+    <description>Recent content in orange3 on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Nov 2018 19:11:58 +0000</lastBuildDate>
@@ -152,7 +152,7 @@ First, let us observe the data. We have 4887 recorded download sessions with one
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -424,7 +424,7 @@ We’ve all heard the saying, “Rules are meant to be broken.” Regardless of 
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rdquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     
@@ -474,7 +474,7 @@ The add-on currently has two widgets: one for Association Rules and the other fo
       <guid>/blog/2016/04/01/version-3-3-1-updates-and-features/</guid>
       <description>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&amp;rsquo;ve introduced some new functionalities and improved a few old ones.
 Here&amp;rsquo;s what&amp;rsquo;s new in this release:
- New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
+  New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
     </item>
     
     <item>
@@ -553,7 +553,7 @@ Here we have some preliminary results that we&amp;rsquo;ve managed to gather in 
       <guid>/blog/2015/10/30/ghostbusters/</guid>
       <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
 Let’s check the distribution in Distributions widget.
-Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
     </item>
     
     <item>
@@ -609,7 +609,7 @@ Hub widget is the most versatile widget available so far.</description>
       <guid>/blog/2015/09/04/updated-widget-documentation/</guid>
       <description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
 Right click and select &amp;ldquo;Help&amp;rdquo; or press F1.
- 
+** **
 It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description>
     </item>
     
@@ -621,7 +621,7 @@ It’s easy to use. To learn more about a particular wigdet, click on the widget
       <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
       <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
 2-dimensional scatter plot visualization
-Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘_Start Evaluation_’ to begin ranking.</description>
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
     </item>
     
     <item>

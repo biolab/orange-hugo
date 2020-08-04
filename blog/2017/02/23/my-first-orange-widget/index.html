@@ -237,13 +237,9 @@
 
 
               <p>Recently, I took on a daunting task - programming my first widget. I&rsquo;m not a programmer or a computer science grad, but I&rsquo;ve been looking at Orange code for almost two years now and I thought I could handle it.</p>
-
 <p>I set to create a simple <a href="https://www.nottingham.ac.uk/alzsh3/acvocab/concordances.htm">Concordance</a> widget that displays word contexts in a corpus (the widget will be available in the future release). The widget turned out to be a little more complicated than I originally anticipated, but it was a great exercise in programming.</p>
-
 <p>Today, I&rsquo;ll explain how I got started with my widget development. We will create a very basic Word Finder widget, that just goes through the corpus (data) and tells you whether a word occurs in a corpus or not. This particular widget is meant to be a part of the <a href="https://github.com/biolab/orange3-text">Orange3-Text add-on</a> (so you need the add-on installed to try it), but the basic structure is the same for all widgets.</p>
-
 <p>First, I have to set the basic widget class.</p>
-
 <pre><code>class OWWordFinder(OWWidget):
     name = &quot;Word Finder&quot;
     description = &quot;Display whether a word is in a text or not.&quot;
@@ -256,13 +252,9 @@
 
     want_control_area = False
 </code></pre>
-
 <p>This sets up the description of the widget, icon, inputs and so on. <code>want_control_area</code> is where we say we only want the main window. Both are on by default in Orange and this simply hides the empty control area on the widget&rsquo;s left side. If your widget has any parameters and controls, leave the control area on and place the buttons there.</p>
-
-<p><img src="/images/2017/02/example-area.jpg" alt="" /></p>
-
+<p><img src="/images/2017/02/example-area.jpg" alt=""></p>
 <p>In <code>__init__</code> we define widget properties (such as data and queried word) and set the view. I decided to go with a very simple design - I just put everything in the <code>mainArea</code>. For such a basic widget this might be ok, but otherwise you might want to dig deeper into models and use <code>QTableView</code>, <code>QGraphicsScene</code> or something similar. Here we will build just the bare bones of a functioning widget.</p>
-
 <pre><code>def __init__(self):
         super().__init__()
 
@@ -277,40 +269,30 @@
         self.input.setFocus()
         # run method self.search on every text change
         self.input.textChanged.connect(self.search)
-
+        
         # place a text label in the mainArea
         self.view = QLabel()
         self.mainArea.layout().addWidget(self.view)
 </code></pre>
-
 <p>Ok, this now sets the <code>__init__</code>: what the widget remembers and how it looks like. With our buttons in place, the widget needs some methods, too.</p>
-
 <p>The first method will update the self.corpus attribute, when the widget receives an input.</p>
-
 <pre><code>def set_data(self, data=None):
         if data is not None and not isinstance(data, Corpus):
             self.corpus = Corpus.from_table(data.domain, data)
         self.corpus = data
         self.search()
 </code></pre>
-
 <p>At the end we called <code>self.search()</code> method, which we already met in <code>__init__</code> above. This method is key to our widget, as it will run the search every time the word changes. Moreover, it will run the method on the same query word when the widget is provided with a new data set, which is why we set it also in <code>set_data()</code>.</p>
-
 <p>Ok, let&rsquo;s finally write this method.</p>
-
 <pre><code>def search(self):
         self.word = self.input.text()
         # self.corpus.tokens will run a default tokenizer, if no tokens are provided on the input
         result = any(self.word in doc for doc in self.corpus.tokens)
         self.view.setText(str(result))
 </code></pre>
-
 <p>This is it. This is our widget. Good job. Creating a new widget can indeed be lot of fun. You can go from a quite basic widget to very intricate, depending on your sense of adventure.</p>
-
 <p>Finally, you can get the <a href="https://gist.github.com/ajdapretnar/e66e1dbecef3bb59abd4137bf8c2ab77">entire widget code in gist</a>.</p>
-
-<p><img src="/images/2017/02/Screen-Shot-2017-02-23-at-10.41.27.png" alt="" /></p>
-
+<p><img src="/images/2017/02/Screen-Shot-2017-02-23-at-10.41.27.png" alt=""></p>
 <p>Happy programming, everyone! :)</p>
 
             </div>

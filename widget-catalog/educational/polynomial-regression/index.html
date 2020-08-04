@@ -1659,34 +1659,23 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="polynomial-regression">Polynomial Regression</h1>
-
+                    <h1 id="polynomial-regression">Polynomial Regression</h1>
 <p>Educational widget that interactively shows regression line for different regressors.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input data set. It needs at least two continuous attributes.</li>
 <li>Preprocessor: data preprocessors</li>
 <li>Learner: regression algorithm used in the widget. Default set to Linear Regression.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: regression algorithm used in the widget</li>
 <li>Predictor: trained regressor</li>
 <li>Coefficients: regressor coefficients if any</li>
 </ul>
-
 <h2 id="description">Description</h2>
-
 <p>This widget interactively shows the regression line using any of the regressors from the <em>Model</em> module. In the widget, <a href="https://en.wikipedia.org/wiki/Polynomial_expansion">polynomial expansion</a> can be set. Polynomial expansion is a regulation of the degree of the polynom that is used to transform the input data and has an effect on the shape of a curve. If polynomial expansion is set to 1 it means that untransformed data are used in the regression.</p>
-
-<p><img src="../images/polynomial-regression-stamped.png" alt="" /></p>
-
+<p><img src="../images/polynomial-regression-stamped.png" alt=""></p>
 <ol>
 <li>Regressor name.</li>
 <li><em>Input</em>: independent variable on axis x.
@@ -1696,24 +1685,15 @@
 format.
 <em>Report</em> includes widget parameters and visualization in the report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
-<p><img src="../images/polyregressionmain.png" alt="" /></p>
-
+<p><img src="../images/polyregressionmain.png" alt=""></p>
 <p>We loaded <em>iris</em> data set with the <strong>File</strong> widget. Then we connected <strong>Linear Regression</strong> learner to the <strong>Polynomial Regression</strong> widget. In the widget we selected <em>petal length</em> as our <em>Input</em> variable and <em>petal width</em> as our <em>Target</em> variable. We set <em>Polynomial expansion</em> to 1 which gives us a linear regression line. The result is shown in the figure below.</p>
-
-<p><img src="../images/polynomial-regression-exp1.png" alt="" /></p>
-
+<p><img src="../images/polynomial-regression-exp1.png" alt=""></p>
 <p>The line can fit better if we increase the <strong>Polynomial expansion</strong> parameter. Say, we set it to 3.</p>
-
-<p><img src="../images/polynomial-regression-exp3.png" alt="" /></p>
-
+<p><img src="../images/polynomial-regression-exp3.png" alt=""></p>
 <p>To observe different results, change <strong>Linear Regression</strong> to any other regression learner from Orange. Example below is done with the <strong>Tree</strong> learner.</p>
-
-<p><img src="../images/polyregressiontree1.png" alt="" /></p>
-
-<p><img src="../images/polynomial-regression-tree-exp1.png" alt="" /></p>
+<p><img src="../images/polyregressiontree1.png" alt=""></p>
+<p><img src="../images/polynomial-regression-tree-exp1.png" alt=""></p>
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -163,11 +163,11 @@
   </url>
   
   <url>
-    <loc>/screenshots/cn2_rule_induction/</loc>
+    <loc>/workflows/tree-scatterplot/</loc>
   </url>
   
   <url>
-    <loc>/workflows/tree-scatterplot/</loc>
+    <loc>/screenshots/cn2_rule_induction/</loc>
   </url>
   
   <url>
@@ -223,8 +223,68 @@
   </url>
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/corpus/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-07-27-story-arcs/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/heat-map/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/line-chart/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/sentiment-analysis/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/story-arc/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/text-mining/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/domain/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/edit/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -233,7 +293,32 @@
   </url>
   
   <url>
+    <loc>/categories/addons/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/covid-19/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-4-015-covid-19-part-3/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/time/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/trends/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/visualization/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -243,8 +328,33 @@
   </url>
   
   <url>
+    <loc>/categories/geo/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-04-02-covid-19-basic/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/feature-construction/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/line-plot/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/anaconda/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/installation/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -253,8 +363,43 @@
   </url>
   
   <url>
+    <loc>/categories/navigator/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/education/</loc>
+    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-02-08-lecture-notes/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/workshop/</loc>
+    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/anthropology/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/big-data/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/machine/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/pivot-table/</loc>
+    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -263,8 +408,28 @@
   </url>
   
   <url>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020/2020-01-16-orange-cloud/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/remote/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/server/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/images/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -273,8 +438,43 @@
   </url>
   
   <url>
+    <loc>/categories/neighbors/</loc>
+    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/belgrade/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/classification/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/decision-tree/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-11-20-belgrade-workshop/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/naive-bayes/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/nomogram/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/clustering/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -283,8 +483,43 @@
   </url>
   
   <url>
+    <loc>/categories/telco/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/hypothesis-testing/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/multiple-hypothesis-testing/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-09-29-of-carrots-horses-and-fear-of-heights/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/p-value/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/statistical-significance/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/confusion-matrix/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/model-performance/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -293,13 +528,38 @@
   </url>
   
   <url>
+    <loc>/categories/aggregate/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-08-27-pivot-table/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/categories/groupby/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-science/</loc>
+    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/2019-07-26-doctoral_summer_school/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/summer-school/</loc>
+    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/bioinformatics/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -318,6 +578,11 @@
   </url>
   
   <url>
+    <loc>/categories/gene-expression/</loc>
+    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/6/gene-expression-profiles-with-line-plot/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
   </url>
@@ -328,8 +593,48 @@
   </url>
   
   <url>
+    <loc>/categories/business-intelligence/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/HR/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/logistic-regression/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/predictive-models/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/GIS/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/hierarchical-clustering/</loc>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/4/24/orange-at-gis-ostrava/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/release/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/Status-Bar/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -338,8 +643,53 @@
   </url>
   
   <url>
+    <loc>/categories/gene-ontology/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/genomics/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/RNA-seq/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/scOrange/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/single-cell/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/3/1/single-cell-data-science-for-everyone/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/cross-validation/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/leave-one-out/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/LOO/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/test-and-score/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -348,8 +698,38 @@
   </url>
   
   <url>
+    <loc>/categories/correlations/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/NHTS/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/null-hypothesis/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/statistics/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interactive-visualization/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/scatter-plot/</loc>
+    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -358,7 +738,22 @@
   </url>
   
   <url>
+    <loc>/categories/analysis/</loc>
+    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interface/</loc>
+    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/11/22/orange-is-getting-smarter/</loc>
+    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/orange3/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
   </url>
   
@@ -373,7 +768,32 @@
   </url>
   
   <url>
+    <loc>/categories/preprocessing/</loc>
+    <lastmod>2018-10-05T10:36:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/infraorange/</loc>
+    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/infrared-spectra/</loc>
+    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/09/21/orange-in-space/</loc>
+    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/spectroscopy/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url>
   
@@ -383,7 +803,22 @@
   </url>
   
   <url>
+    <loc>/categories/update/</loc>
+    <lastmod>2018-09-11T13:49:28+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/08/27/explaining-kickstarter-success/</loc>
+    <lastmod>2018-08-27T16:02:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/prediction/</loc>
+    <lastmod>2018-08-27T16:02:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/widget/</loc>
     <lastmod>2018-08-27T16:02:36+00:00</lastmod>
   </url>
   
@@ -395,6 +830,16 @@
   <url>
     <loc>/blog/2018/06/21/girls-go-data-mining/</loc>
     <lastmod>2018-06-21T09:23:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interactive-data-visualization/</loc>
+    <lastmod>2018-06-21T09:23:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/dataloading/</loc>
+    <lastmod>2018-06-12T07:54:17+00:00</lastmod>
   </url>
   
   <url>
@@ -413,7 +858,27 @@
   </url>
   
   <url>
+    <loc>/categories/scripting/</loc>
+    <lastmod>2018-05-15T09:15:58+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/05/09/clustering-of-monet-and-manet/</loc>
+    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/image-analytics/</loc>
+    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorial/</loc>
+    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/youtube/</loc>
     <lastmod>2018-05-09T08:19:34+00:00</lastmod>
   </url>
   
@@ -423,8 +888,48 @@
   </url>
   
   <url>
+    <loc>/categories/examples/</loc>
+    <lastmod>2018-05-03T11:37:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/download/</loc>
+    <lastmod>2018-04-23T08:34:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/04/23/installing-add-ons-works-again/</loc>
     <lastmod>2018-04-23T08:34:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/pypi/</loc>
+    <lastmod>2018-04-23T08:34:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/neuralnetwork/</loc>
+    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/parallelization/</loc>
+    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/performance/</loc>
+    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/programming/</loc>
+    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/qt/</loc>
+    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
   <url>
@@ -448,8 +953,28 @@
   </url>
   
   <url>
+    <loc>/categories/sql/</loc>
+    <lastmod>2018-02-16T13:20:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/conference/</loc>
+    <lastmod>2018-02-02T10:32:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/embedding/</loc>
+    <lastmod>2018-02-02T10:32:28+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</loc>
     <lastmod>2018-02-02T10:32:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/features/</loc>
+    <lastmod>2018-01-26T11:00:09+00:00</lastmod>
   </url>
   
   <url>
@@ -463,12 +988,32 @@
   </url>
   
   <url>
+    <loc>/categories/network/</loc>
+    <lastmod>2017-12-23T17:05:52+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/12/23/speeding-up-network-visualization/</loc>
     <lastmod>2017-12-23T17:05:52+00:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/2017/11/29/how-to-properly-test-models/</loc>
+    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/overfitting/</loc>
+    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/predictive-analytics/</loc>
+    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/scoring/</loc>
     <lastmod>2017-11-29T12:26:44+00:00</lastmod>
   </url>
   
@@ -488,6 +1033,11 @@
   </url>
   
   <url>
+    <loc>/categories/regression/</loc>
+    <lastmod>2017-11-03T12:40:06+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/10/26/analyzing-surveys/</loc>
     <lastmod>2017-10-26T11:03:10+00:00</lastmod>
   </url>
@@ -499,6 +1049,11 @@
   
   <url>
     <loc>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</loc>
+    <lastmod>2017-09-22T11:34:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/unsupervised/</loc>
     <lastmod>2017-09-22T11:34:26+00:00</lastmod>
   </url>
   
@@ -518,6 +1073,11 @@
   </url>
   
   <url>
+    <loc>/categories/tree/</loc>
+    <lastmod>2017-08-11T08:59:54+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</loc>
     <lastmod>2017-08-08T14:56:43+00:00</lastmod>
   </url>
@@ -528,8 +1088,18 @@
   </url>
   
   <url>
+    <loc>/categories/version/</loc>
+    <lastmod>2017-08-04T11:41:33+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/07/28/support-orange-developers/</loc>
     <lastmod>2017-07-28T12:46:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/distribution/</loc>
+    <lastmod>2017-07-14T13:30:47+00:00</lastmod>
   </url>
   
   <url>
@@ -563,6 +1133,11 @@
   </url>
   
   <url>
+    <loc>/categories/toolbox/</loc>
+    <lastmod>2017-04-07T14:27:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/04/03/image-analytics-clustering/</loc>
     <lastmod>2017-04-03T12:36:22+00:00</lastmod>
   </url>
@@ -590,6 +1165,11 @@
   <url>
     <loc>/blog/2017/02/23/my-first-orange-widget/</loc>
     <lastmod>2017-02-23T10:11:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/feature-engineering/</loc>
+    <lastmod>2017-02-03T13:16:37+00:00</lastmod>
   </url>
   
   <url>
@@ -633,6 +1213,11 @@
   </url>
   
   <url>
+    <loc>/categories/article/</loc>
+    <lastmod>2016-11-18T13:28:09+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2016/11/18/top-100-changemakers-in-central-and-eastern-europe/</loc>
     <lastmod>2016-11-18T13:28:09+00:00</lastmod>
   </url>
@@ -648,8 +1233,28 @@
   </url>
   
   <url>
+    <loc>/categories/documentation/</loc>
+    <lastmod>2016-10-17T12:18:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/canvas/</loc>
+    <lastmod>2016-10-10T10:09:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/oasys/</loc>
+    <lastmod>2016-10-10T10:09:56+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2016/10/10/the-story-of-shadow-and-orange/</loc>
     <lastmod>2016-10-10T10:09:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/bioorange/</loc>
+    <lastmod>2016-10-02T11:21:20+00:00</lastmod>
   </url>
   
   <url>
@@ -668,6 +1273,11 @@
   </url>
   
   <url>
+    <loc>/categories/gsoc2016/</loc>
+    <lastmod>2016-08-25T11:31:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2016/08/25/visualizing-gradient-descent/</loc>
     <lastmod>2016-08-25T11:31:04+00:00</lastmod>
   </url>
@@ -675,6 +1285,16 @@
   <url>
     <loc>/blog/2016/08/19/making-recommendations/</loc>
     <lastmod>2016-08-19T20:42:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/recommender-system/</loc>
+    <lastmod>2016-08-19T20:42:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/gsoc/</loc>
+    <lastmod>2016-08-16T17:32:20+00:00</lastmod>
   </url>
   
   <url>
@@ -690,6 +1310,11 @@
   <url>
     <loc>/blog/2016/08/05/rule-induction-part-i-scripting/</loc>
     <lastmod>2016-08-05T11:52:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/plot/</loc>
+    <lastmod>2016-07-29T11:52:54+00:00</lastmod>
   </url>
   
   <url>
@@ -713,8 +1338,38 @@
   </url>
   
   <url>
+    <loc>/categories/elettra/</loc>
+    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/esrf/</loc>
+    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2016/05/20/oasys-orange-canvas-applied-to-optical-physics/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/orangecanvas/</loc>
+    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/physics/</loc>
+    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/synchrotron/</loc>
+    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/association-rules/</loc>
+    <lastmod>2016-04-25T07:46:33+00:00</lastmod>
   </url>
   
   <url>
@@ -734,6 +1389,11 @@
   
   <url>
     <loc>/blog/2016/03/23/all-i-see-is-silhouette/</loc>
+    <lastmod>2016-03-23T09:09:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/forestlearner/</loc>
     <lastmod>2016-03-23T09:09:26+00:00</lastmod>
   </url>
   
@@ -775,6 +1435,11 @@
   <url>
     <loc>/blog/2015/12/19/model-based-feature-scoring/</loc>
     <lastmod>2015-12-19T19:27:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/report/</loc>
+    <lastmod>2015-12-11T09:53:12+00:00</lastmod>
   </url>
   
   <url>
@@ -868,6 +1533,16 @@
   </url>
   
   <url>
+    <loc>/categories/principal-component-analysis/</loc>
+    <lastmod>2015-07-20T07:21:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/workflow/</loc>
+    <lastmod>2015-07-20T07:21:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2015/07/10/learn-with-paint-data/</loc>
     <lastmod>2015-07-10T07:00:54+00:00</lastmod>
   </url>
@@ -884,6 +1559,11 @@
   
   <url>
     <loc>/blog/2015/06/08/data-fusion-tutorial-at-the-bc2/</loc>
+    <lastmod>2015-06-08T15:13:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-fusion/</loc>
     <lastmod>2015-06-08T15:13:22+00:00</lastmod>
   </url>
   
@@ -928,6 +1608,11 @@
   </url>
   
   <url>
+    <loc>/categories/computervision/</loc>
+    <lastmod>2014-08-26T15:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2014/08/26/orange-canvas-applied-to-x-ray-optics/</loc>
     <lastmod>2014-08-26T15:59:00+00:00</lastmod>
   </url>
@@ -958,8 +1643,23 @@
   </url>
   
   <url>
+    <loc>/categories/history/</loc>
+    <lastmod>2013-10-09T06:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/jmlr/</loc>
+    <lastmod>2013-10-03T02:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2013/10/03/jmlr-publishes-article-on-orange/</loc>
     <lastmod>2013-10-03T02:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/future/</loc>
+    <lastmod>2013-09-02T21:27:00+00:00</lastmod>
   </url>
   
   <url>
@@ -983,8 +1683,23 @@
   </url>
   
   <url>
+    <loc>/categories/website/</loc>
+    <lastmod>2013-03-04T11:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2013/02/14/new-canvas/</loc>
     <lastmod>2013-02-14T14:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/matrixfactorization/</loc>
+    <lastmod>2013-02-06T13:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/nmf/</loc>
+    <lastmod>2013-02-06T13:47:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1005,6 +1720,11 @@
   <url>
     <loc>/blog/2013/01/06/new-scripting-tutorial/</loc>
     <lastmod>2013-01-06T19:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/orange25/</loc>
+    <lastmod>2012-11-30T08:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1043,8 +1763,18 @@
   </url>
   
   <url>
+    <loc>/categories/multitarget/</loc>
+    <lastmod>2012-04-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2012/04/30/orange-gsoc-multi-target-learning-for-orange/</loc>
     <lastmod>2012-04-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/competition/</loc>
+    <lastmod>2012-04-25T13:08:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1055,6 +1785,11 @@
   <url>
     <loc>/blog/2012/04/24/this-year-five-students-participate-in-google-summer-of-code/</loc>
     <lastmod>2012-04-24T10:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/icons/</loc>
+    <lastmod>2012-04-09T11:25:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1078,12 +1813,27 @@
   </url>
   
   <url>
+    <loc>/categories/pls/</loc>
+    <lastmod>2012-02-02T16:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2012/01/23/orange-2-5a2-available/</loc>
     <lastmod>2012-01-23T11:23:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/categories/mlc/</loc>
+    <lastmod>2012-01-09T12:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</loc>
+    <lastmod>2012-01-09T12:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/multilabel/</loc>
     <lastmod>2012-01-09T12:41:00+00:00</lastmod>
   </url>
   
@@ -1113,8 +1863,18 @@
   </url>
   
   <url>
+    <loc>/categories/simpletreelearner/</loc>
+    <lastmod>2011-12-08T15:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2011/10/26/gsoc-mentor-summit/</loc>
     <lastmod>2011-10-26T11:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/debian/</loc>
+    <lastmod>2011-09-13T00:32:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1123,7 +1883,17 @@
   </url>
   
   <url>
+    <loc>/categories/packaging/</loc>
+    <lastmod>2011-09-13T00:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2011/09/07/3d-visualizations-in-orange/</loc>
+    <lastmod>2011-09-07T10:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/opengl/</loc>
     <lastmod>2011-09-07T10:30:00+00:00</lastmod>
   </url>
   
@@ -1160,6 +1930,11 @@
   <url>
     <loc>/blog/2011/08/03/orange-at-ismbeccb-2011/</loc>
     <lastmod>2011-08-03T09:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/networkx/</loc>
+    <lastmod>2011-07-29T18:56:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1238,28 +2013,22 @@
   </url>
   
   <url>
+    <loc>/categories/bohinj/</loc>
+    <lastmod>2011-02-11T13:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/retreat/</loc>
+    <lastmod>2011-02-11T13:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2010/03/04/debian-repository-lives/</loc>
     <lastmod>2010-03-04T01:56:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/widget-catalog/time-series/arima/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/adaboost/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/addons/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/aggregate/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1271,25 +2040,7 @@
   </url>
   
   <url>
-    <loc>/categories/anaconda/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/analysis/</loc>
-    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/bioinformatics/annotate_projection/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/anthropology/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1297,19 +2048,11 @@
   </url>
   
   <url>
-    <loc>/categories/article/</loc>
-    <lastmod>2016-11-18T13:28:09+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/time-series/arima/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/time-series/as_timeseries/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/association-rules/</loc>
-    <lastmod>2016-04-25T07:46:33+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1329,65 +2072,11 @@
   </url>
   
   <url>
-    <loc>/categories/belgrade/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/big-data/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/bioinformatics/</loc>
-    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/bioorange/</loc>
-    <lastmod>2016-10-02T11:21:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/bohinj/</loc>
-    <lastmod>2011-02-11T13:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/box-plot/</loc>
-    <priority>0</priority>
+    <loc>/tags/Box-Plot/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/visualize/boxplot/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/business-intelligence/</loc>
-    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/model/cn2ruleinduction/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/visualize/cn2ruleviewer/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/data/csvfileimport/</loc>
   </url>
   
   <url>
@@ -1399,18 +2088,6 @@
   </url>
   
   <url>
-    <loc>/categories/canvas/</loc>
-    <lastmod>2016-10-10T10:09:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/geo/choroplethmap/</loc>
   </url>
   
@@ -1419,25 +2096,11 @@
   </url>
   
   <url>
-    <loc>/tags/classification/</loc>
-    <priority>0</priority>
+    <loc>/tags/Classification/</loc>
   </url>
   
   <url>
-    <loc>/categories/classification/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/classification-tree/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cloud/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Classification-Tree/</loc>
   </url>
   
   <url>
@@ -1445,30 +2108,19 @@
   </url>
   
   <url>
-    <loc>/tags/clustering/</loc>
-    <priority>0</priority>
+    <loc>/tags/Clustering/</loc>
   </url>
   
   <url>
-    <loc>/categories/clustering/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/model/cn2ruleinduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/visualize/cn2ruleviewer/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/data/color/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/competition/</loc>
-    <lastmod>2012-04-25T13:08:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/computervision/</loc>
-    <lastmod>2014-08-26T15:59:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1480,20 +2132,7 @@
   </url>
   
   <url>
-    <loc>/categories/conference/</loc>
-    <lastmod>2018-02-02T10:32:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/confusion-matrix/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/confusion-matrix/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Confusion-Matrix/</loc>
   </url>
   
   <url>
@@ -1513,17 +2152,7 @@
   </url>
   
   <url>
-    <loc>/categories/corpus/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/text-mining/corpus-widget/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/text-mining/corpusviewer/</loc>
   </url>
   
   <url>
@@ -1531,9 +2160,7 @@
   </url>
   
   <url>
-    <loc>/categories/correlations/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/text-mining/corpusviewer/</loc>
   </url>
   
   <url>
@@ -1549,45 +2176,19 @@
   </url>
   
   <url>
-    <loc>/categories/covid-19/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/createclass/</loc>
   </url>
   
   <url>
-    <loc>/tags/cross-validation/</loc>
-    <priority>0</priority>
+    <loc>/tags/Cross-Validation/</loc>
   </url>
   
   <url>
-    <loc>/categories/cross-validation/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/data/csvfileimport/</loc>
   </url>
   
   <url>
-    <loc>/widget-catalog/unsupervised/DBSCAN/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/data/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/data/</loc>
-    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/data-fusion/</loc>
-    <lastmod>2015-06-08T15:13:22+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Data/</loc>
   </url>
   
   <url>
@@ -1595,8 +2196,7 @@
   </url>
   
   <url>
-    <loc>/tags/data-loading/</loc>
-    <priority>0</priority>
+    <loc>/tags/Data-Loading/</loc>
   </url>
   
   <url>
@@ -1604,8 +2204,7 @@
   </url>
   
   <url>
-    <loc>/tags/data-sampler/</loc>
-    <priority>0</priority>
+    <loc>/tags/Data-Sampler/</loc>
   </url>
   
   <url>
@@ -1613,14 +2212,7 @@
   </url>
   
   <url>
-    <loc>/categories/data-science/</loc>
-    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-table/</loc>
-    <priority>0</priority>
+    <loc>/tags/Data-Table/</loc>
   </url>
   
   <url>
@@ -1632,25 +2224,15 @@
   </url>
   
   <url>
-    <loc>/categories/dataloading/</loc>
-    <lastmod>2018-06-12T07:54:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/datasets/</loc>
   </url>
   
   <url>
-    <loc>/categories/debian/</loc>
-    <lastmod>2011-09-13T00:32:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/unsupervised/DBSCAN/</loc>
   </url>
   
   <url>
-    <loc>/categories/decision-tree/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/bioinformatics/dicty_express/</loc>
   </url>
   
   <url>
@@ -1662,8 +2244,7 @@
   </url>
   
   <url>
-    <loc>/tags/dimensionality-reduction/</loc>
-    <priority>0</priority>
+    <loc>/tags/Dimensionality-Reduction/</loc>
   </url>
   
   <url>
@@ -1691,12 +2272,6 @@
   </url>
   
   <url>
-    <loc>/categories/distribution/</loc>
-    <lastmod>2017-07-14T13:30:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/visualize/distributions/</loc>
   </url>
   
@@ -1709,29 +2284,11 @@
   </url>
   
   <url>
-    <loc>/categories/documentation/</loc>
-    <lastmod>2016-10-17T12:18:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/docs/</loc>
   </url>
   
   <url>
-    <loc>/categories/domain/</loc>
-    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/single-cell/dot_matrix/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/download/</loc>
-    <lastmod>2018-04-23T08:34:47+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1743,31 +2300,7 @@
   </url>
   
   <url>
-    <loc>/categories/edit/</loc>
-    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/editdomain/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/education/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/elettra/</loc>
-    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/embedding/</loc>
-    <lastmod>2018-02-02T10:32:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1775,25 +2308,7 @@
   </url>
   
   <url>
-    <loc>/categories/esrf/</loc>
-    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/examples/</loc>
-    <lastmod>2018-05-03T11:37:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/faq/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/feature-construction/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1801,29 +2316,15 @@
   </url>
   
   <url>
-    <loc>/categories/feature-engineering/</loc>
-    <lastmod>2017-02-03T13:16:37+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Feature-Ranking/</loc>
   </url>
   
   <url>
-    <loc>/tags/feature-ranking/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/feature-selection/</loc>
-    <priority>0</priority>
+    <loc>/tags/Feature-Selection/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/data/featurestatistics/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/features/</loc>
-    <lastmod>2018-01-26T11:00:09+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1843,12 +2344,6 @@
   </url>
   
   <url>
-    <loc>/categories/forestlearner/</loc>
-    <lastmod>2016-03-23T09:09:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/home/testimonials3/</loc>
   </url>
   
@@ -1861,33 +2356,7 @@
   </url>
   
   <url>
-    <loc>/categories/future/</loc>
-    <lastmod>2013-09-02T21:27:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/bioinformatics/geo_data_sets/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/bioinformatics/go_browser/</loc>
-  </url>
-  
-  <url>
     <loc>/home/testimonials1/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/gene-expression/</loc>
-    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/gene-ontology/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1899,15 +2368,7 @@
   </url>
   
   <url>
-    <loc>/categories/genomics/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/geo/</loc>
-    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/bioinformatics/geo_data_sets/</loc>
   </url>
   
   <url>
@@ -1923,9 +2384,7 @@
   </url>
   
   <url>
-    <loc>/categories/gis/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/bioinformatics/go_browser/</loc>
   </url>
   
   <url>
@@ -1941,42 +2400,11 @@
   </url>
   
   <url>
-    <loc>/categories/groupby/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/gsoc/</loc>
-    <lastmod>2016-08-16T17:32:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/gsoc2016/</loc>
-    <lastmod>2016-08-25T11:31:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/heat-map/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/visualize/heatmap/</loc>
   </url>
   
   <url>
-    <loc>/tags/hierarchical-clustering/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/hierarchical-clustering/</loc>
-    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Hierarchical-Clustering/</loc>
   </url>
   
   <url>
@@ -1984,37 +2412,7 @@
   </url>
   
   <url>
-    <loc>/categories/history/</loc>
-    <lastmod>2013-10-09T06:33:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/hr/</loc>
-    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/spectroscopy/hyperspectra/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/hypothesis-testing/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/icons/</loc>
-    <lastmod>2012-04-09T11:25:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/image-analytics/</loc>
-    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2030,12 +2428,6 @@
   </url>
   
   <url>
-    <loc>/categories/images/</loc>
-    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/text-mining/importdocuments/</loc>
   </url>
   
@@ -2048,53 +2440,11 @@
   </url>
   
   <url>
-    <loc>/categories/infraorange/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/infrared-spectra/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/installation/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/spectroscopy/integrate-spectra/</loc>
   </url>
   
   <url>
-    <loc>/categories/interactive-data-visualization/</loc>
-    <lastmod>2017-04-03T12:36:22+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/interactive-data-visualization/</loc>
-    <lastmod>2018-06-21T09:23:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/interactive-visualization/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/educational/interactive-kmeans/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/interface/</loc>
-    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2110,9 +2460,7 @@
   </url>
   
   <url>
-    <loc>/categories/jmlr/</loc>
-    <lastmod>2013-10-03T02:50:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/unsupervised/kmeans/</loc>
   </url>
   
   <url>
@@ -2120,9 +2468,7 @@
   </url>
   
   <url>
-    <loc>/categories/leave-one-out/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/model/knn/</loc>
   </url>
   
   <url>
@@ -2134,19 +2480,7 @@
   </url>
   
   <url>
-    <loc>/categories/line-chart/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/line_chart/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/line-plot/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2170,33 +2504,11 @@
   </url>
   
   <url>
-    <loc>/categories/logistic-regression/</loc>
-    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/logisticregression/</loc>
   </url>
   
   <url>
-    <loc>/categories/loo/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/unsupervised/louvainclustering/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/unsupervised/mds/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/machine/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2208,9 +2520,7 @@
   </url>
   
   <url>
-    <loc>/categories/matrixfactorization/</loc>
-    <lastmod>2013-02-06T13:47:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/unsupervised/mds/</loc>
   </url>
   
   <url>
@@ -2218,19 +2528,7 @@
   </url>
   
   <url>
-    <loc>/categories/mlc/</loc>
-    <lastmod>2012-01-09T12:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/model_evaluation_w/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/model-performance/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2246,57 +2544,11 @@
   </url>
   
   <url>
-    <loc>/categories/multilabel/</loc>
-    <lastmod>2012-01-09T12:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/multiple-hypothesis-testing/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/multitarget/</loc>
-    <lastmod>2012-04-30T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/text-mining/nytimes/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/naive-bayes/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/naivebayes/</loc>
   </url>
   
   <url>
-    <loc>/categories/navigator/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/neighbors/</loc>
-    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/neighbors/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/network/</loc>
-    <lastmod>2017-12-23T17:05:52+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2328,37 +2580,7 @@
   </url>
   
   <url>
-    <loc>/categories/networkx/</loc>
-    <lastmod>2011-07-29T18:56:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/neuralnetwork/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/neuralnetwork/</loc>
-    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/nhts/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/nmf/</loc>
-    <lastmod>2013-02-06T13:47:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/nomogram/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2366,50 +2588,11 @@
   </url>
   
   <url>
-    <loc>/categories/null-hypothesis/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/text-mining/nytimes/</loc>
   </url>
   
   <url>
-    <loc>/categories/oasys/</loc>
-    <lastmod>2016-10-10T10:09:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/opengl/</loc>
-    <lastmod>2011-09-07T10:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/orange25/</loc>
-    <lastmod>2012-11-30T08:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/orange3/</loc>
-    <lastmod>2018-11-22T19:11:58+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/orangecanvas/</loc>
-    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/outliers/</loc>
-    <priority>0</priority>
+    <loc>/tags/Outliers/</loc>
   </url>
   
   <url>
@@ -2417,15 +2600,11 @@
   </url>
   
   <url>
-    <loc>/categories/overfitting/</loc>
-    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/data/paintdata/</loc>
   </url>
   
   <url>
-    <loc>/categories/p-value/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/PCA/</loc>
   </url>
   
   <url>
@@ -2433,40 +2612,7 @@
   </url>
   
   <url>
-    <loc>/categories/packaging/</loc>
-    <lastmod>2011-09-13T00:32:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/data/paintdata/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/parallelization/</loc>
-    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pca/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/performance/</loc>
-    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/periodogram_w/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/physics/</loc>
-    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2474,30 +2620,11 @@
   </url>
   
   <url>
-    <loc>/tags/pivot-table/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/pivot-table/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Pivot-Table/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/data/pivot/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/plot/</loc>
-    <lastmod>2016-07-29T11:52:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/pls/</loc>
-    <lastmod>2012-02-02T16:21:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2509,36 +2636,11 @@
   </url>
   
   <url>
-    <loc>/categories/prediction/</loc>
-    <lastmod>2018-08-27T16:02:36+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/evaluate/predictions/</loc>
   </url>
   
   <url>
-    <loc>/categories/predictive-analytics/</loc>
-    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/predictive-analytics/</loc>
-    <lastmod>2016-11-30T08:24:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/predictive-models/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/predictive-models/</loc>
-    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Predictive-models/</loc>
   </url>
   
   <url>
@@ -2554,25 +2656,7 @@
   </url>
   
   <url>
-    <loc>/categories/preprocessing/</loc>
-    <lastmod>2018-10-05T10:36:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/principal-component-analysis/</loc>
-    <lastmod>2015-07-20T07:21:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/privacy/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2584,12 +2668,6 @@
   </url>
   
   <url>
-    <loc>/categories/pypi/</loc>
-    <lastmod>2018-04-23T08:34:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/visualize/pythagoreanforest/</loc>
   </url>
   
@@ -2598,23 +2676,7 @@
   </url>
   
   <url>
-    <loc>/categories/python/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/data/pythonscript/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/qt/</loc>
-    <lastmod>2018-04-05T08:22:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/evaluate/rocanalysis/</loc>
   </url>
   
   <url>
@@ -2638,57 +2700,11 @@
   </url>
   
   <url>
-    <loc>/categories/recommender-system/</loc>
-    <lastmod>2016-08-19T20:42:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/regression/</loc>
-    <lastmod>2017-11-03T12:40:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/release/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/remote/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/report/</loc>
-    <lastmod>2015-12-11T09:53:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/spectroscopy/reshape-map/</loc>
   </url>
   
   <url>
-    <loc>/categories/retreat/</loc>
-    <lastmod>2011-02-11T13:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/rna-seq/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/data/sqltable/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/model/svm/</loc>
+    <loc>/widget-catalog/evaluate/rocanalysis/</loc>
   </url>
   
   <url>
@@ -2708,24 +2724,11 @@
   </url>
   
   <url>
-    <loc>/tags/scatter-plot/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/scatter-plot/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Scatter-Plot/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/visualize/scatterplot/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/scorange/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2737,23 +2740,15 @@
   </url>
   
   <url>
-    <loc>/categories/scoring/</loc>
-    <lastmod>2017-11-29T12:26:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/screenshots/</loc>
   </url>
   
   <url>
-    <loc>/categories/scripting/</loc>
-    <lastmod>2018-05-15T09:15:58+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/time-series/seasonal_adjustment/</loc>
   </url>
   
   <url>
-    <loc>/widget-catalog/time-series/seasonal_adjustment/</loc>
+    <loc>/widget-catalog/data/select-by-data-index/</loc>
   </url>
   
   <url>
@@ -2765,17 +2760,7 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/data/select-by-data-index/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/unsupervised/selforganizingmap/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/sentiment-analysis/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2783,18 +2768,11 @@
   </url>
   
   <url>
-    <loc>/categories/server/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/visualize/sievediagram/</loc>
   </url>
   
   <url>
-    <loc>/tags/silhouette/</loc>
-    <priority>0</priority>
+    <loc>/tags/Silhouette/</loc>
   </url>
   
   <url>
@@ -2803,18 +2781,6 @@
   
   <url>
     <loc>/widget-catalog/text-mining/similarityhashing/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/simpletreelearner/</loc>
-    <lastmod>2011-12-08T15:28:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/single-cell/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2834,19 +2800,11 @@
   </url>
   
   <url>
-    <loc>/categories/spectroscopy/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/spiralogram/</loc>
   </url>
   
   <url>
-    <loc>/categories/sql/</loc>
-    <lastmod>2018-02-16T13:20:06+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/data/sqltable/</loc>
   </url>
   
   <url>
@@ -2854,25 +2812,7 @@
   </url>
   
   <url>
-    <loc>/categories/statistical-significance/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/text-mining/statistics/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/status-bar/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2880,53 +2820,23 @@
   </url>
   
   <url>
-    <loc>/categories/story-arc/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/widget-catalog/model/svm/</loc>
   </url>
   
   <url>
-    <loc>/categories/summer-school/</loc>
-    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/t-SNE/</loc>
   </url>
   
   <url>
-    <loc>/categories/synchrotron/</loc>
-    <lastmod>2016-05-20T08:05:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/t-sne/</loc>
-    <priority>0</priority>
+    <loc>/widget-catalog/unsupervised/tsne/</loc>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/telco/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/test-and-score/</loc>
-    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/widget-catalog/evaluate/testandscore/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/text-mining/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2938,19 +2848,7 @@
   </url>
   
   <url>
-    <loc>/categories/time/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/time_slice/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/toolbox/</loc>
-    <lastmod>2017-04-07T14:27:44+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2970,29 +2868,11 @@
   </url>
   
   <url>
-    <loc>/categories/tree/</loc>
-    <lastmod>2017-08-11T08:59:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/model/tree/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/visualize/treeviewer/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/trends/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tutorial/</loc>
-    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -3004,18 +2884,6 @@
   </url>
   
   <url>
-    <loc>/categories/unsupervised/</loc>
-    <lastmod>2017-09-22T11:34:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/update/</loc>
-    <lastmod>2018-09-11T13:49:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/var/</loc>
   </url>
   
@@ -3024,36 +2892,11 @@
   </url>
   
   <url>
-    <loc>/categories/version/</loc>
-    <lastmod>2017-08-04T11:41:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/visualization/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/visualization/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/Visualization/</loc>
   </url>
   
   <url>
     <loc>/widget-catalog/bioinformatics/volcano_plot/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/website/</loc>
-    <lastmod>2013-03-04T11:50:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/widget/</loc>
-    <lastmod>2018-08-27T16:02:36+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -3073,45 +2916,11 @@
   </url>
   
   <url>
-    <loc>/categories/workflow/</loc>
-    <lastmod>2015-07-20T07:21:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/workflows/</loc>
   </url>
   
   <url>
-    <loc>/categories/workshop/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/time-series/yahoo_finance/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/youtube/</loc>
-    <lastmod>2018-05-09T08:19:34+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/bioinformatics/dicty_express/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/unsupervised/kmeans/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/model/knn/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/unsupervised/tsne/</loc>
   </url>
   
 </urlset>

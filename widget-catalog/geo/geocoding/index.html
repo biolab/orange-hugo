@@ -1659,50 +1659,41 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="geocoding">Geocoding</h1>
-
+                    <h1 id="geocoding">Geocoding</h1>
 <p>Encode region names into geographical coordinates, or reverse-geocode latitude and longitude pairs into regions.</p>
-
-<p><strong>Inputs</strong>
--  Data: An input data set.</p>
-
-<p><strong>Outputs</strong>
--  Coded Data: Data set with new meta attributes.</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Data: An input data set.</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Coded Data: Data set with new meta attributes.</li>
+</ul>
 <p><strong>Geocoding</strong> widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return the latitude and longitude of geometric centre.</p>
-
-<p><img src="../images/Geocoding-stamped.png" alt="" /></p>
-
+<p><img src="../images/Geocoding-stamped.png" alt=""></p>
 <ol>
 <li>Use region names to extract the corresponding latitude/longitude pairs:
-
 <ul>
 <li>Region identifier: attribute with the information on region names. Can be discrete or string.</li>
 <li>Identifier type: define how the data is coded. Supports ISO codes and some major cities and countries.</li>
-</ul></li>
+</ul>
+</li>
 <li>Use latitude and longitude pairs to retrieve region names:
-
 <ul>
 <li>Latitude attribute.</li>
 <li>Longitude attribute.</li>
 <li>Administrative level of the region you wish to extract.</li>
-</ul></li>
+</ul>
+</li>
 <li>Extend coded data adds additional information on the region of interest. For countries, for example, one would get economy, type, continent, etc.</li>
 <li>If <em>Apply Automatically</em> is ticked, the changes will be communicated automatically. Alternatively, press <em>Apply</em>.</li>
 <li>Unmatched identifiers editor. Match regions names that couldn&rsquo;t be matched automatically with their corresponding name.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>We will use <em>HDI</em> data from the <strong>Datasets</strong> widget. Open the widget, find <em>HDI</em> data, select it and press <em>Send</em>. First, let us observe the data in a <strong>Data Table</strong>. We have a meta attribute names <em>Country</em>, which contains country names. Now we would like to plot this on a map, but <strong>Geo Map</strong> widget requires latitude and longitude pairs. <strong>Geocoding</strong> will help us extract this information from country names.</p>
-
 <p>Connect <strong>Geocoding</strong> to <strong>Datasets</strong>. Region identifier in our case is the attribute <em>Country</em> and the identifier type is <em>Country name</em>. If our data contained major European cities, we would have to select this from the dropdown. On the right there is the <em>Unmatched identifier</em> editor, which shows those instances, for which <strong>Geocoding</strong> couldn&rsquo;t find corresponding latitude/longitude pairs. We can help the widget by providing a custom replacement. Click on the field and start typing <em>Korea</em>. The widget will suggest two countries, Democratic Republic of Korea and South Korea. Select the one you wish to use here.</p>
-
 <p>Finally, we can observe the data in the second <strong>Data Table</strong>. We can see our data now has two additional attributes, one for the latitude and one for the longitude of the region of interest. Now, you can plot the data on the map!</p>
-
-<p><img src="../images/Geocoding-Example.png" alt="" /></p>
+<p><img src="../images/Geocoding-Example.png" alt=""></p>
 
                 </div>
             </div>

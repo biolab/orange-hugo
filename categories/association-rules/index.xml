@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Association Rules on Orange</title>
+    <title>association rules on Orange</title>
     <link>/categories/association-rules/</link>
-    <description>Recent content in Association Rules on Orange</description>
+    <description>Recent content in association rules on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Apr 2016 07:46:33 +0000</lastBuildDate>

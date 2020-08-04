@@ -1659,47 +1659,32 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="tweet-profiler">Tweet Profiler</h1>
-
+                    <h1 id="tweet-profiler">Tweet Profiler</h1>
 <p>Detect Ekman&rsquo;s, Plutchik&rsquo;s or Profile of Mood States&rsquo; emotions in tweets.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of tweets (or other documents).</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A corpus with information on the sentiment of each document.</li>
 </ul>
-
 <p><strong>Tweet Profiler</strong> retrieves information on sentiment from the server for each given tweet (or document). The widget sends data to the server, where a model computes emotion probabilities and/or scores. The widget support three classifications of emotion, namely <a href="https://en.wikipedia.org/wiki/Paul_Ekman">Ekman&rsquo;s</a>, <a href="https://en.wikipedia.org/wiki/Robert_Plutchik">Plutchik&rsquo;s</a> and <a href="https://en.wikipedia.org/wiki/Profile_of_mood_states">Profile of Mood States (POMS)</a>.</p>
-
-<p><img src="../images/Tweet-Profiler-stamped.png" alt="" /></p>
-
+<p><img src="../images/Tweet-Profiler-stamped.png" alt=""></p>
 <ol>
 <li>Options:
-
 <ul>
 <li>Attribute to use as content.</li>
 <li>Emotion classification, either Ekman&rsquo;s, Plutchik&rsquo;s or Profile of Mood States. Multi-class will output one most probable emotion per document, while multi-label will output values in columns per each emotion.</li>
 <li>The widget can output classes of emotion (categorical), probabilities (numeric), or embeddings (an emotional vector of the document).</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Commit Automatically</em> automatically outputs the result. Alternatively, press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>We will use <em>election-tweets-2016.tab</em> for this example. Load the data with <a href="../corpus-widget/">Corpus</a> and connect it to <strong>Tweet Profiler</strong>. We will use <em>Content</em> attribute for the analysis, Ekman&rsquo;s classification of emotion with multi-class option and we will output the result as class. We will observe the results in a <strong>Box Plot</strong>. In the widget, we have selected to observe the <em>Emotion</em> variable, grouped by <em>Author</em>. This way we can see which emotion prevails by which author.</p>
-
-<p><img src="../images/Tweet-Profiler-Example.png" alt="" /></p>
-
+<p><img src="../images/Tweet-Profiler-Example.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Colnerič, Niko and Janez Demšar (2018). Emotion Recognition on Twitter: Comparative Study and Training a Unison Model. In IEEE Transactions on Affective Computing. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8295234">Available online.</a></p>
 
                 </div>

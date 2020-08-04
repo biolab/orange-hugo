@@ -1659,40 +1659,27 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="time-slice">Time Slice</h1>
-
+                    <h1 id="time-slice">Time Slice</h1>
 <p>Select a slice of measurements on a time interval.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Subset: Selected time slice from the time series.</li>
 </ul>
-
 <p>Time slice is a subset selection widget designed specifically for time series and for interactive visualizations. It enables selecting a subset of the data by date and/or hour. Moreover, it can output data from a sliding window with options for step size and speed of the output change.</p>
-
-<p><img src="../images/time-slice-stamped.png" alt="" /></p>
-
+<p><img src="../images/time-slice-stamped.png" alt=""></p>
 <ol>
 <li>Visual representation of time series with the selected time slice. Click and drag the red lines to adjust the time window, or click and drag the yellow frame to move it around. Alternatively, set the to and from dates below to output the desired subset.</li>
 <li>If <em>Loop playback</em> is selected the data will &lsquo;replay&rsquo; continuously. <em>Custom step size</em> defines how the time slice move. If it is set to, say, <em>1 day</em>, the window will output n + 1 day once it moves. Without the custom step size defined, the slice will move to the next frame of the same size without any overlap.
 Press play to being the sliding window and stop to stop it. Backwards and forwards buttons move the slice by the specified step size.</li>
 <li>Set the speed of the sliding window.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>This simple example uses <a href="yahoo_finance.md">Yahoo Finance</a> widget to retrieve financial data from Yahoo, namely the AMNZ stock index from 2015 to 2020. Next, we will use <strong>Time Slice</strong> to observe how the data changed through time. We can observe the output of Time Slice in <a href="../line_chart/">Line Chart</a>. Press <em>Play</em> in Time Slice and see how Line Chart changes interactively.</p>
-
-<p><img src="../images/time-slice-example.png" alt="" /></p>
+<p><img src="../images/time-slice-example.png" alt=""></p>
 
                 </div>
             </div>

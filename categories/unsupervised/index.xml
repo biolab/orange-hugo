@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unsupervised on Orange</title>
+    <title>unsupervised on Orange</title>
     <link>/categories/unsupervised/</link>
-    <description>Recent content in Unsupervised on Orange</description>
+    <description>Recent content in unsupervised on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Sep 2017 11:34:26 +0000</lastBuildDate>

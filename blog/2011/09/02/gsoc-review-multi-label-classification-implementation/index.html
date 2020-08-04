@@ -229,43 +229,28 @@
               <div id="blog_images_">
 
 
-              
-
-<p>Traditional single-label classification is concerned with learning from a set of examples that are associated with a single label <strong>l</strong> from a set of disjoint labels <strong>L</strong>, <strong>|L|</strong> &gt; <strong>1</strong>. If <strong>|L|</strong> = <strong>2</strong>, then the learning problem is called a binary classification problem, while if <strong>|L|</strong> &gt; <strong>2</strong>, then it is called a multi-class classification problem (Tsoumakas &amp; Katakis, 2007).</p>
-
+              <p>Traditional single-label classification is concerned with learning from a set of examples that are associated with a single label <strong>l</strong> from a set of disjoint labels <strong>L</strong>, <strong>|L|</strong> &gt; <strong>1</strong>. If <strong>|L|</strong> = <strong>2</strong>, then the learning problem is called a binary classification problem, while if <strong>|L|</strong> &gt; <strong>2</strong>, then it is called a multi-class classification problem (Tsoumakas &amp; Katakis, 2007).</p>
 <p>Multi-label classification methods are increasingly used by many applications, such as textual data classification, protein function classification, music categorization and semantic scene classification. However, currently, Orange can only handle single-label problems. As a result, the project <em>Multi-label classification Implementation</em> has been proposed to extend Orange to support multi-label.</p>
-
 <p>We can group the existing methods for multi-label classification into two main categories: a) problem transformation method, and b) algorithm adaptation methods. In the former one, multi-label problems are converted to single-label, and then the traditional binary classification can apply; in the latter case, methods directly classify the multi-label data, instead.</p>
-
 <p>In this project, two transformation methods and two algorithm adaptation methods are implemented. Along with the methods, their widgets are also added. As the evaluation metrics for multi-label data are different from the single-label ones, new evaluation measures are supported. The code is available in <a href="http://orange.biolab.si/trac/intertrac/browser%3Abranches/multilabel">SVN branch</a>.</p>
-
 <p>Fortunately, benefiting from the Tab file format, the <strong>ExampleTable</strong> can store multi-label data without any modification. Now, we can add a special value – <strong>label</strong> into the <strong>attributes</strong> dictionary of the domain with value 1. In this way, if the attribute description has the keyword <strong>label</strong>, then it is a label; otherwise, it is a normal feature.</p>
-
 <h3 id="what-have-been-done-in-this-project">What have been done in this project</h3>
-
 <h4 id="transformation-methods">Transformation methods</h4>
-
 <ul>
 <li>br – Binary Relevance Learner (Tsoumakas &amp; Katakis, 2007)</li>
 <li>lp – Label Powerset Classification (Tsoumakas &amp; Katakis, 2007)</li>
 </ul>
-
 <h4 id="algorithm-adaptation-methods">Algorithm Adaptation methods</h4>
-
 <ul>
 <li>mlknn – Multi-kNN Classification (Zhang &amp; Zhou, 2007)</li>
 <li>brknn – BR-kNN Classification (Spyromitros et al. 2008)</li>
 </ul>
-
 <h4 id="evaluation-methods">Evaluation methods</h4>
-
 <ul>
 <li>mlc_hamming_loss – Example-based Hamming Loss (Schapire and Singer 2000)</li>
 <li>mlc_accuracy, mlc_precision, mlc_recall – Example-based accuracy, precision, recall (Godbole &amp; Sarawagi, 2004)</li>
 </ul>
-
 <h4 id="widgets">Widgets</h4>
-
 <ul>
 <li>OWBR – Widget for Binary Relevance Learner</li>
 <li>OWLP – Widget for Label Powerset Classification</li>
@@ -273,28 +258,20 @@
 <li>OWBRkNN – Widget for BR-kNN Classification</li>
 <li>OWTestLearner – Widget for Evaluation</li>
 </ul>
-
 <h4 id="file-format-extension">File Format Extension</h4>
-
 <ul>
 <li>extend the loadARFF function to support sparse Weka format</li>
 <li>new support <a href="http://mulan.sourceforge.net/format.html">mulan xml and arff format</a></li>
 </ul>
-
 <h3 id="plan-for-the-future">Plan for the future</h3>
-
 <ul>
 <li>add more classification methods for multi-label, such as PT1 to PT6</li>
 <li>add feature extraction method</li>
 <li>add ranking-based evaluation methods</li>
 </ul>
-
 <h3 id="how-to-use">How to use</h3>
-
 <p>Basically, the way to use multi-label classification and evaluation is nearly the same as the single-label ones. The only difference between them is the different types of input data.</p>
-
 <h4 id="example-for-classification">Example for Classification</h4>
-
 <pre><code>import Orange
 
 data = Orange.data.Table(&quot;emotions.tab&quot;)
@@ -314,15 +291,13 @@ mlknn_cliassifer = Orange.multilabel.MLkNNLearner(data,k=1)
 for e in data:
     c,p = mlknn_cliassifer(e,Orange.classification.Classifier.GetBoth)
     print c,p
-
+   
 br_cliassifer = Orange.multilabel.BRkNNLearner(data,k=1)
 for e in data:
     c,p = br_cliassifer(e,Orange.classification.Classifier.GetBoth)
     print c,p
 </code></pre>
-
 <h4 id="example-for-evaluation">Example for Evaluation</h4>
-
 <pre><code>import Orange
 
 learners = [
@@ -348,15 +323,13 @@ print 'accuracy=', accuracy
 print 'precision=', precision
 print 'recall=', recall
 </code></pre>
-
 <h3 id="references">References</h3>
-
 <ul>
 <li>G. Tsoumakas and I. Katakis. <em>Multi-label classification: An overview&rdquo;. International Journal of Data Warehousing and Mining, 3(3):1-13, 2007.</em></li>
 <li>E. Spyromitros, G. Tsoumakas, and I. Vlahavas, <em>An Empirical Study of Lazy Multilabel Classification Algorithms</em>. Proc. 5th Hellenic Conference on Artificial Intelligence (SETN 2008), Springer, Syros, Greece, 2008.</li>
 <li>M. Zhang and Z. Zhou. <em>ML-KNN: A lazy learning approach to multi-label learning</em>. Pattern Recognition, 40, 7 (Jul. 2007), 2038-2048.</li>
 <li>S. Godbole and S. Sarawagi. <em>Discriminative Methods for Multi-labeled Classification</em>, Proceedings of the 8th Pacific-Asia Conference on Knowledge Discovery and Data Mining, PAKDD 2004.</li>
-<li>R. E. Schapire and Y. Singer. <em>Boostexter: a bossting-based system for text categorization</em>, Machine Learning, vol.39, no.<sup>2</sup>&frasl;<sub>3</sub>, 2000, pp:135-68.</li>
+<li>R. E. Schapire and Y. Singer. <em>Boostexter: a bossting-based system for text categorization</em>, Machine Learning, vol.39, no.2/3, 2000, pp:135-68.</li>
 </ul>
 
             </div>

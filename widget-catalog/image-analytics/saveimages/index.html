@@ -1659,26 +1659,17 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="save-images">Save Images</h1>
-
+                    <h1 id="save-images">Save Images</h1>
 <p>Save images in the directory structure.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: images to save.</li>
 </ul>
-
 <p><strong>Save Images</strong> is a simple widget that saves images sent to its input. Images will be saved as separate files in their own directory. When a class is present in the data, images will be saved in subdirectories based on the class variable.</p>
-
-<p><img src="../images/SaveImages.png" alt="" /></p>
-
+<p><img src="../images/SaveImages.png" alt=""></p>
 <ol>
 <li>Attribute containing the path to the image.</li>
 <li>If <em>Scale images to</em> is ticked, images will be resized to the size used in the selected embedder:
-
 <ul>
 <li>Inception v3: 299x299</li>
 <li>SqueezeNet: 227x227</li>
@@ -1687,15 +1678,13 @@
 <li>Painters: 256x256</li>
 <li>DeepLoc: 64x64</li>
 <li>openface: 256x256</li>
-</ul></li>
+</ul>
+</li>
 <li>File format to save images in. See the next section for information on supported formats.</li>
 <li>If <em>Autosave when receiving new data or settings change</em> is on, images will be saved upon every change. <em>Save</em> will save images, while <em>Save as&hellip;</em> enables the user to set the name and the folder where to save the images.</li>
 </ol>
-
 <h2 id="supported-formats">Supported Formats</h2>
-
 <p><strong>Save Images</strong> can save images in the following formats:</p>
-
 <ul>
 <li>.png</li>
 <li>.jpeg</li>
@@ -1706,12 +1695,9 @@
 <li>.eps</li>
 <li>.ico</li>
 </ul>
-
 <h2 id="example">Example</h2>
-
 <p>Here is a simple example how to use <strong>Save Images</strong>. We loaded 14 paintings from Picasso, sent them to <a href="imageembedding.md">Image Embedding</a> using <em>Painters</em> embedder, then to <a href="https://orange-visual-programming.readthedocs.io/widgets/unsupervised/distances.html">Distances</a> using cosine distance and finally to <a href="https://orange-visual-programming.readthedocs.io/widgets/unsupervised/hierarchicalclustering.html">Hierarchical Clustering</a> to construct a dendrogram. Then we selected a cluster from the plot and saved the images belonging to the selected cluster with <strong>Save Images</strong>.</p>
-
-<p><img src="../images/SaveImages-Example.png" alt="" /></p>
+<p><img src="../images/SaveImages-Example.png" alt=""></p>
 
                 </div>
             </div>

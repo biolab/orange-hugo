@@ -229,42 +229,23 @@
               <div id="blog_images_">
 
 
-              
-
-<p><strong>SimpleTreeLearner</strong> is an implementation of classification and regression trees that sacrifices flexibility for speed. A benchmark on 42 different datasets reveals that <strong>SimpleTreeLearner</strong> is <strong>11 times faster</strong> than the original <strong>TreeLearner</strong>.</p>
-
+              <p><strong>SimpleTreeLearner</strong> is an implementation of classification and regression trees that sacrifices flexibility for speed. A benchmark on 42 different datasets reveals that <strong>SimpleTreeLearner</strong> is <strong>11 times faster</strong> than the original <strong>TreeLearner</strong>.</p>
 <p>The motivation behind developing a new tree induction algorithm from scratch was to speed up the construction of random forests, but you can also use it as a standalone learner. <strong>SimpleTreeLearner</strong> uses gain ratio for classification and MSE for regression and can handle unknown values.</p>
-
 <h3 id="comparison-with-treelearner">Comparison with TreeLearner</h3>
-
 <p>The graph below shows <strong>SimpleTreeLearner</strong> construction times on datasets bundled with Orange normalized to <strong>TreeLearner</strong>. Smaller is better.</p>
-
-<p><img src="/images/2011/08/24/simpletree_speed.png__600x641_q95_crop_upscale.png" alt="" /></p>
-
+<p><img src="/images/2011/08/24/simpletree_speed.png__600x641_q95_crop_upscale.png" alt=""></p>
 <p>The harmonic mean (average speedup) on all the benchmarks is 11.4.</p>
-
 <h3 id="usage">Usage</h3>
-
 <p>The user can set four parameters:</p>
-
 <p><strong>maxMajority</strong></p>
-
 <p>Maximal proportion of majority class.</p>
-
 <p><strong>minExamples</strong></p>
-
 <p>Minimal number of examples in leaves.</p>
-
 <p><strong>maxDepth</strong></p>
-
 <p>Maximal depth of tree.</p>
-
 <p><strong>skipProb</strong></p>
-
 <p>At every split an attribute will be skipped with probability skipProb. This parameter is especially useful for building random forests.</p>
-
 <p>The code snippet below demonstrates the basic usage of <strong>SimpleTreeLearner</strong>. It behaves much like any other Orange learner would.</p>
-
 <pre><code>import Orange
 
 data = Orange.data.Table(&quot;iris&quot;)

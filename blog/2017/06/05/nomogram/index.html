@@ -244,25 +244,15 @@
 
 
               <p>One more exciting visualization has been introduced to Orange - a Nomogram. In general, <a href="https://en.wikipedia.org/wiki/Nomogram">nomograms</a> are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</p>
-
 <p>So, how does it work? First, feed the Nomogram a classification model, say, Logistic Regression. We will use the Titanic survival data that comes with Orange for this example (in File widget, choose &ldquo;Browse documentation datasets&rdquo;).</p>
-
-<p><img src="/images/2017/04/nomogram-workflow.png" alt="" /></p>
-
+<p><img src="/images/2017/04/nomogram-workflow.png" alt=""></p>
 <p>In the nomogram, we see the top ranked attributes and how much they contribute to the target class. Seems like a male third class adult had a much lower survival rate than did female first class child.</p>
-
-<p><img src="/images/2017/04/Screen-Shot-2017-04-19-at-14.44.44.png" alt="" /></p>
-
+<p><img src="/images/2017/04/Screen-Shot-2017-04-19-at-14.44.44.png" alt=""></p>
 <p>The first box show the target class, in our case survived=no. The second box shows the most important attribute, sex, and its contribution to the probability of the target class (more for male, almost 0 for female). The final box shows the total probability of the target class for the selected values of attributes (blue dots).</p>
-
 <p>The most important attribute, however, seems to be &lsquo;sex&rsquo;, where the chance for survival (target class = no) is lower for males than it is for females. How do I know? Grab the blue dot over the attribute and drag it from &lsquo;male&rsquo; to &lsquo;female&rsquo;. The total probability for dying on Titanic (survived=no) drops from 89% to 43%.</p>
-
 <p>The same goes for all the other attributes - you can interactively explore how much a certain value contributes to the probability of a selected target class.</p>
-
 <p>But it gets even better! Instead of dragging the blue dots in the nomogram, you can feed it the data. In the workflow below, we pass the data through the Data Table widget and then feed the selected data instance to the Nomogram. The Nomogram would then show what is the probability of the target class for this particular instance, and it would &ldquo;explain&rdquo; what are the magnitudes of contributions of individual attribute values.</p>
-
-<p><img src="/images/2017/04/Screen-Shot-2017-04-19-at-14.38.43.png" alt="" /></p>
-
+<p><img src="/images/2017/04/Screen-Shot-2017-04-19-at-14.38.43.png" alt=""></p>
 <p>This makes Nomogram a great widget for understanding the model and for interactive data exploration.</p>
 
             </div>

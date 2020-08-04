@@ -1659,62 +1659,45 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="linear-projection">Linear Projection</h1>
-
+                    <h1 id="linear-projection">Linear Projection</h1>
 <p>A linear projection method with explorative data analysis.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Data Subset: subset of instances</li>
 <li>Projection: custom projection vectors</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 <li>Components: projection vectors</li>
 </ul>
-
 <p>This widget displays <a href="https://en.wikipedia.org/wiki/Projection_(linear_algebra)">linear projections</a> of class-labeled data. It supports various types of projections such as circular, <a href="https://en.wikipedia.org/wiki/Linear_discriminant_analysis">linear discriminant analysis</a>, <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">principal component analysis</a>, and custom projection.</p>
-
 <p>Consider, for a start, a projection of the <em>Iris</em> dataset shown below. Notice that it is the sepal width and sepal length that already separate <em>Iris setosa</em> from the other two, while the petal length is the attribute best separating <em>Iris versicolor</em> from <em>Iris virginica</em>.</p>
-
-<p><img src="../images/linear-projection-stamped.png" alt="" /></p>
-
+<p><img src="../images/linear-projection-stamped.png" alt=""></p>
 <ol>
 <li>Axes in the projection that are displayed and other available axes.</li>
 <li>Optimize your projection by using <strong>Suggest Features</strong>. This feature scores attributes by average classification accuracy and returns the top scoring attributes with a simultaneous visualization update.</li>
 <li>Choose the type of projection.</li>
 <li>Axes inside a circle are hidden. Circle radius can be be changed using a slider.</li>
 <li>Adjust <em>plot properties</em>:
-
 <ul>
 <li>Set <a href="https://en.wikipedia.org/wiki/Jitter">jittering</a> to prevent the dots from overlapping (especially for discrete attributes).</li>
 <li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
 <li><em>Show class density</em> colors the graph by class (see the screenshot below).</li>
 <li><em>Label only selected points</em> allows you to select individual data instances and label them.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Select, zoom, pan</em> and <em>zoom to fit</em> are the options for exploring the graph. Manual selection of data instances works as an angular/square selection tool. Double click to move the projection. Scroll in or out for zoom.</li>
 <li>If <em>Send automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send</em>.</li>
 <li><em>Save Image</em> saves the created image to your computer in a .svg or .png format. Produce a report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>The <strong>Linear Projection</strong> widget works just like other visualization widgets. Below, we connected it to the <a href="../data/file.md">File</a> widget to see the set projected on a 2-D plane. Then we selected the data for further analysis and connected it to the <a href="../../data/datatable/">Data Table</a> widget to see the details of the selected subset.</p>
-
-<p><img src="../images/LinearProjection-example.png" alt="" /></p>
-
+<p><img src="../images/LinearProjection-example.png" alt=""></p>
 <h2 id="references">References</h2>
-
-<p>Koren Y., Carmel L. (2003). Visualization of labeled data using linear transformations. In Proceedings of IEEE Information Visualization 2003, (InfoVis&rsquo;03). Available <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=3DDF0DB68D8AB9949820A19B0344C1F3?doi=10.1.1.13.8657&amp;rep=rep1&amp;type=pdf">here</a>.</p>
-
+<p>Koren Y., Carmel L. (2003). Visualization of labeled data using linear transformations. In Proceedings of IEEE Information Visualization 2003, (InfoVis'03). Available <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=3DDF0DB68D8AB9949820A19B0344C1F3?doi=10.1.1.13.8657&amp;rep=rep1&amp;type=pdf">here</a>.</p>
 <p>Boulesteix A.-L., Strimmer K. (2006). Partial least squares: a versatile tool for the analysis of high-dimensional genomic data. Briefings in Bioinformatics, 8(1), 32-44. Abstract <a href="http://bib.oxfordjournals.org/content/8/1/32.abstract">here</a>.</p>
 
                 </div>

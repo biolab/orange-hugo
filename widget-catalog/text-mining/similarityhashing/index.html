@@ -1659,41 +1659,26 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="similarity-hashing">Similarity Hashing</h1>
-
+                    <h1 id="similarity-hashing">Similarity Hashing</h1>
 <p>Computes documents hashes.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Corpus with simhash value as attributes.</li>
 </ul>
-
 <p><strong>Similarity Hashing</strong> is a widget that transforms documents into similarity vectors. The widget uses <a href="https://en.wikipedia.org/wiki/SimHash">SimHash</a> method from from Moses Charikar.</p>
-
-<p><img src="../images/Similarity-Hashing-stamped.png" alt="" /></p>
-
+<p><img src="../images/Similarity-Hashing-stamped.png" alt=""></p>
 <ol>
 <li>Set Simhash size (how many attributes will be on the output, corresponds to bits of information) and shingle length (how many tokens are used in a shingle).</li>
 <li><em>Commit Automatically</em> output the data automatically. Alternatively, press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>We will use <em>deerwester.tab</em> to find similar documents in this small corpus. Load the data with <a href="../corpus-widget/">Corpus</a> and pass it to <strong>Similarity Hashing</strong>. We will keep the default hash size and shingle length. We can observe what the widget outputs in a <strong>Data Table</strong>. There are 64 new attributes available, corresponding to the <em>Simhash size</em> parameter.</p>
-
-<p><img src="../images/Similarity-Hashing-Example.png" alt="" /></p>
-
+<p><img src="../images/Similarity-Hashing-Example.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Charikar, M. (2002) Similarity estimation techniques from rounding algorithms. STOC &lsquo;02 Proceedings of the thirty-fourth annual ACM symposium on Theory of computing, p. 380-388.</p>
 
                 </div>

@@ -1659,57 +1659,42 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="word-cloud">Word Cloud</h1>
-
+                    <h1 id="word-cloud">Word Cloud</h1>
 <p>Generates a word cloud from corpus.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Topic: Selected topic.</li>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Documents that match the selection.</li>
 <li>Selected Word: Selected word that can be used as query in <a href="../concordance/">Concordance</a>.</li>
 <li>Word Counts: Words and their weights.</li>
 </ul>
-
 <p><strong>Word Cloud</strong> displays tokens in the corpus, their size denoting the frequency of the word in corpus or an average bag of words count, when bag of words features are at the input of the widget. Words are listed by their frequency (weight) in the widget. The widget outputs documents, containing selected tokens from the word cloud.</p>
-
-<p><img src="../images/Word-Cloud-stamped.png" alt="" /></p>
-
+<p><img src="../images/Word-Cloud-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input.
-
 <ul>
 <li>number of words (tokens) in a topic</li>
 <li>number of documents and tokens in the corpus</li>
-</ul></li>
+</ul>
+</li>
 <li>Adjust the plot.
-
 <ul>
 <li>If <em>Color words</em> is ticked, words will be assigned a random color. If unchecked, the words will be black.</li>
 <li><em>Word tilt</em> adjust the tilt of words. The current state of tilt is displayed next to the slider (&lsquo;no&rsquo; is the default).</li>
 <li><em>Regenerate word cloud</em> plot the cloud anew.</li>
-</ul></li>
+</ul>
+</li>
 <li>Words &amp; weights displays a sorted list of words (tokens) by their frequency in the corpus or topic. Clicking on a word will select that same word in the cloud and output matching documents. Use <em>Ctrl</em> to select more than one word. Documents matching ANY of the selected words will be on the output (logical OR).</li>
 <li><em>Save Image</em> saves the image to your computer in a .svg or .png format.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Word Cloud</strong> is an excellent widget for displaying the current state of the corpus and for monitoring the effects of preprocessing.</p>
-
 <p>Use <a href="corpus-widget.md">Corpus</a> to load the data. Connect <a href="../preprocesstext/">Preprocess Text</a> to it and set your parameters. We&rsquo;ve used defaults here, just to see the difference between the default preprocessing in the <strong>Word Cloud</strong> widget and the <strong>Preprocess Text</strong> widget.</p>
-
-<p><img src="../images/Word-Cloud-Example.png" alt="" /></p>
-
+<p><img src="../images/Word-Cloud-Example.png" alt=""></p>
 <p>We can see from the two widgets, that <strong>Preprocess Text</strong> displays only words, while default preprocessing in the <strong>Word Cloud</strong> tokenizes by word and punctuation.</p>
 
                 </div>

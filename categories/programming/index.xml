@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on Orange</title>
+    <title>programming on Orange</title>
     <link>/categories/programming/</link>
-    <description>Recent content in Programming on Orange</description>
+    <description>Recent content in programming on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate>

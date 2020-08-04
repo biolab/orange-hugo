@@ -1,15 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interactive  Data Visualization on Orange</title>
+    <title>interactive data visualization on Orange</title>
     <link>/categories/interactive-data-visualization/</link>
-    <description>Recent content in Interactive  Data Visualization on Orange</description>
+    <description>Recent content in interactive data visualization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2017 12:36:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jun 2018 09:23:09 +0000</lastBuildDate>
     
 	<atom:link href="/categories/interactive-data-visualization/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Girls Go Data Mining</title>
+      <link>/blog/2018/06/21/girls-go-data-mining/</link>
+      <pubDate>Thu, 21 Jun 2018 09:23:09 +0000</pubDate>
+      
+      <guid>/blog/2018/06/21/girls-go-data-mining/</guid>
+      <description>This week we held our first Girls Go Data Mining workshop. The workshop brought together curious women and intuitively introduced them to essential data mining and machine learning concepts. Of course, we used Orange to explore visualizations, build predictive models, perform clustering and dive into text analysis. The workshop was supported by NumFocus through their small development grant initiative and we hope to repeat it next year with even more ladies attending!</description>
+    </item>
+    
+    <item>
+      <title>Visualizing multiple variables: FreeViz</title>
+      <link>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</link>
+      <pubDate>Fri, 26 Jan 2018 11:00:09 +0000</pubDate>
+      
+      <guid>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</guid>
+      <description>Scatter plots are great! But sometimes, we need to plot more than two variables to truly understand the data. How can we achieve this, knowing humans can only grasp up to three dimensions? With an optimization of linear projection, of course!
+Orange recently re-introduced FreeViz, an interactive visualization for plotting multiple variables on a 2-D plane.
+Let&amp;rsquo;s load zoo.tab data with File widget and connect FreeViz to it. Zoo data has 16 features describing animals of different types - mammals, amphibians, insects and so on.</description>
+    </item>
+    
+    <item>
+      <title>Diving Into Car Registration Data</title>
+      <link>/blog/2017/10/13/diving-into-car-registration-data/</link>
+      <pubDate>Fri, 13 Oct 2017 12:04:32 +0000</pubDate>
+      
+      <guid>/blog/2017/10/13/diving-into-car-registration-data/</guid>
+      <description>Last week, we presented Orange at the Festival of Open Data, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.
+The original dataset is available at theOPSI portal and it consists of 73 files, one for each month since January 2012.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Voting Patterns  at AKOS Workshop</title>
+      <link>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</link>
+      <pubDate>Fri, 22 Sep 2017 11:34:26 +0000</pubDate>
+      
+      <guid>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</guid>
+      <description>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis Workshop at Digital Humanities 2017</title>
+      <link>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</link>
+      <pubDate>Tue, 08 Aug 2017 14:56:43 +0000</pubDate>
+      
+      <guid>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</guid>
+      <description>How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?
+It seems so, especially when Orange is involved.
+Yesterday, on August 7, we held a 3-hour workshop on text mining and text analysis for a large crowd of esteemed researchers at Digital Humanities 2017 in Montreal, Canada. Surely, after 3 hours everyone was exhausted, both the audience and the lecturers.</description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/blog/2017/06/05/nomogram/</link>
+      <pubDate>Mon, 05 Jun 2017 11:39:12 +0000</pubDate>
+      
+      <guid>/blog/2017/06/05/nomogram/</guid>
+      <description>One more exciting visualization has been introduced to Orange - a Nomogram. In general, nomograms are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</description>
+    </item>
+    
+    <item>
+      <title>Outliers in Traffic Signs</title>
+      <link>/blog/2017/04/25/outliers-in-traffic-signs/</link>
+      <pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate>
+      
+      <guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid>
+      <description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
+I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description>
+    </item>
     
     <item>
       <title>Image Analytics: Clustering</title>
@@ -19,6 +88,76 @@
       <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
       <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
 For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
+    </item>
+    
+    <item>
+      <title>Workshop on InfraOrange</title>
+      <link>/blog/2017/03/08/workshop-on-infraorange/</link>
+      <pubDate>Wed, 08 Mar 2017 14:51:43 +0000</pubDate>
+      
+      <guid>/blog/2017/03/08/workshop-on-infraorange/</guid>
+      <description>Thanks to the collaboration with synchrotrons Elettra (Trieste) and Soleil (Paris), Orange is getting an add-on InfraOrange, with widgets for analysis of infrared spectra. Its primary users obviously come from these two institutions, hence we organized the first workshop for InfraOrange at one of them.
+Some 20 participants spent the first day of the workshop in Trieste learning the basics of Orange and its use for data mining. With Janez at the helm and Marko assisting in the back, we traversed the standard list of visual and statistical techniques and a bit of unsupervised and supervised learning.</description>
+    </item>
+    
+    <item>
+      <title>The Beauty of Random Forest</title>
+      <link>/blog/2016/12/22/the-beauty-of-random-forest/</link>
+      <pubDate>Thu, 22 Dec 2016 08:55:36 +0000</pubDate>
+      
+      <guid>/blog/2016/12/22/the-beauty-of-random-forest/</guid>
+      <description>It is the time of the year when we adore Christmas trees. But these are not the only trees we, at Orange team, think about. In fact, through almost life-long professional deformation of being a data scientist, when I think about trees I would often think about classification and regression trees. And they can be beautiful as well. Not only for their elegance in explaining the hidden patterns, but aesthetically, when rendered in Orange.</description>
+    </item>
+    
+    <item>
+      <title>BDTN 2016 Workshop: Introduction to Data Science</title>
+      <link>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</link>
+      <pubDate>Fri, 16 Dec 2016 15:57:11 +0000</pubDate>
+      
+      <guid>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</guid>
+      <description>Every year BEST Ljubljana organizes BEST Days of Technology and Sciences, an event hosting a broad variety of workshops, hackathons and lectures for the students of natural sciences and technology. Introduction to Data Science, organized by our own Laboratory for Bioinformatics, was this year one of them.
+Related: Intro to Data Mining for Life Scientists
+The task was to teach and explain basic data mining concepts and techniques in four hours.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction by Manifold Learning</title>
+      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
+      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
+      
+      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
+      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Manifold Learning widget has a simple interface with powerful features.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
+    </item>
+    
+    <item>
+      <title>Celebrity Lookalike or How to Make Students Love Machine Learning</title>
+      <link>/blog/2016/11/25/celebrity-lookalike-or-how-to-make-students-love-machine-learning/</link>
+      <pubDate>Fri, 25 Nov 2016 14:55:39 +0000</pubDate>
+      
+      <guid>/blog/2016/11/25/celebrity-lookalike-or-how-to-make-students-love-machine-learning/</guid>
+      <description>Recently we&amp;rsquo;ve been participating at Days of Computer Science, organized by the Museum of Post and Telecommunications and the Faculty of Computer and Information Science, University of Ljubljana, Slovenia. The project brought together pupils and students from around the country and hopefully showed them what computer science is mostly about. Most children would think programming is just typing lines of code. But it&amp;rsquo;s more than that. It&amp;rsquo;s a way of thinking, a way to solve problems creatively and efficiently.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Gradient Descent</title>
+      <link>/blog/2016/08/25/visualizing-gradient-descent/</link>
+      <pubDate>Thu, 25 Aug 2016 11:31:04 +0000</pubDate>
+      
+      <guid>/blog/2016/08/25/visualizing-gradient-descent/</guid>
+      <description>This is a guest blog from the Google Summer of Code project.
+Gradient Descent was implemented as a part of my Google Summer of Code project and it is available in the Orange3-Educational add-on. It simulates gradient descent for either Logistic or Linear regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</description>
+    </item>
+    
+    <item>
+      <title>Pythagorean Trees and Forests</title>
+      <link>/blog/2016/07/29/pythagorean-trees-and-forests/</link>
+      <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
+      
+      <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     
   </channel>

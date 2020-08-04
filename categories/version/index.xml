@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Version on Orange</title>
+    <title>version on Orange</title>
     <link>/categories/version/</link>
-    <description>Recent content in Version on Orange</description>
+    <description>Recent content in version on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Aug 2017 11:41:33 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -29,7 +29,7 @@ Related: Text Preprocessing</description>
       <guid>/blog/2016/04/01/version-3-3-1-updates-and-features/</guid>
       <description>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&amp;rsquo;ve introduced some new functionalities and improved a few old ones.
 Here&amp;rsquo;s what&amp;rsquo;s new in this release:
- New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
+  New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
     </item>
     
     <item>

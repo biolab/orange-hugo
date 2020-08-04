@@ -1659,50 +1659,37 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="geo-map">Geo Map</h1>
-
+                    <h1 id="geo-map">Geo Map</h1>
 <p>Show data points on a map.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Data Subset: subset of instances</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 </ul>
-
 <p><strong>Geo Map</strong> widget visualizes geo-spatial data on a map. It works on datasets containing latitude and longitude variables in WGS 84 (EPSG:4326) format. We can use it much like we use Scatter Plot widget.</p>
-
-<p><img src="../images/GeoMap-stamped.png" alt="" /></p>
-
+<p><img src="../images/GeoMap-stamped.png" alt=""></p>
 <ol>
 <li>Set the type of map: <a href="http://www.openstreetmap.org">OpenStreetMap</a>, Black and White, Topographic, Satellite, Print, Dark.</li>
 <li>Set latitude and longitude attributes, if the widget didn&rsquo;t recognize them automatically. Latitude values should be between -85.0511(S) and 85.0511(N) (a limitation of the projections onto flat maps) and longitude values between -180(W) and 180(E).</li>
 <li>Set color, shape, size and label to differentiate between points. Set symbol size, opacity and jittering for all data points.</li>
 <li>Adjust <em>plot properties</em>:
-
 <ul>
 <li><em>Show color region</em> colors the graph by class (color must be selected).</li>
 <li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
 <li><em>Freeze map</em> freezes the map so it doesn&rsquo;t update when input data changes.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the graph. The manual selection of data instances works as an angular/square selection tool. Scroll in or out for zoom.</li>
 <li>If <em>Send automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send</em>.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>In this simple example we visualize the <em>Philadelphia Crime</em> dataset that we can find in the <strong>Datasets</strong> widget. We connect the output of that widget to the <strong>Map</strong> widget. Latitude and longitude variables get automatically detected and we additionally select the crime type variable for color. We can observe how different crimes are more present in specific areas of the city.</p>
-
-<p><img src="../images/GeoMap-Example.png" alt="" /></p>
+<p><img src="../images/GeoMap-Example.png" alt=""></p>
 
                 </div>
             </div>

@@ -237,17 +237,13 @@
 
 
               <p>It&rsquo;s always fun to play around with data. And since Orange can, as of a few months ago, read temporal data, we decided to parse some data we had and put it into Orange.</p>
-
 <p>TimeVariable is an extended class of continuous variable and it works with properly formated ISO standard datetime (Y-M-D h:m:s). Oftentimes our original data is not in the right format and needs to be edited first, so Orange can read it. Python&rsquo;s own datetime module is of great help. You can give it any date format and tell it how to interpret it in the argument.</p>
-
 <pre><code>import datetime
 date = &quot;13.03.2013 13:13:31&quot;
 new_date = str(datetime.datetime.strptime(date, &quot;%d.%m.%Y %H:%M:%S&quot;))
 &gt;&gt;&gt; '2013-03-13 13:13:31'
 </code></pre>
-
 <p>Do this for all your datetime attributes. This will transform them into strings that Orange&rsquo;s TimeVariable can read. Then create a new data table:</p>
-
 <pre><code>import Orange
 from Orange.data import Domain, TimeVariable
 domain = Domain([TimeVariable(&quot;timestamp&quot;)])
@@ -258,31 +254,22 @@ time_var = TimeVariable()
 #list(zip(data)) then transforms the list into a 2d list of lists
 time_data = Orange.data.Table(domain, list(zip(time_var.parse(i) for i in timestamps)))
 </code></pre>
-
 <p>Now say you have some original data you want to append your new data to.</p>
-
 <pre><code>data = Orange.data.Table.concatenate([original_data, time_data])
 Table.save(data, &quot;data.tab&quot;)
 </code></pre>
-
 <p>But what if you want to select only a few attributes from the original data? It can be arranged.</p>
-
 <pre><code>original_data = Orange.data.Table(&quot;original_data.tab&quot;)
 new_domain = Domain([&quot;attribute_1&quot;, &quot;attribute_2&quot;], source=original_data.domain)
 new_data = Orange.data.Table(new_domain, original_data)
 </code></pre>
-
 <p>Then concatenate again:</p>
-
 <pre><code>data = Orange.data.Table.concatenate([new_data, time_data])
 Table.save(data, &quot;selected_data.tab&quot;)
 </code></pre>
-
 <p>Remember, if your data has string variables, they will always be in meta attributes.</p>
-
 <pre><code>domain = Domain([&quot;some_attribute1&quot;, &quot;other_attribute2&quot;], metas=[&quot;some_string_variable&quot;])
 </code></pre>
-
 <p>Have fun scripting!</p>
 
             </div>

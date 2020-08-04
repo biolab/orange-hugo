@@ -1659,59 +1659,55 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="annotator">Annotator</h1>
-
+                    <h1 id="annotator">Annotator</h1>
 <p>The widget provides an option to annotate cells with cell types based on
 marker genes.</p>
-
-<p><strong>Inputs</strong>
-- Reference Data: Data set with gene expression values.
-- Secondary Data: Subset of instances (optional).
-- Genes: Marker genes.</p>
-
-<p><strong>Outputs</strong>
-- Selected Data: Instances selected from the plot.
-- Data: Data with additional columns with annotations, clusters,
-and projection</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Reference Data: Data set with gene expression values.</li>
+<li>Secondary Data: Subset of instances (optional).</li>
+<li>Genes: Marker genes.</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Selected Data: Instances selected from the plot.</li>
+<li>Data: Data with additional columns with annotations, clusters,
+and projection</li>
+</ul>
 <p>This widget receives gene expression data together with mapping to a
 two-dimensional space and marker genes. It selects the most expressed
 genes for each cell with the Mann-Whitney U test and computes the
 p-value of each cell types for a cell based on the selected statistical
 test. It visualizes groups of cells and for each group, it shows few
 most present cell types.</p>
-
-<p><img src="../images/annotate_projection/annotator-stamped.png" alt="" /></p>
-
+<p><img src="../images/annotate_projection/annotator-stamped.png" alt=""></p>
 <ol>
 <li>This box contains settings for attribute selection and annotation:
-
 <ul>
 <li><em>Axis X</em> and <em>Axis Y</em> let you select attributes you will show in
 the widget. By default t-SNE-x and t-SNE-y are selected which are
 transformations to lower dimensional space with a method named t-SNE.</li>
 <li><em>Scoring method</em> allows you to select the method to score the cell
 type affiliation to the cell. It has the following options:
-
 <ul>
 <li><em>-Log(FDR)</em> - negative of the logarithm of an FDR value</li>
 <li><em>Marker expression</em> - the sum of expressions of genes typical
 for cell type.</li>
 <li><em>Marker expression %</em> - the proportion of genes typical for a
 cell type expressed in the cell.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Statistical test</em> allow the user to select between the binomial and
 hypergeometric statistical test for computing the p-value.</li>
 <li><em>FDR threshold</em> sets the threshold for FDR value. Cell types that
 have an FDR value bellow this threshold are selected.</li>
-<li><em>&epsilon; for DBSCAN</em> regulates the &epsilon; parameter of a
+<li><em>ε for DBSCAN</em> regulates the ε parameter of a
 DBSCAN algorithm which forms groups in the visualization. When
 unchecked algorithm estimates this parameter itself.</li>
 <li><em>Start</em> run the assigning process. Whenever you change any
 parameter in this box rerun the process with this button.</li>
-</ul></li>
+</ul>
+</li>
 <li>Set the color of the displayed points (you will get colors for
 discrete values and grey-scale points for continuous). Set label, shape,
 and size to differentiate between points.</li>
@@ -1719,7 +1715,6 @@ and size to differentiate between points.</li>
 <a href="https://en.wikipedia.org/wiki/Jitter">jittering</a> to prevent the dots
 overlapping. Set the number of labels shown for a cluster.</li>
 <li>Adjust <em>plot properties</em>:
-
 <ul>
 <li><em>Show legend</em> displays a legend on the right. Click and drag the
 legend to move it.</li>
@@ -1730,7 +1725,8 @@ color. When this option is checked setting color in box 2 is
 disabled.</li>
 <li><em>Show reference data</em> makes data from the
 <em>Reference data</em> input visible.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Select, zoom, pan, and zoom to fit</em> are the options for exploring
 the graph. The manual selection of data instances works as an
 angular/square selection tool. Double click to move the projection.
@@ -1741,9 +1737,7 @@ the report.</li>
 <li>The main view shows you data clustered data items. Each cluster
 is surrounded by a hull and has assigned <em>Cell type</em> labels shown.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>In this example <em>Single Cell Datasets</em> widget provides <em>Bone marrow
 mononuclear cells with AML (sample)</em> gene expression dataset and <em>t-SNE</em>
 widget maps data into two-dimensional space. <em>Marker Genes</em> widget
@@ -1753,9 +1747,7 @@ the output of the Annotator widget and shows items selected in the plot.
 The widget shows clustered cells projected to the two-dimensional plane.
 Clusters labels show annotation with the most common label in the
 cluster.</p>
-
-<p><img src="../images/annotate_projection/annotator-example.png" alt="" /></p>
-
+<p><img src="../images/annotate_projection/annotator-example.png" alt=""></p>
 <p>The second example shows how to use <em>Secondary Data</em> input
 of the widget. We load data with two <em>Single Cell Datasets</em> widgets.
 First widget loads <em>Cell cycle in mESC (Fluidigm)</em> data which are used
@@ -1768,8 +1760,7 @@ secondary data is not required since the Annotator widget projects
 them in the reference space. The Annotator window shows the mapping of
 secondary data (colored points) to clusters generated on the reference
 data.</p>
-
-<p><img src="../images/annotate_projection/annotator-example2.png" alt="" /></p>
+<p><img src="../images/annotate_projection/annotator-example2.png" alt=""></p>
 
                 </div>
             </div>

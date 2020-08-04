@@ -1659,52 +1659,37 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="network-of-groups">Network Of Groups</h1>
-
+                    <h1 id="network-of-groups">Network Of Groups</h1>
 <p>Group instances by feature and connect related groups.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Network: An instance of network graph.</li>
 <li>Data: Properties of a network graph.</li>
 </ul>
-
 <p><strong>Outputs</strong>:</p>
-
 <ul>
 <li>Network: A grouped network graph.</li>
 <li>Data: Properties of the group network graph.</li>
 </ul>
-
 <p><strong>Network of Groups</strong> is the network version of the group-by operation. Nodes with the same values of the attribute, selected in the dropdown, will be represented as a single node.</p>
-
-<p><img src="../images/Network-of-Groups-stamped.png" alt="" /></p>
-
+<p><img src="../images/Network-of-Groups-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input and output network.</li>
 <li>Select the attribute to group by.</li>
 <li>Compute weights:
-
 <ul>
 <li><em>No weights</em>: all weights are set to 1.</li>
 <li><em>Number of connections</em>: weight edges by the number of connections between the groups.</li>
 <li><em>Sum of connection weights</em>:  weight edges by the sum of weights of connections between the groups.
 <em>Normalize by geometric mean</em> divides weights by the geometric mean of the number of connections between the two groups.</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In this example we are using <em>airtraffic</em> data set, that we loaded in the <a href="../networkfile/">Network File</a> widget. We see the entire data set in <strong>Network Explorer (1)</strong>.</p>
-
 <p>Then we use <strong>Network of Groups</strong> to group the network by the <em>FAA Classifications</em> attribute. All nodes with the same value of this attribute will be represented as a single node in the output. There is an edge between the two nodes, if they share connections in the original network.</p>
-
 <p>The grouped network is shown in <a href="../networkexplorer/">Network Explorer</a>.</p>
-
-<p><img src="../images/Network-of-Groups-Example.png" alt="" /></p>
+<p><img src="../images/Network-of-Groups-Example.png" alt=""></p>
 
                 </div>
             </div>

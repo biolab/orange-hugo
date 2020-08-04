@@ -230,21 +230,13 @@
 
 
               <p>In data mining <strong><a href="https://en.wikipedia.org/wiki/Statistical_classification">classification</a></strong> is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.</p>
-
 <p>In Orange an easy way to classify your data is to select several <strong>classification widgets</strong> (e.g. Naive Bayes, Classification Tree and Linear Regression), compare the prediction quality of each learner with <strong>Test Learners</strong> and <strong>Confusion Matrix</strong> and then use the best performing classifier on a new data set for classification. Below we use Iris data set for simplicity, but the same procedure works just as well on all kinds of data sets.</p>
-
 <p>Here we have three confusion matrices for <strong><a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">Naive Bayes</a></strong> (top), <strong><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Classification Tree</a></strong> (middle) and <strong><a href="https://en.wikipedia.org/wiki/Multinomial_logistic_regression">Logistic Regression</a></strong> (bottom).</p>
-
-<p><img src="/images/2015/07/Misclassification-matrices.png" alt="" /></p>
-
+<p><img src="/images/2015/07/Misclassification-matrices.png" alt=""></p>
 <p>Three misclassification matrices (Naive Bayes, Classification Tree and Logistic Regression)</p>
-
-<p>We see that <strong>Classification Tree</strong> did the best with only 9 misclassified instances. To see which instances were assigned a false class, we select ‘_Misclassified_’ option in the widget, which highlights misclassifications and feeds them to the <strong>Scatter Plot</strong> widget. In the graph we thus see the entire data set presented with empty dots and the selected misclassifications with full dots.</p>
-
-<p><img src="/images/2015/07/misclassification-schema-scatterplot.png" alt="" /></p>
-
+<p>We see that <strong>Classification Tree</strong> did the best with only 9 misclassified instances. To see which instances were assigned a false class, we select ‘<em>Misclassified</em>’ option in the widget, which highlights misclassifications and feeds them to the <strong>Scatter Plot</strong> widget. In the graph we thus see the entire data set presented with empty dots and the selected misclassifications with full dots.</p>
+<p><img src="/images/2015/07/misclassification-schema-scatterplot.png" alt=""></p>
 <p>Visualization of misclassified instances in scatter plot.</p>
-
 <p>Feel free to switch between learners in <strong>Confusion Matrix</strong> to see how the visualization changes for each of them.</p>
 
             </div>

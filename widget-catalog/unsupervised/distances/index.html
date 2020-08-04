@@ -1659,38 +1659,27 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="distances">Distances</h1>
-
+                    <h1 id="distances">Distances</h1>
 <p>Computes distances between rows/columns in a dataset.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Distances: distance matrix</li>
 </ul>
-
 <p>The <strong>Distances</strong> widget computes distances between rows or columns in a dataset. By default, the data will be normalized to ensure equal treatment of individual features. Normalization is always done column-wise.</p>
-
 <p>Sparse data can only be used with Euclidean, Manhattan and Cosine metric.</p>
-
 <p>The resulting distance matrix can be fed further to <a href="../hierarchicalclustering/">Hierarchical Clustering</a> for uncovering groups in the data, to <a href="distancemap.md">Distance Map</a> or <a href="distancematrix.md">Distance Matrix</a> for visualizing the distances (Distance Matrix can be quite slow for larger data sets), to <a href="../mds/">MDS</a> for mapping the data instances using the distance matrix and finally, saved with <a href="savedistancematrix.md">Save Distance Matrix</a>. Distance file can be loaded with <a href="../distancefile/">Distance File</a>.</p>
-
 <p>Distances work well with Orange add-ons, too. The distance matrix can be fed to Network from Distances (Network add-on) to convert the matrix into a graph and to Duplicate Detection (Text add-on) to find duplicate documents in the corpus.</p>
-
-<p><img src="../images/Distances-stamped.png" alt="" /></p>
-
+<p><img src="../images/Distances-stamped.png" alt=""></p>
 <ol>
-<li>Choose whether to measure distances between rows or columns.</li>
-<li>Choose the <em>Distance Metric</em>:
-
+<li>
+<p>Choose whether to measure distances between rows or columns.</p>
+</li>
+<li>
+<p>Choose the <em>Distance Metric</em>:</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean</a> (&ldquo;straight line&rdquo;, distance between two points)</li>
 <li><a href="https://en.wiktionary.org/wiki/Manhattan_distance">Manhattan</a> (the sum of absolute differences for all attributes)</li>
@@ -1702,27 +1691,22 @@
 <li><a href="https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient">Pearson absolute</a> (linear correlation between the absolute values, remapped as a distance in a [0, 1] interval)</li>
 <li><a href="https://en.wikipedia.org/wiki/Hamming_distance">Hamming</a> (the number of features at which the corresponding values are different)</li>
 <li><a href="https://en.wikipedia.org/wiki/Bhattacharyya_distance">Bhattacharyya distance</a> (Similarity between two probability distributions, not a real distance as it doesn&rsquo;t obey triangle inequality.)</li>
-</ul></li>
-</ol>
-
+</ul>
 <p>Normalize the features. Normalization is always done column-wise. Values are zero centered and scaled.
-   In case of missing values, the widget automatically imputes the average value of the row or the column.
-   The widget works for both numeric and categorical data. In case of categorical data, the distance is 0 if the two values are the same (&lsquo;green&rsquo; and &lsquo;green&rsquo;) and 1 if they are not (&lsquo;green&rsquo; and &lsquo;blue&rsquo;).
-3. Tick <em>Apply Automatically</em> to automatically commit changes to other widgets. Alternatively, press &lsquo;<em>Apply</em>&rsquo;.</p>
-
+In case of missing values, the widget automatically imputes the average value of the row or the column.
+The widget works for both numeric and categorical data. In case of categorical data, the distance is 0 if the two values are the same (&lsquo;green&rsquo; and &lsquo;green&rsquo;) and 1 if they are not (&lsquo;green&rsquo; and &lsquo;blue&rsquo;).</p>
+</li>
+<li>
+<p>Tick <em>Apply Automatically</em> to automatically commit changes to other widgets. Alternatively, press &lsquo;<em>Apply</em>&rsquo;.</p>
+</li>
+</ol>
 <h2 id="examples">Examples</h2>
-
 <p>The first example shows a typical use of the <strong>Distances</strong> widget. We are using the <em>iris.tab</em> data from the <a href="../data/file.md">File</a> widget. We compute distances between data instances (rows) and pass the result to the <a href="../hierarchicalclustering/">Hierarchical Clustering</a>. This is a simple workflow to find groups of data instances.</p>
-
-<p><img src="../images/Distances-Example1-rows.png" alt="" /></p>
-
+<p><img src="../images/Distances-Example1-rows.png" alt=""></p>
 <p>Alternatively, we can compute distance between columns and find how similar our features are.</p>
-
-<p><img src="../images/Distances-Example1-columns.png" alt="" /></p>
-
+<p><img src="../images/Distances-Example1-columns.png" alt=""></p>
 <p>The second example shows how to visualize the resulting distance matrix. A nice way to observe data similarity is in a <a href="distancemap.md">Distance Map</a> or in <a href="../mds/">MDS</a>.</p>
-
-<p><img src="../images/Distances-Example2.png" alt="" /></p>
+<p><img src="../images/Distances-Example2.png" alt=""></p>
 
                 </div>
             </div>

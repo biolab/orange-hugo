@@ -1659,56 +1659,39 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="concordance">Concordance</h1>
-
+                    <h1 id="concordance">Concordance</h1>
 <p>Display the context of the word.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Documents: Documents containing the queried word.</li>
 <li>Concordances: A table of concordances.</li>
 </ul>
-
 <p><strong>Concordance</strong> finds the queried word in a text and displays the context in which this word is used. Results in a single color come from the same document. The widget can output selected documents for further analysis or a table of concordances for the queried word. Note that the widget finds only exact matches of a word, which means that if you query the word &lsquo;do&rsquo;, the word &lsquo;doctor&rsquo; won&rsquo;t appear in the results.</p>
-
-<p><img src="../images/Concordance-stamped.png" alt="" /></p>
-
+<p><img src="../images/Concordance-stamped.png" alt=""></p>
 <ol>
 <li><em>Information</em>:
-
 <ul>
 <li><em>Documents</em>: number of documents on the input.</li>
 <li><em>Tokens</em>: number of tokens on the input.</li>
 <li><em>Types</em>: number of unique tokens on the input.</li>
 <li><em>Matching</em>: number of documents containing the queried word.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Number of words</em>: the number of words displayed on each side of the queried word.</li>
 <li>Queried word.</li>
 <li>If <em>Auto commit is on</em>, selected documents are communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p><em>Concordance</em> can be used for displaying word contexts in a corpus. First, we load <em>book-excerpts.tab</em> in <a href="../corpus-widget/">Corpus</a>. Then we connect <strong>Corpus</strong> to <strong>Concordance</strong> and search for concordances of a word &lsquo;doctor&rsquo;. The widget displays all documents containing the word &lsquo;doctor&rsquo; together with their surrounding (contextual) words.</p>
-
 <p>Now we can select those documents that contain interesting contexts and output them to <a href="../corpusviewer/">Corpus Viewer</a> to inspect them further.</p>
-
-<p><img src="../images/Concordance-Example1.png" alt="" /></p>
-
+<p><img src="../images/Concordance-Example1.png" alt=""></p>
 <p>In the second example, we will output concordances instead. We will keep the <em>book-excerpts.tab</em> in <a href="../corpus-widget/">Corpus</a> and the connection to <strong>Concordance</strong>. Our queried word remains &lsquo;doctor&rsquo;.</p>
-
 <p>This time, we will connect <strong>Data Table</strong> to <strong>Concordance</strong> and select Concordances output instead. In the <strong>Data Table</strong>, we get a list of concordances for the queried word and the corresponding documents. Now, we will save this table with <strong>Save Data</strong> widget, so we can use it in other projects or for further analysis.</p>
-
-<p><img src="../images/Concordance-Example2.png" alt="" /></p>
+<p><img src="../images/Concordance-Example2.png" alt=""></p>
 
                 </div>
             </div>

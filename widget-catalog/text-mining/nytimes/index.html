@@ -1659,57 +1659,48 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="ny-times">NY Times</h1>
-
+                    <h1 id="ny-times">NY Times</h1>
 <p>Loads data from the New York Times&rsquo; <a href="https://developer.nytimes.com/">Article Search API</a>.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>None</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents from the New York Times newspaper.</li>
 </ul>
-
 <p><strong>NYTimes</strong> widget loads data from New York Times&rsquo; Article Search API. You can query NYTimes articles from September 18, 1851 to today, but the API limit is set to allow retrieving only a 1000 documents per query. Define which features to use for text mining, <em>Headline</em> and <em>Abstract</em> being selected by default.</p>
-
 <p>To use the widget, you must enter <a href="https://developer.nytimes.com/signup">your own API key</a>.</p>
-
-<p><img src="../images/NYTimes-stamped.png" alt="" /></p>
-
+<p><img src="../images/NYTimes-stamped.png" alt=""></p>
 <ol>
-<li>To begin your query, insert NY Times&rsquo; Article Search API key. The key is securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won&rsquo;t be deleted when clearing widget settings.</li>
-</ol>
-
-<p><img src="../images/NYT-API.png" alt="" /></p>
-
-<ol>
-<li>Set query parameters:
-
+<li>
+<p>To begin your query, insert NY Times&rsquo; Article Search API key. The key is securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won&rsquo;t be deleted when clearing widget settings.</p>
+<p><img src="../images/NYT-API.png" alt=""></p>
+</li>
+<li>
+<p>Set query parameters:</p>
 <ul>
 <li><em>Query</em></li>
 <li>Query time frame. The widget allows querying articles from September 18, 1851 onwards. Default is set to 1 year back from the current date.</li>
-</ul></li>
-<li>Define which features to include as text features.</li>
-<li>Information on the output.</li>
-<li>Produce report.</li>
-<li>Run or stop the query.</li>
+</ul>
+</li>
+<li>
+<p>Define which features to include as text features.</p>
+</li>
+<li>
+<p>Information on the output.</p>
+</li>
+<li>
+<p>Produce report.</p>
+</li>
+<li>
+<p>Run or stop the query.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>NYTimes</strong> is a data retrieving widget, similar to <a href="twitter-widget.md">Twitter</a> and <a href="wikipedia-widget.md">Wikipedia</a>. As it can retrieve geolocations, that is geographical locations the article mentions, it is great in combination with <a href="../docmap/">Document Map</a> widget.</p>
-
-<p><img src="../images/NYTimes-Example1.png" alt="" /></p>
-
+<p><img src="../images/NYTimes-Example1.png" alt=""></p>
 <p>First, let&rsquo;s query <strong>NYTimes</strong> for all articles on Slovenia. We can retrieve the articles found and view the results in <a href="../corpusviewer/">Corpus Viewer</a>. The widget displays all the retrieved features, but includes on selected features as text mining features.</p>
-
 <p>Now, let&rsquo;s inspect the distribution of geolocations from the articles mentioning Slovenia. We can do this with <a href="../docmap/">Document Map</a>. Unsurprisingly, Croatia and Hungary appear the most often in articles on Slovenia (discounting Slovenia itself), with the rest of Europe being mentioned very often as well.</p>
 
                 </div>

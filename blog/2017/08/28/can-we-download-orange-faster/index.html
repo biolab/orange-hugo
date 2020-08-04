@@ -230,54 +230,30 @@
 
 
               <p>One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.</p>
-
 <p><strong>Related:</strong> <a href="/blog/2016/09/15/data-mining-in-houston-2/">Introduction to Data Mining Course in Houston</a></p>
-
 <p>But we have the data and we&rsquo;ve promptly tried to confirm their complaints by analyzing them&hellip; well, in Orange!</p>
-
 <p>First, let us observe the data. We have 4887 recorded download sessions with one meta feature reporting on the country of the download and four features with time, size, speed in bytes and speed in gigabytes of the download.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-13.47.51.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-13.47.51.png" alt=""></p>
 <p>Data of Orange download statistics. We get reports on the country of download, the size and the time of the download. We have constructed speed and size in gigabytes ourselves with simple formulae.</p>
-
 <p>Now let us check the validity of Blaž&rsquo;s and Janez&rsquo;s complaint. We will use <a href="https://github.com/biolab/orange3-geo">orange3-geo add-on</a> for plotting geolocated data. For any geoplotting, we need coordinates - latitude and longitude. To retrieve them automatically, we will use Geocoding widget.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-13.57.15.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-13.57.15.png" alt=""></p>
 <p>We instruct Geocoding to retrieve coordinates from our Country feature. Identifier type tells the widget in what format the region name appears.</p>
-
 <p>We told the widget to use the ISO-compliant country code from Country attribute and encode it into coordinates. If we check the new data in a Data Table, we see our data is enhanced with new features.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.03.08.png" alt="" />
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.03.08.png" alt="">
 Enhanced data table. Besides latitude and longitude, Geocoding can also append country-level data (economy, continent, region&hellip;).</p>
-
 <p>Now that we have coordinates, we can plot these data regionally - in Choropleth widget! This widget plots data on three levels - country, state/region and county/municipality. Levels correspond to the administrative division of each country.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.10.53.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.10.53.png" alt=""></p>
 <p>Choropleth widget offers 3 aggregation levels. We chose country (e.g. administrative level 0), but with a more detailed data one could also plot by state/county/municipality. Administrative levels are different for each country (e.g. Bundesländer for Germany, states for the US, provinces for Canada&hellip;).</p>
-
 <p>In the plot above, we have simply displayed the amount of people (Count) that downloaded Orange in the past couple of months. Seems like we indeed have most users in the US, so it might make sense to solve installation issues for this region first.</p>
-
 <p>Now let us check the speed of the download - it is really so slow in the US? If we take the mean, we can see that Slovenia is far ahead of the rest as far as download speed is concerned. No wonder - we are downloading via the local network. Scandinavia, Central Europe and a part of the Balkans seem to do quite ok as well.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.21.50.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.21.50.png" alt=""></p>
 <p>Aggregation by mean.</p>
-
 <p>But mean sometimes doesn&rsquo;t show the right picture - it is sensitive to outliers, which would be the case of Slovenia here. Let us try median instead. Looks like 50% of American download at speed lower than 1.5MB/s. Quite average, but it could be better.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.36.54.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-25-at-14.36.54.png" alt=""></p>
 <p>Aggregation by median.</p>
-
 <p>And the longest time someone was prepared to wait for the download? Over 3 hours. Kudos, mate! We appreciate it! 🙌</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-28-at-10.26.01-1.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-28-at-10.26.01-1.png" alt=""></p>
 <p>This simple workflow is all it took to do our analysis.</p>
-
 <p>So how is your download speed for Orange compared to other things you are downloading? Better, worse? We&rsquo;re keen to hear it! 👂</p>
 
             </div>

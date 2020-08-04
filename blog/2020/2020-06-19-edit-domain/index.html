@@ -234,51 +234,39 @@
 
 
               <p>Importing data into Orange is easy. File, import, and voila, your data is here. But what about if you want to rename a variable, change it&rsquo;s type or edit labels? Edit Domain to the rescue!</p>
-
 <p>First of all, what is &lsquo;domain&rsquo;. Domain is like a metadata of your data - it describes column names, column types (categorical, numeric, string, datetime), and values for categorical variables. You will come across domain everywhere in Orange, because Orange&rsquo;s table (Orange.data.Table for programmers) is nothing without it.</p>
-
 <p>Edit Domain helps you organize the domain of your data. Let us use Datasets widget and load HDI, a dataset of human development index for most countries in the world. We have 188 rows (countries) and 66 features (index variables).</p>
-
 <a href="/blog_img/2020/2020-06-19-data-table.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-data-table.png" />
  </a>
 
 
 
-
 <p>Now, let us check the domain in Edit Domain. First of all, our variable names are long, so we can make them shorter with Edit Domain. Select, say, <em>Gross National Income (GNI) per capita</em> and rename it to GNI. Simple! If you are unhappy with the change, simply press <em>Reset Selected</em> at the bottom of the widget.</p>
-
 <a href="/blog_img/2020/2020-06-19-rename.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-rename.png" />
  </a>
 
 
 
-
 <p>Scroll down and check the rest of the variables. We have two categorical variables in the data, child labour and maternity leave. Let us check <em>Child labour  (% ages 5-14) 2009-2015</em> and rename it first to <em>Child labour</em>. You can see the variable has many values, from 1 to 47. How about we merge the less frequent values into one?</p>
-
 <a href="/blog_img/2020/2020-06-19-merge-infrequent1.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-merge-infrequent1.png" />
  </a>
 
 
 
-
 <p>Press <em>M</em> on the right side of the widget and a new window will pop up. There are several ways to group less frequent variables, but let&rsquo;s go with merging all but top 10 most frequent values. Let us also change the label of these values from <em>other</em> to <em>infrequent</em>.</p>
-
 <a href="/blog_img/2020/2020-06-19-merge-infrequent2.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-merge-infrequent2.png" />
  </a>
 
 
 
-
 <p>Finally, we will select <em>Country</em> from the list and set it as a categorical variable. Click on Type drop down and select Categorical. This will reinterpret the variable according to the selected type. Now you can also see the values of the reinterpreted variable. Double-click <em>Antigua and Barb.</em> and rename it to <em>Antigua and Barbuda</em>. You can use up and down arrows to change the order of the variable. Let us push Antigua and Barbuda to the top. The order will be evident in, say, visualizations and their legends. If you connect <strong>Line Plot</strong> to <strong>Edit Domain</strong> and set Group by to <em>Country</em>, Antigua and Barbuda will have a long name and will be placed at the top.</p>
-
 <a href="/blog_img/2020/2020-06-19-rename-label-sort.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-rename-label-sort.png" />
  </a>
-
 
 
 
@@ -288,9 +276,7 @@
 
 
 
-
 <p>Edit Domain is a great widget to organize your data. See documentation for other great widgets, such as Create Class or Feature Statistics.</p>
-
 <a href="/blog_img/2020/2020-06-19-workflow.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-06-19-workflow.png" />
  </a>

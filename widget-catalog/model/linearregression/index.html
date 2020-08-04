@@ -1659,52 +1659,38 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="linear-regression">Linear Regression</h1>
-
+                    <h1 id="linear-regression">Linear Regression</h1>
 <p>A linear regression algorithm with optional L1 (LASSO), L2 (ridge) or L1L2 (elastic net) regularization.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: linear regression learning algorithm</li>
 <li>Model: trained model</li>
 <li>Coefficients: linear regression coefficients</li>
 </ul>
-
 <p>The <strong>Linear Regression</strong> widget constructs a learner/predictor that learns a <a href="https://en.wikipedia.org/wiki/Linear_regression">linear function</a> from its input data. The model can identify the relationship between a predictor xi and the response variable y. Additionally, <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">Lasso</a> and <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">Ridge</a> regularization parameters can be specified. Lasso regression minimizes a penalized version of the least squares loss function with L1-norm penalty and Ridge regularization with L2-norm penalty.</p>
-
 <p>Linear regression works only on regression tasks.</p>
-
-<p><img src="../images/LinearRegression-stamped.png" alt="" /></p>
-
+<p><img src="../images/LinearRegression-stamped.png" alt=""></p>
 <ol>
 <li>The learner/predictor name</li>
 <li>Choose a model to train:
-
 <ul>
 <li>no regularization</li>
 <li>a <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">Ridge</a> regularization (L2-norm penalty)</li>
 <li>a <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">Lasso</a> bound (L1-norm penalty)</li>
 <li>an <a href="https://en.wikipedia.org/wiki/Elastic_net_regularization">Elastic net</a> regularization</li>
-</ul></li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes are committed automatically.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Below, is a simple workflow with <em>housing</em> dataset. We trained <strong>Linear Regression</strong> and <a href="../model/randomforest.md">Random Forest</a> and evaluated their performance in <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
-
-<p><img src="../images/LinearRegression-regression.png" alt="" /></p>
+<p><img src="../images/LinearRegression-regression.png" alt=""></p>
 
                 </div>
             </div>

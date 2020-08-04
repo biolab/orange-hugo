@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Images on Orange</title>
+    <title>images on Orange</title>
     <link>/categories/images/</link>
-    <description>Recent content in Images on Orange</description>
+    <description>Recent content in images on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
@@ -20,7 +20,8 @@
       <description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 Related: Image Analytics Workshop at AIUCD 2018
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
- We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
+ \
+We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
     </item>
     
     <item>
@@ -91,7 +92,7 @@ Save Graph function is available in Paint Data, Image Viewer, all visualization 
       
       <guid>/blog/2014/04/29/viewing-images/</guid>
       <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
-Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
     </item>
     
   </channel>

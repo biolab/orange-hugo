@@ -258,41 +258,26 @@
 
 
               <p><a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> application period has come to an end. We&rsquo;ve received 34 applications, some of which were of truly high quality. Now it&rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.</p>
-
 <p>First, we needed to preprocess the data a bit, since it came in a messy form of strings. Feature Constructor to the rescue! We wanted to extract the OS usage across users. So we first made three new variables named &lsquo;uses linux&rsquo;, &lsquo;uses windows&rsquo; and &lsquo;uses osx&rsquo; to represent our three new columns. For each column we searched through &lsquo;OS_of_choice_and_why&rsquo;, looked up the value of the column, converted it to string, put the string in lowercase, found mentions of either &lsquo;linux&rsquo;, &lsquo;windows&rsquo; or &lsquo;osx&rsquo;, and voila&hellip;. if a mention occurred in the string, we marked the column with 1, else with 0.</p>
-
-<p><img src="/images/2016/04/blog10.png" alt="" /></p>
-
+<p><img src="/images/2016/04/blog10.png" alt=""></p>
 <p>The expression is just a logical statement in Python and works with booleans (0 if False and 1 if True):</p>
-
 <pre><code>'linux' in str(OS_of_choice_and_why_.value).lower() or 'ubuntu' in str(OS_of_choice_and_why_.value).lower()
 </code></pre>
-
-<p>Another thing we might want to do is create three discrete values for &ldquo;Dogs or cats&rdquo; question. We want Orange to display &lsquo;dogs&rsquo; for someone who replied &lsquo;dogs&rsquo;, &lsquo;cats&rsquo; for someone who replied &lsquo;cats&rsquo; and &lsquo;?&rsquo; if the questions was a blank or very creative (we had people who wanted to be elephants and butterflies :) ).</p>
-
+<p>Another thing we might want to do is create three discrete values for &lsquo;&lsquo;Dogs or cats&rsquo;&rsquo; question. We want Orange to display &lsquo;dogs&rsquo; for someone who replied &lsquo;dogs&rsquo;, &lsquo;cats&rsquo; for someone who replied &lsquo;cats&rsquo; and &lsquo;?&rsquo; if the questions was a blank or very creative (we had people who wanted to be elephants and butterflies :) ).</p>
 <p>To create three discrete values you would write:</p>
-
 <pre><code>0 if 'dogs' in str(Dogs_or_cats_.value).lower() else 1 if  'cats' in str(Dogs_or_cats_.value).lower() else 2
 </code></pre>
-
 <p>Since we have three values, we need to assign them the corresponding indexes. So if there is &lsquo;dogs&rsquo; in the reply, we would get 0 (which we converted to &lsquo;dogs&rsquo; in the Feature Constructor&rsquo;s &lsquo;Values&rsquo; box), 1 if there&rsquo;s &lsquo;cats&rsquo; in the reply and 2 if none of the above apply.</p>
-
-<p><img src="/images/2016/04/blog9.png" alt="" /></p>
-
+<p><img src="/images/2016/04/blog9.png" alt=""></p>
 <p>Ok, the next step was to sift through a big pile of attributes. We removed personal information for privacy concerns and selected the ones we cared about the most. For example programming skills, years of experience, contributions to OSS and of course whether someone is a dog or a cat person. :) Select Columns sorts the problem. Here you can download a <a href="http://s000.tinyupload.com/?file_id=18444941737485155585">mock-up workflow</a> (same as above, but without sensitive data).</p>
-
 <p>Now for some lovely charts. Enjoy!</p>
-
-<p><img src="/images/2016/04/blog5.png" alt="" />
+<p><img src="/images/2016/04/blog5.png" alt="">
 Python is our lingua franca, experts wanted!</p>
-
-<p><img src="/images/2016/04/blog8.png" alt="" />
+<p><img src="/images/2016/04/blog8.png" alt="">
 20 years of programming experience? Hello outlier!</p>
-
-<p><img src="/images/2016/04/blog2.png" alt="" />
+<p><img src="/images/2016/04/blog2.png" alt="">
 OSS all the way!</p>
-
-<p><img src="/images/2016/04/blog3.png" alt="" />
+<p><img src="/images/2016/04/blog3.png" alt="">
 Some people love dogs and some love cats. Others prefer elephants and butterflies.</p>
 
             </div>

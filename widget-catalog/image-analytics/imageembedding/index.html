@@ -1659,45 +1659,34 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="image-embedding">Image Embedding</h1>
-
+                    <h1 id="image-embedding">Image Embedding</h1>
 <p>Image embedding through deep neural networks.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Images: List of images.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Embeddings: Images represented with a vector of numbers.</li>
 <li>Skipped Images: List of images where embeddings were not calculated.</li>
 </ul>
-
 <p><strong>Image Embedding</strong> reads images and uploads them to a remote server or evaluate them locally. Deep learning models are used to calculate a feature vector for each image. It returns an enhanced data table with additional columns (image descriptors).</p>
-
 <p>Images can be imported with <a href="../importimages/">Import Images</a> widget or as paths to images in a spreadsheet. In this case the column with images paths needs a three-row header with <em>type=image</em> label in the third row.</p>
-
-<p><img src="../images/header-example.png" alt="" /></p>
-
+<p><img src="../images/header-example.png" alt=""></p>
 <p>Image Embedding offers several embedders, each trained for a specific task. Images are sent to a server or they are evaluated locally on the user&rsquo;s computer, where vectors representations are computed. SqueezeNet embedder offers a fast evaluation on users computer which does not require an internet connection. If you decide to use other embedders than SqueezeNet, you will need an internet connection. Images sent to the server are not stored anywhere.</p>
-
-<p><img src="../images/ImageEmbedding-stamped.png" alt="" /></p>
-
+<p><img src="../images/ImageEmbedding-stamped.png" alt=""></p>
 <ol>
-<li>Information on the number of embedded images and images skipped.</li>
-
-<li><p>Settings:</p>
-
+<li>
+<p>Information on the number of embedded images and images skipped.</p>
+</li>
+<li>
+<p>Settings:</p>
 <ul>
-<li><em>Image attribute</em>: attribute containing images you wish to embed</li>
-
-<li><p><em>Embedder</em>:</p>
-
+<li>
+<p><em>Image attribute</em>: attribute containing images you wish to embed</p>
+</li>
+<li>
+<p><em>Embedder</em>:</p>
 <ul>
 <li>SqueezeNet: <a href="https://arxiv.org/abs/1602.07360">Small and fast</a> model for image recognition trained on ImageNet.</li>
 <li>Inception v3: <a href="https://arxiv.org/abs/1512.00567">Google&rsquo;s Inception v3</a> model trained on ImageNet.</li>
@@ -1705,39 +1694,30 @@
 <li>VGG-19: <a href="https://arxiv.org/abs/1409.1556">19-layer image recognition model</a> trained on ImageNet.</li>
 <li>Painters: A model trained to <a href="http://blog.kaggle.com/2016/11/17/painter-by-numbers-competition-1st-place-winners-interview-nejc-ilenic/">predict painters from artwork images</a>.</li>
 <li>DeepLoc: A model trained to analyze <a href="https://www.ncbi.nlm.nih.gov/pubmed/29036616">yeast cell images</a>.</li>
-</ul></li>
-</ul></li>
-
-<li><p>Tick the box on the left to start the embedding automatically. Alternatively, click <em>Apply</em>. To cancel the embedding, click <em>Cancel</em>.</p></li>
-
-<li><p>Access help.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tick the box on the left to start the embedding automatically. Alternatively, click <em>Apply</em>. To cancel the embedding, click <em>Cancel</em>.</p>
+</li>
+<li>
+<p>Access help.</p>
+</li>
 </ol>
-
 <h2 id="embedders">Embedders</h2>
-
 <p><strong>InceptionV3</strong> is Google’s deep neural network for image recognition. It is trained on the ImageNet data set. The model we are using is available <a href="http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz">here</a>. For the embedding, we use the activations of the penultimate layer of the model, which represents images with vectors.</p>
-
 <p><strong>SqueezeNet</strong> is a deep model for image recognition that achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters. The model is trained on the ImageNet dataset. We re-implemented the SqueezeNet by using weights from the <a href="https://github.com/DeepScale/SqueezeNet">author’s pretrained model</a>. We use activations from pre-softmax (<code>flatten10</code>) layer as an embedding.</p>
-
 <p><strong>VGG16</strong> and <strong>VGG19</strong> are deep neural networks for image recognition proposed by Visual Geometry Group from the University of Oxford. They are trained on the ImageNet data set. We use a <a href="https://github.com/machrisaa/tensorflow-vgg">community implementation</a> of networks with original weights. As an embedding, we use activations of the penultimate layer - <code>fc7</code>.</p>
-
 <p>Image Embedding also includes <a href="https://github.com/inejc/painters"><strong>Painters</strong></a>, an embedder that was trained on 79,433 images of paintings by 1,584 painters and won Kaggle’s Painter by Numbers competition. Activations of the penultimate layer of the network are used as an embedding.</p>
-
 <p><strong>DeepLoc</strong> is a convolutional network trained on 21,882 images of single cells that were manually assigned to one of 15 localization compartments. We use the pre-trained network proposed by <a href="https://github.com/okraus/DeepLoc">authors</a>. The embeddings are activations of penultimate layer <code>fc_2</code>.</p>
-
 <p>An <a href="https://www.nature.com/articles/s41467-019-12397-x">article</a> by Godec et al. (2019) explains how the embeddings work and how to use it in Orange.</p>
-
 <h2 id="example">Example</h2>
-
 <p>Let us first import images from a folder with <a href="../importimages/">Import Images</a>. We have three images of an orange, a banana and a strawberry in a folder called Fruits. From <strong>Import Images</strong> we will send a data table containing a column with image paths to <strong>Image Embedding</strong>.</p>
-
 <p>We will use the default embedder <em>SqueezeNet</em>. The widget will automatically start retrieving image vectors from the server.</p>
-
-<p><img src="../images/ImageEmbedding-Example1.png" alt="" /></p>
-
+<p><img src="../images/ImageEmbedding-Example1.png" alt=""></p>
 <p>Once the computation is done, you can observe the enhanced data in a <strong>Data Table</strong>. With the retrieved embeddings, you can continue with any machine learning method Orange offers. Below is an example for clustering.</p>
-
-<p><img src="../images/ImageEmbedding-Example2.png" alt="" /></p>
+<p><img src="../images/ImageEmbedding-Example2.png" alt=""></p>
 
                 </div>
             </div>

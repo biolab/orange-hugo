@@ -1659,70 +1659,53 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="bag-of-words">Bag of Words</h1>
-
+                    <h1 id="bag-of-words">Bag of Words</h1>
 <p>Generates a bag of words from the input corpus.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Corpus with bag of words features appended.</li>
 </ul>
-
 <p><strong>Bag of Words</strong> model creates a corpus with word counts for each data instance (document). The count can be either absolute, binary (contains or does not contain) or sublinear (logarithm of the term frequency). Bag of words model is required in combination with <a href="../wordenrichment/">Word Enrichment</a> and could be used for predictive modelling.</p>
-
-<p><img src="../images/Bag-of-Words-stamped.png" alt="" /></p>
-
+<p><img src="../images/Bag-of-Words-stamped.png" alt=""></p>
 <ol>
 <li>Parameters for <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">bag of words</a> model:
-
 <ul>
 <li>Term Frequency:
-
 <ul>
 <li>Count: number of occurrences of a word in a document</li>
 <li>Binary: word appears or does not appear in the document</li>
 <li>Sublinear: logarithm of term frequency (count)</li>
-</ul></li>
+</ul>
+</li>
 <li>Document Frequency:
-
 <ul>
 <li>(None)</li>
 <li>IDF: <a href="http://nlp.stanford.edu/IR-book/html/htmledition/inverse-document-frequency-1.html">inverse document frequency</a></li>
 <li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html">Smooth IDF</a>: adds one to document frequencies to prevent zero division.</li>
-</ul></li>
+</ul>
+</li>
 <li>Regulariation:
-
 <ul>
 <li>(None)</li>
 <li>L1 (Sum of elements): normalizes vector length to sum of elements</li>
 <li>L2 (Euclidean): normalizes vector length to sum of squares</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the first example we will simply check how the bag of words model looks like. Load <em>book-excerpts.tab</em> with <a href="../corpus-widget/">Corpus</a> widget and connect it to <strong>Bag of Words</strong>. Here we kept the defaults - a simple count of term frequencies. Check what the <strong>Bag of Words</strong> outputs with <strong>Data Table</strong>. The final column in white represents term frequencies for each document.</p>
-
-<p><img src="../images/Bag-of-Words-Example1.png" alt="" /></p>
-
+<p><img src="../images/Bag-of-Words-Example1.png" alt=""></p>
 <p>In the second example we will try to predict document category. We are still using the <em>book-excerpts.tab</em> data set, which we sent through <a href="../preprocesstext/">Preprocess Text</a> with default parameters. Then we connected <strong>Preprocess Text</strong> to <strong>Bag of Words</strong> to obtain term frequencies by which we will compute the model.</p>
-
-<p><img src="../images/Bag-of-Words-Example2.png" alt="" /></p>
-
+<p><img src="../images/Bag-of-Words-Example2.png" alt=""></p>
 <p>Connect <strong>Bag of Words</strong> to <strong>Test &amp; Score</strong> for predictive modelling. Connect <strong>SVM</strong> or any other classifier to <strong>Test &amp; Score</strong> as well (both on the left side). <strong>Test &amp; Score</strong> will now compute performance scores for each learner on the input. Here we got quite impressive results with SVM. Now we can check, where the model made a mistake.</p>
-
 <p>Add <strong>Confusion Matrix</strong> to <strong>Test &amp; Score</strong>. Confusion matrix displays correctly and incorrectly classified documents. <em>Select Misclassified</em> will output misclassified documents, which we can further inspect with <a href="../corpusviewer/">Corpus Viewer</a>.</p>
 
                 </div>

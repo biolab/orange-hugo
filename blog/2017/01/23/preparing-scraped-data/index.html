@@ -258,25 +258,18 @@
 
 
               <p>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.</p>
-
 <p><strong>Related:</strong> <a href="/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/">Creating a new data table in Orange through Python</a></p>
-
 <p>First, we&rsquo;ll have to do some scripting. We&rsquo;ll use a couple of Python libraries - <a href="https://docs.python.org/3.5/library/urllib.request.html">urllib.requests</a> fetching the data, <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for reading it, <a href="https://docs.python.org/3.5/library/csv.html">csv</a> for writing it and <a href="https://docs.python.org/3.5/library/re.html">regular expressions</a> for extracting the right data.</p>
-
 <pre><code>from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import csv
 import re
 </code></pre>
-
 <p>Ok, we&rsquo;ve imported the all the libraries we&rsquo;ll need. Now we will scrape the data from our own blog to see how many posts we&rsquo;ve written throughout the years.</p>
-
 <pre><code>html = urlopen('http://blog.biolab.si')
 soup = BeautifulSoup(html.read(), 'lxml')
 </code></pre>
-
 <p>The first line opens the address of the site we want to scrape. In our case this is our blog. The second line retrieves a html response from the site, which is our raw text. It looks like this:</p>
-
 <pre><code>&lt;aside id=&quot;archives-2&quot; class=&quot;widget widget_archive&quot;&gt;&lt;h3 class=&quot;widget-title&quot;&gt;Archives&lt;/h3&gt;
 &lt;ul&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2017/01/'&gt;January 2017&lt;/a&gt;&amp;nbsp;(1)&lt;/li&gt;
@@ -287,49 +280,31 @@ soup = BeautifulSoup(html.read(), 'lxml')
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/08/'&gt;August 2016&lt;/a&gt;&amp;nbsp;(5)&lt;/li&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/07/'&gt;July 2016&lt;/a&gt;&amp;nbsp;(3)&lt;/li&gt;....
 </code></pre>
-
 <p>Ok, html is nice, but we can&rsquo;t really do data analysis with this. We will have to transform this output into something sensible. How about .csv, a simple comma-demilited format Orange can recognize?</p>
-
 <pre><code>with open('scraped.csv', 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
 </code></pre>
-
 <p>We created a new file called &lsquo;<em>scraped.csv</em>&rsquo; to which we will write our content (&lsquo;w&rsquo; parameter means write). Then we defined the writer and set the delimiter to comma.</p>
-
 <p>Now we need to add the header row, so Orange will know what are the column names. We add this just after csvwriter variable.</p>
-
 <pre><code>csvwriter.writerow([&quot;Date&quot;, &quot;No_of_Blogs&quot;])
 </code></pre>
-
-<p>Now we have two columns, one named &lsquo;Date&rsquo; and the other &lsquo;No_of_Blogs&rsquo;. The final step is to extract the data. We have a bunch of lines in html, but the one we&rsquo;re interested in is in a section &lsquo;aside&rsquo; and has an id &lsquo;<em>archives-2</em>&rsquo;. We will first extract only this section (<em>.find(id=&lsquo;archives-2&rsquo;</em>) and get all the lines of the archive with the tag &lsquo;li&rsquo; (_.find<em>all(&lsquo;li&rsquo;)</em>):</p>
-
+<p>Now we have two columns, one named &lsquo;Date&rsquo; and the other &lsquo;No_of_Blogs&rsquo;. The final step is to extract the data. We have a bunch of lines in html, but the one we&rsquo;re interested in is in a section &lsquo;aside&rsquo; and has an id &lsquo;<em>archives-2</em>&rsquo;. We will first extract only this section (<em>.find(id='archives-2&rsquo;</em>) and get all the lines of the archive with the tag &lsquo;li&rsquo; (<em>.find_all(&lsquo;li&rsquo;)</em>):</p>
 <pre><code>for item in soup.find(id=&quot;archives-2&quot;).find_all('li'):
 </code></pre>
-
 <p>This is the result of <em>print(item)</em>.</p>
-
 <pre><code>&lt;li&gt;&lt;a href=&quot;http://blog.biolab.si/2017/01/&quot;&gt;January 2017&lt;/a&gt; (1)&lt;/li&gt;
 </code></pre>
-
 <p>Now we need to get the actual content from each line. The first part we need is the date of the archived content. Orange can read dates, but they need to come in the right format. We will extract the date from <em>href</em> part with <em>item.a.get(&lsquo;href&rsquo;)</em>. Then we need to extract only digits from it as we&rsquo;re not interested in the rest of the link. We do this with Regex for finding digits:</p>
-
 <pre><code>date = re.findall(r'\d+', item.a.get('href'))
 </code></pre>
-
 <p>Regex&rsquo;s <em>findall</em> function returns a list, in our case containing two items - the year and month of archived content. The second part of our data is the number of blogs archived in a particular month. We will again extract this with a Regex digit search, but this time we will be extracting data from the actual content - &lsquo;<em>item.contents[1]</em>&rsquo;.</p>
-
 <pre><code>digits = re.findall(r'\d+', item.contents[1])
 </code></pre>
-
 <p>Finally, we need to write each line to a .csv file we created above.</p>
-
 <pre><code>csvwriter.writerow([&quot;%s-%s-01&quot; % (date[0], date[1]), digits[0]])
 </code></pre>
-
-<p>Here, we formatted the date into an ISO-standard format Orange recognizes as time variable (<em>&rdquo;%s-%s-01&rdquo; % (date[0], date[1])</em>), while the second part is simply a count of our blog posts.</p>
-
+<p>Here, we formatted the date into an ISO-standard format Orange recognizes as time variable (<em>&quot;%s-%s-01&rdquo; % (date[0], date[1])</em>), while the second part is simply a count of our blog posts.</p>
 <p>This is the entire code:</p>
-
 <pre><code>from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import csv
@@ -346,19 +321,12 @@ with open('scraped.csv', 'w') as csvfile:
         digits = re.findall(r'\d+', item.contents[1])
         csvwriter.writerow([&quot;%s-%s-01&quot; % (date[0], date[1]), digits[0]])
 </code></pre>
-
 <p><strong>Related:</strong> <a href="/blog/2016-06-10-scripting-with-time-variable/">Scripting with Time Variable</a></p>
-
 <p>Now let&rsquo;s load this in Orange. File widget can easily read .csv formats and also correctly identifies the two column types, datetime and numeric. A quick glance into the Data Table&hellip;</p>
-
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png" alt="" /></p>
-
+<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png" alt=""></p>
 <p>Everything looks ok. We can use <a href="https://github.com/biolab/orange3-timeseries">Timeseries add-on</a> to inspect how many blogs we&rsquo;ve written each month since 2010. Connect <strong>As Timeseries</strong> widget to File. Orange will automatically suggest to use Date as our time variable. Finally, we&rsquo;ll plot the data with <strong>Line Chart</strong>. This is the curve of our blog activity.</p>
-
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png" alt="" /></p>
-
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png" alt="" /></p>
-
+<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png" alt=""></p>
+<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png" alt=""></p>
 <p>The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!</p>
 
             </div>

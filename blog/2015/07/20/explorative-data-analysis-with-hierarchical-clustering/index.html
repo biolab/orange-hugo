@@ -258,21 +258,13 @@
 
 
               <p>Today we will write about cluster analysis with <strong>Hierarchical Clustering</strong> widget. We use a well-known <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris data set</a>, which contains 150 Iris flowers, each belonging to one of the three species (setosa, versicolor and virginica). To an untrained eye the three species are very alike, so how could we best tell them apart? The data set contains measurements of sepal and petal dimensions (width and length) and we assume that these gives rise to interesting clustering. But is this so?</p>
-
-<p><img src="/images/2015/07/HierarchicalClustering5.jpg" alt="" /></p>
-
+<p><img src="/images/2015/07/HierarchicalClustering5.jpg" alt=""></p>
 <p>Hierarchical Clustering workflow</p>
-
 <p>To find clusters, we feed the data from the <strong>File</strong> widget to <strong>Distances</strong> and then into <strong>Hierarchical Clustering</strong>. The last widget in our workflow visualizes hierarchical clustering <a href="https://en.wikipedia.org/wiki/Hierarchical_clustering">dendrogram</a>. In the dendrogram, let us annotate the branches with the corresponding Iris species (Annotation = Iris). We see that not all the clusters are composed of the same actual class - there are some mixed clusters with both virginicas and versicolors.</p>
-
-<p><img src="/images/2015/07/HierarchicalClustering1.png" alt="" /></p>
-
+<p><img src="/images/2015/07/HierarchicalClustering1.png" alt=""></p>
 <p>Selected clusters in Hierarchical Clustering widget</p>
-
 <p>To see these clusters, we select them in <strong>Hierarchical Clustering</strong> widget by clicking on a branch. Selected data will be fed into the output of this widget. Let us inspect the data we have selected by adding <strong>Scatter Plot</strong> and <strong>PCA</strong> widgets. If we draw a <strong>Data Table</strong> directly from <strong>Hierarchical Clustering</strong>, we see the selected instances and the clusters they belong to. But if we first add the <strong>PCA</strong> widget, which decomposes the data into principal components, and then connect it to <strong>Scatter Plot</strong>, we will see the selected instances in the adjusted scatter plot (where principal components are used for x and y-axis).</p>
-
-<p><img src="/images/2015/07/HierarchicalClustering-Example2.png" alt="" /></p>
-
+<p><img src="/images/2015/07/HierarchicalClustering-Example2.png" alt=""></p>
 <p>Select other clusters in <strong>Hierarchical Clustering</strong> widget to see how the scatter plot visualization changes. This allows for an interesting <strong>explorative data analysis</strong> through a combination of widgets for unsupervised learning and visualizations.</p>
 
             </div>

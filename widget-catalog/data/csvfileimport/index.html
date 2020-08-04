@@ -1659,55 +1659,42 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="csv-file-import">CSV File Import</h1>
-
+                    <h1 id="csv-file-import">CSV File Import</h1>
 <p>Import a data table from a CSV formatted file.</p>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset from the .csv file</li>
 <li>Data Frame: pandas DataFrame object</li>
 </ul>
-
 <p>The <strong>CSV File Import</strong> widget reads comma-separated files and sends the dataset to its output channel. File separators can be commas, semicolons, spaces, tabs or manually-defined delimiters. The history of most recently opened files is maintained in the widget.</p>
-
 <p><em>Data Frame</em> output can be used in the <a href="../../data/pythonscript/">Python Script</a> widget by connecting it to the <code>in_object</code> input (e.g. <code>df = in_object</code>). Then it can be used a regular DataFrame.</p>
-
 <h3 id="import-options">Import Options</h3>
-
 <p>The import window where the user sets the import parameters. Can be re-opened by pressing <em>Import Options</em> in the widget.</p>
-
 <p>Right click on the column name to set the column type. Right click on the row index (on the left) to mark a row as a header, skipped or a normal data row.</p>
-
-<p><img src="../images/CSVFileImport-ImportOptions-stamped.png" alt="" /></p>
-
+<p><img src="../images/CSVFileImport-ImportOptions-stamped.png" alt=""></p>
 <ol>
 <li>File encoding. Default is UTF-8. See Encoding subchapter for details.</li>
 <li>Import settings:
-
 <ul>
 <li><em>Cell delimiter</em>:
-
 <ul>
 <li>Tab</li>
 <li>Comma</li>
 <li>Semicolon</li>
 <li>Space</li>
 <li>Other (set the delimiter in the field to the right)</li>
-</ul></li>
-<li><em>Quote character</em>: either &ldquo; or &lsquo;. Defines what is considered a text.</li>
+</ul>
+</li>
+<li><em>Quote character</em>: either &quot; or &lsquo;. Defines what is considered a text.</li>
 <li><em>Number separators</em>:
-
 <ul>
 <li>Grouping: delimiters for thousands, e.g. 1,000</li>
 <li>Decimal: delimiters for decimals, e.g. 1.234</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Column type: select the column in the preview and set its type. Column type can be set also by right-clicking on the selected column.
-
 <ul>
 <li><em>Auto</em>: Orange will automatically try to determine column type. (default)</li>
 <li><em>Numeric</em>: for continuous data types, e.g. (1.23, 1.32, 1.42, 1.32)</li>
@@ -1715,33 +1702,24 @@
 <li><em>Text</em>: for string data types, e.g. (John, Olivia, Mike, Jane)</li>
 <li><em>Datetime</em>: for time variables, e.g. (1970-01-01)</li>
 <li><em>Ignore</em>: do not output the column.</li>
-</ul></li>
+</ul>
+</li>
 <li>Pressing <em>Reset</em> will return the settings to the previously set state (saved by pressing OK in the Import Options dialogue). <em>Restore Defaults</em> will set the settings to their default values. <em>Cancel</em> aborts the import, while <em>OK</em> imports the data and saves the settings.</li>
 </ol>
-
 <h3 id="widget">Widget</h3>
-
 <p>The widget once the data is successfully imported.</p>
-
-<p><img src="../images/CSVFileImport-widget-stamped.png" alt="" /></p>
-
+<p><img src="../images/CSVFileImport-widget-stamped.png" alt=""></p>
 <ol>
 <li>The folder icon opens the dialogue for import the local .csv file. It can be used to either load the first file or change the existing file (load new data). The <em>File</em> dropdown stores paths to previously loaded data sets.</li>
 <li>Information on the imported data set. Reports on the number of instances (rows), variables (features or columns) and meta variables (special columns).</li>
 <li><em>Import Options</em> re-opens the import dialogue where the user can set delimiters, encodings, text fields and so on. <em>Cancel</em> aborts data import. <em>Reload</em> imports the file once again, adding to the data any changes made in the original file.</li>
 </ol>
-
 <h3 id="encoding">Encoding</h3>
-
 <p>The dialogue for settings custom encodings list in the Import Options - Encoding dropdown. Select <em>Customize Encodings List&hellip;</em> to change which encodings appear in the list. To save the changes, simply close the dialogue. Closing and reopening Orange (even with Reset widget settings) will not re-set the list. To do this, press <em>Restore Defaults</em>. To have all the available encodings in the list, press <em>Select all</em>.</p>
-
-<p><img src="../images/CSVFileImport-encodings.png" alt="" /></p>
-
+<p><img src="../images/CSVFileImport-encodings.png" alt=""></p>
 <h2 id="example">Example</h2>
-
 <p><strong>CSV File Import</strong> works almost exactly like the <a href="../data/file.md">File</a> widget, with the added options for importing different types of .csv files. In this workflow, the widget read the data from the file and sends it to the <a href="../../data/datatable/">Data Table</a> for inspection.</p>
-
-<p><img src="../images/CSVFileImport-Example.png" alt="" /></p>
+<p><img src="../images/CSVFileImport-Example.png" alt=""></p>
 
                 </div>
             </div>

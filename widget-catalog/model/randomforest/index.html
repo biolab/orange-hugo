@@ -1659,34 +1659,22 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="random-forest">Random Forest</h1>
-
+                    <h1 id="random-forest">Random Forest</h1>
 <p>Predict using an ensemble of decision trees.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: random forest learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p><a href="https://en.wikipedia.org/wiki/Random_forest">Random forest</a> is an ensemble learning method used for classification, regression and other tasks. It was first proposed by Tin Kam Ho and further developed by Leo Breiman (Breiman, 2001) and Adele Cutler.</p>
-
 <p><strong>Random Forest</strong> builds a set of decision trees. Each tree is developed from a bootstrap sample from the training data. When developing individual trees, an arbitrary subset of attributes is drawn (hence the term &ldquo;Random&rdquo;), from which the best attribute for the split is selected. The final model is based on the majority vote from individually developed trees in the forest.</p>
-
 <p><strong>Random Forest</strong> works for both classification and regression tasks.</p>
-
-<p><img src="../images/RandomForest-stamped.png" alt="" /></p>
-
+<p><img src="../images/RandomForest-stamped.png" alt=""></p>
 <ol>
 <li>Specify the name of the model. The default name is &ldquo;Random Forest&rdquo;.</li>
 <li>Specify how many decision trees will be included in the forest (<em>Number of trees in the forest</em>), and how many attributes will be arbitrarily drawn for consideration at each node. If the latter is not specified (option <em>Number of attributes&hellip;</em> left unchecked), this number is equal to the square root of the number of attributes in the data. You can also choose to fix the seed for tree generation (<em>Fixed seed for random generator</em>), which enables replicability of the results.</li>
@@ -1694,19 +1682,12 @@
 <li>Produce a report.</li>
 <li>Click <em>Apply</em> to communicate the changes to other widgets. Alternatively, tick the box on the left side of the <em>Apply</em> button and changes will be communicated automatically.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>For classification tasks, we use <em>iris</em> dataset. Connect it to <a href="../../evaluate/predictions/">Predictions</a>. Then, connect <a href="../data/file.md">File</a> to <strong>Random Forest</strong> and <a href="../model/tree.md">Tree</a> and connect them further to <a href="../../evaluate/predictions/">Predictions</a>. Finally, observe the predictions for the two models.</p>
-
-<p><img src="../images/RandomForest-classification.png" alt="" /></p>
-
+<p><img src="../images/RandomForest-classification.png" alt=""></p>
 <p>For regressions tasks, we will use <em>housing</em> data. Here, we will compare different models, namely <strong>Random Forest</strong>, <a href="../model/linearregression.md">Linear Regression</a> and <a href="../model/constant.md">Constant</a>, in the <a href="../../evaluate/testandscore/">Test &amp; Score</a> widget.</p>
-
-<p><img src="../images/RandomForest-regression.png" alt="" /></p>
-
+<p><img src="../images/RandomForest-regression.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Breiman, L. (2001). Random Forests. In Machine Learning, 45(1), 5-32. Available <a href="https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf">here</a>.</p>
 
                 </div>

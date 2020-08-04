@@ -1659,49 +1659,35 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="pubmed">Pubmed</h1>
-
+                    <h1 id="pubmed">Pubmed</h1>
 <p>Fetch data from <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> journals.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>None</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents from the PubMed online service.</li>
 </ul>
-
 <p><a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> comprises more than 26 million citations for biomedical literature from MEDLINE, life science journals, and online books. The widget allows you to query and retrieve these entries. You can use regular search or construct advanced queries.</p>
-
-<p><img src="../images/Pubmed-stamped.png" alt="" /></p>
-
+<p><img src="../images/Pubmed-stamped.png" alt=""></p>
 <ol>
 <li>Enter a valid e-mail to retrieve queries.</li>
 <li><em>Regular search</em>:
-
 <ul>
 <li><em>Author</em>: queries entries from a specific author. Leave empty to query by all authors.</li>
 <li><em>From</em>: define the time frame of publication.</li>
 <li><em>Query</em>: enter the query.
 <em>Advanced search</em>: enables you to construct complex queries. See <a href="https://www.ncbi.nlm.nih.gov/pubmed/advanced">PubMed&rsquo;s website</a> to learn how to construct such queries. You can also copy-paste constructed queries from the website.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Find records</em> finds available data from PubMed matching the query. Number of records found will be displayed above the button.</li>
 <li>Define the output. All checked features will be on the output of the widget.</li>
 <li>Set the number of record you wish to retrieve. Press <em>Retrieve records</em> to get results of your query on the output. Below the button is an information on the number of records on the output.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>PubMed</strong> can be used just like any other data widget. In this example we&rsquo;ve queried the database for records on orchids. We retrieved 1000 records and kept only &lsquo;abstract&rsquo; in our meta features to limit the construction of tokens only to this feature.</p>
-
-<p><img src="../images/Pubmed-Example.png" alt="" /></p>
-
+<p><img src="../images/Pubmed-Example.png" alt=""></p>
 <p>We used <a href="preprocesstext.md">Preprocess Text</a> to remove stopword and words shorter than 3 characters (regexp <code>\b\w{1,2}\b</code>). This will perhaps get rid of some important words denoting chemicals, so we need to be careful with what we filter out. For the sake of quick inspection we only retained longer words, which are displayed by frequency in <a href="../wordcloud/">Word Cloud</a>.</p>
 
                 </div>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networkx on Orange</title>
+    <title>networkx on Orange</title>
     <link>/categories/networkx/</link>
-    <description>Recent content in Networkx on Orange</description>
+    <description>Recent content in networkx on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jul 2011 18:56:00 +0000</lastBuildDate>

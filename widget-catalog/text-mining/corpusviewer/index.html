@@ -1659,52 +1659,38 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="corpus-viewer">Corpus Viewer</h1>
-
+                    <h1 id="corpus-viewer">Corpus Viewer</h1>
 <p>Displays corpus content.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Documents containing the queried word.</li>
 </ul>
-
 <p><strong>Corpus Viewer</strong> is meant for viewing text files (instances of Corpus). It will always output an instance of corpus. If <em>RegExp</em> filtering is used, the widget will output only matching documents.</p>
-
-<p><img src="../images/Corpus-Viewer-stamped.png" alt="" /></p>
-
+<p><img src="../images/Corpus-Viewer-stamped.png" alt=""></p>
 <ol>
 <li><em>Information</em>:
-
 <ul>
 <li><em>Documents</em>: number of documents on the input</li>
 <li><em>Preprocessed</em>: if preprocessor is used, the result is True, else False. Reports also on the number of tokens and types (unique tokens).</li>
 <li><em>POS tagged</em>: if POS tags are on the input, the result is True, else False.</li>
 <li><em>N-grams range</em>: if N-grams are set in <a href="../preprocesstext/">Preprocess Text</a>, results are reported, default is 1-1 (one-grams).</li>
 <li><em>Matching</em>: number of documents matching the <em>RegExp Filter</em>. All documents are output by default.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>RegExp Filter</em>: <a href="https://docs.python.org/3/library/re.html">Python regular expression</a> for filtering documents. By default no documents are filtered (entire corpus is on the output).</li>
 <li><em>Search Features</em>: features by which the RegExp Filter is filtering. Use Ctrl (Cmd) to select multiple features.</li>
 <li><em>Display Features</em>: features that are displayed in the viewer. Use Ctrl (Cmd) to select multiple features.</li>
 <li><em>Show Tokens &amp; Tags</em>: if tokens and POS tag are present on the input, you can check this box to display them.</li>
 <li>If <em>Auto commit is on</em>, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><em>Corpus Viewer</em> can be used for displaying all or some documents in corpus. In this example, we will first load <em>book-excerpts.tab</em>, that already comes with the add-on, into <a href="corpus-widget.md">Corpus</a> widget. Then we will preprocess the text into words, filter out the stopwords, create bi-grams and add POS tags (more on preprocessing in <a href="../preprocesstext/">Preprocess Text</a>. Now we want to see the results of preprocessing. In <em>Corpus Viewer</em> we can see, how many unique tokens we got and what they are (tick <em>Show Tokens &amp; Tags</em>). Since we used also POS tagger to show part-of-speech labels, they will be displayed alongside tokens underneath the text.</p>
-
 <p>Now we will filter out just the documents talking about a character Bill. We use regular expression <em>\bBill\b</em> to find the documents containing only the word Bill. You can output matching or non-matching documents, view them in another <em>Corpus Viewer</em> or further analyse them.</p>
-
-<p><img src="../images/Corpus-Viewer-Example.png" alt="" /></p>
+<p><img src="../images/Corpus-Viewer-Example.png" alt=""></p>
 
                 </div>
             </div>

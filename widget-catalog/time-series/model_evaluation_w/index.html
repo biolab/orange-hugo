@@ -1659,35 +1659,23 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="model-evaluation">Model Evaluation</h1>
-
+                    <h1 id="model-evaluation">Model Evaluation</h1>
 <p>Evaluate different time series&rsquo; models.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 <li>Time series model(s): The time series model(s) to evaluate (e.g. <a href="../var/">VAR</a> or <a href="../arima/">ARIMA</a>).</li>
 </ul>
-
 <p>Evaluate different time series&rsquo; models. by comparing the errors they make in terms of: root mean squared error (<a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">RMSE</a>), median absolute error (<a href="https://en.wikipedia.org/wiki/Mean_absolute_error">MAE</a>), mean absolute percent error (<a href="https://en.wikipedia.org/wiki/Mean_absolute_percentage_error">MAPE</a>), prediction of change in direction (POCID), coefficient of determination (<a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R²</a>), Akaike information criterion (AIC), and Bayesian information criterion (BIC).</p>
-
-<p><img src="../images/model-evaluation-stamped.png" alt="" /></p>
-
+<p><img src="../images/model-evaluation-stamped.png" alt=""></p>
 <ol>
 <li>Number of folds for time series cross-validation.</li>
 <li>Number of forecast steps to produce in each fold.</li>
 <li>Results for various error measures and information criteria on cross-validated and in-sample data.</li>
 </ol>
-
 <p><a href="https://image.slidesharecdn.com/granada-140207061551-phpapp01/95/automatic-time-series-forecasting-71-638.jpg?cb=1392426574">This slide</a> (<a href="http://www.slideshare.net/hyndman/automatic-time-series-forecasting">source</a>) shows how cross validation on time series is performed. In this case, the number of folds (1) is 10 and the number of forecast steps in each fold (2) is 1.</p>
-
 <p>In-sample errors are the errors calculated on the training data itself. A stable model is one where in-sample errors and out-of-sample errors don&rsquo;t differ significantly.</p>
-
 <p>####See also</p>
-
 <p><a href="../arima/">ARIMA Model</a>, <a href="../var/">VAR Model</a></p>
 
                 </div>

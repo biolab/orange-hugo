@@ -265,11 +265,8 @@
 
 
               <p>Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we&rsquo;re thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We&rsquo;ve introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.</p>
-
 <p>Twitter widget offers many functionalities. Since we wanted to get tweets from specific authors, we entered their Twitter handles as queries and set &lsquo;Search by Author&rsquo;. We only included Author, Content and Date in the query parameters, as we want to predict the author only on the basis of text.</p>
-
-<p><img src="/images/2016/07/Twitter1-stamped-1.png" alt="" /></p>
-
+<p><img src="/images/2016/07/Twitter1-stamped-1.png" alt=""></p>
 <ol>
 <li>Provide API keys.</li>
 <li>Insert queries separated by newline.</li>
@@ -282,11 +279,8 @@
 <li>Tweet count.</li>
 <li>Press ‘Search’ to start your query.</li>
 </ol>
-
 <p>We got 208 tweets on the output. Not bad. Now we need to preprocess them first, before we do any predictions. We transformed all the words into lowercase and split (tokenized) them by words. We didn&rsquo;t use any normalization (below turned on just as an example) and applied a simple stopword removal.</p>
-
-<p><img src="/images/2016/07/PreprocessText1-stamped.png" alt="" /></p>
-
+<p><img src="/images/2016/07/PreprocessText1-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input and output.</li>
 <li>Transformation applies basic modifications of text.</li>
@@ -294,21 +288,13 @@
 <li>Normalization lemmatizes words (do, did, done –&gt; do).</li>
 <li>Filtering extracts only desired tokens (without stopwords, including only specified words, or by frequency).</li>
 </ol>
-
 <p>Then we passed the tokens through a Bag of Words and observed the results in a Word Cloud.</p>
-
-<p><img src="/images/2016/07/wordcloud-twitter-1.png" alt="" /></p>
-
+<p><img src="/images/2016/07/wordcloud-twitter-1.png" alt=""></p>
 <p>Then we simply connected Bag of Words to Test &amp; Score and used several classifiers to see which one works best. We used Classification Tree and Nearest Neighbors since they are easy to explain even to teenagers. Especially Classification Tree offers a nice visualization in Classification Tree Viewer that makes the idea of the algorithm easy to understand. Moreover we could observe the most distinctive words in the tree.</p>
-
-<p><img src="/images/2016/07/classtree1.png" alt="" /></p>
-
+<p><img src="/images/2016/07/classtree1.png" alt=""></p>
 <p>Do these make any sense? You be the judge. :)</p>
-
 <p>We checked classification results in Test&amp;Score, counted misclassifications in Confusion Matrix and finally observed them in Corpus Viewer. k-NN seems to perform moderately well, while Classification Tree fails miserably. Still, this was trained on barely 200 tweets. Perhaps accumulating results over time might give us much better results. You can now certainly try it on your own! Update your Orange3-Text add-on or install it via &lsquo;pip install Orange3-Text&rsquo;!</p>
-
-<p><img src="/images/2016/07/schema-twittet-preprocess.png" alt="" /></p>
-
+<p><img src="/images/2016/07/schema-twittet-preprocess.png" alt=""></p>
 <p>Above is the final workflow. Preprocessing on the left. Testing and scoring on the right bottom. Construction of classification tree right and above.</p>
 
             </div>

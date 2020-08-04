@@ -1659,25 +1659,16 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="network-file">Network File</h1>
-
+                    <h1 id="network-file">Network File</h1>
 <p>Read network graph file in Pajek format.</p>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Network: An instance of Network Graph.</li>
 <li>Items: Properties of a network file.</li>
 </ul>
-
 <p><strong>Network File</strong> widget reads network files and sends the input data to its output channel. History of the most recently opened files in maintained in the widget. The widget also includes a directory with sample data sets that come pre-installed with the add-on.</p>
-
 <p>The widget reads data in .net and .pajek formats. A complimentary .tab, .tsv or .csv data set can be provided for node information. Orange by default matches a file with the same name as .net file.</p>
-
-<p><img src="../images/Network-File-stamped.png" alt="" /></p>
-
+<p><img src="../images/Network-File-stamped.png" alt=""></p>
 <ol>
 <li>Load network file. The widget construct a data table from the data whose filename matches the graph filename (i.e. <em>lastfm.net</em> and <em>lastfm.tab</em>) or, if no match is found, from the graph. A dropdown menu provides access to documentation data sets with <em>Browse documentation networks&hellip;</em>.</li>
 <li>The folder icon provides access to local data files.</li>
@@ -1685,12 +1676,9 @@
 <li>Status bar reports on the number of nodes and edges and the type of the graph.</li>
 <li>Information, warnings and errors. Hover over a message to read it all.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>We loaded the <em>lastfm.net</em> from documentation data set (dropdown → Browse documentation networks). The nicest way to observe network data is with the <a href="../networkexplorer/">Network Explorer</a> widget. <strong>Network File</strong> widget automatically matched the corresponding data file (<em>lastfm.net</em> with <em>lastfm.tab</em>), so node attributes are available in the widget.</p>
-
-<p><img src="../images/network-file-example.png" alt="" /></p>
+<p><img src="../images/network-file-example.png" alt=""></p>
 
                 </div>
             </div>

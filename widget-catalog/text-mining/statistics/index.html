@@ -1659,31 +1659,21 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="statistics">Statistics</h1>
-
+                    <h1 id="statistics">Statistics</h1>
 <p>Create new statistic variables for documents.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: Corpus with additional attributes.</li>
 </ul>
-
 <p><strong>Statistics</strong> is a feature constructor widget that adds simple document statistics to a corpus. It supports both standard statistical measures and user-defined variables.</p>
-
-<p><img src="../images/statistics-stamped.png" alt="" /></p>
-
+<p><img src="../images/statistics-stamped.png" alt=""></p>
 <ol>
-<li><p>Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side. Feature options are:</p>
-
+<li>
+<p>Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side. Feature options are:</p>
 <ul>
 <li>Words count: number of words in the document.</li>
 <li>Characters count: number of characters in the document.</li>
@@ -1699,20 +1689,19 @@
 <li>Contains: number of times a specified sequence is in the token.</li>
 <li>Regex: number of times the provided regular expression matches the token.</li>
 <li>POS tag: count specified POS tags. Requires POS tagged tokens from <a href="../preprocesstext/">Preprocess Text</a>. List of Tree POS tags for English can be found <a href="https://courses.washington.edu/hypertxt/csar-v02/penntable.html">here</a>.</li>
-</ul></li>
-
-<li><p>Press Apply to output corpus with new features.</p></li>
-
-<li><p>Status line with help on the left and input and output on the right.</p></li>
+</ul>
+</li>
+<li>
+<p>Press Apply to output corpus with new features.</p>
+</li>
+<li>
+<p>Status line with help on the left and input and output on the right.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Here is a simple example how <strong>Statistics</strong> widget works. As it is a basic feature construction widget, it can be used directly after <a href="corpus-widget.md">Corpus</a>. We have added a couple of features, namely word count, character count, percent unique words and number of words containing &lsquo;oran&rsquo;. We can observe the table with additional columns in a <a href="https://orange-visual-programming.readthedocs.io/widgets/data/datatable.html">Data Table</a>.</p>
-
 <p>We can also use the output of Statistics for predictive modeling with <a href="https://orange-visual-programming.readthedocs.io/widgets/evaluate/testandscore.html">Test and Score</a>. Normally, however, we would use Statistics only to enhance features from the <a href="bagofwords-widget.md">Bag of Words</a> widget. Some features require POS tagged tokens, which can be created with <a href="../preprocesstext/">Preprocess Text</a> widget.</p>
-
-<p><img src="../images/statistics-example.png" alt="" /></p>
+<p><img src="../images/statistics-example.png" alt=""></p>
 
                 </div>
             </div>

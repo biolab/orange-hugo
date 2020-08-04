@@ -251,35 +251,20 @@
 
 
               <p>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.</p>
-
 <p>I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a <a href="http://file.biolab.si/datasets/traffic-signs-rw.tab">traffic-signs-w.tab</a> data set.</p>
-
 <p><strong>Related:</strong> <a href="/blog/2014/04/29/viewing-images/">Viewing images</a></p>
-
 <p><strong>Related:</strong> <a href="https://www.youtube.com/watch?v=Iu8g2Twjn9U">Video on image clustering</a></p>
-
 <p><strong>Related:</strong> <a href="https://www.youtube.com/watch?v=lvgx62a8XQk">Video on image classification</a></p>
-
 <p>The easiest way to display the images is by loading this data file with File widget and then passing the data to the Image Viewer,</p>
-
-<p><img src="/images/2017/04/traffic-signs-file-image-viewer.png" alt="" /></p>
-
+<p><img src="/images/2017/04/traffic-signs-file-image-viewer.png" alt=""></p>
 <p>Opening the Image Viewer allows me to see the images:</p>
-
-<p><img src="/images/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png" alt="" /></p>
-
+<p><img src="/images/2017/04/Screen-Shot-2017-04-25-at-09.59.16.png" alt=""></p>
 <p>Note that initially the data table we have loaded contains no valuable features on which we can do any machine learning. It includes just a category of traffic sign, its name, and the link to its image.</p>
-
-<p><img src="/images/2017/04/traffic-signs-data-table2.png" alt="" /></p>
-
+<p><img src="/images/2017/04/traffic-signs-data-table2.png" alt=""></p>
 <p>We will use deep-network embedding to turn these images into numbers to describe them with 2048 real-valued features. Then, we will use Silhouette Plot to find which traffic signs are outliers in their own group. We would like to select these and visualize them in the Image Viewer.</p>
-
 <p><strong>Related:</strong> <a href="/blog/2016/03/23/all-i-see-is-silhouette/">All I see is silhouette</a></p>
-
 <p>Our final workflow, with selection of three biggest outliers (we used shift-click to select its corresponding silhouettes in the Silhouette Plot), is:</p>
-
-<p><img src="/images/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png" alt="" /></p>
-
+<p><img src="/images/2017/04/Screen-Shot-2017-04-25-at-10.08.56.png" alt=""></p>
 <p>Isn&rsquo;t this great? Turns out that traffic signs were carefully designed, such that the three outliers are indeed the signs we should never miss. It is great that we can now reconfirm this design choice by deep learning-based embedding and by using some straightforward machine learning tricks such as Silhouette Plot.</p>
 
             </div>

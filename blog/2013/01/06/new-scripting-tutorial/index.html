@@ -230,7 +230,6 @@
 
 
               <p>Orange just got a new, completely rewritten <a href="http://docs.orange.biolab.si/latest/tutorial/rst">scripting tutorial</a>. The tutorial uses Orange class hierarchy as introduced for version 2.5. The tutorial is supposed to be a gentle introduction in Orange scripting. It includes many examples, from really simple ones to those more complex. To give you a hint about the later, here is the code for learner with feature subset selection from:</p>
-
 <pre><code>class SmallLearner(Orange.classification.PyLearner):
     def __init__(self, base_learner=Orange.classification.bayes.NaiveLearner,
                  name='small', m=5):
@@ -248,9 +247,7 @@
         model = self.base_learner(Orange.data.Table(domain, data), weight)
         return Orange.classification.PyClassifier(classifier=model, name=self.name)
 </code></pre>
-
 <p>The tutorial was first written for Python 2.3. Since, Python and Orange have changed a lot. And so did I. Most of the for loops have become one-liners, list and dictionary comprehension have become a must, and many new and great libraries have emerged. The (boring) tutorial code that used to read</p>
-
 <pre><code>    c = [0] * len(data.domain.classVar.values)
     for e in data:
         c[int(e.getclass())] += 1
@@ -263,14 +260,10 @@
             (c[i], r[i], '%', data.domain.classVar.values[i]),
     print
 </code></pre>
-
 <p>is now replaced with</p>
-
 <pre><code>print Counter(str(d.get_class()) for d in data)
 </code></pre>
-
 <p>Ok. Pretty print is missing, but that, if not in the same line, could be done in another one.</p>
-
 <p>For now, the tutorial focuses on data input and output, classification and regression. We plan to use other sections, but you can also give us a hint if there are any you would wish to be included.</p>
 
             </div>

@@ -278,64 +278,35 @@
               <div id="blog_images_">
 
 
-              <p>As always, we&rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features<em>.</em></p>
-
+              <p>As always, we&rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._</p>
 <p><strong>Related:</strong> <a href="/blog/2017/06/19/text-preprocessing/">Text Preprocessing</a></p>
-
 <p><strong>Related:</strong> <a href="/blog/2016/07/05/rehaul-of-text-mining-add-on/">Rehaul of Text Mining Add-On</a></p>
-
 <p>First, Orange 3.4.5 offers better support for Text add-on. What do we mean by this? Now, every core Orange widget works with Text smoothly so you can mix-and-match the widgets as you like. Before, one could not pass the output of Select Columns (data table) to Preprocess Text (corpus), but now this is no longer a problem.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-13.33.28.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-13.33.28.png" alt=""></p>
 <p>Of course, one still needs to keep in mind that Corpus is a sparse data format, which does not work with some widgets by design. For example, Manifold Learning supports only t-SNE projection.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-10.37.03.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-10.37.03.png" alt=""></p>
 <p>Second, we&rsquo;ve introduced two new widgets, which have been long overdue. One is Sentiment Analysis, which enables basic sentiment analysis of corpora. So far it works for English and uses two nltk-supported techniques - <a href="https://www.cs.uic.edu/~liub/publications/kdd04-revSummary.pdf">Liu Hu</a> and <a href="http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf">Vader</a>. Both techniques are lexicon-based. Liu Hu computes a single normalized score of sentiment in the text (negative score for negative sentiment, positive for positive, 0 is neutral), while Vader outputs scores for each category (positive, negative, neutral) and appends a total sentiment score called a compound.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.00.25.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.00.25.png" alt=""></p>
 <p>Liu Hu score.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-10.59.57.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-10.59.57.png" alt=""></p>
 <p>Vader scores.</p>
-
 <p>Try it with Heat Map to visualize the scores.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.05.23.png" alt="" /></p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.05.19.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.05.23.png" alt=""></p>
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.05.19.png" alt=""></p>
 <p>Yellow represent a high, positive score, while blue represent a low, negative score. Seems like Animal Tales are generally much more negative than Tales of Magic.</p>
-
 <p>The second widget we&rsquo;ve introduced is Import Documents. This widget enables you to import your own documents into Orange and outputs a corpus on which you can perform the analysis. The widget supports .txt, .docx, .odt, .pdf and .xml files and loads an entire folder. If the folder contains subfolders, they will be considered as class values. Here&rsquo;s an example.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.11.17.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.11.17.png" alt=""></p>
 <p>This is the structure of my Kennedy folder. I will load the folder with Import Documents. Observe, how Orange creates a class variable <em>category</em> with <em>post-1962</em> and <em>pre-1962</em> as class values.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.01.png" alt="" /></p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.14.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.01.png" alt=""></p>
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.14.png" alt=""></p>
 <p>Subfolders are considered as class in the category column.</p>
-
 <p>Now you can perform your analysis as usual.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.44.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.15.44.png" alt=""></p>
 <p>Finally, some widgets have cool new updates. Topic Modelling, for example, colors words by their weights - positive weights are colored green and negative red. Coloring only works with LSI, since it&rsquo;s the only method that outputs both positive and negative weights.</p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.31.51.png" alt="" /></p>
-
-<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-12.23.24.png" alt="" /></p>
-
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-11.31.51.png" alt=""></p>
+<p><img src="/images/2017/08/Screen-Shot-2017-08-04-at-12.23.24.png" alt=""></p>
 <p>If there are many kings in the text and no birds, then the text belongs to Topic 2. If there are many children and no foxes, then it belongs to Topic 3.</p>
-
 <p>Take some time, explore these improvements and let us know if you are happy with the changes! You can also submit new feature requests to our <a href="https://github.com/biolab/orange3-text/issues">issue tracker</a>.</p>
-
 <p>Thank you for working with Orange! 🍊</p>
 
             </div>

@@ -248,55 +248,35 @@
 
 
               <p>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.</p>
-
-<p></p>
-
-<p><a href="/blog_img/2019/1/4/correlations-p-values-1.png" class="blog-image_"> 
+<p>\</p>
+<a href="/blog_img/2019/1/4/correlations-p-values-1.png" class="blog-image_"> 
       <img src="/blog_img/2019/1/4/correlations-p-values-1.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</p>
-
 <p>First a side note. It was Christmas not long ago. Let’s call a ceasefire on the frequentist vs. Bayesian war. Let us, for Christ’s sake, pretend, pardon, agree that null-hypothesis testing is not wrong per se.</p>
-
 <p>The mantra of null-hypothesis significance testing goes like this:</p>
-
 <ol>
 <li>Form hypothesis.</li>
 <li>Collect data.</li>
 <li>Test hypothesis.</li>
 </ol>
-
 <p>In contrast, the parallel-universe Correlation widget is (ab)used like this:</p>
-
 <ol>
 <li>Collect data.</li>
 <li>Test all possible hypotheses.</li>
 <li>Cherry pick those that are confirmed.</li>
 </ol>
-
 <p>This is like the <a href="https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy" target="_blank">Texas sharpshooter</a> who fires first and then draws targets around the shots. You should never formulate hypothesis based on some data and then use this same data to prove it. Because it usually (surprise!) works.</p>
-
-<p></p>
-
-<p><a href="/blog_img/2019/1/4/TexasSharpShooter.png" class="blog-image_"> 
+<p>\</p>
+<a href="/blog_img/2019/1/4/TexasSharpShooter.png" class="blog-image_"> 
       <img src="/blog_img/2019/1/4/TexasSharpShooter.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p>Back to the above snapshot. It shows correlations between 100 vegetables based on 100 different measurements (Ca and Mg content, their consumption in Finland, number of mentions in Star Trek DS9 series, likelihood of finding it on the Mars, and so forth). In other words, it’s all made it up. Just a 100×100 matrix of random numbers with column labels from the simple Wikipedia <a href="https://simple.wikipedia.org/wiki/List_of_vegetables" target="_blank">list of vegetables</a>. Yet the similarity between <a href="https://en.wikipedia.org/wiki/Mung_bean" target="_blank">mung bean</a> and <a href="https://en.wikipedia.org/wiki/Jerusalem_artichoke" target="_blank">sunchokes</a> surely cannot be dismissed (p &lt; 0.001). Those who like bell pepper should try cilantro, too, because it’s basically one and the same thing (p = 0.001). And I honestly can’t tell black bean from wasabi (p = 0.001).</p>
-
 <p>Here are the p-values for the top 100 most correlated pairs.</p>
-
 <pre><code>import numpy as np
 import scipy as sp
 a = np.random.random((100, 100))
@@ -307,17 +287,13 @@ sorted(stats.pearsonr(a[i], a[j])[1] for i in range(100) for j in range(i))[:100
 0.01844720610938738, 0.018465602922746942, 0.018662079618069056]
 First 100 correlations are highly significant.
 </code></pre>
-
 <p>To learn a lesson we may have failed to grasp at the NHST 101 class, consider that there are 100 * 99 / 2 pairs. What is the significance of the pair at 5-th percentile?</p>
-
 <pre><code>correlations = sorted(stats.pearsonr(a[i], a[j])[1] for i in range(100) for j in range(i))
 npairs = 100 * 99 / 2
 print(correlations[int(pairs * 0.05)]
 0.0496868751692227
 </code></pre>
-
 <p>Roughly 0.05. This is exactly what should have happened, because:</p>
-
 <pre><code>correlations[int(npairs * 0.10)]
 0.10004180592217532
 correlations[int(npairs * 0.15)]
@@ -325,15 +301,10 @@ correlations[int(npairs * 0.15)]
 correlations[int(npairs * 0.30)]
 0.3026816170584785
 </code></pre>
-
 <p>This proves only that p-values for the Pearson correlation coefficient are well calibrated (and that <a href="https://en.wikipedia.org/wiki/Mersenne_Twister" target="_blank">Mersenne twister</a> that is used to generate random numbers in numpy works well). In theory, the p-value for a certain statistics (like Pearson’s r) is the probability of getting such or even more extreme value if the null-hypothesis (of no correlation, in our case) is actually true. 5 % of random hypotheses should have a p-value below 0.05, 10 % a value below 10, and 23 % a value below 23.</p>
-
 <p>Imagine what they can do with the Correlations widget in the parallel universe! They compute correlations between all pairs, print out the first 5 % of them and start writing a paper without bothering to look at p-values at all. They know they should be statistically significant even if the data is random.</p>
-
 <p>Which is precisely the reason why our widget must not compute p-values: because people would use it for Texas sharpshooting. P-values make sense only in the context of the proper NHST procedure (still pretending for the sake of Christmas ceasefire). They cannot be computed using the data on which they were found.</p>
-
 <p>If so, why do we have the Correlation widget at all if it’s results are unpublishable? We can use it to find highly correlated pairs in a data sample. But we can’t just attach p-values to them and publish them. By finding these pairs (with assistance of Correlation widget) we just formulate hypotheses. This is only step 1 of the enshrined NHST procedure. We can’t skip the other two: the next step is to collect some new data (existing data won’t do!) and then use it to test the hypotheses (step 3).</p>
-
 <p>Following this procedure doesn’t save us from <a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank">data dredging</a>. There are still plenty of ways to cheat. It is the most tempting to select the first 100 most correlated pairs (or, actually, any 100 pairs), (re)compute correlations on some new data and publish the top 5 % of these pairs. The official solution for this is a patchwork of various corrections for multiple hypotheses testing, but… Well, they don’t work, but we should say no more here. You know, Christmas ceasefire.</p>
 
             </div>

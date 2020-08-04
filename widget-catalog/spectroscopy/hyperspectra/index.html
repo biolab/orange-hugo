@@ -1659,35 +1659,23 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="hyperspectra">HyperSpectra</h1>
-
+                    <h1 id="hyperspectra">HyperSpectra</h1>
 <p>Plots 2D map of hyperspectra.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selection: spectra from selected area</li>
 <li>Data: dataset with information whether a spectrum was selected or not</li>
 </ul>
-
 <p>The <strong>HyperSpectra</strong> widget plots hyperspectra that were read from the <em>.map</em> file. To use this widget with infrared spectral data, you need to transform it with <strong>Reshape Map</strong> widget.</p>
-
 <p>At the top, <strong>HyperSpectra</strong> shows a 2D map of a slice of the spectra. At the bottom, a spectra plot is shown with the red line indicating the wavenumber slice we are observing at the top.</p>
-
-<p><img src="../images/HyperSpectra-stamped.png" alt="" /></p>
-
+<p><img src="../images/HyperSpectra-stamped.png" alt=""></p>
 <ol>
 <li>Image values: define the transformation (usually an integral) of the spectra or use a feature to use as values for the plot. The former transformation can be an <em>integral from 0</em>, <em>integral from baseline</em>, <em>peak from 0</em>, <em>peak from baseline</em>, <em>closest value</em>, <em>X-value of maximum from 0</em> or <em>X-value of maximum from baseline</em>.</li>
 <li>The hyperspectral plot of the slice of the spectra.
-
 <ul>
 <li>Zoom in (Z): zoom in to the area selected from the hyperspectral plot</li>
 <li>Zoom to fit (backspace): return to the original plot</li>
@@ -1697,7 +1685,8 @@
 <li>Axis x: define the attribute for the x axis</li>
 <li>Axis y: define the attribute for the y axis</li>
 <li>Color: select the color for the plot</li>
-</ul></li>
+</ul>
+</li>
 <li>The spectral plot of the selected image region. It behaves like the <a href="../spectra/">Spectra</a> widget.</li>
 <li>Region selectors for the chosen integration method.</li>
 <li>Split between image and spectral view: move it to increase the image size.</li>

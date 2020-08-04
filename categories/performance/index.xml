@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Performance on Orange</title>
+    <title>performance on Orange</title>
     <link>/categories/performance/</link>
-    <description>Recent content in Performance on Orange</description>
+    <description>Recent content in performance on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate>
@@ -29,9 +29,7 @@ Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-M
       <guid>/blog/2011/03/28/data-loading-speedups/</guid>
       <description>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.
 Quick comparisons between the old new versions, measured on my computer:
- adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s.
- DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s.
- GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
+ adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s. DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s. GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
     </item>
     
   </channel>

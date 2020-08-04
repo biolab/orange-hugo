@@ -1659,48 +1659,34 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="wikipedia">Wikipedia</h1>
-
+                    <h1 id="wikipedia">Wikipedia</h1>
 <p>Fetching data from <a href="https://www.mediawiki.org/wiki/API:Tutorial">MediaWiki RESTful web service API</a>.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>None</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents from the Wikipedia.</li>
 </ul>
-
 <p><strong>Wikipedia</strong> widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.</p>
-
-<p><img src="../images/Wikipedia-stamped.png" alt="" /></p>
-
+<p><img src="../images/Wikipedia-stamped.png" alt=""></p>
 <ol>
 <li>Query parameters:
-
 <ul>
 <li>Query word list, where each query is listed in a new line.</li>
 <li>Language of the query. English is set by default.</li>
 <li>Number of articles to retrieve per query (range 1-25). Please note that querying is done recursively and that disambiguations are also retrieved, sometimes resulting in a larger number of queries than set on the slider.</li>
-</ul></li>
+</ul>
+</li>
 <li>Select which features to include as text features.</li>
 <li>Information on the output.</li>
 <li>Produce a report.</li>
 <li>Run query.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>This is a simple example, where we use <strong>Wikipedia</strong> and retrieve the articles on &lsquo;Slovenia&rsquo; and &lsquo;Germany&rsquo;. Then we simply apply default preprocessing with <a href="preprocesstext.md">Preprocess Text</a> and observe the most frequent words in those articles with <a href="../wordcloud/">Word Cloud</a>.</p>
-
-<p><img src="../images/Wikipedia-Example.png" alt="" /></p>
-
+<p><img src="../images/Wikipedia-Example.png" alt=""></p>
 <p>Wikipedia works just like any other corpus widget (<a href="nytimes.md">NY Times</a>, <a href="../twitter-widget/">Twitter</a>) and can be used accordingly.</p>
 
                 </div>

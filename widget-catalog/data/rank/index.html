@@ -1659,38 +1659,26 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="rank">Rank</h1>
-
+                    <h1 id="rank">Rank</h1>
 <p>Ranking of attributes in classification or regression datasets.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Scorer: models for feature scoring</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Reduced Data: dataset with selected attributes</li>
 </ul>
-
 <p>The <strong>Rank</strong> widget considers class-labeled datasets (classification or regression) and scores the attributes according to their correlation with the class. Rank accepts also models for scoring, such as linear regression, logistic regression, random forest, SGD, etc.</p>
-
-<p><img src="../images/Rank-stamped.png" alt="" /></p>
-
+<p><img src="../images/Rank-stamped.png" alt=""></p>
 <ol>
 <li>Select attributes from the data table.</li>
 <li>Data table with attributes (rows) and their scores by different scoring methods (columns)</li>
 <li>Produce a report.</li>
 <li>If &lsquo;<em>Send Automatically</em>&rsquo; is ticked, the widget automatically communicates changes to other widgets.</li>
 </ol>
-
 <h2 id="scoring-methods">Scoring methods</h2>
-
 <ol>
 <li>Information Gain: the expected amount of information (reduction of entropy)</li>
 <li><a href="https://en.wikipedia.org/wiki/Information_gain_ratio">Gain Ratio</a>: a ratio of the information gain and the attribute&rsquo;s intrinsic information, which reduces the bias towards multivalued features that occurs in information gain</li>
@@ -1700,25 +1688,15 @@
 <li><a href="https://en.wikipedia.org/wiki/Relief_(feature_selection)">ReliefF</a>: the ability of an attribute to distinguish between classes on similar data instances</li>
 <li><a href="https://www.aaai.org/Papers/ICML/2003/ICML03-111.pdf">FCBF (Fast Correlation Based Filter)</a>: entropy-based measure, which also identifies redundancy due to pairwise correlations between features</li>
 </ol>
-
 <p>Additionally, you can connect certain learners that enable scoring the features according to how important they are in models that the learners build (e.g. <a href="../model/linearregression.md">Linear Regression</a> / <a href="../model/logisticregression.md">Logistic Regression</a>, <a href="../model/randomforest.md">Random Forest</a>, <a href="../../model/stochasticgradient/">SGD</a>).</p>
-
 <h2 id="example-attribute-ranking-and-selection">Example: Attribute Ranking and Selection</h2>
-
 <p>Below,  we have used the <strong>Rank</strong> widget immediately after the <a href="../../data/file/">File</a> widget to reduce the set of data attributes and include only the most informative ones:</p>
-
-<p><img src="../images/Rank-Select-Schema.png" alt="" /></p>
-
+<p><img src="../images/Rank-Select-Schema.png" alt=""></p>
 <p>Notice how the widget outputs a dataset that includes only the best-scored attributes:</p>
-
-<p><img src="../images/Rank-Select-Widgets.png" alt="" /></p>
-
+<p><img src="../images/Rank-Select-Widgets.png" alt=""></p>
 <h2 id="example-feature-subset-selection-for-machine-learning">Example: Feature Subset Selection for Machine Learning</h2>
-
 <p>What follows is a bit more complicated example. In the workflow below, we first split the data into a training set and a test set. In the upper branch, the training data passes through the <strong>Rank</strong> widget to select the most informative attributes, while in the lower branch there is no feature selection. Both feature selected and original datasets are passed to their own <a href="../../evaluate/testandscore/">Test &amp; Score</a> widgets, which develop a <em>Naive Bayes</em> classifier and score it on a test set.</p>
-
-<p><img src="../images/Rank-and-Test.png" alt="" /></p>
-
+<p><img src="../images/Rank-and-Test.png" alt=""></p>
 <p>For datasets with many features, a naive Bayesian classifier feature selection, as shown above, would often yield a better predictive accuracy.</p>
 
                 </div>

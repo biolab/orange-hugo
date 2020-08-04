@@ -1659,47 +1659,33 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="python-script">Python Script</h1>
-
+                    <h1 id="python-script">Python Script</h1>
 <p>Extends functionalities through Python scripting.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data (Orange.data.Table): input dataset bound to <code>in_data</code> variable</li>
 <li>Learner (Orange.classification.Learner): input learner bound to <code>in_learner</code> variable</li>
 <li>Classifier (Orange.classification.Learner): input classifier bound to <code>in_classifier</code> variable</li>
 <li>Object: input Python object bound to <code>in_object</code> variable</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data (Orange.data.Table): dataset retrieved from <code>out_data</code> variable</li>
 <li>Learner (Orange.classification.Learner): learner retrieved from <code>out_learner</code> variable</li>
 <li>Classifier (Orange.classification.Learner): classifier retrieved from <code>out_classifier</code> variable</li>
 <li>Object: Python object retrieved from <code>out_object</code> variable</li>
 </ul>
-
 <p><strong>Python Script</strong> widget can be used to run a python script in the input, when a suitable functionality is not implemented in an existing widget. The script has <code>in_data</code>, <code>in_distance</code>, <code>in_learner</code>, <code>in_classifier</code> and <code>in_object</code> variables (from input signals) in its local namespace. If a signal is not connected or it did not yet receive any data, those variables contain <code>None</code>.</p>
-
 <p>After the script is executed variables from the script’s local namespace are extracted and used as outputs of the widget. The widget can be further connected to other widgets for visualizing the output.</p>
-
 <p>For instance the following script would simply pass on all signals it receives:</p>
-
 <pre><code>out_data = in_data
 out_distance = in_distance
 out_learner = in_learner
 out_classifier = in_classifier
 out_object = in_object
 </code></pre>
-
 <p>Note: You should not modify the input objects in place.</p>
-
-<p><img src="../images/PythonScript-stamped.png" alt="" /></p>
-
+<p><img src="../images/PythonScript-stamped.png" alt=""></p>
 <ol>
 <li>Info box contains names of basic operators for Orange Python script.</li>
 <li>The <em>Library</em> control can be used to manage multiple scripts. Pressing &ldquo;+&rdquo; will add a new entry and open it in the <em>Python script</em> editor. When the script is modified, its entry in the <em>Library</em> will change to indicate it has unsaved changes. Pressing <em>Update</em> will save the script (keyboard shortcut &ldquo;Ctrl+S&rdquo;). A script can be removed by selecting it and pressing the &ldquo;-&rdquo; button.</li>
@@ -1707,34 +1693,24 @@ out_object = in_object
 <li>The <em>Python script</em> editor on the left can be used to edit a script (it supports some rudimentary syntax highlighting).</li>
 <li>Console displays the output of the script.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>Python Script widget is intended to extend functionalities for advanced users. Classes from Orange library are described in the <a href="https://docs.biolab.si//3/data-mining-library/#reference">documentation</a>. To find further information about orange Table class see <a href="https://docs.biolab.si//3/data-mining-library/reference/data.table.html">Table</a>, <a href="https://docs.biolab.si//3/data-mining-library/reference/data.domain.html">Domain</a>, and <a href="https://docs.biolab.si//3/data-mining-library/reference/data.variable.html">Variable</a> documentation.</p>
-
 <p>One can, for example, do batch filtering by attributes. We used zoo.tab for the example and we filtered out all the attributes that have more than 5 discrete values. This in our case removed only &lsquo;leg&rsquo; attribute, but imagine an example where one would have many such attributes.</p>
-
 <pre><code>from Orange.data import Domain, Table
 domain = Domain([attr for attr in in_data.domain.attributes
                  if attr.is_continuous or len(attr.values) &lt;= 5],
                 in_data.domain.class_vars)
 out_data = Table(domain, in_data)
 </code></pre>
-
-<p><img src="../images/PythonScript-filtering.png" alt="" /></p>
-
+<p><img src="../images/PythonScript-filtering.png" alt=""></p>
 <p>The second example shows how to round all the values in a few lines of code. This time we used wine.tab and rounded all the values to whole numbers.</p>
-
 <pre><code>import numpy as np
 out_data = in_data.copy()
 #copy, otherwise input data will be overwritten
 np.round(out_data.X, 0, out_data.X)
 </code></pre>
-
-<p><img src="../images/PythonScript-round.png" alt="" /></p>
-
+<p><img src="../images/PythonScript-round.png" alt=""></p>
 <p>The third example introduces some Gaussian noise to the data. Again we make a copy of the input data, then walk through all the values with a double for loop and add random noise.</p>
-
 <pre><code>import random
 from Orange.data import Domain, Table
 new_data = in_data.copy()
@@ -1743,21 +1719,16 @@ for inst in new_data:
     inst[f] += random.gauss(0, 0.02)
 out_data = new_data
 </code></pre>
-
-<p><img src="../images/PythonScript-gauss.png" alt="" /></p>
-
+<p><img src="../images/PythonScript-gauss.png" alt=""></p>
 <p>The final example uses Orange3-Text add-on. <strong>Python Script</strong> is very useful for custom preprocessing in text mining, extracting new features from strings, or utilizing advanced <em>nltk</em> or <em>gensim</em> functions. Below, we simply tokenized our input data from <em>deerwester.tab</em> by splitting them by whitespace.</p>
-
 <pre><code>print('Running Preprocessing ...')
 tokens = [doc.split(' ') for doc in in_data.documents]
 print('Tokens:', tokens)
 out_object = in_data
 out_object.store_tokens(tokens)
 </code></pre>
-
 <p>You can add a lot of other preprocessing steps to further adjust the output. The output of <strong>Python Script</strong> can be used with any widget that accepts the type of output your script produces. In this case, connection is green, which signalizes the right type of input for Word Cloud widget.</p>
-
-<p><img src="../images/PythonScript-Example3.png" alt="" /></p>
+<p><img src="../images/PythonScript-Example3.png" alt=""></p>
 
                 </div>
             </div>

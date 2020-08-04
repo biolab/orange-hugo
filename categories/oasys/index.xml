@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oasys on Orange</title>
+    <title>oasys on Orange</title>
     <link>/categories/oasys/</link>
-    <description>Recent content in Oasys on Orange</description>
+    <description>Recent content in oasys on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Oct 2016 10:09:56 +0000</lastBuildDate>

@@ -1659,37 +1659,34 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="differential-expression">Differential Expression</h1>
-
+                    <h1 id="differential-expression">Differential Expression</h1>
 <p>Plots differential gene expression for selected experiments.</p>
-
-<p><strong>Inputs</strong>
-- Data: Data set.</p>
-
-<p><strong>Outputs</strong>
-- Data Subset: Differentially expressed genes.
-- Remaining Data Subset: Genes that were not differentially expressed.
-- Selected Genes: Genes from the select data with scores appended.</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Data: Data set.</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Data Subset: Differentially expressed genes.</li>
+<li>Remaining Data Subset: Genes that were not differentially expressed.</li>
+<li>Selected Genes: Genes from the select data with scores appended.</li>
+</ul>
 <p>This widget plots a <a href="http://www.ncbi.nlm.nih.gov/books/NBK10061/">differential gene
 expression</a> graph for a
 sample target. It takes gene expression data as an input (from
 <strong>dictyExpress</strong>, <strong>GEO Data Sets</strong>, etc.) and outputs a selected data subset
 (normally the most interesting genes).</p>
-
-<p><img src="../images/differential_expression/Differential-Expression-stamped.png" alt="" /></p>
-
+<p><img src="../images/differential_expression/Differential-Expression-stamped.png" alt=""></p>
 <ol>
-<li>Information of the data input and output. The first line shows the
+<li>
+<p>Information of the data input and output. The first line shows the
 number of samples and genes in the data set. The second line
 displays the selected sample target (read around which the graph is
 plotted). The third line shows the number of undefined genes (missing
-data) and the fourth the number of genes in the output.</li>
-
-<li><p>Select the plotting method in <em>Scoring method</em>:</p>
-
+data) and the fourth the number of genes in the output.</p>
+</li>
+<li>
+<p>Select the plotting method in <em>Scoring method</em>:</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Fold_change">Fold change</a>: final to initial value ratio</li>
 <li><strong>log2 (fold change)</strong>: binary logarithmic transformation of fold change values</li>
@@ -1700,31 +1697,31 @@ data) and the fourth the number of genes in the output.</li>
 <li><a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal to NoiseRatio</a>: biological signal to noise ratio</li>
 <li><a href="https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test">Mann-Whitney</a>: non-parametric test of null hypothesis with P-value as criterium</li>
 <li><a href="https://en.wikipedia.org/wiki/Hypergeometric_distribution#Hypergeometric_test">Hypergeometric test</a>: for binary expression data.</li>
-</ul></li>
-
-<li><p>Select <em>Target Labels</em>. Labels depend on the attributes in the
+</ul>
+</li>
+<li>
+<p>Select <em>Target Labels</em>. Labels depend on the attributes in the
 input. In <em>Values</em> you can change the sample target (default value
-is the first value on the list, alphabetically or numerically).</p></li>
-
-<li><p><em>Selection</em> box controls the output data.</p>
-
+is the first value on the list, alphabetically or numerically).</p>
+</li>
+<li>
+<p><em>Selection</em> box controls the output data.</p>
 <ul>
 <li>By setting the <em>Lower threshold</em> and <em>Upper threshold</em> values you are outputting the data outside this interval (the most interesting expression levels). You can also manually place the threshold lines by dragging left or right in the plot.</li>
 <li>If you click <em>Compute null distribution</em> box, the widget will calculate null distribution and display it in the plot. <em>Permutations</em> field allows you to set the precision of null distribution (the more permutations the more precise the distribution), while <a href="https://en.wikipedia.org/wiki/Type_I_and_type_II_errors#Type_I_error">alpha-value</a> will be the allowed probability of false positives. Press <em>Select</em> to output this data.</li>
 <li>The final option is to set the number of best ranked genes and output them with <em>Select</em>.</li>
-</ul></li>
-
-<li><p>When <em>Auto commit is on</em> is ticked, the widget will automatically
+</ul>
+</li>
+<li>
+<p>When <em>Auto commit is on</em> is ticked, the widget will automatically
 apply the changes. Alternatively press <em>Commit</em>. If the <em>Add gene
 scores to output</em> is ticked, the widget will append an additional
-column with gene scores to the data.</p></li>
+column with gene scores to the data.</p>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>From the GEO Data Sets widget, we selected <em>Breast cancer and docetaxel treatment</em> (GDS360) with 14 treatment resistant and 10 treatment sensitive tumors. Then we used the <strong>Differential Expression</strong> widget to select the most interesting genes. We left the upper and lower threshold at default (1 and -1) and output the data. Then we observed the selected data subset in a <strong>Data Table</strong>. The table shows selected genes with an additional gene score label.</p>
-
-<p><img src="../images/differential_expression/Differential-Expression-Example.png" alt="" /></p>
+<p><img src="../images/differential_expression/Differential-Expression-Example.png" alt=""></p>
 
                 </div>
             </div>

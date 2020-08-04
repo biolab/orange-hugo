@@ -1659,52 +1659,38 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="line-plot">Line Plot</h1>
-
+                    <h1 id="line-plot">Line Plot</h1>
 <p>Visualization of data profiles (e.g., time series).</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Data Subset: subset of instances</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 </ul>
-
 <p><a href="https://en.wikipedia.org/wiki/Line_chart">Line plot</a> a type of plot which displays the data as a series of points, connected by straight line segments. It only works for numerical data, while categorical can be used for grouping of the data points.</p>
-
-<p><img src="../images/LinePlot-stamped.png" alt="" /></p>
-
+<p><img src="../images/LinePlot-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input data.</li>
 <li>Select what you wish to display:
-
 <ul>
 <li>Lines show individual data instances in a plot.</li>
 <li>Range shows the range of data points between 10th and 90th percentile.</li>
 <li>Mean adds the line for mean value. If group by is selected, means will be displayed per each group value.</li>
 <li>Error bars show the standard deviation of each attribute.</li>
-</ul></li>
+</ul>
+</li>
 <li>Select a categorical attribute to use for grouping of data instances. Use None to show ungrouped data.</li>
 <li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the graph. The manual selection of data instances works as a line selection, meaning the data under the selected line plots will be sent on the output. Scroll in or out for zoom.</li>
 <li>If <em>Send Automatically</em> is ticked, changes are communicated automatically. Alternatively, click <em>Send</em>.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Line Plot</strong> is a standard visualization widget, which displays data profiles, normally of ordered numerical data. In this simple example, we will display the <em>iris</em> data in a line plot, grouped by the iris attribute. The plot shows how petal length nicely separates between class values.</p>
-
 <p>If we observe this in a <a href="../../visualize/scatterplot/">Scatter Plot</a>, we can confirm this is indeed so. Petal length is an interesting attribute for separation of classes, especially when enhanced with petal width, which is also nicely separated in the line plot.</p>
-
-<p><img src="../images/LinePlot-Example.png" alt="" /></p>
+<p><img src="../images/LinePlot-Example.png" alt=""></p>
 
                 </div>
             </div>

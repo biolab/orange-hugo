@@ -1659,35 +1659,33 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="go-browser">GO Browser</h1>
-
+                    <h1 id="go-browser">GO Browser</h1>
 <p>Provides access to Gene Ontology database.</p>
-
-<p><strong>Inputs</strong>
-- Cluster Data: Data on clustered genes.
-- Reference Data: Data with genes for the reference set (optional).</p>
-
-<p><strong>Outputs</strong>
-- Data on Selected Genes: Data on genes from the selected GO node.
-- Enrichment Report: Data on GO enrichment analysis.</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Cluster Data: Data on clustered genes.</li>
+<li>Reference Data: Data with genes for the reference set (optional).</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Data on Selected Genes: Data on genes from the selected GO node.</li>
+<li>Enrichment Report: Data on GO enrichment analysis.</li>
+</ul>
 <p><strong>GO Browser</strong> widget provides access to <a href="http://geneontology.org/">Gene Ontology database</a>. Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology. The widget takes any data on genes as an input (it is best to input statistically significant genes, for example from the output of the <strong>Differential Expression</strong> widget) and shows a ranked list of GO terms with p-values. This is a great tool for finding biological processes that are over- or under-represented in a particular gene set. The user can filter input data by selecting terms in a list.</p>
-
-<p><img src="../images/go_browser/GO-Browser-stamped.png" alt="" /></p>
-
+<p><img src="../images/go_browser/GO-Browser-stamped.png" alt=""></p>
 <p><strong>INPUT tab</strong></p>
-
 <ol>
-<li>Information on the input data set. <em>Ontology/Annotation Info</em>
-reports the current status of the GO database.</li>
-<li>Select the reference. You can either have the <em>entire genome</em> as
-reference or a <em>reference set</em> from the input.</li>
-
-<li><p>Select the ontology where you want to calculate the enrichment.
+<li>
+<p>Information on the input data set. <em>Ontology/Annotation Info</em>
+reports the current status of the GO database.</p>
+</li>
+<li>
+<p>Select the reference. You can either have the <em>entire genome</em> as
+reference or a <em>reference set</em> from the input.</p>
+</li>
+<li>
+<p>Select the ontology where you want to calculate the enrichment.
 There are three <em>Aspect</em> options:</p>
-
 <ul>
 <li><a href="http://geneontology.org/page/biological-process-ontology-guidelines">Biological
 process</a></li>
@@ -1695,11 +1693,11 @@ process</a></li>
 component</a>)</li>
 <li><a href="http://geneontology.org/page/molecular-function-ontology-guidelines">Molecular
 function</a></li>
-</ul></li>
-
-<li><p>A ranked tree (upper pane) and list (lower pane) of GO terms for the
+</ul>
+</li>
+<li>
+<p>A ranked tree (upper pane) and list (lower pane) of GO terms for the
 selected aspect:</p>
-
 <ul>
 <li><strong>GO term</strong></li>
 <li><strong>Cluster</strong>: number of genes from the input that are also
@@ -1718,52 +1716,50 @@ discoveries among all discoveries up to that FDR value.</li>
 <li><strong>Genes</strong>: genes in a biological process.</li>
 <li><a href="http://geneontology.org/page/go-enrichment-analysis">Enrichment</a>
 level</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
-<p><img src="../images/go_browser/Filter-Select.png" alt="" /></p>
-
+<p><img src="../images/go_browser/Filter-Select.png" alt=""></p>
 <p><strong>FILTER tab</strong></p>
-
 <ol>
-<li><p><em>Filter GO Term Nodes</em> by:</p>
-
+<li>
+<p><em>Filter GO Term Nodes</em> by:</p>
 <ul>
 <li><strong>Genes</strong> is a minimal number of genes mapped to a term</li>
 <li><strong>P-value</strong> is a max term p-value</li>
 <li><strong>FDR</strong>: is a max term <a href="https://en.wikipedia.org/wiki/False_discovery_rate">false discovery
 rate</a></li>
-</ul></li>
-
-<li><p><em>Significance test</em> specifies distribution to use for null
+</ul>
+</li>
+<li>
+<p><em>Significance test</em> specifies distribution to use for null
 hypothesis:</p>
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Binomial_distribution">Binomial</a>:
 use a binomial distribution</li>
 <li><a href="https://en.wikipedia.org/wiki/Hypergeometric_distribution">Hypergeometric</a>:
 use a hypergeometric distribution</li>
-</ul></li>
-
-<li><p><a href="http://geneontology.org/page/guide-go-evidence-codes">Evidence codes in
+</ul>
+</li>
+<li>
+<p><a href="http://geneontology.org/page/guide-go-evidence-codes">Evidence codes in
 annotation</a>
-show how the annotation to a particular term is supported.</p></li>
+show how the annotation to a particular term is supported.</p>
+</li>
 </ol>
-
 <p><strong>SELECT tab</strong></p>
-
-<ol>
-<li><p><em>Annotated genes</em> outputs genes that are:</p>
-
+<ol start="4">
+<li>
+<p><em>Annotated genes</em> outputs genes that are:</p>
 <ul>
 <li><strong>Directly or Indirectly</strong> annotated (direct and inherited
 annotations)</li>
 <li><strong>Directly</strong> annotated (inherited annotations won&rsquo;t be in the
 output)</li>
-</ul></li>
-
-<li><p><em>Output</em>:</p>
-
+</ul>
+</li>
+<li>
+<p><em>Output</em>:</p>
 <ul>
 <li><strong>All selected genes</strong>: outputs genes annotated to all selected
 GO terms</li>
@@ -1772,11 +1768,10 @@ of selected GO terms</li>
 <li><strong>Common term genes</strong>: outputs genes common to all selected GO
 terms</li>
 <li><strong>Add GO Term as class</strong>: adds GO terms as class attribute</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the example below we have used <strong>GEO Data Sets</strong> widget, in which we
 have selected <em>Caffeine effects: time course and dose response</em> data set, and connected it to a <strong>Differential Expression</strong>. Differential
 analysis allows us to select genes with the highest statistical
@@ -1786,8 +1781,7 @@ are interested in finding out more about <em>monosaccharide transmembrane transp
 this term has a high enrichment rate. To learn more about which genes
 are annotated to this GO term, select it in the view and observe the results in a <strong>Data Table</strong>, where we
 see all the genes participating in this process listed. The other output of <strong>GO Browser</strong> widget is enrichment report, which we observe in the second <strong>Data Table</strong>.</p>
-
-<p><img src="../images/go_browser/GO-Browser-Example.png" alt="" /></p>
+<p><img src="../images/go_browser/GO-Browser-Example.png" alt=""></p>
 
                 </div>
             </div>

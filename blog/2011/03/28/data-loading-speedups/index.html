@@ -223,20 +223,16 @@
 
 
               <p>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.</p>
-
 <p>Quick comparisons between the old new versions, measured on my computer:</p>
-
 <ul>
-<li>adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s.<br /></li>
-<li>DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s.<br /></li>
+<li>adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s.</li>
+<li>DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s.</li>
 <li>GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.6s.</li>
 </ul>
-
 <p>The speedups were obtained with:</p>
-
 <ul>
-<li>reuse of a buffer for parsing,<br /></li>
-<li>skipping type detection for attributes with known types, and<br /></li>
+<li>reuse of a buffer for parsing,</li>
+<li>skipping type detection for attributes with known types, and</li>
 <li>by keeping attributes in a different data structure internally.</li>
 </ul>
 

@@ -265,35 +265,20 @@
 
 
               <p>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.</p>
-
-<p><img src="/images/2016/12/manifold-learning.png" alt="" /></p>
-
+<p><img src="/images/2016/12/manifold-learning.png" alt=""></p>
 <p>Manifold Learning widget has a simple interface with powerful features.</p>
-
 <p>Manifold Learning widget offers five embedding techniques based on <a href="http://scikit-learn.org/stable/modules/manifold.html">scikit-learn library</a>: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</p>
-
 <p><strong>Related:</strong> <a href="https://www.youtube.com/watch?v=OmaAC8a52YI">Principal Component Analysis (video)</a></p>
-
 <p>For example, a popular t-SNE requires only a metric (e.g. cosine distance). In the demonstration of this widget, we output 2 components, since they are the easiest to visualize and make sense of.</p>
-
 <p>First, let&rsquo;s load <a href="https://raw.githubusercontent.com/ajdapretnar/datasets/master/data/s-manifold.tab">the data</a> and open it in Scatter Plot. Not a very informative visualization, right? The dots from an unrecognizable square in 2D.</p>
-
-<p><img src="/images/2016/12/SP-normal.png" alt="" /></p>
-
+<p><img src="/images/2016/12/SP-normal.png" alt=""></p>
 <p>S-curve data in Scatter Plot. Data points form an uninformative square.</p>
-
 <p>Let&rsquo;s use embeddings to make things a bit more informative. This is how the data looks like with a t-SNE embedding. The data is starting to have a shape and the data points colored according to regression class reveal a beautiful gradient.</p>
-
-<p><img src="/images/2016/12/manifold-t-sne.png" alt="" /></p>
-
+<p><img src="/images/2016/12/manifold-t-sne.png" alt=""></p>
 <p>t-SNE embedding shows an S shape of the data.</p>
-
 <p>Ok, how about MDS? This is beyond our expectations!</p>
-
-<p><img src="/images/2016/12/SP-mds.png" alt="" /></p>
-
+<p><img src="/images/2016/12/SP-mds.png" alt=""></p>
 <p>There&rsquo;s a plethora of options with embeddings. You can play around with ImageNet embeddings and plot them in 2D or use any of your own high-dimensional data and discover interesting visualizations! Although t-SNE is nowadays probably the most popular dimensionality reduction technique used in combination with scatterplot visualization, do not underestimate the value of other manifold learning techniques. For one, we often find that MDS works fine as well.</p>
-
 <p>Go, experiment!</p>
 
             </div>

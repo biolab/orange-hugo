@@ -1659,22 +1659,18 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="filter">Filter</h1>
-
+                    <h1 id="filter">Filter</h1>
 <p>Filter cells/genes.</p>
-
-<p><strong>Inputs</strong>
-- Data: input dataset</p>
-
-<p><strong>Outputs</strong>
-- Data: filtered dataset</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Data: input dataset</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Data: filtered dataset</li>
+</ul>
 <p>The <strong>Filter</strong> widget filters cells or genes by the number of positive measurements. One can select genes in visualization to remove the unfrequent and overly frequent cells/genes.</p>
-
-<p><img src="../images/Filter-stamped.png" alt="" /></p>
-
+<p><img src="../images/Filter-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input and output.</li>
 <li>Filter by cells (rows), genes (columns) or data (remove zero measurments).</li>
@@ -1683,14 +1679,10 @@
 <li>Apply changes. If <em>Commit automatically</em> is ticked, changes will be communicated automatically. Alternatively, click <em>Commit</em>.</li>
 <li>Access help.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>The <strong>Filter</strong> widget is used for filtering uninteresting cells, genes or data. By uninteresting we mean too frequent, too unfrequent or where data is zero (no expression). This allows us to have leaner data sets, which speeds up computation and enables easier analysis of results.</p>
-
 <p>We have used <a href="../singlecelldatasets">ingle Cell Datasets</a> to load <em>Cell cycle in mESC (Fluidigm)</em> data set. Then we used <strong>Filter</strong> widget to narrow down the selection of genes from 38,293 to 11,932. The width of our data table (number of columns) has descreased significantly. We have set the selection here manually (20 for lower and 170 for upper threshold), but you can also set the selection in the visualization by dragging the green field up or down.</p>
-
-<p><img src="../images/Filter-Example.png" alt="" /></p>
+<p><img src="../images/Filter-Example.png" alt=""></p>
 
                 </div>
             </div>

@@ -1659,39 +1659,34 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="genes">Genes</h1>
-
+                    <h1 id="genes">Genes</h1>
 <p>Match input gene ID&rsquo;s with corresponding Entrez ID&rsquo;s.</p>
-
-<p><strong>Inputs</strong>
-- Data: Data set.</p>
-
-<p><strong>Outputs</strong>
-- Data: Instances with meta data that the user has manually selected in the widget.
-- Genes: All genes from the input with included gene info summary and matcher result.</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Data: Data set.</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Data: Instances with meta data that the user has manually selected in the widget.</li>
+<li>Genes: All genes from the input with included gene info summary and matcher result.</li>
+</ul>
 <p>To work with widgets in the bioinformatics add-on data sets must be
-properly annotated. We need to specify:
-- Location of genes in a table (rows, columns)
-- ID from the <a href="http://www.ncbi.nlm.nih.gov/gene">NCBI Gene database</a> (Entrez ID)
-- Organism (Taxonomy ID)</p>
-
+properly annotated. We need to specify:</p>
+<ul>
+<li>Location of genes in a table (rows, columns)</li>
+<li>ID from the <a href="http://www.ncbi.nlm.nih.gov/gene">NCBI Gene database</a> (Entrez ID)</li>
+<li>Organism (Taxonomy ID)</li>
+</ul>
 <p>Genes is a useful widget that presents information on the
 genes from the <a href="http://www.ncbi.nlm.nih.gov/gene">NCBI Gene database</a> and
 outputs annotated data table.
 You can also select a subset and feed it  to other widgets.
 By clicking on the gene Entrez ID in the list, you will be taken to the
 NCBI site with the information on the gene.</p>
-
-<p><img src="../images/genes/genes-stamped.png" alt="" /></p>
-
+<p><img src="../images/genes/genes-stamped.png" alt=""></p>
 <h2 id="example">Example</h2>
-
 <p>First we load <em>brown-selected.tab</em> (from <em>Browse documentation data sets</em>) with the <strong>File</strong> widget and feed our data to the Genes widget. Orange recognized the organism correctly, but we have to tell it where our gene labels are. To do this, we tick off <em>Stored as feature (column) name</em> and select <em>gene</em> attribute from the list. Then we can observe gene info provided from the NCBI Gene database. In the <strong>Data Table</strong> we can see the Entrez ID column included as a meta attribute. The data is also properly annotated (see <em>Data Attributes</em> section in <strong>Data Info</strong> widget).</p>
-
-<p><img src="../images/genes/genes-Example.png" alt="" /></p>
+<p><img src="../images/genes/genes-Example.png" alt=""></p>
 
                 </div>
             </div>

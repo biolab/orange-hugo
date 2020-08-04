@@ -1659,36 +1659,24 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="tile-file">Tile File</h1>
-
+                    <h1 id="tile-file">Tile File</h1>
 <p>Read data tile-by-tile from input file(s), preprocess the spectra, and send a data table to the output.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Preprocessor: A preprocessor list from the Preprocess Spectra widget</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: preprocessed dataset read from the input file(s)</li>
 </ul>
-
 <p>The <strong>Tilefile</strong> widgets loads data from compatible mosaic spectral images and applies the supplied
 preprocessor(s) to the data. The preprocessing is applied one mosaic tile at a time, and the resulting
 processed dataset is combined into a single Data Table.</p>
-
 <p>At least one of the preprocessors should reduce the dataset size (such as <strong>Cut</strong>, <strong>Integrate</strong>) to take
 advantage of this file loader and reduce total memory usage.</p>
-
 <p>By default, the widget will not load the dataset automatically. This prevents loading a large dataset into
 memory before the desired preprocessor chain is configured. Press the &ldquo;Reload&rdquo; button to load the data.</p>
-
-<p><img src="../images/Tilefile-stamped.png" alt="" /></p>
-
+<p><img src="../images/Tilefile-stamped.png" alt=""></p>
 <ol>
 <li>Browse through previously opened data files, or load any of the sample ones.</li>
 <li>Browse for a data file.</li>
@@ -1700,19 +1688,14 @@ memory before the desired preprocessor chain is configured. Press the &ldquo;Rel
 <li>Information on the applied preprocessor list.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>Here is a simple example on how to use the <strong>Tilefile</strong> widget. We configured a preprocessor list in
 <strong>Preprocess Spectra</strong> and connected the <strong>Preprocessor</strong> output to the input on the <strong>Tilefile</strong> widget.
 We have loaded a mosaic data set that was stored on our local machine. We used the folder icon to access
 the file and load them. We check the preprocessor that will be applied and press &ldquo;Reload&rdquo; to load the data.
 Now information about the preprocessed dataset is displayed in the info box and domain editor.</p>
-
 <p>We can observe the preprocessed data in the <strong>HyperSpectra</strong> widget or in a <strong>Data Table</strong>.</p>
-
-<p><img src="../images/Tilefile-Example.png" alt="" /></p>
-
+<p><img src="../images/Tilefile-Example.png" alt=""></p>
 <p>This example workflow can be found in <em>Help/Example Workflows</em>.</p>
 
                 </div>

@@ -1659,45 +1659,30 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="concatenate">Concatenate</h1>
-
+                    <h1 id="concatenate">Concatenate</h1>
 <p>Concatenates data from multiple sources.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Primary Data: data set that defines the attribute set</li>
 <li>Additional Data: additional data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: concatenated data</li>
 </ul>
-
 <p>The widget concatenates multiple sets of instances (data sets). The merge is “vertical”, in a sense that two sets of 10 and 5 instances yield a new set of 15 instances.</p>
-
-<p><img src="../images/Concatenate-stamped.png" alt="" /></p>
-
+<p><img src="../images/Concatenate-stamped.png" alt=""></p>
 <ol>
 <li>Set the attribute merging method.</li>
 <li>Add the identification of source data sets to the output data set.</li>
 <li>Produce a report.</li>
 <li>If <em>Apply automatically</em> is ticked, changes are communicated automatically. Otherwise, click <em>Apply</em>.</li>
 </ol>
-
 <p>If one of the tables is connected to the widget as the primary table, the resulting table will contain its own attributes. If there is no primary table, the attributes can be either a union of all attributes that appear in the tables specified as <em>Additional Tables</em>, or their intersection, that is, a list of attributes common to all the connected tables.</p>
-
 <h2 id="example">Example</h2>
-
 <p>As shown below, the widget can be used for merging data from two separate files. Let&rsquo;s say we have two data sets with the same attributes, one containing instances from the first experiment and the other instances from the second experiment and we wish to join the two data tables together. We use the <strong>Concatenate</strong> widget to merge the data sets by attributes (appending new rows under existing attributes).</p>
-
 <p>Below, we used a modified <em>Zoo</em> data set. In the <a href="http://file.biolab.si/datasets/zoo-first.tab">first</a> <a href="../data/file.md">File</a> widget, we loaded only the animals beginning with the letters A and B and in the <a href="http://file.biolab.si/datasets/zoo-second.tab">second</a> one only the animals beginning with the letter C. Upon concatenation, we observe the new data in the <a href="../../data/datatable/">Data Table</a> widget, where we see the complete table with animals from A to C.</p>
-
-<p><img src="../images/Concatenate-Example.png" alt="" /></p>
+<p><img src="../images/Concatenate-Example.png" alt=""></p>
 
                 </div>
             </div>

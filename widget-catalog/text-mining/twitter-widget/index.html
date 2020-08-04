@@ -1659,37 +1659,25 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="twitter">Twitter</h1>
-
+                    <h1 id="twitter">Twitter</h1>
 <p>Fetching data from <a href="https://dev.twitter.com/rest/public/search">The Twitter Search API</a>.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>None</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of tweets from the Twitter API.</li>
 </ul>
-
 <p><strong>Twitter</strong> widget enables querying tweets through Twitter API. You can query by content, author or both and  accumulate results should you wish to create a larger data set. The widget only supports REST API and allows queries for up to two weeks back.</p>
-
-<p><img src="../images/Twitter-stamped.png" alt="" /></p>
-
+<p><img src="../images/Twitter-stamped.png" alt=""></p>
 <ol>
-<li>To begin your queries, insert Twitter key and secret. They are securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won&rsquo;t be deleted when clearing widget settings. You must first create a <a href="https://apps.twitter.com/">Twitter app</a> to get API keys.</li>
-</ol>
-
-<p><img src="../images/Twitter-key.png" alt="" /></p>
-
-<ol>
-<li>Set query parameters:
-
+<li>
+<p>To begin your queries, insert Twitter key and secret. They are securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won&rsquo;t be deleted when clearing widget settings. You must first create a <a href="https://apps.twitter.com/">Twitter app</a> to get API keys.</p>
+<p><img src="../images/Twitter-key.png" alt=""></p>
+</li>
+<li>
+<p>Set query parameters:</p>
 <ul>
 <li><em>Query word list</em>: list desired queries, one per line. Queries are automatically joined by OR.</li>
 <li><em>Search by</em>: specify whether you want to search by content, author or both. If searching by author, you must enter proper Twitter handle (without @) in the query list.</li>
@@ -1697,28 +1685,26 @@
 <li><em>Max tweets</em>: set the top limit of retrieved tweets. If box is not ticked, no upper bound will be set - widget will retrieve all available tweets.</li>
 <li><em>Allow retweets</em>: if &lsquo;Allow retweets&rsquo; is checked, retweeted tweets will also appear on the output. This might duplicate some results.</li>
 <li><em>Collect results</em>: if &lsquo;Collect results&rsquo; is ticked, widget will append new queries to the previous ones. Enter new queries, run <em>Search</em> and new results will be appended to the previous ones.</li>
-</ul></li>
-<li>Define which features to include as text features.</li>
-<li>Information on the number of tweets on the output.</li>
-<li>Run query.</li>
+</ul>
+</li>
+<li>
+<p>Define which features to include as text features.</p>
+</li>
+<li>
+<p>Information on the number of tweets on the output.</p>
+</li>
+<li>
+<p>Run query.</p>
+</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>First, let&rsquo;s try a simple query. We will search for tweets containing either &lsquo;data mining&rsquo; or &lsquo;machine learning&rsquo; in the content and allow retweets. We will further limit our search to only a 100 tweets in English.</p>
-
-<p><img src="../images/Twitter-Example1.png" alt="" /></p>
-
+<p><img src="../images/Twitter-Example1.png" alt=""></p>
 <p>First, we&rsquo;re checking the output in <a href="corpusviewer.md">Corpus Viewer</a> to get the initial idea about our results. Then we&rsquo;re preprocessing the tweets with lowercase, url removal, tweet tokenizer and removal of stopword and punctuation. The best way to see the results is with <a href="../wordcloud">Word Cloud</a>. This will display the most popular words in field of data mining and machine learning in the past two weeks.</p>
-
 <p>Our next example is a bit more complex. We&rsquo;re querying tweets from Hillary Clinton and Donald Trump from the presidential campaign 2016.</p>
-
-<p><img src="../images/Twitter-Example2.png" alt="" /></p>
-
+<p><img src="../images/Twitter-Example2.png" alt=""></p>
 <p>Then we&rsquo;ve used <a href="preprocesstext.md">Preprocess Text</a> to get suitable tokens on our output. We&rsquo;ve connected <strong>Preprocess Text</strong> to <a href="../bagofwords-widget/">Bag of Words</a> in order to create a table with words as features and their counts as values. A quick check in <strong>Word Cloud</strong> gives us an idea about the results.</p>
-
 <p>Now we would like to predict the author of the tweet. With <strong>Select Columns</strong> we&rsquo;re setting &lsquo;Author&rsquo; as our target variable. Then we connect <strong>Select Columns</strong> to <strong>Test &amp; Score</strong>. We&rsquo;ll be using <strong>Logistic Regression</strong> as our learner, which we also connect to <strong>Test &amp; Score</strong>.</p>
-
 <p>We can observe the results of our author predictions directly in the widget. AUC score is quite ok. Seems like we can to some extent predict who is the author of the tweet based on the tweet content.</p>
 
                 </div>

@@ -230,25 +230,17 @@
 
 
               <p><strong>IMPORT DATA</strong></p>
-
 <p>One of the first tasks in Orange data analysis is of course loading your data. If you are using Orange through Python, this is as easy as riding a bike:</p>
-
 <pre><code>import Orange
 data = Orange.data.Table(“iris”)
 print (data)
 </code></pre>
-
 <p>This will return a neat data table of the famous Iris data set in the console.</p>
-
 <p><strong>CREATE YOUR OWN DATA TABLE</strong></p>
-
 <p>What if you want to create your own data table from scratch? Even this is surprisingly simple. First, import the Orange data library.</p>
-
 <pre><code>from Orange.data import *
 </code></pre>
-
 <p>Set all the attributes you wish to see in your data table. For discrete attributes call <strong>DiscreteVariable</strong> and set the name and the possible values, while for a continuous variable call <strong>ContinuousVariable</strong> and set only the attribute name.</p>
-
 <pre><code>color = DiscreteVariable(“color”, values=[“orange”, “green”, “yellow”])
 
 calories = ContinuousVariable(“calories”)
@@ -257,14 +249,10 @@ fiber = ContinuousVariable(“fiber”)]
 
 fruit = DiscreteVariable(&quot;fruit”, values=[”orange&quot;, “apple”, “peach”])
 </code></pre>
-
 <p>Then set the domain for your data table. See how we set class variable with <strong>class_vars</strong>?</p>
-
 <pre><code>domain = Domain([color, calories, fiber], class_vars=fruit)
 </code></pre>
-
 <p>Time to input your data!</p>
-
 <pre><code>data = Table(domain, [
 
 [“green”, 4, 1.2, “apple”],
@@ -273,17 +261,12 @@ fruit = DiscreteVariable(&quot;fruit”, values=[”orange&quot;, “apple”, �
 
 [&quot;yellow&quot;, 4, 1.0, &quot;peach&quot;]])
 </code></pre>
-
 <p>And now print what you have created!</p>
-
 <pre><code>print(data)
 </code></pre>
-
 <p>One final step:</p>
-
 <pre><code>Table.save(table, &quot;fruit.tab&quot;)
 </code></pre>
-
 <p>Your data is safely stored to your computer (in the Python folder)! Good job!</p>
 
             </div>

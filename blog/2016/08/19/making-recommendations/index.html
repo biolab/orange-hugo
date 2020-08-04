@@ -243,22 +243,14 @@
               <div id="blog_images_">
 
 
-              
-
-<p><em>This is a guest blog from the Google Summer of Code project.</em></p>
-
+              <p><em>This is a guest blog from the Google Summer of Code project.</em></p>
 <p>Recommender systems are everywhere, we can find them on YouTube, Amazon, Netflix, iTunes,&hellip; This is because they are crucial component in a competitive retail services.</p>
-
 <p>How can I know what you may like if I have almost no information about you? The answer: taking <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative filtering (CF)</a> approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</p>
-
 <p>To help you with that, Biolab has written <a href="https://github.com/biolab/orange3-recommendation">Orange3-Recommendation</a> - an add-on for <a href="http://orange.biolab.si/download/">Orange3</a> to train recommendation models, cross-validate them and make predictions.</p>
-
+<h3 id="heading"></h3>
 <h3 id="input-data">Input data</h3>
-
 <p>First things first. Orange3-Recommendation can read files in native tab-delimited format, or can load data from any of the major standard spreadsheet file type, like CSV and Excel. Native format starts with a header row with feature (column) names. Second header row gives the attribute type, which can be continuous, discrete, string or time. The third header line contains meta information to identify dependent features (class), irrelevant features (ignore) or meta features (meta).</p>
-
 <p>Here are the first few lines from a data set:</p>
-
 <pre><code>    tid      user        movie       score
     string   discrete    discrete    continuous
     meta     row=1       col=1       class
@@ -269,11 +261,8 @@
     5        Albert      Matrix      4
     ...
 </code></pre>
-
-<p><strong>The third row is mandatory in this kind of datasets</strong>*, in order to know which attributes correspond to the users (row=1) and which ones to the items (col=1). For the case of big datasets, users and items must be specified as continuous attributes due to efficiency issues. (*Note: If the meta attributes <em>row</em> or <em>col</em>, some simple heuristics will be applied: users=<em>column 0</em>, items=<em>column 1</em>, class=<em>last column</em>)</p>
-
+<p><strong>The third row is mandatory in this kind of datasets</strong>*, in order to know which attributes correspond to the users (row=1) and which ones to the items (col=1). For the case of big datasets, users and items must be specified as continuous attributes due to efficiency issues. (*Note: If the meta attributes _row_ or _col_, some simple heuristics will be applied: users=_column 0_, items=_column 1_, class=_last column_)</p>
 <p>Here are the first few lines from a data set :</p>
-
 <pre><code>    user            movie         score         tid
     continuous      continuous    continuous    time
     row=1           col=1         class         meta
@@ -285,130 +274,81 @@
     298             474           4             884182806
     ...
 </code></pre>
-
+<h3 id="heading-1"></h3>
 <h3 id="training-a-model">Training a model</h3>
-
 <p>This step is pretty simple. To train a model we have to load the data as is described above and connect it to the learner. (<em>Don&rsquo;t forget to click apply</em>)</p>
-
 <a href="/images/2016/08/data-to-brismf.png" class="blog-image_"> 
       <img src="/images/2016/08/data-to-brismf.png" />
  </a>
-
-
-
-
 <p>If the model uses side information, we only need to add an extra file.</p>
-
 <a href="/images/2016/08/TrustSVD-1.png" class="blog-image_"> 
       <img src="/images/2016/08/TrustSVD-1.png" />
  </a>
-
-
-
-
 <p>In addition, we can set the parameters of our model by double-clicking it:</p>
-
 <a href="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" class="blog-image_"> 
       <img src="/images/2016/08/Screen-Shot-2016-08-22-at-15.49.56.png" />
  </a>
-
-
-
-
 <p>By using a fixed seed, we make random numbers predictable. Therefore, this feature is useful if we want to compare results in a deterministic way.</p>
-
+<h3 id="heading-2"></h3>
 <h3 id="cross-validation">Cross-validation</h3>
-
 <p>This is as simple as it seems. The only thing to point out is that side information must be connected to the model.</p>
-
-<p><img src="/images/2016/08/cv-recommendation.png" alt="" /></p>
-
-<p>Still, cross-validation is a robust way to see how our model is performing. I consider that it&rsquo;s a good idea to check how our model performs with respect to the baseline. This presents a negligible overload* in our pipeline and makes our analysis more solid. <em>(*For 1,000,000 ratings, it can take 0.027s).</em></p>
-
+<p><img src="/images/2016/08/cv-recommendation.png" alt=""></p>
+<p>Still, cross-validation is a robust way to see how our model is performing. I consider that it&rsquo;s a good idea to check how our model performs with respect to the baseline. This presents a negligible overload* in our pipeline and makes our analysis more solid. _(*For 1,000,000 ratings, it can take 0.027s)._</p>
 <p>We can add a baseline leaner to <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html">Test&amp;Score</a> and select the model we want to apply.</p>
-
 <a href="/images/2016/08/Baselines.png" class="blog-image_"> 
       <img src="/images/2016/08/Baselines.png" />
  </a>
-
-
-
-
 <h3 id="making-recommendations">Making recommendations</h3>
-
 <p>The prediction flow is exactly the same as in <a href="http://orange.biolab.si">Orange3</a>.</p>
-
 <a href="/images/2016/08/Recommendation-predictions.png" class="blog-image_"> 
       <img src="/images/2016/08/Recommendation-predictions.png" />
  </a>
-
-
-
-
-<h3 id="analyzing-low-rank-matrices">Analyzing low-rank matrices</h3>
-
-<p><img src="/images/2016/08/all-rank-dis.png" alt="" /></p>
-
-<p>Once we&rsquo;ve output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the _item-feature matrix_ by simply connecting Data Table with selected instances to the widget <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/visualize/scatterplot.html">Scatter Plot</a>.</p>
-
-<p><img src="/images/2016/08/Visualizing-vectors.png" alt="" /></p>
-
+<h3 id="analyzinglow-rank-matrices">Analyzing low-rank matrices</h3>
+<p><img src="/images/2016/08/all-rank-dis.png" alt=""></p>
+<p>Once we&rsquo;ve output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the <em>item-feature matrix</em> by simply connecting Data Table with selected instances to the widget <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/visualize/scatterplot.html">Scatter Plot</a>.</p>
+<p><img src="/images/2016/08/Visualizing-vectors.png" alt=""></p>
 <p>Using similar approaches we can discover pretty interesting things like similarity between movies or users, how movie genres relate with each other, changes in users&rsquo; behavior, when the popularity of a movie has been raised due to a commercial campaign,&hellip; and many others.</p>
-
 <p>Finally, a simple pipeline to do all of the above can be something like this:</p>
-
-<p><img src="/images/2016/08/workflow-recommendation.png" alt="" /></p>
-
+<p><img src="/images/2016/08/workflow-recommendation.png" alt=""></p>
 <p>On the left side we connected several models to <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html">Test&amp;Score</a> in order to cross-validate them. Later, we trained a <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html">SVD++</a> model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the <em>Item-feature matrix.</em></p>
-
 <h3 id="analysis-advanced-users">Analysis (Advanced users)</h3>
-
 <p>Here we&rsquo;ve made a workflow (which can be downloaded <a href="/images/2016/08/Orange3-Workflow-Movielens100k.zip">here</a>) to perform a really basic analysis on the results obtained through factoring the user and item feature matrices with <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/brismf.html">BRISMF</a> over the <a href="http://grouplens.org/datasets/movielens/">movielens100k</a> dataset. <em>(Note: Once downloaded, set the prepared datasets in the folder &lsquo;orange&rsquo;. Probably you&rsquo;re gonna get a couple errors. Don&rsquo;t worry, it&rsquo;s normal. To solve it, apply the scripts sequentially but don&rsquo;t forget previously to select all the rows in the related Table.)</em></p>
-
 <p>Instead of explaining how this pipeline works, the best thing you can do is to download it and play with it.</p>
-
-<p><img src="/images/2016/08/Complex-flow.png" alt="" /></p>
-
-<p>One of the analysis you can do, is to plot the most popular movies across two first vectors of the matrix descomposition. Later, you can try to find clusters, tweak it a bit and find crossed relations (e.g. _male/female<em> Vs.</em> action/drama)._</p>
-
-<p><img src="/images/2016/08/Cluster-movies.png" alt="" /></p>
-
-<h3 id="now-let-s-focus-on-the-scripting-part">Now let&rsquo;s focus on the scripting part.</h3>
-
+<p><img src="/images/2016/08/Complex-flow.png" alt=""></p>
+<p>One of the analysis you can do, is to plot the most popular movies across two first vectors of the matrix descomposition. Later, you can try to find clusters, tweak it a bit and find crossed relations (e.g. <em>male/female</em> Vs._ action/drama)._</p>
+<p><img src="/images/2016/08/Cluster-movies.png" alt=""></p>
+<h3 id="now-lets-focus-on-the-scripting-part">Now let&rsquo;s focus on the scripting part.</h3>
 <h3 id="rating-models">Rating models</h3>
-
 <p>In this tutorial we are going to train a <a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/rating.html#brismf">BRISMF</a> model.</p>
-
 <ol>
-<li><p>First we <strong>import _Orange_ and the learner</strong> that we want to use:</p>
-
-<pre><code>import Orange
-from orangecontrib.recommendation import BRISMFLearner
-</code></pre></li>
-
-<li><p>After that, we have to <strong>load a dataset</strong>:</p>
-
-<pre><code>data = Orange.data.Table('movielens100k.tab')
-</code></pre></li>
-
-<li><p>Then we set the <strong>learner parameters</strong>, and finally we <strong>train it</strong> passing the dataset as an argument (the returned value will be our model trained):</p>
-
-<pre><code>learner = BRISMFLearner(num_factors=15, num_iter=25, learning_rate=0.07, lmbda=0.1)
-recommender = learner(data)
-</code></pre></li>
-
-<li><p>Finally, we can <strong>make predictions</strong> (in this case, for the first three pairs in the dataset):</p>
-
-<pre><code>prediction = recommender(data[:3])
-print(prediction)
-&gt;&gt;&gt; [ 3.79505151 3.75096513 1.293013 ]
-</code></pre></li>
+<li>
+<p>First we <strong>import <em>Orange</em> and the learner</strong> that we want to use:</p>
+<pre><code> import Orange
+ from orangecontrib.recommendation import BRISMFLearner
+</code></pre>
+</li>
+<li>
+<p>After that, we have to <strong>load a dataset</strong>:</p>
+<pre><code> data = Orange.data.Table('movielens100k.tab')
+</code></pre>
+</li>
+<li>
+<p>Then we set the <strong>learner parameters</strong>, and finally we <strong>train it</strong> passing the dataset as an argument (the returned value will be our model trained):</p>
+<pre><code> learner = BRISMFLearner(num_factors=15, num_iter=25, learning_rate=0.07, lmbda=0.1)
+ recommender = learner(data)
+</code></pre>
+</li>
+<li>
+<p>Finally, we can <strong>make predictions</strong> (in this case, for the first three pairs in the dataset):</p>
+<pre><code> prediction = recommender(data[:3])
+ print(prediction)
+ &gt;&gt;&gt; [ 3.79505151 3.75096513 1.293013 ]
+</code></pre>
+</li>
 </ol>
-
-<h3 id="ranking-models">Ranking models</h3>
-
+<h3 id="heading-3"></h3>
+<h3 id="rankingmodels">Ranking models</h3>
 <p>At this point we can try something new, let&rsquo;s make recommendations for a dataset in which only binary relevance is available. For this case, <a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/ranking.html">CLiMF</a> is model that will suit our needs.</p>
-
 <pre><code>import Orange
 import numpy as np
 from orangecontrib.recommendation import CLiMFLearner
@@ -424,9 +364,7 @@ recommender = learner(data)
 recommender(X=5)
 &gt;&gt;&gt; [ 494,   803,   180, ..., 25520, 25507, 30815]
 </code></pre>
-
 <p>Later, we can score the model. In this case we&rsquo;re using the <em>MeanReciprocalRank:</em></p>
-
 <pre><code>import Orange
 
 # Load test
@@ -442,11 +380,9 @@ mrr, _ = recommender.compute_mrr(data=testdata, users=users_sampled)
 print('MRR: %.4f' % mrr) 
 &gt;&gt;&gt; MRR: 0.3975
 </code></pre>
-
+<h3 id="heading-4"></h3>
 <h3 id="sgd-optimizers">SGD optimizers</h3>
-
 <p>This add-on includes several configurations that can be used to modify the updates on the low rank matrices during the stochastic gradient descent optimization.</p>
-
 <ul>
 <li><a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#stochastic-gradient-descent">SGD</a>: Classical SGD update.</li>
 <li><a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#momentum">Momentum</a>: SGD with inertia.</li>
@@ -457,7 +393,6 @@ print('MRR: %.4f' % mrr)
 <li><a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adam">Adam</a>: Similar to AdaGrad and RMSProp but with an exponentially decaying average of past gradients.</li>
 <li><a href="http://orange3-recommendation.readthedocs.io/en/latest/scripting/optimizers.html#adamax">Adamax</a>: Similar to Adam, but taking the maximum between the gradient and the velocity.</li>
 </ul>
-
 <p>Do you want to learn more about this? Check our <a href="http://orange3-recommendation.readthedocs.io">documentation</a>!</p>
 
             </div>

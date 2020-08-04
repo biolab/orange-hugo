@@ -1659,68 +1659,46 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="data-sampler">Data Sampler</h1>
-
+                    <h1 id="data-sampler">Data Sampler</h1>
 <p>Selects a subset of data instances from an input dataset.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data Sample: sampled data instances</li>
 <li>Remaining Data: out-of-sample data</li>
 </ul>
-
 <p>The <strong>Data Sampler</strong> widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processed after the input dataset is provided and <em>Sample Data</em> is pressed.</p>
-
-<p><img src="../images/DataSampler-stamped.png" alt="" /></p>
-
+<p><img src="../images/DataSampler-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input and output dataset.</li>
 <li>The desired sampling method:
-
 <ul>
 <li><strong>Fixed proportion of data</strong> returns a selected percentage of the entire data (e.g. 70% of all the data)</li>
 <li><strong>Fixed sample size</strong> returns a selected number of data instances with a chance to set <em>Sample with replacement</em>, which always samples from the entire dataset (does not subtract instances already in the subset). With replacement, you can generate more instances than available in the input dataset.</li>
 <li><a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross Validation</a> partitions data instances into the specified number of complementary subsets. Following a typical validation schema, all subsets except the one selected by the user are output as Data Sample, and the selected subset goes to Remaining Data. (Note: In older versions, the outputs were swapped. If the widget is loaded from an older workflow, it switches to compatibility mode.)</li>
 <li><a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">Bootstrap</a> infers the sample from the population statistic.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Replicable sampling</em> maintains sampling patterns that can be carried
 across users, while <em>stratify sample</em> mimics the composition of the
 input dataset.</li>
 <li>Press <em>Sample Data</em> to output the data sample.</li>
 </ol>
-
 <p>If all data instances are selected (by setting the proportion to 100 % or setting the fixed sample size to the entire data size), output instances are still shuffled.</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>First, let&rsquo;s see how the <strong>Data Sampler</strong> works. We will use the <em>iris</em> data from the <a href="../../data/file/">File</a> widget. We see there are 150 instances in the data. We sampled the data with the <strong>Data Sampler</strong> widget and we chose to go with a fixed sample size of 5 instances for simplicity. We can observe the sampled data in the <a href="../../data/datatable/">Data Table</a> widget (Data Table (in-sample)). The second <a href="../../data/datatable/">Data Table</a> (Data Table (out-of-sample)) shows the remaining 145 instances that weren&rsquo;t in the sample. To output the out-of-sample data, double-click the connection between the widgets and rewire the output to <em>Remaining Data &ndash;&gt; Data</em>.</p>
-
-<p><img src="../images/DataSampler-Example1.png" alt="" /></p>
-
+<p><img src="../images/DataSampler-Example1.png" alt=""></p>
 <p>Now, we will use the <strong>Data Sampler</strong> to split the data into training and testing part. We are using the <em>iris</em> data, which we loaded with the <a href="../../data/file/">File</a> widget. In <strong>Data Sampler</strong>, we split the data with <em>Fixed proportion of data</em>, keeping 70% of data instances in the sample.</p>
-
 <p>Then we connected two outputs to the <a href="../evaluate/testandscore.md">Test &amp; Score</a> widget, <em>Data Sample &ndash;&gt; Data</em> and <em>Remaining Data &ndash;&gt; Test Data</em>. Finally, we added <a href="../../model/logisticregression/">Logistic Regression</a> as the learner. This runs logistic regression on the Data input and evaluates the results on the Test Data.</p>
-
-<p><img src="../images/DataSampler-Example2.png" alt="" /></p>
-
-<h2 id="over-undersampling">Over/Undersampling</h2>
-
+<p><img src="../images/DataSampler-Example2.png" alt=""></p>
+<h2 id="overundersampling">Over/Undersampling</h2>
 <p><strong>Data Sampler</strong> can also be used to oversample a minority class or undersample majority class in the data. Let us show an example for oversampling. First, separate the minority class using a <a href="../data/selectrows.md">Select Rows</a> widget. We are using the <em>iris</em> data from the <a href="../../data/file/">File</a> widget. The data set has 150 data instances, 50 of each class. Let us oversample, say, <em>iris-setosa</em>.</p>
-
 <p>In <strong>Select Rows</strong>, set the condition to <em>iris is iris-setosa</em>. This will output 50 instances of the <em>iris-setosa</em> class. Now, connect <em>Matching Data</em> into the <strong>Data Sampler</strong>, select <em>Fixed sample size</em>, set it to, say, 100 and select <em>Sample with replacement</em>. Upon pressing <em>Sample Data</em>, the widget will output 100 instances of <em>iris-setosa</em> class, some of which will be duplicated (because we used <em>Sample with replacement</em>).</p>
-
 <p>Finally, use <a href="../data/concatenate">Concatenate</a> to join the oversampled instances and the <em>Unmatched Data</em> output of the <strong>Select Rows</strong> widget. This outputs a data set with 200 instances. We can observe the final results in the <a href="../../visualize/distributions">Distributions</a>.</p>
-
-<p><img src="../images/DataSampler-Example-OverUnderSampling.png" alt="" /></p>
+<p><img src="../images/DataSampler-Example-OverUnderSampling.png" alt=""></p>
 
                 </div>
             </div>

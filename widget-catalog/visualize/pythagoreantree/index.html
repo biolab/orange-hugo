@@ -1659,68 +1659,49 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="pythagorean-tree">Pythagorean Tree</h1>
-
+                    <h1 id="pythagorean-tree">Pythagorean Tree</h1>
 <p>Pythagorean tree visualization for classification or regression trees.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Tree: tree model</li>
 <li>Selected Data: instances selected from the tree</li>
 </ul>
-
 <p><strong>Pythagorean Trees</strong> are plane fractals that can be used to depict general tree hierarchies as presented in an article by <a href="http://publications.fbeck.com/ivapp14-pythagoras.pdf">Fabian Beck and co-authors</a>. In our case, they are used for visualizing and exploring tree models, such as <a href="../../model/tree/">Tree</a>.</p>
-
-<p><img src="../images/Pythagorean-Tree1-stamped.png" alt="" /></p>
-
+<p><img src="../images/Pythagorean-Tree1-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input tree model.</li>
 <li>Visualization parameters:
-
 <ul>
 <li><em>Depth</em>: set the depth of displayed trees.</li>
 <li><em>Target class</em> (for classification trees): the intensity of the color for nodes of the tree will correspond to the probability of the target class. If <em>None</em> is selected, the color of the node will denote the most probable class.</li>
 <li><em>Node color</em> (for regression trees): node colors can correspond to mean or standard deviation of class value of the training data instances in the node.</li>
 <li><em>Size</em>: define a method to compute the size of the square representing the node. <em>Normal</em> will keep node sizes correspond to the size of training data subset in the node. <em>Square root</em> and <em>Logarithmic</em> are the respective transformations of the node size.</li>
 <li><em>Log scale factor</em> is only enabled when <em>logarithmic</em> transformation is selected. You can set the log factor between 1 and 10.</li>
-</ul></li>
+</ul>
+</li>
 <li>Plot properties:
-
 <ul>
 <li><em>Enable tooltips</em>: display node information upon hovering.</li>
 <li><em>Show legend</em>: shows color legend for the plot.</li>
-</ul></li>
+</ul>
+</li>
 <li>Reporting:
-
 <ul>
 <li><em>Save Image</em>: save the visualization to a SVG or PNG file.</li>
 <li><em>Report</em>: add visualization to the report.</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <p>Pythagorean Tree can visualize both classification and regression trees. Below is an example for regression tree. The only difference between the two is that regression tree doesn&rsquo;t enable coloring by class, but can color by class mean or standard deviation.</p>
-
-<p><img src="../images/Pythagorean-Tree1-continuous.png" alt="" /></p>
-
+<p><img src="../images/Pythagorean-Tree1-continuous.png" alt=""></p>
 <h2 id="example">Example</h2>
-
 <p>The workflow from the screenshot below demonstrates the difference between <a href="../visualize/treeviewer.md">Tree Viewer</a> and Pythagorean Tree. They can both visualize <a href="../../model/tree/">Tree</a>, but Pythagorean visualization takes less space and is more compact, even for a small <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower</a> dataset. For both visualization widgets, we have hidden the control area on the left by clicking on the splitter between control and visualization area.</p>
-
-<p><img src="../images/Pythagorean-Tree-comparison.png" alt="" /></p>
-
+<p><img src="../images/Pythagorean-Tree-comparison.png" alt=""></p>
 <p>Pythagorean Tree is interactive: click on any of the nodes (squares) to select training data instances that were associated with that node. The following workflow explores these feature.</p>
-
-<p><img src="../images/Pythagorean-Tree-scatterplot-workflow.png" alt="" /></p>
-
+<p><img src="../images/Pythagorean-Tree-scatterplot-workflow.png" alt=""></p>
 <p>The selected data instances are shown as a subset in the <a href="../visualize/scatterplot.md">Scatter Plot</a>, sent to the <a href="../data/datatable.md">Data Table</a> and examined in the <a href="../../visualize/boxplot/">Box Plot</a>. We have used brown-selected dataset in this example. The tree and scatter plot are shown below; the selected node in the tree has a black outline.</p>
-
-<p><img src="../images/Pythagorean-Tree-scatterplot.png" alt="" /></p>
-
+<p><img src="../images/Pythagorean-Tree-scatterplot.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Beck, F., Burch, M., Munz, T., Di Silvestro, L. and Weiskopf, D. (2014). <a href="http://publications.fbeck.com/ivapp14-pythagoras.pdf">Generalized Pythagoras Trees for Visualizing Hierarchies</a>. In IVAPP &lsquo;14 Proceedings of the 5th International Conference on Information Visualization Theory and Applications, 17-28.</p>
 
                 </div>

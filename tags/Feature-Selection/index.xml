@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feature Selection on Orange</title>
+    <link>/tags/Feature-Selection/</link>
+    <description>Recent content in Feature Selection on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/Feature-Selection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Feature Ranking</title>
+      <link>/workflows/feature-ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/feature-ranking/</guid>
+      <description>For supervised problems, where data instances are annotated with class labels, we would like to know which are the most informative features. Rank widget provides a table of features and their informativity scores, and supports manual feature selection. In the workflow, we used it to find the best two features (of initial 79 from brown-selected dataset) and display its scatter plot.</description>
+    </item>
+    
+  </channel>
+</rss>

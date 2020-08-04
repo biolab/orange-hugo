@@ -1659,26 +1659,22 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="score-genes">Score Genes</h1>
-
+                    <h1 id="score-genes">Score Genes</h1>
 <p>Gene scoring based on statistics of their expression profiles or information content about cell types.</p>
-
-<p><strong>Inputs</strong>
-- Data: input dataset
-- Scorer: (multiple) prediction model(s)</p>
-
-<p><strong>Outputs</strong>
-- Reduced Data: expression data containing selected genes
-- Scores: gene scores</p>
-
+<p><strong>Inputs</strong></p>
+<ul>
+<li>Data: input dataset</li>
+<li>Scorer: (multiple) prediction model(s)</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Reduced Data: expression data containing selected genes</li>
+<li>Scores: gene scores</li>
+</ul>
 <p>The <strong>Score Genes</strong> widget considers gene expression data with genes in columns and single cell
 expression profiles in rows. It scores the genes based on statistics of gene expression. For examples, it can sort
 the genes by their mean expression. The widget supports selection of best scored genes and performs gene filtering.</p>
-
-<p><img src="../images/ScoreGenes-stamped.png" alt="" /></p>
-
+<p><img src="../images/ScoreGenes-stamped.png" alt=""></p>
 <ol>
 <li>Scoring method. Those selected will be shown in the scoring table.</li>
 <li>Table with gene scores. Click on the column header to sort by specific score.</li>
@@ -1689,9 +1685,7 @@ gene sorting.</li>
 method. This option should be used to automatically update the output of the widget upon any change of the
 input data set.</li>
 </ol>
-
 <h2 id="scoring-methods">Scoring methods</h2>
-
 <ol>
 <li>Mean: <a href="https://en.wikipedia.org/wiki/Mean">arithmetic mean</a> gene expression, computed across all the cells in the input data.</li>
 <li>Variance: <a href="https://en.wikipedia.org/wiki/Variance">squared deviation from gene expression mean</a></li>

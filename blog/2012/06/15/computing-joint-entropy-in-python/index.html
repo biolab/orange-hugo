@@ -223,24 +223,19 @@
 
 
               <p>How I wrote a beautiful, general, and super fast joint entropy method (in Python).</p>
-
 <pre><code>def entropy(*X):
 return = np.sum(-p * np.log2(p) if p &gt; 0 else 0 for p in
     (np.mean(reduce(np.logical_and, (predictions == c for predictions, c in zip(X, classes))))
         for classes in itertools.product(*[set(x) for x in X])))
 </code></pre>
-
 <p>I started with the method to compute the entropy of a single variable. Input is a numpy array with discrete values (either integers or strings).</p>
-
 <pre><code>import numpy as np
 
 def entropy(X):
     probs = [np.mean(X == c) for c in set(X)]
     return np.sum(-p * np.log2(p) for p in probs)
 </code></pre>
-
 <p>In my next version I extended it to compute the joint entropy of two variables:</p>
-
 <pre><code>def entropy(X, Y):
 probs = []
 for c1 in set(X):
@@ -249,9 +244,7 @@ for c1 in set(X):
 
 return np.sum(-p * np.log2(p) for p in probs)
 </code></pre>
-
 <p>Now wait a minute, it looks like we have a recursion here. I couldn&rsquo;t stop myself of writing en extended general function to compute the joint entropy of n variables.</p>
-
 <pre><code>def entropy(*X, **kwargs):
     predictions = parse_arg(X[0])
     H = kwargs[&quot;H&quot;] if &quot;H&quot; in kwargs else 0
@@ -265,9 +258,7 @@ return np.sum(-p * np.log2(p) for p in probs)
             H += -p * np.log2(p) if p &gt; 0 else 0
     return H
 </code></pre>
-
 <p>It was the ugliest recursive function I&rsquo;ve ever written. I couldn&rsquo;t stop coding, I was hooked. Besides, this method was slow as hell and I need a faster version for my reasearch. I need my data tommorow, not next month. I googled if Python has something that would help me deal with the recursive part. I fould this great method: itertools.product, I&rsquo;s just what we need. It takes lists and returns a cartesian product of their values. It&rsquo;s the &ldquo;nested for loops&rdquo; in one function.</p>
-
 <pre><code>def entropy(*X):
     n_insctances = len(X[0])
     H = 0
@@ -279,9 +270,7 @@ return np.sum(-p * np.log2(p) for p in probs)
         H += -p * np.log2(p) if p &gt; 0 else 0
     return H
 </code></pre>
-
 <p>No resursion, but still slow. It&rsquo;s time to rewrite loops to the Python-like style. As a sharp eye has already noticed, the second for loop with the np.logical_and inside is perfect for the reduce method.</p>
-
 <pre><code>def entropy(*X):
     n_insctances = len(X[0])
     H = 0
@@ -291,9 +280,7 @@ return np.sum(-p * np.log2(p) for p in probs)
         H += -p * np.log2(p) if p &gt; 0 else 0
     return H
 </code></pre>
-
 <p>Now, we have to remove just one more list comprehension and we have a beautiful, general, and super fast joint etropy method.</p>
-
 <pre><code>def entropy(*X):
     return = np.sum(-p * np.log2(p) if p &gt; 0 else 0 for p in
         (np.mean(reduce(np.logical_and, (predictions == c for predictions, c in zip(X, classes))))

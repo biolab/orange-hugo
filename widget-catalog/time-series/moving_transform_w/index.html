@@ -1659,28 +1659,18 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="moving-transform">Moving Transform</h1>
-
+                    <h1 id="moving-transform">Moving Transform</h1>
 <p>Apply rolling window functions to the time series. Use this widget to get a series&rsquo; mean.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Time series: The input time series with the added series&rsquo; transformations.</li>
 </ul>
-
 <p>In this widget, you define what aggregation functions to run over the time series and with what window sizes.</p>
-
-<p><img src="../images/moving-transform-stamped.png" alt="" /></p>
-
+<p><img src="../images/moving-transform-stamped.png" alt=""></p>
 <ol>
 <li>Define a new transformation.</li>
 <li>Remove the selected transformation.</li>
@@ -1690,19 +1680,12 @@
 <li>Select <em>Non-overlapping windows</em> options if you don&rsquo;t want the moving windows to overlap but instead be placed side-to-side with zero intersection.</li>
 <li>In the case of non-overlapping windows, define the fixed window width(overrides and widths set in (4).</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>To get a 5-day moving average, we can use a rolling window with <em>mean</em> aggregation.</p>
-
-<p><img src="../images/moving-transform-ex1.png" alt="" /></p>
-
+<p><img src="../images/moving-transform-ex1.png" alt=""></p>
 <p>To integrate time series&rsquo; differences from <a href="../difference/">Difference</a> widget, use <em>Cumulative sum</em> aggregation over a window wide enough to grasp the whole series.</p>
-
-<p><img src="../images/moving-transform-ex2.png" alt="" /></p>
-
+<p><img src="../images/moving-transform-ex2.png" alt=""></p>
 <h4 id="see-also">See also</h4>
-
 <p><a href="../seasonal_adjustment/">Seasonal Adjustment</a></p>
 
                 </div>

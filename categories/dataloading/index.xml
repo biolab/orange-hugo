@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dataloading on Orange</title>
+    <title>dataloading on Orange</title>
     <link>/categories/dataloading/</link>
-    <description>Recent content in Dataloading on Orange</description>
+    <description>Recent content in dataloading on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Jun 2018 07:54:17 +0000</lastBuildDate>
@@ -38,7 +38,7 @@ For this purpose, we have designed EnKlik Anketa widget, which you can find in P
       <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
       
       <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features.
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
 Related: Text Preprocessing</description>
     </item>
     
@@ -60,7 +60,7 @@ First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple o
       
       <guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid>
       <description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
- Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
+  Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
     </item>
     
     <item>
@@ -119,9 +119,7 @@ Since Orange 3.0 is still in the development mode, you will find a smaller selec
       <guid>/blog/2011/03/28/data-loading-speedups/</guid>
       <description>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.
 Quick comparisons between the old new versions, measured on my computer:
- adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s.
- DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s.
- GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
+ adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s. DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s. GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
     </item>
     
   </channel>

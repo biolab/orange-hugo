@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gsoc on Orange</title>
+    <title>gsoc on Orange</title>
     <link>/categories/gsoc/</link>
-    <description>Recent content in Gsoc on Orange</description>
+    <description>Recent content in gsoc on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Aug 2016 17:32:20 +0000</lastBuildDate>
@@ -62,7 +62,7 @@ Accepted students will help us develop Orange (or other chosen OSS project) fro
       <description>This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of Google Summer of Code.
 The add-on will consist of a set of widgets, each with it&amp;rsquo;s own dedicated purpose, which can be seamlessly connected to provide most commonly used image preprocessing functionality.
 Here is a list of the widgets:
- Widget for viewing image files (add description)</description>
+ Widget for viewing image files (add description) Widget for resizing an image Widget for rotation/flipping of the image Widget for converting the color mode (RGB, HSV, Grayscale etc.</description>
     </item>
     
     <item>
@@ -196,9 +196,9 @@ For that purpose I have been developing a library which will include a number of
       
       <guid>/blog/2011/04/25/accepted-gsoc-2011-students-announced/</guid>
       <description>Accepted proposals/projects for Google Summer of Code 2011 have been announced. We got 3 students which will this year work on Orange:
- Marinka Žitnik: Matrix Factorization Techniques for Data Mining
- Miha Čančula: 2D visualization using PyQt
- Wencan Luo: Multi-label classification
+  Marinka Žitnik: Matrix Factorization Techniques for Data Mining
+  Miha Čančula: 2D visualization using PyQt
+  Wencan Luo: Multi-label classification
   Congrats to all accepted students. We are looking forward working with you. And for all other students: please apply again next year. Your proposals were good, but we just could not accept everybody.</description>
     </item>
     

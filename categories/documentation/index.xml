@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on Orange</title>
+    <title>documentation on Orange</title>
     <link>/categories/documentation/</link>
-    <description>Recent content in Documentation on Orange</description>
+    <description>Recent content in documentation on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Oct 2016 12:18:23 +0000</lastBuildDate>
@@ -31,7 +31,7 @@ You can access it in three ways:</description>
       <guid>/blog/2015/09/04/updated-widget-documentation/</guid>
       <description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
 Right click and select &amp;ldquo;Help&amp;rdquo; or press F1.
- 
+** **
 It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description>
     </item>
     

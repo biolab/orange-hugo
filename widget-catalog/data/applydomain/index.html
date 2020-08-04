@@ -1659,42 +1659,26 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="apply-domain">Apply Domain</h1>
-
+                    <h1 id="apply-domain">Apply Domain</h1>
 <p>Given dataset and template transforms the dataset.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Template Data: template for transforming the dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Transformed Data: transformed dataset</li>
 </ul>
-
 <p><strong>Apply Domain</strong> maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use Apply Domain to map the new data into the PCA space created from the original data.</p>
-
-<p><img src="../images/ApplyDomain.png" alt="" /></p>
-
+<p><img src="../images/ApplyDomain.png" alt=""></p>
 <p>The widget receives a dataset and a template dataset used to transform the dataset.</p>
-
 <h2 id="example">Example</h2>
-
 <p>We will use iris data from the <a href="../data/file.md">File</a> widget for this example. To create two separate data sets, we will use <a href="../../data/selectrows/">Select Rows</a> and set the condition to <em>iris is one of iris-setosa, iris-versicolor</em>. This will output a data set with a 100 rows, half of them belonging to iris-setosa class and the other half to iris-versicolor.</p>
-
 <p>We will transform the data with <a href="../../unsupervised/PCA/">PCA</a> and select the first two components, which explain 96% of variance. Now, we would like to apply the same preprocessing on the &lsquo;new&rsquo; data, that is the remaining 50 iris virginicas. Send the unused data from <strong>Select Rows</strong> to <strong>Apply Domain</strong>. Make sure to use the <em>Unmatched Data</em> output from <strong>Select Rows</strong> widget. Then add the <em>Transformed data</em> output from <strong>PCA</strong>.</p>
-
 <p><strong>Apply Domain</strong> will apply the preprocessor to the new data and output it. To add the new data to the old data, use <a href="../../data/concatenate/">Concatenate</a>. Use <em>Transformed Data</em> output from <strong>PCA</strong> as <em>Primary Data</em> and <em>Transformed Data</em> from <strong>Apply Domain</strong> as <em>Additional Data</em>.</p>
-
 <p>Observe the results in a <a href="../data/datatable.md">Data Table</a> or in a <a href="../../visualize/scatterplot/">Scatter Plot</a> to see the new data in relation to the old one.</p>
-
-<p><img src="../images/ApplyDomain-Example.png" alt="" /></p>
+<p><img src="../images/ApplyDomain-Example.png" alt=""></p>
 
                 </div>
             </div>

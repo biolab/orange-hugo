@@ -1659,33 +1659,23 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="difference">Difference</h1>
-
+                    <h1 id="difference">Difference</h1>
 <p>Make the time series stationary by replacing it with 1st or 2nd order discrete difference along its values.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Time series: Differences of input time series.</li>
 </ul>
-
-<p><img src="../images/difference-stamped.png" alt="" /></p>
-
+<p><img src="../images/difference-stamped.png" alt=""></p>
 <ol>
 <li>Order of differencing. Can be 1 or 2.</li>
 <li>The shift before differencing. Value of 1 equals to discrete differencing. You can use higher values to compute the difference between now and this many steps ahead.</li>
 <li>Invert the differencing direction.</li>
 <li>Select the series to difference.</li>
 </ol>
-
 <p>To integrate the differences back into the original series (e.g. the forecasts), use the <a href="../moving_transform/">Moving Transform</a> widget.</p>
 
                 </div>

@@ -1659,44 +1659,30 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="logistic-regression">Logistic Regression</h1>
-
+                    <h1 id="logistic-regression">Logistic Regression</h1>
 <p>The logistic regression classification algorithm with LASSO (L1) or ridge (L2) regularization.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: logistic regression learning algorithm</li>
 <li>Model: trained model</li>
 <li>Coefficients: logistic regression coefficients</li>
 </ul>
-
 <p><strong>Logistic Regression</strong> learns a <a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic Regression</a> model from the data. It only works for classification tasks.</p>
-
-<p><img src="../images/LogisticRegression-stamped.png" alt="" /></p>
-
+<p><img src="../images/LogisticRegression-stamped.png" alt=""></p>
 <ol>
 <li>A name under which the learner appears in other widgets. The default name is &ldquo;Logistic Regression&rdquo;.</li>
 <li><a href="https://en.wikipedia.org/wiki/Regularization_(mathematics)">Regularization</a> type (either <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">L1</a> or <a href="https://en.wikipedia.org/wiki/Tikhonov_regularization">L2</a>). Set the cost strength (default is C=1).</li>
 <li>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes will be communicated automatically.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>The widget is used just as any other widget for inducing a classifier. This is an example demonstrating prediction results with logistic regression on the <em>hayes-roth</em> dataset. We first load <em>hayes-roth_learn</em> in the <a href="../data/file.md">File</a> widget and pass the data to <strong>Logistic Regression</strong>. Then we pass the trained model to <a href="../../evaluate/predictions/">Predictions</a>.</p>
-
 <p>Now we want to predict class value on a new dataset. We load <em>hayes-roth_test</em> in the second <strong>File</strong> widget and connect it to <strong>Predictions</strong>. We can now observe class values predicted with <strong>Logistic Regression</strong> directly in <strong>Predictions</strong>.</p>
-
-<p><img src="../images/LogisticRegression-classification.png" alt="" /></p>
+<p><img src="../images/LogisticRegression-classification.png" alt=""></p>
 
                 </div>
             </div>

@@ -1659,51 +1659,37 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="var-model">VAR Model</h1>
-
+                    <h1 id="var-model">VAR Model</h1>
 <p>Model the time series using <a href="https://en.wikipedia.org/wiki/Vector_autoregression">vector autoregression (VAR) model</a>.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Time series model: The VAR model fitted to input time series.</li>
 <li>Forecast: The forecast time series.</li>
 <li>Fitted values: The values that the model was actually fitted to, equals to <em>original values - residuals</em>.</li>
 <li>Residuals: The errors the model made at each step.</li>
 </ul>
-
 <p>Using this widget, you can model the time series using VAR model.</p>
-
-<p><img src="../images/var-model-stamped.png" alt="" /></p>
-
+<p><img src="../images/var-model-stamped.png" alt=""></p>
 <ol>
 <li>Model&rsquo;s name. By default, the name is derived from the model and its parameters.</li>
 <li>Desired model order (number of parameters).</li>
 <li>If other than <em>None</em>, optimize the number of model parameters (up to the value selected in (2)) with the selected information criterion (one of: AIC, BIC, HQIC, FPE, or a mix thereof).</li>
 <li>Choose this option to add additional &ldquo;trend&rdquo; columns to the data:
-
 <ul>
 <li><em>Constant</em>: a single column of ones is added</li>
 <li><em>Constant and linear</em>: a column of ones and a column of linearly increasing numbers are added</li>
 <li><em>Constant, linear and quadratic</em>: an additional column of quadratics is added</li>
-</ul></li>
+</ul>
+</li>
 <li>Number of forecast steps the model should output, along with the desired confidence intervals values at each step.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
-<p><img src="../images/line-chart-ex1.png" alt="" /></p>
-
+<p><img src="../images/line-chart-ex1.png" alt=""></p>
 <h4 id="see-also">See also</h4>
-
 <p><a href="arima.md">ARIMA Model</a>, <a href="../model_evaluation_w/">Model Evaluation</a></p>
 
                 </div>

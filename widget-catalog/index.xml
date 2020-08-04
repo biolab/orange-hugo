@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Widget catalog on Orange</title>
@@ -9,18 +9,6 @@
     
 	<atom:link href="/widget-catalog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ARIMA Model</title>
-      <link>/widget-catalog/time-series/arima/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/time-series/arima/</guid>
-      <description>ARIMA Model Model the time series using ARMA, ARIMA, or ARIMAX model.
-Inputs
- Time series: Time series as output by As Timeseries widget. Exogenous data: Time series of additional independent variables that can be used in an ARIMAX model.  Outputs
- Time series model: The ARIMA model fitted to input time series. Forecast: The forecast time series. Fitted values: The values that the model was actually fitted to, equals to original values - residuals.</description>
-    </item>
     
     <item>
       <title>AdaBoost</title>
@@ -53,9 +41,9 @@ Inputs
       
       <guid>/widget-catalog/single-cell/align_datasets/</guid>
       <description>Align Datasets Alignment of multiple datasets with a diagram of correlation visualization.
-Inputs - Data: single cell dataset
-Outputs - Transformed Data: aligned data - Genes per n. Components
- Data source indicator Number of components for canonical correlation analysis. Number of shared genes and the scoring method for alignment. Scoring can be done with Pearson, Spearman and Biweights midcorrelation. Tick the box to use the percent of quantile normalization and dynamic time warping.</description>
+Inputs
+ Data: single cell dataset  Outputs
+ Transformed Data: aligned data Genes per n. Components   Data source indicator Number of components for canonical correlation analysis. Number of shared genes and the scoring method for alignment. Scoring can be done with Pearson, Spearman and Biweights midcorrelation. Tick the box to use the percent of quantile normalization and dynamic time warping.</description>
     </item>
     
     <item>
@@ -65,9 +53,9 @@ Outputs - Transformed Data: aligned data - Genes per n. Components
       
       <guid>/widget-catalog/bioinformatics/annotate_projection/</guid>
       <description>Annotator The widget provides an option to annotate cells with cell types based on marker genes.
-Inputs - Reference Data: Data set with gene expression values. - Secondary Data: Subset of instances (optional). - Genes: Marker genes.
-Outputs - Selected Data: Instances selected from the plot. - Data: Data with additional columns with annotations, clusters, and projection
-This widget receives gene expression data together with mapping to a two-dimensional space and marker genes.</description>
+Inputs
+ Reference Data: Data set with gene expression values. Secondary Data: Subset of instances (optional). Genes: Marker genes.  Outputs
+ Selected Data: Instances selected from the plot. Data: Data with additional columns with annotations, clusters, and projection  This widget receives gene expression data together with mapping to a two-dimensional space and marker genes.</description>
     </item>
     
     <item>
@@ -80,6 +68,18 @@ This widget receives gene expression data together with mapping to a two-dimensi
 Inputs
  Data: input dataset Template Data: template for transforming the dataset  Outputs
  Transformed Data: transformed dataset  Apply Domain maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use Apply Domain to map the new data into the PCA space created from the original data.</description>
+    </item>
+    
+    <item>
+      <title>ARIMA Model</title>
+      <link>/widget-catalog/time-series/arima/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/time-series/arima/</guid>
+      <description>ARIMA Model Model the time series using ARMA, ARIMA, or ARIMAX model.
+Inputs
+ Time series: Time series as output by As Timeseries widget. Exogenous data: Time series of additional independent variables that can be used in an ARIMAX model.  Outputs
+ Time series model: The ARIMA model fitted to input time series. Forecast: The forecast time series. Fitted values: The values that the model was actually fitted to, equals to original values - residuals.</description>
     </item>
     
     <item>
@@ -105,7 +105,7 @@ Inputs
 Inputs
  Data: Data set  Outputs
  Matching Data: Data instances matching the criteria.  This widget implements FP-growth frequent pattern mining algorithm [1] with bucketing optimization [2] for conditional databases of few items. For inducing classification rules, it generates rules for the entire itemset and skips the rules where the consequent does not match one of the class&amp;rsquo; values.
- Information on the data set.</description>
+  Information on the data set.</description>
     </item>
     
     <item>
@@ -141,8 +141,9 @@ Inputs
       
       <guid>/widget-catalog/single-cell/batch_effect_removal/</guid>
       <description>Batch Effect Removal Batch effect normalization on Single Cell data set.
-Data - Data: Single cell dataset.
-Outputs - Data: Single cell dataset.</description>
+Data
+ Data: Single cell dataset.  Outputs
+ Data: Single cell dataset.  </description>
     </item>
     
     <item>
@@ -158,44 +159,6 @@ Inputs
     </item>
     
     <item>
-      <title>CN2 Rule Induction</title>
-      <link>/widget-catalog/model/cn2ruleinduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/model/cn2ruleinduction/</guid>
-      <description>CN2 Rule Induction Induce rules from data using CN2 algorithm.
-Inputs
- Data: input dataset Preprocessor: preprocessing method(s)  Outputs
- Learner: CN2 learning algorithm CN2 Rule Classifier: trained model  The CN2 algorithm is a classification technique designed for the efficient induction of simple, comprehensible rules of form &amp;ldquo;if cond then predict class&amp;rdquo;, even in domains where noise may be present.
-CN2 Rule Induction works only for classification.</description>
-    </item>
-    
-    <item>
-      <title>CN2 Rule Viewer</title>
-      <link>/widget-catalog/visualize/cn2ruleviewer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/visualize/cn2ruleviewer/</guid>
-      <description>CN2 Rule Viewer CN2 Rule Viewer
-Inputs
- Data: dataset to filter CN2 Rule Classifier: CN2 Rule Classifier, including a list of induced rules  Outputs
- Filtered Data: data instances covered by all selected rules  A widget that displays CN2 classification rules. If data is also connected, upon rule selection, one can analyze which instances abide to the conditions.
- Original order of induced rules can be restored.</description>
-    </item>
-    
-    <item>
-      <title>CSV File Import</title>
-      <link>/widget-catalog/data/csvfileimport/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/data/csvfileimport/</guid>
-      <description>CSV File Import Import a data table from a CSV formatted file.
-Outputs
- Data: dataset from the .csv file Data Frame: pandas DataFrame object  The CSV File Import widget reads comma-separated files and sends the dataset to its output channel. File separators can be commas, semicolons, spaces, tabs or manually-defined delimiters. The history of most recently opened files is maintained in the widget.
-Data Frame output can be used in the Python Script widget by connecting it to the in_object input (e.</description>
-    </item>
-    
-    <item>
       <title>Calibrated Learner</title>
       <link>/widget-catalog/model/calibratedlearner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -205,7 +168,7 @@ Data Frame output can be used in the Python Script widget by connecting it to th
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s) Base Learner: learner to calibrate  Outputs
  Learner: calibrated learning algorithm Model: trained model using the calibrated learner  This learner produces a model that calibrates the distribution of class probabilities and optimizes decision threshold. The widget works only for binary classification tasks.
- The name under which it will appear in other widgets.</description>
+  The name under which it will appear in other widgets.</description>
     </item>
     
     <item>
@@ -228,8 +191,8 @@ Inputs
       <guid>/widget-catalog/geo/choroplethmap/</guid>
       <description>Choropleth Map A thematic map in which areas are shaded in proportion to the measurement of the statistical variable being displayed.
 Inputs
- Data: input dataset  Outputs - Selected Data: instances selected from the map. - Data: data with an additional column showing whether a point is selected
-Choropleth provides an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region.</description>
+ Data: input dataset  Outputs
+ Selected Data: instances selected from the map. Data: data with an additional column showing whether a point is selected  Choropleth provides an easy way to visualize how a measurement varies across a geographic area or show the level of variability within a region.</description>
     </item>
     
     <item>
@@ -239,10 +202,37 @@ Choropleth provides an easy way to visualize how a measurement varies across a g
       
       <guid>/widget-catalog/bioinformatics/cluster_analysis/</guid>
       <description>Cluster Analysis Display differentially expressed genes that characterize the cluster.
-Inputs - Data: Data set. - Custom Gene Sets: Genes to compare.
-Outputs - Selected Data: Data selected in the widget.
-Cluster Analysis widget displays differentially expressed genes that characterize the cluster, and corresponding gene terms that describe differentially expressed genes.
+Inputs
+ Data: Data set. Custom Gene Sets: Genes to compare.  Outputs
+ Selected Data: Data selected in the widget.  Cluster Analysis widget displays differentially expressed genes that characterize the cluster, and corresponding gene terms that describe differentially expressed genes.
  Info Cluster Indicator Batch Indicator Gene Scoring Gene Sets Custom Gene Sets Filter Genes Filter Gene Sets  Example TODO: Example</description>
+    </item>
+    
+    <item>
+      <title>CN2 Rule Induction</title>
+      <link>/widget-catalog/model/cn2ruleinduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/cn2ruleinduction/</guid>
+      <description>CN2 Rule Induction Induce rules from data using CN2 algorithm.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: CN2 learning algorithm CN2 Rule Classifier: trained model  The CN2 algorithm is a classification technique designed for the efficient induction of simple, comprehensible rules of form &amp;ldquo;if cond then predict class&amp;rdquo;, even in domains where noise may be present.
+CN2 Rule Induction works only for classification.
+ Name under which the learner appears in other widgets.</description>
+    </item>
+    
+    <item>
+      <title>CN2 Rule Viewer</title>
+      <link>/widget-catalog/visualize/cn2ruleviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/visualize/cn2ruleviewer/</guid>
+      <description>CN2 Rule Viewer CN2 Rule Viewer
+Inputs
+ Data: dataset to filter CN2 Rule Classifier: CN2 Rule Classifier, including a list of induced rules  Outputs
+ Filtered Data: data instances covered by all selected rules  A widget that displays CN2 classification rules. If data is also connected, upon rule selection, one can analyze which instances abide to the conditions.
+ Original order of induced rules can be restored. When rules are many and complex, the view can appear packed.</description>
     </item>
     
     <item>
@@ -318,7 +308,7 @@ For classification, when predicting the class value with Predictions, the widget
 Inputs
  Data: input data set  Outputs
  Data: transformed data set  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete variables (including binary variables) are replaced with continuous ones.
- Define the treatment of non-binary categorical variables.
+  Define the treatment of non-binary categorical variables.
 Examples in this section will assume that we have a discrete attribute status with the values low, middle and high, listed in that order.</description>
     </item>
     
@@ -336,6 +326,18 @@ Inputs
     </item>
     
     <item>
+      <title>Corpus to Network</title>
+      <link>/widget-catalog/text-mining/corpustonetwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/corpustonetwork/</guid>
+      <description>Corpus to Network Creates a network from given corpus. Network nodes can be either documents or words (ngrams).
+Inputs
+ Corpus: A collection of documents.  Outputs
+ Network: A network generated from input corpus. Node data: Additional data about nodes.  Corpus to Network can operate either on documents or words (ngrams). If nodes are documents, there&amp;rsquo;s an edge between two documents if number of words (ngrams) that appears in both documents is at least Threshold.</description>
+    </item>
+    
+    <item>
       <title>Corpus Viewer</title>
       <link>/widget-catalog/text-mining/corpusviewer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -349,18 +351,6 @@ Inputs
     </item>
     
     <item>
-      <title>Corpus to Network</title>
-      <link>/widget-catalog/text-mining/corpustonetwork/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/text-mining/corpustonetwork/</guid>
-      <description>Corpus to Network Creates a network from given corpus. Network nodes can be either documents or words (ngrams).
-Inputs
- Corpus: A collection of documents.  Outputs
- Network: A network generated from input corpus. Node data: Additional data about nodes.  Corpus to Network can operate either on documents or words (ngrams). If nodes are documents, there&amp;rsquo;s an edge between two documents if number of words (ngrams) that appears in both documents is at least Threshold.</description>
-    </item>
-    
-    <item>
       <title>Correlations</title>
       <link>/widget-catalog/data/correlations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -370,7 +360,7 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Data: input dataset Features: selected pair of features Correlations: data table with correlation scores  Correlations computes Pearson or Spearman correlation scores for all pairs of features in a dataset. These methods can only detect monotonic relationship.
- Correlation measure:  Pairwise Pearson correlation. Pairwise Spearman correlation.  Filter for finding attribute pairs. A list of attribute pairs with correlation coefficient.</description>
+ Correlation measure:  Pairwise Pearson correlation. Pairwise Spearman correlation.   Filter for finding attribute pairs. A list of attribute pairs with correlation coefficient.</description>
     </item>
     
     <item>
@@ -408,19 +398,19 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Data: dataset with a new class variable  Create Class creates a new class attribute from an existing discrete or string attribute. The widget matches the string value of the selected attribute and constructs a new user-defined value for matching instances.
- The attribute the new class is constructed from. Matching:  Name: the name of the new class value Substring: regex-defined substring that will match the values from the above-defined attribute Instances: the number of instances matching the substring Press &amp;lsquo;+&amp;rsquo; to add a new class value  Name of the new class column.</description>
+ The attribute the new class is constructed from. Matching:  Name: the name of the new class value Substring: regex-defined substring that will match the values from the above-defined attribute Instances: the number of instances matching the substring Press &amp;lsquo;+&amp;rsquo; to add a new class value   Name of the new class column.</description>
     </item>
     
     <item>
-      <title>DBSCAN</title>
-      <link>/widget-catalog/unsupervised/DBSCAN/</link>
+      <title>CSV File Import</title>
+      <link>/widget-catalog/data/csvfileimport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/unsupervised/DBSCAN/</guid>
-      <description>DBSCAN Groups items using the DBSCAN clustering algorithm.
-Inputs
- Data: input dataset  Outputs
- Data: dataset with cluster index as a class attribute  The widget applies the DBSCAN clustering algorithm to the data and outputs a new dataset with cluster indices as a meta attribute. The widget also shows the sorted graph with distances to k-th nearest neighbors. With k values set to Core point neighbors as suggested in the methods article.</description>
+      <guid>/widget-catalog/data/csvfileimport/</guid>
+      <description>CSV File Import Import a data table from a CSV formatted file.
+Outputs
+ Data: dataset from the .csv file Data Frame: pandas DataFrame object  The CSV File Import widget reads comma-separated files and sends the dataset to its output channel. File separators can be commas, semicolons, spaces, tabs or manually-defined delimiters. The history of most recently opened files is maintained in the widget.
+Data Frame output can be used in the Python Script widget by connecting it to the in_object input (e.</description>
     </item>
     
     <item>
@@ -457,7 +447,7 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Selected Data: instances selected from the table  The Data Table widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. The widget also supports manual selection of data instances.
- The name of the dataset (usually the input data file).</description>
+ The name of the dataset (usually the input data file). Data instances are in rows and their attribute values in columns.</description>
     </item>
     
     <item>
@@ -467,9 +457,9 @@ Inputs
       
       <guid>/widget-catalog/bioinformatics/databases_update/</guid>
       <description>Databases Update Updates local systems biology databases, like gene ontologies, annotations, gene names, protein interaction networks, and similar.
-Inputs - None
-Outputs - None
-With the bioinformatics add-on you can access several databases directly from Orange. The widget can also be used to update and manage locally stored databases. To get a more detailed information on the particular database hover on its name.
+Inputs
+ None  Outputs
+ None  With the bioinformatics add-on you can access several databases directly from Orange. The widget can also be used to update and manage locally stored databases. To get a more detailed information on the particular database hover on its name.
  Find the desired database. A list of available databases described with data source, update availability, date of your last update and file size.</description>
     </item>
     
@@ -483,6 +473,31 @@ With the bioinformatics add-on you can access several databases directly from Or
 Outputs
  Data: output dataset  Datasets widget retrieves selected dataset from the server and sends it to the output. File is downloaded to the local memory and thus instantly available even without the internet connection. Each dataset is provided with a description and information on the data size, number of instances, number of variables, target and tags.
  Information on the number of datasets available and the number of them downloaded to the local memory.</description>
+    </item>
+    
+    <item>
+      <title>DBSCAN</title>
+      <link>/widget-catalog/unsupervised/DBSCAN/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/DBSCAN/</guid>
+      <description>DBSCAN Groups items using the DBSCAN clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute  The widget applies the DBSCAN clustering algorithm to the data and outputs a new dataset with cluster indices as a meta attribute. The widget also shows the sorted graph with distances to k-th nearest neighbors. With k values set to Core point neighbors as suggested in the methods article.</description>
+    </item>
+    
+    <item>
+      <title>dictyExpress</title>
+      <link>/widget-catalog/bioinformatics/dicty_express/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/dicty_express/</guid>
+      <description>dictyExpress Gives access to dictyExpress databases.
+Inputs
+ None  Outputs
+ Data: Selected experiment (time-course gene expression data).  dictyExpress widget gives a direct access to the dictyExpress database. It allows you to download the data from selected experiments in Dictyostelium by Baylor College of Medicine. The widget requires internet connection to work.
+ Log into the database to access personal files. Define the output. Genes from experiments can be either in rows or in columns.</description>
     </item>
     
     <item>
@@ -504,9 +519,9 @@ Inputs
       
       <guid>/widget-catalog/bioinformatics/differential_expression/</guid>
       <description>Differential Expression Plots differential gene expression for selected experiments.
-Inputs - Data: Data set.
-Outputs - Data Subset: Differentially expressed genes. - Remaining Data Subset: Genes that were not differentially expressed. - Selected Genes: Genes from the select data with scores appended.
-This widget plots a differential gene expression graph for a sample target. It takes gene expression data as an input (from dictyExpress, GEO Data Sets, etc.) and outputs a selected data subset (normally the most interesting genes).</description>
+Inputs
+ Data: Data set.  Outputs
+ Data Subset: Differentially expressed genes. Remaining Data Subset: Genes that were not differentially expressed. Selected Genes: Genes from the select data with scores appended.  This widget plots a differential gene expression graph for a sample target. It takes gene expression data as an input (from dictyExpress, GEO Data Sets, etc.) and outputs a selected data subset (normally the most interesting genes).</description>
     </item>
     
     <item>
@@ -543,7 +558,7 @@ Outputs
 Inputs
  Distances: distance matrix  Outputs
  Data: instances selected from the matrix Features: attributes selected from the matrix  The Distance Map visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.
-Distances are most often those between instances (&amp;rdquo;rows&amp;rdquo; in the Distances widget) or attributes (&amp;rdquo;columns&amp;rdquo; in Distances widget).</description>
+Distances are most often those between instances (&amp;quot;rows&amp;rdquo; in the Distances widget) or attributes (&amp;quot;columns&amp;rdquo; in Distances widget).</description>
     </item>
     
     <item>
@@ -568,7 +583,7 @@ Inputs
 Inputs
  Distances: distance matrix  Outputs
  Distances: transformed distance matrix  The Distances Transformation widget is used for the normalization and inversion of distance matrices. The normalization of data is necessary to bring all the variables into proportion with one another.
- Choose the type of Normalization:  No normalization To interval [0, 1] To interval [-1, 1] Sigmoid function: 1/(1+exp(-X))  Choose the type of Inversion:  No inversion -X 1 - X max(X) - X 1/X  Produce a report.</description>
+ Choose the type of Normalization:  No normalization To interval [0, 1] To interval [-1, 1] Sigmoid function: 1/(1+exp(-X))   Choose the type of Inversion:  No inversion -X 1 - X max(X) - X 1/X   Produce a report.</description>
     </item>
     
     <item>
@@ -628,8 +643,9 @@ Inputs
       
       <guid>/widget-catalog/single-cell/dot_matrix/</guid>
       <description>Dot Matrix Perform cluster analysis.
-Inputs - Data: Single cell dataset.
-Outputs - Selected Data - Data: Single cell dataset. - Contingency Table</description>
+Inputs
+ Data: Single cell dataset.  Outputs
+ Selected Data Data: Single cell dataset. Contingency Table  </description>
     </item>
     
     <item>
@@ -704,7 +720,7 @@ The Feature Statistics widget on the heart-disease data set. The feature exerc i
       <description>File Reads attribute-value data from an input file.
 Outputs
  Data: dataset from the file  The File widget reads the input data file (data table with data instances) and sends the dataset to its output channel. The history of most recently opened files is maintained in the widget. The widget also includes a directory with sample datasets that come pre-installed with Orange.
-The widget reads data from Excel (.</description>
+The widget reads data from Excel (.xlsx), simple tab-delimited (.</description>
     </item>
     
     <item>
@@ -714,9 +730,9 @@ The widget reads data from Excel (.</description>
       
       <guid>/widget-catalog/single-cell/filter/</guid>
       <description>Filter Filter cells/genes.
-Inputs - Data: input dataset
-Outputs - Data: filtered dataset
-The Filter widget filters cells or genes by the number of positive measurements. One can select genes in visualization to remove the unfrequent and overly frequent cells/genes.
+Inputs
+ Data: input dataset  Outputs
+ Data: filtered dataset  The Filter widget filters cells or genes by the number of positive measurements. One can select genes in visualization to remove the unfrequent and overly frequent cells/genes.
  Information on the input and output. Filter by cells (rows), genes (columns) or data (remove zero measurments). If the box is ticked, data points are displayed. Filter by lower and upper threshold.</description>
     </item>
     
@@ -746,39 +762,15 @@ Inputs
     </item>
     
     <item>
-      <title>GEO Data Sets</title>
-      <link>/widget-catalog/bioinformatics/geo_data_sets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/bioinformatics/geo_data_sets/</guid>
-      <description>GEO Data Sets Provides access to data sets from gene expression omnibus GEO DataSets.
-Inputs - None
-Outputs - Expression data: Data set selected in the widget with genes or samples in rows.
-GEO DataSets is a database of gene expression curated profiles maintained by NCBI and included in the Gene Expression Omnibus. This Orange widget provides access to all its data sets and outputs a data set selected for further processing.</description>
-    </item>
-    
-    <item>
-      <title>GO Browser</title>
-      <link>/widget-catalog/bioinformatics/go_browser/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/bioinformatics/go_browser/</guid>
-      <description>GO Browser Provides access to Gene Ontology database.
-Inputs - Cluster Data: Data on clustered genes. - Reference Data: Data with genes for the reference set (optional).
-Outputs - Data on Selected Genes: Data on genes from the selected GO node. - Enrichment Report: Data on GO enrichment analysis.
-GO Browser widget provides access to Gene Ontology database. Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology.</description>
-    </item>
-    
-    <item>
       <title>Gene Set Enrichment</title>
       <link>/widget-catalog/bioinformatics/gene_set_enrichment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/bioinformatics/gene_set_enrichment/</guid>
       <description>Gene Set Enrichment Enrich gene sets.
-Inputs - Data: Data set. - Custom Gene Sets: Genes to compare. - Reference Genes: Genes used as reference.
-Outputs - Matched Genes: Gene that match.
-TODO Description.
+Inputs
+ Data: Data set. Custom Gene Sets: Genes to compare. Reference Genes: Genes used as reference.  Outputs
+ Matched Genes: Gene that match.  TODO Description.
  Info Custom Gene Set Term Column Reference Gene Sets If Commit Automatically is ticked, results will be automatically sent to the output. Alternatively, press Commit. Filtering.  Example TODO Example</description>
     </item>
     
@@ -789,9 +781,22 @@ TODO Description.
       
       <guid>/widget-catalog/bioinformatics/genes/</guid>
       <description>Genes Match input gene ID&amp;rsquo;s with corresponding Entrez ID&amp;rsquo;s.
-Inputs - Data: Data set.
-Outputs - Data: Instances with meta data that the user has manually selected in the widget. - Genes: All genes from the input with included gene info summary and matcher result.
-To work with widgets in the bioinformatics add-on data sets must be properly annotated. We need to specify: - Location of genes in a table (rows, columns) - ID from the NCBI Gene database (Entrez ID) - Organism (Taxonomy ID)</description>
+Inputs
+ Data: Data set.  Outputs
+ Data: Instances with meta data that the user has manually selected in the widget. Genes: All genes from the input with included gene info summary and matcher result.  To work with widgets in the bioinformatics add-on data sets must be properly annotated. We need to specify:
+ Location of genes in a table (rows, columns) ID from the NCBI Gene database (Entrez ID) Organism (Taxonomy ID)  Genes is a useful widget that presents information on the genes from the NCBI Gene database and outputs annotated data table.</description>
+    </item>
+    
+    <item>
+      <title>GEO Data Sets</title>
+      <link>/widget-catalog/bioinformatics/geo_data_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/geo_data_sets/</guid>
+      <description>GEO Data Sets Provides access to data sets from gene expression omnibus GEO DataSets.
+Inputs
+ None  Outputs
+ Expression data: Data set selected in the widget with genes or samples in rows.  GEO DataSets is a database of gene expression curated profiles maintained by NCBI and included in the Gene Expression Omnibus. This Orange widget provides access to all its data sets and outputs a data set selected for further processing.</description>
     </item>
     
     <item>
@@ -813,10 +818,22 @@ Inputs
       
       <guid>/widget-catalog/geo/geocoding/</guid>
       <description>Geocoding Encode region names into geographical coordinates, or reverse-geocode latitude and longitude pairs into regions.
-Inputs - Data: An input data set.
-Outputs - Coded Data: Data set with new meta attributes.
-Geocoding widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return the latitude and longitude of geometric centre.
+Inputs
+ Data: An input data set.  Outputs
+ Coded Data: Data set with new meta attributes.  Geocoding widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return the latitude and longitude of geometric centre.
  Use region names to extract the corresponding latitude/longitude pairs:  Region identifier: attribute with the information on region names.</description>
+    </item>
+    
+    <item>
+      <title>GO Browser</title>
+      <link>/widget-catalog/bioinformatics/go_browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/bioinformatics/go_browser/</guid>
+      <description>GO Browser Provides access to Gene Ontology database.
+Inputs
+ Cluster Data: Data on clustered genes. Reference Data: Data with genes for the reference set (optional).  Outputs
+ Data on Selected Genes: Data on genes from the selected GO node. Enrichment Report: Data on GO enrichment analysis.  GO Browser widget provides access to Gene Ontology database. Gene Ontology (GO) classifies genes and gene products to terms organized in a graph structure called an ontology.</description>
     </item>
     
     <item>
@@ -876,7 +893,7 @@ Inputs
 Inputs
  Distances: distance matrix  Outputs
  Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram.
- The widget supports four ways of measuring distances between clusters:  Single linkage computes the distance between the closest elements of the two clusters Average linkage computes the average distance between elements of the two clusters Weighted linkage uses the WPGMA method Complete linkage computes the distance between the clusters&amp;rsquo; most distant elements  Labels of nodes in the dendrogram can be chosen in the Annotation box.</description>
+ The widget supports four ways of measuring distances between clusters:  Single linkage computes the distance between the closest elements of the two clusters Average linkage computes the average distance between elements of the two clusters Weighted linkage uses the WPGMA method Complete linkage computes the distance between the clusters&amp;rsquo; most distant elements   Labels of nodes in the dendrogram can be chosen in the Annotation box.</description>
     </item>
     
     <item>
@@ -938,7 +955,7 @@ Inputs
 Inputs
  None  Outputs
  Corpus: A collection of documents from the local machine.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.
- Folder being loaded. Load folder from a local machine. Reload the data.</description>
+ Folder being loaded. Load folder from a local machine. Reload the data. Number of documents retrieved.</description>
     </item>
     
     <item>
@@ -963,7 +980,7 @@ Outputs
 Inputs
  Data: input dataset Learner: learning algorithm for imputation  Outputs
  Data: dataset with imputed values  Some Orange&amp;rsquo;s algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The default imputation is (1-NN).
- In the top-most box, Default method, the user can specify a general imputation technique for all attributes.</description>
+  In the top-most box, Default method, the user can specify a general imputation technique for all attributes.</description>
     </item>
     
     <item>
@@ -976,7 +993,7 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Integrated Data: data with integrals appended Preprocessor: preprocessing method  The Integrate Spectra widget allows you to add integrals to your data by selecting regions of interest and integrating them with several methods.
- Add integral:  Integral from 0: Integral from baseline: Peak from 0: Peak from baseline: Closest value: X-value of maximum from 0: X-value of maximum from baseline  Toggle preview.</description>
+ Add integral:  Integral from 0: Integral from baseline: Peak from 0: Peak from baseline: Closest value: X-value of maximum from 0: X-value of maximum from baseline   Toggle preview.</description>
     </item>
     
     <item>
@@ -997,7 +1014,7 @@ Inputs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/spectroscopy/interferogram-to-spectrum/</guid>
-      <description> Interferogram to Spectrum Performs Fast Fourier Transform on an interferogram, including zero filling, apodization and phase correction.
+      <description>Interferogram to Spectrum Performs Fast Fourier Transform on an interferogram, including zero filling, apodization and phase correction.
 Inputs
  Interferogram: input interferogram  Outputs
  Spectra: dataset with spectra Phases: phases  </description>
@@ -1013,7 +1030,7 @@ Inputs
 Inputs
  Data: input dataset Points: a reference data set  Outputs
  Interpolated Data: aligned dataset  The Interpolate widget enables you to align datasets with different wavenumbers. It has automatic interpolation or you can provide the reference data set to align with.
- Enable automatic interpolation: creates a new domain, which consequently enables interpolation of values on test data. Linear interval:  Min: minimum cutoff Max: maximum cutoff Delta: the difference between the cutoffs  Reference data: the data is aligned to the reference data  Examples The first example shows how to use Interpolate to align the train and test data set of spectral data.</description>
+ Enable automatic interpolation: creates a new domain, which consequently enables interpolation of values on test data. Linear interval:  Min: minimum cutoff Max: maximum cutoff Delta: the difference between the cutoffs   Reference data: the data is aligned to the reference data  Examples The first example shows how to use Interpolate to align the train and test data set of spectral data.</description>
     </item>
     
     <item>
@@ -1029,15 +1046,40 @@ Inputs
     </item>
     
     <item>
+      <title>k-Means</title>
+      <link>/widget-catalog/unsupervised/kmeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/kmeans/</guid>
+      <description>k-Means Groups items using the k-Means clustering algorithm.
+Inputs
+ Data: input dataset  Outputs
+ Data: dataset with cluster index as a class attribute  The widget applies the k-Means clustering algorithm to the data and outputs a new dataset in which the cluster index is used as a class attribute. The original class attribute, if it exists, is moved to meta attributes. Scores of clustering results for various k are also shown in the widget.</description>
+    </item>
+    
+    <item>
       <title>KEGG Pathways</title>
       <link>/widget-catalog/bioinformatics/kegg_pathways/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/bioinformatics/kegg_pathways/</guid>
       <description>KEGG Pathways Diagrams of molecular interactions, reactions, and relations.
-Inputs - Data: Data set. - Reference: Referential data set.
-Outputs - Selected Data: Data subset. - Unselected Data: Remaining data.
-KEGG Pathways widget displays diagrams of molecular interactions, reactions and relations from the KEGG Pathways Database. It takes data on gene expression as an input, matches the genes to the biological processes and displays a list of corresponding pathways. To explore the pathway, the user can click on any process from the list or arrange them by P-value to get the most relevant processes at the top.</description>
+Inputs
+ Data: Data set. Reference: Referential data set.  Outputs
+ Selected Data: Data subset. Unselected Data: Remaining data.  KEGG Pathways widget displays diagrams of molecular interactions, reactions and relations from the KEGG Pathways Database. It takes data on gene expression as an input, matches the genes to the biological processes and displays a list of corresponding pathways. To explore the pathway, the user can click on any process from the list or arrange them by P-value to get the most relevant processes at the top.</description>
+    </item>
+    
+    <item>
+      <title>kNN</title>
+      <link>/widget-catalog/model/knn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/knn/</guid>
+      <description>kNN Predict according to the nearest training instances.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: kNN learning algorithm Model: trained model  The kNN widget uses the kNN algorithm that searches for k closest training examples in feature space and uses their average as prediction.
+ A name under which it will appear in other widgets. The default name is &amp;ldquo;kNN&amp;rdquo;. Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.</description>
     </item>
     
     <item>
@@ -1106,7 +1148,8 @@ Inputs
       
       <guid>/widget-catalog/single-cell/load_data/</guid>
       <description>Load Data Load samples for multi-sample analysis.
-Outputs - Data: Single cell dataset.</description>
+Outputs
+ Data: Single cell dataset.  </description>
     </item>
     
     <item>
@@ -1142,19 +1185,7 @@ Inputs
       <description>Louvain Clustering Groups items using the Louvain clustering algorithm.
 Inputs
  Data: input dataset  Outputs
- Data: dataset with cluster index as a class attribute Graph (with the Network addon): the weighted k-nearest neighbor graph  The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges.</description>
-    </item>
-    
-    <item>
-      <title>MDS</title>
-      <link>/widget-catalog/unsupervised/mds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/unsupervised/mds/</guid>
-      <description>MDS Multidimensional scaling (MDS) projects items onto a plane fitted to given distances between points.
-Inputs
- Data: input dataset Distances: distance matrix Data Subset: subset of instances  Outputs
- Selected Data: instances selected from the plot Data: dataset with MDS coordinates  Multidimensional scaling is a technique which finds a low-dimensional (in our case a two-dimensional) projection of points, where it tries to fit distances between points as well as possible.</description>
+ Data: dataset with cluster index as a class attribute Graph (with the Network addon): the weighted k-nearest neighbor graph  The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges. Finally, a modularity optimization community detection algorithm is applied to the graph to retrieve clusters of highly interconnected nodes.</description>
     </item>
     
     <item>
@@ -1167,7 +1198,7 @@ Inputs
 Inputs
  Data: input dataset  Outputs
  Transformed Data: dataset with reduced coordinates  Manifold Learning is a technique which finds a non-linear manifold within the higher-dimensional space. The widget then outputs new coordinates which correspond to a two-dimensional space. Such data can be later visualized with Scatter Plot or other visualization widgets.
- Method for manifold learning:  t-SNE MDS, see also MDS widget Isomap Locally Linear Embedding Spectral Embedding  Set parameters for the method:  t-SNE (distance measures):  Euclidean distance Manhattan Chebyshev Jaccard Mahalanobis Cosine  MDS (iterations and initialization):  max iterations: maximum number of optimization interactions initialization: method for initialization of the algorithm (PCA or random)  Isomap:  number of neighbors  Locally Linear Embedding:  method: standard modified hessian eigenmap local number of neighbors max iterations  Spectral Embedding:  affinity: nearest neighbors RFB kernel   Output: the number of reduced features (components).</description>
+ Method for manifold learning:  t-SNE MDS, see also MDS widget Isomap Locally Linear Embedding Spectral Embedding   Set parameters for the method:  t-SNE (distance measures):  Euclidean distance Manhattan Chebyshev Jaccard Mahalanobis Cosine   MDS (iterations and initialization):  max iterations: maximum number of optimization interactions initialization: method for initialization of the algorithm (PCA or random)   Isomap:  number of neighbors   Locally Linear Embedding:  method:  standard modified hessian eigenmap local   number of neighbors max iterations   Spectral Embedding:  affinity:  nearest neighbors RFB kernel       Output: the number of reduced features (components).</description>
     </item>
     
     <item>
@@ -1177,14 +1208,24 @@ Inputs
       
       <guid>/widget-catalog/bioinformatics/marker_genes/</guid>
       <description>Marker Genes Widget provides access to a public database of marker genes.
-Outputs - Genes
-Database sources:
- PanglaoDB
+Outputs
+ Genes  Database sources:
+  PanglaoDB
 Oscar Franzén, Li-Ming Gan, Johan L M Björkegren, PanglaoDB: a web server for exploration of mouse and human single-cell RNA sequencing data, Database, Volume 2019, 2019, baz046, https://doi.org/10.1093/database/baz046
-  
- CellMarker
-CellMarker: a manually curated resource of cell markers in human and mouse. Nucleic Acids Research. 2018.
-  Data is preprocessed in Orange readable format and it is hosted here.</description>
+     CellMarker
+CellMarker: a manually curated resource of cell markers in human and mouse. Nucleic Acids Research. 2018.</description>
+    </item>
+    
+    <item>
+      <title>MDS</title>
+      <link>/widget-catalog/unsupervised/mds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/mds/</guid>
+      <description>MDS Multidimensional scaling (MDS) projects items onto a plane fitted to given distances between points.
+Inputs
+ Data: input dataset Distances: distance matrix Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: dataset with MDS coordinates  Multidimensional scaling is a technique which finds a low-dimensional (in our case a two-dimensional) projection of points, where it tries to fit distances between points as well as possible.</description>
     </item>
     
     <item>
@@ -1245,18 +1286,6 @@ Inputs
 Outputs
  Data: a data table of all the loaded files  The Multifile widget loads data from different sources and works like Concatenate widget for spectroscopy. The widget will output a union of attributes and features, with missing values for non-matching wavenumbers. To interpolate missing data, use the Interpolate widget.
  Loaded files. Load local files.</description>
-    </item>
-    
-    <item>
-      <title>NY Times</title>
-      <link>/widget-catalog/text-mining/nytimes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/text-mining/nytimes/</guid>
-      <description>NY Times Loads data from the New York Times&amp;rsquo; Article Search API.
-Inputs
- None  Outputs
- Corpus: A collection of documents from the New York Times newspaper.  NYTimes widget loads data from New York Times&amp;rsquo; Article Search API. You can query NYTimes articles from September 18, 1851 to today, but the API limit is set to allow retrieving only a 1000 documents per query. Define which features to use for text mining, Headline and Abstract being selected by default.</description>
     </item>
     
     <item>
@@ -1379,7 +1408,8 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s)  Outputs
  Learner: multi-layer perceptron learning algorithm Model: trained model  The Neural Network widget uses sklearn&amp;rsquo;s Multi-layer Perceptron algorithm that can learn non-linear models as well as linear.
- A name under which it will appear in other widgets. The default name is &amp;ldquo;Neural Network&amp;rdquo;. Set model parameters:  Neurons per hidden layer: defined as the ith element represents the number of neurons in the ith hidden layer.</description>
+  A name under which it will appear in other widgets. The default name is &amp;ldquo;Neural Network&amp;rdquo;.
+  Set model parameters:</description>
     </item>
     
     <item>
@@ -1395,6 +1425,18 @@ Inputs
     </item>
     
     <item>
+      <title>NY Times</title>
+      <link>/widget-catalog/text-mining/nytimes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/text-mining/nytimes/</guid>
+      <description>NY Times Loads data from the New York Times&amp;rsquo; Article Search API.
+Inputs
+ None  Outputs
+ Corpus: A collection of documents from the New York Times newspaper.  NYTimes widget loads data from New York Times&amp;rsquo; Article Search API. You can query NYTimes articles from September 18, 1851 to today, but the API limit is set to allow retrieving only a 1000 documents per query. Define which features to use for text mining, Headline and Abstract being selected by default.</description>
+    </item>
+    
+    <item>
       <title>Outliers</title>
       <link>/widget-catalog/data/outliers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1403,7 +1445,18 @@ Inputs
       <description>Outliers Outlier detection widget.
 Inputs
  Data: input dataset  Outputs
- Outliers: instances scored as outliers Inliers: instances not scored as outliers Data: input dataset appended Outlier variable  The Outliers widget applies one of the four methods for outlier detection. All methods apply classification to the dataset. One-class SVM with non-linear kernels (RBF) performs well with non-Gaussian distributions, while Covariance estimator works only for data with Gaussian distribution.</description>
+ Outliers: instances scored as outliers Inliers: instances not scored as outliers Data: input dataset appended Outlier variable  The Outliers widget applies one of the four methods for outlier detection. All methods apply classification to the dataset. One-class SVM with non-linear kernels (RBF) performs well with non-Gaussian distributions, while Covariance estimator works only for data with Gaussian distribution. One efficient way to perform outlier detection on moderately high dimensional datasets is to use the Local Outlier Factor algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Paint Data</title>
+      <link>/widget-catalog/data/paintdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/paintdata/</guid>
+      <description>Paint Data Paints data on a 2D plane. You can place individual data points or use a brush to paint larger datasets.
+Outputs
+ Data: dataset as painted in the plot  The widget supports the creation of a new dataset by visually placing data points on a two-dimension plane. Data points can be placed on the plane individually (Put) or in a larger number by brushing (Brush). Data points can belong to classes if the data is intended to be used in supervised learning.</description>
     </item>
     
     <item>
@@ -1417,17 +1470,6 @@ Inputs
  Data: input dataset  Outputs
  Transformed Data: PCA transformed data Components: Eigenvectors.  Principal Component Analysis (PCA) computes the PCA linear transformation of the input data. It outputs either a transformed dataset with weights of individual instances or weights of principal components.
  Select how many principal components you wish in your output. It is best to choose as few as possible with variance covered as high as possible.</description>
-    </item>
-    
-    <item>
-      <title>Paint Data</title>
-      <link>/widget-catalog/data/paintdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/data/paintdata/</guid>
-      <description>Paint Data Paints data on a 2D plane. You can place individual data points or use a brush to paint larger datasets.
-Outputs
- Data: dataset as painted in the plot  The widget supports the creation of a new dataset by visually placing data points on a two-dimension plane. Data points can be placed on the plane individually (Put) or in a larger number by brushing (Brush). Data points can belong to classes if the data is intended to be used in supervised learning.</description>
     </item>
     
     <item>
@@ -1526,7 +1568,7 @@ Inputs
       <description>Preprocess Spectra Construct a data preprocessing pipeline.
 Inputs
  Data: required input data set Reference: optional reference data set used in some preprocessing methods  Outputs
- Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applies a series of preprocessing methods to spectral data. You can select the preprocessing method from the list and press the triangle button on the right to visualize the result.</description>
+ Preprocessed Data: transformed data set Preprocessor: preprocessing methods  The Preprocess Spectra widget applies a series of preprocessing methods to spectral data. You can select the preprocessing method from the list and press the triangle button on the right to visualize the result. The order of the preprocessing matters, so to change the order of the preprocessing, just drag and drop the method to its proper place.</description>
     </item>
     
     <item>
@@ -1604,17 +1646,6 @@ Inputs
     </item>
     
     <item>
-      <title>ROC Analysis</title>
-      <link>/widget-catalog/evaluate/rocanalysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/evaluate/rocanalysis/</guid>
-      <description>ROC Analysis Plots a true positive rate against a false positive rate of a test.
-Inputs
- Evaluation Results: results of testing classification algorithms  The widget shows ROC curves for the tested models and the corresponding convex hull. It serves as a mean of comparison between classification models. The curve plots a false positive rate on an x-axis (1-specificity; probability that target=1 when true value=0) against a true positive rate on a y-axis (sensitivity; probability that target=1 when true value=1).</description>
-    </item>
-    
-    <item>
       <title>Radviz</title>
       <link>/widget-catalog/visualize/radviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1649,7 +1680,7 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s)  Outputs
  Learner: random forest learning algorithm Model: trained model  Random forest is an ensemble learning method used for classification, regression and other tasks. It was first proposed by Tin Kam Ho and further developed by Leo Breiman (Breiman, 2001) and Adele Cutler.
-Random Forest builds a set of decision trees.</description>
+Random Forest builds a set of decision trees. Each tree is developed from a bootstrap sample from the training data.</description>
     </item>
     
     <item>
@@ -1684,35 +1715,22 @@ Inputs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/widget-catalog/spectroscopy/reshape-map/</guid>
-      <description> Reshape Map Builds or modifies the shape of the input dataset to create 2D maps from series data or change the dimensions of existing 2D datasets.
+      <description>Reshape Map Builds or modifies the shape of the input dataset to create 2D maps from series data or change the dimensions of existing 2D datasets.
 Inputs
  Data: input dataset  Outputs
  Map Data: data as a map  The Reshape Map widget transforms the input data to a map.
- Map shape:  The X dimension. The Y dimension.  Send data automatically or press Send.  </description>
+ Map shape:  The X dimension. The Y dimension.   Send data automatically or press Send.  </description>
     </item>
     
     <item>
-      <title>SQL Table</title>
-      <link>/widget-catalog/data/sqltable/</link>
+      <title>ROC Analysis</title>
+      <link>/widget-catalog/evaluate/rocanalysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/widget-catalog/data/sqltable/</guid>
-      <description>SQL Table Reads data from an SQL database.
-Outputs
- Data: dataset from the database  The SQL widget accesses data stored in an SQL database. It can connect to PostgreSQL (requires psycopg2 module) or SQL Server (requires pymssql module).
-To handle large databases, Orange attempts to execute a part of the computation in the database itself without downloading the data. This only works with PostgreSQL database and requires quantile and tsm_system_time extensions installed on server.</description>
-    </item>
-    
-    <item>
-      <title>SVM</title>
-      <link>/widget-catalog/model/svm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/model/svm/</guid>
-      <description>SVM Support Vector Machines map inputs to higher-dimensional feature spaces.
+      <guid>/widget-catalog/evaluate/rocanalysis/</guid>
+      <description>ROC Analysis Plots a true positive rate against a false positive rate of a test.
 Inputs
- Data: input dataset Preprocessor: preprocessing method(s)  Outputs
- Learner: linear regression learning algorithm Model: trained model Support Vectors: instances used as support vectors  Support vector machine (SVM) is a machine learning technique that separates the attribute space with a hyperplane, thus maximizing the margin between the instances of different classes or class values. The technique often yields supreme predictive performance results.</description>
+ Evaluation Results: results of testing classification algorithms  The widget shows ROC curves for the tested models and the corresponding convex hull. It serves as a mean of comparison between classification models. The curve plots a false positive rate on an x-axis (1-specificity; probability that target=1 when true value=0) against a true positive rate on a y-axis (sensitivity; probability that target=1 when true value=1).</description>
     </item>
     
     <item>
@@ -1748,7 +1766,7 @@ Inputs
       <description>Save Images Save images in the directory structure.
 Inputs
  Data: images to save.  Save Images is a simple widget that saves images sent to its input. Images will be saved as separate files in their own directory. When a class is present in the data, images will be saved in subdirectories based on the class variable.
- Attribute containing the path to the image. If Scale images to is ticked, images will be resized to the size used in the selected embedder:  Inception v3: 299x299 SqueezeNet: 227x227 VGG-16: 224x224 VGG-19: 224x224 Painters: 256x256 DeepLoc: 64x64 openface: 256x256  File format to save images in.</description>
+ Attribute containing the path to the image. If Scale images to is ticked, images will be resized to the size used in the selected embedder:  Inception v3: 299x299 SqueezeNet: 227x227 VGG-16: 224x224 VGG-19: 224x224 Painters: 256x256 DeepLoc: 64x64 openface: 256x256   File format to save images in.</description>
     </item>
     
     <item>
@@ -1794,9 +1812,9 @@ Inputs
       
       <guid>/widget-catalog/single-cell/score_genes/</guid>
       <description>Score Genes Gene scoring based on statistics of their expression profiles or information content about cell types.
-Inputs - Data: input dataset - Scorer: (multiple) prediction model(s)
-Outputs - Reduced Data: expression data containing selected genes - Scores: gene scores
-The Score Genes widget considers gene expression data with genes in columns and single cell expression profiles in rows. It scores the genes based on statistics of gene expression. For examples, it can sort the genes by their mean expression.</description>
+Inputs
+ Data: input dataset Scorer: (multiple) prediction model(s)  Outputs
+ Reduced Data: expression data containing selected genes Scores: gene scores  The Score Genes widget considers gene expression data with genes in columns and single cell expression profiles in rows. It scores the genes based on statistics of gene expression. For examples, it can sort the genes by their mean expression.</description>
     </item>
     
     <item>
@@ -1809,6 +1827,18 @@ The Score Genes widget considers gene expression data with genes in columns and 
 Inputs
  Time series: Time series as output by As Timeseries widget.  Outputs
  Time series: Original time series with some additional columns: seasonal component, trend component, residual component, and seasonally adjusted time series.   Length of the season in periods (e.g. 12 for monthly data). Time series decomposition model, additive or multiplicative. The series to seasonally adjust.</description>
+    </item>
+    
+    <item>
+      <title>Select by Data Index</title>
+      <link>/widget-catalog/data/select-by-data-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/select-by-data-index/</guid>
+      <description>Select by Data Index Match instances by index from data subset.
+Inputs
+ Data: reference data set Data Subset: subset to match  Outputs
+ Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by Data Index enables matching the data by indices.</description>
     </item>
     
     <item>
@@ -1836,18 +1866,6 @@ Inputs
     </item>
     
     <item>
-      <title>Select by Data Index</title>
-      <link>/widget-catalog/data/select-by-data-index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/data/select-by-data-index/</guid>
-      <description>Select by Data Index Match instances by index from data subset.
-Inputs
- Data: reference data set Data Subset: subset to match  Outputs
- Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by Data Index enables matching the data by indices.</description>
-    </item>
-    
-    <item>
       <title>Self-Organizing Map</title>
       <link>/widget-catalog/unsupervised/selforganizingmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1856,7 +1874,7 @@ Inputs
       <description>Self-Organizing Map Computation of a self-organizing map.
 Inputs
  Data: input dataset  Outputs
- Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  A self-organizing map (SOM) is a type of artificial neural network (ANN) that is trained using unsupervised learning to produce a two-dimensional, discretized representation of the data. It is a method to do dimensionality reduction.</description>
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  A self-organizing map (SOM) is a type of artificial neural network (ANN) that is trained using unsupervised learning to produce a two-dimensional, discretized representation of the data. It is a method to do dimensionality reduction. Self-organizing maps use a neighborhood function to preserve the topological properties of the input space.</description>
     </item>
     
     <item>
@@ -1869,7 +1887,7 @@ Inputs
 Inputs
  Corpus: A collection of documents.  Outputs
  Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu Hu and Vader sentiment modules from NLTK. Both of them are lexicon-based. For Liu Hu, you can choose English or Slovenian version.
- Method:  Liu Hu: lexicon-based sentiment analysis (supports English and Slovenian) Vader: lexicon- and rule-based sentiment analysis  Produce a report.</description>
+ Method:  Liu Hu: lexicon-based sentiment analysis (supports English and Slovenian) Vader: lexicon- and rule-based sentiment analysis   Produce a report.</description>
     </item>
     
     <item>
@@ -1915,8 +1933,8 @@ Inputs
       
       <guid>/widget-catalog/single-cell/single_cell_datasets/</guid>
       <description>Single Cell Datasets Load a single cell data from an online repository.
-Outputs - Data: A single cell dataset containing cells and their gene expression or gene markers.
-Single Cell Datasets retrieves a selected data set from the data base server and sends the data to the output. Gene expression data sets include cells in rows and genes in columns. The data set file is downloaded to the local memory, and for subsequent requests instantly available even without the internet connection.</description>
+Outputs
+ Data: A single cell dataset containing cells and their gene expression or gene markers.  Single Cell Datasets retrieves a selected data set from the data base server and sends the data to the output. Gene expression data sets include cells in rows and genes in columns. The data set file is downloaded to the local memory, and for subsequent requests instantly available even without the internet connection.</description>
     </item>
     
     <item>
@@ -1926,8 +1944,9 @@ Single Cell Datasets retrieves a selected data set from the data base server and
       
       <guid>/widget-catalog/single-cell/single_cell_preprocess/</guid>
       <description>Single Cell Preprocess Preprocess Single Cell data set.
-Inputs - Data: Single cell dataset.
-Outputs - Preprocessed Data: Preprocessed dataset.</description>
+Inputs
+ Data: Single cell dataset.  Outputs
+ Preprocessed Data: Preprocessed dataset.  </description>
     </item>
     
     <item>
@@ -1968,6 +1987,18 @@ Inputs
     </item>
     
     <item>
+      <title>SQL Table</title>
+      <link>/widget-catalog/data/sqltable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/data/sqltable/</guid>
+      <description>SQL Table Reads data from an SQL database.
+Outputs
+ Data: dataset from the database  The SQL widget accesses data stored in an SQL database. It can connect to PostgreSQL (requires psycopg2 module) or SQL Server (requires pymssql module).
+To handle large databases, Orange attempts to execute a part of the computation in the database itself without downloading the data. This only works with PostgreSQL database and requires quantile and tsm_system_time extensions installed on server.</description>
+    </item>
+    
+    <item>
       <title>Stacking</title>
       <link>/widget-catalog/model/stacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1989,7 +2020,7 @@ Inputs
 Inputs
  Corpus: A collection of documents.  Outputs
  Corpus: Corpus with additional attributes.  Statistics is a feature constructor widget that adds simple document statistics to a corpus. It supports both standard statistical measures and user-defined variables.
- Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side.</description>
+  Add or remove features. Features can be added with the + sign below. They can be removed with the x sign on the left side.</description>
     </item>
     
     <item>
@@ -2002,6 +2033,30 @@ Inputs
 Inputs
  Data: input dataset Preprocessor: preprocessing method(s)  Outputs
  Learner: stochastic gradient descent learning algorithm Model: trained model  The Stochastic Gradient Descent widget uses stochastic gradient descent that minimizes a chosen loss function with a linear function. The algorithm approximates a true gradient by considering one sample at a time, and simultaneously updates the model based on the gradient of the loss function.</description>
+    </item>
+    
+    <item>
+      <title>SVM</title>
+      <link>/widget-catalog/model/svm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/model/svm/</guid>
+      <description>SVM Support Vector Machines map inputs to higher-dimensional feature spaces.
+Inputs
+ Data: input dataset Preprocessor: preprocessing method(s)  Outputs
+ Learner: linear regression learning algorithm Model: trained model Support Vectors: instances used as support vectors  Support vector machine (SVM) is a machine learning technique that separates the attribute space with a hyperplane, thus maximizing the margin between the instances of different classes or class values. The technique often yields supreme predictive performance results.</description>
+    </item>
+    
+    <item>
+      <title>t-SNE</title>
+      <link>/widget-catalog/unsupervised/tsne/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/widget-catalog/unsupervised/tsne/</guid>
+      <description>t-SNE Two-dimensional data projection with t-SNE.
+Inputs
+ Data: input dataset Data Subset: subset of instances  Outputs
+ Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The t-SNE widget plots the data with a t-distributed stochastic neighbor embedding method. t-SNE is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.</description>
     </item>
     
     <item>
@@ -2026,7 +2081,8 @@ Inputs
 Inputs
  None  Outputs
  Corpus: A collection of documents from the Guardian newspaper.  Guardian retrieves articles from the Guardian newspaper via their API. For the widget to work, you need to provide the API key, which you can get at their access platform.
- Insert the API key for the widget to work.   Provide the query and set the time frame from which to retrieve the articles.</description>
+  Insert the API key for the widget to work.
+  Provide the query and set the time frame from which to retrieve the articles.</description>
     </item>
     
     <item>
@@ -2125,7 +2181,7 @@ Inputs
 Inputs
  None  Outputs
  Corpus: A collection of tweets from the Twitter API.  Twitter widget enables querying tweets through Twitter API. You can query by content, author or both and accumulate results should you wish to create a larger data set. The widget only supports REST API and allows queries for up to two weeks back.
- To begin your queries, insert Twitter key and secret.</description>
+  To begin your queries, insert Twitter key and secret.</description>
     </item>
     
     <item>
@@ -2159,9 +2215,9 @@ Inputs
       
       <guid>/widget-catalog/bioinformatics/volcano_plot/</guid>
       <description>Volcano Plot Plots significance versus fold-change for gene expression rates.
-Inputs - Data: Input data set.
-Outputs - Selected Data: Data subset.
-Volcano plot is a graphical method for visualizing changes in replicate data. The widget plots a binary logarithm of fold-change on the x-axis versus statistical significance (negative base 10 logarithm of p-value) on the y-axis.
+Inputs
+ Data: Input data set.  Outputs
+ Selected Data: Data subset.  Volcano plot is a graphical method for visualizing changes in replicate data. The widget plots a binary logarithm of fold-change on the x-axis versus statistical significance (negative base 10 logarithm of p-value) on the y-axis.
 Volcano Plot is useful for a quick visual identification of statistically significant data (genes).</description>
     </item>
     
@@ -2212,56 +2268,6 @@ Inputs
 Outputs
  Time series: Time series table of open, high, low, close (OHLC) prices, volume and adjusted close price.  This widget fetches historical stock market data from Yahoo Finance and outputs it as a time series data table.
  Stock (e.g. GOOG) or index (e.g. DJI) symbol you are interested in. Date range you are interested in. Desired resolution of the time series.</description>
-    </item>
-    
-    <item>
-      <title>dictyExpress</title>
-      <link>/widget-catalog/bioinformatics/dicty_express/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/bioinformatics/dicty_express/</guid>
-      <description>dictyExpress Gives access to dictyExpress databases.
-Inputs - None
-Outputs - Data: Selected experiment (time-course gene expression data).
-dictyExpress widget gives a direct access to the dictyExpress database. It allows you to download the data from selected experiments in Dictyostelium by Baylor College of Medicine. The widget requires internet connection to work.
- Log into the database to access personal files. Define the output. Genes from experiments can be either in rows or in columns.</description>
-    </item>
-    
-    <item>
-      <title>k-Means</title>
-      <link>/widget-catalog/unsupervised/kmeans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/unsupervised/kmeans/</guid>
-      <description>k-Means Groups items using the k-Means clustering algorithm.
-Inputs
- Data: input dataset  Outputs
- Data: dataset with cluster index as a class attribute  The widget applies the k-Means clustering algorithm to the data and outputs a new dataset in which the cluster index is used as a class attribute. The original class attribute, if it exists, is moved to meta attributes. Scores of clustering results for various k are also shown in the widget.</description>
-    </item>
-    
-    <item>
-      <title>kNN</title>
-      <link>/widget-catalog/model/knn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/model/knn/</guid>
-      <description>kNN Predict according to the nearest training instances.
-Inputs
- Data: input dataset Preprocessor: preprocessing method(s)  Outputs
- Learner: kNN learning algorithm Model: trained model  The kNN widget uses the kNN algorithm that searches for k closest training examples in feature space and uses their average as prediction.
- A name under which it will appear in other widgets. The default name is &amp;ldquo;kNN&amp;rdquo;. Set the number of nearest neighbors, the distance parameter (metric) and weights as model criteria.</description>
-    </item>
-    
-    <item>
-      <title>t-SNE</title>
-      <link>/widget-catalog/unsupervised/tsne/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/widget-catalog/unsupervised/tsne/</guid>
-      <description>t-SNE Two-dimensional data projection with t-SNE.
-Inputs
- Data: input dataset Data Subset: subset of instances  Outputs
- Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  The t-SNE widget plots the data with a t-distributed stochastic neighbor embedding method. t-SNE is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.</description>
     </item>
     
   </channel>

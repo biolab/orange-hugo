@@ -1659,69 +1659,60 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="neural-network">Neural Network</h1>
-
+                    <h1 id="neural-network">Neural Network</h1>
 <p>A multi-layer perceptron (MLP) algorithm with backpropagation.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: multi-layer perceptron learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p>The <strong>Neural Network</strong> widget uses sklearn&rsquo;s <a href="http://scikit-learn.org/stable/modules/neural_networks_supervised.html">Multi-layer Perceptron algorithm</a> that can learn non-linear models as well as linear.</p>
-
-<p><img src="../images/NeuralNetwork-stamped.png" alt="" /></p>
-
+<p><img src="../images/NeuralNetwork-stamped.png" alt=""></p>
 <ol>
-<li>A name under which it will appear in other widgets. The default name is &ldquo;Neural Network&rdquo;.</li>
-<li>Set model parameters:
-
+<li>
+<p>A name under which it will appear in other widgets. The default name is &ldquo;Neural Network&rdquo;.</p>
+</li>
+<li>
+<p>Set model parameters:</p>
 <ul>
 <li>Neurons per hidden layer: defined as the ith element represents the number of neurons in the ith hidden layer. E.g. a neural network with 3 layers can be defined as 2, 3, 2.</li>
 <li>Activation function for the hidden layer:
-
 <ul>
 <li>Identity: no-op activation, useful to implement linear bottleneck</li>
 <li>Logistic: the logistic sigmoid function</li>
 <li>tanh: the hyperbolic tan function</li>
 <li>ReLu: the rectified linear unit function</li>
-</ul></li>
+</ul>
+</li>
 <li>Solver for weight optimization:
-
 <ul>
 <li>L-BFGS-B: an optimizer in the family of quasi-Newton methods</li>
 <li>SGD: stochastic gradient descent</li>
 <li>Adam: stochastic gradient-based optimizer</li>
-</ul></li>
+</ul>
+</li>
 <li>Alpha: L2 penalty (regularization term) parameter</li>
 <li>Max iterations: maximum number of iterations</li>
-</ul></li>
+</ul>
+<p>Other parameters are set to <a href="http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html">sklearn&rsquo;s defaults</a>.</p>
+</li>
+<li>
+<p>Produce a report.</p>
+</li>
+<li>
+<p>When the box is ticked (<em>Apply Automatically</em>), the widget will communicate changes automatically. Alternatively, click <em>Apply</em>.</p>
+</li>
 </ol>
-
-<p>Other parameters are set to <a href="http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html">sklearn&rsquo;s defaults</a>.
-3. Produce a report.
-4. When the box is ticked (<em>Apply Automatically</em>), the widget will communicate changes automatically. Alternatively, click <em>Apply</em>.</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>The first example is a classification task on <em>iris</em> dataset. We compare the results of <strong>Neural Network</strong> with the <a href="../../model/logisticregression/">Logistic Regression</a>.</p>
-
-<p><img src="../images/NN-Example-Test.png" alt="" /></p>
-
+<p><img src="../images/NN-Example-Test.png" alt=""></p>
 <p>The second example is a prediction task, still using the <em>iris</em> data. This workflow shows how to use the <em>Learner</em> output. We input the <strong>Neural Network</strong> prediction model into <a href="../../evaluate/predictions/">Predictions</a> and observe the predicted values.</p>
-
-<p><img src="../images/NN-Example-Predict.png" alt="" /></p>
+<p><img src="../images/NN-Example-Predict.png" alt=""></p>
 
                 </div>
             </div>

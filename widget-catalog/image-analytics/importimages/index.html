@@ -1659,22 +1659,14 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="import-images">Import Images</h1>
-
+                    <h1 id="import-images">Import Images</h1>
 <p>Import images from a directory(s).</p>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: Dataset describing one image in each row.</li>
 </ul>
-
 <p><strong>Import Images</strong> walks through a directory and returs one row per located image. Columns include image name, path to image, width, height and image size. Column with image path is later used as an attribute for image visualization and embedding.</p>
-
-<p><img src="../images/ImportImages-stamped.png" alt="" /></p>
-
+<p><img src="../images/ImportImages-stamped.png" alt=""></p>
 <ol>
 <li>Currently loaded folder.</li>
 <li>Select the folder to load.</li>
@@ -1682,22 +1674,14 @@
 <li>Information on the input.</li>
 <li>Access help.</li>
 </ol>
-
-<p><img src="../images/ImportImages-class.png" alt="" /></p>
-
+<p><img src="../images/ImportImages-class.png" alt=""></p>
 <p>You can load a folder containing subfolders. In this case Orange will consider each folder as a class value. In the example above, <strong>Import Images</strong> loaded 26 images belonging to two categories. These two categories will be used as class values.</p>
-
 <h2 id="example">Example</h2>
-
 <p><strong>Import Images</strong> is likely the first widget you will use in image analysis. It loads images and creates class values from folders. In this example we used <strong>Import Images</strong> to load 26 painting belonging to either Monet or Manet.</p>
-
 <p>We can observe the result in a <strong>Data Table</strong>. See how Orange added an extra class attribute with values Monet and Manet?</p>
-
 <p>Now we can proceed with standard machine learning methods. We will send images to <a href="../imageembedding/">Image Embedding</a>, where we will use <em>Painters</em> embedder to retrieve image vectors.</p>
-
 <p>Then we will use <strong>Test &amp; Score</strong> and <strong>Logistic Regression</strong>, to build a model for predicting the author of a painting. We get a perfect score? How come? It turns out, these were the images the <em>Painters</em> embedder was trained on, so a high accuracy is expected.</p>
-
-<p><img src="../images/ImportImages-Example.png" alt="" /></p>
+<p><img src="../images/ImportImages-Example.png" alt=""></p>
 
                 </div>
             </div>

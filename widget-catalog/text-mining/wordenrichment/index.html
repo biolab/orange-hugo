@@ -1659,53 +1659,38 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="word-enrichment">Word Enrichment</h1>
-
+                    <h1 id="word-enrichment">Word Enrichment</h1>
 <p>Word enrichment analysis for selected documents.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Corpus: A collection of documents.</li>
 <li>Selected Data: Selected instances from corpus.</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>None</li>
 </ul>
-
 <p><strong>Word Enrichment</strong> displays a list of words with lower p-values (higher significance) for a selected subset compared to the entire corpus. Lower p-value indicates a higher likelihood that the word is significant for the selected subset (not randomly occurring in a text). FDR (False Discovery Rate) is linked to p-value and reports on the expected percent of false predictions in the set of predictions, meaning it account for false positives in list of low p-values.</p>
-
-<p><img src="../images/Word-Enrichment-stamped.png" alt="" /></p>
-
+<p><img src="../images/Word-Enrichment-stamped.png" alt=""></p>
 <ol>
 <li>Information on the input.
-
 <ul>
 <li>Cluster words are all the tokens from the corpus.</li>
 <li>Selected words are all the tokens from the selected subset.</li>
 <li>After filtering reports on the enriched words found in the subset.</li>
-</ul></li>
+</ul>
+</li>
 <li>Filter enables you to filter by:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/P-value">p-value</a></li>
 <li><a href="http://www.nonlinear.com/support/progenesis/comet/faq/v2.0/pq-values.aspx">false discovery rate (FDR)</a></li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the example below, we&rsquo;re retrieved recent tweets from the 2016 presidential candidates, Donald Trump and Hillary Clinton. Then we&rsquo;ve preprocessed the tweets to get only words as tokens and to remove the stopwords. We&rsquo;ve connected the preprocessed corpus to <a href="../bagofwords-widget/">Bag of Words</a> to get a table with word counts for our corpus.</p>
-
-<p><img src="../images/Word-Enrichment-Example.png" alt="" /></p>
-
+<p><img src="../images/Word-Enrichment-Example.png" alt=""></p>
 <p>Then we&rsquo;ve connected <a href="../corpusviewer/">Corpus Viewer</a> to <strong>Bag of Words</strong> and selected only those tweets that were published by Donald Trump. See how we marked only the <em>Author</em> as our <em>Search feature</em> to retrieve those tweets.</p>
-
 <p><strong>Word Enrichment</strong> accepts two inputs - the entire corpus to serve as a reference and a selected subset from the corpus to do the enrichment on. First connect <strong>Corpus Viewer</strong> to <strong>Word Enrichment</strong> (input Matching Docs → Selected Data) and then connect <strong>Bag of Words</strong> to it (input Corpus → Data). In the <strong>Word Enrichment</strong> widget we can see the list of words that are more significant for Donald Trump than they are for Hillary Clinton.</p>
 
                 </div>

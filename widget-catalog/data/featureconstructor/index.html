@@ -1659,28 +1659,18 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="feature-constructor">Feature Constructor</h1>
-
+                    <h1 id="feature-constructor">Feature Constructor</h1>
 <p>Add new features to your dataset.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset with additional features</li>
 </ul>
-
 <p>The <strong>Feature Constructor</strong> allows you to manually add features (columns) into your dataset. The new feature can be a computation of an existing one or a combination of several (addition, subtraction, etc.). You can choose what type of feature it will be (discrete, continuous or string) and what its parameters are (name, value, expression). For continuous variables you only have to construct an expression in Python.</p>
-
-<p><img src="../images/feature-constructor1-stamped.png" alt="" /></p>
-
+<p><img src="../images/feature-constructor1-stamped.png" alt=""></p>
 <ol>
 <li>List of constructed variables</li>
 <li>Add or remove variables</li>
@@ -1691,11 +1681,8 @@
 <li>Produce a report</li>
 <li>Press <em>Send</em> to communicate changes</li>
 </ol>
-
 <p>For discrete variables, however, there&rsquo;s a bit more work. First add or remove the values you want for the new feature. Then select the base value and the expression. In the example below, we have constructed an expression with &lsquo;if lower than&rsquo; and defined three conditions; the program ascribes 0 (which we renamed to lower) if the original value is lower than 6, 1 (mid) if it is lower than 7 and 2 (higher) for all the other values. Notice that we use an underscore for the feature name (e.g. petal_length).</p>
-
-<p><img src="../images/feature-constructor2-stamped.png" alt="" /></p>
-
+<p><img src="../images/feature-constructor2-stamped.png" alt=""></p>
 <ol>
 <li>List of variable definitions</li>
 <li>Add or remove variables</li>
@@ -1707,17 +1694,11 @@
 <li>Produce a report</li>
 <li>Press <em>Send</em> to communicate changes</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>With the <strong>Feature Constructor</strong> you can easily adjust or combine existing features into new ones. Below, we added one new discrete feature to the <em>Titanic</em> dataset. We created a new attribute called <em>Financial status</em> and set the values to be <em>rich</em> if the person belongs to the first class (status = first) and <em>not rich</em> for everybody else. We can see the new dataset with <a href="../../data/datatable/">Data Table</a> widget.</p>
-
-<p><img src="../images/FeatureConstructor-Example.png" alt="" /></p>
-
+<p><img src="../images/FeatureConstructor-Example.png" alt=""></p>
 <h2 id="hints">Hints</h2>
-
 <p>If you are unfamiliar with Python math language, here&rsquo;s a quick introduction.</p>
-
 <ul>
 <li>+, - to add, subtract</li>
 <li>* to multiply</li>
@@ -1729,11 +1710,8 @@
 <li>== for equal</li>
 <li>!= for not equal</li>
 </ul>
-
 <p>As in the example: (<em>value</em>) if (<em>feature name</em>) &lt; (<em>value</em>), else (<em>value</em>) if (<em>feature name</em>) &lt; (<em>value</em>), else (<em>value</em>)</p>
-
 <p>[Use value 1 if feature is less than specified value, else use value 2 if feature is less than specified value 2, else use value 3.]</p>
-
 <p>See more <a href="http://www.tutorialspoint.com/python/python_basic_operators.htm">here</a>.</p>
 
                 </div>

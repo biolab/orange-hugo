@@ -1659,34 +1659,22 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="gradient-descent">Gradient Descent</h1>
-
+                    <h1 id="gradient-descent">Gradient Descent</h1>
 <p>Educational widget that shows the gradient descent algorithm on a logistic or linear regression.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input data set</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: data with columns selected in the widget</li>
 <li>Classifier: model produced at the current step of the algorithm.</li>
 <li>Coefficients: coefficients at the current step of the algorithm.</li>
 </ul>
-
 <h2 id="description">Description</h2>
-
 <p>This widget incrementally shows steps of <a href="https://en.wikipedia.org/wiki/Gradient_descent">gradient descent</a> for a logistic or linear regression. Gradient descent is demonstrated on two attributes that are selected by the user.</p>
-
 <p>Gradient descent is performed on logistic regression if the class in the data set is categorical and linear regression if the class is numeric.</p>
-
-<p><img src="../images/gradient-descent-stamped.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent-stamped.png" alt=""></p>
 <ol>
 <li>Select two attributes (<strong>x</strong> and <strong>y</strong>) on which the gradient descent algorithm is preformed. Select the <strong>target class</strong>. It is the class that is classified against all other classes.</li>
 <li><strong>Learning rate</strong> is a step size in the gradient descent
@@ -1701,35 +1689,21 @@ If stochastic is checked you can set <strong>step size</strong> that is amount o
 format.
 <strong>Report</strong> includes widget parameters and visualization in the report.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In Orange we connected <em>File</em> widget with <em>Iris</em> data set to the <em>Gradient Descent</em> widget. Iris data set has discrete class, so <em>Logistic regression</em> will be used this time. We connected outputs of the widget to <em>Predictions</em> widget to see how the data are classified and the <em>Data Table</em> widget where
 we inspect coefficients of logistic regression.</p>
-
-<p><img src="../images/gradient-descent-flow.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent-flow.png" alt=""></p>
 <p>We open the <em>Gradient Descent</em> widget and set <em>X</em> to <em>sepal width</em> and <em>Y</em> to <em>sepal length</em>. Target class is set to <em>Iris-virginica</em>. We set <em>learning rate</em> to 0.02. With a click in the graph we set the initial coefficients (red dot).</p>
-
-<p><img src="../images/gradient-descent1.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent1.png" alt=""></p>
 <p>We perform step of the algorithm by pressing the <strong>Step</strong> button. When we get bored with clicking we can finish stepping by pressing on the <strong>Run</strong> button.</p>
-
-<p><img src="../images/gradient-descent2.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent2.png" alt=""></p>
 <p>If we want to go back in the algorithm we can do it by pressing <strong>Step back</strong> button. This will also change the model. Current model uses positions of last coefficients (red-yellow dot).</p>
-
-<p><img src="../images/gradient-descent3.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent3.png" alt=""></p>
 <p>In the end we want to see the predictions for input data so we can open the <em>Predictions</em> widget. Predictions are listed in the left column. We can compare this predictions to the real classes.</p>
-
-<p><img src="../images/gradient-descent4.png" alt="" /></p>
-
+<p><img src="../images/gradient-descent4.png" alt=""></p>
 <p>If we want to demonstrate the <em>linear regression</em> we can change the data set to <em>Housing</em>. This data set has a continuous class variable. When using linear regression we can select only one feature which means that our function is linear. Another parameter that is plotted in the graph is <a href="https://en.wikipedia.org/wiki/Y-intercept">intercept</a> of a <a href="https://en.wikipedia.org/wiki/Linear_function">linear function</a>.</p>
-
 <p>This time we selected <em>INDUS</em> as an <a href="https://en.wikipedia.org/wiki/Dependent_and_independent_variables">independent variable</a>. In the widget we can make the same actions as before. In the end we can also check the predictions for each point with the <em>Predictions</em> widget. And check coefficients of linear regression in a <em>Data Table</em>.</p>
-
-<p><img src="../images/gradient-descent-housing.png" alt="" /></p>
+<p><img src="../images/gradient-descent-housing.png" alt=""></p>
 
                 </div>
             </div>

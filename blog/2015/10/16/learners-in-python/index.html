@@ -244,29 +244,20 @@
 
 
               <p>We&rsquo;ve already written about <a href="/blog/2015/08/14/classifying-instances-with-orange-in-python/">classifying instances in Python</a>. However, it&rsquo;s always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.</p>
-
 <p><strong>TRAINING THE CLASSIFIER</strong></p>
-
 <p>We start with simply importing Orange module into Python and loading our data set.</p>
-
 <pre><code>&gt;&gt;&gt;&gt; import Orange
 &gt;&gt;&gt;&gt; data = Orange.data.Table(&quot;titanic&quot;)
 </code></pre>
-
 <p>We are using &lsquo;titanic.tab&rsquo; data. You can load any data set you want, but it does have to have a categorical class variable (for numeric targets use regression). Now we want to train our classifier.</p>
-
 <pre><code>&gt;&gt;&gt;&gt; learner = Orange.classification.LogisticRegressionLearner()
 &gt;&gt;&gt;&gt; classifier = learner(data)
 &gt;&gt;&gt;&gt; classifier(data[0])
 </code></pre>
-
 <p>Python returns the index of the value, as usual.</p>
-
 <pre><code>array[0.]
 </code></pre>
-
 <p>To check what&rsquo;s in the class variable we print:</p>
-
 <pre><code>&gt;&gt;&gt;&gt;print(&quot;Name of the variable: &quot;, data.domain.class_var.name)
 &gt;&gt;&gt;&gt;print(&quot;Class values: &quot;, data.domain.class_var.values)
 &gt;&gt;&gt;&gt;print(&quot;Value of our instance: &quot;, data.domain.class_var.values[0])
@@ -275,76 +266,48 @@ Name of the variable: survived
 Class values: no, yes
 Value of our instance: no
 </code></pre>
-
 <p><strong>PREDICTIONS</strong></p>
-
 <p>If you want to get predictions for the entire data set, just give the classifier the entire data set.</p>
-
 <pre><code>&gt;&gt;&gt;&gt; classifier(data)
 
 array[0, 0, 0, ..., 1, 1, 1]
 </code></pre>
-
 <p>If we want to append predictions to the data table, first use classifier on the data, then create a new domain with an additional meta attribute and finally form a new data table with appended predictions:</p>
-
 <pre><code>svm = classifier(data)
 
 new_domain = Orange.data.Domain(data.domain.attributes, data.domain.class_vars, [data.domain.class_var])
 
 table2 = Orange.data.Table(new_domain, data.X, data.Y, svm.reshape(-1, 1))
 </code></pre>
-
 <p>We use .reshape to transform vector data into a reshaped array. Then we print out the data.</p>
-
 <pre><code>print(table2)
 </code></pre>
-
 <p><strong>PARAMETERS</strong></p>
-
 <p>Want to use another classifier? The procedure is the same, simply use:</p>
-
 <pre><code>Orange.classification.&lt;algorithm-name&gt;()
 </code></pre>
-
 <p>For most classifiers, you can set a whole range of parameters. Logistic Regression, for example, uses the following:</p>
-
 <pre><code>learner = Orange.classification.LogisticRegressionLearner(**penalty**='l2', **dual**=False, **tol**=0.0001, **C**=1.0, **fit_intercept**=True, **intercept_scaling**=1, **class_weight**=None, **random_state**=None **preprocessors**=None)
 </code></pre>
-
 <p>To check the parameters for the classifier, use:</p>
-
 <pre><code>print(Orange.classification.SVMLearner())
 </code></pre>
-
 <p><strong>PROBABILITIES</strong></p>
-
 <p>Another thing you can check with classifiers are the probabilities.</p>
-
 <pre><code>classifier(data[0], Orange.classification.Model.ValueProbs)
 
 &gt;&gt;&gt;(array([ 0.]), array([[ 1.,  0.]]))
 </code></pre>
-
 <p>The first array is the value for your selected instance (data[0]), while the second array contains probabilities for class values (probability for ‘no’ is 1 and for ‘yes’ 0).</p>
-
 <p><strong>CLASSIFIERS</strong></p>
-
 <p>And because we care about you, we’re giving you here a full list of classifier names:</p>
-
 <p><em>LogisticRegressionLearner()</em></p>
-
 <p><em>NaiveBayesLearner()</em></p>
-
 <p><em>KNNLearner()</em></p>
-
 <p><em>TreeLearner()</em></p>
-
 <p><em>MajorityLearner()</em></p>
-
 <p><em>RandomForestLearner()</em></p>
-
 <p><em>SVMLearner()</em></p>
-
 <p>For other learners, you can find all the parameters and descriptions <a href="https://docs.orange.biolab.si/3/data-mining-library/reference/classification.html">in the documentation</a>.</p>
 
             </div>

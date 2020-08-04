@@ -1659,111 +1659,67 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="merge-data">Merge Data</h1>
-
+                    <h1 id="merge-data">Merge Data</h1>
 <p>Merges two datasets, based on values of selected attributes.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Extra Data: additional dataset</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Data: dataset with features added from extra data</li>
 </ul>
-
 <p>The <strong>Merge Data</strong> widget is used to horizontally merge two datasets, based on the values of selected attributes (columns). In the input, two datasets are required, data and extra data. Rows from the two data sets are matched by the values of pairs of attributes, chosen by the user. The widget produces one output. It corresponds to the instances from the input data to which attributes (columns) from input extra data are appended.</p>
-
 <p>If the selected attribute pair does not contain unique values (in other words, the attributes have duplicate values), the widget will give a warning. Instead, one can match by more than one attribute. Click on the plus icon to add the attribute to merge on. The final result has to be a unique combination for each individual row.</p>
-
-<p><img src="../images/Merge-Data-stamped.png" alt="" /></p>
-
+<p><img src="../images/Merge-Data-stamped.png" alt=""></p>
 <ol>
 <li>Information on main data.</li>
 <li>Information on data to append.</li>
 <li>Merging type:
-
 <ul>
 <li><strong>Append columns from Extra Data</strong> outputs all rows from the Data, augmented by the columns in the Extra Data. Rows without matches are retained, even where the data in the extra columns are missing.</li>
 <li><strong>Find matching pairs of rows</strong> outputs rows from the Data, augmented by the columns in the Extra Data. Rows without matches are removed from the output.</li>
 <li><strong>Concatenate tables</strong> treats both data sources symmetrically. The output is similar to the first option, except that non-matched values from Extra Data are appended at the end.</li>
-</ul></li>
+</ul>
+</li>
 <li>List of attributes from Data input.</li>
 <li>List of attributes from Extra Data input.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="merging-types">Merging Types</h2>
-
 <p>#####Append Columns from Extra Data (left join)</p>
-
 <p>Columns from the Extra Data are added to the Data. Instances with no matching rows will have missing values added.</p>
-
 <p>For example, the first table may contain city names and the second would be a list of cities and their coordinates. Columns with coordinates would then be appended to the data with city names. Where city names cannot be matched, missing values will appear.</p>
-
 <p>In our example, the first Data input contained 6 cities, but the Extra Data did not provide Lat and Lon values for Bratislava, so the fields will be empty.</p>
-
-<p><img src="../images/MergeData_Append.png" alt="" /></p>
-
+<p><img src="../images/MergeData_Append.png" alt=""></p>
 <p>#####Find matching pairs of rows (inner join)</p>
-
 <p>Only those rows that are matched will be present on the output, with the Extra Data columns appended. Rows without matches are removed.</p>
-
 <p>In our example, Bratislava from the Data input did not have Lat and Lon values, while Belgrade from the Extra Data could not be found in the City column we were merging on. Hence both instances are remove - only the intersection of instances is sent to the output.</p>
-
-<p><img src="../images/MergeData_Intersection.png" alt="" /></p>
-
+<p><img src="../images/MergeData_Intersection.png" alt=""></p>
 <p>#####Concatenate tables (outer join)</p>
-
 <p>The rows from both the Data and the Extra Data will be present on the output. Where rows cannot be matched, missing values will appear.</p>
-
 <p>In our example, both Bratislava and Belgrade are now present. Bratislava will have missing Lat and Lon values, while Belgrade will have a missing Population value.</p>
-
-<p><img src="../images/MergeData_Concatenate.png" alt="" /></p>
-
+<p><img src="../images/MergeData_Concatenate.png" alt=""></p>
 <p>#####Row index</p>
-
 <p>Data will be merged in the same order as they appear in the table. Row number 1 from the Data input will be joined with row number 1 from the Extra Data input. Row numbers are assigned by Orange based on the original order of the data instances.</p>
-
 <p>#####Instance ID</p>
-
 <p>This is a more complex option. Sometimes, data in transformed in the analysis and the domain is no longer the same. Nevertheless, the original row indices are still present in the background (Orange remembers them). In this case one can merge on instance ID. For example if you transformed the data with PCA, visualized it in the Scatter Plot, selected some data instances and now you wish to see the original information of the selected subset. Connect the output of Scatter Plot to Merge Data, add the original data set as Extra Data and merge by Instance ID.</p>
-
-<p><img src="../images/MergeData-InstanceID.png" alt="" /></p>
-
+<p><img src="../images/MergeData-InstanceID.png" alt=""></p>
 <p>#####Merge by two or more attributes</p>
-
 <p>Sometimes our data instances are unique with respect to a combination of columns, not a single column. To merge by more than a single column, add the <em>Row matching</em> condition by pressing plus next to the matching condition. To remove it, press the x.</p>
-
 <p>In the below example, we are merging by <em>student</em> column and <em>class</em> column.</p>
-
-<p><img src="../images/MergeData-multiple.png" alt="" /></p>
-
+<p><img src="../images/MergeData-multiple.png" alt=""></p>
 <p>Say we have two data sets with student names and the class they&rsquo;re in. The first data set has students&rsquo; grades and the second on the elective course they have chosen. Unfortunately, there are two Jacks in our data, one from class A and the other from class B. Same for Jane.</p>
-
 <p>To distinguish between the two, we can match rows on both, the student&rsquo;s name and her class.</p>
-
-<p><img src="../images/MergeData-multiple2.png" alt="" /></p>
-
+<p><img src="../images/MergeData-multiple2.png" alt=""></p>
 <h2 id="examples">Examples</h2>
-
 <p>Merging two datasets results in appending new attributes to the original file, based on a selected common attribute. In the example below, we wanted to merge the <strong>zoo.tab</strong> file containing only factual data with <a href="http://file.biolab.si/datasets/zoo-with-images.tab">zoo-with-images.tab</a> containing images. Both files share a common string attribute <em>names</em>. Now, we create a workflow connecting the two files. The <em>zoo.tab</em> data is connected to <strong>Data</strong> input of the <strong>Merge Data</strong> widget, and the <em>zoo-with-images.tab</em> data to the <strong>Extra Data</strong> input. Outputs of the <strong>Merge Data</strong> widget is then connected to the <a href="../../data/datatable/">Data Table</a> widget. In the latter, the <strong>Merged Data</strong> channels are shown, where image attributes are added to the original data.</p>
-
-<p><img src="../images/MergeData-Example.png" alt="" /></p>
-
+<p><img src="../images/MergeData-Example.png" alt=""></p>
 <p>The case where we want to include all instances in the output, even those where no match by attribute <em>names</em> was found, is shown in the following workflow.</p>
-
-<p><img src="../images/MergeData-Example2.png" alt="" /></p>
-
+<p><img src="../images/MergeData-Example2.png" alt=""></p>
 <p>The third type of merging is shown in the next workflow. The output consists of both inputs, with unknown values assigned where no match was found.</p>
-
-<p><img src="../images/MergeData-Example3.png" alt="" /></p>
+<p><img src="../images/MergeData-Example3.png" alt=""></p>
 
                 </div>
             </div>

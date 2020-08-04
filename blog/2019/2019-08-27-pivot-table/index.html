@@ -240,71 +240,38 @@
               <div id="blog_images_">
 
 
-              
-
-<p>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&rsquo; aggregate, groupby and pivot_table functions.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_workflow.png" class="blog-image_"> 
+              <p>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&rsquo; aggregate, groupby and pivot_table functions.</p>
+<a href="/blog_img/2019/2019-08-27_workflow.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_workflow.png" />
  </a>
-
-
-
-</p>
-
+<p>\</p>
 <p>Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the <em>heart_disease.tab</em> data.</p>
-
-<h2 id="pandas-dataframe-agg">pandas.DataFrame.agg</h2>
-
+<h2 id="pandasdataframeagg">pandas.DataFrame.agg</h2>
 <p>The first task is computing a simple mean for the column <em>age</em>.</p>
-
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.aggregate.html">In pandas</a>:</p>
-
 <pre><code>&gt;&gt;&gt;df['age'].agg('mean')
 54.43894389438944
-</code></pre>
-
-<p></p>
-
+</code></pre><p>\</p>
 <p>In Orange:</p>
-
 <p>In <strong>Pivot Table</strong> we set <em>Values</em> to <em>age</em> and set aggregations to <em>mean</em>. There is no way to turn off splitting by rows in Pivot Table, but the values in Total report the mean value for the chosen attribute.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_pivot-aggregate.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_pivot-aggregate.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_pivot-aggregate.png" />
  </a>
-
-
-
-</p>
-
+<p>\</p>
 <p>An even better way to observe simple statistics is in <strong>Feature Statistics</strong> widget. The widget also reports on the mean value of each attribute with handy distributions plots included.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_feature-statistics.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_feature-statistics.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_feature-statistics.png" />
  </a>
-
-
-
-</p>
-
+<p>\</p>
 <p>Yet another way to observe a mean value is in a <strong>Box Plot</strong>.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_box-plot.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_box-plot.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_box-plot.png" />
  </a>
-
-
-
-<br />
-</p>
-
-<h2 id="pandas-dataframe-groupby">pandas.DataFrame.groupby</h2>
-
+<p><br>
+\</p>
+<h2 id="pandasdataframegroupby">pandas.DataFrame.groupby</h2>
 <p>The second task is grouping the data by a discrete column. Say we want to group by gender and report the mean value for each column.</p>
-
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html">In pandas</a>:</p>
-
 <pre><code>&gt;&gt;&gt; df.groupby(['gender']).mean()
               age    rest SBP   ...  ST by exer.  major ves. col.  diameter narrowing
 gender
@@ -312,65 +279,37 @@ female  55.721649  133.340206   ...   0.867010    0.546392          0.257732
 male    53.834951  130.912621   ...   1.120874    0.732673          0.553398
 
 [2 rows x 9 columns]
-</code></pre>
-
-<p>In Orange:</p>
-
+</code></pre><p>In Orange:</p>
 <p>In <strong>Pivot Table</strong> set <em>Rows</em> to <em>gender</em> and aggregation method to <em>mean</em>. The <em>Values</em> option in this example has no effect. Now, connect <strong>Data Table</strong> to Pivot Table. Finally, reset the connections. Pivot Table outputs three types of data - Pivot Table, Filtered Data, and Grouped Data. The output we are looking for here is <em>Grouped Data</em>.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_edit-links.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_edit-links.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_edit-links.png" />
  </a>
-
-
-
-</p>
-
-<p><a href="/blog_img/2019/2019-08-27_pivot-groupby.png" class="blog-image_"> 
+<p>\</p>
+<a href="/blog_img/2019/2019-08-27_pivot-groupby.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_pivot-groupby.png" />
  </a>
-
-
-
-</p>
-
+<p>\</p>
 <p>This is our data table. Exactly what we were looking for.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_groupby-data-table.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_groupby-data-table.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_groupby-data-table.png" />
  </a>
-
-
-
-<br />
-</p>
-
-<h2 id="pandas-dataframe-pivot-table">pandas.DataFrame.pivot_table</h2>
-
+<p><br>
+\</p>
+<h2 id="pandasdataframepivot_table">pandas.DataFrame.pivot_table</h2>
 <p>The third, final task is constructing a pivot table where rows are values of <em>diameter narrowing</em>, columns are values of <em>gender</em> and the values in cells is the mean of <em>age</em> for each subgroup. In other words, we want to see the average age of females with diameter narrowing, males with diameter narrowing, females without diameter narrowing and males without diameter narrowing.</p>
-
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot_table.html#pandas.DataFrame.pivot_table">In pandas</a>:</p>
-
 <pre><code>&gt;&gt;&gt; pd.pivot_table(df, values='age', index=['diameter narrowing'], columns=['gender'], aggfunc=np.mean)
 gender                 female       male
 diameter narrowing
 0                   54.555556  51.043478
 1                   59.080000  56.087719
-</code></pre>
-
-<p>In Orange:</p>
-
+</code></pre><p>In Orange:</p>
 <p>In <strong>Pivot Table</strong> set <em>Rows</em> to <em>diameter narrowing</em>, <em>Columns</em> to <em>gender</em>, <em>Values</em> to <em>age</em> and aggregation method to <em>mean</em>. The widget already offers a view of the final data table, but we can also output it and use it in other Orange widgets.</p>
-
-<p><a href="/blog_img/2019/2019-08-27_pivot-table.png" class="blog-image_"> 
+<a href="/blog_img/2019/2019-08-27_pivot-table.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_pivot-table.png" />
  </a>
-
-
-
-<br />
-</p>
-
+<p><br>
+\</p>
 <p><strong>Pivot Table</strong> widget really versatile - like a Swiss knife for data transformation.</p>
 
             </div>

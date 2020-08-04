@@ -1659,36 +1659,23 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="save-data">Save Data</h1>
-
+                    <h1 id="save-data">Save Data</h1>
 <p>Saves data to a file.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 </ul>
-
 <p>The <strong>Save Data</strong> widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as a tab-delimited or a comma-separated file.</p>
-
 <p>The widget does not save the data every time it receives a new signal in the input as this would constantly (and, mostly, inadvertently) overwrite the file. Instead, the data is saved only after a new file name is set or the user pushes the <em>Save</em> button.</p>
-
 <p>If the file is saved to the same directory as the workflow or in the subtree of that directory, the widget remembers the relative path. Otherwise it will store an absolute path, but disable auto save for security reasons.</p>
-
-<p><img src="../images/Save-stamped.png" alt="" /></p>
-
+<p><img src="../images/Save-stamped.png" alt=""></p>
 <ol>
 <li>Save by overwriting the existing file.</li>
 <li><em>Save as</em> to create a new file.</li>
 </ol>
-
 <h2 id="example">Example</h2>
-
 <p>In the workflow below, we used the <em>Zoo</em> dataset. We loaded the data into the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget, with which we selected a subset of data instances and pushed them to the <strong>Save Data</strong> widget to store them in a file.</p>
-
-<p><img src="../images/Save-Workflow.png" alt="" /></p>
+<p><img src="../images/Save-Workflow.png" alt=""></p>
 
                 </div>
             </div>

@@ -1659,81 +1659,63 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="cn2-rule-induction">CN2 Rule Induction</h1>
-
+                    <h1 id="cn2-rule-induction">CN2 Rule Induction</h1>
 <p>Induce rules from data using CN2 algorithm.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: CN2 learning algorithm</li>
 <li>CN2 Rule Classifier: trained model</li>
 </ul>
-
 <p>The CN2 algorithm is a classification technique designed for the efficient induction of simple, comprehensible rules of form &ldquo;if <em>cond</em> then predict <em>class</em>&rdquo;, even in domains where noise may be present.</p>
-
 <p><strong>CN2 Rule Induction</strong> works only for classification.</p>
-
-<p><img src="../images/CN2-stamped.png" alt="" /></p>
-
+<p><img src="../images/CN2-stamped.png" alt=""></p>
 <ol>
 <li>Name under which the learner appears in other widgets. The default name is <em>CN2 Rule Induction</em>.</li>
 <li><em>Rule ordering</em>:
-
 <ul>
 <li><strong>Ordered</strong>: induce ordered rules (decision list). Rule conditions are found and the majority class is assigned in the rule head.</li>
 <li><strong>Unordered</strong>: induce unordered rules (rule set). Learn rules for each class individually, in regard to the original learning data.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Covering algorithm</em>:
-
 <ul>
 <li><strong>Exclusive</strong>: after covering a learning instance, remove it from further consideration.</li>
 <li><strong>Weighted</strong>: after covering a learning instance, decrease its weight (multiplication by <em>gamma</em>) and in-turn decrease its impact on further iterations of the algorithm.</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Rule search</em>:
-
 <ul>
 <li><strong>Evaluation measure</strong>: select a heuristic to evaluate found hypotheses:
-
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">Entropy</a> (measure of unpredictability of content)</li>
 <li><a href="https://en.wikipedia.org/wiki/Laplace%27s_method">Laplace Accuracy</a></li>
 <li>Weighted Relative Accuracy</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Beam width</strong>; remember the best rule found thus far and monitor a fixed number of alternatives (the beam).</li>
-</ul></li>
+</ul>
+</li>
 <li><em>Rule filtering</em>:
-
 <ul>
 <li><strong>Minimum rule coverage</strong>: found rules must cover at least the minimum required number of covered examples. Unordered rules must cover this many target class examples.</li>
 <li><strong>Maximum rule length</strong>: found rules may combine at most the maximum allowed number of selectors (conditions).</li>
 <li><strong>Default alpha</strong>: significance testing to prune out most specialised (less frequently applicable) rules in regard to the initial distribution of classes.</li>
 <li><strong>Parent alpha</strong>: significance testing to prune out most specialised (less frequently applicable) rules in regard to the parent class distribution.</li>
-</ul></li>
+</ul>
+</li>
 <li>Tick &lsquo;Apply Automatically&rsquo; to auto-communicate changes to other widgets and to immediately train the classifier if learning data is connected. Alternatively, press ‘Apply‘ after configuration.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>For the example below, we have used <em>zoo</em> dataset and passed it to <strong>CN2 Rule Induction</strong>. We can review and interpret the built model with <a href="../../visualize/cn2ruleviewer/">CN2 Rule Viewer</a> widget.</p>
-
-<p><img src="../images/CN2-visualize.png" alt="" /></p>
-
+<p><img src="../images/CN2-visualize.png" alt=""></p>
 <p>The second workflow tests evaluates <strong>CN2 Rule Induction</strong> and <a href="../model/tree.md">Tree</a> in <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
-
-<p><img src="../images/CN2-classification.png" alt="" /></p>
-
+<p><img src="../images/CN2-classification.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <ol>
 <li>Fürnkranz, Johannes. &ldquo;Separate-and-Conquer Rule Learning&rdquo;, Artificial Intelligence Review 13, 3-54, 1999.</li>
 <li>Clark, Peter and Tim Niblett. &ldquo;The CN2 Induction Algorithm&rdquo;, Machine Learning Journal, 3 (4), 261-283, 1989.</li>

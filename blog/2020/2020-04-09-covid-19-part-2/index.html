@@ -247,263 +247,129 @@
               <div id="blog_images_">
 
 
-              
-
-<p>Previously on <a href="https://orange.biolab.si/blog/2020/2020-04-02-covid-19-basic/">Data Mining COVID-19 Epidemics: Part 1</a> we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&rsquo;t got your hands dirty with it yet, check that out first.</p>
-
+              <p>Previously on <a href="https://orange.biolab.si/blog/2020/2020-04-02-covid-19-basic/">Data Mining COVID-19 Epidemics: Part 1</a> we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&rsquo;t got your hands dirty with it yet, check that out first.</p>
 <p>In this post, we&rsquo;ll try putting the data on a map. We&rsquo;ll also expand on the &ldquo;data mining is interactive&rdquo; mantra by creating some animations showing the epidemics spread throughout the world.</p>
-
 <h2 id="prerequisite-installing-add-ons">Prerequisite: installing add-ons</h2>
-
 <p>Orange already comes with a great selection of widgets that work with all sorts of data. But sometimes we&rsquo;re faced with a particular data set, such as textual data, time-series, or geographical data, which requires widgets with specific functionality – add-ons to the rescue! Add-ons are packages of widgets specially designed to handle specific data types.</p>
-
 <p>We&rsquo;ll be working with the Geo and Timeseries add-ons. To install them, open <em>Options</em> in the menu bar and select <em>Add-ons</em>. A new window will open, showing a list of officially supported add-ons. Select Orange3-Geo and Orange3-TimeSeries and click <em>OK</em>. After installation,  restart Orange. Check out the new sections in the widget toolbox; you should see some cool new widgets.</p>
-
 <a href="/blog_img/2020/2020-04-09-install-addon.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-install-addon.png" />
  </a>
-
-
-
-
 <p><strong>Note:</strong> the two add-ons have been revamped very recently. If you already have them, use the Add-ons dialog to upgrade them to the latest version.</p>
-
 <h2 id="from-scatter-plot-to-geo-map">From Scatter Plot to Geo Map</h2>
-
 <p>You should already be familiar with the Scatter Plot widget. In the previous blog post, we used it as an impromptu map by putting latitude and longitude on the axes.</p>
-
 <a href="/blog_img/2020/2020-04-09-scatter-plot.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-scatter-plot.png" />
  </a>
-
-
-
-
 <p>A better solution is to use Geo Map from the Orange3-Geo add-on. It provides a variety of maps as backgrounds. With them, it&rsquo;s much easier to associate points with locations. To start, first load the <a href="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv">COVID-19 data set</a> using the File widget, <a href="https://orange.biolab.si/blog/2020/2020-04-02-covid-19-basic/">as shown in the previous post</a>. Then, add and connect a Geo Map widget.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-01.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-01.png" class="sidework" />
 </a>
-
-
-
 <p>Latitude and longitude are automatically selected. Below, you can define similar point properties, as in the scatter plot. The size of a point can intuitively represent the number of cases, so let&rsquo;s select the latest date in the <em>Size</em> dropdown. If you&rsquo;re feeling adventurous, try changing the map type to satellite or topological.</p>
-
 <a href="/blog_img/2020/2020-04-09-full-geomap.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-full-geomap.png" />
  </a>
-
-
-
-
 <p>Just like in Scatter Plot, you can scroll to zoom in and out, and click/drag to select data points. As opposed to using Scatter Plot, showing the points over a map of Europe makes it easier to select the countries we want to inspect.</p>
-
 <a href="/blog_img/2020/2020-04-09-eu-geomap.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-eu-geomap.png" />
  </a>
-
-
-
-
 <h2 id="the-chloro-chorophl-chloropet-map-with-areas-colored-in">The chloro&hellip; chorophl&hellip; chloropet&hellip; map with areas colored in</h2>
-
 <p>The map is nice and informative, and it&rsquo;s easy to distinguish larger epidemics from smaller ones. Still, those similarly-sized points on the map represent entire countries from big Russia to small Slovenia. We could, alternatively, represent countries by coloring their surface area. This is a job for Choropleth Map. Let&rsquo;s add it and connect it.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-02.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-02.png" class="sidework" />
 </a>
-
-
-
 <p>This widget is similar to Geo Map, but instead of displaying data as points, it aggregates them into regions (e.g., Country, State, Province), and displays those instead. Under <em>Attribute</em>, select the latest date and under <em>Agg.</em>, select <em>sum</em>. The colored regions now show the sum of confirmed COVID-19 cases for each country.</p>
-
 <p>Try choosing different dates. Notice how China initially experiences rapid growth, followed by a period of stagnation, and how in the past week, the USA overtook all other countries&rsquo; confirmed COVID-19 case count.</p>
-
 <a href="/blog_img/2020/2020-04-09-choropleth.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-choropleth.png" />
  </a>
-
-
-
-
 <p>A warning that <em>7 points are not in any region</em> refers to some small islands and cruise ships included in the data.</p>
-
 <h2 id="if-a-picture-paints-a-thousand-words-an-animation-paints-a-million">If a picture paints a thousand words, an animation paints a million</h2>
-
 <p>When working with time-series data, the coolest insights arise from observing trends – how data changes depending on time. Let&rsquo;s animate our maps!</p>
-
 <p>We&rsquo;ll be using a special widget from Orange3-Timeseries: Time Slice, which lets you select data in a time window. It also features a playback function that slowly moves the time window, outputting corresponding data as it goes.</p>
-
 <h3 id="transpose-part-i">Transpose: part I</h3>
-
 <p>Time Slice requires time instances in the form of rows, while our data specifies them in columns. Let&rsquo;s start again with the File widget that loads the data. Move <em>Lat</em> and <em>Long</em> to meta attributes by double-clicking  <em>feature</em> in the <em>Role</em> column and selecting <em>meta</em>. This will tell Orange to exclude them from data manipulations.</p>
-
 <a href="/blog_img/2020/2020-04-09-file.gif" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-file.gif" class="tooltippic" />
  </a>
-
-
-
 <p>To flip rows and columns, we use the Transpose widget. Connect it to the File widget.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-03.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-03.png" class="sidework" />
 </a>
-
-
-
 <p>Set <em>From variable</em> to <em>Country/Region</em>. Ignore the warning that indices were added to variables with the same name; it won&rsquo;t hurt us.</p>
-
 <a href="/blog_img/2020/2020-04-09-transpose-1.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-transpose-1.png" class="tooltippic" />
  </a>
-
-
-
 <p>To better understand what just happened, connect a Data Table to Transpose and see the result: rows and columns were swapped. Columns are named after countries (because we chose <em>Country/Region</em> in the Transpose widget), while a new column, <em>Feature name</em>, contains the original names of the columns.</p>
-
 <a href="/blog_img/2020/2020-04-09-table-1.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-table-1.png" />
  </a>
-
-
-
-
 <p>Right now, Orange is treating values in <em>Feature name</em> as strings. We need to tell Orange that the feature contains timestamps. Let&rsquo;s connect an Edit Domain widget.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-04.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-04.png" class="sidework" />
 </a>
-
-
-
 <p>Scroll to the bottom of <em>Variables</em> and select <em>Feature name</em>. In <em>Edit</em>, change its type to <em>Time</em>. While you&rsquo;re at it, change its name to something meaningful, like <em>date</em>. Finally, click <em>Apply</em></p>
-
 <a href="/blog_img/2020/2020-04-09-edit-domain.gif" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-edit-domain.gif" class="tooltippic" />
  </a>
-
-
-
 <p>The data is now ready to be processed by Time Slice.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-05.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-05.png" class="sidework" />
 </a>
-
-
-
 <a href="/blog_img/2020/2020-04-09-time-slice.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-time-slice.png" class="tooltippic" />
  </a>
-
-
-
 <p>The top indicates the currently selected slice of data. You can change the interval by interacting with the histogram, or by adjusting the start and end dates directly below. Let&rsquo;s select a day&rsquo;s slice between the 25th and 26th January 2020.</p>
-
 <p>With a click of the play button, the slice moves, and the data output updates accordingly. To verify that it works, connect a Data Table, and see it in action.</p>
-
 <h3 id="transpose-part-ii">Transpose: part II</h3>
-
 <p>Make sure to stop the Time Slice playback before proceeding. We&rsquo;re almost at the finish line; we just need to transform the data back into its original form. To do so, connect another Transpose widget.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-06.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-06.png" class="sidework" />
 </a>
-
-
-
 <p>Under <em>Future names</em> select <em>Generic</em>, which will name the new column <em>Feature 1</em>.</p>
-
 <a href="/blog_img/2020/2020-04-09-transpose-2.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-transpose-2.png" class="tooltippic" />
  </a>
-
-
-
 <p>Let&rsquo;s connect a Data Table for a final check of our data before putting it on a map.</p>
-
 <a href="/blog_img/2020/2020-04-09-table-2.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-table-2.png" />
  </a>
-
-
-
-
 <p>Looking good!</p>
-
 <p>The final step entails connecting the Choropleth Map, selecting <em>Feature 1</em> as <em>Attribute</em>, and <em>Sum</em> as the <em>Agg</em>.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-07.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-07.png" class="sidework" />
 </a>
-
-
-
 <p>To observe the animation, open up both Choropleth and Time Slice at the same time.<br>
 Protip: pressing Ctrl/CMD+Up reveals the workflow, Ctrl/CMD+Down reveals widget windows.</p>
-
 <p>All that&rsquo;s left is to hit play.</p>
-
 <video  controls>
     <source src="/blog_img/2020/2020-04-09-animation-choropleth.mp4" type="video/mp4">
 </video>
 <br><br>
-
-
 <p>Now that we&rsquo;re familiar with Time Slice, let&rsquo;s use it with Geo Map too. For bonus points, let&rsquo;s also remove countries with zero confirmed cases. That way, the number of points on the map will increase as the virus spreads throughout the world. For this, we&rsquo;ll use a Select Rows widget.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-08.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-08.png" class="sidework" />
 </a>
-
-
-
 <p>Under Conditions, select <em>Feature 1</em>, select <em>is greater than</em>, and type in <em>0</em>.</p>
-
 <a href="/blog_img/2020/2020-04-09-select-rows.gif" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-09-select-rows.gif" class="tooltippic" />
  </a>
-
-
-
 <p>Add and connect a Geo Map widget. Zoom out, so you see the whole world, and on the left side, check <em>Freeze map</em>. This will prevented the map from jumping around as new points are added.</p>
-
-
 <a href="/blog_img/2020/2020-04-09-workflow-09.png" class="blog-image_">
       <img src="/blog_img/2020/2020-04-09-workflow-09.png" class="sidework" />
 </a>
-
-
-
 <p>Press play once again – let&rsquo;s see what we&rsquo;ve built!</p>
-
 <video  controls>
     <source src="/blog_img/2020/2020-04-09-animation-geomap.mp4" type="video/mp4">
 </video>
 <br><br>
-
-
 <h2 id="where-from-here">Where from here?</h2>
-
 <p>In the blog, we explained how to turn Orange into an interactive data exploration tool for COVID-19 data! With a few widgets we were able to determine the change in time for the confirmed cases and plot the results on a map.</p>
-
 <p>Time Slice isn&rsquo;t the only widget in the Orange3-Timeseries add-on. Stay tuned for next week&rsquo;s blog, where we&rsquo;ll delve deeper into the patterns emerging from time-series data.</p>
-
-<hr />
-
+<hr>
 <p>Orange is a multi-platform open-source machine learning and data visualization tool for beginners and experts alike. <a href="https://orange.biolab.si/download">Download Orange</a>, and load and explore your own data sets!</p>
-
 <p>In addition to a variety of learning materials posted online in the form of
- <a href="https://orange.biolab.si/blog/">blog posts</a>, <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">tutorial videos</a>, we&rsquo;ve created a Discord server. <a href="https://discord.gg/FWrfeXV">Join the community, tell us what you think!</a></p>
+<a href="https://orange.biolab.si/blog/">blog posts</a>, <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">tutorial videos</a>, we&rsquo;ve created a Discord server. <a href="https://discord.gg/FWrfeXV">Join the community, tell us what you think!</a></p>
 
             </div>
             </article>

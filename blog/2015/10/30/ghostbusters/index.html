@@ -237,38 +237,23 @@
 
 
               <p>Ok, we’ve just recently stumbled across <a href="http://www.isixsigma.com/tools-templates/normality/dealing-non-normal-data-strategies-and-tools/">an interesting article</a> on how to deal with non normal (non-Gaussian distributed) data.
-<img src="/images/2015/10/paranormal1.png" alt="" /></p>
-
+<img src="/images/2015/10/paranormal1.png" alt=""></p>
 <p>We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (<a href="https://docs.google.com/spreadsheets/d/1KycPyD1KdX8NFCQhS6OnrOZqVds5nppljwFCesba3RA/edit?usp=sharing">download</a>).</p>
-
-<p><img src="/images/2015/10/paranormal2.png" alt="" /></p>
-
+<p><img src="/images/2015/10/paranormal2.png" alt=""></p>
 <p>Let’s check the distribution in Distributions widget.</p>
-
-<p><img src="/images/2015/10/paranormal3.png" alt="" /></p>
-
-<p>Our first attribute is “_Weight_” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set. Let’s check the age distribution.
-<img src="/images/2015/10/paranormal4.png" alt="" /></p>
-
+<p><img src="/images/2015/10/paranormal3.png" alt=""></p>
+<p>Our first attribute is “<em>Weight</em>” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set. Let’s check the age distribution.
+<img src="/images/2015/10/paranormal4.png" alt=""></p>
 <p>Whoa, what? Why is the hump now on the right? These distributions look scary. We seem to have a few reaaaaally old people here. What is going on? Perhaps we can figure this out with MDS. This widget projects the data into two dimensions so that the distances between the points correspond to differences between the data instances.</p>
-
-<p><img src="/images/2015/10/paranormal5.png" alt="" /></p>
-
+<p><img src="/images/2015/10/paranormal5.png" alt=""></p>
 <p>Aha! Now we see that three instances are quite different from all others. Select them and send them to the Data Table for final inspection.</p>
-
-<p><img src="/images/2015/10/paranormal6.png" alt="" /></p>
-
+<p><img src="/images/2015/10/paranormal6.png" alt=""></p>
 <p>Busted! We have found three ghosts hiding in our data. They are extremely light (the sheet they are wearing must weight around 2kg), quite vengeful and old.</p>
-
 <p>Now, joke aside, what would this mean for a general non-normally distributed data? One thing is your data set might be too small. Here we only have 20 instances, thus 3 outlying ghosts have a great impact on the distribution. It is difficult to hide 3 ghosts among 17 normal persons.</p>
-
 <p>Secondly, why can’t we use Outliers widget to hunt for those ghosts? Again, our data set is too small. With just 20 instances, the estimation variance is so large that it can easily cover a few ghosts under its sheet. We don’t have enough “normal” data to define what is normal and thus detect the paranormal.</p>
-
 <p>Haven’t we just written two exactly opposite things? Perhaps.</p>
-
 <p>Happy Halloween everybody! :)</p>
-
-<p><img src="/images/2015/10/spooky-orange.jpg" alt="" /></p>
+<p><img src="/images/2015/10/spooky-orange.jpg" alt=""></p>
 
             </div>
             </article>

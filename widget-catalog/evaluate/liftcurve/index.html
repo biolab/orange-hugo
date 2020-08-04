@@ -1659,22 +1659,14 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="lift-curve">Lift Curve</h1>
-
+                    <h1 id="lift-curve">Lift Curve</h1>
 <p>Measures the performance of a chosen classifier against a random classifier.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Evaluation Results: results of testing classification algorithms</li>
 </ul>
-
 <p>The <strong>Lift curve</strong> shows the relation between the number of instances which were predicted positive and those that are indeed positive and thus measures the performance of a chosen classifier against a random classifier. The graph is constructed with the cumulative number of cases (in descending order of probability) on the x-axis and the cumulative number of true positives on the y-axis. Lift curve is often used in segmenting the population, e.g., plotting the number of responding customers against the number of all customers contacted. You can also determine the optimal classifier and its threshold from the graph.</p>
-
-<p><img src="../images/LiftCurve-stamped.png" alt="" /></p>
-
+<p><img src="../images/LiftCurve-stamped.png" alt=""></p>
 <ol>
 <li>Choose the desired <em>Target class</em>. The default class is chosen alphabetically.</li>
 <li>If test results contain more than one classifier, the user can choose which curves she or he wants to see plotted. Click on a classifier to select or deselect the curve.</li>
@@ -1683,21 +1675,14 @@
 <li>Produce a report.</li>
 <li>2-D pane with <strong>P rate</strong> (population) as x-axis and <strong>TP rate</strong> (true positives) as a y-axis. The diagonal line represents the behavior of a random classifier. Click and drag to move the pane and scroll in or out to zoom. Click on the &ldquo;<em>A</em>&rdquo; sign at the bottom left corner to realign the pane.</li>
 </ol>
-
 <p><strong>Note!</strong> The perfect classifier would have a steep slope towards 1 until all
 classes are guessed correctly and then run straight along 1 on y-axis to
 (1,1).</p>
-
 <h2 id="example">Example</h2>
-
 <p>At the moment, the only widget which gives the right type of the signal needed by the <strong>Lift Curve</strong> is <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
-
 <p>In the example below, we try to see the prediction quality for the class &lsquo;survived&rsquo; on the <em>Titanic</em> dataset. We compared three different classifiers in the Test Learners widget and sent them to Lift Curve to see their performance against a random model. We see the <a href="../../model/tree/">Tree</a> classifier is the best out of the three, since it best aligns with <em>lift convex hull</em>. We also see that its performance is the best for the first 30% of the population (in order of descending probability), which we can set as the threshold for optimal classification.</p>
-
-<p><img src="../images/LiftCurve-example.png" alt="" /></p>
-
+<p><img src="../images/LiftCurve-example.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Handouts of the University of Notre Dame on Data Mining - Lift Curve. Available <a href="https://www3.nd.edu/~busiforc/handouts/DataMining/Lift%20Charts.html">here</a>.</p>
 
                 </div>

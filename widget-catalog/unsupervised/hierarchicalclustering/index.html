@@ -1659,63 +1659,48 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="hierarchical-clustering">Hierarchical Clustering</h1>
-
+                    <h1 id="hierarchical-clustering">Hierarchical Clustering</h1>
 <p>Groups items using a hierarchical clustering algorithm.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Distances: distance matrix</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether an instance is selected</li>
 </ul>
-
 <p>The widget computes <a href="https://en.wikipedia.org/wiki/Hierarchical_clustering">hierarchical clustering</a> of arbitrary types of objects from a matrix of distances and shows a corresponding <a href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram</a>.</p>
-
-<p><img src="../images/HierarchicalClustering-stamped.png" alt="" /></p>
-
+<p><img src="../images/HierarchicalClustering-stamped.png" alt=""></p>
 <ol>
 <li>The widget supports four ways of measuring distances between clusters:
-
 <ul>
 <li><strong>Single linkage</strong> computes the distance between the closest elements of the two clusters</li>
 <li><strong>Average linkage</strong> computes the average distance between elements of the two clusters</li>
 <li><strong>Weighted linkage</strong> uses the <a href="http://research.amnh.org/~siddall/methods/day1.html">WPGMA</a> method</li>
 <li><strong>Complete linkage</strong> computes the distance between the clusters&rsquo; most distant elements</li>
-</ul></li>
+</ul>
+</li>
 <li>Labels of nodes in the dendrogram can be chosen in the <strong>Annotation</strong> box.</li>
 <li>Huge dendrograms can be pruned in the <em>Pruning</em> box by selecting the maximum depth of the dendrogram. This only affects the display, not the actual clustering.</li>
 <li>The widget offers three different selection methods:
-
 <ul>
 <li><strong>Manual</strong> (Clicking inside the dendrogram will select a cluster. Multiple clusters can be selected by holding Ctrl/Cmd. Each selected cluster is shown in a different color and is treated as a separate cluster in the output.)</li>
 <li><strong>Height ratio</strong> (Clicking on the bottom or top ruler of the dendrogram places a cutoff line in the graph. Items to the right of the line are selected.)</li>
 <li><strong>Top N</strong> (Selects the number of top nodes.)</li>
-</ul></li>
+</ul>
+</li>
 <li>Use <em>Zoom</em> and scroll to zoom in or out.</li>
 <li>If the items being clustered are instances, they can be added a cluster index (<em>Append cluster IDs</em>). The ID can appear as an ordinary <strong>Attribute</strong>, <strong>Class attribute</strong> or a <strong>Meta attribute</strong>. In the second case, if the data already has a class attribute, the original class is placed among meta attributes.</li>
 <li>The data can be automatically output on any change (<em>Auto send is on</em>) or, if the box isn&rsquo;t ticked, by pushing <em>Send Data</em>.</li>
 <li>Clicking this button produces an image that can be saved.</li>
 <li>Produce a report.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>The workflow below shows the output of <strong>Hierarchical Clustering</strong> for the <em>Iris</em> dataset in <a href="../../data/datatable/">Data Table</a> widget. We see that if we choose <em>Append cluster IDs</em> in hierarchical clustering, we can see an additional column in the <strong>Data Table</strong> named <em>Cluster</em>. This is a way to check how hierarchical clustering clustered individual instances.</p>
-
-<p><img src="../images/HierarchicalClustering-Example.png" alt="" /></p>
-
+<p><img src="../images/HierarchicalClustering-Example.png" alt=""></p>
 <p>In the second example, we loaded the <em>Iris</em> dataset again, but this time we added the <a href="../visualize/scatterplot.md">Scatter Plot</a>, showing all the instances from the <a href="../../data/file/">File</a> widget, while at the same time receiving the selected instances signal from <strong>Hierarchical Clustering</strong>. This way we can observe the position of the selected cluster(s) in the projection.</p>
-
-<p><img src="../images/HierarchicalClustering-Example2.png" alt="" /></p>
+<p><img src="../images/HierarchicalClustering-Example2.png" alt=""></p>
 
                 </div>
             </div>

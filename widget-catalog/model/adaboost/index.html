@@ -1659,61 +1659,45 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="adaboost">AdaBoost</h1>
-
+                    <h1 id="adaboost">AdaBoost</h1>
 <p>An ensemble meta-algorithm that combines weak learners and adapts to the &lsquo;hardness&rsquo; of each training sample.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Preprocessor: preprocessing method(s)</li>
 <li>Learner: learning algorithm</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Learner: AdaBoost learning algorithm</li>
 <li>Model: trained model</li>
 </ul>
-
 <p>The <a href="https://en.wikipedia.org/wiki/AdaBoost">AdaBoost</a> (short for &ldquo;Adaptive boosting&rdquo;) widget is a machine-learning algorithm, formulated by <a href="https://cseweb.ucsd.edu/~yfreund/papers/IntroToBoosting.pdf">Yoav Freund and Robert Schapire</a>. It can be used with other learning algorithms to boost their performance. It does so by tweaking the weak learners.</p>
-
 <p><strong>AdaBoost</strong> works for both classification and regression.</p>
-
-<p><img src="../images/AdaBoost-stamped.png" alt="" /></p>
-
+<p><img src="../images/AdaBoost-stamped.png" alt=""></p>
 <ol>
 <li>The learner can be given a name under which it will appear in other widgets. The default name is &ldquo;AdaBoost&rdquo;.</li>
 <li>Set the parameters. The base estimator is a tree and you can set:
-
 <ul>
 <li><em>Number of estimators</em></li>
 <li><em>Learning rate</em>: it determines to what extent the newly acquired information will override the old information (0 = the agent will not learn anything, 1 = the agent considers only the most recent information)</li>
 <li><em>Fixed seed for random generator</em>: set a fixed seed to enable reproducing the results.</li>
-</ul></li>
+</ul>
+</li>
 <li>Boosting method.
-
 <ul>
 <li><em>Classification algorithm</em> (if classification on input): SAMME (updates base estimator&rsquo;s weights with classification results) or SAMME.R (updates base estimator&rsquo;s weight with probability estimates).</li>
 <li><em>Regression loss function</em> (if regression on input): Linear (), Square (), Exponential ().</li>
-</ul></li>
+</ul>
+</li>
 <li>Produce a report.</li>
 <li>Click <em>Apply</em> after changing the settings. That will put the new learner in the output and, if the training examples are given, construct a new model and output it as well. To communicate changes automatically tick <em>Apply Automatically</em>.</li>
 </ol>
-
 <h2 id="examples">Examples</h2>
-
 <p>For classification, we loaded the <em>iris</em> dataset. We used <em>AdaBoost</em>, <a href="../model/tree.md">Tree</a> and <a href="../model/logisticregression.md">Logistic Regression</a> and evaluated the models&rsquo; performance in <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
-
-<p><img src="../images/AdaBoost-classification.png" alt="" /></p>
-
+<p><img src="../images/AdaBoost-classification.png" alt=""></p>
 <p>For regression, we loaded the <em>housing</em> dataset, sent the data instances to two different models (<strong>AdaBoost</strong> and <a href="../model/tree.md">Tree</a>) and output them to the <a href="../../evaluate/predictions/">Predictions</a> widget.</p>
-
-<p><img src="../images/AdaBoost-regression.png" alt="" /></p>
+<p><img src="../images/AdaBoost-regression.png" alt=""></p>
 
                 </div>
             </div>

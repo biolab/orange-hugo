@@ -1659,47 +1659,30 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    
-
-<h1 id="radviz">Radviz</h1>
-
+                    <h1 id="radviz">Radviz</h1>
 <p>Radviz vizualization with explorative data analysis and intelligent data
 visualization enhancements.</p>
-
 <p><strong>Inputs</strong></p>
-
 <ul>
 <li>Data: input dataset</li>
 <li>Data Subset: subset of instances</li>
 </ul>
-
 <p><strong>Outputs</strong></p>
-
 <ul>
 <li>Selected Data: instances selected from the plot</li>
 <li>Data: data with an additional column showing whether a point is selected</li>
 <li>Components: Radviz vectors</li>
 </ul>
-
 <p>Radviz (Hoffman et al. 1997) is a non-linear multi-dimensional visualization technique that can display data defined by three or more variables in a 2-dimensional projection. The visualized variables are presented as anchor points equally spaced around the perimeter of a unit circle. Data instances are shown as points inside the circle, with their positions determined by a metaphor from physics: each point is held in place with springs that are attached at the other end to the variable anchors. The stiffness of each spring is proportional to the value of the corresponding variable and the point ends up at the position where the spring forces are in equilibrium. Prior to visualization, variable values are scaled to lie between 0 and 1. Data instances that are close to a set of variable anchors have higher values for these variables than for the others.</p>
-
 <p>The snapshot shown below shows a Radviz widget with a visualization of the dataset from functional genomics (Brown et al. 2000). In this particular visualization the data instances are colored according to the corresponding class, and the visualization space is colored according to the computed class probability. Notice that the particular visualization very nicely separates data instances of different class, making the visualization interesting and potentially informative.</p>
-
-<p><img src="../images/Radviz-Brown.png" alt="" /></p>
-
+<p><img src="../images/Radviz-Brown.png" alt=""></p>
 <p>Just like all point-based visualizations, this widget includes tools for intelligent data visualization (VizRank, see Leban et al. 2006) and an interface for explorative data analysis - selection of data points in visualization. Just like the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget, it can be used to find a set of variables that would result in an interesting visualization. The Radviz graph above is according to this definition an example of a very good visualization, while the one below - where we show an VizRank&rsquo;s interface (<em>Suggest features</em> button)
 with a list of 3-attribute visualizations and their scores - is not.</p>
-
-<p><img src="../images/Radviz-Brown-2.png" alt="" /></p>
-
+<p><img src="../images/Radviz-Brown-2.png" alt=""></p>
 <h2 id="references">References</h2>
-
 <p>Hoffman, P. E. et al. (1997) DNA visual and analytic data mining. In the Proceedings of the IEEE Visualization. Phoenix, AZ, pp. 437-441.</p>
-
 <p>Brown, M. P., W. N. Grundy et al. (2000). &ldquo;Knowledge-based analysis of microarray gene expression data by using support vector machines.&rdquo; Proc Natl Acad Sci U S A 97(1): 262-7.</p>
-
 <p>Leban, G., B. Zupan et al. (2006). &ldquo;VizRank: Data Visualization Guided by Machine Learning.&rdquo; Data Mining and Knowledge Discovery 13(2): 119-136.</p>
-
 <p>Mramor, M., G. Leban, J. Demsar, and B. Zupan. Visualization-based cancer microarray data classification analysis. Bioinformatics 23(16): 2147-2154, 2007.</p>
 
                 </div>
