@@ -13,10 +13,10 @@
     
     <item>
       <title>Data Mining COVID-19 Epidemics: Part 3</title>
-      <link>/blog/2020/2020-4-015-covid-19-part-3/</link>
+      <link>/blog/2020/2020-04-15-covid-19-part-3/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020/2020-4-015-covid-19-part-3/</guid>
+      <guid>/blog/2020/2020-04-15-covid-19-part-3/</guid>
       <description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
 We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description>
     </item>
