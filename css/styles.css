@@ -1774,18 +1774,18 @@ h2.docs-subtitle {
 }
 
 
-img.sidework {
+img.workflow-screenshot {
     /*float: left;*/
     /*margin-left: -70px;*/
 }
 
-img.tooltippic {
+img.window-screenshot {
     /*float: right;*/
     /*margin-right: -70px;*/
   max-height: 500px;
 }
 
-img.tooltippic, img.sidework {
+img.window-screenshot, img.workflow-screenshot {
     /*max-height: 60px;*/
     /*max-width: 60px;*/
   display: block;
@@ -1793,4 +1793,10 @@ img.tooltippic, img.sidework {
   margin-right: auto;
 }
 
-
+img {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
