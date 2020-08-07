@@ -51,7 +51,7 @@
                             {{ if .Params.download }}
                             <a href="https://service.biolab.si/download/workflow?name={{ .Params.download }}&domain=orange"
                                 id="workflow-download" class="no-break-buttons" target="_blank">
-                                <div class="learn-more feature-block">
+                                <div class="learn-more feature-block link-buttons">
                                     <div class="feature-block fa fa-download jsonly"></div>
                                     <div class="feature-block feature-link">Download</div>
                                 </div>
@@ -60,17 +60,21 @@
                             {{ end }}
                             {{ if .Params.video }}
                             <a class="lightbox no-break-buttons" href="{{ .Params.video }}" target="_blank">
+                                <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-play-circle-o jsonly">
                                 </div>
                                 <div class="feature-block feature-link">Watch Video</div>
+                            </div>
                             </a>
                             &nbsp;&nbsp;
                             {{ end }}
                             {{ if .Params.blog }}
                             <a class="lightbox no-break-buttons"
-                                href="https://singlecell.biolab.si/blog/{{ .Params.blog }}">
+                                href="https://orange.biolab.si/blog/{{ .Params.blog }}">
+                                <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-book jsonly"></div>
                                 <div class="feature-block feature-link">Blog post</div>
+                            </div>
                             </a>
                             &nbsp;&nbsp;
                             {{ end }}
