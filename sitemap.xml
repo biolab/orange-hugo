@@ -223,6 +223,26 @@
   </url>
   
   <url>
+    <loc>/workflows/text-preprocessing/</loc>
+  </url>
+  
+  <url>
+    <loc>/workflows/text-clustering/</loc>
+  </url>
+  
+  <url>
+    <loc>/workflows/text-classification/</loc>
+  </url>
+  
+  <url>
+    <loc>/workflows/twitter/</loc>
+  </url>
+  
+  <url>
+    <loc>/workflows/story-arcs/</loc>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
@@ -2064,6 +2084,10 @@
   </url>
   
   <url>
+    <loc>/tags/Bag-of-Words/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/text-mining/bagofwords-widget/</loc>
   </url>
   
@@ -2496,6 +2520,10 @@
   </url>
   
   <url>
+    <loc>/tags/Literary-Analysis/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/single-cell/load_data/</loc>
   </url>
   
@@ -2584,6 +2612,10 @@
   </url>
   
   <url>
+    <loc>/tags/Nomogram/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/visualize/nomogram/</loc>
   </url>
   
@@ -2653,6 +2685,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/preprocesstext/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/Preprocessing/</loc>
   </url>
   
   <url>
@@ -2764,6 +2800,10 @@
   </url>
   
   <url>
+    <loc>/tags/Sentiment-Analysis/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/text-mining/sentimentanalysis/</loc>
   </url>
   
@@ -2820,6 +2860,10 @@
   </url>
   
   <url>
+    <loc>/tags/Story-Arcs/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/model/svm/</loc>
   </url>
   
@@ -2840,6 +2884,10 @@
   </url>
   
   <url>
+    <loc>/tags/Text-Mining/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/text-mining/guardian-widget/</loc>
   </url>
   
@@ -2849,6 +2897,18 @@
   
   <url>
     <loc>/widget-catalog/time-series/time_slice/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/Timeseries/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/Tokenization/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/Topic-Modeling/</loc>
   </url>
   
   <url>
@@ -2877,6 +2937,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/tweetprofiler/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/Twitter/</loc>
   </url>
   
   <url>

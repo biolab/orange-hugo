@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Mining on Orange</title>
+    <link>/tags/Text-Mining/</link>
+    <description>Recent content in Text Mining on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/Text-Mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Text Preprocessing</title>
+      <link>/workflows/text-preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-preprocessing/</guid>
+      <description>Text mining requires careful preprocessing. Here&amp;rsquo;s a workflow that uses simple preprocessing for creating tokens from documents. First, it applies lowercase, then splits text into words, and finally, it removes frequent stopwords. Preprocessing is language specific, so change the language to the language of texts where required. Results of preprocessing can be observe in a Word Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Text Clustering</title>
+      <link>/workflows/text-clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-clustering/</guid>
+      <description>The workflow clusters Grimm&amp;rsquo;s tales corpus. We start by preprocessing the data and constructing the bag of words matrix. Then we compute cosine distances between documents and use Hierarchical Clustering, which displays the dendrogram. We observe how well the type of the tale corresponds to the cluster in the MDS.</description>
+    </item>
+    
+    <item>
+      <title>Text Classification</title>
+      <link>/workflows/text-classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-classification/</guid>
+      <description>We can use predictive models to classify documents by authorship, their type, sentiment and so on. In this workflow we classify documents by their Aarne-Thompshon-Uther index, that is the defining topic of the tale. We use two simple learners, Logistic Regression and Naive Bayes, both of which can be inspected in the Nomogram.</description>
+    </item>
+    
+    <item>
+      <title>Twitter Data Analysis</title>
+      <link>/workflows/twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/twitter/</guid>
+      <description>Tweets are a valuable source of information, for social scientists, marketing managers, linguists, economists, and so on. In this workflow we retrieve data from Twitter, preprocess it, and uncover latent topics with topic modeling. We observe the topics in a Heat Map.</description>
+    </item>
+    
+    <item>
+      <title>Story Arcs</title>
+      <link>/workflows/story-arcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/story-arcs/</guid>
+      <description>In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.</description>
+    </item>
+    
+  </channel>
+</rss>

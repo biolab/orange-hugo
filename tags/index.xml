@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Bag of Words</title>
+      <link>/tags/Bag-of-Words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Bag-of-Words/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Box Plot</title>
       <link>/tags/Box-Plot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -137,6 +146,24 @@
     </item>
     
     <item>
+      <title>Literary Analysis</title>
+      <link>/tags/Literary-Analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Literary-Analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/tags/Nomogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Nomogram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Outliers</title>
       <link>/tags/Outliers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -173,11 +200,29 @@
     </item>
     
     <item>
+      <title>Preprocessing</title>
+      <link>/tags/Preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Preprocessing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scatter Plot</title>
       <link>/tags/Scatter-Plot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/Scatter-Plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis</title>
+      <link>/tags/Sentiment-Analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Sentiment-Analysis/</guid>
       <description></description>
     </item>
     
@@ -191,11 +236,65 @@
     </item>
     
     <item>
+      <title>Story Arcs</title>
+      <link>/tags/Story-Arcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Story-Arcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>t-SNE</title>
       <link>/tags/t-SNE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/t-SNE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Mining</title>
+      <link>/tags/Text-Mining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Text-Mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timeseries</title>
+      <link>/tags/Timeseries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Timeseries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tokenization</title>
+      <link>/tags/Tokenization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Tokenization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic Modeling</title>
+      <link>/tags/Topic-Modeling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Topic-Modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/tags/Twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/Twitter/</guid>
       <description></description>
     </item>
     
