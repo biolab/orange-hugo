@@ -1613,20 +1613,45 @@ h2.docs-subtitle {
 .home-page-newest-blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
+  column-gap: 60px;
+  margin-bottom: -8px;
 }
 
 .home-page-blog {
   grid-column: span 1;
-  padding-top: 20px !important;
-  padding-bottom: 20px;
+  padding-top: 12px !important;
+  padding-bottom: 38px;
   font-weight: lighter !important;
+  display: flex;
+  flex-direction: column
+}
+
+
+.title-home-page-blog {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.home-page-blog .blog-date {
+  font-size: 12px;
+  opacity: 0.45;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.hp-blog-img-wrapper {
+  margin-top: auto;
 }
 
 .home-page-blog-image {
-  max-height: 220px;
-  width: 300px;
-  object-fit: contain;
+  max-width: 330px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  border-radius: 3px;
+}
+
+.home-page-blog-content {
+  margin-bottom: 18px;
 }
 
 @media (max-width: 720px) {
