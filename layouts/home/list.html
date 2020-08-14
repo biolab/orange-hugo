@@ -87,27 +87,22 @@
                 {{ end }}
 
                 {{ if .Params.video }}
-                    {{ if .Params.learnMore }}
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                    {{ end }}
                 <a class="lightbox no-break-buttons" href="https://www.youtube.com/watch?v={{ .Params.video }}&autoplay=1" target="_blank" >
                     <div class="link-buttons">
-                    <div class="feature-block fa fa-play-circle-o jsonly"></div>
-                    <div class="feature-block feature-link">Watch Video</div>
-                </div>
+                        <div class="feature-block fa fa-play-circle-o jsonly"></div>
+                        <div class="feature-block feature-link">Watch Video</div>
+                    </div>
                 </a>
                 {{ end }}
 
                 {{ if .Params.link }}
-                    &nbsp;&nbsp;&nbsp;&nbsp;
                     {{ range .Params.link }}
-                <a class="lightbox no-break-buttons" href="{{ .url }}" target="_blank" >
-                    <div class="link-buttons">
-                    <div class="feature-block fa fa-link jsonly"></div>
-                    <div class="feature-block feature-link">{{ .title }}</div>
-                </div>
-                </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="lightbox no-break-buttons" href="{{ .url }}" target="_blank" >
+                        <div class="link-buttons">
+                        <div class="feature-block fa fa-link jsonly"></div>
+                        <div class="feature-block feature-link">{{ .title }}</div>
+                    </div>
+                    </a>
                     {{ end }}
                 {{ end }}
             </div>
