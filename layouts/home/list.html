@@ -37,11 +37,11 @@
             <div class="home-page-newest-blogs">
                 {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog") }}
                 <div class="home-page-blog" onclick="window.location.href = {{ .Permalink }}" style="cursor: pointer;">
-                    <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+                    <p class="blog-date">{{ .Date.Format "Jan 2, 2006" }}</p>
                     <div class="title-home-page-blog">
                         <a href="{{ .Permalink }} "> {{ .Title }} </a>
                     </div>
-                    <p>{{ if .Params.shortExcerpt}}
+                    <p class="home-page-blog-content">{{ if .Params.shortExcerpt}}
                         {{ .Params.shortExcerpt | markdownify}}
                         {{else}}
                         {{ .Params.longExcerpt }}
@@ -50,7 +50,7 @@
                         <a href="{{ .Permalink }}" style=" white-space:pre;">Read more ></a>
                     </p>
                     {{ if .Params.frontPageImage }}
-                    <a href="{{ .Permalink }} "><img class="home-page-blog-image" src="{{ .Params.frontPageImage}}">
+                    <a href="{{ .Permalink }} " class="hp-blog-img-wrapper"><img class="home-page-blog-image" src="{{ .Params.frontPageImage}}">
                     </a>
                     {{end}}
 
