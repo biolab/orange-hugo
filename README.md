@@ -25,7 +25,7 @@ If you are on Debian or Ubuntu, you can install Hugo with the following one-line
 
 ### Development
 
-For css edit files in /dev/cscc
+For css edit files in /dev/scss
 
     yarn install / npm install
 
