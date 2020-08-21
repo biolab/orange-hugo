@@ -1,0 +1,31 @@
+[[item]]
+    question = "What types of data does Orange support?"
+    answer = """Core Orange supports Excel, comma- and tab-delimited files (.xlsx, .csv, .tab). It also reads online data, such as Google Spreadsheets. SQL widget supports PostgreSQL and MSSQL databases. <br><br>Add-ons can load additional formats. For example, Orange3-ImageAnalytics add-on can import images (.jpg, .tiff, .png) and Orange3-Text add-on can import text files (.txt, .docx, .pdf)."""
+
+[[item]]
+    question = "How can I load my data in Orange?"
+    answer = """Follow the <a href="https://orange-visual-programming.readthedocs.io/loading-your-data/index.html">Loading your data</a> guide or check out the <a href="https://www.youtube.com/watch?v=MHcGdQeYCMg&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=5&t=0s">Loading your data</a> YouTube tutorial."""
+
+[[item]]
+    question = "I want to use Orange on big data."
+    answer = """Orange provides the SQL widget, which samples data instances and enables exploratory data analysis on large datasets. You need <a href="http://initd.org/psycopg/">psycopg2</a> module installed to be able to see the widget. Go to Options - Add-ons, select <em>Add more...</em>, then enter the name of the pip package. It is <code>psycopg2</code> command for Windows and <code>psycopg2-binary</code> for OSX. Alternatively, you can install it directly in your Python environment with <code>pip install psycopg2</code>. You can also use <a href="https://www.2ndquadrant.com/en/resources/2uda/">2UDA package</a> for easier installation. Please note that Orange supports only PostgreSQL and MSSQL databases for now."""
+
+[[item]]
+    question = "How safe is my data?"
+    answer = """Orange does not store any data. It is a locally installed software that can be used without internet connection. The only exceptions are embedding widgets, which send data to the server, compute and return the result. The data is never stored on the server."""
+
+[[item]]
+    question = "Can I export Orange workflow as a Python script?"
+    answer = """Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard </a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits."""
+
+[[item]]
+    question = "Is Orange available in other languages?"
+    answer = """Unfortunately, no. Orange is constantly being updated and maintaining translations would require simply too much investment."""
+
+[[item]]
+    question = "Does Orange work with R?"
+    answer = """No. Orange is a Python-based software and is as such not compatible with R."""
+
+[params]
+    title = "About Orange"
+    func = "aboutorange"
