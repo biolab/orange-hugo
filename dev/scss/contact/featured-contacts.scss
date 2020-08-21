@@ -1,0 +1,46 @@
+.featured-contacts {
+	display: flex;
+	margin-top: 42px;
+
+	.fc-contact {
+		display: block;
+		color: rgb(53, 20, 0);
+		flex: 1;
+		margin: 0 45px 45px;
+		padding: 8px 15px 18px 15px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.3s ease;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+
+		.item-title {
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		&:hover {
+			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+			transform: scale(1.015);
+
+			.img-container img {
+				filter: none;
+			}
+		}
+
+		.img-container {
+			margin-top: auto;
+			text-align: center;
+
+			img {
+				width: 100px;
+				filter: grayscale(100%);
+				transition: all 0.3s ease;
+			}
+		}
+
+		.feature-text {
+			text-align: center;
+		}
+	}
+}
