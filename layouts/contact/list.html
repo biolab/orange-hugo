@@ -14,7 +14,20 @@
                     </div>
                 {% endif %} -->
                 <h1 class="title">Contact</h1>
-
+                <div class="featured-contacts row">
+                    {{range (where .Pages "Type" "contacts")}}
+                    <a href="{{ .Params.link }}" class="fc-contact">
+                        <h2 class="item-title">
+                            {{ .Params.title }}
+                        </h2>
+                        <div class="img-container">
+                            <img src="{{ .Params.image }}">
+                        </div>
+                        <span class="extra"></span>
+                        <p class="feature-text">{{ .Params.institution }}</p>
+                    </a>
+                    {{end}}
+                </div>
                 <div class="content">
                     <p> {{.Content}}</p>
                     <br>
