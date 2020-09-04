@@ -1705,8 +1705,7 @@ Inputs
       <description>Rank Ranking of attributes in classification or regression datasets.
 Inputs
  Data: input dataset Scorer: models for feature scoring  Outputs
- Reduced Data: dataset with selected attributes  The Rank widget considers class-labeled datasets (classification or regression) and scores the attributes according to their correlation with the class. Rank accepts also models for scoring, such as linear regression, logistic regression, random forest, SGD, etc.
- Select attributes from the data table.</description>
+ Reduced Data: dataset with selected attributes Scores: data table with feature scores Features: list of attributes  The Rank widget scores variables according to their correlation with discrete or numeric target variable, based on applicable internal scorers (like information gain, chi-square and linear regression) and any connected external models that supports scoring, such as linear regression, logistic regression, random forest, SGD, etc.</description>
     </item>
     
     <item>

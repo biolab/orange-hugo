@@ -264,21 +264,21 @@
             
                 
                 
-                <div class="container faqC" id="education" style="text-align: left;">
+                <div class="container faqC" id="aboutorange" style="text-align: left;">
                     <div class="panel-group" id="faqAccordion2">
-                        <h2>Education</h2>
+                        <h2>About Orange</h2>
                     
                         
                             <div class="panel panel-default">
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                     data-parent="#faqAccordion2" data-target="#question5">
                                     <h4 class="panel-title">
-                                        <a href="#" class="ing">I would like to learn how to use Orange. Where can I find the resources?</a>
+                                        <a href="#" class="ing">What types of data does Orange support?</a>
                                     </h4>
                                 </div>
                                 <div id="question5" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
-                                        <p>Widget documentation is available on our <a href="https://orange.biolab.si/toolbox/">website</a>. You can also access the same documentation directly from Orange by selecting the widget and pressing F1. We also provide an e-mail course (<a href="https://biolab.us15.list-manage.com/subscribe?u=2cad1f1cbf3a532a77efe4354&amp;id=6f257f15ff">subscribe here</a>), beginner-level <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">YouTube tutorials</a> and a regularly updated <a href="https://blog.biolab.si/">blog</a>.</p>
+                                        <p>Core Orange supports Excel, comma- and tab-delimited files (.xlsx, .csv, .tab). It also reads online data, such as Google Spreadsheets. SQL widget supports PostgreSQL and MSSQL databases. <br><br>Add-ons can load additional formats. For example, Orange3-ImageAnalytics add-on can import images (.jpg, .tiff, .png) and Orange3-Text add-on can import text files (.txt, .docx, .pdf).</p>
                                     </div>
                                 </div>
                             </div>
@@ -289,12 +289,12 @@
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                     data-parent="#faqAccordion2" data-target="#question6">
                                     <h4 class="panel-title">
-                                        <a href="#" class="ing">I have a question concerning data mining, statistics and machine learning algorithms.</a>
+                                        <a href="#" class="ing">How can I load my data in Orange?</a>
                                     </h4>
                                 </div>
                                 <div id="question6" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
-                                        <p>Visit <a href="https://datascience.stackexchange.com/questions/tagged/orange"> Data Science StackExchange </a> and ask the community!</p>
+                                        <p>Follow the <a href="https://orange-visual-programming.readthedocs.io/loading-your-data/index.html">Loading your data</a> guide or check out the <a href="https://www.youtube.com/watch?v=MHcGdQeYCMg&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=5&t=0s">Loading your data</a> YouTube tutorial.</p>
                                     </div>
                                 </div>
                             </div>
@@ -305,12 +305,12 @@
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                     data-parent="#faqAccordion2" data-target="#question7">
                                     <h4 class="panel-title">
-                                        <a href="#" class="ing">Does Orange have tutorials?</a>
+                                        <a href="#" class="ing">I want to use Orange on big data.</a>
                                     </h4>
                                 </div>
                                 <div id="question7" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
-                                        <p>Yes. There is a <a href="https://www.youtube.com/c/OrangeDataMining">YouTube channel</a> where you can learn how to use Orange.</p>
+                                        <p>Orange provides the SQL widget, which samples data instances and enables exploratory data analysis on large datasets. You need <a href="http://initd.org/psycopg/">psycopg2</a> module installed to be able to see the widget. Go to Options - Add-ons, select <em>Add more...</em>, then enter the name of the pip package. It is <code>psycopg2</code> command for Windows and <code>psycopg2-binary</code> for OSX. Alternatively, you can install it directly in your Python environment with <code>pip install psycopg2</code>. You can also use <a href="https://www.2ndquadrant.com/en/resources/2uda/">2UDA package</a> for easier installation. Please note that Orange supports only PostgreSQL and MSSQL databases for now.</p>
                                     </div>
                                 </div>
                             </div>
@@ -321,12 +321,12 @@
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                     data-parent="#faqAccordion2" data-target="#question8">
                                     <h4 class="panel-title">
-                                        <a href="#" class="ing">Is there an online training?</a>
+                                        <a href="#" class="ing">How safe is my data?</a>
                                     </h4>
                                 </div>
                                 <div id="question8" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
-                                        <p>There are no online webinars or MOOCs. You can still visit our <a href="https://www.youtube.com/c/OrangeDataMining">YouTube channel</a> and learn the basics there.</p>
+                                        <p>Orange does not store any data. It is a locally installed software that can be used without internet connection. The only exceptions are embedding widgets, which send data to the server, compute and return the result. The data is never stored on the server.</p>
                                     </div>
                                 </div>
                             </div>
@@ -337,10 +337,132 @@
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                     data-parent="#faqAccordion2" data-target="#question9">
                                     <h4 class="panel-title">
-                                        <a href="#" class="ing">How to teach with Orange?</a>
+                                        <a href="#" class="ing">Can I export Orange workflow as a Python script?</a>
                                     </h4>
                                 </div>
                                 <div id="question9" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard </a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion2" data-target="#question10">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">Is Orange available in other languages?</a>
+                                    </h4>
+                                </div>
+                                <div id="question10" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Unfortunately, no. Orange is constantly being updated and maintaining translations would require simply too much investment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion2" data-target="#question11">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">Does Orange work with R?</a>
+                                    </h4>
+                                </div>
+                                <div id="question11" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>No. Orange is a Python-based software and is as such not compatible with R.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                    </div>
+                </div>
+                
+            
+                
+                
+                <div class="container faqC" id="education" style="text-align: left;">
+                    <div class="panel-group" id="faqAccordion3">
+                        <h2>Education</h2>
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion3" data-target="#question12">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">I would like to learn how to use Orange. Where can I find the resources?</a>
+                                    </h4>
+                                </div>
+                                <div id="question12" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Widget documentation is available on our <a href="https://orange.biolab.si/toolbox/">website</a>. You can also access the same documentation directly from Orange by selecting the widget and pressing F1. We also provide an e-mail course (<a href="https://biolab.us15.list-manage.com/subscribe?u=2cad1f1cbf3a532a77efe4354&amp;id=6f257f15ff">subscribe here</a>), beginner-level <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">YouTube tutorials</a> and a regularly updated <a href="https://blog.biolab.si/">blog</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion3" data-target="#question13">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">I have a question concerning data mining, statistics and machine learning algorithms.</a>
+                                    </h4>
+                                </div>
+                                <div id="question13" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Visit <a href="https://datascience.stackexchange.com/questions/tagged/orange"> Data Science StackExchange </a> and ask the community!</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion3" data-target="#question14">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">Does Orange have tutorials?</a>
+                                    </h4>
+                                </div>
+                                <div id="question14" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Yes. There is a <a href="https://www.youtube.com/c/OrangeDataMining">YouTube channel</a> where you can learn how to use Orange.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion3" data-target="#question15">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">Is there an online training?</a>
+                                    </h4>
+                                </div>
+                                <div id="question15" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>There are no online webinars or MOOCs. You can still visit our <a href="https://www.youtube.com/c/OrangeDataMining">YouTube channel</a> and learn the basics there.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                                    data-parent="#faqAccordion3" data-target="#question16">
+                                    <h4 class="panel-title">
+                                        <a href="#" class="ing">How to teach with Orange?</a>
+                                    </h4>
+                                </div>
+                                <div id="question16" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <p>We are preparing materials that will show you how to teach with Orange. Stayed tuned for details!<br>In the meantime, see some examples on our <a href="https://orange.biolab.si/categories/education/">blog</a>.</p>
                                     </div>
@@ -354,35 +476,19 @@
             
                 
                 
-                <div class="container faqC" id="aboutorange" style="text-align: left;">
-                    <div class="panel-group" id="faqAccordion3">
-                        <h2>About Orange</h2>
+                <div class="container faqC" id="devandcoll" style="text-align: left;">
+                    <div class="panel-group" id="faqAccordion4">
+                        <h2>Development and collaboration</h2>
                     
                         
                             <div class="panel panel-default">
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question10">
-                                    <h4 class="panel-title">
-                                        <a href="#" class="ing">What types of data does Orange support?</a>
-                                    </h4>
-                                </div>
-                                <div id="question10" class="panel-collapse collapse" style="height: 0px;">
-                                    <div class="panel-body">
-                                        <p>Core Orange supports Excel, comma- and tab-delimited files (.xlsx, .csv, .tab). It also reads online data, such as Google Spreadsheets. SQL widget supports PostgreSQL and MSSQL databases. <br><br>Add-ons can load additional formats. For example, Orange3-ImageAnalytics add-on can import images (.jpg, .tiff, .png) and Orange3-Text add-on can import text files (.txt, .docx, .pdf).</p>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                    
-                        
-                            <div class="panel panel-default">
-                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question11">
+                                    data-parent="#faqAccordion4" data-target="#question17">
                                     <h4 class="panel-title">
                                         <a href="#" class="ing">There’s a feature I wish to see in Orange.</a>
                                     </h4>
                                 </div>
-                                <div id="question11" class="panel-collapse collapse" style="height: 0px;">
+                                <div id="question17" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <p>Please submit a pull request with the feature. We welcome all contributions! Once you've made a PR, developer(s) will leave comments and when everything is fixed and tested, the pull request will be merged into Orange. See our <a href="https://orange.biolab.si/contributing/"> Contribute guide </a> for more information.<br><br>If you are not a developer, you can submit a feature request to our <a href="https://github.com/biolab/orange3/issues">issue tracker</a>. Describe what you wish to see in Orange and, if possible, provide a visual example. Before submitting a new feature request, check if someone has already requested the same feature. Upvote the request with a +1 and/or add your comment. Only consider opening a new request if you cannot find a corresponding existing request.</p>
                                     </div>
@@ -393,44 +499,12 @@
                         
                             <div class="panel panel-default">
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question12">
-                                    <h4 class="panel-title">
-                                        <a href="#" class="ing">I want to use Orange on big data.</a>
-                                    </h4>
-                                </div>
-                                <div id="question12" class="panel-collapse collapse" style="height: 0px;">
-                                    <div class="panel-body">
-                                        <p>Orange provides the SQL widget, which samples data instances and enables exploratory data analysis on large datasets. You need <a href="http://initd.org/psycopg/">psycopg2</a> module installed to be able to see the widget. Install it directly in Python with <code>pip install psycopg2</code> command. You can also use <a href="https://www.2ndquadrant.com/en/resources/2uda/">2UDA package</a> for easier installation. Please note that Orange supports only PostgreSQL and MSSQL databases for now.</p>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                    
-                        
-                            <div class="panel panel-default">
-                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question13">
-                                    <h4 class="panel-title">
-                                        <a href="#" class="ing">Can I export Orange workflow as a Python script?</a>
-                                    </h4>
-                                </div>
-                                <div id="question13" class="panel-collapse collapse" style="height: 0px;">
-                                    <div class="panel-body">
-                                        <p>Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard </a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits.</p>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                    
-                        
-                            <div class="panel panel-default">
-                                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question14">
+                                    data-parent="#faqAccordion4" data-target="#question18">
                                     <h4 class="panel-title">
                                         <a href="#" class="ing">I wish to propose a collaboration and/or a project with the Orange team.</a>
                                     </h4>
                                 </div>
-                                <div id="question14" class="panel-collapse collapse" style="height: 0px;">
+                                <div id="question18" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <p>Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> and we will respond as soon as we can.</p>
                                     </div>
@@ -441,12 +515,12 @@
                         
                             <div class="panel panel-default">
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question15">
+                                    data-parent="#faqAccordion4" data-target="#question19">
                                     <h4 class="panel-title">
                                         <a href="#" class="ing">I wish to develop a widget / an add-on for Orange.</a>
                                     </h4>
                                 </div>
-                                <div id="question15" class="panel-collapse collapse" style="height: 0px;">
+                                <div id="question19" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <p>We are always happy to receive contributions! Development documentation for <a href="http://orange-development.readthedocs.io/"> widgets</a> and <a href="https://github.com/biolab/orange3-example-addon">add-ons</a> is available on the web. Next, submit a pull request and our team will review it. If you have specific questions, use <a href="https://discord.gg/47gRDUQ">Discord</a> for direct communication with the developers.</p>
                                     </div>
@@ -457,12 +531,12 @@
                         
                             <div class="panel panel-default">
                                 <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                                    data-parent="#faqAccordion3" data-target="#question16">
+                                    data-parent="#faqAccordion4" data-target="#question20">
                                     <h4 class="panel-title">
                                         <a href="#" class="ing">I wish to commission a custom module and/or an add-on for Orange.</a>
                                     </h4>
                                 </div>
-                                <div id="question16" class="panel-collapse collapse" style="height: 0px;">
+                                <div id="question20" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <p>Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> to discuss the idea and rates.</p>
                                     </div>
