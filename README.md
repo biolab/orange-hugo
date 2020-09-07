@@ -29,7 +29,7 @@ For css edit files in /dev/scss
 
     yarn install / npm install
 
-    gulp watch
+    gulp
 
 
 
