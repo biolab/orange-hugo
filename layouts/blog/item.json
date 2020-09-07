@@ -1,0 +1,14 @@
+{
+    "uri": "{{ .Permalink }}",
+	"title": "{{ htmlEscape .Title}}",
+	"categories": [{{ range $tindex, $category := .Params.categories }}{{ if $tindex }}, {{ end }}"{{ $category| htmlEscape }}"{{ end }}],
+	"description": "{{ htmlEscape .Description}}",
+	"content": {{.Plain | jsonify}},
+	"image" : "{{ .Params.image}}",
+	"thumbImage" : "{{ .Params.thumbImage}}",
+	"shortExcerpt" : "{{ .Params.shortExcerpt}}",
+	"longExcerpt" : {{ if .Params.longExcerpt}} {{.Params.longExcerpt | jsonify}} {{else}} {{.Summary | jsonify}} {{end}},
+	"author" : "{{ .Params.author}}",
+	"summary" : {{ .Summary | jsonify}},
+	"date" : {{ (.Date.Format "Jan 2, 2006" ) | jsonify}}
+}
