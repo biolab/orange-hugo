@@ -9,6 +9,7 @@ frontPageImage = "/blog_img/2020/2020-06-19-edit-domain-small.png"
 categories = ["edit", "domain", "data"]
 shortExcerpt = "Handle your data with Edit Domain."
 longExcerpt = "How to handle your data with Edit Domain - rename, change type, merge, sort..."
+x2images = false  # true if using retina screenshots, else false
 +++
 
 Importing data into Orange is easy. File, import, and voila, your data is here. But what about if you want to rename a variable, change it's type or edit labels? Edit Domain to the rescue!
