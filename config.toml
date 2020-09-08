@@ -20,7 +20,8 @@ unsafe = true
     baseName = "blog"
 
 [outputs]
-  home = [ "HTML", "workflow", "blog"]
+  home = [ "HTML", "workflow", "blog" ]
+  section = [ "HTML", "json" ]
 
 [taxonomies]
   tag = "tags"

@@ -1,0 +1,10 @@
+{
+    "uri": "{{ .Permalink }}",
+	"title": "{{ .Title}}",
+	"content": {{ .Plain | jsonify }},
+	"images": [{{ range $tindex, $image := .Params.images }}{{ if $tindex }}, {{ end }}"{{ $image| htmlEscape }}"{{ end }}],
+	"download": "{{ .Params.download}}",
+	"blog" : "{{ .Params.blog}}",
+	"video" : "{{ .Params.video}}",
+	"tags": [{{ range $tindex, $tag := .Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}]
+}

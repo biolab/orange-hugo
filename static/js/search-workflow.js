@@ -12,7 +12,7 @@ function initLunr2() {
     };
 
     // First retrieve the index file
-    $.getJSON("/workflow.json")
+    $.getJSON("/workflows/index.json")
         .done(function(index) {
             pagesIndex1 =   index;
             // Set up lunrjs by declaring the fields we use
