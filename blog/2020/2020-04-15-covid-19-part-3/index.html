@@ -249,7 +249,7 @@
 <h2 id="formatting-the-data-as-timeseries">Formatting the data As Timeseries</h2>
 <p>We&rsquo;ll load our data as usual with the File widget. The data contains latitude and longitude columns, which are just getting in the way in our further analysis. We will use Select Columns to put them into meta columns and thus exclude them from any calculations. Then we&rsquo;ll select some countries we are interested in with the help of the Data Table. You could also do it straight after inspecting the data in Geo Map.</p>
 <a href="/blog_img/2020/2020-04-15-wf1.png" class="blog-image_">
-      <img srcset="/blog_img/2020/2020-04-15-wf1.png 2x" class="workflow-screenshot" />
+      <img src="/blog_img/2020/2020-04-15-wf1.png" class="workflow-screenshot" />
 </a>
 <p>Now we just need to tell Orange, which variable contains time stamps. Our dates are represented as columns instead of as rows, so we&rsquo;ll use Transpose widget to make each row represent a datum and then connect it to As Timeseries Widget. In Transpose, we set the variable whose values will be used to name the rows when they are turned into columns. We&rsquo;ll name them by the column Country, as shown in the image, since the Province field is mostly empty. In As Timeseries, we set <em>sequence as implied by instance order</em>.</p>
 <a href="/blog_img/2020/2020-04-15-as_timeseries.png" class="blog-image_"> 
@@ -317,7 +317,7 @@ out_data<span style="color:#f92672">.</span>X[out_data<span style="color:#f92672
 <h3 id="moving-transform-and-smoothing">Moving transform and smoothing</h3>
 <p>Smoothing is usually a part of preprocessing, so insert the Moving Transform widget between As Timeseries and Difference, and add some moving average transforms, like this:</p>
 <a href="/blog_img/2020/2020-04-15-wf3.png" class="blog-image_">
-      <img srcset="/blog_img/2020/2020-04-15-wf3.png 2x" class="workflow-screenshot" />
+      <img src="/blog_img/2020/2020-04-15-wf3.png" class="workflow-screenshot" />
 </a>
 <a href="/blog_img/2020/2020-04-15-mt-settings.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-15-mt-settings.png" class="window-screenshot" />

@@ -253,28 +253,25 @@
 <p>Related: <a href="/blog/2018/09/11/text-workshops-in-ljubljana/" target="_blank">Text Workshops in Ljubljana</a></p>
 <p>We will be using a corpus of Anderson&rsquo;s tales, which is available in the <strong>Corpus</strong> widget (data set <em>anderson.tab</em>). Load it in the widget. Next, we will select a single tale which we will analyze, say, Little Match Seller. Connect Corpus to <strong>Data Table</strong> and select the tale. We all know the story of a little girl selling matches on a New Year&rsquo;s Eve and freezing to death. It is one of the saddest stories ever told. One could almost forget there are positive parts, such as the girl&rsquo;s visions in the moments before her death, which show a glimmer of hope, the only consolation the girl had in her life. Let us verify this in Orange.</p>
 <a href="/blog_img/2020/2020-07-27-corpus.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-corpus.png" />
+      <img src="/blog_img/2020/2020-07-27-corpus.png" class="window-screenshot" />
  </a>
-
 
 
 <a href="/blog_img/2020/2020-07-27-data-table.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-data-table.png" />
+      <img src="/blog_img/2020/2020-07-27-data-table.png" class="window-screenshot" />
  </a>
 
 
 
-<a href="/blog_img/2020/2020-07-27-wf1.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-wf1.png" />
- </a>
-
+<a href="/blog_img/2020/2020-07-27-wf1.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf1.png" class="workflow-screenshot" />
+</a>
 
 
 <p>With our story selected, we have to split it into sentences. At the moment, our story is a single row in the data, but we wish to have each sentence in its own row. We will use <strong>Preprocess Text</strong> and select Sentence tokenization. I have removed the redundant preprocessors and kept the only one we need.</p>
 <a href="/blog_img/2020/2020-07-27-preprocess.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-preprocess.png" />
+      <img src="/blog_img/2020/2020-07-27-preprocess.png" class="window-screenshot" />
  </a>
-
 
 
 <p>Some Python magic will help us create a new corpus from the existing tokens (sentences). Copy and paste the script below into the <strong>Python Script</strong> widget. Do not forget to press <strong>Run</strong> once you have pasted the script into the widget.</p>
@@ -298,85 +295,78 @@ out_data = Corpus.from_numpy(domain=new_domain, X=np.empty((len(content), 0)),
                             metas=metas)
 out_data.set_text_features([StringVariable('Sentences')])
 </code></pre>
-<a href="/blog_img/2020/2020-07-27-wf2.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-wf2.png" />
- </a>
 
+<a href="/blog_img/2020/2020-07-27-wf2.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf2.png" class="workflow-screenshot" />
+</a>
 
 
 <p>Perfect, our data is now ready for the final step. Add another Preprocess Text and keep the default preprocessors. They will lowercase our sentences, split by words and remove English stopwords.</p>
 <a href="/blog_img/2020/2020-07-27-preprocess2.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-preprocess2.png" />
+      <img src="/blog_img/2020/2020-07-27-preprocess2.png" class="window-screenshot" />
  </a>
-
 
 
 <p>Finally, add the <strong>Sentiment Analysis</strong> widget. By default, the widget uses the Vader algorithm, which works quite well for English. Please note that it won&rsquo;t work for other languages, as all of Orange&rsquo;s sentiment models are language specific. You can use Multilingual sentiment for non-English texts.</p>
 <a href="/blog_img/2020/2020-07-27-sentiment-analysis.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-sentiment-analysis.png" />
+      <img src="/blog_img/2020/2020-07-27-sentiment-analysis.png" class="window-screenshot" />
  </a>
 
 
 
-<a href="/blog_img/2020/2020-07-27-wf3.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-wf3.png" />
- </a>
-
+<a href="/blog_img/2020/2020-07-27-wf3.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf3.png" class="workflow-screenshot" />
+</a>
 
 
 <p>At last, it is time to analyze the data. We will use <a href="https://github.com/biolab/orange3-timeseries">Timeseries add-on</a> to plot sequential data. First, we will pass the data to the <strong>As Timeseries</strong> widget and set the <em>Sequence implied by the instance order</em> option. This tells Orange that our data is already ordered by time - in our case, by the order in which each sentence appears in the story.</p>
 <a href="/blog_img/2020/2020-07-27-as-timeseries.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-as-timeseries.png" />
+      <img src="/blog_img/2020/2020-07-27-as-timeseries.png" class="window-screenshot" />
  </a>
-
 
 
 <p>Connect <strong>Line Chart</strong> to As Timeseries. In the widget, select <em>Compound</em> variable, which shows the total sentiment of each sentence. The peaks represent the parts of the story with positive emotions and the drops the parts with the negative ones.</p>
 <a href="/blog_img/2020/2020-07-27-line-chart.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-line-chart.png" />
+      <img src="/blog_img/2020/2020-07-27-line-chart.png" class="window-screenshot" />
  </a>
 
 
 
-<a href="/blog_img/2020/2020-07-27-wf4.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-wf4.png" />
- </a>
-
+<a href="/blog_img/2020/2020-07-27-wf4.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf4.png" class="workflow-screenshot" />
+</a>
 
 
 <p>To explore the data in depth, connect <strong>Heat Map</strong> to Sentiment Analysis. Heat Map will show all 4 sentiment attributes, namely positive (pos), negative (neg), neutral (neu) and   compound sentiment. But our data is all over the place. Let us order it. Select <em>Clustering (opt. ordering)</em> under the Clustering - Rows option. This will cluster the sentences by their similarity, specifically by how similar their emotion is.</p>
 <a href="/blog_img/2020/2020-07-27-heat-map.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-heat-map.png" />
+      <img src="/blog_img/2020/2020-07-27-heat-map.png" class="window-screenshot" />
  </a>
-
 
 
 <p>Great! Now this looks like something useful. The blue sections represent the negative sentences, while the yellow and white sections represent the positive ones. Let us select the cluster with negative sentences and observe it in a <strong>Corpus Viewer</strong>.</p>
 <a href="/blog_img/2020/2020-07-27-negative-sentiment.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-negative-sentiment.png" />
+      <img src="/blog_img/2020/2020-07-27-negative-sentiment.png" class="window-screenshot" />
  </a>
 
 
 
-<a href="/blog_img/2020/2020-07-27-wf5.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-wf5.png" />
- </a>
-
+<a href="/blog_img/2020/2020-07-27-wf5.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf5.png" class="workflow-screenshot" />
+</a>
 
 
 <p>I have set Sentences as the single Display variable and selected all the sentences to show them in a list. Unsurprisingly, here is the last sentence of the story, in which a girl if found dead in the street on a New Year&rsquo;s Day.</p>
 <p>To finish, let us explore the positive sentences, too. Select the positive section in the Heat Map and observe it in a Corpus Viewer. Now rethink the story, reread her visions in the last moments of her life and how happy she was when she died. Couldn&rsquo;t we say that &hellip; the story has a happy ending?</p>
 <a href="/blog_img/2020/2020-07-27-positive-sentiment.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-positive-sentiment.png" />
+      <img src="/blog_img/2020/2020-07-27-positive-sentiment.png" class="window-screenshot" />
  </a>
-
 
 
 <p>While the workflow is quite long, it is conceptually very simple. This is a quick and easy way to explore the story arcs and sentiment in a text. We imagine this to be a very useful tool for the teachers who wish to experiment a bit in their language classes and offer a fun and fruitful way of exploring literature.</p>
-<a href="/blog_img/2020/2020-07-27-final-workflow.png" class="blog-image_"> 
-      <img src="/blog_img/2020/2020-07-27-final-workflow.png" />
- </a>
 
+<a href="/blog_img/2020/2020-07-27-final-workflow.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-final-workflow.png" class="workflow-screenshot" />
+</a>
 
 
 
