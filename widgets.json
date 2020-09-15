@@ -1189,6 +1189,13 @@
     "url": "dicty_express"
    },
    {
+    "title": "Genialis Expressions",
+    "category": "Bioinformatics",
+    "keywords": [],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Genialis Expressions.png"
+   },
+   {
     "title": "Genes",
     "category": "Bioinformatics",
     "keywords": [],
