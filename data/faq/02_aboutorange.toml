@@ -16,7 +16,7 @@
 
 [[item]]
     question = "Can I export Orange workflow as a Python script?"
-    answer = """Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard </a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits."""
+    answer = """Unfortunately, no. We've <a href="https://github.com/biolab/orange3/issues/1341">debated this long and hard</a>. A (limited) functionality of this type would probably be possible, but would be a very big project to do well and would cost more than the expected benefits."""
 
 [[item]]
     question = "Is Orange available in other languages?"
@@ -25,6 +25,10 @@
 [[item]]
     question = "Does Orange work with R?"
     answer = """No. Orange is a Python-based software and is as such not compatible with R."""
+
+[[item]]
+    question = "Does Orange have oversampling, such as SMOTE?"
+    answer = """No. There are reasons why <a href="https://github.com/biolab/orange3/pull/3269">we refrain from implementing SMOTE</a>. If you really wish to go ahead with it, you can use <a href="https://datascience.stackexchange.com/questions/50944/unbalanced-target-variable-in-orange-how-do-i-balance-it">Python Script.</a>"""
 
 [params]
     title = "About Orange"
