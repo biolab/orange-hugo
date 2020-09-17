@@ -121,9 +121,7 @@
         } else {
             $("#post_nor").hide();
 
-
             var results = search(param);
-            console.log(results)
             $("#search-results").show();
             var search_results = document.getElementById('search-results')
             if (results.length < 1) {
@@ -177,9 +175,9 @@
                         html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
 
                     }
-                    if (results[page].thumbImage != '') {
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
                         html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
-                            '" class="workflow-image" ></a>'
+                            '" class="workflow-image"></a>'
                     }
 
 
