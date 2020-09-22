@@ -1,6 +1,6 @@
 +++
 title= "Widget catalog"
-image =  "/screenshots_img/markers-tsne.png"
+image =  "/images/markers-tsne.png"
 button =  true
 thumbnailImagePosition = "left"
 weight = 40
