@@ -6,10 +6,19 @@
     <description>Recent content in sentiment analysis on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/sentiment-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New Video Tutorials on Text Mining</title>
+      <link>/blog/2020/2020-09-28-text-tutorials/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-09-28-text-tutorials/</guid>
+      <description>In July, we were pleasantly surprised to be awarded a NumFocus Small Development Grant, which is intended to support small tasks in open source projects they sponsor. We decided to extend our text mining tutorials with four new videos, which cover the recent additions to the Text Mining add-on. Our YouTube channel already has a playlist for getting started with Orange and several specialized playlists for learning spectroscopy, single-cell analysis, text mining and image analytics with Orange.</description>
+    </item>
     
     <item>
       <title>Detecting Story Arcs with Orange</title>
