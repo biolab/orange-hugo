@@ -380,6 +380,15 @@
     "url": "lineplot"
    },
    {
+    "title": "Bar Plot",
+    "category": "Visualize",
+    "keywords": [
+     "chart"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Bar Plot.png"
+   },
+   {
     "title": "Sieve Diagram",
     "category": "Visualize",
     "keywords": [],
