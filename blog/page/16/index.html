@@ -792,23 +792,20 @@ class SmallLearner(Orange.classification.PyLearner): def __init__(self, base_lea
             $("#search-results").hide();
             $("#pagination").show();
         } else {
-            $("#post_nor").hide();
-
-
             var results = search(param);
-            console.log(results)
-            $("#search-results").show();
             var search_results = document.getElementById('search-results')
+            
+            $("#post_nor").hide();
+            $("#search-results").show();
+            
             if (results.length < 1) {
                 search_results.innerHTML = '<div style="padding: 20px 15px"> No blog posts found. </div>';
             } else {
-                search_results.innerHTML = "";
-
                 var html_el = ""
 
                 for (var page in results) {
                     html_el += '<div class="row">';
-                    if (results[page].thumbImage == '') {
+                    if (results[page].thumbImage == '' || results[page].thumbImage === '<no value>') {
                         html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
                     } else if (page % 2 == 0) {
                         html_el +=
@@ -817,6 +814,7 @@ class SmallLearner(Orange.classification.PyLearner): def __init__(self, base_lea
                         html_el +=
                             '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
                     }
+
                     html_el +=
                         '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
                         results[page].author + ', ' + results[page].date + '</p>'
@@ -836,6 +834,7 @@ class SmallLearner(Orange.classification.PyLearner): def __init__(self, base_lea
                         html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
                             results[page].categories[cat] + '</a>'
                     }
+
                     html_el += '</div>'
                     html_el += '<div class="getting-started-button">'
                     html_el += '<a href="' + results[page].uri +
@@ -843,22 +842,23 @@ class SmallLearner(Orange.classification.PyLearner): def __init__(self, base_lea
 
                     html_el += '</div></div>'
 
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
 
-                    if (page % 2 == 0) {
-                        html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
-                    } else {
-                        html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
-
-                    }
-                    if (results[page].thumbImage != '') {
+                        if (page % 2 == 0) {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                        } else {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+                        }
+                
                         html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
-                            '" class="workflow-image" ></a>'
+                            '" class="workflow-image"></a>'
+
+                        html_el += "</div>"
                     }
 
-
-
-                    html_el += "</div> </div><hr/>"
+                    html_el += "</div><hr/>"
                 }
+
                 search_results.innerHTML += html_el;
             }
         }

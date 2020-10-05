@@ -293,7 +293,7 @@
                             <a href="/blog/2020/2020-09-28-text-tutorials/">
                                 <img src="/blog_img/2020/2020-09-28-text-tutorials.png" class="workflow-image" href="/blog/2020/2020-09-28-text-tutorials/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -352,7 +352,7 @@
                             <a href="/blog/2020/2020-07-27-story-arcs/">
                                 <img src="/blog_img/2020/2020-07-27-story-arcs-small.png" class="workflow-image" href="/blog/2020/2020-07-27-story-arcs/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -405,7 +405,7 @@
                             <a href="/blog/2020/2020-06-19-edit-domain/">
                                 <img src="/blog_img/2020/2020-06-19-edit-domain-small.png" class="workflow-image" href="/blog/2020/2020-06-19-edit-domain/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -462,7 +462,7 @@
                             <a href="/blog/2020/2020-04-15-covid-19-part-3/">
                                 <img src="/blog_img/2020/2020-04-15-thumb-log-growth.png" class="workflow-image" href="/blog/2020/2020-04-15-covid-19-part-3/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -519,7 +519,7 @@
                             <a href="/blog/2020/2020-04-09-covid-19-part-2/">
                                 <img src="/blog_img/2020/2020-04-09-choropleth.png" class="workflow-image" href="/blog/2020/2020-04-09-covid-19-part-2/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -572,7 +572,7 @@
                             <a href="/blog/2020/2020-04-02-covid-19-basic/">
                                 <img src="/blog_img/2020/2020-04-02-europe-scatter-line-plot.png" class="workflow-image" href="/blog/2020/2020-04-02-covid-19-basic/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -625,7 +625,7 @@
                             <a href="/blog/2020/2020-02-24-anaconda-navigator/">
                                 <img src="/blog_img/2020/2020-02-24-navigator-small.png" class="workflow-image" href="/blog/2020/2020-02-24-anaconda-navigator/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -676,7 +676,7 @@
                             <a href="/blog/2020/2020-02-08-lecture-notes/">
                                 <img src="/blog_img/2020/2020-02-08-lecture-notes-small.png" class="workflow-image" href="/blog/2020/2020-02-08-lecture-notes/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -731,7 +731,7 @@
                             <a href="/blog/2020/2020-01-29-machine-anthropology/">
                                 <img src="/blog_img/2020/2020-01-29-MA-small.png" class="workflow-image" href="/blog/2020/2020-01-29-machine-anthropology/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -784,7 +784,7 @@
                             <a href="/blog/2020/2020-01-16-orange-cloud/">
                                 <img src="/blog_img/2020/2020-01-16-orange-cloud.png" class="workflow-image" href="/blog/2020/2020-01-16-orange-cloud/">
                             </a>
-                        </div>
+                        </div>        
                         
                     </div>
                     <hr />
@@ -899,23 +899,20 @@
             $("#search-results").hide();
             $("#pagination").show();
         } else {
-            $("#post_nor").hide();
-
-
             var results = search(param);
-            console.log(results)
-            $("#search-results").show();
             var search_results = document.getElementById('search-results')
+            
+            $("#post_nor").hide();
+            $("#search-results").show();
+            
             if (results.length < 1) {
                 search_results.innerHTML = '<div style="padding: 20px 15px"> No blog posts found. </div>';
             } else {
-                search_results.innerHTML = "";
-
                 var html_el = ""
 
                 for (var page in results) {
                     html_el += '<div class="row">';
-                    if (results[page].thumbImage == '') {
+                    if (results[page].thumbImage == '' || results[page].thumbImage === '<no value>') {
                         html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
                     } else if (page % 2 == 0) {
                         html_el +=
@@ -924,6 +921,7 @@
                         html_el +=
                             '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
                     }
+
                     html_el +=
                         '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
                         results[page].author + ', ' + results[page].date + '</p>'
@@ -943,6 +941,7 @@
                         html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
                             results[page].categories[cat] + '</a>'
                     }
+
                     html_el += '</div>'
                     html_el += '<div class="getting-started-button">'
                     html_el += '<a href="' + results[page].uri +
@@ -950,22 +949,23 @@
 
                     html_el += '</div></div>'
 
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
 
-                    if (page % 2 == 0) {
-                        html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
-                    } else {
-                        html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
-
-                    }
-                    if (results[page].thumbImage != '') {
+                        if (page % 2 == 0) {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                        } else {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+                        }
+                
                         html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
-                            '" class="workflow-image" ></a>'
+                            '" class="workflow-image"></a>'
+
+                        html_el += "</div>"
                     }
 
-
-
-                    html_el += "</div> </div><hr/>"
+                    html_el += "</div><hr/>"
                 }
+
                 search_results.innerHTML += html_el;
             }
         }
