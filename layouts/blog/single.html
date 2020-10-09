@@ -17,7 +17,7 @@
             {{if gt $index 0 }}
             <span> | </span>
             {{end}}
-            <a href="/categories{{ . | relURL }}">{{ . }}</a>
+            <a href="/categories/{{ . | urlize }}">{{ . }}</a>
           </span>
           {{ end }}
         </div>
