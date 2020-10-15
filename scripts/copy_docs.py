@@ -44,7 +44,7 @@ def change_references(md_file, content, category, dest):
     for ref in matches_ref:
         if not is_absolute(ref):
             if "loading-your-data" in ref:
-                content = content.replace(ref, "https://docs.biolab.si//3/visual-programming/loading-your-data/index.html")
+                content = content.replace(ref, "https://docs.biolab.si/3/visual-programming/loading-your-data/index.html")
             elif ref.endswith(".md") and not ref.startswith("/"):
                 new = "../" + ref[:-3] + "/"
                 content = content.replace(ref, new)
