@@ -6,10 +6,19 @@
     <description>Recent content in text mining on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/text-mining/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to identify fake news with document embeddings</title>
+      <link>/blog/2020/2020-10-15-document-embedders/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-10-15-document-embedders/</guid>
+      <description>Text is described by the sequence of character. Since every machine learning algorithm needs numbers, we need to transform it into vectors of real numbers before we can continue with the analysis. To do this, we can use various approaches. Orange currently offers bag-of-words approach and now also Document embedding by fastText. In this post, we explain what document embedding is, why it is useful, and show its usage on the classification example.</description>
+    </item>
     
     <item>
       <title>New Video Tutorials on Text Mining</title>

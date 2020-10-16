@@ -244,12 +244,37 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/classification/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/corpus/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/2020-10-15-document-embedders/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/text-mining/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -263,17 +288,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/sentiment-analysis/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/text-mining/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -290,11 +305,6 @@
   <url>
     <loc>/categories/video/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/corpus/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -489,11 +499,6 @@
   
   <url>
     <loc>/categories/belgrade/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/classification/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
