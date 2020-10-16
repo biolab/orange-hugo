@@ -24,7 +24,7 @@ Probably the most crucial step in your data analysis is purging and cleaning you
 
 
 
-* **Manually annotate the data.** Orange loves headers and the easiest way to assure your data gets read properly is to set the header yourself. Add two extra rows under your feature names. In the first row, set your variable type and in the second one, your kind. [Here's](http://orange-visual-programming.readthedocs.org/loading-your-data/index.html) how to do it properly.
+* **Manually annotate the data.** Orange loves headers and the easiest way to assure your data gets read properly is to set the header yourself. Add two extra rows under your feature names. In the first row, set your variable type and in the second one, your kind. [Here's](https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/loading-your-data/index.html) how to do it properly.
 
 
 

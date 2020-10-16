@@ -4,7 +4,7 @@
 
 [[item]]
     question = "How can I load my data in Orange?"
-    answer = """Follow the <a href="https://orange-visual-programming.readthedocs.io/loading-your-data/index.html">Loading your data</a> guide or check out the <a href="https://www.youtube.com/watch?v=MHcGdQeYCMg&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=5&t=0s">Loading your data</a> YouTube tutorial."""
+    answer = """Follow the <a href="https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/loading-your-data/index.html">Loading your data</a> guide or check out the <a href="https://www.youtube.com/watch?v=MHcGdQeYCMg&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=5&t=0s">Loading your data</a> YouTube tutorial."""
 
 [[item]]
     question = "I want to use Orange on big data."
