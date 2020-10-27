@@ -2112,6 +2112,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/visualize/barplot/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/single-cell/batch_effect_removal/</loc>
   </url>
   

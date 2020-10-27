@@ -386,7 +386,8 @@
      "chart"
     ],
     "background": "#FFB7B1",
-    "icon": "widget-icons/Visualize-Bar Plot.png"
+    "icon": "widget-icons/Visualize-Bar Plot.png",
+    "url": "barplot"
    },
    {
     "title": "Sieve Diagram",
