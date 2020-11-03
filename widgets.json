@@ -253,6 +253,16 @@
     "url": "pythonscript"
    },
    {
+    "title": "Create Instance",
+    "category": "Data",
+    "keywords": [
+     "simulator"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Create Instance.png",
+    "url": "createinstance"
+   },
+   {
     "title": "Color",
     "category": "Data",
     "keywords": [],
