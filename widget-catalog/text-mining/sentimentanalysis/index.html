@@ -1680,16 +1680,13 @@
 <ul>
 <li>Corpus: A corpus with information on the sentiment of each document.</li>
 </ul>
-<p><strong>Sentiment Analysis</strong> predicts sentiment for each document in a corpus. It uses Liu Hu and Vader sentiment modules from <a href="http://www.nltk.org/api/nltk.sentiment.html">NLTK</a>. Both of them are lexicon-based. For Liu Hu, you can choose English or Slovenian version.</p>
+<p><strong>Sentiment Analysis</strong> predicts sentiment for each document in a corpus. It uses Liu &amp; Hu and Vader sentiment modules from <a href="http://www.nltk.org/api/nltk.sentiment.html">NLTK</a> and multilingual sentiment lexicons from the <a href="https://sites.google.com/site/datascienceslab/projects/multilingualsentiment">Data Science Lab</a>. All of them are lexicon-based. For Liu &amp; Hu, you can choose English or Slovenian version. Vader works only on English. Multilingual sentiment supports several languages, which are listed at the bottom of this page.</p>
 <p><img src="../images/SentimentAnalysis-stamped.png" alt=""></p>
 <ol>
-<li><em>Method</em>:
-<ul>
-<li><em>Liu Hu</em>: lexicon-based sentiment analysis (supports English and Slovenian)</li>
+<li><em>Liu Hu</em>: lexicon-based sentiment analysis (supports English and Slovenian). The final score is the difference between the sum of positive and sum of negative words, normalized by the length of the document and multiplied by a 100. The final score reflects the percentage of sentiment difference in the document.</li>
 <li><em>Vader</em>: lexicon- and rule-based sentiment analysis</li>
-</ul>
-</li>
-<li>Produce a report.</li>
+<li><em>Multilingual sentiment</em>: lexicon-based sentiment analysis for several languages</li>
+<li><em>Custom dictionary</em>: add you own positive and negative sentiment dictionaries. Accepted source type is .txt file with each word in its own line. The final score is computed in the same way as Liu Hu.</li>
 <li>If <em>Auto commit is on</em>, sentiment-tagged corpus is communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
 <h2 id="example">Example</h2>
@@ -1709,6 +1706,54 @@
 <p>Hutto, C.J. and E. E. Gilbert (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.</p>
 <p>Hu, Minqing and Bing Liu (2004). Mining opinion features in customer reviews. In Proceedings of AAAI Conference on Artificial Intelligence, vol. 4, pp. 755–760. <a href="http://www.aaai.org/Papers/AAAI/2004/AAAI04-119.pdf">Available online.</a></p>
 <p>Kadunc, Klemen and Marko Robnik-Šikonja (2016). Analiza mnenj s pomočjo strojnega učenja in slovenskega leksikona sentimenta. Conference on Language Technologies &amp; Digital Humanities, Ljubljana (in Slovene). <a href="http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Kadunc-et-al_Analiza-mnenj-s-pomocjo-strojnega-ucenja.pdf">Available online.</a></p>
+<h2 id="multilingual-sentiment-languages">Multilingual Sentiment Languages</h2>
+<ul>
+<li>Afrikaans</li>
+<li>Arabic</li>
+<li>Azerbaijani</li>
+<li>Belarusian</li>
+<li>Bosnian</li>
+<li>Bulgarian</li>
+<li>Catalan</li>
+<li>Chinese</li>
+<li>Chinese Characters</li>
+<li>Croatian</li>
+<li>Czech</li>
+<li>Danish</li>
+<li>Dutch</li>
+<li>English</li>
+<li>Estonian</li>
+<li>Farsi</li>
+<li>Finnish</li>
+<li>French</li>
+<li>Gaelic</li>
+<li>German</li>
+<li>Greek</li>
+<li>Hebrew</li>
+<li>Hindi</li>
+<li>Hungarian</li>
+<li>Indonesian</li>
+<li>Italian</li>
+<li>Japanese</li>
+<li>Korean</li>
+<li>Latin</li>
+<li>Latvian</li>
+<li>Lithuanian</li>
+<li>Macedonian</li>
+<li>Norwegian</li>
+<li>Norwegian Nynorsk</li>
+<li>Polish</li>
+<li>Portuguese</li>
+<li>Romanian</li>
+<li>Russian</li>
+<li>Serbian</li>
+<li>Slovak</li>
+<li>Slovene</li>
+<li>Spanish</li>
+<li>Swedish</li>
+<li>Turkish</li>
+<li>Ukrainian</li>
+</ul>
 
                 </div>
             </div>
