@@ -179,16 +179,15 @@
                     html_el += '<div class="getting-started-button">'
 
                     if (results[page].download != "" && results[page].download != '<no value>') {
-                        html_el += '<a href="https://service.biolab.si/download/workflow?name=' + results[page]
-                            .download +
-                            '" class="no-break-buttons" target="_blank"><div class="learn-more feature-block"><div class="feature-block fa fa-download jsonly"></div><div class="feature-block feature-link">Download</div></div></a>&nbsp;&nbsp;'
+                        html_el += '<a href="https://service.biolab.si/download/workflow?name=' + results[page].download +
+                            '&domain=orange" class="no-break-buttons" target="_blank"><div class="learn-more feature-block"><div class="feature-block fa fa-download jsonly"></div><div class="feature-block feature-link">Download</div></div></a>&nbsp;&nbsp;'
                     }
                     if (results[page].video != "" && results[page].video != '<no value>') {
                         html_el += '<a class="lightbox no-break-buttons" href="' + results[page].video +
                             '"target="_blank"><div class="feature-block fa fa-play-circle-o jsonly"></div><div class="feature-block feature-link">Watch Video</div></a>&nbsp;&nbsp;'
                     }
                     if (results[page].blog != "" && results[page].blog != '<no value>') {
-                        html_el += '<a class="lightbox no-break-buttons" href="https://singlecell.biolab.si/blog/' +
+                        html_el += '<a class="lightbox no-break-buttons" href="https://orange.biolab.si/blog/' +
                             results[page].blog +
                             '"><div class="feature-block fa fa-book jsonly"></div><div class="feature-block feature-link">Blog post</div></a>&nbsp;&nbsp;'
                     }
