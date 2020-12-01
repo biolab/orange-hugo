@@ -181,258 +181,260 @@
         <div class="container-fluid clear-top">
             
 
-      <section id="features" class="features section padding-bottom " >
-
-<div class="container page-background getting-started ">
+      <section id="features" class="section offset-header">
+    <div class="container">
         <div style="text-align: center">
-           <h2 style="font-size: 34px;margin-top: 0px;" >
-              Orange Workflows
-           </h2>
+            <h2 style="font-size: 34px;margin-top: 15px;">
+                Orange Workflows
+            </h2>
         </div>
-    <div class="row" style="padding-left: 20px; margin-top:20px !important;" >
-      <div class="col-xs-12 col-md-12 content" style="display: inline;">
-         <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
-        <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-            <i class="fa fa-search"></i>
-        </button>
-      </div>
-      
-    </div>
-    <div class="categoriesList" id="myUL">
-        <ul >
-            <span>Tags: </span>
-          
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Classification"  style="margin-top: 20px !important;" class="">Classification</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Text-Mining"  style="margin-top: 20px !important;" class="">Text-Mining</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Clustering"  style="margin-top: 20px !important;" class="">Clustering</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Scatter-Plot"  style="margin-top: 20px !important;" class="">Scatter-Plot</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Visualization"  style="margin-top: 20px !important;" class="">Visualization</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Hierarchical-Clustering"  style="margin-top: 20px !important;" class="">Hierarchical-Clustering</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Predictive-models"  style="margin-top: 20px !important;" class="">Predictive-models</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Tokenization"  style="margin-top: 20px !important;" class="">Tokenization</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Bag-of-Words"  style="margin-top: 20px !important;" class="">Bag-of-Words</a></li>
-          
-            <li style="display: inline;text-transform: capitalize;" ><a href="/tags/Box-Plot"  style="margin-top: 20px !important;" class="">Box-Plot</a></li>
-          
-        </ul>
-    </div>
-
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="search-results" style="display: none;">  
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post_nor">
-    
-    
-        <div class=" row">
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
+                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;"
+                    placeholder="Search blog by categories, title and description." tabindex="1"
+                    onkeydown="check_key(event)" autofocus />
+                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="categoriesList col-lg-12 row" id="myUL">
+            <ul>
+                <span>Tags: </span>
+                
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Classification" style="margin-top: 20px !important;">Classification</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Text-Mining" style="margin-top: 20px !important;">Text-Mining</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Scatter-Plot" style="margin-top: 20px !important;">Scatter-Plot</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Visualization" style="margin-top: 20px !important;">Visualization</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Predictive-models" style="margin-top: 20px !important;">Predictive-models</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Tokenization" style="margin-top: 20px !important;">Tokenization</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Bag-of-Words" style="margin-top: 20px !important;">Bag-of-Words</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/tags/Box-Plot" style="margin-top: 20px !important;">Box-Plot</a></li>
+                
+            </ul>
+        </div>
+        <div id="search-results" style="display: none;">
+        </div>
+        <div id="post_nor">
             
-            <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
             
-                <h2 class="workflow-title">
-                    Twitter Data Analysis
-                </h2>
-                <p class="feature-text"><p>Tweets are a valuable source of information, for social scientists, marketing managers, linguists, economists, and so on. In this workflow we retrieve data from Twitter, preprocess it, and uncover latent topics with topic modeling. We observe the topics in a Heat Map.</p>
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Twitter Data Analysis</h2>
+                    <p class="feature-text"><p>Tweets are a valuable source of information, for social scientists, marketing managers, linguists, economists, and so on. In this workflow we retrieve data from Twitter, preprocess it, and uncover latent topics with topic modeling. We observe the topics in a Heat Map.</p>
 </p>
-                <div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">
-                    Tags:
-                    
-                    <a class="tag-workflow" href="/tags/Text-Mining">Text Mining</a>
-                    
-                    <a class="tag-workflow" href="/tags/Twitter">Twitter</a>
-                    
-                    <a class="tag-workflow" href="/tags/Topic-Modeling">Topic Modeling</a>
-                    
-                </div>
-                <div class="getting-started-button">
-                    
-                    <a href="https://service.biolab.si/download/workflow?name=640-twitter.ows&domain=sc " class="no-break-buttons" target="_blank">
-                        <div class="learn-more feature-block">
-                            <div class="feature-block fa fa-download jsonly"></div>
-                            <div class="feature-block feature-link">Download</div>
-                        </div>
-                    </a>
-                    &nbsp;&nbsp;
-                    
-
-                    
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
                         
-                    <a class="lightbox no-break-buttons" href="https://youtu.be/HDkI6G4slzQ" target="_blank" >
-                        <div class="feature-block fa fa-play-circle-o jsonly">
+                        <a class="tag-workflow" href="/tags/Text-Mining">Text Mining</a>
+                        
+                        <a class="tag-workflow" href="/tags/Twitter">Twitter</a>
+                        
+                        <a class="tag-workflow" href="/tags/Topic-Modeling">Topic Modeling</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://service.biolab.si/download/workflow?name=640-twitter.ows&domain=orange"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        <a class="lightbox no-break-buttons" href="https://youtu.be/HDkI6G4slzQ" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                            <div class="feature-block fa fa-play-circle-o jsonly">
+                            </div>
+                            <div class="feature-block feature-link">Watch Video</div>
                         </div>
-                        <div class="feature-block feature-link">Watch Video</div>
-                    </a>
-                    &nbsp;&nbsp;
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
                     
-
+                    
+                    <img src="/workflow_images/twitter.png" class="workflow-image">
                     
                 </div>
             </div>
+            <hr />
+            
+            
 
-            <div class='content col-md-6 col-xs-12 panel-left' style="padding: 20px;padding-top: 0px;">
-                
-                
-                <img src="/workflow_images/twitter.png" class="workflow-image" >
-              
-            </div>
-              
+
         </div>
-<hr/>
-
-        
     </div>
-
-
-</div>
-
 </section>
 
 
 <script type="text/javascript">
-    function check_key(e){
-        if(e.keyCode == 13) {
+    function check_key(e) {
+        if (e.keyCode == 13) {
             search_content();
-        }
-        else if(e.keyCode == 8){
-            if(document.getElementById('search-input').value.length <= 1){
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
                 $("#post_nor").show();
                 $("#search-results").hide();
             }
-        }  
-    }
-
-  function search_content(){
-    var url = window.location.pathname.split('/')
-    var tag_param = url.pop() || url.pop();
-    
-    
-    var param = document.getElementById('search-input').value;
-
-    if (param.trim() ==""){
-        $("#post_nor").show();
-        $("#search-results").hide();
-    }
-    else{
-        $("#post_nor").hide();
-        
-        
-        var results  = search_tag(tag_param, param);
-        $("#search-results").show();
-        var search_results = document.getElementById('search-results')
-        if (results.length <1){
-            search_results.innerHTML = '<div style="padding: 30px 10px;"> No workflows found.</div>';
         }
-        else{
-        search_results.innerHTML = "";
-        var html_el = ""
+    }
+
+    function search_content() {
+
+        var param = document.getElementById('search-input').value;
+
+        if (param.trim() == "") {
+            $("#post_nor").show();
+            $("#search-results").hide();
+        } else {
+            $("#post_nor").hide();
 
 
-        for(var page in results){
-            html_el += '<div class="row">';
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-left text-workflow">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 feature-description pull-right text-workflow">';
-            }
-            html_el += '<h2 class="workflow-title">'+results[page].title+'</h2>'
+            var results = search_workflow(param);
 
-            
-            html_el += '<p class="feature-text">'+results[page].content+'</p>'
+            $("#search-results").show();
+            var search_results = document.getElementById('search-results')
+            if (results.length < 1) {
+                search_results.innerHTML = '<div style="padding: 30px 15px;"> No workflows found.</div>';
+            } else {
+                search_results.innerHTML = "";
+                var html_el = ""
+                console.log(results)
 
-            html_el += '<div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">Tags:'
-                    for(var img in results[page].tags){
-                    
-                    html_el += '<a class="tag-workflow" href="/tags/'+results[page].tags[img]+'">'+results[page].tags[img]+'</a>'
-                }
-                html_el +='</div>'
-            html_el += '<div class="getting-started-button">'
-
-            if (results[page].download != "" && results[page].download != '<no value>' ){
-                html_el += '<a href="https://service.biolab.si/download/workflow?name='+results[page].download+'" class="no-break-buttons" target="_blank"><div class="learn-more feature-block"><div class="feature-block fa fa-download jsonly"></div><div class="feature-block feature-link">Download</div></div></a>&nbsp;&nbsp;'
-            }
-            if (results[page].video != "" && results[page].video != '<no value>' ){
-                html_el += '<a class="lightbox no-break-buttons" href="'+results[page].video +'"target="_blank"><div class="feature-block fa fa-play-circle-o jsonly"></div><div class="feature-block feature-link">Watch Video</div></a>&nbsp;&nbsp;'
-            }
-            if (results[page].blog != "" && results[page].blog != '<no value>' ){
-                html_el += '<a class="lightbox no-break-buttons" href="https://singlecell.biolab.si/blog/'+results[page].blog+'"><div class="feature-block fa fa-book jsonly"></div><div class="feature-block feature-link">Blog post</div></a>&nbsp;&nbsp;'
-            }
+                for (var page in results) {
+                    html_el += '<div class="row">';
+                    if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-left text-workflow" >';
+                    } else {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-right text-workflow">';
+                    }
+                    html_el += '<h2 class="workflow-title">' + results[page].title + '</h2>'
 
 
-            html_el += '</div></div>'
-            var position = "";
-            
-            if (page % 2 == 0){
-                html_el += '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
-            }
-            else{
-                html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
-            }
-            if (results[page].images.length >1){
-                html_el+= '<div id="myCarousel'+page+'" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
-                    for(var img in results[page].images){
-                        html_el+= '<div class="item'
-                        if(img==0){
-                            html_el += 'active">'
-                        }
-                        else{
-                            html_el+= '>'
-                        }
+                    html_el += '<p class="feature-text">' + results[page].content + '</p>'
 
-                       html_el += '<img src="'+results[page].images[img]+'" class="workflow-image" ></div>'
-                      
+                    html_el += '<div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">Tags:'
+                    for (var img in results[page].tags) {
+
+                        html_el += '<a class="tag-workflow" href="/tags/' + results[page].tags[img] + '">' + results[
+                            page].tags[img] + '</a>'
                     }
                     html_el += '</div>'
-                html_el += '<ol class="carousel-indicators" >'
-                    for(var img in results[page].images){
-                     html_el += '<li data-target="#myCarousel'+page+'" data-slide-to="'+img+'" class="'
-                        if(img==0){
-                                html_el += 'active">'
-                            }
-                        else{
-                            html_el+= '>'
-                        }
-                        html_el +='</li>'
+                    html_el += '<div class="getting-started-button">'
+
+                    if (results[page].download != "" && results[page].download != '<no value>') {
+                        html_el += '<a href="https://service.biolab.si/download/workflow?name=' + results[page].download +
+                            '&domain=orange" class="no-break-buttons" target="_blank"><div class="learn-more feature-block"><div class="feature-block fa fa-download jsonly"></div><div class="feature-block feature-link">Download</div></div></a>&nbsp;&nbsp;'
                     }
-                html_el+='</ol>'
+                    if (results[page].video != "" && results[page].video != '<no value>') {
+                        html_el += '<a class="lightbox no-break-buttons" href="' + results[page].video +
+                            '"target="_blank"><div class="feature-block fa fa-play-circle-o jsonly"></div><div class="feature-block feature-link">Watch Video</div></a>&nbsp;&nbsp;'
+                    }
+                    if (results[page].blog != "" && results[page].blog != '<no value>') {
+                        html_el += '<a class="lightbox no-break-buttons" href="https://orange.biolab.si/blog/' +
+                            results[page].blog +
+                            '"><div class="feature-block fa fa-book jsonly"></div><div class="feature-block feature-link">Blog post</div></a>&nbsp;&nbsp;'
+                    }
 
-                html_el += '<a class="left carousel-control" href="#myCarousel'+page+'" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
-                
-                html_el += '<a class="right carousel-control" href="#myCarousel'+page+'" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
+
+                    html_el += '</div></div>'
+                    var position = "";
+
+                    if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
+                    } else {
+                        html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
+                    }
+                    if (results[page].images.length > 1) {
+                        html_el += '<div id="myCarousel' + page +
+                            '" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
+                        for (var img in results[page].images) {
+                            html_el += '<div class="item'
+                            if (img == 0) {
+                                html_el += 'active">'
+                            } else {
+                                html_el += '>'
+                            }
+
+                            html_el += '<img src="' + results[page].images[img] + '" class="workflow-image" ></div>'
+
+                        }
+                        html_el += '</div>'
+                        html_el += '<ol class="carousel-indicators" >'
+                        for (var img in results[page].images) {
+                            html_el += '<li data-target="#myCarousel' + page + '" data-slide-to="' + img + '" class="'
+                            if (img == 0) {
+                                html_el += 'active">'
+                            } else {
+                                html_el += '>'
+                            }
+                            html_el += '</li>'
+                        }
+                        html_el += '</ol>'
+
+                        html_el += '<a class="left carousel-control" href="#myCarousel' + page +
+                            '" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
+
+                        html_el += '<a class="right carousel-control" href="#myCarousel' + page +
+                            '" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
+
+                    } else {
+                        html_el += '<img class="image' + position + '" src="' + results[page].images +
+                            '" style="padding:40px;"></div>'
+
+                    }
+
+
+                    html_el += "</div> </div>"
+                }
+                search_results.innerHTML += html_el;
 
             }
-            else{
-                html_el += '<img class="image'+position+'" src="'+results[page].images+'" style="padding:40px;"></div>'
-
-            }
-
-            
-            html_el += "</div> </div>"
         }
-        search_results.innerHTML += html_el;
-
     }
-    }
-    }
-     
-   </script>
-   <script type="text/javascript" src="/js/lunr.js"></script>
-   
-   
-   <script type="text/javascript">
-      var baseurl = "";
-   </script>
-   <script type="text/javascript" src="/js/search-workflow.js"></script>
+</script>
+<script type="text/javascript" src="/js/lunr.js"></script>
 
 
-
+<script type="text/javascript">
+    var baseurl = "";
+</script>
+<script type="text/javascript" src="/js/search-workflow.js"></script>
 
 
 
