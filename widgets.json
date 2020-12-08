@@ -708,7 +708,10 @@
    {
     "title": "Lift Curve",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "lift",
+     "cumulative gain"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Lift Curve.png",
     "url": "liftcurve"
