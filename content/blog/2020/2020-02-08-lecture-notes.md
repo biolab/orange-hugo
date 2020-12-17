@@ -6,7 +6,7 @@ title = "Orange Lecture Notes"
 type = "blog"
 thumbImage = "/blog_img/2020/2020-02-08-lecture-notes-small.png"
 frontPageImage = "/blog_img/2020/2020-02-08-lecture-notes-small.png"
-categories = ["education", "workshop"]
+blog = ["education", "workshop"]
 shortExcerpt = "Lecture notes for Orange workshops on machine learning and data science are now available online."
 longExcerpt = "Lecture notes for Orange workshops on machine learning and data science are now available online."
 +++

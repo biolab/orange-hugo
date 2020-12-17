@@ -5,7 +5,7 @@ draft= false
 title="Orange at GIS Ostrava"
 type="blog"
 thumbImage = "/blog_img/2019/4/24/ostrava-workshop.jpg"
-categories=["geo", "GIS", "hierarchical clustering"]
+blog=["geo", "GIS", "hierarchical clustering"]
 shortExcerpt = "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference."
 
 longExcerpt = "In late March 2019, we have been invited to present Orange during a GIS Ostrava conference. We have shown how to work with geospatial data in Orange."

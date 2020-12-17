@@ -6,7 +6,7 @@ title="Data Science Made Easy: How To Identify Hate Comments with AI"
 type="blog"
 thumbImage = "/blog_img/2019/twitter-police-workshop-picture.jpeg"
 frontPageImage = "/blog_img/2019/twitter-police-workshop-picture.jpeg"
-categories=["education", "text mining", "workshop"]
+blog=["education", "text mining", "workshop"]
 shortExcerpt = "How to teach text mining and data science to the 9th grade students in 60 minutes?"
 
 longExcerpt = "How to teach text mining and data science to the 9th grade students in 60 minutes? With Orange and the analysis of hate speech on social media, of course!"

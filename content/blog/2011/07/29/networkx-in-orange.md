@@ -4,7 +4,7 @@ date= '2011-07-29 18:56:00+00:00'
 draft= false
 title="NetworkX in Orange"
 type="blog"
-categories=["analysis" ,"network" ,"networkx" ,"visualization" ]
+blog=["analysis" ,"network" ,"networkx" ,"visualization" ]
 +++
 
 [NetworkX](http://networkx.lanl.gov/) – a popular open-source python library for network analysis has finally found its way into Orange. It is now used as a base class for network representation in all Orange modules and widgets. By that, we offered to the widespread network community a fruitful and fun way to visualize and explore networks, using their existing NetworkX scripts. It has never been easier to combine network analysis and visualization with existing machine learning and data discovery methods.

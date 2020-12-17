@@ -4,7 +4,7 @@ date= '2018-01-26 11:00:09+00:00'
 draft= false
 title="Visualizing multiple variables: FreeViz"
 type="blog"
-categories=["analysis" ,"features" ,"interactive data visualization" ,"visualization"  ]
+blog=["analysis" ,"features" ,"interactive data visualization" ,"visualization"  ]
 +++
 
 Scatter plots are great! But sometimes, we need to plot more than two variables to truly understand the data. How can we achieve this, knowing humans can only grasp up to three dimensions? With an optimization of linear projection, of course!

@@ -6,7 +6,7 @@ title = "Orange in the Cloud"
 type = "blog"
 thumbImage = "/blog_img/2020/2020-01-16-orange-cloud.png"
 frontPageImage = "/blog_img/2020/2020-01-16-orange-cloud.png"
-categories = ["cloud", "server", "remote"]
+blog = ["cloud", "server", "remote"]
 shortExcerpt = "Use Orange remotely by running it on a remote server as a docker container."
 longExcerpt = "Use Orange remotely by running it on a remote server as a docker container."
 +++

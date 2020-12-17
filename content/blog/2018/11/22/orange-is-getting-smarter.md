@@ -4,7 +4,7 @@ date= '2018-11-22 19:11:58+00:00'
 draft= false
 title="Orange is Getting Smarter"
 type="blog"
-categories=["analysis" ,"interface" ,"orange3" ]
+blog=["analysis" ,"interface" ,"orange3" ]
 shortExcerpt = "Orange recently implemented a basic form of opt-in usage tracking, specifically targeting how users add widgets to the canvas."
 +++
 

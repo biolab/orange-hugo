@@ -6,7 +6,7 @@ title="How to Abuse p-Values in Correlations"
 type="blog"
 thumbImage = "/blog_img/2019/1/4/correlations.png"
 image = ""
-categories=["correlations", "NHTS", "null hypothesis", "p-value", "statistics"]
+blog=["correlations", "NHTS", "null hypothesis", "p-value", "statistics"]
 shortExcerpt = "Why doesn't Orange show p-values for correlations coefficients? To save you from data dredging and Texas sharpshooter fallacy..."
 
 longExcerpt = "We have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?"

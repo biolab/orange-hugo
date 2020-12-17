@@ -4,7 +4,7 @@ date= '2011-09-07 10:30:00+00:00'
 draft= false
 title="3D Visualizations in Orange"
 type="blog"
-categories=["opengl" ,"visualization" ]
+blog=["opengl" ,"visualization" ]
 +++
 
 Over the summer I worked (and still do) on several new 3D visualization widgets as well as a 3D plotting library they use, which will hopefully simplify making more widgets. The library is designed to be similar in terms of API to the new [Qt plotting library](/blog/2011/09/03/gsoc-review-visualizations-with-qt/) Noughmad is working on.

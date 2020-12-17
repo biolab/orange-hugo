@@ -4,7 +4,7 @@ date= '2012-01-09 12:41:00+00:00'
 draft= false
 title="Multi-label classification (and Multi-target prediction) in Orange"
 type="blog"
-categories=["classification" ,"gsoc" ,"mlc" ,"multilabel" ]
+blog=["classification" ,"gsoc" ,"mlc" ,"multilabel" ]
 +++
 
 The last summer, student Wencan Luo participated in [Google Summer of Code](https://code.google.com/soc/) to implement [Multi-label Classification in Orange](/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/). He provided a framework, implemented a few algorithms and some prototype widgets. His work has been "hidden" in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet ...) and added a more general support for multi-target prediction.

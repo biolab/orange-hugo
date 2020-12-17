@@ -4,7 +4,7 @@ date= '2016-08-05 11:52:39+00:00'
 draft= false
 title="Rule Induction (Part I - Scripting)"
 type="blog"
-categories=["classification" ,"gsoc2016" ,"orange3" ]
+blog=["classification" ,"gsoc2016" ,"orange3" ]
 post_format=["Quote" ]
 +++
 

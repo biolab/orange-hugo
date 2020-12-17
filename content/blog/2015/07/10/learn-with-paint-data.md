@@ -4,7 +4,7 @@ date= '2015-07-10 07:00:54+00:00'
 draft= false
 title="Learn with Paint Data"
 type="blog"
-categories=["classification" ,"clustering" ,"data" ,"examples" ,"plot" ,"visualization"  ]
+blog=["classification" ,"clustering" ,"data" ,"examples" ,"plot" ,"visualization"  ]
 +++
 
 **Paint Data** widget might initially look like a kids’ game, but in combination with other Orange widgets it becomes a very simple and useful tool for conveying statistical concepts, such as **k-means**, **hierarchical clustering** and **prediction models** (like SVM, logistical regression, etc.).

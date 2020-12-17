@@ -4,7 +4,7 @@ date= '2015-10-02 12:52:27+00:00'
 draft= false
 title="A visit from the Tilburg University"
 type="blog"
-categories=["education" ,"examples" ,"overfitting" ,"regression" ,"visualization"  ]
+blog=["education" ,"examples" ,"overfitting" ,"regression" ,"visualization"  ]
 +++
 
 Biolab is currently hosting two amazing data scientists from the Tilburg University - dr. Marie Nilsen and dr. Eric Postma, who are preparing a 20-lecture MOOC on data science for non-technical audience. A part of the course will use Orange. The majority of their students is coming from humanities, law, economy and behavioral studies, thus we are discussing options and opportunities for adapting Orange for social scientists. Another great thing is that the course is designed for beginner level data miners, showcasing that anybody can mine the data and learn from it. And then consult with statisticians and data mining expert (of course!).

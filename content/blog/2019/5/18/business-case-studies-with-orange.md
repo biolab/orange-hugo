@@ -5,7 +5,7 @@ draft= false
 title="Business Case Studies with Orange"
 type="blog"
 thumbImage = "/blog_img/2019/5/18/wartsila-blog.jpg"
-categories=["business intelligence", "HR", "logistic regression", "nomogram", "predictive models"]
+blog=["business intelligence", "HR", "logistic regression", "nomogram", "predictive models"]
 shortExcerpt = "At the latest workshop we demonstrated how to predict, which employees are most likely to resign in the future."
 
 longExcerpt = "At the latest workshop in Italy we taught the participants how to identify relevant business use cases and how to predict, which employees are most likely to resign in the future."

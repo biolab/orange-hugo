@@ -4,7 +4,7 @@ date= '2011-09-02 05:47:00+00:00'
 draft= false
 title="GSoC Review: Multi-label Classification Implementation"
 type="blog"
-categories=["classification" ,"gsoc" ,"multilabel" ]
+blog=["classification" ,"gsoc" ,"multilabel" ]
 +++
 
 Traditional single-label classification is concerned with learning from a set of examples that are associated with a single label **l** from a set of disjoint labels **L**, **|L|** > **1**. If **|L|** = **2**, then the learning problem is called a binary classification problem, while if **|L|** > **2**, then it is called a multi-class classification problem (Tsoumakas & Katakis, 2007).

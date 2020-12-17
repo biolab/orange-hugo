@@ -6,7 +6,7 @@ title="Doctoral Summer School"
 type="blog"
 thumbImage = "/blog_img/2019/2019-07-26_ekonomska_small.jpg"
 frontPageImage = "/blog_img/2019/2019-07-26_ekonomska_small.jpg"
-categories=["workshop", "education", "data science", "summer school"]
+blog=["workshop", "education", "data science", "summer school"]
 shortExcerpt = "This year's Data Science course at the Doctoral Summer School."
 
 longExcerpt = "For the second year in a row we took part in the Ljubljana Doctoral Summer School, organized by the School of Economics and Business."

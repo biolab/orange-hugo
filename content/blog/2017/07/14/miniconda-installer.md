@@ -4,7 +4,7 @@ date= '2017-07-14 13:30:47+00:00'
 draft= false
 title="Miniconda Installer"
 type="blog"
-categories=["distribution" ,"download" ,"orange3" ]
+blog=["distribution" ,"download" ,"orange3" ]
 +++
 
 Orange has a new friend! It's Miniconda, Anaconda's little sister.

@@ -4,7 +4,7 @@ date= '2016-02-26 10:35:33+00:00'
 draft= false
 title="Getting Started Series: Part Two"
 type="blog"
-categories=["tutorial" ,"youtube" ]
+blog=["tutorial" ,"youtube" ]
 +++
 
 We've recently published two more videos in our Getting Started with Orange series. The series is intended to introduce beginners to Orange and teach them how to use its components.

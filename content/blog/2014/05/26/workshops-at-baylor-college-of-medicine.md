@@ -4,7 +4,7 @@ date= '2014-05-26 00:51:00+00:00'
 draft= false
 title="Workshops at Baylor College of Medicine"
 type="blog"
-categories=["bioinformatics" ,"workshop" ]
+blog=["bioinformatics" ,"workshop" ]
 +++
 
 On May 22nd and May 23rd, we ([Blaz Zupan](http://www.biolab.si/en/blaz-zupan/default.html) and [Janez Demsar](http://www.fri.uni-lj.si/en/janez-demsar), assisted by [Marinka Zitnik](http://www.fri.uni-lj.si/en/marinka-zitnik/default.html) and Balaji Santhanam) have given two hands-on workshops called [Data Mining without Programming](https://www.bcm.edu/research/centers/computational-and-integrative-biomedical-research/index.cfm?pmid=25960) at [Baylor College of Medicine](https://www.bcm.edu/) in Houston, Texas.

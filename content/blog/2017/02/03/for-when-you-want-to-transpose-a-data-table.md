@@ -4,7 +4,7 @@ date= '2017-02-03 13:16:37+00:00'
 draft= false
 title="For When You Want to Transpose a Data Table..."
 type="blog"
-categories=["analysis" ,"bioinformatics" ,"feature engineering" ,"features" ,"orange3"  ]
+blog=["analysis" ,"bioinformatics" ,"feature engineering" ,"features" ,"orange3"  ]
 +++
 
 Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.

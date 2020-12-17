@@ -4,7 +4,7 @@ date= '2013-01-21 14:23:00+00:00'
 draft= false
 title="Orange 2.6"
 type="blog"
-categories=["addons" ,"pypi" ]
+blog=["addons" ,"pypi" ]
 +++
 
 A new version of Orange, 2.6, has been uploaded to [Python Package Index](http://pypi.python.org/pypi/Orange/2.6/). Since the version on the Orange website is always up to date (we post daily builds), this may not affect you. Nevertheless, let us explain what we were working on for the last year.

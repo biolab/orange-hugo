@@ -4,7 +4,7 @@ date= '2012-11-30 08:00:00+00:00'
 draft= false
 title="The easy way to install add-ons"
 type="blog"
-categories=["addons" ,"orange25" ,"pypi" ]
+blog=["addons" ,"orange25" ,"pypi" ]
 +++
 
 The possibility of extending functionality of Orange through [add-ons](http://orange.biolab.si/addons/) has been present for a long time. In fact, we never provided the [toolbox for crunching bioinformatical data](http://orange-bioinformatics.readthedocs.org/en/latest/) as an integral part of Orange; it has always been an add-on. The exact mechanism of distribution of add-ons has changed significantly in the last year to simplify the process for add-on authors and to make it more standards-compliant. Among other things, this enables system administrators to install add-ons system-wide directly from [PyPi](http://pypi.python.org/pypi?%3Aaction=search&term=orange&submit=search) using easy_install or pip. Unfortunately there were also negative side effects of this process, notably the temporary breakage of the add-on management dialog within the Orange Canvas.

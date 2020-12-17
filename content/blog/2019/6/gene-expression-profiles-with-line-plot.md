@@ -6,7 +6,7 @@ title="Gene Expression Profiles with Line Plot"
 type="blog"
 thumbImage = "/blog_img/2019/6/3/gene-blog.png"
 frontPageImage = "/blog_img/2019/6/3/gene-blog.png"
-categories=["bioinformatics", "gene expression", "line plot"]
+blog=["bioinformatics", "gene expression", "line plot"]
 shortExcerpt = "We show how to explore gene expression profiles with the new Line Plot widget."
 
 longExcerpt = "Line Plot shows profiles of data instances – each instance is a line in the plot and its profile are values across all variables in the data. We show how to explore gene expression profiles."

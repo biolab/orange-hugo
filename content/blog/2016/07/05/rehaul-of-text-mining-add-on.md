@@ -4,7 +4,7 @@ date= '2016-07-05 06:51:55+00:00'
 draft= false
 title="Rehaul of Text Mining Add-On"
 type="blog"
-categories=["addons" ,"analysis" ,"business intelligence" ,"classification" ,"examples"  ,"orange3" ,"preprocessing" ,"text mining" ]
+blog=["addons" ,"analysis" ,"business intelligence" ,"classification" ,"examples"  ,"orange3" ,"preprocessing" ,"text mining" ]
 +++
 
 Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we're thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We've introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.

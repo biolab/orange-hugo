@@ -4,7 +4,7 @@ date= '2015-10-30 15:07:34+00:00'
 draft= false
 title="Ghostbusters"
 type="blog"
-categories=["analysis" ,"data" ,"distribution" ,"orange3" ]
+blog=["analysis" ,"data" ,"distribution" ,"orange3" ]
 +++
 
 Ok, we’ve just recently stumbled across [an interesting article](http://www.isixsigma.com/tools-templates/normality/dealing-non-normal-data-strategies-and-tools/) on how to deal with non normal (non-Gaussian distributed) data.

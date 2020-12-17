@@ -4,7 +4,7 @@ date= '2016-12-12 07:57:27+00:00'
 draft= false
 title="Dimensionality Reduction by Manifold Learning"
 type="blog"
-categories=["analysis" ,"embedding" ,"examples" ,"interactive data visualization"  ,"orange3" ,"unsupervised" ,"visualization" ,"widget" ]
+blog=["analysis" ,"embedding" ,"examples" ,"interactive data visualization"  ,"orange3" ,"unsupervised" ,"visualization" ,"widget" ]
 +++
 
 The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.

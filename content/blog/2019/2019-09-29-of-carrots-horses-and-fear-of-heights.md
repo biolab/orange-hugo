@@ -7,7 +7,7 @@ title="Of Carrots and Horses and the Fear of Heights"
 type="blog"
 thumbImage = "/blog_img/2019/2019-09-29-horses.jpg"
 frontPageImage = "/blog_img/2019/2019-09-29-horses.jpg"
-categories=["statistical significance", "hypothesis testing", "p-value", "multiple hypothesis testing"]
+blog=["statistical significance", "hypothesis testing", "p-value", "multiple hypothesis testing"]
 shortExcerpt = "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
 longExcerpt = "A cautionary tale of imaginary friend who made too many hypotheses to test - and how Orange is no different"
 +++

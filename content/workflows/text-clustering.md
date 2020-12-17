@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = "https://youtu.be/rH_vQxQL6oM"
 download = "620-text-clustering.ows"
-tags = ["Text Mining", "Clustering", "Tokenization"]
+workflows = ["Text Mining", "Clustering", "Tokenization"]
 weight = 620
 +++
 

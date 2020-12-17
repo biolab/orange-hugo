@@ -4,7 +4,7 @@ date= '2013-10-03 02:50:00+00:00'
 draft= false
 title="JMLR Publishes Article on Orange"
 type="blog"
-categories=["article" ,"jmlr" ,"scripting" ,"toolbox" ]
+blog=["article" ,"jmlr" ,"scripting" ,"toolbox" ]
 +++
 
 Journal of Machine Learning Research has just published our [paper on Orange](http://jmlr.org/papers/v14/demsar13a.html). In the paper we focus on its Python scripting part. We have last reported on Orange scripting at [ECML/PKDD 2004](http://ecmlpkdd.isti.cnr.it/). The manuscript was well received (over 270 citations on Google Scholar), but it is now entirely outdated. This was also our only formal publication on Orange scripting. With publication in JMLR this is now a current description of Orange and will be, for a while :-), Orange’s primary reference.

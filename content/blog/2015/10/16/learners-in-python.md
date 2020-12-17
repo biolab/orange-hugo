@@ -4,7 +4,7 @@ date= '2015-10-16 08:32:43+00:00'
 draft= false
 title="Learners in Python"
 type="blog"
-categories=["classification" ,"examples" ,"orange3" ,"python" ,"scripting" ]
+blog=["classification" ,"examples" ,"orange3" ,"python" ,"scripting" ]
 +++
 
 We've already written about [classifying instances in Python](/blog/2015/08/14/classifying-instances-with-orange-in-python/). However, it's always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.

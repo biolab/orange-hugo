@@ -4,7 +4,7 @@ date= '2018-07-17 09:20:50+00:00'
 draft= false
 title="Data Mining and Machine Learning for Economists"
 type="blog"
-categories=["addons" ,"clustering" ,"education" ,"geo" ,"workshop" ]
+blog=["addons" ,"clustering" ,"education" ,"geo" ,"workshop" ]
 +++
 
 Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.

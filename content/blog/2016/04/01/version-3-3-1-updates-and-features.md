@@ -4,7 +4,7 @@ date= '2016-04-01 12:43:53+00:00'
 draft= false
 title="Version 3.3.1 - Updates and Features"
 type="blog"
-categories=["distribution" ,"orange3" ,"release" ,"version" ]
+blog=["distribution" ,"orange3" ,"release" ,"version" ]
 
 +++
 

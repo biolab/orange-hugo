@@ -19,17 +19,17 @@
             <ul>
                 <span>Tags: </span>
                 {{ $tag := .Data.Term }}
-                {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+                {{ range first 10 .Site.Taxonomies.workflows.ByCount }}
                 <li style="display: inline;text-transform: capitalize;"><a class="{{ if eq $tag .Name }}active-tag{{ else }}tag-workflow{{ end }}"
-                        href="/tags/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
+                        href="/workflows/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
         </div>
         <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
-            {{ $paginator := .Paginate (where (where .Pages.ByWeight.Reverse "Type" "workflows") "IsPage" true) }}
-            {{ range $index, $element := .Paginator.Pages }}
+          {{ $paginator := .Paginate (where (where .Pages.ByWeight.Reverse "Type" "workflows") "IsPage" true) }}
+          {{ range $index, $element := .Paginator.Pages }}
             <div class=" row">
                 {{ if eq (mod $index 2) 0 }}
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
@@ -40,8 +40,8 @@
                     <p class="feature-text">{{ .Content }}</p>
                     <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
                         Tags:
-                        {{range .Params.tags}}
-                        <a class="tag-workflow" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                        {{range .Params.workflows}}
+                        <a class="tag-workflow" href="/workflows/{{ . | urlize }}">{{ . }}</a>
                         {{end}}
                     </div>
                     <div class="getting-started-button">

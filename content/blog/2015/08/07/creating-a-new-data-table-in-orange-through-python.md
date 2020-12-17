@@ -4,7 +4,7 @@ date= '2015-08-07 13:57:49+00:00'
 draft= false
 title="Creating a new data table in Orange through Python"
 type="blog"
-categories=["data" ,"examples" ,"python" ]
+blog=["data" ,"examples" ,"python" ]
 +++
 
 **IMPORT DATA**

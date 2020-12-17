@@ -4,7 +4,7 @@ date= '2012-02-05 20:30:00+00:00'
 draft= false
 title="Random decisions behind your back"
 type="blog"
-categories=["tree" ]
+blog=["tree" ]
 +++
 
 When Orange builds a decision tree, candidate attributes are evaluated and the best candidate is chosen. But what if two or more share the first place? Most machine learning systems don't care about it and always take the first, which is unfair and, besides, has strange effects: the induced model and, consequentially, its accuracy depends upon the order of attributes. Which shouldn't be.

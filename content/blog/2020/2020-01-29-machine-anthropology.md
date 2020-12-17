@@ -6,7 +6,7 @@ title = "What is Machine Anthropology?"
 type = "blog"
 thumbImage = "/blog_img/2020/2020-01-29-MA-small.png"
 frontPageImage = "/blog_img/2020/2020-01-29-MA-small.png"
-categories = ["machine", "anthropology", "big data", "pivot table"]
+blog = ["machine", "anthropology", "big data", "pivot table"]
 shortExcerpt = "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
 longExcerpt = "At the recent Machine Anthropology workshop we used Orange to explore anthropological data."
 +++

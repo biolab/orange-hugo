@@ -4,7 +4,7 @@ date= '2017-03-08 14:51:43+00:00'
 draft= false
 title="Workshop on InfraOrange"
 type="blog"
-categories=["infraorange" ,"infrared spectra" ,"interactive data visualization"  ,"orange3" ,"workshop" ]
+blog=["infraorange" ,"infrared spectra" ,"interactive data visualization"  ,"orange3" ,"workshop" ]
 +++
 
 Thanks to the collaboration with synchrotrons [Elettra](https://www.elettra.trieste.it/) (Trieste) and [Soleil](https://www.synchrotron-soleil.fr/) (Paris), Orange is getting an add-on [InfraOrange](https://github.com/markotoplak/orange-infrared), with widgets for analysis of infrared spectra. Its primary users obviously come from these two institutions, hence we organized the first workshop for InfraOrange at one of them.
