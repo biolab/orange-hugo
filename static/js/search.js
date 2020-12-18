@@ -21,7 +21,7 @@ function initLunr() {
             this.field('title', {
                 boost: 50
             });
-            this.field('categories', {
+            this.field('blog', {
                 boost: 30
             });
             this.field('longExcerpt', {
@@ -52,14 +52,14 @@ function search_categories(category, search_param) {
     var search_by_categories = lunrIndex.search('categories:'+ category)
 
     var search_by_params = lunrIndex.search(search_param)
-    var intersection_of_results= search_by_categories.filter(a => search_by_params.some(b => a.ref === b.ref));  
-    
+    var intersection_of_results= search_by_categories.filter(a => search_by_params.some(b => a.ref === b.ref));
+
     return intersection_of_results.map(function(result) {
             return pagesIndex.filter(function(page) {
                 return page.uri === result.ref;
             })[0];
             });
-    
+
 
 }
 
