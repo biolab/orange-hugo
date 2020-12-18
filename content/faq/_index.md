@@ -68,7 +68,7 @@ Please submit a contact request and we will respond as soon as we can.
 
 ## I wish to develop a widget / an add-on for Orange.
 
-We are always happy to receive contributions! Development documentation for {{< link_new url="http://orange-development.readthedocs.io/" name="widgets">}} and {{< link_new url="https://github.com/biolab/orange3-example-addon" name="add-ons">}} is available on the web. Next, submit a pull request and our team will review it. If you have specific questions, use {{< link_new url="https://gitter.im/biolab/orange3" name="Gitter">}} for direct communication with the developers.
+We are always happy to receive contributions! Development documentation for {{< link_new url="https://orange-widget-base.readthedocs.io/" name="widgets">}} and {{< link_new url="https://github.com/biolab/orange3-example-addon" name="add-ons">}} is available on the web. Next, submit a pull request and our team will review it. If you have specific questions, use {{< link_new url="https://gitter.im/biolab/orange3" name="Gitter">}} for direct communication with the developers.
 
 ## I wish to commission a custom module and/or an add-on for Orange.
 
