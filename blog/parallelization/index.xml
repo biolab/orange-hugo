@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>parallelization on Orange</title>
+    <link>/blog/parallelization/</link>
+    <description>Recent content in parallelization on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/parallelization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unfreezing Orange</title>
+      <link>/blog/2018/04/05/unfreezing-orange/</link>
+      <pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate>
+      
+      <guid>/blog/2018/04/05/unfreezing-orange/</guid>
+      <description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
+Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description>
+    </item>
+    
+    <item>
+      <title>Parallel Orange?</title>
+      <link>/blog/2012/01/03/parallel-orange/</link>
+      <pubDate>Tue, 03 Jan 2012 08:59:00 +0000</pubDate>
+      
+      <guid>/blog/2012/01/03/parallel-orange/</guid>
+      <description>We attended a NIPS 2011 workshop on processing and learning from large scale data. Various presenters showed different tools and frameworks that can be used when developing algorithms suitable for dealing with large scale data, but none of them were written in Python and as such, not useful for Orange. We have been looking for a framework that would help us run code in parallel for some time, but so far with no luck.</description>
+    </item>
+    
+  </channel>
+</rss>

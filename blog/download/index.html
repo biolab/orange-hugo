@@ -1,0 +1,807 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - download</title>
+
+    
+    
+    <meta property="og:title" content="download">
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/css/styles.min.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+      <section id="features" class="features-blog section offset-header">
+    <div class="container">
+        <div style="text-align: center">
+            <h2 style="font-size: 34px;">
+                Orange Blog
+            </h2>
+        </div>
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
+                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
+                    placeholder="Search blog by categories, title and description." tabindex="1"
+                    onkeydown="check_key(event)" autofocus />
+                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+        </div>
+        <div class="categoriesList col-lg-12 row" id="myUL">
+            <ul>
+                <span>Categories: </span>
+                
+                <li style="display: inline;"><a href="/blog/orange3"
+                        style="margin-top: 20px !important;">orange3</a></li>
+                
+                <li style="display: inline;"><a href="/blog/visualization"
+                        style="margin-top: 20px !important;">visualization</a></li>
+                
+                <li style="display: inline;"><a href="/blog/analysis"
+                        style="margin-top: 20px !important;">analysis</a></li>
+                
+                <li style="display: inline;"><a href="/blog/addons"
+                        style="margin-top: 20px !important;">addons</a></li>
+                
+                <li style="display: inline;"><a href="/blog/workshop"
+                        style="margin-top: 20px !important;">workshop</a></li>
+                
+                <li style="display: inline;"><a href="/blog/education"
+                        style="margin-top: 20px !important;">education</a></li>
+                
+                <li style="display: inline;"><a href="/blog/classification"
+                        style="margin-top: 20px !important;">classification</a></li>
+                
+                <li style="display: inline;"><a href="/blog/data"
+                        style="margin-top: 20px !important;">data</a></li>
+                
+                <li style="display: inline;"><a href="/blog/examples"
+                        style="margin-top: 20px !important;">examples</a></li>
+                
+                <li style="display: inline;"><a href="/blog/gsoc"
+                        style="margin-top: 20px !important;">gsoc</a></li>
+                
+            </ul>
+        </div>
+        <div id="search-results" style="display: none;">
+        </div>
+        <div id="post_nor">
+            
+            
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Apr 23, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/04/23/installing-add-ons-works-again/"> Installing Add-ons Works Again</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Dear Orange users,
+Some of you might have an issue installing add-ons with the following issue popping up:
+xmlrpc.client.Fault: &lt;Fault -32601: 'server error; requested method not found'&gt;
+This is the result of the migration to a new infrastructure at PyPi, which provides the installation of add-ons. Our team has rallied to adjust the add-on installer so it works with the new and improved service.
+In order to make the add-on installer work (again), please download the latest version of Orange (3.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/pypi">pypi</a>
+                                
+                                <a class="tag-workflow" href="/blog/release">release</a>
+                                
+                                <a class="tag-workflow" href="/blog/update">update</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/04/23/installing-add-ons-works-again/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Aug 28, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/08/28/can-we-download-orange-faster/"> Can We Download Orange Faster?</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.
+Related: Introduction to Data Mining Course in Houston
+But we have the data and we&rsquo;ve promptly tried to confirm their complaints by analyzing them&hellip; well, in Orange!
+First, let us observe the data. We have 4887 recorded download sessions with one meta feature reporting on the country of the download and four features with time, size, speed in bytes and speed in gigabytes of the download.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/08/28/can-we-download-orange-faster/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Jul 14, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/07/14/miniconda-installer/"> Miniconda Installer</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Orange has a new friend! It&rsquo;s Miniconda, Anaconda&rsquo;s little sister.
+For a long time, the idea was to utilize the friendly nature of Miniconda to install Orange dependencies, which often misbehaved on some platforms. Miniconda provides Orange with Python 3.6 and conda installer, which is then used to handle everything Orange needs for proper functioning. So sssssss-mooth!
+Miniconda Installer
+Please know that our Miniconda installer is in a beta state, but we are inviting adventurous testers to try it and report any bugs they find to our issue tracker [there won&rsquo;t be any of course!
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/07/14/miniconda-installer/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Sep 11, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/09/11/hubbing-with-hub-widget/"> Hubbing with the Hub widget</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+Say no more! Look no further! Here is the new Hub widget!
+Hub widget is the most versatile widget available so far.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/widget">widget</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/09/11/hubbing-with-hub-widget/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BIOLAB, Jul 3, 2011</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2011/07/03/fink-packages-now-also-64-bit/"> Fink packages now also 64-bit</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Fink packages (we are using for system-wide Orange installations on Mac OS X) were updated to 64-bit. So if you were using 64-bit Fink installation you will be now able also to use Orange (and our binary Fink repository of already compiled packages). Just use this this installation script to configure your local Fink installation to use our binary Fink repository and add information about Orange packages (they are not available among official Fink packages).
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/packaging">packaging</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2011/07/03/fink-packages-now-also-64-bit/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BIOLAB, Jun 30, 2011</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2011/06/30/debian-packages-for-squeeze/"> Debian packages for Squeeze</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your /etc/apt/sources.list to:
+deb http://orange.biolab.si/debian squeeze main deb-src http://orange.biolab.si/debian squeeze main  Those packages are compiled for Python 2.6.
+You can read more about Debian packages in our old blog post.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/debian">debian</a>
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/packaging">packaging</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2011/06/30/debian-packages-for-squeeze/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BIOLAB, Mar 4, 2010</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2010/03/04/debian-repository-lives/"> Debian repository lives!</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.
+To get access to those packages just add those two lines to your /etc/apt/sources.list (this file contains a list of repositories with packages):
+deb http://orange.biolab.si/debian lenny main deb-src http://orange.biolab.si/debian lenny main  And then you can install Orange with this command:
+aptitude update aptitude install orange-svn  Packages are not signed as they are made automatically so you will probably be warned about this.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/debian">debian</a>
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/download">download</a>
+                                
+                                <a class="tag-workflow" href="/blog/packaging">packaging</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2010/03/04/debian-repository-lives/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script type="text/javascript">
+    function check_key(e) {
+        if (e.keyCode == 13) {
+            search_content();
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
+                $("#post_nor").show();
+                $("#search-results").hide();
+                $("#pagination").show();
+            }
+        }
+    }
+
+    function search_content() {
+
+        var param = document.getElementById('search-input').value;
+
+        $("#pagination").hide();
+
+        if (param.trim() == "") {
+            $("#post_nor").show();
+            $("#search-results").hide();
+            $("#pagination").show();
+        } else {
+            var results = search(param);
+            var search_results = document.getElementById('search-results')
+
+            $("#post_nor").hide();
+            $("#search-results").show();
+
+            if (results.length < 1) {
+                search_results.innerHTML = '<div style="padding: 20px 15px"> No blog posts found. </div>';
+            } else {
+                var html_el = ""
+
+                for (var page in results) {
+                    html_el += '<div class="row">';
+                    if (results[page].thumbImage == '' || results[page].thumbImage === '<no value>') {
+                        html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
+                    } else if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
+                    } else {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
+                    }
+
+                    html_el +=
+                        '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
+                        results[page].author + ', ' + results[page].date + '</p>'
+                    html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="' + results[
+                        page].uri + '">' + results[page].title + '</a></h2>'
+
+
+                    if (results[page].longExcerpt != '' && results[page].longExcerpt != '<no value>') {
+                        html_el += '<p class="feature-text">' + results[page].longExcerpt + '</p>'
+                    } else {
+                        html_el += '<p class="feature-text">' + results[page].summary + '</p>'
+
+                    }
+
+                    html_el += '<div class="tags" style="padding-bottom: 10px;">Categories:'
+                    for (var cat in results[page].categories) {
+                        html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
+                            results[page].categories[cat] + '</a>'
+                    }
+
+                    html_el += '</div>'
+                    html_el += '<div class="getting-started-button">'
+                    html_el += '<a href="' + results[page].uri +
+                        '" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+
+                    html_el += '</div></div>'
+
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
+
+                        if (page % 2 == 0) {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                        } else {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+                        }
+
+                        html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
+                            '" class="workflow-image"></a>'
+
+                        html_el += "</div>"
+                    }
+
+                    html_el += "</div><hr/>"
+                }
+
+                search_results.innerHTML += html_el;
+            }
+        }
+    }
+</script>
+<script type="text/javascript" src="/js/lunr.js"></script>
+<script type="text/javascript">
+    var baseurl = "";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 15 Oct </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-10-15-document-embedders/">How to identify fake news with document embeddings</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 28 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-09-28-text-tutorials/">New Video Tutorials on Text Mining</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-07-27-story-arcs/">Detecting Story Arcs with Orange</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

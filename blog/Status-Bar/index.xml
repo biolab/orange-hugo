@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Status Bar on Orange</title>
+    <link>/blog/Status-Bar/</link>
+    <description>Recent content in Status Bar on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/Status-Bar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Changing Status Bar</title>
+      <link>/blog/2019/3/8/the-changing-status-bar/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/3/8/the-changing-status-bar/</guid>
+      <description>Every week on Friday, when the core team of Orange developers meets, we are designing new improvements of Orange&amp;rsquo;s graphical interface. This time, it was the status bar. Well, actually, it was the status bar quite a while ago and required the change of the core widget library, but it is materializing these days and you will see the changes in the next release.
+Consider the Neighbors widget. The widget considers the input data and reference data items, and outputs instance form input data that are most similar to the references.</description>
+    </item>
+    
+  </channel>
+</rss>

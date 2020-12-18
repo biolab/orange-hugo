@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interface on Orange</title>
+    <link>/blog/interface/</link>
+    <description>Recent content in interface on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2018 19:11:58 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange is Getting Smarter</title>
+      <link>/blog/2018/11/22/orange-is-getting-smarter/</link>
+      <pubDate>Thu, 22 Nov 2018 19:11:58 +0000</pubDate>
+      
+      <guid>/blog/2018/11/22/orange-is-getting-smarter/</guid>
+      <description>In the past few months, Orange has been getting smarter and sleeker.
+Since version 3.15.0, Orange remembers which distinct widgets users like to connect, adjusting the sorting on the widget search menu accordingly. Additionally, there is a new look for the Edit Links window coming soon.
+Orange recently implemented a basic form of opt-in usage tracking, specifically targeting how users add widgets to the canvas.
+Word cloud of widget popularity in Orange.</description>
+    </item>
+    
+    <item>
+      <title>Model replaces Classify and Regression</title>
+      <link>/blog/2017/04/07/model-replaces-classify-and-regression/</link>
+      <pubDate>Fri, 07 Apr 2017 14:27:44 +0000</pubDate>
+      
+      <guid>/blog/2017/04/07/model-replaces-classify-and-regression/</guid>
+      <description>Did you recently wonder where did Classification Tree go? Or what happened to Majority?
+Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
+This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.</description>
+    </item>
+    
+    <item>
+      <title>10 Tips and Tricks for Using Orange</title>
+      <link>/blog/2016/10/17/tips-for-using-orange/</link>
+      <pubDate>Mon, 17 Oct 2016 12:18:23 +0000</pubDate>
+      
+      <guid>/blog/2016/10/17/tips-for-using-orange/</guid>
+      <description>TIP #1: Follow tutorials and example workflows to get started.
+It&amp;rsquo;s difficult to start using new software. Where does one start, especially a total novice in data mining? For this exact reason we&amp;rsquo;ve prepared Getting Started With Orange - YouTube tutorials for complete beginners. Example workflows on the other hand can be accessed via Help - Examples.
+TIP #2: Make use of Orange documentation.
+You can access it in three ways:</description>
+    </item>
+    
+    <item>
+      <title>The Story of Shadow and Orange</title>
+      <link>/blog/2016/10/10/the-story-of-shadow-and-orange/</link>
+      <pubDate>Mon, 10 Oct 2016 10:09:56 +0000</pubDate>
+      
+      <guid>/blog/2016/10/10/the-story-of-shadow-and-orange/</guid>
+      <description>This is a long story. I remember when started my PhD in Italy. There I met a researcher and he said to me: »You should do some simulations on x-ray optics beamline.« »Yes, but how should I do that?« He gave me a big tape, it was 1986. I soon realized it was all code. But it was a code called Shadow.
+I started to look at the code, to play with it, do some simulations… Soon my boss told me:</description>
+    </item>
+    
+    <item>
+      <title>Coming soon: Orange&#39;s new interface</title>
+      <link>/blog/2012/11/27/coming-soon-oranges-new-interface/</link>
+      <pubDate>Tue, 27 Nov 2012 09:01:00 +0000</pubDate>
+      
+      <guid>/blog/2012/11/27/coming-soon-oranges-new-interface/</guid>
+      <description>Orange will soon get entirely new interface. The GUI will feature new canvas and icons and new presentation of data flow. Orange will be upgraded with on-line help for widgets and tutorials. The prototype is now in testing and should replace the current version of Orange in early 2013.</description>
+    </item>
+    
+  </channel>
+</rss>

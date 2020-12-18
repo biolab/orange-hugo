@@ -11,7 +11,7 @@
 	"download": "110-file-and-data-table-widget.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Data Table", "Data Loading"]
+	"tags": []
 }
     
     , {
@@ -22,7 +22,7 @@
 	"download": "120-scatterplot-data-table.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Scatter Plot", "Visualization"]
+	"tags": []
 }
     
     , {
@@ -33,7 +33,7 @@
 	"download": "130-scatterplot-visualize-subset.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Scatter Plot", "Visualization"]
+	"tags": []
 }
     
     , {
@@ -44,7 +44,7 @@
 	"download": "140-pivot-table.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Data", "Pivot Table"]
+	"tags": []
 }
     
     , {
@@ -55,7 +55,7 @@
 	"download": "250-tree-scatterplot.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Classification Tree", "Classification"]
+	"tags": []
 }
     
     , {}
@@ -68,7 +68,7 @@
 	"download": "305-pca.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["PCA", "Dimensionality Reduction"]
+	"tags": []
 }
     
     , {
@@ -79,7 +79,7 @@
 	"download": "310-clustering.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Hierarchical Clustering", "Clustering"]
+	"tags": []
 }
     
     , {
@@ -90,7 +90,7 @@
 	"download": "315-cluster-inspection.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Clustering", "Hierarchical Clustering", "Box Plot"]
+	"tags": []
 }
     
     , {
@@ -101,7 +101,7 @@
 	"download": "410-feature-ranking.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Feature Ranking", "Feature Selection"]
+	"tags": []
 }
     
     , {}
@@ -114,7 +114,7 @@
 	"download": "450-cross-validation.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Cross Validation", "Predictive models", "Classification"]
+	"tags": []
 }
     
     , {
@@ -125,7 +125,7 @@
 	"download": "470-misclassification-scatterplot.ows",
 	"blog" : "",
 	"video" : "",
-	"tags": ["Confusion Matrix", "Classification", "Scatter Plot"]
+	"tags": []
 }
     
     , {
@@ -136,7 +136,7 @@
 	"download": "610-text-preprocessing.ows",
 	"blog" : "2017/06/19/text-preprocessing/",
 	"video" : "https://youtu.be/V70UwJZWkZ8",
-	"tags": ["Text Mining", "Preprocessing", "Tokenization"]
+	"tags": []
 }
     
     , {
@@ -147,7 +147,7 @@
 	"download": "620-text-clustering.ows",
 	"blog" : "",
 	"video" : "https://youtu.be/rH_vQxQL6oM",
-	"tags": ["Text Mining", "Clustering", "Tokenization"]
+	"tags": []
 }
     
     , {
@@ -158,7 +158,7 @@
 	"download": "630-text-classification.ows",
 	"blog" : "",
 	"video" : "https://youtu.be/zO_zwKZCULo",
-	"tags": ["Text Mining", "Classification", "Nomogram", "Bag of Words"]
+	"tags": []
 }
     
     , {
@@ -169,7 +169,7 @@
 	"download": "640-twitter.ows",
 	"blog" : "",
 	"video" : "https://youtu.be/HDkI6G4slzQ",
-	"tags": ["Text Mining", "Twitter", "Topic Modeling"]
+	"tags": []
 }
     
     , {
@@ -180,7 +180,7 @@
 	"download": "650-story-arcs.ows",
 	"blog" : "2020/2020-07-27-story-arcs/",
 	"video" : "",
-	"tags": ["Text Mining", "Timeseries", "Literary Analysis", "Story Arcs", "Sentiment Analysis"]
+	"tags": []
 }
     
 ]

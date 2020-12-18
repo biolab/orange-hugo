@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computervision on Orange</title>
+    <link>/blog/computervision/</link>
+    <description>Recent content in computervision on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Aug 2014 15:59:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/computervision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange Canvas applied to x-ray optics</title>
+      <link>/blog/2014/08/26/orange-canvas-applied-to-x-ray-optics/</link>
+      <pubDate>Tue, 26 Aug 2014 15:59:00 +0000</pubDate>
+      
+      <guid>/blog/2014/08/26/orange-canvas-applied-to-x-ray-optics/</guid>
+      <description>Orange Canvas is being appropriated by guys who would like to use it as graphical environment for simulating x-ray optics.
+Manuel Sanchez del Rio, from The European Synchrotron Facility in Grenoble, France, and Luca Rebuffi from Elettra-Sincrotrone, Trieste, Italy, were looking for a tool that would help them integrate the various tools for x-ray optics simulations, like the popular SHADOW and SRW. They discovered that the data workflow paradigm, like the one used in Orange Canvas, fits their needs perfectly.</description>
+    </item>
+    
+    <item>
+      <title>Orange GSoC: Computer vision add-on for Orange</title>
+      <link>/blog/2012/05/15/orange-gsoc-computer-vision-add-on-for-orange/</link>
+      <pubDate>Tue, 15 May 2012 06:00:00 +0000</pubDate>
+      
+      <guid>/blog/2012/05/15/orange-gsoc-computer-vision-add-on-for-orange/</guid>
+      <description>This summer I got the chance to develop an add-on for Orange that will introduce basic computer vision functionality, as a part of Google Summer of Code.
+The add-on will consist of a set of widgets, each with it&amp;rsquo;s own dedicated purpose, which can be seamlessly connected to provide most commonly used image preprocessing functionality.
+Here is a list of the widgets:
+ Widget for viewing image files (add description) Widget for resizing an image Widget for rotation/flipping of the image Widget for converting the color mode (RGB, HSV, Grayscale etc.</description>
+    </item>
+    
+  </channel>
+</rss>

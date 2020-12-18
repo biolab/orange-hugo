@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>groupby on Orange</title>
+    <link>/blog/groupby/</link>
+    <description>Recent content in groupby on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/groupby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aggregate, Group By and Pivot with... Pivot Table!</title>
+      <link>/blog/2019/2019-08-27-pivot-table/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-08-27-pivot-table/</guid>
+      <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
+ \
+Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+pandas.DataFrame.agg The first task is computing a simple mean for the column age.
+In pandas:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pls on Orange</title>
+    <link>/blog/pls/</link>
+    <description>Recent content in pls on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Feb 2012 16:21:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/pls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New in Orange: Partial least squares regression</title>
+      <link>/blog/2012/02/02/new-in-orange-partial-least-squares-regression/</link>
+      <pubDate>Thu, 02 Feb 2012 16:21:00 +0000</pubDate>
+      
+      <guid>/blog/2012/02/02/new-in-orange-partial-least-squares-regression/</guid>
+      <description>Partial least squares regression is a regression technique which supports multiple response variables. PLS regression is very popular in areas such as bioinformatics, chemometrics etc. where the number of observations is usually less than the number of measured variables and where there exists multicollinearity among the predictor variables. In such situations, standard regression techniques would usually fail. The PLS regression is now available in Orange (see documentation)!
+You can use PLS regression model on single-target or multi-target data sets.</description>
+    </item>
+    
+  </channel>
+</rss>

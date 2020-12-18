@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data on Orange</title>
+    <link>/blog/data/</link>
+    <description>Recent content in data on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managing Data with Edit Domain</title>
+      <link>/blog/2020/2020-06-19-edit-domain/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-06-19-edit-domain/</guid>
+      <description>Importing data into Orange is easy. File, import, and voila, your data is here. But what about if you want to rename a variable, change it&amp;rsquo;s type or edit labels? Edit Domain to the rescue!
+First of all, what is &amp;lsquo;domain&amp;rsquo;. Domain is like a metadata of your data - it describes column names, column types (categorical, numeric, string, datetime), and values for categorical variables. You will come across domain everywhere in Orange, because Orange&amp;rsquo;s table (Orange.</description>
+    </item>
+    
+    <item>
+      <title>Aggregate, Group By and Pivot with... Pivot Table!</title>
+      <link>/blog/2019/2019-08-27-pivot-table/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-08-27-pivot-table/</guid>
+      <description>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&amp;rsquo; aggregate, groupby and pivot_table functions.
+ \
+Let us see how to achieve these tasks in Orange. For all of the below examples we will be using the heart_disease.tab data.
+pandas.DataFrame.agg The first task is computing a simple mean for the column age.
+In pandas:</description>
+    </item>
+    
+    <item>
+      <title>From Surveys to Orange</title>
+      <link>/blog/2018/06/12/from-surveys-to-orange/</link>
+      <pubDate>Tue, 12 Jun 2018 07:54:17 +0000</pubDate>
+      
+      <guid>/blog/2018/06/12/from-surveys-to-orange/</guid>
+      <description>Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
+Related: Analyzing Surveys
+We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.</description>
+    </item>
+    
+    <item>
+      <title>Spectroscopy Workshop at BioSpec and How to Merge Data</title>
+      <link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link>
+      <pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate>
+      
+      <guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid>
+      <description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+Related: Orange with Spectroscopy Add-on
+A class full of dedicated scientists.
+One thing we did was see how to join data from two different sources.</description>
+    </item>
+    
+    <item>
+      <title>How to enable SQL widget in Orange</title>
+      <link>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</link>
+      <pubDate>Fri, 16 Feb 2018 13:20:06 +0000</pubDate>
+      
+      <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
+      <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
+Related: SQL for Orange
+ Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Surveys</title>
+      <link>/blog/2017/10/26/analyzing-surveys/</link>
+      <pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate>
+      
+      <guid>/blog/2017/10/26/analyzing-surveys/</guid>
+      <description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description>
+    </item>
+    
+    <item>
+      <title>Why Orange?</title>
+      <link>/blog/2017/03/09/why-orange/</link>
+      <pubDate>Thu, 09 Mar 2017 10:54:13 +0000</pubDate>
+      
+      <guid>/blog/2017/03/09/why-orange/</guid>
+      <description>Why is Orange so great? Because it helps people solve problems quickly and efficiently.
+Sašo Jakljevič, a former student of the Faculty of Computer and Information Science at University of Ljubljana, created the following motivational videos for his graduation thesis. He used two belowed datasets, iris and zoo, to showcase how to tackle real-life problems with Orange.
+    </description>
+    </item>
+    
+    <item>
+      <title>Preparing Scraped Data</title>
+      <link>/blog/2017/01/23/preparing-scraped-data/</link>
+      <pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate>
+      
+      <guid>/blog/2017/01/23/preparing-scraped-data/</guid>
+      <description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+Related: Creating a new data table in Orange through Python
+First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description>
+    </item>
+    
+    <item>
+      <title>Data Preparation for Machine Learning</title>
+      <link>/blog/2017/01/13/data-preparation-for-machine-learning/</link>
+      <pubDate>Fri, 13 Jan 2017 09:25:58 +0000</pubDate>
+      
+      <guid>/blog/2017/01/13/data-preparation-for-machine-learning/</guid>
+      <description>We&amp;rsquo;ve said it numerous times and we&amp;rsquo;re going to say it again. Data preparation is crucial for any data analysis. If your data is messy, there&amp;rsquo;s no way you can make sense of it, let alone a computer. Computers are great at handling large, even enormous data sets, speedy computing and recognizing patterns. But they fail miserably if you give them the wrong input. Also some classification methods work better with binary values, other with continuous, so it is important to know how to treat your data properly.</description>
+    </item>
+    
+    <item>
+      <title>Scripting with Time Variable</title>
+      <link>/blog/2016/06/10/scripting-with-time-variable/</link>
+      <pubDate>Fri, 10 Jun 2016 12:37:50 +0000</pubDate>
+      
+      <guid>/blog/2016/06/10/scripting-with-time-variable/</guid>
+      <description>It&amp;rsquo;s always fun to play around with data. And since Orange can, as of a few months ago, read temporal data, we decided to parse some data we had and put it into Orange.
+TimeVariable is an extended class of continuous variable and it works with properly formated ISO standard datetime (Y-M-D h:m:s). Oftentimes our original data is not in the right format and needs to be edited first, so Orange can read it.</description>
+    </item>
+    
+    <item>
+      <title>Univariate GSoC Success</title>
+      <link>/blog/2016/04/14/univariate-gsoc-success/</link>
+      <pubDate>Thu, 14 Apr 2016 08:55:14 +0000</pubDate>
+      
+      <guid>/blog/2016/04/14/univariate-gsoc-success/</guid>
+      <description>Google Summer of Code application period has come to an end. We&amp;rsquo;ve received 34 applications, some of which were of truly high quality. Now it&amp;rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&amp;rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
+First, we needed to preprocess the data a bit, since it came in a messy form of strings.</description>
+    </item>
+    
+    <item>
+      <title>Tips and Tricks for Data Preparation</title>
+      <link>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</link>
+      <pubDate>Fri, 29 Jan 2016 14:59:18 +0000</pubDate>
+      
+      <guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid>
+      <description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
+  Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
+    </item>
+    
+    <item>
+      <title>Making Predictions</title>
+      <link>/blog/2016/01/22/predictive-analytics-with-orange/</link>
+      <pubDate>Fri, 22 Jan 2016 16:01:36 +0000</pubDate>
+      
+      <guid>/blog/2016/01/22/predictive-analytics-with-orange/</guid>
+      <description>One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.</description>
+    </item>
+    
+    <item>
+      <title>Orange YouTube Tutorials</title>
+      <link>/blog/2016/01/04/orange-youtube-tutorials/</link>
+      <pubDate>Mon, 04 Jan 2016 08:09:24 +0000</pubDate>
+      
+      <guid>/blog/2016/01/04/orange-youtube-tutorials/</guid>
+      <description>It&amp;rsquo;s been a long time coming, but finally we&amp;rsquo;ve created out our first set of YouTube tutorials. In a series &amp;lsquo;Getting Started with Orange&amp;rsquo; we will walk through our software step-by-step. You will learn how to create a workflow, load your data in different formats, visualize and explore the data. These tutorials are meant for complete beginners in both Orange and data mining and come with some handy tricks that will make using Orange very easy.</description>
+    </item>
+    
+    <item>
+      <title>Report is back! (and better than ever)</title>
+      <link>/blog/2015/12/11/report-is-back-and-better-than-ever/</link>
+      <pubDate>Fri, 11 Dec 2015 09:53:12 +0000</pubDate>
+      
+      <guid>/blog/2015/12/11/report-is-back-and-better-than-ever/</guid>
+      <description>I’m sure you’d agree that reporting your findings when analyzing the data is crucial. Say you have a couple of interesting predictions that you’ve tested with several methods many times and you’d like to share that with the world. Here’s how.
+Save Graph just got company - a Report button! Report works in most widgets, apart from the very obvious ones that simply transmit or display the data (Python Scripting, Edit Domain, Image Viewer, Predictions…).</description>
+    </item>
+    
+    <item>
+      <title>Mining our own data</title>
+      <link>/blog/2015/11/27/mining-our-own-data/</link>
+      <pubDate>Fri, 27 Nov 2015 08:37:03 +0000</pubDate>
+      
+      <guid>/blog/2015/11/27/mining-our-own-data/</guid>
+      <description>Recently we&amp;rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
+Here we have some preliminary results that we&amp;rsquo;ve managed to gather in the past three weeks or so.</description>
+    </item>
+    
+    <item>
+      <title>Ghostbusters</title>
+      <link>/blog/2015/10/30/ghostbusters/</link>
+      <pubDate>Fri, 30 Oct 2015 15:07:34 +0000</pubDate>
+      
+      <guid>/blog/2015/10/30/ghostbusters/</guid>
+      <description>Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
+Let’s check the distribution in Distributions widget.
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.</description>
+    </item>
+    
+    <item>
+      <title>SQL for Orange</title>
+      <link>/blog/2015/10/19/sql-for-orange/</link>
+      <pubDate>Mon, 19 Oct 2015 12:36:04 +0000</pubDate>
+      
+      <guid>/blog/2015/10/19/sql-for-orange/</guid>
+      <description>We bet you&amp;rsquo;ve always wanted to use your SQL data in Orange, but you might not be quite sure how to do it. Don&amp;rsquo;t worry, we&amp;rsquo;re coming to the rescue.
+The key to SQL files is installation of &amp;lsquo;psycopg2&amp;rsquo; library in Python.
+WINDOWS
+Go to this website and download psycopg2 package. Once your .whl file has downloaded, go to the file directory and run command prompt. Enter “pip install [file name]” and run it.</description>
+    </item>
+    
+    <item>
+      <title>Hubbing with the Hub widget</title>
+      <link>/blog/2015/09/11/hubbing-with-hub-widget/</link>
+      <pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate>
+      
+      <guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid>
+      <description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+Say no more! Look no further! Here is the new Hub widget!
+Hub widget is the most versatile widget available so far.</description>
+    </item>
+    
+    <item>
+      <title>Classifying instances with Orange in Python</title>
+      <link>/blog/2015/08/14/classifying-instances-with-orange-in-python/</link>
+      <pubDate>Fri, 14 Aug 2015 12:31:57 +0000</pubDate>
+      
+      <guid>/blog/2015/08/14/classifying-instances-with-orange-in-python/</guid>
+      <description>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily classify data with Orange.
+First we’re going to create a new data table with 10 fruits as our instances.
+import Orange from Orange.data import * color = DiscreteVariable(&amp;quot;color&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;yellow&amp;quot;])calories = ContinuousVariable(&amp;quot;calories&amp;quot;) fiber = ContinuousVariable(&amp;quot;fiber&amp;quot;) fruit = DiscreteVariable(&amp;quot;fruit&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;apple&amp;quot;, &amp;quot;peach&amp;quot;]) domain = Domain([color, calories, fiber], class_vars=fruit) data=Table(domain, [&amp;lt;/span&amp;gt; [&amp;quot;green&amp;quot;, 4, 1.</description>
+    </item>
+    
+    <item>
+      <title>Creating a new data table in Orange through Python</title>
+      <link>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</link>
+      <pubDate>Fri, 07 Aug 2015 13:57:49 +0000</pubDate>
+      
+      <guid>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</guid>
+      <description>IMPORT DATA
+One of the first tasks in Orange data analysis is of course loading your data. If you are using Orange through Python, this is as easy as riding a bike:
+import Orange data = Orange.data.Table(“iris”) print (data)  This will return a neat data table of the famous Iris data set in the console.
+CREATE YOUR OWN DATA TABLE
+What if you want to create your own data table from scratch?</description>
+    </item>
+    
+    <item>
+      <title>Datasets in Orange Bioinformatics Add-On</title>
+      <link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link>
+      <pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate>
+      
+      <guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid>
+      <description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description>
+    </item>
+    
+    <item>
+      <title>Learn with Paint Data</title>
+      <link>/blog/2015/07/10/learn-with-paint-data/</link>
+      <pubDate>Fri, 10 Jul 2015 07:00:54 +0000</pubDate>
+      
+      <guid>/blog/2015/07/10/learn-with-paint-data/</guid>
+      <description>Paint Data widget might initially look like a kids’ game, but in combination with other Orange widgets it becomes a very simple and useful tool for conveying statistical concepts, such as k-means, hierarchical clustering and prediction models (like SVM, logistical regression, etc.).
+The widget enables you to draw your data on a 2-D plane. You can name the x and y axes, select the number of classes (which are represented by different colors) and then position the points on a graph.</description>
+    </item>
+    
+    <item>
+      <title>Excel files in Orange 3.0</title>
+      <link>/blog/2015/05/29/excel-files-in-orange-3-0/</link>
+      <pubDate>Fri, 29 May 2015 11:58:39 +0000</pubDate>
+      
+      <guid>/blog/2015/05/29/excel-files-in-orange-3-0/</guid>
+      <description>Orange 3.0 version comes with an exciting feature that will simplify reading your data. If the old Orange required conversion from Excel into either tab-delimited or comma-separated files, the new version allows you to open plain .xlsx format data sets in the program. Naturally, the .txt and .csv files are still readable in Orange, so feel free to use data sets in any of the above-mentioned formats.
+Since Orange 3.0 is still in the development mode, you will find a smaller selection of widgets available at the moment, but give it a go and see how it works for Excel type data and whether the existing widgets are sufficient for your data analysis.</description>
+    </item>
+    
+    <item>
+      <title>Loading your data</title>
+      <link>/blog/2015/01/18/loading-your-data/</link>
+      <pubDate>Sun, 18 Jan 2015 17:36:13 +0000</pubDate>
+      
+      <guid>/blog/2015/01/18/loading-your-data/</guid>
+      <description>By a popular demand, we have just published a tutorial on how to load the data table into Orange. Besides its own .tab format, Orange can load any tab or comma delimited data set. The details are though in writing header rows that tell Orange about the type and domain of each attribute. The tutorial is a step-by-step description on how to do this and how to transfer the data from popular spreadsheet programs like Excel.</description>
+    </item>
+    
+    <item>
+      <title>Paint Your Data</title>
+      <link>/blog/2013/12/20/paint-your-data/</link>
+      <pubDate>Fri, 20 Dec 2013 20:19:00 +0000</pubDate>
+      
+      <guid>/blog/2013/12/20/paint-your-data/</guid>
+      <description>One of the widgets I enjoy very much when teaching introductory course in data mining is the Paint Data widget. When painting in this widget I would intentionally include some clusters, or intentionally obscure them. Or draw them in any strange shape. Then I would discuss with students if these clusters are identified by k-means clustering or by hierarchical clustering. We would also discuss automatic scoring of the quality of clusters, come up with the idea of a silhouette (ok, already invented, but helps if you get this idea on your own as well).</description>
+    </item>
+    
+  </channel>
+</rss>

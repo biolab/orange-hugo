@@ -248,17 +248,17 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/blog/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/classification/</loc>
+    <loc>/blog/classification/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/corpus/</loc>
+    <loc>/blog/corpus/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -273,12 +273,12 @@
   </url>
   
   <url>
-    <loc>/categories/text-mining/</loc>
+    <loc>/blog/text-mining/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/embedding/</loc>
+    <loc>/blog/embedding/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -288,22 +288,22 @@
   </url>
   
   <url>
-    <loc>/categories/sentiment-analysis/</loc>
+    <loc>/blog/sentiment-analysis/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/tutorial/</loc>
+    <loc>/blog/tutorial/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/twitter/</loc>
+    <loc>/blog/twitter/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/video/</loc>
+    <loc>/blog/video/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -313,32 +313,32 @@
   </url>
   
   <url>
-    <loc>/categories/heat-map/</loc>
+    <loc>/blog/heat-map/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/line-chart/</loc>
+    <loc>/blog/line-chart/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/story-arc/</loc>
+    <loc>/blog/story-arc/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/data/</loc>
+    <loc>/blog/data/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/domain/</loc>
+    <loc>/blog/domain/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/edit/</loc>
+    <loc>/blog/edit/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,12 +348,12 @@
   </url>
   
   <url>
-    <loc>/categories/addons/</loc>
+    <loc>/blog/addons/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/covid-19/</loc>
+    <loc>/blog/covid-19/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -363,17 +363,17 @@
   </url>
   
   <url>
-    <loc>/categories/time/</loc>
+    <loc>/blog/time/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/trends/</loc>
+    <loc>/blog/trends/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/visualization/</loc>
+    <loc>/blog/visualization/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -383,7 +383,7 @@
   </url>
   
   <url>
-    <loc>/categories/geo/</loc>
+    <loc>/blog/geo/</loc>
     <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -393,22 +393,22 @@
   </url>
   
   <url>
-    <loc>/categories/feature-construction/</loc>
+    <loc>/blog/feature-construction/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/line-plot/</loc>
+    <loc>/blog/line-plot/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/anaconda/</loc>
+    <loc>/blog/anaconda/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/installation/</loc>
+    <loc>/blog/installation/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -418,12 +418,12 @@
   </url>
   
   <url>
-    <loc>/categories/navigator/</loc>
+    <loc>/blog/navigator/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/education/</loc>
+    <loc>/blog/education/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -433,27 +433,27 @@
   </url>
   
   <url>
-    <loc>/categories/workshop/</loc>
+    <loc>/blog/workshop/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/anthropology/</loc>
+    <loc>/blog/anthropology/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/big-data/</loc>
+    <loc>/blog/big-data/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/machine/</loc>
+    <loc>/blog/machine/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/pivot-table/</loc>
+    <loc>/blog/pivot-table/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -463,7 +463,7 @@
   </url>
   
   <url>
-    <loc>/categories/cloud/</loc>
+    <loc>/blog/cloud/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -473,17 +473,17 @@
   </url>
   
   <url>
-    <loc>/categories/remote/</loc>
+    <loc>/blog/remote/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/server/</loc>
+    <loc>/blog/server/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/images/</loc>
+    <loc>/blog/images/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -493,17 +493,17 @@
   </url>
   
   <url>
-    <loc>/categories/neighbors/</loc>
+    <loc>/blog/neighbors/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/belgrade/</loc>
+    <loc>/blog/belgrade/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/decision-tree/</loc>
+    <loc>/blog/decision-tree/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -513,17 +513,17 @@
   </url>
   
   <url>
-    <loc>/categories/naive-bayes/</loc>
+    <loc>/blog/naive-bayes/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/nomogram/</loc>
+    <loc>/blog/nomogram/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/clustering/</loc>
+    <loc>/blog/clustering/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -533,17 +533,17 @@
   </url>
   
   <url>
-    <loc>/categories/telco/</loc>
+    <loc>/blog/telco/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/hypothesis-testing/</loc>
+    <loc>/blog/hypothesis-testing/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/multiple-hypothesis-testing/</loc>
+    <loc>/blog/multiple-hypothesis-testing/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -553,22 +553,22 @@
   </url>
   
   <url>
-    <loc>/categories/p-value/</loc>
+    <loc>/blog/p-value/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/statistical-significance/</loc>
+    <loc>/blog/statistical-significance/</loc>
     <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/confusion-matrix/</loc>
+    <loc>/blog/confusion-matrix/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/model-performance/</loc>
+    <loc>/blog/model-performance/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -578,7 +578,7 @@
   </url>
   
   <url>
-    <loc>/categories/aggregate/</loc>
+    <loc>/blog/aggregate/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -588,12 +588,12 @@
   </url>
   
   <url>
-    <loc>/categories/groupby/</loc>
+    <loc>/blog/groupby/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/data-science/</loc>
+    <loc>/blog/data-science/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -603,12 +603,12 @@
   </url>
   
   <url>
-    <loc>/categories/summer-school/</loc>
+    <loc>/blog/summer-school/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/bioinformatics/</loc>
+    <loc>/blog/bioinformatics/</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -628,7 +628,7 @@
   </url>
   
   <url>
-    <loc>/categories/gene-expression/</loc>
+    <loc>/blog/gene-expression/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -643,32 +643,32 @@
   </url>
   
   <url>
-    <loc>/categories/business-intelligence/</loc>
+    <loc>/blog/business-intelligence/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/HR/</loc>
+    <loc>/blog/HR/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/logistic-regression/</loc>
+    <loc>/blog/logistic-regression/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/predictive-models/</loc>
+    <loc>/blog/predictive-models/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/GIS/</loc>
+    <loc>/blog/GIS/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/hierarchical-clustering/</loc>
+    <loc>/blog/hierarchical-clustering/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -678,12 +678,12 @@
   </url>
   
   <url>
-    <loc>/categories/release/</loc>
+    <loc>/blog/release/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/Status-Bar/</loc>
+    <loc>/blog/Status-Bar/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -693,27 +693,27 @@
   </url>
   
   <url>
-    <loc>/categories/gene-ontology/</loc>
+    <loc>/blog/gene-ontology/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/genomics/</loc>
+    <loc>/blog/genomics/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/RNA-seq/</loc>
+    <loc>/blog/RNA-seq/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/scOrange/</loc>
+    <loc>/blog/scOrange/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/single-cell/</loc>
+    <loc>/blog/single-cell/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -723,22 +723,22 @@
   </url>
   
   <url>
-    <loc>/categories/cross-validation/</loc>
+    <loc>/blog/cross-validation/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/leave-one-out/</loc>
+    <loc>/blog/leave-one-out/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/LOO/</loc>
+    <loc>/blog/LOO/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/test-and-score/</loc>
+    <loc>/blog/test-and-score/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -748,7 +748,7 @@
   </url>
   
   <url>
-    <loc>/categories/correlations/</loc>
+    <loc>/blog/correlations/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -758,27 +758,27 @@
   </url>
   
   <url>
-    <loc>/categories/NHTS/</loc>
+    <loc>/blog/NHTS/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/null-hypothesis/</loc>
+    <loc>/blog/null-hypothesis/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/statistics/</loc>
+    <loc>/blog/statistics/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/interactive-visualization/</loc>
+    <loc>/blog/interactive-visualization/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/scatter-plot/</loc>
+    <loc>/blog/scatter-plot/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -788,12 +788,12 @@
   </url>
   
   <url>
-    <loc>/categories/analysis/</loc>
+    <loc>/blog/analysis/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/interface/</loc>
+    <loc>/blog/interface/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
   </url>
   
@@ -803,7 +803,7 @@
   </url>
   
   <url>
-    <loc>/categories/orange3/</loc>
+    <loc>/blog/orange3/</loc>
     <lastmod>2018-11-22T19:11:58+00:00</lastmod>
   </url>
   
@@ -818,17 +818,17 @@
   </url>
   
   <url>
-    <loc>/categories/preprocessing/</loc>
+    <loc>/blog/preprocessing/</loc>
     <lastmod>2018-10-05T10:36:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/infraorange/</loc>
+    <loc>/blog/infraorange/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/infrared-spectra/</loc>
+    <loc>/blog/infrared-spectra/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url>
   
@@ -838,12 +838,12 @@
   </url>
   
   <url>
-    <loc>/categories/python/</loc>
+    <loc>/blog/python/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/spectroscopy/</loc>
+    <loc>/blog/spectroscopy/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url>
   
@@ -853,7 +853,7 @@
   </url>
   
   <url>
-    <loc>/categories/update/</loc>
+    <loc>/blog/update/</loc>
     <lastmod>2018-09-11T13:49:28+00:00</lastmod>
   </url>
   
@@ -863,12 +863,12 @@
   </url>
   
   <url>
-    <loc>/categories/prediction/</loc>
+    <loc>/blog/prediction/</loc>
     <lastmod>2018-08-27T16:02:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/widget/</loc>
+    <loc>/blog/widget/</loc>
     <lastmod>2018-08-27T16:02:36+00:00</lastmod>
   </url>
   
@@ -883,12 +883,12 @@
   </url>
   
   <url>
-    <loc>/categories/interactive-data-visualization/</loc>
+    <loc>/blog/interactive-data-visualization/</loc>
     <lastmod>2018-06-21T09:23:09+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/dataloading/</loc>
+    <loc>/blog/dataloading/</loc>
     <lastmod>2018-06-12T07:54:17+00:00</lastmod>
   </url>
   
@@ -908,7 +908,7 @@
   </url>
   
   <url>
-    <loc>/categories/scripting/</loc>
+    <loc>/blog/scripting/</loc>
     <lastmod>2018-05-15T09:15:58+00:00</lastmod>
   </url>
   
@@ -918,12 +918,12 @@
   </url>
   
   <url>
-    <loc>/categories/image-analytics/</loc>
+    <loc>/blog/image-analytics/</loc>
     <lastmod>2018-05-09T08:19:34+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/youtube/</loc>
+    <loc>/blog/youtube/</loc>
     <lastmod>2018-05-09T08:19:34+00:00</lastmod>
   </url>
   
@@ -933,12 +933,12 @@
   </url>
   
   <url>
-    <loc>/categories/examples/</loc>
+    <loc>/blog/examples/</loc>
     <lastmod>2018-05-03T11:37:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/download/</loc>
+    <loc>/blog/download/</loc>
     <lastmod>2018-04-23T08:34:47+00:00</lastmod>
   </url>
   
@@ -948,32 +948,32 @@
   </url>
   
   <url>
-    <loc>/categories/pypi/</loc>
+    <loc>/blog/pypi/</loc>
     <lastmod>2018-04-23T08:34:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/neuralnetwork/</loc>
+    <loc>/blog/neuralnetwork/</loc>
     <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/parallelization/</loc>
+    <loc>/blog/parallelization/</loc>
     <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/performance/</loc>
+    <loc>/blog/performance/</loc>
     <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/programming/</loc>
+    <loc>/blog/programming/</loc>
     <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/qt/</loc>
+    <loc>/blog/qt/</loc>
     <lastmod>2018-04-05T08:22:20+00:00</lastmod>
   </url>
   
@@ -998,12 +998,12 @@
   </url>
   
   <url>
-    <loc>/categories/sql/</loc>
+    <loc>/blog/sql/</loc>
     <lastmod>2018-02-16T13:20:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/conference/</loc>
+    <loc>/blog/conference/</loc>
     <lastmod>2018-02-02T10:32:28+00:00</lastmod>
   </url>
   
@@ -1013,7 +1013,7 @@
   </url>
   
   <url>
-    <loc>/categories/features/</loc>
+    <loc>/blog/features/</loc>
     <lastmod>2018-01-26T11:00:09+00:00</lastmod>
   </url>
   
@@ -1028,7 +1028,7 @@
   </url>
   
   <url>
-    <loc>/categories/network/</loc>
+    <loc>/blog/network/</loc>
     <lastmod>2017-12-23T17:05:52+00:00</lastmod>
   </url>
   
@@ -1043,17 +1043,17 @@
   </url>
   
   <url>
-    <loc>/categories/overfitting/</loc>
+    <loc>/blog/overfitting/</loc>
     <lastmod>2017-11-29T12:26:44+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/predictive-analytics/</loc>
+    <loc>/blog/predictive-analytics/</loc>
     <lastmod>2017-11-29T12:26:44+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/scoring/</loc>
+    <loc>/blog/scoring/</loc>
     <lastmod>2017-11-29T12:26:44+00:00</lastmod>
   </url>
   
@@ -1073,7 +1073,7 @@
   </url>
   
   <url>
-    <loc>/categories/regression/</loc>
+    <loc>/blog/regression/</loc>
     <lastmod>2017-11-03T12:40:06+00:00</lastmod>
   </url>
   
@@ -1093,7 +1093,7 @@
   </url>
   
   <url>
-    <loc>/categories/unsupervised/</loc>
+    <loc>/blog/unsupervised/</loc>
     <lastmod>2017-09-22T11:34:26+00:00</lastmod>
   </url>
   
@@ -1113,7 +1113,7 @@
   </url>
   
   <url>
-    <loc>/categories/tree/</loc>
+    <loc>/blog/tree/</loc>
     <lastmod>2017-08-11T08:59:54+00:00</lastmod>
   </url>
   
@@ -1128,7 +1128,7 @@
   </url>
   
   <url>
-    <loc>/categories/version/</loc>
+    <loc>/blog/version/</loc>
     <lastmod>2017-08-04T11:41:33+00:00</lastmod>
   </url>
   
@@ -1138,7 +1138,7 @@
   </url>
   
   <url>
-    <loc>/categories/distribution/</loc>
+    <loc>/blog/distribution/</loc>
     <lastmod>2017-07-14T13:30:47+00:00</lastmod>
   </url>
   
@@ -1173,7 +1173,7 @@
   </url>
   
   <url>
-    <loc>/categories/toolbox/</loc>
+    <loc>/blog/toolbox/</loc>
     <lastmod>2017-04-07T14:27:44+00:00</lastmod>
   </url>
   
@@ -1208,7 +1208,7 @@
   </url>
   
   <url>
-    <loc>/categories/feature-engineering/</loc>
+    <loc>/blog/feature-engineering/</loc>
     <lastmod>2017-02-03T13:16:37+00:00</lastmod>
   </url>
   
@@ -1253,7 +1253,7 @@
   </url>
   
   <url>
-    <loc>/categories/article/</loc>
+    <loc>/blog/article/</loc>
     <lastmod>2016-11-18T13:28:09+00:00</lastmod>
   </url>
   
@@ -1273,17 +1273,17 @@
   </url>
   
   <url>
-    <loc>/categories/documentation/</loc>
+    <loc>/blog/documentation/</loc>
     <lastmod>2016-10-17T12:18:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/canvas/</loc>
+    <loc>/blog/canvas/</loc>
     <lastmod>2016-10-10T10:09:56+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/oasys/</loc>
+    <loc>/blog/oasys/</loc>
     <lastmod>2016-10-10T10:09:56+00:00</lastmod>
   </url>
   
@@ -1293,7 +1293,7 @@
   </url>
   
   <url>
-    <loc>/categories/bioorange/</loc>
+    <loc>/blog/bioorange/</loc>
     <lastmod>2016-10-02T11:21:20+00:00</lastmod>
   </url>
   
@@ -1313,7 +1313,7 @@
   </url>
   
   <url>
-    <loc>/categories/gsoc2016/</loc>
+    <loc>/blog/gsoc2016/</loc>
     <lastmod>2016-08-25T11:31:04+00:00</lastmod>
   </url>
   
@@ -1328,12 +1328,12 @@
   </url>
   
   <url>
-    <loc>/categories/recommender-system/</loc>
+    <loc>/blog/recommender-system/</loc>
     <lastmod>2016-08-19T20:42:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/gsoc/</loc>
+    <loc>/blog/gsoc/</loc>
     <lastmod>2016-08-16T17:32:20+00:00</lastmod>
   </url>
   
@@ -1353,7 +1353,7 @@
   </url>
   
   <url>
-    <loc>/categories/plot/</loc>
+    <loc>/blog/plot/</loc>
     <lastmod>2016-07-29T11:52:54+00:00</lastmod>
   </url>
   
@@ -1378,12 +1378,12 @@
   </url>
   
   <url>
-    <loc>/categories/elettra/</loc>
+    <loc>/blog/elettra/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/esrf/</loc>
+    <loc>/blog/esrf/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
   </url>
   
@@ -1393,22 +1393,22 @@
   </url>
   
   <url>
-    <loc>/categories/orangecanvas/</loc>
+    <loc>/blog/orangecanvas/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/physics/</loc>
+    <loc>/blog/physics/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/synchrotron/</loc>
+    <loc>/blog/synchrotron/</loc>
     <lastmod>2016-05-20T08:05:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/association-rules/</loc>
+    <loc>/blog/association-rules/</loc>
     <lastmod>2016-04-25T07:46:33+00:00</lastmod>
   </url>
   
@@ -1433,7 +1433,7 @@
   </url>
   
   <url>
-    <loc>/categories/forestlearner/</loc>
+    <loc>/blog/forestlearner/</loc>
     <lastmod>2016-03-23T09:09:26+00:00</lastmod>
   </url>
   
@@ -1478,7 +1478,7 @@
   </url>
   
   <url>
-    <loc>/categories/report/</loc>
+    <loc>/blog/report/</loc>
     <lastmod>2015-12-11T09:53:12+00:00</lastmod>
   </url>
   
@@ -1573,12 +1573,12 @@
   </url>
   
   <url>
-    <loc>/categories/principal-component-analysis/</loc>
+    <loc>/blog/principal-component-analysis/</loc>
     <lastmod>2015-07-20T07:21:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/workflow/</loc>
+    <loc>/blog/workflow/</loc>
     <lastmod>2015-07-20T07:21:04+00:00</lastmod>
   </url>
   
@@ -1603,7 +1603,7 @@
   </url>
   
   <url>
-    <loc>/categories/data-fusion/</loc>
+    <loc>/blog/data-fusion/</loc>
     <lastmod>2015-06-08T15:13:22+00:00</lastmod>
   </url>
   
@@ -1648,7 +1648,7 @@
   </url>
   
   <url>
-    <loc>/categories/computervision/</loc>
+    <loc>/blog/computervision/</loc>
     <lastmod>2014-08-26T15:59:00+00:00</lastmod>
   </url>
   
@@ -1683,12 +1683,12 @@
   </url>
   
   <url>
-    <loc>/categories/history/</loc>
+    <loc>/blog/history/</loc>
     <lastmod>2013-10-09T06:33:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/jmlr/</loc>
+    <loc>/blog/jmlr/</loc>
     <lastmod>2013-10-03T02:50:00+00:00</lastmod>
   </url>
   
@@ -1698,7 +1698,7 @@
   </url>
   
   <url>
-    <loc>/categories/future/</loc>
+    <loc>/blog/future/</loc>
     <lastmod>2013-09-02T21:27:00+00:00</lastmod>
   </url>
   
@@ -1723,7 +1723,7 @@
   </url>
   
   <url>
-    <loc>/categories/website/</loc>
+    <loc>/blog/website/</loc>
     <lastmod>2013-03-04T11:50:00+00:00</lastmod>
   </url>
   
@@ -1733,12 +1733,12 @@
   </url>
   
   <url>
-    <loc>/categories/matrixfactorization/</loc>
+    <loc>/blog/matrixfactorization/</loc>
     <lastmod>2013-02-06T13:47:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/nmf/</loc>
+    <loc>/blog/nmf/</loc>
     <lastmod>2013-02-06T13:47:00+00:00</lastmod>
   </url>
   
@@ -1763,7 +1763,7 @@
   </url>
   
   <url>
-    <loc>/categories/orange25/</loc>
+    <loc>/blog/orange25/</loc>
     <lastmod>2012-11-30T08:00:00+00:00</lastmod>
   </url>
   
@@ -1803,7 +1803,7 @@
   </url>
   
   <url>
-    <loc>/categories/multitarget/</loc>
+    <loc>/blog/multitarget/</loc>
     <lastmod>2012-04-30T12:00:00+00:00</lastmod>
   </url>
   
@@ -1813,7 +1813,7 @@
   </url>
   
   <url>
-    <loc>/categories/competition/</loc>
+    <loc>/blog/competition/</loc>
     <lastmod>2012-04-25T13:08:00+00:00</lastmod>
   </url>
   
@@ -1828,7 +1828,7 @@
   </url>
   
   <url>
-    <loc>/categories/icons/</loc>
+    <loc>/blog/icons/</loc>
     <lastmod>2012-04-09T11:25:00+00:00</lastmod>
   </url>
   
@@ -1853,7 +1853,7 @@
   </url>
   
   <url>
-    <loc>/categories/pls/</loc>
+    <loc>/blog/pls/</loc>
     <lastmod>2012-02-02T16:21:00+00:00</lastmod>
   </url>
   
@@ -1863,7 +1863,7 @@
   </url>
   
   <url>
-    <loc>/categories/mlc/</loc>
+    <loc>/blog/mlc/</loc>
     <lastmod>2012-01-09T12:41:00+00:00</lastmod>
   </url>
   
@@ -1873,7 +1873,7 @@
   </url>
   
   <url>
-    <loc>/categories/multilabel/</loc>
+    <loc>/blog/multilabel/</loc>
     <lastmod>2012-01-09T12:41:00+00:00</lastmod>
   </url>
   
@@ -1903,7 +1903,7 @@
   </url>
   
   <url>
-    <loc>/categories/simpletreelearner/</loc>
+    <loc>/blog/simpletreelearner/</loc>
     <lastmod>2011-12-08T15:28:00+00:00</lastmod>
   </url>
   
@@ -1913,7 +1913,7 @@
   </url>
   
   <url>
-    <loc>/categories/debian/</loc>
+    <loc>/blog/debian/</loc>
     <lastmod>2011-09-13T00:32:00+00:00</lastmod>
   </url>
   
@@ -1923,7 +1923,7 @@
   </url>
   
   <url>
-    <loc>/categories/packaging/</loc>
+    <loc>/blog/packaging/</loc>
     <lastmod>2011-09-13T00:32:00+00:00</lastmod>
   </url>
   
@@ -1933,7 +1933,7 @@
   </url>
   
   <url>
-    <loc>/categories/opengl/</loc>
+    <loc>/blog/opengl/</loc>
     <lastmod>2011-09-07T10:30:00+00:00</lastmod>
   </url>
   
@@ -1973,7 +1973,7 @@
   </url>
   
   <url>
-    <loc>/categories/networkx/</loc>
+    <loc>/blog/networkx/</loc>
     <lastmod>2011-07-29T18:56:00+00:00</lastmod>
   </url>
   
@@ -2053,18 +2053,26 @@
   </url>
   
   <url>
-    <loc>/categories/bohinj/</loc>
+    <loc>/blog/bohinj/</loc>
     <lastmod>2011-02-11T13:41:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/retreat/</loc>
+    <loc>/blog/retreat/</loc>
     <lastmod>2011-02-11T13:41:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/2010/03/04/debian-repository-lives/</loc>
     <lastmod>2010-03-04T01:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2017/06/19/text-preprocessing/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/2020-07-27-story-arcs/</loc>
   </url>
   
   <url>
@@ -2104,7 +2112,7 @@
   </url>
   
   <url>
-    <loc>/tags/Bag-of-Words/</loc>
+    <loc>/workflows/Bag-of-Words/</loc>
   </url>
   
   <url>
@@ -2120,7 +2128,7 @@
   </url>
   
   <url>
-    <loc>/tags/Box-Plot/</loc>
+    <loc>/workflows/Box-Plot/</loc>
   </url>
   
   <url>
@@ -2144,11 +2152,11 @@
   </url>
   
   <url>
-    <loc>/tags/Classification/</loc>
+    <loc>/workflows/Classification/</loc>
   </url>
   
   <url>
-    <loc>/tags/Classification-Tree/</loc>
+    <loc>/workflows/Classification-Tree/</loc>
   </url>
   
   <url>
@@ -2156,7 +2164,7 @@
   </url>
   
   <url>
-    <loc>/tags/Clustering/</loc>
+    <loc>/workflows/Clustering/</loc>
   </url>
   
   <url>
@@ -2180,7 +2188,7 @@
   </url>
   
   <url>
-    <loc>/tags/Confusion-Matrix/</loc>
+    <loc>/workflows/Confusion-Matrix/</loc>
   </url>
   
   <url>
@@ -2232,7 +2240,7 @@
   </url>
   
   <url>
-    <loc>/tags/Cross-Validation/</loc>
+    <loc>/workflows/Cross-Validation/</loc>
   </url>
   
   <url>
@@ -2240,7 +2248,7 @@
   </url>
   
   <url>
-    <loc>/tags/Data/</loc>
+    <loc>/workflows/Data/</loc>
   </url>
   
   <url>
@@ -2248,7 +2256,7 @@
   </url>
   
   <url>
-    <loc>/tags/Data-Loading/</loc>
+    <loc>/workflows/Data-Loading/</loc>
   </url>
   
   <url>
@@ -2256,7 +2264,7 @@
   </url>
   
   <url>
-    <loc>/tags/Data-Sampler/</loc>
+    <loc>/workflows/Data-Sampler/</loc>
   </url>
   
   <url>
@@ -2264,7 +2272,7 @@
   </url>
   
   <url>
-    <loc>/tags/Data-Table/</loc>
+    <loc>/workflows/Data-Table/</loc>
   </url>
   
   <url>
@@ -2296,7 +2304,7 @@
   </url>
   
   <url>
-    <loc>/tags/Dimensionality-Reduction/</loc>
+    <loc>/workflows/Dimensionality-Reduction/</loc>
   </url>
   
   <url>
@@ -2368,11 +2376,11 @@
   </url>
   
   <url>
-    <loc>/tags/Feature-Ranking/</loc>
+    <loc>/workflows/Feature-Ranking/</loc>
   </url>
   
   <url>
-    <loc>/tags/Feature-Selection/</loc>
+    <loc>/workflows/Feature-Selection/</loc>
   </url>
   
   <url>
@@ -2456,7 +2464,7 @@
   </url>
   
   <url>
-    <loc>/tags/Hierarchical-Clustering/</loc>
+    <loc>/workflows/Hierarchical-Clustering/</loc>
   </url>
   
   <url>
@@ -2548,7 +2556,7 @@
   </url>
   
   <url>
-    <loc>/tags/Literary-Analysis/</loc>
+    <loc>/workflows/Literary-Analysis/</loc>
   </url>
   
   <url>
@@ -2640,7 +2648,7 @@
   </url>
   
   <url>
-    <loc>/tags/Nomogram/</loc>
+    <loc>/workflows/Nomogram/</loc>
   </url>
   
   <url>
@@ -2652,7 +2660,7 @@
   </url>
   
   <url>
-    <loc>/tags/Outliers/</loc>
+    <loc>/workflows/Outliers/</loc>
   </url>
   
   <url>
@@ -2664,7 +2672,7 @@
   </url>
   
   <url>
-    <loc>/tags/PCA/</loc>
+    <loc>/workflows/PCA/</loc>
   </url>
   
   <url>
@@ -2680,7 +2688,7 @@
   </url>
   
   <url>
-    <loc>/tags/Pivot-Table/</loc>
+    <loc>/workflows/Pivot-Table/</loc>
   </url>
   
   <url>
@@ -2700,7 +2708,7 @@
   </url>
   
   <url>
-    <loc>/tags/Predictive-models/</loc>
+    <loc>/workflows/Predictive-models/</loc>
   </url>
   
   <url>
@@ -2716,7 +2724,7 @@
   </url>
   
   <url>
-    <loc>/tags/Preprocessing/</loc>
+    <loc>/workflows/Preprocessing/</loc>
   </url>
   
   <url>
@@ -2788,7 +2796,7 @@
   </url>
   
   <url>
-    <loc>/tags/Scatter-Plot/</loc>
+    <loc>/workflows/Scatter-Plot/</loc>
   </url>
   
   <url>
@@ -2828,7 +2836,7 @@
   </url>
   
   <url>
-    <loc>/tags/Sentiment-Analysis/</loc>
+    <loc>/workflows/Sentiment-Analysis/</loc>
   </url>
   
   <url>
@@ -2840,7 +2848,7 @@
   </url>
   
   <url>
-    <loc>/tags/Silhouette/</loc>
+    <loc>/workflows/Silhouette/</loc>
   </url>
   
   <url>
@@ -2888,7 +2896,7 @@
   </url>
   
   <url>
-    <loc>/tags/Story-Arcs/</loc>
+    <loc>/workflows/Story-Arcs/</loc>
   </url>
   
   <url>
@@ -2896,7 +2904,7 @@
   </url>
   
   <url>
-    <loc>/tags/t-SNE/</loc>
+    <loc>/workflows/t-SNE/</loc>
   </url>
   
   <url>
@@ -2904,15 +2912,11 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/evaluate/testandscore/</loc>
   </url>
   
   <url>
-    <loc>/tags/Text-Mining/</loc>
+    <loc>/workflows/Text-Mining/</loc>
   </url>
   
   <url>
@@ -2928,15 +2932,15 @@
   </url>
   
   <url>
-    <loc>/tags/Timeseries/</loc>
+    <loc>/workflows/Timeseries/</loc>
   </url>
   
   <url>
-    <loc>/tags/Tokenization/</loc>
+    <loc>/workflows/Tokenization/</loc>
   </url>
   
   <url>
-    <loc>/tags/Topic-Modeling/</loc>
+    <loc>/workflows/Topic-Modeling/</loc>
   </url>
   
   <url>
@@ -2968,7 +2972,7 @@
   </url>
   
   <url>
-    <loc>/tags/Twitter/</loc>
+    <loc>/workflows/Twitter/</loc>
   </url>
   
   <url>
@@ -2984,7 +2988,7 @@
   </url>
   
   <url>
-    <loc>/tags/Visualization/</loc>
+    <loc>/workflows/Visualization/</loc>
   </url>
   
   <url>
@@ -3005,6 +3009,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/wordenrichment/</loc>
+  </url>
+  
+  <url>
+    <loc>/workflows/</loc>
   </url>
   
   <url>

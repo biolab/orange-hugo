@@ -1,0 +1,1013 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - analysis</title>
+
+    
+    
+    <meta property="og:title" content="analysis">
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/css/styles.min.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+      <section id="features" class="features-blog section offset-header">
+    <div class="container">
+        <div style="text-align: center">
+            <h2 style="font-size: 34px;">
+                Orange Blog
+            </h2>
+        </div>
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
+                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
+                    placeholder="Search blog by categories, title and description." tabindex="1"
+                    onkeydown="check_key(event)" autofocus />
+                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+        </div>
+        <div class="categoriesList col-lg-12 row" id="myUL">
+            <ul>
+                <span>Categories: </span>
+                
+                <li style="display: inline;"><a href="/blog/orange3"
+                        style="margin-top: 20px !important;">orange3</a></li>
+                
+                <li style="display: inline;"><a href="/blog/visualization"
+                        style="margin-top: 20px !important;">visualization</a></li>
+                
+                <li style="display: inline;"><a href="/blog/analysis"
+                        style="margin-top: 20px !important;">analysis</a></li>
+                
+                <li style="display: inline;"><a href="/blog/addons"
+                        style="margin-top: 20px !important;">addons</a></li>
+                
+                <li style="display: inline;"><a href="/blog/workshop"
+                        style="margin-top: 20px !important;">workshop</a></li>
+                
+                <li style="display: inline;"><a href="/blog/education"
+                        style="margin-top: 20px !important;">education</a></li>
+                
+                <li style="display: inline;"><a href="/blog/classification"
+                        style="margin-top: 20px !important;">classification</a></li>
+                
+                <li style="display: inline;"><a href="/blog/data"
+                        style="margin-top: 20px !important;">data</a></li>
+                
+                <li style="display: inline;"><a href="/blog/examples"
+                        style="margin-top: 20px !important;">examples</a></li>
+                
+                <li style="display: inline;"><a href="/blog/gsoc"
+                        style="margin-top: 20px !important;">gsoc</a></li>
+                
+            </ul>
+        </div>
+        <div id="search-results" style="display: none;">
+        </div>
+        <div id="post_nor">
+            
+            
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Apr 14, 2016</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2016/04/14/univariate-gsoc-success/"> Univariate GSoC Success</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Google Summer of Code application period has come to an end. We&rsquo;ve received 34 applications, some of which were of truly high quality. Now it&rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
+First, we needed to preprocess the data a bit, since it came in a messy form of strings.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/gsoc">gsoc</a>
+                                
+                                <a class="tag-workflow" href="/blog/gsoc2016">gsoc2016</a>
+                                
+                                <a class="tag-workflow" href="/blog/plot">plot</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2016/04/14/univariate-gsoc-success/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Mar 23, 2016</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2016/03/23/all-i-see-is-silhouette/"> All I See is Silhouette</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn&rsquo;t wait to get it into Orange3. And now we did.
+What this visualization displays is the average distance between instances within the cluster and instances in the nearest cluster. For a given data instance, the silhouette close to 1 indicates that the data instance is close to the center of the cluster.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/classification">classification</a>
+                                
+                                <a class="tag-workflow" href="/blog/clustering">clustering</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/forestlearner">forestlearner</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/plot">plot</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2016/03/23/all-i-see-is-silhouette/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BLAZ, Mar 12, 2016</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2016/03/12/overfitting-and-regularization/"> Overfitting and Regularization</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                A week ago I used Orange to explain the effects of regularization. This was the second lecture in the Data Mining class, the first one was on linear regression. My introduction to the benefits of regularization used a simple data set with a single input attribute and a continuous class. I drew a data set in Orange, and then used Polynomial Regression widget (from Prototypes add-on) to plot the linear fit.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/overfitting">overfitting</a>
+                                
+                                <a class="tag-workflow" href="/blog/plot">plot</a>
+                                
+                                <a class="tag-workflow" href="/blog/regression">regression</a>
+                                
+                                <a class="tag-workflow" href="/blog/tutorial">tutorial</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2016/03/12/overfitting-and-regularization/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Jan 22, 2016</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2016/01/22/predictive-analytics-with-orange/"> Making Predictions</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/predictive-analytics">predictive analytics</a>
+                                
+                                <a class="tag-workflow" href="/blog/widget">widget</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2016/01/22/predictive-analytics-with-orange/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Jan 4, 2016</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2016/01/04/orange-youtube-tutorials/"> Orange YouTube Tutorials</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                It&rsquo;s been a long time coming, but finally we&rsquo;ve created out our first set of YouTube tutorials. In a series &lsquo;Getting Started with Orange&rsquo; we will walk through our software step-by-step. You will learn how to create a workflow, load your data in different formats, visualize and explore the data. These tutorials are meant for complete beginners in both Orange and data mining and come with some handy tricks that will make using Orange very easy.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/tutorial">tutorial</a>
+                                
+                                <a class="tag-workflow" href="/blog/youtube">youtube</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2016/01/04/orange-youtube-tutorials/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BLAZ, Dec 19, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/12/19/model-based-feature-scoring/"> Model-Based Feature Scoring</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/classification">classification</a>
+                                
+                                <a class="tag-workflow" href="/blog/features">features</a>
+                                
+                                <a class="tag-workflow" href="/blog/regression">regression</a>
+                                
+                                <a class="tag-workflow" href="/blog/scoring">scoring</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/12/19/model-based-feature-scoring/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Dec 11, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/12/11/report-is-back-and-better-than-ever/"> Report is back! (and better than ever)</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                I’m sure you’d agree that reporting your findings when analyzing the data is crucial. Say you have a couple of interesting predictions that you’ve tested with several methods many times and you’d like to share that with the world. Here’s how.
+Save Graph just got company - a Report button! Report works in most widgets, apart from the very obvious ones that simply transmit or display the data (Python Scripting, Edit Domain, Image Viewer, Predictions…).
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/report">report</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/12/11/report-is-back-and-better-than-ever/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Nov 27, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/11/27/mining-our-own-data/"> Mining our own data</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Recently we&rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
+Here we have some preliminary results that we&rsquo;ve managed to gather in the past three weeks or so.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/11/27/mining-our-own-data/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 30, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/10/30/ghostbusters/"> Ghostbusters</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Ok, we’ve just recently stumbled across an interesting article on how to deal with non normal (non-Gaussian distributed) data. We have an absolutely paranormal data set of 20 persons with weight, height, paleness, vengefulness, habitation and age attributes (download).
+Let’s check the distribution in Distributions widget.
+Our first attribute is “Weight” and we see a little hump on the left. Otherwise the data would be normally distributed. Ok, so perhaps we have a few children in the data set.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/distribution">distribution</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/10/30/ghostbusters/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Sep 25, 2015</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2015/09/25/save-your-graphs/"> Save your graphs!</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
+&ldquo;Save Graph&rdquo; will save visualizations to your computer.
+Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/images">images</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2015/09/25/save-your-graphs/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+                    
+
+
+<div class="center-pag">
+<div class="pagination1">
+
+    
+        
+       
+        
+        <a href="/blog/analysis/page/2/" rel="prev" class="page-link">‹ Prev</a>
+        
+
+        
+            
+             
+            
+            <a href="/blog/analysis/" class="page-link">1</a>
+            
+        
+            
+             
+            
+            <a href="/blog/analysis/page/2/" class="page-link">2</a>
+            
+        
+             
+            <a  href="/blog/analysis/page/3/" class="page-link pagination-current">3</a>
+            
+        
+            
+             
+            
+            <a href="/blog/analysis/page/4/" class="page-link">4</a>
+            
+        
+
+        
+        <a href="/blog/analysis/page/4/" rel="next" class="page-link">Next ›</a>
+        
+
+        
+    </ul>
+
+</div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script type="text/javascript">
+    function check_key(e) {
+        if (e.keyCode == 13) {
+            search_content();
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
+                $("#post_nor").show();
+                $("#search-results").hide();
+                $("#pagination").show();
+            }
+        }
+    }
+
+    function search_content() {
+
+        var param = document.getElementById('search-input').value;
+
+        $("#pagination").hide();
+
+        if (param.trim() == "") {
+            $("#post_nor").show();
+            $("#search-results").hide();
+            $("#pagination").show();
+        } else {
+            var results = search(param);
+            var search_results = document.getElementById('search-results')
+
+            $("#post_nor").hide();
+            $("#search-results").show();
+
+            if (results.length < 1) {
+                search_results.innerHTML = '<div style="padding: 20px 15px"> No blog posts found. </div>';
+            } else {
+                var html_el = ""
+
+                for (var page in results) {
+                    html_el += '<div class="row">';
+                    if (results[page].thumbImage == '' || results[page].thumbImage === '<no value>') {
+                        html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
+                    } else if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
+                    } else {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
+                    }
+
+                    html_el +=
+                        '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
+                        results[page].author + ', ' + results[page].date + '</p>'
+                    html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="' + results[
+                        page].uri + '">' + results[page].title + '</a></h2>'
+
+
+                    if (results[page].longExcerpt != '' && results[page].longExcerpt != '<no value>') {
+                        html_el += '<p class="feature-text">' + results[page].longExcerpt + '</p>'
+                    } else {
+                        html_el += '<p class="feature-text">' + results[page].summary + '</p>'
+
+                    }
+
+                    html_el += '<div class="tags" style="padding-bottom: 10px;">Categories:'
+                    for (var cat in results[page].categories) {
+                        html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
+                            results[page].categories[cat] + '</a>'
+                    }
+
+                    html_el += '</div>'
+                    html_el += '<div class="getting-started-button">'
+                    html_el += '<a href="' + results[page].uri +
+                        '" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+
+                    html_el += '</div></div>'
+
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
+
+                        if (page % 2 == 0) {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                        } else {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+                        }
+
+                        html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
+                            '" class="workflow-image"></a>'
+
+                        html_el += "</div>"
+                    }
+
+                    html_el += "</div><hr/>"
+                }
+
+                search_results.innerHTML += html_el;
+            }
+        }
+    }
+</script>
+<script type="text/javascript" src="/js/lunr.js"></script>
+<script type="text/javascript">
+    var baseurl = "";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 15 Oct </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-10-15-document-embedders/">How to identify fake news with document embeddings</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 28 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-09-28-text-tutorials/">New Video Tutorials on Text Mining</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-07-27-story-arcs/">Detecting Story Arcs with Orange</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

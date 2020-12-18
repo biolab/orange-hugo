@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pypi on Orange</title>
+    <link>/blog/pypi/</link>
+    <description>Recent content in pypi on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/pypi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Add-ons Works Again</title>
+      <link>/blog/2018/04/23/installing-add-ons-works-again/</link>
+      <pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate>
+      
+      <guid>/blog/2018/04/23/installing-add-ons-works-again/</guid>
+      <description>Dear Orange users,
+Some of you might have an issue installing add-ons with the following issue popping up:
+xmlrpc.client.Fault: &amp;lt;Fault -32601: &#39;server error; requested method not found&#39;&amp;gt;
+This is the result of the migration to a new infrastructure at PyPi, which provides the installation of add-ons. Our team has rallied to adjust the add-on installer so it works with the new and improved service.
+In order to make the add-on installer work (again), please download the latest version of Orange (3.</description>
+    </item>
+    
+    <item>
+      <title>How to enable SQL widget in Orange</title>
+      <link>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</link>
+      <pubDate>Fri, 16 Feb 2018 13:20:06 +0000</pubDate>
+      
+      <guid>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</guid>
+      <description>A lot of you have been interested in enabling SQL widget in Orange, especially regarding the installation of a psycopg backend that makes the widget actually work. This post will be slightly more technical, but I will try to keep it to a minimum. Scroll to the bottom for installation instructions.
+Related: SQL for Orange
+ Why won&amp;rsquo;t Orange recognize psycopg? The main issue for some people was that despite having installed the psycopg module in their console, the SQL widget still didn&amp;rsquo;t work.</description>
+    </item>
+    
+    <item>
+      <title>Writing Orange Add-ons</title>
+      <link>/blog/2013/01/29/writing-orange-add-ons/</link>
+      <pubDate>Tue, 29 Jan 2013 09:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/01/29/writing-orange-add-ons/</guid>
+      <description>We officially supported add-ons in Orange 2.6. You should start by checking the list of available add-ons. We pull those automatically from the PyPi, which is our preferred distribution channel. Try to install an add-on by either:
+ writing &amp;ldquo;pip install &amp;rdquo; in the terminal or from the Orange Canvas GUI. Select &amp;ldquo;Options / Add-ons&amp;hellip;&amp;rdquo; in the menu.  Everything should just work. Writing add-ons is as easy as writing your own Orange Widgets or Orange Scripts.</description>
+    </item>
+    
+    <item>
+      <title>Orange 2.6</title>
+      <link>/blog/2013/01/21/orange-2-6/</link>
+      <pubDate>Mon, 21 Jan 2013 14:23:00 +0000</pubDate>
+      
+      <guid>/blog/2013/01/21/orange-2-6/</guid>
+      <description>A new version of Orange, 2.6, has been uploaded to Python Package Index. Since the version on the Orange website is always up to date (we post daily builds), this may not affect you. Nevertheless, let us explain what we were working on for the last year.
+The most important improvement to Orange is an implementation of add-on framework that is much more &amp;ldquo;standard pythonic&amp;rdquo;. As a consequence, the add-on installation procedure has been simplified for both individual users and system administrators.</description>
+    </item>
+    
+    <item>
+      <title>The easy way to install add-ons</title>
+      <link>/blog/2012/11/30/the-easy-way-to-install-add-ons/</link>
+      <pubDate>Fri, 30 Nov 2012 08:00:00 +0000</pubDate>
+      
+      <guid>/blog/2012/11/30/the-easy-way-to-install-add-ons/</guid>
+      <description>The possibility of extending functionality of Orange through add-ons has been present for a long time. In fact, we never provided the toolbox for crunching bioinformatical data as an integral part of Orange; it has always been an add-on. The exact mechanism of distribution of add-ons has changed significantly in the last year to simplify the process for add-on authors and to make it more standards-compliant. Among other things, this enables system administrators to install add-ons system-wide directly from PyPi using easy_install or pip.</description>
+    </item>
+    
+    <item>
+      <title>Orange 2.5a2 available</title>
+      <link>/blog/2012/01/23/orange-2-5a2-available/</link>
+      <pubDate>Mon, 23 Jan 2012 11:23:00 +0000</pubDate>
+      
+      <guid>/blog/2012/01/23/orange-2-5a2-available/</guid>
+      <description>Orange 2.5a2 has been uploaded to PyPI. It now includes basic support for multi-label classification (developed during the Google Summer of Code 2011), some new widget icons and documentation for basket format. Release is also tagged on our Bitbucket repository.</description>
+    </item>
+    
+  </channel>
+</rss>

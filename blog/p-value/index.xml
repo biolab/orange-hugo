@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>p-value on Orange</title>
+    <link>/blog/p-value/</link>
+    <description>Recent content in p-value on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/p-value/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Of Carrots and Horses and the Fear of Heights</title>
+      <link>/blog/2019/2019-09-29-of-carrots-horses-and-fear-of-heights/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-09-29-of-carrots-horses-and-fear-of-heights/</guid>
+      <description>A word of warning. When teaching in the US, I am careful enough to not say things like &amp;ldquo;consider a binary variable, for instance, gender&amp;rdquo;. But I&amp;rsquo;m writing this from Russia where considering gender as a binary variable is not only an acceptable but rather a desired, official position. In Russia you can even get away with some mild swearing. While I never use strong curse words, neither in the classroom nor in private, I occasionally say &amp;ldquo;shit&amp;rdquo;, which is, as I have been warned, not acceptable in US classrooms (while on corridors you can f&amp;hellip; all you want).</description>
+    </item>
+    
+    <item>
+      <title>How to Abuse p-Values in Correlations</title>
+      <link>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid>
+      <description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
+\
+ 
+\
+Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
+    </item>
+    
+  </channel>
+</rss>

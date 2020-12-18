@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>visualization on Orange</title>
+    <link>/blog/visualization/</link>
+    <description>Recent content in visualization on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Mining COVID-19 Epidemics: Part 3</title>
+      <link>/blog/2020/2020-04-15-covid-19-part-3/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-04-15-covid-19-part-3/</guid>
+      <description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
+We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description>
+    </item>
+    
+    <item>
+      <title>Data Mining COVID-19 Epidemics: Part 2</title>
+      <link>/blog/2020/2020-04-09-covid-19-part-2/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-04-09-covid-19-part-2/</guid>
+      <description>Previously on Data Mining COVID-19 Epidemics: Part 1 we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t got your hands dirty with it yet, check that out first.
+In this post, we&amp;rsquo;ll try putting the data on a map. We&amp;rsquo;ll also expand on the &amp;ldquo;data mining is interactive&amp;rdquo; mantra by creating some animations showing the epidemics spread throughout the world.
+Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description>
+    </item>
+    
+    <item>
+      <title>Scatter Plots: the Tour</title>
+      <link>/blog/2018/12/21/scatter-plots-the-tour/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2018/12/21/scatter-plots-the-tour/</guid>
+      <description>Scatter plots are surely one of the best loved visualizations in Orange. Very often, when we teach, people go back to scatter plots over and over again to see their data. We took people’s love for scatter plots to the heart and we redesigned them a bit to make them even more friendly.
+Our favorite still remains the Informative Projections button. This button helps you find interesting visualizations from all the combinations of your data variables.</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics Workshop at AIUCD 2018</title>
+      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
+      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
+      
+      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
+      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing multiple variables: FreeViz</title>
+      <link>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</link>
+      <pubDate>Fri, 26 Jan 2018 11:00:09 +0000</pubDate>
+      
+      <guid>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</guid>
+      <description>Scatter plots are great! But sometimes, we need to plot more than two variables to truly understand the data. How can we achieve this, knowing humans can only grasp up to three dimensions? With an optimization of linear projection, of course!
+Orange recently re-introduced FreeViz, an interactive visualization for plotting multiple variables on a 2-D plane.
+Let&amp;rsquo;s load zoo.tab data with File widget and connect FreeViz to it. Zoo data has 16 features describing animals of different types - mammals, amphibians, insects and so on.</description>
+    </item>
+    
+    <item>
+      <title>Speeding Up Network Visualization</title>
+      <link>/blog/2017/12/23/speeding-up-network-visualization/</link>
+      <pubDate>Sat, 23 Dec 2017 17:05:52 +0000</pubDate>
+      
+      <guid>/blog/2017/12/23/speeding-up-network-visualization/</guid>
+      <description>The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.
+The goal of force-directed methods is to draw connected nodes close to each other as if the edges that connect the nodes were acting as springs. We also don&amp;rsquo;t want all nodes crowded in a single point, but would rather have them spaced evenly.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Surveys</title>
+      <link>/blog/2017/10/26/analyzing-surveys/</link>
+      <pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate>
+      
+      <guid>/blog/2017/10/26/analyzing-surveys/</guid>
+      <description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description>
+    </item>
+    
+    <item>
+      <title>Diving Into Car Registration Data</title>
+      <link>/blog/2017/10/13/diving-into-car-registration-data/</link>
+      <pubDate>Fri, 13 Oct 2017 12:04:32 +0000</pubDate>
+      
+      <guid>/blog/2017/10/13/diving-into-car-registration-data/</guid>
+      <description>Last week, we presented Orange at the Festival of Open Data, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.
+The original dataset is available at theOPSI portal and it consists of 73 files, one for each month since January 2012.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Voting Patterns  at AKOS Workshop</title>
+      <link>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</link>
+      <pubDate>Fri, 22 Sep 2017 11:34:26 +0000</pubDate>
+      
+      <guid>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</guid>
+      <description>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).</description>
+    </item>
+    
+    <item>
+      <title>Text Preprocessing</title>
+      <link>/blog/2017/06/19/text-preprocessing/</link>
+      <pubDate>Mon, 19 Jun 2017 08:04:03 +0000</pubDate>
+      
+      <guid>/blog/2017/06/19/text-preprocessing/</guid>
+      <description>In data mining, preprocessing is key. And in text mining, it is the key and the door. In other words, it&amp;rsquo;s the most vital step in the analysis.
+Related: Text Mining add-on
+So what does preprocessing do? Let&amp;rsquo;s have a look at an example. Place Corpus widget from Text add-on on the canvas. Open it and load Grimm-tales-selected. As always, first have a quick glance of the data in Corpus Viewer.</description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/blog/2017/06/05/nomogram/</link>
+      <pubDate>Mon, 05 Jun 2017 11:39:12 +0000</pubDate>
+      
+      <guid>/blog/2017/06/05/nomogram/</guid>
+      <description>One more exciting visualization has been introduced to Orange - a Nomogram. In general, nomograms are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</description>
+    </item>
+    
+    <item>
+      <title>Outliers in Traffic Signs</title>
+      <link>/blog/2017/04/25/outliers-in-traffic-signs/</link>
+      <pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate>
+      
+      <guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid>
+      <description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
+I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description>
+    </item>
+    
+    <item>
+      <title>The Beauty of Random Forest</title>
+      <link>/blog/2016/12/22/the-beauty-of-random-forest/</link>
+      <pubDate>Thu, 22 Dec 2016 08:55:36 +0000</pubDate>
+      
+      <guid>/blog/2016/12/22/the-beauty-of-random-forest/</guid>
+      <description>It is the time of the year when we adore Christmas trees. But these are not the only trees we, at Orange team, think about. In fact, through almost life-long professional deformation of being a data scientist, when I think about trees I would often think about classification and regression trees. And they can be beautiful as well. Not only for their elegance in explaining the hidden patterns, but aesthetically, when rendered in Orange.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction by Manifold Learning</title>
+      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
+      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
+      
+      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
+      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Manifold Learning widget has a simple interface with powerful features.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
+    </item>
+    
+    <item>
+      <title>Pythagorean Trees and Forests</title>
+      <link>/blog/2016/07/29/pythagorean-trees-and-forests/</link>
+      <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
+      
+      <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
+    </item>
+    
+    <item>
+      <title>Network Analysis with Orange</title>
+      <link>/blog/2016/07/18/network-analysis-with-orange/</link>
+      <pubDate>Mon, 18 Jul 2016 13:42:34 +0000</pubDate>
+      
+      <guid>/blog/2016/07/18/network-analysis-with-orange/</guid>
+      <description>Visualizing relations between data instances can tell us a lot about our data. Let&amp;rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&amp;rsquo;s about the principle.</description>
+    </item>
+    
+    <item>
+      <title>Univariate GSoC Success</title>
+      <link>/blog/2016/04/14/univariate-gsoc-success/</link>
+      <pubDate>Thu, 14 Apr 2016 08:55:14 +0000</pubDate>
+      
+      <guid>/blog/2016/04/14/univariate-gsoc-success/</guid>
+      <description>Google Summer of Code application period has come to an end. We&amp;rsquo;ve received 34 applications, some of which were of truly high quality. Now it&amp;rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&amp;rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
+First, we needed to preprocess the data a bit, since it came in a messy form of strings.</description>
+    </item>
+    
+    <item>
+      <title>All I See is Silhouette</title>
+      <link>/blog/2016/03/23/all-i-see-is-silhouette/</link>
+      <pubDate>Wed, 23 Mar 2016 09:09:26 +0000</pubDate>
+      
+      <guid>/blog/2016/03/23/all-i-see-is-silhouette/</guid>
+      <description>Silhouette plot is such a nice method for visually assessing cluster quality and the degree of cluster membership that we simply couldn&amp;rsquo;t wait to get it into Orange3. And now we did.
+What this visualization displays is the average distance between instances within the cluster and instances in the nearest cluster. For a given data instance, the silhouette close to 1 indicates that the data instance is close to the center of the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Color it!</title>
+      <link>/blog/2015/12/28/color-it/</link>
+      <pubDate>Mon, 28 Dec 2015 10:47:00 +0000</pubDate>
+      
+      <guid>/blog/2015/12/28/color-it/</guid>
+      <description>Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!
+This fascinating artsy widget will allow you to play with your data set in a new and exciting way. No more dull visualizations and default color schemes! Set your own colors the way YOU want it to! Care for some magical cyan-to-magenta? Or do you prefer a more festive red-to-green?</description>
+    </item>
+    
+    <item>
+      <title>Mining our own data</title>
+      <link>/blog/2015/11/27/mining-our-own-data/</link>
+      <pubDate>Fri, 27 Nov 2015 08:37:03 +0000</pubDate>
+      
+      <guid>/blog/2015/11/27/mining-our-own-data/</guid>
+      <description>Recently we&amp;rsquo;ve made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.
+Here we have some preliminary results that we&amp;rsquo;ve managed to gather in the past three weeks or so.</description>
+    </item>
+    
+    <item>
+      <title>Data Mining Course in Houston</title>
+      <link>/blog/2015/10/09/data-mining-course-in-houston/</link>
+      <pubDate>Fri, 09 Oct 2015 06:51:23 +0000</pubDate>
+      
+      <guid>/blog/2015/10/09/data-mining-course-in-houston/</guid>
+      <description>We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
+This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.</description>
+    </item>
+    
+    <item>
+      <title>A visit from the Tilburg University</title>
+      <link>/blog/2015/10/02/a-visit-from-the-tilburg-university/</link>
+      <pubDate>Fri, 02 Oct 2015 12:52:27 +0000</pubDate>
+      
+      <guid>/blog/2015/10/02/a-visit-from-the-tilburg-university/</guid>
+      <description>Biolab is currently hosting two amazing data scientists from the Tilburg University - dr. Marie Nilsen and dr. Eric Postma, who are preparing a 20-lecture MOOC on data science for non-technical audience. A part of the course will use Orange. The majority of their students is coming from humanities, law, economy and behavioral studies, thus we are discussing options and opportunities for adapting Orange for social scientists. Another great thing is that the course is designed for beginner level data miners, showcasing that anybody can mine the data and learn from it.</description>
+    </item>
+    
+    <item>
+      <title>Save your graphs!</title>
+      <link>/blog/2015/09/25/save-your-graphs/</link>
+      <pubDate>Fri, 25 Sep 2015 08:00:15 +0000</pubDate>
+      
+      <guid>/blog/2015/09/25/save-your-graphs/</guid>
+      <description>If you are often working with Orange, you probably have noticed a small button at the bottom of most visualization widgets. “Save Graph” now enables you to export graphs, charts, and hierarchical trees to your computer and use them in your reports. Because people need to see it to believe it!
+&amp;ldquo;Save Graph&amp;rdquo; will save visualizations to your computer.
+Save Graph function is available in Paint Data, Image Viewer, all visualization widgets, and a few others (list is below).</description>
+    </item>
+    
+    <item>
+      <title>Scatter Plot Projection Rank</title>
+      <link>/blog/2015/08/28/scatter-plot-projection-rank/</link>
+      <pubDate>Fri, 28 Aug 2015 14:05:07 +0000</pubDate>
+      
+      <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
+      <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
+2-dimensional scatter plot visualization
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Misclassifications</title>
+      <link>/blog/2015/07/24/visualizing-misclassifications/</link>
+      <pubDate>Fri, 24 Jul 2015 08:03:40 +0000</pubDate>
+      
+      <guid>/blog/2015/07/24/visualizing-misclassifications/</guid>
+      <description>In data mining classification is one of the key methods for making predictions and gaining important information from our data. We would, for example, use classification for predicting which patients are likely to have the disease based on a given set of symptoms.
+In Orange an easy way to classify your data is to select several classification widgets (e.g. Naive Bayes, Classification Tree and Linear Regression), compare the prediction quality of each learner with Test Learners and Confusion Matrix and then use the best performing classifier on a new data set for classification.</description>
+    </item>
+    
+    <item>
+      <title>Explorative data analysis with Hierarchical Clustering</title>
+      <link>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</link>
+      <pubDate>Mon, 20 Jul 2015 07:21:04 +0000</pubDate>
+      
+      <guid>/blog/2015/07/20/explorative-data-analysis-with-hierarchical-clustering/</guid>
+      <description>Today we will write about cluster analysis with Hierarchical Clustering widget. We use a well-known Iris data set, which contains 150 Iris flowers, each belonging to one of the three species (setosa, versicolor and virginica). To an untrained eye the three species are very alike, so how could we best tell them apart? The data set contains measurements of sepal and petal dimensions (width and length) and we assume that these gives rise to interesting clustering.</description>
+    </item>
+    
+    <item>
+      <title>Learn with Paint Data</title>
+      <link>/blog/2015/07/10/learn-with-paint-data/</link>
+      <pubDate>Fri, 10 Jul 2015 07:00:54 +0000</pubDate>
+      
+      <guid>/blog/2015/07/10/learn-with-paint-data/</guid>
+      <description>Paint Data widget might initially look like a kids’ game, but in combination with other Orange widgets it becomes a very simple and useful tool for conveying statistical concepts, such as k-means, hierarchical clustering and prediction models (like SVM, logistical regression, etc.).
+The widget enables you to draw your data on a 2-D plane. You can name the x and y axes, select the number of classes (which are represented by different colors) and then position the points on a graph.</description>
+    </item>
+    
+    <item>
+      <title>Support vectors output in SVM widget</title>
+      <link>/blog/2015/07/03/support-vectors-output-in-svm-widget/</link>
+      <pubDate>Fri, 03 Jul 2015 06:46:50 +0000</pubDate>
+      
+      <guid>/blog/2015/07/03/support-vectors-output-in-svm-widget/</guid>
+      <description>Did you know that the widget for support vector machines (SVM) classifier can output support vectors? And that you can visualise these in any other Orange widget? In the context of all other data sets, this could provide some extra insight into how this popular classification algorithm works and what it actually does.
+Ideally, that is, in the case of linear seperability, support vector machines (SVM) find a **hyperplane with the largest margin **to any data instance.</description>
+    </item>
+    
+    <item>
+      <title>Working with SQL data in Orange 3</title>
+      <link>/blog/2015/05/05/working-with-sql-data-in-orange-3/</link>
+      <pubDate>Tue, 05 May 2015 07:20:47 +0000</pubDate>
+      
+      <guid>/blog/2015/05/05/working-with-sql-data-in-orange-3/</guid>
+      <description>Orange 3 is slowly, but steadily, gaining support for working with data stored in a SQL database. The main focus is to allow huge data sets that do not fit into RAM to be analyzed and visualized efficiently. Many widgets already recognize the type of input data and perform the necessary computations intelligently. This means that data is not downloaded from the database and analyzed locally, but is retained on the remote server, with the computation tasks translated into SQL queries and offloaded to the database engine.</description>
+    </item>
+    
+    <item>
+      <title>Viewing Images</title>
+      <link>/blog/2014/04/29/viewing-images/</link>
+      <pubDate>Tue, 29 Apr 2014 21:28:00 +0000</pubDate>
+      
+      <guid>/blog/2014/04/29/viewing-images/</guid>
+      <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+    </item>
+    
+    <item>
+      <title>Paint Your Data</title>
+      <link>/blog/2013/12/20/paint-your-data/</link>
+      <pubDate>Fri, 20 Dec 2013 20:19:00 +0000</pubDate>
+      
+      <guid>/blog/2013/12/20/paint-your-data/</guid>
+      <description>One of the widgets I enjoy very much when teaching introductory course in data mining is the Paint Data widget. When painting in this widget I would intentionally include some clusters, or intentionally obscure them. Or draw them in any strange shape. Then I would discuss with students if these clusters are identified by k-means clustering or by hierarchical clustering. We would also discuss automatic scoring of the quality of clusters, come up with the idea of a silhouette (ok, already invented, but helps if you get this idea on your own as well).</description>
+    </item>
+    
+    <item>
+      <title>3D Visualizations in Orange</title>
+      <link>/blog/2011/09/07/3d-visualizations-in-orange/</link>
+      <pubDate>Wed, 07 Sep 2011 10:30:00 +0000</pubDate>
+      
+      <guid>/blog/2011/09/07/3d-visualizations-in-orange/</guid>
+      <description>Over the summer I worked (and still do) on several new 3D visualization widgets as well as a 3D plotting library they use, which will hopefully simplify making more widgets. The library is designed to be similar in terms of API to the new Qt plotting library Noughmad is working on.
+The library uses OpenGL 2/3: since Khronos deprecated parts of the old OpenGL API (particularly immediate mode and fixed-function functionality) care has been taken to use only capabilities less likely to go away in the years to come.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Review: Visualizations with Qt</title>
+      <link>/blog/2011/09/03/gsoc-review-visualizations-with-qt/</link>
+      <pubDate>Sat, 03 Sep 2011 08:28:00 +0000</pubDate>
+      
+      <guid>/blog/2011/09/03/gsoc-review-visualizations-with-qt/</guid>
+      <description>During the course of this summer, I created a new plotting library for Orange plot, replacing the use of PyQwt. I can say that I have succesfully completed my project, but the library (and especially the visualization widgets) could still use some more work. The new library supports a similar interface, so little change is needed to convert individual widgets, but it also has several advantages over the old implementation:</description>
+    </item>
+    
+    <item>
+      <title>Golden (sublime) triangles in Orange</title>
+      <link>/blog/2011/08/19/golden-sublime-triangles-in-orange/</link>
+      <pubDate>Fri, 19 Aug 2011 14:18:00 +0000</pubDate>
+      
+      <guid>/blog/2011/08/19/golden-sublime-triangles-in-orange/</guid>
+      <description>Hand in hand with the development of the new visualization framework and the financial crisis we are putting some gold into Orange. The arrows at the ends of the axes are, as of today, small golden triangles. See the changes in owaxis.py!
+- path.moveTo(0, 3) - path.lineTo(0, -3) - path.lineTo(5, 0) + path.moveTo(0, 3.09) + path.lineTo(0, -3.09) + path.lineTo(9.51, 0)  </description>
+    </item>
+    
+    <item>
+      <title>NetworkX in Orange</title>
+      <link>/blog/2011/07/29/networkx-in-orange/</link>
+      <pubDate>Fri, 29 Jul 2011 18:56:00 +0000</pubDate>
+      
+      <guid>/blog/2011/07/29/networkx-in-orange/</guid>
+      <description>NetworkX – a popular open-source python library for network analysis has finally found its way into Orange. It is now used as a base class for network representation in all Orange modules and widgets. By that, we offered to the widespread network community a fruitful and fun way to visualize and explore networks, using their existing NetworkX scripts. It has never been easier to combine network analysis and visualization with existing machine learning and data discovery methods.</description>
+    </item>
+    
+    <item>
+      <title>Orange GSoC: Visualizations with Qt</title>
+      <link>/blog/2011/06/30/orange-gsoc-visualizations-with-qt/</link>
+      <pubDate>Thu, 30 Jun 2011 12:55:00 +0000</pubDate>
+      
+      <guid>/blog/2011/06/30/orange-gsoc-visualizations-with-qt/</guid>
+      <description>Hello, my name is Miha Čančula and this summer I&amp;rsquo;m working on Orange as part of Google&amp;rsquo;s Summer of Code program, mentored by Miha Štajdohar. My task is to replace the current visualization framework based on Qwt with a custom library, depending only on Qt. This library will better support Orange&amp;rsquo;s very specific visualizations and will replace the unmaintained PyQwt.
+I have a lot of experience with Qt and its graphics classes, both in C++ and Python, but I&amp;rsquo;m relatively now to Orange.</description>
+    </item>
+    
+  </channel>
+</rss>

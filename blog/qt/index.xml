@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qt on Orange</title>
+    <link>/blog/qt/</link>
+    <description>Recent content in qt on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/qt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unfreezing Orange</title>
+      <link>/blog/2018/04/05/unfreezing-orange/</link>
+      <pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate>
+      
+      <guid>/blog/2018/04/05/unfreezing-orange/</guid>
+      <description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
+Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Review: Visualizations with Qt</title>
+      <link>/blog/2011/09/03/gsoc-review-visualizations-with-qt/</link>
+      <pubDate>Sat, 03 Sep 2011 08:28:00 +0000</pubDate>
+      
+      <guid>/blog/2011/09/03/gsoc-review-visualizations-with-qt/</guid>
+      <description>During the course of this summer, I created a new plotting library for Orange plot, replacing the use of PyQwt. I can say that I have succesfully completed my project, but the library (and especially the visualization widgets) could still use some more work. The new library supports a similar interface, so little change is needed to convert individual widgets, but it also has several advantages over the old implementation:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clustering on Orange</title>
+    <link>/workflows/Clustering/</link>
+    <description>Recent content in Clustering on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/workflows/Clustering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workflow template</title>
+      <link>/workflows/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/template/</guid>
+      <description>Load the data from scOrange single cell database, see the expression values in a spreadsheet, and use Louvain clustering to find cell groups. Visualize cell landscape in a t-SNE projection and inspect the results of clustering. Select a subset of cells in t-SNE to examine their type or gene expression statistics in the Box Plot. Find enriched Gene Ontology terms, which hint on cell types.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Clustering</title>
+      <link>/workflows/hierarchical-clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/hierarchical-clustering/</guid>
+      <description>The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.</description>
+    </item>
+    
+    <item>
+      <title>Cluster Inspection</title>
+      <link>/workflows/cluster-inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/cluster-inspection/</guid>
+      <description>We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use &amp;lsquo;Order by relevance&amp;rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!</description>
+    </item>
+    
+    <item>
+      <title>Text Clustering</title>
+      <link>/workflows/text-clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-clustering/</guid>
+      <description>The workflow clusters Grimm&amp;rsquo;s tales corpus. We start by preprocessing the data and constructing the bag of words matrix. Then we compute cosine distances between documents and use Hierarchical Clustering, which displays the dendrogram. We observe how well the type of the tale corresponds to the cluster in the MDS.</description>
+    </item>
+    
+  </channel>
+</rss>

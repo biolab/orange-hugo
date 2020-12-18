@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>single cell on Orange</title>
+    <link>/blog/single-cell/</link>
+    <description>Recent content in single cell on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/single-cell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Single-Cell Data Science for Everyone</title>
+      <link>/blog/2019/3/1/single-cell-data-science-for-everyone/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/3/1/single-cell-data-science-for-everyone/</guid>
+      <description>Molecular biologists have in the past twenty years invented technologies that can collect abundant experimental data. One such technique is single-cell RNA-seq, which, very simplified, can measure the activity of genes in possibly large collections of cells. The interpretation of such data can tell us about the heterogeneity of cells, cell types, or provide information on their development.
+Typical analysis toolboxes for single-cell data are available in R and Python and, most notably, include Seurat and scanpy, but they lack interactive visualizations and simplicity of Orange.</description>
+    </item>
+    
+  </channel>
+</rss>

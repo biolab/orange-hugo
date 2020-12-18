@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>version on Orange</title>
+    <link>/blog/version/</link>
+    <description>Recent content in version on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Aug 2017 11:41:33 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/version/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Text Analysis: New Features</title>
+      <link>/blog/2017/08/04/text-analysis-new-features/</link>
+      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
+      
+      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
+Related: Text Preprocessing</description>
+    </item>
+    
+    <item>
+      <title>Version 3.3.1 - Updates and Features</title>
+      <link>/blog/2016/04/01/version-3-3-1-updates-and-features/</link>
+      <pubDate>Fri, 01 Apr 2016 12:43:53 +0000</pubDate>
+      
+      <guid>/blog/2016/04/01/version-3-3-1-updates-and-features/</guid>
+      <description>About a week ago we issued an updated stable release of Orange, version 3.3.1. We&amp;rsquo;ve introduced some new functionalities and improved a few old ones.
+Here&amp;rsquo;s what&amp;rsquo;s new in this release:
+  New widgets: Distance Matrix for visualizing distance measures in a matrix, Distance Transformation for normalization and inversion of distance matrix, Save Distance Matrix and Distance File for saving and loading distances. Last week we also mentioned a really amazing Silhouette Plot, which helps you visually assess cluster quality.</description>
+    </item>
+    
+    <item>
+      <title>Orange 2.7</title>
+      <link>/blog/2013/05/25/orange-2-7/</link>
+      <pubDate>Sat, 25 May 2013 10:09:00 +0000</pubDate>
+      
+      <guid>/blog/2013/05/25/orange-2-7/</guid>
+      <description>Orange 2.7 is out with a major update in the visual programming environment. Redesigned interface, new widgets, welcome screen with workflow browser. Text annotation and arrow lines in workspace. Preloaded workflows with annotations. Widget menu and search can now be activated through key press (open the Settings to make this option available). Extended or minimised widget tab. Improved widget browsing. Enjoy!</description>
+    </item>
+    
+  </channel>
+</rss>

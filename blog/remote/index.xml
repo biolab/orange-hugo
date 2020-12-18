@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remote on Orange</title>
+    <link>/blog/remote/</link>
+    <description>Recent content in remote on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/remote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange in the Cloud</title>
+      <link>/blog/2020/2020-01-16-orange-cloud/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-01-16-orange-cloud/</guid>
+      <description>Many problems are too big and require too much processing power to be efficiently processed on your laptop or PC. In such cases, the data is usually transferred to a remote server and processed using custom code, which is often time consuming. Now, there is a way to run Orange on a remote server so that you can keep using its interactive graphical interface. We will show you how to run Orange on the remote server so that you can use it through your web browser.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outliers on Orange</title>
+    <link>/workflows/Outliers/</link>
+    <description>Recent content in Outliers on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/workflows/Outliers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inspecting Outliers with Silhouette</title>
+      <link>/workflows/outliers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/outliers/</guid>
+      <description>Silhouette Plot shows how &amp;lsquo;well-centered&amp;rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris&amp;rsquo; class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.</description>
+    </item>
+    
+  </channel>
+</rss>

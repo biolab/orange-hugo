@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oasys on Orange</title>
+    <link>/blog/oasys/</link>
+    <description>Recent content in oasys on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Oct 2016 10:09:56 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/oasys/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Story of Shadow and Orange</title>
+      <link>/blog/2016/10/10/the-story-of-shadow-and-orange/</link>
+      <pubDate>Mon, 10 Oct 2016 10:09:56 +0000</pubDate>
+      
+      <guid>/blog/2016/10/10/the-story-of-shadow-and-orange/</guid>
+      <description>This is a long story. I remember when started my PhD in Italy. There I met a researcher and he said to me: »You should do some simulations on x-ray optics beamline.« »Yes, but how should I do that?« He gave me a big tape, it was 1986. I soon realized it was all code. But it was a code called Shadow.
+I started to look at the code, to play with it, do some simulations… Soon my boss told me:</description>
+    </item>
+    
+    <item>
+      <title>Oasys: Orange Canvas applied to Optical Physics</title>
+      <link>/blog/2016/05/20/oasys-orange-canvas-applied-to-optical-physics/</link>
+      <pubDate>Fri, 20 May 2016 08:05:21 +0000</pubDate>
+      
+      <guid>/blog/2016/05/20/oasys-orange-canvas-applied-to-optical-physics/</guid>
+      <description>This week we’re hosting experts in optical physics from Elettra Sincrotrone Trieste and European Synchrotron Radiation Facility in our laboratory. For a long time they have been interested in developing a user interface that integrates different simulation tools and data analysis software within one environment. It all came true with Orange Canvas and the OASYS system. We’ve already written about this two years ago, when the idea first came up. Now the actual software is ready and is being used by researchers for everyday analysis and prototyping.</description>
+    </item>
+    
+  </channel>
+</rss>

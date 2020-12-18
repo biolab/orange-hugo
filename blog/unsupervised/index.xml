@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unsupervised on Orange</title>
+    <link>/blog/unsupervised/</link>
+    <description>Recent content in unsupervised on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2017 11:34:26 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/unsupervised/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding Voting Patterns  at AKOS Workshop</title>
+      <link>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</link>
+      <pubDate>Fri, 22 Sep 2017 11:34:26 +0000</pubDate>
+      
+      <guid>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</guid>
+      <description>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).</description>
+    </item>
+    
+    <item>
+      <title>Image Analytics: Clustering</title>
+      <link>/blog/2017/04/03/image-analytics-clustering/</link>
+      <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
+      
+      <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
+      <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
+For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
+    </item>
+    
+    <item>
+      <title>k-Means and Silhouette Score</title>
+      <link>/blog/2017/03/17/k-means-silhouette-score/</link>
+      <pubDate>Fri, 17 Mar 2017 17:05:25 +0000</pubDate>
+      
+      <guid>/blog/2017/03/17/k-means-silhouette-score/</guid>
+      <description>k-Means is one of the most popular unsupervised learning algorithms for finding interesting groups in our data. It can be useful in customer segmentation, finding gene families, determining document types, improving human resource management and so on.
+But&amp;hellip; have you ever wondered how k-means works? In the following three videos we explain how to construct a data analysis workflow using k-means, how k-means works, how to find a good k value and how silhouette score can help us find the inliers and the outliers.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction by Manifold Learning</title>
+      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
+      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
+      
+      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
+      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Manifold Learning widget has a simple interface with powerful features.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
+    </item>
+    
+  </channel>
+</rss>

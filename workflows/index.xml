@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflows on Orange</title>
+    <link>/workflows/</link>
+    <description>Recent content in Workflows on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/workflows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bag of Words</title>
+      <link>/workflows/Bag-of-Words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Bag-of-Words/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Box Plot</title>
+      <link>/workflows/Box-Plot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Box-Plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Classification</title>
+      <link>/workflows/Classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Classification Tree</title>
+      <link>/workflows/Classification-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Classification-Tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>/workflows/Clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Confusion Matrix</title>
+      <link>/workflows/Confusion-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Confusion-Matrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross Validation</title>
+      <link>/workflows/Cross-Validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Cross-Validation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>/workflows/Data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Loading</title>
+      <link>/workflows/Data-Loading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Data-Loading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Sampler</title>
+      <link>/workflows/Data-Sampler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Data-Sampler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Table</title>
+      <link>/workflows/Data-Table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Data-Table/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction</title>
+      <link>/workflows/Dimensionality-Reduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Dimensionality-Reduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feature Ranking</title>
+      <link>/workflows/Feature-Ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Feature-Ranking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feature Selection</title>
+      <link>/workflows/Feature-Selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Feature-Selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Clustering</title>
+      <link>/workflows/Hierarchical-Clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Hierarchical-Clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Literary Analysis</title>
+      <link>/workflows/Literary-Analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Literary-Analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/workflows/Nomogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Nomogram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Outliers</title>
+      <link>/workflows/Outliers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Outliers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PCA</title>
+      <link>/workflows/PCA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/PCA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pivot Table</title>
+      <link>/workflows/Pivot-Table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Pivot-Table/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive models</title>
+      <link>/workflows/Predictive-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Predictive-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preprocessing</title>
+      <link>/workflows/Preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Preprocessing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scatter Plot</title>
+      <link>/workflows/Scatter-Plot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Scatter-Plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis</title>
+      <link>/workflows/Sentiment-Analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Sentiment-Analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Silhouette</title>
+      <link>/workflows/Silhouette/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Silhouette/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story Arcs</title>
+      <link>/workflows/Story-Arcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Story-Arcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>t-SNE</title>
+      <link>/workflows/t-SNE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/t-SNE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Mining</title>
+      <link>/workflows/Text-Mining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Text-Mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timeseries</title>
+      <link>/workflows/Timeseries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Timeseries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tokenization</title>
+      <link>/workflows/Tokenization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Tokenization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic Modeling</title>
+      <link>/workflows/Topic-Modeling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Topic-Modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/workflows/Twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>/workflows/Visualization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/Visualization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

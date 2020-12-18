@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>youtube on Orange</title>
+    <link>/blog/youtube/</link>
+    <description>Recent content in youtube on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 May 2018 08:19:34 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/youtube/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clustering of Monet and Manet</title>
+      <link>/blog/2018/05/09/clustering-of-monet-and-manet/</link>
+      <pubDate>Wed, 09 May 2018 08:19:34 +0000</pubDate>
+      
+      <guid>/blog/2018/05/09/clustering-of-monet-and-manet/</guid>
+      <description>Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet&amp;rsquo;s masterpiece is indeed very similar to Manet&amp;rsquo;s! Use Image Analytics add-on and play with it. Here&amp;rsquo;s how:   </description>
+    </item>
+    
+    <item>
+      <title>k-Means and Silhouette Score</title>
+      <link>/blog/2017/03/17/k-means-silhouette-score/</link>
+      <pubDate>Fri, 17 Mar 2017 17:05:25 +0000</pubDate>
+      
+      <guid>/blog/2017/03/17/k-means-silhouette-score/</guid>
+      <description>k-Means is one of the most popular unsupervised learning algorithms for finding interesting groups in our data. It can be useful in customer segmentation, finding gene families, determining document types, improving human resource management and so on.
+But&amp;hellip; have you ever wondered how k-means works? In the following three videos we explain how to construct a data analysis workflow using k-means, how k-means works, how to find a good k value and how silhouette score can help us find the inliers and the outliers.</description>
+    </item>
+    
+    <item>
+      <title>Why Orange?</title>
+      <link>/blog/2017/03/09/why-orange/</link>
+      <pubDate>Thu, 09 Mar 2017 10:54:13 +0000</pubDate>
+      
+      <guid>/blog/2017/03/09/why-orange/</guid>
+      <description>Why is Orange so great? Because it helps people solve problems quickly and efficiently.
+Sašo Jakljevič, a former student of the Faculty of Computer and Information Science at University of Ljubljana, created the following motivational videos for his graduation thesis. He used two belowed datasets, iris and zoo, to showcase how to tackle real-life problems with Orange.
+    </description>
+    </item>
+    
+    <item>
+      <title>Getting Started Series: Part Two</title>
+      <link>/blog/2016/02/26/getting-started-series-pt2/</link>
+      <pubDate>Fri, 26 Feb 2016 10:35:33 +0000</pubDate>
+      
+      <guid>/blog/2016/02/26/getting-started-series-pt2/</guid>
+      <description>We&amp;rsquo;ve recently published two more videos in our Getting Started with Orange series. The series is intended to introduce beginners to Orange and teach them how to use its components.
+The first video explains how to do hierarchical clustering and select interesting subsets directly in Orange:
+  while the second video introduces classification trees and predictive modelling:
+  The seventh video in the series will address how to score classification and regression models by different evaluation methods.</description>
+    </item>
+    
+    <item>
+      <title>Orange YouTube Tutorials</title>
+      <link>/blog/2016/01/04/orange-youtube-tutorials/</link>
+      <pubDate>Mon, 04 Jan 2016 08:09:24 +0000</pubDate>
+      
+      <guid>/blog/2016/01/04/orange-youtube-tutorials/</guid>
+      <description>It&amp;rsquo;s been a long time coming, but finally we&amp;rsquo;ve created out our first set of YouTube tutorials. In a series &amp;lsquo;Getting Started with Orange&amp;rsquo; we will walk through our software step-by-step. You will learn how to create a workflow, load your data in different formats, visualize and explore the data. These tutorials are meant for complete beginners in both Orange and data mining and come with some handy tricks that will make using Orange very easy.</description>
+    </item>
+    
+  </channel>
+</rss>

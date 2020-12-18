@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tree on Orange</title>
+    <link>/blog/tree/</link>
+    <description>Recent content in tree on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Aug 2017 08:59:54 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/tree/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>It&#39;s Sailing Time (Again)</title>
+      <link>/blog/2017/08/11/its-sailing-time-again/</link>
+      <pubDate>Fri, 11 Aug 2017 08:59:54 +0000</pubDate>
+      
+      <guid>/blog/2017/08/11/its-sailing-time-again/</guid>
+      <description>Every fall I teach a course on Introduction to Data Mining. And while the course is really on statistical learning and its applications, I also venture into classification trees. For several reasons. First, I can introduce information gain and with it feature scoring and ranking. Second, classification trees are one of the first machine learning approaches co-invented by engineers (Ross Quinlan) and statisticians (Leo Breiman, Jerome Friedman, Charles J. Stone, Richard A.</description>
+    </item>
+    
+    <item>
+      <title>The Beauty of Random Forest</title>
+      <link>/blog/2016/12/22/the-beauty-of-random-forest/</link>
+      <pubDate>Thu, 22 Dec 2016 08:55:36 +0000</pubDate>
+      
+      <guid>/blog/2016/12/22/the-beauty-of-random-forest/</guid>
+      <description>It is the time of the year when we adore Christmas trees. But these are not the only trees we, at Orange team, think about. In fact, through almost life-long professional deformation of being a data scientist, when I think about trees I would often think about classification and regression trees. And they can be beautiful as well. Not only for their elegance in explaining the hidden patterns, but aesthetically, when rendered in Orange.</description>
+    </item>
+    
+    <item>
+      <title>Pythagorean Trees and Forests</title>
+      <link>/blog/2016/07/29/pythagorean-trees-and-forests/</link>
+      <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
+      
+      <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
+      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
+    </item>
+    
+    <item>
+      <title>Classifying instances with Orange in Python</title>
+      <link>/blog/2015/08/14/classifying-instances-with-orange-in-python/</link>
+      <pubDate>Fri, 14 Aug 2015 12:31:57 +0000</pubDate>
+      
+      <guid>/blog/2015/08/14/classifying-instances-with-orange-in-python/</guid>
+      <description>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily classify data with Orange.
+First we’re going to create a new data table with 10 fruits as our instances.
+import Orange from Orange.data import * color = DiscreteVariable(&amp;quot;color&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;yellow&amp;quot;])calories = ContinuousVariable(&amp;quot;calories&amp;quot;) fiber = ContinuousVariable(&amp;quot;fiber&amp;quot;) fruit = DiscreteVariable(&amp;quot;fruit&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;apple&amp;quot;, &amp;quot;peach&amp;quot;]) domain = Domain([color, calories, fiber], class_vars=fruit) data=Table(domain, [&amp;lt;/span&amp;gt; [&amp;quot;green&amp;quot;, 4, 1.</description>
+    </item>
+    
+    <item>
+      <title>Random decisions behind your back</title>
+      <link>/blog/2012/02/05/random-decisions-behind-your-back/</link>
+      <pubDate>Sun, 05 Feb 2012 20:30:00 +0000</pubDate>
+      
+      <guid>/blog/2012/02/05/random-decisions-behind-your-back/</guid>
+      <description>When Orange builds a decision tree, candidate attributes are evaluated and the best candidate is chosen. But what if two or more share the first place? Most machine learning systems don&amp;rsquo;t care about it and always take the first, which is unfair and, besides, has strange effects: the induced model and, consequentially, its accuracy depends upon the order of attributes. Which shouldn&amp;rsquo;t be.
+This is not an isolated problem. Another instance is when a classifier has to choose between two equally probable classes when there is no additional information (such as classification costs) to help make the prediction.</description>
+    </item>
+    
+    <item>
+      <title>Faster classification and regression trees</title>
+      <link>/blog/2011/08/24/faster-classification-and-regression-trees/</link>
+      <pubDate>Wed, 24 Aug 2011 22:26:00 +0000</pubDate>
+      
+      <guid>/blog/2011/08/24/faster-classification-and-regression-trees/</guid>
+      <description>SimpleTreeLearner is an implementation of classification and regression trees that sacrifices flexibility for speed. A benchmark on 42 different datasets reveals that SimpleTreeLearner is 11 times faster than the original TreeLearner.
+The motivation behind developing a new tree induction algorithm from scratch was to speed up the construction of random forests, but you can also use it as a standalone learner. SimpleTreeLearner uses gain ratio for classification and MSE for regression and can handle unknown values.</description>
+    </item>
+    
+  </channel>
+</rss>

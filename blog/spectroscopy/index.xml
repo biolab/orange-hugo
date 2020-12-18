@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spectroscopy on Orange</title>
+    <link>/blog/spectroscopy/</link>
+    <description>Recent content in spectroscopy on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Sep 2018 07:32:17 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/spectroscopy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange in Space</title>
+      <link>/blog/2018/09/21/orange-in-space/</link>
+      <pubDate>Fri, 21 Sep 2018 07:32:17 +0000</pubDate>
+      
+      <guid>/blog/2018/09/21/orange-in-space/</guid>
+      <description>Did you know that Orange has already been to space? Rosario Brunetto (IAS-Orsay, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the JAXA Hayabusa2 team. The Hayabusa2 asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data.</description>
+    </item>
+    
+    <item>
+      <title>Spectroscopy Workshop at BioSpec and How to Merge Data</title>
+      <link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link>
+      <pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate>
+      
+      <guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid>
+      <description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+Related: Orange with Spectroscopy Add-on
+A class full of dedicated scientists.
+One thing we did was see how to join data from two different sources.</description>
+    </item>
+    
+  </channel>
+</rss>

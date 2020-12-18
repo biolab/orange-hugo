@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topic Modeling on Orange</title>
+    <link>/workflows/Topic-Modeling/</link>
+    <description>Recent content in Topic Modeling on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/workflows/Topic-Modeling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Twitter Data Analysis</title>
+      <link>/workflows/twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/twitter/</guid>
+      <description>Tweets are a valuable source of information, for social scientists, marketing managers, linguists, economists, and so on. In this workflow we retrieve data from Twitter, preprocess it, and uncover latent topics with topic modeling. We observe the topics in a Heat Map.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>feature construction on Orange</title>
+    <link>/blog/feature-construction/</link>
+    <description>Recent content in feature construction on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/feature-construction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Mining COVID-19 Epidemics: Part 1</title>
+      <link>/blog/2020/2020-04-02-covid-19-basic/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-04-02-covid-19-basic/</guid>
+      <description>These days we are all following the statistics of COVID-19, looking at how our own country is faring and how it&amp;rsquo;s comparing with other countries. Luckily, only a few have a statistically meaningful number of deaths (which solemnly reminds us of the difference between statistical and practical significance!), so we concentrate on the number of confirmed cases.
+You&amp;rsquo;re reading the first and most basic blog post from a series in which we will investigate this data using Orange.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1020 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - workshop</title>
+
+    
+    
+    <meta property="og:title" content="workshop">
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/css/styles.min.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">Features</a></li>                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+
+      <section id="features" class="features-blog section offset-header">
+    <div class="container">
+        <div style="text-align: center">
+            <h2 style="font-size: 34px;">
+                Orange Blog
+            </h2>
+        </div>
+        <div class="row" style="margin-top:20px !important;">
+            <div class="col-xs-12 content" style="display: inline;">
+                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
+                    placeholder="Search blog by categories, title and description." tabindex="1"
+                    onkeydown="check_key(event)" autofocus />
+                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+        </div>
+        <div class="categoriesList col-lg-12 row" id="myUL">
+            <ul>
+                <span>Categories: </span>
+                
+                <li style="display: inline;"><a href="/blog/orange3"
+                        style="margin-top: 20px !important;">orange3</a></li>
+                
+                <li style="display: inline;"><a href="/blog/visualization"
+                        style="margin-top: 20px !important;">visualization</a></li>
+                
+                <li style="display: inline;"><a href="/blog/analysis"
+                        style="margin-top: 20px !important;">analysis</a></li>
+                
+                <li style="display: inline;"><a href="/blog/addons"
+                        style="margin-top: 20px !important;">addons</a></li>
+                
+                <li style="display: inline;"><a href="/blog/workshop"
+                        style="margin-top: 20px !important;">workshop</a></li>
+                
+                <li style="display: inline;"><a href="/blog/education"
+                        style="margin-top: 20px !important;">education</a></li>
+                
+                <li style="display: inline;"><a href="/blog/classification"
+                        style="margin-top: 20px !important;">classification</a></li>
+                
+                <li style="display: inline;"><a href="/blog/data"
+                        style="margin-top: 20px !important;">data</a></li>
+                
+                <li style="display: inline;"><a href="/blog/examples"
+                        style="margin-top: 20px !important;">examples</a></li>
+                
+                <li style="display: inline;"><a href="/blog/gsoc"
+                        style="margin-top: 20px !important;">gsoc</a></li>
+                
+            </ul>
+        </div>
+        <div id="search-results" style="display: none;">
+        </div>
+        <div id="post_nor">
+            
+            
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Jun 12, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/06/12/from-surveys-to-orange/"> From Surveys to Orange</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
+Related: Analyzing Surveys
+We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/dataloading">dataloading</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/06/12/from-surveys-to-orange/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, May 30, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/"> Spectroscopy Workshop at BioSpec and How to Merge Data</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+Related: Orange with Spectroscopy Add-on
+A class full of dedicated scientists.
+One thing we did was see how to join data from two different sources.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/blog/bioinformatics">bioinformatics</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/spectroscopy">spectroscopy</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, May 3, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/"> Data Mining Course at Higher School of Economics, Moscow</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
+It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/business-intelligence">business intelligence</a>
+                                
+                                <a class="tag-workflow" href="/blog/classification">classification</a>
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/python">python</a>
+                                
+                                <a class="tag-workflow" href="/blog/scripting">scripting</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Mar 28, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/"> Orange with Spectroscopy Add-on Workshop</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. Spectroscopy add-on is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
+We will prove it with a simple classification workflow. First, install Spectroscopy add-on from Options - Add-ons menu in Orange. Restart Orange for the add-on to appear. Great, you are ready for some spectral analysis!
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/infrared-spectra">infrared spectra</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Feb 2, 2018</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/"> Image Analytics Workshop at AIUCD 2018</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/addons">addons</a>
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/conference">conference</a>
+                                
+                                <a class="tag-workflow" href="/blog/embedding">embedding</a>
+                                
+                                <a class="tag-workflow" href="/blog/images">images</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Nov 29, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/11/29/how-to-properly-test-models/"> How to Properly Test Models</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
+One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/classification">classification</a>
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/overfitting">overfitting</a>
+                                
+                                <a class="tag-workflow" href="/blog/predictive-analytics">predictive  analytics</a>
+                                
+                                <a class="tag-workflow" href="/blog/scoring">scoring</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/11/29/how-to-properly-test-models/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Nov 17, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/11/17/data-mining-business-public-administration/"> Data Mining for Business and Public Administration</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We&rsquo;ve been having a blast with recent Orange workshops. While Blaž was getting tanned in India, Anže and I went to the charming Liverpool to hold a session for business school professors on how to teach business with Orange.
+Related: Orange in Kolkata, India
+Obviously, when we say teach business, we mean how to do data mining for business, say predict churn or employee attrition, segment customers, find which items to recommend in an online store and track brand sentiment with text analysis.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/business-intelligence">business intelligence</a>
+                                
+                                <a class="tag-workflow" href="/blog/clustering">clustering</a>
+                                
+                                <a class="tag-workflow" href="/blog/examples">examples</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/11/17/data-mining-business-public-administration/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BLAZ, Nov 8, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/11/08/orange-in-kolkata-india/"> Orange in Kolkata, India</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                We have just completed the hands-on course on data science at one the most famous Indian educational institutions, Indian Statistical Institute. A one week course was invited by Institute&rsquo;s director Prof. Dr. Sanghamitra Bandyopadhyay, and financially supported by the founding of India&rsquo;s Global Initiative of Academic Networks.
+Indian Statistical Institute lies in the hearth of old Kolkata. A peaceful oasis of picturesque campus with mango orchards and waterlily lakes was founded by Prof.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/education">education</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/11/08/orange-in-kolkata-india/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Oct 26, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/10/26/analyzing-surveys/"> Analyzing Surveys</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/analysis">analysis</a>
+                                
+                                <a class="tag-workflow" href="/blog/clustering">clustering</a>
+                                
+                                <a class="tag-workflow" href="/blog/data">data</a>
+                                
+                                <a class="tag-workflow" href="/blog/dataloading">dataloading</a>
+                                
+                                <a class="tag-workflow" href="/blog/orange3">orange3</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/10/26/analyzing-surveys/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: AJDA, Sep 22, 2017</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/"> Understanding Voting Patterns  at AKOS Workshop</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/clustering">clustering</a>
+                                
+                                <a class="tag-workflow" href="/blog/interactive-data-visualization">interactive data visualization</a>
+                                
+                                <a class="tag-workflow" href="/blog/unsupervised">unsupervised</a>
+                                
+                                <a class="tag-workflow" href="/blog/visualization">visualization</a>
+                                
+                                <a class="tag-workflow" href="/blog/workshop">workshop</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+                    
+
+
+<div class="center-pag">
+<div class="pagination1">
+
+    
+        
+       
+        
+        <a href="/blog/workshop/" rel="prev" class="page-link">‹ Prev</a>
+        
+
+        
+            
+             
+            
+            <a href="/blog/workshop/" class="page-link">1</a>
+            
+        
+             
+            <a  href="/blog/workshop/page/2/" class="page-link pagination-current">2</a>
+            
+        
+            
+             
+            
+            <a href="/blog/workshop/page/3/" class="page-link">3</a>
+            
+        
+            
+             
+            
+            <a href="/blog/workshop/page/4/" class="page-link">4</a>
+            
+        
+
+        
+        <a href="/blog/workshop/page/3/" rel="next" class="page-link">Next ›</a>
+        
+
+        
+    </ul>
+
+</div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script type="text/javascript">
+    function check_key(e) {
+        if (e.keyCode == 13) {
+            search_content();
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
+                $("#post_nor").show();
+                $("#search-results").hide();
+                $("#pagination").show();
+            }
+        }
+    }
+
+    function search_content() {
+
+        var param = document.getElementById('search-input').value;
+
+        $("#pagination").hide();
+
+        if (param.trim() == "") {
+            $("#post_nor").show();
+            $("#search-results").hide();
+            $("#pagination").show();
+        } else {
+            var results = search(param);
+            var search_results = document.getElementById('search-results')
+
+            $("#post_nor").hide();
+            $("#search-results").show();
+
+            if (results.length < 1) {
+                search_results.innerHTML = '<div style="padding: 20px 15px"> No blog posts found. </div>';
+            } else {
+                var html_el = ""
+
+                for (var page in results) {
+                    html_el += '<div class="row">';
+                    if (results[page].thumbImage == '' || results[page].thumbImage === '<no value>') {
+                        html_el += '<div class="content col-md-12 col-xs-12 feature-description" >'
+                    } else if (page % 2 == 0) {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-left" style="padding-top: 20px;">';
+                    } else {
+                        html_el +=
+                            '<div class="content col-md-6 col-xs-12 feature-description pull-right" style="padding-top: 20px;">';
+                    }
+
+                    html_el +=
+                        '<p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">By: ' +
+                        results[page].author + ', ' + results[page].date + '</p>'
+                    html_el += '<h2 class="workflow-title" style="margin-top: 10px !important"><a href="' + results[
+                        page].uri + '">' + results[page].title + '</a></h2>'
+
+
+                    if (results[page].longExcerpt != '' && results[page].longExcerpt != '<no value>') {
+                        html_el += '<p class="feature-text">' + results[page].longExcerpt + '</p>'
+                    } else {
+                        html_el += '<p class="feature-text">' + results[page].summary + '</p>'
+
+                    }
+
+                    html_el += '<div class="tags" style="padding-bottom: 10px;">Categories:'
+                    for (var cat in results[page].categories) {
+                        html_el += '<a class="tag-workflow" href="/categories/' + results[page].categories[cat] + '">' +
+                            results[page].categories[cat] + '</a>'
+                    }
+
+                    html_el += '</div>'
+                    html_el += '<div class="getting-started-button">'
+                    html_el += '<a href="' + results[page].uri +
+                        '" class="no-break-buttons"><div class="learn-more feature-block"><div class="feature-block feature-link">Read More</div> <div class="feature-block fa fa-arrow-circle-o-right jsonly" > </div></div></a>'
+
+                    html_el += '</div></div>'
+
+                    if (results[page].thumbImage != '' && results[page].thumbImage != '<no value>') {
+
+                        if (page % 2 == 0) {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter panel-right">';
+                        } else {
+                            html_el += '<div class="content col-md-6 col-xs-12 image-containter ">';
+                        }
+
+                        html_el += '<a href="' + results[page].uri + '"><img src="' + results[page].thumbImage +
+                            '" class="workflow-image"></a>'
+
+                        html_el += "</div>"
+                    }
+
+                    html_el += "</div><hr/>"
+                }
+
+                search_results.innerHTML += html_el;
+            }
+        }
+    }
+</script>
+<script type="text/javascript" src="/js/lunr.js"></script>
+<script type="text/javascript">
+    var baseurl = "";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 15 Oct </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-10-15-document-embedders/">How to identify fake news with document embeddings</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 28 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-09-28-text-tutorials/">New Video Tutorials on Text Mining</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jul </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-07-27-story-arcs/">Detecting Story Arcs with Orange</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

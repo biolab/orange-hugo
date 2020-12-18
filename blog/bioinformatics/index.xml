@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bioinformatics on Orange</title>
+    <link>/blog/bioinformatics/</link>
+    <description>Recent content in bioinformatics on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange at ISMB/ECCB 2019</title>
+      <link>/blog/2019/2019-07-25-scorange/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/2019-07-25-scorange/</guid>
+      <description>Our entry to this year&amp;rsquo;s largest bioinformatics conference was on the training of single-cell data analytics. We claim that with Orange and its new single-cell RNA analysis add-on, one can assemble a workshop to teach essential concepts from single-cell analytics in a single day.
+ \
+Single-cell genomics is driven on revolutionary technology from molecular biology that allows us to peek into inner workings of the individual cell. Single-cell datasets feature thousands of genes and cells and benefit from the analysis that integrates this data with other knowledge sources, like those on the classification of genes, lists of pathways, and sets of cell-type markers.</description>
+    </item>
+    
+    <item>
+      <title>Gene Expression Profiles with Line Plot</title>
+      <link>/blog/2019/6/gene-expression-profiles-with-line-plot/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/6/gene-expression-profiles-with-line-plot/</guid>
+      <description>Line Plot is one of our recent additions to the visualization widgets. It shows data profiles, meaning it plots values for all features in the data set. Each data instance in a line plot is a line or a &amp;lsquo;profile&amp;rsquo;.
+The widget can show four types of information – individual data profiles (lines), data range, mean profile and error bars. It has the same cool features of other Orange visualizations – it is interactive, meaning you can select a subset of data instances from the plot, it allows grouping by a discrete variable, and it highlights an incoming data subset.</description>
+    </item>
+    
+    <item>
+      <title>Spectroscopy Workshop at BioSpec and How to Merge Data</title>
+      <link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link>
+      <pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate>
+      
+      <guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid>
+      <description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+Related: Orange with Spectroscopy Add-on
+A class full of dedicated scientists.
+One thing we did was see how to join data from two different sources.</description>
+    </item>
+    
+    <item>
+      <title>Orange Workshops: Luxembourg, Pavia, Ljubljana</title>
+      <link>/blog/2017/03/06/luxembourg-pavia-ljubljana/</link>
+      <pubDate>Mon, 06 Mar 2017 21:35:49 +0000</pubDate>
+      
+      <guid>/blog/2017/03/06/luxembourg-pavia-ljubljana/</guid>
+      <description>February was a month of Orange workshops.
+Ljubljana: Biologists We (Tomaž, Martin and I) have started in Ljubljana with a hands-on course for the COST Action FA1405 Systems Biology Training School. This was a four hour workshop with an introduction to classification and clustering, and then with application of machine learning to analysis of gene expression data on a plant called Arabidopsis. The organization of this course has even inspired us for a creation of a new widget GOMapMan Ontology that was added to Bioinformatics add-on.</description>
+    </item>
+    
+    <item>
+      <title>For When You Want to Transpose a Data Table...</title>
+      <link>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</link>
+      <pubDate>Fri, 03 Feb 2017 13:16:37 +0000</pubDate>
+      
+      <guid>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</guid>
+      <description>Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.
+Since version 3.3.9, Orange has a Transpose widget that flips your data table around. Columns become rows and rows become columns. This is often useful, if you have, say, biological data.
+Related: Datasets in Orange Bioinformatics
+Today we will play around with brown-selected.tab, a data set on gene expression levels for 79 experiments.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Data Mining for Life Scientists</title>
+      <link>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</link>
+      <pubDate>Sun, 02 Oct 2016 11:21:20 +0000</pubDate>
+      
+      <guid>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</guid>
+      <description>RNA Club Munich has organized Molecular Life of Stem Cells Conference in Ljubljana this past Thursday, Friday and Saturday. They asked us to organize a four-hour workshop on data mining. And here we were: four of us, Ajda, Anze, Marko and myself (Blaz) run a workshop for 25 students with molecular biology and biochemistry background.
+We have covered some basic data visualization, modeling (classification) and model scoring, hierarchical clustering and data projection, and finished with a touch of deep-learning by diving into image analysis by deep learning-based embedding.</description>
+    </item>
+    
+    <item>
+      <title>Datasets in Orange Bioinformatics Add-On</title>
+      <link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link>
+      <pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate>
+      
+      <guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid>
+      <description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description>
+    </item>
+    
+    <item>
+      <title>Orange workshops around the world</title>
+      <link>/blog/2015/06/19/435/</link>
+      <pubDate>Fri, 19 Jun 2015 10:40:43 +0000</pubDate>
+      
+      <guid>/blog/2015/06/19/435/</guid>
+      <description>Even though the summer is nigh, we are hardly going to catch a summer break this year. Orange team is busy holding workshops around the world to present the latest widgets and data mining tools to the public. Last week we had a very successful tutorial at [BC]2 in Basel, Switzerland, where Marinka and Blaž presented data fusion. A part of the tutorial was a hands-on workshop with Orange’s new add-on for data fusion.</description>
+    </item>
+    
+    <item>
+      <title>Data Fusion Tutorial at the [BC]^2</title>
+      <link>/blog/2015/06/08/data-fusion-tutorial-at-the-bc2/</link>
+      <pubDate>Mon, 08 Jun 2015 15:13:22 +0000</pubDate>
+      
+      <guid>/blog/2015/06/08/data-fusion-tutorial-at-the-bc2/</guid>
+      <description>We are excited to host a three-hour tutorial on data fusion at the Basel Computational Biology Conference. To this end we have prepared a series of short lectures notes that accompany the recently developed Data Fusion Add-on for Orange.
+We design the tutorial for data mining researchers and molecular biologists with interest in large-scale data integration. In the tutorial we focus on collective latent factor models, a popular class of approaches for data fusion.</description>
+    </item>
+    
+    <item>
+      <title>Data Fusion Add-on for Orange</title>
+      <link>/blog/2015/06/05/data-fusion-add-on-for-orange/</link>
+      <pubDate>Fri, 05 Jun 2015 06:46:56 +0000</pubDate>
+      
+      <guid>/blog/2015/06/05/data-fusion-add-on-for-orange/</guid>
+      <description>Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for predictive modelling and recommendation systems.
+This widget set can be used either to recommend you the next movie to watch based on your demographic characteristics, movies you gave high scores to, your preferred genre, etc.</description>
+    </item>
+    
+    <item>
+      <title>Hands-on Orange at Functional Genomics Workshop</title>
+      <link>/blog/2014/10/24/hands-on-orange-at-functional-genomics-workshop/</link>
+      <pubDate>Fri, 24 Oct 2014 13:03:02 +0000</pubDate>
+      
+      <guid>/blog/2014/10/24/hands-on-orange-at-functional-genomics-workshop/</guid>
+      <description>Last week we have co-organized a Functional Genomics Workshop. At University of Ljubljana we have hosted an inspiring pack of scientists from the Donnelly Centre for Cellular and Biomolecular Research from Toronto. Part of the event was a hands-on workshop Data mining without programing, where we have used Orange to analyze data from systems biology. Data included a subset of Charlie Boone&amp;rsquo;s famous yeast interaction data and data from chemical genomics.</description>
+    </item>
+    
+    <item>
+      <title>Workshops at Baylor College of Medicine</title>
+      <link>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</link>
+      <pubDate>Mon, 26 May 2014 00:51:00 +0000</pubDate>
+      
+      <guid>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</guid>
+      <description>On May 22nd and May 23rd, we (Blaz Zupan and Janez Demsar, assisted by Marinka Zitnik and Balaji Santhanam) have given two hands-on workshops called Data Mining without Programming at Baylor College of Medicine in Houston, Texas.
+Actually, there was a lot of programming, but no Python or alike. The workshop was designed for biomedical students and Baylor&amp;rsquo;s faculty members. We have presented a visual programming approach for development of data mining workflows for interactive data exploration.</description>
+    </item>
+    
+    <item>
+      <title>Orange at ISMB/ECCB 2011</title>
+      <link>/blog/2011/08/03/orange-at-ismbeccb-2011/</link>
+      <pubDate>Wed, 03 Aug 2011 09:14:00 +0000</pubDate>
+      
+      <guid>/blog/2011/08/03/orange-at-ismbeccb-2011/</guid>
+      <description>We presented the Orange Bioinformatics add-on at the ISMB/ECCB conference in Vienna, a joined event covering both 19th Annual International Conference on Intelligent Systems for Molecular Biology and 10th European Conference on Computational Biology.
+We were giving out Orange stickers (with the URL) to the poster&amp;rsquo;s visitors. There was some interest; in the end we gave out about 10 of them, mostly to biologists, who were excited to perform some of the analysis themselves.</description>
+    </item>
+    
+  </channel>
+</rss>

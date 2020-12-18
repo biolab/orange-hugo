@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>features on Orange</title>
+    <link>/blog/features/</link>
+    <description>Recent content in features on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jan 2018 11:00:09 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualizing multiple variables: FreeViz</title>
+      <link>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</link>
+      <pubDate>Fri, 26 Jan 2018 11:00:09 +0000</pubDate>
+      
+      <guid>/blog/2018/01/26/visualizing-multiple-variables-freeviz/</guid>
+      <description>Scatter plots are great! But sometimes, we need to plot more than two variables to truly understand the data. How can we achieve this, knowing humans can only grasp up to three dimensions? With an optimization of linear projection, of course!
+Orange recently re-introduced FreeViz, an interactive visualization for plotting multiple variables on a 2-D plane.
+Let&amp;rsquo;s load zoo.tab data with File widget and connect FreeViz to it. Zoo data has 16 features describing animals of different types - mammals, amphibians, insects and so on.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis: New Features</title>
+      <link>/blog/2017/08/04/text-analysis-new-features/</link>
+      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
+      
+      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
+      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
+Related: Text Preprocessing</description>
+    </item>
+    
+    <item>
+      <title>Nomogram</title>
+      <link>/blog/2017/06/05/nomogram/</link>
+      <pubDate>Mon, 05 Jun 2017 11:39:12 +0000</pubDate>
+      
+      <guid>/blog/2017/06/05/nomogram/</guid>
+      <description>One more exciting visualization has been introduced to Orange - a Nomogram. In general, nomograms are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.</description>
+    </item>
+    
+    <item>
+      <title>Model replaces Classify and Regression</title>
+      <link>/blog/2017/04/07/model-replaces-classify-and-regression/</link>
+      <pubDate>Fri, 07 Apr 2017 14:27:44 +0000</pubDate>
+      
+      <guid>/blog/2017/04/07/model-replaces-classify-and-regression/</guid>
+      <description>Did you recently wonder where did Classification Tree go? Or what happened to Majority?
+Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
+This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.</description>
+    </item>
+    
+    <item>
+      <title>For When You Want to Transpose a Data Table...</title>
+      <link>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</link>
+      <pubDate>Fri, 03 Feb 2017 13:16:37 +0000</pubDate>
+      
+      <guid>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</guid>
+      <description>Sometimes, you need something more. Something different. Something, that helps you look at the world from a different perspective. Sometimes, you simply need to transpose your data.
+Since version 3.3.9, Orange has a Transpose widget that flips your data table around. Columns become rows and rows become columns. This is often useful, if you have, say, biological data.
+Related: Datasets in Orange Bioinformatics
+Today we will play around with brown-selected.tab, a data set on gene expression levels for 79 experiments.</description>
+    </item>
+    
+    <item>
+      <title>10 Tips and Tricks for Using Orange</title>
+      <link>/blog/2016/10/17/tips-for-using-orange/</link>
+      <pubDate>Mon, 17 Oct 2016 12:18:23 +0000</pubDate>
+      
+      <guid>/blog/2016/10/17/tips-for-using-orange/</guid>
+      <description>TIP #1: Follow tutorials and example workflows to get started.
+It&amp;rsquo;s difficult to start using new software. Where does one start, especially a total novice in data mining? For this exact reason we&amp;rsquo;ve prepared Getting Started With Orange - YouTube tutorials for complete beginners. Example workflows on the other hand can be accessed via Help - Examples.
+TIP #2: Make use of Orange documentation.
+You can access it in three ways:</description>
+    </item>
+    
+    <item>
+      <title>Model-Based Feature Scoring</title>
+      <link>/blog/2015/12/19/model-based-feature-scoring/</link>
+      <pubDate>Sat, 19 Dec 2015 19:27:51 +0000</pubDate>
+      
+      <guid>/blog/2015/12/19/model-based-feature-scoring/</guid>
+      <description>Feature scoring and ranking can help in understanding the data in supervised settings. Orange includes a number of standard feature scoring procedures one can access in the Rank widget. Moreover, a number of modeling techniques, like linear or logistic regression, can rank features explicitly through assignment of weights. Trained models like random forests have their own methods for feature scoring. Models inferred by these modeling techniques depend on their parameters, like type and level of regularization for logistic regression.</description>
+    </item>
+    
+    <item>
+      <title>Orange and AXLE project</title>
+      <link>/blog/2013/09/02/orange-and-axle-project/</link>
+      <pubDate>Mon, 02 Sep 2013 21:27:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/02/orange-and-axle-project/</guid>
+      <description>Our group at University of Ljubljana is a partner in the EU 7FP project Advanced Analytics for Extremely Large European Databases (AXLE). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).</description>
+    </item>
+    
+    <item>
+      <title>New canvas</title>
+      <link>/blog/2013/02/14/new-canvas/</link>
+      <pubDate>Thu, 14 Feb 2013 14:37:00 +0000</pubDate>
+      
+      <guid>/blog/2013/02/14/new-canvas/</guid>
+      <description>Orange Canvas, a visual programming environment for Orange, has been around for a while. Integrating new and new features degraded the quality of code to a point where further development proved to be a daunting task. With ever increasing number of widgets, the existing widget toolbar is becoming harder and harder to use, but improving it is really hard. For that reason, we decided Orange needs a new Canvas, a rewrite, that would keep all of the feature of the existing one, but introduce the needed structure and modularity to the source code.</description>
+    </item>
+    
+  </channel>
+</rss>

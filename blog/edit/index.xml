@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>edit on Orange</title>
+    <link>/blog/edit/</link>
+    <description>Recent content in edit on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/edit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managing Data with Edit Domain</title>
+      <link>/blog/2020/2020-06-19-edit-domain/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-06-19-edit-domain/</guid>
+      <description>Importing data into Orange is easy. File, import, and voila, your data is here. But what about if you want to rename a variable, change it&amp;rsquo;s type or edit labels? Edit Domain to the rescue!
+First of all, what is &amp;lsquo;domain&amp;rsquo;. Domain is like a metadata of your data - it describes column names, column types (categorical, numeric, string, datetime), and values for categorical variables. You will come across domain everywhere in Orange, because Orange&amp;rsquo;s table (Orange.</description>
+    </item>
+    
+  </channel>
+</rss>
