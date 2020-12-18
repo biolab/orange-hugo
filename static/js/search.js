@@ -1,11 +1,17 @@
 var lunrIndex, pagesIndex;
 
+var initedLunr = false;
+
 function endsWith(str, suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
 }
 
 // Initialize lunrjs using our generated index file
 function initLunr() {
+    if(initedLunr){
+      return;
+    }
+    initedLunr = true;
     if (!endsWith(baseurl,"/")){
         baseurl = baseurl+'/'
     };
@@ -71,6 +77,7 @@ function search_categories(category, search_param) {
  * @return {Array}  results
  */
 function search(query) {
+  initLunr();
     // Find the item in our index corresponding to the lunr one to have more info
     return lunrIndex.search(query).map(function(result) {
             return pagesIndex.filter(function(page) {
