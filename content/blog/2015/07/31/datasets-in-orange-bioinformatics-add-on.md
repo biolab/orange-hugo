@@ -4,7 +4,7 @@ date= '2015-07-31 06:49:57+00:00'
 draft= false
 title="Datasets in Orange Bioinformatics Add-On"
 type="blog"
-categories=["addons" ,"analysis" ,"bioinformatics" ,"bioorange" ,"data" ,"dataloading"  ]
+blog=["addons" ,"analysis" ,"bioinformatics" ,"bioorange" ,"data" ,"dataloading"  ]
 
 +++
 

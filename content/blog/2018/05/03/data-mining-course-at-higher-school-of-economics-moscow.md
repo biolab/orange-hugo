@@ -4,7 +4,7 @@ date= '2018-05-03 11:37:28+00:00'
 draft= false
 title="Data Mining Course at Higher School of Economics, Moscow"
 type="blog"
-categories=["analysis" ,"business intelligence" ,"classification" ,"education" ,"examples"  ,"python" ,"scripting" ,"workshop" ]
+blog=["analysis" ,"business intelligence" ,"classification" ,"education" ,"examples"  ,"python" ,"scripting" ,"workshop" ]
 +++
 
 Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of [Applied Statistics](https://www.hse.ru/en/ma/sna/). This is a new Master's course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.

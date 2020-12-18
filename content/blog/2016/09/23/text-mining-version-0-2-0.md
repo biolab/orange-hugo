@@ -4,7 +4,7 @@ date= '2016-09-23 14:50:38+00:00'
 draft= false
 title="Text Mining: version 0.2.0"
 type="blog"
-categories=["addons" ,"clustering" ,"examples" ,"orange3" ,"preprocessing" ,"release"  ,"text mining" ,"widget" ]
+blog=["addons" ,"clustering" ,"examples" ,"orange3" ,"preprocessing" ,"release"  ,"text mining" ,"widget" ]
 +++
 
 [Orange3-Text](https://github.com/biolab/orange3-text) has just recently been polished, updated and enhanced! Our GSoC student Alexey has [helped us greatly](/blog/2016/07/05/rehaul-of-text-mining-add-on/) to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.

@@ -24,8 +24,8 @@ unsafe = true
   section = [ "HTML", "json" ]
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  workflow = "workflows"
+  blog = "blog"
 
 [menu]
   [[menu.main]]
@@ -60,7 +60,7 @@ unsafe = true
     name = "Blog"
     url = "/blog/"
     weight = -90
-    
+
   [[menu.main]]
     name = "Workshops"
     url = "/training/"
@@ -70,5 +70,3 @@ unsafe = true
     name = "Donate"
     url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
     weight = -70
-
-

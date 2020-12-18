@@ -4,7 +4,7 @@ date= '2012-01-03 08:59:00+00:00'
 draft= false
 title="Parallel Orange?"
 type="blog"
-categories=["parallelization" ]
+blog=["parallelization" ]
 +++
 
 We attended a [NIPS 2011](http://nips.cc/) workshop on [processing and learning from large scale data](http://biglearn.org/). Various presenters showed different tools and frameworks that can be used when developing algorithms suitable for dealing with large scale data, but none of them were written in Python and as such, not useful for Orange. We have been looking for a framework that would help us run code in parallel for some time, but so far with no luck.

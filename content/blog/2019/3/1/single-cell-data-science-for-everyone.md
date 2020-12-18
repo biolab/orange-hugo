@@ -5,7 +5,7 @@ draft= false
 title="Single-Cell Data Science for Everyone"
 type="blog"
 thumbImage = "/blog_img/2019/3/1/2019-pavia-blog.jpg"
-categories=["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
+blog=["gene ontology", "genomics", "RNA-seq", "scOrange", "single cell"]
 shortExcerpt = "We have been in Pavia, Italy, to carry out an introductory workshop on single-cell data science."
 
 longExcerpt = "We have been in Pavia, Italy, to carry out a five-hour workshop covered both the essentials of data analysis and single cell analytics. The topics included working with marker genes, differential expression analysis, and interpretation of clusters through gene ontology analysis."

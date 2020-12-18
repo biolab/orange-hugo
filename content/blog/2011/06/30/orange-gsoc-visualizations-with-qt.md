@@ -4,7 +4,7 @@ date= '2011-06-30 12:55:00+00:00'
 draft= false
 title="Orange GSoC: Visualizations with Qt"
 type="blog"
-categories=["gsoc" ,"visualization" ]
+blog=["gsoc" ,"visualization" ]
 +++
 
 Hello, my name is Miha Čančula and this summer I'm working on Orange as part of Google's Summer of Code program, mentored by Miha Štajdohar. My task is to replace the current visualization framework based on Qwt with a custom library, depending only on Qt. This library will better support Orange's very specific visualizations and will replace the unmaintained PyQwt. 

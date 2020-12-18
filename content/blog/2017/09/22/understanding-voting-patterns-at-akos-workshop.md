@@ -4,7 +4,7 @@ date= '2017-09-22 11:34:26+00:00'
 draft= false
 title="Understanding Voting Patterns  at AKOS Workshop"
 type="blog"
-categories=["clustering" ,"interactive data visualization" ,"unsupervised" ,"visualization"  ,"workshop" ]
+blog=["clustering" ,"interactive data visualization" ,"unsupervised" ,"visualization"  ,"workshop" ]
 +++
 
 Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to [Parlameter](https://parlameter.si/)).

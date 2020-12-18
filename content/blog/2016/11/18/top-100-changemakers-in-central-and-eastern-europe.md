@@ -4,7 +4,7 @@ date= '2016-11-18 13:28:09+00:00'
 draft= false
 title="Top 100 Changemakers in Central and Eastern Europe"
 type="blog"
-categories=["article" ,"orange3" ]
+blog=["article" ,"orange3" ]
 +++
 
 Recently Orange and one of its inventors, [Blaž Zupan](http://www.ne100.org/challenger/blaz-zupan,5828e5617525ba2e7e52446d), have been recognized as one of the top 100 changemakers in the region. A [2016 New Europe 100](http://www.ne100.org/) is an annual list of innovators and entrepreneurs in Central and Eastern Europe highlighting novel approaches to pressing problems.

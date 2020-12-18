@@ -7,7 +7,7 @@ title="Explaining Models: Workshop in Belgrade"
 type="blog"
 thumbImage = "/blog_img/2019/2019-11-20_workshop_small.jpg"
 frontPageImage = "/blog_img/2019/2019-11-20_workshop_small.jpg"
-categories=["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"]
+blog=["workshop", "belgrade", "classification", "nomogram", "naive bayes", "decision tree"]
 shortExcerpt = "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
 longExcerpt = "We explained how different models mean different things and how to interpret them at a recent tutorial in Belgrade."
 +++

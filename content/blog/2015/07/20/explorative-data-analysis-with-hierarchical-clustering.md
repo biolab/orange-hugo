@@ -4,7 +4,7 @@ date= '2015-07-20 07:21:04+00:00'
 draft= false
 title="Explorative data analysis with Hierarchical Clustering"
 type="blog"
-categories=["analysis" ,"clustering" ,"orange3" ,"visualization","principal component analysis" ,"visualization" ,"workflow" ]
+blog=["analysis" ,"clustering" ,"orange3" ,"visualization","principal component analysis" ,"visualization" ,"workflow" ]
 +++
 
 Today we will write about cluster analysis with **Hierarchical Clustering** widget. We use a well-known [Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set), which contains 150 Iris flowers, each belonging to one of the three species (setosa, versicolor and virginica). To an untrained eye the three species are very alike, so how could we best tell them apart? The data set contains measurements of sepal and petal dimensions (width and length) and we assume that these gives rise to interesting clustering. But is this so?

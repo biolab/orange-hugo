@@ -6,7 +6,7 @@ type = "test"
 blog =  ""
 video = ""
 download = "clustering-and-tsne.ows"
-tags = ["Clustering", "t-SNE"]
+workflows = ["Clustering", "t-SNE"]
 weight = 10
 +++
 

@@ -4,7 +4,7 @@ date= '2016-12-16 15:57:11+00:00'
 draft= false
 title="BDTN 2016 Workshop: Introduction to Data Science"
 type="blog"
-categories=["education" ,"interactive data visualization" ,"tutorial" ,"workshop"  ]
+blog=["education" ,"interactive data visualization" ,"tutorial" ,"workshop"  ]
 
 +++
 

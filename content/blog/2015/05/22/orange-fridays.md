@@ -4,7 +4,7 @@ date= '2015-05-22 14:42:32+00:00'
 draft= false
 title="Orange Fridays"
 type="blog"
-categories=["orange3" ]
+blog=["orange3" ]
 +++
 
 You might think “casual Fridays” are the best thing since sliced bread. But what if I were to tell you we have “Orange Fridays” at our lab, where lab members focus solely on debugging Orange software and making improvements to existing features. This is because the new developing version of Orange (3.0) still needs certain widgets to be implemented, such as net explorer, radviz, and survey plot.

@@ -4,7 +4,7 @@ date= '2016-08-19 20:42:59+00:00'
 draft= false
 title="Making recommendations"
 type="blog"
-categories=["addons" ,"business intelligence" ,"gsoc2016" ,"orange3" ,"recommender  system" ]
+blog=["addons" ,"business intelligence" ,"gsoc2016" ,"orange3" ,"recommender  system" ]
 +++
 
 _This is a guest blog from the Google Summer of Code project._

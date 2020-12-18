@@ -6,7 +6,7 @@ title = "Installing with Anaconda Navigator"
 type = "blog"
 thumbImage = "/blog_img/2020/2020-02-24-navigator-small.png"
 frontPageImage = "/blog_img/2020/2020-02-24-navigator-small.png"
-categories = ["installation", "anaconda", "navigator"]
+blog = ["installation", "anaconda", "navigator"]
 shortExcerpt = "Essential information for installing Orange via Anaconda Navigator."
 longExcerpt = "Essential information for installing Orange via Anaconda Navigator."
 +++

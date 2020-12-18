@@ -4,7 +4,7 @@ date= '2016-08-16 17:32:20+00:00'
 draft= false
 title="Visualization of Classification Probabilities"
 type="blog"
-categories=["addons" ,"classification" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
+blog=["addons" ,"classification" ,"gsoc" ,"gsoc2016" ,"orange3" ,"widget"  ]
 +++
 
 _This is a guest blog from the Google Summer of Code project._

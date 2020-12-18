@@ -4,7 +4,7 @@ date= '2017-10-26 11:03:10+00:00'
 draft= false
 title="Analyzing Surveys"
 type="blog"
-categories=["analysis" ,"clustering" ,"data" ,"dataloading" ,"orange3" ,"visualization"  ,"workshop" ]
+blog=["analysis" ,"clustering" ,"data" ,"dataloading" ,"orange3" ,"visualization"  ,"workshop" ]
 +++
 
 Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the [Ministry of Public Administration](http://www.mju.gov.si/en/), this is only the first in a line of workshops on data science we are preparing for public sector employees.

@@ -6,7 +6,7 @@ title="Aggregate, Group By and Pivot with... Pivot Table!"
 type="blog"
 thumbImage = "/blog_img/2019/2019-08-27_pivot-preview.png"
 frontPageImage = "/blog_img/2019/2019-08-27_pivot-preview.png"
-categories=["pivot table", "aggregate", "data", "groupby"]
+blog=["pivot table", "aggregate", "data", "groupby"]
 shortExcerpt = "Orange's brand new Pivot Table widget with many aggregation and grouping functionalities."
 longExcerpt = "Orange has a brand new Pivot Table widget with many aggregation and grouping functionalities. It can be used to transform the data on-the-fly and use the output for downstream analysis."
 +++

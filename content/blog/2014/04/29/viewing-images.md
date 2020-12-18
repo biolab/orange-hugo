@@ -4,7 +4,7 @@ date= '2014-04-29 21:28:00+00:00'
 draft= false
 title="Viewing Images"
 type="blog"
-categories=["clustering" ,"images" ,"visualization" ]
+blog=["clustering" ,"images" ,"visualization" ]
 +++
 
 I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?

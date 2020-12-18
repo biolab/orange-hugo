@@ -6,7 +6,7 @@ title="The Changing Status Bar"
 type="blog"
 thumbImage = "/blog_img/2019/3/8/changing-blog.png"
 image = ""
-categories=["release", "Status Bar"]
+blog=["release", "Status Bar"]
 shortExcerpt = "We are constantly optimizing Orange's look-and-feel. New features in the status bar will simplify the user interface."
 
 longExcerpt = "We are constantly optimizing Orange's look-and-feel. New features in the status bar will simplify the user interface. We are getting rid of the infobox on the top of the control tab, and moving it to the status bar."

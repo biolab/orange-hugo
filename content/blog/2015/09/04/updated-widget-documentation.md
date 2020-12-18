@@ -4,7 +4,7 @@ date= '2015-09-04 13:00:18+00:00'
 draft= false
 title="Updated Widget Documentation"
 type="blog"
-categories=["documentation" ,"orange3" ,"widget" ]
+blog=["documentation" ,"orange3" ,"widget" ]
 +++
 
 Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.

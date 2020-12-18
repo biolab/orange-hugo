@@ -4,7 +4,7 @@ date= '2015-12-11 09:53:12+00:00'
 draft= false
 title="Report is back! (and better than ever)"
 type="blog"
-categories=["analysis" ,"data" ,"orange3" ,"report" ]
+blog=["analysis" ,"data" ,"orange3" ,"report" ]
 +++
 
 

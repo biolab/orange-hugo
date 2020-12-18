@@ -4,7 +4,7 @@ date= '2018-05-30 09:02:59+00:00'
 draft= false
 title="Spectroscopy Workshop at BioSpec and How to Merge Data"
 type="blog"
-categories=["addons" ,"bioinformatics" ,"data" ,"education" ,"spectroscopy" ,"workshop"  ]
+blog=["addons" ,"bioinformatics" ,"data" ,"education" ,"spectroscopy" ,"workshop"  ]
 +++
 
 Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the [Norwegian University of Life Sciences](https://www.nmbu.no/en). The students from [BioSpec](https://www.nmbu.no/en/faculty/realtek/research/groups/biospectroscopy) lab were yet again incredible and we really dug deep into Orange.

@@ -4,7 +4,7 @@ date= '2018-06-12 07:54:17+00:00'
 draft= false
 title="From Surveys to Orange"
 type="blog"
-categories=["data" ,"dataloading" ,"orange3" ,"workshop" ]
+blog=["data" ,"dataloading" ,"orange3" ,"workshop" ]
 +++
 
 Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?

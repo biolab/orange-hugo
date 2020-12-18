@@ -4,7 +4,7 @@ date= '2015-11-27 08:37:03+00:00'
 draft= false
 title="Mining our own data"
 type="blog"
-categories=["analysis" ,"data" ,"distribution" ,"orange3" ,"visualization" ]
+blog=["analysis" ,"data" ,"distribution" ,"orange3" ,"visualization" ]
 +++
 
 Recently we've made a short survey that was, upon Orange download, asking people how they found out about Orange, what was their data mining level and where do they work. The main purpose of this is to get a better insight into our user base and to figure out what is the profile of people interested in trying Orange.

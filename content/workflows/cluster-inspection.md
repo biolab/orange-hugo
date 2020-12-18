@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "315-cluster-inspection.ows"
-tags = ["Clustering", "Hierarchical Clustering", "Box Plot"]
+workflows = ["Clustering", "Hierarchical Clustering", "Box Plot"]
 weight = 315
 +++
 

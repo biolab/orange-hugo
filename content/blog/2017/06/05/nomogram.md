@@ -4,7 +4,7 @@ date= '2017-06-05 11:39:12+00:00'
 draft= false
 title="Nomogram"
 type="blog"
-categories=["analysis" ,"classification" ,"features" ,"interactive data visualization"  ,"visualization" ]
+blog=["analysis" ,"classification" ,"features" ,"interactive data visualization"  ,"visualization" ]
 +++
 
 One more exciting visualization has been introduced to Orange - a Nomogram. In general, [nomograms](https://en.wikipedia.org/wiki/Nomogram) are graphical devices that can approximate the calculation of some function. A Nomogram widget in Orange visualizes Logistic Regression and Naive Bayes classification models, and compute the class probabilities given a set of attributes values. In the nomogram, we can check how changing of the attribute values affect the class probabilities, and since the widget (like widgets in Orange) is interactive, we can do this on the fly.

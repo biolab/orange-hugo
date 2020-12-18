@@ -4,7 +4,7 @@ date= '2016-08-25 11:31:04+00:00'
 draft= false
 title="Visualizing Gradient Descent"
 type="blog"
-categories=["addons" ,"education" ,"gsoc2016" ,"interactive data visualization"  ,"orange3" ]
+blog=["addons" ,"education" ,"gsoc2016" ,"interactive data visualization"  ,"orange3" ]
 +++
 
 _This is a guest blog from the Google Summer of Code project._

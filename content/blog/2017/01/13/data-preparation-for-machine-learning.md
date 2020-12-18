@@ -4,7 +4,7 @@ date= '2017-01-13 09:25:58+00:00'
 draft= false
 title="Data Preparation for Machine Learning"
 type="blog"
-categories=["analysis" ,"business intelligence" ,"data" ,"feature engineering" ,"preprocessing"  ]
+blog=["analysis" ,"business intelligence" ,"data" ,"feature engineering" ,"preprocessing"  ]
 +++
 
 We've said it numerous times and we're going to say it again. Data preparation is crucial for any data analysis. If your data is messy, there's no way you can make sense of it, let alone a computer. Computers are great at handling large, even enormous data sets, speedy computing and recognizing patterns. But they fail miserably if you give them the wrong input. Also some classification methods work better with binary values, other with continuous, so it is important to know how to treat your data properly.

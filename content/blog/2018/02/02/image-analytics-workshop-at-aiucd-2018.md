@@ -4,7 +4,7 @@ date= '2018-02-02 10:32:28+00:00'
 draft= false
 title="Image Analytics Workshop at AIUCD 2018"
 type="blog"
-categories=["addons" ,"analysis" ,"conference" ,"embedding" ,"images" ,"visualization"  ,"workshop" ]
+blog=["addons" ,"analysis" ,"conference" ,"embedding" ,"images" ,"visualization"  ,"workshop" ]
 +++
 
 This week, Primož and I flew to the south of Italy to hold a workshop on [Image Analytics through Data Mining](http://www.aiucd2018.uniba.it/workshops.html) at [AIUCD 2018 conference](http://www.aiucd2018.uniba.it/index.html). The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.

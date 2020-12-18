@@ -6,7 +6,7 @@ title="On Expected Vomiting Time"
 type="blog"
 thumbImage = "/blog_img/2019/2019-09-28-vomiting-pumpkin.jpg"
 frontPageImage = "/blog_img/2019/2019-09-28-vomiting-pumpkin.jpg"
-categories=["model performance", "confusion matrix", "education"]
+blog=["model performance", "confusion matrix", "education"]
 shortExcerpt = "Computing meaningful performance scores of models should be creative"
 longExcerpt = "A report of an interesting ending to a lecture about setting probability thresholds for predictive models"
 +++

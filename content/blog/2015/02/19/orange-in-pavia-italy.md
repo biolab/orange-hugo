@@ -4,7 +4,7 @@ date= '2015-02-19 15:18:32+00:00'
 draft= false
 title="Orange in Pavia, Italy"
 type="blog"
-categories=["orange3" ,"python" ,"workshop" ]
+blog=["orange3" ,"python" ,"workshop" ]
 post_format=["Image" ]
 +++
 

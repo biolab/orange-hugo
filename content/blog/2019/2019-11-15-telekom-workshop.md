@@ -7,7 +7,7 @@ title="Explaining Customer Segments for Business"
 type="blog"
 thumbImage = "/blog_img/2019/2019-11-15_ws-title.JPG"
 frontPageImage = "/blog_img/2019/2019-11-15_ws-title.JPG"
-categories=["workshop", "telco", "clustering", "nomogram"]
+blog=["workshop", "telco", "clustering", "nomogram"]
 shortExcerpt = "Explaining customer base enables businesses to make informed decisions. We present the case for Telco companies."
 longExcerpt = "Explaining customer base for businesses to make informed decisions. We present the case for Telco companies."
 +++

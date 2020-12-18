@@ -5,7 +5,7 @@ draft= false
 title="Scatter Plots: the Tour"
 type="blog"
 thumbImage = "/blog_img/2018/12/21/scatter-blog.png"
-categories=["interactive visualization", "scatter plot", "visualization"]
+blog=["interactive visualization", "scatter plot", "visualization"]
 shortExcerpt = "Scatter Plot has recently been renovated and it is time to present some essential tricks for working with the widget!"
 
 longExcerpt = "Scatter Plot has recently been renovated (under the hood and in GUI), so now it is time to present some essential tricks for working with the cool visualization!"

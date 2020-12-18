@@ -4,7 +4,7 @@ date= '2018-11-06 11:45:09+00:00'
 draft= false
 title="Data Mining for Anthropologists?"
 type="blog"
-categories=["education" ,"text mining" ,"workshop" ]
+blog=["education" ,"text mining" ,"workshop" ]
 shortExcerpt="This weekend we were in Lisbon, Portugal, at the [Why the World Needs Anthropologists](https://www.applied-anthropology.com/) conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry."
 +++
 

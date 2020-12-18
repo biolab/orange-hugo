@@ -4,7 +4,7 @@ date= '2017-02-23 10:11:16+00:00'
 draft= false
 title="My First Orange Widget"
 type="blog"
-categories=["examples" ,"orange3" ,"programming" ,"widget" ]
+blog=["examples" ,"orange3" ,"programming" ,"widget" ]
 +++
 
 Recently, I took on a daunting task - programming my first widget. I'm not a programmer or a computer science grad, but I've been looking at Orange code for almost two years now and I thought I could handle it.

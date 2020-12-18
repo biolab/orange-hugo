@@ -4,7 +4,7 @@ date= '2016-10-10 10:09:56+00:00'
 draft= false
 title="The Story of Shadow and Orange"
 type="blog"
-categories=["canvas" ,"interface" ,"oasys" ]
+blog=["canvas" ,"interface" ,"oasys" ]
 +++
 
 This is a long story. I remember when started my PhD in Italy. There I met a researcher and he said to me: »You should do some simulations on x-ray optics beamline.« »Yes, but how should I do that?« He gave me a big tape, it was 1986. I soon realized it was all code. But it was a code called [Shadow](http://scripts.iucr.org/cgi-bin/paper?S0909049511026306).
