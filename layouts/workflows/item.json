@@ -6,5 +6,5 @@
 	"download": "{{ .Params.download}}",
 	"blog" : "{{ .Params.blog}}",
 	"video" : "{{ .Params.video}}",
-	"workflows": [{{ range $tindex, $tag := .Params.workflows }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}]
+	"workflows": [{{ range $tindex, $workflows := .Params.workflows }}{{ if $tindex }}, {{ end }}"{{ $workflows| htmlEscape }}"{{ end }}]
 }
