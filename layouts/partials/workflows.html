@@ -28,7 +28,7 @@
         <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
-          {{ $paginator := .Paginate (where (where .Pages.ByWeight.Reverse "Type" "workflows") "IsPage" true) }}
+          {{ $paginator := .Paginate (where (where .Pages.ByWeight.Reverse "Type" "workflows") "IsPage" true) 5000000 }}
           {{ range $index, $element := .Paginator.Pages }}
             <div class=" row">
                 {{ if eq (mod $index 2) 0 }}
