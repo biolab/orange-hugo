@@ -116,9 +116,7 @@
 
   function hideItems(){
 
-    console.log("works");
     let left_right_index = 0;
-
     $(".blog-item").each(function( index ) {
       if(index < shownItems){
         $(this).show();
@@ -133,8 +131,6 @@
             }
             left_right_index += 1;
           }
-
-
       }else{
         $(this).hide();
       }
