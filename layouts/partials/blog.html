@@ -119,6 +119,7 @@
             $("#post_nor").show();
             $("#search-results").hide();
             $("#pagination").show();
+            $(".blog-item").show();
         } else {
             var results = search(param);
             var search_results = document.getElementById('search-results')
@@ -128,15 +129,30 @@
                 search_results.innerHTML = '<div class="no-results" style="padding: 20px 15px"> No blog posts found. </div>';
             } else {
 
+              results.sort(function(a,b){
+                return new Date(b.date) - new Date(a.date);
+              });
 
+              let left_right_index = 0;
                 for (var page in results) {
                   let rightUri = results[page].uri;
                   rightUri = rightUri.split('/').join('');
-                  console.log(rightUri);
                   let res = document.getElementById(rightUri);
-                  console.log(res);
                   if(res !== null){
-                  res.style.display = 'block';
+
+                    res.style.display = 'block';
+                    let featureDesc = res.getElementsByClassName("blog-content");
+                    if(featureDesc[0] !== undefined){
+                    featureDesc[0].classList.remove("pull-right", "pull-left");
+                    if(left_right_index % 2 == 0){
+                      featureDesc[0].classList.add("pull-left");
+                    }
+                    if(left_right_index % 2 == 1){
+                      featureDesc[0].classList.add("pull-right");
+                    }
+
+                    left_right_index += 1;
+                  }
                 }
                   //let res2 = $("." + rightUri).hide()
                   //console.log(res2);
