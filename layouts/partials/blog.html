@@ -88,6 +88,18 @@
                     <hr />
                   </div>
                     {{end}}
+
+                    <div class="center-pag">
+                    <div class="pagination1">
+
+                            <a rel="next" style="cursor: pointer;" class="page-link" onclick="increaseShownElements()">Show more</a>
+
+                            <!-- Don't show on last and 2nd last page -->
+
+                    <!-- </nav> -->
+                    </div>
+                    </div>
+
                     {{ partial "pagination.html" . }}
                 </div>
             </div>
@@ -105,10 +117,24 @@
   function hideItems(){
 
     console.log("works");
+    let left_right_index = 0;
 
     $(".blog-item").each(function( index ) {
       if(index < shownItems){
         $(this).show();
+        let featureDesc = $(this).children()[0].getElementsByClassName("blog-content");
+          if(featureDesc[0] !== undefined){
+            featureDesc[0].classList.remove("pull-right", "pull-left");
+            if(left_right_index % 2 == 0){
+              featureDesc[0].classList.add("pull-left");
+            }
+            if(left_right_index % 2 == 1){
+              featureDesc[0].classList.add("pull-right");
+            }
+            left_right_index += 1;
+          }
+
+
       }else{
         $(this).hide();
       }
@@ -146,8 +172,9 @@
             $("#search-results").hide();
             $("#pagination").show();
             $(".blog-item").show();
+            shownItems = 10;
             hideItems();
-            showItems = 10;
+
         } else {
             var results = search(param);
             var search_results = document.getElementById('search-results')
