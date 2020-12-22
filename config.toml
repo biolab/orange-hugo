@@ -29,11 +29,6 @@ unsafe = true
   blog = "blog"
 
 [menu]
-  [[menu.main]]
-    identifier = "features"
-    name = "Features"
-    url = "/#features"
-    weight = -130
 
   [[menu.main]]
     name = "Screenshots"
