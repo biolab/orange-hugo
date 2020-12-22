@@ -4,7 +4,7 @@ paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "orange-4"
 disablePathToLower = "True"
-disableKinds = ["taxonomyTerm"]
+disableKinds = ["taxonomyTerm"] #workflows and blog landing pages do not generate correctly without this because of the custom list.html pages
 
 [params]
   version = "3.27.1"
