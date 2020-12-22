@@ -248,11 +248,6 @@
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/classification/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url>
@@ -3009,10 +3004,6 @@
   
   <url>
     <loc>/widget-catalog/text-mining/wordenrichment/</loc>
-  </url>
-  
-  <url>
-    <loc>/workflows/</loc>
   </url>
   
   <url>
