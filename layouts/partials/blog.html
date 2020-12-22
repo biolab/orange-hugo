@@ -19,8 +19,10 @@
         <div class="categoriesList col-lg-12 row" id="myUL">
             <ul>
                 <span>Categories: </span>
+                {{ $category := .Data.Term }}
                 {{ range first 10 .Site.Taxonomies.blog.ByCount }}
-                <li style="display: inline;"><a href="/blog/{{ .Name | urlize }}"
+                <li style="display: inline;"><a class="{{ if eq $category .Name }}active-tag{{ else }}tag-workflow{{ end }}"
+                  href="/blog/{{ .Name | urlize }}"
                         style="margin-top: 20px !important;">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
