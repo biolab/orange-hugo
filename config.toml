@@ -4,6 +4,7 @@ paginate = 10 #frontpage pagination
 title = "Orange"
 disqusShortname = "orange-4"
 disablePathToLower = "True"
+disableKinds = ["taxonomyTerm"]
 
 [params]
   version = "3.27.1"
