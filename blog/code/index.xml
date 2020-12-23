@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code on Orange</title>
+    <link>/blog/code/</link>
+    <description>Recent content in code on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020 - Year in Code</title>
+      <link>/blog/2020/2020-12-21-year-in-code/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/2020-12-21-year-in-code/</guid>
+      <description>2020 - Year in Code 2020 is coming a to close. This year had its share of challenges, but we are among the lucky ones being able to work from home. Of course, some of us had to manage being a parent and a developer at the same time, but for the most part, we were successful. We&amp;rsquo;ve managed to write a couple of new widgets, solve issues, implement enhancement, wrote documentation, and tried to keep the Orange community alive and kicking.</description>
+    </item>
+    
+  </channel>
+</rss>

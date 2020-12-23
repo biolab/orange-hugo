@@ -2,6 +2,21 @@
 [
     
     {
+    "uri": "/blog/2020/2020-12-21-year-in-code/",
+	"title": "2020 - Year in Code",
+	"categories": [],
+	"description": "",
+	"content": "2020 - Year in Code 2020 is coming a to close. This year had its share of challenges, but we are among the lucky ones being able to work from home. Of course, some of us had to manage being a parent and a developer at the same time, but for the most part, we were successful. We\u0026rsquo;ve managed to write a couple of new widgets, solve issues, implement enhancement, wrote documentation, and tried to keep the Orange community alive and kicking.\nHere\u0026rsquo;s Orange\u0026rsquo;s year in code (and other stats).\nWe\u0026rsquo;ve made 1302 commits since Jan 1 2020, which amounts to more than 3 and a half per day! There were 20 contributors to the repository. The top contributor with 201 commits was @janezd, who wrote the first piece of Orange code back in 1996. A close second with 185 commits is @ales-erjavec, who is in charge of keeping Orange in top shape (has written and deleted the most lines of code too, +12,369 and -168,333).\n We\u0026rsquo;ve gone from version 3.24.0 to 3.27.1. There\u0026rsquo;s one new widget in core Orange (Bar Plot), 3 in Text mining (Statistics, Document Embedding, Corpus to Network), 1 in Network (Node Embedding), and one new add-on (Explain with 2 widgets).\nWe\u0026rsquo;ve had 651,479 views of YouTube videos and 6,700 new subscribers, which made us really happy! We produced 7 new videos, 3 about analyzing COVID-19 data and 4 about text mining. We\u0026rsquo;ve not been so good in terms of blog writing - we\u0026rsquo;ve only published 12 blogs. New Year\u0026rsquo;s resolution - write more blogs.\n Despite the pandemic, we\u0026rsquo;ve had three workshops, one summer school, and one online course. We absolutely hate holding lectures online, because we love to interact with our students and see in person how they use Orange. On the other hand, we\u0026rsquo;ve joined Discord, where users can ask and answer questions and we\u0026rsquo;ve trying Github Discussions as well. Our main goal for 2021 is to create an online community of Orange novices and experts, where the users will be able to exchange information, ideas, projects, data, code, and experiences (or just chat).\nWe wish you all a lovely holiday season and may 2021 treat us better. To a fruitful and fun new year!\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2020/2020-12-21-github-stats.png",
+	"shortExcerpt" : "Statistics of Orange development in 2020.",
+	"longExcerpt" :  "Statistical report on Orange software development and educational content for 2020." ,
+	"author" : "Ajda Pretnar",
+	"summary" : "2020 - Year in Code 2020 is coming a to close. This year had its share of challenges, but we are among the lucky ones being able to work from home. Of course, some of us had to manage being a parent and a developer at the same time, but for the most part, we were successful. We\u0026rsquo;ve managed to write a couple of new widgets, solve issues, implement enhancement, wrote documentation, and tried to keep the Orange community alive and kicking.",
+	"date" : "Dec 21, 2020"
+}
+    
+    , {
     "uri": "/blog/2020/2020-10-15-document-embedders/",
 	"title": "How to identify fake news with document embeddings",
 	"categories": [],
