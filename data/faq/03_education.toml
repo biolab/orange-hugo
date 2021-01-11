@@ -1,6 +1,6 @@
 [[item]]
     question = "I would like to learn how to use Orange. Where can I find the resources?"
-    answer = """Widget documentation is available on our <a href="https://orange.biolab.si/toolbox/">website</a>. You can also access the same documentation directly from Orange by selecting the widget and pressing F1. We also provide an e-mail course (<a href="https://biolab.us15.list-manage.com/subscribe?u=2cad1f1cbf3a532a77efe4354&amp;id=6f257f15ff">subscribe here</a>), beginner-level <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">YouTube tutorials</a> and a regularly updated <a href="https://blog.biolab.si/">blog</a>."""
+    answer = """Widget documentation is available on our <a href="/toolbox/">website</a>. You can also access the same documentation directly from Orange by selecting the widget and pressing F1. We also provide an e-mail course (<a href="https://biolab.us15.list-manage.com/subscribe?u=2cad1f1cbf3a532a77efe4354&amp;id=6f257f15ff">subscribe here</a>), beginner-level <a href="https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy">YouTube tutorials</a> and a regularly updated <a href="https://blog.biolab.si/">blog</a>."""
 
 [[item]]
     question = "I have a question concerning data mining, statistics and machine learning algorithms."
@@ -16,7 +16,7 @@
 
 [[item]]
     question = "How to teach with Orange?"
-    answer = """We are preparing materials that will show you how to teach with Orange. Stayed tuned for details!<br>In the meantime, see some examples on our <a href="https://orange.biolab.si/categories/education/">blog</a>."""
+    answer = """We are preparing materials that will show you how to teach with Orange. Stayed tuned for details!<br>In the meantime, see some examples on our <a href="/categories/education/">blog</a>."""
 
 [params]
     title = "Education"

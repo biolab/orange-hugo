@@ -4,7 +4,7 @@
 
 [[item]]
     question = "I wish to propose a collaboration and/or a project with the Orange team."
-    answer = """Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> and we will respond as soon as we can."""
+    answer = """Please submit a <a href="/contact/">contact request</a> and we will respond as soon as we can."""
 
 [[item]]
     question = "I wish to develop a widget / an add-on for Orange."
@@ -12,7 +12,7 @@
 
 [[item]]
     question = "I wish to commission a custom module and/or an add-on for Orange."
-    answer = """Please submit a <a href="https://orange.biolab.si/contact/">contact request</a> to discuss the idea and rates."""
+    answer = """Please submit a <a href="/contact/">contact request</a> to discuss the idea and rates."""
 
 [params]
     title = "Development and collaboration"
