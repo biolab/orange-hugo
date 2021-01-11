@@ -18,6 +18,11 @@ jobs:
       - name: Install linux system dependencies
         run: sudo apt-get install -y libxkbcommon-x11-0
 
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+
       - name: Build widget catalog
         run: |
           pip install -U setuptools pip
@@ -26,7 +31,7 @@ jobs:
 
       - name: Build hugo page
         run: |
-          wget wget https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_0.74.1_Linux-64bit.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_0.74.1_Linux-64bit.deb
           sudo dpkg -i hugo*.deb
           rm -rf public 2> /dev/null
           rm *.deb
