@@ -7,7 +7,7 @@ type="blog"
 blog=["documentation" ,"examples" ,"tutorial" ]
 +++
 
-Orange just got a new, completely rewritten [scripting tutorial](http://docs.orange.biolab.si/latest/tutorial/rst). The tutorial uses Orange class hierarchy as introduced for version 2.5. The tutorial is supposed to be a gentle introduction in Orange scripting. It includes many examples, from really simple ones to those more complex. To give you a hint about the later, here is the code for learner with feature subset selection from:
+Orange just got a new, completely rewritten [scripting tutorial](http://docs.biolab.si/orange/2/tutorial/rst/index.html). The tutorial uses Orange class hierarchy as introduced for version 2.5. The tutorial is supposed to be a gentle introduction in Orange scripting. It includes many examples, from really simple ones to those more complex. To give you a hint about the later, here is the code for learner with feature subset selection from:
 
     
     class SmallLearner(Orange.classification.PyLearner):

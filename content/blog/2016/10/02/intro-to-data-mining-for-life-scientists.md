@@ -29,6 +29,6 @@ The hard part of any short course that includes machine learning is how to expla
 
 ![](/images/2016/10/yeast-overfitting-distributions.png)
 
-Sure this works, you are probably saying. The models should have been scored on a separate test set! Exactly, and this is what we have done next with [Data Sampler](http://docs.orange.biolab.si/3/visual-programming/widgets/data/datasampler.html), which lead us to cross-validation and [Test & Score widget](http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html).
+Sure this works, you are probably saying. The models should have been scored on a separate test set! Exactly, and this is what we have done next with [Data Sampler](/widget-catalog/data/datasampler/), which lead us to cross-validation and [Test & Score widget](/widget-catalog/evaluate/testandscore/).
 
 This was a great and interesting short course and we were happy to contribute to the success of the student-run [MLSC-2016](https://www.stemcells2016.org) conference.
