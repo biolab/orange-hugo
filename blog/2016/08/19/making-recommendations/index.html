@@ -251,7 +251,7 @@
 <p>This is as simple as it seems. The only thing to point out is that side information must be connected to the model.</p>
 <p><img src="/images/2016/08/cv-recommendation.png" alt=""></p>
 <p>Still, cross-validation is a robust way to see how our model is performing. I consider that it&rsquo;s a good idea to check how our model performs with respect to the baseline. This presents a negligible overload* in our pipeline and makes our analysis more solid. _(*For 1,000,000 ratings, it can take 0.027s)._</p>
-<p>We can add a baseline leaner to <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html">Test&amp;Score</a> and select the model we want to apply.</p>
+<p>We can add a baseline leaner to <a href="/widget-catalog/evaluate/testandscore/">Test&amp;Score</a> and select the model we want to apply.</p>
 <a href="/images/2016/08/Baselines.png" class="blog-image_"> 
       <img src="/images/2016/08/Baselines.png" />
  </a>
@@ -262,12 +262,12 @@
  </a>
 <h3 id="analyzinglow-rank-matrices">Analyzing low-rank matrices</h3>
 <p><img src="/images/2016/08/all-rank-dis.png" alt=""></p>
-<p>Once we&rsquo;ve output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the <em>item-feature matrix</em> by simply connecting Data Table with selected instances to the widget <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/visualize/scatterplot.html">Scatter Plot</a>.</p>
+<p>Once we&rsquo;ve output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the <em>item-feature matrix</em> by simply connecting Data Table with selected instances to the widget <a href="/widget-catalog/visualize/scatterplot/">Scatter Plot</a>.</p>
 <p><img src="/images/2016/08/Visualizing-vectors.png" alt=""></p>
 <p>Using similar approaches we can discover pretty interesting things like similarity between movies or users, how movie genres relate with each other, changes in users&rsquo; behavior, when the popularity of a movie has been raised due to a commercial campaign,&hellip; and many others.</p>
 <p>Finally, a simple pipeline to do all of the above can be something like this:</p>
 <p><img src="/images/2016/08/workflow-recommendation.png" alt=""></p>
-<p>On the left side we connected several models to <a href="http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html">Test&amp;Score</a> in order to cross-validate them. Later, we trained a <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html">SVD++</a> model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the <em>Item-feature matrix.</em></p>
+<p>On the left side we connected several models to <a href="/widget-catalog/evaluate/testandscore/">Test&amp;Score</a> in order to cross-validate them. Later, we trained a <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html">SVD++</a> model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the <em>Item-feature matrix.</em></p>
 <h3 id="analysis-advanced-users">Analysis (Advanced users)</h3>
 <p>Here we&rsquo;ve made a workflow (which can be downloaded <a href="/images/2016/08/Orange3-Workflow-Movielens100k.zip">here</a>) to perform a really basic analysis on the results obtained through factoring the user and item feature matrices with <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/brismf.html">BRISMF</a> over the <a href="http://grouplens.org/datasets/movielens/">movielens100k</a> dataset. <em>(Note: Once downloaded, set the prepared datasets in the folder &lsquo;orange&rsquo;. Probably you&rsquo;re gonna get a couple errors. Don&rsquo;t worry, it&rsquo;s normal. To solve it, apply the scripts sequentially but don&rsquo;t forget previously to select all the rows in the related Table.)</em></p>
 <p>Instead of explaining how this pipeline works, the best thing you can do is to download it and play with it.</p>
@@ -447,7 +447,7 @@ s.setAttribute('data-timestamp', +new Date());
                                 <li><div class="sitemap-cat">Documentation</div></li>
                                 <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
                                 <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
-                                <li><a class="sitemap-sub" href="http://docs.orange.biolab.si/3/data-mining-library/">Scripting</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
                             </ul>
                         </div>
 
