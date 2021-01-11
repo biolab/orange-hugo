@@ -104,7 +104,7 @@ This is as simple as it seems. The only thing to point out is that side informat
 
 Still, cross-validation is a robust way to see how our model is performing. I consider that it's a good idea to check how our model performs with respect to the baseline. This presents a negligible overload* in our pipeline and makes our analysis more solid. _(*For 1,000,000 ratings, it can take 0.027s)._
 
-We can add a baseline leaner to [Test&Score](http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html) and select the model we want to apply.
+We can add a baseline leaner to [Test&Score](/widget-catalog/evaluate/testandscore/) and select the model we want to apply.
 
 {{% figure src="/images/2016/08/Baselines.png" width="300" %}}
 
@@ -124,7 +124,7 @@ The prediction flow is exactly the same as in [Orange3](http://orange.biolab.si)
 ![](/images/2016/08/all-rank-dis.png)
 
 
-Once we've output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the _item-feature matrix_ by simply connecting Data Table with selected instances to the widget [Scatter Plot](http://docs.orange.biolab.si/3/visual-programming/widgets/visualize/scatterplot.html).
+Once we've output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the _item-feature matrix_ by simply connecting Data Table with selected instances to the widget [Scatter Plot](/widget-catalog/visualize/scatterplot/).
 
 ![](/images/2016/08/Visualizing-vectors.png)
 
@@ -136,7 +136,7 @@ Finally, a simple pipeline to do all of the above can be something like this
 ![](/images/2016/08/workflow-recommendation.png)
 
 
-On the left side we connected several models to [Test&Score](http://docs.orange.biolab.si/3/visual-programming/widgets/evaluation/testlearners.html) in order to cross-validate them. Later, we trained a [SVD++](http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html) model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the _Item-feature matrix._
+On the left side we connected several models to [Test&Score](/widget-catalog/evaluate/testandscore/) in order to cross-validate them. Later, we trained a [SVD++](http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html) model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the _Item-feature matrix._
 
 
 ### Analysis (Advanced users)

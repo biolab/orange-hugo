@@ -142,6 +142,6 @@ _SVMLearner()_
 
 
 
-For other learners, you can find all the parameters and descriptions [in the documentation](https://docs.orange.biolab.si/3/data-mining-library/reference/classification.html).
+For other learners, you can find all the parameters and descriptions [in the documentation](https://docs.biolab.si/orange/3/data-mining-library/tutorial/classification.html).
 
 
