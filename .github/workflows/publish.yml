@@ -1,0 +1,44 @@
+name: Push to GitHub Pages on push to master
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+
+      - name: Install linux system dependencies
+        run: sudo apt-get install -y libxkbcommon-x11-0
+
+      - name: Build widget catalog
+        run: |
+          pip install -U setuptools pip
+          pip install orange-canvas-core pyqt5==5.12
+          bash scripts/build-widget-catalog.sh
+
+      - name: Build hugo page
+        run: |
+          wget wget https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_0.74.1_Linux-64bit.deb
+          sudo dpkg -i hugo*.deb
+          rm -rf public 2> /dev/null
+          rm *.deb
+          hugo
+          touch public/.nojekyll
+
+      # Deploy to local repo
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
