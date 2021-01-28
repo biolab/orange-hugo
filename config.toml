@@ -63,6 +63,11 @@ unsafe = true
     weight = -80
 
   [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = -70
+
+  [[menu.main]]
     name = "Donate"
     url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
-    weight = -70
+    weight = -60

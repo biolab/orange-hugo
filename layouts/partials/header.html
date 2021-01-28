@@ -18,8 +18,16 @@
                     <ul class="nav navbar-nav">
 
                         {{ range .Site.Menus.main }}
+
+                        {{ if (eq .Name "Search") }}
+                              <li class="">
+                                <a class="btn btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" href="{{.URL}}">
+
+                                </a>
+                              </li>
+                        {{else}}
                         {{ if (eq .Name "Features") }}
-                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>                            
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>
                         {{else}}
                             {{ if (eq .Name "Donate") }}
                         <li class="">
@@ -29,7 +37,7 @@
                             <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>
                             {{end}}
                         {{end}}
-                    
+                      {{end}}
                     {{end}}
                     </ul><!--//nav-->
                 </div>

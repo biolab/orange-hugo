@@ -7,9 +7,6 @@ function endsWith(str, suffix) {
 
 // Initialize lunrjs using our generated index file
 function initLunr2() {
-    if (!endsWith(baseurl,"/")){
-        baseurl = baseurl+'/'
-    };
 
     // First retrieve the index file
     $.getJSON("/workflows/index.json")
@@ -33,7 +30,7 @@ function initLunr2() {
                 this.add(doc)
               }, this)
             })
-            
+
 
             // Feed lunr with each file and let lunr actually index them
             // pagesIndex.forEach(function(page) {
@@ -58,14 +55,14 @@ function search_tag(tag, search_param) {
     var res = lunrIndex1.search('tags:'+ tag)
 
     var res2 = lunrIndex1.search(search_param)
-    var inter= res.filter(a => res2.some(b => a.ref === b.ref));  
+    var inter= res.filter(a => res2.some(b => a.ref === b.ref));
 
     return inter.map(function(result) {
             return pagesIndex1.filter(function(page) {
                 return page.uri === result.ref;
             })[0];
             });
-    
+
 
 }
 function search_workflow(query_s){

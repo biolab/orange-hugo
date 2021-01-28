@@ -1,0 +1,69 @@
+{{ define "main"}}
+
+<section class="section offset-header">
+
+	<div class="container">
+<p>sdfsde</p>
+
+<div class="row" style="margin-top:20px !important;">
+	<div class="col-xs-12 content" style="display: inline;">
+		<input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
+					 placeholder="Search blog by categories, title and description." tabindex="1"
+					 onkeydown="check_key(event)" autofocus />
+		<button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+			<i class="fa fa-search"></i>
+		</button>
+	</div>
+
+</div>
+
+	</div>
+</section>
+
+
+
+
+<script type="text/javascript" src="/js/lunr.js"></script>
+<script type="text/javascript" src="/js/search-workflow.js"></script>
+<script type="text/javascript">
+
+document.addEventListener('load', search_content());
+
+    function check_key(e) {
+        if (e.keyCode == 13) {
+            search_content();
+        } else if (e.keyCode == 8) {
+            if (document.getElementById('search-input').value.length <= 1) {
+                $("#post_nor").show();
+                $("#search-results").hide();
+            }
+        }
+    }
+
+    function search_content() {
+
+        var param = "data"; //document.getElementById('search-input').value;
+
+        console.log("hej");
+        initLunr2();
+
+
+
+            var results = search_workflow(param);
+
+                console.log(results)
+
+
+
+
+    }
+</script>
+<!-- <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script> -->
+<!-- <link href="{{"css/auto-complete.css" | relURL}}" rel="stylesheet"> -->
+<script type="text/javascript">
+    var baseurl = "{{.Site.BaseURL}}";
+</script>
+
+
+
+{{end}}
