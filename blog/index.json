@@ -2,6 +2,21 @@
 [
     
     {
+    "uri": "/blog/2021/2021-01-27-word-distribution/",
+	"title": "Observing Word Distribution",
+	"categories": [],
+	"description": "",
+	"content": "In text mining, one of key tasks is understanding and inspecting the corpus. It makes it easier to determine the preprocessing techniques and downstream analysis (the selection of document frequency weights, topic modelling technique, lemmatization and so on).\nEven though Orange sometimes doesn\u0026rsquo;t have a widget for a specific task, the said task can be achieved with a combination of widgets and their outputs. Let us look at an example of word distribution. There is no such widget in Orange, but word distributions are generally available in Word Cloud. Word Cloud shows a list of most frequent words and their frequencies on the left and a cloud visualization on the right.\n This is a great start, but Word Cloud only shows the 100 words and the visualization doesn\u0026rsquo;t directly correspond to the word frequency (words are scaled so that very frequent words don\u0026rsquo;t overwhelm less frequent ones). Yet Word Cloud has an output called Word Counts, which outputs a table with words and their frequencies in columns. Just what we would like to see!\n Can we see these frequencies as distributions? Yes, we can. A general widget showing numeric values (such as word counts) is Bar Plot. We pass the Word Counts output of Word Cloud to Bar Plot. We can also label each bar by setting Annotations to Word.\n If we zoom in, we can see that \u0026ldquo;the\u0026rdquo;, \u0026ldquo;and\u0026rdquo;, \u0026ldquo;of\u0026rdquo;, \u0026ldquo;to\u0026rdquo;, \u0026ldquo;a\u0026rdquo; are by far the most frequent words. This calls for some preprocessing, particularly stopword removal. We place Preprocess Text between Corpus and Word Cloud and use default preprocessing. Our bar plot has changed. Now, the most frequent word is \u0026ldquo;said\u0026rdquo;, so perhaps another round of stopword removal is necessary.\n  Orange widgets are intended to be as general as possible, which it easy to stack them into custom workflows. Don\u0026rsquo;t forget to explore all the outputs different widgets offer, for example the All Topics output from Topic Modelling, Concordances from Concordance, or Grouped Data from Pivot Table.\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2021/2021-01-27-word-distribution-small.png",
+	"shortExcerpt" : "How to inspect word distribution in a corpus with in Orange.",
+	"longExcerpt" :  "How to inspect word distribution in a corpus with a clever combination of widgets in Orange." ,
+	"author" : "Ajda Pretnar",
+	"summary" : "In text mining, one of key tasks is understanding and inspecting the corpus. It makes it easier to determine the preprocessing techniques and downstream analysis (the selection of document frequency weights, topic modelling technique, lemmatization and so on).\nEven though Orange sometimes doesn\u0026rsquo;t have a widget for a specific task, the said task can be achieved with a combination of widgets and their outputs. Let us look at an example of word distribution.",
+	"date" : "Jan 27, 2021"
+}
+    
+    , {
     "uri": "/blog/2021/2021-01-11-orange-in-classroom/",
 	"title": "Orange in Classroom",
 	"categories": [],

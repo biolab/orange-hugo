@@ -570,6 +570,23 @@
     "url": "randomforest"
    },
    {
+    "title": "Gradient Boosting",
+    "category": "Model",
+    "keywords": [
+     "catboost",
+     "gradient",
+     "boost",
+     "tree",
+     "forest",
+     "xgb",
+     "gb",
+     "extreme"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Gradient Boosting.png",
+    "url": "gradientboosting"
+   },
+   {
     "title": "SVM",
     "category": "Model",
     "keywords": [

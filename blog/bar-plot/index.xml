@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bar plot on Orange</title>
+    <link>/blog/bar-plot/</link>
+    <description>Recent content in bar plot on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/bar-plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Observing Word Distribution</title>
+      <link>/blog/2021/2021-01-27-word-distribution/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-01-27-word-distribution/</guid>
+      <description>In text mining, one of key tasks is understanding and inspecting the corpus. It makes it easier to determine the preprocessing techniques and downstream analysis (the selection of document frequency weights, topic modelling technique, lemmatization and so on).
+Even though Orange sometimes doesn&amp;rsquo;t have a widget for a specific task, the said task can be achieved with a combination of widgets and their outputs. Let us look at an example of word distribution.</description>
+    </item>
+    
+  </channel>
+</rss>
