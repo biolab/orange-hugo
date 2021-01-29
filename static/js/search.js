@@ -35,11 +35,25 @@ function initLunr() {
 				this.field('content', {
 					boost: 1
 				});
-
+				let types = [];
+				let kinds = [];
 				searchIndex.forEach(function (doc) {
 					this.add(doc)
+					if(!types.includes(doc.type)){
+						types.push(doc.type);
+					}
+					if(!kinds.includes(doc.kind)){
+						kinds.push(doc.kind);
+					}
 				}, this)
 
+					types.forEach(function (type) {
+						console.log(type);
+					})
+
+				kinds.forEach(function (type) {
+					console.log(type);
+				})
 
 			})
 

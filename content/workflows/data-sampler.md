@@ -1,7 +1,7 @@
 +++
 title= "Train and Test Data"
 images =  ["/workflow_images/data-sampler.png"]
-type = "workflow"
+type = "workflows"
 blog =  ""
 video = ""
 download = "420-data-sampler.ows"

@@ -12,12 +12,12 @@
         {{ end }}
         <div class="entry-meta remove-padding-l-r">
           <span>Categories: </span>
-          {{ range $index, $element := .Params.categories }}
+          {{ range $index, $element := .Params.blog }}
           <span class="category">
             {{if gt $index 0 }}
             <span> | </span>
             {{end}}
-            <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+            <a href="/blog/{{ . | urlize }}">{{ . }}</a>
           </span>
           {{ end }}
         </div>
