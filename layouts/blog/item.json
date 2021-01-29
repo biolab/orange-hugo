@@ -1,7 +1,7 @@
 {
     "uri": "{{ .Permalink }}",
 	"title": "{{ htmlEscape .Title}}",
-	"categories": [{{ range $tindex, $category := .Params.categories }}{{ if $tindex }}, {{ end }}"{{ $category| htmlEscape }}"{{ end }}],
+	"categories": [{{ range $tindex, $category := .Params.blog }}{{ if $tindex }}, {{ end }}"{{ $category| htmlEscape }}"{{ end }}],
 	"description": "{{ htmlEscape .Description}}",
 	"content": {{.Plain | jsonify}},
 	"image" : "{{ .Params.image}}",

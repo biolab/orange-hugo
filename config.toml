@@ -19,9 +19,12 @@ unsafe = true
   [outputFormats.blog]
     mediaType = "application/json"
     baseName = "blog"
+   [outputFormats.searchindex]
+       mediaType = "application/json"
+       baseName = "search"
 
 [outputs]
-  home = [ "HTML", "workflow", "blog" ]
+  home = [ "HTML", "workflow", "blog", "searchindex" ]
   section = [ "HTML", "json" ]
 
 [taxonomies]

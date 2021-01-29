@@ -1,0 +1,18 @@
+[
+	{{- range $index, $page := .Site.RegularPages -}}
+	{{- if gt $index 0 -}} , {{- end -}}
+	{{- $entry := dict "uri" $page.RelPermalink "title" $page.Title -}}
+	{{- $entry = merge $entry (dict "content" ($page.Plain | htmlUnescape)) -}}
+	{{- $entry = merge $entry (dict "description" $page.Description) -}}
+	{{- $entry = merge $entry (dict "categories" $page.Params.categories) -}}
+	{{- $entry = merge $entry (dict "author" $page.Params.author) -}}
+	{{- $entry = merge $entry (dict "date" $page.Params.date) -}}
+	{{- $entry = merge $entry (dict "frontPageImage" $page.Params.frontPageImage) -}}
+	{{- $entry = merge $entry (dict "thumbImage" $page.Params.thumbImage) -}}
+	{{- $entry = merge $entry (dict "longExcerpt" $page.Params.longExcerpt) -}}
+	{{- $entry = merge $entry (dict "images" $page.Params.images) -}}
+	{{- $entry = merge $entry (dict "kind" $page.Kind) -}}
+	{{- $entry = merge $entry (dict "type" $page.Type) -}}
+	{{- $entry | jsonify -}}
+	{{- end -}}
+]
