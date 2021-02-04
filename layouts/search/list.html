@@ -10,7 +10,7 @@
 				<input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;"
 							 placeholder="Search blog by categories, title and description." tabindex="1"
 							 onkeydown="check_key(event)" autofocus/>
-				<button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
+				<button type="button" style="height: 38px; margin-left: 1rem" class="search-button-workflow" id="searchBtn" onclick="search_content()">
 					<i class="fa fa-search"></i>
 				</button>
 			</div>
@@ -22,14 +22,14 @@
 
 		<div class="nav-tabs-results" id="nav-tabs-results" style="margin-top:2rem" hidden>
 				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="#">All</a></li>
-					<li role="presentation"><a href="#">Blog</a></li>
-					<li role="presentation"><a href="#">Workflows</a></li>
-					<li role="presentation"><a href="#">Widgets</a></li>
+					<li role="presentation" class="active"><a href="#" id="all_tab">All</a></li>
+					<li role="presentation"><a href="#" id="blog_tab"   >Blog</a></li>
+					<li role="presentation"><a href="#" id="workflows_tab">Workflows</a></li>
+					<li role="presentation"><a href="#" id="widgets_tab" >Widgets</a></li>
 				</ul>
 		</div>
 
-		<div class="row all-results" style="margin-top:20px !important;">
+		<div class="row all-results" style="margin-top:20px !important;" hidden>
 
 
 		</div>
@@ -46,8 +46,8 @@
 
 		</div>
 
-
-<button type="button" class="search-button-workflow" id="searchBtn" onclick="show_more()">
+<a class="btn btn-warning big-button-base donate" role="button"  onclick="show_more()">Show More</a>
+<!-- <button type="button" class="search-button-workflow" id="searchBtn" onclick="show_more()"> -->
 	</div>
 </section>
 
@@ -60,6 +60,9 @@
 			</h2>
 
 			<summary class="summary"></summary>
+
+				<img class="search-image image m-0 p-0">
+
 			<div class="read-more-container">
 				<a class="read-more-link">Read More »</a>
 			</div>

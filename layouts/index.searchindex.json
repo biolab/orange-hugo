@@ -15,6 +15,7 @@
 	{{- $entry = merge $entry (dict "type" $page.Type) -}}
 	{{- $entry = merge $entry (dict "LinkTitle" $page.LinkTitle) -}}
 	{{- $entry = merge $entry (dict "Permalink" $page.Permalink) -}}
+	{{- $entry = merge $entry (dict "icon" $page.Params.icon) -}}
 	{{- $entry | jsonify -}}
 	{{- end -}}
 ]
