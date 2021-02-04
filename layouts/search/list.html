@@ -29,12 +29,25 @@
 				</ul>
 		</div>
 
-		<div class="row results" style="margin-top:20px !important;">
+		<div class="row all-results" style="margin-top:20px !important;">
 
 
 		</div>
 
+		<div class="row blog-results" style="margin-top:20px !important;" hidden>
 
+		</div>
+
+		<div class="row workflows-results" style="margin-top:20px !important;" hidden>
+
+		</div>
+
+		<div class="row widgets-results" style="margin-top:20px !important;" hidden>
+
+		</div>
+
+
+<button type="button" class="search-button-workflow" id="searchBtn" onclick="show_more()">
 	</div>
 </section>
 
@@ -56,7 +69,7 @@
 
 
 <template id="result-blog-image" hidden>
-	<div class="col-xs-12 content mb-5 pb-5" style="display: inline;">
+	<div class="col-xs-12 content mb-5 pb-5" style="display: inline; margin-top: 4rem;">
 
 		<article class="content post">
 			<div class="container">
@@ -76,7 +89,7 @@
 							<a class="read-more-link">Read More »</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" style="display: inline;">
 						<img class="search-image image m-0 p-0">
 					</div>
 				</div>
@@ -89,7 +102,7 @@
 
 
 <template id="result-blog" hidden>
-	<div class="col-xs-12 content mb-5 pb-5" style="display: inline;">
+	<div class="col-xs-12 content" style="display: inline; margin-top: 4rem;">
 
 		<article class="content post">
 			<div class="container">
@@ -119,301 +132,39 @@
 
 
 <template id="result-regular" hidden>
-	<div class="col-xs-12 content" style="display: inline;">
+	<div class="col-xs-12 content" style="display: inline; margin-top: 4rem;">
+
 		<article class="content post">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<a class="summary-title-link workflow-title ">
+							<h2 class="workflow-title result-title" style="margin-top: 10px !important">
 
-			<h2 class="workflow-title result-title" style="margin-top: 10px !important">
-				<a class="summary-title-link"> </a>
-			</h2>
+							</h2>
+						</a>
+					</div>
 
-			<summary class="summary"></summary>
-			<div class="read-more-container">
-				<a class="read-more-link">Read More »</a>
+					<div class="col-lg-6">
+						<summary class="summary"></summary>
+						<div class="read-more-container">
+							<a class="read-more-link">Read More »</a>
+						</div>
+					</div>
+
+				</div>
 			</div>
+
 		</article>
+
 	</div>
 </template>
 
 
 <script type="text/javascript" src="/js/lunr.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/search_page.js"></script>
 <script type="text/javascript">
-
-	/*
-
-	workflows screenshots
-	- v smeri examples
-	- slika in spodej naslov
-
-
-	blog
-	- naslov in spodej kratek opis
-
-
-
-	citation, contact, license, privacy
-
-	getting started, faq - sta posebna
-
-	Samo navaden rezultat
-
-
-	 */
-
-
-	document.addEventListener('load', search_content());
-
-	function check_key(e) {
-		if (e.keyCode == 13) {
-			search_content();
-		} else if (e.keyCode == 8) {
-			if (document.getElementById('search-input').value.length <= 1) {
-				$("#post_nor").show();
-				$("#search-results").hide();
-			}
-		}
-	}
-
-	function search_content() {
-
-		var nav_tabs = document.getElementById("nav-tabs-results");
-
-		nav_tabs.hidden = true;
-
-		var param = document.getElementById('search-input').value;
-
-		var target = document.querySelector(".results");
-
-		var num_results = document.querySelector(".num_results");
-
-		while (target.firstChild)
-			target.removeChild(target.firstChild);
-
-		console.log("hej");
-		initLunr();
-
-
-		var results = search(param);
-
-		console.log(results)
-
-		if (results.length == 0) {
-			num_results.textContent = `No results found for “${param}”`;
-			return;
-		}
-		else if (results.length == 1)
-			num_results.textContent = `Found one result for “${param}”`;
-		else
-			num_results.textContent = `Found ${results.length} results for “${param}”`;
-
-		//target.appendChild(title);
-		//document.title = title.textContent;
-
-		nav_tabs.removeAttribute("hidden");
-		var template_regular = document.getElementById("result-regular");
-		var template_example = document.getElementById("result-example");
-		var template_blog = document.getElementById("result-blog");
-		var template_blog_image = document.getElementById("result-blog-image");
-		console.log(results);
-		for (var result of results) {
-			console.log(result.type);
-			console.log(result);
-			if (result.kind === "page") {
-
-
-				if (result.type === "blog") {
-					var element = template_blog.content.cloneNode(true);
-					if (result.thumbImage != null) {
-						element = template_blog_image.content.cloneNode(true);
-					}
-					element.querySelector(".summary-title-link").href = result.uri;
-					element.querySelector(".read-more-link").href = result.uri;
-					//element.querySelector(".result-link").href = result.uri;
-
-					element.querySelector(".result-title").textContent = result.title;
-					element.querySelector(".summary").textContent = truncate(result.content, 50);
-					if (result.thumbImage != null) {
-						element.querySelector(".image").src = result.thumbImage;
-						element.querySelector(".image").href = result.uri;
-					}
-					target.appendChild(element);
-				}
-
-
-				// Fill out search result template, adjust as needed.
-				/*var element = template_regular.content.cloneNode(true);
-				element.querySelector(".summary-title-link").href = result.uri;
-				element.querySelector(".read-more-link").href = result.uri;
-				//element.querySelector(".result-title").textContent = result.title;
-				//element.querySelector(".summary").textContent = truncate(result.content, 70);
-				target.appendChild(element);*/
-			}
-		}
-
-
-	}
-
-	function truncate(text, minWords) {
-		var match;
-		var result = "";
-		var wordCount = 0;
-		var regexp = /(\S+)(\s*)/g;
-		while (match = regexp.exec(text)) {
-			wordCount++;
-			if (wordCount <= minWords)
-				result += match[0];
-			else {
-				var char1 = match[1][match[1].length - 1];
-				var char2 = match[2][0];
-				if (/[.?!"]/.test(char1) || char2 == "\n") {
-					result += match[1];
-					break;
-				} else
-					result += match[0];
-			}
-		}
-		return result;
-	}
-
-
-	window.addEventListener("DOMContentLoaded", function (event) {
-		var index = null;
-		var lookup = null;
-		var queuedTerm = null;
-
-		var form = document.getElementById("search");
-		var input = document.getElementById("search-input");
-
-		form.addEventListener("submit", function (event) {
-			event.preventDefault();
-
-			var term = input.value.trim();
-			if (!term)
-				return;
-
-			startSearch(term);
-		}, false);
-
-		function startSearch(term) {
-			// Start icon animation.
-			form.setAttribute("data-running", "true");
-
-			if (index) {
-				// Index already present, search directly.
-				search(term);
-			} else if (queuedTerm) {
-				// Index is being loaded, replace the term we want to search for.
-				queuedTerm = term;
-			} else {
-				// Start loading index, perform the search when done.
-				queuedTerm = term;
-				initIndex();
-			}
-		}
-
-		function searchDone() {
-			// Stop icon animation.
-			form.removeAttribute("data-running");
-
-			queuedTerm = null;
-		}
-
-		function initIndex() {
-			var request = new XMLHttpRequest();
-			request.open("GET", "/search.json");
-			request.responseType = "json";
-			request.addEventListener("load", function (event) {
-				lookup = {};
-				index = lunr(function () {
-					// Uncomment the following line and replace de by the right language
-					// code to use a lunr language pack.
-
-					// this.use(lunr.de);
-
-					this.ref("uri");
-
-					// If you added more searchable fields to the search index, list them here.
-					this.field("title");
-					this.field("content");
-					this.field("description");
-					this.field("categories");
-
-					for (var doc of request.response) {
-						this.add(doc);
-						lookup[doc.uri] = doc;
-					}
-				});
-
-				// Search index is ready, perform the search now
-				search(queuedTerm);
-			}, false);
-			request.addEventListener("error", searchDone, false);
-			request.send(null);
-		}
-
-		function search(term) {
-			var results = index.search(term);
-			console.log(results);
-			// The element where search results should be displayed, adjust as needed.
-			var target = document.querySelector(".main-inner");
-
-			while (target.firstChild)
-				target.removeChild(target.firstChild);
-
-			var title = document.createElement("h1");
-			title.id = "search-results";
-			title.className = "list-title";
-
-			if (results.length == 0)
-				title.textContent = `No results found for “${term}”`;
-			else if (results.length == 1)
-				title.textContent = `Found one result for “${term}”`;
-			else
-				title.textContent = `Found ${results.length} results for “${term}”`;
-			target.appendChild(title);
-			document.title = title.textContent;
-
-			var template = document.getElementById("search-result");
-			for (var result of results) {
-				var doc = lookup[result.ref];
-
-				// Fill out search result template, adjust as needed.
-				var element = template.content.cloneNode(true);
-				element.querySelector(".summary-title-link").href =
-					element.querySelector(".read-more-link").href = doc.uri;
-				element.querySelector(".summary-title-link").textContent = doc.title;
-				element.querySelector(".summary").textContent = truncate(doc.content, 70);
-				target.appendChild(element);
-			}
-			title.scrollIntoView(true);
-
-			searchDone();
-		}
-
-		// This matches Hugo's own summary logic:
-		// https://github.com/gohugoio/hugo/blob/b5f39d23b8/helpers/content.go#L543
-		function truncate(text, minWords) {
-			var match;
-			var result = "";
-			var wordCount = 0;
-			var regexp = /(\S+)(\s*)/g;
-			while (match = regexp.exec(text)) {
-				wordCount++;
-				if (wordCount <= minWords)
-					result += match[0];
-				else {
-					var char1 = match[1][match[1].length - 1];
-					var char2 = match[2][0];
-					if (/[.?!"]/.test(char1) || char2 == "\n") {
-						result += match[1];
-						break;
-					} else
-						result += match[0];
-				}
-			}
-			return result;
-		}
-	}, false);
 
 
 </script>

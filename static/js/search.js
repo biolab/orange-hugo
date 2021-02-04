@@ -35,25 +35,12 @@ function initLunr() {
 				this.field('content', {
 					boost: 1
 				});
-				let types = [];
-				let kinds = [];
+
 				searchIndex.forEach(function (doc) {
 					this.add(doc)
-					if(!types.includes(doc.type)){
-						types.push(doc.type);
-					}
-					if(!kinds.includes(doc.kind)){
-						kinds.push(doc.kind);
-					}
+
 				}, this)
 
-					types.forEach(function (type) {
-						console.log(type);
-					})
-
-				kinds.forEach(function (type) {
-					console.log(type);
-				})
 
 			})
 
@@ -98,16 +85,12 @@ function search(query) {
 	// Find the item in our index corresponding to the lunr one to have more info
 	let res = [];
 	lunrIndex.search(query).map(function (result) {
-
-		console.log(result);
 		searchIndex.forEach(function (entry) {
 			if (entry.uri === result.ref) {
-				console.log(entry);
 				res.push(entry);
 			}
 		});
 	});
-	console.log(res);
 	return res;
 }
 
