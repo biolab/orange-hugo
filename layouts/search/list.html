@@ -15,9 +15,22 @@
 				</button>
 			</div>
 
+			<p class="num_results" style="margin-left:2rem; margin-top: 5rem"></p>
+
+		</div>
+
+
+		<div class="nav-tabs-results" id="nav-tabs-results" style="margin-top:2rem" hidden>
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a href="#">All</a></li>
+					<li role="presentation"><a href="#">Blog</a></li>
+					<li role="presentation"><a href="#">Workflows</a></li>
+					<li role="presentation"><a href="#">Widgets</a></li>
+				</ul>
 		</div>
 
 		<div class="row results" style="margin-top:20px !important;">
+
 
 		</div>
 
@@ -47,33 +60,32 @@
 
 		<article class="content post">
 			<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<a class="summary-title-link workflow-title ">
-						<h2 class="workflow-title result-title" style="margin-top: 10px !important">
+				<div class="row">
+					<div class="col-lg-12">
+						<a class="summary-title-link workflow-title mt-3 mb-2">
+							<h2 class="workflow-title result-title" style="margin-top: 10px !important">
 
-						</h2>
-					</a>
-				</div>
+							</h2>
+						</a>
+					</div>
 
-				<div class="col-lg-4">
-					<img class="workflow-image image">
-				</div>
-				<div class="col-lg-4">
-					<summary class="summary"></summary>
-					<div class="read-more-container">
-						<a class="read-more-link">Read More »</a>
+
+					<div class="col-lg-6">
+						<summary class="summary"></summary>
+						<div class="read-more-container">
+							<a class="read-more-link">Read More »</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<img class="search-image image m-0 p-0">
 					</div>
 				</div>
-
-			</div>
 			</div>
 
 		</article>
 
 	</div>
 </template>
-
 
 
 <template id="result-blog" hidden>
@@ -90,7 +102,7 @@
 						</a>
 					</div>
 
-					<div class="col-lg-4">
+					<div class="col-lg-6">
 						<summary class="summary"></summary>
 						<div class="read-more-container">
 							<a class="read-more-link">Read More »</a>
@@ -164,9 +176,15 @@
 
 	function search_content() {
 
+		var nav_tabs = document.getElementById("nav-tabs-results");
+
+		nav_tabs.hidden = true;
+
 		var param = document.getElementById('search-input').value;
 
 		var target = document.querySelector(".results");
+
+		var num_results = document.querySelector(".num_results");
 
 		while (target.firstChild)
 			target.removeChild(target.firstChild);
@@ -178,18 +196,20 @@
 		var results = search(param);
 
 		console.log(results)
-		/*
-		if (results.length == 0)
-			title.textContent = `No results found for “${term}”`;
-		else if (results.length == 1)
-			title.textContent = `Found one result for “${term}”`;
-		else
-			title.textContent = `Found ${results.length} results for “${term}”`;
 
-		 */
+		if (results.length == 0) {
+			num_results.textContent = `No results found for “${param}”`;
+			return;
+		}
+		else if (results.length == 1)
+			num_results.textContent = `Found one result for “${param}”`;
+		else
+			num_results.textContent = `Found ${results.length} results for “${param}”`;
+
 		//target.appendChild(title);
 		//document.title = title.textContent;
 
+		nav_tabs.removeAttribute("hidden");
 		var template_regular = document.getElementById("result-regular");
 		var template_example = document.getElementById("result-example");
 		var template_blog = document.getElementById("result-blog");
@@ -333,7 +353,7 @@
 
 		function search(term) {
 			var results = index.search(term);
-
+			console.log(results);
 			// The element where search results should be displayed, adjust as needed.
 			var target = document.querySelector(".main-inner");
 
