@@ -2180,10 +2180,6 @@
   </url>
   
   <url>
-    <loc>/widget-catalog/visualize/barplot/</loc>
-  </url>
-  
-  <url>
     <loc>/widget-catalog/single-cell/batch_effect_removal/</loc>
   </url>
   
@@ -2293,10 +2289,6 @@
   
   <url>
     <loc>/widget-catalog/data/createclass/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/data/createinstance/</loc>
   </url>
   
   <url>
@@ -2509,10 +2501,6 @@
   
   <url>
     <loc>/widget-catalog/educational/google-sheets/</loc>
-  </url>
-  
-  <url>
-    <loc>/widget-catalog/model/gradientboosting/</loc>
   </url>
   
   <url>

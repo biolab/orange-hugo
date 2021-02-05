@@ -253,16 +253,6 @@
     "url": "pythonscript"
    },
    {
-    "title": "Create Instance",
-    "category": "Data",
-    "keywords": [
-     "simulator"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Create Instance.png",
-    "url": "createinstance"
-   },
-   {
     "title": "Color",
     "category": "Data",
     "keywords": [],
@@ -396,8 +386,7 @@
      "chart"
     ],
     "background": "#FFB7B1",
-    "icon": "widget-icons/Visualize-Bar Plot.png",
-    "url": "barplot"
+    "icon": "widget-icons/Visualize-Bar Plot.png"
    },
    {
     "title": "Sieve Diagram",
@@ -570,23 +559,6 @@
     "url": "randomforest"
    },
    {
-    "title": "Gradient Boosting",
-    "category": "Model",
-    "keywords": [
-     "catboost",
-     "gradient",
-     "boost",
-     "tree",
-     "forest",
-     "xgb",
-     "gb",
-     "extreme"
-    ],
-    "background": "#FAC1D9",
-    "icon": "widget-icons/Model-Gradient Boosting.png",
-    "url": "gradientboosting"
-   },
-   {
     "title": "SVM",
     "category": "Model",
     "keywords": [
@@ -725,10 +697,7 @@
    {
     "title": "Lift Curve",
     "category": "Evaluate",
-    "keywords": [
-     "lift",
-     "cumulative gain"
-    ],
+    "keywords": [],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Lift Curve.png",
     "url": "liftcurve"
