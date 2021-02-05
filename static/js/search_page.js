@@ -41,7 +41,7 @@ let search_results = null;
 
 let showing = 0;
 
-let showing_type = "all";
+let showing_type = "";
 
 let inited_lunr = false;
 
@@ -66,6 +66,10 @@ function show_more() {
 		if (showing_type == "blog") {
 			show_blog(showing);
 		}
+
+		if (showing_type == "widgets") {
+			show_widget(showing);
+		}
 		console.log(showing);
 	}
 
@@ -73,6 +77,7 @@ function show_more() {
 
 function change_res(type) {
 	console.log(type);
+	console.log(showing_type);
 	if (type != showing_type) {
 		document.querySelector(".nav-tabs").querySelector(".active").classList.remove("active");
 
@@ -96,7 +101,7 @@ function change_res(type) {
 
 		if (type == "widgets") {
 			document.getElementById("widgets_tab").parentNode.classList.add("active");
-			//show_all(showing);
+			show_widget(showing);
 		}
 	}
 }
@@ -116,9 +121,10 @@ function check_key(e) {
 
 function search_content() {
 	search_results = null;
-
+	showing_type = "";
 	var nav_tabs = document.getElementById("nav-tabs-results");
 	remove_all_results();
+	hide_all_results();
 	nav_tabs.hidden = true;
 
 	var param = document.getElementById('search-input').value;
@@ -143,10 +149,8 @@ function search_content() {
 
 
 	nav_tabs.removeAttribute("hidden");
-	showing_type = "all";
 	showing = 0;
-	show_all(0);
-
+	change_res("all");
 
 }
 
@@ -192,10 +196,9 @@ function show_all(num_show) {
 		remove_all_results();
 	}
 
-	var template_regular = document.getElementById("result-regular");
-	var template_example = document.getElementById("result-example");
-	var template_blog = document.getElementById("result-blog");
-	var template_blog_image = document.getElementById("result-blog-image");
+
+
+
 	console.log(search_results);
 	for (var result of search_results) {
 		console.log(showed);
@@ -204,14 +207,14 @@ function show_all(num_show) {
 			console.log(result.type);
 			let element = null;
 			if (result.type === "blog") {
-				element = render_blog(template_blog, template_blog_image, result);
+				element = render_blog(result);
 
 			} else if (result.type === "workflows") {
-				element = render_widget(template_example, result);
+				element = render_widget(result);
 			} else if (result.type === "widget-catalog") {
-				element = render_widget(template_example, result);
+				element = render_widget(result);
 			} else if (result.type === "contact" || result.type === "citation" || result.type === "widget-catalog" || result.type === "license" || result.type === "privacy" || result.type === "faq") {
-				element = render_other(template_regular, result);
+				element = render_other(result);
 				console.log(result);
 
 			}
@@ -239,9 +242,6 @@ function show_blog(num_show) {
 		remove_all_results();
 	}
 
-	var template_blog = document.getElementById("result-blog");
-	var template_blog_image = document.getElementById("result-blog-image");
-
 	for (var result of search_results) {
 
 
@@ -249,7 +249,39 @@ function show_blog(num_show) {
 
 			let element = null;
 			if (result.type === "blog") {
-				element = render_blog(template_blog, template_blog_image, result);
+				element = render_blog(result);
+
+				showed += 1;
+				if (showed >= num_show && showed < num_show + 10) {
+					console.log(result.kind);
+					result_box.appendChild(element);
+				}
+			}
+
+			if (showed > num_show + 10) {
+				return;
+			}
+		}
+	}
+}
+
+function show_widget(num_show) {
+	hide_all_results()
+	let result_box = document.querySelector(".widgets-results");
+	result_box.removeAttribute("hidden");
+	let showed = 0;
+	if (num_show == 0) {
+		remove_all_results();
+	}
+
+	for (var result of search_results) {
+
+
+		if (result.kind === "page") {
+
+			let element = null;
+			if (result.type === "widget-catalog") {
+				element = render_widget(result);
 
 				showed += 1;
 				if (showed >= num_show && showed < num_show + 10) {
@@ -269,10 +301,10 @@ function show_blog(num_show) {
 
 
 
-
-
 // returns HTML
-function render_blog(template, template_image, content) {
+function render_blog(content) {
+	let template = document.getElementById("result-blog");
+	let template_image = document.getElementById("result-blog-image");
 
 	let render = template.content.cloneNode(true);
 	if (content.thumbImage != null) {
@@ -293,8 +325,8 @@ function render_blog(template, template_image, content) {
 
 
 // returns HTML
-function render_workflow(template, content) {
-
+function render_workflow(content) {
+	let template = document.getElementById("result-example");
 	let render = template.content.cloneNode(true);
 
 	render.querySelector(".summary-title-link").href = content.uri;
@@ -309,7 +341,9 @@ function render_workflow(template, content) {
 }
 
 // returns HTML
-function render_widget(template, content) {
+function render_widget(content) {
+
+	let template = document.getElementById("result-widget");
 	let render = template.content.cloneNode(true);
 
   let json_data = null;
@@ -318,6 +352,7 @@ function render_widget(template, content) {
       //console.log(wid);
       if(wid.title === content.title){
         console.log("FOKJEA");
+				console.log(wid);
         render.querySelector(".image").src = "/"+wid.icon;
       }
     }
@@ -336,8 +371,8 @@ function render_widget(template, content) {
 
 
 // returns HTML
-function render_other(template, content) {
-
+function render_other(content) {
+		let template_regular = document.getElementById("result-regular");
 	let render = template.content.cloneNode(true);
 
 	render.querySelector(".summary-title-link").href = content.uri;

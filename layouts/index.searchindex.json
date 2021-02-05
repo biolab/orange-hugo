@@ -11,6 +11,7 @@
 	{{- $entry = merge $entry (dict "thumbImage" $page.Params.thumbImage) -}}
 	{{- $entry = merge $entry (dict "longExcerpt" $page.Params.longExcerpt) -}}
 	{{- $entry = merge $entry (dict "images" $page.Params.images) -}}
+	{{- $entry = merge $entry (dict "image" $page.Params.image) -}}
 	{{- $entry = merge $entry (dict "kind" $page.Kind) -}}
 	{{- $entry = merge $entry (dict "type" $page.Type) -}}
 	{{- $entry = merge $entry (dict "LinkTitle" $page.LinkTitle) -}}
