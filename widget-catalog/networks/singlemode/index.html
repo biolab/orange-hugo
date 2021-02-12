@@ -1663,7 +1663,7 @@
 <ul>
 <li>Network: An instance of single network graph.</li>
 </ul>
-<p><strong>Single Mode</strong> works with bipartite networks, where subsets are marked with a binary discrete attribute. The widget outputs a network where nodes represent the selected value (e.g. persons) and edges the remaining value (e.g. event). The widget also works with non-binary discrete attributes, but will treat them as binary (one-versus-all).</p>
+<p><strong>Single Mode</strong> works with bipartite (or multipartite) networks, where different parts are distinguished by values of the chosen discrete variable. A typical example would be a network that connects persons with events that they attended. The widget creates a new network, which contains the nodes from the chosen group of original network&rsquo;s nodes (e.g. persons). Two nodes in the resulting network are connected if they share a common neighbor from the second chosen group (e.g. events).</p>
 <p><img src="../images/Single-Mode-stamped.png" alt=""></p>
 <ol>
 <li>Mode indicator:
@@ -1687,7 +1687,7 @@
 <h2 id="example">Example</h2>
 <p>For this example we have used the famous <em>davis</em> data set that describes ladies from the south of the United States and the events they have participated in. The network thus consists of nodes that are either persons or events. Node role is described in the attribute <em>role</em>. We load the network with <a href="../networkfile/">Network File</a>.</p>
 <p>We see the original file in <a href="../networkexplorer/">Network Explorer</a>. The blue nodes are events and the red ones are persons. Events are attended by persons. A node connects a person with the event, if the person attended the event. Now we can observe which people attended the same event or, conversely, which events were attended by the same people.</p>
-<p>In <strong>Single Mode</strong> we set the feature describing the role of the nodes. It so happens that our attribute is named <em>role</em>. We connect persons (nodes) with the events they attended (edges). Edge weight will be the number of connections in common. In translation, edge weights will be the number of events both people attended.</p>
+<p>In <strong>Single Mode</strong> we set the feature describing the role of the nodes. It so happens that our attribute is named <em>role</em>. We connect persons (nodes) by the events they attended (edges). Edge weight will be the number of connections in common. In translation, edge weights will be the number of events both people attended.</p>
 <p><strong>Network Explorer (1)</strong> shows the final network.</p>
 <p><img src="../images/Single-Mode-Example.png" alt=""></p>
 
@@ -1829,6 +1829,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 10 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-02-10-explaining-models/">Explaining Predictive Models</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-27-word-distribution/">Observing Word Distribution</a>
@@ -1841,15 +1850,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 11 Jan </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-11-orange-in-classroom/">Orange in Classroom</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 21 Dec </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2020/2020-12-21-year-in-code/">2020 - Year in Code</a>
                             </div>
                             </div>
                             </li>

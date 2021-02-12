@@ -243,22 +243,47 @@
   </url>
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/explain/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/explainable-AI/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/2021-02-10-explaining-models/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/model-explanation/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/predictive-modelling/</loc>
+    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/bar-plot/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/2021/2021-01-27-word-distribution/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url>
   

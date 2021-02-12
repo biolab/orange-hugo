@@ -1,0 +1,396 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Explaining Predictive Models</title>
+
+    
+    
+    <meta property="og:title" content="Explaining Predictive Models">
+    
+    
+    <meta property="og:description" content="New Orange add-on for explaining predictive models.">
+    
+    
+    <meta property="og:image" content="/blog_img/2021/2021-02-10-explain-models-small.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/css/styles.min.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+    
+ 
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                            
+                        
+                    
+                    
+                        
+                            
+                        <li class="">
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                        </li>
+                            
+                        
+                    
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Explaining Predictive Models</h1>
+          <span class="author-blog">
+            
+            By: Ajda Pretnar,
+            
+            Feb 10, 2021
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              <p>It is easy to build powerful predictive models in Orange. But how does the model &ldquo;look like&rdquo;? Which attributes and which values of those attributes are important? And when making predictions, which attributes contributed to the decision? <strong>Orange&rsquo;s new Explain add-on</strong> helps you answer all those questions.</p>
+<p>Related: <a href="/blog/2019/2019-11-20-belgrade-workshop/" target="_blank">Explaining Models</a></p>
+<p>Go to <strong>Options &ndash;&gt; Add-ons</strong> and install Explain add-on. Restart Orange for the add-on to appear. It only contains two widgets, but boy are they great!</p>
+<p>Let us start with the attrition data set from the Datasets widget. We will go with <strong>Attrition - Train</strong>, which a data set on which employees resigned from the company and which stayed. The target variable is called Attrition, where <strong>No</strong> means that the employee stayed and <strong>Yes</strong> that the employee resigned. The other attributes describe the employee - her position, education, department, years since promotion, and so on.</p>
+<a href="/blog_img/2021/2021-02-10-data-table.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-data-table.png" class="workflow-screenshot" />
+</a>
+<p>Next, we will build a simple logistic regression predictive model. If inspecting the model in Test and Score, we learn that the model has an AUC of 0.788 and 86 % CA. But what <em>kind</em> of a model is this? How does it makes its decisions?</p>
+<p>Let us add Explain Model to Logistic Regression and add another connection passing the data. The workflow should look like this:</p>
+<a href="/blog_img/2021/2021-02-10-model-workflow.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-model-workflow.png" class="workflow-screenshot" />
+</a>
+<p>Now open Explain Model. The widget lists top ranked variables, which means they contribute the most to the selected target variable. As we are trying to understand why people leave the company, we have set the target variable to Yes.</p>
+<p>The highest ranked variable is OverTime - this is the variable with the highest impact on the prediction. Having a value Yes in the categorical attribute OverTime (red dots on the right) means the employee is likely to quit. Also, having low job satisfaction contributes to attrition (blue values on the right). The visualization shows the values which have a high impact on the prediction of the selected class on the right and those which vote against the selected class on the left. The color of dot represents the value of the attribute (red for higher values and blue for lower).</p>
+<a href="/blog_img/2021/2021-02-10-explain-model.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-explain-model.png" class="workflow-screenshot" />
+</a>
+<p>Let us look at, for example, YearsAtCompany. How would we interpret this? The variable has more red dots on the left, which means high variable values contribute <em>against</em> the target value (against attrition, i.e. employees will stay). Red dots refer to the value of the attribute. So if the employee is with the company for a long time (high value == red dot), it means it is more likely she will stay (dots are on the left, while our target value is Yes).</p>
+<p>Great, now we understand the model and we are ready to make some predictions. Let us load Attrition - Predict with another Dataset widget. We have three new employees, who are described with all the previous variables, but they are lacking Attrition - we do not know, who is more likely to leave.</p>
+<a href="/blog_img/2021/2021-02-10-table-predict.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-table-predict.png" class="workflow-screenshot" />
+</a>
+<p>Now pass the logistic regression model and the train data set to Explain Predictions. Then select John from the table and pass the selection to Explain Predictions. The widget requires three inputs: the model, training data, and the instance we are predicting (John).</p>
+<a href="/blog_img/2021/2021-02-10-predict-workflow.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-predict-workflow.png" class="workflow-screenshot" />
+</a>
+<p>Once again, we are interested in target value Yes. Variables in red increase the probability of the target value (conversely, blue decrease it). The size of the arrow corresponds to the <a href="https://shap.readthedocs.io/en/latest/index.html">SHAP value</a> - in other words, the larger the arrow the larger the variable&rsquo;s contribution to the target value. The model also predicted that John will leave the job with 77 % probability.</p>
+<a href="/blog_img/2021/2021-02-10-explain-prediction.png" class="blog-image_">
+      <img src="/blog_img/2021/2021-02-10-explain-prediction.png" class="workflow-screenshot" />
+</a>
+<p>As before, the most important variable for John is overtime. Him working overtime contributes a lot to the final prediction. Also, his job satisfaction is low (1 out of 5), making him likely to quit.</p>
+<p>The results correspond very much to those of the model, but it might not always be the case. Some people might leave because they are very dissatisfied without working overtime. This would show in Explain Predictions. See how the results change for the other two employees, Rachel and Veronica. Or make up your own employee with Excel and see what would the prediction be.</p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedm" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 10 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-02-10-explaining-models/">Explaining Predictive Models</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-27-word-distribution/">Observing Word Distribution</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 11 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-11-orange-in-classroom/">Orange in Classroom</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>predictive modelling on Orange</title>
+    <link>/blog/predictive-modelling/</link>
+    <description>Recent content in predictive modelling on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/predictive-modelling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Explaining Predictive Models</title>
+      <link>/blog/2021/2021-02-10-explaining-models/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-02-10-explaining-models/</guid>
+      <description>It is easy to build powerful predictive models in Orange. But how does the model &amp;ldquo;look like&amp;rdquo;? Which attributes and which values of those attributes are important? And when making predictions, which attributes contributed to the decision? Orange&amp;rsquo;s new Explain add-on helps you answer all those questions.
+Related: Explaining Models
+Go to Options &amp;ndash;&amp;gt; Add-ons and install Explain add-on. Restart Orange for the add-on to appear. It only contains two widgets, but boy are they great!</description>
+    </item>
+    
+  </channel>
+</rss>
