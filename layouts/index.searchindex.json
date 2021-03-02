@@ -11,11 +11,11 @@
 	"summary" : {{ .Summary | jsonify}},
 	"date" : {{ (.Date.Format "Jan 2, 2006" ) | jsonify}},
 	"frontPageImage" :"{{.Params.frontPageImage}}",
-	"images" : "{{.Params.images}}",
+	"images" : {{.Params.images | jsonify}},
 	"image" : "{{.Params.image}}",
 	"kind" : "{{.Kind}}",
 	"type" : "{{.Type}}",
-	"LinkTitle" : "{{.Params.LinkTitle}}",
+	"LinkTitle" : "{{.LinkTitle}}",
 	"icon" : "{{.Params.icon}}"
 },
 {{end}} {} ]

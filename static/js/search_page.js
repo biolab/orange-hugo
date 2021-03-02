@@ -70,6 +70,10 @@ function show_more() {
 		if (showing_type == "widgets") {
 			show_widget(showing);
 		}
+
+		if (showing_type == "workflow") {
+			show_workflow(showing);
+		}
 		console.log(showing);
 	}
 
@@ -96,7 +100,7 @@ function change_res(type) {
 
 		if (type == "workflows") {
 			document.getElementById("workflows_tab").parentNode.classList.add("active");
-			//show_all(showing);
+			show_workflow(showing);
 		}
 
 		if (type == "widgets") {
@@ -210,7 +214,7 @@ function show_all(num_show) {
 				element = render_blog(result);
 
 			} else if (result.type === "workflows") {
-				element = render_widget(result);
+				element = render_workflow(result);
 			} else if (result.type === "widget-catalog") {
 				element = render_widget(result);
 			} else if (result.type === "contact" || result.type === "citation" || result.type === "widget-catalog" || result.type === "license" || result.type === "privacy" || result.type === "faq") {
@@ -297,6 +301,40 @@ function show_widget(num_show) {
 	}
 }
 
+function show_workflow(num_show) {
+	hide_all_results();
+	let result_box = document.querySelector(".workflows-results");
+	result_box.removeAttribute("hidden");
+	let showed = 0;
+	if (num_show == 0) {
+		remove_all_results();
+	}
+
+	for (var result of search_results) {
+
+		if (result.kind === "page") {
+
+			let element = null;
+			if (result.type === "workflows") {
+				element = render_workflow(result);
+
+				showed += 1;
+				if (showed >= num_show && showed < num_show + 10) {
+					console.log(result.kind);
+					result_box.appendChild(element);
+				}
+			}
+
+			if (showed > num_show + 10) {
+				return;
+			}
+		}
+	}
+}
+
+
+
+
 
 
 
@@ -326,12 +364,15 @@ function render_blog(content) {
 
 // returns HTML
 function render_workflow(content) {
-	let template = document.getElementById("result-example");
+	let template = document.getElementById("result-workflow");
 	let render = template.content.cloneNode(true);
 
-	render.querySelector(".summary-title-link").href = content.uri;
-	render.querySelector(".read-more-link").href = content.uri;
+	render.querySelector(".summary-title-link").href = "/workflows";
+	render.querySelector(".read-more-link").href = "/workflows";
 	//element.querySelector(".result-link").href = result.uri;
+
+	render.querySelector(".image").src = content.images[0];
+	render.querySelector(".image").href = "/workflows";
 
 	render.querySelector(".result-title").textContent = content.title;
 	render.querySelector(".summary").textContent = truncate(content.content, 50);
