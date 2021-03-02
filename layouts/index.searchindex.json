@@ -13,8 +13,8 @@
 	"frontPageImage" :"{{.Params.frontPageImage}}",
 	"images" : "{{.Params.images}}",
 	"image" : "{{.Params.image}}",
-	"kind" : "{{.Params.Kind}}",
-	"type" : "{{.Params.Type}}",
+	"kind" : "{{.Kind}}",
+	"type" : "{{.Type}}",
 	"LinkTitle" : "{{.Params.LinkTitle}}",
 	"icon" : "{{.Params.icon}}"
 },

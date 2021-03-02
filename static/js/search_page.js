@@ -347,7 +347,7 @@ function render_widget(content) {
 	let render = template.content.cloneNode(true);
 
   let json_data = null;
-	if(widget_json.length >= 1){
+	if(widget_json != null){
 		for(let cat of widget_json){
     	for(let wid of cat[1]){
       	//console.log(wid);
