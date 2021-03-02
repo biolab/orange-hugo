@@ -1,22 +1,21 @@
-[
-	{{- range $index, $page := .Site.Pages -}}
-	{{- if gt $index 0 -}} , {{- end -}}
-	{{- $entry := dict "uri" $page.RelPermalink "title" $page.Title -}}
-	{{- $entry = merge $entry (dict "content" ($page.Plain | htmlUnescape)) -}}
-	{{- $entry = merge $entry (dict "description" $page.Description) -}}
-	{{- $entry = merge $entry (dict "categories" $page.Params.categories) -}}
-	{{- $entry = merge $entry (dict "author" $page.Params.author) -}}
-	{{- $entry = merge $entry (dict "date" $page.Params.date) -}}
-	{{- $entry = merge $entry (dict "frontPageImage" $page.Params.frontPageImage) -}}
-	{{- $entry = merge $entry (dict "thumbImage" $page.Params.thumbImage) -}}
-	{{- $entry = merge $entry (dict "longExcerpt" $page.Params.longExcerpt) -}}
-	{{- $entry = merge $entry (dict "images" $page.Params.images) -}}
-	{{- $entry = merge $entry (dict "image" $page.Params.image) -}}
-	{{- $entry = merge $entry (dict "kind" $page.Kind) -}}
-	{{- $entry = merge $entry (dict "type" $page.Type) -}}
-	{{- $entry = merge $entry (dict "LinkTitle" $page.LinkTitle) -}}
-	{{- $entry = merge $entry (dict "Permalink" $page.Permalink) -}}
-	{{- $entry = merge $entry (dict "icon" $page.Params.icon) -}}
-	{{- $entry | jsonify -}}
-	{{- end -}}
-]
+[{{ range $.Site.AllPages }}{
+    "uri": "{{ .Permalink }}",
+	"title": "{{ htmlEscape .Title}}",
+	"description": "{{ htmlEscape .Description}}",
+	"content": {{.Plain | htmlUnescape | jsonify}},
+	"image" : "{{ .Params.image}}",
+	"thumbImage" : "{{ .Params.thumbImage}}",
+	"shortExcerpt" : "{{ .Params.shortExcerpt}}",
+	"longExcerpt" : {{ if .Params.longExcerpt}} {{.Params.longExcerpt | jsonify}} {{else}} {{.Summary | jsonify}} {{end}},
+	"author" : "{{ .Params.author}}",
+	"summary" : {{ .Summary | jsonify}},
+	"date" : {{ (.Date.Format "Jan 2, 2006" ) | jsonify}},
+	"frontPageImage" :"{{.Params.frontPageImage}}",
+	"images" : "{{.Params.images}}",
+	"image" : "{{.Params.image}}",
+	"kind" : "{{.Params.Kind}}",
+	"type" : "{{.Params.Type}}",
+	"LinkTitle" : "{{.Params.LinkTitle}}",
+	"icon" : "{{.Params.icon}}"
+},
+{{end}} {} ]
