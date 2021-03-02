@@ -2,12 +2,17 @@
 
 <section class="section offset-header">
 
-	<div class="container">
+	<div class="container" style="overflow: hidden">
 
+		<div class="row">
+
+			<div class="col-lg-12 col-md-2 col-sm-2 col-xs-12"></div>
+			<div class="col-lg-12 col-md-8 col-sm-8 col-xs-12">
 
 		<div class="row" style="margin-top:20px !important;">
 			<div class="col-xs-12 content" style="display: inline;">
-				<input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 90%;" placeholder="Search blog by categories, title and description." tabindex="1" onkeydown="check_key(event)" autofocus />
+
+				<input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 85% !important; float:left" placeholder="Search" tabindex="1" onkeydown="check_key(event)" autofocus />
 				<button type="button" style="height: 38px; margin-left: 1rem" class="search-button-workflow" id="searchBtn" onclick="search_content()">
 					<i class="fa fa-search"></i>
 				</button>
@@ -44,8 +49,10 @@
 
 		</div>
 
-		<a class="btn btn-warning big-button-base donate" style="margin-top:40px !important;" role="button" onclick="show_more()">Show More</a>
+		<a class="btn btn-warning big-button-base donate" style="margin-top:40px !important; margin-bottom:40px !important;" role="button" onclick="show_more()">Show More</a>
 		<!-- <button type="button" class="search-button-workflow" id="searchBtn" onclick="show_more()"> -->
+	</div>
+	</div>
 	</div>
 </section>
 
@@ -70,7 +77,7 @@
 
 
 <template id="result-widget" hidden>
-	<div class="col-xs-12 content" style="display: inline; margin: 2rem;">
+	<div class=" col-xs-12 col-md-12 col-lg-12 col-sm-12 content" style="display: inline; margin: 2rem; padding: 0rem">
 		<article class="content post">
 			<div>
 				<a class="summary-title-link workflow-title mt-3 mb-2">
@@ -85,12 +92,12 @@
 
 
 			<div class="row" style="padding-top: 1rem">
-				<div style="float: left; margin-right:2rem; margin-top:2rem" class="col-lg-2">
+				<div style="float: left; margin-right:2rem; margin-top:2rem" class="col-lg-2 col-md-2 col-sm-2">
 
 					<img class="search-image image m-0 p-0">
 				</div>
 
-				<div style=" box-sizing: border-box; padding-left:3rem" class="col-lg-8">
+				<div style=" box-sizing: border-box; text-align: justify; text-justify: inter-word; margin:1rem; margin-right: 5rem; " class="col-lg-8 col-md-10 col-sm-10">
 
 
 
@@ -131,12 +138,9 @@
 
 
 			<div class="row" style="padding-top: 1rem">
-				<div style="float: left; margin-right:2rem; margin-top:2rem" class="col-lg-3">
 
-					<img class="search-image image m-0 p-0">
-				</div>
 
-				<div style=" box-sizing: border-box; padding-left:3rem" class="col-lg-5">
+				<div style=" text-align: justify; text-justify: inter-word; box-sizing: border-box; padding-left:3rem" class="col-lg-6">
 
 
 
@@ -152,6 +156,12 @@
 
 					</div>
 				</div>
+
+				<div style="float: left; margin-right:2rem; margin-top:2rem" class="col-lg-3">
+
+					<img class="search-image image m-0 p-0">
+				</div>
+
 			</div>
 
 
@@ -178,7 +188,7 @@
 					</div>
 
 
-					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style=" text-align: justify; text-justify: inter-word; ">
 						<summary class="summary"></summary>
 						<div style="margin-top:1rem" class="read-more-container">
 
@@ -214,7 +224,7 @@
 						</a>
 					</div>
 
-					<div class="col-lg-6">
+					<div class="col-lg-6" style=" text-align: justify; text-justify: inter-word; ">
 						<summary class="summary"></summary>
 						<div style="margin-top:1rem" class="read-more-container">
 
@@ -248,7 +258,7 @@
 						</a>
 					</div>
 
-					<div class="col-lg-6">
+					<div class="col-lg-6" style=" text-align: justify; text-justify: inter-word; ">
 						<summary class="summary"></summary>
 						<div class="read-more-container">
 							<a class="read-more-link">Read More »</a>

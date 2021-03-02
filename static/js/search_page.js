@@ -371,8 +371,10 @@ function render_workflow(content) {
 	render.querySelector(".read-more-link").href = "/workflows";
 	//element.querySelector(".result-link").href = result.uri;
 
-	render.querySelector(".image").src = content.images[0];
-	render.querySelector(".image").href = "/workflows";
+	if(content.images != null){ if(content.images.length >= 1){
+		render.querySelector(".image").src = content.images[0];
+		render.querySelector(".image").href = "/workflows";
+	}}
 
 	render.querySelector(".result-title").textContent = content.title;
 	render.querySelector(".summary").textContent = truncate(content.content, 50);
