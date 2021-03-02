@@ -347,16 +347,18 @@ function render_widget(content) {
 	let render = template.content.cloneNode(true);
 
   let json_data = null;
-	for(let cat of widget_json){
-    for(let wid of cat[1]){
-      //console.log(wid);
-      if(wid.title === content.title){
-        console.log("FOKJEA");
-				console.log(wid);
-        render.querySelector(".image").src = "/"+wid.icon;
-      }
-    }
-  }
+	if(widget_json.length >= 1){
+		for(let cat of widget_json){
+    	for(let wid of cat[1]){
+      	//console.log(wid);
+      	if(wid.title === content.title){
+        	console.log("FOKJEA");
+					console.log(wid);
+        	render.querySelector(".image").src = "/"+wid.icon;
+      	}
+    	}
+  	}
+	}
 
 	render.querySelector(".summary-title-link").href = content.uri;
 	render.querySelector(".read-more-link").href = content.uri;
