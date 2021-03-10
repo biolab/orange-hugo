@@ -362,6 +362,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/createinstance">
+                      <div class="reference internal" style="cursor: pointer;" >Create Instance</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/color">
                       <div class="reference internal" style="cursor: pointer;" >Color</div>
                       </a>
@@ -450,6 +457,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/visualize/violinplot">
+                      <div class="reference internal" style="cursor: pointer;" >Violin Plot</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/visualize/distributions">
                       <div class="reference internal" style="cursor: pointer;" >Distributions</div>
                       </a>
@@ -470,6 +484,11 @@
                   </li>
                   
                         
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/visualize/barplot">
+                      <div class="reference internal" style="cursor: pointer;" >Bar Plot</div>
+                      </a>
+                  </li>
                   
                         
                         <li style="list-style-type: none; ">
@@ -605,6 +624,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/model/randomforest">
                       <div class="reference internal" style="cursor: pointer;" >Random Forest</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/model/gradientboosting">
+                      <div class="reference internal" style="cursor: pointer;" >Gradient Boosting</div>
                       </a>
                   </li>
                   
@@ -933,11 +959,15 @@
                   </li>
                   
                         
+                  
+                        
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/spectroscopy/reshape-map">
                       <div class="reference internal" style="cursor: pointer;" >Reshape Map</div>
                       </a>
                   </li>
+                  
+                        
                   
                         
                   
@@ -1668,27 +1698,29 @@
 <p>The <strong>t-SNE</strong> widget plots the data with a t-distributed stochastic neighbor embedding method. <a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding">t-SNE</a> is a dimensionality reduction technique, similar to MDS, where points are mapped to 2-D space by their probability distribution.</p>
 <p><img src="../images/tSNE-stamped.png" alt=""></p>
 <ol>
-<li>Number of iterations for optimization and the measure of <a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">perplexity</a>. Press Start to (re-)run the optimization.</li>
-<li>Select the number of PCA components used for projection.</li>
-<li>Set the color of the displayed points (you will get colors for discrete values and grey-scale points for continuous). Set shape, size and label to differentiate between points. Set symbol size and opacity for all data points. Set jittering to randomly disperse data points.</li>
-<li>Adjust <em>plot properties</em>:
+<li><a href="https://opentsne.readthedocs.io/en/latest/parameters.html">Parameters</a> for plot optimization:
 <ul>
-<li><em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
-<li><em>Show all data on mouse hover</em> enables information bubbles if the cursor is placed on a dot.</li>
-<li><em>Show class density</em> colors the graph by class.</li>
-<li><em>Label only selected points</em> allows you to select individual data instances and label them.</li>
+<li>measure of <a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">perplexity</a>. Roughly speaking, it can be interpreted as the number of nearest neighbors to distances will be preserved from each point. Using smaller values can reveal small, local clusters, while using large values tends to reveal the broader, global relationships between data points.</li>
+<li><em>Preserve global structure</em>: this option will combine two different perplexity values (50 and 500) to try preserve both the local and global structure.</li>
+<li><em>Exaggeration</em>: this parameter increases the attractive forces between points, and can directly be used to control the compactness of clusters. Increasing exaggeration may also better highlight the global structure of the data. t-SNE with exaggeration set to 4 is roughly equal to UMAP.</li>
+<li><em>PCA components</em>: in Orange, we always run t-SNE on the principal components of the input data. This parameter controls the number of principal components to use when calculating distances between data points.</li>
+<li><em>Normalize data</em>: We can apply standardization before running PCA. Standardization normalizes each column by subtracting the column mean and dividing by the standard deviation.</li>
+<li>Press Start to (re-)run the optimization.</li>
 </ul>
 </li>
-<li>If <em>Send selected automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send Selected</em>.</li>
+<li>Set the color of the displayed points. Set shape, size and label to differentiate between points. If <em>Label only selection and subset</em> is ticked, only selected and/or highlighted points will be labelled.</li>
+<li>Set symbol size and opacity for all data points. Set jittering to randomly disperse data points.</li>
+<li><em>Show color regions</em> colors the graph by class, while <em>Show legend</em> displays a legend on the right. Click and drag the legend to move it.</li>
 <li><em>Select, zoom, pan and zoom to fit</em> are the options for exploring the graph. The manual selection of data instances works as an angular/square selection tool. Double click to move the projection. Scroll in or out for zoom.</li>
-<li>Access help, save image or produce a report.</li>
+<li>If <em>Send selected automatically</em> is ticked, changes are communicated automatically. Alternatively, press <em>Send Selected</em>.</li>
 </ol>
-<h2 id="example">Example</h2>
-<p>We will use <strong>Single Cell Datasets</strong> widget to load <em>Bone marrow mononuclear cells with AML (sample)</em> data. Then we will pass it through <strong>k-Means</strong> and select 2 clusters from Silhouette Scores. Ok, it looks like there might be two distinct clusters here.</p>
-<p>But can we find subpopulations in these cells? Let us load <em>Bone marrow mononuclear cells with AML (markers)</em> with <strong>Single Cell Datasets</strong>. Now, pass the marker genes to <strong>Data Table</strong> and select, for example, natural killer cells from the list (NKG7).</p>
-<p>Pass the markers and k-Means results to <strong>Score Cells</strong> widget and select <em>geneName</em> to match markers with genes. Finally, add <strong>t-SNE</strong> to visualize the results.</p>
-<p>In <strong>t-SNE</strong>, use <em>Scores</em> attribute to color the points and set their size. We see that killer cells are nicely clustered together and that t-SNE indeed found subpopulations.</p>
-<p><img src="../images/tSNE-Example.png" alt=""></p>
+<h2 id="examples">Examples</h2>
+<p>The first example is a simple t-SNE plot of <em>brown-selected</em> data set. Load <em>brown-selected</em> with the <a href="../data/file.md">File</a> widget. Then connect <strong>t-SNE</strong> to it. The widget will show a 2D map of yeast samples, where samples with similar gene expression profiles will be close together. Select the region, where the gene function is mixed and inspect it in a <a href="../../data/datatable/">Data Table</a>.</p>
+<p><img src="../images/tSNE-Example1.png" alt=""></p>
+<p>For the second example, use <a href="https://orangedatamining.com/widget-catalog/single-cell/single_cell_datasets/">Single Cell Datasets</a> widget from the Single Cell add-on to load <em>Bone marrow mononuclear cells with AML (sample)</em> data. Then pass it through <strong>k-Means</strong> and select 2 clusters from Silhouette Scores. Ok, it looks like there might be two distinct clusters here.</p>
+<p>But can we find subpopulations in these cells? Select a few marker genes with the <a href="https://orangedatamining.com/widget-catalog/bioinformatics/marker_genes/">Marker Genes</a> widget, for example natural killer cells (NK cells). Pass the marker genes and k-Means results to <a href="https://orangedatamining.com/widget-catalog/single-cell/score_cells/">Score Cells</a> widget. Finally, add <strong>t-SNE</strong> to visualize the results.</p>
+<p>In <strong>t-SNE</strong>, use <em>Cluster</em> attribute to color the points and <em>Score</em> attribute to set their size. We see that killer cells are nicely clustered together and that t-SNE indeed found subpopulations.</p>
+<p><img src="../images/tSNE-Example2.png" alt=""></p>
 
                 </div>
             </div>
@@ -1828,6 +1860,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 05 Mar </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-03-05-overfitting-course/">Hands-on training about overfitting</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 10 Feb </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-02-10-explaining-models/">Explaining Predictive Models</a>
@@ -1840,15 +1881,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-27-word-distribution/">Observing Word Distribution</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 11 Jan </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-11-orange-in-classroom/">Orange in Classroom</a>
                             </div>
                             </div>
                             </li>

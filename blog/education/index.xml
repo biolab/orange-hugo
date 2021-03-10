@@ -6,10 +6,20 @@
     <description>Recent content in education on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hands-on training about overfitting</title>
+      <link>/blog/2021/2021-03-05-overfitting-course/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-03-05-overfitting-course/</guid>
+      <description>PLOS Computation Biology has just published our paper on training about overfitting:
+ Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671.  Machine learning has recently propelled approaches for the analysis of data, but &amp;ldquo;for the uninitiated, the technology poses significant difficulties&amp;rdquo; (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless.</description>
+    </item>
     
     <item>
       <title>Orange in Classroom</title>

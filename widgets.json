@@ -246,11 +246,22 @@
     "category": "Data",
     "keywords": [
      "file",
-     "program"
+     "program",
+     "function"
     ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Python Script.png",
     "url": "pythonscript"
+   },
+   {
+    "title": "Create Instance",
+    "category": "Data",
+    "keywords": [
+     "simulator"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Create Instance.png",
+    "url": "createinstance"
    },
    {
     "title": "Color",
@@ -287,7 +298,10 @@
    {
     "title": "Feature Constructor",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "function",
+     "lambda"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Feature Constructor.png",
     "url": "featureconstructor"
@@ -354,6 +368,17 @@
     "url": "boxplot"
    },
    {
+    "title": "Violin Plot",
+    "category": "Visualize",
+    "keywords": [
+     "kernel",
+     "density"
+    ],
+    "background": "#FFB7B1",
+    "icon": "widget-icons/Visualize-Violin Plot.png",
+    "url": "violinplot"
+   },
+   {
     "title": "Distributions",
     "category": "Visualize",
     "keywords": [
@@ -386,7 +411,8 @@
      "chart"
     ],
     "background": "#FFB7B1",
-    "icon": "widget-icons/Visualize-Bar Plot.png"
+    "icon": "widget-icons/Visualize-Bar Plot.png",
+    "url": "barplot"
    },
    {
     "title": "Sieve Diagram",
@@ -559,6 +585,23 @@
     "url": "randomforest"
    },
    {
+    "title": "Gradient Boosting",
+    "category": "Model",
+    "keywords": [
+     "catboost",
+     "gradient",
+     "boost",
+     "tree",
+     "forest",
+     "xgb",
+     "gb",
+     "extreme"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Gradient Boosting.png",
+    "url": "gradientboosting"
+   },
+   {
     "title": "SVM",
     "category": "Model",
     "keywords": [
@@ -697,7 +740,10 @@
    {
     "title": "Lift Curve",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "lift",
+     "cumulative gain"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Lift Curve.png",
     "url": "liftcurve"
@@ -871,7 +917,11 @@
    {
     "title": "Spectra",
     "category": "Spectroscopy",
-    "keywords": [],
+    "keywords": [
+     "curves",
+     "lines",
+     "spectrum"
+    ],
     "background": "light-blue",
     "icon": "widget-icons/Spectroscopy-Spectra.png",
     "url": "spectra"
@@ -879,7 +929,12 @@
    {
     "title": "HyperSpectra",
     "category": "Spectroscopy",
-    "keywords": [],
+    "keywords": [
+     "image",
+     "spectral",
+     "chemical",
+     "imaging"
+    ],
     "background": "light-blue",
     "icon": "widget-icons/Spectroscopy-HyperSpectra.png",
     "url": "hyperspectra"
@@ -918,7 +973,11 @@
    {
     "title": "Multifile",
     "category": "Spectroscopy",
-    "keywords": [],
+    "keywords": [
+     "file",
+     "files",
+     "multiple"
+    ],
     "background": "light-blue",
     "icon": "widget-icons/Spectroscopy-Multifile.png",
     "url": "multifile"
@@ -955,12 +1014,28 @@
     "url": "interferogram-to-spectrum"
    },
    {
+    "title": "PLS",
+    "category": "Spectroscopy",
+    "keywords": [
+     "partial least squares"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-PLS.png"
+   },
+   {
     "title": "Reshape Map",
     "category": "Spectroscopy",
     "keywords": [],
     "background": "light-blue",
     "icon": "widget-icons/Spectroscopy-Reshape Map.png",
     "url": "reshape-map"
+   },
+   {
+    "title": "SNR",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-SNR.png"
    },
    {
     "title": "Align Stack",

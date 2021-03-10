@@ -362,6 +362,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/createinstance">
+                      <div class="reference internal" style="cursor: pointer;" >Create Instance</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/color">
                       <div class="reference internal" style="cursor: pointer;" >Color</div>
                       </a>
@@ -450,6 +457,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/visualize/violinplot">
+                      <div class="reference internal" style="cursor: pointer;" >Violin Plot</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/visualize/distributions">
                       <div class="reference internal" style="cursor: pointer;" >Distributions</div>
                       </a>
@@ -470,6 +484,11 @@
                   </li>
                   
                         
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/visualize/barplot">
+                      <div class="reference internal" style="cursor: pointer;" >Bar Plot</div>
+                      </a>
+                  </li>
                   
                         
                         <li style="list-style-type: none; ">
@@ -605,6 +624,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/model/randomforest">
                       <div class="reference internal" style="cursor: pointer;" >Random Forest</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/model/gradientboosting">
+                      <div class="reference internal" style="cursor: pointer;" >Gradient Boosting</div>
                       </a>
                   </li>
                   
@@ -933,11 +959,15 @@
                   </li>
                   
                         
+                  
+                        
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/spectroscopy/reshape-map">
                       <div class="reference internal" style="cursor: pointer;" >Reshape Map</div>
                       </a>
                   </li>
+                  
+                        
                   
                         
                   
@@ -1659,14 +1689,25 @@
 <ul>
 <li>Data: input dataset</li>
 </ul>
-<p>The <strong>Save Data</strong> widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as a tab-delimited or a comma-separated file.</p>
+<p>The <strong>Save Data</strong> widget considers a dataset provided in the input channel and saves it to a data file with a specified name. It can save the data as:</p>
+<ul>
+<li>a tab-delimited file (.tab)</li>
+<li>comma-separated file (.csv)</li>
+<li>pickle (.pkl), used for storing preprocessing of <a href="https://orange.biolab.si/widget-catalog/text-mining/corpus-widget/">Corpus</a> objects</li>
+<li>Excel spreadsheets (.xlsx)</li>
+<li>spectra ASCII (.dat)</li>
+<li>hyperspectral map ASCII (.xyz)</li>
+<li>compressed formats (.tab.gz, .csv.gz, .pkl.gz)</li>
+</ul>
 <p>The widget does not save the data every time it receives a new signal in the input as this would constantly (and, mostly, inadvertently) overwrite the file. Instead, the data is saved only after a new file name is set or the user pushes the <em>Save</em> button.</p>
-<p>If the file is saved to the same directory as the workflow or in the subtree of that directory, the widget remembers the relative path. Otherwise it will store an absolute path, but disable auto save for security reasons.</p>
-<p><img src="../images/Save-stamped.png" alt=""></p>
-<ol>
-<li>Save by overwriting the existing file.</li>
+<p>If the file is saved to the same directory as the workflow or in the subtree of that directory, the widget remembers the relative path. Otherwise, it will store an absolute path but disable auto save for security reasons.</p>
+<p><img src="../images/SaveData.png" alt=""></p>
+<ul>
+<li><em>Add type annotations to header</em>: Include Orange&rsquo;s three-row header in the output file.</li>
+<li><em>Autosave when receiving new data</em>: Always save new data. Be careful! This will overwrite existing data on your system.</li>
+<li><em>Save</em> by overwriting the existing file.</li>
 <li><em>Save as</em> to create a new file.</li>
-</ol>
+</ul>
 <h2 id="example">Example</h2>
 <p>In the workflow below, we used the <em>Zoo</em> dataset. We loaded the data into the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget, with which we selected a subset of data instances and pushed them to the <strong>Save Data</strong> widget to store them in a file.</p>
 <p><img src="../images/Save-Workflow.png" alt=""></p>
@@ -1809,6 +1850,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 05 Mar </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-03-05-overfitting-course/">Hands-on training about overfitting</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 10 Feb </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-02-10-explaining-models/">Explaining Predictive Models</a>
@@ -1821,15 +1871,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-27-word-distribution/">Observing Word Distribution</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 11 Jan </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-01-11-orange-in-classroom/">Orange in Classroom</a>
                             </div>
                             </div>
                             </li>

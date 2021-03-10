@@ -244,7 +244,32 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/education/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/2021-03-05-overfitting-course/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/machine-learning/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/teaching/</loc>
+    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -264,11 +289,6 @@
   
   <url>
     <loc>/blog/model-explanation/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-02-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -303,22 +323,12 @@
   </url>
   
   <url>
-    <loc>/blog/education/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/Orange/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/2021/2021-01-11-orange-in-classroom/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/teaching/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -2205,6 +2215,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/visualize/barplot/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/single-cell/batch_effect_removal/</loc>
   </url>
   
@@ -2314,6 +2328,10 @@
   
   <url>
     <loc>/widget-catalog/data/createclass/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/data/createinstance/</loc>
   </url>
   
   <url>
@@ -2526,6 +2544,10 @@
   
   <url>
     <loc>/widget-catalog/educational/google-sheets/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/model/gradientboosting/</loc>
   </url>
   
   <url>
@@ -3062,6 +3084,10 @@
   
   <url>
     <loc>/widget-catalog/visualize/venndiagram/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/visualize/violinplot/</loc>
   </url>
   
   <url>
