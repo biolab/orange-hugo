@@ -2,7 +2,7 @@
 author = "Blaž Zupan"
 date = "2021-03-05"
 draft = false
-title = "Hands-on training about overfitting"
+title = "Hands-On Training About Overfitting"
 type = "blog"
 thumbImage = "/blog_img/2021/2021-01-11-orange-in-education-small.png"
 frontPageImage = "/blog_img/2021/2021-03-05-overfitting-tree-small.png"
