@@ -142,6 +142,8 @@ function search_content() {
 
 	search_results = search(param);
 
+	// dodaj štetje @@@
+
 
 	if (search_results.length == 0) {
 		num_results.textContent = `No results found for “${param}”`;
@@ -207,7 +209,7 @@ function show_all(num_show) {
 	for (var result of search_results) {
 		console.log(showed);
 
-		if ((result.kind === "page" || true) && result.kind != "term") {
+		if ((result.kind === "page" || true) && result.kind != "term" && result.kind != "taxonomy") {
 			console.log(result.type);
 			let element = null;
 			if (result.type === "blog") {
@@ -418,7 +420,7 @@ function render_widget(content) {
 // returns HTML
 function render_other(content) {
 		let template_regular = document.getElementById("result-regular");
-	let render = template.content.cloneNode(true);
+	let render = template_regular.content.cloneNode(true);
 
 	render.querySelector(".summary-title-link").href = content.uri;
 	render.querySelector(".read-more-link").href = content.uri;
