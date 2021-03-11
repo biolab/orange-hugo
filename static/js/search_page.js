@@ -47,6 +47,8 @@ let inited_lunr = false;
 
 let widget_json = null;
 
+let actual_number = 0;
+
 
 jQuery(document).ready(function() {
 	'use strict';
@@ -54,7 +56,11 @@ jQuery(document).ready(function() {
 	$.getJSON("/widgets.json", function(json) {
 		widget_json = json;
 		console.log(json);
-	})
+
+
+	});
+
+
 });
 
 function show_more() {
@@ -84,6 +90,8 @@ function change_res(type) {
 	console.log(showing_type);
 	if (type != showing_type) {
 		document.querySelector(".nav-tabs").querySelector(".active").classList.remove("active");
+
+		show_show_more();
 
 		showing_type = type;
 		showing = 0;
@@ -141,23 +149,50 @@ function search_content() {
 	}
 
 	search_results = search(param);
+	actual_number = 0;
+	for (var result of search_results) {
 
-	// dodaj štetje @@@
+		if ((result.kind === "page" || true) && result.kind != "term" && result.kind != "taxonomy") {
+
+			let element = null;
+			if (result.type === "blog" || result.type === "workflows" || result.type === "widget-catalog" || result.type === "contact" || result.type === "citation" || result.type === "widget-catalog" || result.type === "license" || result.type === "privacy" || result.type === "faq" ) {
+				actual_number += 1;
+			}
+		}
+	}
 
 
-	if (search_results.length == 0) {
+
+	if (actual_number == 0) {
 		num_results.textContent = `No results found for “${param}”`;
 		return;
-	} else if (search_results.length == 1)
+	} else if (actual_number == 1)
 		num_results.textContent = `Found one result for “${param}”`;
 	else
-		num_results.textContent = `Found ${search_results.length} results for “${param}”`;
+		num_results.textContent = `Found ${actual_number} results for “${param}”`;
 
+	if(actual_number > 10){
+		show_show_more();
+	} else {
+
+		hide_show_more();
+	}
 
 	nav_tabs.removeAttribute("hidden");
 	showing = 0;
 	change_res("all");
 
+}
+
+
+function hide_show_more(){
+	let show_more_div = document.querySelector(".show-more-div");
+	show_more_div.hidden = true;
+}
+
+function show_show_more(){
+	let show_more_div = document.querySelector(".show-more-div");
+	show_more_div.hidden = false;
 }
 
 function hide_all_results() {
@@ -202,9 +237,6 @@ function show_all(num_show) {
 		remove_all_results();
 	}
 
-
-
-
 	console.log(search_results);
 	for (var result of search_results) {
 		console.log(showed);
@@ -234,6 +266,10 @@ function show_all(num_show) {
 				}
 			}
 		}
+	}
+
+	if (showed < num_show + 10) {
+		hide_show_more();
 	}
 }
 
@@ -269,6 +305,9 @@ function show_blog(num_show) {
 			}
 		}
 	}
+	if (showed < num_show + 10) {
+		hide_show_more();
+	}
 }
 
 function show_widget(num_show) {
@@ -301,6 +340,9 @@ function show_widget(num_show) {
 			}
 		}
 	}
+	if (showed < num_show + 10) {
+		hide_show_more();
+	}
 }
 
 function show_workflow(num_show) {
@@ -331,6 +373,9 @@ function show_workflow(num_show) {
 				return;
 			}
 		}
+	}
+	if (showed < num_show + 10) {
+		hide_show_more();
 	}
 }
 
