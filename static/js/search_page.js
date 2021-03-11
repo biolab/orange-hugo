@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
 	// read widget.json file
 	$.getJSON("/widgets.json", function(json) {
 		widget_json = json;
-		console.log(json);
+		// console.log(json);
 
 
 	});
@@ -80,14 +80,14 @@ function show_more() {
 		if (showing_type == "workflow") {
 			show_workflow(showing);
 		}
-		console.log(showing);
+		// console.log(showing);
 	}
 
 }
 
 function change_res(type) {
-	console.log(type);
-	console.log(showing_type);
+	// console.log(type);
+	// console.log(showing_type);
 	if (type != showing_type) {
 		document.querySelector(".nav-tabs").querySelector(".active").classList.remove("active");
 
@@ -142,7 +142,7 @@ function search_content() {
 		window.location.search = query;
 		return;
 	}
-	
+
 
 	search_results = null;
 	showing_type = "";
@@ -249,12 +249,12 @@ function show_all(num_show) {
 		remove_all_results();
 	}
 
-	console.log(search_results);
+	// console.log(search_results);
 	for (var result of search_results) {
-		console.log(showed);
+		// console.log(showed);
 
 		if ((result.kind === "page" || true) && result.kind != "term" && result.kind != "taxonomy") {
-			console.log(result.type);
+			// console.log(result.type);
 			let element = null;
 			if (result.type === "blog") {
 				element = render_blog(result);
@@ -265,7 +265,7 @@ function show_all(num_show) {
 				element = render_widget(result);
 			} else if (result.type === "contact" || result.type === "citation" || result.type === "widget-catalog" || result.type === "license" || result.type === "privacy" || result.type === "faq") {
 				element = render_other(result);
-				console.log(result);
+				// console.log(result);
 
 			}
 			if (element != null) {
@@ -307,7 +307,7 @@ function show_blog(num_show) {
 
 				showed += 1;
 				if (showed >= num_show && showed < num_show + 10) {
-					console.log(result.kind);
+					// console.log(result.kind);
 					result_box.appendChild(element);
 				}
 			}
@@ -342,7 +342,7 @@ function show_widget(num_show) {
 
 				showed += 1;
 				if (showed >= num_show && showed < num_show + 10) {
-					console.log(result.kind);
+					// console.log(result.kind);
 					result_box.appendChild(element);
 				}
 			}
@@ -376,7 +376,7 @@ function show_workflow(num_show) {
 
 				showed += 1;
 				if (showed >= num_show && showed < num_show + 10) {
-					console.log(result.kind);
+					// console.log(result.kind);
 					result_box.appendChild(element);
 				}
 			}
@@ -452,10 +452,10 @@ function render_widget(content) {
 	if(widget_json != null){
 		for(let cat of widget_json){
     	for(let wid of cat[1]){
-      	//console.log(wid);
+      	//// console.log(wid);
       	if(wid.title === content.title){
-        	console.log("FOKJEA");
-					console.log(wid);
+        	// console.log("FOKJEA");
+					// console.log(wid);
         	render.querySelector(".image").src = "/"+wid.icon;
       	}
     	}

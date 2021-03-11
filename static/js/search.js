@@ -12,7 +12,7 @@ function initLunr() {
 	$.getJSON("/search.json")
 		.done(function (searchindex) {
 			searchIndex = searchindex;
-			console.log(searchIndex);
+			// console.log(searchIndex);
 			// Set up lunrjs by declaring the fields we use
 			// Also provide their boost level for the ranking
 			lunrIndex = lunr(function () {
@@ -95,7 +95,7 @@ function search(query) {
 }
 
 // function search_content(){
-//     console.log($("#search-by").get(0).value);
+//     // console.log($("#search-by").get(0).value);
 //     var param = $("#search-by").get(0).value;
 //     var results  = search(param);
 //     console.log(results);
