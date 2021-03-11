@@ -132,6 +132,18 @@ function check_key(e) {
 
 
 function search_content() {
+
+	var param = document.getElementById('search-input').value;
+
+	let query = "?q=" + param;
+
+	if(window.location.search != query){
+
+		window.location.search = query;
+		return;
+	}
+	
+
 	search_results = null;
 	showing_type = "";
 	var nav_tabs = document.getElementById("nav-tabs-results");
@@ -139,7 +151,7 @@ function search_content() {
 	hide_all_results();
 	nav_tabs.hidden = true;
 
-	var param = document.getElementById('search-input').value;
+
 
 	var num_results = document.querySelector(".num_results");
 	if (!inited_lunr) {
