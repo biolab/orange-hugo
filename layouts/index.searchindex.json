@@ -11,7 +11,7 @@
 	"summary" : {{ .Summary | jsonify}},
 	"date" : {{ (.Date.Format "Jan 2, 2006" ) | jsonify}},
 	"frontPageImage" :"{{.Params.frontPageImage}}",
-	"images" : {{.Params.images | jsonify}},
+	"images" : {{.Params.images | jsonify	}},
 	"image" : "{{.Params.image}}",
 	"kind" : "{{.Kind}}",
 	"type" : "{{.Type}}",
