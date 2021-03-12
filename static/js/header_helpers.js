@@ -11,9 +11,9 @@ function header_search(){
   if(expanded_search == false){
     expanded_search = true;
 
-      donate_div.hidden = true;
+      //donate_div.hidden = true;
       header_search_div.hidden = false;
-
+      document.getElementById('search-header').focus();
 
     return;
   }
@@ -23,7 +23,7 @@ function header_search(){
 
     if(param == ""){
       expanded_search = false;
-      donate_div.hidden = false;
+      //donate_div.hidden = false;
 
 
       header_search_div.hidden = true;

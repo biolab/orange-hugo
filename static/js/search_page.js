@@ -404,7 +404,8 @@ function render_blog(content) {
 	let template_image = document.getElementById("result-blog-image");
 
 	let render = template.content.cloneNode(true);
-	if (content.thumbImage != null) {
+	console.log(content.thumbImage);
+	if (content.thumbImage != null && content.thumbImage != "") {
 		render = template_image.content.cloneNode(true);
 		render.querySelector(".image").src = content.thumbImage;
 		render.querySelector(".image").href = content.uri;
