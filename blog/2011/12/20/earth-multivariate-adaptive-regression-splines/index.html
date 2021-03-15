@@ -46,11 +46,11 @@
 
     </script>
 
-    
- 
+
+
 
     <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
     <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
     
     <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
@@ -58,6 +58,8 @@
     <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
     <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
     <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -93,6 +95,7 @@
     </script>
 
 </head>
+
     <body>
 
      <header id="top" class="header navbar-fixed-top">
@@ -115,56 +118,89 @@
                     <ul class="nav navbar-nav">
 
                         
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
                             
                         
+                      
                     
+
+                        
+                              <li class="input_search nav-item">
+                                <div class="header-search-input transform_header" hidden>
+                                  <input type="text" class="jsonly search-widget-workflow nav-item" id="search-header" style="margin-top: 8px" placeholder="Search" tabindex="1" onkeydown="check_key_header(event)" autofocus />
+                                </div>
+                              </li>
+                              <li class="">
+                                <div class="">
+
+                                <a class="btn header-search-button btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" onClick="header_search()">
+
+                                </a>
+                              </div>
+                              </li>
+                        
                     
+
+                        
                         
                             
                         <li class="">
+                          <div class="donate-button transform_header donate_div" hidden>
                             <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                          </div>
                         </li>
                             
                         
-                    
+                      
                     
                     </ul>
                 </div>
@@ -183,6 +219,11 @@
         
         <div class="entry-meta remove-padding-l-r">
           <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/blog/regression">regression</a>
+          </span>
           
         </div>
         <div class='entry-header remove-padding-l-r'>

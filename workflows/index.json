@@ -58,7 +58,16 @@
 	"tags": []
 }
     
-    , {}
+    , {
+    "uri": "/workflows/outliers/",
+	"title": "Inspecting Outliers with Silhouette",
+	"content": "Silhouette Plot shows how \u0026lsquo;well-centered\u0026rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris\u0026rsquo; class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.\n",
+	"images": ["/workflow_images/silhouette.png"],
+	"download": "260-outliers.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": []
+}
     
     , {
     "uri": "/workflows/principal-component-analysis/",
@@ -104,7 +113,16 @@
 	"tags": []
 }
     
-    , {}
+    , {
+    "uri": "/workflows/data-sampler/",
+	"title": "Train and Test Data",
+	"content": "In building predictive models it is important to have a separate train and test data sets in order to avoid overfitting and to properly score the models. Here we use Data Sampler to split the data into training and test data, use training data for building a model and, finally, test on test data. Try several other classifiers to see how the scores change.\n",
+	"images": ["/workflow_images/data-sampler.png"],
+	"download": "420-data-sampler.ows",
+	"blog" : "",
+	"video" : "",
+	"tags": []
+}
     
     , {
     "uri": "/workflows/cross-validation/",

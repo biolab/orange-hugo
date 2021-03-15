@@ -46,11 +46,11 @@
 
     </script>
 
-    
- 
+
+
 
     <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/plugins/jquery.form.js"></script> 
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
     <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
     
     <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
@@ -58,6 +58,8 @@
     <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
     <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
     <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -93,6 +95,7 @@
     </script>
 
 </head>
+
     <body>
 
      <header id="top" class="header navbar-fixed-top">
@@ -115,56 +118,89 @@
                     <ul class="nav navbar-nav">
 
                         
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
                             
                         
+                      
                     
-                    
+
+                        
                         
                             
                             <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
                             
                         
+                      
                     
+
+                        
+                              <li class="input_search nav-item">
+                                <div class="header-search-input transform_header" hidden>
+                                  <input type="text" class="jsonly search-widget-workflow nav-item" id="search-header" style="margin-top: 8px" placeholder="Search" tabindex="1" onkeydown="check_key_header(event)" autofocus />
+                                </div>
+                              </li>
+                              <li class="">
+                                <div class="">
+
+                                <a class="btn header-search-button btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" onClick="header_search()">
+
+                                </a>
+                              </div>
+                              </li>
+                        
                     
+
+                        
                         
                             
                         <li class="">
+                          <div class="donate-button transform_header donate_div" hidden>
                             <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                          </div>
                         </li>
                             
                         
-                    
+                      
                     
                     </ul>
                 </div>
@@ -183,17 +219,7 @@
                 Orange Workflows
             </h2>
         </div>
-        <div class="row" style="margin-top:20px !important;">
-            <div class="col-xs-12 content" style="display: inline;">
-                <input type="text" class="jsonly search-widget-workflow" id="search-input" style="width: 80%;"
-                    placeholder="Search blog by categories, title and description." tabindex="1"
-                    onkeydown="check_key(event)" autofocus />
-                <button type="button" class="search-button-workflow" id="searchBtn" onclick="search_content()">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </div>
-        <div class="categoriesList col-lg-12 row" id="myUL">
+        <div class="categoriesList col-lg-12 row" style="margin-top: 30px" id="myUL">
             <ul>
                 <span>Tags: </span>
                 
@@ -242,143 +268,9 @@
     </div>
 </section>
 
-
-<script type="text/javascript">
-    function check_key(e) {
-        if (e.keyCode == 13) {
-            search_content();
-        } else if (e.keyCode == 8) {
-            if (document.getElementById('search-input').value.length <= 1) {
-                $("#post_nor").show();
-                $("#search-results").hide();
-            }
-        }
-    }
-
-    function search_content() {
-
-        var param = document.getElementById('search-input').value;
-
-        if (param.trim() == "") {
-            $("#post_nor").show();
-            $("#search-results").hide();
-        } else {
-            $("#post_nor").hide();
-
-
-            var results = search_workflow(param);
-
-            $("#search-results").show();
-            var search_results = document.getElementById('search-results')
-            if (results.length < 1) {
-                search_results.innerHTML = '<div style="padding: 30px 15px;"> No workflows found.</div>';
-            } else {
-                search_results.innerHTML = "";
-                var html_el = ""
-                console.log(results)
-
-                for (var page in results) {
-                    html_el += '<div class="row">';
-                    if (page % 2 == 0) {
-                        html_el +=
-                            '<div class="content col-md-6 col-xs-12 feature-description pull-left text-workflow" >';
-                    } else {
-                        html_el +=
-                            '<div class="content col-md-6 col-xs-12 feature-description pull-right text-workflow">';
-                    }
-                    html_el += '<h2 class="workflow-title">' + results[page].title + '</h2>'
-
-
-                    html_el += '<p class="feature-text">' + results[page].content + '</p>'
-
-                    html_el += '<div class="tags"  style="padding-bottom: 10px;text-transform: capitalize;">Tags:'
-                    for (var img in results[page].tags) {
-
-                        html_el += '<a class="tag-workflow" href="/tags/' + results[page].tags[img] + '">' + results[
-                            page].tags[img] + '</a>'
-                    }
-                    html_el += '</div>'
-                    html_el += '<div class="getting-started-button">'
-
-                    if (results[page].download != "" && results[page].download != '<no value>') {
-                        html_el += '<a href="https://service.biolab.si/download/workflow?name=' + results[page].download +
-                            '&domain=orange" class="no-break-buttons" target="_blank"><div class="learn-more feature-block"><div class="feature-block fa fa-download jsonly"></div><div class="feature-block feature-link">Download</div></div></a>&nbsp;&nbsp;'
-                    }
-                    if (results[page].video != "" && results[page].video != '<no value>') {
-                        html_el += '<a class="lightbox no-break-buttons" href="' + results[page].video +
-                            '"target="_blank"><div class="feature-block fa fa-play-circle-o jsonly"></div><div class="feature-block feature-link">Watch Video</div></a>&nbsp;&nbsp;'
-                    }
-                    if (results[page].blog != "" && results[page].blog != '<no value>') {
-                        html_el += '<a class="lightbox no-break-buttons" href="https://orange.biolab.si/blog/' +
-                            results[page].blog +
-                            '"><div class="feature-block fa fa-book jsonly"></div><div class="feature-block feature-link">Blog post</div></a>&nbsp;&nbsp;'
-                    }
-
-
-                    html_el += '</div></div>'
-                    var position = "";
-
-                    if (page % 2 == 0) {
-                        html_el +=
-                            '<div class="content col-md-6 col-xs-12 panel-left" style="padding: 20px;padding-top: 0px;">';
-                    } else {
-                        html_el += '<div class="content col-md-6 col-xs-12 " style="padding: 20px;padding-top: 0px;">';
-                    }
-                    if (results[page].images.length > 1) {
-                        html_el += '<div id="myCarousel' + page +
-                            '" class="carousel slide" data-interval="false" > <div class="carousel-inner workflow-slider">'
-                        for (var img in results[page].images) {
-                            html_el += '<div class="item'
-                            if (img == 0) {
-                                html_el += 'active">'
-                            } else {
-                                html_el += '>'
-                            }
-
-                            html_el += '<img src="' + results[page].images[img] + '" class="workflow-image" ></div>'
-
-                        }
-                        html_el += '</div>'
-                        html_el += '<ol class="carousel-indicators" >'
-                        for (var img in results[page].images) {
-                            html_el += '<li data-target="#myCarousel' + page + '" data-slide-to="' + img + '" class="'
-                            if (img == 0) {
-                                html_el += 'active">'
-                            } else {
-                                html_el += '>'
-                            }
-                            html_el += '</li>'
-                        }
-                        html_el += '</ol>'
-
-                        html_el += '<a class="left carousel-control" href="#myCarousel' + page +
-                            '" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: black;"></span></a>'
-
-                        html_el += '<a class="right carousel-control" href="#myCarousel' + page +
-                            '" data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: black;"></span></a></div>'
-
-                    } else {
-                        html_el += '<img class="image' + position + '" src="' + results[page].images +
-                            '" style="padding:40px;"></div>'
-
-                    }
-
-
-                    html_el += "</div> </div>"
-                }
-                search_results.innerHTML += html_el;
-
-            }
-        }
-    }
-</script>
-<script type="text/javascript" src="/js/lunr.js"></script>
-
-
 <script type="text/javascript">
     var baseurl = "";
 </script>
-<script type="text/javascript" src="/js/search-workflow.js"></script>
 
 
 

@@ -2915,6 +2915,10 @@
   </url>
   
   <url>
+    <loc>/search/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/time-series/seasonal_adjustment/</loc>
   </url>
   
