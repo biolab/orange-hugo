@@ -19,17 +19,26 @@
 
                         {{ range .Site.Menus.main }}
                         {{ if (eq .Name "Features") }}
-                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>                            
+                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>
                         {{else}}
-                            {{ if (eq .Name "Donate") }}
-                        <li class="">
-                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
+                            {{ if (eq .Name "Discord") }}
+                            <li class="nav-item">
+                                <a href="{{.URL}}">
+                                  <img style="height:30px;" src="/images/Discord-Logo-Black.png" alt="Logo">
+                                </a>
+                            </li>
+                            {{else if (eq .Name "Github")}}
+
+                        <li class="nav-item">
+                            <a href="{{.URL}}">
+                              <img style="height:30px;" src="/images/GitHub-Mark-120px-plus.png" alt="Logo">
+                            </a>
                         </li>
                             {{else}}
                             <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>
                             {{end}}
                         {{end}}
-                    
+
                     {{end}}
                     </ul><!--//nav-->
                 </div>
