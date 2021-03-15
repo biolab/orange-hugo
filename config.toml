@@ -62,7 +62,14 @@ unsafe = true
     url = "/training/"
     weight = -80
 
+
   [[menu.main]]
-    name = "Donate"
+    name = "Discord"
     url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
-    weight = -70
+    weight = -60
+
+
+  [[menu.main]]
+    name = "Github"
+    url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
+    weight = -50
