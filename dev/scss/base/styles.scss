@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: Delta - Responsive Website Template for mobile app
  * Version: 1.0
  * Author: 3rd Wave Media
@@ -1341,6 +1341,14 @@ h2.docs-subtitle {
 	object-fit: contain;
 }
 
+
+.search-image {
+	padding-bottom: 0px !important;
+	max-height: 300px;
+	width: 100%;
+	object-fit: contain;
+}
+
 #post_nor .row {
 	margin-top: 10px !important;
 }
@@ -1782,4 +1790,3 @@ img.workflow-screenshot {
 	margin-left: auto;
 	margin-right: auto;
 }
-

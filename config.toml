@@ -19,9 +19,12 @@ unsafe = true
   [outputFormats.blog]
     mediaType = "application/json"
     baseName = "blog"
+   [outputFormats.searchindex]
+       mediaType = "application/json"
+       baseName = "search"
 
 [outputs]
-  home = [ "HTML", "workflow", "blog" ]
+  home = [ "HTML", "workflow", "blog", "searchindex" ]
   section = [ "HTML", "json" ]
 
 [taxonomies]
@@ -63,6 +66,11 @@ unsafe = true
     weight = -80
 
   [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = -70
+
+  [[menu.main]]
     name = "Donate"
     url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A76TAX87ZVR3J"
-    weight = -70
+    weight = -60
