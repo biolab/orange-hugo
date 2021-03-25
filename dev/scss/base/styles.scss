@@ -1330,7 +1330,9 @@ h2.docs-subtitle {
 }
 
 .active-tag {
-	background-color: rgba(33, 150, 243, 0.3) !important;
+	color: white !important;
+	background-color: rgba(240, 148, 0, 1) !important;
+	border-width: 0 !important;
 }
 
 .workflow-image {
@@ -1458,10 +1460,6 @@ h2.docs-subtitle {
 	border-radius: 5px;
 	margin-right: 2px;
 	white-space: pre;
-}
-
-.active-tag {
-	background-color: rgba(33, 150, 243, 0.3) !important;
 }
 
 .tags {
