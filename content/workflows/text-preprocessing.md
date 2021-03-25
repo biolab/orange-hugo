@@ -5,7 +5,7 @@ type = "workflows"
 blog =  "2017/06/19/text-preprocessing/"
 video = "https://youtu.be/V70UwJZWkZ8"
 download = "610-text-preprocessing.ows"
-workflows = ["Text Mining", "Preprocessing", "Tokenization"]
+workflows = ["text mining", "preprocessing", "tokenization"]
 weight = 610
 +++
 

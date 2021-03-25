@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "140-pivot-table.ows"
-workflows = ["Data", "Pivot Table"]
+workflows = ["data", "pivot table"]
 weight = 140
 +++
 

@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = "https://youtu.be/zO_zwKZCULo"
 download = "630-text-classification.ows"
-workflows = ["Text Mining", "Classification", "Nomogram", "Bag of Words"]
+workflows = ["text mining", "classification", "nomogram", "bag of words"]
 weight = 630
 +++
 

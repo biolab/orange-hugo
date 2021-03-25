@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "410-feature-ranking.ows"
-workflows = ["Feature Ranking", "Feature Selection"]
+workflows = ["feature ranking", "feature selection"]
 weight = 410
 +++
 

@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "420-data-sampler.ows"
-workflows = ["Classification", "Data Sampler", "Predictive models"]
+workflows = ["classification", "data sampler", "predictive models"]
 weight = 420
 +++
 
