@@ -8,7 +8,7 @@
         <div class="categoriesList col-lg-12 row" style="margin-top: 30px" id="myUL">
             <ul>
                 <span>Tags: </span>
-                {{ $tag := .Data.Term }}
+                {{ $tag := replace .Data.Term " " "-"}}
                 {{ range first 10 .Site.Taxonomies.workflows.ByCount }}
                 <li style="display: inline;"><a class="{{ if eq $tag .Name }}active-tag{{ else }}tag-workflow{{ end }}"
                         href="/workflows/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{replace .Name "-" " " }}</a></li>
