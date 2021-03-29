@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "260-outliers.ows"
-workflows = ["silhouette", "outliers", "visualization"]
+workflows = ["Silhouette", "Outliers", "Visualization"]
 weight = 260
 +++
 

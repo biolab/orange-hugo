@@ -5,7 +5,7 @@ type = "workflows"
 blog =  "2020/2020-07-27-story-arcs/"
 video = ""
 download = "650-story-arcs.ows"
-workflows = ["text mining", "timeseries", "literary analysis", "story arcs", "sentiment analysis"]
+workflows = ["Text Mining", "Timeseries", "Literary Analysis", "Story Arcs", "Sentiment Analysis"]
 weight = 650
 +++
 

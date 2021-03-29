@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "120-scatterplot-data-table.ows"
-workflows = ["scatter plot", "visualization"]
+workflows = ["Scatter Plot", "Visualization"]
 weight = 120
 +++
 

@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "110-file-and-data-table-widget.ows"
-workflows = ["data table", "data loading"]
+workflows = ["Data Table", "Data Loading"]
 weight = 120
 +++
 

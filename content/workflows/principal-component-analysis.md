@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "305-pca.ows"
-workflows = ["pca", "dimensionality reduction"]
+workflows = ["PCA", "Dimensionality Reduction"]
 weight = 305
 +++
 

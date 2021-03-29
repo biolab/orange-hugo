@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = "https://youtu.be/HDkI6G4slzQ"
 download = "640-twitter.ows"
-workflows = ["text mining", "twitter", "topic modeling"]
+workflows = ["Text Mining", "Twitter", "Topic Modeling"]
 weight = 640
 +++
 

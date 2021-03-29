@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "450-cross-validation.ows"
-workflows = ["cross validation", "predictive models", "classification"]
+workflows = ["Cross Validation", "Predictive models", "Classification"]
 weight = 450
 +++
 

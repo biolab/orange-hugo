@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "470-misclassification-scatterplot.ows"
-workflows = ["confusion matrix", "classification", "scatter plot"]
+workflows = ["Confusion Matrix", "Classification", "Scatter Plot"]
 weight = 470
 +++
 

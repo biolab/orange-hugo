@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "310-clustering.ows"
-workflows = ["hierarchical clustering", "clustering"]
+workflows = ["Hierarchical Clustering", "Clustering"]
 weight = 310
 +++
 
