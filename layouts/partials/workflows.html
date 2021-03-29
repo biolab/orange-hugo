@@ -10,7 +10,7 @@
                 <span>Tags: </span>
                 {{ $tag := replace .Data.Term " " "-"}}
                 {{ range first 10 .Site.Taxonomies.workflows.ByCount }}
-                <li style="display: inline;"><a class="{{ if eq $tag .Name }}active-tag{{ else }}tag-workflow{{ end }}"
+                <li style="display: inline; text-transform: lowercase;"><a class="{{ if eq $tag .Name }}active-tag{{ else }}tag-workflow{{ end }}"
                         href="/workflows/{{ .Name | urlize }}" style="margin-top: 20px !important;">{{replace .Name "-" " " }}</a></li>
                 {{ end }}
             </ul>
@@ -31,7 +31,7 @@
                     <div class="tags" style="padding-bottom: 10px;">
                         Tags:
                         {{range .Params.workflows}}
-                        <a class="tag-workflow" href="/workflows/{{ . | urlize }}">{{ . }}</a>
+                        <a style="text-transform: lowercase;"class="tag-workflow" href="/workflows/{{ . | urlize }}">{{ . }}</a>
                         {{end}}
                     </div>
                     <div class="getting-started-button">
