@@ -5,7 +5,7 @@ function endsWith(str, suffix) {
 }
 
 // Initialize lunrjs using our generated index file
-function initLunr() {
+async function initLunr() {
 
 
 	// First retrieve the index file
