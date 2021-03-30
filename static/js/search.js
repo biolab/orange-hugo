@@ -5,14 +5,14 @@ function endsWith(str, suffix) {
 }
 
 // Initialize lunrjs using our generated index file
-function initLunr() {
+async function initLunr() {
 
 
 	// First retrieve the index file
-	$.getJSON("/search.json")
+	await $.getJSON("/search.json")
 		.done(function (searchindex) {
 			searchIndex = searchindex;
-			// console.log(searchIndex);
+			console.log(searchIndex);
 			// Set up lunrjs by declaring the fields we use
 			// Also provide their boost level for the ranking
 			lunrIndex = lunr(function () {
@@ -43,7 +43,7 @@ function initLunr() {
 
 
 			})
-
+			return true;
 
 		})
 		// Feed lunr with each file and let lunr actually index them

@@ -1201,6 +1201,10 @@ h2.docs-subtitle {
 	font-size: 21px;
 }
 
+.result-title{
+	color: black !important;
+}
+
 .example input[type="text"] {
 	float: right;
 	height: 30px;
@@ -1591,6 +1595,12 @@ h2.docs-subtitle {
 .training-radio-button {
 	margin-right: 5px !important;
 }
+
+.definitely-center{
+	display: grid;
+	place-items: center;
+}
+
 
 /* Last 3 featured blogs on Home page */
 
