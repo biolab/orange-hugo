@@ -56,8 +56,6 @@ jQuery(document).ready(function() {
 	$.getJSON("/widgets.json", function(json) {
 		widget_json = json;
 		// console.log(json);
-
-
 	});
 
 
@@ -131,7 +129,7 @@ function check_key(e) {
 
 
 
-function search_content() {
+async function search_content() {
 
 	var param = document.getElementById('search-input').value;
 
@@ -155,9 +153,7 @@ function search_content() {
 
 	var num_results = document.querySelector(".num_results");
 	if (!inited_lunr) {
-		initLunr();
-		inited_lunr = true;
-
+		inited_lunr = await initLunr();
 	}
 
 	search_results = search(param);
