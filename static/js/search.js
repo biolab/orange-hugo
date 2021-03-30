@@ -9,7 +9,7 @@ async function initLunr() {
 
 
 	// First retrieve the index file
-	$.getJSON("/search.json")
+	await $.getJSON("/search.json")
 		.done(function (searchindex) {
 			searchIndex = searchindex;
 			console.log(searchIndex);
