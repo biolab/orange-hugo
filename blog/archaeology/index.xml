@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>archaeology on Orange</title>
+    <link>/blog/archaeology/</link>
+    <description>Recent content in archaeology on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/archaeology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Mining for Archaeologists, part I</title>
+      <link>/blog/2021/2021-04-23-archaeology-workshop/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-04-23-archaeology-workshop/</guid>
+      <description>Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
+Related: Data Mining for Anthropologists
+We took three best-documented amphora types (types with the highest number of images) from the Archaeology Data Service portal.</description>
+    </item>
+    
+  </channel>
+</rss>

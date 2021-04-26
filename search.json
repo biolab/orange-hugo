@@ -779,6 +779,32 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/amphorae/",
+	"title": "amphorae",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/archaeology/",
+	"title": "archaeology",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/",
 	"title": "Blogs",
 	"content": "",
@@ -786,9 +812,61 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Apr 16, 2021",
+	"date" : "Apr 23, 2021",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2021/2021-04-23-archaeology-workshop/",
+	"title": "Data Mining for Archaeologists, part I",
+	"content": "Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.\nRelated: Data Mining for Anthro",
+	"image" : "",
+	"thumbImage" : "/blog_img/2021/2021-04-23-archaeology-small.png",
+	"longExcerpt" :  "A workshop about different kinds of analyses archaeologists can do in Orange." ,
+	"author" : "Ajda Pretnar",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/image-analytics/",
+	"title": "image analytics",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/workshop/",
+	"title": "workshop",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 23, 2021",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -842,19 +920,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/sentiment-analysis/",
@@ -1530,19 +1595,6 @@
 	"date" : "Feb 8, 2020",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/workshop/",
-	"title": "workshop",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Feb 8, 2020",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -2791,19 +2843,6 @@
 	"date" : "May 9, 2018",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/image-analytics/",
-	"title": "image analytics",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "May 9, 2018",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
