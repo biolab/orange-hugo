@@ -81,6 +81,23 @@
     "url": "datainfo"
    },
    {
+    "title": "Aggregate Columns",
+    "category": "Data",
+    "keywords": [
+     "aggregate",
+     "sum",
+     "product",
+     "max",
+     "min",
+     "mean",
+     "median",
+     "variance"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Aggregate Columns.png",
+    "url": "aggregatecolumns"
+   },
+   {
     "title": "Data Sampler",
     "category": "Data",
     "keywords": [
@@ -274,7 +291,15 @@
    {
     "title": "Continuize",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "encode",
+     "dummy",
+     "numeric",
+     "one-hot",
+     "binary",
+     "treatment",
+     "contrast"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Continuize.png",
     "url": "continuize"
@@ -290,7 +315,12 @@
    {
     "title": "Discretize",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "bin",
+     "categorical",
+     "nominal",
+     "ordinal"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Discretize.png",
     "url": "discretize"
@@ -313,6 +343,18 @@
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Feature Statistics.png",
     "url": "featurestatistics"
+   },
+   {
+    "title": "Melt",
+    "category": "Data",
+    "keywords": [
+     "shopping list",
+     "wide",
+     "narrow"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Melt.png",
+    "url": "melt"
    },
    {
     "title": "Neighbors",
@@ -343,6 +385,14 @@
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Save Data.png",
     "url": "save"
+   },
+   {
+    "title": "Unique",
+    "category": "Data",
+    "keywords": [],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Unique.png",
+    "url": "unique"
    }
   ]
  ],

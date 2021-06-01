@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1739,6 +1760,15 @@
 <li><a href="https://en.wikipedia.org/wiki/Regularization_(mathematics)">Regularization</a> type (either <a href="https://en.wikipedia.org/wiki/Least_squares#Lasso_method">L1</a> or <a href="https://en.wikipedia.org/wiki/Tikhonov_regularization">L2</a>). Set the cost strength (default is C=1).</li>
 <li>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes will be communicated automatically.</li>
 </ol>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>Logistic Regression uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes instances with unknown target values</li>
+<li>continuizes categorical variables (with one-hot-encoding)</li>
+<li>removes empty columns</li>
+<li>imputes missing values with mean values</li>
+</ul>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="example">Example</h2>
 <p>The widget is used just as any other widget for inducing a classifier. This is an example demonstrating prediction results with logistic regression on the <em>hayes-roth</em> dataset. We first load <em>hayes-roth_learn</em> in the <a href="../data/file.md">File</a> widget and pass the data to <strong>Logistic Regression</strong>. Then we pass the trained model to <a href="../../evaluate/predictions/">Predictions</a>.</p>
 <p>Now we want to predict class value on a new dataset. We load <em>hayes-roth_test</em> in the second <strong>File</strong> widget and connect it to <strong>Predictions</strong>. We can now observe class values predicted with <strong>Logistic Regression</strong> directly in <strong>Predictions</strong>.</p>

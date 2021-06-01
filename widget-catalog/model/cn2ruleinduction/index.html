@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1770,6 +1791,14 @@
 </li>
 <li>Tick &lsquo;Apply Automatically&rsquo; to auto-communicate changes to other widgets and to immediately train the classifier if learning data is connected. Alternatively, press ‘Apply‘ after configuration.</li>
 </ol>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>CN2 Rule Induction uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes empty columns</li>
+<li>removes instances with unknown target values</li>
+<li>imputes missing values with mean values</li>
+</ul>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="examples">Examples</h2>
 <p>For the example below, we have used <em>zoo</em> dataset and passed it to <strong>CN2 Rule Induction</strong>. We can review and interpret the built model with <a href="../../visualize/cn2ruleviewer/">CN2 Rule Viewer</a> widget.</p>
 <p><img src="../images/CN2-visualize.png" alt=""></p>

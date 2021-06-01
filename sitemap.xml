@@ -2199,6 +2199,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/data/aggregatecolumns/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/single-cell/align_datasets/</loc>
   </url>
   
@@ -2707,6 +2711,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/data/melt/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/data/mergedata/</loc>
   </url>
   
@@ -3100,6 +3108,10 @@
   
   <url>
     <loc>/widget-catalog/text-mining/twitter-widget/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/data/unique/</loc>
   </url>
   
   <url>

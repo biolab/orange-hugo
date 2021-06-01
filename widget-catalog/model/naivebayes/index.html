@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1734,6 +1755,13 @@
 <p><strong>Naive Bayes</strong> learns a <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">Naive Bayesian</a> model from the data. It only works for classification tasks.</p>
 <p><img src="../images/NaiveBayes-stamped.png" alt=""></p>
 <p>This widget has two options: the name under which it will appear in other widgets and producing a report. The default name is <em>Naive Bayes</em>. When you change it, you need to press <em>Apply</em>.</p>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>Naive Bayes uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes empty columns</li>
+<li>discretizes numeric values to 4 bins with equal frequency</li>
+</ul>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="examples">Examples</h2>
 <p>Here, we present two uses of this widget. First, we compare the results of the
 <strong>Naive Bayes</strong> with another model, the <a href="../../model/randomforest/">Random Forest</a>. We connect <em>iris</em> data from <a href="../data/file.md">File</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also connect <strong>Naive Bayes</strong> and <a href="../../model/randomforest/">Random Forest</a> to <strong>Test &amp; Score</strong> and observe their prediction scores.</p>

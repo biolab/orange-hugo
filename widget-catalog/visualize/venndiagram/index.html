@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1735,9 +1756,14 @@
 <p><img src="../images/VennDiagram-stamped.png" alt=""></p>
 <ol>
 <li>Select whether to count common features or instances.</li>
-<li>Select whether to include duplicates or to output only unique rows (applicable only when matching by instances). If <em>Auto commit</em> is on, changes are automatically communicated to other widgets.</li>
+<li>Select whether to include duplicates or to output only unique rows; applicable only when matching instances by values of variables.</li>
 </ol>
-<p>Rows can be matched by their identity, e.g. rows from different data sets match if they came from the same row in a file. Instead of using identities, we can choose a string variable to match the rows by. A warning is shown if data sets have no common string variable.</p>
+<p>Rows can be matched</p>
+<ul>
+<li>by their identity, e.g. rows from different data sets match if they came from the same row in a file,</li>
+<li>by equality, if all tables contain the same variables,</li>
+<li>or by values of a string variable that appears in all tables.</li>
+</ul>
 <h2 id="examples">Examples</h2>
 <p>The easiest way to use the <strong>Venn Diagram</strong> is to select data subsets and find matching instances in the visualization. We use the <em>breast-cancer</em> dataset to select two subsets with <a href="../../data/selectrows/">Select Rows</a> widget - the first subset is that of breast cancer patients aged between 40 and 49 and the second is that of patients with a tumor size between 20 and 29. The <strong>Venn Diagram</strong> helps us find instances that correspond to both criteria, which can be found in the intersection of the two circles.</p>
 <p><img src="../images/VennDiagram-Example1.png" alt=""></p>

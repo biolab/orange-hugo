@@ -5875,6 +5875,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/data/aggregatecolumns/",
+	"title": "Aggregate Columns",
+	"content": "Aggregate Columns Compute a sum, max, min … of selected columns.\nInputs\n Data: input dataset  Outputs\n Data: extended dataset  Aggregate Columns outputs an aggregation of selected columns, for example a sum, min, max, etc.\n Selected attributes. Operator for aggregation:  sum product min max mean variance median   Set the name of the computed attribute. If Apply automatically is ticked, chan",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Aggregate Columns Compute a sum, max, min \u0026hellip; of selected columns.\nInputs\n Data: input dataset  Outputs\n Data: extended dataset  Aggregate Columns outputs an aggregation of selected columns, for example a sum, min, max, etc.\n Selected attributes. Operator for aggregation:  sum product min max mean variance median   Set the name of the computed attribute. If Apply automatically is ticked, chan" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/single-cell/align_datasets/",
 	"title": "Align Datasets",
 	"content": "Align Datasets Alignment of multiple datasets with a diagram of correlation visualization.\nInputs\n Data: single cell dataset  Outputs\n Transformed Data: aligned data Genes per n. Components   Data source indicator Number of components for canonical correlation analysis. Number of shared genes and the scoring method for alignment. Scoring can be done with Pearson, Spearman and Biweights midcorrelat",
@@ -7526,6 +7539,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/data/melt/",
+	"title": "Melt",
+	"content": "Melt Transform wide data to narrow.\nInputs\n Data: wide data table  Outputs\n Data: narrow data table  The Melt widget receives a dataset in the more common wide format and outputs a table of (row_id, variable, value) triplets.\n Select the variable used as id. The widget offers only columns without duplicated values. Alternatively, row number can be used as id. Select whether to include non-numeric ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Melt Transform wide data to narrow.\nInputs\n Data: wide data table  Outputs\n Data: narrow data table  The Melt widget receives a dataset in the more common wide format and outputs a table of (row_id, variable, value) triplets.\n Select the variable used as id. The widget offers only columns without duplicated values. Alternatively, row number can be used as id. Select whether to include non-numeric " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/data/mergedata/",
 	"title": "Merge Data",
 	"content": "Merge Data Merges two datasets, based on values of selected attributes.\nInputs\n Data: input dataset Extra Data: additional dataset  Outputs\n Data: dataset with features added from extra data  The Merge Data widget is used to horizontally merge two datasets, based on the values of selected attributes (columns). In the input, two datasets are required, data and extra data. Rows from the two data set",
@@ -8806,6 +8832,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "Twitter Fetching data from The Twitter Search API.\nInputs\n None  Outputs\n Corpus: A collection of tweets from the Twitter API.  Twitter widget enables querying tweets through Twitter API. You can query by content, author or both and accumulate results should you wish to create a larger data set. The widget only supports REST API and allows queries for up to two weeks back.\n  To begin your queries," ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/data/unique/",
+	"title": "Unique",
+	"content": "Unique Remove duplicated data instances.\nInputs\n Data: data table  Outputs\n Data: data table without duplicates  The widget removes duplicated data instances. The user can choose a subset of observed variables, so two instances are considered as duplicates although they may differ in values of other, ignored variables.\n Select the variables that are considered in comparing data instances. Data ins",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Unique Remove duplicated data instances.\nInputs\n Data: data table  Outputs\n Data: data table without duplicates  The widget removes duplicated data instances. The user can choose a subset of observed variables, so two instances are considered as duplicates although they may differ in values of other, ignored variables.\n Select the variables that are considered in comparing data instances. Data ins" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

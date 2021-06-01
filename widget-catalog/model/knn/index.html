@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1756,6 +1777,16 @@
 <li>Produce a report.</li>
 <li>When you change one or more settings, you need to click <em>Apply</em>, which will put a new learner on the output and, if the training examples are given, construct a new model and output it as well. Changes can also be applied automatically by clicking the box on the left side of the <em>Apply</em> button.</li>
 </ol>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>kNN uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes instances with unknown target values</li>
+<li>continuizes categorical variables (with one-hot-encoding)</li>
+<li>removes empty columns</li>
+<li>imputes missing values with mean values</li>
+<li>normalizes the data by centering to mean and scaling to standard deviation of 1</li>
+</ul>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="examples">Examples</h2>
 <p>The first example is a classification task on <em>iris</em> dataset. We compare the results of <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-Nearest neighbors</a> with the default model <a href="../../model/constant/">Constant</a>, which always predicts the majority class.</p>
 <p><img src="../images/Constant-classification.png" alt=""></p>

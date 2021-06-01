@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1748,6 +1769,15 @@
 <li>Produce a report.</li>
 <li>Press <em>Apply</em> to commit changes. If <em>Apply Automatically</em> is ticked, changes are committed automatically.</li>
 </ol>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>Linear Regression uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes instances with unknown target values</li>
+<li>continuizes categorical variables (with one-hot-encoding)</li>
+<li>removes empty columns</li>
+<li>imputes missing values with mean values</li>
+</ul>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="example">Example</h2>
 <p>Below, is a simple workflow with <em>housing</em> dataset. We trained <strong>Linear Regression</strong> and <a href="../model/randomforest.md">Random Forest</a> and evaluated their performance in <a href="../../evaluate/testandscore/">Test &amp; Score</a>.</p>
 <p><img src="../images/LinearRegression-regression.png" alt=""></p>

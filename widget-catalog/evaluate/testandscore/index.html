@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1777,7 +1798,7 @@
 </ul>
 </li>
 <li>Choose the score for pairwise comparison of models and the region of practical equivalence (ROPE), in which differences are considered negligible.</li>
-<li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. If negligible difference is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z">Bayesian interpretation of the t-test</a> (<a href="https://baycomp.readthedocs.io/en/latest/introduction.html">shorter introduction</a>).</li>
+<li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row has a higher score than the model corresponding to the column. What the higher score means depends on the metric: a higher score can either mean a model is better (for example, CA or AUC) or the opposite (for example, RMSE). If negligible difference is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z">Bayesian interpretation of the t-test</a> (<a href="https://baycomp.readthedocs.io/en/latest/introduction.html">shorter introduction</a>).</li>
 <li>Get help and produce a report.</li>
 </ol>
 <h2 id="example">Example</h2>

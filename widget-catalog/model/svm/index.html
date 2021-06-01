@@ -279,6 +279,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/aggregatecolumns">
+                      <div class="reference internal" style="cursor: pointer;" >Aggregate Columns</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/datasampler">
                       <div class="reference internal" style="cursor: pointer;" >Data Sampler</div>
                       </a>
@@ -447,6 +454,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/melt">
+                      <div class="reference internal" style="cursor: pointer;" >Melt</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/neighbors">
                       <div class="reference internal" style="cursor: pointer;" >Neighbors</div>
                       </a>
@@ -463,6 +477,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/data/save">
                       <div class="reference internal" style="cursor: pointer;" >Save Data</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/data/unique">
+                      <div class="reference internal" style="cursor: pointer;" >Unique</div>
                       </a>
                   </li>
                   
@@ -1765,6 +1786,16 @@
 <li>Produce a report.</li>
 <li>Click <em>Apply</em> to commit changes. If you tick the box on the left side of the <em>Apply</em> button, changes will be communicated automatically.</li>
 </ol>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>SVM uses default preprocessing when no other preprocessors are given. It executes them in the following order:</p>
+<ul>
+<li>removes instances with unknown target values</li>
+<li>continuizes categorical variables (with one-hot-encoding)</li>
+<li>removes empty columns</li>
+<li>imputes missing values with mean values</li>
+</ul>
+<p>For classification, SVM also normalizes dense and scales sparse data.</p>
+<p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
 <h2 id="examples">Examples</h2>
 <p>In the first (regression) example, we have used <em>housing</em> dataset and split the data into two data subsets (<em>Data Sample</em> and <em>Remaining Data</em>) with <a href="../../data/datasampler/">Data Sampler</a>. The sample was sent to SVM which produced a <em>Model</em>, which was then used in <a href="../evaluate/predictions.md">Predictions</a> to predict the values in <em>Remaining Data</em>. A similar schema can be used if the data is already in two separate files; in this case, two <a href="../data/file.md">File</a> widgets would be used instead of the <a href="../data/file.md">File</a> - <a href="../../data/datasampler/">Data Sampler</a> combination.</p>
 <p><img src="../images/SVM-Predictions.png" alt=""></p>
