@@ -2807,6 +2807,10 @@
   </url>
   
   <url>
+    <loc>/widget-catalog/spectroscopy/peakfit/</loc>
+  </url>
+  
+  <url>
     <loc>/widget-catalog/time-series/periodogram_w/</loc>
   </url>
   
@@ -3000,6 +3004,10 @@
   
   <url>
     <loc>/widget-catalog/networks/singlemode/</loc>
+  </url>
+  
+  <url>
+    <loc>/widget-catalog/spectroscopy/snr/</loc>
   </url>
   
   <url>

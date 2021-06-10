@@ -1021,6 +1021,14 @@
     "url": "integrate-spectra"
    },
    {
+    "title": "Peak Fit",
+    "category": "Spectroscopy",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Spectroscopy-Peak Fit.png",
+    "url": "peakfit"
+   },
+   {
     "title": "Multifile",
     "category": "Spectroscopy",
     "keywords": [
@@ -1085,7 +1093,8 @@
     "category": "Spectroscopy",
     "keywords": [],
     "background": "light-blue",
-    "icon": "widget-icons/Spectroscopy-SNR.png"
+    "icon": "widget-icons/Spectroscopy-SNR.png",
+    "url": "snr"
    },
    {
     "title": "Align Stack",

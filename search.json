@@ -7851,6 +7851,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/spectroscopy/peakfit/",
+	"title": "Peak Fit",
+	"content": "Peak Fit Fit data to a composite peak model.\nInputs\n Data: Input data set  Outputs\n Fit Parameters: Best fit values for the model parameters Fits: Total evaluated best fit Residuals: Difference between Fits and Data Data: Input data set annotated with Fit Parameters  The Peak Fit widget computes the least-squares minimization curve fit for arbitrary, user-defined composite peak models. It outputs ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Peak Fit Fit data to a composite peak model.\nInputs\n Data: Input data set  Outputs\n Fit Parameters: Best fit values for the model parameters Fits: Total evaluated best fit Residuals: Difference between Fits and Data Data: Input data set annotated with Fit Parameters  The Peak Fit widget computes the least-squares minimization curve fit for arbitrary, user-defined composite peak models. It outputs " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/time-series/periodogram_w/",
 	"title": "Periodogram",
 	"content": "Periodogram Visualize time series’ cycles, seasonality, periodicity, and most significant periods.\nInputs\n Time series: Time series as output by As Timeseries widget.  In this widget, you can visualize the most significant periods of the time series.\n Select the series to calculate the periodogram for. See the periods and their respective relative power spectral density estimates.  Periodogr",
@@ -8481,6 +8494,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "Single Mode Convert multimodal graphs to single modal.\nInputs\n Network: An instance of a bipartite network graph.  Outputs\n Network: An instance of single network graph.  Single Mode works with bipartite (or multipartite) networks, where different parts are distinguished by values of the chosen discrete variable. A typical example would be a network that connects persons with events that they atte" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/spectroscopy/snr/",
+	"title": "SNR",
+	"content": "SNR Signal-to-Noise Ratio (SNR)\nInputs\n Data: input dataset  Outputs\n Signal-to-noise ratio: signal-to-noise ratio dataset  *SNR = \\(\\frac{\\overline{Spectra_{x, y}}}{\\sigma _{x, y}}\\)*   Averages: averaged dataset  *Averages = \\(\\overline{Spectra_{x, y}}\\)*   Standard Deviation: standard deviation dataset  Standard Deviation = \\(\\sigma _{x, y}\\)    The SNR widget computes the SNR, average, or stan",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "SNR Signal-to-Noise Ratio (SNR)\nInputs\n Data: input dataset  Outputs\n Signal-to-noise ratio: signal-to-noise ratio dataset  *SNR = \\(\\frac{\\overline{Spectra_{x, y}}}{\\sigma _{x, y}}\\)*   Averages: averaged dataset  *Averages = \\(\\overline{Spectra_{x, y}}\\)*   Standard Deviation: standard deviation dataset  Standard Deviation = \\(\\sigma _{x, y}\\)    The SNR widget computes the SNR, average, or stan" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
