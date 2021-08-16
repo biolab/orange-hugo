@@ -2,6 +2,22 @@
 [
     
     {
+    "uri": "/blog/2021/2021-08-13-apply-domain/",
+	"title": "Why You Should Use Apply Domain",
+	"categories": ["domain", "PCA", "transformation", "apply domain"],
+	"description": "",
+	"content": "It can happen you\u0026rsquo;d see a widget in Orange and think: \u0026ldquo;What on Earth does this even do?\u0026rdquo; We admit, finding informative widget names is not always easy and Apply Domain had a least 5 different names so far. While it might not be clear what the widget does from its name, the actual functionality is one of the nicer ones Orange has to offer.\nSay you are transforming your data with PCA. There\u0026rsquo;s training data and test data (say you expect to get new data at some later point, so we are simulating the split here). For this example, we\u0026rsquo;ll be using Wine data from Datasets widget.\nTransforming the data with PCA is straightforward. Apply the PCA, select a number of components that cover a solid amount of variance and output the transformed data. We can observe the 2-dimensional PCA plot in Scatter Plot.\n Now, let us transform the test data with another PCA, using the same parameters. Use Concatenate to merge all the data points into a single table and plot the points in Scatter Plot. Make sure that Treat variables with the same name as the same variable is checked in Concatenate!\n  Scatter plot looks strange. The wine types are mixed up, especially in the lower part of the plot. This is because the test data and the train data were not transformed to the same PCA space.\nEnter Apply Domain. The widget uses template data to transform new data to the same domain (essentially the same data space). Connect Transformed Data to Apply Domain as Template Data. And Remaining Data from Data Sampler as Data.\nApply Domain outputs transformed data, which can be once again merged with Concatenate (keep the same settings as before). Now, observe the results in a scatter plot.\n  Well, look at that! The data is properly transformed and can be nicely discriminated by wine type in the PCA space!\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2021/2021-08-13-applydomain.png",
+	"shortExcerpt" : "Apply Domain is a mystery widget with an amazing functionality.",
+	"longExcerpt" :  "What does Apply Domain even do? Actually, it is an extremely useful widget for all your data transformation problems!" ,
+	"author" : "Ajda Pretnar",
+	"summary" : "It can happen you\u0026rsquo;d see a widget in Orange and think: \u0026ldquo;What on Earth does this even do?\u0026rdquo; We admit, finding informative widget names is not always easy and Apply Domain had a least 5 different names so far. While it might not be clear what the widget does from its name, the actual functionality is one of the nicer ones Orange has to offer.\nSay you are transforming your data with PCA.",
+	"date" : "Aug 13, 2021"
+}
+
+    
+    , {
     "uri": "/blog/2021/2021-08-05-violin-plot/",
 	"title": "Box Plot Alternative: Violin Plot",
 	"categories": ["visualization", "violin plot", "box plot"],

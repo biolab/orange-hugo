@@ -779,6 +779,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/apply-domain/",
+	"title": "apply domain",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/",
 	"title": "Blogs",
 	"content": "",
@@ -786,9 +799,74 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Aug 5, 2021",
+	"date" : "Aug 13, 2021",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/domain/",
+	"title": "domain",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/PCA/",
+	"title": "PCA",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/transformation/",
+	"title": "transformation",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2021/2021-08-13-apply-domain/",
+	"title": "Why You Should Use Apply Domain",
+	"content": "It can happen you’d see a widget in Orange and think: “What on Earth does this even do?” We admit, finding informative widget names is not always easy and Apply Domain had a least 5 different names so far. While it might not be clear what the widget does from its name, the actual functionality is one of the nicer ones Orange has to offer.\nSay you are transforming your data with P",
+	"image" : "",
+	"thumbImage" : "/blog_img/2021/2021-08-13-applydomain.png",
+	"longExcerpt" :  "What does Apply Domain even do? Actually, it is an extremely useful widget for all your data transformation problems!" ,
+	"author" : "Ajda Pretnar",
+	"date" : "Aug 13, 2021",
+	"images" : null,
+	"kind" : "page",
 	"type" : "blog"
 },
 {
@@ -816,19 +894,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 5, 2021",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/violin-plot/",
@@ -872,19 +937,6 @@
 {
     "uri": "/blog/embeddding/",
 	"title": "embeddding",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jun 17, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/PCA/",
-	"title": "PCA",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",
@@ -1496,19 +1548,6 @@
 {
     "uri": "/blog/data/",
 	"title": "data",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jun 19, 2020",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/domain/",
-	"title": "domain",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",

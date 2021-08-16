@@ -6,10 +6,20 @@
     <description>Recent content in domain on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/domain/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why You Should Use Apply Domain</title>
+      <link>/blog/2021/2021-08-13-apply-domain/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-08-13-apply-domain/</guid>
+      <description>It can happen you&amp;rsquo;d see a widget in Orange and think: &amp;ldquo;What on Earth does this even do?&amp;rdquo; We admit, finding informative widget names is not always easy and Apply Domain had a least 5 different names so far. While it might not be clear what the widget does from its name, the actual functionality is one of the nicer ones Orange has to offer.
+Say you are transforming your data with PCA.</description>
+    </item>
     
     <item>
       <title>Managing Data with Edit Domain</title>

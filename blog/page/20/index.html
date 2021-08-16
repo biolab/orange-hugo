@@ -262,6 +262,50 @@
 
                             
                             <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
+                                By: BIOLAB, Dec 8, 2011</p>
+                            <h2 class="workflow-title" style="margin-top: 10px !important">
+                                <a href="/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/"> Random forest switches to Simple tree learner by default</a>
+                            </h2>
+                            <p class="feature-text">
+                                
+                                Random forest classifiers now use Orange.classification.tree.SimpleTreeLearnerby default, which considerably shortens their construction times.
+Using a random forest classifier is easy.
+import Orange iris = Orange.data.Table('iris') forest = Orange.ensemble.forest.RandomForestLearner(iris, trees=200) for instance in iris: print forest(instance), instance.get_class()  The example above loads the iris dataset and trains a random forest classifier with 200 trees. The classifier is then used to label all training examples, printing its prediction alongside the actual class value.
+                                
+
+                            </p>
+                            <div class="tags" style="padding-bottom: 10px;">
+                                Categories:
+                                
+                                <a class="tag-workflow" href="/blog/forestlearner">forestlearner</a>
+                                
+                                <a class="tag-workflow" href="/blog/simpletreelearner">simpletreelearner</a>
+                                
+                            </div>
+                            <div class="getting-started-button">
+
+
+                                <a href="/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/" class="no-break-buttons">
+                                    <div class="learn-more feature-block">
+
+                                        <div class="feature-block feature-link">Read More</div>
+                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
+                                    </div>
+                                </a>
+                                &nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    
+            <div class="row">
+                
+                        <div class='content col-md-12 col-xs-12 feature-description'>
+
+                            
+                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
                                 By: BIOLAB, Oct 26, 2011</p>
                             <h2 class="workflow-title" style="margin-top: 10px !important">
                                 <a href="/blog/2011/10/26/gsoc-mentor-summit/"> GSoC Mentor Summit</a>
@@ -644,51 +688,6 @@ The motivation behind developing a new tree induction algorithm from scratch was
                     </div>
                     <hr />
                     
-            <div class="row">
-                
-                        <div class='content col-md-12 col-xs-12 feature-description'>
-
-                            
-                            <p class="feature-text" style="margin-bottom:0 !important;font-size: 14px !important;">
-                                By: MARKO, Aug 3, 2011</p>
-                            <h2 class="workflow-title" style="margin-top: 10px !important">
-                                <a href="/blog/2011/08/03/orange-at-ismbeccb-2011/"> Orange at ISMB/ECCB 2011</a>
-                            </h2>
-                            <p class="feature-text">
-                                
-                                We presented the Orange Bioinformatics add-on at the ISMB/ECCB conference in Vienna, a joined event covering both 19th Annual International Conference on Intelligent Systems for Molecular Biology and 10th European Conference on Computational Biology.
-We were giving out Orange stickers (with the URL) to the poster&rsquo;s visitors. There was some interest; in the end we gave out about 10 of them, mostly to biologists, who were excited to perform some of the analysis themselves.
-                                
-
-                            </p>
-                            <div class="tags" style="padding-bottom: 10px;">
-                                Categories:
-                                
-                                <a class="tag-workflow" href="/blog/bioinformatics">bioinformatics</a>
-                                
-                                <a class="tag-workflow" href="/blog/bioorange">bioorange</a>
-                                
-                                <a class="tag-workflow" href="/blog/conference">conference</a>
-                                
-                            </div>
-                            <div class="getting-started-button">
-
-
-                                <a href="/blog/2011/08/03/orange-at-ismbeccb-2011/" class="no-break-buttons">
-                                    <div class="learn-more feature-block">
-
-                                        <div class="feature-block feature-link">Read More</div>
-                                        <div class="feature-block fa fa-arrow-circle-o-right jsonly"> </div>
-                                    </div>
-                                </a>
-                                &nbsp;&nbsp;
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                    <hr />
-                    
                     
 
 
@@ -868,6 +867,15 @@ We were giving out Orange stickers (with the URL) to the poster&rsquo;s visitors
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 13 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-08-13-apply-domain/">Why You Should Use Apply Domain</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 05 Aug </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-08-05-violin-plot/">Box Plot Alternative: Violin Plot</a>
@@ -880,15 +888,6 @@ We were giving out Orange stickers (with the URL) to the poster&rsquo;s visitors
                             <div class="col-md-2"><a class="sitemap-sub"> 17 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-06-17-pca-mds-tsne/">PCA vs. MDS vs. t-SNE</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 30 May </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-05-30-archaeology-workshop2/">Data Mining for Archaeologists, part II</a>
                             </div>
                             </div>
                             </li>
