@@ -244,7 +244,32 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/box-plot/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/2021-08-05-violin-plot/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/violin-plot/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/visualization/</loc>
+    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -254,11 +279,6 @@
   
   <url>
     <loc>/blog/embeddding/</loc>
-    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-06-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -539,11 +559,6 @@
   
   <url>
     <loc>/blog/trends/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/visualization/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
   
