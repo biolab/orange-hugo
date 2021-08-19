@@ -2990,7 +2990,7 @@
 },
 {
     "uri": "/blog/2018/05/15/python-script-managing-data-on-the-fly/",
-	"title": "&amp;#39;Python Script: Managing Data on the Fly&amp;#39;",
+	"title": "Python Script: Managing Data on the Fly",
 	"content": "Python Script is this mysterious widget most people don’t know how to use, even those versed in Python. Python Script is the widget that supplements Orange functionalities with (almost) everything that Python can offer. And it’s time we unveil some of its functionalities with a simple example.\nExample: Batch Transform the Data There might be a time when you need to apply a function to ",
 	"image" : "",
 	"thumbImage" : "",
