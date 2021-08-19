@@ -2,7 +2,7 @@
 author="AJDA"
 date= '2018-05-15 09:15:58+00:00'
 draft= false
-title="'Python Script: Managing Data on the Fly'"
+title="Python Script: Managing Data on the Fly"
 type="blog"
 blog=["orange3" ,"python" ,"scripting" ]
 +++
@@ -51,6 +51,6 @@ This is it. Now we can do our standard analysis on the transformed data. Even be
 
 ![](/images/2018/05/Screen-Shot-2018-05-15-at-10.13.26.png)
 
-For your convenience I have already added the [download id="2083"], so you can download and use it instantly!
+For your convenience we have created a repository of [Orange scripts](https://github.com/biolab/orange-scripts), so you can download and use it instantly!
 
 Have a more interesting example with Python Script? We'd love to hear about it!
