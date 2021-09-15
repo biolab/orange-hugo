@@ -1761,16 +1761,22 @@
 <p><strong>Outputs</strong></p>
 <ul>
 <li>Corpus: A collection of documents from the local machine.</li>
+<li>Skipped Documents: A list of documents that couldn&rsquo;t be imported.</li>
 </ul>
-<p><strong>Import Documents</strong> widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.</p>
-<p><img src="../images/Import-Documents-stamped.png" alt=""></p>
+<p><strong>Import Documents</strong> widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf, .xml, and .conllu files. If a folder contains subfolders, they will be used as class labels.</p>
+<p><img src="../images/ImportDocuments.png" alt=""></p>
 <ol>
 <li>Folder being loaded.</li>
 <li>Load folder from a local machine.</li>
 <li>Reload the data.</li>
+<li>Options for importing .conllu files.</li>
 <li>Number of documents retrieved.</li>
 </ol>
 <p>If the widget cannot read the file for some reason, the file will be skipped. Files that were successfully retrieved will still be on the output.</p>
+<h2 id="conllu-files">Conllu files</h2>
+<p><img src="../images/ImportDocuments-Conllu.png" alt=""></p>
+<p>Since Text version 1.5.0, Orange supports reading <a href="https://universaldependencies.org/format.html">.conllu files</a>. Each file will be considered as a separate document in the corpus. If utterance IDs exist, utterances will become documents (each row in the corpus will be a single utterance).</p>
+<p>Lemmas and POS tags from <em>Conllu import options</em> will be added as tokens and the corpus will be considered preprocessed. Named entities will be added as a comma-separated string (if they exist in the file).</p>
 <h2 id="example">Example</h2>
 <p>To retrieve the data, select the folder icon on the right side of the widget. Select the folder you wish to turn into corpus. Once the loading is finished, you will see how many documents the widget retrieved. To inspect them, connect the widget to <a href="../corpusviewer/">Corpus Viewer</a>. We&rsquo;ve used a set of Kennedy&rsquo;s speeches in a plain text format.</p>
 <p><img src="../images/Import-Documents-Example1.png" alt=""></p>
@@ -1916,6 +1922,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 15 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-09-15-connlu-files/">New in Orange: Support for CONLL-U files</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 13 Aug </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-08-13-apply-domain/">Why You Should Use Apply Domain</a>
@@ -1928,15 +1943,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 05 Aug </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-08-05-violin-plot/">Box Plot Alternative: Violin Plot</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 17 Jun </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-06-17-pca-mds-tsne/">PCA vs. MDS vs. t-SNE</a>
                             </div>
                             </div>
                             </li>

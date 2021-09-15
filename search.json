@@ -779,6 +779,97 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/",
+	"title": "Blogs",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/conllu/",
+	"title": "conllu",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/corpus/",
+	"title": "corpus",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/lemma/",
+	"title": "lemma",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2021/2021-09-15-connlu-files/",
+	"title": "New in Orange: Support for CONLL-U files",
+	"content": "CONLL-U files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.\n# sent_id = ParlaMint-GB_2021-01-05-lords.seg2.2 # text = The ",
+	"image" : "",
+	"thumbImage" : "/blog_img/2021/2021-09-15-conllu.png",
+	"longExcerpt" :  "Orange can now work with CONLL-U files, including its lemmas, POS tags, and named entities." ,
+	"author" : "Ajda Pretnar",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/text-mining/",
+	"title": "text mining",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 15, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/apply-domain/",
 	"title": "apply domain",
 	"content": "",
@@ -789,19 +880,6 @@
 	"date" : "Aug 13, 2021",
 	"images" : null,
 	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/",
-	"title": "Blogs",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 13, 2021",
-	"images" : null,
-	"kind" : "section",
 	"type" : "blog"
 },
 {
@@ -816,19 +894,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 13, 2021",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/PCA/",
@@ -1078,19 +1143,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/corpus/",
-	"title": "corpus",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/2021/2021-04-16-story-arcs/",
 	"title": "Detecting Story Arcs with Orange",
 	"content": "Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.\nRelated: Text Workshops in Ljubljana\nWe will be using a corpus of Anderson’s tales, which is available i",
@@ -1145,19 +1197,6 @@
 {
     "uri": "/blog/story-arc/",
 	"title": "story arc",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/text-mining/",
-	"title": "text mining",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",
@@ -7398,10 +7437,10 @@
 {
     "uri": "/widget-catalog/text-mining/importdocuments/",
 	"title": "Import Documents",
-	"content": "Import Documents Import text documents from folders.\nInputs\n None  Outputs\n Corpus: A collection of documents from the local machine.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.\n Folder being loaded. Load folder from a local machine. Relo",
+	"content": "Import Documents Import text documents from folders.\nInputs\n None  Outputs\n Corpus: A collection of documents from the local machine. Skipped Documents: A list of documents that couldn’t be imported.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf, .xml, and .conllu files. If a folder contains subfolders, they will be ",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Import Documents Import text documents from folders.\nInputs\n None  Outputs\n Corpus: A collection of documents from the local machine.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf and .xml files. If a folder contains subfolders, they will be used as class labels.\n Folder being loaded. Load folder from a local machine. Relo" ,
+	"longExcerpt" :  "Import Documents Import text documents from folders.\nInputs\n None  Outputs\n Corpus: A collection of documents from the local machine. Skipped Documents: A list of documents that couldn\u0026rsquo;t be imported.  Import Documents widget retrieves text files from folders and creates a corpus. The widget reads .txt, .docx, .odt, .pdf, .xml, and .conllu files. If a folder contains subfolders, they will be " ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

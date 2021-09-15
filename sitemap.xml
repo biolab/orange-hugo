@@ -243,22 +243,47 @@
   </url>
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/conllu/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/corpus/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/lemma/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/2021-09-15-connlu-files/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/text-mining/</loc>
+    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/apply-domain/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/domain/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -358,11 +383,6 @@
   </url>
   
   <url>
-    <loc>/blog/corpus/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/2021/2021-04-16-story-arcs/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
   </url>
@@ -384,11 +404,6 @@
   
   <url>
     <loc>/blog/story-arc/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/text-mining/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
   </url>
   

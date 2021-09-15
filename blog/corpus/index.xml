@@ -6,10 +6,20 @@
     <description>Recent content in corpus on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/corpus/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New in Orange: Support for CONLL-U files</title>
+      <link>/blog/2021/2021-09-15-connlu-files/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-09-15-connlu-files/</guid>
+      <description>CONLL-U files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.
+# sent_id = ParlaMint-GB_2021-01-05-lords.seg2.2 # text = The Hybrid Sitting of the House will now begin. 1 The the DET DT Definite=Def|PronType=Art 2 det _ NER=O 2 Hybrid hybrid NOUN NN Number=Sing 9 nsubj _ NER=O 3 Sitting sit VERB VBG VerbForm=Ger 2 acl _ NER=O 4 of of ADP IN _ 6 case _ NER=O 5 the the DET DT Definite=Def|PronType=Art 6 det _ NER=O 6 House House PROPN NNP Number=Sing 3 obl _ NER=B-ORG 7 will will VERB MD VerbForm=Fin 9 aux _ NER=O 8 now now ADV RB _ 9 advmod _ NER=O 9 begin begin VERB VB VerbForm=Inf 0 root _ NER=O|SpaceAfter=No 10 .</description>
+    </item>
     
     <item>
       <title>Detecting Story Arcs with Orange</title>
