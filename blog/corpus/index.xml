@@ -6,10 +6,20 @@
     <description>Recent content in corpus on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/corpus/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Semantic Analysis of Documents</title>
+      <link>/blog/2021/2021-09-17-semantic-analysis/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-09-17-semantic-analysis/</guid>
+      <description>Our recent project with the Ministry of Public Administration comprises building a semantic analysis pipeline in Orange, enabling the users to quickly and efficiently explore the content of documents, compare a subset against the corpus, extract keywords, and semantically explore document maps. If this sounds too vague, don&amp;rsquo;t worry, here&amp;rsquo;s a quick demo on how to perform semantic analysis in Orange.
+First, we will use the pre-prepared corpus of proposals to the government, which you can download here.</description>
+    </item>
     
     <item>
       <title>New in Orange: Support for CONLL-U files</title>

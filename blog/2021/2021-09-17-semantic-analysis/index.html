@@ -1,0 +1,503 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Semantic Analysis of Documents</title>
+
+    
+    
+    <meta property="og:title" content="Semantic Analysis of Documents">
+    
+    
+    <meta property="og:description" content="How to use Text add-on for semantic analysis of documents.">
+    
+    
+    <meta property="og:image" content="/blog_img/2021/2021-09-17-seman.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/css/styles.min.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+
+    <body>
+
+     <header id="top" class="header navbar-fixed-top">
+        <div class="container" >
+            <h1 class="logo pull-left" >
+                <a id="header-orangelogo" href="/">
+                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+                </a>
+            </h1>
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+               <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                        
+                            
+                            <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                            
+                        
+                      
+                    
+
+                        
+                              <li class="input_search nav-item">
+                                <div class="header-search-input transform_header" hidden>
+                                  <input type="text" class="jsonly search-widget-workflow nav-item" id="search-header" style="margin-top: 8px" placeholder="Search" tabindex="1" onkeydown="check_key_header(event)" autofocus />
+                                </div>
+                              </li>
+                              <li class="">
+                                <div class="">
+
+                                <a class="btn header-search-button btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" onClick="header_search()">
+
+                                </a>
+                              </div>
+                              </li>
+                        
+                    
+
+                        
+                        
+                            
+                        <li class="">
+                          <div class="donate-button transform_header donate_div" hidden>
+                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                          </div>
+                        </li>
+                            
+                        
+                      
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/blog/semantic-analysis">semantic analysis</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/text-mining">text mining</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/corpus">corpus</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/keywords">keywords</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Semantic Analysis of Documents</h1>
+          <span class="author-blog">
+            
+            By: Ajda Pretnar,
+            
+            Sep 17, 2021
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              <p>Our recent project with the Ministry of Public Administration comprises building a <a href="https://nio.gov.si/nio/asset/semanticni+analizator+besedil?lang=en">semantic analysis pipeline in Orange</a>, enabling the users to quickly and efficiently explore the content of documents, compare a subset against the corpus, extract keywords, and semantically explore document maps. If this sounds too vague, don&rsquo;t worry, here&rsquo;s a quick demo on how to perform semantic analysis in Orange.</p>
+<p>First, we will use the pre-prepared corpus of <a href="https://predlagam.vladi.si/">proposals to the government</a>, which you can download <a href="http://file.biolab.si/text-semantics/data/predlogi-vladi-1k.tab">here</a>. These are the initiatives which the citizens of Slovenia propose to the current government for consideration. The present corpus contains 1093 such proposals.</p>
+<a href="/blog_img/2021/2021-09-17-wf1.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-wf1.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-corpus.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-corpus.png" class="window-screenshot" />
+ </a>
+
+
+<p>Each proposal contains a title, the content of the proposal, the author, the date when it was published, number of upvotes, and so on. But for a thousand proposals, it would take a long time to read all of them and see which policy areas they cover. Instead, we will use two new Orange widgets to determine the content (main keywords) of a subset of documents.</p>
+<a href="/blog_img/2021/2021-09-17-corpus-viewer.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-corpus-viewer.png" class="window-screenshot" />
+ </a>
+
+
+<p>As always, we will first preprocess the corpus to create tokens, the core units of our analysis. The preprocessing pipeline is sequential; first, we lowercase the text, then we split the text into words (this is what the regular expression <code>\w+.</code> does), transform the words into lemmas with UDPipe, and finally remove stopwords from the list (such as &ldquo;in&rdquo;, &ldquo;da&rdquo;, &ldquo;če&rdquo;). Since we are working with a Slovenian language text, we have to select the corresponding models and stopword lists.</p>
+<a href="/blog_img/2021/2021-09-17-wf2.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-wf2.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-preprocess-text.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-preprocess-text.png" class="window-screenshot" />
+ </a>
+
+
+<p>After preprocessing, we build a document-term matrix using the <strong>Bag of Words</strong> widget with the Count+IDF setting. Next, we pass the data to <strong>t-SNE</strong> to observe the document map. t-SNE takes the document-term matrix and finds a 2D projection, where similar documents lie close together.</p>
+<a href="/blog_img/2021/2021-09-17-wf3.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-wf3.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-tsne1.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-tsne1.png" class="window-screenshot" />
+ </a>
+
+
+<p>Now we will select a small subset of the document, say in the lower right corner, where we have a nice cluster of points. The question is, what are these documents talking about?</p>
+<p>We will use <strong>Extract Keywords</strong> widget to find the most significant keywords in the selection. There are several methods we can use, even the popuar <a href="https://repositorio.inesctec.pt/bitstream/123456789/7623/1/P-00N-NF5.pdf">YAKE!</a>, but we will go with a simple TF-IDF method, which takes the words with the highest TF-IDF score. Note that the vectorizer uses the default sklearn&rsquo;s <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">TfidfVectorizer</a> settings, that is the tf-idf transform with L2 norm, keeping the passed tokens as they are.</p>
+<a href="/blog_img/2021/2021-09-17-wf4.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-wf4.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-extract-keywords.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-extract-keywords.png" class="window-screenshot" />
+ </a>
+
+
+<p>It looks like the top words characterizing the selected subcorpus are &ldquo;študent&rdquo; (<em>student</em>), &ldquo;delati&rdquo; (<em>to work</em>), and &ldquo;delo&rdquo; (<em>the work</em>). Apparently, the documents talk mostly about student work. Let us explore this a bit further. It would be nice to have a certain score attached to the documents, which would correspond to how much a document talks about student work. In other words, we would like to score the documents based on how many of the selected words they contain (and in what proportion).</p>
+<p>To achieve this, we will use <strong>Score Documents</strong>. We will pass it the document-term matrix and the list of selected keywords from <strong>Extract Keywords</strong>. The widget again offers several different ways of scoring documents. A simple way to score them is to compute how often selected words appear in each document, which corresponds to the &ldquo;Word Count&rdquo; method.</p>
+<a href="/blog_img/2021/2021-09-17-wf5.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-wf5.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-score-documents.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-score-documents.png" class="window-screenshot" />
+ </a>
+
+
+<p><strong>Score Documents</strong> returns keyword scores for each document. Let us pass the scored documents to another <strong>t-SNE</strong> widget. If we set the color and the size of the points to &ldquo;Word Count&rdquo; variable, t-SNE plot will expose the documents with the highest scores. These documents talk the most about students and work. A great thing is that we can see documents with high scores that were not a part of our selection, which means the general bottom-right area contains documents relating to this topic.</p>
+<a href="/blog_img/2021/2021-09-17-tsne2.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-tsne2.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2021/2021-09-17-workflow.png" class="blog-image_"> 
+      <img src="/blog_img/2021/2021-09-17-workflow.png" class="window-screenshot" />
+ </a>
+
+
+<p>Now try selecting a different subset yourself and see what the documents are about. You can use any corpus you want, even the ones that come with Orange.</p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedatamining" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                                <li><a class="sitemap-sub" target="_blank" href="http://docs.biolab.si/3/development/">Getting Started</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 17 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-09-17-semantic-analysis/">Semantic Analysis of Documents</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 15 Sep </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-09-15-connlu-files/">New in Orange: Support for CONLL-U files</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 13 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2021/2021-08-13-apply-domain/">Why You Should Use Apply Domain</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

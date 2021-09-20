@@ -244,16 +244,41 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/conllu/</loc>
-    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/corpus/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/keywords/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/semantic-analysis/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/2021-09-17-semantic-analysis/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/text-mining/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/conllu/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -264,16 +289,6 @@
   
   <url>
     <loc>/blog/2021/2021-09-15-connlu-files/</loc>
-    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/text-mining/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url>
   
