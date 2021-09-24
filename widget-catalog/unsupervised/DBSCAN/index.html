@@ -728,6 +728,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/model/curvefit">
+                      <div class="reference internal" style="cursor: pointer;" >Curve Fit</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/model/neuralnetwork">
                       <div class="reference internal" style="cursor: pointer;" >Neural Network</div>
                       </a>
@@ -1760,37 +1767,27 @@
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>Data: dataset with cluster index as a class attribute</li>
+<li>Data: dataset with cluster label as a meta attribute</li>
 </ul>
-<p>The widget applies the
-<a href="https://en.wikipedia.org/wiki/DBSCAN">DBSCAN clustering</a> algorithm to
-the data and outputs a new dataset with cluster indices as a meta
-attribute. The widget also shows the sorted graph with distances to
-k-th nearest neighbors. With k values set to <strong>Core point neighbors</strong>
-as suggested in the
-<a href="https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf">methods article</a>.
-This gives the user the idea of an
-ideal selection for <strong>Neighborhood distance</strong> setting. As suggested by
-authors this parameter should be set to the first value in the first
-&ldquo;valley&rdquo; in the graph.</p>
-<p><img src="../images/dbscan-stamped.png" alt=""></p>
+<p>The widget applies the <a href="https://en.wikipedia.org/wiki/DBSCAN">DBSCAN clustering</a> algorithm to the data and outputs a new dataset with cluster labels as a meta attribute. The widget also shows the sorted graph with distances to k-th nearest neighbors. With k values set to <strong>Core point neighbors</strong> as suggested in the <a href="https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf">methods article</a>. This gives the user the idea of an ideal selection for <strong>Neighborhood distance</strong> setting. As suggested by the authors, this parameter should be set to the first value in the first &ldquo;valley&rdquo; in the graph.</p>
+<p><img src="../images/DBSCAN.png" alt=""></p>
 <ol>
-<li>Set <em>minimal number of core neighbors</em> for a cluster and *maximal
-neighborhood distance.</li>
-<li>Set the distance metric that is used in grouping the items.</li>
+<li><strong>Parameters</strong>:
+<ul>
+<li><em>Core point neighbors</em>: The number of neighbors for a point to be considered as a core point.</li>
+<li><em>Neighborhood distance</em>: The maximum distance between two samples for one to be considered as in the neighborhood of the other.</li>
+</ul>
+</li>
+<li>Distance metric used in grouping the items (Euclidean, Manhattan, or Cosine). If <em>Normalize features</em> is selected, the data will be standardized column-wise (centered to mean and scaled to standard deviation of 1).</li>
 <li>If <em>Apply Automatically</em> is ticked, the widget will commit changes
 automatically. Alternatively, click <em>Apply</em>.</li>
-<li>The graph shows the distance to the k-th nearest neighbor. <em>k</em> is
-set by the <strong>Core point neighbor</strong> option. With moving the black slider
-left and right you can select the right <strong>Neighbourhood distance</strong>.</li>
 </ol>
+<p>The graph shows the distance to the k-th nearest neighbor. <em>k</em> is
+set by the <strong>Core point neighbor</strong> option. With moving the black slider
+left and right you can select the right <strong>Neighborhood distance</strong>.</p>
 <h2 id="example">Example</h2>
-<p>In the following example, we connected the File widget with selected
-Iris dataset to the DBSCAN widget. In the DBSCAN widget, we set
-<strong>Core points neighbors</strong> parameter to 5. And select the
-<strong>Neighbourhood distance</strong> to the value in the first &ldquo;valley&rdquo; in the
-graph. We show clusters in the Scatter Plot widget.</p>
-<p><img src="../images/dbscan-example.png" alt=""></p>
+<p>In the following example, we connected the <a href="../data/file.md">File</a> widget with the Iris dataset to the DBSCAN widget. In the DBSCAN widget, we set <strong>Core points neighbors</strong> parameter to 5. And select the <strong>Neighborhood distance</strong> to the value in the first &ldquo;valley&rdquo; in the graph. We show clusters in the <a href="../../visualize/scatterplot/">Scatter Plot</a> widget.</p>
+<p><img src="../images/DBSCAN-Example.png" alt=""></p>
 
                 </div>
             </div>

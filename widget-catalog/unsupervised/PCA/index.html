@@ -728,6 +728,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/model/curvefit">
+                      <div class="reference internal" style="cursor: pointer;" >Curve Fit</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/model/neuralnetwork">
                       <div class="reference internal" style="cursor: pointer;" >Neural Network</div>
                       </a>
@@ -1767,13 +1774,20 @@
 <p><img src="../images/PCA-stamped.png" alt=""></p>
 <ol>
 <li>Select how many principal components you wish in your output. It is best to choose as few as possible with variance covered as high as possible. You can also set how much variance you wish to cover with your principal components.</li>
-<li>You can normalize data to adjust the values to common scale.</li>
+<li>You can normalize data to adjust the values to common scale. If checked, columns are divided by their standard deviations.</li>
 <li>When <em>Apply Automatically</em> is ticked, the widget will automatically communicate all changes. Alternatively, click <em>Apply</em>.</li>
 <li>Press <em>Save Image</em> if you want to save the created image to your computer.</li>
 <li>Produce a report.</li>
 <li>Principal components graph, where the red (lower) line is the variance covered per component and the green (upper) line is cumulative variance covered by components.</li>
 </ol>
 <p>The number of components of the transformation can be selected either in the <em>Components Selection</em> input box or by dragging the vertical cutoff line in the graph.</p>
+<h2 id="preprocessing">Preprocessing</h2>
+<p>The widget preprocesses the input data in the following order:</p>
+<ul>
+<li>continuizes categorical variables (with one-hot-encoding)</li>
+<li>imputes missing values with mean values</li>
+<li>if <em>Normalize variables</em> is checked, it divides columns by their standard deviation.</li>
+</ul>
 <h2 id="examples">Examples</h2>
 <p><strong>PCA</strong> can be used to simplify visualizations of large datasets. Below, we used the <em>Iris</em> dataset to show how we can improve the visualization of the dataset with PCA. The transformed data in the <a href="../../visualize/scatterplot/">Scatter Plot</a> show a much clearer distinction between classes than the default settings.</p>
 <p><img src="../images/PCAExample.png" alt=""></p>

@@ -728,6 +728,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/model/curvefit">
+                      <div class="reference internal" style="cursor: pointer;" >Curve Fit</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/model/neuralnetwork">
                       <div class="reference internal" style="cursor: pointer;" >Neural Network</div>
                       </a>
@@ -1760,24 +1767,36 @@
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>Data: dataset with cluster index as a class attribute</li>
+<li>Data: dataset with cluster label as a meta attribute</li>
 <li>Graph (with the Network addon): the weighted k-nearest neighbor graph</li>
 </ul>
-<p>The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges. Finally, a <a href="https://en.wikipedia.org/wiki/Louvain_Modularity">modularity optimization</a> community detection algorithm is applied to the graph to retrieve clusters of highly interconnected nodes. The widget outputs a new dataset in which the cluster index is used as a meta attribute.</p>
-<p><img src="../images/Louvain-stamped.png" alt=""></p>
+<p>The widget first converts the input data into a k-nearest neighbor graph. To preserve the notions of distance, the Jaccard index for the number of shared neighbors is used to weight the edges. Finally, a <a href="https://en.wikipedia.org/wiki/Louvain_Modularity">modularity optimization</a> community detection algorithm is applied to the graph to retrieve clusters of highly interconnected nodes. The widget outputs a new dataset in which the cluster label is used as a meta attribute.</p>
+<p><img src="../images/LouvainClustering.png" alt=""></p>
 <ol>
-<li>PCA processing is typically applied to the original data to remove noise.</li>
-<li>The distance metric is used for finding specified number of nearest neighbors.</li>
-<li>The number of nearest neighbors to use to form the KNN graph.</li>
-<li>Resolution is a parameter for the Louvain community detection algorithm that affects the size of the recovered clusters. Smaller resolutions recover smaller, and therefore a larger number of clusters, and conversely, larger values recover clusters containing more data points.</li>
+<li>Information on the number of clusters found.</li>
+<li><strong>Preprocessing</strong>:
+<ul>
+<li><em>Normalize data</em>: Center to mean and scale to standard deviation of 1.</li>
+<li><em>Apply PCA preprocessing</em>: PCA processing is typically applied to the original data to remove noise (see <a href="../PCA/">PCA</a> widget).</li>
+<li><em>PCA Components</em>: number of principal components used.</li>
+</ul>
+</li>
+<li><strong>Graph parameters</strong>:
+<ul>
+<li><em>Distance metric</em>: The distance metric is used for finding specified number of nearest neighbors (Euclidean, Manhattan, Cosine).</li>
+<li><em>k neighbors</em>: The number of nearest neighbors to use to form the KNN graph.</li>
+<li><em>Resolution</em> is a parameter for the Louvain community detection algorithm that affects the size of the recovered clusters. Smaller resolutions recover smaller clusters and therefore a larger number of them, while, conversely, larger values recover clusters containing more data points.</li>
+</ul>
+</li>
 <li>When <em>Apply Automatically</em> is ticked, the widget will automatically communicate all changes. Alternatively, click <em>Apply</em>.</li>
 </ol>
 <h2 id="example">Example</h2>
-<p><em>Louvain Clustering</em> converts the dataset into a graph, where it finds highly interconnected nodes. We can visualize the graph itself using the <strong>Network Explorer</strong> from the Network addon.</p>
-<p><img src="../images/Louvain-Example.png" alt=""></p>
+<p><em>Louvain Clustering</em> converts the dataset into a graph, where it finds highly interconnected nodes. In the example below, we used the iris data set from the <a href="../data/file.md">File</a> widget, then passed it to <strong>Louvain Clustering</strong>, which found 4 clusters. We plotted the data with <a href="../../visualize/scatterplot/">Scatter Plot</a>, where we colored the data points according to clusters labels.</p>
+<p><img src="../images/LouvainClustering-Example.png" alt=""></p>
+<p>We can visualize the graph itself using the <strong>Network Explorer</strong> from the Network addon.</p>
 <h2 id="references">References</h2>
-<p>Blondel, Vincent D., et al. &ldquo;Fast unfolding of communities in large networks.&rdquo; Journal of statistical mechanics: theory and experiment 2008.10 (2008): P10008.</p>
-<p>Lambiotte, Renaud, J-C. Delvenne, and Mauricio Barahona. &ldquo;Laplacian dynamics and multiscale modular structure in networks.&rdquo; arXiv preprint, arXiv:0812.1770 (2008).</p>
+<p>Blondel, Vincent D., et al. &ldquo;<a href="https://arxiv.org/abs/0803.0476">Fast unfolding of communities in large networks.</a>&rdquo; Journal of statistical mechanics: theory and experiment 2008.10 (2008): P10008.</p>
+<p>Lambiotte, Renaud, J-C. Delvenne, and Mauricio Barahona. &ldquo;Laplacian dynamics and multiscale modular structure in networks.&rdquo; arXiv preprint, <a href="https://arxiv.org/abs/0812.1770">arXiv:0812</a>.1770 (2008).</p>
 
                 </div>
             </div>

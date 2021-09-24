@@ -262,7 +262,6 @@
     "title": "Python Script",
     "category": "Data",
     "keywords": [
-     "file",
      "program",
      "function"
     ],
@@ -698,6 +697,16 @@
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-AdaBoost.png",
     "url": "adaboost"
+   },
+   {
+    "title": "Curve Fit",
+    "category": "Model",
+    "keywords": [
+     "function"
+    ],
+    "background": "#FAC1D9",
+    "icon": "widget-icons/Model-Curve Fit.png",
+    "url": "curvefit"
    },
    {
     "title": "Neural Network",
