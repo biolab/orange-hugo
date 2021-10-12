@@ -23,13 +23,3 @@ If you are on Debian or Ubuntu, you can install Hugo with the following one-line
     hugo server
     
 
-### Development
-
-For css edit files in /dev/scss
-
-    yarn install / npm install
-
-    gulp watch
-
-
-
