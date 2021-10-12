@@ -1,40 +1,54 @@
+function header_search() {
+  let headerSearchInput = document.querySelector(".header-search-input");
 
-let expanded_search = false;
-
-
-function header_search(){
-
-  let donate_div = document.querySelector(".donate-button");
-  let header_search_div = document.querySelector(".header-search-input");
-
-
-  if(expanded_search == false){
-    expanded_search = true;
-
-      //donate_div.hidden = true;
-      header_search_div.hidden = false;
-      document.getElementById('search-header').focus();
-
+  if (!headerSearchInput) {
     return;
   }
 
+  if (window.innerWidth <= 990) {
+    window.location = window.location.protocol
+      + "//"
+      + window.location.host
+      + "/search/";
+    return;
+  }
 
-  	var param = document.getElementById('search-header').value;
+  if(headerSearchInput.hidden){
+    document.addEventListener('keydown', hideHeaderSearchInputOnEscape)
+    headerSearchInput.hidden = false;
+    headerSearchInput.focus();
 
-    if(param == ""){
-      expanded_search = false;
-      //donate_div.hidden = false;
+    return;
+  }
+  
+  let param = headerSearchInput.value;
 
+  if(param === ''){
+    hideHeaderSearchInput();
+  } else {
+    let query = "?q=" + param;
+    let url = window.location.protocol + "//" + window.location.host + "/search/" + query;
+    window.location = url;
+  }
 
-      header_search_div.hidden = true;
-    } else {
-      let query = "?q=" + param;
-      let url = window.location.protocol + "//" + window.location.host + "/search/" + query;
-      window.location = url;
+  function hideHeaderSearchInputOnEscape(event) { 
+    if (event && event.key !== "Escape") {
+      return;
     }
 
-}
+    hideHeaderSearchInput(undefined, true);
+  }
 
+  function hideHeaderSearchInput(event, force) {
+    if (!force && headerSearchInput.value !== '') {
+      return;
+    }
+
+    headerSearchInput.hidden = true;
+    headerSearchInput.value = '';
+    document.removeEventListener('keydown', hideHeaderSearchInputOnEscape)
+  }
+}
 
 function check_key_header(e) {
 	if (e.keyCode == 13) {

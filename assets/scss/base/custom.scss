@@ -648,19 +648,6 @@ h6,
     padding-bottom: 50px;
 }*/
 
-.donate {
-	font-size: 18px;
-	color: white !important;
-	margin-left: 15px;
-	padding: 6px 12px !important;
-	margin-top: 7px !important;
-}
-
-a.donate:focus {
-	border: 2px solid #e8e8e8 !important;
-	background-color: #efefef !important;
-	color: #444444 !important;
-}
 @media (max-width: 990px) {
 	.navbar-header {
 		float: none;
@@ -671,6 +658,7 @@ a.donate:focus {
 	}
 	.navbar-toggle {
 		display: block;
+		margin-right: 0;
 	}
 	.navbar-collapse {
 		border-top: 1px solid transparent;
@@ -706,9 +694,6 @@ a.donate:focus {
 		border: 0;
 		-webkit-box-shadow: none;
 		box-shadow: none;
-	}
-	.donate {
-		float: left;
 	}
 }
 
