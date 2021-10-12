@@ -6,11 +6,7 @@
     <description>Recent content in networkx on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jul 2011 18:56:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/networkx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 29 Jul 2011 18:56:00 +0000</lastBuildDate><atom:link href="/blog/networkx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NetworkX in Orange</title>
       <link>/blog/2011/07/29/networkx-in-orange/</link>

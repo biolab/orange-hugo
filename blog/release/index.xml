@@ -6,11 +6,7 @@
     <description>Recent content in release on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/release/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/release/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Changing Status Bar</title>
       <link>/blog/2019/3/8/the-changing-status-bar/</link>

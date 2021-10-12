@@ -6,11 +6,7 @@
     <description>Recent content in examples on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 May 2018 11:37:28 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/examples/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 03 May 2018 11:37:28 +0000</lastBuildDate><atom:link href="/blog/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Mining Course at Higher School of Economics, Moscow</title>
       <link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link>
@@ -131,7 +127,7 @@ Wikipedia widget allows retrieving sources from Wikipedia API and can handle mul
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&#39;&#39; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     

@@ -5,11 +5,7 @@
     <link>/workflows/Timeseries/</link>
     <description>Recent content in Timeseries on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Timeseries/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Timeseries/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Story Arcs</title>
       <link>/workflows/story-arcs/</link>

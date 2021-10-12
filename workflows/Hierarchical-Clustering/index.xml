@@ -5,11 +5,7 @@
     <link>/workflows/Hierarchical-Clustering/</link>
     <description>Recent content in Hierarchical Clustering on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Hierarchical-Clustering/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Hierarchical-Clustering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hierarchical Clustering</title>
       <link>/workflows/hierarchical-clustering/</link>

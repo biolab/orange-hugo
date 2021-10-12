@@ -6,11 +6,7 @@
     <description>Recent content in feature engineering on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Feb 2017 13:16:37 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Feb 2017 13:16:37 +0000</lastBuildDate><atom:link href="/blog/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>For When You Want to Transpose a Data Table...</title>
       <link>/blog/2017/02/03/for-when-you-want-to-transpose-a-data-table/</link>

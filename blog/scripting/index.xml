@@ -6,11 +6,7 @@
     <description>Recent content in scripting on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 May 2018 09:15:58 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/scripting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 May 2018 09:15:58 +0000</lastBuildDate><atom:link href="/blog/scripting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Script: Managing Data on the Fly</title>
       <link>/blog/2018/05/15/python-script-managing-data-on-the-fly/</link>

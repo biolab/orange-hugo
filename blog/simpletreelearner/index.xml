@@ -6,11 +6,7 @@
     <description>Recent content in simpletreelearner on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2011 15:28:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/simpletreelearner/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 Dec 2011 15:28:00 +0000</lastBuildDate><atom:link href="/blog/simpletreelearner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random forest switches to Simple tree learner by default</title>
       <link>/blog/2011/12/08/random-forest-switches-to-simple-tree-learner-by-default/</link>

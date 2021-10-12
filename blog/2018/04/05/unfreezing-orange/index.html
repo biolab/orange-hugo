@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -286,7 +288,7 @@
               <p>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.</p>
 <p>Not all the widgets freeze, though! Some widgets, like Test &amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress. Some, like Image Embedding, which work with lots of images, even allow interruptions.</p>
 <p><img src="/images/2018/04/progressbar.png" alt=""></p>
-<p>Why does Orange freeze? Most widgets process users&rsquo; actions directly: after an event (click, pressed key, new input data) some code starts running: until it finishes, the interface can not respond to any new events. This is a reasonable approach for short tasks, such as making a selection in a Scatter Plot. But with longer tasks, such as building a Support Vector Model on big data, Orange gets unresponsive.</p>
+<p>Why does Orange freeze? Most widgets process users' actions directly: after an event (click, pressed key, new input data) some code starts running: until it finishes, the interface can not respond to any new events. This is a reasonable approach for short tasks, such as making a selection in a Scatter Plot. But with longer tasks, such as building a Support Vector Model on big data, Orange gets unresponsive.</p>
 <p>To make Orange responsive while it is processing, we need to start the task in a new thread. As programmers we have to consider the following:</p>
 <ol>
 <li>Starting the task. We have to make sure that other (older) tasks are not running.</li>

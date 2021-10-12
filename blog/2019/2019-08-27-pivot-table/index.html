@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -266,7 +268,7 @@
               <div id="blog_images_">
 
 
-              <p>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas&rsquo; aggregate, groupby and pivot_table functions.</p>
+              <p>Orange recently welcomed its new Pivot Table widget, which offers functionalities for data aggregation, grouping and, well, pivot tables. The widget is a one-stop-shop for pandas' aggregate, groupby and pivot_table functions.</p>
 <a href="/blog_img/2019/2019-08-27_workflow.png" class="blog-image_"> 
       <img src="/blog_img/2019/2019-08-27_workflow.png" />
  </a>
@@ -275,7 +277,7 @@
 <h2 id="pandasdataframeagg">pandas.DataFrame.agg</h2>
 <p>The first task is computing a simple mean for the column <em>age</em>.</p>
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.aggregate.html">In pandas</a>:</p>
-<pre><code>&gt;&gt;&gt;df['age'].agg('mean')
+<pre tabindex="0"><code>&gt;&gt;&gt;df['age'].agg('mean')
 54.43894389438944
 </code></pre><p>\</p>
 <p>In Orange:</p>
@@ -298,7 +300,7 @@
 <h2 id="pandasdataframegroupby">pandas.DataFrame.groupby</h2>
 <p>The second task is grouping the data by a discrete column. Say we want to group by gender and report the mean value for each column.</p>
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html">In pandas</a>:</p>
-<pre><code>&gt;&gt;&gt; df.groupby(['gender']).mean()
+<pre tabindex="0"><code>&gt;&gt;&gt; df.groupby(['gender']).mean()
               age    rest SBP   ...  ST by exer.  major ves. col.  diameter narrowing
 gender
 female  55.721649  133.340206   ...   0.867010    0.546392          0.257732
@@ -324,7 +326,7 @@ male    53.834951  130.912621   ...   1.120874    0.732673          0.553398
 <h2 id="pandasdataframepivot_table">pandas.DataFrame.pivot_table</h2>
 <p>The third, final task is constructing a pivot table where rows are values of <em>diameter narrowing</em>, columns are values of <em>gender</em> and the values in cells is the mean of <em>age</em> for each subgroup. In other words, we want to see the average age of females with diameter narrowing, males with diameter narrowing, females without diameter narrowing and males without diameter narrowing.</p>
 <p><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot_table.html#pandas.DataFrame.pivot_table">In pandas</a>:</p>
-<pre><code>&gt;&gt;&gt; pd.pivot_table(df, values='age', index=['diameter narrowing'], columns=['gender'], aggfunc=np.mean)
+<pre tabindex="0"><code>&gt;&gt;&gt; pd.pivot_table(df, values='age', index=['diameter narrowing'], columns=['gender'], aggfunc=np.mean)
 gender                 female       male
 diameter narrowing
 0                   54.555556  51.043478

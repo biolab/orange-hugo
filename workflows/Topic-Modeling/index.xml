@@ -5,11 +5,7 @@
     <link>/workflows/Topic-Modeling/</link>
     <description>Recent content in Topic Modeling on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Topic-Modeling/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Topic-Modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Data Analysis</title>
       <link>/workflows/twitter/</link>

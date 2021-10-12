@@ -6,11 +6,7 @@
     <description>Recent content in machine on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/machine/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/machine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Machine Anthropology?</title>
       <link>/blog/2020/2020-01-29-machine-anthropology/</link>

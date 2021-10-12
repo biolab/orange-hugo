@@ -5,11 +5,7 @@
     <link>/workflows/Predictive-models/</link>
     <description>Recent content in Predictive models on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Predictive-models/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Predictive-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Train and Test Data</title>
       <link>/workflows/data-sampler/</link>

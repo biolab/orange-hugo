@@ -6,11 +6,7 @@
     <description>Recent content in download on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/download/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate><atom:link href="/blog/download/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Add-ons Works Again</title>
       <link>/blog/2018/04/23/installing-add-ons-works-again/</link>

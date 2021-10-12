@@ -6,11 +6,7 @@
     <description>Recent content in gsoc on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2016 17:32:20 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/gsoc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 16 Aug 2016 17:32:20 +0000</lastBuildDate><atom:link href="/blog/gsoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualization of Classification Probabilities</title>
       <link>/blog/2016/08/16/polynomial-classification/</link>

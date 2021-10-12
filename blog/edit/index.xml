@@ -6,11 +6,7 @@
     <description>Recent content in edit on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/edit/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/edit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing Data with Edit Domain</title>
       <link>/blog/2020/2020-06-19-edit-domain/</link>

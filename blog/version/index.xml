@@ -6,11 +6,7 @@
     <description>Recent content in version on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Aug 2017 11:41:33 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/version/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 04 Aug 2017 11:41:33 +0000</lastBuildDate><atom:link href="/blog/version/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text Analysis: New Features</title>
       <link>/blog/2017/08/04/text-analysis-new-features/</link>

@@ -5,11 +5,7 @@
     <link>/workflows/Tokenization/</link>
     <description>Recent content in Tokenization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Tokenization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Tokenization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text Preprocessing</title>
       <link>/workflows/text-preprocessing/</link>

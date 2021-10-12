@@ -5,11 +5,7 @@
     <link>/workflows/Cross-Validation/</link>
     <description>Recent content in Cross Validation on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Cross-Validation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Cross-Validation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cross Validation</title>
       <link>/workflows/cross-validation/</link>

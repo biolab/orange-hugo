@@ -6,11 +6,7 @@
     <description>Recent content in competition on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2012 13:08:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/competition/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Apr 2012 13:08:00 +0000</lastBuildDate><atom:link href="/blog/competition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Orange team wins JRS 2012 Data Mining Competition</title>
       <link>/blog/2012/04/25/orange-team-wins-jrs-2012-data-mining-competition/</link>

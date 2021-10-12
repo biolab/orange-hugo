@@ -5,11 +5,7 @@
     <link>/workflows/Visualization/</link>
     <description>Recent content in Visualization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Visualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interactive Visualizations</title>
       <link>/workflows/scatterplot-data-table/</link>
@@ -34,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/workflows/outliers/</guid>
-      <description>Silhouette Plot shows how &amp;lsquo;well-centered&amp;rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris&amp;rsquo; class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.</description>
+      <description>Silhouette Plot shows how &amp;lsquo;well-centered&amp;rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris&#39; class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.</description>
     </item>
     
   </channel>

@@ -6,11 +6,7 @@
     <description>Recent content in archaeology on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/archaeology/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/archaeology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Mining for Archaeologists, part II</title>
       <link>/blog/2021/2021-05-30-archaeology-workshop2/</link>

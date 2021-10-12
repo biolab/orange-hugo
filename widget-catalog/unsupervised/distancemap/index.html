@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -1771,7 +1773,7 @@
 <li>Features: attributes selected from the matrix</li>
 </ul>
 <p>The <strong>Distance Map</strong> visualizes distances between objects. The visualization is the same as if we printed out a table of numbers, except that the numbers are replaced by colored spots.</p>
-<p>Distances are most often those between instances (&quot;<em>rows</em>&rdquo; in the <a href="../../unsupervised/distances/">Distances</a> widget) or attributes (&quot;<em>columns</em>&rdquo; in Distances widget). The only suitable input for <strong>Distance Map</strong> is the <a href="../../unsupervised/distances/">Distances</a> widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the <strong>Distances</strong> widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you <a href="../../data/continuize/">Continuize</a> them first.</p>
+<p>Distances are most often those between instances (&quot;<em>rows</em>&quot; in the <a href="../../unsupervised/distances/">Distances</a> widget) or attributes (&quot;<em>columns</em>&quot; in Distances widget). The only suitable input for <strong>Distance Map</strong> is the <a href="../../unsupervised/distances/">Distances</a> widget. For the output, the user can select a region of the map and the widget will output the corresponding instances or attributes. Also note that the <strong>Distances</strong> widget ignores discrete values and calculates distances only for continuous data, thus it can only display distance map for discrete data if you <a href="../../data/continuize/">Continuize</a> them first.</p>
 <p>The snapshot shows distances between columns in the <em>heart disease</em> data, where smaller distances are represented with light and larger with dark orange. The matrix is symmetric and the diagonal is a light shade of orange - no attribute is different from itself. Symmetricity is always assumed, while the diagonal may also be non-zero.</p>
 <p><img src="../images/DistanceMap-stamped.png" alt=""></p>
 <ol>

@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -392,7 +394,7 @@ As a shortcut, you can just copy <code>_3_29_20 / Total_Population__millions__20
       <img src="/blog_img/2020/2020-04-02-scatter-physicians.png" />
  </a>
 <p>The conclusion here would be that you may want to find yourself in Qatar, Cuba or Greece right now. People are often surprised to see Cuba in such contexts, though Cuba has an excellent public health system and pretty good (though perhaps not entirely unbiased) free education. Seeing this graph, it shouldn&rsquo;t come as a surprise that <a href="https://www.reuters.com/article/us-health-coronavirus-cuba/cuban-doctors-head-to-italy-to-battle-coronavirus-idUSKBN219051">Cuban doctors are heading to Italy and other countries to help fight the epidemics</a>.</p>
-<p>A seemingly related measure, Public health expenditure doesn&rsquo;t work here. It is expressed as a percentage of GDP, so it is adjusted for physicians&rsquo; salaries, but not necessarily for the prices of (imported) equipment. Furthermore, higher spending may reflect a more expensive but not necessarily a more efficient health system.</p>
+<p>A seemingly related measure, Public health expenditure doesn&rsquo;t work here. It is expressed as a percentage of GDP, so it is adjusted for physicians' salaries, but not necessarily for the prices of (imported) equipment. Furthermore, higher spending may reflect a more expensive but not necessarily a more efficient health system.</p>
 <p>Another potentially interesting factor to follow will be the age of the population. HDI tells us the number of people older than 65 years per 100 people between 15 and 64.</p>
 <a href="/blog_img/2020/2020-04-02-scatter-dependency.png" class="blog-image_"> 
       <img src="/blog_img/2020/2020-04-02-scatter-dependency.png" />
@@ -407,7 +409,7 @@ As a shortcut, you can just copy <code>_3_29_20 / Total_Population__millions__20
 <p>The start of the sequence is the same as before: we merge the two data sources and remove countries with unknown or zero population.</p>
 <p>In Select Columns, we move all variables except daily data from features to metas.</p>
 <p>In Python Script, we type the following program and run it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 <span style="color:#f92672">import</span> Orange
 
 normalized <span style="color:#f92672">=</span> in_data<span style="color:#f92672">.</span>X <span style="color:#f92672">/</span> in_data[:, <span style="color:#e6db74">&#34;Total Population (millions) 2015&#34;</span>]<span style="color:#f92672">.</span>metas
@@ -424,7 +426,7 @@ out_data <span style="color:#f92672">=</span> Orange<span style="color:#f92672">
       <img src="/blog_img/2020/2020-04-02-lineplot-3.png" />
  </a>
 <p>Would you like to see a plot with a logarithmic axis? And Line Plot doesn&rsquo;t support it? (Yet?) The beauty of using the Python script widget is that we can transform the data any way we want. Change the line that computes the normalized data to</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">normalized <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>log10(in_data<span style="color:#f92672">.</span>X <span style="color:#f92672">/</span> in_data[:, <span style="color:#e6db74">&#34;Total Population (millions) 2015&#34;</span>]<span style="color:#f92672">.</span>metas)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">normalized <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>log10(in_data<span style="color:#f92672">.</span>X <span style="color:#f92672">/</span> in_data[:, <span style="color:#e6db74">&#34;Total Population (millions) 2015&#34;</span>]<span style="color:#f92672">.</span>metas)
 </code></pre></div><p>And we have a logarithmic axis (just with wrong labels).</p>
 <h2 id="where-from-here">Where from here?</h2>
 <p>This data is related to countries. Hence it would be nice to put it on a map. It also deals with time, and core Orange is not well-equipped for it. In the two follow-up posts, we will explore the add-ons for geographical data and for time series.</p>

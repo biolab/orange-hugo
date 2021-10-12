@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -1760,14 +1762,14 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="moving-transform">Moving Transform</h1>
-<p>Apply rolling window functions to the time series. Use this widget to get a series&rsquo; mean.</p>
+<p>Apply rolling window functions to the time series. Use this widget to get a series' mean.</p>
 <p><strong>Inputs</strong></p>
 <ul>
 <li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>Time series: The input time series with the added series&rsquo; transformations.</li>
+<li>Time series: The input time series with the added series' transformations.</li>
 </ul>
 <p>In this widget, you define what aggregation functions to run over the time series and with what window sizes.</p>
 <p><img src="../images/moving-transform-stamped.png" alt=""></p>
@@ -1783,7 +1785,7 @@
 <h2 id="example">Example</h2>
 <p>To get a 5-day moving average, we can use a rolling window with <em>mean</em> aggregation.</p>
 <p><img src="../images/moving-transform-ex1.png" alt=""></p>
-<p>To integrate time series&rsquo; differences from <a href="../difference/">Difference</a> widget, use <em>Cumulative sum</em> aggregation over a window wide enough to grasp the whole series.</p>
+<p>To integrate time series' differences from <a href="../difference/">Difference</a> widget, use <em>Cumulative sum</em> aggregation over a window wide enough to grasp the whole series.</p>
 <p><img src="../images/moving-transform-ex2.png" alt=""></p>
 <h4 id="see-also">See also</h4>
 <p><a href="../seasonal_adjustment/">Seasonal Adjustment</a></p>

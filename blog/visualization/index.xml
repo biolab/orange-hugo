@@ -6,11 +6,7 @@
     <description>Recent content in visualization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/visualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Box Plot Alternative: Violin Plot</title>
       <link>/blog/2021/2021-08-05-violin-plot/</link>
@@ -19,7 +15,7 @@
       <guid>/blog/2021/2021-08-05-violin-plot/</guid>
       <description>There&amp;rsquo;s nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
 Related: PCA vs. MDS vs. t-SNE
-Most of you will be familiar with a good ol&amp;rsquo; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description>
+Most of you will be familiar with a good ol&#39; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description>
     </item>
     
     <item>
@@ -169,7 +165,7 @@ Manifold Learning widget offers five embedding techniques based on scikit-learn 
       <pubDate>Fri, 29 Jul 2016 11:52:54 +0000</pubDate>
       
       <guid>/blog/2016/07/29/pythagorean-trees-and-forests/</guid>
-      <description>Classification Trees are great, but how about when they overgrow even your 27&amp;rsquo;&amp;rsquo; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
+      <description>Classification Trees are great, but how about when they overgrow even your 27&#39;&#39; screen? Can we make the tree fit snugly onto the screen and still tell the whole story? Well, yes we can.
 Pythagorean Tree widget will show you the same information as Classification Tree, but way more concisely. Pythagorean Trees represent nodes with squares whose size is proportionate to the number of covered training instances. Once the data is split into two subsets, the corresponding new squares form a right triangle on top of the parent square.</description>
     </item>
     
@@ -318,7 +314,7 @@ Ideally, that is, in the case of linear seperability, support vector machines (S
       
       <guid>/blog/2014/04/29/viewing-images/</guid>
       <description>I am lately having fun with Image Viewer. The widget has been recently updated and can display images stored locally or on the internet. But wait, what images? How on earth can Orange now display images if it can handle mere tabular or basket-based data?
-Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;quot;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
+Here&amp;rsquo;s an example. I have considered a subset of animals from the [download id=&amp;ldquo;864&amp;rdquo;] data set (comes with Orange installation), and for demonstration purposes selected only a handful of attributes.</description>
     </item>
     
     <item>

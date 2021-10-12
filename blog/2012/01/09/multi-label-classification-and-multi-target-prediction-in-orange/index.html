@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -267,7 +269,7 @@
 <pre><code>&gt;&gt;&gt; zoo = Orange.data.Table('zoo')            # single-target
 &gt;&gt;&gt; emotions = Orange.data.Table('emotions')  # multi-label
 </code></pre>
-<p>The difference is that now zoo&rsquo;s domain has a non-empty <strong>class_var</strong> field, while a list of <strong>emotions</strong>&rsquo; labels can be obtained through it&rsquo;s domain&rsquo;s <strong>class_vars</strong>:</p>
+<p>The difference is that now zoo&rsquo;s domain has a non-empty <strong>class_var</strong> field, while a list of <strong>emotions</strong>' labels can be obtained through it&rsquo;s domain&rsquo;s <strong>class_vars</strong>:</p>
 <pre><code>&gt;&gt;&gt; zoo.domain.class_var
 EnumVariable 'type'
 &gt;&gt;&gt; emotions.domain.class_vars

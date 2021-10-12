@@ -6,11 +6,7 @@
     <description>Recent content in widget on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Aug 2018 16:02:36 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/widget/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 27 Aug 2018 16:02:36 +0000</lastBuildDate><atom:link href="/blog/widget/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Explaining Kickstarter Success</title>
       <link>/blog/2018/08/27/explaining-kickstarter-success/</link>

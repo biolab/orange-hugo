@@ -6,11 +6,7 @@
     <description>Recent content in association rules on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Apr 2016 07:46:33 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/association-rules/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 Apr 2016 07:46:33 +0000</lastBuildDate><atom:link href="/blog/association-rules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Association Rules in Orange</title>
       <link>/blog/2016/04/25/association-rules-in-orange/</link>

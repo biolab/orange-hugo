@@ -6,11 +6,7 @@
     <description>Recent content in workshop on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PCA vs. MDS vs. t-SNE</title>
       <link>/blog/2021/2021-06-17-pca-mds-tsne/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in line plot on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/line-plot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/line-plot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Mining COVID-19 Epidemics: Part 1</title>
       <link>/blog/2020/2020-04-02-covid-19-basic/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in university on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/university/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/university/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Orange in Classroom</title>
       <link>/blog/2021/2021-01-11-orange-in-classroom/</link>

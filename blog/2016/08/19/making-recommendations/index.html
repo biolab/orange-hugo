@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -333,7 +335,7 @@
 <p><img src="/images/2016/08/all-rank-dis.png" alt=""></p>
 <p>Once we&rsquo;ve output the low-rank matrices, we can play around the vectors in those matrices to discover hidden relations or understand the known ones. For instance, here we plot vector 1 and 2 from the <em>item-feature matrix</em> by simply connecting Data Table with selected instances to the widget <a href="/widget-catalog/visualize/scatterplot/">Scatter Plot</a>.</p>
 <p><img src="/images/2016/08/Visualizing-vectors.png" alt=""></p>
-<p>Using similar approaches we can discover pretty interesting things like similarity between movies or users, how movie genres relate with each other, changes in users&rsquo; behavior, when the popularity of a movie has been raised due to a commercial campaign,&hellip; and many others.</p>
+<p>Using similar approaches we can discover pretty interesting things like similarity between movies or users, how movie genres relate with each other, changes in users' behavior, when the popularity of a movie has been raised due to a commercial campaign,&hellip; and many others.</p>
 <p>Finally, a simple pipeline to do all of the above can be something like this:</p>
 <p><img src="/images/2016/08/workflow-recommendation.png" alt=""></p>
 <p>On the left side we connected several models to <a href="/widget-catalog/evaluate/testandscore/">Test&amp;Score</a> in order to cross-validate them. Later, we trained a <a href="http://orange3-recommendation.readthedocs.io/en/latest/widgets/svdplusplus.html">SVD++</a> model, made some predictions, got the low-rank matrices learnt by the model and plotted some vectors of the <em>Item-feature matrix.</em></p>

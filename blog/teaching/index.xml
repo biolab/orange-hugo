@@ -6,11 +6,7 @@
     <description>Recent content in teaching on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/teaching/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hands-On Training About Overfitting</title>
       <link>/blog/2021/2021-03-05-overfitting-course/</link>

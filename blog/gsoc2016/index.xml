@@ -6,11 +6,7 @@
     <description>Recent content in gsoc2016 on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Aug 2016 11:31:04 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/gsoc2016/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 25 Aug 2016 11:31:04 +0000</lastBuildDate><atom:link href="/blog/gsoc2016/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Gradient Descent</title>
       <link>/blog/2016/08/25/visualizing-gradient-descent/</link>

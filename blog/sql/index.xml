@@ -6,11 +6,7 @@
     <description>Recent content in sql on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Feb 2018 13:20:06 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/sql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 16 Feb 2018 13:20:06 +0000</lastBuildDate><atom:link href="/blog/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to enable SQL widget in Orange</title>
       <link>/blog/2018/02/16/how-to-enable-sql-widget-in-orange/</link>

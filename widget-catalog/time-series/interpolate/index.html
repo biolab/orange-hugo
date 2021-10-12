@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/build/css/styles.min.css">
+    
+    
+    <link rel="stylesheet" href="/scss/main.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
@@ -1782,14 +1784,14 @@ reasonable default).</p>
 <li><strong>Linear</strong> interpolation replaces missing values with linearly-spaced values between the two nearest defined data points.</li>
 <li><strong>Spline</strong> interpolation fits a cubic polynomial to the points around the missing values. This is a painfully slow method that usually gives best results.</li>
 <li><strong>Nearest</strong> interpolation replaces missing values with the previous defined value.</li>
-<li><strong>Mean</strong> interpolation replaces missing values with the series&rsquo; mean.</li>
+<li><strong>Mean</strong> interpolation replaces missing values with the series' mean.</li>
 </ul>
 </li>
 <li>
 <p><strong>Multi-variate interpolation</strong> interpolates the whole series table as a two-dimensional plane instead of as separate single-dimensional series.</p>
 </li>
 </ol>
-<p>Missing values on the series&rsquo; end points (head and tail) are always interpolated using <em>nearest</em> method. Unless the interpolation method is set to <em>nearest</em>, discrete time series (i.e. sequences) are always imputed with the series&rsquo; <em>mode</em> (most frequent value).</p>
+<p>Missing values on the series' end points (head and tail) are always interpolated using <em>nearest</em> method. Unless the interpolation method is set to <em>nearest</em>, discrete time series (i.e. sequences) are always imputed with the series' <em>mode</em> (most frequent value).</p>
 <h2 id="example">Example</h2>
 <p>Pass a time series with missing values in, get interpolated time series out.</p>
 <p><img src="../images/interpolate-ex1.png" alt=""></p>

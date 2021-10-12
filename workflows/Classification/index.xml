@@ -5,11 +5,7 @@
     <link>/workflows/Classification/</link>
     <description>Recent content in Classification on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/workflows/Classification/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/workflows/Classification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classification Tree</title>
       <link>/workflows/tree-scatterplot/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in interactive visualization on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/blog/interactive-visualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="/blog/interactive-visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scatter Plots: the Tour</title>
       <link>/blog/2018/12/21/scatter-plots-the-tour/</link>
