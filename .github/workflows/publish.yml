@@ -29,6 +29,12 @@ jobs:
           pip install orange-canvas-core pyqt5==5.12
           bash scripts/build-widget-catalog.sh
 
+      - name: Run gulp
+        run: |
+          sudo apt-get install npm --no-install-recommends
+          npm install
+          node node_modules/gulp/bin/gulp.js build
+
       - name: Build hugo page
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.74.1/hugo_0.74.1_Linux-64bit.deb
