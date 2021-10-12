@@ -130,17 +130,13 @@ function check_key(e) {
 
 
 async function search_content() {
+	let param = document.getElementById('search-input').value;
+	let query = "?q=" + encodeURIComponent(param);
 
-	var param = document.getElementById('search-input').value;
-
-	let query = "?q=" + param;
-
-	if(window.location.search != query){
-
+	if (window.location.search !== query){
 		window.location.search = query;
 		return;
 	}
-
 
 	search_results = null;
 	showing_type = "";
@@ -148,8 +144,6 @@ async function search_content() {
 	remove_all_results();
 	hide_all_results();
 	nav_tabs.hidden = true;
-
-
 
 	var num_results = document.querySelector(".num_results");
 	if (!inited_lunr) {
@@ -170,7 +164,6 @@ async function search_content() {
 	}
 
 
-
 	if (actual_number == 0) {
 		num_results.textContent = `No results found for “${param}”`;
 		return;
@@ -189,7 +182,6 @@ async function search_content() {
 	nav_tabs.removeAttribute("hidden");
 	showing = 0;
 	change_res("all");
-
 }
 
 
