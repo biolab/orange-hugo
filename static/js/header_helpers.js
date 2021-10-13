@@ -1,26 +1,23 @@
-function header_search() {
+$(document).ready(function () {
+  document.querySelector("#search-btn-js").addEventListener('mousedown', headerSearch);
+})
+
+function headerSearch() {
   let headerSearchInput = document.querySelector(".header-search-input");
 
   if (!headerSearchInput) {
     return;
   }
 
-  if (window.innerWidth <= 990) {
-    window.location = window.location.protocol
-      + "//"
-      + window.location.host
-      + "/search/";
-    return;
-  }
-
   if(headerSearchInput.hidden){
-    document.addEventListener('keydown', hideHeaderSearchInputOnEscape)
+    document.addEventListener('keydown', hideHeaderSearchInputOnEscape);
     headerSearchInput.hidden = false;
-    headerSearchInput.focus();
+    headerSearchInput.addEventListener('blur', hideHeaderSearchInput);
 
+    setTimeout(focusInput, 0);
     return;
   }
-  
+
   let param = headerSearchInput.value;
 
   if(param === ''){
@@ -29,6 +26,10 @@ function header_search() {
     let query = "?q=" + param;
     let url = window.location.protocol + "//" + window.location.host + "/search/" + query;
     window.location = url;
+  }
+
+  function focusInput() {
+    headerSearchInput.focus();
   }
 
   function hideHeaderSearchInputOnEscape(event) { 
@@ -40,18 +41,19 @@ function header_search() {
   }
 
   function hideHeaderSearchInput(event, force) {
-    if (!force && headerSearchInput.value !== '') {
+    if (!event && !force && headerSearchInput.value !== '') {
       return;
     }
 
     headerSearchInput.hidden = true;
     headerSearchInput.value = '';
     document.removeEventListener('keydown', hideHeaderSearchInputOnEscape)
+    headerSearchInput.removeEventListener('blur', hideHeaderSearchInput)
   }
 }
 
 function check_key_header(e) {
 	if (e.keyCode == 13) {
-		header_search();
+		headerSearch();
 	}
 }

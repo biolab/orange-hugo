@@ -7,32 +7,46 @@
     }
 }
 
-.donate {
+.nav-btn {
 	font-size: 18px;
 	color: white;
     height: 34px;
     display: inline-flex;
     align-items: center;
 
-    &.header-search-button {
-        width: 40px;
-        padding: 10px;
+    &:focus {
+        border: 2px solid #e8e8e8;
+        background-color: #efefef;
+        color: #444444;
     }
 
     @media (max-width: 990px) {
         margin-left: 15px !important;
         margin-top: 15px;
+
     }
-}
 
-.header-search-button {
-    margin: 0 15px 0 0;
-}
+    &-search {
+        width: 40px;
+        padding: 10px;
+    }
 
-a.donate:focus {
-	border: 2px solid #e8e8e8;
-	background-color: #efefef;
-	color: #444444;
+    &-mobile {
+        display: none;
+
+        @media (max-width: 990px) {
+            display: inline-flex;
+        }
+    }
+
+    &-desktop {
+        display: inline-flex;
+        margin-right: 15px;
+
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
 }
 
 .header-search-input {
@@ -47,4 +61,12 @@ a.donate:focus {
     &:focus {
         outline: none;
     }
+
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.navbar-collapse {
+    max-height: 360px;
 }

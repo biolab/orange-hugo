@@ -4,7 +4,7 @@
           <a id="header-orangelogo" href="/">
               <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
           </a>
-      </h1><!--//logo-->
+      </h1>
       <nav id="main-nav" class="main-nav navbar-right" role="navigation">
           <div class="navbar-header">
               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -21,8 +21,17 @@
 
                   {{ if (eq .Name "Search") }}
                       <li class="nav-search-wrapper">
-                        <div>                                  
-                          <a class="btn header-search-button btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" onClick="header_search()">
+                        <div>                         
+                          <!-- Desktop button -->
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
+                            id="search-btn-js" 
+                            role="button">
+                          </a>
+                          
+                          <!-- Mobile button -->
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
+                            role="button" 
+                            href="/search/?q=">
                           </a>
 
                           <input type="text" 
@@ -33,7 +42,7 @@
                                 onkeydown="check_key_header(event)" 
                                 hidden
                                 autofocus />
-                      </div>
+                        </div>
                       </li>
                   {{else}}
                   {{ if (eq .Name "Features") }}
@@ -42,7 +51,7 @@
                       {{ if (eq .Name "Donate") }}
                   <li class="">
                     <div class="donate-button transform_header donate_div">
-                      <a class="btn btn-warning donate" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
+                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
                     </div>
                   </li>
                       {{else}}
