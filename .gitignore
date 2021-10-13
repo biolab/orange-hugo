@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 public
+resources
 .cache
 __pycache__
 node_modules

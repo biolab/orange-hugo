@@ -1,56 +1,67 @@
- <header id="top" class="header navbar-fixed-top">
-        <div class="container" >
-            <h1 class="logo pull-left" >
-                <a id="header-orangelogo" href="/">
-                    <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
-                </a>
-            </h1><!--//logo-->
-            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-                </div><!--//navbar-header-->
-               <div class="navbar-collapse collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
+<header id="top" class="header navbar-fixed-top">
+  <div class="container" >
+      <h1 class="logo pull-left" >
+          <a id="header-orangelogo" href="/">
+              <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+          </a>
+      </h1>
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button><!--//nav-toggle-->
+          </div><!--//navbar-header-->
+         <div class="navbar-collapse collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
 
-                        {{ range .Site.Menus.main }}
+                  {{ range .Site.Menus.main }}
 
-                        {{ if (eq .Name "Search") }}
-                              <li class="input_search nav-item">
-                                <div class="header-search-input transform_header" hidden>
-                                  <input type="text" class="jsonly search-widget-workflow nav-item" id="search-header" style="margin-top: 8px" placeholder="Search" tabindex="1" onkeydown="check_key_header(event)" autofocus />
-                                </div>
-                              </li>
-                              <li class="">
-                                <div class="">
+                  {{ if (eq .Name "Search") }}
+                      <li class="nav-search-wrapper">
+                        <div>                         
+                          <!-- Desktop button -->
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
+                            id="search-btn-js" 
+                            role="button">
+                          </a>
+                          
+                          <!-- Mobile button -->
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
+                            role="button" 
+                            href="/search/?q=">
+                          </a>
 
-                                <a class="btn header-search-button btn-warning big-button-base donate fa fa-search" id="searchBtn" role="button" onClick="header_search()">
-
-                                </a>
-                              </div>
-                              </li>
-                        {{else}}
-                        {{ if (eq .Name "Features") }}
-                            <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>
-                        {{else}}
-                            {{ if (eq .Name "Donate") }}
-                        <li class="">
-                          <div class="donate-button transform_header donate_div" hidden>
-                            <a class="btn btn-warning big-button-base donate" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
-                          </div>
-                        </li>
-                            {{else}}
-                            <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>
-                            {{end}}
-                        {{end}}
+                          <input type="text" 
+                                class="header-search-input jsonly search-widget-workflow nav-item" 
+                                id="search-header" 
+                                placeholder="Search" 
+                                tabindex="1" 
+                                onkeydown="check_key_header(event)" 
+                                hidden
+                                autofocus />
+                        </div>
+                      </li>
+                  {{else}}
+                  {{ if (eq .Name "Features") }}
+                      <li class="nav-item"><a id="menu_feature" href="/#Orange-Features">{{ .Name }}</a></li>
+                  {{else}}
+                      {{ if (eq .Name "Donate") }}
+                  <li class="">
+                    <div class="donate-button transform_header donate_div">
+                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="{{.URL}}">{{.Name}}</a>
+                    </div>
+                  </li>
+                      {{else}}
+                      <li class="nav-item"><a id="header-screenshots-link"  href="{{ .URL }}">{{ .Name }}</a></li>
                       {{end}}
-                    {{end}}
-                    </ul><!--//nav-->
-                </div>
-            </nav><!--//main-nav-->
-        </div>
-    </header>
+                  {{end}}
+                {{end}}
+              {{end}}
+              </ul><!--//nav-->
+          </div>
+      </nav><!--//main-nav-->
+  </div>
+</header>
