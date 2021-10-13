@@ -1,43 +1,59 @@
+$(document).ready(function () {
+  document.querySelector("#search-btn-js").addEventListener('mousedown', headerSearch);
+})
 
-let expanded_search = false;
+function headerSearch() {
+  let headerSearchInput = document.querySelector(".header-search-input");
 
-
-function header_search(){
-
-  let donate_div = document.querySelector(".donate-button");
-  let header_search_div = document.querySelector(".header-search-input");
-
-
-  if(expanded_search == false){
-    expanded_search = true;
-
-      //donate_div.hidden = true;
-      header_search_div.hidden = false;
-      document.getElementById('search-header').focus();
-
+  if (!headerSearchInput) {
     return;
   }
 
+  if(headerSearchInput.hidden){
+    document.addEventListener('keydown', hideHeaderSearchInputOnEscape);
+    headerSearchInput.hidden = false;
+    headerSearchInput.addEventListener('blur', hideHeaderSearchInput);
 
-  	var param = document.getElementById('search-header').value;
+    setTimeout(focusInput, 0);
+    return;
+  }
 
-    if(param == ""){
-      expanded_search = false;
-      //donate_div.hidden = false;
+  let param = headerSearchInput.value;
 
+  if(param === ''){
+    hideHeaderSearchInput();
+  } else {
+    let query = "?q=" + param;
+    let url = window.location.protocol + "//" + window.location.host + "/search/" + query;
+    window.location = url;
+  }
 
-      header_search_div.hidden = true;
-    } else {
-      let query = "?q=" + param;
-      let url = window.location.protocol + "//" + window.location.host + "/search/" + query;
-      window.location = url;
+  function focusInput() {
+    headerSearchInput.focus();
+  }
+
+  function hideHeaderSearchInputOnEscape(event) { 
+    if (event && event.key !== "Escape") {
+      return;
     }
 
-}
+    hideHeaderSearchInput(undefined, true);
+  }
 
+  function hideHeaderSearchInput(event, force) {
+    if (!event && !force && headerSearchInput.value !== '') {
+      return;
+    }
+
+    headerSearchInput.hidden = true;
+    headerSearchInput.value = '';
+    document.removeEventListener('keydown', hideHeaderSearchInputOnEscape)
+    headerSearchInput.removeEventListener('blur', hideHeaderSearchInput)
+  }
+}
 
 function check_key_header(e) {
 	if (e.keyCode == 13) {
-		header_search();
+		headerSearch();
 	}
 }

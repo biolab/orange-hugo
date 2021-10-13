@@ -3532,7 +3532,7 @@ h2.docs-subtitle {
 .search-widget-workflow {
   max-width: 100% !important;
   width: 100%;
-  height: 34px;
+  height: 38px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.5;
@@ -4530,18 +4530,6 @@ h6,
 /*section.downloads {
     padding-bottom: 50px;
 }*/
-.donate {
-  font-size: 18px;
-  color: white !important;
-  margin-left: 15px;
-  padding: 6px 12px !important;
-  margin-top: 7px !important; }
-
-a.donate:focus {
-  border: 2px solid #e8e8e8 !important;
-  background-color: #efefef !important;
-  color: #444444 !important; }
-
 @media (max-width: 990px) {
   .navbar-header {
     float: none; }
@@ -4549,7 +4537,8 @@ a.donate:focus {
   .navbar-right {
     float: none !important; }
   .navbar-toggle {
-    display: block; }
+    display: block;
+    margin-right: 0; }
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
@@ -4576,9 +4565,7 @@ a.donate:focus {
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
-    box-shadow: none; }
-  .donate {
-    float: left; } }
+    box-shadow: none; } }
 
 .schedule h5 {
   margin-top: 20px; }
@@ -4793,3 +4780,57 @@ blockquote cite {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease; }
+
+.navbar-nav {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 990px) {
+    .navbar-nav {
+      display: block; } }
+.nav-btn {
+  font-size: 18px;
+  color: white;
+  height: 34px;
+  display: inline-flex;
+  align-items: center; }
+  .nav-btn:focus {
+    border: 2px solid #e8e8e8;
+    background-color: #efefef;
+    color: #444444; }
+  @media (max-width: 990px) {
+    .nav-btn {
+      margin-left: 15px !important;
+      margin-top: 15px; } }
+  .nav-btn-search {
+    width: 40px;
+    padding: 10px; }
+  .nav-btn-mobile {
+    display: none; }
+    @media (max-width: 990px) {
+      .nav-btn-mobile {
+        display: inline-flex; } }
+  .nav-btn-desktop {
+    display: inline-flex;
+    margin-right: 15px; }
+    @media (max-width: 990px) {
+      .nav-btn-desktop {
+        display: none; } }
+.header-search-input {
+  position: absolute;
+  top: 40px;
+  right: 15;
+  width: 280px;
+  max-width: 260px !important;
+  height: 48px;
+  box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.2); }
+  .header-search-input:focus {
+    outline: none; }
+  @media (max-width: 990px) {
+    .header-search-input {
+      display: none; } }
+.navbar-collapse {
+  max-height: 360px; }
+
+.search-wrapper {
+  display: flex;
+  align-items: center; }
