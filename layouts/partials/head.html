@@ -28,7 +28,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     {{ $sass := resources.Get "scss/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
+    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
