@@ -35,7 +35,7 @@ jobs:
           sudo dpkg -i hugo*.deb
           rm -rf public 2> /dev/null
           rm *.deb
-          hugo
+          hugo --debug
           touch public/.nojekyll
 
       # Deploy to local repo
