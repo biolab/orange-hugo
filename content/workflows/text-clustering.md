@@ -2,7 +2,7 @@
 title= "Text Clustering"
 images =  ["/workflow_images/text-clustering.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = "https://youtu.be/rH_vQxQL6oM"
 download = "620-text-clustering.ows"
 workflows = ["Text Mining", "Clustering", "Tokenization"]

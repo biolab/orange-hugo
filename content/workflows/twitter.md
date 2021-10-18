@@ -2,7 +2,7 @@
 title= "Twitter Data Analysis"
 images =  ["/workflow_images/twitter.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = "https://youtu.be/HDkI6G4slzQ"
 download = "640-twitter.ows"
 workflows = ["Text Mining", "Twitter", "Topic Modeling"]

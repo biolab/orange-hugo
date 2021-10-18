@@ -2,7 +2,7 @@
 title= "Hierarchical Clustering"
 images =  ["/workflow_images/hierarchical-clustering.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "310-clustering.ows"
 workflows = ["Hierarchical Clustering", "Clustering"]

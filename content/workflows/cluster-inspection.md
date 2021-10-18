@@ -2,7 +2,7 @@
 title= "Cluster Inspection"
 images =  ["/workflow_images/cluster-inspection.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "315-cluster-inspection.ows"
 workflows = ["Clustering", "Hierarchical Clustering", "Box Plot"]

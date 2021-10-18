@@ -2,7 +2,7 @@
 title= "Classification Tree"
 images =  ["/workflow_images/tree-scatterplot.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "250-tree-scatterplot.ows"
 workflows = ["Classification Tree", "Classification"]

@@ -2,7 +2,7 @@
 title= "Cross Validation"
 images =  ["/workflow_images/cross-validation.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "450-cross-validation.ows"
 workflows = ["Cross Validation", "Predictive models", "Classification"]
