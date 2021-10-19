@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Story Arcs</title>
-      <link>/workflows/story-arcs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/workflows/story-arcs/</guid>
-      <description>In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.</description>
-    </item>
-    
-    <item>
       <title>2020 - Year in Code</title>
       <link>/blog/2020/2020-12-21-year-in-code/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>

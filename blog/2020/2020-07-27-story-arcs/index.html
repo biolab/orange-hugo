@@ -1,12 +1,16 @@
 <html>    
     <head>
-    <title>Orange Data Mining - 2020/2020-07-27-story-arcs/</title>
+    <title>Orange Data Mining - Detecting Story Arcs with Orange</title>
 
     
     
-    <meta property="og:title" content="2020/2020-07-27-story-arcs/">
+    <meta property="og:title" content="Detecting Story Arcs with Orange">
     
     
+    <meta property="og:description" content="How to detect and analyze story arcs in a corpus.">
+    
+    
+    <meta property="og:image" content="/blog_img/2020/2020-07-27-story-arcs-small.png">
     
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -223,67 +227,233 @@
     <div id="main">
         <div class="container-fluid clear-top">
             
-
-      <section id="features" class="features-blog section offset-header">
-    <div class="container">
-        <div style="text-align: center">
-            <h2 style="font-size: 34px;">
-                Orange Blog
-            </h2>
-        </div>
-        <div class="categoriesList col-lg-12 row" style="margin-top: 30px" id="myUL">
-            <ul>
-                <span>Categories: </span>
-                
-                <li style="display: inline;"><a href="/blog/orange3"
-                        style="margin-top: 20px !important;">orange3</a></li>
-                
-                <li style="display: inline;"><a href="/blog/visualization"
-                        style="margin-top: 20px !important;">visualization</a></li>
-                
-                <li style="display: inline;"><a href="/blog/workshop"
-                        style="margin-top: 20px !important;">workshop</a></li>
-                
-                <li style="display: inline;"><a href="/blog/analysis"
-                        style="margin-top: 20px !important;">analysis</a></li>
-                
-                <li style="display: inline;"><a href="/blog/addons"
-                        style="margin-top: 20px !important;">addons</a></li>
-                
-                <li style="display: inline;"><a href="/blog/education"
-                        style="margin-top: 20px !important;">education</a></li>
-                
-                <li style="display: inline;"><a href="/blog/classification"
-                        style="margin-top: 20px !important;">classification</a></li>
-                
-                <li style="display: inline;"><a href="/blog/data"
-                        style="margin-top: 20px !important;">data</a></li>
-                
-                <li style="display: inline;"><a href="/blog/examples"
-                        style="margin-top: 20px !important;">examples</a></li>
-                
-                <li style="display: inline;"><a href="/blog/gsoc"
-                        style="margin-top: 20px !important;">gsoc</a></li>
-                
-            </ul>
-        </div>
-        <div id="post_nor">
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
             
+            <a href="/blog/text-mining">text mining</a>
+          </span>
+          
+          <span class="category">
             
-                    
+            <span> | </span>
+            
+            <a href="/blog/sentiment-analysis">sentiment analysis</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/corpus">corpus</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/story-arc">story arc</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/heat-map">heat map</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/line-chart">line chart</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Detecting Story Arcs with Orange</h1>
+          <span class="author-blog">
+            
+            By: Ajda Pretnar,
+            
+            Jul 27, 2020
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
 
 
-                </div>
+              <p>Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.</p>
+<p>Related: <a href="/blog/2018/09/11/text-workshops-in-ljubljana/" target="_blank">Text Workshops in Ljubljana</a></p>
+<p>We will be using a corpus of Anderson&rsquo;s tales, which is available in the <strong>Corpus</strong> widget (data set <em>anderson.tab</em>). Load it in the widget. Next, we will select a single tale which we will analyze, say, Little Match Seller. Connect Corpus to <strong>Data Table</strong> and select the tale. We all know the story of a little girl selling matches on a New Year&rsquo;s Eve and freezing to death. It is one of the saddest stories ever told. One could almost forget there are positive parts, such as the girl&rsquo;s visions in the moments before her death, which show a glimmer of hope, the only consolation the girl had in her life. Let us verify this in Orange.</p>
+<a href="/blog_img/2020/2020-07-27-corpus.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-corpus.png" class="window-screenshot" />
+ </a>
+
+
+<a href="/blog_img/2020/2020-07-27-data-table.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-data-table.png" class="window-screenshot" />
+ </a>
+
+
+
+<a href="/blog_img/2020/2020-07-27-wf1.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf1.png" class="workflow-screenshot" />
+</a>
+
+
+<p>With our story selected, we have to split it into sentences. At the moment, our story is a single row in the data, but we wish to have each sentence in its own row. We will use <strong>Preprocess Text</strong> and select Sentence tokenization. I have removed the redundant preprocessors and kept the only one we need.</p>
+<a href="/blog_img/2020/2020-07-27-preprocess.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-preprocess.png" class="window-screenshot" />
+ </a>
+
+
+<p>Some Python magic will help us create a new corpus from the existing tokens (sentences). Copy and paste the script below into the <strong>Python Script</strong> widget. Do not forget to press <strong>Run</strong> once you have pasted the script into the widget.</p>
+<pre><code>import numpy as np
+from Orange.data import Domain, StringVariable
+from orangecontrib.text.corpus import Corpus
+
+tokens = in_data.tokens
+new_domain = Domain(attributes=[], metas=[StringVariable('Sentences'), StringVariable('Title')])
+
+titles = []
+content = []
+
+for i, doc in enumerate(tokens):
+    for t in doc:
+        titles.append(in_data[i]['Title'].value)
+        content.append(t)
+
+metas = np.column_stack((content, titles))
+out_data = Corpus.from_numpy(domain=new_domain, X=np.empty((len(content), 0)),
+                            metas=metas)
+out_data.set_text_features([StringVariable('Sentences')])
+</code></pre>
+
+<a href="/blog_img/2020/2020-07-27-wf2.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf2.png" class="workflow-screenshot" />
+</a>
+
+
+<p>Perfect, our data is now ready for the final step. Add another Preprocess Text and keep the default preprocessors. They will lowercase our sentences, split by words and remove English stopwords.</p>
+<a href="/blog_img/2020/2020-07-27-preprocess2.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-preprocess2.png" class="window-screenshot" />
+ </a>
+
+
+<p>Finally, add the <strong>Sentiment Analysis</strong> widget. By default, the widget uses the Vader algorithm, which works quite well for English. Please note that it won&rsquo;t work for other languages, as all of Orange&rsquo;s sentiment models are language specific. You can use Multilingual sentiment for non-English texts.</p>
+<a href="/blog_img/2020/2020-07-27-sentiment-analysis.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-sentiment-analysis.png" class="window-screenshot" />
+ </a>
+
+
+
+<a href="/blog_img/2020/2020-07-27-wf3.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf3.png" class="workflow-screenshot" />
+</a>
+
+
+<p>At last, it is time to analyze the data. We will use <a href="https://github.com/biolab/orange3-timeseries">Timeseries add-on</a> to plot sequential data. First, we will pass the data to the <strong>As Timeseries</strong> widget and set the <em>Sequence implied by the instance order</em> option. This tells Orange that our data is already ordered by time - in our case, by the order in which each sentence appears in the story.</p>
+<a href="/blog_img/2020/2020-07-27-as-timeseries.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-as-timeseries.png" class="window-screenshot" />
+ </a>
+
+
+<p>Connect <strong>Line Chart</strong> to As Timeseries. In the widget, select <em>Compound</em> variable, which shows the total sentiment of each sentence. The peaks represent the parts of the story with positive emotions and the drops the parts with the negative ones.</p>
+<a href="/blog_img/2020/2020-07-27-line-chart.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-line-chart.png" class="window-screenshot" />
+ </a>
+
+
+
+<a href="/blog_img/2020/2020-07-27-wf4.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf4.png" class="workflow-screenshot" />
+</a>
+
+
+<p>To explore the data in depth, connect <strong>Heat Map</strong> to Sentiment Analysis. Heat Map will show all 4 sentiment attributes, namely positive (pos), negative (neg), neutral (neu) and   compound sentiment. But our data is all over the place. Let us order it. Select <em>Clustering (opt. ordering)</em> under the Clustering - Rows option. This will cluster the sentences by their similarity, specifically by how similar their emotion is.</p>
+<a href="/blog_img/2020/2020-07-27-heat-map.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-heat-map.png" class="window-screenshot" />
+ </a>
+
+
+<p>Great! Now this looks like something useful. The blue sections represent the negative sentences, while the yellow and white sections represent the positive ones. Let us select the cluster with negative sentences and observe it in a <strong>Corpus Viewer</strong>.</p>
+<a href="/blog_img/2020/2020-07-27-negative-sentiment.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-negative-sentiment.png" class="window-screenshot" />
+ </a>
+
+
+
+<a href="/blog_img/2020/2020-07-27-wf5.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-wf5.png" class="workflow-screenshot" />
+</a>
+
+
+<p>I have set Sentences as the single Display variable and selected all the sentences to show them in a list. Unsurprisingly, here is the last sentence of the story, in which a girl if found dead in the street on a New Year&rsquo;s Day.</p>
+<p>To finish, let us explore the positive sentences, too. Select the positive section in the Heat Map and observe it in a Corpus Viewer. Now rethink the story, reread her visions in the last moments of her life and how happy she was when she died. Couldn&rsquo;t we say that &hellip; the story has a happy ending?</p>
+<a href="/blog_img/2020/2020-07-27-positive-sentiment.png" class="blog-image_"> 
+      <img src="/blog_img/2020/2020-07-27-positive-sentiment.png" class="window-screenshot" />
+ </a>
+
+
+<p>While the workflow is quite long, it is conceptually very simple. This is a quick and easy way to explore the story arcs and sentiment in a text. We imagine this to be a very useful tool for the teachers who wish to experiment a bit in their language classes and offer a fun and fruitful way of exploring literature.</p>
+
+<a href="/blog_img/2020/2020-07-27-final-workflow.png" class="blog-image_">
+      <img src="/blog_img/2020/2020-07-27-final-workflow.png" class="workflow-screenshot" />
+</a>
+
+
+
             </div>
+            </article>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
 
-</section>
-<script type="text/javascript">
-    var baseurl = "";
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
-
-
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
 
         </div>
     </div>

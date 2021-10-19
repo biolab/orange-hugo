@@ -1182,71 +1182,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/2021/2021-04-16-story-arcs/",
-	"title": "Detecting Story Arcs with Orange",
-	"content": "Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.\nRelated: Text Workshops in Ljubljana\nWe will be using a corpus of Anderson’s tales, which is available i",
-	"image" : "",
-	"thumbImage" : "/blog_img/2020/2020-07-27-story-arcs-small.png",
-	"longExcerpt" :  "How to detect sentiment, plot story arcs and analyze the key segments in a corpus." ,
-	"author" : "Ajda Pretnar",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/heat-map/",
-	"title": "heat map",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/line-chart/",
-	"title": "line chart",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/sentiment-analysis/",
-	"title": "sentiment analysis",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/story-arc/",
-	"title": "story arc",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 16, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/education/",
 	"title": "education",
 	"content": "",
@@ -1572,6 +1507,19 @@
 	"type" : "blog"
 },
 {
+    "uri": "/blog/sentiment-analysis/",
+	"title": "sentiment analysis",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Sep 28, 2020",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/tutorial/",
 	"title": "tutorial",
 	"content": "",
@@ -1621,6 +1569,45 @@
 	"date" : "Jul 27, 2020",
 	"images" : null,
 	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/heat-map/",
+	"title": "heat map",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jul 27, 2020",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/line-chart/",
+	"title": "line chart",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jul 27, 2020",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/story-arc/",
+	"title": "story arc",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jul 27, 2020",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -6080,32 +6067,6 @@
 	"date" : "Mar 4, 2010",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/2017/06/19/text-preprocessing/",
-	"title": "2017/06/19/text-preprocessing/",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/2020/2020-07-27-story-arcs/",
-	"title": "2020/2020-07-27-story-arcs/",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

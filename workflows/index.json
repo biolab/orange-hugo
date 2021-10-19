@@ -9,7 +9,7 @@
 	"content": "The basic data mining units in Orange are called widgets. In this workflow, the File widget reads the data. File widget communicates this data to Data Table widget that shows the data in a spreadsheet. The output of File is connected to the input of Data Table.\n",
 	"images": ["/workflow_images/file-and-data-table-widget.png"],
 	"download": "110-file-and-data-table-widget.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -20,7 +20,7 @@
 	"content": "Most visualizations in Orange are interactive. Scatter Plot for example. Double click its icon to open it and click-and-drag to select a few data points from the plot. Selected data will automatically propagate to Data Table. Double click it to check which data was selected. Change selection and observe the change in the Data Table. This works best if both widgets are open.\n",
 	"images": ["/workflow_images/scatterplot-data-table.png"],
 	"download": "120-scatterplot-data-table.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -31,7 +31,7 @@
 	"content": "Some visualization widget, like Scatter Plot and several data projection widgets, can expose the data instances in the data subset. In this workflow, Scatter Plot visualizes the data from the input data file, but also marks the data points that have been selected in the Data Table (selected rows).\n",
 	"images": ["/workflow_images/scatterplot-visualize-subset.png"],
 	"download": "130-scatterplot-visualize-subset.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -42,7 +42,7 @@
 	"content": "Pivot Table can help us aggregate and transform the data. This workflow takes Kickstarter projects and aggregates them by month. We can inspect the frequency of the published projects per month and observe the difference between funded and non-funded projects. Try constructing several tables with pivot and experiment with different aggregation methods.\n",
 	"images": ["/workflow_images/pivot-table.png"],
 	"download": "140-pivot-table.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -53,7 +53,7 @@
 	"content": "This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.\n",
 	"images": ["/workflow_images/tree-scatterplot.png"],
 	"download": "250-tree-scatterplot.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -64,7 +64,7 @@
 	"content": "Silhouette Plot shows how \u0026lsquo;well-centered\u0026rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris' class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.\n",
 	"images": ["/workflow_images/silhouette.png"],
 	"download": "260-outliers.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -75,7 +75,7 @@
 	"content": "PCA transforms the data into a dataset with uncorrelated variables, also called principal components. PCA widget displays a graph (scree diagram) showing a degree of explained variance by best principal components and allows to interactively set the number of components to be included in the output dataset. In this workflow, we can observe the transformation in the Data Table and in Scatter Plot.\n",
 	"images": ["/workflow_images/pca.png"],
 	"download": "305-pca.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -86,7 +86,7 @@
 	"content": "The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.\n",
 	"images": ["/workflow_images/hierarchical-clustering.png"],
 	"download": "310-clustering.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -97,7 +97,7 @@
 	"content": "We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use \u0026lsquo;Order by relevance\u0026rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!\n",
 	"images": ["/workflow_images/cluster-inspection.png"],
 	"download": "315-cluster-inspection.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -108,7 +108,7 @@
 	"content": "For supervised problems, where data instances are annotated with class labels, we would like to know which are the most informative features. Rank widget provides a table of features and their informativity scores, and supports manual feature selection. In the workflow, we used it to find the best two features (of initial 79 from brown-selected dataset) and display its scatter plot.\n",
 	"images": ["/workflow_images/feature-ranking.png"],
 	"download": "410-feature-ranking.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -119,7 +119,7 @@
 	"content": "In building predictive models it is important to have a separate train and test data sets in order to avoid overfitting and to properly score the models. Here we use Data Sampler to split the data into training and test data, use training data for building a model and, finally, test on test data. Try several other classifiers to see how the scores change.\n",
 	"images": ["/workflow_images/data-sampler.png"],
 	"download": "420-data-sampler.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -130,7 +130,7 @@
 	"content": "How good are supervised data mining methods on your classification dataset? Here\u0026rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.\n",
 	"images": ["/workflow_images/cross-validation.png"],
 	"download": "450-cross-validation.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -141,7 +141,7 @@
 	"content": "Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.\n",
 	"images": ["/workflow_images/misclassifications.png"],
 	"download": "470-misclassification-scatterplot.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
@@ -152,7 +152,7 @@
 	"content": "Text mining requires careful preprocessing. Here\u0026rsquo;s a workflow that uses simple preprocessing for creating tokens from documents. First, it applies lowercase, then splits text into words, and finally, it removes frequent stopwords. Preprocessing is language specific, so change the language to the language of texts where required. Results of preprocessing can be observe in a Word Cloud.\n",
 	"images": ["/workflow_images/text-preprocessing.png"],
 	"download": "610-text-preprocessing.ows",
-	"blog" : "2017/06/19/text-preprocessing/",
+	"blog" : "<no value>",
 	"video" : "https://youtu.be/V70UwJZWkZ8",
 	"tags": []
 }
@@ -163,7 +163,7 @@
 	"content": "The workflow clusters Grimm\u0026rsquo;s tales corpus. We start by preprocessing the data and constructing the bag of words matrix. Then we compute cosine distances between documents and use Hierarchical Clustering, which displays the dendrogram. We observe how well the type of the tale corresponds to the cluster in the MDS.\n",
 	"images": ["/workflow_images/text-clustering.png"],
 	"download": "620-text-clustering.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "https://youtu.be/rH_vQxQL6oM",
 	"tags": []
 }
@@ -174,7 +174,7 @@
 	"content": "We can use predictive models to classify documents by authorship, their type, sentiment and so on. In this workflow we classify documents by their Aarne-Thompshon-Uther index, that is the defining topic of the tale. We use two simple learners, Logistic Regression and Naive Bayes, both of which can be inspected in the Nomogram.\n",
 	"images": ["/workflow_images/text-classification.png"],
 	"download": "630-text-classification.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "https://youtu.be/zO_zwKZCULo",
 	"tags": []
 }
@@ -185,7 +185,7 @@
 	"content": "Tweets are a valuable source of information, for social scientists, marketing managers, linguists, economists, and so on. In this workflow we retrieve data from Twitter, preprocess it, and uncover latent topics with topic modeling. We observe the topics in a Heat Map.\n",
 	"images": ["/workflow_images/twitter.png"],
 	"download": "640-twitter.ows",
-	"blog" : "",
+	"blog" : "<no value>",
 	"video" : "https://youtu.be/HDkI6G4slzQ",
 	"tags": []
 }
@@ -196,7 +196,7 @@
 	"content": "In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.\n",
 	"images": ["/workflow_images/story-arcs.png"],
 	"download": "650-story-arcs.ows",
-	"blog" : "2020/2020-07-27-story-arcs/",
+	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
