@@ -2,7 +2,7 @@
 title= "File and Data Table"
 images =  ["/workflow_images/file-and-data-table-widget.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "110-file-and-data-table-widget.ows"
 workflows = ["Data Table", "Data Loading"]

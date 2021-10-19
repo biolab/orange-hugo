@@ -2,7 +2,7 @@
 title= "Principal Component Analysis"
 images =  ["/workflow_images/pca.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "305-pca.ows"
 workflows = ["PCA", "Dimensionality Reduction"]

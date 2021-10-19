@@ -2,7 +2,7 @@
 title= "Visalization of Data Subsets"
 images =  ["/workflow_images/scatterplot-visualize-subset.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "130-scatterplot-visualize-subset.ows"
 workflows = ["Scatter Plot", "Visualization"]

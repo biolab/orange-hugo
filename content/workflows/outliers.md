@@ -2,7 +2,7 @@
 title= "Inspecting Outliers with Silhouette"
 images =  ["/workflow_images/silhouette.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "260-outliers.ows"
 workflows = ["Silhouette", "Outliers", "Visualization"]

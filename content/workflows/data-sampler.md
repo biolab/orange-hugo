@@ -2,7 +2,7 @@
 title= "Train and Test Data"
 images =  ["/workflow_images/data-sampler.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "420-data-sampler.ows"
 workflows = ["Classification", "Data Sampler", "Predictive models"]

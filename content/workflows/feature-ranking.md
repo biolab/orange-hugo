@@ -2,7 +2,7 @@
 title= "Feature Ranking"
 images =  ["/workflow_images/feature-ranking.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "410-feature-ranking.ows"
 workflows = ["Feature Ranking", "Feature Selection"]

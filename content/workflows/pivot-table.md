@@ -2,7 +2,7 @@
 title= "Pivot Table"
 images =  ["/workflow_images/pivot-table.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "140-pivot-table.ows"
 workflows = ["Data", "Pivot Table"]

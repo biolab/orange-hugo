@@ -2,7 +2,7 @@
 title= "Where Are Misclassifications"
 images =  ["/workflow_images/misclassifications.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "470-misclassification-scatterplot.ows"
 workflows = ["Confusion Matrix", "Classification", "Scatter Plot"]

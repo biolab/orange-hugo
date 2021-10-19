@@ -2,7 +2,7 @@
 title= "Interactive Visualizations"
 images =  ["/workflow_images/scatterplot-data-table.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = ""
 download = "120-scatterplot-data-table.ows"
 workflows = ["Scatter Plot", "Visualization"]

@@ -2,7 +2,7 @@
 title= "Text Classification"
 images =  ["/workflow_images/text-classification.png"]
 type = "workflows"
-blog =  ""
+blog_link =  ""
 video = "https://youtu.be/zO_zwKZCULo"
 download = "630-text-classification.ows"
 workflows = ["Text Mining", "Classification", "Nomogram", "Bag of Words"]
