@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="/scss/main.d9c67f9587b6abf8530a97159ebe0538a4fcf1753aa987c0cebe9a6632c39829.css">
     <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
 
-     <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
     <noscript>
         <style>
             .jsonly { display: none !important; }
@@ -298,46 +297,47 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+</section>
+    
+<script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
 
-       
-            $('#send_mail')
-                .ajaxForm({
-                    url : $(this).attr("action"),
-                    dataType : 'json',
-                    type: 'POST',
-                    beforeSend: function(){
-                        var v = grecaptcha.getResponse();
-                        if(v.length == 0)
-                        {
-                            document.getElementById('captcha').innerHTML="Please verify that you are not a robot.";
-                            document.getElementById('submit').blur();
-                            return false;
+   
+        $('#send_mail')
+            .ajaxForm({
+                url : $(this).attr("action"),
+                dataType : 'json',
+                type: 'POST',
+                beforeSend: function(){
+                    var v = grecaptcha.getResponse();
+                    if(v.length == 0)
+                    {
+                        document.getElementById('captcha').innerHTML="Please verify that you are not a robot.";
+                        document.getElementById('submit').blur();
+                        return false;
 
-                        }
-                        $("#loading").show();
-                        },
-                    success : function (response, status) {
-                        $('#send_mail')[0].reset()
-                        $("#error").hide()
-                        $("#success").show()
-
-                    },
-                    error: function(response) {
-                        $("#success").hide()
-                        $("#error").show()
-                    },
-                    complete:function(data){
-                        $("#loading").hide();
                     }
-                })
-                
+                    $("#loading").show();
+                    },
+                success : function (response, status) {
+                    $('#send_mail')[0].reset()
+                    $("#error").hide()
+                    $("#success").show()
+
+                },
+                error: function(response) {
+                    $("#success").hide()
+                    $("#error").show()
+                },
+                complete:function(data){
+                    $("#loading").hide();
+                }
+            })
             
         
+    
 
-    </script>
-</section>
-
+</script>
 
 
         </div>
