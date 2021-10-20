@@ -393,24 +393,6 @@
 
     </div>
     <script type="text/javascript">
-        const Http = new XMLHttpRequest();
-        const url = 'https://service.biolab.si/download/version';
-        Http.open("GET", url + "?" + "domain=orange");
-        Http.send();
-
-        Http.onload = (e) => {
-            try {
-                versions = JSON.parse(Http.responseText)
-            } catch (err) {
-                versions = null
-            }
-            
-            
-            
-            
-            
-            
-        }
         hash = window.location.hash.substr(1);
 
         if (hash == "") {
