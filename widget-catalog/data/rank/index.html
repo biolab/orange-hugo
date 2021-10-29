@@ -1811,6 +1811,8 @@ If <em>Send Automatically</em> is ticked, the widget automatically communicates 
 <p>Additionally, you can connect regression learners (e.g. <a href="../model/linearregression.md">Linear Regression</a>, <a href="../model/randomforest.md">Random Forest</a>, <a href="../../model/stochasticgradient/">SGD</a>). Please note that the data is normalized before ranking.</p>
 <h2 id="scoring-method-unsupervised">Scoring method (unsupervised)</h2>
 <p>Currently, only <a href="../../unsupervised/PCA/">PCA</a> is supported for unsupervised data. Connect PCA to Rank to obtain the scores. The scores correspond to the correlation of a variable with the individual principal component.</p>
+<h2 id="scoring-with-learners">Scoring with learners</h2>
+<p>Rank can also use certain learners for feature scoring. See <a href="../../../learners-as-scorers/index/">Learners as Scorers</a> for an example.</p>
 <h2 id="example-attribute-ranking-and-selection">Example: Attribute Ranking and Selection</h2>
 <p>Below, we have used the <strong>Rank</strong> widget immediately after the <a href="../../data/file/">File</a> widget to reduce the set of data attributes and include only the most informative ones:</p>
 <p><img src="../images/Rank-Select-Schema.png" alt=""></p>

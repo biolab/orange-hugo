@@ -1814,6 +1814,8 @@
 <li>imputes missing values with mean values</li>
 </ul>
 <p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
+<h2 id="feature-scoring">Feature Scoring</h2>
+<p>Random Forest can be used with Rank for feature scoring. See <a href="../../../learners-as-scorers/index/">Learners as Scorers</a> for an example.</p>
 <h2 id="examples">Examples</h2>
 <p>For classification tasks, we use <em>iris</em> dataset. Connect it to <a href="../../evaluate/predictions/">Predictions</a>. Then, connect <a href="../data/file.md">File</a> to <strong>Random Forest</strong> and <a href="../model/tree.md">Tree</a> and connect them further to <a href="../../evaluate/predictions/">Predictions</a>. Finally, observe the predictions for the two models.</p>
 <p><img src="../images/RandomForest-classification.png" alt=""></p>

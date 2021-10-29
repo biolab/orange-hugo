@@ -1859,6 +1859,8 @@
 <li>normalizes the data by centering to mean and scaling to standard deviation of 1</li>
 </ul>
 <p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
+<h2 id="feature-scoring">Feature Scoring</h2>
+<p>Stochastic Gradient Descent can be used with Rank for feature scoring. See <a href="../../../learners-as-scorers/index/">Learners as Scorers</a> for an example.</p>
 <h2 id="examples">Examples</h2>
 <p>For the classification task, we will use <em>iris</em> dataset and test two models on it. We connected <a href="../model/stochasticgradient.md">Stochastic Gradient Descent</a> and <a href="../model/tree.md">Tree</a> to <a href="../evaluate/testandscore.md">Test &amp; Score</a>. We also connected <a href="../../data/file/">File</a> to <strong>Test &amp; Score</strong> and observed model performance in the widget.</p>
 <p><img src="../images/StochasticGradientDescent-classification.png" alt=""></p>

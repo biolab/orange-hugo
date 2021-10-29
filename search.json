@@ -7359,10 +7359,10 @@
 {
     "uri": "/widget-catalog/visualize/heatmap/",
 	"title": "Heat Map",
-	"content": "Heat Map Plots a heat map for a pair of attributes.\nInputs\n Data: input dataset  Outputs\n Selected Data: instances selected from the plot  Heat map is a graphical method for visualizing attribute values by class in a two-way matrix. It only works on datasets containing continuous variables. The values are represented by color: the higher a certain value is, the darker the represented color. By com",
+	"content": "Heat Map Plots a heat map for a pair of attributes.\nInputs\n Data: input dataset  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  Heat map is a graphical method for visualizing attribute values in a two-way matrix. It only works on datasets containing numeric variables. The values are represented by color according t",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Heat Map Plots a heat map for a pair of attributes.\nInputs\n Data: input dataset  Outputs\n Selected Data: instances selected from the plot  Heat map is a graphical method for visualizing attribute values by class in a two-way matrix. It only works on datasets containing continuous variables. The values are represented by color: the higher a certain value is, the darker the represented color. By com" ,
+	"longExcerpt" :  "Heat Map Plots a heat map for a pair of attributes.\nInputs\n Data: input dataset  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  Heat map is a graphical method for visualizing attribute values in a two-way matrix. It only works on datasets containing numeric variables. The values are represented by color according t" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

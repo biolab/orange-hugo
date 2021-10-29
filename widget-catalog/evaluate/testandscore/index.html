@@ -1832,6 +1832,20 @@
 <li>Pairwise comparison of models using the selected score (available only for cross-validation). The number in the table gives the probability that the model corresponding to the row has a higher score than the model corresponding to the column. What the higher score means depends on the metric: a higher score can either mean a model is better (for example, CA or AUC) or the opposite (for example, RMSE). If negligible difference is enabled, the smaller number below shows the probability that the difference between the pair is negligible. The test is based on the <a href="https://link.springer.com/article/10.1007/s10994-015-5486-z">Bayesian interpretation of the t-test</a> (<a href="https://baycomp.readthedocs.io/en/latest/introduction.html">shorter introduction</a>).</li>
 <li>Get help and produce a report.</li>
 </ol>
+<h2 id="preprocessing-for-predictive-modeling">Preprocessing for predictive modeling</h2>
+<p>When building predictive models, one has to be careful about how to preprocess the data. There are two possible ways to do it in Orange, each slightly different:</p>
+<ol>
+<li>
+<p>Connect <a href="../../data/preprocess/">Preprocess</a> to the learner. This will override the default preprocessing pipeline for the learner and apply only custom preprocessing pipeline (default preprocessing steps are described in each learner&rsquo;s documentation). The procedure might lead to errors within the learner.</p>
+<p><img src="../../data/images/Preprocess-Models1.png" alt=""></p>
+</li>
+<li>
+<p>Connect <strong>Preprocess</strong> to Test and Score. This will apply the preprocessors to each batch within cross-validation. Then the learner&rsquo;s preprocessors will be applied to the preprocessed subset.</p>
+<p><img src="../../data/images/Preprocess-Models2.png" alt=""></p>
+</li>
+</ol>
+<p>Finally, there&rsquo;s a wrong way to do it. Connecting <strong>Preprocess</strong> directly to the original data and outputting preprocessed data set will likely overfit the model. Don&rsquo;t do it.</p>
+<p><img src="../../data/images/Preprocess-Models3.png" alt=""></p>
 <h2 id="example">Example</h2>
 <p>In a typical use of the widget, we give it a dataset and a few learning algorithms and we observe their performance in the table inside the <strong>Test &amp; Score</strong> widget and in the <a href="../evaluate/rocanalysis.md">ROC</a>. The data is often preprocessed before testing; in this case we did some manual feature selection (<a href="../../data/selectcolumns/">Select Columns</a> widget) on <em>Titanic</em> dataset, where we want to know only the sex and status of the survived and omit the age.</p>
 <p>In the bottom table, we have a pairwise comparison of models. We selected that comparison is based on the <em>area under ROC curve</em> statistic. The number in the table gives the probability that the model corresponding to the row is better than the model corresponding to the column. We can, for example, see that probability for the tree to be better than SVM is almost one, and the probability that tree is better than Naive Bayes is 0.001. Smaller numbers in the table are probabilities that the difference between the pair is negligible based on the negligible threshold 0.1.</p>

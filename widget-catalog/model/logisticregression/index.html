@@ -1800,6 +1800,8 @@
 <li>imputes missing values with mean values</li>
 </ul>
 <p>To remove default preprocessing, connect an empty <a href="../../data/preprocess/">Preprocess</a> widget to the learner.</p>
+<h2 id="feature-scoring">Feature Scoring</h2>
+<p>Logistic Regression can be used with Rank for feature scoring. See <a href="../../../learners-as-scorers/index/">Learners as Scorers</a> for an example.</p>
 <h2 id="example">Example</h2>
 <p>The widget is used just as any other widget for inducing a classifier. This is an example demonstrating prediction results with logistic regression on the <em>hayes-roth</em> dataset. We first load <em>hayes-roth_learn</em> in the <a href="../data/file.md">File</a> widget and pass the data to <strong>Logistic Regression</strong>. Then we pass the trained model to <a href="../../evaluate/predictions/">Predictions</a>.</p>
 <p>Now we want to predict class value on a new dataset. We load <em>hayes-roth_test</em> in the second <strong>File</strong> widget and connect it to <strong>Predictions</strong>. We can now observe class values predicted with <strong>Logistic Regression</strong> directly in <strong>Predictions</strong>.</p>
