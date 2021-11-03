@@ -1,11 +1,19 @@
 name: Push to GitHub Pages on push to master
 on:
+  schedule:
+    # every day at midnight: https://crontab.guru/every-midnight
+    - cron:  '0 0 * * *'
+
+  # Trigger the workflow on push or pull request for master branch
   push:
     branches:
       - master
   pull_request:
     branches:
       - master
+  
+  # Manually trigger workflow
+  workflow_dispatch:
 
 jobs:
   build:
