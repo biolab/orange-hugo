@@ -1166,14 +1166,6 @@
     "url": "twitter-widget"
    },
    {
-    "title": "Wikipedia",
-    "category": "Text Mining",
-    "keywords": [],
-    "background": "light-blue",
-    "icon": "widget-icons/Text Mining-Wikipedia.png",
-    "url": "wikipedia-widget"
-   },
-   {
     "title": "Preprocess Text",
     "category": "Text Mining",
     "keywords": [],
@@ -1254,12 +1246,28 @@
     "url": "topicmodelling-widget"
    },
    {
+    "title": "LDAvis",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-LDAvis.png",
+    "url": "LDAvis"
+   },
+   {
     "title": "Corpus Viewer",
     "category": "Text Mining",
     "keywords": [],
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Corpus Viewer.png",
     "url": "corpusviewer"
+   },
+   {
+    "title": "Score Documents",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Score Documents.png",
+    "url": "score-documents"
    },
    {
     "title": "Word Cloud",
@@ -1302,6 +1310,24 @@
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Duplicate Detection.png",
     "url": "duplicatedetection"
+   },
+   {
+    "title": "Word List",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Word List.png"
+   },
+   {
+    "title": "Extract Keywords",
+    "category": "Text Mining",
+    "keywords": [
+     "characteristic",
+     "term"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Extract Keywords.png",
+    "url": "keywords"
    },
    {
     "title": "Statistics",

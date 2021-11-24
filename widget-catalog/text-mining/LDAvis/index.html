@@ -1,10 +1,10 @@
 <html>    
     <head>
-    <title>Orange Data Mining - Wikipedia</title>
+    <title>Orange Data Mining - LDAvis</title>
 
     
     
-    <meta property="og:title" content="Wikipedia">
+    <meta property="og:title" content="LDAvis">
     
     
     
@@ -1114,13 +1114,6 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/text-mining/wikipedia-widget">
-                      <div class="reference internal" style="cursor: pointer;" >Wikipedia</div>
-                      </a>
-                  </li>
-                  
-                        
-                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/preprocesstext">
                       <div class="reference internal" style="cursor: pointer;" >Preprocess Text</div>
                       </a>
@@ -1177,8 +1170,22 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/LDAvis">
+                      <div class="reference internal" style="cursor: pointer;" >LDAvis</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/corpusviewer">
                       <div class="reference internal" style="cursor: pointer;" >Corpus Viewer</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/score-documents">
+                      <div class="reference internal" style="cursor: pointer;" >Score Documents</div>
                       </a>
                   </li>
                   
@@ -1214,6 +1221,15 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/duplicatedetection">
                       <div class="reference internal" style="cursor: pointer;" >Duplicate Detection</div>
+                      </a>
+                  </li>
+                  
+                        
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/keywords">
+                      <div class="reference internal" style="cursor: pointer;" >Extract Keywords</div>
                       </a>
                   </li>
                   
@@ -1771,35 +1787,26 @@
         </div>
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
-                    <h1 id="wikipedia">Wikipedia</h1>
-<p>Fetching data from <a href="https://www.mediawiki.org/wiki/API:Tutorial">MediaWiki RESTful web service API</a>.</p>
+                    <h1 id="ldavis">LDAvis</h1>
+<p>Interactive exploration of LDA topics.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>None</li>
+<li>Topics: All LDA topics from topic modeling.</li>
 </ul>
-<p><strong>Outputs</strong></p>
-<ul>
-<li>Corpus: A collection of documents from the Wikipedia.</li>
-</ul>
-<p><strong>Wikipedia</strong> widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.</p>
-<p><img src="../images/Wikipedia-stamped.png" alt=""></p>
+<p><strong>LDAvis</strong> is an Orange implementation of pyLDAvis, which is further derived from an R package LDAvis by Sievert and Shirely (2014). The visualization is designed for the exploration of LDA topic models by adjusting the weights of top ranked topic words. Parameter Relevance adjusts word weights and it can be between 0 and 1, where 1 represents the words ranked solely by their topic frequency, and 0 those ranked solely by their lift (ratio of the probability of the word in a topic to the probability of thw word in the corpus).</p>
+<p><img src="../images/LDAvis.png" alt=""></p>
 <ol>
-<li>Query parameters:
-<ul>
-<li>Query word list, where each query is listed in a new line.</li>
-<li>Language of the query. English is set by default.</li>
-<li>Number of articles to retrieve per query (range 1-25). Please note that querying is done recursively and that disambiguations are also retrieved, sometimes resulting in a larger number of queries than set on the slider.</li>
-</ul>
-</li>
-<li>Select which features to include as text features.</li>
-<li>Information on the output.</li>
-<li>Produce a report.</li>
-<li>Run query.</li>
+<li>Parameter for adjusting the word&rsquo;s relevance in the topic. 1 would show words as seen in the Topic Modeling widget.</li>
+<li>List of topics.</li>
 </ol>
+<p>The plot on the right shows the top 20 words as ranked by the computed relevance. The default relevance is 0.5, which strikes a good balance between in-topic probability and lift (the authors suggest 0.6). The weights (x axis) show absolute word counts. The red bar shows in-topic probability, while the gray bar shows the in-corpus probability of a given word.</p>
 <h2 id="example">Example</h2>
-<p>This is a simple example, where we use <strong>Wikipedia</strong> and retrieve the articles on &lsquo;Slovenia&rsquo; and &lsquo;Germany&rsquo;. Then we simply apply default preprocessing with <a href="preprocesstext.md">Preprocess Text</a> and observe the most frequent words in those articles with <a href="../wordcloud/">Word Cloud</a>.</p>
-<p><img src="../images/Wikipedia-Example.png" alt=""></p>
-<p>Wikipedia works just like any other corpus widget (<a href="nytimes.md">NY Times</a>, <a href="../twitter-widget/">Twitter</a>) and can be used accordingly.</p>
+<p>We show how to approximate the exact LDAvis in Orange. We are using <em>book-excerpts.tab</em> corpus in the example, which we load with <a href="corpus-widget.md">Corpus</a>, pass it to <a href="preprocesstext.md">Preprocess Text</a>, then to <a href="bagofwords-widget.md">Bag of Words</a> and finally to <a href="../topicmodelling-widget/">Topic Modelling</a>, where we compute 10 topics with the LDA method.</p>
+<p>Next, we pass the <em>All Topics</em> output to <strong>LDAvis</strong> and to <strong>MDS</strong>. LDAvis shows the top ranked words for Topic 3, which seems to describe an industrial realm. One can adjust the Relevance slider to interactively explore word rankings.</p>
+<p>In MDS, we have set the color and size of the point to <em>Marginal Topic Probability</em> and labelled the point with their topic names. This represent the left part of LDAvis visualization, namely the PCA-based MDS projection of topic similarity and their corresponding weights in the corpus. It seems that Topic 8 is the most frequent topic in the corpus.</p>
+<p><img src="../images/LDAvis-Example.png" alt=""></p>
+<h2 id="references">References</h2>
+<p>Sievert, Carson  and Kenneth Shirley (2014). LDAvis: A method for visualizing and interpreting topics. In Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces. <a href="https://aclanthology.org/W14-3110">Available online.</a></p>
 
                 </div>
             </div>

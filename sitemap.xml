@@ -1493,6 +1493,8 @@
   </url><url>
     <loc>/widget-catalog/educational/enklik-anketa/</loc>
   </url><url>
+    <loc>/widget-catalog/text-mining/keywords/</loc>
+  </url><url>
     <loc>/faq/</loc>
   </url><url>
     <loc>/widget-catalog/data/featureconstructor/</loc>
@@ -1576,6 +1578,8 @@
     <loc>/widget-catalog/bioinformatics/kegg_pathways/</loc>
   </url><url>
     <loc>/widget-catalog/model/knn/</loc>
+  </url><url>
+    <loc>/widget-catalog/text-mining/LDAvis/</loc>
   </url><url>
     <loc>/license/</loc>
   </url><url>
@@ -1719,6 +1723,8 @@
   </url><url>
     <loc>/widget-catalog/single-cell/score_cells/</loc>
   </url><url>
+    <loc>/widget-catalog/text-mining/score-documents/</loc>
+  </url><url>
     <loc>/widget-catalog/single-cell/score_genes/</loc>
   </url><url>
     <loc>/screenshots/</loc>
@@ -1822,8 +1828,6 @@
     <loc>/widget-catalog/bioinformatics/volcano_plot/</loc>
   </url><url>
     <loc>/widget-catalog/</loc>
-  </url><url>
-    <loc>/widget-catalog/text-mining/wikipedia-widget/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/wordcloud/</loc>
   </url><url>

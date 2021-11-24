@@ -7045,6 +7045,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/keywords/",
+	"title": "Extract Keywords",
+	"content": "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/faq/",
 	"title": "Faq",
 	"content": "I am having trouble installing Orange. Make sure you are downloading the latest version. You can also try to download a standalone installer or Anaconda distribution.\nStill no luck? Check our issue tracker for similar issues or report a new one.\nI am having trouble installing an add-on. Make sure you are using the latest version of Orange. Encountering issues, please raise them on the relevant add",
@@ -7584,6 +7597,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "kNN Predict according to the nearest training instances.\nInputs\n Data: input dataset Preprocessor: preprocessing method(s)  Outputs\n Learner: kNN learning algorithm Model: trained model  The kNN widget uses the kNN algorithm that searches for k closest training examples in feature space and uses their average as prediction.\n A name under which it will appear in other widgets. The default name is \u0026" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/text-mining/LDAvis/",
+	"title": "LDAvis",
+	"content": "LDAvis Interactive exploration of LDA topics.\nInputs\n Topics: All LDA topics from topic modeling.  LDAvis is an Orange implementation of pyLDAvis, which is further derived from an R package LDAvis by Sievert and Shirely (2014). The visualization is designed for the exploration of LDA topic models by adjusting the weights of top ranked topic words. Parameter Relevance adjusts word weights and it ca",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "LDAvis Interactive exploration of LDA topics.\nInputs\n Topics: All LDA topics from topic modeling.  LDAvis is an Orange implementation of pyLDAvis, which is further derived from an R package LDAvis by Sievert and Shirely (2014). The visualization is designed for the exploration of LDA topic models by adjusting the weights of top ranked topic words. Parameter Relevance adjusts word weights and it ca" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -8514,6 +8540,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/score-documents/",
+	"title": "Score Documents",
+	"content": "Score Documents Scores documents based on word appearance.\nInputs\n Corpus: A collection of documents Words: A table with at least one column with words  Outputs\n Corpus: A collection of documents with scores  Score Document assigns scores to each document based on words at the input. The score with the selected scoring method is calculated for each word and aggregated together with the selected ag",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Score Documents Scores documents based on word appearance.\nInputs\n Corpus: A collection of documents Words: A table with at least one column with words  Outputs\n Corpus: A collection of documents with scores  Score Document assigns scores to each document based on words at the input. The score with the selected scoring method is calculated for each word and aggregated together with the selected ag" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/single-cell/score_genes/",
 	"title": "Score Genes",
 	"content": "Score Genes Gene scoring based on statistics of their expression profiles or information content about cell types.\nInputs\n Data: input dataset Scorer: (multiple) prediction model(s)  Outputs\n Reduced Data: expression data containing selected genes Scores: gene scores  The Score Genes widget considers gene expression data with genes in columns and single cell expression profiles in rows. It scores ",
@@ -9187,19 +9226,6 @@
 	"date" : "Jan 1, 0001",
 	"images" : null,
 	"kind" : "section",
-	"type" : "widget-catalog"
-},
-{
-    "uri": "/widget-catalog/text-mining/wikipedia-widget/",
-	"title": "Wikipedia",
-	"content": "Wikipedia Fetching data from MediaWiki RESTful web service API.\nInputs\n None  Outputs\n Corpus: A collection of documents from the Wikipedia.  Wikipedia widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.\n Query parameters:  Query word list, where each query is listed in a new line. Language of the query. English is set by default. Number of a",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "Wikipedia Fetching data from MediaWiki RESTful web service API.\nInputs\n None  Outputs\n Corpus: A collection of documents from the Wikipedia.  Wikipedia widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.\n Query parameters:  Query word list, where each query is listed in a new line. Language of the query. English is set by default. Number of a" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "page",
 	"type" : "widget-catalog"
 },
 {

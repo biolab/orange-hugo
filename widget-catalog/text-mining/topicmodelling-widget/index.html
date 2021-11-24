@@ -1114,13 +1114,6 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/text-mining/wikipedia-widget">
-                      <div class="reference internal" style="cursor: pointer;" >Wikipedia</div>
-                      </a>
-                  </li>
-                  
-                        
-                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/preprocesstext">
                       <div class="reference internal" style="cursor: pointer;" >Preprocess Text</div>
                       </a>
@@ -1177,8 +1170,22 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/LDAvis">
+                      <div class="reference internal" style="cursor: pointer;" >LDAvis</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/corpusviewer">
                       <div class="reference internal" style="cursor: pointer;" >Corpus Viewer</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/score-documents">
+                      <div class="reference internal" style="cursor: pointer;" >Score Documents</div>
                       </a>
                   </li>
                   
@@ -1214,6 +1221,15 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/duplicatedetection">
                       <div class="reference internal" style="cursor: pointer;" >Duplicate Detection</div>
+                      </a>
+                  </li>
+                  
+                        
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/keywords">
+                      <div class="reference internal" style="cursor: pointer;" >Extract Keywords</div>
                       </a>
                   </li>
                   
@@ -1786,7 +1802,7 @@
 <p><strong>Topic Modelling</strong> discovers abstract topics in a corpus based on clusters of words found in each document and their respective frequency. A document typically contains multiple topics in different proportions, thus the widget also reports on the topic weight per document.</p>
 <p>The widget wraps gensim&rsquo;s topic models (<a href="https://radimrehurek.com/gensim/models/lsimodel.html">LSI</a>, <a href="https://radimrehurek.com/gensim/models/ldamodel.html">LDA</a>, <a href="https://radimrehurek.com/gensim/models/hdpmodel.html">HDP</a>).</p>
 <p>The first, LSI, can return both positive and negative words (words that are in a topic and those that aren&rsquo;t) and concurrently topic weights, that can be positive or negative. As stated by the main gensim&rsquo;s developer, Radim Řehůřek: <em>&ldquo;LSI topics are not supposed to make sense; since LSI allows negative numbers, it boils down to delicate cancellations between topics and there&rsquo;s no straightforward way to interpret a topic.&quot;</em></p>
-<p>LDA can be more easily interpreted, but is slower than LSI. HDP has many parameters - the parameter that corresponds to the number of topics is <em>Top level truncation level (T)</em>. The smallest number of topics that one can retrieve is 10.</p>
+<p>LDA can be more easily interpreted, while HDP has many parameters - the parameter that corresponds to the number of topics is <em>Top level truncation level (T)</em>. The smallest number of topics that one can retrieve is 10.</p>
 <p><img src="../images/Topic-Modelling-stamped.png" alt=""></p>
 <ol>
 <li>Topic modelling algorithm:
@@ -1810,6 +1826,7 @@
 <li>Produce a report.</li>
 <li>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
+<p>The widget has three outputs. The first is a corpus, with added topic probabilities per each document. This can be used in a <a href="https://orangedatamining.com/widget-catalog/visualize/heatmap/">Heat Map</a> to observe the distribution of topics across a corpus. The second output is the selected topic, which can be used in combination with a <a href="../wordcloud/">Word Cloud</a> to observe significant words in a topic. The third output is a topic-term matrix, which shows probability distributions of words in topics. It can be used in combination with <a href="https://orangedatamining.com/widget-catalog/unsupervised/mds/">MDS</a> to observe topic similarities.</p>
 <h2 id="examples">Examples</h2>
 <h4 id="exploring-individual-topics">Exploring Individual Topics</h4>
 <p>In the first example, we present a simple use of the <strong>Topic Modelling</strong> widget. First we load <em>grimm-tales-selected.tab</em> data set and use <a href="../preprocesstext/">Preprocess Text</a> to tokenize by words only and remove stopwords. Then we connect <strong>Preprocess Text</strong> to <strong>Topic Modelling</strong>, where we use a simple <em>Latent Semantic Indexing</em> to find 10 topics in the text.</p>
