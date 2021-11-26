@@ -786,10 +786,75 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Sep 17, 2021",
+	"date" : "Oct 21, 2021",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
+},
+{
+    "uri": "/blog/box-plot/",
+	"title": "box plot",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 21, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2021/2021-10-21-cluster-explanation/",
+	"title": "Characterizing Clusters with a Box Plot",
+	"content": "There are many ways to cluster the data in Orange. Hiearchical clustering, k-means, and DBSCAN are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.\n Out of many ways for cluster analysis, perhaps the simplest",
+	"image" : "",
+	"thumbImage" : "/blog_img/2021/2021-10-21-cluster-explain.png",
+	"longExcerpt" :  "Box Plot widget offers a simple means for explaining clusters." ,
+	"author" : "Blaž Zupan",
+	"date" : "Oct 21, 2021",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/clustering/",
+	"title": "clustering",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 21, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/explanation/",
+	"title": "explanation",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 21, 2021",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 21, 2021",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
 },
 {
     "uri": "/blog/corpus/",
@@ -816,19 +881,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Sep 17, 2021",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/semantic-analysis/",
@@ -971,19 +1023,6 @@
 	"date" : "Aug 13, 2021",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/box-plot/",
-	"title": "box plot",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 5, 2021",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -2061,19 +2100,6 @@
 	"longExcerpt" :  "" ,
 	"author" : "",
 	"date" : "Nov 20, 2019",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/clustering/",
-	"title": "clustering",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 15, 2019",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
