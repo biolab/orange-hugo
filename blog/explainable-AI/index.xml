@@ -6,7 +6,16 @@
     <description>Recent content in explainable AI on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/explainable-AI/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/explainable-AI/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Explainable AI Project Meeting</title>
+      <link>/blog/2021/2021-10-26-explainable-ai/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021/2021-10-26-explainable-ai/</guid>
+      <description>Recently, we have attended an xAIM project meeting in Hannover, Germany. xAIM is an EU project whose aim is to develop a Master&amp;rsquo;s degree tailored to the medical professionals or those wanting to work in the medical field. The focus of the MA is on explainable artificial intelligence, that is on the explanation of machine learning models, ethical aspects of AI, and the translation of models into the medical setting.</description>
+    </item>
+    
     <item>
       <title>Explaining Predictive Models</title>
       <link>/blog/2021/2021-02-10-explaining-models/</link>
