@@ -1330,6 +1330,16 @@
     "url": "keywords"
    },
    {
+    "title": "Semantic Viewer",
+    "category": "Text Mining",
+    "keywords": [
+     "search"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Semantic Viewer.png",
+    "url": "semanticviewer"
+   },
+   {
     "title": "Statistics",
     "category": "Text Mining",
     "keywords": [],

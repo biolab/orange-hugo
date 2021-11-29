@@ -8709,6 +8709,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/semanticviewer/",
+	"title": "Semantic Viewer",
+	"content": "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/workflows/Sentiment-Analysis/",
 	"title": "Sentiment Analysis",
 	"content": "",
