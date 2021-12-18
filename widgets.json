@@ -344,6 +344,16 @@
     "url": "featurestatistics"
    },
    {
+    "title": "Group by",
+    "category": "Data",
+    "keywords": [
+     "aggregate",
+     "group by"
+    ],
+    "background": "#FFD39F",
+    "icon": "widget-icons/Data-Group by.png"
+   },
+   {
     "title": "Melt",
     "category": "Data",
     "keywords": [
