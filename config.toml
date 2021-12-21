@@ -7,7 +7,7 @@ disablePathToLower = "True"
 disableKinds = ["taxonomyTerm"] #workflows and blog landing pages do not generate correctly without this because of the custom list.html pages
 
 [params]
-  version = "3.30.2"
+  version = "3.31.0"
 
 [markup.goldmark.renderer]
 unsafe = true
