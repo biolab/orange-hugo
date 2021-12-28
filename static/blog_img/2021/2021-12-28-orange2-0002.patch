@@ -1,0 +1,52 @@
+From 5e8a2179c172a979ae805b8ea055f430183a1dfe Mon Sep 17 00:00:00 2001
+From: Marko Toplak <marko.toplak@gmail.com>
+Date: Tue, 28 Dec 2021 15:37:47 +0100
+Subject: [PATCH 2/3] Optional QWebView in canvas
+
+---
+ Orange/OrangeCanvas/application/canvasmain.py | 22 +++++++++++--------
+ 1 file changed, 13 insertions(+), 9 deletions(-)
+
+diff --git a/Orange/OrangeCanvas/application/canvasmain.py b/Orange/OrangeCanvas/application/canvasmain.py
+index fb7e8fd52..a8f3708b6 100644
+--- a/Orange/OrangeCanvas/application/canvasmain.py
++++ b/Orange/OrangeCanvas/application/canvasmain.py
+@@ -25,7 +25,10 @@ from PyQt4.QtCore import (
+ 
+ from PyQt4.QtNetwork import QNetworkDiskCache
+ 
+-from PyQt4.QtWebKit import QWebView
++try:
++    from PyQt4.QtWebKit import QWebView
++except ImportError:
++    QWebView = None
+ 
+ from PyQt4.QtCore import pyqtProperty as Property, pyqtSignal as Signal
+ 
+@@ -375,14 +378,15 @@ class CanvasMainWindow(QMainWindow):
+         self.help_dock = DockableWindow(self.tr("Help"), self,
+                                         objectName="help-dock")
+         self.help_dock.setAllowedAreas(Qt.NoDockWidgetArea)
+-        self.help_view = QWebView()
+-        manager = self.help_view.page().networkAccessManager()
+-        cache = QNetworkDiskCache()
+-        cache.setCacheDirectory(
+-            os.path.join(config.cache_dir(), "help", "help-view-cache")
+-        )
+-        manager.setCache(cache)
+-        self.help_dock.setWidget(self.help_view)
++        if QWebView is not None:
++            self.help_view = QWebView()
++            manager = self.help_view.page().networkAccessManager()
++            cache = QNetworkDiskCache()
++            cache.setCacheDirectory(
++                os.path.join(config.cache_dir(), "help", "help-view-cache")
++            )
++            manager.setCache(cache)
++            self.help_dock.setWidget(self.help_view)
+         self.help_dock.hide()
+ 
+         self.setMinimumSize(600, 500)
+-- 
+2.25.1
+
