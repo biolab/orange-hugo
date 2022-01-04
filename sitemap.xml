@@ -123,7 +123,28 @@
     <loc>/workflows/story-arcs/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/box-plot/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/data-mining/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/distributions/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/scatter-plot/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/visualization/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2021/2021-12-17-visualizations-101/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/explainable-AI/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
@@ -131,17 +152,11 @@
     <loc>/blog/2021/2021-10-26-explainable-ai/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/project/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/teaching/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/box-plot/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2021/2021-10-21-cluster-explanation/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
@@ -195,9 +210,6 @@
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/violin-plot/</loc>
-    <lastmod>2021-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/visualization/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/dimensionality-reduction/</loc>
@@ -582,9 +594,6 @@
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/interactive-visualization/</loc>
-    <lastmod>2018-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/scatter-plot/</loc>
     <lastmod>2018-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2018/12/21/scatter-plots-the-tour/</loc>
