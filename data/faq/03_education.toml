@@ -16,7 +16,7 @@
 
 [[item]]
     question = "How to teach with Orange?"
-    answer = """We are preparing materials that will show you how to teach with Orange. Stayed tuned for details!<br>In the meantime, see some examples on our <a href="/categories/education/">blog</a>."""
+    answer = """We are preparing materials that will show you how to teach with Orange. Stayed tuned for details!<br>In the meantime, see some examples on our <a href="/blog/education/">blog</a>."""
 
 [params]
     title = "Education"
