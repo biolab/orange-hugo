@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Orange</title>
+    <link>/blog/linux/</link>
+    <description>Recent content in linux on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiling Orange 2 on modern Linux</title>
+      <link>/blog/2022/2022-01-10-orange2/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-01-10-orange2/</guid>
+      <description>We abandoned Orange 2 in 2015 because we did not have enough resources to split between maintaining Orange 2 and building the new version from scratch. Orange was due for a rewrite for quite some time. The core of the pre-3 Orange was written mainly in C++. When Orange was conceived, extending Python with C was the only option to make it run fast enough. Orange was designed before NumPy and even before NumPy&amp;rsquo;s predecessors, Numarray and Numeric.</description>
+    </item>
+    
+  </channel>
+</rss>

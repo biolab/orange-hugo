@@ -123,7 +123,22 @@
     <loc>/workflows/story-arcs/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-01-10-orange2/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/development/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/linux/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/python/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/box-plot/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
@@ -132,9 +147,6 @@
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/distributions/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/scatter-plot/</loc>
@@ -627,9 +639,6 @@
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url><url>
     <loc>/blog/2018/09/21/orange-in-space/</loc>
-    <lastmod>2018-09-21T07:32:17+00:00</lastmod>
-  </url><url>
-    <loc>/blog/python/</loc>
     <lastmod>2018-09-21T07:32:17+00:00</lastmod>
   </url><url>
     <loc>/blog/spectroscopy/</loc>

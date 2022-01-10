@@ -1,0 +1,150 @@
+From 2318650be01435e4db9e8d8f27f8bf78d17f1ce0 Mon Sep 17 00:00:00 2001
+From: Marko Toplak <marko.toplak@gmail.com>
+Date: Tue, 28 Dec 2021 15:33:27 +0100
+Subject: [PATCH 1/3] Source modification so that it compiles on Ubuntu 20.04
+
+---
+ source/include/stat.hpp          |  4 ++--
+ source/orange/cls_orange.cpp     |  2 +-
+ source/orange/cls_value.cpp      | 10 +++++-----
+ source/orange/lib_kernel.cpp     |  4 ++--
+ source/orange/lib_preprocess.cpp |  2 +-
+ source/orange/measures.cpp       |  2 +-
+ source/statc/statc.cpp           |  2 +-
+ 7 files changed, 13 insertions(+), 13 deletions(-)
+
+diff --git a/source/include/stat.hpp b/source/include/stat.hpp
+index 0723db77e..8206d69d3 100644
+--- a/source/include/stat.hpp
++++ b/source/include/stat.hpp
+@@ -30,8 +30,8 @@ using namespace std;
+ #endif
+ 
+ #ifndef _MSC_VER_70
+-inline double abs(double x)
+-{ return fabs(x); }
++//inline double abs(double x)
++//{ return fabs(x); }
+ #endif
+ 
+ template<class T>
+diff --git a/source/orange/cls_orange.cpp b/source/orange/cls_orange.cpp
+index 62a8e6fc0..46a4f8c62 100644
+--- a/source/orange/cls_orange.cpp
++++ b/source/orange/cls_orange.cpp
+@@ -1222,7 +1222,7 @@ bool convertFromPythonWithML(PyObject *obj, string &str, const TOrangeType &base
+   else if (PyObject_TypeCheck(obj, (PyTypeObject *)const_cast<TOrangeType *>(&base)))
+     str = string(getName((TPyOrange *)obj));
+   else
+-    PYERROR(PyExc_TypeError, "invalid argument type", false);
++    PYERROR(PyExc_TypeError, "invalid argument type", PYNULL);
+ 
+   return true;
+ }
+diff --git a/source/orange/cls_value.cpp b/source/orange/cls_value.cpp
+index ded4895a4..46e341888 100644
+--- a/source/orange/cls_value.cpp
++++ b/source/orange/cls_value.cpp
+@@ -632,9 +632,9 @@ PyObject *Value_float(TPyValue *self)
+ inline bool checkForNumerical(const TValue &val1, const TValue &val2, const char *op)
+ {
+   if (val1.isSpecial() || val2.isSpecial())
+-    PYERROR(PyExc_TypeError, "cannot %s unknown values", false);
++    PYERROR(PyExc_TypeError, "cannot %s unknown values", PYNULL);
+   if ((val1.varType!=TValue::FLOATVAR) || (val2.varType!=TValue::FLOATVAR))
+-    PYERROR(PyExc_TypeError, "cannot %s non-continuous values", false);
++    PYERROR(PyExc_TypeError, "cannot %s non-continuous values", PYNULL);
+   return true;
+ }
+ 
+@@ -671,7 +671,7 @@ PyObject *Value_pow(TPyValue *self, PyObject *other, PyObject *)
+     const TValue &val1 = self->value;
+     
+     if (!val1.isSpecial() && (val1.varType==TValue::FLOATVAR) && (val1.floatV<=0))
+-      PYERROR(PyExc_TypeError, "negative base value", false);
++      PYERROR(PyExc_TypeError, "negative base value", PYNULL);
+ 
+     if (PyOrValue_Check(other)) { 
+       const TValue &val2 = PyValue_AS_Value(other); 
+@@ -695,7 +695,7 @@ PyObject *Value_neg(TPyValue *self)
+ 
+     const TValue &val1 = self->value;
+     if (val1.varType!=TValue::FLOATVAR)
+-      PYERROR(PyExc_TypeError, "cannot negate non-continuous value", false);
++      PYERROR(PyExc_TypeError, "cannot negate non-continuous value", PYNULL);
+     return PyFloat_FromDouble(-val1.floatV);
+   PyCATCH
+ }
+@@ -713,7 +713,7 @@ PyObject *Value_abs(TPyValue *self)
+ 
+     const TValue &val1 = self->value;
+     if (val1.varType!=TValue::FLOATVAR)
+-      PYERROR(PyExc_TypeError, "cannot compute abs of non-continuous value", false);
++      PYERROR(PyExc_TypeError, "cannot compute abs of non-continuous value", PYNULL);
+     return PyFloat_FromDouble(fabs(val1.floatV));
+   PyCATCH
+ }
+diff --git a/source/orange/lib_kernel.cpp b/source/orange/lib_kernel.cpp
+index 6a4529886..04426f31e 100644
+--- a/source/orange/lib_kernel.cpp
++++ b/source/orange/lib_kernel.cpp
+@@ -5083,7 +5083,7 @@ PyObject *ContDistribution_new(PyTypeObject *type, PyObject *targs, PyObject *)
+           PyObject *flt = PyNumber_Float(key);
+           if (!flt) {
+             PyErr_Format(PyExc_TypeError, "invalid key at index %i (float expected)", pos);
+-            return false;
++            return PYNULL;
+           }
+           float ind = (float) PyFloat_AsDouble(flt);
+           Py_DECREF(flt);
+@@ -5091,7 +5091,7 @@ PyObject *ContDistribution_new(PyTypeObject *type, PyObject *targs, PyObject *)
+           flt = PyNumber_Float(value);
+           if (!flt) {
+             PyErr_Format(PyExc_TypeError, "invalid value at index %i (float expected)", pos);
+-            return false;
++            return PYNULL;
+           }
+ 
+           udist->addfloat(ind, (float)PyFloat_AsDouble(flt));
+diff --git a/source/orange/lib_preprocess.cpp b/source/orange/lib_preprocess.cpp
+index 9461cf405..3e49618ae 100644
+--- a/source/orange/lib_preprocess.cpp
++++ b/source/orange/lib_preprocess.cpp
+@@ -596,7 +596,7 @@ PyObject *SubsetsGenerator_reset(PyObject *self, PyObject *args) PYARGS(METH_VAR
+       return PYNULL;
+ 
+     if (!vars)
+-      PYERROR(PyExc_TypeError, "SubsetsGenerator.reset does not reset the generator (as it used to)", false);
++      PYERROR(PyExc_TypeError, "SubsetsGenerator.reset does not reset the generator (as it used to)", PYNULL);
+ 
+     PVarList varList = varListForReset(vars);
+     if (!varList)
+diff --git a/source/orange/measures.cpp b/source/orange/measures.cpp
+index b84891fa7..f0ed7df08 100644
+--- a/source/orange/measures.cpp
++++ b/source/orange/measures.cpp
+@@ -1827,7 +1827,7 @@ PIntList TMeasureAttribute_relief::bestBinarization(PDistribution &subsetSizes,
+ 
+     if (!wins || !bestSubset) {
+       delete attrDistr;
+-      return false;
++      return NULL;
+     }
+     
+     ai = attrDistr;
+diff --git a/source/statc/statc.cpp b/source/statc/statc.cpp
+index 58a8767a1..4516c1123 100644
+--- a/source/statc/statc.cpp
++++ b/source/statc/statc.cpp
+@@ -1288,7 +1288,7 @@ PyObject *py_shellsort(PyObject *, PyObject *args)
+     PyObject *pylist, *pycomp=NULL;
+     if (   !PyArg_ParseTuple(args, "O|O", &pylist, &pycomp)
+         || !PyList_Check(pylist))
+-      PYERROR(PyExc_AttributeError, "list and optional compare function expected", false)
++      PYERROR(PyExc_AttributeError, "list and optional compare function expected", PYNULL)
+ 
+     vector<PyWrapper> wlist;
+     if (PyList2wlist(pylist, wlist)) {
+-- 
+2.25.1
+

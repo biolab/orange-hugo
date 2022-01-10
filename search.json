@@ -786,9 +786,74 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Dec 17, 2021",
+	"date" : "Jan 10, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-01-10-orange2/",
+	"title": "Compiling Orange 2 on modern Linux",
+	"content": "We abandoned Orange 2 in 2015 because we did not have enough resources to split between maintaining Orange 2 and building the new version from scratch. Orange was due for a rewrite for quite some time. The core of the pre-3 Orange was written mainly in C++. When Orange was conceived, extending Python with C was the only option to make it run fast enough. Orange was designed before NumPy and even b",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-01-10-orange2-about.png",
+	"longExcerpt" :  "How to compile an ancient version of Orange on Ubuntu 20.04 or how to spend a cold winter evening." ,
+	"author" : "Marko Toplak",
+	"date" : "Jan 10, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/development/",
+	"title": "development",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 10, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/linux/",
+	"title": "linux",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 10, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 10, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/python/",
+	"title": "python",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 10, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -829,19 +894,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Dec 17, 2021",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/scatter-plot/",
@@ -2973,19 +3025,6 @@
 	"date" : "Sep 21, 2018",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/python/",
-	"title": "python",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Sep 21, 2018",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

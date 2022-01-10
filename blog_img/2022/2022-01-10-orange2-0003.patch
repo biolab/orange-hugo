@@ -1,0 +1,28 @@
+From c85030f20fb9acbae3c49c09b3b881ae13419e1f Mon Sep 17 00:00:00 2001
+From: Marko Toplak <marko.toplak@gmail.com>
+Date: Tue, 28 Dec 2021 15:41:30 +0100
+Subject: [PATCH 3/3] OWReport: optional webkit import
+
+---
+ Orange/OrangeWidgets/OWReport.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/Orange/OrangeWidgets/OWReport.py b/Orange/OrangeWidgets/OWReport.py
+index 7edc86211..98ccccb7a 100755
+--- a/Orange/OrangeWidgets/OWReport.py
++++ b/Orange/OrangeWidgets/OWReport.py
+@@ -31,7 +31,10 @@ import xml.dom.minidom
+ 
+ from OWWidget import *
+ 
+-from PyQt4.QtWebKit import *
++try:
++    from PyQt4.QtWebKit import *
++except ImportError:
++    pass
+ 
+ from Orange.utils import environ
+ 
+-- 
+2.25.1
+
