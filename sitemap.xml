@@ -123,7 +123,25 @@
     <loc>/workflows/story-arcs/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/education/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/Orange/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-01-14-universities/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/teaching/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/university/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-01-10-orange2/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
@@ -132,9 +150,6 @@
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/linux/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/python/</loc>
@@ -165,9 +180,6 @@
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/project/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/teaching/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2021/2021-10-21-cluster-explanation/</loc>
@@ -260,9 +272,6 @@
     <loc>/blog/image-analytics/</loc>
     <lastmod>2021-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/education/</loc>
-    <lastmod>2021-03-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/2021/2021-03-05-overfitting-course/</loc>
     <lastmod>2021-03-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -293,13 +302,7 @@
     <loc>/blog/word-distribution/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/Orange/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/2021/2021-01-11-orange-in-classroom/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/university/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2020/</loc>

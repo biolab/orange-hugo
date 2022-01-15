@@ -786,9 +786,87 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 10, 2022",
+	"date" : "Jan 14, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/education/",
+	"title": "education",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/Orange/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-01-14-universities/",
+	"title": "Orange in Classroom, pt. 2",
+	"content": "A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.\nIn the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different) and are u",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-01-14-universities-small.png",
+	"longExcerpt" :  "Orange is being used inside and outside the classroom, by professors and students in over 300 universities around the world." ,
+	"author" : "Ajda Pretnar",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/teaching/",
+	"title": "teaching",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/university/",
+	"title": "university",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 14, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -829,19 +907,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 10, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/python/",
@@ -963,19 +1028,6 @@
 {
     "uri": "/blog/project/",
 	"title": "project",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 26, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/teaching/",
-	"title": "teaching",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",
@@ -1377,19 +1429,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/education/",
-	"title": "education",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Mar 5, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/2021/2021-03-05-overfitting-course/",
 	"title": "Hands-On Training About Overfitting",
 	"content": "PLOS Computation Biology has just published our paper on training about overfitting:\n Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671.  Machine learning has recently propelled approaches for the analysis of data, but “for the uninitiated, the technology poses significant difficulties” (Deep learning for biology, Nature, Feb 22, 2018). One ",
@@ -1520,19 +1559,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/Orange/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 11, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/2021/2021-01-11-orange-in-classroom/",
 	"title": "Orange in Classroom",
 	"content": "Orange in Classroom About three weeks ago, we put out a short survey asking professors, teaching assistants, and students to tell us how they use Orange in class. We have gotten four-hundred responses, and it turns out that over two hundred universities from around the world actively use Orange in the classroom.\nWe sincerely thank everyone for the answers!\n Here is a a list of universities, in alp",
@@ -1543,19 +1569,6 @@
 	"date" : "Jan 11, 2021",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/university/",
-	"title": "university",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 11, 2021",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
