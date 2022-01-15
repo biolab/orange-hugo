@@ -12,9 +12,9 @@ longExcerpt = "Orange is being used inside and outside the classroom, by profess
 x2images = false  # true if using retina screenshots, else false
 +++
 
-A year ago we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.
+A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.
 
-In the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different), and are using Orange for this purpose. Hence we continued gathering the data. In the second round, we got 417 replies from 305 universities and educational institutions in 76 countries! That is 39% of of the world!
+In the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different) and are using Orange for this purpose. Hence we continued gathering the data. We got 417 replies from 305 universities and educational institutions in 76 countries in the second round! That is 39% of the world!
 
 We once again thank everyone for your invaluable support!
 
@@ -244,7 +244,7 @@ We once again thank everyone for your invaluable support!
 - [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html), Hong Kong
 - [The Free University of Berlin](https://www.fu-berlin.de/en/index.html), Germany
 - [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/tc/), Hongkong
-- [The Institute of Bioengineering of Catalonia](http://www.ibecbarcelona.eu/), ?
+- [The Institute of Bioengineering of Catalonia](http://www.ibecbarcelona.eu/), Spain
 - [The United Nations University](https://www.merit.unu.edu/), The Netherlands
 - [The University of Santa Cruz do Sul](https://www.unisc.br/pt/), Brazil
 - [The University of Utah](https://www.utah.edu), USA
