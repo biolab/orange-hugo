@@ -1,0 +1,328 @@
++++
+author = "Ajda Pretnar"
+date = "2022-01-14"
+draft = false
+title = "Orange in Classroom, pt. 2"
+type = "blog"
+thumbImage = "/blog_img/2022/2022-01-14-universities-small.png"
+frontPageImage = "/blog_img/2022/2022-01-14-universities-small.png"
+blog = ["orange", "education", "teaching", "university"]
+shortExcerpt = "Orange is being used in over 300 universities around the world."
+longExcerpt = "Orange is being used inside and outside the classroom, by professors and students in over 300 universities around the world."
+x2images = false  # true if using retina screenshots, else false
++++
+
+A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.
+
+In the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different) and are using Orange for this purpose. Hence we continued gathering the data. We got 417 replies from 305 universities and educational institutions in 76 countries in the second round! That is 39% of the world!
+
+We once again thank everyone for your invaluable support!
+
+{{< window-screenshot src="/blog_img/2022/2022-01-14-universities.png" >}}
+
+- [Afyon Kocatepe University](https://aku.edu.tr/), Turkey
+- [Ahmad Dahlan University](https://uad.ac.id/en/), Indonesia
+- [Aix-Marseille University](https://www.univ-amu.fr/en), France
+- [Amirkabir University of Technology](https://aut.ac.ir/en/), Iran
+- [Andrés Bello Catholic University](https://www.ucab.edu.ve/), Venezuela
+- [Anglia Ruskin University](https://aru.ac.uk/), UK
+- [Anil Neerukonda Institute of Technology & Sciences](https://www.anits.edu.in/), India
+- [Antenor Orrego Private University](https://www.upao.edu.pe/), Peru
+- [Aston University](https://www.aston.ac.uk), UK
+- [Atılım University](https://www.atilim.edu.tr/en), Turkey
+- [Australian National University](https://www.anu.edu.au/), Australia
+- [Autonomous University of Madrid](http://www.uam.es/UAM/Home.htm?language=es), Spain
+- [BSE Institute Ltd.](https://www.bsebti.com/), India
+- [Babasaheb Bhimrao Ambedkar University](http://www.bbau.ac.in/), India
+- [Babeș-Bolyai University](https://www.ubbcluj.ro/en/), Romania
+- [Bandung Institute of Technology](https://www.itb.ac.id), Indonesia
+- [Bandırma Onyedi Eylül University](https://www.bandirma.edu.tr/), Turkey
+- [Batumi Shota Rustaveli State University](https://www.bsu.edu.ge/?lang=en), Georgia
+- [Baylor College of Medicine](https://bcm.edu), USA
+- [Birkbeck, University of London](http://www.bbk.ac.uk/), UK
+- [Birla Institute of Technology and Science](https://www.bits-pilani.ac.in/), India
+- [Bocconi University](https://www.unibocconi.eu/wps/wcm/connect/bocconi/sitopubblico_en/navigation+tree/home), Italy
+- [Bombay Stock Exchange Institute](https://www.bsebti.com/), India
+- [Buckinghamshire New University](https://bucks.ac.uk/), UK
+- [Budi Luhur University](https://www.budiluhur.ac.id/), Indonesia
+- [California Polytechnic State University](https://www.calpoly.edu/), USA
+- [Çankırı Karatekin university](http://karatekin.edu.tr/), Turkey
+- [Capital University of Science & Technology](https://cust.edu.pk/), Pakistan
+- [Carleton University](https://carleton.ca), Canada
+- [Catholic University of the Sacred Heart](https://eupha.org/catholic-university-of-the-sacred-heart-rome), Italy
+- [Center for Applied Mathemathics](http://www.cima.uadec.mx/), Mexico
+- [Center for Integrated Health Programs](http://cihpng.org/), Nigeria
+- [Center of Higher Education of Brasilia](https://www.iesb.br/Cms_Data/Contents/Portal/Media/arquivos/Colegio/ListaDeMateriais_ColegioIESB-1-.pdf), Brazil
+- [Central University of Venezuela](http://www.ucv.ve/), Venezuela
+- [Central Washington University](https://www.cwu.edu/), USA
+- [Centro Universitário das Faculdades Metropolitanas Unidas](https://www.laureate.net/school/fmu-education-group/), Brazil
+- [Cestar College of Business, Health and Technology](https://www.cestarcollege.com/), Canada
+- [Charles Darwin University](https://www.cdu.edu.au/), Australia
+- [Charles University, Faculty of Science](https://www.natur.cuni.cz/engg), Czechia
+- [Cheongju University](https://www.cju.ac.kr/eng/index.do), South Korea
+- [Chiang Mai University](https://www.cmu.ac.th), Thailand
+- [Complutense University of Madrid](https://www.ucm.es/), Spain
+- [Cork Institute of Technology](https://www.cit.ie/), Ireland
+- [Daegu Software High School](http://eng.insolmnt.com/?p=1077), South Korea
+- [Darmstadt University of Applied Sciences](https://h-da.com/), Germany
+- [Delft University of Technology](https://www.tudelft.nl), Netherlands
+- [Des Moines Area Community College](https://www.dmacc.edu/Pages/welcome.aspx), USA
+- [Dian Nuswantoro University](https://dinus.ac.id/), Indonesia
+- [Duta Bangsa University](https://udb.ac.id/), Indonesia
+- [École des Mines d'Albi](https://www.imt-mines-albi.fr/en/imt-mines-albi), France
+- [Ecuador Technological University](https://www.ute.edu.ec/), Ecuador
+- [Eskişehir Technical University](https://www.eskisehir.edu.tr), Turkey
+- [European Academy of Neurology](https://www.ean.org/), Austria
+- [Faculdade de Ciências da Universidade do Porto](https://sigarra.up.pt/fcup/), Portugal
+- [Faculty of Informatics Lemos de Castro](https://portal.colegiolemosdecastro.com.br/), Brazil
+- [Faculty of Organizational Sciences](http://www.fon.bg.ac.rs), Serbia
+- [Faculty of Sciences of the University of Lisbon](https://ciencias.ulisboa.pt/), Portugal
+- [Federal Centers of Technical Education](http://www.cefet-rj.br/), Brasil
+- [Federal Institute of Bahia](https://portal.ifba.edu.br/), Brazil
+- [Federal Institute of Education, Science and Technology of Tocantins](http://www.ifto.edu.br/), Brazil
+- [Federal Institute of São Paulo](https://www.ifsp.edu.br/), Brazil
+- [Federal University of Ceará](http://www.ufc.br/), Brazil
+- [Federal University of Goiás](https://www.ufg.br/), Brazil
+- [Federal University of Parana](https://www.ufpr.br), Brazil
+- [Federal University of Pelotas](https://portal.ufpel.edu.br/en/), Brazil
+- [Federal University of Recôncavo da Bahia](https://ufrb.edu.br/portal/), Brazil
+- [Federal University of Rio Grande](https://www.furg.br/en/), Brazil
+- [Federal University of Rio Grande do Norte](https://www.ufrn.br/), Brazil
+- [Federal University of Rio Grande do Sul](http://www.ufrgs.br/english/home), Brazil
+- [Federal University of Santa Catarina](https://ufsc.br/), Brazil
+- [Federal University of Santa Maria](https://www.ufsm.br/), Brazil
+- [Federal University of Technology – Paraná](http://www.utfpr.edu.br/), Brazil
+- [Florida State University](https://www.fsu.edu), USA
+- [Francisco José de Caldas District University](https://www.udistrital.edu.co), Colombia
+- [Gazi University](http://gazi.edu.tr/?language=en_US), Turkey
+- [Gaziantep University](https://www.gantep.edu.tr/en/), Turkey
+- [Giresun University](https://www.giresun.edu.tr/), Turkey
+- [Graz University of Technology](https://www.tugraz.at), Austria
+- [Gunadarma University](https://www.gunadarma.ac.id/), Indonesia
+- [Guru Gobind Singh Indraprastha University](http://www.ipu.ac.in/), India
+- [Hacettepe University](https://www.hacettepe.edu.tr/english/), Turkey
+- [Hamad Bin Khalifa University](https://www.hbku.edu.qa/en), Qatar
+- [Hankuk University of Foreign Studies](http://builder.hufs.ac.kr/user/hufsenglish/), South Korea
+- [Harrisburg University of Science & Technology](https://www.harrisburgu.edu/), USA
+- [Hiroshima Institute of Technology](https://www.it-hiroshima.ac.jp/), Japan
+- [Holon Institute of Technology](https://www.hit.ac.il/en), Israel
+- [Hungnam National University](https://plus.cnu.ac.kr), South Korea
+- [I.E.S. Juan Carlos I](http://www.iesjuancarlosi.es), Spain
+- [ICFAI Business School](https://ibsindia.org/ibs-bengaluru/), India
+- [ICFAI Business School Hyderabad](https://www.ibshyderabad.org/), India
+- [IES Santiago Apóstol](https://www.santiagoapostol.net/), Spain
+- [IPB University](https://ipb.ac.id/), Indonesia
+- [ISLA Santarém](https://www.islasantarem.pt), Portugal
+- [ITB STIKOM Bali](https://stikom-bali.ac.id/), Indonesia
+- [ITC Infotech](https://www.itcinfotech.com/), India
+- [ITESO, Universidad Jesuita de Guadalajara](https://iteso.mx/web/general/detalle?group_id=220235), Mexico
+- [ITM Business School](https://itm.edu), India
+- [IULM University - Milan](http://www.iulm.it), Italy
+- [Indian Institute of Management](https://www.iimamritsar.ac.in/), India
+- [Indian Institute of Management Sambalpur](https://www.iimsambalpur.ac.in/), India
+- [Indian Institute of Technology Madras](https://www.iitm.ac.in), India
+- [Indian Institutes of Management](http://www.iiml.ac.in/), India
+- [Indian Statistical Institute](https://www.isical.ac.in), India
+- [Indiana University](https://www.iu.edu/index.html), USA
+- [Informatics & Business Institute Darmajaya](https://www.darmajaya.ac.id/), Indonesia
+- [Inonu Universitesi](http://www.inonu.edu.tr/), Turkey
+- [Institut catholique d'arts et métiers](https://en.icam.fr/), France
+- [Institute of Technical Education and Research](https://www.soa.ac.in/iter), India
+- [Instituto Potosino de Investigación Científica y Tecnológica](https://www.ipicyt.edu.mx/), Mexico
+- [Instituto Superior de Engenharia de Lisboa](https://www.isel.pt/en/), Portugal
+- [Instituto Tecnológico Superior de Xalapa](https://www.itsx.edu.mx/), Mexico
+- [International Islamic University Malaysia](https://www.iium.edu.my/), Malaysia
+- [International Trademark Association](https://www.inta.org/), USA
+- [Istanbul Health and Technology University](https://www.istun.edu.tr/), Turkey
+- [JK Faculty](https://www.faculdade.jk.edu.br/), Brazil
+- [Jagiellonian University](https://en.uj.edu.pl/en_GB/start), Poland
+- [Jakarta State Polytechnic](https://www.pnj.ac.id/), Indonesia
+- [KAIST](https://www.kaist.ac.kr/kr/), South Korea
+- [Karlsruhe Institute of Technology](https://www.kit.edu/english/), Germany
+- [Kendriya Vidyalaya Janakpuri](https://www.eduvidya.com/Schools/Kendriya-Vidyalaya-Janakpuri), India
+- [Kielce University of Technology](https://international.tu.kielce.pl/), Poland
+- [Kindai University](https://www.kindai.ac.jp/english/), Japan
+- [King Mongkut's Institute of Technology Ladkrabang](http://kmitl.ac.th/en), Thailand
+- [Laval University](https://www.ulaval.ca/en/), Canada
+- [Linnaeus University](https://lnu.se/en/), Sweden
+- [Liverpool John Moores University](https://www.ljmu.ac.uk/), UK
+- [Lodz University of Technology](https://www.p.lodz.pl/en), Poland
+- [Lviv Polytechnic National University](https://lpnu.ua/en), Ukraine
+- [MGMU Institute of Biosciences & Technology](https://www.mgmibt.com/), India
+- [Mahidol University](https://mahidol.ac.th/), Thailand
+- [Manipal University Jaipur](https://jaipur.manipal.edu/), India
+- [Mauricio de Nassau Faculty](https://www.uninassau.edu.br/institucional/aracaju), Brazil
+- [Memorial University of Newfoundland](https://www.mun.ca/), Canada
+- [Mercu Buana University](https://pendaftaran.mercubuana.ac.id/), Indonesia
+- [Mexican Institute of Knowledge Management](https://imac.org.mx/), Mexico
+- [Mexican Institute of Social Security](https://www.gob.mx/imss), Mexico
+- [Mittelhessen University of Applied Sciences](https://www.thm.de/site/), Germany
+- [Monash University](https://www.monash.edu/), Australia
+- [National Central University](https://www.ncu.edu.tw/en), Taiwan
+- [National Chung Hsing University](https://www.nchu.edu.tw/en-index), Taiwan
+- [National Conservatory of Arts and Crafts](https://www.cnam.fr/portail/accueil-conservatoire-national-des-arts-et-metiers-821166.kjsp), France
+- [National Institute of Technology Kurukshetra](https://www.nitkkr.ac.in/), India
+- [National Institute of Technology Tiruchirappalli](https://www.nitt.edu/), India
+- [National Law School of India University](https://www.nls.ac.in/), India
+- [National School of Computer Sciences](http://www.ensi.rnu.tn/fr/index.php), Tunisia
+- [National Service for Industrial Training](https://www.sp.senai.br/), Brazil
+- [National Technological Institute of Mexico](http://www.itvictoria.edu.mx/), Mexico
+- [National Technological University](https://www.utn.edu.ar/es/), Argentina
+- [National University](https://www.nu.edu/), USA
+- [National University of General San Martín](https://www.unsam.edu.ar/), Argentina
+- [National University of Singapore](http://nus.edu.sg/), Singapore
+- [Naval Postgraduate School](https://nps.edu/), USA
+- [New Bulgarian University](https://nbu.bg/en), Bulgaria
+- [Nigerian Defence Academy](https://www.nda.edu.ng), Nigeria
+- [North American University](https://www.na.edu/), USA
+- [Northern Alberta Institute of Technology](https://www.nait.ca/nait/home), Canada
+- [Odessa National Polytechnic University](https://opu.ua), Ukraine
+- [Ohio University](https://www.ohio.edu/), USA
+- [Open University of the Netherlands](https://www.ou.nl/), The Netherlands
+- [Osnabrück University of Applied Sciences](https://www.hs-osnabrueck.de/en/), Germany
+- [PES University](https://www.pes.edu/), India
+- [Pablo de Olavide University](https://www.upo.es/portal/impe/web/portada?lang=en), Spain
+- [Padjadjaran University](https://www.unpad.ac.id/), Indonesia
+- [Palacký University Olomouc](https://www.upol.cz/en/), Czechia
+- [Pamukkale University](https://www.pau.edu.tr/pau/en), Turkey
+- [Panamerican University](https://www.up.edu.mx/en/), Mexico
+- [Panteion University of Social and Political Sciences](https://www.panteion.gr/en/), Greece
+- [Peking University](http://english.pku.edu.cn/), China
+- [Pennsylvania State University](https://www.psu.edu/), USA
+- [Pirogov Russian National Research Medical University](https://rsmu.ru/), Russia
+- [Plovdiv University "Paisii Hilendarski"](https://uni-plovdiv.bg/en/), Bulgaria
+- [Politecnica Salesiana University](https://www.ups.edu.ec/), Ecuador
+- [Polytechnic Institute of Coimbra](https://www.ipc.pt/ipc/), Portugal
+- [Polytechnic University of Yucatan](https://en.upy.edu.mx/), Mexico
+- [Pontifical Catholic University of Minas Gerais](https://www.pucminas.br), Brazil
+- [Pontifical Catholic University of Peru](https://www.pucp.edu.pe/), Peru
+- [Pontifical Catholic University of Rio de Janeiro](https://www.puc-rio.br/index.html), Brazil
+- [Pontifical Catholic University of Valparaiso](https://www.pucv.cl/), Chile
+- [Pontifical Xavierian University](https://www.javeriana.edu.co/inicio), Colombia
+- [Poznań University of Economics and Business](https://ue.poznan.pl/en/), Poland
+- [Prague University of Economics and Business](https://www.vse.cz/english/), Czech Republic
+- [Praxis Business School](https://praxis.ac.in/), India
+- [Professional Institute Santo Tomas](https://www.santotomas.cl/instituciones-santo-tomas/ip-y-cft/), Chile
+- [Queen Mary's College](https://www.qmc.ac.uk/), UK
+- [RWTH Aachen University](https://www.rwth-aachen.de/go/id/a/?lidx=1), Germany
+- [Regis University](https://www.regis.edu/), USA
+- [Republic Polytechnic](https://www.rp.edu.sg/further-studies), Singapore
+- [Research Institute for Development](https://en.ird.fr/node/8), France
+- [Rheinische University of Applied Science](https://www.rfh-koeln.de/), Germany
+- [Riga Technical University](https://www.rtu.lv/en), Latvia
+- [Riken](https://www.riken.jp/en/), Japan
+- [Riphah International University](https://www.riphah.edu.pk/), Pakistan
+- [Rochester Institute of Technology](https://www.rit.edu/), USA
+- [Royal University of Phnom Penh](http://www.rupp.edu.kh/), Cambodia
+- [Sabanci University](https://www.sabanciuniv.edu/en), Turkey
+- [Saint Petersburg Electrotechnical University](https://etu.ru), Russia
+- [Sakarya University](https://www.sakarya.edu.tr/), Turkey
+- [Salzburg University of Applied Sciences](https://www.fh-salzburg.ac.at/), Austria
+- [Santo Tomas](https://www.santotomas.cl/), Spain
+- [School of Information Management and Computer IKMI](https://ikmi.ac.id/), Indonesia
+- [School of Technology and Management of Oliveira do Hospital](http://www.estgoh.ipc.pt/), Portugal
+- [Sepuluh Nopember Institute of Technology](https://www.its.ac.id/), Indonesia
+- [Shahid Beheshti University](http://en.sbu.ac.ir), Iran
+- [Shahroud University of Technology](https://shahroodut.ac.ir/fa/), Iran
+- [Siberian Institute of Management](https://site-siu.ranepa.ru), Russia
+- [Silesian University of Technology](https://www.polsl.pl), Poland
+- [Singapore Polytechnic](https://www.sp.edu.sg), Singapore
+- [Soongsil University](http://pre.ssu.ac.kr), South Korea
+- [South Ural State University](https://www.susu.ru/en), Russia
+- [Sree Ramu College Of Arts And Science](https://www.sreeramucas.org/), India
+- [St. Petersburg State University of Industrial Technologies and Design](https://sutd.ru/en/), Russia
+- [Stellenbosch University](http://www.sun.ac.za/english), South Africa
+- [Sungkyunkwan University](https://www.skku.ac.kr/eng/index.do), South Korea
+- [Syracuse University School of Information Studies](https://ischool.syr.edu/), USA
+- [Södertörn University](https://www.sh.se/english/sodertorn-university), Sweden
+- [Taif University](https://www.tu.edu.sa/en/), Saudi Arabia
+- [Tecnológico de Monterrey](https://tec.mx/es), Mexico
+- [Telkom Institute of Technology](https://telkomuniversity.ac.id/en/academic/), Indonesia
+- [Telkom Institute of Technology Purwokerto](https://ittelkom-pwt.ac.id/), Indonesia
+- [Texas State University](https://www.txstate.edu/), USA
+- [The American University (Nicaragua)](https://uam.edu.ni/), Nicaragua
+- [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html), Hong Kong
+- [The Free University of Berlin](https://www.fu-berlin.de/en/index.html), Germany
+- [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/tc/), Hongkong
+- [The Institute of Bioengineering of Catalonia](http://www.ibecbarcelona.eu/), Spain
+- [The United Nations University](https://www.merit.unu.edu/), The Netherlands
+- [The University of Santa Cruz do Sul](https://www.unisc.br/pt/), Brazil
+- [The University of Utah](https://www.utah.edu), USA
+- [The University of Virginia](https://www.virginia.edu), USA
+- [Tohoku University of Community Service and Science](https://www.koeki-u.ac.jp/en/), Japan
+- [Tokyo University of Science](https://www.tus.ac.jp), Japan
+- [Treptow-Köpenick University of Appplied Sciences](https://www.berlin.de/vhs/volkshochschulen/treptow-koepenick/), Germany
+- [UNICAMP Universidade Estadual de Campinas](https://www.unicamp.br/unicamp/), Brazil
+- [Universidad Autónoma Latinoamericana](https://www.unaula.edu.co/), Colombia
+- [Universidad Autónoma del Estado de Morelos](https://www.uaem.mx/), Mexico
+- [Universidad EAFIT](https://www.eafit.edu.co/international/eng/Paginas/eng.aspx), Colombia
+- [Universidad Internacional SEK](https://www.uisek.edu.ec/), Ecuador
+- [Universidad Norbert Wiener](https://www.uwiener.edu.pe/), Peru
+- [Universidad Tecnológica de Pereira](https://www.utp.edu.co/), Colombia
+- [Universidade Estácio de Sá](https://www.estacio.br/), Brazil
+- [Universidade de Sao Paulo](https://www5.usp.br), Brazil
+- [Universidade do Sul de Santa Catarina](http://www.unisul.br/), Brazil
+- [Universitas Gadjah Mada](https://ugm.ac.id), Indonesia
+- [Universitas Katolik Widya Mandira](https://www.unwira.ac.id/index.html), Indonesia
+- [Universitas Narotama](https://narotama.ac.id/), Indonesia
+- [Universitas Negeri Surabaya](https://www.unesa.ac.id/), Indonesia
+- [Universiti Teknologi MARA Shah Alam](https://www.uitm.edu.my/index.php/en/), Malaysia
+- [Universiti Utara Malaysia](http://www.uum.edu.my/), Malaysia
+- [University Putra Malaysia](http://upm.edu.my/), Malaysia
+- [University of Advanced Studies](https://www.unea.edu.mx), Mexico
+- [University of Algarve](https://www.ualg.pt/), Portugal
+- [University of Applied Sciences Mittelhessen](https://www.thm.de/), Germany
+- [University of Azad Jammu and Kashmir](https://ajku.edu.pk/), Pakistan
+- [University of Barcelona](https://www.ub.edu/web/portal/en/), Spain
+- [University of Belgrade](http://www.fon.bg.ac.rs), Serbia
+- [University of Bologna](https://www.unibo.it/en), Italy
+- [University of Brasília](https://www.unb.br/), Brazil
+- [University of Central Florida](https://www.ucf.edu/), USA
+- [University of Djelfa](http://www.univ-djelfa.dz/en/), Algeria
+- [University of Essex](https://www.essex.ac.uk/people/sande90307/gavin-sandercock), UK
+- [University of Granada](https://www.ugr.es/en/), Spain
+- [University of Guadalajara](https://www.udg.mx/), Mexico
+- [University of Guelph](https://www.uoguelph.ca/), Canada
+- [University of Health Sciences](http://www.uhs.edu.tr/), Turkey
+- [University of Houston](https://www.uh.edu/), USA
+- [University of Indonesia](https://www.ui.ac.id/), Indonesia
+- [University of Karachi](https://uok.edu.pk/faculties/businessadministration/), Pakistan
+- [University of La Laguna](https://www.ull.es/), Spain
+- [University of Ljubljana](https://www.uni-lj.si/), Slovenia
+- [University of London](https://london.ac.uk/), UK
+- [University of Malaya](https://www.um.edu.my/), Malaysia
+- [University of Maryland Global Campus](https://www.umgc.edu/about/index.cfm), USA
+- [University of Mauritius](https://www.uom.ac.mu/), Mauritius
+- [University of Milano-Bicocca](https://www.unimib.it/), Italy
+- [University of Monterrey](https://www.udem.edu.mx/en), Mexico
+- [University of Montreal](https://www.umontreal.ca/), Canada
+- [University of Nairobi](https://www.uonbi.ac.ke/), Kenya
+- [University of Nebraska Kearney](https://www.unk.edu/), USA
+- [University of Oviedo](https://www.uniovi.es/), Spain
+- [University of Paris](https://www.sorbonne-universite.fr/en), France
+- [University of Portsmouth](https://www.port.ac.uk), UK
+- [University of South Dakota](https://www.usd.edu), USA
+- [University of Split](https://www.unist.hr/en/), Croatia
+- [University of Stirling](https://www.stir.ac.uk/), UK
+- [University of Strathclyde](https://www.strath.ac.uk/), UK
+- [University of São Paolo](https://www.fearp.usp.br/en/index.php/where-we-are/university-of-sao-paulo), Brazil
+- [University of Technology and Applied Sciences](https://www.hct.edu.om/), Oman
+- [University of Tehran](https://ut.ac.ir/en), Iran
+- [University of Tennessee](https://www.utk.edu/), USA
+- [University of Texas Austin](https://knightcenter.utexas.edu/), USA
+- [University of Toronto](https://www.utoronto.ca/), Canada
+- [University of Tübingen](https://uni-tuebingen.de/universitaet/), Germany
+- [University of the Basque Country](https://www.ehu.eus/en/en-home), Basque Country
+- [University of the Peloponnese](https://www.uop.gr/en/), Greece
+- [University of the Republic](http://www.universidad.edu.uy), Uruguay
+- [Università di Foggia](https://www.unifg.it), Italy
+- [Univesity of Chile](https://www.uchile.cl/english), Chile
+- [Utah Valley University](https://www.uvu.edu/), USA
+- [Van Yüzüncü Yıl University](https://www.yyu.edu.tr/), Turkey
+- [Vellore Institute of Technology](https://vit.ac.in/), India
+- [Virtual University of the State of Sao Paulo](https://univesp.br/), Brazil
+- [Vytautas Magnus University](https://www.vdu.lt/lt/), Lithuania
+- [Weill Cornell Medicine](https://weill.cornell.edu/), USA
+- [YARSI University](https://www.yarsi.ac.id/), Indonesia
+- [Yogyakarta State University](http://english.uny.ac.id/), Indonesia
+- [Zwickau University of Applied Sciences](https://www.fh-zwickau.de/english/), Germany
