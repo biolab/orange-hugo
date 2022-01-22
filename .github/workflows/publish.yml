@@ -54,4 +54,5 @@ jobs:
           REPO: self
           BRANCH: gh-pages
           FOLDER: public
+          SKIP_EMPTY_COMMITS: True
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
