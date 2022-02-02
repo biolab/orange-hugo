@@ -786,7 +786,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 14, 2022",
+	"date" : "Feb 1, 2022",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
@@ -799,9 +799,35 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 14, 2022",
+	"date" : "Feb 1, 2022",
 	"images" : null,
 	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/machine-learning/",
+	"title": "machine learning",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Feb 1, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-02-01-machine-learning-jargon/",
+	"title": "Machine Learning Jargon",
+	"content": "We all know each profession has its own jargon. Most of us remember from any hospital series something like: ““Pass me the scalpel, stat!” Meaning “give me the scalpel quickly”.\nData scientists are no different. We have our own terminology that requires some getting used to. Here’s a list of common terms that we use in machine learning. Some terms are specific t",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-02-01-word-cloud.png",
+	"longExcerpt" :  "Data scientists have a specific language. Learn about what certain terms mean and become more confident in your data science speak!" ,
+	"author" : "Ajda Pretnar Žagar",
+	"date" : "Feb 1, 2022",
+	"images" : null,
+	"kind" : "page",
 	"type" : "blog"
 },
 {
@@ -812,7 +838,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 14, 2022",
+	"date" : "Feb 1, 2022",
 	"images" : null,
 	"kind" : "home",
 	"type" : "page"
@@ -825,7 +851,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 14, 2022",
+	"date" : "Feb 1, 2022",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
@@ -1439,19 +1465,6 @@
 	"date" : "Mar 5, 2021",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/machine-learning/",
-	"title": "machine learning",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Mar 5, 2021",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

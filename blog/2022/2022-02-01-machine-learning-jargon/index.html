@@ -1,0 +1,534 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Machine Learning Jargon</title>
+
+    
+    
+    <meta property="og:title" content="Machine Learning Jargon">
+    
+    
+    <meta property="og:description" content="What do &#39;target variable&#39;, &#39;attribute&#39;, and &#39;learner&#39; mean?">
+    
+    
+    <meta property="og:image" content="/blog_img/2022/2022-02-01-word-cloud.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="/scss/main.d9c67f9587b6abf8530a97159ebe0538a4fcf1753aa987c0cebe9a6632c39829.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+
+    <body>
+
+    <header id="top" class="header navbar-fixed-top">
+  <div class="container" >
+      <h1 class="logo pull-left" >
+          <a id="header-orangelogo" href="/">
+              <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+          </a>
+      </h1>
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+         <div class="navbar-collapse collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+
+                  
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                      
+                  
+                
+              
+
+                  
+                      <li class="nav-search-wrapper">
+                        <div>                         
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
+                            id="search-btn-js" 
+                            role="button">
+                          </a>
+                          
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
+                            role="button" 
+                            href="/search/?q=">
+                          </a>
+
+                          <input type="text" 
+                                class="header-search-input jsonly search-widget-workflow nav-item" 
+                                id="search-header" 
+                                placeholder="Search" 
+                                tabindex="1" 
+                                onkeydown="check_key_header(event)" 
+                                hidden
+                                autofocus />
+                        </div>
+                      </li>
+                  
+              
+
+                  
+                  
+                      
+                  <li class="">
+                    <div class="donate-button transform_header donate_div">
+                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                    </div>
+                  </li>
+                      
+                  
+                
+              
+              </ul>
+          </div>
+      </nav>
+  </div>
+</header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/blog/orange">orange</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/education">education</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/machine-learning">machine learning</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Machine Learning Jargon</h1>
+          <span class="author-blog">
+            
+            By: Ajda Pretnar Žagar,
+            
+            Feb 1, 2022
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              <p>We all know each profession has its own jargon. Most of us remember from any hospital series something like: &ldquo;&ldquo;Pass me the scalpel, stat!&rdquo; Meaning &ldquo;give me the scalpel quickly&rdquo;.</p>
+<p>Data scientists are no different. We have our own terminology that requires some getting used to. Here&rsquo;s a list of common terms that we use in machine learning. Some terms are specific to Orange and might not be used elsewhere. The post is intended to get you familiar with concepts used in Orange.</p>
+<a href="/blog_img/2022/2022-02-01-word-cloud.png" class="blog-image_"> 
+      <img src="/blog_img/2022/2022-02-01-word-cloud.png" class="window-screenshot" />
+ </a>
+
+
+<h3 id="data">Data</h3>
+<ul>
+<li>
+<p><strong>variable</strong>, also known as <strong>attribute</strong> or <strong>feature</strong> (sometimes even <strong>predictor</strong>). In statistics they would be called <strong>independent variables</strong>. This all refers to descriptions of data samples. If you have patients in rows, that variables are in columns and they describe these patients (i.e. with name, date of birth, cholesterol level, heart rate, and so on).</p>
+</li>
+<li>
+<p><strong>data sample</strong>, also known as <strong>data instance</strong>. These are the rows in your table and represent the objects or subjects you are researching. For example, patients, passengers on Titanic, species of iris, or a children&rsquo;s fairy tales.</p>
+</li>
+<li>
+<p><strong>categorical</strong> or <strong>discrete</strong> variable. This refers to a variable with categories as values, for example eye color, nationality, ticket class (first, second, third), and so on. In Orange, these would be marked with a green C.</p>
+</li>
+<li>
+<p><strong>numeric</strong> or <strong>continuous</strong> variable. This refers to a variable with numbers as values, for example cholesterol level, heart rate, age, and so on. In Orange, these would be marked with a red N.</p>
+</li>
+<li>
+<p><strong>string</strong> or <strong>text</strong> variable. This refers to a variable with text as value, for example the address, the ID of a product, or the name of the person. In Orange, these would be marked with a black S. They would always be in meta variables.</p>
+</li>
+<li>
+<p><strong>datetime</strong> variable. This refers to a variable with time as value, for example date of birth or time of the event. In Orange, these would be marked with a blue T.</p>
+</li>
+</ul>
+<a href="/blog_img/2022/2022-02-01-file.png" class="blog-image_"> 
+      <img src="/blog_img/2022/2022-02-01-file.png" class="window-screenshot" />
+ </a>
+
+
+<ul>
+<li>
+<p><strong>meta variable</strong> is a variable that adds additional information on a data sample, but it is not used in computation. Such variables are text variables, but they can also be of other types. For example, if we set the age of the person as a meta variable, this variable will not be considered in clustering or classification. In Orange, they will be marked with beige in a data table.</p>
+</li>
+<li>
+<p><strong>target variable</strong>, in statistics known as <strong>dependent variable</strong>. This is the variable you are trying to predict, for example the survival of Titanic passengers or the price of a house in Boston. In Orange, they will be marked with gray in a data table.</p>
+</li>
+<li>
+<p><strong>class variable</strong> is a target variable with categorical values. It is used for classification tasks.</p>
+</li>
+</ul>
+<a href="/blog_img/2022/2022-02-01-data-table.png" class="blog-image_"> 
+      <img src="/blog_img/2022/2022-02-01-data-table.png" class="window-screenshot" />
+ </a>
+
+
+<ul>
+<li>
+<p><strong>domain</strong> is something a bit specific to Orange. It contains the information on all the variables in the data set, specifically the type of variables (numeric, categorical, etc.), the role of variables (attributes, metas, target), and the special properties of variables (assigned color, the order of categorical values, etc.).</p>
+</li>
+<li>
+<p><strong>sparse data</strong> is a data with many missing values. Such data is usually found in text mining, where among all the words in the corpus, a document would contain only a small amount.</p>
+</li>
+</ul>
+<h3 id="preprocessing">Preprocessing</h3>
+<ul>
+<li>
+<p><strong>continuize</strong> is an operation that transforms categorical variables to numeric, usually by creating a column for each categorical value, i.e. gender=female and giving 1 if female else 0. Many algorithms require numeric data, making continuization extremely important. Orange usually continuizes by default.</p>
+</li>
+<li>
+<p><strong>discretize</strong> is an operation that transforms numeric variables to categorical, usually by creating value ranges or bins.</p>
+</li>
+<li>
+<p><strong>impute</strong> is an operation that handles missing values. Certain algorithms cannot work with missing data, so the user needs to handle them beforehand. If there are few missing values, such instances would be removed. If there are many missing values, one would usually use imputing a mean or most frequent value. Or one could use an algorithm that works with sparse data.</p>
+</li>
+<li>
+<p><strong>merge</strong> is an operation that adds additional columns to the data. For example, we have some patients, and the friendly hospital sends us their records. We can add the records to the patients by matching by the patient ID.</p>
+</li>
+<li>
+<p><strong>concatenate</strong> is an operation that add additional rows to the data. For example, we have some patients, and then another 10 patients are admitted to the hospital. We can add them to the table by matching by column names.</p>
+</li>
+</ul>
+<a href="/blog_img/2022/2022-02-01-preprocess.png" class="blog-image_"> 
+      <img src="/blog_img/2022/2022-02-01-preprocess.png" class="window-screenshot" />
+ </a>
+
+
+<h3 id="modelling">Modelling</h3>
+<ul>
+<li>
+<p><strong>training data</strong> is a sample of the data set used for training the model. Usually, this is the larger portion of the data, say 70% or 80% of all data samples.</p>
+</li>
+<li>
+<p><strong>test data</strong> is a sample of the data set used for testing the model and evaluating its performance. Usually, this is a smaller portion of the data, say 10%-20% of all data samples.</p>
+</li>
+<li>
+<p><strong>learner</strong> is an algorithm (procedure or recipe) for training the model. It is passed to the selected evaluation method, usually to Test and Score widget for cross-validation. It does not contain any data, just the procedure.</p>
+</li>
+<li>
+<p><strong>model</strong> is an a result of training the data with a procedure (a learner) and the training data. A model is essentially a set of all recognized patterns in the data relating to the target variable, which are assembled into a final mathemathical function. The model can be used for prediction.</p>
+</li>
+</ul>
+<a href="/blog_img/2022/2022-02-01-learner.png" class="blog-image_"> 
+      <img src="/blog_img/2022/2022-02-01-learner.png" class="window-screenshot" />
+ </a>
+
+
+<h3 id="to-sum-up">To sum up</h3>
+<p>We hope you found this informative. This information should help you navigate Orange easily and talk more precisely about your data mining and machine learning tasks.</p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedatamining" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                                <li><a class="sitemap-sub" target="_blank" href="http://docs.biolab.si/3/development/">Getting Started</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 01 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-02-01-machine-learning-jargon/">Machine Learning Jargon</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 14 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-01-14-universities/">Orange in Classroom, pt. 2</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 10 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-01-10-orange2/">Compiling Orange 2 on modern Linux</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

@@ -6,7 +6,17 @@
     <description>Recent content in education on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning Jargon</title>
+      <link>/blog/2022/2022-02-01-machine-learning-jargon/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-02-01-machine-learning-jargon/</guid>
+      <description>We all know each profession has its own jargon. Most of us remember from any hospital series something like: &amp;ldquo;&amp;ldquo;Pass me the scalpel, stat!&amp;rdquo; Meaning &amp;ldquo;give me the scalpel quickly&amp;rdquo;.
+Data scientists are no different. We have our own terminology that requires some getting used to. Here&amp;rsquo;s a list of common terms that we use in machine learning. Some terms are specific to Orange and might not be used elsewhere. The post is intended to get you familiar with concepts used in Orange.</description>
+    </item>
+    
     <item>
       <title>Orange in Classroom, pt. 2</title>
       <link>/blog/2022/2022-01-14-universities/</link>
