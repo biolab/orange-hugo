@@ -283,6 +283,7 @@ We once again thank everyone for your invaluable support!
 - [University of Granada](https://www.ugr.es/en/), Spain
 - [University of Guadalajara](https://www.udg.mx/), Mexico
 - [University of Guelph](https://www.uoguelph.ca/), Canada
+- [University of Haifa](https://www.haifa.ac.il/?lang=en), Israel
 - [University of Health Sciences](http://www.uhs.edu.tr/), Turkey
 - [University of Houston](https://www.uh.edu/), USA
 - [University of Indonesia](https://www.ui.ac.id/), Indonesia
