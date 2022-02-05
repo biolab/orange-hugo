@@ -1565,6 +1565,8 @@
   </url><url>
     <loc>/widget-catalog/geo/geomap/</loc>
   </url><url>
+    <loc>/widget-catalog/geo/geotransform/</loc>
+  </url><url>
     <loc>/widget-catalog/geo/geocoding/</loc>
   </url><url>
     <loc>/getting-started/</loc>

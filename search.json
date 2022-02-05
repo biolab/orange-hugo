@@ -7435,6 +7435,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/geo/geotransform/",
+	"title": "Geo Transform",
+	"content": "Geo Transform Transform geographic coordinates from one system to another.\nInputs\n Data: input dataset  Outputs\n Data: data with transformed coordinates.  Geo Transform widget converts latitude and longitude data from one geodesic system to another. It uses pyproj library for the conversion.\n Set latitude and longitude attributes, if the widget didn’t recognize them automatically. Geodesic s",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Geo Transform Transform geographic coordinates from one system to another.\nInputs\n Data: input dataset  Outputs\n Data: data with transformed coordinates.  Geo Transform widget converts latitude and longitude data from one geodesic system to another. It uses pyproj library for the conversion.\n Set latitude and longitude attributes, if the widget didn\u0026rsquo;t recognize them automatically. Geodesic s" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/geo/geocoding/",
 	"title": "Geocoding",
 	"content": "Geocoding Encode region names into geographical coordinates, or reverse-geocode latitude and longitude pairs into regions.\nInputs\n Data: An input data set.  Outputs\n Coded Data: Data set with new meta attributes.  Geocoding widget extracts latitude/longitude pairs from region names or synthesizes latitude/longitude to return region name. If the region is large, say a country, encoder with return t",

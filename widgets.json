@@ -1741,6 +1741,17 @@
     "background": "#a0eaa0",
     "icon": "widget-icons/Geo-Choropleth Map.png",
     "url": "choroplethmap"
+   },
+   {
+    "title": "Geo Transform",
+    "category": "Geo",
+    "keywords": [
+     "transform",
+     "geo"
+    ],
+    "background": "#a0eaa0",
+    "icon": "widget-icons/Geo-Geo Transform.png",
+    "url": "geotransform"
    }
   ]
  ],
