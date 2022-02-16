@@ -6,7 +6,17 @@
     <description>Recent content in machine learning on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editing the photographs collection with the help of machine learning</title>
+      <link>/blog/2022/2022-02-11-edit-image-collection/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-02-11-edit-image-collection/</guid>
+      <description>The core element of Orange&amp;rsquo;s image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding.
+We switched from an old cluster with a fixed number of workers for each embedding to a new infrastructure where workers turn on when needed. It means that when a user sends images to the embedder, it will turn on as many instances as required until processors&#39; cores are available.</description>
+    </item>
+    
     <item>
       <title>Machine Learning Jargon</title>
       <link>/blog/2022/2022-02-01-machine-learning-jargon/</link>
