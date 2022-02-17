@@ -20,6 +20,7 @@ We once again thank everyone for your invaluable support!
 
 {{< window-screenshot src="/blog_img/2022/2022-01-14-universities.png" >}}
 
+- [Aalen University of Applied Sciences](https://www.hs-aalen.de/en/facilities/131), Germany
 - [Afyon Kocatepe University](https://aku.edu.tr/), Turkey
 - [Ahmad Dahlan University](https://uad.ac.id/en/), Indonesia
 - [Aix-Marseille University](https://www.univ-amu.fr/en), France
