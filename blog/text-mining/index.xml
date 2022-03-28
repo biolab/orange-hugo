@@ -6,7 +6,18 @@
     <description>Recent content in text mining on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/text-mining/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/text-mining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAvis: visualization for LDA topic modelling</title>
+      <link>/blog/2022/2022-03-18-ldavis/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-03-18-ldavis/</guid>
+      <description>Topic modelling is a great way to uncover hidden topics in a large collection of documents. The method is extremely popular in digital humanities, so it is not just about the performance, but also the explainability.
+Among topic modelling methods, many researchers still go with LDA, a generative model that observe word frequencies in the corpus and iteratively constructs a topic model for a given number of topics.
+Topic Modelling widget computes the LDA topic model.</description>
+    </item>
+    
     <item>
       <title>Semantic Analysis of Documents</title>
       <link>/blog/2021/2021-09-17-semantic-analysis/</link>

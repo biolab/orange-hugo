@@ -786,9 +786,87 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Feb 11, 2022",
+	"date" : "Mar 18, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/lda/",
+	"title": "lda",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-03-18-ldavis/",
+	"title": "LDAvis: visualization for LDA topic modelling",
+	"content": "Topic modelling is a great way to uncover hidden topics in a large collection of documents. The method is extremely popular in digital humanities, so it is not just about the performance, but also the explainability.\nAmong topic modelling methods, many researchers still go with LDA, a generative model that observe word frequencies in the corpus and iteratively constructs a topic model for a given ",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-03-18_ldavis_small.png",
+	"longExcerpt" :  "Text add-on recently got extended with LDAvis widget, a visualization that enables exploring word frequencies in LDA-generated topics. See how to construct LDAvis pipeline in Orange." ,
+	"author" : "Ajda Pretnar Žagar",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/text-mining/",
+	"title": "text mining",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/topic-modelling/",
+	"title": "topic modelling",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/visualization/",
+	"title": "visualization",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 18, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -842,19 +920,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Feb 11, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/Orange/",
@@ -1039,19 +1104,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/visualization/",
-	"title": "visualization",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Dec 17, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/2021/2021-12-17-visualizations-101/",
 	"title": "Visualizations 101",
 	"content": "Orange has a wide array of visualizations, which enable exploring the data from different perspectives. But each visualization is unique - it is used for a specific purpose, which is closely related to how one interprets the plot. Let’s have a look at the most common visualizations in Orange, when to use them and how to read them. We will use the heart_disease.tab data set from the File widg",
@@ -1192,19 +1244,6 @@
 	"date" : "Sep 17, 2021",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/text-mining/",
-	"title": "text mining",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Sep 17, 2021",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

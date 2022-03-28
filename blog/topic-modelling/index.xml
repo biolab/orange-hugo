@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>topic modelling on Orange</title>
+    <link>/blog/topic-modelling/</link>
+    <description>Recent content in topic modelling on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/topic-modelling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAvis: visualization for LDA topic modelling</title>
+      <link>/blog/2022/2022-03-18-ldavis/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-03-18-ldavis/</guid>
+      <description>Topic modelling is a great way to uncover hidden topics in a large collection of documents. The method is extremely popular in digital humanities, so it is not just about the performance, but also the explainability.
+Among topic modelling methods, many researchers still go with LDA, a generative model that observe word frequencies in the corpus and iteratively constructs a topic model for a given number of topics.
+Topic Modelling widget computes the LDA topic model.</description>
+    </item>
+    
+  </channel>
+</rss>
