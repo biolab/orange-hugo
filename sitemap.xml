@@ -1395,13 +1395,13 @@
   </url><url>
     <loc>/widget-catalog/time-series/aggregate/</loc>
   </url><url>
-    <loc>/widget-catalog/data/aggregatecolumns/</loc>
+    <loc>/widget-catalog/transform/aggregatecolumns/</loc>
   </url><url>
     <loc>/widget-catalog/single-cell/align_datasets/</loc>
   </url><url>
     <loc>/widget-catalog/bioinformatics/annotate_projection/</loc>
   </url><url>
-    <loc>/widget-catalog/data/applydomain/</loc>
+    <loc>/widget-catalog/transform/applydomain/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/arima/</loc>
   </url><url>
@@ -1445,7 +1445,7 @@
   </url><url>
     <loc>/widget-catalog/data/color/</loc>
   </url><url>
-    <loc>/widget-catalog/data/concatenate/</loc>
+    <loc>/widget-catalog/transform/concatenate/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/concordance/</loc>
   </url><url>
@@ -1457,7 +1457,7 @@
   </url><url>
     <loc>/contact/</loc>
   </url><url>
-    <loc>/widget-catalog/data/continuize/</loc>
+    <loc>/widget-catalog/transform/continuize/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/corpus-widget/</loc>
   </url><url>
@@ -1465,15 +1465,15 @@
   </url><url>
     <loc>/widget-catalog/text-mining/corpusviewer/</loc>
   </url><url>
-    <loc>/widget-catalog/data/correlations/</loc>
+    <loc>/widget-catalog/unsupervised/correlations/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/correlogram/</loc>
   </url><url>
     <loc>/widget-catalog/unsupervised/correspondenceanalysis/</loc>
   </url><url>
-    <loc>/widget-catalog/data/createclass/</loc>
+    <loc>/widget-catalog/transform/createclass/</loc>
   </url><url>
-    <loc>/widget-catalog/data/createinstance/</loc>
+    <loc>/widget-catalog/transform/createinstance/</loc>
   </url><url>
     <loc>/workflows/Cross-Validation/</loc>
   </url><url>
@@ -1491,7 +1491,7 @@
   </url><url>
     <loc>/workflows/Data-Sampler/</loc>
   </url><url>
-    <loc>/widget-catalog/data/datasampler/</loc>
+    <loc>/widget-catalog/transform/datasampler/</loc>
   </url><url>
     <loc>/workflows/Data-Table/</loc>
   </url><url>
@@ -1511,7 +1511,7 @@
   </url><url>
     <loc>/workflows/Dimensionality-Reduction/</loc>
   </url><url>
-    <loc>/widget-catalog/data/discretize/</loc>
+    <loc>/widget-catalog/transform/discretize/</loc>
   </url><url>
     <loc>/widget-catalog/unsupervised/distancefile/</loc>
   </url><url>
@@ -1545,7 +1545,7 @@
   </url><url>
     <loc>/faq/</loc>
   </url><url>
-    <loc>/widget-catalog/data/featureconstructor/</loc>
+    <loc>/widget-catalog/transform/featureconstructor/</loc>
   </url><url>
     <loc>/workflows/Feature-Ranking/</loc>
   </url><url>
@@ -1593,6 +1593,8 @@
   </url><url>
     <loc>/widget-catalog/time-series/granger_causality/</loc>
   </url><url>
+    <loc>/widget-catalog/transform/groupby/</loc>
+  </url><url>
     <loc>/widget-catalog/visualize/heatmap/</loc>
   </url><url>
     <loc>/workflows/Hierarchical-Clustering/</loc>
@@ -1611,7 +1613,7 @@
   </url><url>
     <loc>/widget-catalog/image-analytics/importimages/</loc>
   </url><url>
-    <loc>/widget-catalog/data/impute/</loc>
+    <loc>/widget-catalog/transform/impute/</loc>
   </url><url>
     <loc>/widget-catalog/spectroscopy/integrate-spectra/</loc>
   </url><url>
@@ -1659,9 +1661,9 @@
   </url><url>
     <loc>/widget-catalog/unsupervised/mds/</loc>
   </url><url>
-    <loc>/widget-catalog/data/melt/</loc>
+    <loc>/widget-catalog/transform/melt/</loc>
   </url><url>
-    <loc>/widget-catalog/data/mergedata/</loc>
+    <loc>/widget-catalog/transform/mergedata/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/model_evaluation_w/</loc>
   </url><url>
@@ -1673,7 +1675,7 @@
   </url><url>
     <loc>/widget-catalog/model/naivebayes/</loc>
   </url><url>
-    <loc>/widget-catalog/data/neighbors/</loc>
+    <loc>/widget-catalog/unsupervised/neighbors/</loc>
   </url><url>
     <loc>/widget-catalog/networks/networkanalysis/</loc>
   </url><url>
@@ -1699,7 +1701,7 @@
   </url><url>
     <loc>/workflows/Outliers/</loc>
   </url><url>
-    <loc>/widget-catalog/data/outliers/</loc>
+    <loc>/widget-catalog/unsupervised/outliers/</loc>
   </url><url>
     <loc>/widget-catalog/data/paintdata/</loc>
   </url><url>
@@ -1715,7 +1717,7 @@
   </url><url>
     <loc>/workflows/Pivot-Table/</loc>
   </url><url>
-    <loc>/widget-catalog/data/pivot/</loc>
+    <loc>/widget-catalog/transform/pivot/</loc>
   </url><url>
     <loc>/widget-catalog/educational/polynomial-classification/</loc>
   </url><url>
@@ -1725,7 +1727,7 @@
   </url><url>
     <loc>/workflows/Predictive-models/</loc>
   </url><url>
-    <loc>/widget-catalog/data/preprocess/</loc>
+    <loc>/widget-catalog/transform/preprocess/</loc>
   </url><url>
     <loc>/widget-catalog/spectroscopy/preprocess-spectra/</loc>
   </url><url>
@@ -1737,13 +1739,13 @@
   </url><url>
     <loc>/widget-catalog/text-mining/pubmed/</loc>
   </url><url>
-    <loc>/widget-catalog/data/purgedomain/</loc>
+    <loc>/widget-catalog/transform/purgedomain/</loc>
   </url><url>
     <loc>/widget-catalog/visualize/pythagoreanforest/</loc>
   </url><url>
     <loc>/widget-catalog/visualize/pythagoreantree/</loc>
   </url><url>
-    <loc>/widget-catalog/data/pythonscript/</loc>
+    <loc>/widget-catalog/transform/pythonscript/</loc>
   </url><url>
     <loc>/widget-catalog/visualize/radviz/</loc>
   </url><url>
@@ -1751,7 +1753,7 @@
   </url><url>
     <loc>/widget-catalog/model/randomforest/</loc>
   </url><url>
-    <loc>/widget-catalog/data/randomize/</loc>
+    <loc>/widget-catalog/transform/randomize/</loc>
   </url><url>
     <loc>/widget-catalog/data/rank/</loc>
   </url><url>
@@ -1783,11 +1785,11 @@
   </url><url>
     <loc>/widget-catalog/time-series/seasonal_adjustment/</loc>
   </url><url>
-    <loc>/widget-catalog/data/select-by-data-index/</loc>
+    <loc>/widget-catalog/transform/select-by-data-index/</loc>
   </url><url>
-    <loc>/widget-catalog/data/selectcolumns/</loc>
+    <loc>/widget-catalog/transform/selectcolumns/</loc>
   </url><url>
-    <loc>/widget-catalog/data/selectrows/</loc>
+    <loc>/widget-catalog/transform/selectrows/</loc>
   </url><url>
     <loc>/widget-catalog/unsupervised/selforganizingmap/</loc>
   </url><url>
@@ -1855,7 +1857,7 @@
   </url><url>
     <loc>/training-inquiry/</loc>
   </url><url>
-    <loc>/widget-catalog/data/transpose/</loc>
+    <loc>/widget-catalog/transform/transpose/</loc>
   </url><url>
     <loc>/widget-catalog/model/tree/</loc>
   </url><url>
@@ -1867,7 +1869,7 @@
   </url><url>
     <loc>/widget-catalog/text-mining/twitter-widget/</loc>
   </url><url>
-    <loc>/widget-catalog/data/unique/</loc>
+    <loc>/widget-catalog/transform/unique/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/var/</loc>
   </url><url>

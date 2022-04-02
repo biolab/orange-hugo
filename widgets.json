@@ -81,169 +81,12 @@
     "url": "datainfo"
    },
    {
-    "title": "Aggregate Columns",
-    "category": "Data",
-    "keywords": [
-     "aggregate",
-     "sum",
-     "product",
-     "max",
-     "min",
-     "mean",
-     "median",
-     "variance"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Aggregate Columns.png",
-    "url": "aggregatecolumns"
-   },
-   {
-    "title": "Data Sampler",
-    "category": "Data",
-    "keywords": [
-     "random"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Data Sampler.png",
-    "url": "datasampler"
-   },
-   {
-    "title": "Select Columns",
-    "category": "Data",
-    "keywords": [
-     "filter",
-     "attributes",
-     "target",
-     "variable"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Select Columns.png",
-    "url": "selectcolumns"
-   },
-   {
-    "title": "Select Rows",
-    "category": "Data",
-    "keywords": [
-     "filter"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Select Rows.png",
-    "url": "selectrows"
-   },
-   {
-    "title": "Pivot Table",
-    "category": "Data",
-    "keywords": [
-     "pivot",
-     "group",
-     "aggregate"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Pivot Table.png",
-    "url": "pivot"
-   },
-   {
     "title": "Rank",
     "category": "Data",
     "keywords": [],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Rank.png",
     "url": "rank"
-   },
-   {
-    "title": "Correlations",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Correlations.png",
-    "url": "correlations"
-   },
-   {
-    "title": "Merge Data",
-    "category": "Data",
-    "keywords": [
-     "join"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Merge Data.png",
-    "url": "mergedata"
-   },
-   {
-    "title": "Concatenate",
-    "category": "Data",
-    "keywords": [
-     "append",
-     "join",
-     "extend"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Concatenate.png",
-    "url": "concatenate"
-   },
-   {
-    "title": "Select by Data Index",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Select by Data Index.png",
-    "url": "select-by-data-index"
-   },
-   {
-    "title": "Transpose",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Transpose.png",
-    "url": "transpose"
-   },
-   {
-    "title": "Randomize",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Randomize.png",
-    "url": "randomize"
-   },
-   {
-    "title": "Preprocess",
-    "category": "Data",
-    "keywords": [
-     "process"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Preprocess.png",
-    "url": "preprocess"
-   },
-   {
-    "title": "Apply Domain",
-    "category": "Data",
-    "keywords": [
-     "transform"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Apply Domain.png",
-    "url": "applydomain"
-   },
-   {
-    "title": "Impute",
-    "category": "Data",
-    "keywords": [
-     "substitute",
-     "missing"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Impute.png",
-    "url": "impute"
-   },
-   {
-    "title": "Outliers",
-    "category": "Data",
-    "keywords": [
-     "inlier"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Outliers.png",
-    "url": "outliers"
    },
    {
     "title": "Edit Domain",
@@ -259,81 +102,12 @@
     "url": "editdomain"
    },
    {
-    "title": "Python Script",
-    "category": "Data",
-    "keywords": [
-     "program",
-     "function"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Python Script.png",
-    "url": "pythonscript"
-   },
-   {
-    "title": "Create Instance",
-    "category": "Data",
-    "keywords": [
-     "simulator"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Create Instance.png",
-    "url": "createinstance"
-   },
-   {
     "title": "Color",
     "category": "Data",
     "keywords": [],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Color.png",
     "url": "color"
-   },
-   {
-    "title": "Continuize",
-    "category": "Data",
-    "keywords": [
-     "encode",
-     "dummy",
-     "numeric",
-     "one-hot",
-     "binary",
-     "treatment",
-     "contrast"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Continuize.png",
-    "url": "continuize"
-   },
-   {
-    "title": "Create Class",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Create Class.png",
-    "url": "createclass"
-   },
-   {
-    "title": "Discretize",
-    "category": "Data",
-    "keywords": [
-     "bin",
-     "categorical",
-     "nominal",
-     "ordinal"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Discretize.png",
-    "url": "discretize"
-   },
-   {
-    "title": "Feature Constructor",
-    "category": "Data",
-    "keywords": [
-     "function",
-     "lambda"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Feature Constructor.png",
-    "url": "featureconstructor"
    },
    {
     "title": "Feature Statistics",
@@ -344,48 +118,6 @@
     "url": "featurestatistics"
    },
    {
-    "title": "Group by",
-    "category": "Data",
-    "keywords": [
-     "aggregate",
-     "group by"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Group by.png"
-   },
-   {
-    "title": "Melt",
-    "category": "Data",
-    "keywords": [
-     "shopping list",
-     "wide",
-     "narrow"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Melt.png",
-    "url": "melt"
-   },
-   {
-    "title": "Neighbors",
-    "category": "Data",
-    "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Neighbors.png",
-    "url": "neighbors"
-   },
-   {
-    "title": "Purge Domain",
-    "category": "Data",
-    "keywords": [
-     "remove",
-     "delete",
-     "unused"
-    ],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Purge Domain.png",
-    "url": "purgedomain"
-   },
-   {
     "title": "Save Data",
     "category": "Data",
     "keywords": [
@@ -394,13 +126,261 @@
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Save Data.png",
     "url": "save"
+   }
+  ]
+ ],
+ [
+  "Transform",
+  [
+   {
+    "title": "Aggregate Columns",
+    "category": "Transform",
+    "keywords": [
+     "aggregate",
+     "sum",
+     "product",
+     "max",
+     "min",
+     "mean",
+     "median",
+     "variance"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Aggregate Columns.png",
+    "url": "aggregatecolumns"
+   },
+   {
+    "title": "Data Sampler",
+    "category": "Transform",
+    "keywords": [
+     "random"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Data Sampler.png",
+    "url": "datasampler"
+   },
+   {
+    "title": "Select Columns",
+    "category": "Transform",
+    "keywords": [
+     "filter",
+     "attributes",
+     "target",
+     "variable"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Select Columns.png",
+    "url": "selectcolumns"
+   },
+   {
+    "title": "Select Rows",
+    "category": "Transform",
+    "keywords": [
+     "filter"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Select Rows.png",
+    "url": "selectrows"
+   },
+   {
+    "title": "Pivot Table",
+    "category": "Transform",
+    "keywords": [
+     "pivot",
+     "group",
+     "aggregate"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Pivot Table.png",
+    "url": "pivot"
+   },
+   {
+    "title": "Merge Data",
+    "category": "Transform",
+    "keywords": [
+     "join"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Merge Data.png",
+    "url": "mergedata"
+   },
+   {
+    "title": "Concatenate",
+    "category": "Transform",
+    "keywords": [
+     "append",
+     "join",
+     "extend"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Concatenate.png",
+    "url": "concatenate"
+   },
+   {
+    "title": "Select by Data Index",
+    "category": "Transform",
+    "keywords": [],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Select by Data Index.png",
+    "url": "select-by-data-index"
+   },
+   {
+    "title": "Transpose",
+    "category": "Transform",
+    "keywords": [],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Transpose.png",
+    "url": "transpose"
+   },
+   {
+    "title": "Randomize",
+    "category": "Transform",
+    "keywords": [],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Randomize.png",
+    "url": "randomize"
+   },
+   {
+    "title": "Preprocess",
+    "category": "Transform",
+    "keywords": [
+     "process"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Preprocess.png",
+    "url": "preprocess"
+   },
+   {
+    "title": "Apply Domain",
+    "category": "Transform",
+    "keywords": [
+     "transform"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Apply Domain.png",
+    "url": "applydomain"
+   },
+   {
+    "title": "Impute",
+    "category": "Transform",
+    "keywords": [
+     "substitute",
+     "missing"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Impute.png",
+    "url": "impute"
+   },
+   {
+    "title": "Python Script",
+    "category": "Transform",
+    "keywords": [
+     "program",
+     "function"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Python Script.png",
+    "url": "pythonscript"
+   },
+   {
+    "title": "Create Instance",
+    "category": "Transform",
+    "keywords": [
+     "simulator"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Create Instance.png",
+    "url": "createinstance"
+   },
+   {
+    "title": "Continuize",
+    "category": "Transform",
+    "keywords": [
+     "encode",
+     "dummy",
+     "numeric",
+     "one-hot",
+     "binary",
+     "treatment",
+     "contrast"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Continuize.png",
+    "url": "continuize"
+   },
+   {
+    "title": "Create Class",
+    "category": "Transform",
+    "keywords": [],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Create Class.png",
+    "url": "createclass"
+   },
+   {
+    "title": "Discretize",
+    "category": "Transform",
+    "keywords": [
+     "bin",
+     "categorical",
+     "nominal",
+     "ordinal"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Discretize.png",
+    "url": "discretize"
+   },
+   {
+    "title": "Feature Constructor",
+    "category": "Transform",
+    "keywords": [
+     "function",
+     "lambda"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Feature Constructor.png",
+    "url": "featureconstructor"
+   },
+   {
+    "title": "Group by",
+    "category": "Transform",
+    "keywords": [
+     "aggregate",
+     "group by"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Group by.png",
+    "url": "groupby"
+   },
+   {
+    "title": "Melt",
+    "category": "Transform",
+    "keywords": [
+     "shopping list",
+     "wide",
+     "narrow"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Melt.png",
+    "url": "melt"
+   },
+   {
+    "title": "Purge Domain",
+    "category": "Transform",
+    "keywords": [
+     "remove",
+     "delete",
+     "unused"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Purge Domain.png",
+    "url": "purgedomain"
    },
    {
     "title": "Unique",
-    "category": "Data",
+    "category": "Transform",
     "keywords": [],
-    "background": "#FFD39F",
-    "icon": "widget-icons/Data-Unique.png",
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Unique.png",
     "url": "unique"
    }
   ]
@@ -861,6 +841,14 @@
     "url": "tsne"
    },
    {
+    "title": "Correlations",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Correlations.png",
+    "url": "correlations"
+   },
+   {
     "title": "Distance Map",
     "category": "Unsupervised",
     "keywords": [],
@@ -912,6 +900,16 @@
     "url": "manifoldlearning"
    },
    {
+    "title": "Outliers",
+    "category": "Unsupervised",
+    "keywords": [
+     "inlier"
+    ],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Outliers.png",
+    "url": "outliers"
+   },
+   {
     "title": "PCA",
     "category": "Unsupervised",
     "keywords": [
@@ -921,6 +919,14 @@
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-PCA.png",
     "url": "PCA"
+   },
+   {
+    "title": "Neighbors",
+    "category": "Unsupervised",
+    "keywords": [],
+    "background": "#CAE1EF",
+    "icon": "widget-icons/Unsupervised-Neighbors.png",
+    "url": "neighbors"
    },
    {
     "title": "Correspondence Analysis",

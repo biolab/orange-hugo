@@ -6304,7 +6304,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/aggregatecolumns/",
+    "uri": "/widget-catalog/transform/aggregatecolumns/",
 	"title": "Aggregate Columns",
 	"content": "Aggregate Columns Compute a sum, max, min … of selected columns.\nInputs\n Data: input dataset  Outputs\n Data: extended dataset  Aggregate Columns outputs an aggregation of selected columns, for example a sum, min, max, etc.\n Selected attributes. Operator for aggregation:  sum product min max mean variance median   Set the name of the computed attribute. If Apply automatically is ticked, chan",
 	"image" : "",
@@ -6343,7 +6343,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/applydomain/",
+    "uri": "/widget-catalog/transform/applydomain/",
 	"title": "Apply Domain",
 	"content": "Apply Domain Given dataset and template transforms the dataset.\nInputs\n Data: input dataset Template Data: template for transforming the dataset  Outputs\n Transformed Data: transformed dataset  Apply Domain maps new data into a transformed space. For example, if we transform some data with PCA and wish to observe new data in the same space, we can use Apply Domain to map the new data into the PCA ",
 	"image" : "",
@@ -6629,7 +6629,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/concatenate/",
+    "uri": "/widget-catalog/transform/concatenate/",
 	"title": "Concatenate",
 	"content": "Concatenate Concatenates data from multiple sources.\nInputs\n Primary Data: data set that defines the attribute set Additional Data: additional data set  Outputs\n Data: concatenated data  The widget concatenates multiple sets of instances (data sets). The merge is “vertical”, in a sense that two sets of 10 and 5 instances yield a new set of 15 instances.\n Set the attribute merging method. Add the i",
 	"image" : "",
@@ -6707,7 +6707,7 @@
 	"type" : "contact"
 },
 {
-    "uri": "/widget-catalog/data/continuize/",
+    "uri": "/widget-catalog/transform/continuize/",
 	"title": "Continuize",
 	"content": "Continuize Turns discrete variables (attributes) into numeric (“continuous”) dummy variables.\nInputs\n Data: input data set  Outputs\n Data: transformed data set  The Continuize widget receives a data set in the input and outputs the same data set in which the discrete variables (including binary variables) are replaced with continuous ones.\n  Define the treatment of non-binary categoric",
 	"image" : "",
@@ -6759,7 +6759,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/correlations/",
+    "uri": "/widget-catalog/unsupervised/correlations/",
 	"title": "Correlations",
 	"content": "Correlations Compute all pairwise attribute correlations.\nInputs\n Data: input dataset  Outputs\n Data: input dataset Features: selected pair of features Correlations: data table with correlation scores  Correlations computes Pearson or Spearman correlation scores for all pairs of features in a dataset. These methods can only detect monotonic relationship.\n Correlation measure:  Pairwise Pearson cor",
 	"image" : "",
@@ -6798,7 +6798,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/createclass/",
+    "uri": "/widget-catalog/transform/createclass/",
 	"title": "Create Class",
 	"content": "Create Class Create class attribute from a string attribute.\nInputs\n Data: input dataset  Outputs\n Data: dataset with a new class variable  Create Class creates a new class attribute from an existing discrete or string attribute. The widget matches the string value of the selected attribute and constructs a new user-defined value for matching instances.\n The attribute the new class is constructed ",
 	"image" : "",
@@ -6811,7 +6811,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/createinstance/",
+    "uri": "/widget-catalog/transform/createinstance/",
 	"title": "Create Instance",
 	"content": "Create Instance Interactively creates an instance from a sample dataset.\nInputs\n Data: input dataset Reference: refrence dataset  Outputs\n Data: input dataset appended the created instance  The Create Instance widget creates a new instance, based on the input data. The widget displays all variables of the input dataset in a table of two columns. The column Variable represents the variable’s ",
 	"image" : "",
@@ -6928,7 +6928,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/widget-catalog/data/datasampler/",
+    "uri": "/widget-catalog/transform/datasampler/",
 	"title": "Data Sampler",
 	"content": "Data Sampler Selects a subset of data instances from an input dataset.\nInputs\n Data: input dataset  Outputs\n Data Sample: sampled data instances Remaining Data: out-of-sample data  The Data Sampler widget implements several data sampling methods. It outputs a sampled and a complementary dataset (with instances from the input set that are not included in the sampled dataset). The output is processe",
 	"image" : "",
@@ -7058,7 +7058,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/widget-catalog/data/discretize/",
+    "uri": "/widget-catalog/transform/discretize/",
 	"title": "Discretize",
 	"content": "Discretize Discretizes continuous attributes from an input dataset.\nInputs\n Data: input dataset  Outputs\n Data: dataset with discretized values  The Discretize widget discretizes continuous attributes with a selected method.\n The basic version of the widget is rather simple. It allows choosing between three different discretizations.  Entropy-MDL, invented by Fayyad and Irani is a top-down discret",
 	"image" : "",
@@ -7279,7 +7279,7 @@
 	"type" : "faq"
 },
 {
-    "uri": "/widget-catalog/data/featureconstructor/",
+    "uri": "/widget-catalog/transform/featureconstructor/",
 	"title": "Feature Constructor",
 	"content": "Feature Constructor Add new features to your dataset.\nInputs\n Data: input dataset  Outputs\n Data: dataset with additional features  The Feature Constructor allows you to manually add features (columns) into your dataset. The new feature can be a computation of an existing one or a combination of several (addition, subtraction, etc.). You can choose what type of feature it will be (discrete, contin",
 	"image" : "",
@@ -7591,6 +7591,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/transform/groupby/",
+	"title": "Group by",
+	"content": "Group by Groups data by selected variables and aggregate columns with selected aggregations.\nInputs\n Data: input data table  Outputs\n Data: aggregated data  Group By widget first identifies groups based on selected variables in the Group by list. Groups are defined by all distinct combinations of values in selected variables.\nIn the second step, the widget computes aggregations defined in the tabl",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Group by Groups data by selected variables and aggregate columns with selected aggregations.\nInputs\n Data: input data table  Outputs\n Data: aggregated data  Group By widget first identifies groups based on selected variables in the Group by list. Groups are defined by all distinct combinations of values in selected variables.\nIn the second step, the widget computes aggregations defined in the tabl" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/visualize/heatmap/",
 	"title": "Heat Map",
 	"content": "Heat Map Plots a heat map for a pair of attributes.\nInputs\n Data: input dataset  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether a point is selected  Heat map is a graphical method for visualizing attribute values in a two-way matrix. It only works on datasets containing numeric variables. The values are represented by color according t",
@@ -7619,10 +7632,10 @@
 {
     "uri": "/widget-catalog/unsupervised/hierarchicalclustering/",
 	"title": "Hierarchical Clustering",
-	"content": "Hierarchical Clustering Groups items using a hierarchical clustering algorithm.\nInputs\n Distances: distance matrix  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram.\n The widge",
+	"content": "Hierarchical Clustering Groups items using a hierarchical clustering algorithm.\nInputs\n Distances: distance matrix  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram. Distances ",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Hierarchical Clustering Groups items using a hierarchical clustering algorithm.\nInputs\n Distances: distance matrix  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram.\n The widge" ,
+	"longExcerpt" :  "Hierarchical Clustering Groups items using a hierarchical clustering algorithm.\nInputs\n Distances: distance matrix  Outputs\n Selected Data: instances selected from the plot Data: data with an additional column showing whether an instance is selected  The widget computes hierarchical clustering of arbitrary types of objects from a matrix of distances and shows a corresponding dendrogram. Distances " ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -7708,7 +7721,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/impute/",
+    "uri": "/widget-catalog/transform/impute/",
 	"title": "Impute",
 	"content": "Impute Replaces unknown values in the data.\nInputs\n Data: input dataset Learner: learning algorithm for imputation  Outputs\n Data: dataset with imputed values  Some Orange’s algorithms and visualizations cannot handle unknown values in the data. This widget does what statisticians call imputation: it substitutes missing values by values either computed from the data or set by the user. The d",
 	"image" : "",
@@ -8020,7 +8033,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/melt/",
+    "uri": "/widget-catalog/transform/melt/",
 	"title": "Melt",
 	"content": "Melt Transform wide data to narrow.\nInputs\n Data: wide data table  Outputs\n Data: narrow data table  The Melt widget receives a dataset in the more common wide format and outputs a table of (row_id, variable, value) triplets.\n Select the variable used as id. The widget offers only columns without duplicated values. Alternatively, row number can be used as id. Select whether to include non-numeric ",
 	"image" : "",
@@ -8033,7 +8046,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/mergedata/",
+    "uri": "/widget-catalog/transform/mergedata/",
 	"title": "Merge Data",
 	"content": "Merge Data Merges two datasets, based on values of selected attributes.\nInputs\n Data: input dataset Extra Data: additional dataset  Outputs\n Data: dataset with features added from extra data  The Merge Data widget is used to horizontally merge two datasets, based on the values of selected attributes (columns). In the input, two datasets are required, data and extra data. Rows from the two data set",
 	"image" : "",
@@ -8111,7 +8124,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/neighbors/",
+    "uri": "/widget-catalog/unsupervised/neighbors/",
 	"title": "Neighbors",
 	"content": "Neighbors Compute nearest neighbors in data according to reference.\nInputs\n Data: An input data set. Reference: A reference data for neighbor computation.  Outputs\n Neighbors: A data table of nearest neighbors according to reference.  The Neighbors widget computes nearest neighbors for a given reference and for a given distance measure. The reference can be either one instance or more instances. I",
 	"image" : "",
@@ -8280,7 +8293,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/widget-catalog/data/outliers/",
+    "uri": "/widget-catalog/unsupervised/outliers/",
 	"title": "Outliers",
 	"content": "Outliers Outlier detection widget.\nInputs\n Data: input dataset  Outputs\n Outliers: instances scored as outliers Inliers: instances not scored as outliers Data: input dataset appended Outlier variable  The Outliers widget applies one of the four methods for outlier detection. All methods apply classification to the dataset. One-class SVM with non-linear kernels (RBF) performs well with non-Gaussian",
 	"image" : "",
@@ -8384,7 +8397,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/widget-catalog/data/pivot/",
+    "uri": "/widget-catalog/transform/pivot/",
 	"title": "Pivot Table",
 	"content": "Pivot Table Reshape data table based on column values.\nInputs\n Data: input data set  Outputs\n Pivot Table: contingency matrix as shown in the widget Filtered Data: subset selected from the plot Grouped Data: aggregates over groups defined by row values  Pivot Table summarizes the data of a more extensive table into a table of statistics. The statistics can include sums, averages, counts, etc. The ",
 	"image" : "",
@@ -8449,7 +8462,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/widget-catalog/data/preprocess/",
+    "uri": "/widget-catalog/transform/preprocess/",
 	"title": "Preprocess",
 	"content": "Preprocess Preprocesses data with selected methods.\nInputs\n Data: input dataset  Outputs\n Preprocessor: preprocessing method Preprocessed Data: data preprocessed with selected methods  Preprocessing is crucial for achieving better-quality analysis results. The Preprocess widget offers several preprocessing methods that can be combined in a single preprocessing pipeline. Some methods are available ",
 	"image" : "",
@@ -8527,7 +8540,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/purgedomain/",
+    "uri": "/widget-catalog/transform/purgedomain/",
 	"title": "Purge Domain",
 	"content": "Purge Domain Removes unused attribute values and useless attributes, sorts the remaining values.\nInputs\n Data: input dataset  Outputs\n Data: filtered dataset  Definitions of nominal attributes sometimes contain values which don’t appear in the data. Even if this does not happen in the original data, filtering the data, selecting exemplary subsets and alike can remove all examples for which the att",
 	"image" : "",
@@ -8566,7 +8579,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/pythonscript/",
+    "uri": "/widget-catalog/transform/pythonscript/",
 	"title": "Python Script",
 	"content": "Python Script Extends functionalities through Python scripting.\nInputs\n Data (Orange.data.Table): input dataset bound to in_data variable Learner (Orange.classification.Learner): input learner bound to in_learner variable Classifier (Orange.classification.Learner): input classifier bound to in_classifier variable Object: input Python object bound to in_object variable  Outputs\n Data (Orange.data.T",
 	"image" : "",
@@ -8618,7 +8631,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/randomize/",
+    "uri": "/widget-catalog/transform/randomize/",
 	"title": "Randomize",
 	"content": "Randomize Shuffles classes, attributes and/or metas of an input dataset.\nInputs\n Data: input dataset  Outputs\n Data: randomized dataset  The Randomize widget receives a dataset in the input and outputs the same dataset in which the classes, attributes or/and metas are shuffled.\n Select group of columns of the dataset you want to shuffle. Select proportion of the dataset you want to shuffle. Produc",
 	"image" : "",
@@ -8826,7 +8839,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/select-by-data-index/",
+    "uri": "/widget-catalog/transform/select-by-data-index/",
 	"title": "Select by Data Index",
 	"content": "Select by Data Index Match instances by index from data subset.\nInputs\n Data: reference data set Data Subset: subset to match  Outputs\n Matching data: subset from reference data set that matches indices from subset data Unmatched data: subset from reference data set that does not match indices from subset data Annotated data: reference data set with an additional column defining matches  Select by",
 	"image" : "",
@@ -8839,7 +8852,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/selectcolumns/",
+    "uri": "/widget-catalog/transform/selectcolumns/",
 	"title": "Select Columns",
 	"content": "Select Columns Manual selection of data attributes and composition of data domain.\nInputs\n Data: input dataset  Outputs\n Data: dataset with columns as set in the widget  The Select Columns widget is used to manually compose your data domain. The user can decide which attributes will be used and how. Orange distinguishes between ordinary attributes, (optional) class attributes and meta attributes. ",
 	"image" : "",
@@ -8852,7 +8865,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/selectrows/",
+    "uri": "/widget-catalog/transform/selectrows/",
 	"title": "Select Rows",
 	"content": "Select Rows Selects data instances based on conditions over data features.\nInputs\n Data: input dataset  Outputs\n Matching Data: instances that match the conditions Non-Matching Data: instances that do not match the conditions Data: data with an additional column showing whether a instance is selected  This widget selects a subset from an input dataset, based on user-defined conditions. Instances t",
 	"image" : "",
@@ -9294,7 +9307,7 @@
 	"type" : "training-inquiry"
 },
 {
-    "uri": "/widget-catalog/data/transpose/",
+    "uri": "/widget-catalog/transform/transpose/",
 	"title": "Transpose",
 	"content": "Transpose Transposes a data table.\nInputs\n Data: input dataset  Outputs\n Data: transposed dataset  Transpose widget transposes data table.\nExample This is a simple workflow showing how to use Transpose. Connect the widget to File widget. The output of Transpose is a transposed data table with rows as columns and columns as rows. You can observe the result in a Data Table.\n",
 	"image" : "",
@@ -9372,7 +9385,7 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/data/unique/",
+    "uri": "/widget-catalog/transform/unique/",
 	"title": "Unique",
 	"content": "Unique Remove duplicated data instances.\nInputs\n Data: data table  Outputs\n Data: data table without duplicates  The widget removes duplicated data instances. The user can choose a subset of observed variables, so two instances are considered as duplicates although they may differ in values of other, ignored variables.\n Select the variables that are considered in comparing data instances. Data ins",
 	"image" : "",
