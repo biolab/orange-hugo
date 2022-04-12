@@ -122,6 +122,16 @@
   </url><url>
     <loc>/workflows/story-arcs/</loc>
   </url><url>
+    <loc>/workflows/survival-curve-estimation/</loc>
+  </url><url>
+    <loc>/workflows/exploring-survival-features/</loc>
+  </url><url>
+    <loc>/workflows/cohort-construction-and-validation/</loc>
+  </url><url>
+    <loc>/workflows/c-index-cross-validation/</loc>
+  </url><url>
+    <loc>/workflows/explore-subpopulations-with-distinct-risk-profiles/</loc>
+  </url><url>
     <loc>/blog/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -1449,6 +1459,8 @@
   </url><url>
     <loc>/widget-catalog/text-mining/concordance/</loc>
   </url><url>
+    <loc>/workflows/Concordance-Index/</loc>
+  </url><url>
     <loc>/workflows/Confusion-Matrix/</loc>
   </url><url>
     <loc>/widget-catalog/evaluate/confusionmatrix/</loc>
@@ -1470,6 +1482,8 @@
     <loc>/widget-catalog/time-series/correlogram/</loc>
   </url><url>
     <loc>/widget-catalog/unsupervised/correspondenceanalysis/</loc>
+  </url><url>
+    <loc>/workflows/Cox-Regression/</loc>
   </url><url>
     <loc>/widget-catalog/transform/createclass/</loc>
   </url><url>
@@ -1626,6 +1640,8 @@
     <loc>/widget-catalog/time-series/interpolate/</loc>
   </url><url>
     <loc>/widget-catalog/unsupervised/kmeans/</loc>
+  </url><url>
+    <loc>/workflows/Kaplan-Meier/</loc>
   </url><url>
     <loc>/widget-catalog/bioinformatics/kegg_pathways/</loc>
   </url><url>
@@ -1829,6 +1845,8 @@
   </url><url>
     <loc>/workflows/Story-Arcs/</loc>
   </url><url>
+    <loc>/workflows/Survival-Analysis/</loc>
+  </url><url>
     <loc>/widget-catalog/model/svm/</loc>
   </url><url>
     <loc>/workflows/t-SNE/</loc>
@@ -1844,6 +1862,8 @@
     <loc>/widget-catalog/spectroscopy/tilefile/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/time_slice/</loc>
+  </url><url>
+    <loc>/workflows/Time-To-Event/</loc>
   </url><url>
     <loc>/workflows/Timeseries/</loc>
   </url><url>

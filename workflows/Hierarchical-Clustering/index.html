@@ -240,31 +240,31 @@
                         href="/workflows/Classification" style="margin-top: 20px !important;">Classification</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Survival-Analysis" style="margin-top: 20px !important;">Survival-Analysis</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Text-Mining" style="margin-top: 20px !important;">Text-Mining</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                        href="/workflows/Time-To-Event" style="margin-top: 20px !important;">Time-To-Event</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Kaplan-Meier" style="margin-top: 20px !important;">Kaplan-Meier</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Cox-Regression" style="margin-top: 20px !important;">Cox-Regression</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Scatter-Plot" style="margin-top: 20px !important;">Scatter-Plot</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Visualization" style="margin-top: 20px !important;">Visualization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Predictive-models" style="margin-top: 20px !important;">Predictive-models</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Tokenization" style="margin-top: 20px !important;">Tokenization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Bag-of-Words" style="margin-top: 20px !important;">Bag-of-Words</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Box-Plot" style="margin-top: 20px !important;">Box-Plot</a></li>
                 
             </ul>
         </div>
@@ -276,6 +276,54 @@
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Explore Subpopulations with Distinct Risk Profiles</h2>
+                    <p class="feature-text"><p>We can visualize the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterize patients of each cluster with the Box Plot widget.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Survival-Analysis">Survival Analysis</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Time-To-Event">Time-To-Event</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Kaplan-Meier">Kaplan-Meier</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Clustering">Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Hierarchical-Clustering">Hierarchical Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Box-Plot">Box Plot</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/740_hierarhical_clustering.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/740_hierarhical_clustering.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
                 
                     <h2 class="workflow-title">Cluster Inspection</h2>
                     <p class="feature-text"><p>We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use &lsquo;Order by relevance&rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!</p>
@@ -317,7 +365,7 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
                     <h2 class="workflow-title">Hierarchical Clustering</h2>
                     <p class="feature-text"><p>The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.</p>

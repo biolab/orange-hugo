@@ -240,31 +240,31 @@
                         href="/workflows/Classification" style="margin-top: 20px !important;">Classification</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Survival-Analysis" style="margin-top: 20px !important;">Survival-Analysis</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Text-Mining" style="margin-top: 20px !important;">Text-Mining</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                        href="/workflows/Time-To-Event" style="margin-top: 20px !important;">Time-To-Event</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Kaplan-Meier" style="margin-top: 20px !important;">Kaplan-Meier</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Cox-Regression" style="margin-top: 20px !important;">Cox-Regression</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Scatter-Plot" style="margin-top: 20px !important;">Scatter-Plot</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Visualization" style="margin-top: 20px !important;">Visualization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Predictive-models" style="margin-top: 20px !important;">Predictive-models</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Tokenization" style="margin-top: 20px !important;">Tokenization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Bag-of-Words" style="margin-top: 20px !important;">Bag-of-Words</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Box-Plot" style="margin-top: 20px !important;">Box-Plot</a></li>
                 
             </ul>
         </div>
@@ -276,6 +276,52 @@
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Cross Validation for Survival Models</h2>
+                    <p class="feature-text"><p>Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression. Here we demonstrate cross-validation to estimate the concordance index for the Cox regression model trained on data instances from selected features.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Survival-Analysis">Survival Analysis</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Time-To-Event">Time-To-Event</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Cox-Regression">Cox Regression</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Concordance-Index">Concordance Index</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Cross-Validation">Cross Validation</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/730_c_index_cross_validation.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/730_c_index_cross_validation.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
                 
                     <h2 class="workflow-title">Cross Validation</h2>
                     <p class="feature-text"><p>How good are supervised data mining methods on your classification dataset? Here&rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.</p>

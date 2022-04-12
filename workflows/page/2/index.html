@@ -238,31 +238,31 @@
                         href="/workflows/Classification" style="margin-top: 20px !important;">Classification</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Survival-Analysis" style="margin-top: 20px !important;">Survival-Analysis</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Text-Mining" style="margin-top: 20px !important;">Text-Mining</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Clustering" style="margin-top: 20px !important;">Clustering</a></li>
+                        href="/workflows/Time-To-Event" style="margin-top: 20px !important;">Time-To-Event</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Kaplan-Meier" style="margin-top: 20px !important;">Kaplan-Meier</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Cox-Regression" style="margin-top: 20px !important;">Cox-Regression</a></li>
+                
+                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
+                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Scatter-Plot" style="margin-top: 20px !important;">Scatter-Plot</a></li>
                 
                 <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
                         href="/workflows/Visualization" style="margin-top: 20px !important;">Visualization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Hierarchical-Clustering" style="margin-top: 20px !important;">Hierarchical-Clustering</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Predictive-models" style="margin-top: 20px !important;">Predictive-models</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Tokenization" style="margin-top: 20px !important;">Tokenization</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Bag-of-Words" style="margin-top: 20px !important;">Bag-of-Words</a></li>
-                
-                <li style="display: inline;text-transform: capitalize;"><a class="tag-workflow"
-                        href="/workflows/Box-Plot" style="margin-top: 20px !important;">Box-Plot</a></li>
                 
             </ul>
         </div>
@@ -274,6 +274,214 @@
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Where Are Misclassifications</h2>
+                    <p class="feature-text"><p>Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Confusion-Matrix">Confusion Matrix</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Scatter-Plot">Scatter Plot</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/470-misclassification-scatterplot.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/misclassifications.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                
+                    <h2 class="workflow-title">Cross Validation</h2>
+                    <p class="feature-text"><p>How good are supervised data mining methods on your classification dataset? Here&rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Cross-Validation">Cross Validation</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Predictive-models">Predictive models</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/450-cross-validation.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/cross-validation.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Train and Test Data</h2>
+                    <p class="feature-text"><p>In building predictive models it is important to have a separate train and test data sets in order to avoid overfitting and to properly score the models. Here we use Data Sampler to split the data into training and test data, use training data for building a model and, finally, test on test data. Try several other classifiers to see how the scores change.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Data-Sampler">Data Sampler</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Predictive-models">Predictive models</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/420-data-sampler.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/data-sampler.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                
+                    <h2 class="workflow-title">Feature Ranking</h2>
+                    <p class="feature-text"><p>For supervised problems, where data instances are annotated with class labels, we would like to know which are the most informative features. Rank widget provides a table of features and their informativity scores, and supports manual feature selection. In the workflow, we used it to find the best two features (of initial 79 from brown-selected dataset) and display its scatter plot.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Feature-Ranking">Feature Ranking</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Feature-Selection">Feature Selection</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/410-feature-ranking.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/feature-ranking.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Cluster Inspection</h2>
+                    <p class="feature-text"><p>We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use &lsquo;Order by relevance&rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Clustering">Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Hierarchical-Clustering">Hierarchical Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Box-Plot">Box Plot</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/315-cluster-inspection.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/cluster-inspection.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
                 
                     <h2 class="workflow-title">Hierarchical Clustering</h2>
                     <p class="feature-text"><p>The workflow clusters the data items in iris dataset by first examining the distances between data instances. Distance matrix is passed to Hierarchical Clustering, which renders the dendrogram. Select different parts of the dendrogram to further analyze the corresponding data.</p>
@@ -313,7 +521,7 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
                     <h2 class="workflow-title">Principal Component Analysis</h2>
                     <p class="feature-text"><p>PCA transforms the data into a dataset with uncorrelated variables, also called principal components. PCA widget displays a graph (scree diagram) showing a degree of explained variance by best principal components and allows to interactively set the number of components to be included in the output dataset. In this workflow, we can observe the transformation in the Data Table and in Scatter Plot.</p>
@@ -353,7 +561,7 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
                 
                     <h2 class="workflow-title">Inspecting Outliers with Silhouette</h2>
                     <p class="feature-text"><p>Silhouette Plot shows how &lsquo;well-centered&rsquo; each data instance is with respect to its cluster or class label. In this workflow we use iris' class labels to observe which flowers are typical representatives of their class and which are the outliers. Select instances left of zero in the plot and observe which flowers are these. Try connecting the selection with the Scatter Plot to highlight the outliers.</p>
@@ -395,7 +603,7 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
                     <h2 class="workflow-title">Classification Tree</h2>
                     <p class="feature-text"><p>This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.</p>
@@ -435,7 +643,7 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
                 
                     <h2 class="workflow-title">Pivot Table</h2>
                     <p class="feature-text"><p>Pivot Table can help us aggregate and transform the data. This workflow takes Kickstarter projects and aggregates them by month. We can inspect the frequency of the published projects per month and observe the difference between funded and non-funded projects. Try constructing several tables with pivot and experiment with different aggregation methods.</p>
@@ -473,126 +681,6 @@
             </div>
             <hr />
             
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
-                
-                    <h2 class="workflow-title">Visalization of Data Subsets</h2>
-                    <p class="feature-text"><p>Some visualization widget, like Scatter Plot and several data projection widgets, can expose the data instances in the data subset. In this workflow, Scatter Plot visualizes the data from the input data file, but also marks the data points that have been selected in the Data Table (selected rows).</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Scatter-Plot">Scatter Plot</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Visualization">Visualization</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/130-scatterplot-visualize-subset.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/scatterplot-visualize-subset.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
-                
-                    <h2 class="workflow-title">Interactive Visualizations</h2>
-                    <p class="feature-text"><p>Most visualizations in Orange are interactive. Scatter Plot for example. Double click its icon to open it and click-and-drag to select a few data points from the plot. Selected data will automatically propagate to Data Table. Double click it to check which data was selected. Change selection and observe the change in the Data Table. This works best if both widgets are open.</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Scatter-Plot">Scatter Plot</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Visualization">Visualization</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/120-scatterplot-data-table.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/scatterplot-data-table.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
-                
-                    <h2 class="workflow-title">File and Data Table</h2>
-                    <p class="feature-text"><p>The basic data mining units in Orange are called widgets. In this workflow, the File widget reads the data. File widget communicates this data to Data Table widget that shows the data in a spreadsheet. The output of File is connected to the input of Data Table.</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Data-Table">Data Table</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Data-Loading">Data Loading</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/110-file-and-data-table-widget.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/file-and-data-table-widget.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
             
 
 
@@ -617,7 +705,15 @@
             <a  href="/workflows/page/2/" class="page-link pagination-current">2</a>
             
         
+            
+             
+            
+            <a href="/workflows/page/3/" class="page-link">3</a>
+            
+        
 
+        
+        <a href="/workflows/page/3/" rel="next" class="page-link">Next ›</a>
         
 
         

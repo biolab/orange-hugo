@@ -15,5 +15,14 @@
       <description>We use the zoo data set in combination with Hierarchical Clustering to discover groups of animals. Now that we have the clusters we want to find out what is significant for each cluster! Pass the clusters to Box Plot and use &amp;lsquo;Order by relevance&amp;rsquo; to discover what defines a cluster. Seems like they are well-separated by the type, even though the clustering was unaware of the class label!</description>
     </item>
     
+    <item>
+      <title>Explore Subpopulations with Distinct Risk Profiles</title>
+      <link>/workflows/explore-subpopulations-with-distinct-risk-profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/explore-subpopulations-with-distinct-risk-profiles/</guid>
+      <description>We can visualize the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterize patients of each cluster with the Box Plot widget.</description>
+    </item>
+    
   </channel>
 </rss>

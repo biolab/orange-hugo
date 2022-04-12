@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cox Regression on Orange</title>
+    <link>/workflows/Cox-Regression/</link>
+    <description>Recent content in Cox Regression on Orange</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/workflows/Cox-Regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Survival Features</title>
+      <link>/workflows/exploring-survival-features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/exploring-survival-features/</guid>
+      <description>In the workflow, we show how to find and analyze variables related to survival. We start with variables ranked by univariate Cox regression analysis, where we can select the feature of interest. The Distribution widget shows its distribution and allows us to choose interactively a group of patients related to its values. We compare the survival of this group to all other patients in the Kaplan-Meier plot widget.</description>
+    </item>
+    
+    <item>
+      <title>Cohort Construction and Validation</title>
+      <link>/workflows/cohort-construction-and-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/cohort-construction-and-validation/</guid>
+      <description>Stratification of patients into low and high-risk groups is a common task in survival analysis to identify clinical and biological factors that contribute to survival. One approach to stratification is by computing risk score values based on the Cox regression model. With the clever use of Orange widgets, we can split the data into training and validation sets and then interactively generate risk score models on training data to observe the difference in cohorts&#39; survival rate on training and validation samples side-by-side.</description>
+    </item>
+    
+    <item>
+      <title>Cross Validation for Survival Models</title>
+      <link>/workflows/c-index-cross-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/c-index-cross-validation/</guid>
+      <description>Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression. Here we demonstrate cross-validation to estimate the concordance index for the Cox regression model trained on data instances from selected features.</description>
+    </item>
+    
+  </channel>
+</rss>
