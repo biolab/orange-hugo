@@ -1,5 +1,5 @@
 +++
-title= "Explore Subpopulations With Distinct Risk Profiles"
+title= "Explore Subpopulations with Distinct Risk Profiles"
 images =  ["/workflow_images/740_hierarhical_clustering.png"]
 type = "workflows"
 blog =  ""
@@ -9,4 +9,4 @@ workflows = ["Survival Analysis", "Time-To-Event", "Kaplan-Meier", "Clustering",
 weight = 740
 +++
 
-In this workflow, we can visualise the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterise patients of each cluster with the Box Plot widget.
+We can visualize the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterize patients of each cluster with the Box Plot widget.

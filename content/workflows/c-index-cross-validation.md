@@ -9,4 +9,4 @@ workflows = ["Survival Analysis", "Time-To-Event", "Cox Regression", "Concordanc
 weight = 730
 +++
 
-Orange built-in methods for testing and scoring predictive models now support survival-related models like Cox regression. The featured workflow demonstrates a cross-validation strategy to evaluate (in terms of Concordance Index) the Cox regression model that has been trained on data instances from selected features.
+Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression. Here we demonstrate cross-validation to estimate the concordance index for the Cox regression model trained on data instances from selected features.

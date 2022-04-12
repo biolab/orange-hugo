@@ -9,4 +9,4 @@ workflows = ["Survival Analysis", "Time-To-Event", "Kaplan-Meier", "Cox Regressi
 weight = 710
 +++
 
-In this workflow, we demonstrate how users can quickly explore features related to survival. We start the workflow with an initial screening of features by univariate Cox regression analysis. This step can help researchers decide which features, that is, features that impact survival might be interesting for further analysis. The Distribution widget shows the value distribution of the feature of interest. Interactively selecting patients in the distribution plot allows us to rapidly generate new groups of patients and observe the differences in the survival rate of corresponding groups in the Kaplan-Meier plot widget. 
+In the workflow, we show how to find and analyze variables related to survival. We start with variables ranked by univariate Cox regression analysis, where we can select the feature of interest. The Distribution widget shows its distribution and allows us to choose interactively a group of patients related to its values. We compare the survival of this group to all other patients in the Kaplan-Meier plot widget. 
