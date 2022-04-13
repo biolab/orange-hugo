@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>Load Text Corpus from the Server Repository</title>
+      <link>/workflows/text-loading-from-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-loading-from-repository/</guid>
+      <description>The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.</description>
+    </item>
+    
+    <item>
       <title>Story Arcs</title>
       <link>/workflows/story-arcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -120,6 +120,8 @@
   </url><url>
     <loc>/workflows/twitter/</loc>
   </url><url>
+    <loc>/workflows/text-loading-from-repository/</loc>
+  </url><url>
     <loc>/workflows/story-arcs/</loc>
   </url><url>
     <loc>/workflows/survival-curve-estimation/</loc>
