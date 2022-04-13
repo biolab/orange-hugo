@@ -10,6 +10,8 @@ wget -qO- https://github.com/quasars/orange-spectroscopy/archive/master.tar.gz |
 mv orange-spectroscopy-master orange-spectroscopy
 wget -qO- https://github.com/biolab/orange3-text/archive/stable.tar.gz | tar -zxf -
 mv orange3-text-stable orange3-text
+wget -qO- https://github.com/biolab/orange3-survival-analysis/archive/master.tar.gz | tar -zxf -
+mv orange3-survival-analysis-master orange3-survival-analysis
 wget -qO- https://github.com/biolab/orange3-bioinformatics/archive/master.tar.gz | tar -zxf -
 mv orange3-bioinformatics-master orange3-bioinformatics
 wget -qO- https://github.com/biolab/orange3-single-cell/archive/master.tar.gz | tar -zxf -
@@ -35,6 +37,7 @@ catchsegv xvfb-run -a -s "$XVFBARGS" python scripts/copy_docs.py \
   external/orange3/doc/ \
   external/orange-spectroscopy/doc/ \
   external/orange3-text/doc/ \
+  external/orange3-survival-analysis/doc/ \
   external/orange3-bioinformatics/doc/ \
   external/orange3-single-cell/doc/ \
   external/orange3-imageanalytics/doc/ \
