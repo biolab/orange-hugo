@@ -271,14 +271,14 @@
         <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
-          
+          Pager 1
           
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
-                    <h2 class="workflow-title">Explore Subpopulations with Distinct Risk Profiles</h2>
-                    <p class="feature-text"><p>We can visualize the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterize patients of each cluster with the Box Plot widget.</p>
+                    <h2 class="workflow-title">Survival Curve Estimation</h2>
+                    <p class="feature-text"><p>One of the primary objectives of survival analysis is to estimate the survival probability from observed survival times of different patients. The workflow plots the Kaplan-Meier approximation of the survival curve for the investigated population in the German breast cancer study group. The Kaplan-Meier plot is interactive; we select the longest-surviving patients and use Box Plot to analyze features that best characterize them.</p>
 </p>
                     <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
                         Tags:
@@ -289,16 +289,10 @@
                         
                         <a class="tag-workflow" href="/workflows/Kaplan-Meier">Kaplan-Meier</a>
                         
-                        <a class="tag-workflow" href="/workflows/Clustering">Clustering</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Hierarchical-Clustering">Hierarchical Clustering</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Box-Plot">Box Plot</a>
-                        
                     </div>
                     <div class="getting-started-button">
                         
-                        <a href="https://download.biolab.si/download/files/workflows/orange/740_hierarhical_clustering.ows"
+                        <a href="https://download.biolab.si/download/files/workflows/orange/700_survival_curve_estimation.ows"
                             id="workflow-download" class="no-break-buttons" target="_blank">
                             <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-download jsonly"></div>
@@ -315,7 +309,7 @@
                     style="padding: 20px;padding-top: 0px;">
                     
                     
-                    <img src="/workflow_images/740_hierarhical_clustering.png" class="workflow-image">
+                    <img src="/workflow_images/700_survival_curve_estimation.png" class="workflow-image">
                     
                 </div>
             </div>
@@ -324,50 +318,6 @@
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
-                
-                    <h2 class="workflow-title">Cohort Construction and Validation</h2>
-                    <p class="feature-text"><p>Stratification of patients into low and high-risk groups is a common task in survival analysis to identify clinical and biological factors that contribute to survival. One approach to stratification is by computing risk score values based on the Cox regression model. With the clever use of Orange widgets, we can split the data into training and validation sets and then interactively generate risk score models on training data to observe the difference in cohorts' survival rate on training and validation samples side-by-side. Read more on how <a href="/blog/2021/2021-08-13-apply-domain/" title="Apply domain">Apply domain</a> enables this kind of workflows.</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Survival-Analysis">Survival Analysis</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Time-To-Event">Time-To-Event</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Kaplan-Meier">Kaplan-Meier</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Cox-Regression">Cox Regression</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/720_cohort_construction_and_validation.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/720_cohort_construction_and_validation.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
                     <h2 class="workflow-title">Exploring Survival Features</h2>
                     <p class="feature-text"><p>In the workflow, we show how to find and analyze variables related to survival. We start with variables ranked by univariate Cox regression analysis, where we can select the feature of interest. The Distribution widget shows its distribution and allows us to choose interactively a group of patients related to its values. We compare the survival of this group to all other patients in the Kaplan-Meier plot widget.</p>
@@ -411,10 +361,10 @@
             
             <div class=" row">
                 
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
-                    <h2 class="workflow-title">Survival Curve Estimation</h2>
-                    <p class="feature-text"><p>One of the primary objectives of survival analysis is to estimate the survival probability from observed survival times of different patients. The workflow plots the Kaplan-Meier approximation of the survival curve for the investigated population in the German breast cancer study group. The Kaplan-Meier plot is interactive; we select the longest-surviving patients and use Box Plot to analyze features that best characterize them.</p>
+                    <h2 class="workflow-title">Cohort Construction and Validation</h2>
+                    <p class="feature-text"><p>Stratification of patients into low and high-risk groups is a common task in survival analysis to identify clinical and biological factors that contribute to survival. One approach to stratification is by computing risk score values based on the Cox regression model. With the clever use of Orange widgets, we can split the data into training and validation sets and then interactively generate risk score models on training data to observe the difference in cohorts' survival rate on training and validation samples side-by-side. Read more on how <a href="/blog/2021/2021-08-13-apply-domain/" title="Apply domain">Apply domain</a> enables this kind of workflows.</p>
 </p>
                     <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
                         Tags:
@@ -425,10 +375,12 @@
                         
                         <a class="tag-workflow" href="/workflows/Kaplan-Meier">Kaplan-Meier</a>
                         
+                        <a class="tag-workflow" href="/workflows/Cox-Regression">Cox Regression</a>
+                        
                     </div>
                     <div class="getting-started-button">
                         
-                        <a href="https://download.biolab.si/download/files/workflows/orange/700_survival_curve_estimation.ows"
+                        <a href="https://download.biolab.si/download/files/workflows/orange/720_cohort_construction_and_validation.ows"
                             id="workflow-download" class="no-break-buttons" target="_blank">
                             <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-download jsonly"></div>
@@ -445,7 +397,55 @@
                     style="padding: 20px;padding-top: 0px;">
                     
                     
-                    <img src="/workflow_images/700_survival_curve_estimation.png" class="workflow-image">
+                    <img src="/workflow_images/720_cohort_construction_and_validation.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                
+                    <h2 class="workflow-title">Explore Subpopulations with Distinct Risk Profiles</h2>
+                    <p class="feature-text"><p>We can visualize the difference in subpopulations of breast cancer patients in the METABRIC dataset through clustering, that is, by identifying groups of data instances similar to each other. We can observe the difference in survival rate between clusters with Kaplan-Meier Plot and explore features that characterize patients of each cluster with the Box Plot widget.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Survival-Analysis">Survival Analysis</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Time-To-Event">Time-To-Event</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Kaplan-Meier">Kaplan-Meier</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Clustering">Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Hierarchical-Clustering">Hierarchical Clustering</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Box-Plot">Box Plot</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/740_hierarhical_clustering.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/740_hierarhical_clustering.png" class="workflow-image">
                     
                 </div>
             </div>

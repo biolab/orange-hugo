@@ -271,81 +271,26 @@
         <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
-          
+          Pager 1
           
             <div class=" row">
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
-                    <h2 class="workflow-title">Text Classification</h2>
-                    <p class="feature-text"><p>We can use predictive models to classify documents by authorship, their type, sentiment and so on. In this workflow we classify documents by their Aarne-Thompshon-Uther index, that is the defining topic of the tale. We use two simple learners, Logistic Regression and Naive Bayes, both of which can be inspected in the Nomogram.</p>
+                    <h2 class="workflow-title">Classification Tree</h2>
+                    <p class="feature-text"><p>This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.</p>
 </p>
                     <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
                         Tags:
                         
-                        <a class="tag-workflow" href="/workflows/Text-Mining">Text Mining</a>
+                        <a class="tag-workflow" href="/workflows/Classification-Tree">Classification Tree</a>
                         
                         <a class="tag-workflow" href="/workflows/Classification">Classification</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Nomogram">Nomogram</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Bag-of-Words">Bag of Words</a>
                         
                     </div>
                     <div class="getting-started-button">
                         
-                        <a href="https://download.biolab.si/download/files/workflows/orange/630-text-classification.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        <a class="lightbox no-break-buttons" href="https://youtu.be/zO_zwKZCULo" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                            <div class="feature-block fa fa-play-circle-o jsonly">
-                            </div>
-                            <div class="feature-block feature-link">Watch Video</div>
-                        </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/text-classification.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
-                
-                    <h2 class="workflow-title">Where Are Misclassifications</h2>
-                    <p class="feature-text"><p>Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Confusion-Matrix">Confusion Matrix</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Scatter-Plot">Scatter Plot</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/470-misclassification-scatterplot.ows"
+                        <a href="https://download.biolab.si/download/files/workflows/orange/250-tree-scatterplot.ows"
                             id="workflow-download" class="no-break-buttons" target="_blank">
                             <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-download jsonly"></div>
@@ -362,49 +307,7 @@
                     style="padding: 20px;padding-top: 0px;">
                     
                     
-                    <img src="/workflow_images/misclassifications.png" class="workflow-image">
-                    
-                </div>
-            </div>
-            <hr />
-            
-            <div class=" row">
-                
-                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
-                
-                    <h2 class="workflow-title">Cross Validation</h2>
-                    <p class="feature-text"><p>How good are supervised data mining methods on your classification dataset? Here&rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.</p>
-</p>
-                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
-                        Tags:
-                        
-                        <a class="tag-workflow" href="/workflows/Cross-Validation">Cross Validation</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Predictive-models">Predictive models</a>
-                        
-                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
-                        
-                    </div>
-                    <div class="getting-started-button">
-                        
-                        <a href="https://download.biolab.si/download/files/workflows/orange/450-cross-validation.ows"
-                            id="workflow-download" class="no-break-buttons" target="_blank">
-                            <div class="learn-more feature-block link-buttons">
-                                <div class="feature-block fa fa-download jsonly"></div>
-                                <div class="feature-block feature-link">Download</div>
-                            </div>
-                        </a>
-                        &nbsp;&nbsp;
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class='content col-md-6 col-xs-12 panel-left'
-                    style="padding: 20px;padding-top: 0px;">
-                    
-                    
-                    <img src="/workflow_images/cross-validation.png" class="workflow-image">
+                    <img src="/workflow_images/tree-scatterplot.png" class="workflow-image">
                     
                 </div>
             </div>
@@ -456,20 +359,22 @@
                 
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 
-                    <h2 class="workflow-title">Classification Tree</h2>
-                    <p class="feature-text"><p>This workflow combines the interface and visualization of classification trees with scatter plot. When both the tree viewer and the scatter plot are open, selection of any node of the tree sends the related data instances to scatter plot. In the workflow, the selected data is treated as a subset of the entire dataset and is highlighted in the scatter plot. With simple combination of widgets we have constructed an interactive classification tree browser.</p>
+                    <h2 class="workflow-title">Cross Validation</h2>
+                    <p class="feature-text"><p>How good are supervised data mining methods on your classification dataset? Here&rsquo;s a workflow that scores various classification techniques on a dataset from medicine. The central widget here is the one for testing and scoring, which is given the data and a set of learners, does cross-validation and scores predictive accuracy, and outputs the scores for further examination.</p>
 </p>
                     <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
                         Tags:
                         
-                        <a class="tag-workflow" href="/workflows/Classification-Tree">Classification Tree</a>
+                        <a class="tag-workflow" href="/workflows/Cross-Validation">Cross Validation</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Predictive-models">Predictive models</a>
                         
                         <a class="tag-workflow" href="/workflows/Classification">Classification</a>
                         
                     </div>
                     <div class="getting-started-button">
                         
-                        <a href="https://download.biolab.si/download/files/workflows/orange/250-tree-scatterplot.ows"
+                        <a href="https://download.biolab.si/download/files/workflows/orange/450-cross-validation.ows"
                             id="workflow-download" class="no-break-buttons" target="_blank">
                             <div class="learn-more feature-block link-buttons">
                                 <div class="feature-block fa fa-download jsonly"></div>
@@ -486,7 +391,102 @@
                     style="padding: 20px;padding-top: 0px;">
                     
                     
-                    <img src="/workflow_images/tree-scatterplot.png" class="workflow-image">
+                    <img src="/workflow_images/cross-validation.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-right text-workflow'>
+                
+                    <h2 class="workflow-title">Where Are Misclassifications</h2>
+                    <p class="feature-text"><p>Cross-validation of, say, logistic regression can expose the data instances which were misclassified. There are six such instances for iris dataset and ridge-regularized logistic regression. We can select different types of misclassification in Confusion Matrix and highlight them in the Scatter Plot. No surprise: the misclassified instances are close to the class-bordering regions in the scatter plot projection.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Confusion-Matrix">Confusion Matrix</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Scatter-Plot">Scatter Plot</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/470-misclassification-scatterplot.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/misclassifications.png" class="workflow-image">
+                    
+                </div>
+            </div>
+            <hr />
+            
+            <div class=" row">
+                
+                <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
+                
+                    <h2 class="workflow-title">Text Classification</h2>
+                    <p class="feature-text"><p>We can use predictive models to classify documents by authorship, their type, sentiment and so on. In this workflow we classify documents by their Aarne-Thompshon-Uther index, that is the defining topic of the tale. We use two simple learners, Logistic Regression and Naive Bayes, both of which can be inspected in the Nomogram.</p>
+</p>
+                    <div class="tags" style="padding-bottom: 10px;text-transform: capitalize;">
+                        Tags:
+                        
+                        <a class="tag-workflow" href="/workflows/Text-Mining">Text Mining</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Classification">Classification</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Nomogram">Nomogram</a>
+                        
+                        <a class="tag-workflow" href="/workflows/Bag-of-Words">Bag of Words</a>
+                        
+                    </div>
+                    <div class="getting-started-button">
+                        
+                        <a href="https://download.biolab.si/download/files/workflows/orange/630-text-classification.ows"
+                            id="workflow-download" class="no-break-buttons" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                                <div class="feature-block fa fa-download jsonly"></div>
+                                <div class="feature-block feature-link">Download</div>
+                            </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                        <a class="lightbox no-break-buttons" href="https://youtu.be/zO_zwKZCULo" target="_blank">
+                            <div class="learn-more feature-block link-buttons">
+                            <div class="feature-block fa fa-play-circle-o jsonly">
+                            </div>
+                            <div class="feature-block feature-link">Watch Video</div>
+                        </div>
+                        </a>
+                        &nbsp;&nbsp;
+                        
+                        
+                    </div>
+                </div>
+                <div class='content col-md-6 col-xs-12 panel-left'
+                    style="padding: 20px;padding-top: 0px;">
+                    
+                    
+                    <img src="/workflow_images/text-classification.png" class="workflow-image">
                     
                 </div>
             </div>
