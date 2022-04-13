@@ -1417,6 +1417,8 @@
   </url><url>
     <loc>/widget-catalog/time-series/arima/</loc>
   </url><url>
+    <loc>/widget-catalog/survival-analysis/as-survival-data/</loc>
+  </url><url>
     <loc>/widget-catalog/time-series/as_timeseries/</loc>
   </url><url>
     <loc>/widget-catalog/associate/associationrules/</loc>
@@ -1455,6 +1457,8 @@
   </url><url>
     <loc>/widget-catalog/visualize/cn2ruleviewer/</loc>
   </url><url>
+    <loc>/widget-catalog/survival-analysis/cohorts/</loc>
+  </url><url>
     <loc>/widget-catalog/data/color/</loc>
   </url><url>
     <loc>/widget-catalog/transform/concatenate/</loc>
@@ -1486,6 +1490,8 @@
     <loc>/widget-catalog/unsupervised/correspondenceanalysis/</loc>
   </url><url>
     <loc>/workflows/Cox-Regression/</loc>
+  </url><url>
+    <loc>/widget-catalog/survival-analysis/cox-regression/</loc>
   </url><url>
     <loc>/widget-catalog/transform/createclass/</loc>
   </url><url>
@@ -1645,6 +1651,8 @@
   </url><url>
     <loc>/workflows/Kaplan-Meier/</loc>
   </url><url>
+    <loc>/widget-catalog/survival-analysis/kaplan-meier-plot/</loc>
+  </url><url>
     <loc>/widget-catalog/bioinformatics/kegg_pathways/</loc>
   </url><url>
     <loc>/widget-catalog/model/knn/</loc>
@@ -1775,6 +1783,8 @@
   </url><url>
     <loc>/widget-catalog/data/rank/</loc>
   </url><url>
+    <loc>/widget-catalog/survival-analysis/rank-survival-features/</loc>
+  </url><url>
     <loc>/widget-catalog/spectroscopy/reshape-map/</loc>
   </url><url>
     <loc>/widget-catalog/evaluate/rocanalysis/</loc>
@@ -1842,6 +1852,8 @@
     <loc>/widget-catalog/model/stacking/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/statistics/</loc>
+  </url><url>
+    <loc>/widget-catalog/survival-analysis/stepwise-cox-regression/</loc>
   </url><url>
     <loc>/widget-catalog/model/stochasticgradient/</loc>
   </url><url>

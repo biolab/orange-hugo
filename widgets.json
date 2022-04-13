@@ -1366,6 +1366,83 @@
   ]
  ],
  [
+  "Survival Analysis",
+  [
+   {
+    "title": "As Survival Data",
+    "category": "Survival Analysis",
+    "keywords": [
+     "time",
+     "event",
+     "censoring"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-As Survival Data.png",
+    "url": "as-survival-data"
+   },
+   {
+    "title": "Kaplan-Meier Plot",
+    "category": "Survival Analysis",
+    "keywords": [
+     "Kaplan-Meier",
+     "survival curve",
+     "log-rank"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-Kaplan-Meier Plot.png",
+    "url": "kaplan-meier-plot"
+   },
+   {
+    "title": "Cox regression",
+    "category": "Survival Analysis",
+    "keywords": [
+     "ridge",
+     "lasso",
+     "elastic net",
+     "cox regression"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-Cox regression.png",
+    "url": "cox-regression"
+   },
+   {
+    "title": "Rank Survival Features",
+    "category": "Survival Analysis",
+    "keywords": [
+     "univariate cox regression",
+     "rank",
+     "log-likelihood ratio test"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-Rank Survival Features.png",
+    "url": "rank-survival-features"
+   },
+   {
+    "title": "Stepwise Cox Regression",
+    "category": "Survival Analysis",
+    "keywords": [
+     "feature selection",
+     "backward elimination",
+     "cox regression"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-Stepwise Cox Regression.png",
+    "url": "stepwise-cox-regression"
+   },
+   {
+    "title": "Cohorts",
+    "category": "Survival Analysis",
+    "keywords": [
+     "risk score",
+     "cohorts"
+    ],
+    "background": "#f0e0ff",
+    "icon": "widget-icons/Survival Analysis-Cohorts.png",
+    "url": "cohorts"
+   }
+  ]
+ ],
+ [
   "Bioinformatics",
   [
    {

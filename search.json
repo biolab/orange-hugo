@@ -6447,6 +6447,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/survival-analysis/as-survival-data/",
+	"title": "As Survival Data",
+	"content": "As Survival Data Mark features Time and Event as target variables.\nInputs\n Data: reference data set  Outputs\n Data: reference data with selected Time and Event marked as target variables  As Survival enables the user to manually select which feature will be treated as the Time and Event target variable in the survival dataset.\nExample The available survival datasets in Orange already have correctl",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "As Survival Data Mark features Time and Event as target variables.\nInputs\n Data: reference data set  Outputs\n Data: reference data with selected Time and Event marked as target variables  As Survival enables the user to manually select which feature will be treated as the Time and Event target variable in the survival dataset.\nExample The available survival datasets in Orange already have correctl" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/time-series/as_timeseries/",
 	"title": "As Timeseries",
 	"content": "As Timeseries Reinterpret a Table object as a Timeseries object.\nInputs\n Data: Any data table.  Outputs\n Time series: Data table reinterpreted as time series.  This widget reinterprets any data table as a time series, so it can be used with the rest of the widgets in this add-on. In the widget, you can set which data attribute represents the time variable.\n The time attribute, the values of which ",
@@ -6694,6 +6707,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/survival-analysis/cohorts/",
+	"title": "Cohorts",
+	"content": "Cohorts Inputs\n todo  Outputs\n todo  Example ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Cohorts Inputs\n todo  Outputs\n todo  Example " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/data/color/",
 	"title": "Color",
 	"content": "Color Set color legend for variables.\nInputs\n Data: input data set  Outputs\n Data: data set with a new color legend  The Color widget sets the color legend for visualizations.\n A list of discrete variables. Set the color of each variable by double-clicking on it. The widget also enables renaming variables by clicking on their names. A list of continuous variables. Click on the color strip to choos",
@@ -6900,6 +6926,19 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "workflows"
+},
+{
+    "uri": "/widget-catalog/survival-analysis/cox-regression/",
+	"title": "Cox regression",
+	"content": "Cox Regression Inputs\n todo  Outputs\n todo  Example ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Cox Regression Inputs\n todo  Outputs\n todo  Example " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
 },
 {
     "uri": "/widget-catalog/transform/createclass/",
@@ -7929,6 +7968,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/widget-catalog/survival-analysis/kaplan-meier-plot/",
+	"title": "Kaplan-Meier Plot",
+	"content": "Kaplan-Meier Plot Visualisation of Kaplan-Meier estimator.\nInputs\n Data: reference dataset  Outputs\n Data: reference dataset with an additional column showing whether a point is selected Selected Data: instances selected from the plot  Kaplan-Meier Plot is a visual representation of the estimated survival function that shows the probability of an event at a respective time interval. It works on su",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Kaplan-Meier Plot Visualisation of Kaplan-Meier estimator.\nInputs\n Data: reference dataset  Outputs\n Data: reference dataset with an additional column showing whether a point is selected Selected Data: instances selected from the plot  Kaplan-Meier Plot is a visual representation of the estimated survival function that shows the probability of an event at a respective time interval. It works on su" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/bioinformatics/kegg_pathways/",
 	"title": "KEGG Pathways",
 	"content": "KEGG Pathways Diagrams of molecular interactions, reactions, and relations.\nInputs\n Data: Data set. Reference: Referential data set.  Outputs\n Selected Data: Data subset. Unselected Data: Remaining data.  KEGG Pathways widget displays diagrams of molecular interactions, reactions and relations from the KEGG Pathways Database. It takes data on gene expression as an input, matches the genes to the b",
@@ -8774,6 +8826,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/survival-analysis/rank-survival-features/",
+	"title": "Rank Survival Features",
+	"content": "Rank Survival Features Inputs\n todo  Outputs\n todo  Example ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Rank Survival Features Inputs\n todo  Outputs\n todo  Example " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/spectroscopy/reshape-map/",
 	"title": "Reshape Map",
 	"content": "Reshape Map Builds or modifies the shape of the input dataset to create 2D maps from series data or change the dimensions of existing 2D datasets.\nInputs\n Data: input dataset  Outputs\n Map Data: data as a map  The Reshape Map widget transforms the input data to a map.\n Map shape:  The X dimension. The Y dimension.   Send data automatically or press Send.  ",
@@ -9209,6 +9274,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "Statistics Create new statistic variables for documents.\nInputs\n Corpus: A collection of documents.  Outputs\n Corpus: Corpus with additional attributes.  Statistics is a feature constructor widget that adds simple document statistics to a corpus. It supports both standard statistical measures and user-defined variables.\n  Add or remove features. Features can be added with the + sign below. They ca" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/survival-analysis/stepwise-cox-regression/",
+	"title": "Stepwise Cox Regression",
+	"content": "Stepwise Cox Regression Inputs\n todo  Outputs\n todo  Example ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Stepwise Cox Regression Inputs\n todo  Outputs\n todo  Example " ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
