@@ -1873,15 +1873,21 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="rank-survival-features">Rank Survival Features</h1>
+<p>Rank features according to univariate estimate of importance by Cox regression model.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>todo</li>
+<li>Data: reference survival dataset</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>todo</li>
+<li>Reduced data: data comprised of selected features</li>
 </ul>
+<p><strong>Rank Survival Features</strong> receives a survival dataset on the input and ranks each feature according to a univariate estimate of importance by the Cox regression model. It provides four different statistical measures to rank and report on the importance of a feature: Log-Likelihood, Log-Likelihood Ratio, p-value and FDR. The user can select any feature or
+set of features from the ranked list, and the widget outputs a dataset comprised of only selected features.</p>
 <h2 id="example">Example</h2>
+<p>In this example we use <strong>Rank Survival Features</strong> to discover the most important survival feature in the German breast cancer study group 2. We load the already available data with the use of <a href="https://orangedatamining.com/widget-catalog/data/datasets/">Datasets</a> and connect it to <strong>Rank Survival Features</strong>. We sort the features according to the p-value and select the top feature (with the smallest p-value), Number of Positive Nodes. This way the widget outputs a dataset comprised only of the selected feature. In this example we proceed to display the distribution of the feature of interest and select part of the distribution to define the target cohort. Interactively selecting patients in the
+distribution plot allows us to rapidly generate new groups of patients. We can visualize and compare the survival curves of the generated cohort to that of other patients,  using the <a href="https://orangedatamining.com/widget-catalog/survival-analysis/kaplan-meier-plot/">Kaplan-Meier Plot</a>.</p>
+<p><img src="../images/RankSurvivalFeatures-Example.png" alt=""></p>
 
                 </div>
             </div>

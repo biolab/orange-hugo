@@ -1873,15 +1873,22 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="cox-regression">Cox Regression</h1>
+<p>Fit the Cox regression model on input data.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>todo</li>
+<li>Data: reference survival dataset</li>
+<li>Preprocessor: preprocessing method</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>todo</li>
+<li>Learner: Cox regression learning algorithm</li>
+<li>Model trained model</li>
+<li>Coefficients: Cox regression coefficients</li>
 </ul>
+<p><strong>Cox Regression</strong> is a method for investigating the effect of several variables upon the time a specified event takes to happen. It assumes that the effects of the predictor variables upon survival are constant over time and are additive in one scale.</p>
 <h2 id="example">Example</h2>
+<p>In this example we estimate the concordence index for the Cox regression model trained on data instances from selected features by using cross-validation. The concordance index quantifies the quality of rankings and is the standard performance measure for model assessment in survival analysis.We first load the German breast cancer study group 2 (German BC2) dataset using the widget <a href="https://orangedatamining.com/widget-catalog/data/datasets/">Datasets</a>. Next we input the data into the <a href="https://orangedatamining.com/widget-catalog/survival-analysis/rank-survival-features/">Rank Survival Features</a> widget and select the top two most informative features, Number of Positive Nodes and Progesterone Receptor. We input this reduced dataset comprised only of the selected features and the <strong>Cox Regression</strong> learner into <a href="https://orangedatamining.com/widget-catalog/evaluate/testandscore/">Test and Score</a>, where we can inspect the cross-validated concordance measure.</p>
+<p><img src="../images/CoxRegression-Example.png" alt=""></p>
 
                 </div>
             </div>
