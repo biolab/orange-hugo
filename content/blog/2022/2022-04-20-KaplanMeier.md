@@ -6,7 +6,7 @@ title = "An introduction to the Kaplan-Meier Estimator"
 type = "blog"
 thumbImage = "/orange-hugo/static/blog_img/2022/2022-04-20-kmgroups.png"
 frontPageImage = "/orange-hugo/static/blog_img/2022/2022-04-20-kmgroups.png"
-blog = ["survival analysis", "kaplan-meier plot"]
+blog = ["survival analysis", "kaplan-meier"]
 shortExcerpt = "Understanding the Kaplan-Meier widget in the Survival Analysis add-on."
 longExcerpt = "The Survival Analysis add-on offers accesible tools for survival analysis, the Kaplan-Meier widget being a prime example. In this blogpost we provide an introduction to the Kaplan-Meier Estimator using a simple example and show how the tool can be used in Orange on larger datasets."
 x2images = true  # true if using retina screenshots, else false
@@ -24,7 +24,20 @@ The "survival" in survival analysis gets its name from its use in the analysis o
 
 Perhaps the easiest way of getting an understanding of the concepts involved in the estimation of a survival function is with a simple example. Say we get our hands on a tiny dataset from a not-so-grim survival scenario: 10 people received 10 flowers for their birthday and tracked when the flowers wither. The tracking lasted for 10 days. Some flowers wither quicker than others and we are interested in the probability of a flower withering over time. The two main parameters of interest are thus time (in days) and flower withering-status, where "status = 1" means withered and "status = 0" means not-withered. How are we to go about determining the probability of withering over time?
 
-![](/orange-hugo/static/blog_img/2022/2022-04-20-flowerdata.png)
+| Time  [days]| Flower Status |
+| ----------- | ----------- |
+| 2           | 1           |
+| 2           | 1           |
+| 2           | 1           |
+| 3           | 1           |
+| 3           | 0           |
+| 4           | 1           |
+| 5           | 0           |
+| 6           | 0           |
+| 8           | 1           |
+| 10          | 0           |
+
+
 
 There are two distinct problems when it comes to the analysis of survival:
  1. The first one has to do with the fact that "status = 0" does not necessarily mean that the flower has survived. What it does mean is that from that moment on the flower is no longer part of the ongoing study. For instance a cat might have knocked over the vase and the flower was then discarded along with the broken vase. This does not mean the flower has withered nor that it has survived. We do not want to discard these kinds of data instances, so instead we label them as **censored**. This is what "status = 0" really stands for.
@@ -47,7 +60,17 @@ Probability of surviving: 7/10 = 0.7 = 70%
 The probability of surviving is cumulative and so we have to multiply the probability of surviving that day with the previous probability of surviving. Since the probability of withering on the first day was 0 this means the survival probability was 1 and the multiplication does not change anything for the second day. 
 On the third day another flower withered and one stopped being part of the experiment for an unknown reason (probably that pesky cat). We have to remove it from the number of flowers at risk of withering for the next day. So while on the third day there are 7 flowers at risk, since 3 withered away the day before, on the fourth day there are only 5 at risk, since the day before one withered away and one got censored for an unknown reason. So the probability of withering on the fourth day is 1/5 and the probability of surviving is 4/5 multiplied by the probability of surviving the previous day, which was 0.6. Let's display all our calculations in a table:
 
-![](/orange-hugo/static/blog_img/2022/2022-04-20-KM-calculatingmanually.png)
+| Time [days] | N at risk | N withered | P withering | P surviving           |
+|-------------|-----------|------------|-------------|-----------------------|
+| 0           | 10        | 0          | 0/10 = 0    | 10/10 = 1             |
+| 2           | 10        | 3          | 3/10 = 0.3  | 1*(1 - 0.3) = 0.7     |
+| 3           | 7         | 1          | 1/7 = 0.14  | 0.7*(1 - 0.14) = 0.6  |
+| 4           | 5         | 1          | 1/5 = 0.2   | 0.6*(1 - 0.2) = 0.48  |
+| 5           | 4         | 0          | 0/4 = 0     | 0.48*(1 - 0) = 0.48   |
+| 6           | 3         | 0          | 0/3 = 0     | 0.48*(1 - 0) = 0.48   |
+| 8           | 2         | 1          | 1/2 = 0.5   | 0.48*(1 - 0.5) = 0.24 |
+| 10          | 1         | 0          | 0/1 = 0     | 0.24*(1 - 0) = 0.24   |
+
 
 On the 5th and 6th day none of the remaining flowers withered but two got censored. There is no need to calculate probability of survival on days where there are only censored data points, but for the sake of clarity we included the calculations in the table. We can see that the censored data affects the number of flowers at risk but does not change the survival probability. On the eight day there are thus only 2 flowers at risk and one of them withers. Taking into account the survival probability of the previous day this gives us the probability of survival of 0.24.
 
