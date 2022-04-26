@@ -2,12 +2,12 @@
 author = "Blaž Zupan"
 date = "2022-04-26"
 draft = false
-title = "Training with Orange: A Tutorial at AIME22, Halifax"
+title = "Training with Orange: A Tutorial at AIME 2022 in Halifax"
 type = "blog"
 thumbImage = "/blog_img/2022/2022-04-26-wordcloud.png"
 frontPageImage = "/blog_img/2022/2022-04-26-wordcloud.png"
 blog = ["orange", "workshop"]
-shortExcerpt = "A half-a day tutorial on data science training with Orange on June 14 in Halifax."
+shortExcerpt = "A half-a day tutorial on data science training with Orange on June 14 in Halifax, Canada."
 longExcerpt = "A conference on Artificial Intelligence in Medicine is hosting our tutorial on training of crucial mechanics behind data science and machine learning with Orange."
 x2images = false  # true if using retina screenshots, else false
 +++
