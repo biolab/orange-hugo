@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/Orange/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Orange Webinar for Educators #1: Where to Start?</title>
+      <link>/blog/2022/2022-04-26-edu-webinar/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-04-26-edu-webinar/</guid>
+      <description>On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.
+The webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material.</description>
+    </item>
+    
+    <item>
       <title>Training with Orange: A Tutorial at AIME 2022 in Halifax</title>
       <link>/blog/2022/2022-04-26-amia-tutorial/</link>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>

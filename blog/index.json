@@ -2,6 +2,22 @@
 [
     
     {
+    "uri": "/blog/2022/2022-04-26-edu-webinar/",
+	"title": "Orange Webinar for Educators #1: Where to Start?",
+	"categories": ["orange", "workshop"],
+	"description": "",
+	"content": "On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.\nThe webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material. In the second half of the webinar, we will address selected questions from the audience submitted on this form.\nTo enroll in the webinar, please fill out an enrollment form. We may limit the enrollment so please fill out the form as soon as possible, preferably before May 3rd! Three days before the webinar, we will email you the reminder with the webinar link.\nThis is the first webinar in the planned Orange Webinar for Educators series.\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2022/2022-04-26-hands-on-workshop.png",
+	"shortExcerpt" : "We are announcing a forthcoming webinar for educators and trainers.",
+	"longExcerpt" :  "On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.\nThe webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material." ,
+	"author" : "Blaž Zupan",
+	"summary" : "On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.\nThe webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material.",
+	"date" : "Apr 26, 2022"
+}
+
+    
+    , {
     "uri": "/blog/2022/2022-04-26-amia-tutorial/",
 	"title": "Training with Orange: A Tutorial at AIME 2022 in Halifax",
 	"categories": ["orange", "workshop"],
