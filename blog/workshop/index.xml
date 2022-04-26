@@ -6,7 +6,19 @@
     <description>Recent content in workshop on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Training with Orange: A Tutorial at AIME22, Halifax</title>
+      <link>/blog/2022/2022-04-26-amia-tutorial/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-04-26-amia-tutorial/</guid>
+      <description>When June 14, 2022
+Where Halifax, Canada. This is a half-day, on site tutorial organized during the AIME 2022 conference.
+On Tutorial In the tutorial, we will claim and demonstrate that, given the right tool, it may take only a few hours to familiarize outsiders in data science.
+The tutorial is intended for teachers and trainees: we will present both the training steps and, as a demonstration, go through the actual training.</description>
+    </item>
+    
     <item>
       <title>PCA vs. MDS vs. t-SNE</title>
       <link>/blog/2021/2021-06-17-pca-mds-tsne/</link>
