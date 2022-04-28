@@ -82,7 +82,7 @@ We have also recently published several manuscripts about the proposed training,
 * Demšar J, Zupan B (2021) [Hands-on training about overfitting](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008671), PLOS Computational Biology 17(3): e1008671.
 * Godec P, Pančur M, Ilenič N, Čopar A, Stražar M, Erjavec A, Pretnar A, Demšar J, Starič A, Toplak M, Žagar L, Hartman J, Wang H, Bellazzi R, Petrovič U, Garagna S, Zuccotti M, Park D, Shaulsky G, Zupan B (2019)
 [Democratized image analytics by visual programming through integration of deep models and small-scale machine learning](https://www.nature.com/articles/s41467-019-12397-x), Nature Communications 10(1):4551.
-* Stražar M, Žagar L, Kokošar J, Tanko V, Erjavec A, Poličar P, Starič A, Demšar J, Shaulsky G, Menon V, Lamire A, Parikh A, and Zupan B (2019) [scOrange – A Tool for Hands-On Training of Concepts from Single Cell Data Analytics](https://academic.oup.com/bioinformatics/article/35/14/i4/5529249), Bioinformatics 35(14):i4-i12.
+* Stražar M, Žagar L, Kokošar J, Tanko V, Erjavec A, Poličar P, Starič A, Demšar J, Shaulsky G, Menon V, Lamire A, Parikh A, and Zupan B (2019) [scOrange – A Tool for Hands-On Training of Concepts from Single Cell Data Analytics](https://academic.oup.com/bioinformatics/article/35/14/i4/5529249), Bioinformatics 35(14):i4-i12.
 
 Related to the type of training we propose to showcase in the tutorial are also short educational videos on data science in Orange available on [YouTube](http://youtube.com/orangedatamining).
 
