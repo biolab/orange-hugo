@@ -1,40 +1,37 @@
 +++
-
 author = "Noah Novšak"
 date = "2022-04-08"
-draft = false
+draft = true
 title = "Predictive Modelling with Attribute Interactions"
 type = "blog"
 thumbImage = "/blog_img/2022/image-20220408145950556.png"
 frontPageImage = "/blog_img/2022/image-20220408145950556.png"
-blog = []
-shortExcerpt = "Interactions add-on now in Orange 3 "
-longExcerpt = "Interactions add-on has been rewritten and added back to Orange 3. See how to use attribute interactions to improve predictive models."
+blog = ["orange"]
+shortExcerpt = "Interactions widget in Orange 3"
+longExcerpt = "The Interactions widget has been added back to Orange 3. Illustrating how to use attribute interactions to improve predictive models."
 x2images = true  # true if using retina screenshots, else false
-
 +++
 
-The *Interactions* widget is one of the newest additions to Orange. Previously only available in Orange 2, it has now been rewritten and is accessible as a prototype add-on. This way one needs not go through the trouble of *compiling older versions* anymore.
+The *Interactions* widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible as a prototype add-on. This way, one need not go through the trouble of [compiling older versions](/blog/2022/2022-01-10-orange2/) anymore.
 
 But what does it do?
 
-Good question! First and foremost it calculates the mutual information that two attributes carry about a target variable as well as the *interaction* between them. This can give insight on the data at hand and help find nicer visualizations or improve prediction models.
+It computes and displays the [interaction](http://stat.columbia.edu/~jakulin/Int/) between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.
 
-As far as visualizations go, consider *Scatter Plot*. Connecting Interactions to the *Features* input enables the user to select the projection, similarly to the *find informative projections* button, but with a little more bells and whistles. Enabling sorting, filtering and selecting attributes desired attributes as well as giving a clearer view as to where the information is coming from, be it one single attribute or a combination of the two.
+As far as visualizations go, consider [Scatter Plot](/widget-catalog/visualize/scatterplot/). Connecting Interactions to the *Features* input allows the user to manually select the projection, similarly to the *find informative projections* button, but with a little more oomph. Enabling sorting, filtering, attribute selection, and offering a clear view into, where the information is coming from, be it from one single feature or a specific combination.
 
-Another, possibly even more intriguing application would be, as mentioned, improving the performance of prediction models. Using for example the *MONK* dataset, we can try and see how well a Naive Bayes Classifier (NBC) can predict the target variable like so.
+Another, possibly even more intriguing application would be, as mentioned, improving the performance of prediction models. To illustrate, let's take a look at the *MONK* dataset, readily available directly in Orange. First, we can try and see how well a Naive Bayes Classifier (NBC) can predict the target variable like so.
 
 {{<window-screenshot src="/blog_img/2022/image-20220408145907091.png">}}
 
-As it turns out, it performs admirably with a precision score of $0.832$. However, before we sit down and call it a day let's take a step back to consider our data. Doing this may give us some insight on what makes the model work so well and where there might still be some room for improvement. So, first let's calculate the attribute interactions.
+Taking, for example, the Area Under Curve (AUC) score of `0.741` as a  baseline, we can see that, already, our model performs quite well. But we know we can do better than that! We want to see what makes the model tick, so let's take a closer look at our data by utilizing the new interactions widget in our workflow and examining the results.
 
 {{<window-screenshot src="/blog_img/2022/image-20220408145950556.png">}}
 
-Our little escapade has yielded some promising results! While neither *a* nor *b* carry much information on their own, their combination tells a great deal about our target variable. Using this knowledge we can now use the *Feature Constructor* widget to combine the two attributes, and retry the model on our newly constructed data. Our updated workflow might now look something like this.
+While neither `a` nor `b` carries much information independently, their combination tells a great deal about our target variable. With this in mind, we can now use the [Feature Constructor](/widget-catalog/transform/featureconstructor/) widget to combine attributes `a` and `b` into a single feature and retrain our model. Applying all these steps then yields a workflow resembling this.
 
 {{<window-screenshot src="/blog_img/2022/image-20220408155015419.png">}}
 
-Looks like all the extra trouble has paid off. We have managed to greatly improve our model's performance by taking into account the codependence of variables (something models such as NBC lack by definition). 
+Lo and behold! It looks like the extra trouble has paid off. We have managed to improve our model's performance and have ended up with an AUC score of `1.0` by accounting for the codependence of variables (something models such as NBC lack by definition).
 
-And that's it for a quick rundown of the capabilities and usefulnes of the new Interactions widget.
-
+I hope this short display sheds some light on all the possibilities interaction analysis provides and urge you to try it out on some real-world data.
