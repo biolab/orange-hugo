@@ -1,13 +1,13 @@
 +++
 author = "Noah Novšak"
-date = "2022-05-06"
+date = "2022-05-13"
 draft = false
 title = "Predictive Modelling with Attribute Interactions"
 type = "blog"
 thumbImage = "/blog_img/2022/2022-05-06-interactions.png"
 frontPageImage = "/blog_img/2022/2022-05-06-interactions.png"
-blog = ["orange"]
-shortExcerpt = "Interactions widget in Orange 3"
+blog = ["orange", "interaction", "addons"]
+shortExcerpt = "A quick introduction to using the new Interactions widget in Orange 3"
 longExcerpt = "The Interactions widget has been added back to Orange 3. Illustrating how to use attribute interactions to improve predictive models."
 x2images = true  # true if using retina screenshots, else false
 +++
