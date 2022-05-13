@@ -864,9 +864,22 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Apr 26, 2022",
+	"date" : "May 12, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/Google/",
+	"title": "Google",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 12, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -877,10 +890,62 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Apr 26, 2022",
+	"date" : "May 12, 2022",
 	"images" : null,
 	"kind" : "home",
 	"type" : "page"
+},
+{
+    "uri": "/blog/project/",
+	"title": "project",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 12, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/Tides-Foundation/",
+	"title": "Tides Foundation",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 12, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/visualization/",
+	"title": "visualization",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 12, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-05-12-Google-Tides/",
+	"title": "We have launched a new project on the topic of AI in schools",
+	"content": " We have successfully launched a new project about AI and data science in elementary and high schools.\nAI is the technology of the century, yet too few kids and education professionals know about its concepts, ideas and applications. The project, funded by Google.org and Tides Foundation, is aimed at bringing AI to teachers and kids by designing hands-on workshops by focusing on conceptual learnin",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-05-12-tides-small.png",
+	"longExcerpt" :  "Read more about the project in the blogpost and Check out the site to find out more about the prepaired activities." ,
+	"author" : "Zala Gruden",
+	"date" : "May 12, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
 },
 {
     "uri": "/blog/Orange/",
@@ -976,19 +1041,6 @@
 {
     "uri": "/blog/topic-modelling/",
 	"title": "topic modelling",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Mar 18, 2022",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/visualization/",
-	"title": "visualization",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",
@@ -1257,19 +1309,6 @@
 	"date" : "Nov 26, 2021",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/project/",
-	"title": "project",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 26, 2021",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

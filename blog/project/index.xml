@@ -6,7 +6,18 @@
     <description>Recent content in project on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We have launched a new project on the topic of AI in schools</title>
+      <link>/blog/2022/2022-05-12-Google-Tides/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-05-12-Google-Tides/</guid>
+      <description>We have successfully launched a new project about AI and data science in elementary and high schools.
+AI is the technology of the century, yet too few kids and education professionals know about its concepts, ideas and applications. The project, funded by Google.org and Tides Foundation, is aimed at bringing AI to teachers and kids by designing hands-on workshops by focusing on conceptual learning and applications.
+During the course of the project, between January 31st 2022 and July 31st 2023, we expect to carry out several activities whose long term outcome is expected to improve overall education about AI in Slovenia.</description>
+    </item>
+    
     <item>
       <title>Explainable AI Project Meeting</title>
       <link>/blog/2021/2021-10-26-explainable-ai/</link>

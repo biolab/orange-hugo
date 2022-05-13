@@ -135,12 +135,27 @@
     <loc>/workflows/explore-subpopulations-with-distinct-risk-profiles/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/Orange/</loc>
-    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
+    <loc>/blog/Google/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/project/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/Tides-Foundation/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/visualization/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-05-12-Google-Tides/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/Orange/</loc>
     <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-04-26-edu-webinar/</loc>
@@ -162,9 +177,6 @@
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/topic-modelling/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/visualization/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-02-11-edit-image-collection/</loc>
@@ -225,9 +237,6 @@
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2021/2021-10-26-explainable-ai/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/project/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2021/2021-10-21-cluster-explanation/</loc>
