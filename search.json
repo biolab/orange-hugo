@@ -8646,10 +8646,10 @@
 {
     "uri": "/widget-catalog/educational/polynomial-classification/",
 	"title": "Polynomial Classification",
-	"content": "Polynomial Classification Educational widget that visually demonstrates classification in two classes for any classifier.\nInputs\n Data: input data set Preprocessor: data preprocessors Learner: classification algorithm used in the widget. Default set to Logistic Regression Learner.  Outputs\n Learner: classification algorithm used in the widget Classifier: trained classifier Coefficients: classifier",
+	"content": "Polynomial Classification Educational widget that visually demonstrates classification in two-dimensional space.\nInputs\n Data: input data set Preprocessor (optional): data preprocessors Learner (optional): classification algorithm used in the widget (default:Logistic Regression)  Outputs\n Learner: classification algorithm used in the widget Classifier: trained classifier Coefficients: classifier c",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Polynomial Classification Educational widget that visually demonstrates classification in two classes for any classifier.\nInputs\n Data: input data set Preprocessor: data preprocessors Learner: classification algorithm used in the widget. Default set to Logistic Regression Learner.  Outputs\n Learner: classification algorithm used in the widget Classifier: trained classifier Coefficients: classifier" ,
+	"longExcerpt" :  "Polynomial Classification Educational widget that visually demonstrates classification in two-dimensional space.\nInputs\n Data: input data set Preprocessor (optional): data preprocessors Learner (optional): classification algorithm used in the widget (default:Logistic Regression)  Outputs\n Learner: classification algorithm used in the widget Classifier: trained classifier Coefficients: classifier c" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

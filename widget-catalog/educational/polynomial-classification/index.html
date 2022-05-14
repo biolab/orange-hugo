@@ -1873,12 +1873,12 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="polynomial-classification">Polynomial Classification</h1>
-<p>Educational widget that visually demonstrates classification in two classes for any classifier.</p>
+<p>Educational widget that visually demonstrates classification in two-dimensional space.</p>
 <p><strong>Inputs</strong></p>
 <ul>
 <li>Data: input data set</li>
-<li>Preprocessor: data preprocessors</li>
-<li>Learner: classification algorithm used in the widget. Default set to Logistic Regression Learner.</li>
+<li>Preprocessor (optional): data preprocessors</li>
+<li>Learner (optional): classification algorithm used in the widget (default:Logistic Regression)</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
@@ -1887,31 +1887,28 @@
 <li>Coefficients: classifier coefficients if it has them</li>
 </ul>
 <h2 id="description">Description</h2>
-<p>This widget interactively shows classification probabilities for classification in two classes using color gradient and contour lines for any classifiers from the <em>Model</em> section. In the widget, polynomial expansion can be set. Polynomial expansion is a regulation of the degree of polynom that is used to transform the input data and has an effect on the classification. If polynomial expansion is set to 1 it means that untransformed data are used in the regression. If polynomial expansion is set to 2 we get following additional attributes:</p>
-<ul>
-<li>first attribute on power 2</li>
-<li>first attribute * second attribute</li>
-<li>second attribute on power 2</li>
-</ul>
-<p><img src="../images/polynomial-classification-stamped.png" alt=""></p>
+<p>This widget interactively shows classification probabilities using contours and color gradient for any classifier. The widget is particularly useful for showing effects of polynomial expansion (by adding terms like <em>x<sup>i</sup>y<sup>j</sup></em> where <em>i + j</em> is at most the selected degree) and of regularization*.</p>
+<p>By default, the widget uses non-regularized logistic regreesion. Manually attaching learner, for instance the Logistic Regression widget, allows us to control the regularization strength.</p>
+<p>The outline of the shown data points indicates the actual class, and the inside shows the prediction by the model. In non-binary classification, points predicted to non-target classes are painted gray.</p>
+<p><img src="../images/polyclassification.png" alt=""></p>
 <ol>
 <li>Classifier name.</li>
-<li><em>X</em>: attribute on axis x.
-<em>Y</em>: attribute on axis y.
-<em>Target class</em>: Class in input data that is classified apart from others classes because widget support only two class classification.
-<em>Polynomial expansion</em>: Degree of polynom that is used to transform the input data.</li>
-<li><em>Show contours</em>: Enable contour lines in the graph.
-<em>Contour step</em>: Density of contour lines.</li>
-<li><em>Save Image</em> saves the image to the computer in a .svg or .png format.
-<em>Report</em> includes widget parameters and visualization in the report.</li>
+<li>Variables: variables used for classification; options shown only if data contains more than two independent variables.
+<em>Polynomial expansion</em>: Degree of polynomial expansion.
+<em>Target class</em>: the target to which the shown probabilities apply. In non-binary classification, other classes are merged.</li>
+<li><em>Show legend</em>: Show color legend.
+<em>Show contours</em>: Show contour lines for probabilities.</li>
 </ol>
 <h2 id="example">Example</h2>
-<p><img src="../images/polyclassificationmain.png" alt=""></p>
-<p>We loaded the <em>iris</em> data set with the File widget and connected it to the <em>Polynomial Classification</em> widget. To demonstrate output connections, we connected <em>Coefficients</em> to the Data Table widget where we can inspect their values. <em>Learner</em> output can be connected to <em>Test &amp; Score</em> widget and <em>Classifier</em> to <em>Predictions widget</em>.</p>
-<p>In the widget we selected <em>sepal length</em> as our <em>X</em> variable and <em>sepal width</em> as our <em>Y</em> variable. We set the <em>Polynomial expansion</em> to 1. That performs classification on non transformed data. Result is shown in the figure below. Color gradient represents the probability of the area to belong to a particular class value. Blue color represents classification to the target class and red color classification to the class with all other examples.</p>
-<p><img src="../images/polyclassification1.png" alt=""></p>
-<p>In the next example we changed the <em>File</em> widget to the <em>Paint data</em> widget and plotted some custom data. Because the center of the data is of one class and the surrounding of another, <em>Polynomial expansion</em> degree 1 does not perform good classification. We set <em>Polynomial expansion</em> to 2 and get the classification in the figure below. We also selected to use contour lines.</p>
-<p><img src="../images/polyclassification2.png" alt=""></p>
+<p>We painted some data using the Paint widget and fed it to Polynomial Classification. We also added Logistic Regression to control the regularization.</p>
+<p>Setting the polynomial expansion to 2 allows the classifier to construct boundaries as 2 degree polynomials. Hovering over a contour line shows the predicted probability of the target class (in this case C1) for points on that line. Moving the mouse elsewhere shows a probability at some particular point.</p>
+<p>Red points with blue outline are &ldquo;blue&rdquo; data instances that are misclassified as red, and vice versa.</p>
+<p>Changing the regularization (in Logistic regression widget) allows us to observe how the contour lines spread and shrink.</p>
+<p><img src="../images/polyclassification-2-classes.png" alt=""></p>
+<p>We added another class, chose C2 as the target, increased the polynomial expansion to 4 and weaken the regularization (in Logistic regression widget).</p>
+<p>Outlines still represent the original classes. Instances of the target classes are colored red, the other two classes are gray.</p>
+<p>Hovering at any point shows us the probability for red (e.g. 0.264).</p>
+<p><img src="../images/polyclassification-3-classes.png" alt=""></p>
 
                 </div>
             </div>
