@@ -134,6 +134,8 @@
   </url><url>
     <loc>/workflows/explore-subpopulations-with-distinct-risk-profiles/</loc>
   </url><url>
+    <loc>/workflows/mental-health/</loc>
+  </url><url>
     <loc>/blog/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -1710,6 +1712,8 @@
   </url><url>
     <loc>/widget-catalog/transform/melt/</loc>
   </url><url>
+    <loc>/workflows/mental-health/</loc>
+  </url><url>
     <loc>/widget-catalog/transform/mergedata/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/model_evaluation_w/</loc>
@@ -1879,6 +1883,8 @@
     <loc>/widget-catalog/model/stochasticgradient/</loc>
   </url><url>
     <loc>/workflows/Story-Arcs/</loc>
+  </url><url>
+    <loc>/workflows/survey/</loc>
   </url><url>
     <loc>/workflows/Survival-Analysis/</loc>
   </url><url>
