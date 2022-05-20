@@ -6,7 +6,17 @@
     <description>Recent content in regression on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Nov 2017 12:40:06 +0000</lastBuildDate><atom:link href="/blog/regression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Confusion matrix for regression?</title>
+      <link>/blog/2022/2022-05-20-regression-results/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-05-20-regression-results/</guid>
+      <description>It is easy to inspect misclassifications in the Confusion Matrix widget when building classification models. One can even click on misclassified instances, output them and observe them in various visualizations. But what about regression? Predicting numeric values doesn&amp;rsquo;t even allow connecting Confusion Matrix, nor would it make sense. So how can one inspect prediction error for regression tasks?
+Let us take the well-known housing data set from the File widget. The dataset has 506 instances of houses described with 13 variables and a regression target variable MEDV (median value of homes in 1000$).</description>
+    </item>
+    
     <item>
       <title>Neural Network is Back!</title>
       <link>/blog/2017/11/03/neural-network-is-back/</link>

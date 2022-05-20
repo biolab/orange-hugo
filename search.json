@@ -864,9 +864,87 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "May 12, 2022",
+	"date" : "May 20, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/confusion-matrix/",
+	"title": "confusion matrix",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-05-20-regression-results/",
+	"title": "Confusion matrix for regression?",
+	"content": "It is easy to inspect misclassifications in the Confusion Matrix widget when building classification models. One can even click on misclassified instances, output them and observe them in various visualizations. But what about regression? Predicting numeric values doesn’t even allow connecting Confusion Matrix, nor would it make sense. So how can one inspect prediction error for regression t",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-05-20-cf-regression.png",
+	"longExcerpt" :  "Confusion matrix shows classification error, but what is a suitable alternative for observing regression errors in Orange?" ,
+	"author" : "Ajda Pretnar Žagar",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/prediction-error/",
+	"title": "prediction error",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/regression/",
+	"title": "regression",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/scatter-plot/",
+	"title": "scatter plot",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 20, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -881,19 +959,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "May 12, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/project/",
@@ -1249,19 +1314,6 @@
 {
     "uri": "/blog/distributions/",
 	"title": "distributions",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Dec 17, 2021",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/scatter-plot/",
-	"title": "scatter plot",
 	"content": "",
 	"image" : "",
 	"thumbImage" : "",
@@ -2547,19 +2599,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/confusion-matrix/",
-	"title": "confusion matrix",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Sep 28, 2019",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/model-performance/",
 	"title": "model performance",
 	"content": "",
@@ -3831,19 +3870,6 @@
 	"date" : "Nov 3, 2017",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/regression/",
-	"title": "regression",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 3, 2017",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
