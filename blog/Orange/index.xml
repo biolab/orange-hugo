@@ -6,7 +6,18 @@
     <description>Recent content on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/Orange/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/Orange/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictive Modelling with Attribute Interactions</title>
+      <link>/blog/2022/2022-04-08-interactions/</link>
+      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-04-08-interactions/</guid>
+      <description>The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.
+But what does it do?
+It computes and displays the interaction between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.</description>
+    </item>
+    
     <item>
       <title>Orange Webinar for Educators #1: Where to Start?</title>
       <link>/blog/2022/2022-04-26-edu-webinar/</link>

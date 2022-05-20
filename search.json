@@ -961,6 +961,58 @@
 	"type" : "blog"
 },
 {
+    "uri": "/blog/addons/",
+	"title": "addons",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 13, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/interaction/",
+	"title": "interaction",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 13, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/Orange/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 13, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-04-08-interactions/",
+	"title": "Predictive Modelling with Attribute Interactions",
+	"content": "The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.\nBut what does it do?\nIt computes and displays the interaction between attributes by calculating the mutual information between them and a third tar",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-05-06-interactions.png",
+	"longExcerpt" :  "The Interactions widget has been added back to Orange 3. Illustrating how to use attribute interactions to improve predictive models." ,
+	"author" : "Noah Novšak",
+	"date" : "May 13, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
     "uri": "/blog/Google/",
 	"title": "Google",
 	"content": "",
@@ -1023,19 +1075,6 @@
 	"date" : "May 12, 2022",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/Orange/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 26, 2022",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -2115,19 +2154,6 @@
 	"date" : "Jun 19, 2020",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/addons/",
-	"title": "addons",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 20, 2020",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

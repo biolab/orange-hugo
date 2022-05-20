@@ -18,6 +18,22 @@
 
     
     , {
+    "uri": "/blog/2022/2022-04-08-interactions/",
+	"title": "Predictive Modelling with Attribute Interactions",
+	"categories": ["orange", "interaction", "addons"],
+	"description": "",
+	"content": "The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.\nBut what does it do?\nIt computes and displays the interaction between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.\nAs far as visualizations go, consider Scatter Plot. Connecting Interactions to the Features input allows the user to manually select the projection, similarly to the find informative projections button, but with a little more oomph. Enabling sorting, filtering, attribute selection, and offering a clear view into, where the information is coming from, be it from one single feature or a specific combination.\nAnother, possibly even more intriguing application would be, as mentioned, improving the performance of prediction models. To illustrate, let\u0026rsquo;s take a look at the MONK dataset, readily available directly within Orange, in the Datasets widget. First, we can try and see how well a Naive Bayes Classifier (NBC) can predict the target variable like so.\n Taking, for example, the Area Under Curve (AUC) score of 0.741 as a baseline, we can see that, already, our model performs quite well. But we know we can do better than that! We want to see what makes the model tick, so let\u0026rsquo;s take a closer look at our data by utilizing the new interactions widget in our workflow and examining the results.\n While neither a nor b carries much information independently, their combination tells a great deal about our target variable. With this in mind, we can now use the Feature Constructor widget to combine attributes a and b into a single feature and retrain our model. Applying all these steps then yields a workflow resembling this.\n Lo and behold! It looks like the extra trouble has paid off. We have managed to improve our model\u0026rsquo;s performance and have ended up with an AUC score of 1.0 by accounting for the codependence of variables (something models such as NBC lack by definition).\nI hope this short display sheds some light on all the possibilities interaction analysis provides and urge you to try it out on some real-world data.\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2022/2022-05-06-interactions.png",
+	"shortExcerpt" : "A quick introduction to using the new Interactions widget in Orange 3",
+	"longExcerpt" :  "The Interactions widget has been added back to Orange 3. Illustrating how to use attribute interactions to improve predictive models." ,
+	"author" : "Noah Novšak",
+	"summary" : "The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.\nBut what does it do?\nIt computes and displays the interaction between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.",
+	"date" : "May 13, 2022"
+}
+
+    
+    , {
     "uri": "/blog/2022/2022-05-12-Google-Tides/",
 	"title": "We have launched a new project on the topic of AI in schools",
 	"categories": ["Google", "Tides Foundation", "project", "visualization"],
