@@ -870,6 +870,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/2022/2022-05-25-KaplanMeier/",
+	"title": "An introduction to the Kaplan-Meier Estimator",
+	"content": "The Kaplan-Meier Estimator is a function that relates time to the probability of an event of interest. It is widely used in survival analysis and with the addition of the Survival Analysis package to Orange it is now readily available for accessible visual analytics. However, any kind of efficient data analysis requires a basic understanding of what the implemented model does. This blog post thus ",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-04-20-kmgroups.png",
+	"longExcerpt" :  "The Survival Analysis add-on offers accesible tools for survival analysis, the Kaplan-Meier widget being a prime example. In this blogpost we provide an introduction to the Kaplan-Meier Estimator using a simple example and show how the tool can be used in Orange on larger datasets." ,
+	"author" : "Ela Praznik",
+	"date" : "May 25, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
     "uri": "/blog/",
 	"title": "Blogs",
 	"content": "",
@@ -877,9 +890,48 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "May 20, 2022",
+	"date" : "May 25, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/kaplan-meier/",
+	"title": "kaplan-meier",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 25, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 25, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/survival-analysis/",
+	"title": "survival analysis",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "May 25, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -907,19 +959,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "May 20, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/prediction-error/",
