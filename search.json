@@ -9554,6 +9554,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/thank-you/",
+	"title": "ThankYou",
+	"content": "Thank You for donating!\nYour donation contributes to further development of Orange and helps feed the developers and other team members with many slices of pizza.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Thank You for donating!\nYour donation contributes to further development of Orange and helps feed the developers and other team members with many slices of pizza." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "section",
+	"type" : "thank-you"
+},
+{
     "uri": "/widget-catalog/text-mining/guardian-widget/",
 	"title": "The Guardian",
 	"content": "The Guardian Fetching data from The Guardian Open Platform.\nInputs\n None  Outputs\n Corpus: A collection of documents from the Guardian newspaper.  Guardian retrieves articles from the Guardian newspaper via their API. For the widget to work, you need to provide the API key, which you can get at their access platform.\n  Insert the API key for the widget to work.\n  Provide the query and set the time",
