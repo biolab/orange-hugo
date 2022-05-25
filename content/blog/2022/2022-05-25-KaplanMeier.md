@@ -1,6 +1,6 @@
 +++
 author = "Ela Praznik"
-date = "2022-04-22"
+date = "2022-05-25"
 draft = false
 title = "An introduction to the Kaplan-Meier Estimator"
 type = "blog"
