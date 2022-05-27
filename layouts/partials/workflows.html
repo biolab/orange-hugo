@@ -18,9 +18,9 @@
         <div id="search-results" style="display: none;">
         </div>
         <div id="post_nor">
-          {{ .Paginate (where (where .Pages.ByWeight "Type" "workflows") "IsPage" true) }}
-          {{ range $index, $element := .Paginator.Pages }}
-            <div class=" row">
+          {{ $paginator := .Paginate (where (where .Pages.ByWeight "Type" "workflows") "IsPage" true) }}
+          {{ range $index, $element := $paginator.Pages }}
+            <div class="row">
                 {{ if eq (mod $index 2) 0 }}
                 <div class='content col-md-6 col-xs-12 feature-description pull-left text-workflow'>
                 {{else}}
@@ -79,18 +79,11 @@
                             </div>
                             {{end}}
                         </div>
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            {{range $id, $element := .Params.images }}
-                            <li data-target="#myCarousel{{$index}}" data-slide-to="{{$id}}"
-                                class="{{if eq $id 0}}active {{else}}{{end}}"></li>
-                            {{end}}
-                        </ol>
                         <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel{{$index}}" data-slide="prev">
+                        <a class="left carousel-control no-shadow" href="#myCarousel{{$index}}" data-slide="prev" style="">
                             <span class="glyphicon glyphicon-chevron-left" style="color: black;"></span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel{{$index}}" data-slide="next">
+                        <a class="right carousel-control no-shadow" href="#myCarousel{{$index}}" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" style="color: black;"></span>
                         </a>
                     </div>
