@@ -213,6 +213,50 @@
 }
     
     , {
+    "uri": "/workflows/text-semantic-document-map/",
+	"title": "Semantic Document Map",
+	"content": "Document maps may reveal clusters of documents with semantically similar content. Here we show a workflow that loads the corpus, performs some text preprocessing and embeds the documents in the vector space using the fastText deep model. The t-SNE widget reveals the document map, where we can select a set of documents and then explore them in Corpus Viewer or characterize them in the display of the most frequent words in the Word Cloud.\n",
+	"images": ["/workflow_images/text-semantic-document-map.png"],
+	"download": "text-semantic-word-map.ows",
+	"blog" : "<no value>",
+	"video" : "",
+	"tags": []
+}
+    
+    , {
+    "uri": "/workflows/text-semantic-word-map/",
+	"title": "Semantic Word Map",
+	"content": "We can find clusters of semantically related words either by hierarchical clustering or t-SNE visualizations. Here, we show a workflow that loads the documents, extracts frequent words, embeds them in a vector space, and explores word clusters.\n",
+	"images": ["/workflow_images/text-semantic-word-map.png", "/workflow_images/text-semantic-word-map-tsne.png"],
+	"download": "text-semantic-word-map.ows",
+	"blog" : "<no value>",
+	"video" : "",
+	"tags": []
+}
+    
+    , {
+    "uri": "/workflows/text-keyword-exteraction/",
+	"title": "Keyword Extraction from a Set of Text Documents",
+	"content": "The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference techniques, including TF-IDF and deep network-based characterization.\n",
+	"images": ["/workflow_images/text-keyword-exteraction.png"],
+	"download": "text-keyword-exteraction.ows",
+	"blog" : "<no value>",
+	"video" : "",
+	"tags": []
+}
+    
+    , {
+    "uri": "/workflows/text-keyword-based-scoring/",
+	"title": "Keyword-Based Text Document Scoring",
+	"content": "We can score the text documents based on a list of keywords, say, to find the documents which include the keywords or are semantically related to the list of keywords. This workflow shows the Score Documents widget for scoring and the Word List widget to compose a list of keywords. The scores are visualized in the t-SNE document map.\n",
+	"images": ["/workflow_images/text-keyword-based-scoring.png"],
+	"download": "text-keyword-based-scoring.ows",
+	"blog" : "<no value>",
+	"video" : "",
+	"tags": []
+}
+    
+    , {
     "uri": "/workflows/survival-curve-estimation/",
 	"title": "Survival Curve Estimation",
 	"content": "One of the primary objectives of survival analysis is to estimate the survival probability from observed survival times of different patients. The workflow plots the Kaplan-Meier approximation of the survival curve for the investigated population in the German breast cancer study group. The Kaplan-Meier plot is interactive; we select the longest-surviving patients and use Box Plot to analyze features that best characterize them.\n",

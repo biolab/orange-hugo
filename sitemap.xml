@@ -124,6 +124,14 @@
   </url><url>
     <loc>/workflows/story-arcs/</loc>
   </url><url>
+    <loc>/workflows/text-semantic-document-map/</loc>
+  </url><url>
+    <loc>/workflows/text-semantic-word-map/</loc>
+  </url><url>
+    <loc>/workflows/text-keyword-exteraction/</loc>
+  </url><url>
+    <loc>/workflows/text-keyword-based-scoring/</loc>
+  </url><url>
     <loc>/workflows/survival-curve-estimation/</loc>
   </url><url>
     <loc>/workflows/exploring-survival-features/</loc>
