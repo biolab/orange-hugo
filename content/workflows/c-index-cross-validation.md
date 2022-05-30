@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "730_c_index_cross_validation.ows"
-workflows = ["Survival Analysis", "Time-To-Event", "Cox Regression", "Concordance Index", "Cross Validation"]
+workflows = ["Survival Analysis", "Cox Regression", "Concordance Index", "Cross Validation"]
 weight = 730
 +++
 

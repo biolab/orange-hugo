@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "740_hierarhical_clustering.ows"
-workflows = ["Survival Analysis", "Time-To-Event", "Kaplan-Meier", "Clustering", "Hierarchical Clustering", "Box Plot"]
+workflows = ["Survival Analysis", "Clustering", "Hierarchical Clustering", "Box Plot"]
 weight = 740
 +++
 
