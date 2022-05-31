@@ -3619,6 +3619,10 @@ h2.docs-subtitle {
   width: 100%;
   object-fit: contain; }
 
+.no-shadow {
+  background-image: none !important;
+  filter: none !important; }
+
 .search-image {
   padding-bottom: 0px !important;
   max-height: 300px;
