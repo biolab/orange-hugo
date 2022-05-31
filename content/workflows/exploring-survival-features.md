@@ -5,7 +5,7 @@ type = "workflows"
 blog =  ""
 video = ""
 download = "710_survival_features.ows"
-workflows = ["Survival Analysis", "Time-To-Event", "Kaplan-Meier", "Cox Regression"]
+workflows = ["Survival Analysis", "Cox Regression"]
 weight = 710
 +++
 
