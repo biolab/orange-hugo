@@ -9697,19 +9697,6 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/workflows/Time-To-Event/",
-	"title": "Time-To-Event",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "term",
-	"type" : "workflows"
-},
-{
     "uri": "/workflows/Timeseries/",
 	"title": "Timeseries",
 	"content": "",
