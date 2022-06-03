@@ -144,16 +144,31 @@
   </url><url>
     <loc>/workflows/mental-health/</loc>
   </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/classification/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/Elementary-school/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-06-01-blog-minions-new/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/project/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/Tides-Foundation/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/2022/2022-05-25-KaplanMeier/</loc>
     <lastmod>2022-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/kaplan-meier/</loc>
-    <lastmod>2022-05-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/survival-analysis/</loc>
@@ -187,12 +202,6 @@
     <lastmod>2022-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/Google/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/project/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/Tides-Foundation/</loc>
     <lastmod>2022-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/visualization/</loc>
@@ -404,9 +413,6 @@
   </url><url>
     <loc>/blog/overview/</loc>
     <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/classification/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2020/2020-10-15-document-embedders/</loc>
     <lastmod>2020-10-15T00:00:00+00:00</lastmod>
