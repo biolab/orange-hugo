@@ -1547,6 +1547,8 @@
   </url><url>
     <loc>/widget-catalog/transform/createclass/</loc>
   </url><url>
+    <loc>/widget-catalog/text-mining/createcorpus/</loc>
+  </url><url>
     <loc>/widget-catalog/transform/createinstance/</loc>
   </url><url>
     <loc>/workflows/Cross-Validation/</loc>
@@ -1973,9 +1975,13 @@
   </url><url>
     <loc>/widget-catalog/</loc>
   </url><url>
+    <loc>/widget-catalog/text-mining/wikipedia-widget/</loc>
+  </url><url>
     <loc>/widget-catalog/text-mining/wordcloud/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/wordenrichment/</loc>
+  </url><url>
+    <loc>/widget-catalog/text-mining/wordlist/</loc>
   </url><url>
     <loc>/workflows/</loc>
   </url><url>

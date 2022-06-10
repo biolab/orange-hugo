@@ -1150,6 +1150,14 @@
     "url": "importdocuments"
    },
    {
+    "title": "Create Corpus",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Create Corpus.png",
+    "url": "createcorpus"
+   },
+   {
     "title": "The Guardian",
     "category": "Text Mining",
     "keywords": [],
@@ -1176,10 +1184,21 @@
    {
     "title": "Twitter",
     "category": "Text Mining",
-    "keywords": [],
+    "keywords": [
+     "twitter",
+     "tweet"
+    ],
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Twitter.png",
     "url": "twitter-widget"
+   },
+   {
+    "title": "Wikipedia",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Wikipedia.png",
+    "url": "wikipedia-widget"
    },
    {
     "title": "Preprocess Text",
@@ -1332,7 +1351,8 @@
     "category": "Text Mining",
     "keywords": [],
     "background": "light-blue",
-    "icon": "widget-icons/Text Mining-Word List.png"
+    "icon": "widget-icons/Text Mining-Word List.png",
+    "url": "wordlist"
    },
    {
     "title": "Extract Keywords",
@@ -1344,6 +1364,22 @@
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Extract Keywords.png",
     "url": "keywords"
+   },
+   {
+    "title": "Annotated Corpus Map",
+    "category": "Text Mining",
+    "keywords": [
+     "annotator"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Annotated Corpus Map.png"
+   },
+   {
+    "title": "Ontology",
+    "category": "Text Mining",
+    "keywords": [],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Ontology.png"
    },
    {
     "title": "Semantic Viewer",

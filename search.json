@@ -7201,6 +7201,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/createcorpus/",
+	"title": "Create Corpus",
+	"content": "Create Corpus Write/paste documents to create a corpus\nOutputs\n Corpus: The created corpus.  Create Corpus is a widget for quick creation of a sample of documents. It enables manual entry or copy-pasting content from clipboard. The widget would typically be used in an educational setting or for predicting a sample of documents.\n The title of the document. Remove a document. Enter the content of th",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Create Corpus Write/paste documents to create a corpus\nOutputs\n Corpus: The created corpus.  Create Corpus is a widget for quick creation of a sample of documents. It enables manual entry or copy-pasting content from clipboard. The widget would typically be used in an educational setting or for predicting a sample of documents.\n The title of the document. Remove a document. Enter the content of th" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/transform/createinstance/",
 	"title": "Create Instance",
 	"content": "Create Instance Interactively creates an instance from a sample dataset.\nInputs\n Data: input dataset Reference: refrence dataset  Outputs\n Data: input dataset appended the created instance  The Create Instance widget creates a new instance, based on the input data. The widget displays all variables of the input dataset in a table of two columns. The column Variable represents the variable’s ",
@@ -7645,10 +7658,10 @@
 {
     "uri": "/widget-catalog/text-mining/keywords/",
 	"title": "Extract Keywords",
-	"content": "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus.\n",
+	"content": "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus.\n Scoring methods for extracting words:  TF-IDF, a method that scores by term frequency weighted by inverse document frequency. A word that is characteristic for a small n",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus." ,
+	"longExcerpt" :  "Extract Keywords Infers characteristic words from the input corpus.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Words: A table of words.  Extract Keywords infers characteristic words from corpus.\n Scoring methods for extracting words:  TF-IDF, a method that scores by term frequency weighted by inverse document frequency. A word that is characteristic for a small n" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -9335,10 +9348,10 @@
 {
     "uri": "/widget-catalog/text-mining/semanticviewer/",
 	"title": "Semantic Viewer",
-	"content": "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics.\n",
+	"content": "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics. The widget takes input words and find documents or document passages containing these words.\n Filtering. Set the threshold a",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics." ,
+	"longExcerpt" :  "Semantic Viewer Displays corpus semantics.\nInputs\n Corpus: A collection of documents. Words: A table of words.  Outputs\n Matching Docs: Selected documents. Other Docs: Other documents. Corpus: A collection of documents.  Semantic Viewer is meant for viewing corpus semantics. The widget takes input words and find documents or document passages containing these words.\n Filtering. Set the threshold a" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -9361,10 +9374,10 @@
 {
     "uri": "/widget-catalog/text-mining/sentimentanalysis/",
 	"title": "Sentiment Analysis",
-	"content": "Sentiment Analysis Predict sentiment from text.\nInputs\n Corpus: A collection of documents.  Outputs\n Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu \u0026 Hu and Vader sentiment modules from NLTK, multilingual sentiment lexicons from the Data Science Lab, and SentiArt from Arthur Jacobs. All of t",
+	"content": "Sentiment Analysis Predict sentiment from text.\nInputs\n Corpus: A collection of documents.  Outputs\n Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu \u0026 Hu and Vader sentiment modules from NLTK, multilingual sentiment lexicons from the Data Science Lab, SentiArt from Arthur Jacobs, and LiLaH se",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Sentiment Analysis Predict sentiment from text.\nInputs\n Corpus: A collection of documents.  Outputs\n Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu \u0026amp; Hu and Vader sentiment modules from NLTK, multilingual sentiment lexicons from the Data Science Lab, and SentiArt from Arthur Jacobs. All of t" ,
+	"longExcerpt" :  "Sentiment Analysis Predict sentiment from text.\nInputs\n Corpus: A collection of documents.  Outputs\n Corpus: A corpus with information on the sentiment of each document.  Sentiment Analysis predicts sentiment for each document in a corpus. It uses Liu \u0026amp; Hu and Vader sentiment modules from NLTK, multilingual sentiment lexicons from the Data Science Lab, SentiArt from Arthur Jacobs, and LiLaH se" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -9970,6 +9983,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/wikipedia-widget/",
+	"title": "Wikipedia",
+	"content": "Wikipedia Fetching data from MediaWiki RESTful web service API.\nInputs\n None  Outputs\n Corpus: A collection of documents from the Wikipedia.  Wikipedia widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.\n Query parameters:  Query word list, where each query is listed in a new line. Language of the query. English is set by default. Number of a",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Wikipedia Fetching data from MediaWiki RESTful web service API.\nInputs\n None  Outputs\n Corpus: A collection of documents from the Wikipedia.  Wikipedia widget is used to retrieve texts from Wikipedia API and it is useful mostly for teaching and demonstration.\n Query parameters:  Query word list, where each query is listed in a new line. Language of the query. English is set by default. Number of a" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/text-mining/wordcloud/",
 	"title": "Word Cloud",
 	"content": "Word Cloud Generates a word cloud from corpus.\nInputs\n Topic: Selected topic. Corpus: A collection of documents.  Outputs\n Corpus: Documents that match the selection. Selected Word: Selected word that can be used as query in Concordance. Word Counts: Words and their weights.  Word Cloud displays tokens in the corpus, their size denoting the frequency of the word in corpus or an average bag of word",
@@ -9989,6 +10015,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "Word Enrichment Word enrichment analysis for selected documents.\nInputs\n Corpus: A collection of documents. Selected Data: Selected instances from corpus.  Outputs\n None  Word Enrichment displays a list of words with lower p-values (higher significance) for a selected subset compared to the entire corpus. Lower p-value indicates a higher likelihood that the word is significant for the selected sub" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/text-mining/wordlist/",
+	"title": "Word List",
+	"content": "Word List Create a list of words.\nInputs\n Words: A table of words.  Outputs\n Selected Words: Words selected from the table. Words: A table of words.  Word List is meant for creating and joining lists of words for semantic analysis. The user can manually enter words into the widget or import them from other widgets, for example Extract Keywords.\n Library of existing word lists. Add a new list with ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Word List Create a list of words.\nInputs\n Words: A table of words.  Outputs\n Selected Words: Words selected from the table. Words: A table of words.  Word List is meant for creating and joining lists of words for semantic analysis. The user can manually enter words into the widget or import them from other widgets, for example Extract Keywords.\n Library of existing word lists. Add a new list with " ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

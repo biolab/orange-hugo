@@ -1104,6 +1104,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/createcorpus">
+                      <div class="reference internal" style="cursor: pointer;" >Create Corpus</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/guardian-widget">
                       <div class="reference internal" style="cursor: pointer;" >The Guardian</div>
                       </a>
@@ -1127,6 +1134,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/twitter-widget">
                       <div class="reference internal" style="cursor: pointer;" >Twitter</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/wikipedia-widget">
+                      <div class="reference internal" style="cursor: pointer;" >Wikipedia</div>
                       </a>
                   </li>
                   
@@ -1243,6 +1257,11 @@
                   </li>
                   
                         
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/wordlist">
+                      <div class="reference internal" style="cursor: pointer;" >Word List</div>
+                      </a>
+                  </li>
                   
                         
                         <li style="list-style-type: none; ">
@@ -1250,6 +1269,10 @@
                       <div class="reference internal" style="cursor: pointer;" >Extract Keywords</div>
                       </a>
                   </li>
+                  
+                        
+                  
+                        
                   
                         
                         <li style="list-style-type: none; ">
@@ -1882,13 +1905,14 @@
 <ul>
 <li>Corpus: A corpus with information on the sentiment of each document.</li>
 </ul>
-<p><strong>Sentiment Analysis</strong> predicts sentiment for each document in a corpus. It uses Liu &amp; Hu and Vader sentiment modules from <a href="http://www.nltk.org/api/nltk.sentiment.html">NLTK</a>, multilingual sentiment lexicons from the <a href="https://sites.google.com/site/datascienceslab/projects/multilingualsentiment">Data Science Lab</a>, and <a href="https://www.frontiersin.org/articles/10.3389/frobt.2019.00053/full">SentiArt</a> from Arthur Jacobs. All of them are lexicon-based. For Liu &amp; Hu, you can choose English or Slovenian version. Vader works only on English. Multilingual sentiment supports several languages, which are listed at the bottom of this page. SentiArt works on English and German. Custom dictionary enables one to upload custom positive and negative sentiment dictionaries. Custom files should be plain text files (.txt) with each word in its own line.</p>
+<p><strong>Sentiment Analysis</strong> predicts sentiment for each document in a corpus. It uses Liu &amp; Hu and Vader sentiment modules from <a href="http://www.nltk.org/api/nltk.sentiment.html">NLTK</a>, multilingual sentiment lexicons from the <a href="https://sites.google.com/site/datascienceslab/projects/multilingualsentiment">Data Science Lab</a>, <a href="https://www.frontiersin.org/articles/10.3389/frobt.2019.00053/full">SentiArt</a> from Arthur Jacobs, and <a href="http://hdl.handle.net/11356/1318">LiLaH sentiment</a> from Walter Daelemans et al. All of them are lexicon-based. For Liu &amp; Hu, you can choose English or Slovenian version. Vader works only on English. Multilingual sentiment supports several languages, which are listed at the bottom of this page. SentiArt works on English and German. LiLaH sentiment supports Slovenian, Croatian, and Dutch. Custom dictionary enables one to upload custom positive and negative sentiment dictionaries. Custom files should be plain text files (.txt) with each word in its own line.</p>
 <p><img src="../images/SentimentAnalysis-stamped.png" alt=""></p>
 <ol>
 <li><em>Liu Hu</em>: lexicon-based sentiment analysis (supports English and Slovenian). The final score is the difference between the sum of positive and sum of negative words, normalized by the length of the document and multiplied by a 100. The final score reflects the percentage of sentiment difference in the document.</li>
 <li><em>Vader</em>: lexicon- and rule-based sentiment analysis</li>
 <li><em>Multilingual sentiment</em>: lexicon-based sentiment analysis for several languages</li>
 <li><em>SentiArt</em>: sentiment analysis based on vector space models returning text valence</li>
+<li><em>LiLaH sentiment</em>: manual translations of the NRC Emotion Lexicon</li>
 <li><em>Custom dictionary</em>: add you own positive and negative sentiment dictionaries. Accepted source type is .txt file with each word in its own line. The final score is computed in the same way as Liu Hu.</li>
 <li>If <em>Auto commit is on</em>, sentiment-tagged corpus is communicated automatically. Alternatively press <em>Commit</em>.</li>
 </ol>
@@ -1910,6 +1934,7 @@
 <p>Hu, Minqing and Bing Liu (2004). Mining opinion features in customer reviews. In Proceedings of AAAI Conference on Artificial Intelligence, vol. 4, pp. 755–760. <a href="http://www.aaai.org/Papers/AAAI/2004/AAAI04-119.pdf">Available online.</a></p>
 <p>Jacobs, Arthur M. (2019). Sentiment Analysis for Words and Fiction Characters From the Perspective of Computational (Neuro-)Poetics. Frontiers in Robotics and AI 6. <a href="https://doi.org/10.3389/frobt.2019.00053">https://doi.org/10.3389/frobt.2019.00053</a></p>
 <p>Kadunc, Klemen and Marko Robnik-Šikonja (2016). Analiza mnenj s pomočjo strojnega učenja in slovenskega leksikona sentimenta. Conference on Language Technologies &amp; Digital Humanities, Ljubljana (in Slovene). <a href="http://www.sdjt.si/wp/wp-content/uploads/2016/09/JTDH-2016_Kadunc-et-al_Analiza-mnenj-s-pomocjo-strojnega-ucenja.pdf">Available online.</a></p>
+<p>Ljubešić, Nikola, Ilia Markov, Darja Fišer and Walter Daelemans (2020). The LiLaH Emotion Lexicon of Croatian, Dutch and Slovene. In Third Workshop on Computational Modeling of People&rsquo;s Opinions, Personality, and Emotion&rsquo;s in Social Media (PEOPLES 2020), pp. 153–157. <a href="https://aclanthology.org/2020.peoples-1.15">Available online.</a></p>
 <h2 id="multilingual-sentiment-languages">Multilingual Sentiment Languages</h2>
 <ul>
 <li>Afrikaans</li>

@@ -1104,6 +1104,13 @@
                   
                         
                         <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/createcorpus">
+                      <div class="reference internal" style="cursor: pointer;" >Create Corpus</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/guardian-widget">
                       <div class="reference internal" style="cursor: pointer;" >The Guardian</div>
                       </a>
@@ -1127,6 +1134,13 @@
                         <li style="list-style-type: none; ">
                       <a href="/widget-catalog/text-mining/twitter-widget">
                       <div class="reference internal" style="cursor: pointer;" >Twitter</div>
+                      </a>
+                  </li>
+                  
+                        
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/wikipedia-widget">
+                      <div class="reference internal" style="cursor: pointer;" >Wikipedia</div>
                       </a>
                   </li>
                   
@@ -1243,6 +1257,11 @@
                   </li>
                   
                         
+                        <li style="list-style-type: none; ">
+                      <a href="/widget-catalog/text-mining/wordlist">
+                      <div class="reference internal" style="cursor: pointer;" >Word List</div>
+                      </a>
+                  </li>
                   
                         
                         <li style="list-style-type: none; ">
@@ -1250,6 +1269,10 @@
                       <div class="reference internal" style="cursor: pointer;" >Extract Keywords</div>
                       </a>
                   </li>
+                  
+                        
+                  
+                        
                   
                         
                         <li style="list-style-type: none; ">
@@ -1885,7 +1908,19 @@
 <li>Other Docs: Other documents.</li>
 <li>Corpus: A collection of documents.</li>
 </ul>
-<p><strong>Semantic Viewer</strong> is meant for viewing corpus semantics.</p>
+<p><strong>Semantic Viewer</strong> is meant for viewing corpus semantics. The widget takes input words and find documents or document passages containing these words.</p>
+<p><img src="../images/Semantic-Viewer.png" alt=""></p>
+<ol>
+<li>Filtering. Set the threshold above which text passages will be colored. The threshold is the sentence-level score, which is computed as the maximum cosine similarity between the SBERT embeddings and each sentence. Only sentences with the score above the threshold will be colored.</li>
+<li>Display either the entire document, the relevant section of the text or only the relevant sentence(s).</li>
+<li>A list of matches, scores and documents. A match is the number of matching words from the input in each document. Score is computed at a sentence level by taking the maximum cosine similarity between the SBERT embeddings of the sentence and the input keywords. The score is than aggregated to the document score, which is displayed in the list.</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>In the below example, we are using the <em>book-excerpts</em> corpus, which is available in the <a href="../corpus-widget/">Corpus</a> widget.</p>
+<p>We pass the corpus to <a href="../preprocesstext/">Preprocess Text</a>, where we lowercase the text, split it into words with tokenization, use Lemmagen lemmatizer to cover tokens to their base form and finally remove stopwords.</p>
+<p>Next, we find characteristic words with <a href="keywords.md">Extract Keywords</a> widget and send these words to <a href="../wordlist/">Word List</a>. There, we add some of our own words, such as princess, prince, king and queen.</p>
+<p>Finally, we pass the entire list of words to Semantic Viewer along with the corpus from Prepreprocess Text. The widget uses input word list to find matching passages in each document. We can now see parts of the text talking about princesses, queens, and so on.</p>
+<p><img src="../images/Semantic-Viewer-Example.png" alt=""></p>
 
                 </div>
             </div>
