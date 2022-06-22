@@ -191,22 +191,22 @@
 }
     
     , {
-    "uri": "/workflows/text-loading-from-repository/",
-	"title": "Load Text Corpus from the Server Repository",
-	"content": "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.\n",
-	"images": ["/workflow_images/text-loading-from-repository.png"],
-	"download": "text-loading-from-repository.ows",
+    "uri": "/workflows/story-arcs/",
+	"title": "Story Arcs",
+	"content": "In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.\n",
+	"images": ["/workflow_images/story-arcs.png"],
+	"download": "650-story-arcs.ows",
 	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
 }
     
     , {
-    "uri": "/workflows/story-arcs/",
-	"title": "Story Arcs",
-	"content": "In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.\n",
-	"images": ["/workflow_images/story-arcs.png"],
-	"download": "650-story-arcs.ows",
+    "uri": "/workflows/text-loading-from-repository/",
+	"title": "Load Text Corpus from the Server Repository",
+	"content": "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.\n",
+	"images": ["/workflow_images/text-loading-from-repository.png"],
+	"download": "text-loading-from-repository.ows",
 	"blog" : "<no value>",
 	"video" : "",
 	"tags": []
@@ -235,11 +235,11 @@
 }
     
     , {
-    "uri": "/workflows/text-keyword-exteraction/",
+    "uri": "/workflows/text-keyword-extraction/",
 	"title": "Keyword Extraction from a Set of Text Documents",
 	"content": "The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference techniques, including TF-IDF and deep network-based characterization.\n",
-	"images": ["/workflow_images/text-keyword-exteraction.png"],
-	"download": "text-keyword-exteraction.ows",
+	"images": ["/workflow_images/text-keyword-extraction.png"],
+	"download": "text-keyword-extraction.ows",
 	"blog" : "<no value>",
 	"video" : "",
 	"tags": []

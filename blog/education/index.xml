@@ -6,7 +6,16 @@
     <description>Recent content in education on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ideas and Notes for Teachers</title>
+      <link>/blog/2022/2022-06-16-training-material/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-06-16-training-material/</guid>
+      <description>On May 26, 2002, we had our first webinar targeting teaching with Orange. During the first part of the webinar, I demonstrated how we could use Orange to introduce classification trees. On their own, classification trees are quite lousy classifiers. They are, nevertheless, important as we can assemble them into very powerful classifiers. The lessons I have presented deal with overfitting and the idea that we should never report classification accuracy on the training data.</description>
+    </item>
+    
     <item>
       <title>Machine Learning Jargon</title>
       <link>/blog/2022/2022-02-01-machine-learning-jargon/</link>

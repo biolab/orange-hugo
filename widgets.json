@@ -2088,14 +2088,6 @@
     "url": "time_slice"
    },
    {
-    "title": "Aggregate",
-    "category": "Time Series",
-    "keywords": [],
-    "background": "#33aaff",
-    "icon": "widget-icons/Time Series-Aggregate.png",
-    "url": "aggregate"
-   },
-   {
     "title": "Difference",
     "category": "Time Series",
     "keywords": [

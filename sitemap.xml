@@ -120,15 +120,15 @@
   </url><url>
     <loc>/workflows/twitter/</loc>
   </url><url>
-    <loc>/workflows/text-loading-from-repository/</loc>
-  </url><url>
     <loc>/workflows/story-arcs/</loc>
+  </url><url>
+    <loc>/workflows/text-loading-from-repository/</loc>
   </url><url>
     <loc>/workflows/text-semantic-document-map/</loc>
   </url><url>
     <loc>/workflows/text-semantic-word-map/</loc>
   </url><url>
-    <loc>/workflows/text-keyword-exteraction/</loc>
+    <loc>/workflows/text-keyword-extraction/</loc>
   </url><url>
     <loc>/workflows/text-keyword-based-scoring/</loc>
   </url><url>
@@ -145,7 +145,16 @@
     <loc>/workflows/mental-health/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/education/</loc>
+    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-06-16-training-material/</loc>
+    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/classification/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
@@ -154,9 +163,6 @@
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-06-01-blog-minions-new/</loc>
-    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/project/</loc>
@@ -242,9 +248,6 @@
   </url><url>
     <loc>/blog/machine-learning/</loc>
     <lastmod>2022-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/education/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-02-01-machine-learning-jargon/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
@@ -1457,8 +1460,6 @@
   </url><url>
     <loc>/widget-catalog/model/adaboost/</loc>
   </url><url>
-    <loc>/widget-catalog/time-series/aggregate/</loc>
-  </url><url>
     <loc>/widget-catalog/transform/aggregatecolumns/</loc>
   </url><url>
     <loc>/widget-catalog/single-cell/align_datasets/</loc>
@@ -1725,8 +1726,6 @@
   </url><url>
     <loc>/widget-catalog/model/linearregression/</loc>
   </url><url>
-    <loc>/workflows/Literary-Analysis/</loc>
-  </url><url>
     <loc>/widget-catalog/single-cell/load_data/</loc>
   </url><url>
     <loc>/widget-catalog/model/loadmodel/</loc>
@@ -1912,8 +1911,6 @@
     <loc>/widget-catalog/survival-analysis/stepwise-cox-regression/</loc>
   </url><url>
     <loc>/widget-catalog/model/stochasticgradient/</loc>
-  </url><url>
-    <loc>/workflows/Story-Arcs/</loc>
   </url><url>
     <loc>/workflows/survey/</loc>
   </url><url>

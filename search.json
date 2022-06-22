@@ -766,19 +766,6 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/workflows/text-loading-from-repository/",
-	"title": "Load Text Corpus from the Server Repository",
-	"content": "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.\n",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget." ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : ["/workflow_images/text-loading-from-repository.png"],
-	"kind" : "page",
-	"type" : "workflows"
-},
-{
     "uri": "/workflows/story-arcs/",
 	"title": "Story Arcs",
 	"content": "In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpu",
@@ -788,6 +775,19 @@
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : ["/workflow_images/story-arcs.png"],
+	"kind" : "page",
+	"type" : "workflows"
+},
+{
+    "uri": "/workflows/text-loading-from-repository/",
+	"title": "Load Text Corpus from the Server Repository",
+	"content": "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : ["/workflow_images/text-loading-from-repository.png"],
 	"kind" : "page",
 	"type" : "workflows"
 },
@@ -818,7 +818,7 @@
 	"type" : "workflows"
 },
 {
-    "uri": "/workflows/text-keyword-exteraction/",
+    "uri": "/workflows/text-keyword-extraction/",
 	"title": "Keyword Extraction from a Set of Text Documents",
 	"content": "The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference tech",
 	"image" : "",
@@ -826,7 +826,7 @@
 	"longExcerpt" :  "The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference tech" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
-	"images" : ["/workflow_images/text-keyword-exteraction.png"],
+	"images" : ["/workflow_images/text-keyword-extraction.png"],
 	"kind" : "page",
 	"type" : "workflows"
 },
@@ -929,10 +929,49 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jun 2, 2022",
+	"date" : "Jun 16, 2022",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
+},
+{
+    "uri": "/blog/education/",
+	"title": "education",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jun 16, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-06-16-training-material/",
+	"title": "Ideas and Notes for Teachers",
+	"content": "On May 26, 2002, we had our first webinar targeting teaching with Orange. During the first part of the webinar, I demonstrated how we could use Orange to introduce classification trees. On their own, classification trees are quite lousy classifiers. They are, nevertheless, important as we can assemble them into very powerful classifiers. The lessons I have presented deal with overfitting and the i",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-06-16-randomized-data.png",
+	"longExcerpt" :  "We are crafting free educational material to help in data science training." ,
+	"author" : "Blaž Zupan",
+	"date" : "Jun 16, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jun 16, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
 },
 {
     "uri": "/blog/classification/",
@@ -972,19 +1011,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jun 2, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/project/",
@@ -1346,19 +1372,6 @@
 	"longExcerpt" :  "" ,
 	"author" : "",
 	"date" : "Feb 11, 2022",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/education/",
-	"title": "education",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Feb 1, 2022",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
@@ -6616,19 +6629,6 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/widget-catalog/time-series/aggregate/",
-	"title": "Aggregate",
-	"content": "Aggregate Aggregate data by second, minute, hour, day, week, month, or year.\nInputs\n Time series: Time series as output by As Timeseries widget.  Outputs\n Time series: Aggregated time series.  Aggregate joins together instances at the same level of granularity. In other words, if aggregating by day, all instances from the same day will be merged into one. Aggregation function can be defined separa",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "Aggregate Aggregate data by second, minute, hour, day, week, month, or year.\nInputs\n Time series: Time series as output by As Timeseries widget.  Outputs\n Time series: Aggregated time series.  Aggregate joins together instances at the same level of granularity. In other words, if aggregating by day, all instances from the same day will be merged into one. Aggregation function can be defined separa" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "page",
-	"type" : "widget-catalog"
-},
-{
     "uri": "/widget-catalog/transform/aggregatecolumns/",
 	"title": "Aggregate Columns",
 	"content": "Aggregate Columns Compute a sum, max, min … of selected columns.\nInputs\n Data: input dataset  Outputs\n Data: extended dataset  Aggregate Columns outputs an aggregation of selected columns, for example a sum, min, max, etc.\n Selected attributes. Operator for aggregation:  sum product min max mean variance median   Set the name of the computed attribute. If Apply automatically is ticked, chan",
@@ -8358,19 +8358,6 @@
 	"type" : "widget-catalog"
 },
 {
-    "uri": "/workflows/Literary-Analysis/",
-	"title": "Literary Analysis",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "term",
-	"type" : "workflows"
-},
-{
     "uri": "/widget-catalog/single-cell/load_data/",
 	"title": "Load Data",
 	"content": "Load Data Load samples for multi-sample analysis.\nOutputs\n Data: Single cell dataset.  ",
@@ -8529,10 +8516,10 @@
 {
     "uri": "/widget-catalog/time-series/moving_transform_w/",
 	"title": "Moving Transform",
-	"content": "Moving Transform Apply rolling window functions to the time series. Use this widget to get a series' mean.\nInputs\n Time series: Time series as output by As Timeseries widget.  Outputs\n Time series: The input time series with the added series' transformations.  In this widget, you define what aggregation functions to run over the time series and with what window sizes.\n Define a new transformation.",
+	"content": "Moving Transform Compute aggregations over a sliding window, consecutive blocks or time periods of time series.\nInputs\n Time series: Time series (e.g. one provided by As Timeseries widget).  Outputs\n Time series: Data with computed aggregations   Define the method for forming blocks of data:  Sliding window: use a sliding window of the specified width. The function is often used for smoothing the ",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Moving Transform Apply rolling window functions to the time series. Use this widget to get a series' mean.\nInputs\n Time series: Time series as output by As Timeseries widget.  Outputs\n Time series: The input time series with the added series' transformations.  In this widget, you define what aggregation functions to run over the time series and with what window sizes.\n Define a new transformation." ,
+	"longExcerpt" :  "Moving Transform Compute aggregations over a sliding window, consecutive blocks or time periods of time series.\nInputs\n Time series: Time series (e.g. one provided by As Timeseries widget).  Outputs\n Time series: Data with computed aggregations   Define the method for forming blocks of data:  Sliding window: use a sliding window of the specified width. The function is often used for smoothing the " ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
@@ -9578,19 +9565,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "widget-catalog"
-},
-{
-    "uri": "/workflows/Story-Arcs/",
-	"title": "Story Arcs",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 1, 0001",
-	"images" : null,
-	"kind" : "term",
-	"type" : "workflows"
 },
 {
     "uri": "/workflows/survey/",

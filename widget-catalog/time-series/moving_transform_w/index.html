@@ -1843,13 +1843,6 @@
                   
                         
                         <li style="list-style-type: none; ">
-                      <a href="/widget-catalog/time-series/aggregate">
-                      <div class="reference internal" style="cursor: pointer;" >Aggregate</div>
-                      </a>
-                  </li>
-                  
-                        
-                        <li style="list-style-type: none; ">
                       <a href="/widget-catalog/time-series/difference">
                       <div class="reference internal" style="cursor: pointer;" >Difference</div>
                       </a>
@@ -1896,31 +1889,70 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="moving-transform">Moving Transform</h1>
-<p>Apply rolling window functions to the time series. Use this widget to get a series' mean.</p>
+<p>Compute aggregations over a sliding window, consecutive blocks or time periods of time series.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
+<li>Time series: Time series (e.g. one provided by <a href="../as_timeseries/">As Timeseries</a> widget).</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>Time series: The input time series with the added series' transformations.</li>
+<li>Time series: Data with computed aggregations</li>
 </ul>
-<p>In this widget, you define what aggregation functions to run over the time series and with what window sizes.</p>
-<p><img src="../images/moving-transform-stamped.png" alt=""></p>
+<p><img src="../images/moving-transform.png" alt=""></p>
 <ol>
-<li>Define a new transformation.</li>
-<li>Remove the selected transformation.</li>
-<li>Time series you want to run the transformation over.</li>
-<li>Desired window size.</li>
-<li>Aggregation function to aggregate the values in the window with. Options are: <em>mean</em>, <em>sum</em>, <em>max</em>, <em>min</em>, <em>median</em>, <em>mode</em>, <em>standard deviation</em>, <em>variance</em>, <em>product</em>, <em>linearly-weighted moving average</em>, <em>exponential moving average</em>, <em>harmonic mean</em>, <em>geometric mean</em>, <em>non-zero count</em>, <em>cumulative sum</em>, and <em>cumulative product</em>.</li>
-<li>Select <em>Non-overlapping windows</em> options if you don&rsquo;t want the moving windows to overlap but instead be placed side-to-side with zero intersection.</li>
-<li>In the case of non-overlapping windows, define the fixed window width(overrides and widths set in (4).</li>
+<li>Define the method for forming blocks of data:
+<ul>
+<li><em>Sliding window</em>: use a sliding window of the specified width. The function is often used for smoothing the data.
+<ul>
+<li><em>Window width</em>: the number of instances in a window</li>
+<li>Data output: <em>Discard original data</em> outputs only computed columns; <em>Keep original data</em> also keeps the original data except for the first N-1 instances (where N is the window width), which occur before the first complete window; <em>Include leading instances</em> also includes the first N-1 instances, but with missing values for entries in the computed columns.</li>
+</ul>
+</li>
+<li><em>Consecutive blocks</em>: aggregates data within consecutive blocks
+<ul>
+<li><em>Block width</em>: the number of instances in block</li>
+<li>Data output: <em>Discard original data</em> will output only aggregated columns; <em>Keep first instance</em>, <em>Keep middle instance</em> and <em>Keep last instance</em> will take the first, middle or last data instance as the representative for the block.</li>
+</ul>
+</li>
+<li><em>Aggregate time periods</em>: aggregates data based on time periods (years, months, days, hours, minutes, seconds) or in the same month of year (12 instances), day of year (365 or 366 instances), day of month (~31 instances), day of week (7 instances), hour of day (24 instances). This functionality replaces the <em>Aggregate widget</em>.</li>
+</ul>
+</li>
+<li>If <em>Apply Automatically</em> is ticked, changes are communicated automatically. Alternatively, click <em>Apply</em>.</li>
+<li>Variable selection:
+<ul>
+<li>Filter provides a shortcut for searching variables by (a part of) the name. Start typing the variable name to select it from the list.</li>
+<li>Alternatively, select the variable from the variable list. You can use Ctrl (Cmd) key, or dragging across the list, to select multiple variables and apply the same aggregation on them.</li>
+<li><em>Show only numeric variables</em> hides non-numeric variables from the variable list.</li>
+</ul>
+</li>
+<li>A list of possible aggregations:
+<ul>
+<li>Mean value</li>
+<li>Sum</li>
+<li>Product</li>
+<li>Minimum</li>
+<li>Maximum</li>
+<li>Span</li>
+<li>Median</li>
+<li>Mode</li>
+<li>Standard deviation</li>
+<li>Variance</li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_average#Weighted_moving_average">Linear MA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average">Exponential MA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Harmonic_mean">Harmonic mean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Geometric_mean">Geometric mean</a></li>
+<li>Non-zero count: count non-zero values</li>
+<li>Defined count: count the number of non-missing values</li>
+<li>Cumulative sum</li>
+<li>Cumulative product</li>
+</ul>
+</li>
 </ol>
-<h2 id="example">Example</h2>
-<p>To get a 5-day moving average, we can use a rolling window with <em>mean</em> aggregation.</p>
-<p><img src="../images/moving-transform-ex1.png" alt=""></p>
-<p>To integrate time series' differences from <a href="../difference/">Difference</a> widget, use <em>Cumulative sum</em> aggregation over a window wide enough to grasp the whole series.</p>
-<p><img src="../images/moving-transform-ex2.png" alt=""></p>
+<h2 id="examples">Examples</h2>
+<p>A simple use case for <strong>Moving Transform</strong> is applying a smoothing function over the timeseries. We used the <a href="yahoo_finance.md">Yahoo Finance</a> to retrieve the daily stock value for Amazon (AMZN) and passed the data to Moving Transform. To get a 5-day moving average, we used a rolling window with <em>mean</em> aggregation. In <a href="../line_chart/">Line Chart</a>, we can see the initial (blue) values of <em>High</em> variable are now smoothed (red line).</p>
+<p><img src="../images/Moving-Transform-Example1.png" alt=""></p>
+<p>Another way of using Moving Transform is to aggregated the data by a given period. Let&rsquo;s say we wish to observe the yearly averages for the <em>Cyber security breaches</em> data from the <a href="https://orangedatamining.com/widget-catalog/data/datasets/">Datasets</a> widget. We set <em>breach_start</em> as our time variable in <a href="../as_timeseries/">As Timeseries</a>. In Moving Transform, we aggregated by years, and used mode for <em>US State</em> and <em>Type of Breach</em> variables and sum for the <em>Individuals Affected</em> variable. In the <a href="https://orangedatamining.com/widget-catalog/data/datatable/">Data Table</a> we see the aggregated data. There are 14 instances, each representing a single year.</p>
+<p><img src="../images/Moving-Transform-Example2.png" alt=""></p>
 <h4 id="see-also">See also</h4>
 <p><a href="../seasonal_adjustment/">Seasonal Adjustment</a></p>
 
@@ -2063,6 +2095,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 16 Jun </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-16-training-material/">Ideas and Notes for Teachers</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 02 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-01-blog-minions-new/">How to grow trees in a marmalade factory?</a>
@@ -2075,15 +2116,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 25 May </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-05-25-KaplanMeier/">An introduction to the Kaplan-Meier Estimator</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 20 May </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-05-20-regression-results/">Confusion matrix for regression?</a>
                             </div>
                             </div>
                             </li>

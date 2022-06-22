@@ -43,21 +43,21 @@
     </item>
     
     <item>
-      <title>Load Text Corpus from the Server Repository</title>
-      <link>/workflows/text-loading-from-repository/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/workflows/text-loading-from-repository/</guid>
-      <description>The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.</description>
-    </item>
-    
-    <item>
       <title>Story Arcs</title>
       <link>/workflows/story-arcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/workflows/story-arcs/</guid>
       <description>In this workflow we explore story arcs in the Little Match Seller story. First we select the story from the corpus of Andersen tales. Then we create a table, where each sentence of the tale is a separate row. We use sentiment analysis to compute the sentiment of each sentence, then observe the emotional arcs through the story. We also inspect sentences with similar scores in the Heat Map and Corpus Viewer.</description>
+    </item>
+    
+    <item>
+      <title>Load Text Corpus from the Server Repository</title>
+      <link>/workflows/text-loading-from-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-loading-from-repository/</guid>
+      <description>The workflow loads the corpus from the text repository on the server. The repository contains documents with raw text and associated YAML files with meta-features. We here use some pre-processing and then display the most frequent words in a word cloud. This workflow could work on your repository: just change the URL in the Import Documents widget.</description>
     </item>
     
     <item>
@@ -80,10 +80,10 @@
     
     <item>
       <title>Keyword Extraction from a Set of Text Documents</title>
-      <link>/workflows/text-keyword-exteraction/</link>
+      <link>/workflows/text-keyword-extraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/workflows/text-keyword-exteraction/</guid>
+      <guid>/workflows/text-keyword-extraction/</guid>
       <description>The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference techniques, including TF-IDF and deep network-based characterization.</description>
     </item>
     
