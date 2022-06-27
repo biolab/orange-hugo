@@ -844,6 +844,45 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/workflows/text-corpus-and-word-map/",
+	"title": "Corpus and Word Maps",
+	"content": "This workflow shows how to extract the most common words from the documents and observe clusters of semantically similar words with Hierarchical Clustering. We select a group of words (connected to the traffic and roads) and use them to score documents according to selection with the Score Documents widget. The scores are visualized in the document map by the Self-Organizing Maps widget.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "This workflow shows how to extract the most common words from the documents and observe clusters of semantically similar words with Hierarchical Clustering. We select a group of words (connected to the traffic and roads) and use them to score documents according to selection with the Score Documents widget. The scores are visualized in the document map by the Self-Organizing Maps widget." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : ["/workflow_images/text-corpus-and-word-map.png"],
+	"kind" : "page",
+	"type" : "workflows"
+},
+{
+    "uri": "/workflows/text-annotator/",
+	"title": "Document Map Annotation",
+	"content": "Documents maps can be enhanced with the keywords annotations. This workflow embeds documents in vector space, computes a t-SNE document map and annotates it. The Annotator widget identifies clusters on the map and annotates them with keywords representing a cluster.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Documents maps can be enhanced with the keywords annotations. This workflow embeds documents in vector space, computes a t-SNE document map and annotates it. The Annotator widget identifies clusters on the map and annotates them with keywords representing a cluster." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : ["/workflow_images/text-annotator.png"],
+	"kind" : "page",
+	"type" : "workflows"
+},
+{
+    "uri": "/workflows/text-ontology/",
+	"title": "Ontology Generation from Keywords",
+	"content": "We can automatically build the otology from the set of words. In the workflow, we select a group of documents with similar content. From the selected documents, we extract keywords and generate a new ontology from the subset of keywords with the Ontology widget.\n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "We can automatically build the otology from the set of words. In the workflow, we select a group of documents with similar content. From the selected documents, we extract keywords and generate a new ontology from the subset of keywords with the Ontology widget." ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : ["/workflow_images/text-ontology.png"],
+	"kind" : "page",
+	"type" : "workflows"
+},
+{
     "uri": "/workflows/survival-curve-estimation/",
 	"title": "Survival Curve Estimation",
 	"content": "One of the primary objectives of survival analysis is to estimate the survival probability from observed survival times of different patients. The workflow plots the Kaplan-Meier approximation of the survival curve for the investigated population in the German breast cancer study group. The Kaplan-Meier plot is interactive; we select the longest-surviving patients and use Box Plot to analyze featu",

@@ -96,5 +96,32 @@
       <description>We can score the text documents based on a list of keywords, say, to find the documents which include the keywords or are semantically related to the list of keywords. This workflow shows the Score Documents widget for scoring and the Word List widget to compose a list of keywords. The scores are visualized in the t-SNE document map.</description>
     </item>
     
+    <item>
+      <title>Corpus and Word Maps</title>
+      <link>/workflows/text-corpus-and-word-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-corpus-and-word-map/</guid>
+      <description>This workflow shows how to extract the most common words from the documents and observe clusters of semantically similar words with Hierarchical Clustering. We select a group of words (connected to the traffic and roads) and use them to score documents according to selection with the Score Documents widget. The scores are visualized in the document map by the Self-Organizing Maps widget.</description>
+    </item>
+    
+    <item>
+      <title>Document Map Annotation</title>
+      <link>/workflows/text-annotator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-annotator/</guid>
+      <description>Documents maps can be enhanced with the keywords annotations. This workflow embeds documents in vector space, computes a t-SNE document map and annotates it. The Annotator widget identifies clusters on the map and annotates them with keywords representing a cluster.</description>
+    </item>
+    
+    <item>
+      <title>Ontology Generation from Keywords</title>
+      <link>/workflows/text-ontology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-ontology/</guid>
+      <description>We can automatically build the otology from the set of words. In the workflow, we select a group of documents with similar content. From the selected documents, we extract keywords and generate a new ontology from the subset of keywords with the Ontology widget.</description>
+    </item>
+    
   </channel>
 </rss>
