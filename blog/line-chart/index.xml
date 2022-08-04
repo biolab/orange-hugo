@@ -6,7 +6,17 @@
     <description>Recent content in line chart on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/line-chart/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/line-chart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Timeseries add-on lost a lot of weight</title>
+      <link>/blog/2022/2022-08-04-timeseries/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-08-04-timeseries/</guid>
+      <description>The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in Highcharts, a visualization library built on JavaScript. We&amp;rsquo;re Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.
+There was only one person who could (and would) tackle this - our senior developer Vesna.</description>
+    </item>
+    
     <item>
       <title>Detecting Story Arcs with Orange</title>
       <link>/blog/2020/2020-07-27-story-arcs/</link>

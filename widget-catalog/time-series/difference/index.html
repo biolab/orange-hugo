@@ -1892,20 +1892,22 @@
 <p>Make the time series stationary by replacing it with 1st or 2nd order discrete difference along its values.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
+<li>Time series: a dataset, often as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul>
-<li>Time series: Differences of input time series.</li>
+<li>Time series: differences of input time series.</li>
 </ul>
-<p><img src="../images/difference-stamped.png" alt=""></p>
+<p><img src="../images/Difference.png" alt=""></p>
 <ol>
-<li>Order of differencing. Can be 1 or 2.</li>
-<li>The shift before differencing. Value of 1 equals to discrete differencing. You can use higher values to compute the difference between now and this many steps ahead.</li>
-<li>Invert the differencing direction.</li>
 <li>Select the series to difference.</li>
+<li>Order of differencing. Options are first or second order difference, change quotient and percentage change.</li>
+<li>The shift before differencing. Value of 1 equals discrete differencing. You can use higher values to compute the difference between now and this many steps ahead. <em>Invert differencing direction</em> compute differences from latest to oldest.</li>
 </ol>
-<p>To integrate the differences back into the original series (e.g. the forecasts), use the <a href="../moving_transform/">Moving Transform</a> widget.</p>
+<p>To integrate the differences back into the original series (e.g. the forecasts), use the <a href="../moving_transform_w/">Moving Transform</a> widget.</p>
+<h2 id="example">Example</h2>
+<p>In this example, we are using the <a href="yahoo_finance.md">Yahoo Finance</a> data for Amazon stocks for the past 6 years. We pass the data to <strong>Difference</strong> to compute the daily change in the high value of stocks. We observe the change in the <a href="../line_chart/">Line Chart</a> widget.</p>
+<p><img src="../images/Difference-Example.png" alt=""></p>
 
                 </div>
             </div>
@@ -2046,6 +2048,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 04 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-08-04-timeseries/">Timeseries add-on lost a lot of weight</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 16 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-16-training-material/">Ideas and Notes for Teachers</a>
@@ -2058,15 +2069,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 02 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-01-blog-minions-new/">How to grow trees in a marmalade factory?</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 25 May </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-05-25-KaplanMeier/">An introduction to the Kaplan-Meier Estimator</a>
                             </div>
                             </div>
                             </li>

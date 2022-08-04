@@ -1889,23 +1889,31 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="spiralogram">Spiralogram</h1>
-<p>Visualize variables' auto-correlation.</p>
+<p>Visualize time series' periodicity in a spiral heatmap.</p>
 <p><strong>Inputs</strong></p>
 <ul>
-<li>Time series: Time series as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
+<li>Time series: Time series from File or as output by <a href="../as_timeseries/">As Timeseries</a> widget.</li>
 </ul>
-<p>Visualize time series' periodicity in a spiral heatmap.</p>
-<p><img src="../images/spiralogram-stamped.png" alt=""></p>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Selected Data: instances selected from the plot</li>
+<li>Statistics: data table with statistics as shown in the plot</li>
+</ul>
+<p>Spiralogram is intended for visualizing time series and for comparing attribute values by categorical variables. Instances can be selected from the plot and sent downstream.</p>
+<p><img src="../images/Spiralogram.png" alt=""></p>
 <ol>
-<li>Unit of the vertical axis. Options are: years, months, or days (as present in the series), months of year, days of week, days of month, days of year, weeks of year, weeks of month, hours of day, minutes of hour.</li>
-<li>Unit of the radial axis (options are the same as for (1)).</li>
-<li>Aggregation function. The series is aggregated on intervals selected in (1) and (2).</li>
-<li>Select the series to include.</li>
+<li>Units on the circumference. Options are: month of year (12 units), day of year (365 units), day of month (~30 units), day of week (Mon-Sun, 7 units), hour of day (24 units) and all the variables from the data.</li>
+<li>Unit of the vertical axis. <em>Hide inner labels</em> removes labels on the vertical axis.</li>
+<li>Color of each spiralogram section. Default is <em>Show instance count</em>. If an attribute from the data is selected, aggregation methods become available. The options are: mean value, sum, product, minimum, maximum, span, median, mode, standard deviation, variance, harmonic mean, geometric mean, non-zero count, and defined count.</li>
 </ol>
 <h2 id="example">Example</h2>
-<p>The image above shows traffic for select French highways. We see a strong seasonal pattern (high summer) and somewhat of an anomaly on July 1992. In this month, there was <a href="https://www.google.com/search?q=french+trucker+strike+1992">an important trucker strike</a> in protest of the new road laws.</p>
+<p>In the example below we are using <em>Illegal waste dumpsite in Slovenia</em> data, available from the Datasets widget. The data record when the dumpsite was registered, what kind of waste was deposited, whether the site was cleaned, and so on.</p>
+<p>We will use <a href="../as_timeseries/">As Timeseries</a> for set <em>Entry creation date</em> as our time series variable. Then we pass the data to <strong>Spiralogram</strong>. The widget offers many option, so we will show here a slightly more complex set-up.</p>
+<p>We split the circle into months of the year. Next, we split the vertical axis by an attribute <em>Was cleaned</em>, meaning the outer circle shows cleaned dumpsites and the inner circle the ones with the trash. Finally, we set the color to <em>Tires [%]</em> and stick with the default <em>Mean value</em>. This will display the average percentage of tires found at each month, split into sites that were cleaned and those that weren&rsquo;t. From the plot, we can see that the sites registered in January and November have a higher percentage of tires in the dumpsites. Possible, this has to do with the obligatory change to winter tires in November, resulting in a higher-than-average number of old tires dumped in the nature. There is no discernible difference between sites that were cleaned and those that were not.</p>
+<p>We have also selected the sites that were registered in November and were already cleaned. We passed the data to the Data Table, where we can inspect individual dumpsites.</p>
+<p><img src="../images/Spiralogram-Example.png" alt=""></p>
 <h4 id="see-also">See also</h4>
-<p><a href="../aggregate/">Aggregate</a></p>
+<p><a href="../moving_transform_w/">Moving Transform</a></p>
 
                 </div>
             </div>
@@ -2046,6 +2054,15 @@
                             
                             <li>
                             <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 04 Aug </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-08-04-timeseries/">Timeseries add-on lost a lot of weight</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
                             <div class="col-md-2"><a class="sitemap-sub"> 16 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-16-training-material/">Ideas and Notes for Teachers</a>
@@ -2058,15 +2075,6 @@
                             <div class="col-md-2"><a class="sitemap-sub"> 02 Jun </a></div>
                             <div class="col-md-10">
                                 <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-06-01-blog-minions-new/">How to grow trees in a marmalade factory?</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 25 May </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-05-25-KaplanMeier/">An introduction to the Kaplan-Meier Estimator</a>
                             </div>
                             </div>
                             </li>
