@@ -1379,7 +1379,8 @@
     "category": "Text Mining",
     "keywords": [],
     "background": "light-blue",
-    "icon": "widget-icons/Text Mining-Ontology.png"
+    "icon": "widget-icons/Text Mining-Ontology.png",
+    "url": "ontology"
    },
    {
     "title": "Semantic Viewer",
@@ -1390,6 +1391,16 @@
     "background": "light-blue",
     "icon": "widget-icons/Text Mining-Semantic Viewer.png",
     "url": "semanticviewer"
+   },
+   {
+    "title": "Collocations",
+    "category": "Text Mining",
+    "keywords": [
+     "PMI"
+    ],
+    "background": "light-blue",
+    "icon": "widget-icons/Text Mining-Collocations.png",
+    "url": "collocations"
    },
    {
     "title": "Statistics",

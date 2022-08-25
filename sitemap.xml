@@ -1530,6 +1530,8 @@
   </url><url>
     <loc>/widget-catalog/survival-analysis/cohorts/</loc>
   </url><url>
+    <loc>/widget-catalog/text-mining/collocations/</loc>
+  </url><url>
     <loc>/widget-catalog/data/color/</loc>
   </url><url>
     <loc>/widget-catalog/transform/concatenate/</loc>
@@ -1797,6 +1799,8 @@
     <loc>/widget-catalog/visualize/nomogram/</loc>
   </url><url>
     <loc>/widget-catalog/text-mining/nytimes/</loc>
+  </url><url>
+    <loc>/widget-catalog/text-mining/ontology/</loc>
   </url><url>
     <loc>/workflows/Outliers/</loc>
   </url><url>

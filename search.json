@@ -7058,6 +7058,19 @@
 	"type" : "widget-catalog"
 },
 {
+    "uri": "/widget-catalog/text-mining/collocations/",
+	"title": "Collocations",
+	"content": "Collocations Compute significant bigrams and trigrams.\nInputs\n Corpus: A collection of documents.  Outputs\n Table: A list of bigrams or trigrams.  Collocations finds frequently co-occurring words in a corpus. It displays bigrams or trigrams by the score.\n Settings: observe bigrams (sets of two co-occurring words) or trigrams (sets of three co-occurring words). Set the frequency threshold (remove n",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Collocations Compute significant bigrams and trigrams.\nInputs\n Corpus: A collection of documents.  Outputs\n Table: A list of bigrams or trigrams.  Collocations finds frequently co-occurring words in a corpus. It displays bigrams or trigrams by the score.\n Settings: observe bigrams (sets of two co-occurring words) or trigrams (sets of three co-occurring words). Set the frequency threshold (remove n" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
     "uri": "/widget-catalog/data/color/",
 	"title": "Color",
 	"content": "Color Set color legend for variables.\nInputs\n Data: input data set  Outputs\n Data: data set with a new color legend  The Color widget sets the color legend for visualizations.\n A list of discrete variables. Set the color of each variable by double-clicking on it. The widget also enables renaming variables by clicking on their names. A list of continuous variables. Click on the color strip to choos",
@@ -8793,6 +8806,19 @@
 	"image" : "",
 	"thumbImage" : "",
 	"longExcerpt" :  "NY Times Loads data from the New York Times' Article Search API.\nInputs\n None  Outputs\n Corpus: A collection of documents from the New York Times newspaper.  NYTimes widget loads data from New York Times' Article Search API. You can query NYTimes articles from September 18, 1851 to today, but the API limit is set to allow retrieving only a 1000 documents per query. Define which features to use for" ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : null,
+	"kind" : "page",
+	"type" : "widget-catalog"
+},
+{
+    "uri": "/widget-catalog/text-mining/ontology/",
+	"title": "Ontology",
+	"content": "Ontology Generate, edit, load and save ontologies.\nInputs\n Words: A table of words.  Outputs\n Words: A table of words.  The ontology widget enables various operations with ontologies:\n Generate ontology from words on the input Load existing ontology from a file or URL. The widget supports OWL, JSON, and Pickle formats. Manually edit the ontology Include word from the input in the existing ontology",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "Ontology Generate, edit, load and save ontologies.\nInputs\n Words: A table of words.  Outputs\n Words: A table of words.  The ontology widget enables various operations with ontologies:\n Generate ontology from words on the input Load existing ontology from a file or URL. The widget supports OWL, JSON, and Pickle formats. Manually edit the ontology Include word from the input in the existing ontology" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,
