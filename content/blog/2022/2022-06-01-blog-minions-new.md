@@ -4,9 +4,9 @@ date = "2022-06-02"
 draft = false
 title = "How to grow trees in a marmalade factory?"
 type = "blog"
-thumbImage = "/blog_img/2022/2022-06-02-hands-up.jpg"
-frontPageImage = "/blog_img/2022/2022-06-02-hands-up.jpg"
-blog = ["Elementary school", "Tides Foundation", "project", "classification"]
+thumbImage = "/blog_img/2022/otrokorange.jpg"
+frontPageImage = "/blog_img/2022/otrokorange.jpg"
+blog = [ "Education" ]
 shortExcerpt = "We let the fourth grade students build their own decision tree to classify characters into professions."
 longExcerpt = "We visited fourthgraders in our local elementary school and taught them about clustering and data collection."
 +++
@@ -51,8 +51,10 @@ We can use the same type of activity with the data the children collected while 
 
 We tested if the tree works correctly by picking an animal and "manually” checking whether the tree made the correct classification. 
 
-{{< window-screenshot src="/blog_img/2022/22-05-31-tree-with-animals.png" >}} 
+{{< window-screenshot src="/static/blog_img/2022/22-05-31-tree-with-animals.png" >}} 
 *A tree that classifies animals into mammals, birds, reptiles etc based on the data collected by children.*
+
+
 
 We checked with a squirrel, a bear, a crow, a frog, and a sea lion. The tree has correctly classified all the instances. Still, there was some erroneous data, which provided us with a beautiful lesson on the importance of understanding data before analyzing it. 
 
