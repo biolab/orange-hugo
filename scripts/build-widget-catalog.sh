@@ -28,6 +28,8 @@ wget -qO- https://github.com/biolab/orange3-timeseries/archive/master.tar.gz | t
 mv orange3-timeseries-master orange3-timeseries
 wget -qO- https://github.com/biolab/orange3-associate/archive/master.tar.gz | tar -zxf -
 mv orange3-associate-master orange3-associate
+wget -qO- https://github.com/biolab/orange3-explain/archive/master.tar.gz | tar -zxf -
+mv orange3-explain-master orange3-explain
 cd ..
 
 # Screen must be 24bpp lest pyqt5 crashes, see pytest-dev/pytest-qt/35
@@ -45,4 +47,5 @@ catchsegv xvfb-run -a -s "$XVFBARGS" python scripts/copy_docs.py \
   external/orange3-geo/doc/ \
   external/orange3-educational/doc/ \
   external/orange3-timeseries/doc/ \
-  external/orange3-associate/doc/
+  external/orange3-associate/doc/ \
+  external/orange3-explain/doc/
