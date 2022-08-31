@@ -2141,5 +2141,73 @@
     "url": "associationrules"
    }
   ]
+ ],
+ [
+  "Explain",
+  [
+   {
+    "title": "Feature Importance",
+    "category": "Explain",
+    "keywords": [
+     "explain",
+     "model",
+     "permutation",
+     "feature",
+     "importance"
+    ],
+    "background": "#E4B8E4",
+    "icon": "widget-icons/Explain-Feature Importance.png",
+    "url": "permutation-importance"
+   },
+   {
+    "title": "Explain Model",
+    "category": "Explain",
+    "keywords": [
+     "explain",
+     "explain prediction",
+     "explain model"
+    ],
+    "background": "#E4B8E4",
+    "icon": "widget-icons/Explain-Explain Model.png",
+    "url": "explain-model"
+   },
+   {
+    "title": "Explain Prediction",
+    "category": "Explain",
+    "keywords": [
+     "explain",
+     "explain prediction",
+     "explain model"
+    ],
+    "background": "#E4B8E4",
+    "icon": "widget-icons/Explain-Explain Prediction.png",
+    "url": "explain-prediction"
+   },
+   {
+    "title": "Explain Predictions",
+    "category": "Explain",
+    "keywords": [
+     "explain",
+     "explain prediction",
+     "explain model"
+    ],
+    "background": "#E4B8E4",
+    "icon": "widget-icons/Explain-Explain Predictions.png",
+    "url": "explain-predictions"
+   },
+   {
+    "title": "ICE",
+    "category": "Explain",
+    "keywords": [
+     "ICE",
+     "PDP",
+     "partial",
+     "dependence"
+    ],
+    "background": "#E4B8E4",
+    "icon": "widget-icons/Explain-ICE.png",
+    "url": "ice"
+   }
+  ]
  ]
 ]

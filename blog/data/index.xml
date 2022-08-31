@@ -6,7 +6,18 @@
     <description>Recent content in data on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Socio-economic data at your fingertips</title>
+      <link>/blog/2022/2022-08-31-world-happiness/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-08-31-world-happiness/</guid>
+      <description>A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options &amp;ndash;&amp;gt; Add-ons and select World Happiness from the list to install it.
+ Currently, it contains a single wigdet - Socioeconomic Indices. But fret not! This one widget can do many things.
+ Say I wish to retrieve data for Europe and Central Asia, which I can select from the Countries list.</description>
+    </item>
+    
     <item>
       <title>Managing Data with Edit Domain</title>
       <link>/blog/2020/2020-06-19-edit-domain/</link>
