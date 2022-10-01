@@ -1755,8 +1755,6 @@
   </url><url>
     <loc>/license/</loc>
   </url><url>
-    <loc>/widget-catalog/evaluate/liftcurve/</loc>
-  </url><url>
     <loc>/widget-catalog/time-series/line_chart/</loc>
   </url><url>
     <loc>/widget-catalog/visualize/lineplot/</loc>
@@ -1832,6 +1830,8 @@
     <loc>/widget-catalog/unsupervised/PCA/</loc>
   </url><url>
     <loc>/widget-catalog/spectroscopy/peakfit/</loc>
+  </url><url>
+    <loc>/widget-catalog/evaluate/performancecurve/</loc>
   </url><url>
     <loc>/widget-catalog/time-series/periodogram_w/</loc>
   </url><url>

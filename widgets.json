@@ -133,23 +133,6 @@
   "Transform",
   [
    {
-    "title": "Aggregate Columns",
-    "category": "Transform",
-    "keywords": [
-     "aggregate",
-     "sum",
-     "product",
-     "max",
-     "min",
-     "mean",
-     "median",
-     "variance"
-    ],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Aggregate Columns.png",
-    "url": "aggregatecolumns"
-   },
-   {
     "title": "Data Sampler",
     "category": "Transform",
     "keywords": [
@@ -183,16 +166,12 @@
     "url": "selectrows"
    },
    {
-    "title": "Pivot Table",
+    "title": "Transpose",
     "category": "Transform",
-    "keywords": [
-     "pivot",
-     "group",
-     "aggregate"
-    ],
+    "keywords": [],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Pivot Table.png",
-    "url": "pivot"
+    "icon": "widget-icons/Transform-Transpose.png",
+    "url": "transpose"
    },
    {
     "title": "Merge Data",
@@ -225,30 +204,52 @@
     "url": "select-by-data-index"
    },
    {
-    "title": "Transpose",
+    "title": "Unique",
     "category": "Transform",
     "keywords": [],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Transpose.png",
-    "url": "transpose"
+    "icon": "widget-icons/Transform-Unique.png",
+    "url": "unique"
    },
    {
-    "title": "Randomize",
-    "category": "Transform",
-    "keywords": [],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Randomize.png",
-    "url": "randomize"
-   },
-   {
-    "title": "Preprocess",
+    "title": "Aggregate Columns",
     "category": "Transform",
     "keywords": [
-     "process"
+     "aggregate",
+     "sum",
+     "product",
+     "max",
+     "min",
+     "mean",
+     "median",
+     "variance"
     ],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Preprocess.png",
-    "url": "preprocess"
+    "icon": "widget-icons/Transform-Aggregate Columns.png",
+    "url": "aggregatecolumns"
+   },
+   {
+    "title": "Group by",
+    "category": "Transform",
+    "keywords": [
+     "aggregate",
+     "group by"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Group by.png",
+    "url": "groupby"
+   },
+   {
+    "title": "Pivot Table",
+    "category": "Transform",
+    "keywords": [
+     "pivot",
+     "group",
+     "aggregate"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Pivot Table.png",
+    "url": "pivot"
    },
    {
     "title": "Apply Domain",
@@ -261,6 +262,16 @@
     "url": "applydomain"
    },
    {
+    "title": "Preprocess",
+    "category": "Transform",
+    "keywords": [
+     "process"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Preprocess.png",
+    "url": "preprocess"
+   },
+   {
     "title": "Impute",
     "category": "Transform",
     "keywords": [
@@ -270,27 +281,6 @@
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Impute.png",
     "url": "impute"
-   },
-   {
-    "title": "Python Script",
-    "category": "Transform",
-    "keywords": [
-     "program",
-     "function"
-    ],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Python Script.png",
-    "url": "pythonscript"
-   },
-   {
-    "title": "Create Instance",
-    "category": "Transform",
-    "keywords": [
-     "simulator"
-    ],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Create Instance.png",
-    "url": "createinstance"
    },
    {
     "title": "Continuize",
@@ -309,14 +299,6 @@
     "url": "continuize"
    },
    {
-    "title": "Create Class",
-    "category": "Transform",
-    "keywords": [],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Create Class.png",
-    "url": "createclass"
-   },
-   {
     "title": "Discretize",
     "category": "Transform",
     "keywords": [
@@ -330,38 +312,12 @@
     "url": "discretize"
    },
    {
-    "title": "Feature Constructor",
+    "title": "Randomize",
     "category": "Transform",
-    "keywords": [
-     "function",
-     "lambda"
-    ],
+    "keywords": [],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Feature Constructor.png",
-    "url": "featureconstructor"
-   },
-   {
-    "title": "Group by",
-    "category": "Transform",
-    "keywords": [
-     "aggregate",
-     "group by"
-    ],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Group by.png",
-    "url": "groupby"
-   },
-   {
-    "title": "Melt",
-    "category": "Transform",
-    "keywords": [
-     "shopping list",
-     "wide",
-     "narrow"
-    ],
-    "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Melt.png",
-    "url": "melt"
+    "icon": "widget-icons/Transform-Randomize.png",
+    "url": "randomize"
    },
    {
     "title": "Purge Domain",
@@ -376,12 +332,56 @@
     "url": "purgedomain"
    },
    {
-    "title": "Unique",
+    "title": "Melt",
+    "category": "Transform",
+    "keywords": [
+     "shopping list",
+     "wide",
+     "narrow"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Melt.png",
+    "url": "melt"
+   },
+   {
+    "title": "Feature Constructor",
+    "category": "Transform",
+    "keywords": [
+     "function",
+     "lambda"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Feature Constructor.png",
+    "url": "featureconstructor"
+   },
+   {
+    "title": "Create Class",
     "category": "Transform",
     "keywords": [],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Unique.png",
-    "url": "unique"
+    "icon": "widget-icons/Transform-Create Class.png",
+    "url": "createclass"
+   },
+   {
+    "title": "Create Instance",
+    "category": "Transform",
+    "keywords": [
+     "simulator"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Create Instance.png",
+    "url": "createinstance"
+   },
+   {
+    "title": "Python Script",
+    "category": "Transform",
+    "keywords": [
+     "program",
+     "function"
+    ],
+    "background": "#FF9D5E",
+    "icon": "widget-icons/Transform-Python Script.png",
+    "url": "pythonscript"
    }
   ]
  ],
@@ -787,15 +787,18 @@
     "url": "rocanalysis"
    },
    {
-    "title": "Lift Curve",
+    "title": "Performance Curve",
     "category": "Evaluate",
     "keywords": [
      "lift",
-     "cumulative gain"
+     "cumulative gain",
+     "precision",
+     "recall",
+     "curve"
     ],
     "background": "#C3F3F3",
-    "icon": "widget-icons/Evaluate-Lift Curve.png",
-    "url": "liftcurve"
+    "icon": "widget-icons/Evaluate-Performance Curve.png",
+    "url": "performancecurve"
    },
    {
     "title": "Calibration Plot",
