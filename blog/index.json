@@ -2,6 +2,22 @@
 [
     
     {
+    "uri": "/blog/2022/2022-10-10-quick-preview/",
+	"title": "Quick previews in Orange widgets",
+	"categories": ["widgets"],
+	"description": "",
+	"content": "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we\u0026rsquo;ll add this functionality for other types of data as well.\nMy favourite use: select some data in a visualization and see it without connecting any widget to the output.\n",
+	"image" : "<no value>",
+	"thumbImage" : "/blog_img/2022/2022_10_10_quick_preview.png",
+	"shortExcerpt" : "An exciting new feature in widgets",
+	"longExcerpt" :  "Widgets can now show a quick preview of their output data" ,
+	"author" : "Janez Demšar",
+	"summary" : "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we\u0026rsquo;ll add this functionality for other types of data as well.",
+	"date" : "Oct 10, 2022"
+}
+
+    
+    , {
     "uri": "/blog/2022/2022-08-31-world-happiness/",
 	"title": "Socio-economic data at your fingertips",
 	"categories": ["data", "add-on", "widgets", "economy"],

@@ -150,10 +150,19 @@
   </url><url>
     <loc>/workflows/mental-health/</loc>
   </url><url>
-    <loc>/blog/add-on/</loc>
-    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-10-10-quick-preview/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/widgets/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/add-on/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/data/</loc>
@@ -162,13 +171,7 @@
     <loc>/blog/economy/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/2022/2022-08-31-world-happiness/</loc>
-    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/widgets/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/line-chart/</loc>

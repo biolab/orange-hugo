@@ -6,7 +6,18 @@
     <description>Recent content in widgets on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick previews in Orange widgets</title>
+      <link>/blog/2022/2022-10-10-quick-preview/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-10-10-quick-preview/</guid>
+      <description>Orange 3.33 comes with a simple new feature that we adore.
+See those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.
+From Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we&amp;rsquo;ll add this functionality for other types of data as well.</description>
+    </item>
+    
     <item>
       <title>Socio-economic data at your fingertips</title>
       <link>/blog/2022/2022-08-31-world-happiness/</link>

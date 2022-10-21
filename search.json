@@ -961,6 +961,58 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/",
+	"title": "Blogs",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 10, 2022",
+	"images" : null,
+	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 10, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/2022/2022-10-10-quick-preview/",
+	"title": "Quick previews in Orange widgets",
+	"content": "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we’ll add this functionality for other ty",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022_10_10_quick_preview.png",
+	"longExcerpt" :  "Widgets can now show a quick preview of their output data" ,
+	"author" : "Janez Demšar",
+	"date" : "Oct 10, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/widgets/",
+	"title": "widgets",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Oct 10, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/add-on/",
 	"title": "add-on",
 	"content": "",
@@ -971,19 +1023,6 @@
 	"date" : "Aug 31, 2022",
 	"images" : null,
 	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/",
-	"title": "Blogs",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 31, 2022",
-	"images" : null,
-	"kind" : "section",
 	"type" : "blog"
 },
 {
@@ -1013,19 +1052,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 31, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
-},
-{
     "uri": "/blog/2022/2022-08-31-world-happiness/",
 	"title": "Socio-economic data at your fingertips",
 	"content": "A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options –\u003e Add-ons and select World Happiness from the list to install it.\n Currently, it contains a single wigdet - Socioeconomic Indices. But fret not! This one widget can do many things.\n Say I wish to retrieve data for Europe and Ce",
@@ -1036,19 +1062,6 @@
 	"date" : "Aug 31, 2022",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/widgets/",
-	"title": "widgets",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Aug 31, 2022",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
