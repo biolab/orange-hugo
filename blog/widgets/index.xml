@@ -15,7 +15,8 @@
       <guid>/blog/2022/2022-10-10-quick-preview/</guid>
       <description>Orange 3.33 comes with a simple new feature that we adore.
 See those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.
-From Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we&amp;rsquo;ll add this functionality for other types of data as well.</description>
+From Orange version 3.33, clicking these numbers shows a data preview. Currently, this only works for output tables, but we&amp;rsquo;ll also add this functionality for other types of data.
+My favorite use: select some data in visualization and see it without connecting any widget to the output.</description>
     </item>
     
     <item>

@@ -989,7 +989,7 @@
 {
     "uri": "/blog/2022/2022-10-10-quick-preview/",
 	"title": "Quick previews in Orange widgets",
-	"content": "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange 3.33 on, clicking these numbers shows a preview of the actual data. Currently this only works for output tables, but we’ll add this functionality for other ty",
+	"content": "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange version 3.33, clicking these numbers shows a data preview. Currently, this only works for output tables, but we’ll also add this functionality for other types",
 	"image" : "",
 	"thumbImage" : "/blog_img/2022/2022_10_10_quick_preview.png",
 	"longExcerpt" :  "Widgets can now show a quick preview of their output data" ,
