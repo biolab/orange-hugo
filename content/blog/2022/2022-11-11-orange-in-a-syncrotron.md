@@ -4,8 +4,8 @@ date = "2022-11-11"
 draft = false
 title = "Orange in a synchrotron"
 type = "blog"
-thumbImage = "/blog_img/2022/2022_10_10_quick_preview.png"
-frontPageImage = "/blog_img/2022/2022_10_10_quick_preview.png"
+thumbImage = "/blog_img/2022/20221101_inside.jpg"
+frontPageImage = "/blog_img/2022/20221101_inside_s.jpg"
 blog = ["workshop", "addons"]
 shortExcerpt = "Workshop about spectral data analysis in a synchrotron."
 longExcerpt = "We taught a three-day workshop on Orange for spectral data in UK’s national synchrotron, Diamond Light Source."
@@ -21,10 +21,12 @@ We led [a three-day workshop](https://www.diamond.ac.uk/Home/Events/2022/Infrare
 
 {{% figure src="/blog_img/2022/20221101_lectures.jpg" %}}
 
-The workshop spanned both spectroscopy-specific topics like baseline correction, normalization, EMSC, or differentiation, and more general topics such as multivariate statistical and machine learning methods, and visualization. We concluded with my favourite topic: common errors in supervised machine learning. We hope that we managed to show our students how easy is to make an error that can invalidate our whole analysis. My favourite workflow was the following. It demonstrates that even a (very) slight bias added to random classes introduces enough signal into the data so that the classes become perfectly separable.
+The workshop spanned both spectroscopy-specific topics like baseline correction, normalization, EMSC, or differentiation, and more general topics such as multivariate statistical and machine learning methods, and visualization. We concluded with my favourite topic: common errors in supervised machine learning. We hope that we managed to show our students how easy is to make an error that can invalidate our whole analysis. My favourite workflow was the following. 
 
 {{% figure src="/blog_img/2022/20220103_different-classes-hair.png" %}}
 
+The above workflow was shown as a demonstration that even a (very) slight bias added to random classes introduces enough signal into the data so that the classes become perfectly separable. The bias we added in this case was very small, similar in size to using solutions of slightly different concentrations when preparing samples for measurement.
+
 I also learned two important facts about England on this trip: (1) pubs are the places to go for dinner and (2) English food tastes good.
 
-{{% figure src="/blog_img/2022/20220103_different-classes-pub.png" %}}
+{{% figure src="/blog_img/2022/20221103_pub.jpg" %}}
