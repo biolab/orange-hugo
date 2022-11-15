@@ -6,7 +6,17 @@
     <description>Recent content in addons on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/addons/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/addons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orange in a synchrotron</title>
+      <link>/blog/2022/2022-11-14-orange-in-a-syncrotron/</link>
+      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-11-14-orange-in-a-syncrotron/</guid>
+      <description>Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
+A synchrotron light source is a particle accelerator where the beam travels in a closed loop, and wherever it bends, it generates electromagnetic radiation (or light).</description>
+    </item>
+    
     <item>
       <title>Predictive Modelling with Attribute Interactions</title>
       <link>/blog/2022/2022-04-08-interactions/</link>

@@ -150,11 +150,20 @@
   </url><url>
     <loc>/workflows/mental-health/</loc>
   </url><url>
+    <loc>/blog/addons/</loc>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-11-14-orange-in-a-syncrotron/</loc>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/workshop/</loc>
+    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-10-10-quick-preview/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
@@ -225,9 +234,6 @@
     <loc>/blog/scatter-plot/</loc>
     <lastmod>2022-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/addons/</loc>
-    <lastmod>2022-05-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/interaction/</loc>
     <lastmod>2022-05-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -256,9 +262,6 @@
     <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-04-26-amia-tutorial/</loc>
-    <lastmod>2022-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/workshop/</loc>
     <lastmod>2022-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/lda/</loc>

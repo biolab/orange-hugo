@@ -961,6 +961,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/addons/",
+	"title": "addons",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Nov 14, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/",
 	"title": "Blogs",
 	"content": "",
@@ -968,7 +981,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Oct 10, 2022",
+	"date" : "Nov 14, 2022",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
@@ -981,10 +994,36 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Oct 10, 2022",
+	"date" : "Nov 14, 2022",
 	"images" : null,
 	"kind" : "home",
 	"type" : "page"
+},
+{
+    "uri": "/blog/2022/2022-11-14-orange-in-a-syncrotron/",
+	"title": "Orange in a synchrotron",
+	"content": "Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). U",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/20221101_inside.jpg",
+	"longExcerpt" :  "We taught a three-day workshop on Orange for spectral data in UK’s national synchrotron, Diamond Light Source." ,
+	"author" : "Marko Toplak",
+	"date" : "Nov 14, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/workshop/",
+	"title": "workshop",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Nov 14, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
 },
 {
     "uri": "/blog/2022/2022-10-10-quick-preview/",
@@ -992,7 +1031,7 @@
 	"content": "Orange 3.33 comes with a simple new feature that we adore.\nSee those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.\nFrom Orange version 3.33, clicking these numbers shows a data preview. Currently, this only works for output tables, but we’ll also add this functionality for other types",
 	"image" : "",
 	"thumbImage" : "/blog_img/2022/2022_10_10_quick_preview.png",
-	"longExcerpt" :  "Widgets can now show a quick preview of their output data" ,
+	"longExcerpt" :  "Widgets can now show a quick preview of their output data." ,
 	"author" : "Janez Demšar",
 	"date" : "Oct 10, 2022",
 	"images" : null,
@@ -1057,7 +1096,7 @@
 	"content": "A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options –\u003e Add-ons and select World Happiness from the list to install it.\n Currently, it contains a single wigdet - Socioeconomic Indices. But fret not! This one widget can do many things.\n Say I wish to retrieve data for Europe and Ce",
 	"image" : "",
 	"thumbImage" : "/blog_img/2022/2022-08-31_happy.png",
-	"longExcerpt" :  "New World Happiness add-on for retrieving socio-economic data from the OECD database joins the Orange family" ,
+	"longExcerpt" :  "New World Happiness add-on for retrieving socio-economic data from the OECD database joins the Orange family." ,
 	"author" : "Ajda Pretnar Žagar",
 	"date" : "Aug 31, 2022",
 	"images" : null,
@@ -1286,19 +1325,6 @@
 	"type" : "blog"
 },
 {
-    "uri": "/blog/addons/",
-	"title": "addons",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "May 13, 2022",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
     "uri": "/blog/interaction/",
 	"title": "interaction",
 	"content": "",
@@ -1426,19 +1452,6 @@
 	"date" : "Apr 26, 2022",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/workshop/",
-	"title": "workshop",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Apr 26, 2022",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {
