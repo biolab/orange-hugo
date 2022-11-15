@@ -7,7 +7,7 @@ type = "blog"
 thumbImage = "/blog_img/2022/2022-08-04_spiralo.png"
 frontPageImage = "/blog_img/2022/2022-08-04_spiralo.png"
 blog = ["timeseries", "line chart", "spiralogram", "prediction", "VAR model"]
-shortExcerpt = "We've updated most visualizations in the Timeseries add-on"
+shortExcerpt = "We've updated most visualizations in the Timeseries add-on."
 longExcerpt = "Timeseries' visualizations are becoming fully PyQt, making them easier to maintain. We've also fixed many bugs, which should make working with the timeseries a joy once again."
 +++
 

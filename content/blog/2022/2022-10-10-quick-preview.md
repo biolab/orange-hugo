@@ -7,8 +7,8 @@ type = "blog"
 thumbImage = "/blog_img/2022/2022_10_10_quick_preview.png"
 frontPageImage = "/blog_img/2022/2022_10_10_quick_preview.png"
 blog = ["widgets"]
-shortExcerpt = "An exciting new feature in widgets"
-longExcerpt = "Widgets can now show a quick preview of their output data"
+shortExcerpt = "An exciting new feature in widgets."
+longExcerpt = "Widgets can now show a quick preview of their output data."
 +++
 
 Orange 3.33 comes with a simple new feature that we adore.
