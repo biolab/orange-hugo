@@ -961,6 +961,58 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/",
+	"title": "Blogs",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Nov 25, 2022",
+	"images" : null,
+	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/education/",
+	"title": "education",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Nov 25, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2022/2022-25-11-clustering-videos/",
+	"title": "New Orange video series",
+	"content": "The six videos are a part of Introduction to Data Science series. We are preparing the videos for an online course aimed at students interested in data science. The course does not assume any background knowledge in math, statistics, and computer science and is, therefore, aimed at data science beginners. We are designing the course as a part of Explainable AI in Healthcare Management. A grant fro",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-11-25-video-series-clustering.png",
+	"longExcerpt" :  "Six videos explaining hierarchical clustering in Orange are now online on YouTube." ,
+	"author" : "Blaž Zupan",
+	"date" : "Nov 25, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Nov 25, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
     "uri": "/blog/addons/",
 	"title": "addons",
 	"content": "",
@@ -972,32 +1024,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/blog/",
-	"title": "Blogs",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 14, 2022",
-	"images" : null,
-	"kind" : "section",
-	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 14, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/2022/2022-11-14-orange-in-a-syncrotron/",
@@ -1177,19 +1203,6 @@
 	"longExcerpt" :  "" ,
 	"author" : "",
 	"date" : "Aug 4, 2022",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/education/",
-	"title": "education",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jun 16, 2022",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"

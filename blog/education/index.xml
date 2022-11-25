@@ -6,7 +6,16 @@
     <description>Recent content in education on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Orange video series</title>
+      <link>/blog/2022/2022-25-11-clustering-videos/</link>
+      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-25-11-clustering-videos/</guid>
+      <description>The six videos are a part of Introduction to Data Science series. We are preparing the videos for an online course aimed at students interested in data science. The course does not assume any background knowledge in math, statistics, and computer science and is, therefore, aimed at data science beginners. We are designing the course as a part of Explainable AI in Healthcare Management. A grant from European Union supports its creation.</description>
+    </item>
+    
     <item>
       <title>Ideas and Notes for Teachers</title>
       <link>/blog/2022/2022-06-16-training-material/</link>

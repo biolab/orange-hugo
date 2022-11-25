@@ -150,13 +150,19 @@
   </url><url>
     <loc>/workflows/mental-health/</loc>
   </url><url>
-    <loc>/blog/addons/</loc>
-    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/education/</loc>
+    <lastmod>2022-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022/2022-25-11-clustering-videos/</loc>
+    <lastmod>2022-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2022-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/addons/</loc>
     <lastmod>2022-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-11-14-orange-in-a-syncrotron/</loc>
@@ -200,9 +206,6 @@
   </url><url>
     <loc>/blog/VAR-model/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/education/</loc>
-    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-06-16-training-material/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
