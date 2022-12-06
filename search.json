@@ -9036,10 +9036,10 @@
 {
     "uri": "/widget-catalog/evaluate/performancecurve/",
 	"title": "Performance Curve",
-	"content": "Performance Curve Measures the performance of a chosen classifier against a random classifier.\nInputs\n Evaluation Results: results of testing classification algorithms  The Performance curve shows the curves for analysing the proportion of true positive data instances in relation to the classifier’s threshold or the number of instances that we classify as positive.\nCumulative gains chart sho",
+	"content": "Performance Curve Construct and display a performance curve from the evaluation of classifiers.\nInputs\n Evaluation Results: results of testing classification algorithms  Outputs\n Calibrated Model: trained model using the calibrated learner  The Performance Curve shows the curves for analysing the proportion of true positive data instances in relation to the classifier’s threshold or the numb",
 	"image" : "",
 	"thumbImage" : "",
-	"longExcerpt" :  "Performance Curve Measures the performance of a chosen classifier against a random classifier.\nInputs\n Evaluation Results: results of testing classification algorithms  The Performance curve shows the curves for analysing the proportion of true positive data instances in relation to the classifier\u0026rsquo;s threshold or the number of instances that we classify as positive.\nCumulative gains chart sho" ,
+	"longExcerpt" :  "Performance Curve Construct and display a performance curve from the evaluation of classifiers.\nInputs\n Evaluation Results: results of testing classification algorithms  Outputs\n Calibrated Model: trained model using the calibrated learner  The Performance Curve shows the curves for analysing the proportion of true positive data instances in relation to the classifier\u0026rsquo;s threshold or the numb" ,
 	"author" : "",
 	"date" : "Jan 1, 0001",
 	"images" : null,

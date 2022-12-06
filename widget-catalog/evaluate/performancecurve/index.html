@@ -1947,28 +1947,35 @@
             <div class="col-md-9  col-sm-11 col-xs-11 col-lg-7 paddoc">
                 <div class="content privacy padding-doc single-widget docscontent">
                     <h1 id="performance-curve">Performance Curve</h1>
-<p>Measures the performance of a chosen classifier against a random classifier.</p>
+<p>Construct and display a performance curve from the evaluation of classifiers.</p>
 <p><strong>Inputs</strong></p>
 <ul>
 <li>Evaluation Results: results of testing classification algorithms</li>
 </ul>
-<p>The <strong>Performance curve</strong> shows the curves for analysing the proportion of true positive data instances in relation to the classifier&rsquo;s threshold or the number of instances that we classify as positive.</p>
-<p>Cumulative gains chart shows the proportion of true positive instances (for example, the number of clients who accept the offer) as a function of the number of positive instances (the number of clients contacted), assuming the the instances are ordered according to the model&rsquo;s probability of being positive (e.g. ranking of clients).</p>
-<p><img src="../images/LiftCurve-cumulative-gain.png" alt=""></p>
-<p>Performance curve shows the ratio between the proportion of true positive instances in the selection and the proportion of customers contacted. See <a href="https://medium.com/analytics-vidhya/understanding-lift-curve-b674d21e426">a tutorial for more details</a>.</p>
-<p><img src="../images/LiftCurve-stamped.png" alt=""></p>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Calibrated Model: trained model using the calibrated learner</li>
+</ul>
+<p>The <strong>Performance Curve</strong> shows the curves for analysing the proportion of true positive data instances in relation to the classifier&rsquo;s threshold or the number of instances that we classify as positive. It offers three types of performance curves: <a href="https://en.wikipedia.org/wiki/Lift_(data_mining)">lift curve</a>, <a href="http://mlwiki.org/index.php/Cumulative_Gain_Chart">cumulative gains</a>, and <a href="https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html">precision-recall curve</a>.</p>
+<p><strong>Lift curve</strong> shows the ratio between lift (the proportion of true positive instances to all positive instances in the prediction) and the proportion of positive instances. The higher the initial curve and the longer it is flat, the better the model. See <a href="https://medium.com/analytics-vidhya/understanding-lift-curve-b674d21e426">a tutorial for more details</a>.</p>
+<p><strong>Cumulative gains</strong> chart shows the ratio of true positive instances (for example, people with heart disease) and support, which is the fraction of positively predicted instances (the ratio of patients with a heart disease in the prediction), assuming that the instances are ordered according to the model&rsquo;s probability of being positive (e.g. how likely the person has the disease). The greater the area between the curve and the baseline (dashed diagonal line), the better the model.</p>
+<p><strong>Precision-recall curve</strong> shows the ratio between precision (ratio of true positives in positive predictions) and recall (ratio of true positives in positive class) at different thresholds. Ideally one aims at a high area under the curve.</p>
+<p><img src="../images/PerformanceCurve.png" alt=""></p>
 <ol>
-<li>Choose the desired <em>Target class</em>. The default is chosen alphabetically.</li>
-<li>Choose whether to observe lift curve, cumulative gains or precision-recall.</li>
+<li>Choose the desired <em>Target class</em>. The default is chosen alphabetically. Choose whether to observe lift curve, cumulative gains or precision-recall.</li>
 <li>If test results contain more than one classifier, the user can choose which curves she or he wants to see plotted. Click on a classifier to select or deselect the curve.</li>
-<li><em>Show lift convex hull</em> plots a convex hull over lift curves for all classifiers (yellow curve). The curve shows the optimal classifier (or combination thereof) for each desired lift or cumulative gain.</li>
-<li>Press <em>Save Image</em> to save the created image in a .svg or .png format.</li>
-<li>Produce a report.</li>
-<li>A plot with <strong>lift</strong> or <strong>cumulative gain</strong> vs. <strong>positive rate</strong>. The dashed line represents the behavior of a random classifier.</li>
+<li><em>Show thresholds</em> plots a vertical dashed threshold line. The line represent at which probability threshold the prediction is considered positive. The line can be dragged left or right to change the threshold. <em>Show points</em> shows individual predictions as points on a plot. This option shows how many points were found at each value of x.</li>
+<li>If <em>Apply Automatically</em> is ticked, changes are communicated automatically. Alternatively, click <em>Apply</em>.</li>
+<li>A plot with the performance curve. The vertical dashed line represents the probability threshold and can be moved interactively. The diagonal dashed line in <strong>cumulative gains</strong> represents a baseline classifier.</li>
 </ol>
-<h2 id="example">Example</h2>
-<p>The widgets that provide the right type of the signal needed by the <strong>Performance Curve</strong> (evaluation data) are <a href="../evaluate/testandscore.md">Test &amp; Score</a> and <a href="../../evaluate/predictions/">Predictions</a>.</p>
-<p>In the example below, we observe the lift curve and cumulative gain for the bank marketing data, where the classification goal is to predict whether the client will accept a term deposit offer based on his age, job, education, marital status and similar data. The data set is available in the Datasets widget. We run the learning algorithms in the Test and Score widget and send the results to Lift Curve to see their performance against a random model. Of the two algorithms tested, logistic regression outperforms the naive Bayesian classifier. The curve tells us that by picking the first 20 % of clients as ranked by the model, we are going to hit four times more positive instances than by selecting a random sample with 20 % of clients.</p>
+<h2 id="examples">Examples</h2>
+<p>The widgets that provide the right type of the signal needed by the <strong>Performance Curve</strong> (evaluation data) are <a href="../../evaluate/testandscore/">Test and Score</a> and <a href="../../evaluate/predictions/">Predictions</a>.</p>
+<p>In the first example, we observe the lift curve and cumulative gain for the <em>iris</em> data, where the classification goal is to predict the type of iris based on the measurements of the flower. We run <a href="../model/logisticregression.md">Logistic Regression</a> and <a href="../model/randomforest.md">Random Forest</a> in the <a href="../../evaluate/testandscore/">Test and Score</a> widget and send the results to <strong>Performance Curve</strong> to see their performance against a random model. Of the two algorithms tested, logistic regression outperforms the random forest. The curve tells us that by picking the first 34% of irises as ranked by the model and setting the probability threshold at 0.276, we are going to retain a perfect lift.</p>
+<p><img src="../images/PerformanceCurve-Example1.png" alt=""></p>
+<p>In the second example, we show how to calibrate a model in the <strong>Performance Curve</strong> widget. We are using the <em>heart-disease</em> data. First, the widget requires a single model on the input. This means cross-validation from Test and Score won&rsquo;t work, but there are as many models as there are folds. To pass a single model, use the <em>Test on test data</em> option.</p>
+<p>In Performance Curve, we then observe the curve for the positive (1) class. The model has the optimal balance between precision and recall at the probability threshold of 0.475. We select this threshold and the model with the given threshold is sent to the output.</p>
+<p>We can use this model in <a href="../../evaluate/predictions/">Predictions</a> to predict on new data with the calibrated model. See also <a href="../../model/calibratedlearner/">Calibrated Learner</a> for more calibration options.</p>
+<p><img src="../images/PerformanceCurve-Example2.png" alt=""></p>
 
                 </div>
             </div>
