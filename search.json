@@ -968,9 +968,61 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Nov 25, 2022",
+	"date" : "Dec 13, 2022",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/dask/",
+	"title": "dask",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Dec 13, 2022",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Dec 13, 2022",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/2022/2022-12-13-dask-table/",
+	"title": "Orange you going to ask about dask?",
+	"content": "As great as Orange is at simplifying machine learning and bringing it closer to your everyday regular normal guy, it turns out, there are some major drawbacks that stem from it’s very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in t",
+	"image" : "",
+	"thumbImage" : "/blog_img/2022/2022-12-13_dask_data.png",
+	"longExcerpt" :  "What we are doing to improve Orange's data processing abilities, how we can tackle the huge amounts of data already available today, and what role dask plays in all this." ,
+	"author" : "Noah Novšak",
+	"date" : "Dec 13, 2022",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/widgets/",
+	"title": "widgets",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Dec 13, 2022",
+	"images" : null,
+	"kind" : "term",
 	"type" : "blog"
 },
 {
@@ -985,19 +1037,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Nov 25, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/2022/2022-25-11-clustering-videos/",
@@ -1062,19 +1101,6 @@
 	"date" : "Oct 10, 2022",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/widgets/",
-	"title": "widgets",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Oct 10, 2022",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

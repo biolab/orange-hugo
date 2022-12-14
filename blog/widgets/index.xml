@@ -6,7 +6,16 @@
     <description>Recent content in widgets on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orange you going to ask about dask?</title>
+      <link>/blog/2022/2022-12-13-dask-table/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022/2022-12-13-dask-table/</guid>
+      <description>As great as Orange is at simplifying machine learning and bringing it closer to your everyday regular normal guy, it turns out, there are some major drawbacks that stem from it&amp;rsquo;s very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in their right mind would want to throw a very large dataset at it.</description>
+    </item>
+    
     <item>
       <title>Quick previews in Orange widgets</title>
       <link>/blog/2022/2022-10-10-quick-preview/</link>

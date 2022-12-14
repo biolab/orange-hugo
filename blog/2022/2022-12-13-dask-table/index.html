@@ -1,0 +1,436 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Orange you going to ask about dask?</title>
+
+    
+    
+    <meta property="og:title" content="Orange you going to ask about dask?">
+    
+    
+    <meta property="og:description" content="A brief glimpse into the future of Orange and how we can effectively process large datasets with dask.">
+    
+    
+    <meta property="og:image" content="/blog_img/2022/2022-12-13_dask_data.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="/scss/main.58e8531e166454b3665e4c7132aa2f1762a5569c179efa4bbf56b266ce93bfac.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+
+    <body>
+
+    <header id="top" class="header navbar-fixed-top">
+  <div class="container" >
+      <h1 class="logo pull-left" >
+          <a id="header-orangelogo" href="/">
+              <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+          </a>
+      </h1>
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+         <div class="navbar-collapse collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+
+                  
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                      
+                  
+                
+              
+
+                  
+                      <li class="nav-search-wrapper">
+                        <div>                         
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
+                            id="search-btn-js" 
+                            role="button">
+                          </a>
+                          
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
+                            role="button" 
+                            href="/search/?q=">
+                          </a>
+
+                          <input type="text" 
+                                class="header-search-input jsonly search-widget-workflow nav-item" 
+                                id="search-header" 
+                                placeholder="Search" 
+                                tabindex="1" 
+                                onkeydown="check_key_header(event)" 
+                                hidden
+                                autofocus />
+                        </div>
+                      </li>
+                  
+              
+
+                  
+                  
+                      
+                  <li class="">
+                    <div class="donate-button transform_header donate_div">
+                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                    </div>
+                  </li>
+                      
+                  
+                
+              
+              </ul>
+          </div>
+      </nav>
+  </div>
+</header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/blog/dask">dask</a>
+          </span>
+          
+          <span class="category">
+            
+            <span> | </span>
+            
+            <a href="/blog/widgets">widgets</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Orange you going to ask about dask?</h1>
+          <span class="author-blog">
+            
+            By: Noah Novšak,
+            
+            Dec 13, 2022
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              <p>As great as Orange is at simplifying machine learning and bringing it closer to your <a href="https://www.youtube.com/watch?v=5PsnxDQvQpw">everyday regular normal guy</a>, it turns out, there are some major drawbacks that stem from it&rsquo;s very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in their right mind would want to throw a very large dataset at it. So most of Orange&rsquo;s components assume they can fit all the data into memory at once, process it on a single core, and expect results fairly quickly.</p>
+<p>You might see an issue here. What happens if I give Orange more data than my poor old laptop can handle? Well I&rsquo;ll just say I&rsquo;m very grateful <em>force quit</em> exists.</p>
+<p>The solution to our problem is <a href="https://www.dask.org">dask</a>. Another open-source library that enables efficient scaling of python code. As such, a project is currently under way, that aims to implement dask into Orange. So here I am today, to illustrate the changes that are coming to Orange in the near future.</p>
+<p>One particularly fun issue I&rsquo;ve been working on recently presents itself in Orange&rsquo;s most commonly used widget, the <a href="/widget-catalog/data/datatable/">Data Table</a>. As it stands Orange keeps all the data it&rsquo;s processing in memory. This means it&rsquo;s readily available and easy to use with little to no overhead. However, the downside of this is that we assume all the data <em>can</em> and <em>must</em> be stored in such a way.</p>
+<p><img src="/blog_img/2022/2022-12-13_dask_window.png" alt="viewing data through Orange"></p>
+<p>The first steps to fixing these unjust assumptions have already been implemented <a href="https://github.com/biolab/orange3/tree/dask">under the hood</a>. We have created a new way to store data using dask. The main advantage here is that instead of forcing all the data into memory we can instead, keep it on our hard drive until actually required for processing. And even then it won&rsquo;t be read all at once, but in manageable chunks. While this sounds great, tying it into Data Table directly poses more issues. Accessing data from the hard drive can of course be very slow.</p>
+<p>One important distinction, as we move towards storing data on a hard drive, is that more than processing the data, the bottleneck tends to be <em>reading</em> the data in the first place. Previously there was little to no overhead when all I wanted to do was read some data from memory and display it without any kind of processing. So the easiest way to do this was to loop over all the necessary cells one by one. But now that my data is not readily available in memory, it turns out that a much faster way to do this, is to replace all of these repeated calls to our hard drive by reading the data in big <em>chunks</em>.</p>
+<p><img src="/blog_img/2022/2022-12-13_dask_chunking.png" alt="reading in chunks"></p>
+<p>This approach does have another drawback though. Previously each element took an equal amount of time to read and display. Now we can quickly display everything from one chunk, but when we scroll past its edge and need to load a new one we have to wait a little while. The problem here is that until now we&rsquo;ve been assuming that our data is read and displayed instantly. So each time we have to wait for a new chunk our program gets stuck. From the users perspective this means that instead of a smooth scrolling experience, we get more of a <em>stuttery</em> one. And that&rsquo;s just very unpleasant.</p>
+<p>Luckily, there&rsquo;s a simple solution for this one too. In order to achieve a smoother scroll I have to let the table continue scrolling past the edge of my chunk, even though I don&rsquo;t know what it&rsquo;s supposed to display yet. Instead I let it temporarily show some empty cells while I ask dask to read the next chunk for me in the <em>background</em>. Once dask is finished preparing my data I can refresh my table with the actual values.</p>
+<p>This aproach actually ends up working surprisingly well. Now I can (in theory) use Orange to display arbitrarily large datasets without unwanted crashes or obscenely long wait times. It was also amazingly simple to implement, due to how well dask integrates with existing numpy code.</p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedatamining" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                                <li><a class="sitemap-sub" target="_blank" href="http://docs.biolab.si/3/development/">Getting Started</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 13 Dec </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-12-13-dask-table/">Orange you going to ask about dask?</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 25 Nov </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-25-11-clustering-videos/">Videos on hierarchical clustering</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 14 Nov </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2022/2022-11-14-orange-in-a-syncrotron/">Orange in a synchrotron</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
