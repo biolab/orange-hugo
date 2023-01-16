@@ -84,7 +84,7 @@ def save_widget_icon(
     shapeItem = item.shapeItem
 
     shapeSize = export_size
-    iconSize = QSize(export_size.width() * 3 / 4, export_size.height() * 3 / 4)
+    iconSize = QSize(int(export_size.width() * 3 / 4), int(export_size.height() * 3 / 4))
 
     rect = QRectF(
         QPointF(-shapeSize.width() / 2, -shapeSize.height() / 2), QSizeF(shapeSize)
