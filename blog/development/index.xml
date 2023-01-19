@@ -6,7 +6,18 @@
     <description>Recent content in development on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meet Trubar, a friend of Orange</title>
+      <link>/blog/2023/2023-01-17-trubar/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/2023-01-17-trubar/</guid>
+      <description>Orange has been translated to Slovenian language (no official release yet: rough corners are very much being polished). This will pave the way for translations into other languages.
+ What do we use? Gettext, right? Wrong. Orange is written in modern Python and uses f-strings for string interpolation. They are great, but don&amp;rsquo;t play well with gettext.
+Why gettext doesn&amp;rsquo;t cut it If you&amp;rsquo;ve never heard about gettext: gettext is a popular framework for software localization.</description>
+    </item>
+    
     <item>
       <title>Compiling Orange 2 on modern Linux</title>
       <link>/blog/2022/2022-01-10-orange2/</link>

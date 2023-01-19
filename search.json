@@ -968,10 +968,49 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Dec 13, 2022",
+	"date" : "Jan 17, 2023",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
+},
+{
+    "uri": "/blog/development/",
+	"title": "development",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 17, 2023",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2023/2023-01-17-trubar/",
+	"title": "Meet Trubar, a friend of Orange",
+	"content": "Orange has been translated to Slovenian language (no official release yet: rough corners are very much being polished). This will pave the way for translations into other languages.\n What do we use? Gettext, right? Wrong. Orange is written in modern Python and uses f-strings for string interpolation. They are great, but don’t play well with gettext.\nWhy gettext doesn’t cut it If you\u0026rs",
+	"image" : "",
+	"thumbImage" : "/blog_img/2023/2023-01-17-primoz-trubar.png",
+	"longExcerpt" :  "A new, general utility for localization of Python software, developed for Orange" ,
+	"author" : "Janez Demšar",
+	"date" : "Jan 17, 2023",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Jan 17, 2023",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
 },
 {
     "uri": "/blog/dask/",
@@ -985,19 +1024,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Dec 13, 2022",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/2022/2022-12-13-dask-table/",
@@ -1660,19 +1686,6 @@
 	"date" : "Jan 10, 2022",
 	"images" : null,
 	"kind" : "page",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/development/",
-	"title": "development",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 10, 2022",
-	"images" : null,
-	"kind" : "term",
 	"type" : "blog"
 },
 {

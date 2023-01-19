@@ -151,12 +151,18 @@
     <loc>/workflows/mental-health/</loc>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/dask/</loc>
-    <lastmod>2022-12-13T00:00:00+00:00</lastmod>
+    <loc>/blog/development/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2023/2023-01-17-trubar/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/dask/</loc>
     <lastmod>2022-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-12-13-dask-table/</loc>
@@ -310,9 +316,6 @@
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2022/2022-01-10-orange2/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/development/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/linux/</loc>
