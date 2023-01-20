@@ -991,7 +991,7 @@
 	"title": "Meet Trubar, a friend of Orange",
 	"content": "Orange has been translated to Slovenian language (no official release yet: rough corners are very much being polished). This will pave the way for translations into other languages.\n What do we use? Gettext, right? Wrong. Orange is written in modern Python and uses f-strings for string interpolation. They are great, but don’t play well with gettext.\nWhy gettext doesn’t cut it If you\u0026rs",
 	"image" : "",
-	"thumbImage" : "/blog_img/2023/2023-1-20-trubar.png",
+	"thumbImage" : "/blog_img/2023/2023-01-20-trubar-brez.png",
 	"longExcerpt" :  "A new, general utility for localization of Python software, developed for Orange" ,
 	"author" : "Janez Demšar",
 	"date" : "Jan 17, 2023",
