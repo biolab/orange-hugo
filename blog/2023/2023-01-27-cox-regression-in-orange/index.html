@@ -10,7 +10,7 @@
     <meta property="og:description" content="Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression.">
     
     
-    <meta property="og:image" content="/blog_img/2023/2023-01-21-cox-test-and-score.png">
+    <meta property="og:image" content="/blog_img/2023/2023-01-27-cox-test-and-score-thumbImage.png">
     
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -255,7 +255,7 @@
             
             By: Jaka Kokošar,
             
-            Jan 21, 2023
+            Jan 27, 2023
           </span>
         </div>
         <div class="entry-container remove-padding-l-r">
@@ -266,15 +266,15 @@
 
               <p>In our <a href="/blog/2022/2022-05-25-KaplanMeier/">previous blog post</a>, we discussed the basic concepts of survival analysis, the types of problems it aims to solve and briefly introduced the Kaplan-Meier method. We used the <a href="/widget-catalog/survival-analysis/kaplan-meier-plot/">Kaplan-Meier widget</a> to estimate a population&rsquo;s survival probability over time, taking into account a specific covariate. However, we did not account for the impact of other covariates on the survival outcome.</p>
 <p>When studying patient outcomes in clinical settings, it is essential to consider multiple factors that describe patients' conditions and may affect survival. The Cox regression model is widely used in survival analysis. It estimates the hazard ratio of an event of interest while adjusting for the effect of included covariates. For those more interested, we suggest the article by <a href="https://www.nature.com/articles/6601119">Bradburn et al.</a> on the topic of analyzing survival data with multiple covariates.</p>
-<a href="/blog_img/2023/2023-01-21-cox-regression.png" class="blog-image_"> 
-      <img src="/blog_img/2023/2023-01-21-cox-regression.png" class="window-screenshot" />
+<a href="/blog_img/2023/2023-01-27-cox-regression.png" class="blog-image_"> 
+      <img src="/blog_img/2023/2023-01-27-cox-regression.png" class="window-screenshot" />
  </a>
 
 
 <p>The illustration above demonstrates how to perform a Cox regression analysis by linking the German Breast Cancer Study Group 2 data from the <strong>Datasets</strong> widget to the <a href="/widget-catalog/survival-analysis/cox-regression/">Cox regression widget</a> and displaying the results in a <strong>Data table</strong>. The documentation of <a href="https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#interpretation">Lifelines</a>, the python library utilized by the survival widgets in Orange, provides a clear explanation of how to interpret the presented results.</p>
 <p>The survival analysis <a href="https://github.com/biolab/orange3-survival-analysis/">add-on</a> in Orange seamlessly integrates with the rest of the widgets, enabling the construction of standard Orange workflows. For example, in the image below, we demonstrate how we can use the cross-validation strategy to test and score the Cox regression model based on the Concordance index as a measure of predictive accuracy.</p>
-<a href="/blog_img/2023/2023-01-21-cox-test-and-score.png" class="blog-image_"> 
-      <img src="/blog_img/2023/2023-01-21-cox-test-and-score.png" class="window-screenshot" />
+<a href="/blog_img/2023/2023-01-27-cox-test-and-score.png" class="blog-image_"> 
+      <img src="/blog_img/2023/2023-01-27-cox-test-and-score.png" class="window-screenshot" />
  </a>
 
 
@@ -396,9 +396,9 @@ s.setAttribute('data-timestamp', +new Date());
                             
                             <li>
                             <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 21 Jan </a></div>
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
                             <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-01-21-cox-regression-in-orange/">Cox regression in Orange</a>
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-01-27-cox-regression-in-orange/">Cox regression in Orange</a>
                             </div>
                             </div>
                             </li>

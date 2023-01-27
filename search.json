@@ -968,7 +968,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 21, 2023",
+	"date" : "Jan 27, 2023",
 	"images" : null,
 	"kind" : "section",
 	"type" : "blog"
@@ -981,20 +981,20 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 21, 2023",
+	"date" : "Jan 27, 2023",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
 },
 {
-    "uri": "/blog/2023/2023-01-21-cox-regression-in-orange/",
+    "uri": "/blog/2023/2023-01-27-cox-regression-in-orange/",
 	"title": "Cox regression in Orange",
 	"content": "In our previous blog post, we discussed the basic concepts of survival analysis, the types of problems it aims to solve and briefly introduced the Kaplan-Meier method. We used the Kaplan-Meier widget to estimate a population’s survival probability over time, taking into account a specific covariate. However, we did not account for the impact of other covariates on the survival outcome.\nWhen ",
 	"image" : "",
-	"thumbImage" : "/blog_img/2023/2023-01-21-cox-test-and-score.png",
+	"thumbImage" : "/blog_img/2023/2023-01-27-cox-test-and-score-thumbImage.png",
 	"longExcerpt" :  "Orange built-in methods for testing and scoring the predictive models now support survival-related models like Cox regression." ,
 	"author" : "Jaka Kokošar",
-	"date" : "Jan 21, 2023",
+	"date" : "Jan 27, 2023",
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
@@ -1007,7 +1007,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 21, 2023",
+	"date" : "Jan 27, 2023",
 	"images" : null,
 	"kind" : "home",
 	"type" : "page"
@@ -1020,7 +1020,7 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 21, 2023",
+	"date" : "Jan 27, 2023",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"

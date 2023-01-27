@@ -6,13 +6,13 @@
     <description>Recent content in cox regression on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/cox-regression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/cox-regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cox regression in Orange</title>
-      <link>/blog/2023/2023-01-21-cox-regression-in-orange/</link>
-      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <link>/blog/2023/2023-01-27-cox-regression-in-orange/</link>
+      <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2023/2023-01-21-cox-regression-in-orange/</guid>
+      <guid>/blog/2023/2023-01-27-cox-regression-in-orange/</guid>
       <description>In our previous blog post, we discussed the basic concepts of survival analysis, the types of problems it aims to solve and briefly introduced the Kaplan-Meier method. We used the Kaplan-Meier widget to estimate a population&amp;rsquo;s survival probability over time, taking into account a specific covariate. However, we did not account for the impact of other covariates on the survival outcome.
 When studying patient outcomes in clinical settings, it is essential to consider multiple factors that describe patients&#39; conditions and may affect survival.</description>
     </item>
