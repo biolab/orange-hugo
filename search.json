@@ -961,6 +961,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/bioinformatics/",
+	"title": "bioinformatics",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Feb 23, 2023",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
     "uri": "/blog/",
 	"title": "Blogs",
 	"content": "",
@@ -968,9 +981,35 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Jan 27, 2023",
+	"date" : "Feb 23, 2023",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Feb 23, 2023",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/2023/2023-02-23-ssgsea/",
+	"title": "Single-sample GSEA is now in Orange",
+	"content": "In the world of biology, everything revolves around genes. They carry information about the essential functions of cells and create mRNA molecules that execute these functions. Biologists like to extract information about gene expression by simply counting the number of mRNA molecules produced by genes. There are more than 20,000 genes in the human genome, which makes the expression matrix very wi",
+	"image" : "",
+	"thumbImage" : "/blog_img/2023/2023-02-23-ssgsea.png",
+	"longExcerpt" :  "Single-sample extension of Gene Set Enrichment Analysis now in Bioinformatics add-on." ,
+	"author" : "Martin Špendl",
+	"date" : "Feb 23, 2023",
+	"images" : null,
+	"kind" : "page",
 	"type" : "blog"
 },
 {
@@ -998,19 +1037,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 27, 2023",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/survival-analysis/",
@@ -3114,19 +3140,6 @@
 	"longExcerpt" :  "" ,
 	"author" : "",
 	"date" : "Jul 26, 2019",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/bioinformatics/",
-	"title": "bioinformatics",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jul 25, 2019",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"

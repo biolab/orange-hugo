@@ -6,7 +6,16 @@
     <description>Recent content in bioinformatics on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single-sample GSEA is now in Orange</title>
+      <link>/blog/2023/2023-02-23-ssgsea/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/2023-02-23-ssgsea/</guid>
+      <description>In the world of biology, everything revolves around genes. They carry information about the essential functions of cells and create mRNA molecules that execute these functions. Biologists like to extract information about gene expression by simply counting the number of mRNA molecules produced by genes. There are more than 20,000 genes in the human genome, which makes the expression matrix very wide. Biologists like identifying important genes in different processes and grouping them into gene sets.</description>
+    </item>
+    
     <item>
       <title>Orange at ISMB/ECCB 2019</title>
       <link>/blog/2019/2019-07-25-scorange/</link>
