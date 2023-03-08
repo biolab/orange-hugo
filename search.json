@@ -818,6 +818,19 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/workflows/text-semantic-viewer/",
+	"title": "Semantic search",
+	"content": "We can find relevant parts of a document by searching for exact words or parts of documents with similar meanings. The Semantic Viewer widget in this workflow searches for pertinent sentences of the documents by comparing the meaning of words from the Word List widget to the meaning of sentences in the text via SBERT text embeddings. The widget ranks documents by scores measuring their relevance, ",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "We can find relevant parts of a document by searching for exact words or parts of documents with similar meanings. The Semantic Viewer widget in this workflow searches for pertinent sentences of the documents by comparing the meaning of words from the Word List widget to the meaning of sentences in the text via SBERT text embeddings. The widget ranks documents by scores measuring their relevance, " ,
+	"author" : "",
+	"date" : "Jan 1, 0001",
+	"images" : ["/workflow_images/text-semantic-search.png","/workflow_images/text-semantic-search-widget.png"],
+	"kind" : "page",
+	"type" : "workflows"
+},
+{
     "uri": "/workflows/text-keyword-extraction/",
 	"title": "Keyword Extraction from a Set of Text Documents",
 	"content": "The Extract Keywords widget can characterize a set of textual documents. In this workflow, we load the documents from the server, preprocess them and embed them in the vector space, and display a semantic document map in the t-SNE widget. In this widget, we can select a set of similar documents and then characterize them through keyword extraction. Extract keywords support different inference tech",

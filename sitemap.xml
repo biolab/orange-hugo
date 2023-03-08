@@ -128,6 +128,8 @@
   </url><url>
     <loc>/workflows/text-semantic-word-map/</loc>
   </url><url>
+    <loc>/workflows/text-semantic-viewer/</loc>
+  </url><url>
     <loc>/workflows/text-keyword-extraction/</loc>
   </url><url>
     <loc>/workflows/text-keyword-based-scoring/</loc>

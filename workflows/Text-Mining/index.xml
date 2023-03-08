@@ -79,6 +79,15 @@
     </item>
     
     <item>
+      <title>Semantic search</title>
+      <link>/workflows/text-semantic-viewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workflows/text-semantic-viewer/</guid>
+      <description>We can find relevant parts of a document by searching for exact words or parts of documents with similar meanings. The Semantic Viewer widget in this workflow searches for pertinent sentences of the documents by comparing the meaning of words from the Word List widget to the meaning of sentences in the text via SBERT text embeddings. The widget ranks documents by scores measuring their relevance, shows selected documents, and highlights the relevant parts.</description>
+    </item>
+    
+    <item>
       <title>Keyword Extraction from a Set of Text Documents</title>
       <link>/workflows/text-keyword-extraction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
