@@ -6,7 +6,16 @@
     <description>Recent content in development on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interval Sliders</title>
+      <link>/blog/2023/2023-03-10-interval-slider/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/2023-03-10-interval-slider/</guid>
+      <description>This post is not about the Heat Map widget. It&amp;rsquo;s about the new double-handled slider at the top of the heatmap. Not about what it does, but about how it does it. The post should be interesting to readers with some knowledge of Qt. Others, who won&amp;rsquo;t understand it, are expected to be impressed by the complexity of implementing something as simple as adding another handle to a slider. On the other hand (wait for the pun!</description>
+    </item>
+    
     <item>
       <title>Meet Trubar, a friend of Orange</title>
       <link>/blog/2023/2023-01-17-trubar/</link>

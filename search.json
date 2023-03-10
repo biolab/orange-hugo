@@ -974,6 +974,58 @@
 	"type" : "workflows"
 },
 {
+    "uri": "/blog/",
+	"title": "Blogs",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 10, 2023",
+	"images" : null,
+	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/development/",
+	"title": "development",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 10, 2023",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/2023/2023-03-10-interval-slider/",
+	"title": "Interval Sliders",
+	"content": " This post is not about the Heat Map widget. It’s about the new double-handled slider at the top of the heatmap. Not about what it does, but about how it does it. The post should be interesting to readers with some knowledge of Qt. Others, who won’t understand it, are expected to be impressed by the complexity of implementing something as simple as adding another handle to a slider. On",
+	"image" : "",
+	"thumbImage" : "/blog_img/2023/2023-03-10-interval-slider-thumb.png",
+	"longExcerpt" :  "What does it take to add a second handle to a slider." ,
+	"author" : "Janez Demšar",
+	"date" : "Mar 10, 2023",
+	"images" : null,
+	"kind" : "page",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Mar 10, 2023",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
     "uri": "/blog/bioinformatics/",
 	"title": "bioinformatics",
 	"content": "",
@@ -985,32 +1037,6 @@
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"
-},
-{
-    "uri": "/blog/",
-	"title": "Blogs",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Feb 23, 2023",
-	"images" : null,
-	"kind" : "section",
-	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Feb 23, 2023",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/2023/2023-02-23-ssgsea/",
@@ -1060,19 +1086,6 @@
 	"longExcerpt" :  "" ,
 	"author" : "",
 	"date" : "Jan 27, 2023",
-	"images" : null,
-	"kind" : "term",
-	"type" : "blog"
-},
-{
-    "uri": "/blog/development/",
-	"title": "development",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Jan 17, 2023",
 	"images" : null,
 	"kind" : "term",
 	"type" : "blog"

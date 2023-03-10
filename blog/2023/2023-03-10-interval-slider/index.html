@@ -1,0 +1,481 @@
+<html>    
+    <head>
+    <title>Orange Data Mining - Interval Sliders</title>
+
+    
+    
+    <meta property="og:title" content="Interval Sliders">
+    
+    
+    <meta property="og:description" content="What does it take to add a second handle to a slider.">
+    
+    
+    <meta property="og:image" content="/blog_img/2023/2023-03-10-interval-slider-thumb.png">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Data Mining Toolbox">
+    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
+    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="/scss/main.58e8531e166454b3665e4c7132aa2f1762a5569c179efa4bbf56b266ce93bfac.css">
+    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
+
+    <noscript>
+        <style>
+            .jsonly { display: none !important; }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-528382-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
+    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/header_helpers.js"></script>
+
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
+    
+
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <script type="text/javascript">
+      $( document ).ready( function () {
+
+        $('a').off("click").click( function ( event ) {
+           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
+        });
+
+        $('[class *= trackClicks_]').off("click").click( function ( event ) {
+           var classList = $(this).attr('class').split(/\s+/);
+           var trackname = "";
+           $.each(classList, function(index, item) {
+             if (item.indexOf('trackClicks_') === 0) {
+                trackname = item;
+             }
+           });
+           ga('send', 'event', "a", event.type, trackname, 1 );
+        });
+      });
+    </script>
+
+</head>
+
+    <body>
+
+    <header id="top" class="header navbar-fixed-top">
+  <div class="container" >
+      <h1 class="logo pull-left" >
+          <a id="header-orangelogo" href="/">
+              <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
+          </a>
+      </h1>
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+         <div class="navbar-collapse collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+
+                  
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
+                      
+                  
+                
+              
+
+                  
+                  
+                      
+                      <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
+                      
+                  
+                
+              
+
+                  
+                      <li class="nav-search-wrapper">
+                        <div>                         
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
+                            id="search-btn-js" 
+                            role="button">
+                          </a>
+                          
+                          
+                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
+                            role="button" 
+                            href="/search/?q=">
+                          </a>
+
+                          <input type="text" 
+                                class="header-search-input jsonly search-widget-workflow nav-item" 
+                                id="search-header" 
+                                placeholder="Search" 
+                                tabindex="1" 
+                                onkeydown="check_key_header(event)" 
+                                hidden
+                                autofocus />
+                        </div>
+                      </li>
+                  
+              
+
+                  
+                  
+                      
+                  <li class="">
+                    <div class="donate-button transform_header donate_div">
+                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
+                    </div>
+                  </li>
+                      
+                  
+                
+              
+              </ul>
+          </div>
+      </nav>
+  </div>
+</header>
+
+    <div id="main">
+        <div class="container-fluid clear-top">
+            
+<div id="overflow-container" class="overflow-container">
+  <div id="loop-container" class="offset-header container">
+    
+      <div
+        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
+        
+        <div class="entry-meta remove-padding-l-r">
+          <span>Categories: </span>
+          
+          <span class="category">
+            
+            <a href="/blog/development">development</a>
+          </span>
+          
+        </div>
+        <div class='entry-header remove-padding-l-r'>
+          <h1 class='entry-title'> Interval Sliders</h1>
+          <span class="author-blog">
+            
+            By: Janez Demšar,
+            
+            Mar 10, 2023
+          </span>
+        </div>
+        <div class="entry-container remove-padding-l-r">
+          <div class="entry-content md">
+            <article>
+              <div id="blog_images_">
+
+
+              <a href="/blog_img/2023/2023-03-10-heatmap.png" class="blog-image_"> 
+      <img src="/blog_img/2023/2023-03-10-heatmap.png" class="window-screenshot" />
+ </a>
+
+
+<p>This post is not about the Heat Map widget. It&rsquo;s about the new double-handled slider at the top of the heatmap. Not about what it does, but about how it does it. The post should be interesting to readers with some knowledge of Qt. Others, who won&rsquo;t understand it, are expected to be impressed by the complexity of implementing something as simple as adding another handle to a slider. On the other hand (wait for the pun!), this complexity is not so surprising: attaching another, fully functional hand to a human would be quite a feat, too.</p>
+<h2 id="why-do-we-need-it">Why do we need it?</h2>
+<p>That is, why we need another handle on slider, not another hand. (Though an extra hand would be useful, too - how cool would it be to take a sip of tea while typing?)</p>
+<p>A user posted <a href="https://github.com/biolab/orange3/issues/6323">an issue</a>, which he called &ldquo;<em>Not a problem. More a frustration</em>&rdquo;. Some widgets from the Text add-on allow the user to specify a range of values, for instance for filtering, which they do with a pair of spin boxes (those controls where you can enter a number manually or change it by pressing little up and down button on their right) or a pair of sliders. He suggested using a single slider with two handles. He noted that Orange currently doesn&rsquo;t have such a control in its repertoire.</p>
+<p>With a bit of exaggeration, I use such sliders almost daily to specify the price range when ordering bicycle parts, tools and clothes. While I&rsquo;m no stranger to such sliders, I don&rsquo;t particularly like them. Entering numbers manually is much easier. But then &hellip; they could be useful in cases where numbers are not intepretable, so sliding a handle is more natural than guessing random numbers. A good example is setting scales for color palettes: the user has no idea which particular number will make the image look good.</p>
+<h2 id="drawing-native-looking-widgets">Drawing native-looking widgets</h2>
+<p>Problem: Qt doesn&rsquo;t have such widget.</p>
+<p>Qt is great - consistent, fast, powerful, and it has native look on all platforms. But if you want to make any small change to some element, its painting falls back to a Qt-based implementation which looks &hellip; not only out of place but, well, ugly. See what becomes of a push button if you would, for whatever reason, want to increase its font size.</p>
+<a href="/blog_img/2023/2023-03-10-ugly-button.png" class="blog-image_"> 
+      <img src="/blog_img/2023/2023-03-10-ugly-button.png" class="window-screenshot" />
+ </a>
+
+
+<p>So, can we create a double-handled slider that looks as it should? Not with some ugly square-ish handles?</p>
+<p>OP provided us with a <a href="https://stackoverflow.com/a/62665367">link</a> to implementation of such a slider. Our version is different, but based on the same trick.</p>
+<p>Widget is (re)painted upon receiving a <a href="https://doc.qt.io/qt-6/qwidget.html#paintEvent"><code>paintEvent</code></a>. It must construct a painter, initialize it with proper options and paint whatever needs to be painted. <code>QPushButton</code>, <code>QCheckBox</code>, <code>QLineEdit</code> &hellip; and many other widgets must look different on different platforms. The actual painting is thus not coded within widgets, but relegated to <code>QStyle</code>. <code>QStyle</code> is however an class: the actual <code>QStyle</code> in use by the application is <a href="https://doc.qt.io/qt-6/qstyle.html#details">one of <code>QStyle</code>&rsquo;s subclasses</a> for different platforms and looks.</p>
+<p>For instance, <code>QPushButton.paintEvent</code> just calls <code>QStyle</code>&rsquo;s <code>drawControl(QStyle.CE_PushButton, option, painter)</code>, where <code>CE_PushButton</code> is a constant giving the control to paint, option is an instance of <code>QStyleOptionButton</code> with the necessary data (the icon, text and button&rsquo;s features) and painter is an ordinary <code>QPainter</code>. (The <a href="https://github.com/radekp/qt/blob/master/src/gui/widgets/qpushbutton.cpp#L444">actual code</a> uses a convenience class <code>QStylePainter</code>). <code>drawControl</code> then draws all elements of the button &ndash; its text, icon, any frames, borders.</p>
+<p>Unlike <code>QPushButton</code>, <code>QSlider</code> is a complex control, consisting of subcontrols that represent the slider&rsquo;s groove, tickmarks and handle. Complex controls are not painted through <code>QStyle.drawControl</code> but through another method, <code>drawComplexControl</code>. Its signature is similar, but <code>option</code> has a mask <code>subcontrols</code>, which define the active subcontrols. Inactive controls are not painted and the user can&rsquo;t interact with them.</p>
+<p>The trick to paint a two-handled slider is to call <code>drawComplexControl</code> multiple times: first to draw the groove and tickmarks, and then twice, once for each handle. In the code fragment below, <code>self.opt</code> is a <code>QSliderOption</code>. Method <code>drawComplexControl</code> will put a handle at the position stored in <code>self.opt.sliderPosition</code>, hence we iterate it through <code>self._pos</code>, which stores the positions of our two handles.</p>
+<pre tabindex="0"><code>        # Draw groove and tickmarks
+        self.opt.subControls = QStyle.SC_SliderGroove | QStyle.SC_SliderTickmarks
+        self.style().drawComplexControl(QStyle.CC_Slider, self.opt, painter)
+
+        # Draw handles
+        self.opt.subControls = QStyle.SC_SliderHandle
+        for self.opt.sliderPosition in self._pos:
+            self.style().drawComplexControl(QStyle.CC_Slider, self.opt, painter)
+</code></pre><p>The <a href="https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L206">code</a> adds some overhead (initializing options) and marks the part of the groove between the two handles in blue.</p>
+<h2 id="controlling-controls">Controlling controls</h2>
+<p>Drawing a native looking widget is only one part of the job. What happens when the user clicks it? The widget receives a <code>mousePressEvent</code> - but which part of the widget was clicked? This is known only by the one who&rsquo;s drawn the control: <code>QStyle</code>.</p>
+<p><code>QStyle</code> implements several methods needed for interaction with complex controls. One is already used in <code>paintEvent</code>: we call <code>QStyle</code>&rsquo;s <code>subControlRect(QStyle.CC_Slider, self.opt, QStyle.SC_SliderHandle)</code> to <a href="https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L223">obtain the logical coordinates of each handle</a> in order to mark the interval between them.</p>
+<pre tabindex="0"><code>        args = QStyle.CC_Slider, self.opt, QStyle.SC_SliderHandle
+        self.opt.sliderPosition = self._pos[0]
+        x_left_handle = self.style().subControlRect(*args).right()
+        self.opt.sliderPosition = self._pos[1]
+        x_right_handle = self.style().subControlRect(*args).left()
+</code></pre><p>In <code>mousePressEvent</code>, we call <code>hitTestComplexControl(QStyle.CC_Slider, self.opt, event.pos(), self)</code>, which tells us which subcontrol (if any) of the slider contains <code>event.pos()</code>. As in <code>paintEvent</code>, we set <code>self.opt.sliderPosition</code> to each handle&rsquo;s position in turn, to see if <code>hitTestComplexControl</code> returns <code>QStyle.SC_SliderHandle</code> for any of them.</p>
+<pre tabindex="0"><code>    def mousePressEvent(self, event: QMouseEvent) -&gt; None:
+        self._dragged = self.NoHandle
+        args = (QStyle.CC_Slider, self.opt, event.pos(), self)
+        self.opt.sliderPosition = self._pos[0]
+        if self.style().hitTestComplexControl(*args) == QStyle.SC_SliderHandle:
+            self._dragged |= self.LowHandle
+        self.opt.sliderPosition = self._pos[1]
+        if self.style().hitTestComplexControl(*args) == QStyle.SC_SliderHandle:
+            self._dragged |= self.HighHandle
+        if self._dragged != self.NoHandle:
+            self.sliderPressed.emit(self._dragged)
+</code></pre><p>The <a href="https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L156">code</a> then records which handles are being dragged (if they overlap, both are marked as being dragged <a href="https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L175">until we see whether the user drags left or right</a>).</p>
+<p>The third method of <code>QStyle</code>, which we use in <a href="https://github.com/biolab/orange3/blob/5330c9fb5ed8dc08ed20350e21b026fbe54b6320/Orange/widgets/utils/intervalslider.py#L169"><code>mouseEvent</code></a> determines the slider value from handles position - which is again known only by the class that paints a platform-dependent slider. <code>sliderValueFromPosition</code> is given the slider span, (mouse) position and the total bounding rectangle of the slider, and returns the slider&rsquo;s value for that position.</p>
+<pre tabindex="0"><code>        distance = self.opt.maximum - self.opt.minimum
+        pos = self.style().sliderValueFromPosition(
+            0, distance, event.pos().x(), self.rect().width())
+</code></pre><h2 id="how-do-we-use-interval-sliders">How do we use interval sliders?</h2>
+<p>Using interval sliders is as trivial as using ordinary <code>QSliders</code>: initialize it with starting position, interval and options (if any), and connect the necessary signals.</p>
+<pre tabindex="0"><code>        slider = IntervalSlider(low, high * 100, minimum=0, maximum=100)
+        self.slider.intervalChanged.connect(self.__on_slider_moved)
+</code></pre><p>Done.</p>
+
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://orange-4.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#blog_images_').lightGallery({
+        thumbnail: false,
+        selector: 'a:has(img)',
+        width: '60%',
+        mode: 'lg-fade',
+        counter: false,
+        download: false,
+        enableSwipe: false,
+        enableDrag: false,
+        speed: 1,
+        useLeft: true,
+        hideBarsDelay: 1000
+    });
+    });
+</script>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Orange</div></b></li>
+                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
+                                <li><a class="sitemap-sub" href="/license/">License</a></li>
+                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
+                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
+                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Download</div></li>
+                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
+                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 sitemap-group">
+
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Community</div></b></li>
+                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedatamining" target="_blank">Facebook</a></li>
+                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
+                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
+                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
+                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
+                            <ul class="links list-sitemap">
+                                <li><div class="sitemap-cat">Documentation</div></li>
+                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
+                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
+                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 sitemap-group">
+                            <ul class="links list-sitemap">
+                                <li><b><div class="sitemap-cat">Developers</div></b></li>
+                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
+                                <li><a class="sitemap-sub" target="_blank" href="http://docs.biolab.si/3/development/">Getting Started</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
+                    <div class="latest-blog-posts">
+                        <ul class="links list-sitemap" style="padding-bottom: 10px">
+                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 10 Mar </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-03-10-interval-slider/">Interval Sliders</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 23 Feb </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-02-23-ssgsea/">Single-sample GSEA is now in Orange</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                            <li>
+                            <div class="row">
+                            <div class="col-md-2"><a class="sitemap-sub"> 27 Jan </a></div>
+                            <div class="col-md-10">
+                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-01-27-cox-regression-in-orange/">Cox regression in Orange</a>
+                            </div>
+                            </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row footer-pad">
+                <div class="col-xs-12">
+                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
