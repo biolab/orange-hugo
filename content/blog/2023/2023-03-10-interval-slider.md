@@ -1,17 +1,17 @@
 +++
 author = "Janez Demšar"
-date = "2023-02-25"
+date = "2023-03-10"
 draft = false
 title = "Interval Sliders"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-01-20-trubar-brez.png"
-frontPageImage = "/blog_img/2023/2023-01-20-trubar-brez.png"
+thumbImage = "/blog_img/2023/2023-03-10-interval-slider-thumb.png"
+frontPageImage = "/blog_img/2023/2023-03-10-interval-slider-thumb.png"
 blog = ["development"]
 shortExcerpt = "What does it take to add a second handle to a slider."
 longExcerpt = "What does it take to add a second handle to a slider."
 +++
 
-{{< window-screenshot src="/blog_img/2023/2023-02-25-heatmap.png" >}} 
+{{< window-screenshot src="/blog_img/2023/2023-03-10-heatmap.png" >}} 
 
 This post is not about the Heat Map widget. It's about the new double-handled slider at the top of the heatmap. Not about what it does, but about how it does it. The post should be interesting to readers with some knowledge of Qt. Others, who won't understand it, are expected to be impressed by the complexity of implementing something as simple as adding another handle to a slider. On the other hand (wait for the pun!), this complexity is not so surprising: attaching another, fully functional hand to a human would be quite a feat, too.
 
@@ -30,7 +30,7 @@ Problem: Qt doesn't have such widget.
 
 Qt is great - consistent, fast, powerful, and it has native look on all platforms. But if you want to make any small change to some element, its painting falls back to a Qt-based implementation which looks ... not only out of place but, well, ugly. See what becomes of a push button if you would, for whatever reason, want to increase its font size.
 
-{{< window-screenshot src="/blog_img/2023/2023-02-25-ugly-button.png" >}} 
+{{< window-screenshot src="/blog_img/2023/2023-03-10-ugly-button.png" >}} 
 
 So, can we create a double-handled slider that looks as it should? Not with some ugly square-ish handles?
 
