@@ -24,9 +24,6 @@ class WidgetCatalog:
         self.categories = categories
         self.doc_dir = doc_dir
 
-        QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
-        QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
-        QApplication.setAttribute(Qt.AA_ShareOpenGLContexts)
         self.app = QApplication([])
 
         print("Generating widget repository")
