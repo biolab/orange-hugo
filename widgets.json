@@ -1854,7 +1854,11 @@
    {
     "title": "Geocoding",
     "category": "Geo",
-    "keywords": [],
+    "keywords": [
+     "geocoding",
+     "geo",
+     "coding"
+    ],
     "background": "#a0eaa0",
     "icon": "widget-icons/Geo-Geocoding.png",
     "url": "geocoding"
@@ -1862,7 +1866,11 @@
    {
     "title": "Geo Map",
     "category": "Geo",
-    "keywords": [],
+    "keywords": [
+     "geo map",
+     "map",
+     "geo"
+    ],
     "background": "#a0eaa0",
     "icon": "widget-icons/Geo-Geo Map.png",
     "url": "geomap"
@@ -1870,7 +1878,10 @@
    {
     "title": "Choropleth Map",
     "category": "Geo",
-    "keywords": [],
+    "keywords": [
+     "choropleth map",
+     "geo"
+    ],
     "background": "#a0eaa0",
     "icon": "widget-icons/Geo-Choropleth Map.png",
     "url": "choroplethmap"
@@ -1879,6 +1890,7 @@
     "title": "Geo Transform",
     "category": "Geo",
     "keywords": [
+     "geo transform",
      "transform",
      "geo"
     ],
