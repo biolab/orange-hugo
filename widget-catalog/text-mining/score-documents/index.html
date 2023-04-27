@@ -1979,6 +1979,7 @@
 <li>If <em>Send Automatically</em>, changes are communicated automatically. Alternatively press <em>Send</em>.</li>
 <li>Filter documents based on the document title in the first column. Below is the table with the document titles in the first column and scores in other columns.</li>
 </ol>
+<p><strong>Note</strong>: Score Documents will apply preprocessing from the input Corpus to words before scoring.</p>
 <h2 id="example">Example</h2>
 <p>Score Documents is used to find documents that are semantically similar to the input word list. In the example below, we are using the <em>book-excerpts</em> corpus from the <a href="../corpus-widget/">Corpus</a> widget.</p>
 <p>We pass the corpus to <a href="../preprocesstext/">Preprocess Text</a>, where we lowercase the text, split it into words with tokenization, use Lemmagen lemmatizer to cover tokens to their base form and finally remove stopwords.</p>
