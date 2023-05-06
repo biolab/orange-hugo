@@ -1959,20 +1959,14 @@
 </ul>
 <p>The <strong>Feature Statistics</strong> widget provides a quick way to inspect and find interesting features in a given data set.</p>
 <p><img src="../images/feature_statistics-stamped.png" alt=""></p>
-<p>The Feature Statistics widget on the <em>heart-disease</em> data set. The feature <em>exerc ind ang</em> was manually changed to a meta variable for illustration purposes.</p>
+<p>The Feature Statistics widget on the <em>heart-disease</em> data set.</p>
 <ol>
-<li>Info on the current data set size and number and types of features</li>
-<li>The histograms on the right can be colored by any feature. If the selected feature is categorical, a discrete color palette is used (as shown in the example). If the selected feature is numerical, a continuous color palette is used. The table on the right contains statistics about each feature in the data set. The features can be sorted by each statistic, which we now describe.</li>
-<li>The feature type - can be one of categorical, numeric, time and string.</li>
+<li>The feature type - can be categorical, numeric, time and string.</li>
 <li>The name of the feature.</li>
-<li>A histogram of feature values. If the feature is numeric, we appropriately discretize the values into bins. If the feature is categorical, each value is assigned its own bar in the histogram.</li>
-<li>The central tendency of the feature values. For categorical features, this is the <a href="https://en.wikipedia.org/wiki/Mode_(statistics)">mode</a>. For numeric features, this is <a href="https://en.wikipedia.org/wiki/Mean">mean</a> value.</li>
-<li>The dispersion of the feature values. For categorical features, this is the <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">entropy</a> of the value distribution. For numeric features, this is the <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a>.</li>
-<li>The minimum value. This is computed for numerical and ordinal categorical features.</li>
-<li>The maximum value. This is computed for numerical and ordinal categorical features.</li>
-<li>The number of missing values in the data.</li>
+<li>The histogram showing the distribution of feature&rsquo;s values. Values of numeric features are split into bins.</li>
+<li>Further columns show different statistics. Mean, minimal and maximal value are computed only for numeric features. Mode shows the most common value for numeric or categorical feature. Dispersion shows <a href="https://en.wikipedia.org/wiki/Coefficient_of_variation">coefficient of variation</a> for numeric features, and <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">entropy</a> for categorical.</li>
+<li>The bars in the histogram can be further split by value of another variable. The default choice is the target variable, but the user can change this to an arbitrary feature or none.</li>
 </ol>
-<p>Notice also that some rows are colored differently. White rows indicate regular features, gray rows indicate class variables and the lighter gray indicates meta variables.</p>
 <h2 id="example">Example</h2>
 <p>The Feature Statistics widget is most often used after the <a href="../../data/file/">File</a> widget to inspect and find potentially interesting features in the given data set. In the following examples, we use the <em>heart-disease</em> data set.</p>
 <p><img src="../images/feature_statistics_workflow.png" alt=""></p>

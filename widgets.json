@@ -19,6 +19,7 @@
     "title": "CSV File Import",
     "category": "Data",
     "keywords": [
+     "csv file import",
      "file",
      "load",
      "read",
@@ -33,8 +34,10 @@
     "title": "Datasets",
     "category": "Data",
     "keywords": [
+     "datasets",
      "online",
-     "data sets"
+     "data",
+     "sets"
     ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Datasets.png",
@@ -44,6 +47,7 @@
     "title": "SQL Table",
     "category": "Data",
     "keywords": [
+     "sql table",
      "load"
     ],
     "background": "#FFD39F",
@@ -53,7 +57,10 @@
    {
     "title": "Data Table",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "data table",
+     "view"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Data Table.png",
     "url": "datatable"
@@ -62,6 +69,7 @@
     "title": "Paint Data",
     "category": "Data",
     "keywords": [
+     "paint data",
      "create",
      "draw"
     ],
@@ -73,6 +81,7 @@
     "title": "Data Info",
     "category": "Data",
     "keywords": [
+     "data info",
      "information",
      "inspect"
     ],
@@ -83,7 +92,10 @@
    {
     "title": "Rank",
     "category": "Data",
-    "keywords": [],
+    "keywords": [
+     "rank",
+     "filter"
+    ],
     "background": "#FFD39F",
     "icon": "widget-icons/Data-Rank.png",
     "url": "rank"
@@ -92,6 +104,7 @@
     "title": "Edit Domain",
     "category": "Data",
     "keywords": [
+     "edit domain",
      "rename",
      "drop",
      "reorder",
@@ -121,6 +134,7 @@
     "title": "Save Data",
     "category": "Data",
     "keywords": [
+     "save data",
      "export"
     ],
     "background": "#FFD39F",
@@ -136,6 +150,7 @@
     "title": "Data Sampler",
     "category": "Transform",
     "keywords": [
+     "data sampler",
      "random"
     ],
     "background": "#FF9D5E",
@@ -146,6 +161,7 @@
     "title": "Select Columns",
     "category": "Transform",
     "keywords": [
+     "select columns",
      "filter",
      "attributes",
      "target",
@@ -159,6 +175,7 @@
     "title": "Select Rows",
     "category": "Transform",
     "keywords": [
+     "select rows",
      "filter"
     ],
     "background": "#FF9D5E",
@@ -168,7 +185,9 @@
    {
     "title": "Transpose",
     "category": "Transform",
-    "keywords": [],
+    "keywords": [
+     "transpose"
+    ],
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Transpose.png",
     "url": "transpose"
@@ -177,6 +196,7 @@
     "title": "Merge Data",
     "category": "Transform",
     "keywords": [
+     "merge data",
      "join"
     ],
     "background": "#FF9D5E",
@@ -187,6 +207,7 @@
     "title": "Concatenate",
     "category": "Transform",
     "keywords": [
+     "concatenate",
      "append",
      "join",
      "extend"
@@ -215,6 +236,7 @@
     "title": "Aggregate Columns",
     "category": "Transform",
     "keywords": [
+     "aggregate columns",
      "aggregate",
      "sum",
      "product",
@@ -243,6 +265,7 @@
     "title": "Pivot Table",
     "category": "Transform",
     "keywords": [
+     "pivot table",
      "pivot",
      "group",
      "aggregate"
@@ -255,6 +278,7 @@
     "title": "Apply Domain",
     "category": "Transform",
     "keywords": [
+     "apply domain",
      "transform"
     ],
     "background": "#FF9D5E",
@@ -265,6 +289,7 @@
     "title": "Preprocess",
     "category": "Transform",
     "keywords": [
+     "preprocess",
      "process"
     ],
     "background": "#FF9D5E",
@@ -275,6 +300,7 @@
     "title": "Impute",
     "category": "Transform",
     "keywords": [
+     "impute",
      "substitute",
      "missing"
     ],
@@ -286,6 +312,7 @@
     "title": "Continuize",
     "category": "Transform",
     "keywords": [
+     "continuize",
      "encode",
      "dummy",
      "numeric",
@@ -302,6 +329,7 @@
     "title": "Discretize",
     "category": "Transform",
     "keywords": [
+     "discretize",
      "bin",
      "categorical",
      "nominal",
@@ -314,7 +342,10 @@
    {
     "title": "Randomize",
     "category": "Transform",
-    "keywords": [],
+    "keywords": [
+     "randomize",
+     "random"
+    ],
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Randomize.png",
     "url": "randomize"
@@ -335,6 +366,7 @@
     "title": "Melt",
     "category": "Transform",
     "keywords": [
+     "melt",
      "shopping list",
      "wide",
      "narrow"
@@ -347,6 +379,7 @@
     "title": "Feature Constructor",
     "category": "Transform",
     "keywords": [
+     "feature constructor",
      "function",
      "lambda"
     ],
@@ -357,7 +390,10 @@
    {
     "title": "Create Class",
     "category": "Transform",
-    "keywords": [],
+    "keywords": [
+     "create",
+     "class"
+    ],
     "background": "#FF9D5E",
     "icon": "widget-icons/Transform-Create Class.png",
     "url": "createclass"
@@ -366,6 +402,7 @@
     "title": "Create Instance",
     "category": "Transform",
     "keywords": [
+     "create instance",
      "simulator"
     ],
     "background": "#FF9D5E",
@@ -391,7 +428,10 @@
    {
     "title": "Tree Viewer",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "tree",
+     "viewer"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Tree Viewer.png",
     "url": "treeviewer"
@@ -400,6 +440,7 @@
     "title": "Box Plot",
     "category": "Visualize",
     "keywords": [
+     "box plot",
      "whisker"
     ],
     "background": "#FFB7B1",
@@ -410,6 +451,7 @@
     "title": "Violin Plot",
     "category": "Visualize",
     "keywords": [
+     "violin plot",
      "kernel",
      "density"
     ],
@@ -421,6 +463,7 @@
     "title": "Distributions",
     "category": "Visualize",
     "keywords": [
+     "distributions",
      "histogram"
     ],
     "background": "#FFB7B1",
@@ -430,7 +473,10 @@
    {
     "title": "Scatter Plot",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "scatter",
+     "plot"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Scatter Plot.png",
     "url": "scatterplot"
@@ -438,7 +484,10 @@
    {
     "title": "Line Plot",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "line",
+     "plot"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Line Plot.png",
     "url": "lineplot"
@@ -447,6 +496,7 @@
     "title": "Bar Plot",
     "category": "Visualize",
     "keywords": [
+     "bar plot",
      "chart"
     ],
     "background": "#FFB7B1",
@@ -456,7 +506,10 @@
    {
     "title": "Sieve Diagram",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "sieve",
+     "diagram"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Sieve Diagram.png",
     "url": "sievediagram"
@@ -464,7 +517,10 @@
    {
     "title": "Mosaic Display",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "mosaic",
+     "display"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Mosaic Display.png",
     "url": "mosaicdisplay"
@@ -473,6 +529,7 @@
     "title": "FreeViz",
     "category": "Visualize",
     "keywords": [
+     "freeviz",
      "viz"
     ],
     "background": "#FFB7B1",
@@ -482,7 +539,10 @@
    {
     "title": "Linear Projection",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "linear",
+     "projection"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Linear Projection.png",
     "url": "linearprojection"
@@ -491,6 +551,7 @@
     "title": "Radviz",
     "category": "Visualize",
     "keywords": [
+     "radviz",
      "viz"
     ],
     "background": "#FFB7B1",
@@ -500,7 +561,10 @@
    {
     "title": "Heat Map",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "heat",
+     "map"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Heat Map.png",
     "url": "heatmap"
@@ -508,7 +572,10 @@
    {
     "title": "Venn Diagram",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "venn",
+     "diagram"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Venn Diagram.png",
     "url": "venndiagram"
@@ -516,7 +583,10 @@
    {
     "title": "Silhouette Plot",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "silhouette",
+     "plot"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Silhouette Plot.png",
     "url": "silhouetteplot"
@@ -525,6 +595,7 @@
     "title": "Pythagorean Tree",
     "category": "Visualize",
     "keywords": [
+     "pythagorean tree",
      "fractal"
     ],
     "background": "#FFB7B1",
@@ -535,6 +606,7 @@
     "title": "Pythagorean Forest",
     "category": "Visualize",
     "keywords": [
+     "pythagorean forest",
      "fractal"
     ],
     "background": "#FFB7B1",
@@ -544,7 +616,11 @@
    {
     "title": "CN2 Rule Viewer",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "cn2",
+     "rule",
+     "viewer"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-CN2 Rule Viewer.png",
     "url": "cn2ruleviewer"
@@ -552,7 +628,9 @@
    {
     "title": "Nomogram",
     "category": "Visualize",
-    "keywords": [],
+    "keywords": [
+     "nomogram"
+    ],
     "background": "#FFB7B1",
     "icon": "widget-icons/Visualize-Nomogram.png",
     "url": "nomogram"
@@ -566,6 +644,7 @@
     "title": "Constant",
     "category": "Model",
     "keywords": [
+     "constant",
      "majority",
      "mean"
     ],
@@ -576,7 +655,11 @@
    {
     "title": "CN2 Rule Induction",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "cn2",
+     "rule",
+     "induction"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-CN2 Rule Induction.png",
     "url": "cn2ruleinduction"
@@ -585,6 +668,7 @@
     "title": "Calibrated Learner",
     "category": "Model",
     "keywords": [
+     "calibrated learner",
      "calibration",
      "threshold"
     ],
@@ -596,6 +680,7 @@
     "title": "kNN",
     "category": "Model",
     "keywords": [
+     "knn",
      "k nearest",
      "knearest",
      "neighbor",
@@ -609,7 +694,8 @@
     "title": "Tree",
     "category": "Model",
     "keywords": [
-     "Classification Tree"
+     "tree",
+     "classification tree"
     ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Tree.png",
@@ -618,7 +704,10 @@
    {
     "title": "Random Forest",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "random",
+     "forest"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Random Forest.png",
     "url": "randomforest"
@@ -627,6 +716,7 @@
     "title": "Gradient Boosting",
     "category": "Model",
     "keywords": [
+     "gradient boosting",
      "catboost",
      "gradient",
      "boost",
@@ -644,6 +734,7 @@
     "title": "SVM",
     "category": "Model",
     "keywords": [
+     "svm",
      "support vector machines"
     ],
     "background": "#FAC1D9",
@@ -654,6 +745,7 @@
     "title": "Linear Regression",
     "category": "Model",
     "keywords": [
+     "linear regression",
      "ridge",
      "lasso",
      "elastic net"
@@ -665,7 +757,10 @@
    {
     "title": "Logistic Regression",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "logistic",
+     "regression"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Logistic Regression.png",
     "url": "logisticregression"
@@ -673,7 +768,10 @@
    {
     "title": "Naive Bayes",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "naive",
+     "bayes"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Naive Bayes.png",
     "url": "naivebayes"
@@ -682,6 +780,7 @@
     "title": "AdaBoost",
     "category": "Model",
     "keywords": [
+     "adaboost",
      "boost"
     ],
     "background": "#FAC1D9",
@@ -692,6 +791,7 @@
     "title": "Curve Fit",
     "category": "Model",
     "keywords": [
+     "curve fit",
      "function"
     ],
     "background": "#FAC1D9",
@@ -702,6 +802,7 @@
     "title": "Neural Network",
     "category": "Model",
     "keywords": [
+     "neural network",
      "mlp"
     ],
     "background": "#FAC1D9",
@@ -712,6 +813,7 @@
     "title": "Stochastic Gradient Descent",
     "category": "Model",
     "keywords": [
+     "stochastic gradient descent",
      "sgd"
     ],
     "background": "#FAC1D9",
@@ -729,7 +831,10 @@
    {
     "title": "Save Model",
     "category": "Model",
-    "keywords": [],
+    "keywords": [
+     "save model",
+     "save"
+    ],
     "background": "#FAC1D9",
     "icon": "widget-icons/Model-Save Model.png",
     "url": "savemodel"
@@ -738,6 +843,7 @@
     "title": "Load Model",
     "category": "Model",
     "keywords": [
+     "load model",
      "file",
      "open",
      "model"
@@ -755,8 +861,9 @@
     "title": "Test and Score",
     "category": "Evaluate",
     "keywords": [
-     "Cross Validation",
-     "CV"
+     "test and score",
+     "cross validation",
+     "cv"
     ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Test and Score.png",
@@ -765,7 +872,9 @@
    {
     "title": "Predictions",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "predictions"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Predictions.png",
     "url": "predictions"
@@ -773,7 +882,10 @@
    {
     "title": "Confusion Matrix",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "confusion",
+     "matrix"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Confusion Matrix.png",
     "url": "confusionmatrix"
@@ -781,7 +893,10 @@
    {
     "title": "ROC Analysis",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "roc analysis",
+     "analyse"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-ROC Analysis.png",
     "url": "rocanalysis"
@@ -790,6 +905,7 @@
     "title": "Performance Curve",
     "category": "Evaluate",
     "keywords": [
+     "performance curve",
      "lift",
      "cumulative gain",
      "precision",
@@ -803,7 +919,10 @@
    {
     "title": "Calibration Plot",
     "category": "Evaluate",
-    "keywords": [],
+    "keywords": [
+     "calibration",
+     "plot"
+    ],
     "background": "#C3F3F3",
     "icon": "widget-icons/Evaluate-Calibration Plot.png",
     "url": "calibrationplot"
@@ -817,6 +936,7 @@
     "title": "Distance File",
     "category": "Unsupervised",
     "keywords": [
+     "distance file",
      "load",
      "read",
      "open"
@@ -828,7 +948,10 @@
    {
     "title": "Distance Matrix",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "distance",
+     "matrix"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Distance Matrix.png",
     "url": "distancematrix"
@@ -837,6 +960,7 @@
     "title": "t-SNE",
     "category": "Unsupervised",
     "keywords": [
+     "t-sne",
      "tsne"
     ],
     "background": "#CAE1EF",
@@ -854,7 +978,10 @@
    {
     "title": "Distance Map",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "distance",
+     "map"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Distance Map.png",
     "url": "distancemap"
@@ -862,7 +989,10 @@
    {
     "title": "Hierarchical Clustering",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "hierarchical",
+     "clustering"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Hierarchical Clustering.png",
     "url": "hierarchicalclustering"
@@ -871,6 +1001,7 @@
     "title": "k-Means",
     "category": "Unsupervised",
     "keywords": [
+     "k-means",
      "kmeans",
      "clustering"
     ],
@@ -897,7 +1028,10 @@
    {
     "title": "Manifold Learning",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "manifold",
+     "learning"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Manifold Learning.png",
     "url": "manifoldlearning"
@@ -906,6 +1040,7 @@
     "title": "Outliers",
     "category": "Unsupervised",
     "keywords": [
+     "outliers",
      "inlier"
     ],
     "background": "#CAE1EF",
@@ -916,6 +1051,7 @@
     "title": "PCA",
     "category": "Unsupervised",
     "keywords": [
+     "pca",
      "principal component analysis",
      "linear transformation"
     ],
@@ -934,7 +1070,10 @@
    {
     "title": "Correspondence Analysis",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "correspondence",
+     "analysis"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Correspondence Analysis.png",
     "url": "correspondenceanalysis"
@@ -942,7 +1081,9 @@
    {
     "title": "Distances",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "distances"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Distances.png",
     "url": "distances"
@@ -950,7 +1091,10 @@
    {
     "title": "Distance Transformation",
     "category": "Unsupervised",
-    "keywords": [],
+    "keywords": [
+     "distance",
+     "transformation"
+    ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Distance Transformation.png",
     "url": "distancetransformation"
@@ -959,6 +1103,7 @@
     "title": "MDS",
     "category": "Unsupervised",
     "keywords": [
+     "mds",
      "multidimensional scaling",
      "multi dimensional scaling"
     ],
@@ -970,6 +1115,7 @@
     "title": "Save Distance Matrix",
     "category": "Unsupervised",
     "keywords": [
+     "save distance matrix",
      "distance matrix",
      "save"
     ],
@@ -981,7 +1127,8 @@
     "title": "Self-Organizing Map",
     "category": "Unsupervised",
     "keywords": [
-     "SOM"
+     "self-organizing map",
+     "som"
     ],
     "background": "#CAE1EF",
     "icon": "widget-icons/Unsupervised-Self-Organizing Map.png",
