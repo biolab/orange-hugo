@@ -981,9 +981,48 @@
 	"thumbImage" : "",
 	"longExcerpt" :  "" ,
 	"author" : "",
-	"date" : "Mar 10, 2023",
+	"date" : "Apr 24, 2023",
 	"images" : null,
 	"kind" : "section",
+	"type" : "blog"
+},
+{
+    "uri": "/blog/gui/",
+	"title": "gui",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 24, 2023",
+	"images" : null,
+	"kind" : "term",
+	"type" : "blog"
+},
+{
+    "uri": "/",
+	"title": "Orange",
+	"content": "",
+	"image" : "",
+	"thumbImage" : "",
+	"longExcerpt" :  "" ,
+	"author" : "",
+	"date" : "Apr 24, 2023",
+	"images" : null,
+	"kind" : "home",
+	"type" : "page"
+},
+{
+    "uri": "/blog/2023/2021-03-31-zivjo-orange/",
+	"title": "Živjo, Orange!",
+	"content": " The Slovene language exhibits a complicated grammar, featuring three genders and four plural terms, along with a substantial amount of declensions and conjugations, (and unreasonable number of exceptions) that require all kinds of agreements between nouns, adjectives and verbs. It is mastered (unfortunatelly poorly, in too many cases) by some two million native speakers … and a growing num",
+	"image" : "",
+	"thumbImage" : "/blog_img/2023/2023-03-31-zemljevid.png",
+	"longExcerpt" :  "Orange speaks Slovenian!" ,
+	"author" : "Janez Demšar",
+	"date" : "Apr 24, 2023",
+	"images" : null,
+	"kind" : "page",
 	"type" : "blog"
 },
 {
@@ -1011,19 +1050,6 @@
 	"images" : null,
 	"kind" : "page",
 	"type" : "blog"
-},
-{
-    "uri": "/",
-	"title": "Orange",
-	"content": "",
-	"image" : "",
-	"thumbImage" : "",
-	"longExcerpt" :  "" ,
-	"author" : "",
-	"date" : "Mar 10, 2023",
-	"images" : null,
-	"kind" : "home",
-	"type" : "page"
 },
 {
     "uri": "/blog/bioinformatics/",
