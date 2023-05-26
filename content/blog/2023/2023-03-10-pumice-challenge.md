@@ -28,6 +28,7 @@ The task is interesting because Slovenia, albeit small (~20,000 square kilometer
 Teachers of those subjects are not computer scientists and may know next to nothing about AI and data mining. To show them that we have their backs, we published additional material with deeper explanations and background. We have also used an opportunity - an invitation from a similar project [Artificial Intelligence for and by Teachers](https://tehnika.fnm.um.si/2023/03/14/aktivnosti-projekta-ai4t/) (AI4T) at the University of Maribor - to present the topics and materials, and invite the participating teachers.
 
 {{< window-screenshot src="/blog_img/2023/2023-05-26-pumice-sola-slika.jpg" >}} 
+(Photo by Blaž Katrašnik, Srednja šola za strojništvo Škofja Loka)
 
 Results and experiences? Great.
 
