@@ -20,7 +20,7 @@ Among them, finally, Orange.
 
 Why? Primarily because Orange is already being used in higher education, while its use in younger population is often hindered by language barrier. This became particularly prononunced in the context of [Pumice](https://pumice.si) and related projects that aim to introduce AI as a tool for data exploration within different school subjects from K4 on.
 
-## Orange Slovenian
+## Orange in Slovenian
 
 It took over six months to translate Orange, starting with the development of Trubar, a general tool for translating modern Python code. Traditional translation tools, such as gettext, are not compatible with modern string interpolation and require modifications to the source code, which we wanted to avoid.
 
