@@ -6,7 +6,18 @@
     <description>Recent content in education on Orange</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pumice challenge</title>
+      <link>/blog/2023/2023-03-10-pumice-challenge/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/2023-03-10-pumice-challenge/</guid>
+      <description>What does it take to convince almost 1000 Slovenian students in K6-12 to learn about box plots, hierarchical clustering and the choropleth, and use them to explore a part of Slovenian geography and history?
+Answer: it takes an interesting challenge. Plus, a couple of videos and some material for teachers. T-shirts don&amp;rsquo;t hurt, either.
+Artificial intelligence is gaining in importance and media exposure. With the future of economy and society relying on it, we must teach about it in schools.</description>
+    </item>
+    
     <item>
       <title>Videos on hierarchical clustering</title>
       <link>/blog/2022/2022-25-11-clustering-videos/</link>
