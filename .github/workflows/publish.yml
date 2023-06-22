@@ -36,7 +36,7 @@ jobs:
       - name: Build widget catalog
         run: |
           pip install -U setuptools pip
-          pip install orange-canvas-core pyqt5==5.15
+          pip install orange-canvas-core pyqt5==5.15.*
           bash scripts/build-widget-catalog.sh
 
       - name: Setup Hugo
