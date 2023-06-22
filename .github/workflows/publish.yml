@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout master
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: Install linux system dependencies
         run: |
@@ -29,7 +29,7 @@ jobs:
           sudo apt-get install -y libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libegl1-mesa libxcb-shape0
 
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: '3.8'
 
@@ -39,15 +39,11 @@ jobs:
           pip install orange-canvas-core pyqt5==5.15
           bash scripts/build-widget-catalog.sh
 
-      - name: Build hugo page
-        run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.deb
-          sudo dpkg -i hugo*.deb
-          rm -rf public 2> /dev/null
-          rm *.deb
-          hugo --debug --path-warnings
-          touch public/.nojekyll
-
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'
+ 
       # Deploy to local repo
       - name: Deploy
         if: github.ref == 'refs/heads/master'
