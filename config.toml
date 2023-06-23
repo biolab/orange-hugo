@@ -5,6 +5,7 @@ title = "Orange"
 disqusShortname = "orange-4"
 disablePathToLower = "True"
 disableKinds = ["taxonomyTerm"] #workflows and blog landing pages do not generate correctly without this because of the custom list.html pages
+googleAnalytics = "G-J6PJZF75EX"
 
 [params]
   version = "3.35.0"
