@@ -1,43 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>widgets on Orange</title>
-    <link>/blog/widgets/</link>
-    <description>Recent content in widgets on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Orange you going to ask about dask?</title>
-      <link>/blog/2022/2022-12-13-dask-table/</link>
-      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-12-13-dask-table/</guid>
-      <description>As great as Orange is at simplifying machine learning and bringing it closer to your everyday regular normal guy, it turns out, there are some major drawbacks that stem from it&amp;rsquo;s very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in their right mind would want to throw a very large dataset at it.</description>
-    </item>
-    
-    <item>
-      <title>Quick previews in Orange widgets</title>
-      <link>/blog/2022/2022-10-10-quick-preview/</link>
-      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-10-10-quick-preview/</guid>
-      <description>Orange 3.33 comes with a simple new feature that we adore.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>widgets on Orange</title><link>/blog/widgets/</link><description>Recent content in widgets on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/widgets/index.xml" rel="self" type="application/rss+xml"/><item><title>Orange you going to ask about dask?</title><link>/blog/2022/2022-12-13-dask-table/</link><pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-12-13-dask-table/</guid><description>As great as Orange is at simplifying machine learning and bringing it closer to your everyday regular normal guy, it turns out, there are some major drawbacks that stem from it&amp;rsquo;s very inception. This is because Orange is meant to be run on a laptop. A device with just a handful of CPU cores, and maybe a couple of gigabytes of RAM. Due to this ideology we have so far reasoned that nobody in their right mind would want to throw a very large dataset at it.</description></item><item><title>Quick previews in Orange widgets</title><link>/blog/2022/2022-10-10-quick-preview/</link><pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-10-10-quick-preview/</guid><description>Orange 3.33 comes with a simple new feature that we adore.
 See those numbers in the status bar of most widgets? They briefly summarize the output, like the number of rows in output tables. Hovering there gives more details.
 From Orange version 3.33, clicking these numbers shows a data preview. Currently, this only works for output tables, but we&amp;rsquo;ll also add this functionality for other types of data.
-My favorite use: select some data in visualization and see it without connecting any widget to the output.</description>
-    </item>
-    
-    <item>
-      <title>Socio-economic data at your fingertips</title>
-      <link>/blog/2022/2022-08-31-world-happiness/</link>
-      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-08-31-world-happiness/</guid>
-      <description>A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options &amp;ndash;&amp;gt; Add-ons and select World Happiness from the list to install it.
- Currently, it contains a single wigdet - Socioeconomic Indices. But fret not! This one widget can do many things.
- Say I wish to retrieve data for Europe and Central Asia, which I can select from the Countries list.</description>
-    </item>
-    
-  </channel>
-</rss>
+My favorite use: select some data in visualization and see it without connecting any widget to the output.</description></item><item><title>Socio-economic data at your fingertips</title><link>/blog/2022/2022-08-31-world-happiness/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-08-31-world-happiness/</guid><description>A new add-on has joined the Orange family! It is called World Happiness and it is intended for retrieving socio-econimic data from global databases. Go to Options &amp;ndash;&amp;gt; Add-ons and select World Happiness from the list to install it.
+Currently, it contains a single wigdet - Socioeconomic Indices. But fret not! This one widget can do many things.
+Say I wish to retrieve data for Europe and Central Asia, which I can select from the Countries list.</description></item></channel></rss>

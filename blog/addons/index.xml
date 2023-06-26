@@ -1,365 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>addons on Orange</title>
-    <link>/blog/addons/</link>
-    <description>Recent content in addons on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/addons/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Orange in a synchrotron</title>
-      <link>/blog/2022/2022-11-14-orange-in-a-syncrotron/</link>
-      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-11-14-orange-in-a-syncrotron/</guid>
-      <description>Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
-A synchrotron light source is a particle accelerator where the beam travels in a closed loop, and wherever it bends, it generates electromagnetic radiation (or light).</description>
-    </item>
-    
-    <item>
-      <title>Predictive Modelling with Attribute Interactions</title>
-      <link>/blog/2022/2022-04-08-interactions/</link>
-      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-04-08-interactions/</guid>
-      <description>The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>addons on Orange</title><link>/blog/addons/</link><description>Recent content in addons on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/addons/index.xml" rel="self" type="application/rss+xml"/><item><title>Orange in a synchrotron</title><link>/blog/2022/2022-11-14-orange-in-a-syncrotron/</link><pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-11-14-orange-in-a-syncrotron/</guid><description>Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
+A synchrotron light source is a particle accelerator where the beam travels in a closed loop, and wherever it bends, it generates electromagnetic radiation (or light).</description></item><item><title>Predictive Modelling with Attribute Interactions</title><link>/blog/2022/2022-04-08-interactions/</link><pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-04-08-interactions/</guid><description>The Interactions widget is one of the newest additions to Orange. Previously only available in Orange 2, it has been rewritten and is accessible in the prototype add-on. This way, one need not go through the trouble of compiling older versions anymore.
 But what does it do?
-It computes and displays the interaction between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining COVID-19 Epidemics: Part 3</title>
-      <link>/blog/2020/2020-04-15-covid-19-part-3/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-04-15-covid-19-part-3/</guid>
-      <description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
-We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining COVID-19 Epidemics: Part 2</title>
-      <link>/blog/2020/2020-04-09-covid-19-part-2/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-04-09-covid-19-part-2/</guid>
-      <description>Previously on Data Mining COVID-19 Epidemics: Part 1 we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t got your hands dirty with it yet, check that out first.
+It computes and displays the interaction between attributes by calculating the mutual information between them and a third target variable. Doing so provides insight into the data at hand and aids in the search for better visualizations and predictive models.</description></item><item><title>Data Mining COVID-19 Epidemics: Part 3</title><link>/blog/2020/2020-04-15-covid-19-part-3/</link><pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-04-15-covid-19-part-3/</guid><description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
+We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description></item><item><title>Data Mining COVID-19 Epidemics: Part 2</title><link>/blog/2020/2020-04-09-covid-19-part-2/</link><pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-04-09-covid-19-part-2/</guid><description>Previously on Data Mining COVID-19 Epidemics: Part 1 we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t got your hands dirty with it yet, check that out first.
 In this post, we&amp;rsquo;ll try putting the data on a map. We&amp;rsquo;ll also expand on the &amp;ldquo;data mining is interactive&amp;rdquo; mantra by creating some animations showing the epidemics spread throughout the world.
-Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description>
-    </item>
-    
-    <item>
-      <title>Orange in Space</title>
-      <link>/blog/2018/09/21/orange-in-space/</link>
-      <pubDate>Fri, 21 Sep 2018 07:32:17 +0000</pubDate>
-      
-      <guid>/blog/2018/09/21/orange-in-space/</guid>
-      <description>Did you know that Orange has already been to space? Rosario Brunetto (IAS-Orsay, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the JAXA Hayabusa2 team. The Hayabusa2 asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data.</description>
-    </item>
-    
-    <item>
-      <title>Text Workshops in Ljubljana</title>
-      <link>/blog/2018/09/11/text-workshops-in-ljubljana/</link>
-      <pubDate>Tue, 11 Sep 2018 13:49:28 +0000</pubDate>
-      
-      <guid>/blog/2018/09/11/text-workshops-in-ljubljana/</guid>
-      <description>In the past month, we had two workshops that focused on text mining. The first one, Faksi v praksi, was organized by the University of Ljubljana Career Centers, where high school students learned about what we do at the Faculty of Computer and Information Science. We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs.</description>
-    </item>
-    
-    <item>
-      <title>Explaining Kickstarter Success</title>
-      <link>/blog/2018/08/27/explaining-kickstarter-success/</link>
-      <pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate>
-      
-      <guid>/blog/2018/08/27/explaining-kickstarter-success/</guid>
-      <description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
-But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining and Machine Learning for Economists</title>
-      <link>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</link>
-      <pubDate>Tue, 17 Jul 2018 09:20:50 +0000</pubDate>
-      
-      <guid>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</guid>
-      <description>Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.</description>
-    </item>
-    
-    <item>
-      <title>Spectroscopy Workshop at BioSpec and How to Merge Data</title>
-      <link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link>
-      <pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate>
-      
-      <guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid>
-      <description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description></item><item><title>Orange in Space</title><link>/blog/2018/09/21/orange-in-space/</link><pubDate>Fri, 21 Sep 2018 07:32:17 +0000</pubDate><guid>/blog/2018/09/21/orange-in-space/</guid><description>Did you know that Orange has already been to space? Rosario Brunetto (IAS-Orsay, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the JAXA Hayabusa2 team. The Hayabusa2 asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data.</description></item><item><title>Text Workshops in Ljubljana</title><link>/blog/2018/09/11/text-workshops-in-ljubljana/</link><pubDate>Tue, 11 Sep 2018 13:49:28 +0000</pubDate><guid>/blog/2018/09/11/text-workshops-in-ljubljana/</guid><description>In the past month, we had two workshops that focused on text mining. The first one, Faksi v praksi, was organized by the University of Ljubljana Career Centers, where high school students learned about what we do at the Faculty of Computer and Information Science. We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs.</description></item><item><title>Explaining Kickstarter Success</title><link>/blog/2018/08/27/explaining-kickstarter-success/</link><pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate><guid>/blog/2018/08/27/explaining-kickstarter-success/</guid><description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
+But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description></item><item><title>Data Mining and Machine Learning for Economists</title><link>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</link><pubDate>Tue, 17 Jul 2018 09:20:50 +0000</pubDate><guid>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</guid><description>Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.</description></item><item><title>Spectroscopy Workshop at BioSpec and How to Merge Data</title><link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link><pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate><guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid><description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
 Related: Orange with Spectroscopy Add-on
 A class full of dedicated scientists.
-One thing we did was see how to join data from two different sources.</description>
-    </item>
-    
-    <item>
-      <title>Clustering of Monet and Manet</title>
-      <link>/blog/2018/05/09/clustering-of-monet-and-manet/</link>
-      <pubDate>Wed, 09 May 2018 08:19:34 +0000</pubDate>
-      
-      <guid>/blog/2018/05/09/clustering-of-monet-and-manet/</guid>
-      <description>Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet&amp;rsquo;s masterpiece is indeed very similar to Manet&amp;rsquo;s! Use Image Analytics add-on and play with it. Here&amp;rsquo;s how:   </description>
-    </item>
-    
-    <item>
-      <title>Installing Add-ons Works Again</title>
-      <link>/blog/2018/04/23/installing-add-ons-works-again/</link>
-      <pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate>
-      
-      <guid>/blog/2018/04/23/installing-add-ons-works-again/</guid>
-      <description>Dear Orange users,
+One thing we did was see how to join data from two different sources.</description></item><item><title>Clustering of Monet and Manet</title><link>/blog/2018/05/09/clustering-of-monet-and-manet/</link><pubDate>Wed, 09 May 2018 08:19:34 +0000</pubDate><guid>/blog/2018/05/09/clustering-of-monet-and-manet/</guid><description>Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet&amp;rsquo;s masterpiece is indeed very similar to Manet&amp;rsquo;s! Use Image Analytics add-on and play with it. Here&amp;rsquo;s how:</description></item><item><title>Installing Add-ons Works Again</title><link>/blog/2018/04/23/installing-add-ons-works-again/</link><pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate><guid>/blog/2018/04/23/installing-add-ons-works-again/</guid><description>Dear Orange users,
 Some of you might have an issue installing add-ons with the following issue popping up:
-xmlrpc.client.Fault: &amp;lt;Fault -32601: &#39;server error; requested method not found&#39;&amp;gt;
+xmlrpc.client.Fault: &amp;lt;Fault -32601: 'server error; requested method not found'&amp;gt;
 This is the result of the migration to a new infrastructure at PyPi, which provides the installation of add-ons. Our team has rallied to adjust the add-on installer so it works with the new and improved service.
-In order to make the add-on installer work (again), please download the latest version of Orange (3.</description>
-    </item>
-    
-    <item>
-      <title>Orange with Spectroscopy Add-on Workshop</title>
-      <link>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</link>
-      <pubDate>Wed, 28 Mar 2018 10:36:18 +0000</pubDate>
-      
-      <guid>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</guid>
-      <description>We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. Spectroscopy add-on is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
-We will prove it with a simple classification workflow. First, install Spectroscopy add-on from Options - Add-ons menu in Orange. Restart Orange for the add-on to appear. Great, you are ready for some spectral analysis!</description>
-    </item>
-    
-    <item>
-      <title>Image Analytics Workshop at AIUCD 2018</title>
-      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
-      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
-      
-      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
-      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
-In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
-    </item>
-    
-    <item>
-      <title>Speeding Up Network Visualization</title>
-      <link>/blog/2017/12/23/speeding-up-network-visualization/</link>
-      <pubDate>Sat, 23 Dec 2017 17:05:52 +0000</pubDate>
-      
-      <guid>/blog/2017/12/23/speeding-up-network-visualization/</guid>
-      <description>The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.
-The goal of force-directed methods is to draw connected nodes close to each other as if the edges that connect the nodes were acting as springs. We also don&amp;rsquo;t want all nodes crowded in a single point, but would rather have them spaced evenly.</description>
-    </item>
-    
-    <item>
-      <title>Diving Into Car Registration Data</title>
-      <link>/blog/2017/10/13/diving-into-car-registration-data/</link>
-      <pubDate>Fri, 13 Oct 2017 12:04:32 +0000</pubDate>
-      
-      <guid>/blog/2017/10/13/diving-into-car-registration-data/</guid>
-      <description>Last week, we presented Orange at the Festival of Open Data, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.
-The original dataset is available at theOPSI portal and it consists of 73 files, one for each month since January 2012.</description>
-    </item>
-    
-    <item>
-      <title>Outliers in Traffic Signs</title>
-      <link>/blog/2017/04/25/outliers-in-traffic-signs/</link>
-      <pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate>
-      
-      <guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid>
-      <description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
-I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description>
-    </item>
-    
-    <item>
-      <title>Image Analytics: Clustering</title>
-      <link>/blog/2017/04/03/image-analytics-clustering/</link>
-      <pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate>
-      
-      <guid>/blog/2017/04/03/image-analytics-clustering/</guid>
-      <description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
-For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description>
-    </item>
-    
-    <item>
-      <title>Preparing Scraped Data</title>
-      <link>/blog/2017/01/23/preparing-scraped-data/</link>
-      <pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate>
-      
-      <guid>/blog/2017/01/23/preparing-scraped-data/</guid>
-      <description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+In order to make the add-on installer work (again), please download the latest version of Orange (3.</description></item><item><title>Orange with Spectroscopy Add-on Workshop</title><link>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</link><pubDate>Wed, 28 Mar 2018 10:36:18 +0000</pubDate><guid>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</guid><description>We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. Spectroscopy add-on is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
+We will prove it with a simple classification workflow. First, install Spectroscopy add-on from Options - Add-ons menu in Orange. Restart Orange for the add-on to appear. Great, you are ready for some spectral analysis!</description></item><item><title>Image Analytics Workshop at AIUCD 2018</title><link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link><pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate><guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid><description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description></item><item><title>Speeding Up Network Visualization</title><link>/blog/2017/12/23/speeding-up-network-visualization/</link><pubDate>Sat, 23 Dec 2017 17:05:52 +0000</pubDate><guid>/blog/2017/12/23/speeding-up-network-visualization/</guid><description>The Orange3 Network add-on contains a convenient Network Explorer widget for network visualization. Orange uses an iterative force-directed method (a variation of the Fruchterman-Reingold Algorithm) to layout the nodes on the 2D plane.
+The goal of force-directed methods is to draw connected nodes close to each other as if the edges that connect the nodes were acting as springs. We also don&amp;rsquo;t want all nodes crowded in a single point, but would rather have them spaced evenly.</description></item><item><title>Diving Into Car Registration Data</title><link>/blog/2017/10/13/diving-into-car-registration-data/</link><pubDate>Fri, 13 Oct 2017 12:04:32 +0000</pubDate><guid>/blog/2017/10/13/diving-into-car-registration-data/</guid><description>Last week, we presented Orange at the Festival of Open Data, a mini-conference organized by the Slovenian government, dedicated to the promotion of transparent access to government data. In a 10 minute presentation, we showed how Orange can be used to visualize and explore what kinds of vehicles were registered for the first time in Slovenia in 2017.
+The original dataset is available at the OPSI portal and it consists of 73 files, one for each month since January 2012.</description></item><item><title>Outliers in Traffic Signs</title><link>/blog/2017/04/25/outliers-in-traffic-signs/</link><pubDate>Tue, 25 Apr 2017 07:35:38 +0000</pubDate><guid>/blog/2017/04/25/outliers-in-traffic-signs/</guid><description>Say I am given a collection of images of traffic signs, and would like to find which signs stick out. That is, which traffic signs look substantially different from the others. I would assume that the traffic signs are not equally important and that some were designed to be noted before the others.
+I have assembled a small set of regulatory and warning traffic signs and stored the references to their images in a traffic-signs-w.</description></item><item><title>Image Analytics: Clustering</title><link>/blog/2017/04/03/image-analytics-clustering/</link><pubDate>Mon, 03 Apr 2017 12:36:22 +0000</pubDate><guid>/blog/2017/04/03/image-analytics-clustering/</guid><description>Data does not always come in a nice tabular form. It can also be a collection of text, audio recordings, video materials or even images. However, computers can only work with numbers, so for any data mining, we need to transform such unstructured data into a vector representation.
+For retrieving numbers from unstructured data, Orange can use deep network embedders. We have just started to include various embedders in Orange, and for now, they are available for text and images.</description></item><item><title>Preparing Scraped Data</title><link>/blog/2017/01/23/preparing-scraped-data/</link><pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate><guid>/blog/2017/01/23/preparing-scraped-data/</guid><description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
 Related: Creating a new data table in Orange through Python
-First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description>
-    </item>
-    
-    <item>
-      <title>Text Mining: version 0.2.0</title>
-      <link>/blog/2016/09/23/text-mining-version-0-2-0/</link>
-      <pubDate>Fri, 23 Sep 2016 14:50:38 +0000</pubDate>
-      
-      <guid>/blog/2016/09/23/text-mining-version-0-2-0/</guid>
-      <description>Orange3-Text has just recently been polished, updated and enhanced! Our GSoC student Alexey has helped us greatly to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.
-Wikipedia widget allows retrieving sources from Wikipedia API and can handle multiple queries.</description>
-    </item>
-    
-    <item>
-      <title>Visualizing Gradient Descent</title>
-      <link>/blog/2016/08/25/visualizing-gradient-descent/</link>
-      <pubDate>Thu, 25 Aug 2016 11:31:04 +0000</pubDate>
-      
-      <guid>/blog/2016/08/25/visualizing-gradient-descent/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
-Gradient Descent was implemented as a part of my Google Summer of Code project and it is available in the Orange3-Educational add-on. It simulates gradient descent for either Logistic or Linear regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</description>
-    </item>
-    
-    <item>
-      <title>Making recommendations</title>
-      <link>/blog/2016/08/19/making-recommendations/</link>
-      <pubDate>Fri, 19 Aug 2016 20:42:59 +0000</pubDate>
-      
-      <guid>/blog/2016/08/19/making-recommendations/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description></item><item><title>Text Mining: version 0.2.0</title><link>/blog/2016/09/23/text-mining-version-0-2-0/</link><pubDate>Fri, 23 Sep 2016 14:50:38 +0000</pubDate><guid>/blog/2016/09/23/text-mining-version-0-2-0/</guid><description>Orange3-Text has just recently been polished, updated and enhanced! Our GSoC student Alexey has helped us greatly to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.
+Wikipedia widget allows retrieving sources from Wikipedia API and can handle multiple queries.</description></item><item><title>Visualizing Gradient Descent</title><link>/blog/2016/08/25/visualizing-gradient-descent/</link><pubDate>Thu, 25 Aug 2016 11:31:04 +0000</pubDate><guid>/blog/2016/08/25/visualizing-gradient-descent/</guid><description>This is a guest blog from the Google Summer of Code project.
+Gradient Descent was implemented as a part of my Google Summer of Code project and it is available in the Orange3-Educational add-on. It simulates gradient descent for either Logistic or Linear regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</description></item><item><title>Making recommendations</title><link>/blog/2016/08/19/making-recommendations/</link><pubDate>Fri, 19 Aug 2016 20:42:59 +0000</pubDate><guid>/blog/2016/08/19/making-recommendations/</guid><description>This is a guest blog from the Google Summer of Code project.
 Recommender systems are everywhere, we can find them on YouTube, Amazon, Netflix, iTunes,&amp;hellip; This is because they are crucial component in a competitive retail services.
-How can I know what you may like if I have almost no information about you? The answer: taking Collaborative filtering (CF) approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</description>
-    </item>
-    
-    <item>
-      <title>Visualization of Classification Probabilities</title>
-      <link>/blog/2016/08/16/polynomial-classification/</link>
-      <pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate>
-      
-      <guid>/blog/2016/08/16/polynomial-classification/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+How can I know what you may like if I have almost no information about you? The answer: taking Collaborative filtering (CF) approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</description></item><item><title>Visualization of Classification Probabilities</title><link>/blog/2016/08/16/polynomial-classification/</link><pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate><guid>/blog/2016/08/16/polynomial-classification/</guid><description>This is a guest blog from the Google Summer of Code project.
 Polynomial Classification widget is implemented as a part of my Google Summer of Code project along with other widgets in educational add-on (see my previous blog). It visualizes probabilities for two-class classification (target vs. rest) using color gradient and contour lines, and it can do so for any Orange learner.
-Here is an example workflow. The data comes from the File widget.</description>
-    </item>
-    
-    <item>
-      <title>Interactive k-Means</title>
-      <link>/blog/2016/08/12/interactive-k-means/</link>
-      <pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate>
-      
-      <guid>/blog/2016/08/12/interactive-k-means/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+Here is an example workflow. The data comes from the File widget.</description></item><item><title>Interactive k-Means</title><link>/blog/2016/08/12/interactive-k-means/</link><pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate><guid>/blog/2016/08/12/interactive-k-means/</guid><description>This is a guest blog from the Google Summer of Code project.
 As a part of my Google Summer of Code project I started developing educational widgets and assemble them in an Educational Add-On for Orange. Educational widgets can be used by students to understand how some key data mining algorithms work and by teachers to demonstrate the working of these algorithms.
-Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description>
-    </item>
-    
-    <item>
-      <title>Network Analysis with Orange</title>
-      <link>/blog/2016/07/18/network-analysis-with-orange/</link>
-      <pubDate>Mon, 18 Jul 2016 13:42:34 +0000</pubDate>
-      
-      <guid>/blog/2016/07/18/network-analysis-with-orange/</guid>
-      <description>Visualizing relations between data instances can tell us a lot about our data. Let&amp;rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&amp;rsquo;s about the principle.</description>
-    </item>
-    
-    <item>
-      <title>Rehaul of Text Mining Add-On</title>
-      <link>/blog/2016/07/05/rehaul-of-text-mining-add-on/</link>
-      <pubDate>Tue, 05 Jul 2016 06:51:55 +0000</pubDate>
-      
-      <guid>/blog/2016/07/05/rehaul-of-text-mining-add-on/</guid>
-      <description>Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we&amp;rsquo;re thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We&amp;rsquo;ve introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.</description>
-    </item>
-    
-    <item>
-      <title>Association Rules in Orange</title>
-      <link>/blog/2016/04/25/association-rules-in-orange/</link>
-      <pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate>
-      
-      <guid>/blog/2016/04/25/association-rules-in-orange/</guid>
-      <description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
-The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description>
-    </item>
-    
-    <item>
-      <title>Hubbing with the Hub widget</title>
-      <link>/blog/2015/09/11/hubbing-with-hub-widget/</link>
-      <pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate>
-      
-      <guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid>
-      <description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description></item><item><title>Network Analysis with Orange</title><link>/blog/2016/07/18/network-analysis-with-orange/</link><pubDate>Mon, 18 Jul 2016 13:42:34 +0000</pubDate><guid>/blog/2016/07/18/network-analysis-with-orange/</guid><description>Visualizing relations between data instances can tell us a lot about our data. Let&amp;rsquo;s see how this works in Orange. We have a data set on machine learning and data mining conferences and journals, with the number of shared authors for each publication venue reported. We can estimate similarity between two conferences using the author profile of a conference: two conference would be similar if they attract the same authors. The data set is already 9 years old, but obviously, it&amp;rsquo;s about the principle.</description></item><item><title>Rehaul of Text Mining Add-On</title><link>/blog/2016/07/05/rehaul-of-text-mining-add-on/</link><pubDate>Tue, 05 Jul 2016 06:51:55 +0000</pubDate><guid>/blog/2016/07/05/rehaul-of-text-mining-add-on/</guid><description>Google Summer of Code is progressing nicely and some major improvements are already live! Our students have been working hard and today we&amp;rsquo;re thanking Alexey for his work on Text Mining add-on. Two major tasks before the midterms were to introduce Twitter widget and rehaul Preprocess Text. Twitter widget was designed to be a part of our summer school program and it worked beautifully. We&amp;rsquo;ve introduced youngsters to the world of data mining through social networks and one of the most exciting things was to see whether we can predict the author from the tweet content.</description></item><item><title>Association Rules in Orange</title><link>/blog/2016/04/25/association-rules-in-orange/</link><pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate><guid>/blog/2016/04/25/association-rules-in-orange/</guid><description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
+The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description></item><item><title>Hubbing with the Hub widget</title><link>/blog/2015/09/11/hubbing-with-hub-widget/</link><pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate><guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid><description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
 Say no more! Look no further! Here is the new Hub widget!
-Hub widget is the most versatile widget available so far.</description>
-    </item>
-    
-    <item>
-      <title>Datasets in Orange Bioinformatics Add-On</title>
-      <link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link>
-      <pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate>
-      
-      <guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid>
-      <description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
-Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description>
-    </item>
-    
-    <item>
-      <title>Orange workshops around the world</title>
-      <link>/blog/2015/06/19/435/</link>
-      <pubDate>Fri, 19 Jun 2015 10:40:43 +0000</pubDate>
-      
-      <guid>/blog/2015/06/19/435/</guid>
-      <description>Even though the summer is nigh, we are hardly going to catch a summer break this year. Orange team is busy holding workshops around the world to present the latest widgets and data mining tools to the public. Last week we had a very successful tutorial at [BC]2 in Basel, Switzerland, where Marinka and Blaž presented data fusion. A part of the tutorial was a hands-on workshop with Orange’s new add-on for data fusion.</description>
-    </item>
-    
-    <item>
-      <title>Data Fusion Add-on for Orange</title>
-      <link>/blog/2015/06/05/data-fusion-add-on-for-orange/</link>
-      <pubDate>Fri, 05 Jun 2015 06:46:56 +0000</pubDate>
-      
-      <guid>/blog/2015/06/05/data-fusion-add-on-for-orange/</guid>
-      <description>Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for predictive modelling and recommendation systems.
-This widget set can be used either to recommend you the next movie to watch based on your demographic characteristics, movies you gave high scores to, your preferred genre, etc.</description>
-    </item>
-    
-    <item>
-      <title>Network Add-on Published in JSS</title>
-      <link>/blog/2013/06/03/network-add-on-published-in-jss/</link>
-      <pubDate>Mon, 03 Jun 2013 20:15:00 +0000</pubDate>
-      
-      <guid>/blog/2013/06/03/network-add-on-published-in-jss/</guid>
-      <description>NetExplorer, a widget for network exploration, was in orange for over 5 years. Several network analysis widgets were added to Orange since, and we decided to move the entire network functionality to an Orange Network add-on.
-We recently published a paper Interactive Network Exploration with Orange in the Journal of Statistical Software. We invite you to read the tutorial on network exploration. It is aimed for beginners in this topic, and includes detailed explanation with images.</description>
-    </item>
-    
-    <item>
-      <title>Orange NMF add-on</title>
-      <link>/blog/2013/02/06/orange-nmf-add-on/</link>
-      <pubDate>Wed, 06 Feb 2013 13:47:00 +0000</pubDate>
-      
-      <guid>/blog/2013/02/06/orange-nmf-add-on/</guid>
-      <description>Nimfa, a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own add-on.
-Nimfa provides a plethora of initialization and factorization algorithms, quality measures along with examples on real-world and synthetic data sets. However, until now the analysis was possible only through Python scripting. A recent increase of interest in NMF techniques motivated Fajwel Fogel (a PhD student from INRIA, Paris, SIERRA team) to design and implement several widgets that deal with missing data in target matrices, their normalizations, viewing and assessing the quality of matrix factors returned by different matrix factorization algorithms.</description>
-    </item>
-    
-    <item>
-      <title>Writing Orange Add-ons</title>
-      <link>/blog/2013/01/29/writing-orange-add-ons/</link>
-      <pubDate>Tue, 29 Jan 2013 09:00:00 +0000</pubDate>
-      
-      <guid>/blog/2013/01/29/writing-orange-add-ons/</guid>
-      <description>We officially supported add-ons in Orange 2.6. You should start by checking the list of available add-ons. We pull those automatically from the PyPi, which is our preferred distribution channel. Try to install an add-on by either:
- writing &amp;ldquo;pip install &amp;rdquo; in the terminal or from the Orange Canvas GUI. Select &amp;ldquo;Options / Add-ons&amp;hellip;&amp;rdquo; in the menu.  Everything should just work. Writing add-ons is as easy as writing your own Orange Widgets or Orange Scripts.</description>
-    </item>
-    
-    <item>
-      <title>Orange 2.6</title>
-      <link>/blog/2013/01/21/orange-2-6/</link>
-      <pubDate>Mon, 21 Jan 2013 14:23:00 +0000</pubDate>
-      
-      <guid>/blog/2013/01/21/orange-2-6/</guid>
-      <description>A new version of Orange, 2.6, has been uploaded to Python Package Index. Since the version on the Orange website is always up to date (we post daily builds), this may not affect you. Nevertheless, let us explain what we were working on for the last year.
-The most important improvement to Orange is an implementation of add-on framework that is much more &amp;ldquo;standard pythonic&amp;rdquo;. As a consequence, the add-on installation procedure has been simplified for both individual users and system administrators.</description>
-    </item>
-    
-    <item>
-      <title>The easy way to install add-ons</title>
-      <link>/blog/2012/11/30/the-easy-way-to-install-add-ons/</link>
-      <pubDate>Fri, 30 Nov 2012 08:00:00 +0000</pubDate>
-      
-      <guid>/blog/2012/11/30/the-easy-way-to-install-add-ons/</guid>
-      <description>The possibility of extending functionality of Orange through add-ons has been present for a long time. In fact, we never provided the toolbox for crunching bioinformatical data as an integral part of Orange; it has always been an add-on. The exact mechanism of distribution of add-ons has changed significantly in the last year to simplify the process for add-on authors and to make it more standards-compliant. Among other things, this enables system administrators to install add-ons system-wide directly from PyPi using easy_install or pip.</description>
-    </item>
-    
-  </channel>
-</rss>
+Hub widget is the most versatile widget available so far.</description></item><item><title>Datasets in Orange Bioinformatics Add-On</title><link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link><pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate><guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid><description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description></item><item><title>Orange workshops around the world</title><link>/blog/2015/06/19/435/</link><pubDate>Fri, 19 Jun 2015 10:40:43 +0000</pubDate><guid>/blog/2015/06/19/435/</guid><description>Even though the summer is nigh, we are hardly going to catch a summer break this year. Orange team is busy holding workshops around the world to present the latest widgets and data mining tools to the public. Last week we had a very successful tutorial at [BC]2 in Basel, Switzerland, where Marinka and Blaž presented data fusion. A part of the tutorial was a hands-on workshop with Orange’s new add-on for data fusion.</description></item><item><title>Data Fusion Add-on for Orange</title><link>/blog/2015/06/05/data-fusion-add-on-for-orange/</link><pubDate>Fri, 05 Jun 2015 06:46:56 +0000</pubDate><guid>/blog/2015/06/05/data-fusion-add-on-for-orange/</guid><description>Orange is about to get even more exciting! We have created a prototype add-on for data fusion, which will certainly be of interest to many users. Data fusion brings large heterogeneous data sets together to create sensible clusters of related data instances and provides a platform for predictive modelling and recommendation systems.
+This widget set can be used either to recommend you the next movie to watch based on your demographic characteristics, movies you gave high scores to, your preferred genre, etc.</description></item><item><title>Network Add-on Published in JSS</title><link>/blog/2013/06/03/network-add-on-published-in-jss/</link><pubDate>Mon, 03 Jun 2013 20:15:00 +0000</pubDate><guid>/blog/2013/06/03/network-add-on-published-in-jss/</guid><description>NetExplorer, a widget for network exploration, was in orange for over 5 years. Several network analysis widgets were added to Orange since, and we decided to move the entire network functionality to an Orange Network add-on.
+We recently published a paper Interactive Network Exploration with Orange in the Journal of Statistical Software. We invite you to read the tutorial on network exploration. It is aimed for beginners in this topic, and includes detailed explanation with images.</description></item><item><title>Orange NMF add-on</title><link>/blog/2013/02/06/orange-nmf-add-on/</link><pubDate>Wed, 06 Feb 2013 13:47:00 +0000</pubDate><guid>/blog/2013/02/06/orange-nmf-add-on/</guid><description>Nimfa, a Python library for non-negative matrix factorization (NMF), which was part of Orange GSoC program back in 2011 got its own add-on.
+Nimfa provides a plethora of initialization and factorization algorithms, quality measures along with examples on real-world and synthetic data sets. However, until now the analysis was possible only through Python scripting. A recent increase of interest in NMF techniques motivated Fajwel Fogel (a PhD student from INRIA, Paris, SIERRA team) to design and implement several widgets that deal with missing data in target matrices, their normalizations, viewing and assessing the quality of matrix factors returned by different matrix factorization algorithms.</description></item><item><title>Writing Orange Add-ons</title><link>/blog/2013/01/29/writing-orange-add-ons/</link><pubDate>Tue, 29 Jan 2013 09:00:00 +0000</pubDate><guid>/blog/2013/01/29/writing-orange-add-ons/</guid><description>We officially supported add-ons in Orange 2.6. You should start by checking the list of available add-ons. We pull those automatically from the PyPi, which is our preferred distribution channel. Try to install an add-on by either:
+writing &amp;ldquo;pip install &amp;rdquo; in the terminal or from the Orange Canvas GUI. Select &amp;ldquo;Options / Add-ons&amp;hellip;&amp;rdquo; in the menu. Everything should just work. Writing add-ons is as easy as writing your own Orange Widgets or Orange Scripts.</description></item><item><title>Orange 2.6</title><link>/blog/2013/01/21/orange-2-6/</link><pubDate>Mon, 21 Jan 2013 14:23:00 +0000</pubDate><guid>/blog/2013/01/21/orange-2-6/</guid><description>A new version of Orange, 2.6, has been uploaded to Python Package Index. Since the version on the Orange website is always up to date (we post daily builds), this may not affect you. Nevertheless, let us explain what we were working on for the last year.
+The most important improvement to Orange is an implementation of add-on framework that is much more &amp;ldquo;standard pythonic&amp;rdquo;. As a consequence, the add-on installation procedure has been simplified for both individual users and system administrators.</description></item><item><title>The easy way to install add-ons</title><link>/blog/2012/11/30/the-easy-way-to-install-add-ons/</link><pubDate>Fri, 30 Nov 2012 08:00:00 +0000</pubDate><guid>/blog/2012/11/30/the-easy-way-to-install-add-ons/</guid><description>The possibility of extending functionality of Orange through add-ons has been present for a long time. In fact, we never provided the toolbox for crunching bioinformatical data as an integral part of Orange; it has always been an add-on. The exact mechanism of distribution of add-ons has changed significantly in the last year to simplify the process for add-on authors and to make it more standards-compliant. Among other things, this enables system administrators to install add-ons system-wide directly from PyPi using easy_install or pip.</description></item></channel></rss>

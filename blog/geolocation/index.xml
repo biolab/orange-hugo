@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>geolocation on Orange</title>
-    <link>/blog/geolocation/</link>
-    <description>Recent content in geolocation on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/geolocation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Data Mining for Archaeologists, part II</title>
-      <link>/blog/2021/2021-05-30-archaeology-workshop2/</link>
-      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-05-30-archaeology-workshop2/</guid>
-      <description>This is the second part of a blog on archaeological data analysis in Orange. In the first part, we wrote about image analytics and how to predict amphora types. This blog will show a simpler analysis, where we will plot excavation sites onto maps and interpret the results.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>geolocation on Orange</title><link>/blog/geolocation/</link><description>Recent content in geolocation on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/geolocation/index.xml" rel="self" type="application/rss+xml"/><item><title>Data Mining for Archaeologists, part II</title><link>/blog/2021/2021-05-30-archaeology-workshop2/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-05-30-archaeology-workshop2/</guid><description>This is the second part of a blog on archaeological data analysis in Orange. In the first part, we wrote about image analytics and how to predict amphora types. This blog will show a simpler analysis, where we will plot excavation sites onto maps and interpret the results.
 Related: Data Mining for Archaeologists, part I
-This time we will be working with the pottery data from the Antikythera Survey Project. You can download the data (pottery.</description>
-    </item>
-    
-  </channel>
-</rss>
+This time we will be working with the pottery data from the Antikythera Survey Project. You can download the data (pottery.</description></item></channel></rss>

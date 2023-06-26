@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>neighbors on Orange</title>
-    <link>/blog/neighbors/</link>
-    <description>Recent content in neighbors on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/neighbors/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Look-alike Images</title>
-      <link>/blog/2020/2020-01-08-neighbors-images/</link>
-      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-01-08-neighbors-images/</guid>
-      <description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>neighbors on Orange</title><link>/blog/neighbors/</link><description>Recent content in neighbors on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/neighbors/index.xml" rel="self" type="application/rss+xml"/><item><title>Look-alike Images</title><link>/blog/2020/2020-01-08-neighbors-images/</link><pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-01-08-neighbors-images/</guid><description>There is a cool and perhaps not often used widget in Orange called Neighbors. The widget accepts the data and a reference data item and outputs the nearest neighbors of that item.
 Related: Image Analytics Workshop at AIUCD 2018
 Here I will show how to use it to display a set of images most similar to a selected reference image. I will use the following workflow:
- \
-We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description>
-    </item>
-    
-  </channel>
-</rss>
+\
+We may use any collection of images, and for this blog, I have decided to pull out some image sets available from Datasets widget.</description></item></channel></rss>

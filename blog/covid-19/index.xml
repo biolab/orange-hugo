@@ -1,42 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>covid-19 on Orange</title>
-    <link>/blog/covid-19/</link>
-    <description>Recent content in covid-19 on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/covid-19/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Data Mining COVID-19 Epidemics: Part 3</title>
-      <link>/blog/2020/2020-04-15-covid-19-part-3/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-04-15-covid-19-part-3/</guid>
-      <description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
-We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining COVID-19 Epidemics: Part 2</title>
-      <link>/blog/2020/2020-04-09-covid-19-part-2/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-04-09-covid-19-part-2/</guid>
-      <description>Previously on Data Mining COVID-19 Epidemics: Part 1 we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t got your hands dirty with it yet, check that out first.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>covid-19 on Orange</title><link>/blog/covid-19/</link><description>Recent content in covid-19 on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/covid-19/index.xml" rel="self" type="application/rss+xml"/><item><title>Data Mining COVID-19 Epidemics: Part 3</title><link>/blog/2020/2020-04-15-covid-19-part-3/</link><pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-04-15-covid-19-part-3/</guid><description>So far, we&amp;rsquo;ve seen how to make basic visualizations related to the corona virus and how to look at the disease progression on the map. Be sure to check them out first, before delving into this one.
+We are now heading towards somewhat more advanced visualizations that let us observe trends in the data. Just as a heads up: your results may be different, depending on the day you downloaded the data.</description></item><item><title>Data Mining COVID-19 Epidemics: Part 2</title><link>/blog/2020/2020-04-09-covid-19-part-2/</link><pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-04-09-covid-19-part-2/</guid><description>Previously on Data Mining COVID-19 Epidemics: Part 1 we fired up a COVID-19 epidemics data set and looked at some basic visualizations. If you haven&amp;rsquo;t got your hands dirty with it yet, check that out first.
 In this post, we&amp;rsquo;ll try putting the data on a map. We&amp;rsquo;ll also expand on the &amp;ldquo;data mining is interactive&amp;rdquo; mantra by creating some animations showing the epidemics spread throughout the world.
-Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining COVID-19 Epidemics: Part 1</title>
-      <link>/blog/2020/2020-04-02-covid-19-basic/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-04-02-covid-19-basic/</guid>
-      <description>These days we are all following the statistics of COVID-19, looking at how our own country is faring and how it&amp;rsquo;s comparing with other countries. Luckily, only a few have a statistically meaningful number of deaths (which solemnly reminds us of the difference between statistical and practical significance!), so we concentrate on the number of confirmed cases.
-You&amp;rsquo;re reading the first and most basic blog post from a series in which we will investigate this data using Orange.</description>
-    </item>
-    
-  </channel>
-</rss>
+Prerequisite: installing add-ons Orange already comes with a great selection of widgets that work with all sorts of data.</description></item><item><title>Data Mining COVID-19 Epidemics: Part 1</title><link>/blog/2020/2020-04-02-covid-19-basic/</link><pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-04-02-covid-19-basic/</guid><description>These days we are all following the statistics of COVID-19, looking at how our own country is faring and how it&amp;rsquo;s comparing with other countries. Luckily, only a few have a statistically meaningful number of deaths (which solemnly reminds us of the difference between statistical and practical significance!), so we concentrate on the number of confirmed cases.
+You&amp;rsquo;re reading the first and most basic blog post from a series in which we will investigate this data using Orange.</description></item></channel></rss>

@@ -1,395 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>workshop on Orange</title>
-    <link>/blog/workshop/</link>
-    <description>Recent content in workshop on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Orange in a synchrotron</title>
-      <link>/blog/2022/2022-11-14-orange-in-a-syncrotron/</link>
-      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-11-14-orange-in-a-syncrotron/</guid>
-      <description>Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
-A synchrotron light source is a particle accelerator where the beam travels in a closed loop, and wherever it bends, it generates electromagnetic radiation (or light).</description>
-    </item>
-    
-    <item>
-      <title>Orange Webinar for Educators #1: Where to Start?</title>
-      <link>/blog/2022/2022-04-26-edu-webinar/</link>
-      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-04-26-edu-webinar/</guid>
-      <description>On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.
-The webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material.</description>
-    </item>
-    
-    <item>
-      <title>Training with Orange: A Tutorial at AIME 2022 in Halifax</title>
-      <link>/blog/2022/2022-04-26-amia-tutorial/</link>
-      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-04-26-amia-tutorial/</guid>
-      <description>When June 14, 2022
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>workshop on Orange</title><link>/blog/workshop/</link><description>Recent content in workshop on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/workshop/index.xml" rel="self" type="application/rss+xml"/><item><title>Orange in a synchrotron</title><link>/blog/2022/2022-11-14-orange-in-a-syncrotron/</link><pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-11-14-orange-in-a-syncrotron/</guid><description>Orange has a cousin. His name is Quasar. Quasar extends Orange with methods for the analysis of spectral data and allows researchers to use a single interactive workflow-based tool for acquisition method-specific data processing, machine learning, and visualization. Quasar was born from a collaboration between the University of Ljubljana and two synchrotrons, Soleil (France) and Elettra (Italy). Users from synchrotrons form an important group of Quasar users.
+A synchrotron light source is a particle accelerator where the beam travels in a closed loop, and wherever it bends, it generates electromagnetic radiation (or light).</description></item><item><title>Orange Webinar for Educators #1: Where to Start?</title><link>/blog/2022/2022-04-26-edu-webinar/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-04-26-edu-webinar/</guid><description>On Thursday, May 26, 2022, at 16:00 CET, we will organize a webinar for educators who either use or are interested in using Orange Data Mining in data science training.
+The webinar will feature a short demo on using Orange for training in machine learning. We will showcase several data visualization and exploration widgets and show you some tricks that you could use in your training sessions. We will also present our GitHub repository with our openly-available Orange training material.</description></item><item><title>Training with Orange: A Tutorial at AIME 2022 in Halifax</title><link>/blog/2022/2022-04-26-amia-tutorial/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-04-26-amia-tutorial/</guid><description>When June 14, 2022
 Where Halifax, Canada. This is a half-day, on site tutorial organized during the AIME 2022 conference.
 On Tutorial In the tutorial, we will claim and demonstrate that, given the right tool, it may take only a few hours to familiarize outsiders in data science.
-The tutorial is intended for teachers and trainees: we will present both the training steps and, as a demonstration, go through the actual training.</description>
-    </item>
-    
-    <item>
-      <title>PCA vs. MDS vs. t-SNE</title>
-      <link>/blog/2021/2021-06-17-pca-mds-tsne/</link>
-      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-06-17-pca-mds-tsne/</guid>
-      <description>I recently enjoy studying and showing differences between t-SNE and other data embedding and projection techniques. In particular, in some recent hands-on courses, we often introduce data visualization by principal component analysis, multidimensional scaling, and t-SNE. We would start with the zoo data set, where the data set is smaller, and the difference are less pronounced. We then traverse through employee attrition data set with exciting clusters exposed in t-SNE. To finish, and especially for the academic audience, we then show and compare the three different dimensionality reduction techniques on data from single-cell gene expression data.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Archaeologists, part II</title>
-      <link>/blog/2021/2021-05-30-archaeology-workshop2/</link>
-      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-05-30-archaeology-workshop2/</guid>
-      <description>This is the second part of a blog on archaeological data analysis in Orange. In the first part, we wrote about image analytics and how to predict amphora types. This blog will show a simpler analysis, where we will plot excavation sites onto maps and interpret the results.
+The tutorial is intended for teachers and trainees: we will present both the training steps and, as a demonstration, go through the actual training.</description></item><item><title>PCA vs. MDS vs. t-SNE</title><link>/blog/2021/2021-06-17-pca-mds-tsne/</link><pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-06-17-pca-mds-tsne/</guid><description>I recently enjoy studying and showing differences between t-SNE and other data embedding and projection techniques. In particular, in some recent hands-on courses, we often introduce data visualization by principal component analysis, multidimensional scaling, and t-SNE. We would start with the zoo data set, where the data set is smaller, and the difference are less pronounced. We then traverse through employee attrition data set with exciting clusters exposed in t-SNE. To finish, and especially for the academic audience, we then show and compare the three different dimensionality reduction techniques on data from single-cell gene expression data.</description></item><item><title>Data Mining for Archaeologists, part II</title><link>/blog/2021/2021-05-30-archaeology-workshop2/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-05-30-archaeology-workshop2/</guid><description>This is the second part of a blog on archaeological data analysis in Orange. In the first part, we wrote about image analytics and how to predict amphora types. This blog will show a simpler analysis, where we will plot excavation sites onto maps and interpret the results.
 Related: Data Mining for Archaeologists, part I
-This time we will be working with the pottery data from the Antikythera Survey Project. You can download the data (pottery.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Archaeologists, part I</title>
-      <link>/blog/2021/2021-04-23-archaeology-workshop/</link>
-      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-04-23-archaeology-workshop/</guid>
-      <description>Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
+This time we will be working with the pottery data from the Antikythera Survey Project. You can download the data (pottery.</description></item><item><title>Data Mining for Archaeologists, part I</title><link>/blog/2021/2021-04-23-archaeology-workshop/</link><pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-04-23-archaeology-workshop/</guid><description>Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
 Related: Data Mining for Anthropologists
-We took three best-documented amphora types (types with the highest number of images) from the Archaeology Data Service portal.</description>
-    </item>
-    
-    <item>
-      <title>Orange Lecture Notes</title>
-      <link>/blog/2020/2020-02-08-lecture-notes/</link>
-      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-02-08-lecture-notes/</guid>
-      <description>In the past, we, the developers of Orange at the University of Ljubljana, have carried out over fifty hands-on workshops. We carried out the workshops for students in secondary schools, universities, Ph.D. programs, employees of scientific institutes, companies, and government institutions. We carried out the courses around the world and lectured in places like Houston, Pavia, Hanover, Moscow, Verona, Montreal, Luxemburg, Kolkata, Liverpool, Bari, Ashburn, Sao Paolo, Trieste, Bled, Lisbon, Konstanz, Oslo, Belgrade, Ostrava, Melbourne, Ås, Bochum, and Ljubljana.</description>
-    </item>
-    
-    <item>
-      <title>Explaining Models: Workshop in Belgrade</title>
-      <link>/blog/2019/2019-11-20-belgrade-workshop/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/2019-11-20-belgrade-workshop/</guid>
-      <description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.</description>
-    </item>
-    
-    <item>
-      <title>Explaining Customer Segments for Business</title>
-      <link>/blog/2019/2019-11-15-telekom-workshop/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/2019-11-15-telekom-workshop/</guid>
-      <description>Last month we held a workshop for a large Slovenian Telco company. Their two key questions were - what machine learning techniques can we use on our data and how do we explain the models afterwards. So the workshop focused on three use cases - product segmentation, modeling churn, and clustering customers. With any kind of models, especially unsupervised ones, we often get the question - but how can we explain the clusters?</description>
-    </item>
-    
-    <item>
-      <title>Doctoral Summer School</title>
-      <link>/blog/2019/2019-07-26-doctoral_summer_school/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/2019-07-26-doctoral_summer_school/</guid>
-      <description>For the second year in a row, the Orange team was a part of the Ljubljana Doctoral Summer School, which is organized by the School of Economics and Business, University of Ljubljana. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.
- 
-\</description>
-    </item>
-    
-    <item>
-      <title>Data Science Made Easy: How To Identify Hate Comments with AI</title>
-      <link>/blog/2019/2019-07-02-data-science-made-easy/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/2019-07-02-data-science-made-easy/</guid>
-      <description>The IdeenExpo is a biennial participatory event for children, adolescents and young adults taking place in Hanover, Germany. Companies, research organizations, schools and universities participate to show young people the possibilities of the modern working world and gain their interest in technologies and natural sciences. As a part of one of the biggest research-computing-centers in North Germany the GWDG (Gesellschaft für wissenschaftliche Datenverarbeitung mbh Göttingen) took a part in that event to present the possibilities of Data Science and how its methods can be used in different areas.</description>
-    </item>
-    
-    <item>
-      <title>Orange at 32nd Bled eConference</title>
-      <link>/blog/2019/2019-06-28-bled-econference/</link>
-      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/2019-06-28-bled-econference/</guid>
-      <description>At the invitation of dr. Mirjana Kljajić, we participated in the 32nd Bled eConference. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
- \
-We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Anthropologists?</title>
-      <link>/blog/2018/11/06/data-mining-for-anthropologists/</link>
-      <pubDate>Tue, 06 Nov 2018 11:45:09 +0000</pubDate>
-      
-      <guid>/blog/2018/11/06/data-mining-for-anthropologists/</guid>
-      <description>This weekend we were in Lisbon, Portugal, at the Why the World Needs Anthropologists conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry. I was there to hold a workshop on Data Ethnography, an approach that tries to combine methods from data science and anthropology into a fruitful interdisciplinary mix!
-Data Ethnography workshop at this year&amp;rsquo;s Why the World Needs Anthropologists conference.</description>
-    </item>
-    
-    <item>
-      <title>Text Workshops in Ljubljana</title>
-      <link>/blog/2018/09/11/text-workshops-in-ljubljana/</link>
-      <pubDate>Tue, 11 Sep 2018 13:49:28 +0000</pubDate>
-      
-      <guid>/blog/2018/09/11/text-workshops-in-ljubljana/</guid>
-      <description>In the past month, we had two workshops that focused on text mining. The first one, Faksi v praksi, was organized by the University of Ljubljana Career Centers, where high school students learned about what we do at the Faculty of Computer and Information Science. We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining and Machine Learning for Economists</title>
-      <link>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</link>
-      <pubDate>Tue, 17 Jul 2018 09:20:50 +0000</pubDate>
-      
-      <guid>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</guid>
-      <description>Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.</description>
-    </item>
-    
-    <item>
-      <title>Girls Go Data Mining</title>
-      <link>/blog/2018/06/21/girls-go-data-mining/</link>
-      <pubDate>Thu, 21 Jun 2018 09:23:09 +0000</pubDate>
-      
-      <guid>/blog/2018/06/21/girls-go-data-mining/</guid>
-      <description>This week we held our first Girls Go Data Mining workshop. The workshop brought together curious women and intuitively introduced them to essential data mining and machine learning concepts. Of course, we used Orange to explore visualizations, build predictive models, perform clustering and dive into text analysis. The workshop was supported by NumFocus through their small development grant initiative and we hope to repeat it next year with even more ladies attending!</description>
-    </item>
-    
-    <item>
-      <title>From Surveys to Orange</title>
-      <link>/blog/2018/06/12/from-surveys-to-orange/</link>
-      <pubDate>Tue, 12 Jun 2018 07:54:17 +0000</pubDate>
-      
-      <guid>/blog/2018/06/12/from-surveys-to-orange/</guid>
-      <description>Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
+We took three best-documented amphora types (types with the highest number of images) from the Archaeology Data Service portal.</description></item><item><title>Orange Lecture Notes</title><link>/blog/2020/2020-02-08-lecture-notes/</link><pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-02-08-lecture-notes/</guid><description>In the past, we, the developers of Orange at the University of Ljubljana, have carried out over fifty hands-on workshops. We carried out the workshops for students in secondary schools, universities, Ph.D. programs, employees of scientific institutes, companies, and government institutions. We carried out the courses around the world and lectured in places like Houston, Pavia, Hanover, Moscow, Verona, Montreal, Luxemburg, Kolkata, Liverpool, Bari, Ashburn, Sao Paolo, Trieste, Bled, Lisbon, Konstanz, Oslo, Belgrade, Ostrava, Melbourne, Ås, Bochum, and Ljubljana.</description></item><item><title>Explaining Models: Workshop in Belgrade</title><link>/blog/2019/2019-11-20-belgrade-workshop/</link><pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate><guid>/blog/2019/2019-11-20-belgrade-workshop/</guid><description>On Monday, Blaž and I held a technical tutorial Data Mining through Visual Programming and Interactive Analytics in Orange at this year&amp;rsquo;s edition of Data Science Conference in Belgrade, Serbia. The tutorial explained how to quickly prototype standard data mining and machine learning workflows in Orange and how to interactively explore clustering and classification models. The final part raised an interesting question that we&amp;rsquo;re going to explore in continuation.
+\</description></item><item><title>Explaining Customer Segments for Business</title><link>/blog/2019/2019-11-15-telekom-workshop/</link><pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate><guid>/blog/2019/2019-11-15-telekom-workshop/</guid><description>Last month we held a workshop for a large Slovenian Telco company. Their two key questions were - what machine learning techniques can we use on our data and how do we explain the models afterwards. So the workshop focused on three use cases - product segmentation, modeling churn, and clustering customers. With any kind of models, especially unsupervised ones, we often get the question - but how can we explain the clusters?</description></item><item><title>Doctoral Summer School</title><link>/blog/2019/2019-07-26-doctoral_summer_school/</link><pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate><guid>/blog/2019/2019-07-26-doctoral_summer_school/</guid><description>For the second year in a row, the Orange team was a part of the Ljubljana Doctoral Summer School, which is organized by the School of Economics and Business, University of Ljubljana. Our course, called Pratical Introduction to Machine Learning and Data Analytics, was aimed at presenting the nuts and bolts of data science methods and concepts with the help of visual programming. In Orange, of course.
+\
+One important lesson is comparing model accuracy.</description></item><item><title>Data Science Made Easy: How To Identify Hate Comments with AI</title><link>/blog/2019/2019-07-02-data-science-made-easy/</link><pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate><guid>/blog/2019/2019-07-02-data-science-made-easy/</guid><description>The IdeenExpo is a biennial participatory event for children, adolescents and young adults taking place in Hanover, Germany. Companies, research organizations, schools and universities participate to show young people the possibilities of the modern working world and gain their interest in technologies and natural sciences. As a part of one of the biggest research-computing-centers in North Germany the GWDG (Gesellschaft für wissenschaftliche Datenverarbeitung mbh Göttingen) took a part in that event to present the possibilities of Data Science and how its methods can be used in different areas.</description></item><item><title>Orange at 32nd Bled eConference</title><link>/blog/2019/2019-06-28-bled-econference/</link><pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate><guid>/blog/2019/2019-06-28-bled-econference/</guid><description>At the invitation of dr. Mirjana Kljajić, we participated in the 32nd Bled eConference. The conference is one of the most important in the region on trends and technologies for electronic communication and this year a short workshop on Data Science with Orange was included in its programme.
+\
+We covered many topics, including data loading, visualization, construction of a predictive modeling workflow, exploration of decision trees, overfitting, model scoring and of course finally predicting with cross-validated model on a new data set.</description></item><item><title>Data Mining for Anthropologists?</title><link>/blog/2018/11/06/data-mining-for-anthropologists/</link><pubDate>Tue, 06 Nov 2018 11:45:09 +0000</pubDate><guid>/blog/2018/11/06/data-mining-for-anthropologists/</guid><description>This weekend we were in Lisbon, Portugal, at the Why the World Needs Anthropologists conference, an event that focuses on applied anthropology, design, and how soft skills can greatly benefit the industry. I was there to hold a workshop on Data Ethnography, an approach that tries to combine methods from data science and anthropology into a fruitful interdisciplinary mix!
+Data Ethnography workshop at this year&amp;rsquo;s Why the World Needs Anthropologists conference.</description></item><item><title>Text Workshops in Ljubljana</title><link>/blog/2018/09/11/text-workshops-in-ljubljana/</link><pubDate>Tue, 11 Sep 2018 13:49:28 +0000</pubDate><guid>/blog/2018/09/11/text-workshops-in-ljubljana/</guid><description>In the past month, we had two workshops that focused on text mining. The first one, Faksi v praksi, was organized by the University of Ljubljana Career Centers, where high school students learned about what we do at the Faculty of Computer and Information Science. We taught them what text mining is and how to group a collection of documents in Orange. The second one took on a more serious note, as the public sector employees joined us for the third set of workshops from the Ministry of Public Affairs.</description></item><item><title>Data Mining and Machine Learning for Economists</title><link>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</link><pubDate>Tue, 17 Jul 2018 09:20:50 +0000</pubDate><guid>/blog/2018/07/17/data-mining-and-machine-learning-for-economists/</guid><description>Last week Blaž, Marko and I held a week long introductory Data Mining and Machine Learning course at the Ljubljana Doctoral Summer School 2018. We got a room full of dedicated students and we embarked on a journey through standard and advanced machine learning techniques, all presented of course in Orange. We have covered a wide array of topics, from different clustering techniques (hierarchical clustering, k-means) to predictive models (logistic regression, naive Bayes, decision trees, random forests), regression and regularization, projections, text mining and image analytics.</description></item><item><title>Girls Go Data Mining</title><link>/blog/2018/06/21/girls-go-data-mining/</link><pubDate>Thu, 21 Jun 2018 09:23:09 +0000</pubDate><guid>/blog/2018/06/21/girls-go-data-mining/</guid><description>This week we held our first Girls Go Data Mining workshop. The workshop brought together curious women and intuitively introduced them to essential data mining and machine learning concepts. Of course, we used Orange to explore visualizations, build predictive models, perform clustering and dive into text analysis. The workshop was supported by NumFocus through their small development grant initiative and we hope to repeat it next year with even more ladies attending!</description></item><item><title>From Surveys to Orange</title><link>/blog/2018/06/12/from-surveys-to-orange/</link><pubDate>Tue, 12 Jun 2018 07:54:17 +0000</pubDate><guid>/blog/2018/06/12/from-surveys-to-orange/</guid><description>Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
 Related: Analyzing Surveys
-We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.</description>
-    </item>
-    
-    <item>
-      <title>Spectroscopy Workshop at BioSpec and How to Merge Data</title>
-      <link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link>
-      <pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate>
-      
-      <guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid>
-      <description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
+We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.</description></item><item><title>Spectroscopy Workshop at BioSpec and How to Merge Data</title><link>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</link><pubDate>Wed, 30 May 2018 09:02:59 +0000</pubDate><guid>/blog/2018/05/30/spectroscopy-workshop-at-biospec-and-how-to-merge-data/</guid><description>Last week Marko and I visited the land of the midnight sun - Norway! We held a two-day workshop on spectroscopy data analysis in Orange at the Norwegian University of Life Sciences. The students from BioSpec lab were yet again incredible and we really dug deep into Orange.
 Related: Orange with Spectroscopy Add-on
 A class full of dedicated scientists.
-One thing we did was see how to join data from two different sources.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining Course at Higher School of Economics, Moscow</title>
-      <link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link>
-      <pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate>
-      
-      <guid>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</guid>
-      <description>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&amp;rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
-It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</description>
-    </item>
-    
-    <item>
-      <title>Orange with Spectroscopy Add-on Workshop</title>
-      <link>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</link>
-      <pubDate>Wed, 28 Mar 2018 10:36:18 +0000</pubDate>
-      
-      <guid>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</guid>
-      <description>We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. Spectroscopy add-on is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
-We will prove it with a simple classification workflow. First, install Spectroscopy add-on from Options - Add-ons menu in Orange. Restart Orange for the add-on to appear. Great, you are ready for some spectral analysis!</description>
-    </item>
-    
-    <item>
-      <title>Image Analytics Workshop at AIUCD 2018</title>
-      <link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link>
-      <pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate>
-      
-      <guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid>
-      <description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
-In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description>
-    </item>
-    
-    <item>
-      <title>How to Properly Test Models</title>
-      <link>/blog/2017/11/29/how-to-properly-test-models/</link>
-      <pubDate>Wed, 29 Nov 2017 12:26:44 +0000</pubDate>
-      
-      <guid>/blog/2017/11/29/how-to-properly-test-models/</guid>
-      <description>On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
-One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&amp;rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Business and Public Administration</title>
-      <link>/blog/2017/11/17/data-mining-business-public-administration/</link>
-      <pubDate>Fri, 17 Nov 2017 12:35:40 +0000</pubDate>
-      
-      <guid>/blog/2017/11/17/data-mining-business-public-administration/</guid>
-      <description>We&amp;rsquo;ve been having a blast with recent Orange workshops. While Blaž was getting tanned in India, Anže and I went to the charming Liverpool to hold a session for business school professors on how to teach business with Orange.
+One thing we did was see how to join data from two different sources.</description></item><item><title>Data Mining Course at Higher School of Economics, Moscow</title><link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link><pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate><guid>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</guid><description>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&amp;rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
+It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</description></item><item><title>Orange with Spectroscopy Add-on Workshop</title><link>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</link><pubDate>Wed, 28 Mar 2018 10:36:18 +0000</pubDate><guid>/blog/2018/03/28/orange-with-spectroscopy-add-on-workshop/</guid><description>We have just concluded our enhanced Introduction to Data Science workshop, which included several workflows for spectroscopy analysis. Spectroscopy add-on is intended for the analysis of spectral data and it is just as fun as our other add-ons (if not more!).
+We will prove it with a simple classification workflow. First, install Spectroscopy add-on from Options - Add-ons menu in Orange. Restart Orange for the add-on to appear. Great, you are ready for some spectral analysis!</description></item><item><title>Image Analytics Workshop at AIUCD 2018</title><link>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</link><pubDate>Fri, 02 Feb 2018 10:32:28 +0000</pubDate><guid>/blog/2018/02/02/image-analytics-workshop-at-aiucd-2018/</guid><description>This week, Primož and I flew to the south of Italy to hold a workshop on Image Analytics through Data Mining at AIUCD 2018 conference. The workshop was intended to familiarize digital humanities researchers with options that visual programming environments offer for image analysis.
+In about 5 hours we discussed image embedding, clustering, finding closest neighbors and classification of images. While it is often a challenge to explain complex concepts in such a short time, it is much easier when working with Orange.</description></item><item><title>How to Properly Test Models</title><link>/blog/2017/11/29/how-to-properly-test-models/</link><pubDate>Wed, 29 Nov 2017 12:26:44 +0000</pubDate><guid>/blog/2017/11/29/how-to-properly-test-models/</guid><description>On Monday we finished the second part of the workshop for the Statistical Office of Republic of Slovenia. The crowd was tough - these guys knew their numbers and asked many challenging questions. And we loved it!
+One thing we discussed was how to properly test your model. Ok, we know never to test on the same data you&amp;rsquo;ve built your model with, but even training and testing on separate data is sometimes not enough.</description></item><item><title>Data Mining for Business and Public Administration</title><link>/blog/2017/11/17/data-mining-business-public-administration/</link><pubDate>Fri, 17 Nov 2017 12:35:40 +0000</pubDate><guid>/blog/2017/11/17/data-mining-business-public-administration/</guid><description>We&amp;rsquo;ve been having a blast with recent Orange workshops. While Blaž was getting tanned in India, Anže and I went to the charming Liverpool to hold a session for business school professors on how to teach business with Orange.
 Related: Orange in Kolkata, India
-Obviously, when we say teach business, we mean how to do data mining for business, say predict churn or employee attrition, segment customers, find which items to recommend in an online store and track brand sentiment with text analysis.</description>
-    </item>
-    
-    <item>
-      <title>Orange in Kolkata, India</title>
-      <link>/blog/2017/11/08/orange-in-kolkata-india/</link>
-      <pubDate>Wed, 08 Nov 2017 09:11:29 +0000</pubDate>
-      
-      <guid>/blog/2017/11/08/orange-in-kolkata-india/</guid>
-      <description>We have just completed the hands-on course on data science at one the most famous Indian educational institutions, Indian Statistical Institute. A one week course was invited by Institute&amp;rsquo;s director Prof. Dr. Sanghamitra Bandyopadhyay, and financially supported by the founding of India&amp;rsquo;s Global Initiative of Academic Networks.
-Indian Statistical Institute lies in the hearth of old Kolkata. A peaceful oasis of picturesque campus with mango orchards and waterlily lakes was founded by Prof.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing Surveys</title>
-      <link>/blog/2017/10/26/analyzing-surveys/</link>
-      <pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate>
-      
-      <guid>/blog/2017/10/26/analyzing-surveys/</guid>
-      <description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
-For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Voting Patterns  at AKOS Workshop</title>
-      <link>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</link>
-      <pubDate>Fri, 22 Sep 2017 11:34:26 +0000</pubDate>
-      
-      <guid>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</guid>
-      <description>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).</description>
-    </item>
-    
-    <item>
-      <title>Orange at Station Houston</title>
-      <link>/blog/2017/09/15/orange-at-station-houston/</link>
-      <pubDate>Fri, 15 Sep 2017 21:29:23 +0000</pubDate>
-      
-      <guid>/blog/2017/09/15/orange-at-station-houston/</guid>
-      <description>With over 262 member companies, Station Houston is the largest hub for tech startups in Houston.
+Obviously, when we say teach business, we mean how to do data mining for business, say predict churn or employee attrition, segment customers, find which items to recommend in an online store and track brand sentiment with text analysis.</description></item><item><title>Orange in Kolkata, India</title><link>/blog/2017/11/08/orange-in-kolkata-india/</link><pubDate>Wed, 08 Nov 2017 09:11:29 +0000</pubDate><guid>/blog/2017/11/08/orange-in-kolkata-india/</guid><description>We have just completed the hands-on course on data science at one the most famous Indian educational institutions, Indian Statistical Institute. A one week course was invited by Institute&amp;rsquo;s director Prof. Dr. Sanghamitra Bandyopadhyay, and financially supported by the founding of India&amp;rsquo;s Global Initiative of Academic Networks.
+Indian Statistical Institute lies in the hearth of old Kolkata. A peaceful oasis of picturesque campus with mango orchards and waterlily lakes was founded by Prof.</description></item><item><title>Analyzing Surveys</title><link>/blog/2017/10/26/analyzing-surveys/</link><pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate><guid>/blog/2017/10/26/analyzing-surveys/</guid><description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description></item><item><title>Understanding Voting Patterns at AKOS Workshop</title><link>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</link><pubDate>Fri, 22 Sep 2017 11:34:26 +0000</pubDate><guid>/blog/2017/09/22/understanding-voting-patterns-at-akos-workshop/</guid><description>Two days ago we held another Introduction to Data Mining workshop at our faculty. This time the target audience was a group of public sector professionals and our challenge was finding the right data set to explain key data mining concepts. Iris is fun, but not everyone is a biologist, right? Fortunately, we found this really nice data set with ballot counts from the Slovenian National Assembly (thanks to Parlameter).</description></item><item><title>Orange at Station Houston</title><link>/blog/2017/09/15/orange-at-station-houston/</link><pubDate>Fri, 15 Sep 2017 21:29:23 +0000</pubDate><guid>/blog/2017/09/15/orange-at-station-houston/</guid><description>With over 262 member companies, Station Houston is the largest hub for tech startups in Houston.
 One of its members is also Genialis, a life science data exploration company that emerged from our lab and is now delivering pipelines and user-friendly apps for analytics in systems biology.
-Thanks to the invitation by the director of operations Alex de la Fuente, we gave a seminar on Data Science for Everyone. We spoke about how Orange can support anyone to learn about data science and then use machine learning on their own data.</description>
-    </item>
-    
-    <item>
-      <title>Text Analysis Workshop at Digital Humanities 2017</title>
-      <link>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</link>
-      <pubDate>Tue, 08 Aug 2017 14:56:43 +0000</pubDate>
-      
-      <guid>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</guid>
-      <description>How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?
+Thanks to the invitation by the director of operations Alex de la Fuente, we gave a seminar on Data Science for Everyone. We spoke about how Orange can support anyone to learn about data science and then use machine learning on their own data.</description></item><item><title>Text Analysis Workshop at Digital Humanities 2017</title><link>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</link><pubDate>Tue, 08 Aug 2017 14:56:43 +0000</pubDate><guid>/blog/2017/08/08/text-analysis-workshop-at-digital-humanities-2017/</guid><description>How do you explain text mining in 3 hours? Is it even possible? Can someone be ready to build predictive models and perform clustering in a single afternoon?
 It seems so, especially when Orange is involved.
-Yesterday, on August 7, we held a 3-hour workshop on text mining and text analysis for a large crowd of esteemed researchers at Digital Humanities 2017 in Montreal, Canada. Surely, after 3 hours everyone was exhausted, both the audience and the lecturers.</description>
-    </item>
-    
-    <item>
-      <title>Text Analysis: New Features</title>
-      <link>/blog/2017/08/04/text-analysis-new-features/</link>
-      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
-      
-      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
-Related: Text Preprocessing</description>
-    </item>
-    
-    <item>
-      <title>Workshop: Text Analysis for Social Scientists</title>
-      <link>/blog/2017/06/09/workshop-text-analysis-for-social-scientists/</link>
-      <pubDate>Fri, 09 Jun 2017 13:04:32 +0000</pubDate>
-      
-      <guid>/blog/2017/06/09/workshop-text-analysis-for-social-scientists/</guid>
-      <description>Yesterday was no ordinary day at the Faculty of Computer and Information Science, University of Ljubljana - there was an unusually high proportion of Social Sciences students, researchers and other professionals in our classrooms. It was all because of a Text Analysis for Social Scientists workshop.
+Yesterday, on August 7, we held a 3-hour workshop on text mining and text analysis for a large crowd of esteemed researchers at Digital Humanities 2017 in Montreal, Canada. Surely, after 3 hours everyone was exhausted, both the audience and the lecturers.</description></item><item><title>Text Analysis: New Features</title><link>/blog/2017/08/04/text-analysis-new-features/</link><pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate><guid>/blog/2017/08/04/text-analysis-new-features/</guid><description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
+Related: Text Preprocessing</description></item><item><title>Workshop: Text Analysis for Social Scientists</title><link>/blog/2017/06/09/workshop-text-analysis-for-social-scientists/</link><pubDate>Fri, 09 Jun 2017 13:04:32 +0000</pubDate><guid>/blog/2017/06/09/workshop-text-analysis-for-social-scientists/</guid><description>Yesterday was no ordinary day at the Faculty of Computer and Information Science, University of Ljubljana - there was an unusually high proportion of Social Sciences students, researchers and other professionals in our classrooms. It was all because of a Text Analysis for Social Scientists workshop.
 Related: Data Mining for Political Scientists
-Text mining is becoming a popular method across sciences and it was time to showcase what it (and Orange) can do.</description>
-    </item>
-    
-    <item>
-      <title>Workshop on InfraOrange</title>
-      <link>/blog/2017/03/08/workshop-on-infraorange/</link>
-      <pubDate>Wed, 08 Mar 2017 14:51:43 +0000</pubDate>
-      
-      <guid>/blog/2017/03/08/workshop-on-infraorange/</guid>
-      <description>Thanks to the collaboration with synchrotrons Elettra (Trieste) and Soleil (Paris), Orange is getting an add-on InfraOrange, with widgets for analysis of infrared spectra. Its primary users obviously come from these two institutions, hence we organized the first workshop for InfraOrange at one of them.
-Some 20 participants spent the first day of the workshop in Trieste learning the basics of Orange and its use for data mining. With Janez at the helm and Marko assisting in the back, we traversed the standard list of visual and statistical techniques and a bit of unsupervised and supervised learning.</description>
-    </item>
-    
-    <item>
-      <title>Orange Workshops: Luxembourg, Pavia, Ljubljana</title>
-      <link>/blog/2017/03/06/luxembourg-pavia-ljubljana/</link>
-      <pubDate>Mon, 06 Mar 2017 21:35:49 +0000</pubDate>
-      
-      <guid>/blog/2017/03/06/luxembourg-pavia-ljubljana/</guid>
-      <description>February was a month of Orange workshops.
-Ljubljana: Biologists We (Tomaž, Martin and I) have started in Ljubljana with a hands-on course for the COST Action FA1405 Systems Biology Training School. This was a four hour workshop with an introduction to classification and clustering, and then with application of machine learning to analysis of gene expression data on a plant called Arabidopsis. The organization of this course has even inspired us for a creation of a new widget GOMapMan Ontology that was added to Bioinformatics add-on.</description>
-    </item>
-    
-    <item>
-      <title>BDTN 2016 Workshop: Introduction to Data Science</title>
-      <link>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</link>
-      <pubDate>Fri, 16 Dec 2016 15:57:11 +0000</pubDate>
-      
-      <guid>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</guid>
-      <description>Every year BEST Ljubljana organizes BEST Days of Technology and Sciences, an event hosting a broad variety of workshops, hackathons and lectures for the students of natural sciences and technology. Introduction to Data Science, organized by our own Laboratory for Bioinformatics, was this year one of them.
+Text mining is becoming a popular method across sciences and it was time to showcase what it (and Orange) can do.</description></item><item><title>Workshop on InfraOrange</title><link>/blog/2017/03/08/workshop-on-infraorange/</link><pubDate>Wed, 08 Mar 2017 14:51:43 +0000</pubDate><guid>/blog/2017/03/08/workshop-on-infraorange/</guid><description>Thanks to the collaboration with synchrotrons Elettra (Trieste) and Soleil (Paris), Orange is getting an add-on InfraOrange, with widgets for analysis of infrared spectra. Its primary users obviously come from these two institutions, hence we organized the first workshop for InfraOrange at one of them.
+Some 20 participants spent the first day of the workshop in Trieste learning the basics of Orange and its use for data mining. With Janez at the helm and Marko assisting in the back, we traversed the standard list of visual and statistical techniques and a bit of unsupervised and supervised learning.</description></item><item><title>Orange Workshops: Luxembourg, Pavia, Ljubljana</title><link>/blog/2017/03/06/luxembourg-pavia-ljubljana/</link><pubDate>Mon, 06 Mar 2017 21:35:49 +0000</pubDate><guid>/blog/2017/03/06/luxembourg-pavia-ljubljana/</guid><description>February was a month of Orange workshops.
+Ljubljana: Biologists We (Tomaž, Martin and I) have started in Ljubljana with a hands-on course for the COST Action FA1405 Systems Biology Training School. This was a four hour workshop with an introduction to classification and clustering, and then with application of machine learning to analysis of gene expression data on a plant called Arabidopsis. The organization of this course has even inspired us for a creation of a new widget GOMapMan Ontology that was added to Bioinformatics add-on.</description></item><item><title>BDTN 2016 Workshop: Introduction to Data Science</title><link>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</link><pubDate>Fri, 16 Dec 2016 15:57:11 +0000</pubDate><guid>/blog/2016/12/16/bdtn-2016-workshop-introduction-to-data-science/</guid><description>Every year BEST Ljubljana organizes BEST Days of Technology and Sciences, an event hosting a broad variety of workshops, hackathons and lectures for the students of natural sciences and technology. Introduction to Data Science, organized by our own Laboratory for Bioinformatics, was this year one of them.
 Related: Intro to Data Mining for Life Scientists
-The task was to teach and explain basic data mining concepts and techniques in four hours.</description>
-    </item>
-    
-    <item>
-      <title>Intro to Data Mining for Life Scientists</title>
-      <link>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</link>
-      <pubDate>Sun, 02 Oct 2016 11:21:20 +0000</pubDate>
-      
-      <guid>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</guid>
-      <description>RNA Club Munich has organized Molecular Life of Stem Cells Conference in Ljubljana this past Thursday, Friday and Saturday. They asked us to organize a four-hour workshop on data mining. And here we were: four of us, Ajda, Anze, Marko and myself (Blaz) run a workshop for 25 students with molecular biology and biochemistry background.
-We have covered some basic data visualization, modeling (classification) and model scoring, hierarchical clustering and data projection, and finished with a touch of deep-learning by diving into image analysis by deep learning-based embedding.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining Course in Houston #2</title>
-      <link>/blog/2016/09/15/data-mining-in-houston-2/</link>
-      <pubDate>Thu, 15 Sep 2016 13:38:30 +0000</pubDate>
-      
-      <guid>/blog/2016/09/15/data-mining-in-houston-2/</guid>
-      <description>This was already the second installment of Introduction to Data Mining Course at Baylor College of Medicine in Houston, Texas. Just like the last year, the course was packed. About 50 graduate students, post-docs and a few faculty attended, making the course one of the largest elective PhD courses from over a hundred offered at this prestigious medical school.
-The course was designed for students with little or no experience in data science.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining Course in Houston</title>
-      <link>/blog/2015/10/09/data-mining-course-in-houston/</link>
-      <pubDate>Fri, 09 Oct 2015 06:51:23 +0000</pubDate>
-      
-      <guid>/blog/2015/10/09/data-mining-course-in-houston/</guid>
-      <description>We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
-This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.</description>
-    </item>
-    
-    <item>
-      <title>Orange in Pavia, Italy</title>
-      <link>/blog/2015/02/19/orange-in-pavia-italy/</link>
-      <pubDate>Thu, 19 Feb 2015 15:18:32 +0000</pubDate>
-      
-      <guid>/blog/2015/02/19/orange-in-pavia-italy/</guid>
-      <description>These days, we (Blaz Zupan and Marinka Zitnik, with full background support of entire Bioinformatics Lab) are running a three-day course on Data Mining in Python. Riccardo Bellazzi, a professor at University of Pavia, a world-renown researcher in biomedical informatics, and most of all, a great friend, has invited us to run the elective course for Pavia&amp;rsquo;s grad students. The enrollment was, he says, overwhelming, as with over 50 students this is by far the best attended grad course at Pavia&amp;rsquo;s faculty of engineering in the past years.</description>
-    </item>
-    
-    <item>
-      <title>Workshops at Baylor College of Medicine</title>
-      <link>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</link>
-      <pubDate>Mon, 26 May 2014 00:51:00 +0000</pubDate>
-      
-      <guid>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</guid>
-      <description>On May 22nd and May 23rd, we (Blaz Zupan and Janez Demsar, assisted by Marinka Zitnik and Balaji Santhanam) have given two hands-on workshops called Data Mining without Programming at Baylor College of Medicine in Houston, Texas.
-Actually, there was a lot of programming, but no Python or alike. The workshop was designed for biomedical students and Baylor&amp;rsquo;s faculty members. We have presented a visual programming approach for development of data mining workflows for interactive data exploration.</description>
-    </item>
-    
-  </channel>
-</rss>
+The task was to teach and explain basic data mining concepts and techniques in four hours.</description></item><item><title>Intro to Data Mining for Life Scientists</title><link>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</link><pubDate>Sun, 02 Oct 2016 11:21:20 +0000</pubDate><guid>/blog/2016/10/02/intro-to-data-mining-for-life-scientists/</guid><description>RNA Club Munich has organized Molecular Life of Stem Cells Conference in Ljubljana this past Thursday, Friday and Saturday. They asked us to organize a four-hour workshop on data mining. And here we were: four of us, Ajda, Anze, Marko and myself (Blaz) run a workshop for 25 students with molecular biology and biochemistry background.
+We have covered some basic data visualization, modeling (classification) and model scoring, hierarchical clustering and data projection, and finished with a touch of deep-learning by diving into image analysis by deep learning-based embedding.</description></item><item><title>Data Mining Course in Houston #2</title><link>/blog/2016/09/15/data-mining-in-houston-2/</link><pubDate>Thu, 15 Sep 2016 13:38:30 +0000</pubDate><guid>/blog/2016/09/15/data-mining-in-houston-2/</guid><description>This was already the second installment of Introduction to Data Mining Course at Baylor College of Medicine in Houston, Texas. Just like the last year, the course was packed. About 50 graduate students, post-docs and a few faculty attended, making the course one of the largest elective PhD courses from over a hundred offered at this prestigious medical school.
+The course was designed for students with little or no experience in data science.</description></item><item><title>Data Mining Course in Houston</title><link>/blog/2015/10/09/data-mining-course-in-houston/</link><pubDate>Fri, 09 Oct 2015 06:51:23 +0000</pubDate><guid>/blog/2015/10/09/data-mining-course-in-houston/</guid><description>We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
+This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.</description></item><item><title>Orange in Pavia, Italy</title><link>/blog/2015/02/19/orange-in-pavia-italy/</link><pubDate>Thu, 19 Feb 2015 15:18:32 +0000</pubDate><guid>/blog/2015/02/19/orange-in-pavia-italy/</guid><description>These days, we (Blaz Zupan and Marinka Zitnik, with full background support of entire Bioinformatics Lab) are running a three-day course on Data Mining in Python. Riccardo Bellazzi, a professor at University of Pavia, a world-renown researcher in biomedical informatics, and most of all, a great friend, has invited us to run the elective course for Pavia&amp;rsquo;s grad students. The enrollment was, he says, overwhelming, as with over 50 students this is by far the best attended grad course at Pavia&amp;rsquo;s faculty of engineering in the past years.</description></item><item><title>Workshops at Baylor College of Medicine</title><link>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</link><pubDate>Mon, 26 May 2014 00:51:00 +0000</pubDate><guid>/blog/2014/05/26/workshops-at-baylor-college-of-medicine/</guid><description>On May 22nd and May 23rd, we (Blaz Zupan and Janez Demsar, assisted by Marinka Zitnik and Balaji Santhanam) have given two hands-on workshops called Data Mining without Programming at Baylor College of Medicine in Houston, Texas.
+Actually, there was a lot of programming, but no Python or alike. The workshop was designed for biomedical students and Baylor&amp;rsquo;s faculty members. We have presented a visual programming approach for development of data mining workflows for interactive data exploration.</description></item></channel></rss>

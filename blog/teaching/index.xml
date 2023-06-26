@@ -1,51 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>teaching on Orange</title>
-    <link>/blog/teaching/</link>
-    <description>Recent content in teaching on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/teaching/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Orange in Classroom, pt. 2</title>
-      <link>/blog/2022/2022-01-14-universities/</link>
-      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-01-14-universities/</guid>
-      <description>A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.
-In the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different) and are using Orange for this purpose.</description>
-    </item>
-    
-    <item>
-      <title>Explainable AI Project Meeting</title>
-      <link>/blog/2021/2021-10-26-explainable-ai/</link>
-      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-10-26-explainable-ai/</guid>
-      <description>Recently, we have attended an xAIM project meeting in Hannover, Germany. xAIM is an EU project whose aim is to develop a Master&amp;rsquo;s degree tailored to the medical professionals or those wanting to work in the medical field. The focus of the MA is on explainable artificial intelligence, that is on the explanation of machine learning models, ethical aspects of AI, and the translation of models into the medical setting.</description>
-    </item>
-    
-    <item>
-      <title>Hands-On Training About Overfitting</title>
-      <link>/blog/2021/2021-03-05-overfitting-course/</link>
-      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-03-05-overfitting-course/</guid>
-      <description>PLOS Computation Biology has just published our paper on training about overfitting:
- Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671.  Machine learning has recently propelled approaches for the analysis of data, but &amp;ldquo;for the uninitiated, the technology poses significant difficulties&amp;rdquo; (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless.</description>
-    </item>
-    
-    <item>
-      <title>Orange in Classroom</title>
-      <link>/blog/2021/2021-01-11-orange-in-classroom/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-01-11-orange-in-classroom/</guid>
-      <description>Orange in Classroom About three weeks ago, we put out a short survey asking professors, teaching assistants, and students to tell us how they use Orange in class. We have gotten four-hundred responses, and it turns out that over two hundred universities from around the world actively use Orange in the classroom.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>teaching on Orange</title><link>/blog/teaching/</link><description>Recent content in teaching on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/teaching/index.xml" rel="self" type="application/rss+xml"/><item><title>Orange in Classroom, pt. 2</title><link>/blog/2022/2022-01-14-universities/</link><pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-01-14-universities/</guid><description>A year ago, we put out a survey asking the Orange community if they use Orange for teaching (or learning) and at which educational institution. We got around 300 replies from 200 universities in the first round.
+In the past year, we were starting to establish a global community of educators that teach statistics, data mining, and machine learning (or perhaps something entirely different) and are using Orange for this purpose.</description></item><item><title>Explainable AI Project Meeting</title><link>/blog/2021/2021-10-26-explainable-ai/</link><pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-10-26-explainable-ai/</guid><description>Recently, we have attended an xAIM project meeting in Hannover, Germany. xAIM is an EU project whose aim is to develop a Master&amp;rsquo;s degree tailored to the medical professionals or those wanting to work in the medical field. The focus of the MA is on explainable artificial intelligence, that is on the explanation of machine learning models, ethical aspects of AI, and the translation of models into the medical setting.</description></item><item><title>Hands-On Training About Overfitting</title><link>/blog/2021/2021-03-05-overfitting-course/</link><pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-03-05-overfitting-course/</guid><description>PLOS Computation Biology has just published our paper on training about overfitting:
+Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671. Machine learning has recently propelled approaches for the analysis of data, but &amp;ldquo;for the uninitiated, the technology poses significant difficulties&amp;rdquo; (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless.</description></item><item><title>Orange in Classroom</title><link>/blog/2021/2021-01-11-orange-in-classroom/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-01-11-orange-in-classroom/</guid><description>Orange in Classroom About three weeks ago, we put out a short survey asking professors, teaching assistants, and students to tell us how they use Orange in class. We have gotten four-hundred responses, and it turns out that over two hundred universities from around the world actively use Orange in the classroom.
 We sincerely thank everyone for the answers!
- Here is a a list of universities, in alphabetical order, we have compiled from the survey.</description>
-    </item>
-    
-  </channel>
-</rss>
+Here is a a list of universities, in alphabetical order, we have compiled from the survey.</description></item></channel></rss>

@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>violin plot on Orange</title>
-    <link>/blog/violin-plot/</link>
-    <description>Recent content in violin plot on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/violin-plot/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Box Plot Alternative: Violin Plot</title>
-      <link>/blog/2021/2021-08-05-violin-plot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-08-05-violin-plot/</guid>
-      <description>There&amp;rsquo;s nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>violin plot on Orange</title><link>/blog/violin-plot/</link><description>Recent content in violin plot on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/violin-plot/index.xml" rel="self" type="application/rss+xml"/><item><title>Box Plot Alternative: Violin Plot</title><link>/blog/2021/2021-08-05-violin-plot/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-08-05-violin-plot/</guid><description>There&amp;rsquo;s nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
 Related: PCA vs. MDS vs. t-SNE
-Most of you will be familiar with a good ol&#39; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description>
-    </item>
-    
-  </channel>
-</rss>
+Most of you will be familiar with a good ol&amp;rsquo; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description></item></channel></rss>

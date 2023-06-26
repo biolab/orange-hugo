@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>explanation on Orange</title>
-    <link>/blog/explanation/</link>
-    <description>Recent content in explanation on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/explanation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Characterizing Clusters with a Box Plot</title>
-      <link>/blog/2021/2021-10-21-cluster-explanation/</link>
-      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-10-21-cluster-explanation/</guid>
-      <description>There are many ways to cluster the data in Orange. Hiearchical clustering, k-means, and DBSCAN are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.
- Out of many ways for cluster analysis, perhaps the simplest one is by using the Box Plot.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>explanation on Orange</title><link>/blog/explanation/</link><description>Recent content in explanation on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/explanation/index.xml" rel="self" type="application/rss+xml"/><item><title>Characterizing Clusters with a Box Plot</title><link>/blog/2021/2021-10-21-cluster-explanation/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-10-21-cluster-explanation/</guid><description>There are many ways to cluster the data in Orange. Hiearchical clustering, k-means, and DBSCAN are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.
+Out of many ways for cluster analysis, perhaps the simplest one is by using the Box Plot.</description></item></channel></rss>

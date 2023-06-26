@@ -1,122 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>dataloading on Orange</title>
-    <link>/blog/dataloading/</link>
-    <description>Recent content in dataloading on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jun 2018 07:54:17 +0000</lastBuildDate><atom:link href="/blog/dataloading/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>From Surveys to Orange</title>
-      <link>/blog/2018/06/12/from-surveys-to-orange/</link>
-      <pubDate>Tue, 12 Jun 2018 07:54:17 +0000</pubDate>
-      
-      <guid>/blog/2018/06/12/from-surveys-to-orange/</guid>
-      <description>Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dataloading on Orange</title><link>/blog/dataloading/</link><description>Recent content in dataloading on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Jun 2018 07:54:17 +0000</lastBuildDate><atom:link href="/blog/dataloading/index.xml" rel="self" type="application/rss+xml"/><item><title>From Surveys to Orange</title><link>/blog/2018/06/12/from-surveys-to-orange/</link><pubDate>Tue, 12 Jun 2018 07:54:17 +0000</pubDate><guid>/blog/2018/06/12/from-surveys-to-orange/</guid><description>Today we have finished a series of workshops for the Ministry of Public Affairs. This was a year-long cooperation and we had many students asking many different questions. There was however one that we talked about a lot. If I have a survey, how do I get it into Orange?
 Related: Analyzing Surveys
-We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing Surveys</title>
-      <link>/blog/2017/10/26/analyzing-surveys/</link>
-      <pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate>
-      
-      <guid>/blog/2017/10/26/analyzing-surveys/</guid>
-      <description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
-For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description>
-    </item>
-    
-    <item>
-      <title>Text Analysis: New Features</title>
-      <link>/blog/2017/08/04/text-analysis-new-features/</link>
-      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
-      
-      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
-Related: Text Preprocessing</description>
-    </item>
-    
-    <item>
-      <title>Preparing Scraped Data</title>
-      <link>/blog/2017/01/23/preparing-scraped-data/</link>
-      <pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate>
-      
-      <guid>/blog/2017/01/23/preparing-scraped-data/</guid>
-      <description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+We are using EnKlik Anketa service, which is a great Slovenian product offering a wide array of options for the creation of surveys.</description></item><item><title>Analyzing Surveys</title><link>/blog/2017/10/26/analyzing-surveys/</link><pubDate>Thu, 26 Oct 2017 11:03:10 +0000</pubDate><guid>/blog/2017/10/26/analyzing-surveys/</guid><description>Our streak of workshops continues. This time we taught professionals from public administration how they can leverage data analytics and machine learning to retrieve interesting information from surveys. Thanks to the Ministry of Public Administration, this is only the first in a line of workshops on data science we are preparing for public sector employees.
+For this purpose, we have designed EnKlik Anketa widget, which you can find in Prototypes add-on.</description></item><item><title>Text Analysis: New Features</title><link>/blog/2017/08/04/text-analysis-new-features/</link><pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate><guid>/blog/2017/08/04/text-analysis-new-features/</guid><description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
+Related: Text Preprocessing</description></item><item><title>Preparing Scraped Data</title><link>/blog/2017/01/23/preparing-scraped-data/</link><pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate><guid>/blog/2017/01/23/preparing-scraped-data/</guid><description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
 Related: Creating a new data table in Orange through Python
-First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description>
-    </item>
-    
-    <item>
-      <title>Tips and Tricks for Data Preparation</title>
-      <link>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</link>
-      <pubDate>Fri, 29 Jan 2016 14:59:18 +0000</pubDate>
-      
-      <guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid>
-      <description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
-  Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining Course in Houston</title>
-      <link>/blog/2015/10/09/data-mining-course-in-houston/</link>
-      <pubDate>Fri, 09 Oct 2015 06:51:23 +0000</pubDate>
-      
-      <guid>/blog/2015/10/09/data-mining-course-in-houston/</guid>
-      <description>We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
-This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.</description>
-    </item>
-    
-    <item>
-      <title>Datasets in Orange Bioinformatics Add-On</title>
-      <link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link>
-      <pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate>
-      
-      <guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid>
-      <description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
-Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description>
-    </item>
-    
-    <item>
-      <title>Excel files in Orange 3.0</title>
-      <link>/blog/2015/05/29/excel-files-in-orange-3-0/</link>
-      <pubDate>Fri, 29 May 2015 11:58:39 +0000</pubDate>
-      
-      <guid>/blog/2015/05/29/excel-files-in-orange-3-0/</guid>
-      <description>Orange 3.0 version comes with an exciting feature that will simplify reading your data. If the old Orange required conversion from Excel into either tab-delimited or comma-separated files, the new version allows you to open plain .xlsx format data sets in the program. Naturally, the .txt and .csv files are still readable in Orange, so feel free to use data sets in any of the above-mentioned formats.
-Since Orange 3.0 is still in the development mode, you will find a smaller selection of widgets available at the moment, but give it a go and see how it works for Excel type data and whether the existing widgets are sufficient for your data analysis.</description>
-    </item>
-    
-    <item>
-      <title>Loading your data</title>
-      <link>/blog/2015/01/18/loading-your-data/</link>
-      <pubDate>Sun, 18 Jan 2015 17:36:13 +0000</pubDate>
-      
-      <guid>/blog/2015/01/18/loading-your-data/</guid>
-      <description>By a popular demand, we have just published a tutorial on how to load the data table into Orange. Besides its own .tab format, Orange can load any tab or comma delimited data set. The details are though in writing header rows that tell Orange about the type and domain of each attribute. The tutorial is a step-by-step description on how to do this and how to transfer the data from popular spreadsheet programs like Excel.</description>
-    </item>
-    
-    <item>
-      <title>Orange and AXLE project</title>
-      <link>/blog/2013/09/02/orange-and-axle-project/</link>
-      <pubDate>Mon, 02 Sep 2013 21:27:00 +0000</pubDate>
-      
-      <guid>/blog/2013/09/02/orange-and-axle-project/</guid>
-      <description>Our group at University of Ljubljana is a partner in the EU 7FP project Advanced Analytics for Extremely Large European Databases (AXLE). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).</description>
-    </item>
-    
-    <item>
-      <title>Data loading speedups</title>
-      <link>/blog/2011/03/28/data-loading-speedups/</link>
-      <pubDate>Mon, 28 Mar 2011 13:04:00 +0000</pubDate>
-      
-      <guid>/blog/2011/03/28/data-loading-speedups/</guid>
-      <description>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.
+First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description></item><item><title>Tips and Tricks for Data Preparation</title><link>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</link><pubDate>Fri, 29 Jan 2016 14:59:18 +0000</pubDate><guid>/blog/2016/01/29/tips-and-tricks-for-data-preparation/</guid><description>Probably the most crucial step in your data analysis is purging and cleaning your data. Here are a couple of cool tricks that will make your data preparation a bit easier.
+Use a smart text editor. We can recommend Sublime Text as it an extremely versatile editor that supports a broad variety of programming languages and markups, but there are other great tools out there as well. One of the best things you&amp;rsquo;ll keep coming back to in your editor is &amp;lsquo;Replace&amp;rsquo; function that allows you to replace specified values with different ones.</description></item><item><title>Data Mining Course in Houston</title><link>/blog/2015/10/09/data-mining-course-in-houston/</link><pubDate>Fri, 09 Oct 2015 06:51:23 +0000</pubDate><guid>/blog/2015/10/09/data-mining-course-in-houston/</guid><description>We have just completed an Introduction to Data Mining, a graduate course at Baylor College of Medicine in Texas, Houston. The course was given in September and consisted of seven two-hour lectures, each one followed with a homework assignment. The course was attended by about 40 students and some faculty and research staff.
+This was a challenging course. The audience was new to data mining, and we decided to teach them with the newest, third version of Orange.</description></item><item><title>Datasets in Orange Bioinformatics Add-On</title><link>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</link><pubDate>Fri, 31 Jul 2015 06:49:57 +0000</pubDate><guid>/blog/2015/07/31/datasets-in-orange-bioinformatics-add-on/</guid><description>As you might know, Orange comes with several basic widget sets pre-installed. These allow you to upload and explore the data, visualize them, learn from them and make predictions. However, there are also some exciting add-ons available for installation. One of these is a bioinformatics add-on, which is our specialty.
+Bioinformatics widget set allows you to pursue complex analysis of gene expression by providing access to several external libraries. There are four widgets intended specifically for this - dictyExpress, GEO Data Sets, PIPAx and GenExpress.</description></item><item><title>Excel files in Orange 3.0</title><link>/blog/2015/05/29/excel-files-in-orange-3-0/</link><pubDate>Fri, 29 May 2015 11:58:39 +0000</pubDate><guid>/blog/2015/05/29/excel-files-in-orange-3-0/</guid><description>Orange 3.0 version comes with an exciting feature that will simplify reading your data. If the old Orange required conversion from Excel into either tab-delimited or comma-separated files, the new version allows you to open plain .xlsx format data sets in the program. Naturally, the .txt and .csv files are still readable in Orange, so feel free to use data sets in any of the above-mentioned formats.
+Since Orange 3.0 is still in the development mode, you will find a smaller selection of widgets available at the moment, but give it a go and see how it works for Excel type data and whether the existing widgets are sufficient for your data analysis.</description></item><item><title>Loading your data</title><link>/blog/2015/01/18/loading-your-data/</link><pubDate>Sun, 18 Jan 2015 17:36:13 +0000</pubDate><guid>/blog/2015/01/18/loading-your-data/</guid><description>By a popular demand, we have just published a tutorial on how to load the data table into Orange. Besides its own .tab format, Orange can load any tab or comma delimited data set. The details are though in writing header rows that tell Orange about the type and domain of each attribute. The tutorial is a step-by-step description on how to do this and how to transfer the data from popular spreadsheet programs like Excel.</description></item><item><title>Orange and AXLE project</title><link>/blog/2013/09/02/orange-and-axle-project/</link><pubDate>Mon, 02 Sep 2013 21:27:00 +0000</pubDate><guid>/blog/2013/09/02/orange-and-axle-project/</guid><description>Our group at University of Ljubljana is a partner in the EU 7FP project Advanced Analytics for Extremely Large European Databases (AXLE). The project is particularly interesting because of the diverse partners that cover the entire vertical, from studying hardware architectures that would better support extremely large databases (University of Manchester, Barcelona Supercomputing Center) to making the necessary adjustments related to speed and security of databases (2ndQuadrant) to data analytics (our group) to handling and analyzing real data and decision making (Portavita).</description></item><item><title>Data loading speedups</title><link>/blog/2011/03/28/data-loading-speedups/</link><pubDate>Mon, 28 Mar 2011 13:04:00 +0000</pubDate><guid>/blog/2011/03/28/data-loading-speedups/</guid><description>Orange has been loading data faster since the end of February, especially if there are many attributes in the file.
 Quick comparisons between the old new versions, measured on my computer:
- adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s. DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s. GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.</description>
-    </item>
-    
-  </channel>
-</rss>
+adult.tab (32561 examples, 15 attributes): old version = 1.41s, new version = 0.86s. DLBCL.tab (77 examples, 7071 attributes): old version = 2.72s, new version = 0.93s. GDS1962.tab (104 examples, 31837 attributes): old version = 33.5s, new version = 6.6s. The speedups were obtained with:</description></item></channel></rss>

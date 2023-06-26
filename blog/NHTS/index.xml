@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>NHTS on Orange</title>
-    <link>/blog/NHTS/</link>
-    <description>Recent content in NHTS on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/NHTS/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Abuse p-Values in Correlations</title>
-      <link>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</link>
-      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid>
-      <description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NHTS on Orange</title><link>/blog/NHTS/</link><description>Recent content in NHTS on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/NHTS/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Abuse p-Values in Correlations</title><link>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</link><pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate><guid>/blog/2019/1/4/how-to-abuse-p-values-in-correlations/</guid><description>In a parallel universe, not so far from ours, Orange’s Correlation widget looks like this.
 \
- 
 \
-Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description>
-    </item>
-    
-  </channel>
-</rss>
+Quite similar to ours, except that this one shows p-values instead of correlation coefficients. Which is actually better, isn’t it? I mean, we have all attended Statistics 101, and we know that you can never trust correlation coefficients without looking at p-values to check that these correlations are real, right? So why on Earth doesn’t Orange show them?</description></item></channel></rss>

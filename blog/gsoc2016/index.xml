@@ -1,84 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>gsoc2016 on Orange</title>
-    <link>/blog/gsoc2016/</link>
-    <description>Recent content in gsoc2016 on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 25 Aug 2016 11:31:04 +0000</lastBuildDate><atom:link href="/blog/gsoc2016/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Visualizing Gradient Descent</title>
-      <link>/blog/2016/08/25/visualizing-gradient-descent/</link>
-      <pubDate>Thu, 25 Aug 2016 11:31:04 +0000</pubDate>
-      
-      <guid>/blog/2016/08/25/visualizing-gradient-descent/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
-Gradient Descent was implemented as a part of my Google Summer of Code project and it is available in the Orange3-Educational add-on. It simulates gradient descent for either Logistic or Linear regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</description>
-    </item>
-    
-    <item>
-      <title>Making recommendations</title>
-      <link>/blog/2016/08/19/making-recommendations/</link>
-      <pubDate>Fri, 19 Aug 2016 20:42:59 +0000</pubDate>
-      
-      <guid>/blog/2016/08/19/making-recommendations/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gsoc2016 on Orange</title><link>/blog/gsoc2016/</link><description>Recent content in gsoc2016 on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 25 Aug 2016 11:31:04 +0000</lastBuildDate><atom:link href="/blog/gsoc2016/index.xml" rel="self" type="application/rss+xml"/><item><title>Visualizing Gradient Descent</title><link>/blog/2016/08/25/visualizing-gradient-descent/</link><pubDate>Thu, 25 Aug 2016 11:31:04 +0000</pubDate><guid>/blog/2016/08/25/visualizing-gradient-descent/</guid><description>This is a guest blog from the Google Summer of Code project.
+Gradient Descent was implemented as a part of my Google Summer of Code project and it is available in the Orange3-Educational add-on. It simulates gradient descent for either Logistic or Linear regression, depending on the type of the input data. Gradient descent is iterative approach to optimize model parameters that minimize the cost function. In machine learning, the cost function corresponds to prediction error when the model is used on the training data set.</description></item><item><title>Making recommendations</title><link>/blog/2016/08/19/making-recommendations/</link><pubDate>Fri, 19 Aug 2016 20:42:59 +0000</pubDate><guid>/blog/2016/08/19/making-recommendations/</guid><description>This is a guest blog from the Google Summer of Code project.
 Recommender systems are everywhere, we can find them on YouTube, Amazon, Netflix, iTunes,&amp;hellip; This is because they are crucial component in a competitive retail services.
-How can I know what you may like if I have almost no information about you? The answer: taking Collaborative filtering (CF) approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</description>
-    </item>
-    
-    <item>
-      <title>Visualization of Classification Probabilities</title>
-      <link>/blog/2016/08/16/polynomial-classification/</link>
-      <pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate>
-      
-      <guid>/blog/2016/08/16/polynomial-classification/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+How can I know what you may like if I have almost no information about you? The answer: taking Collaborative filtering (CF) approaches. Basically, this means to combine all the little knowledge we have about users and/or items in order to build a grid of knowledge with which we make recommendation.</description></item><item><title>Visualization of Classification Probabilities</title><link>/blog/2016/08/16/polynomial-classification/</link><pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate><guid>/blog/2016/08/16/polynomial-classification/</guid><description>This is a guest blog from the Google Summer of Code project.
 Polynomial Classification widget is implemented as a part of my Google Summer of Code project along with other widgets in educational add-on (see my previous blog). It visualizes probabilities for two-class classification (target vs. rest) using color gradient and contour lines, and it can do so for any Orange learner.
-Here is an example workflow. The data comes from the File widget.</description>
-    </item>
-    
-    <item>
-      <title>Interactive k-Means</title>
-      <link>/blog/2016/08/12/interactive-k-means/</link>
-      <pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate>
-      
-      <guid>/blog/2016/08/12/interactive-k-means/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+Here is an example workflow. The data comes from the File widget.</description></item><item><title>Interactive k-Means</title><link>/blog/2016/08/12/interactive-k-means/</link><pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate><guid>/blog/2016/08/12/interactive-k-means/</guid><description>This is a guest blog from the Google Summer of Code project.
 As a part of my Google Summer of Code project I started developing educational widgets and assemble them in an Educational Add-On for Orange. Educational widgets can be used by students to understand how some key data mining algorithms work and by teachers to demonstrate the working of these algorithms.
-Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description>
-    </item>
-    
-    <item>
-      <title>Rule Induction (Part I - Scripting)</title>
-      <link>/blog/2016/08/05/rule-induction-part-i-scripting/</link>
-      <pubDate>Fri, 05 Aug 2016 11:52:39 +0000</pubDate>
-      
-      <guid>/blog/2016/08/05/rule-induction-part-i-scripting/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
-We’ve all heard the saying, “Rules are meant to be broken.” Regardless of how you might feel about the idea, one thing is certain. Rules must first be learnt. My 2016 Google Summer of Code project revolves around doing just that. I am developing classification rule induction techniques for Orange, and here describing the code currently available in the pull request and that will become part of official distribution in an upcoming release 3.</description>
-    </item>
-    
-    <item>
-      <title>Univariate GSoC Success</title>
-      <link>/blog/2016/04/14/univariate-gsoc-success/</link>
-      <pubDate>Thu, 14 Apr 2016 08:55:14 +0000</pubDate>
-      
-      <guid>/blog/2016/04/14/univariate-gsoc-success/</guid>
-      <description>Google Summer of Code application period has come to an end. We&amp;rsquo;ve received 34 applications, some of which were of truly high quality. Now it&amp;rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&amp;rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
-First, we needed to preprocess the data a bit, since it came in a messy form of strings.</description>
-    </item>
-    
-    <item>
-      <title>Orange at Google Summer of Code 2016</title>
-      <link>/blog/2016/03/03/orange-at-google-summer-of-code-2016/</link>
-      <pubDate>Thu, 03 Mar 2016 08:31:39 +0000</pubDate>
-      
-      <guid>/blog/2016/03/03/orange-at-google-summer-of-code-2016/</guid>
-      <description>Orange team is extremely excited to be a part of this year&amp;rsquo;s Google Summer of Code! GSoC is a great opportunity for students around the world to spend their summer contributing to an open-source software, gaining experience and earning money.
-Accepted students will help us develop Orange (or other chosen OSS project) from May to August. Each student is expected to select and define a project of his/her interest and will be ascribed a mentor to guide him/her through the entire process.</description>
-    </item>
-    
-  </channel>
-</rss>
+Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description></item><item><title>Rule Induction (Part I - Scripting)</title><link>/blog/2016/08/05/rule-induction-part-i-scripting/</link><pubDate>Fri, 05 Aug 2016 11:52:39 +0000</pubDate><guid>/blog/2016/08/05/rule-induction-part-i-scripting/</guid><description>This is a guest blog from the Google Summer of Code project.
+We’ve all heard the saying, “Rules are meant to be broken.” Regardless of how you might feel about the idea, one thing is certain. Rules must first be learnt. My 2016 Google Summer of Code project revolves around doing just that. I am developing classification rule induction techniques for Orange, and here describing the code currently available in the pull request and that will become part of official distribution in an upcoming release 3.</description></item><item><title>Univariate GSoC Success</title><link>/blog/2016/04/14/univariate-gsoc-success/</link><pubDate>Thu, 14 Apr 2016 08:55:14 +0000</pubDate><guid>/blog/2016/04/14/univariate-gsoc-success/</guid><description>Google Summer of Code application period has come to an end. We&amp;rsquo;ve received 34 applications, some of which were of truly high quality. Now it&amp;rsquo;s upon us to select the top performing candidates, but before that we wanted to have an overlook of the candidate pool. We&amp;rsquo;ve gathered data from our Google Form application and gave it a quick view in Orange.
+First, we needed to preprocess the data a bit, since it came in a messy form of strings.</description></item><item><title>Orange at Google Summer of Code 2016</title><link>/blog/2016/03/03/orange-at-google-summer-of-code-2016/</link><pubDate>Thu, 03 Mar 2016 08:31:39 +0000</pubDate><guid>/blog/2016/03/03/orange-at-google-summer-of-code-2016/</guid><description>Orange team is extremely excited to be a part of this year&amp;rsquo;s Google Summer of Code! GSoC is a great opportunity for students around the world to spend their summer contributing to an open-source software, gaining experience and earning money.
+Accepted students will help us develop Orange (or other chosen OSS project) from May to August. Each student is expected to select and define a project of his/her interest and will be ascribed a mentor to guide him/her through the entire process.</description></item></channel></rss>

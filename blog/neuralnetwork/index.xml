@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>neuralnetwork on Orange</title>
-    <link>/blog/neuralnetwork/</link>
-    <description>Recent content in neuralnetwork on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate><atom:link href="/blog/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Unfreezing Orange</title>
-      <link>/blog/2018/04/05/unfreezing-orange/</link>
-      <pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate>
-      
-      <guid>/blog/2018/04/05/unfreezing-orange/</guid>
-      <description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
-Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description>
-    </item>
-    
-    <item>
-      <title>Neural Network is Back!</title>
-      <link>/blog/2017/11/03/neural-network-is-back/</link>
-      <pubDate>Fri, 03 Nov 2017 12:40:06 +0000</pubDate>
-      
-      <guid>/blog/2017/11/03/neural-network-is-back/</guid>
-      <description>We know you&amp;rsquo;ve missed it. We&amp;rsquo;ve been getting many requests to bring back Neural Network widget, but we also had many reservations about it.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>neuralnetwork on Orange</title><link>/blog/neuralnetwork/</link><description>Recent content in neuralnetwork on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Apr 2018 08:22:20 +0000</lastBuildDate><atom:link href="/blog/neuralnetwork/index.xml" rel="self" type="application/rss+xml"/><item><title>Unfreezing Orange</title><link>/blog/2018/04/05/unfreezing-orange/</link><pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate><guid>/blog/2018/04/05/unfreezing-orange/</guid><description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
+Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description></item><item><title>Neural Network is Back!</title><link>/blog/2017/11/03/neural-network-is-back/</link><pubDate>Fri, 03 Nov 2017 12:40:06 +0000</pubDate><guid>/blog/2017/11/03/neural-network-is-back/</guid><description>We know you&amp;rsquo;ve missed it. We&amp;rsquo;ve been getting many requests to bring back Neural Network widget, but we also had many reservations about it.
 Neural networks are powerful and great, but to do them right is not straight-forward. And to do them right in the context of a GUI-based visual programming tool like Orange is a twisted double helix of a roller coaster.
-Do we make each layer a widget and then stack them?</description>
-    </item>
-    
-    <item>
-      <title>Orange GSoC: A Fully-Featured Neural Network Library Implementation with Extension for Deep Learning</title>
-      <link>/blog/2012/05/06/orange-gsoc-a-fully-featured-neural-network-library-implementation-with-extension-for-deep-learning/</link>
-      <pubDate>Sun, 06 May 2012 09:24:00 +0000</pubDate>
-      
-      <guid>/blog/2012/05/06/orange-gsoc-a-fully-featured-neural-network-library-implementation-with-extension-for-deep-learning/</guid>
-      <description>This project aims to build a neural network library based on some great existing NN libraries, notably the Flood Library, which already provides a fully functional Multilayer Perceptron (MLP) implementation. The project starts with implementing a robust, efficient feed forward neural network library, and then will extend it in significant ways that add support for state-of-the-art deep learning techniques. Additional extensions include building a PCA framework and improving existing training algorithms and error functional.</description>
-    </item>
-    
-  </channel>
-</rss>
+Do we make each layer a widget and then stack them?</description></item><item><title>Orange GSoC: A Fully-Featured Neural Network Library Implementation with Extension for Deep Learning</title><link>/blog/2012/05/06/orange-gsoc-a-fully-featured-neural-network-library-implementation-with-extension-for-deep-learning/</link><pubDate>Sun, 06 May 2012 09:24:00 +0000</pubDate><guid>/blog/2012/05/06/orange-gsoc-a-fully-featured-neural-network-library-implementation-with-extension-for-deep-learning/</guid><description>This project aims to build a neural network library based on some great existing NN libraries, notably the Flood Library, which already provides a fully functional Multilayer Perceptron (MLP) implementation. The project starts with implementing a robust, efficient feed forward neural network library, and then will extend it in significant ways that add support for state-of-the-art deep learning techniques. Additional extensions include building a PCA framework and improving existing training algorithms and error functional.</description></item></channel></rss>

@@ -1,91 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>download on Orange</title>
-    <link>/blog/download/</link>
-    <description>Recent content in download on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate><atom:link href="/blog/download/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installing Add-ons Works Again</title>
-      <link>/blog/2018/04/23/installing-add-ons-works-again/</link>
-      <pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate>
-      
-      <guid>/blog/2018/04/23/installing-add-ons-works-again/</guid>
-      <description>Dear Orange users,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>download on Orange</title><link>/blog/download/</link><description>Recent content in download on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Apr 2018 08:34:47 +0000</lastBuildDate><atom:link href="/blog/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Installing Add-ons Works Again</title><link>/blog/2018/04/23/installing-add-ons-works-again/</link><pubDate>Mon, 23 Apr 2018 08:34:47 +0000</pubDate><guid>/blog/2018/04/23/installing-add-ons-works-again/</guid><description>Dear Orange users,
 Some of you might have an issue installing add-ons with the following issue popping up:
-xmlrpc.client.Fault: &amp;lt;Fault -32601: &#39;server error; requested method not found&#39;&amp;gt;
+xmlrpc.client.Fault: &amp;lt;Fault -32601: 'server error; requested method not found'&amp;gt;
 This is the result of the migration to a new infrastructure at PyPi, which provides the installation of add-ons. Our team has rallied to adjust the add-on installer so it works with the new and improved service.
-In order to make the add-on installer work (again), please download the latest version of Orange (3.</description>
-    </item>
-    
-    <item>
-      <title>Can We Download Orange Faster?</title>
-      <link>/blog/2017/08/28/can-we-download-orange-faster/</link>
-      <pubDate>Mon, 28 Aug 2017 09:16:48 +0000</pubDate>
-      
-      <guid>/blog/2017/08/28/can-we-download-orange-faster/</guid>
-      <description>One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.
+In order to make the add-on installer work (again), please download the latest version of Orange (3.</description></item><item><title>Can We Download Orange Faster?</title><link>/blog/2017/08/28/can-we-download-orange-faster/</link><pubDate>Mon, 28 Aug 2017 09:16:48 +0000</pubDate><guid>/blog/2017/08/28/can-we-download-orange-faster/</guid><description>One day Blaž and Janez came to us and started complaining how slow Orange download is in the US. Since they hold a large course at Baylor College of Medicine every year, this causes some frustration.
 Related: Introduction to Data Mining Course in Houston
 But we have the data and we&amp;rsquo;ve promptly tried to confirm their complaints by analyzing them&amp;hellip; well, in Orange!
-First, let us observe the data. We have 4887 recorded download sessions with one meta feature reporting on the country of the download and four features with time, size, speed in bytes and speed in gigabytes of the download.</description>
-    </item>
-    
-    <item>
-      <title>Miniconda Installer</title>
-      <link>/blog/2017/07/14/miniconda-installer/</link>
-      <pubDate>Fri, 14 Jul 2017 13:30:47 +0000</pubDate>
-      
-      <guid>/blog/2017/07/14/miniconda-installer/</guid>
-      <description>Orange has a new friend! It&amp;rsquo;s Miniconda, Anaconda&amp;rsquo;s little sister.
+First, let us observe the data. We have 4887 recorded download sessions with one meta feature reporting on the country of the download and four features with time, size, speed in bytes and speed in gigabytes of the download.</description></item><item><title>Miniconda Installer</title><link>/blog/2017/07/14/miniconda-installer/</link><pubDate>Fri, 14 Jul 2017 13:30:47 +0000</pubDate><guid>/blog/2017/07/14/miniconda-installer/</guid><description>Orange has a new friend! It&amp;rsquo;s Miniconda, Anaconda&amp;rsquo;s little sister.
 For a long time, the idea was to utilize the friendly nature of Miniconda to install Orange dependencies, which often misbehaved on some platforms. Miniconda provides Orange with Python 3.6 and conda installer, which is then used to handle everything Orange needs for proper functioning. So sssssss-mooth!
 Miniconda Installer
-Please know that our Miniconda installer is in a beta state, but we are inviting adventurous testers to try it and report any bugs they find to our issue tracker [there won&amp;rsquo;t be any of course!</description>
-    </item>
-    
-    <item>
-      <title>Hubbing with the Hub widget</title>
-      <link>/blog/2015/09/11/hubbing-with-hub-widget/</link>
-      <pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate>
-      
-      <guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid>
-      <description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+Please know that our Miniconda installer is in a beta state, but we are inviting adventurous testers to try it and report any bugs they find to our issue tracker [there won&amp;rsquo;t be any of course!</description></item><item><title>Hubbing with the Hub widget</title><link>/blog/2015/09/11/hubbing-with-hub-widget/</link><pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate><guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid><description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
 Say no more! Look no further! Here is the new Hub widget!
-Hub widget is the most versatile widget available so far.</description>
-    </item>
-    
-    <item>
-      <title>Fink packages now also 64-bit</title>
-      <link>/blog/2011/07/03/fink-packages-now-also-64-bit/</link>
-      <pubDate>Sun, 03 Jul 2011 12:31:00 +0000</pubDate>
-      
-      <guid>/blog/2011/07/03/fink-packages-now-also-64-bit/</guid>
-      <description>Fink packages (we are using for system-wide Orange installations on Mac OS X) were updated to 64-bit. So if you were using 64-bit Fink installation you will be now able also to use Orange (and our binary Fink repository of already compiled packages). Just use this this installation script to configure your local Fink installation to use our binary Fink repository and add information about Orange packages (they are not available among official Fink packages).</description>
-    </item>
-    
-    <item>
-      <title>Debian packages for Squeeze</title>
-      <link>/blog/2011/06/30/debian-packages-for-squeeze/</link>
-      <pubDate>Thu, 30 Jun 2011 00:44:00 +0000</pubDate>
-      
-      <guid>/blog/2011/06/30/debian-packages-for-squeeze/</guid>
-      <description>We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your /etc/apt/sources.list to:
-deb http://orange.biolab.si/debian squeeze main deb-src http://orange.biolab.si/debian squeeze main  Those packages are compiled for Python 2.6.
-You can read more about Debian packages in our old blog post.</description>
-    </item>
-    
-    <item>
-      <title>Debian repository lives!</title>
-      <link>/blog/2010/03/04/debian-repository-lives/</link>
-      <pubDate>Thu, 04 Mar 2010 01:56:00 +0000</pubDate>
-      
-      <guid>/blog/2010/03/04/debian-repository-lives/</guid>
-      <description>We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.
+Hub widget is the most versatile widget available so far.</description></item><item><title>Fink packages now also 64-bit</title><link>/blog/2011/07/03/fink-packages-now-also-64-bit/</link><pubDate>Sun, 03 Jul 2011 12:31:00 +0000</pubDate><guid>/blog/2011/07/03/fink-packages-now-also-64-bit/</guid><description>Fink packages (we are using for system-wide Orange installations on Mac OS X) were updated to 64-bit. So if you were using 64-bit Fink installation you will be now able also to use Orange (and our binary Fink repository of already compiled packages). Just use this this installation script to configure your local Fink installation to use our binary Fink repository and add information about Orange packages (they are not available among official Fink packages).</description></item><item><title>Debian packages for Squeeze</title><link>/blog/2011/06/30/debian-packages-for-squeeze/</link><pubDate>Thu, 30 Jun 2011 00:44:00 +0000</pubDate><guid>/blog/2011/06/30/debian-packages-for-squeeze/</guid><description>We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your /etc/apt/sources.list to:
+deb http://orange.biolab.si/debian squeeze main deb-src http://orange.biolab.si/debian squeeze main Those packages are compiled for Python 2.6.
+You can read more about Debian packages in our old blog post.</description></item><item><title>Debian repository lives!</title><link>/blog/2010/03/04/debian-repository-lives/</link><pubDate>Thu, 04 Mar 2010 01:56:00 +0000</pubDate><guid>/blog/2010/03/04/debian-repository-lives/</guid><description>We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.
 To get access to those packages just add those two lines to your /etc/apt/sources.list (this file contains a list of repositories with packages):
-deb http://orange.biolab.si/debian lenny main deb-src http://orange.biolab.si/debian lenny main  And then you can install Orange with this command:
-aptitude update aptitude install orange-svn  Packages are not signed as they are made automatically so you will probably be warned about this.</description>
-    </item>
-    
-  </channel>
-</rss>
+deb http://orange.biolab.si/debian lenny main deb-src http://orange.biolab.si/debian lenny main And then you can install Orange with this command:
+aptitude update aptitude install orange-svn Packages are not signed as they are made automatically so you will probably be warned about this.</description></item></channel></rss>

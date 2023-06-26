@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>association rules on Orange</title>
-    <link>/blog/association-rules/</link>
-    <description>Recent content in association rules on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 25 Apr 2016 07:46:33 +0000</lastBuildDate><atom:link href="/blog/association-rules/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Association Rules in Orange</title>
-      <link>/blog/2016/04/25/association-rules-in-orange/</link>
-      <pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate>
-      
-      <guid>/blog/2016/04/25/association-rules-in-orange/</guid>
-      <description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
-The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>association rules on Orange</title><link>/blog/association-rules/</link><description>Recent content in association rules on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 25 Apr 2016 07:46:33 +0000</lastBuildDate><atom:link href="/blog/association-rules/index.xml" rel="self" type="application/rss+xml"/><item><title>Association Rules in Orange</title><link>/blog/2016/04/25/association-rules-in-orange/</link><pubDate>Mon, 25 Apr 2016 07:46:33 +0000</pubDate><guid>/blog/2016/04/25/association-rules-in-orange/</guid><description>Orange is welcoming back one of its more exciting add-ons: Associate! Association rules can help the user quickly and simply discover the underlying relationships and connections between data instances. Yeah!
+The add-on currently has two widgets: one for Association Rules and the other for Frequent Itemsets. With Frequent Itemsets we first check frequency of items and itemsets in our transaction matrix. This tell us which items (products) and itemsets are the most frequent in our data, so it would make a lot of sense focusing on these products.</description></item></channel></rss>

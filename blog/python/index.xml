@@ -1,135 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>python on Orange</title>
-    <link>/blog/python/</link>
-    <description>Recent content in python on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Compiling Orange 2 on modern Linux</title>
-      <link>/blog/2022/2022-01-10-orange2/</link>
-      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-01-10-orange2/</guid>
-      <description>We abandoned Orange 2 in 2015 because we did not have enough resources to split between maintaining Orange 2 and building the new version from scratch. Orange was due for a rewrite for quite some time. The core of the pre-3 Orange was written mainly in C++. When Orange was conceived, extending Python with C was the only option to make it run fast enough. Orange was designed before NumPy and even before NumPy&amp;rsquo;s predecessors, Numarray and Numeric.</description>
-    </item>
-    
-    <item>
-      <title>Orange in Space</title>
-      <link>/blog/2018/09/21/orange-in-space/</link>
-      <pubDate>Fri, 21 Sep 2018 07:32:17 +0000</pubDate>
-      
-      <guid>/blog/2018/09/21/orange-in-space/</guid>
-      <description>Did you know that Orange has already been to space? Rosario Brunetto (IAS-Orsay, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the JAXA Hayabusa2 team. The Hayabusa2 asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data.</description>
-    </item>
-    
-    <item>
-      <title>Python Script: Managing Data on the Fly</title>
-      <link>/blog/2018/05/15/python-script-managing-data-on-the-fly/</link>
-      <pubDate>Tue, 15 May 2018 09:15:58 +0000</pubDate>
-      
-      <guid>/blog/2018/05/15/python-script-managing-data-on-the-fly/</guid>
-      <description>Python Script is this mysterious widget most people don&amp;rsquo;t know how to use, even those versed in Python. Python Script is the widget that supplements Orange functionalities with (almost) everything that Python can offer. And it&amp;rsquo;s time we unveil some of its functionalities with a simple example.
-Example: Batch Transform the Data There might be a time when you need to apply a function to all your attributes. Say you wish to log-transform their values, as it is common in gene expression data.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining Course at Higher School of Economics, Moscow</title>
-      <link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link>
-      <pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate>
-      
-      <guid>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</guid>
-      <description>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&amp;rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
-It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</description>
-    </item>
-    
-    <item>
-      <title>Unfreezing Orange</title>
-      <link>/blog/2018/04/05/unfreezing-orange/</link>
-      <pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate>
-      
-      <guid>/blog/2018/04/05/unfreezing-orange/</guid>
-      <description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
-Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description>
-    </item>
-    
-    <item>
-      <title>Preparing Scraped Data</title>
-      <link>/blog/2017/01/23/preparing-scraped-data/</link>
-      <pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate>
-      
-      <guid>/blog/2017/01/23/preparing-scraped-data/</guid>
-      <description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Orange</title><link>/blog/python/</link><description>Recent content in python on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Compiling Orange 2 on modern Linux</title><link>/blog/2022/2022-01-10-orange2/</link><pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-01-10-orange2/</guid><description>We abandoned Orange 2 in 2015 because we did not have enough resources to split between maintaining Orange 2 and building the new version from scratch. Orange was due for a rewrite for quite some time. The core of the pre-3 Orange was written mainly in C++. When Orange was conceived, extending Python with C was the only option to make it run fast enough. Orange was designed before NumPy and even before NumPy&amp;rsquo;s predecessors, Numarray and Numeric.</description></item><item><title>Orange in Space</title><link>/blog/2018/09/21/orange-in-space/</link><pubDate>Fri, 21 Sep 2018 07:32:17 +0000</pubDate><guid>/blog/2018/09/21/orange-in-space/</guid><description>Did you know that Orange has already been to space? Rosario Brunetto (IAS-Orsay, France) has been working on the analysis of infrared images of asteroid Ryugu as a member of the JAXA Hayabusa2 team. The Hayabusa2 asteroid sample-return mission aims to retrieve data and samples from the near-Earth Ryugu asteroid and analyze its composition. Hayabusa2 arrived at Ryugu on June 27 and while the spacecraft will return to Earth with a sample only in late 2020, the mission already started collecting and sending back the data.</description></item><item><title>Python Script: Managing Data on the Fly</title><link>/blog/2018/05/15/python-script-managing-data-on-the-fly/</link><pubDate>Tue, 15 May 2018 09:15:58 +0000</pubDate><guid>/blog/2018/05/15/python-script-managing-data-on-the-fly/</guid><description>Python Script is this mysterious widget most people don&amp;rsquo;t know how to use, even those versed in Python. Python Script is the widget that supplements Orange functionalities with (almost) everything that Python can offer. And it&amp;rsquo;s time we unveil some of its functionalities with a simple example.
+Example: Batch Transform the Data There might be a time when you need to apply a function to all your attributes. Say you wish to log-transform their values, as it is common in gene expression data.</description></item><item><title>Data Mining Course at Higher School of Economics, Moscow</title><link>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</link><pubDate>Thu, 03 May 2018 11:37:28 +0000</pubDate><guid>/blog/2018/05/03/data-mining-course-at-higher-school-of-economics-moscow/</guid><description>Janez and I have recently returned from a two-week stay in Moscow, Russian Federation, where we were teaching data mining to MA students of Applied Statistics. This is a new Master&amp;rsquo;s course that attracts the best students from different backgrounds and teaches them statistical methods for work in the industry.
+It was a real pleasure working at HSE. The students were proactive by asking questions and really challenged us to do our best.</description></item><item><title>Unfreezing Orange</title><link>/blog/2018/04/05/unfreezing-orange/</link><pubDate>Thu, 05 Apr 2018 08:22:20 +0000</pubDate><guid>/blog/2018/04/05/unfreezing-orange/</guid><description>Have you ever tried Orange with data big enough that some widgets ran for more than a second? Then you have seen it: Orange froze. While the widget was processing, the interface would not respond to any inputs, and there was no way to stop that widget.
+Not all the widgets freeze, though! Some widgets, like Test &amp;amp; Score, k-Means, or Image Embedding, do not block. While they are working, we are free to build other parts of the workflow, and these widgets also show their progress.</description></item><item><title>Preparing Scraped Data</title><link>/blog/2017/01/23/preparing-scraped-data/</link><pubDate>Mon, 23 Jan 2017 12:29:20 +0000</pubDate><guid>/blog/2017/01/23/preparing-scraped-data/</guid><description>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&amp;rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.
 Related: Creating a new data table in Orange through Python
-First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description>
-    </item>
-    
-    <item>
-      <title>Learners in Python</title>
-      <link>/blog/2015/10/16/learners-in-python/</link>
-      <pubDate>Fri, 16 Oct 2015 08:32:43 +0000</pubDate>
-      
-      <guid>/blog/2015/10/16/learners-in-python/</guid>
-      <description>We&amp;rsquo;ve already written about classifying instances in Python. However, it&amp;rsquo;s always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.
+First, we&amp;rsquo;ll have to do some scripting. We&amp;rsquo;ll use a couple of Python libraries - urllib.</description></item><item><title>Learners in Python</title><link>/blog/2015/10/16/learners-in-python/</link><pubDate>Fri, 16 Oct 2015 08:32:43 +0000</pubDate><guid>/blog/2015/10/16/learners-in-python/</guid><description>We&amp;rsquo;ve already written about classifying instances in Python. However, it&amp;rsquo;s always nice to have a comprehensive list of classifiers and a step-by-step procedure at hand.
 TRAINING THE CLASSIFIER
 We start with simply importing Orange module into Python and loading our data set.
-&amp;gt;&amp;gt;&amp;gt;&amp;gt; import Orange &amp;gt;&amp;gt;&amp;gt;&amp;gt; data = Orange.data.Table(&amp;quot;titanic&amp;quot;)  We are using &amp;lsquo;titanic.tab&amp;rsquo; data. You can load any data set you want, but it does have to have a categorical class variable (for numeric targets use regression).</description>
-    </item>
-    
-    <item>
-      <title>Classifying instances with Orange in Python</title>
-      <link>/blog/2015/08/14/classifying-instances-with-orange-in-python/</link>
-      <pubDate>Fri, 14 Aug 2015 12:31:57 +0000</pubDate>
-      
-      <guid>/blog/2015/08/14/classifying-instances-with-orange-in-python/</guid>
-      <description>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily classify data with Orange.
+&amp;gt;&amp;gt;&amp;gt;&amp;gt; import Orange &amp;gt;&amp;gt;&amp;gt;&amp;gt; data = Orange.data.Table(&amp;quot;titanic&amp;quot;) We are using &amp;rsquo;titanic.tab&amp;rsquo; data. You can load any data set you want, but it does have to have a categorical class variable (for numeric targets use regression).</description></item><item><title>Classifying instances with Orange in Python</title><link>/blog/2015/08/14/classifying-instances-with-orange-in-python/</link><pubDate>Fri, 14 Aug 2015 12:31:57 +0000</pubDate><guid>/blog/2015/08/14/classifying-instances-with-orange-in-python/</guid><description>Last week we showed you how to create your own data table in Python shell. Now we’re going to take you a step further and show you how to easily classify data with Orange.
 First we’re going to create a new data table with 10 fruits as our instances.
-import Orange from Orange.data import * color = DiscreteVariable(&amp;quot;color&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;yellow&amp;quot;])calories = ContinuousVariable(&amp;quot;calories&amp;quot;) fiber = ContinuousVariable(&amp;quot;fiber&amp;quot;) fruit = DiscreteVariable(&amp;quot;fruit&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;apple&amp;quot;, &amp;quot;peach&amp;quot;]) domain = Domain([color, calories, fiber], class_vars=fruit) data=Table(domain, [&amp;lt;/span&amp;gt; [&amp;quot;green&amp;quot;, 4, 1.</description>
-    </item>
-    
-    <item>
-      <title>Creating a new data table in Orange through Python</title>
-      <link>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</link>
-      <pubDate>Fri, 07 Aug 2015 13:57:49 +0000</pubDate>
-      
-      <guid>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</guid>
-      <description>IMPORT DATA
+import Orange from Orange.data import * color = DiscreteVariable(&amp;quot;color&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;yellow&amp;quot;])calories = ContinuousVariable(&amp;quot;calories&amp;quot;) fiber = ContinuousVariable(&amp;quot;fiber&amp;quot;) fruit = DiscreteVariable(&amp;quot;fruit&amp;quot;, values=[&amp;quot;orange&amp;quot;, &amp;quot;apple&amp;quot;, &amp;quot;peach&amp;quot;]) domain = Domain([color, calories, fiber], class_vars=fruit) data=Table(domain, [&amp;lt;/span&amp;gt; [&amp;quot;green&amp;quot;, 4, 1.</description></item><item><title>Creating a new data table in Orange through Python</title><link>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</link><pubDate>Fri, 07 Aug 2015 13:57:49 +0000</pubDate><guid>/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/</guid><description>IMPORT DATA
 One of the first tasks in Orange data analysis is of course loading your data. If you are using Orange through Python, this is as easy as riding a bike:
-import Orange data = Orange.data.Table(“iris”) print (data)  This will return a neat data table of the famous Iris data set in the console.
+import Orange data = Orange.data.Table(“iris”) print (data) This will return a neat data table of the famous Iris data set in the console.
 CREATE YOUR OWN DATA TABLE
-What if you want to create your own data table from scratch?</description>
-    </item>
-    
-    <item>
-      <title>Orange in Pavia, Italy</title>
-      <link>/blog/2015/02/19/orange-in-pavia-italy/</link>
-      <pubDate>Thu, 19 Feb 2015 15:18:32 +0000</pubDate>
-      
-      <guid>/blog/2015/02/19/orange-in-pavia-italy/</guid>
-      <description>These days, we (Blaz Zupan and Marinka Zitnik, with full background support of entire Bioinformatics Lab) are running a three-day course on Data Mining in Python. Riccardo Bellazzi, a professor at University of Pavia, a world-renown researcher in biomedical informatics, and most of all, a great friend, has invited us to run the elective course for Pavia&amp;rsquo;s grad students. The enrollment was, he says, overwhelming, as with over 50 students this is by far the best attended grad course at Pavia&amp;rsquo;s faculty of engineering in the past years.</description>
-    </item>
-    
-    <item>
-      <title>Computing joint entropy (in Python)</title>
-      <link>/blog/2012/06/15/computing-joint-entropy-in-python/</link>
-      <pubDate>Fri, 15 Jun 2012 13:21:00 +0000</pubDate>
-      
-      <guid>/blog/2012/06/15/computing-joint-entropy-in-python/</guid>
-      <description>How I wrote a beautiful, general, and super fast joint entropy method (in Python).
-def entropy(*X): return = np.sum(-p * np.log2(p) if p &amp;gt; 0 else 0 for p in (np.mean(reduce(np.logical_and, (predictions == c for predictions, c in zip(X, classes)))) for classes in itertools.product(*[set(x) for x in X])))  I started with the method to compute the entropy of a single variable. Input is a numpy array with discrete values (either integers or strings).</description>
-    </item>
-    
-    <item>
-      <title>Debian packages support multiple Python versions now</title>
-      <link>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</link>
-      <pubDate>Tue, 13 Sep 2011 00:32:00 +0000</pubDate>
-      
-      <guid>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</guid>
-      <description>We have created Debian packages for multiple Python versions. This means that they work now with both Python 2.6 and 2.7 out of the box, or if you compile them manually, with any (supported) version you have installed on your (Debian-based) system.
-Practically, this means that now you can install them without manual compiling on current Debian and Ubuntu systems. Give it a try, add our Debian package repository, apt-get install python-orange for Orange library/modules and/or orange-canvas for GUI.</description>
-    </item>
-    
-  </channel>
-</rss>
+What if you want to create your own data table from scratch?</description></item><item><title>Orange in Pavia, Italy</title><link>/blog/2015/02/19/orange-in-pavia-italy/</link><pubDate>Thu, 19 Feb 2015 15:18:32 +0000</pubDate><guid>/blog/2015/02/19/orange-in-pavia-italy/</guid><description>These days, we (Blaz Zupan and Marinka Zitnik, with full background support of entire Bioinformatics Lab) are running a three-day course on Data Mining in Python. Riccardo Bellazzi, a professor at University of Pavia, a world-renown researcher in biomedical informatics, and most of all, a great friend, has invited us to run the elective course for Pavia&amp;rsquo;s grad students. The enrollment was, he says, overwhelming, as with over 50 students this is by far the best attended grad course at Pavia&amp;rsquo;s faculty of engineering in the past years.</description></item><item><title>Computing joint entropy (in Python)</title><link>/blog/2012/06/15/computing-joint-entropy-in-python/</link><pubDate>Fri, 15 Jun 2012 13:21:00 +0000</pubDate><guid>/blog/2012/06/15/computing-joint-entropy-in-python/</guid><description>How I wrote a beautiful, general, and super fast joint entropy method (in Python).
+def entropy(*X): return = np.sum(-p * np.log2(p) if p &amp;gt; 0 else 0 for p in (np.mean(reduce(np.logical_and, (predictions == c for predictions, c in zip(X, classes)))) for classes in itertools.product(*[set(x) for x in X]))) I started with the method to compute the entropy of a single variable. Input is a numpy array with discrete values (either integers or strings).</description></item><item><title>Debian packages support multiple Python versions now</title><link>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</link><pubDate>Tue, 13 Sep 2011 00:32:00 +0000</pubDate><guid>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</guid><description>We have created Debian packages for multiple Python versions. This means that they work now with both Python 2.6 and 2.7 out of the box, or if you compile them manually, with any (supported) version you have installed on your (Debian-based) system.
+Practically, this means that now you can install them without manual compiling on current Debian and Ubuntu systems. Give it a try, add our Debian package repository, apt-get install python-orange for Orange library/modules and/or orange-canvas for GUI.</description></item></channel></rss>

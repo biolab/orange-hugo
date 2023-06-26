@@ -1,31 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>website on Orange</title>
-    <link>/blog/website/</link>
-    <description>Recent content in website on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 04 Mar 2013 11:50:00 +0000</lastBuildDate><atom:link href="/blog/website/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Problems With Orange Website</title>
-      <link>/blog/2013/03/04/problems-with-orange-website/</link>
-      <pubDate>Mon, 04 Mar 2013 11:50:00 +0000</pubDate>
-      
-      <guid>/blog/2013/03/04/problems-with-orange-website/</guid>
-      <description>Our servers crashed on Friday, March 1st due to technical problems. The Orange website was offline for several hours and Mac bundle was unaccessible until today.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>website on Orange</title><link>/blog/website/</link><description>Recent content in website on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 Mar 2013 11:50:00 +0000</lastBuildDate><atom:link href="/blog/website/index.xml" rel="self" type="application/rss+xml"/><item><title>Problems With Orange Website</title><link>/blog/2013/03/04/problems-with-orange-website/</link><pubDate>Mon, 04 Mar 2013 11:50:00 +0000</pubDate><guid>/blog/2013/03/04/problems-with-orange-website/</guid><description>Our servers crashed on Friday, March 1st due to technical problems. The Orange website was offline for several hours and Mac bundle was unaccessible until today.
 We are still reviewing if our other services work. If you notice some problems, please ping us.
-Stay tuned and fruitful downloading!</description>
-    </item>
-    
-    <item>
-      <title>Contact us!</title>
-      <link>/blog/2011/06/14/contact-us/</link>
-      <pubDate>Tue, 14 Jun 2011 11:50:00 +0000</pubDate>
-      
-      <guid>/blog/2011/06/14/contact-us/</guid>
-      <description>We have added a simple contact form so that you can get in direct contact with us. Please do not misuse it (we will simply ignore you). Support and other general questions should be posted in our forum and for issues with Orange you should use our ticketing system to report them.</description>
-    </item>
-    
-  </channel>
-</rss>
+Stay tuned and fruitful downloading!</description></item><item><title>Contact us!</title><link>/blog/2011/06/14/contact-us/</link><pubDate>Tue, 14 Jun 2011 11:50:00 +0000</pubDate><guid>/blog/2011/06/14/contact-us/</guid><description>We have added a simple contact form so that you can get in direct contact with us. Please do not misuse it (we will simply ignore you). Support and other general questions should be posted in our forum and for issues with Orange you should use our ticketing system to report them.</description></item></channel></rss>

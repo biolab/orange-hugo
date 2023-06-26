@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>box plot on Orange</title>
-    <link>/blog/box-plot/</link>
-    <description>Recent content in box plot on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/box-plot/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Visualizations 101</title>
-      <link>/blog/2021/2021-12-17-visualizations-101/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-12-17-visualizations-101/</guid>
-      <description>Orange has a wide array of visualizations, which enable exploring the data from different perspectives. But each visualization is unique - it is used for a specific purpose, which is closely related to how one interprets the plot. Let&amp;rsquo;s have a look at the most common visualizations in Orange, when to use them and how to read them. We will use the heart_disease.tab data set from the File widget in the next examples.</description>
-    </item>
-    
-    <item>
-      <title>Characterizing Clusters with a Box Plot</title>
-      <link>/blog/2021/2021-10-21-cluster-explanation/</link>
-      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-10-21-cluster-explanation/</guid>
-      <description>There are many ways to cluster the data in Orange. Hiearchical clustering, k-means, and DBSCAN are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.
- Out of many ways for cluster analysis, perhaps the simplest one is by using the Box Plot.</description>
-    </item>
-    
-    <item>
-      <title>Box Plot Alternative: Violin Plot</title>
-      <link>/blog/2021/2021-08-05-violin-plot/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-08-05-violin-plot/</guid>
-      <description>There&amp;rsquo;s nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>box plot on Orange</title><link>/blog/box-plot/</link><description>Recent content in box plot on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/box-plot/index.xml" rel="self" type="application/rss+xml"/><item><title>Visualizations 101</title><link>/blog/2021/2021-12-17-visualizations-101/</link><pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-12-17-visualizations-101/</guid><description>Orange has a wide array of visualizations, which enable exploring the data from different perspectives. But each visualization is unique - it is used for a specific purpose, which is closely related to how one interprets the plot. Let&amp;rsquo;s have a look at the most common visualizations in Orange, when to use them and how to read them. We will use the heart_disease.tab data set from the File widget in the next examples.</description></item><item><title>Characterizing Clusters with a Box Plot</title><link>/blog/2021/2021-10-21-cluster-explanation/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-10-21-cluster-explanation/</guid><description>There are many ways to cluster the data in Orange. Hiearchical clustering, k-means, and DBSCAN are just few of the widgets we can use to find groups of data instances with similar values of attributes. Once we infer the clusters, we need to analyze them to determine their characterizing features. It is there that actually the fun begins.
+Out of many ways for cluster analysis, perhaps the simplest one is by using the Box Plot.</description></item><item><title>Box Plot Alternative: Violin Plot</title><link>/blog/2021/2021-08-05-violin-plot/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-08-05-violin-plot/</guid><description>There&amp;rsquo;s nothing more beautiful than seeing your data in plot. Preferably one that exposes interesting properties of the data or relationships between data instances. We recently wrote about embeddings and dimensionality reduction techniques, but now we are back to basics - whisker plots, means, medians, and distributions.
 Related: PCA vs. MDS vs. t-SNE
-Most of you will be familiar with a good ol&#39; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description>
-    </item>
-    
-  </channel>
-</rss>
+Most of you will be familiar with a good ol&amp;rsquo; box plot, also called whisker plot. The visualization shows essential data properties - mean, median, interquartile range, and variance.</description></item></channel></rss>

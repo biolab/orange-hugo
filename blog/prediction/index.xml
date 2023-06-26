@@ -1,62 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>prediction on Orange</title>
-    <link>/blog/prediction/</link>
-    <description>Recent content in prediction on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/prediction/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Timeseries add-on lost a lot of weight</title>
-      <link>/blog/2022/2022-08-04-timeseries/</link>
-      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-08-04-timeseries/</guid>
-      <description>The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in Highcharts, a visualization library built on JavaScript. We&amp;rsquo;re Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.
-There was only one person who could (and would) tackle this - our senior developer Vesna.</description>
-    </item>
-    
-    <item>
-      <title>Explaining Kickstarter Success</title>
-      <link>/blog/2018/08/27/explaining-kickstarter-success/</link>
-      <pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate>
-      
-      <guid>/blog/2018/08/27/explaining-kickstarter-success/</guid>
-      <description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
-But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description>
-    </item>
-    
-    <item>
-      <title>Model replaces Classify and Regression</title>
-      <link>/blog/2017/04/07/model-replaces-classify-and-regression/</link>
-      <pubDate>Fri, 07 Apr 2017 14:27:44 +0000</pubDate>
-      
-      <guid>/blog/2017/04/07/model-replaces-classify-and-regression/</guid>
-      <description>Did you recently wonder where did Classification Tree go? Or what happened to Majority?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>prediction on Orange</title><link>/blog/prediction/</link><description>Recent content in prediction on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/prediction/index.xml" rel="self" type="application/rss+xml"/><item><title>Timeseries add-on lost a lot of weight</title><link>/blog/2022/2022-08-04-timeseries/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-08-04-timeseries/</guid><description>The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in Highcharts, a visualization library built on JavaScript. We&amp;rsquo;re Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.
+There was only one person who could (and would) tackle this - our senior developer Vesna.</description></item><item><title>Explaining Kickstarter Success</title><link>/blog/2018/08/27/explaining-kickstarter-success/</link><pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate><guid>/blog/2018/08/27/explaining-kickstarter-success/</guid><description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
+But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description></item><item><title>Model replaces Classify and Regression</title><link>/blog/2017/04/07/model-replaces-classify-and-regression/</link><pubDate>Fri, 07 Apr 2017 14:27:44 +0000</pubDate><guid>/blog/2017/04/07/model-replaces-classify-and-regression/</guid><description>Did you recently wonder where did Classification Tree go? Or what happened to Majority?
 Orange 3.4.0 introduced a new widget category, Model, which now contains all supervised learning algorithms in one place and replaces the separate Classify and Regression categories.
-This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Political Scientists</title>
-      <link>/blog/2016/11/30/data-mining-for-political-scientists/</link>
-      <pubDate>Wed, 30 Nov 2016 08:24:53 +0000</pubDate>
-      
-      <guid>/blog/2016/11/30/data-mining-for-political-scientists/</guid>
-      <description>Being a political scientist, I did not even hear about data mining before I&amp;rsquo;ve joined Biolab. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!
-But hold on! There are still many social scientists out there who haven&amp;rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning.</description>
-    </item>
-    
-    <item>
-      <title>Orange team wins JRS 2012 Data Mining Competition</title>
-      <link>/blog/2012/04/25/orange-team-wins-jrs-2012-data-mining-competition/</link>
-      <pubDate>Wed, 25 Apr 2012 13:08:00 +0000</pubDate>
-      
-      <guid>/blog/2012/04/25/orange-team-wins-jrs-2012-data-mining-competition/</guid>
-      <description>Lead by Jure Žbontar, the team from University of Ljubljana wins over 126 other entrants in an international competition in predictive data analytics.
-Jure’s team consisted of several Orange developers and computer science students: Miha Zidar, Blaž Zupan, Gregor Majcen, Marinka Žitnik in Matic Potočnik. To win, the team had to predict topics for 10.000 MedLine documents that were represented with over 25.000 algorithmically derived numerical features. Given was training set of another 10.</description>
-    </item>
-    
-  </channel>
-</rss>
+This, however, was not a mere cosmetic change to the widget hierarchy. We wanted to simplify the interface for new users and make finding an appropriate learning algorithm easier. Moreover, now you can reuse some workflows on different data sets, say housing.</description></item><item><title>Data Mining for Political Scientists</title><link>/blog/2016/11/30/data-mining-for-political-scientists/</link><pubDate>Wed, 30 Nov 2016 08:24:53 +0000</pubDate><guid>/blog/2016/11/30/data-mining-for-political-scientists/</guid><description>Being a political scientist, I did not even hear about data mining before I&amp;rsquo;ve joined Biolab. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!
+But hold on! There are still many social scientists out there who haven&amp;rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning.</description></item><item><title>Orange team wins JRS 2012 Data Mining Competition</title><link>/blog/2012/04/25/orange-team-wins-jrs-2012-data-mining-competition/</link><pubDate>Wed, 25 Apr 2012 13:08:00 +0000</pubDate><guid>/blog/2012/04/25/orange-team-wins-jrs-2012-data-mining-competition/</guid><description>Lead by Jure Žbontar, the team from University of Ljubljana wins over 126 other entrants in an international competition in predictive data analytics.
+Jure’s team consisted of several Orange developers and computer science students: Miha Zidar, Blaž Zupan, Gregor Majcen, Marinka Žitnik in Matic Potočnik. To win, the team had to predict topics for 10.000 MedLine documents that were represented with over 25.000 algorithmically derived numerical features. Given was training set of another 10.</description></item></channel></rss>

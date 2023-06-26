@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>image analytics on Orange</title>
-    <link>/blog/image-analytics/</link>
-    <description>Recent content in image analytics on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/image-analytics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Editing the photographs collection with the help of machine learning</title>
-      <link>/blog/2022/2022-02-11-edit-image-collection/</link>
-      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-02-11-edit-image-collection/</guid>
-      <description>The core element of Orange&amp;rsquo;s image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding.
-We switched from an old cluster with a fixed number of workers for each embedding to a new infrastructure where workers turn on when needed. It means that when a user sends images to the embedder, it will turn on as many instances as required until processors&#39; cores are available.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Archaeologists, part I</title>
-      <link>/blog/2021/2021-04-23-archaeology-workshop/</link>
-      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-04-23-archaeology-workshop/</guid>
-      <description>Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>image analytics on Orange</title><link>/blog/image-analytics/</link><description>Recent content in image analytics on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/image-analytics/index.xml" rel="self" type="application/rss+xml"/><item><title>Editing the photographs collection with the help of machine learning</title><link>/blog/2022/2022-02-11-edit-image-collection/</link><pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-02-11-edit-image-collection/</guid><description>The core element of Orange&amp;rsquo;s image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding.
+We switched from an old cluster with a fixed number of workers for each embedding to a new infrastructure where workers turn on when needed. It means that when a user sends images to the embedder, it will turn on as many instances as required until processors&amp;rsquo; cores are available.</description></item><item><title>Data Mining for Archaeologists, part I</title><link>/blog/2021/2021-04-23-archaeology-workshop/</link><pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-04-23-archaeology-workshop/</guid><description>Recently, we held a workshop for a group of archaeologists. While archaeologists are quite well-versed in quantitative analysis, data science was still quite new for most of the participants. Our aim was to introduce basic data science concepts through archaeological use cases. One such case that came to our mind was predicting a type of the artefact from the image.
 Related: Data Mining for Anthropologists
-We took three best-documented amphora types (types with the highest number of images) from the Archaeology Data Service portal.</description>
-    </item>
-    
-    <item>
-      <title>Clustering of Monet and Manet</title>
-      <link>/blog/2018/05/09/clustering-of-monet-and-manet/</link>
-      <pubDate>Wed, 09 May 2018 08:19:34 +0000</pubDate>
-      
-      <guid>/blog/2018/05/09/clustering-of-monet-and-manet/</guid>
-      <description>Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet&amp;rsquo;s masterpiece is indeed very similar to Manet&amp;rsquo;s! Use Image Analytics add-on and play with it. Here&amp;rsquo;s how:   </description>
-    </item>
-    
-  </channel>
-</rss>
+We took three best-documented amphora types (types with the highest number of images) from the Archaeology Data Service portal.</description></item><item><title>Clustering of Monet and Manet</title><link>/blog/2018/05/09/clustering-of-monet-and-manet/</link><pubDate>Wed, 09 May 2018 08:19:34 +0000</pubDate><guid>/blog/2018/05/09/clustering-of-monet-and-manet/</guid><description>Ever had a hard time telling the difference between Claude Monet and Édouard Manet? Orange can help you cluster these two authors and even more, discover which of Monet&amp;rsquo;s masterpiece is indeed very similar to Manet&amp;rsquo;s! Use Image Analytics add-on and play with it. Here&amp;rsquo;s how:</description></item></channel></rss>

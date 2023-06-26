@@ -1,44 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>debian on Orange</title>
-    <link>/blog/debian/</link>
-    <description>Recent content in debian on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 13 Sep 2011 00:32:00 +0000</lastBuildDate><atom:link href="/blog/debian/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Debian packages support multiple Python versions now</title>
-      <link>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</link>
-      <pubDate>Tue, 13 Sep 2011 00:32:00 +0000</pubDate>
-      
-      <guid>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</guid>
-      <description>We have created Debian packages for multiple Python versions. This means that they work now with both Python 2.6 and 2.7 out of the box, or if you compile them manually, with any (supported) version you have installed on your (Debian-based) system.
-Practically, this means that now you can install them without manual compiling on current Debian and Ubuntu systems. Give it a try, add our Debian package repository, apt-get install python-orange for Orange library/modules and/or orange-canvas for GUI.</description>
-    </item>
-    
-    <item>
-      <title>Debian packages for Squeeze</title>
-      <link>/blog/2011/06/30/debian-packages-for-squeeze/</link>
-      <pubDate>Thu, 30 Jun 2011 00:44:00 +0000</pubDate>
-      
-      <guid>/blog/2011/06/30/debian-packages-for-squeeze/</guid>
-      <description>We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your /etc/apt/sources.list to:
-deb http://orange.biolab.si/debian squeeze main deb-src http://orange.biolab.si/debian squeeze main  Those packages are compiled for Python 2.6.
-You can read more about Debian packages in our old blog post.</description>
-    </item>
-    
-    <item>
-      <title>Debian repository lives!</title>
-      <link>/blog/2010/03/04/debian-repository-lives/</link>
-      <pubDate>Thu, 04 Mar 2010 01:56:00 +0000</pubDate>
-      
-      <guid>/blog/2010/03/04/debian-repository-lives/</guid>
-      <description>We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>debian on Orange</title><link>/blog/debian/</link><description>Recent content in debian on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 Sep 2011 00:32:00 +0000</lastBuildDate><atom:link href="/blog/debian/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian packages support multiple Python versions now</title><link>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</link><pubDate>Tue, 13 Sep 2011 00:32:00 +0000</pubDate><guid>/blog/2011/09/13/debian-packages-support-multiple-python-versions-now/</guid><description>We have created Debian packages for multiple Python versions. This means that they work now with both Python 2.6 and 2.7 out of the box, or if you compile them manually, with any (supported) version you have installed on your (Debian-based) system.
+Practically, this means that now you can install them without manual compiling on current Debian and Ubuntu systems. Give it a try, add our Debian package repository, apt-get install python-orange for Orange library/modules and/or orange-canvas for GUI.</description></item><item><title>Debian packages for Squeeze</title><link>/blog/2011/06/30/debian-packages-for-squeeze/</link><pubDate>Thu, 30 Jun 2011 00:44:00 +0000</pubDate><guid>/blog/2011/06/30/debian-packages-for-squeeze/</guid><description>We have updated our daily Debian packages to Squeeze (current Debian stable). You just have to reconfigure our package repository in your /etc/apt/sources.list to:
+deb http://orange.biolab.si/debian squeeze main deb-src http://orange.biolab.si/debian squeeze main Those packages are compiled for Python 2.6.
+You can read more about Debian packages in our old blog post.</description></item><item><title>Debian repository lives!</title><link>/blog/2010/03/04/debian-repository-lives/</link><pubDate>Thu, 04 Mar 2010 01:56:00 +0000</pubDate><guid>/blog/2010/03/04/debian-repository-lives/</guid><description>We have made still-experimental-but-probably-working Debian repository with daily built Orange packages. Currently without add-ons.
 To get access to those packages just add those two lines to your /etc/apt/sources.list (this file contains a list of repositories with packages):
-deb http://orange.biolab.si/debian lenny main deb-src http://orange.biolab.si/debian lenny main  And then you can install Orange with this command:
-aptitude update aptitude install orange-svn  Packages are not signed as they are made automatically so you will probably be warned about this.</description>
-    </item>
-    
-  </channel>
-</rss>
+deb http://orange.biolab.si/debian lenny main deb-src http://orange.biolab.si/debian lenny main And then you can install Orange with this command:
+aptitude update aptitude install orange-svn Packages are not signed as they are made automatically so you will probably be warned about this.</description></item></channel></rss>

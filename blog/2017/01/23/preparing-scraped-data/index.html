@@ -1,314 +1,38 @@
-<html>    
-    <head>
-    <title>Orange Data Mining - Preparing Scraped Data</title>
-
-    
-    
-    <meta property="og:title" content="Preparing Scraped Data">
-    
-    
-    
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orange Data Mining Toolbox">
-    <meta name="author" content="Bioinformatics Laboratory, University of Ljubljana">
-    <meta name="google-site-verification" content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ" />
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="/plugins/lightgallery/css/lightgallery.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    
-    
-    <link rel="stylesheet" href="/scss/main.58e8531e166454b3665e4c7132aa2f1762a5569c179efa4bbf56b266ce93bfac.css">
-    <script id="dsq-count-scr" src="//orange-4.disqus.com/count.js" async></script>
-
-    <noscript>
-        <style>
-            .jsonly { display: none !important; }
-        </style>
-    </noscript>
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-528382-1', 'auto');
-      ga('require', 'linkid');
-      ga('send', 'pageview');
-
-
-    </script>
-
-
-
-
-    <script type="text/javascript" src="/plugins/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/plugins/jquery.form.js"></script>
-    <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-    
-    <script type="text/javascript" src="/plugins/lightgallery/js/lightgallery.js"></script>
-    <script type="text/javascript" src="/plugins/lightgallery/js/lg-thumbnail.js"></script>
-    <script type="text/javascript" src="/plugins/lightgallery/js/lg-video.js"></script>
-    <script type="text/javascript" src="/plugins/lightgallery/js/lg-zoom.js"></script>
-    <script type="text/javascript" src="/js/custom.js"></script>
-    <script type="text/javascript" src="/js/header_helpers.js"></script>
-
-
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T5X4T27');</script>
-    
-
-    
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
-
-    
-    <script type="text/javascript">
-      $( document ).ready( function () {
-
-        $('a').off("click").click( function ( event ) {
-           ga('send', 'event', "a", event.type, $(this).attr("id"), 1 );
-        });
-
-        $('[class *= trackClicks_]').off("click").click( function ( event ) {
-           var classList = $(this).attr('class').split(/\s+/);
-           var trackname = "";
-           $.each(classList, function(index, item) {
-             if (item.indexOf('trackClicks_') === 0) {
-                trackname = item;
-             }
-           });
-           ga('send', 'event', "a", event.type, trackname, 1 );
-        });
-      });
-    </script>
-
-</head>
-
-    <body>
-
-    <header id="top" class="header navbar-fixed-top">
-  <div class="container" >
-      <h1 class="logo pull-left" >
-          <a id="header-orangelogo" href="/">
-              <img id="logo-image" class="logo-image" src="/images/orange_logo_hq.png" alt="Logo">
-          </a>
-      </h1>
-      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
-          <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-          </div>
-         <div class="navbar-collapse collapse" id="navbar-collapse">
-              <ul class="nav navbar-nav">
-
-                  
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/screenshots/">Screenshots</a></li>
-                      
-                  
-                
-              
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/workflows/">Workflows</a></li>
-                      
-                  
-                
-              
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/download/">Download</a></li>
-                      
-                  
-                
-              
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/blog/">Blog</a></li>
-                      
-                  
-                
-              
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/docs/">Docs</a></li>
-                      
-                  
-                
-              
-
-                  
-                  
-                      
-                      <li class="nav-item"><a id="header-screenshots-link"  href="/training/">Workshops</a></li>
-                      
-                  
-                
-              
-
-                  
-                      <li class="nav-search-wrapper">
-                        <div>                         
-                          
-                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" 
-                            id="search-btn-js" 
-                            role="button">
-                          </a>
-                          
-                          
-                          <a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" 
-                            role="button" 
-                            href="/search/?q=">
-                          </a>
-
-                          <input type="text" 
-                                class="header-search-input jsonly search-widget-workflow nav-item" 
-                                id="search-header" 
-                                placeholder="Search" 
-                                tabindex="1" 
-                                onkeydown="check_key_header(event)" 
-                                hidden
-                                autofocus />
-                        </div>
-                      </li>
-                  
-              
-
-                  
-                  
-                      
-                  <li class="">
-                    <div class="donate-button transform_header donate_div">
-                      <a class="btn btn-warning nav-btn" id="header-donate-link" role="button" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a>
-                    </div>
-                  </li>
-                      
-                  
-                
-              
-              </ul>
-          </div>
-      </nav>
-  </div>
-</header>
-
-    <div id="main">
-        <div class="container-fluid clear-top">
-            
-<div id="overflow-container" class="overflow-container">
-  <div id="loop-container" class="offset-header container">
-    
-      <div
-        class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image">
-        
-        <div class="entry-meta remove-padding-l-r">
-          <span>Categories: </span>
-          
-          <span class="category">
-            
-            <a href="/blog/addons">addons</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/analysis">analysis</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/data">data</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/dataloading">dataloading</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/examples">examples</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/python">python</a>
-          </span>
-          
-          <span class="category">
-            
-            <span> | </span>
-            
-            <a href="/blog/scripting">scripting</a>
-          </span>
-          
-        </div>
-        <div class='entry-header remove-padding-l-r'>
-          <h1 class='entry-title'> Preparing Scraped Data</h1>
-          <span class="author-blog">
-            
-            By: AJDA,
-            
-            Jan 23, 2017
-          </span>
-        </div>
-        <div class="entry-container remove-padding-l-r">
-          <div class="entry-content md">
-            <article>
-              <div id="blog_images_">
-
-
-              <p>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.</p>
-<p><strong>Related:</strong> <a href="/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/">Creating a new data table in Orange through Python</a></p>
-<p>First, we&rsquo;ll have to do some scripting. We&rsquo;ll use a couple of Python libraries - <a href="https://docs.python.org/3.5/library/urllib.request.html">urllib.requests</a> fetching the data, <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for reading it, <a href="https://docs.python.org/3.5/library/csv.html">csv</a> for writing it and <a href="https://docs.python.org/3.5/library/re.html">regular expressions</a> for extracting the right data.</p>
-<pre><code>from urllib.request import urlopen
+<html><head><title>Orange Data Mining - Preparing Scraped Data</title><meta property="og:title" content="Preparing Scraped Data"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Orange Data Mining Toolbox"><meta name=author content="Bioinformatics Laboratory, University of Ljubljana"><meta name=google-site-verification content="DS7GH5M7ABi78pIC2rMcTBFx-UeBFObXOeLvR7Ow3EQ"><link rel="shortcut icon" href=/images/favicon.ico><link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel=stylesheet type=text/css><link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel=stylesheet type=text/css><link rel=stylesheet href=/plugins/bootstrap/css/bootstrap.min.css><link rel=stylesheet href=/plugins/font-awesome/css/font-awesome.css><link rel=stylesheet href=/plugins/lightgallery/css/lightgallery.css><link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css rel=stylesheet><link rel=stylesheet href=/scss/main.58e8531e166454b3665e4c7132aa2f1762a5569c179efa4bbf56b266ce93bfac.css><script id=dsq-count-scr src=//orange-4.disqus.com/count.js async></script><noscript><style>.jsonly{display:none!important}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-J6PJZF75EX"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-J6PJZF75EX",{anonymize_ip:!1})}</script><script type=text/javascript src=/plugins/jquery-1.10.2.min.js></script>
+<script type=text/javascript src=/plugins/jquery.form.js></script>
+<script type=text/javascript src=/plugins/bootstrap/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lightgallery/js/lightgallery.js></script>
+<script type=text/javascript src=/plugins/lightgallery/js/lg-thumbnail.js></script>
+<script type=text/javascript src=/plugins/lightgallery/js/lg-video.js></script>
+<script type=text/javascript src=/plugins/lightgallery/js/lg-zoom.js></script>
+<script type=text/javascript src=/js/custom.js></script>
+<script type=text/javascript src=/js/header_helpers.js></script>
+<script>(function(e,t,n,s,o){e[s]=e[s]||[],e[s].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var a=t.getElementsByTagName(n)[0],i=t.createElement(n),r=s!="dataLayer"?"&l="+s:"";i.async=!0,i.src="https://www.googletagmanager.com/gtm.js?id="+o+r,a.parentNode.insertBefore(i,a)})(window,document,"script","dataLayer","GTM-T5X4T27")</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5X4T27" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><script type=text/javascript>$(document).ready(function(){$("a").off("click").click(function(e){ga("send","event","a",e.type,$(this).attr("id"),1)}),$("[class *= trackClicks_]").off("click").click(function(e){var n=$(this).attr("class").split(/\s+/),t="";$.each(n,function(e,n){n.indexOf("trackClicks_")===0&&(t=n)}),ga("send","event","a",e.type,t,1)})})</script></head><body><header id=top class="header navbar-fixed-top"><div class=container><h1 class="logo pull-left"><a id=header-orangelogo href=/><img id=logo-image class=logo-image src=/images/orange_logo_hq.png alt=Logo></a></h1><nav id=main-nav class="main-nav navbar-right" role=navigation><div class=navbar-header><button class=navbar-toggle type=button data-toggle=collapse data-target=#navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span></button></div><div class="navbar-collapse collapse" id=navbar-collapse><ul class="nav navbar-nav"><li class=nav-item><a id=header-screenshots-link href=/screenshots/>Screenshots</a></li><li class=nav-item><a id=header-screenshots-link href=/workflows/>Workflows</a></li><li class=nav-item><a id=header-screenshots-link href=/download/>Download</a></li><li class=nav-item><a id=header-screenshots-link href=/blog/>Blog</a></li><li class=nav-item><a id=header-screenshots-link href=/docs/>Docs</a></li><li class=nav-item><a id=header-screenshots-link href=/training/>Workshops</a></li><li class=nav-search-wrapper><div><a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-desktop" id=search-btn-js role=button></a><a class="btn nav-btn-search btn-warning nav-btn fa fa-search nav-btn-mobile" role=button href="/search/?q="></a><input type=text class="header-search-input jsonly search-widget-workflow nav-item" id=search-header placeholder=Search tabindex=1 onkeydown=check_key_header(event) hidden autofocus></div></li><li><div class="donate-button transform_header donate_div"><a class="btn btn-warning nav-btn" id=header-donate-link role=button target=_blank href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A76TAX87ZVR3J">Donate</a></div></li></ul></div></nav></div></header><div id=main><div class="container-fluid clear-top"><div id=overflow-container class=overflow-container><div id=loop-container class="offset-header container"><div class="blog-font-size post type-post status-publish format-standard category-standard category-travel full-without-featured odd excerpt-1 no-image"><div class="entry-meta remove-padding-l-r"><span>Categories:</span>
+<span class=category><a href=/blog/addons>addons</a></span>
+<span class=category><span>|</span>
+<a href=/blog/analysis>analysis</a></span>
+<span class=category><span>|</span>
+<a href=/blog/data>data</a></span>
+<span class=category><span>|</span>
+<a href=/blog/dataloading>dataloading</a></span>
+<span class=category><span>|</span>
+<a href=/blog/examples>examples</a></span>
+<span class=category><span>|</span>
+<a href=/blog/python>python</a></span>
+<span class=category><span>|</span>
+<a href=/blog/scripting>scripting</a></span></div><div class='entry-header remove-padding-l-r'><h1 class=entry-title>Preparing Scraped Data</h1><span class=author-blog>By: AJDA,
+Jan 23, 2017</span></div><div class="entry-container remove-padding-l-r"><div class="entry-content md"><article><div id=blog_images_><p>One of the key questions of every data analysis is how to get the data and put it in the right form(at). In this post I&rsquo;ll show you how to easily get the data from the web and transfer it to a file Orange can read.</p><p><strong>Related:</strong> <a href=/blog/2015/08/07/creating-a-new-data-table-in-orange-through-python/>Creating a new data table in Orange through Python</a></p><p>First, we&rsquo;ll have to do some scripting. We&rsquo;ll use a couple of Python libraries - <a href=https://docs.python.org/3.5/library/urllib.request.html>urllib.requests</a> fetching the data, <a href=https://www.crummy.com/software/BeautifulSoup/bs4/doc/>BeautifulSoup</a> for reading it, <a href=https://docs.python.org/3.5/library/csv.html>csv</a> for writing it and <a href=https://docs.python.org/3.5/library/re.html>regular expressions</a> for extracting the right data.</p><pre><code>from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import csv
 import re
-</code></pre>
-<p>Ok, we&rsquo;ve imported the all the libraries we&rsquo;ll need. Now we will scrape the data from our own blog to see how many posts we&rsquo;ve written throughout the years.</p>
-<pre><code>html = urlopen('http://blog.biolab.si')
+</code></pre><p>Ok, we&rsquo;ve imported the all the libraries we&rsquo;ll need. Now we will scrape the data from our own blog to see how many posts we&rsquo;ve written throughout the years.</p><pre><code>html = urlopen('http://blog.biolab.si')
 soup = BeautifulSoup(html.read(), 'lxml')
-</code></pre>
-<p>The first line opens the address of the site we want to scrape. In our case this is our blog. The second line retrieves a html response from the site, which is our raw text. It looks like this:</p>
-<pre><code>&lt;aside id=&quot;archives-2&quot; class=&quot;widget widget_archive&quot;&gt;&lt;h3 class=&quot;widget-title&quot;&gt;Archives&lt;/h3&gt;
+</code></pre><p>The first line opens the address of the site we want to scrape. In our case this is our blog. The second line retrieves a html response from the site, which is our raw text. It looks like this:</p><pre><code>&lt;aside id=&quot;archives-2&quot; class=&quot;widget widget_archive&quot;&gt;&lt;h3 class=&quot;widget-title&quot;&gt;Archives&lt;/h3&gt;
 &lt;ul&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2017/01/'&gt;January 2017&lt;/a&gt;&amp;nbsp;(1)&lt;/li&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/12/'&gt;December 2016&lt;/a&gt;&amp;nbsp;(3)&lt;/li&gt;
@@ -317,33 +41,15 @@ soup = BeautifulSoup(html.read(), 'lxml')
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/09/'&gt;September 2016&lt;/a&gt;&amp;nbsp;(2)&lt;/li&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/08/'&gt;August 2016&lt;/a&gt;&amp;nbsp;(5)&lt;/li&gt;
    &lt;li&gt;&lt;a href='http://blog.biolab.si/2016/07/'&gt;July 2016&lt;/a&gt;&amp;nbsp;(3)&lt;/li&gt;....
-</code></pre>
-<p>Ok, html is nice, but we can&rsquo;t really do data analysis with this. We will have to transform this output into something sensible. How about .csv, a simple comma-demilited format Orange can recognize?</p>
-<pre><code>with open('scraped.csv', 'w') as csvfile:
+</code></pre><p>Ok, html is nice, but we can&rsquo;t really do data analysis with this. We will have to transform this output into something sensible. How about .csv, a simple comma-demilited format Orange can recognize?</p><pre><code>with open('scraped.csv', 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
-</code></pre>
-<p>We created a new file called &lsquo;<em>scraped.csv</em>&rsquo; to which we will write our content (&lsquo;w&rsquo; parameter means write). Then we defined the writer and set the delimiter to comma.</p>
-<p>Now we need to add the header row, so Orange will know what are the column names. We add this just after csvwriter variable.</p>
-<pre><code>csvwriter.writerow([&quot;Date&quot;, &quot;No_of_Blogs&quot;])
-</code></pre>
-<p>Now we have two columns, one named &lsquo;Date&rsquo; and the other &lsquo;No_of_Blogs&rsquo;. The final step is to extract the data. We have a bunch of lines in html, but the one we&rsquo;re interested in is in a section &lsquo;aside&rsquo; and has an id &lsquo;<em>archives-2</em>&rsquo;. We will first extract only this section (<em>.find(id=&lsquo;archives-2&rsquo;</em>) and get all the lines of the archive with the tag &lsquo;li&rsquo; (<em>.find_all(&lsquo;li&rsquo;)</em>):</p>
-<pre><code>for item in soup.find(id=&quot;archives-2&quot;).find_all('li'):
-</code></pre>
-<p>This is the result of <em>print(item)</em>.</p>
-<pre><code>&lt;li&gt;&lt;a href=&quot;http://blog.biolab.si/2017/01/&quot;&gt;January 2017&lt;/a&gt; (1)&lt;/li&gt;
-</code></pre>
-<p>Now we need to get the actual content from each line. The first part we need is the date of the archived content. Orange can read dates, but they need to come in the right format. We will extract the date from <em>href</em> part with <em>item.a.get(&lsquo;href&rsquo;)</em>. Then we need to extract only digits from it as we&rsquo;re not interested in the rest of the link. We do this with Regex for finding digits:</p>
-<pre><code>date = re.findall(r'\d+', item.a.get('href'))
-</code></pre>
-<p>Regex&rsquo;s <em>findall</em> function returns a list, in our case containing two items - the year and month of archived content. The second part of our data is the number of blogs archived in a particular month. We will again extract this with a Regex digit search, but this time we will be extracting data from the actual content - &lsquo;<em>item.contents[1]</em>&rsquo;.</p>
-<pre><code>digits = re.findall(r'\d+', item.contents[1])
-</code></pre>
-<p>Finally, we need to write each line to a .csv file we created above.</p>
-<pre><code>csvwriter.writerow([&quot;%s-%s-01&quot; % (date[0], date[1]), digits[0]])
-</code></pre>
-<p>Here, we formatted the date into an ISO-standard format Orange recognizes as time variable (<em>&quot;%s-%s-01&quot; % (date[0], date[1])</em>), while the second part is simply a count of our blog posts.</p>
-<p>This is the entire code:</p>
-<pre><code>from urllib.request import urlopen
+</code></pre><p>We created a new file called &lsquo;<em>scraped.csv</em>&rsquo; to which we will write our content (&lsquo;w&rsquo; parameter means write). Then we defined the writer and set the delimiter to comma.</p><p>Now we need to add the header row, so Orange will know what are the column names. We add this just after csvwriter variable.</p><pre><code>csvwriter.writerow([&quot;Date&quot;, &quot;No_of_Blogs&quot;])
+</code></pre><p>Now we have two columns, one named &lsquo;Date&rsquo; and the other &lsquo;No_of_Blogs&rsquo;. The final step is to extract the data. We have a bunch of lines in html, but the one we&rsquo;re interested in is in a section &lsquo;aside&rsquo; and has an id &lsquo;<em>archives-2</em>&rsquo;. We will first extract only this section (<em>.find(id=&lsquo;archives-2&rsquo;</em>) and get all the lines of the archive with the tag &rsquo;li&rsquo; (<em>.find_all(&rsquo;li&rsquo;)</em>):</p><pre><code>for item in soup.find(id=&quot;archives-2&quot;).find_all('li'):
+</code></pre><p>This is the result of <em>print(item)</em>.</p><pre><code>&lt;li&gt;&lt;a href=&quot;http://blog.biolab.si/2017/01/&quot;&gt;January 2017&lt;/a&gt; (1)&lt;/li&gt;
+</code></pre><p>Now we need to get the actual content from each line. The first part we need is the date of the archived content. Orange can read dates, but they need to come in the right format. We will extract the date from <em>href</em> part with <em>item.a.get(&lsquo;href&rsquo;)</em>. Then we need to extract only digits from it as we&rsquo;re not interested in the rest of the link. We do this with Regex for finding digits:</p><pre><code>date = re.findall(r'\d+', item.a.get('href'))
+</code></pre><p>Regex&rsquo;s <em>findall</em> function returns a list, in our case containing two items - the year and month of archived content. The second part of our data is the number of blogs archived in a particular month. We will again extract this with a Regex digit search, but this time we will be extracting data from the actual content - &lsquo;<em>item.contents[1]</em>&rsquo;.</p><pre><code>digits = re.findall(r'\d+', item.contents[1])
+</code></pre><p>Finally, we need to write each line to a .csv file we created above.</p><pre><code>csvwriter.writerow([&quot;%s-%s-01&quot; % (date[0], date[1]), digits[0]])
+</code></pre><p>Here, we formatted the date into an ISO-standard format Orange recognizes as time variable (<em>"%s-%s-01" % (date[0], date[1])</em>), while the second part is simply a count of our blog posts.</p><p>This is the entire code:</p><pre><code>from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import csv
 import re
@@ -358,170 +64,4 @@ with open('scraped.csv', 'w') as csvfile:
         date = re.findall(r'\d+', item.a.get('href'))
         digits = re.findall(r'\d+', item.contents[1])
         csvwriter.writerow([&quot;%s-%s-01&quot; % (date[0], date[1]), digits[0]])
-</code></pre>
-<p><strong>Related:</strong> <a href="/blog/2016-06-10-scripting-with-time-variable/">Scripting with Time Variable</a></p>
-<p>Now let&rsquo;s load this in Orange. File widget can easily read .csv formats and also correctly identifies the two column types, datetime and numeric. A quick glance into the Data Table&hellip;</p>
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png" alt=""></p>
-<p>Everything looks ok. We can use <a href="https://github.com/biolab/orange3-timeseries">Timeseries add-on</a> to inspect how many blogs we&rsquo;ve written each month since 2010. Connect <strong>As Timeseries</strong> widget to File. Orange will automatically suggest to use Date as our time variable. Finally, we&rsquo;ll plot the data with <strong>Line Chart</strong>. This is the curve of our blog activity.</p>
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png" alt=""></p>
-<p><img src="/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png" alt=""></p>
-<p>The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!</p>
-
-            </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="disqus_thread"></div>
-<script>
-
-
-
-
-
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://orange-4.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-</div>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#blog_images_').lightGallery({
-        thumbnail: false,
-        selector: 'a:has(img)',
-        width: '60%',
-        mode: 'lg-fade',
-        counter: false,
-        download: false,
-        enableSwipe: false,
-        enableDrag: false,
-        speed: 1,
-        useLeft: true,
-        hideBarsDelay: 1000
-    });
-    });
-</script>
-
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="row">
-
-                        <div class="col-sm-4 sitemap-group">
-                            <ul class="links list-sitemap">
-                                <li><b><div class="sitemap-cat">Orange</div></b></li>
-                                <li><a class="sitemap-sub" href="/faq/">FAQ</a></li>
-                                <li><a class="sitemap-sub" href="/license/">License</a></li>
-                                <li><a class="sitemap-sub" href="/privacy/">Privacy</a></li>
-                                <li><a class="sitemap-sub" href="/citation/">Citation</a></li>
-                                <li><a class="sitemap-sub" href="/contact/">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-4 sitemap-group">
-                            <ul class="links list-sitemap">
-                                <li><div class="sitemap-cat">Download</div></li>
-                                <li><a class="sitemap-sub" href="/download/#windows">Windows</a></li>
-                                <li><a class="sitemap-sub" href="/download/#macos">Mac OS</a></li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-4 sitemap-group">
-
-                            <ul class="links list-sitemap">
-                                <li><b><div class="sitemap-cat">Community</div></b></li>
-                                <li><a class="sitemap-sub" href="https://www.facebook.com/orangedatamining" target="_blank">Facebook</a></li>
-                                <li><a class="sitemap-sub" href="https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g" target="_blank">YouTube</a></li>
-                                <li><a class="sitemap-sub" href="https://twitter.com/orangedataminer" target="_blank">Twitter</a></li>
-                                <li><a class="sitemap-sub" href="https://datascience.stackexchange.com/questions/tagged/orange" target="_blank">Stack Exchange</a></li>
-                                <li><a class="sitemap-sub" href="https://discord.gg/FWrfeXV" target="_blank">Discord</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="row">
-
-                        <div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs">
-                            <ul class="links list-sitemap">
-                                <li><div class="sitemap-cat">Documentation</div></li>
-                                <li><a class="sitemap-sub" href='/getting-started/'>Get started</a></li>
-                                <li><a class="sitemap-sub" href="/widget-catalog/">Widgets</a></li>
-                                <li><a class="sitemap-sub" href="http://docs.biolab.si/3/data-mining-library/">Scripting</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-3 sitemap-group">
-                            <ul class="links list-sitemap">
-                                <li><b><div class="sitemap-cat">Developers</div></b></li>
-                                <li><a class="sitemap-sub" target="_blank" href="https://github.com/biolab/orange3">GitHub</a></li>
-                                <li><a class="sitemap-sub" target="_blank" href="http://docs.biolab.si/3/development/">Getting Started</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-5 col-sm-12 col-xs-12 sitemap-group">
-                    <div class="latest-blog-posts">
-                        <ul class="links list-sitemap" style="padding-bottom: 10px">
-                            <li><b><a class="sitemap-cat" href="/blog/">Latest blog posts</a></b></li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 26 May </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-03-10-pumice-challenge/">Pumice challenge</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 24 Apr </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2021-03-31-zivjo-orange/">Živjo, Orange!</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                            <li>
-                            <div class="row">
-                            <div class="col-md-2"><a class="sitemap-sub"> 10 Mar </a></div>
-                            <div class="col-md-10">
-                                <a class="sitemap-sub" style="color: #f79211" href="/blog/2023/2023-03-10-interval-slider/">Interval Sliders</a>
-                            </div>
-                            </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row footer-pad">
-                <div class="col-xs-12">
-                    <small class="copyright pull-left"  >Copyright © University of Ljubljana</small>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-</html>
+</code></pre><p><strong>Related:</strong> <a href=/blog/2016-06-10-scripting-with-time-variable/>Scripting with Time Variable</a></p><p>Now let&rsquo;s load this in Orange. File widget can easily read .csv formats and also correctly identifies the two column types, datetime and numeric. A quick glance into the Data Table&mldr;</p><p><img src=/images/2017/01/Screen-Shot-2017-01-23-at-12.54.12.png alt></p><p>Everything looks ok. We can use <a href=https://github.com/biolab/orange3-timeseries>Timeseries add-on</a> to inspect how many blogs we&rsquo;ve written each month since 2010. Connect <strong>As Timeseries</strong> widget to File. Orange will automatically suggest to use Date as our time variable. Finally, we&rsquo;ll plot the data with <strong>Line Chart</strong>. This is the curve of our blog activity.</p><p><img src=/images/2017/01/Screen-Shot-2017-01-23-at-12.54.53.png alt></p><p><img src=/images/2017/01/Screen-Shot-2017-01-23-at-12.55.14.png alt></p><p>The example is extremely simple. A somewhat proficient user can extract much more interesting data than a simple blog count, but one always needs to keep in mind the legal aspects of web scraping. Nevertheless, this is a popular and fruitful way to extract and explore the data!</p></div></article></div></div></div></div></div><div id=disqus_thread></div><script>(function(){var e=document,t=e.createElement("script");t.src="https://orange-4.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><script type=text/javascript>$(document).ready(function(){$("#blog_images_").lightGallery({thumbnail:!1,selector:"a:has(img)",width:"60%",mode:"lg-fade",counter:!1,download:!1,enableSwipe:!1,enableDrag:!1,speed:1,useLeft:!0,hideBarsDelay:1e3})})</script></div></div><footer class=footer><div class=container><div class=row><div class="col-md-4 col-sm-6 col-xs-12"><div class=row><div class="col-sm-4 sitemap-group"><ul class="links list-sitemap"><li><b><div class=sitemap-cat>Orange</div></b></li><li><a class=sitemap-sub href=/faq/>FAQ</a></li><li><a class=sitemap-sub href=/license/>License</a></li><li><a class=sitemap-sub href=/privacy/>Privacy</a></li><li><a class=sitemap-sub href=/citation/>Citation</a></li><li><a class=sitemap-sub href=/contact/>Contact</a></li></ul></div><div class="col-sm-4 sitemap-group"><ul class="links list-sitemap"><li><div class=sitemap-cat>Download</div></li><li><a class=sitemap-sub href=/download/#windows>Windows</a></li><li><a class=sitemap-sub href=/download/#macos>Mac OS</a></li></ul></div><div class="col-sm-4 sitemap-group"><ul class="links list-sitemap"><li><b><div class=sitemap-cat>Community</div></b></li><li><a class=sitemap-sub href=https://www.facebook.com/orangedatamining target=_blank>Facebook</a></li><li><a class=sitemap-sub href=https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g target=_blank>YouTube</a></li><li><a class=sitemap-sub href=https://twitter.com/orangedataminer target=_blank>Twitter</a></li><li><a class=sitemap-sub href=https://datascience.stackexchange.com/questions/tagged/orange target=_blank>Stack Exchange</a></li><li><a class=sitemap-sub href=https://discord.gg/FWrfeXV target=_blank>Discord</a></li></ul></div></div></div><div class="col-md-3 col-sm-6 col-xs-12"><div class=row><div class="col-sm-5 col-md-7 col-lg-6 sitemap-group docs-devs"><ul class="links list-sitemap"><li><div class=sitemap-cat>Documentation</div></li><li><a class=sitemap-sub href=/getting-started/>Get started</a></li><li><a class=sitemap-sub href=/widget-catalog/>Widgets</a></li><li><a class=sitemap-sub href=http://docs.biolab.si/3/data-mining-library/>Scripting</a></li></ul></div><div class="col-sm-3 sitemap-group"><ul class="links list-sitemap"><li><b><div class=sitemap-cat>Developers</div></b></li><li><a class=sitemap-sub target=_blank href=https://github.com/biolab/orange3>GitHub</a></li><li><a class=sitemap-sub target=_blank href=http://docs.biolab.si/3/development/>Getting Started</a></li></ul></div></div></div><div class="col-md-5 col-sm-12 col-xs-12 sitemap-group"><div class=latest-blog-posts><ul class="links list-sitemap" style=padding-bottom:10px><li><b><a class=sitemap-cat href=/blog/>Latest blog posts</a></b></li><li><div class=row><div class=col-md-2><a class=sitemap-sub>26 May</a></div><div class=col-md-10><a class=sitemap-sub style=color:#f79211 href=/blog/2023/2023-03-10-pumice-challenge/>Pumice challenge</a></div></div></li><li><div class=row><div class=col-md-2><a class=sitemap-sub>24 Apr</a></div><div class=col-md-10><a class=sitemap-sub style=color:#f79211 href=/blog/2023/2021-03-31-zivjo-orange/>Živjo, Orange!</a></div></div></li><li><div class=row><div class=col-md-2><a class=sitemap-sub>10 Mar</a></div><div class=col-md-10><a class=sitemap-sub style=color:#f79211 href=/blog/2023/2023-03-10-interval-slider/>Interval Sliders</a></div></div></li></ul></div></div></div><div class="row footer-pad"><div class=col-xs-12><small class="copyright pull-left">Copyright © University of Ljubljana</small></div></div></div></footer></body></html>

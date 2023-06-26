@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>spiralogram on Orange</title>
-    <link>/blog/spiralogram/</link>
-    <description>Recent content in spiralogram on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/spiralogram/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Timeseries add-on lost a lot of weight</title>
-      <link>/blog/2022/2022-08-04-timeseries/</link>
-      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-08-04-timeseries/</guid>
-      <description>The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in Highcharts, a visualization library built on JavaScript. We&amp;rsquo;re Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.
-There was only one person who could (and would) tackle this - our senior developer Vesna.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>spiralogram on Orange</title><link>/blog/spiralogram/</link><description>Recent content in spiralogram on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/spiralogram/index.xml" rel="self" type="application/rss+xml"/><item><title>Timeseries add-on lost a lot of weight</title><link>/blog/2022/2022-08-04-timeseries/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-08-04-timeseries/</guid><description>The Timeseries add-on has been on a backlog for quite some time now. Mostly because a bulk of its visualizations have been written in Highcharts, a visualization library built on JavaScript. We&amp;rsquo;re Python developers, so none of us felt comfortable touching anything JS. Moreover, Highcharts is not fully open source, so licensing is a potential issue for certain Orange users.
+There was only one person who could (and would) tackle this - our senior developer Vesna.</description></item></channel></rss>

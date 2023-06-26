@@ -1,168 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>widget on Orange</title>
-    <link>/blog/widget/</link>
-    <description>Recent content in widget on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 27 Aug 2018 16:02:36 +0000</lastBuildDate><atom:link href="/blog/widget/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Explaining Kickstarter Success</title>
-      <link>/blog/2018/08/27/explaining-kickstarter-success/</link>
-      <pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate>
-      
-      <guid>/blog/2018/08/27/explaining-kickstarter-success/</guid>
-      <description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
-But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description>
-    </item>
-    
-    <item>
-      <title>Stack Everything!</title>
-      <link>/blog/2018/01/05/stack-everything/</link>
-      <pubDate>Fri, 05 Jan 2018 15:37:34 +0000</pubDate>
-      
-      <guid>/blog/2018/01/05/stack-everything/</guid>
-      <description>We all know that sometimes many is better than few. Therefore we are happy to introduce the Stack widget. It is available in Prototypes add-on for now.
-Stacking enables you to combine several trained models into one meta model and use it in Test&amp;amp;Score just like any other model. This comes in handy with complex problems, where one classifier might fail, but many could come up with something that works. Let&amp;rsquo;s see an example.</description>
-    </item>
-    
-    <item>
-      <title>Neural Network is Back!</title>
-      <link>/blog/2017/11/03/neural-network-is-back/</link>
-      <pubDate>Fri, 03 Nov 2017 12:40:06 +0000</pubDate>
-      
-      <guid>/blog/2017/11/03/neural-network-is-back/</guid>
-      <description>We know you&amp;rsquo;ve missed it. We&amp;rsquo;ve been getting many requests to bring back Neural Network widget, but we also had many reservations about it.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>widget on Orange</title><link>/blog/widget/</link><description>Recent content in widget on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Aug 2018 16:02:36 +0000</lastBuildDate><atom:link href="/blog/widget/index.xml" rel="self" type="application/rss+xml"/><item><title>Explaining Kickstarter Success</title><link>/blog/2018/08/27/explaining-kickstarter-success/</link><pubDate>Mon, 27 Aug 2018 16:02:36 +0000</pubDate><guid>/blog/2018/08/27/explaining-kickstarter-success/</guid><description>On Kickstarter most app ideas don&amp;rsquo;t get funded. But why is that? When we are looking for possible explanations, it is easy to ascribe the failure to the type of the idea.
+But what about those rare cases, where an app idea gets funded? Can we figure out why a particular idea succeeded? Our new widget Explain Predictions can do just that - explain why they will succeed. Or at least, explain why the classifier thinks they will.</description></item><item><title>Stack Everything!</title><link>/blog/2018/01/05/stack-everything/</link><pubDate>Fri, 05 Jan 2018 15:37:34 +0000</pubDate><guid>/blog/2018/01/05/stack-everything/</guid><description>We all know that sometimes many is better than few. Therefore we are happy to introduce the Stack widget. It is available in Prototypes add-on for now.
+Stacking enables you to combine several trained models into one meta model and use it in Test&amp;amp;Score just like any other model. This comes in handy with complex problems, where one classifier might fail, but many could come up with something that works. Let&amp;rsquo;s see an example.</description></item><item><title>Neural Network is Back!</title><link>/blog/2017/11/03/neural-network-is-back/</link><pubDate>Fri, 03 Nov 2017 12:40:06 +0000</pubDate><guid>/blog/2017/11/03/neural-network-is-back/</guid><description>We know you&amp;rsquo;ve missed it. We&amp;rsquo;ve been getting many requests to bring back Neural Network widget, but we also had many reservations about it.
 Neural networks are powerful and great, but to do them right is not straight-forward. And to do them right in the context of a GUI-based visual programming tool like Orange is a twisted double helix of a roller coaster.
-Do we make each layer a widget and then stack them?</description>
-    </item>
-    
-    <item>
-      <title>Text Analysis: New Features</title>
-      <link>/blog/2017/08/04/text-analysis-new-features/</link>
-      <pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate>
-      
-      <guid>/blog/2017/08/04/text-analysis-new-features/</guid>
-      <description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
-Related: Text Preprocessing</description>
-    </item>
-    
-    <item>
-      <title>My First Orange Widget</title>
-      <link>/blog/2017/02/23/my-first-orange-widget/</link>
-      <pubDate>Thu, 23 Feb 2017 10:11:16 +0000</pubDate>
-      
-      <guid>/blog/2017/02/23/my-first-orange-widget/</guid>
-      <description>Recently, I took on a daunting task - programming my first widget. I&amp;rsquo;m not a programmer or a computer science grad, but I&amp;rsquo;ve been looking at Orange code for almost two years now and I thought I could handle it.
-I set to create a simple Concordance widget that displays word contexts in a corpus (the widget will be available in the future release). The widget turned out to be a little more complicated than I originally anticipated, but it was a great exercise in programming.</description>
-    </item>
-    
-    <item>
-      <title>Dimensionality Reduction by Manifold Learning</title>
-      <link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link>
-      <pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate>
-      
-      <guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid>
-      <description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
+Do we make each layer a widget and then stack them?</description></item><item><title>Text Analysis: New Features</title><link>/blog/2017/08/04/text-analysis-new-features/</link><pubDate>Fri, 04 Aug 2017 11:41:33 +0000</pubDate><guid>/blog/2017/08/04/text-analysis-new-features/</guid><description>As always, we&amp;rsquo;ve been working hard to bring you new functionalities and improvements. Recently, we&amp;rsquo;ve released Orange version 3.4.5 and Orange3-Text version 0.2.5. We focused on the Text add-on since we are lately holding a lot of text mining workshops. The next one will be at Digital Humanities 2017 in Montreal, QC, Canada in a couple of days and we simply could not resist introducing some sexy new features_._
+Related: Text Preprocessing</description></item><item><title>My First Orange Widget</title><link>/blog/2017/02/23/my-first-orange-widget/</link><pubDate>Thu, 23 Feb 2017 10:11:16 +0000</pubDate><guid>/blog/2017/02/23/my-first-orange-widget/</guid><description>Recently, I took on a daunting task - programming my first widget. I&amp;rsquo;m not a programmer or a computer science grad, but I&amp;rsquo;ve been looking at Orange code for almost two years now and I thought I could handle it.
+I set to create a simple Concordance widget that displays word contexts in a corpus (the widget will be available in the future release). The widget turned out to be a little more complicated than I originally anticipated, but it was a great exercise in programming.</description></item><item><title>Dimensionality Reduction by Manifold Learning</title><link>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</link><pubDate>Mon, 12 Dec 2016 07:57:27 +0000</pubDate><guid>/blog/2016/12/12/dimensionality-reduction-by-manifold-learning/</guid><description>The new Orange release (v. 3.3.9) welcomed a few wonderful additions to its widget family, including Manifold Learning widget. The widget reduces the dimensionality of the high-dimensional data and is thus wonderful in combination with visualization widgets.
 Manifold Learning widget has a simple interface with powerful features.
-Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description>
-    </item>
-    
-    <item>
-      <title>Data Mining for Political Scientists</title>
-      <link>/blog/2016/11/30/data-mining-for-political-scientists/</link>
-      <pubDate>Wed, 30 Nov 2016 08:24:53 +0000</pubDate>
-      
-      <guid>/blog/2016/11/30/data-mining-for-political-scientists/</guid>
-      <description>Being a political scientist, I did not even hear about data mining before I&amp;rsquo;ve joined Biolab. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!
-But hold on! There are still many social scientists out there who haven&amp;rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning.</description>
-    </item>
-    
-    <item>
-      <title>Text Mining: version 0.2.0</title>
-      <link>/blog/2016/09/23/text-mining-version-0-2-0/</link>
-      <pubDate>Fri, 23 Sep 2016 14:50:38 +0000</pubDate>
-      
-      <guid>/blog/2016/09/23/text-mining-version-0-2-0/</guid>
-      <description>Orange3-Text has just recently been polished, updated and enhanced! Our GSoC student Alexey has helped us greatly to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.
-Wikipedia widget allows retrieving sources from Wikipedia API and can handle multiple queries.</description>
-    </item>
-    
-    <item>
-      <title>Visualization of Classification Probabilities</title>
-      <link>/blog/2016/08/16/polynomial-classification/</link>
-      <pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate>
-      
-      <guid>/blog/2016/08/16/polynomial-classification/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+Manifold Learning widget offers five embedding techniques based on scikit-learn library: t-SNE, MDS, Isomap, Locally Linear Embedding and Spectral Embedding. They each handle the mapping differently and also have a specific set of parameters.</description></item><item><title>Data Mining for Political Scientists</title><link>/blog/2016/11/30/data-mining-for-political-scientists/</link><pubDate>Wed, 30 Nov 2016 08:24:53 +0000</pubDate><guid>/blog/2016/11/30/data-mining-for-political-scientists/</guid><description>Being a political scientist, I did not even hear about data mining before I&amp;rsquo;ve joined Biolab. And naturally, as with all good things, data mining started to grow on me. Give me some data, connect a bunch of widgets and see the magic happen!
+But hold on! There are still many social scientists out there who haven&amp;rsquo;t yet heard about the wonderful world of data mining, text mining and machine learning.</description></item><item><title>Text Mining: version 0.2.0</title><link>/blog/2016/09/23/text-mining-version-0-2-0/</link><pubDate>Fri, 23 Sep 2016 14:50:38 +0000</pubDate><guid>/blog/2016/09/23/text-mining-version-0-2-0/</guid><description>Orange3-Text has just recently been polished, updated and enhanced! Our GSoC student Alexey has helped us greatly to achieve another milestone in Orange development and release the latest 0.2.0 version of our text mining add-on. The new release, which is already available on PyPi, includes Wikipedia and SimHash widgets and a rehaul of Bag of Words, Topic Modeling and Corpus Viewer.
+Wikipedia widget allows retrieving sources from Wikipedia API and can handle multiple queries.</description></item><item><title>Visualization of Classification Probabilities</title><link>/blog/2016/08/16/polynomial-classification/</link><pubDate>Tue, 16 Aug 2016 17:32:20 +0000</pubDate><guid>/blog/2016/08/16/polynomial-classification/</guid><description>This is a guest blog from the Google Summer of Code project.
 Polynomial Classification widget is implemented as a part of my Google Summer of Code project along with other widgets in educational add-on (see my previous blog). It visualizes probabilities for two-class classification (target vs. rest) using color gradient and contour lines, and it can do so for any Orange learner.
-Here is an example workflow. The data comes from the File widget.</description>
-    </item>
-    
-    <item>
-      <title>Interactive k-Means</title>
-      <link>/blog/2016/08/12/interactive-k-means/</link>
-      <pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate>
-      
-      <guid>/blog/2016/08/12/interactive-k-means/</guid>
-      <description>This is a guest blog from the Google Summer of Code project.
+Here is an example workflow. The data comes from the File widget.</description></item><item><title>Interactive k-Means</title><link>/blog/2016/08/12/interactive-k-means/</link><pubDate>Fri, 12 Aug 2016 12:45:36 +0000</pubDate><guid>/blog/2016/08/12/interactive-k-means/</guid><description>This is a guest blog from the Google Summer of Code project.
 As a part of my Google Summer of Code project I started developing educational widgets and assemble them in an Educational Add-On for Orange. Educational widgets can be used by students to understand how some key data mining algorithms work and by teachers to demonstrate the working of these algorithms.
-Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description>
-    </item>
-    
-    <item>
-      <title>Making Predictions</title>
-      <link>/blog/2016/01/22/predictive-analytics-with-orange/</link>
-      <pubDate>Fri, 22 Jan 2016 16:01:36 +0000</pubDate>
-      
-      <guid>/blog/2016/01/22/predictive-analytics-with-orange/</guid>
-      <description>One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.</description>
-    </item>
-    
-    <item>
-      <title>Color it!</title>
-      <link>/blog/2015/12/28/color-it/</link>
-      <pubDate>Mon, 28 Dec 2015 10:47:00 +0000</pubDate>
-      
-      <guid>/blog/2015/12/28/color-it/</guid>
-      <description>Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!
-This fascinating artsy widget will allow you to play with your data set in a new and exciting way. No more dull visualizations and default color schemes! Set your own colors the way YOU want it to! Care for some magical cyan-to-magenta? Or do you prefer a more festive red-to-green?</description>
-    </item>
-    
-    <item>
-      <title>Hubbing with the Hub widget</title>
-      <link>/blog/2015/09/11/hubbing-with-hub-widget/</link>
-      <pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate>
-      
-      <guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid>
-      <description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
+Here I describe an educational widget for interactive k-means clustering, an algorithm that splits the data into clusters by finding cluster centroids such that the distance between data points and their corresponding centroid is minimized.</description></item><item><title>Making Predictions</title><link>/blog/2016/01/22/predictive-analytics-with-orange/</link><pubDate>Fri, 22 Jan 2016 16:01:36 +0000</pubDate><guid>/blog/2016/01/22/predictive-analytics-with-orange/</guid><description>One of the cool things about being a data scientist is being able to predict. That is, predict before we know the actual outcome. I am not talking about verifying your favorite classification algorithm here, and I am not talking about cross-validation or classification accuracies or AUC or anything like that. I am talking about the good old prediction. This is where our very own Predictions widget comes to help.</description></item><item><title>Color it!</title><link>/blog/2015/12/28/color-it/</link><pubDate>Mon, 28 Dec 2015 10:47:00 +0000</pubDate><guid>/blog/2015/12/28/color-it/</guid><description>Holiday season is upon us and even the Orange team is in a festive mood. This is why we made a Color widget!
+This fascinating artsy widget will allow you to play with your data set in a new and exciting way. No more dull visualizations and default color schemes! Set your own colors the way YOU want it to! Care for some magical cyan-to-magenta? Or do you prefer a more festive red-to-green?</description></item><item><title>Hubbing with the Hub widget</title><link>/blog/2015/09/11/hubbing-with-hub-widget/</link><pubDate>Fri, 11 Sep 2015 06:56:16 +0000</pubDate><guid>/blog/2015/09/11/hubbing-with-hub-widget/</guid><description>So you have painted two data sets and loaded another one from a file, and now you are testing predictions of logistic regression, classification trees and SVM on it? Tired of having to reconnect the Paint data widget and the File widget back and forth whenever you switch between them?
 Say no more! Look no further! Here is the new Hub widget!
-Hub widget is the most versatile widget available so far.</description>
-    </item>
-    
-    <item>
-      <title>Updated Widget Documentation</title>
-      <link>/blog/2015/09/04/updated-widget-documentation/</link>
-      <pubDate>Fri, 04 Sep 2015 13:00:18 +0000</pubDate>
-      
-      <guid>/blog/2015/09/04/updated-widget-documentation/</guid>
-      <description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
+Hub widget is the most versatile widget available so far.</description></item><item><title>Updated Widget Documentation</title><link>/blog/2015/09/04/updated-widget-documentation/</link><pubDate>Fri, 04 Sep 2015 13:00:18 +0000</pubDate><guid>/blog/2015/09/04/updated-widget-documentation/</guid><description>Happy news for all passionate Orange users! We’ve uploaded documentation for our Orange 3 widget selection.
 Right click and select &amp;ldquo;Help&amp;rdquo; or press F1.
 ** **
-It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description>
-    </item>
-    
-    <item>
-      <title>Scatter Plot Projection Rank</title>
-      <link>/blog/2015/08/28/scatter-plot-projection-rank/</link>
-      <pubDate>Fri, 28 Aug 2015 14:05:07 +0000</pubDate>
-      
-      <guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid>
-      <description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
+It’s easy to use. To learn more about a particular wigdet, click on the widget. Either use right click and select “Help” or press F1. A new window will open with a widget description and an example for its use. There are also screenshots included as visual help.</description></item><item><title>Scatter Plot Projection Rank</title><link>/blog/2015/08/28/scatter-plot-projection-rank/</link><pubDate>Fri, 28 Aug 2015 14:05:07 +0000</pubDate><guid>/blog/2015/08/28/scatter-plot-projection-rank/</guid><description>One of the nicest and surely most useful visualization widgets in Orange is Scatter Plot. The widget displays a 2-D plot, where x and y-axes are two attributes from the data.
 2-dimensional scatter plot visualization
-Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description>
-    </item>
-    
-  </channel>
-</rss>
+Orange 2.7 has a wonderful functionality called VizRank, that is now implemented also in Orange 3. Rank Projections functionality enables you to find interesting attribute pairs by scoring their average classification accuracy. Click ‘Start Evaluation’ to begin ranking.</description></item></channel></rss>

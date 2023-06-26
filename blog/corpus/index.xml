@@ -1,51 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>corpus on Orange</title>
-    <link>/blog/corpus/</link>
-    <description>Recent content in corpus on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/corpus/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Semantic Analysis of Documents</title>
-      <link>/blog/2021/2021-09-17-semantic-analysis/</link>
-      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-09-17-semantic-analysis/</guid>
-      <description>Our recent project with the Ministry of Public Administration comprises building a semantic analysis pipeline in Orange, enabling the users to quickly and efficiently explore the content of documents, compare a subset against the corpus, extract keywords, and semantically explore document maps. If this sounds too vague, don&amp;rsquo;t worry, here&amp;rsquo;s a quick demo on how to perform semantic analysis in Orange.
-First, we will use the pre-prepared corpus of proposals to the government, which you can download here.</description>
-    </item>
-    
-    <item>
-      <title>New in Orange: Support for CONLL-U files</title>
-      <link>/blog/2021/2021-09-15-connlu-files/</link>
-      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-09-15-connlu-files/</guid>
-      <description>CONLL-U files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.
-# sent_id = ParlaMint-GB_2021-01-05-lords.seg2.2 # text = The Hybrid Sitting of the House will now begin. 1 The the DET DT Definite=Def|PronType=Art 2 det _ NER=O 2 Hybrid hybrid NOUN NN Number=Sing 9 nsubj _ NER=O 3 Sitting sit VERB VBG VerbForm=Ger 2 acl _ NER=O 4 of of ADP IN _ 6 case _ NER=O 5 the the DET DT Definite=Def|PronType=Art 6 det _ NER=O 6 House House PROPN NNP Number=Sing 3 obl _ NER=B-ORG 7 will will VERB MD VerbForm=Fin 9 aux _ NER=O 8 now now ADV RB _ 9 advmod _ NER=O 9 begin begin VERB VB VerbForm=Inf 0 root _ NER=O|SpaceAfter=No 10 .</description>
-    </item>
-    
-    <item>
-      <title>How to identify fake news with document embeddings</title>
-      <link>/blog/2020/2020-10-15-document-embedders/</link>
-      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-10-15-document-embedders/</guid>
-      <description>Text is described by the sequence of character. Since every machine learning algorithm needs numbers, we need to transform it into vectors of real numbers before we can continue with the analysis. To do this, we can use various approaches. Orange currently offers bag-of-words approach and now also Document embedding by fastText. In this post, we explain what document embedding is, why it is useful, and show its usage on the classification example.</description>
-    </item>
-    
-    <item>
-      <title>Detecting Story Arcs with Orange</title>
-      <link>/blog/2020/2020-07-27-story-arcs/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020/2020-07-27-story-arcs/</guid>
-      <description>Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>corpus on Orange</title><link>/blog/corpus/</link><description>Recent content in corpus on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/corpus/index.xml" rel="self" type="application/rss+xml"/><item><title>Semantic Analysis of Documents</title><link>/blog/2021/2021-09-17-semantic-analysis/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-09-17-semantic-analysis/</guid><description>Our recent project with the Ministry of Public Administration comprises building a semantic analysis pipeline in Orange, enabling the users to quickly and efficiently explore the content of documents, compare a subset against the corpus, extract keywords, and semantically explore document maps. If this sounds too vague, don&amp;rsquo;t worry, here&amp;rsquo;s a quick demo on how to perform semantic analysis in Orange.
+First, we will use the pre-prepared corpus of proposals to the government, which you can download here.</description></item><item><title>New in Orange: Support for CONLL-U files</title><link>/blog/2021/2021-09-15-connlu-files/</link><pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-09-15-connlu-files/</guid><description>CONLL-U files are ubiquitous in text mining and natural language processing. They can hold a great deal of linguistic data, specifically sentence boundaries, word lemmas, universal POS tags, language specific POS tag, morphological features, dependency relations, named entities, and so on. This is how a typical CONLL-U file looks like.
+# sent_id = ParlaMint-GB_2021-01-05-lords.seg2.2 # text = The Hybrid Sitting of the House will now begin. 1 The the DET DT Definite=Def|PronType=Art 2 det _ NER=O 2 Hybrid hybrid NOUN NN Number=Sing 9 nsubj _ NER=O 3 Sitting sit VERB VBG VerbForm=Ger 2 acl _ NER=O 4 of of ADP IN _ 6 case _ NER=O 5 the the DET DT Definite=Def|PronType=Art 6 det _ NER=O 6 House House PROPN NNP Number=Sing 3 obl _ NER=B-ORG 7 will will VERB MD VerbForm=Fin 9 aux _ NER=O 8 now now ADV RB _ 9 advmod _ NER=O 9 begin begin VERB VB VerbForm=Inf 0 root _ NER=O|SpaceAfter=No 10 .</description></item><item><title>How to identify fake news with document embeddings</title><link>/blog/2020/2020-10-15-document-embedders/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-10-15-document-embedders/</guid><description>Text is described by the sequence of character. Since every machine learning algorithm needs numbers, we need to transform it into vectors of real numbers before we can continue with the analysis. To do this, we can use various approaches. Orange currently offers bag-of-words approach and now also Document embedding by fastText. In this post, we explain what document embedding is, why it is useful, and show its usage on the classification example.</description></item><item><title>Detecting Story Arcs with Orange</title><link>/blog/2020/2020-07-27-story-arcs/</link><pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate><guid>/blog/2020/2020-07-27-story-arcs/</guid><description>Reading is fun because it takes you on a journey. Mostly, it is a journey of emotions as you live and breathe with the protagonist and her adventures. Today, we will have a look at how to detect sentiment in a story, plot story arcs and analyze the content of the key segments in a corpus.
 Related: Text Workshops in Ljubljana
-We will be using a corpus of Anderson&amp;rsquo;s tales, which is available in the Corpus widget (data set anderson.</description>
-    </item>
-    
-  </channel>
-</rss>
+We will be using a corpus of Anderson&amp;rsquo;s tales, which is available in the Corpus widget (data set anderson.</description></item></channel></rss>

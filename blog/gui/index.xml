@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>gui on Orange</title>
-    <link>/blog/gui/</link>
-    <description>Recent content in gui on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/gui/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Živjo, Orange!</title>
-      <link>/blog/2023/2021-03-31-zivjo-orange/</link>
-      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2023/2021-03-31-zivjo-orange/</guid>
-      <description>The Slovenian language exhibits a complicated grammar, featuring three genders and four plural terms, along with a substantial amount of declensions and conjugations, (and unreasonable number of exceptions) that require all kinds of agreements between nouns, adjectives and verbs. It is mastered (unfortunatelly poorly, in too many cases) by some two million native speakers &amp;hellip; and a growing number of programs.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gui on Orange</title><link>/blog/gui/</link><description>Recent content in gui on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/gui/index.xml" rel="self" type="application/rss+xml"/><item><title>Živjo, Orange!</title><link>/blog/2023/2021-03-31-zivjo-orange/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>/blog/2023/2021-03-31-zivjo-orange/</guid><description>The Slovenian language exhibits a complicated grammar, featuring three genders and four plural terms, along with a substantial amount of declensions and conjugations, (and unreasonable number of exceptions) that require all kinds of agreements between nouns, adjectives and verbs. It is mastered (unfortunatelly poorly, in too many cases) by some two million native speakers &amp;hellip; and a growing number of programs.
 Among them, finally, Orange.
-Why? Primarily because Orange is already being used in higher education, while its use in younger population is often hindered by language barrier.</description>
-    </item>
-    
-  </channel>
-</rss>
+Why? Primarily because Orange is already being used in higher education, while its use in younger population is often hindered by language barrier.</description></item></channel></rss>

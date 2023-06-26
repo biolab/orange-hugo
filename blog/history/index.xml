@@ -1,31 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>history on Orange</title>
-    <link>/blog/history/</link>
-    <description>Recent content in history on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 09 Oct 2013 06:33:00 +0000</lastBuildDate><atom:link href="/blog/history/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Brief History of Orange, Praise to Donald Michie</title>
-      <link>/blog/2013/10/09/brief-history-of-orange-praise-to-donald-michie/</link>
-      <pubDate>Wed, 09 Oct 2013 06:33:00 +0000</pubDate>
-      
-      <guid>/blog/2013/10/09/brief-history-of-orange-praise-to-donald-michie/</guid>
-      <description>Informatica has recently published our paper on the history of Orange. The paper is a post-publication from a Conference on 100 Years of Alan Turing and 20 Years of Slovene AI Society, where Janez Demšar gave a talk on the topics.
-History of Orange goes all the way back to 1997, when late Donald Michie had an idea that machine learning needs an open toolbox for machine learning. To spark the development, we co-organized WebLab97 at beautiful Bled, Slovenia.</description>
-    </item>
-    
-    <item>
-      <title>Short history of Orange</title>
-      <link>/blog/2012/10/23/short-history-of-orange/</link>
-      <pubDate>Tue, 23 Oct 2012 08:58:00 +0000</pubDate>
-      
-      <guid>/blog/2012/10/23/short-history-of-orange/</guid>
-      <description>Few weeks back we celebrated 20 years of Slovene Artificial Intelligence Society. I have much enjoyed Ivan Bratko&amp;rsquo;s talk on AI history, and his account of events as triggered by late Donald Michie. Many interesting talks followed, including highlights by Stephen Muggleton and Claude Sammut.
-The last talk of the event was on Orange. Janez talked about its birth, history and future prospects. You can see his presentation on videolectures and check out the paper with lecture&amp;rsquo;s notes.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>history on Orange</title><link>/blog/history/</link><description>Recent content in history on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2013 06:33:00 +0000</lastBuildDate><atom:link href="/blog/history/index.xml" rel="self" type="application/rss+xml"/><item><title>Brief History of Orange, Praise to Donald Michie</title><link>/blog/2013/10/09/brief-history-of-orange-praise-to-donald-michie/</link><pubDate>Wed, 09 Oct 2013 06:33:00 +0000</pubDate><guid>/blog/2013/10/09/brief-history-of-orange-praise-to-donald-michie/</guid><description>Informatica has recently published our paper on the history of Orange. The paper is a post-publication from a Conference on 100 Years of Alan Turing and 20 Years of Slovene AI Society, where Janez Demšar gave a talk on the topics.
+History of Orange goes all the way back to 1997, when late Donald Michie had an idea that machine learning needs an open toolbox for machine learning. To spark the development, we co-organized WebLab97 at beautiful Bled, Slovenia.</description></item><item><title>Short history of Orange</title><link>/blog/2012/10/23/short-history-of-orange/</link><pubDate>Tue, 23 Oct 2012 08:58:00 +0000</pubDate><guid>/blog/2012/10/23/short-history-of-orange/</guid><description>Few weeks back we celebrated 20 years of Slovene Artificial Intelligence Society. I have much enjoyed Ivan Bratko&amp;rsquo;s talk on AI history, and his account of events as triggered by late Donald Michie. Many interesting talks followed, including highlights by Stephen Muggleton and Claude Sammut.
+The last talk of the event was on Orange. Janez talked about its birth, history and future prospects. You can see his presentation on videolectures and check out the paper with lecture&amp;rsquo;s notes.</description></item></channel></rss>

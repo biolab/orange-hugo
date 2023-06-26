@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>machine learning on Orange</title>
-    <link>/blog/machine-learning/</link>
-    <description>Recent content in machine learning on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Editing the photographs collection with the help of machine learning</title>
-      <link>/blog/2022/2022-02-11-edit-image-collection/</link>
-      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-02-11-edit-image-collection/</guid>
-      <description>The core element of Orange&amp;rsquo;s image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding.
-We switched from an old cluster with a fixed number of workers for each embedding to a new infrastructure where workers turn on when needed. It means that when a user sends images to the embedder, it will turn on as many instances as required until processors&#39; cores are available.</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Jargon</title>
-      <link>/blog/2022/2022-02-01-machine-learning-jargon/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-02-01-machine-learning-jargon/</guid>
-      <description>We all know each profession has its own jargon. Most of us remember from any hospital series something like: &amp;ldquo;&amp;ldquo;Pass me the scalpel, stat!&amp;rdquo; Meaning &amp;ldquo;give me the scalpel quickly&amp;rdquo;.
-Data scientists are no different. We have our own terminology that requires some getting used to. Here&amp;rsquo;s a list of common terms that we use in machine learning. Some terms are specific to Orange and might not be used elsewhere. The post is intended to get you familiar with concepts used in Orange.</description>
-    </item>
-    
-    <item>
-      <title>Hands-On Training About Overfitting</title>
-      <link>/blog/2021/2021-03-05-overfitting-course/</link>
-      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021/2021-03-05-overfitting-course/</guid>
-      <description>PLOS Computation Biology has just published our paper on training about overfitting:
- Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671.  Machine learning has recently propelled approaches for the analysis of data, but &amp;ldquo;for the uninitiated, the technology poses significant difficulties&amp;rdquo; (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>machine learning on Orange</title><link>/blog/machine-learning/</link><description>Recent content in machine learning on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Editing the photographs collection with the help of machine learning</title><link>/blog/2022/2022-02-11-edit-image-collection/</link><pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-02-11-edit-image-collection/</guid><description>The core element of Orange&amp;rsquo;s image analysis is embedding images in the vector space. Last year, we upgraded the embedding server infrastructure, enabling around ten times faster image embedding.
+We switched from an old cluster with a fixed number of workers for each embedding to a new infrastructure where workers turn on when needed. It means that when a user sends images to the embedder, it will turn on as many instances as required until processors&amp;rsquo; cores are available.</description></item><item><title>Machine Learning Jargon</title><link>/blog/2022/2022-02-01-machine-learning-jargon/</link><pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-02-01-machine-learning-jargon/</guid><description>We all know each profession has its own jargon. Most of us remember from any hospital series something like: &amp;ldquo;&amp;ldquo;Pass me the scalpel, stat!&amp;rdquo; Meaning &amp;ldquo;give me the scalpel quickly&amp;rdquo;.
+Data scientists are no different. We have our own terminology that requires some getting used to. Here&amp;rsquo;s a list of common terms that we use in machine learning. Some terms are specific to Orange and might not be used elsewhere. The post is intended to get you familiar with concepts used in Orange.</description></item><item><title>Hands-On Training About Overfitting</title><link>/blog/2021/2021-03-05-overfitting-course/</link><pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate><guid>/blog/2021/2021-03-05-overfitting-course/</guid><description>PLOS Computation Biology has just published our paper on training about overfitting:
+Demšar J, Zupan B (2021) Hands-on training about overfitting. PLoS Comput Biol 17(3): e1008671. Machine learning has recently propelled approaches for the analysis of data, but &amp;ldquo;for the uninitiated, the technology poses significant difficulties&amp;rdquo; (Deep learning for biology, Nature, Feb 22, 2018). One of the hard concepts for starters in machine learning is overfitting. Overfitting can lead to models that include patterns that do not generalize well and could be meaningless.</description></item></channel></rss>

@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>kaplan-meier on Orange</title>
-    <link>/blog/kaplan-meier/</link>
-    <description>Recent content in kaplan-meier on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 25 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/kaplan-meier/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>An introduction to the Kaplan-Meier Estimator</title>
-      <link>/blog/2022/2022-05-25-KaplanMeier/</link>
-      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2022/2022-05-25-KaplanMeier/</guid>
-      <description>The Kaplan-Meier Estimator is a function that relates time to the probability of an event of interest. It is widely used in survival analysis and with the addition of the Survival Analysis package to Orange it is now readily available for accessible visual analytics. However, any kind of efficient data analysis requires a basic understanding of what the implemented model does. This blog post thus aims to:
- explain the most important concepts needed for understanding the Kaplan-Meier Estimator, show how to manually calculate and interpret a survival curve to build an intuitive understanding and show how this can be implemented in Orange with a few clicks.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kaplan-meier on Orange</title><link>/blog/kaplan-meier/</link><description>Recent content in kaplan-meier on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/kaplan-meier/index.xml" rel="self" type="application/rss+xml"/><item><title>An introduction to the Kaplan-Meier Estimator</title><link>/blog/2022/2022-05-25-KaplanMeier/</link><pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><guid>/blog/2022/2022-05-25-KaplanMeier/</guid><description>The Kaplan-Meier Estimator is a function that relates time to the probability of an event of interest. It is widely used in survival analysis and with the addition of the Survival Analysis package to Orange it is now readily available for accessible visual analytics. However, any kind of efficient data analysis requires a basic understanding of what the implemented model does. This blog post thus aims to:
+explain the most important concepts needed for understanding the Kaplan-Meier Estimator, show how to manually calculate and interpret a survival curve to build an intuitive understanding and show how this can be implemented in Orange with a few clicks.</description></item></channel></rss>

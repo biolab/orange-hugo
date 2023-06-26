@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>multilabel on Orange</title>
-    <link>/blog/multilabel/</link>
-    <description>Recent content in multilabel on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2012 12:41:00 +0000</lastBuildDate><atom:link href="/blog/multilabel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Multi-label classification (and Multi-target prediction) in Orange</title>
-      <link>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</link>
-      <pubDate>Mon, 09 Jan 2012 12:41:00 +0000</pubDate>
-      
-      <guid>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</guid>
-      <description>The last summer, student Wencan Luo participated in Google Summer of Code to implement Multi-label Classification in Orange. He provided a framework, implemented a few algorithms and some prototype widgets. His work has been &amp;ldquo;hidden&amp;rdquo; in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet &amp;hellip;) and added a more general support for multi-target prediction.
-You can load multi-label tab-delimited data (e.</description>
-    </item>
-    
-    <item>
-      <title>GSoC Review: Multi-label Classification Implementation</title>
-      <link>/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/</link>
-      <pubDate>Fri, 02 Sep 2011 05:47:00 +0000</pubDate>
-      
-      <guid>/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/</guid>
-      <description>Traditional single-label classification is concerned with learning from a set of examples that are associated with a single label l from a set of disjoint labels L, |L| &amp;gt; 1. If |L| = 2, then the learning problem is called a binary classification problem, while if |L| &amp;gt; 2, then it is called a multi-class classification problem (Tsoumakas &amp;amp; Katakis, 2007).
-Multi-label classification methods are increasingly used by many applications, such as textual data classification, protein function classification, music categorization and semantic scene classification.</description>
-    </item>
-    
-    <item>
-      <title>Orange GSoC: Multi-label Classification Implementation</title>
-      <link>/blog/2011/07/20/orange-gsoc-multi-label-classification-implementation/</link>
-      <pubDate>Wed, 20 Jul 2011 11:35:00 +0000</pubDate>
-      
-      <guid>/blog/2011/07/20/orange-gsoc-multi-label-classification-implementation/</guid>
-      <description>Multi-label classification is one of the three projects of Google Summer Code 2011 for Orange. The main goal is to extend the Orange to support multi-label, including dataset support, two basic multi-label classifications-problem-transformation methods &amp;amp; algorithm adaptation methods, evaluation measures, GUI support, documentation, testing, and so on.
-My name is Wencan Luo, from China. I&amp;rsquo;m very happy to work with my mentor Matija. Until now, we have finished a framework for multi-label support for Orange.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>multilabel on Orange</title><link>/blog/multilabel/</link><description>Recent content in multilabel on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Jan 2012 12:41:00 +0000</lastBuildDate><atom:link href="/blog/multilabel/index.xml" rel="self" type="application/rss+xml"/><item><title>Multi-label classification (and Multi-target prediction) in Orange</title><link>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</link><pubDate>Mon, 09 Jan 2012 12:41:00 +0000</pubDate><guid>/blog/2012/01/09/multi-label-classification-and-multi-target-prediction-in-orange/</guid><description>The last summer, student Wencan Luo participated in Google Summer of Code to implement Multi-label Classification in Orange. He provided a framework, implemented a few algorithms and some prototype widgets. His work has been &amp;ldquo;hidden&amp;rdquo; in our repositories for too long; finally, we have merged part of his code into Orange (widgets are not there yet &amp;hellip;) and added a more general support for multi-target prediction.
+You can load multi-label tab-delimited data (e.</description></item><item><title>GSoC Review: Multi-label Classification Implementation</title><link>/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/</link><pubDate>Fri, 02 Sep 2011 05:47:00 +0000</pubDate><guid>/blog/2011/09/02/gsoc-review-multi-label-classification-implementation/</guid><description>Traditional single-label classification is concerned with learning from a set of examples that are associated with a single label l from a set of disjoint labels L, |L| &amp;gt; 1. If |L| = 2, then the learning problem is called a binary classification problem, while if |L| &amp;gt; 2, then it is called a multi-class classification problem (Tsoumakas &amp;amp; Katakis, 2007).
+Multi-label classification methods are increasingly used by many applications, such as textual data classification, protein function classification, music categorization and semantic scene classification.</description></item><item><title>Orange GSoC: Multi-label Classification Implementation</title><link>/blog/2011/07/20/orange-gsoc-multi-label-classification-implementation/</link><pubDate>Wed, 20 Jul 2011 11:35:00 +0000</pubDate><guid>/blog/2011/07/20/orange-gsoc-multi-label-classification-implementation/</guid><description>Multi-label classification is one of the three projects of Google Summer Code 2011 for Orange. The main goal is to extend the Orange to support multi-label, including dataset support, two basic multi-label classifications-problem-transformation methods &amp;amp; algorithm adaptation methods, evaluation measures, GUI support, documentation, testing, and so on.
+My name is Wencan Luo, from China. I&amp;rsquo;m very happy to work with my mentor Matija. Until now, we have finished a framework for multi-label support for Orange.</description></item></channel></rss>

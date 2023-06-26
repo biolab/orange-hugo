@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>cross validation on Orange</title>
-    <link>/blog/cross-validation/</link>
-    <description>Recent content in cross validation on Orange</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/cross-validation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Mystery of Test &amp; Score</title>
-      <link>/blog/2019/1/28/the-mystery-of-test-and-score/</link>
-      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2019/1/28/the-mystery-of-test-and-score/</guid>
-      <description>Test &amp;amp; Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test &amp;amp; Score widget.
-The widget generally accepts two inputs – Data and Learner. Data is the data set that we will be using for modeling, say, iris.tab that is already pre-loaded in the File widget.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cross validation on Orange</title><link>/blog/cross-validation/</link><description>Recent content in cross validation on Orange</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="/blog/cross-validation/index.xml" rel="self" type="application/rss+xml"/><item><title>The Mystery of Test &amp; Score</title><link>/blog/2019/1/28/the-mystery-of-test-and-score/</link><pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate><guid>/blog/2019/1/28/the-mystery-of-test-and-score/</guid><description>Test &amp;amp; Score is surely one the most used widgets in Orange. Fun fact: it is the fourth in popularity, right after Data Table, File and Scatter Plot. So let us dive into the nuts and bolts of the Test &amp;amp; Score widget.
+The widget generally accepts two inputs – Data and Learner. Data is the data set that we will be using for modeling, say, iris.tab that is already pre-loaded in the File widget.</description></item></channel></rss>
