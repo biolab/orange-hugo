@@ -1645,7 +1645,10 @@
    {
     "title": "Databases Update",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "update",
+     "database"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Databases Update.png",
     "url": "databases_update"
@@ -1653,7 +1656,10 @@
    {
     "title": "GEO Data Sets",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "geo",
+     "database"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-GEO Data Sets.png",
     "url": "geo_data_sets"
@@ -1661,7 +1667,10 @@
    {
     "title": "dictyExpress",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "dictyexpress",
+     "database"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-dictyExpress.png",
     "url": "dicty_express"
@@ -1669,14 +1678,19 @@
    {
     "title": "Genialis Expressions",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "genialis",
+     "database"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Genialis Expressions.png"
    },
    {
     "title": "Genes",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "genes"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Genes.png",
     "url": "genes"
@@ -1684,7 +1698,10 @@
    {
     "title": "Differential Expression",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "differential",
+     "expression"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Differential Expression.png",
     "url": "differential_expression"
@@ -1692,7 +1709,10 @@
    {
     "title": "GO Browser",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "go",
+     "gene ontology"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-GO Browser.png",
     "url": "go_browser"
@@ -1700,7 +1720,10 @@
    {
     "title": "KEGG Pathways",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "pathway",
+     "kegg"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-KEGG Pathways.png",
     "url": "kegg_pathways"
@@ -1708,7 +1731,10 @@
    {
     "title": "Gene Set Enrichment",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "gsea",
+     "enrichment"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Gene Set Enrichment.png",
     "url": "gene_set_enrichment"
@@ -1716,14 +1742,22 @@
    {
     "title": "Gene Sets",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "gene sets",
+     "genes"
+    ],
     "background": "light-grass",
-    "icon": "widget-icons/Bioinformatics-Gene Sets.png"
+    "icon": "widget-icons/Bioinformatics-Gene Sets.png",
+    "url": "gene_sets"
    },
    {
     "title": "Cluster Analysis",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "cluster",
+     "analysis",
+     "enrichment"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Cluster Analysis.png",
     "url": "cluster_analysis"
@@ -1731,7 +1765,10 @@
    {
     "title": "Volcano Plot",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "volcano",
+     "plot"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Volcano Plot.png",
     "url": "volcano_plot"
@@ -1739,14 +1776,21 @@
    {
     "title": "Homologs",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "homologs",
+     "orthologs",
+     "paralogs"
+    ],
     "background": "light-grass",
-    "icon": "widget-icons/Bioinformatics-Homologs.png"
+    "icon": "widget-icons/Bioinformatics-Homologs.png",
+    "url": "homologs"
    },
    {
     "title": "Marker Genes",
     "category": "Bioinformatics",
-    "keywords": [],
+    "keywords": [
+     "markers"
+    ],
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Marker Genes.png",
     "url": "marker_genes"
@@ -1760,6 +1804,17 @@
     "background": "light-grass",
     "icon": "widget-icons/Bioinformatics-Annotator.png",
     "url": "annotate_projection"
+   },
+   {
+    "title": "Single sample scoring",
+    "category": "Bioinformatics",
+    "keywords": [
+     "ssgsea",
+     "enrichment"
+    ],
+    "background": "light-grass",
+    "icon": "widget-icons/Bioinformatics-Single sample scoring.png",
+    "url": "single_sample_scoring"
    }
   ]
  ],
