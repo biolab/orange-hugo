@@ -2,7 +2,7 @@
 title= "Text Preprocessing"
 images =  ["/workflow_images/text-preprocessing.png"]
 type = "workflows"
-blog_link =  "2017/06/19/text-preprocessing/"
+blog_link =  "/blog/2017/06/19/text-preprocessing/"
 video = "https://youtu.be/V70UwJZWkZ8"
 download = "610-text-preprocessing.ows"
 workflows = ["Text Mining", "Preprocessing", "Tokenization"]

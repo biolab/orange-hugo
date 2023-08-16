@@ -2,7 +2,7 @@
 title= "Story Arcs"
 images =  ["/workflow_images/story-arcs.png"]
 type = "workflows"
-blog_link =  "2020/2020-07-27-story-arcs/"
+blog_link =  "/blog/2020/2020-07-27-story-arcs/"
 video = ""
 download = "650-story-arcs.ows"
 workflows = ["Text Mining", "Timeseries", "Sentiment Analysis"]
