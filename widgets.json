@@ -1522,7 +1522,8 @@
      "annotator"
     ],
     "background": "light-blue",
-    "icon": "widget-icons/Text Mining-Annotated Corpus Map.png"
+    "icon": "widget-icons/Text Mining-Annotated Corpus Map.png",
+    "url": "annotator"
    },
    {
     "title": "Ontology",
