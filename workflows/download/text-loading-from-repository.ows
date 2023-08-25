@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Import Documents" qualified_name="orangecontrib.text.widgets.owimportdocuments.OWImportDocuments" project_name="Orange3-Text" version="" title="Import Documents" position="(144.0, 129.0)" />
+		<node id="1" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(289.0, 130.0)" />
+		<node id="2" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(435.0, 130.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(84.00000000000001, 222.0)" end="(131.0, 188.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(49.0, 224.0, 150.0, 46.0)" font-family=".AppleSystemUIFont" font-size="14">Loads the documents from the file server. Double-click and change the source to load your set of documents.</text>
+		<text id="2" type="text/plain" rect="(231.0, 234.0, 150.0, 63.0)" font-family=".AppleSystemUIFont" font-size="14">Extracts tokens, lemmatize, stopword removal.</text>
+		<arrow id="3" start="(285.0, 230.0)" end="(285.0, 195.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(408.0, 222.0, 150.0, 63.0)" font-family=".AppleSystemUIFont" font-size="14">Displays most frequent words in the word cloud.</text>
+		<arrow id="5" start="(466.0, 224.0)" end="(439.0, 197.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'currentPath': None, 'lemma_cb': True, 'ner_cb': False, 'pos_cb': False, 'recent_paths': [], 'recent_urls': ['http://file.biolab.si/text-semantics/data/predlogi-vladi-1k/'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\xe6\x00\x00\x02\xeb\x00\x00\x08\xb4\x00\x00\x04\x10\x00\x00\x04\xb6\x00\x00\x02\xc2\x00\x00\x06\x84\x00\x00\x03\xd1\x00\x00\x00\x00\x02\x00\x00\x00\n\x00\x00\x00\x06\xe6\x00\x00\x03\x01\x00\x00\x08\xb4\x00\x00\x04\x10', 'source': 1, '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xe6\x00\x00\x01a\x00\x00\x06#\x00\x00\x03V\x00\x00\x02\xe6\x00\x00\x01w\x00\x00\x06#\x00\x00\x03V\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x02\xe6\x00\x00\x01w\x00\x00\x06#\x00\x00\x03V', 'storedsettings': {'name': '', 'preprocessors': [('preprocess.transform', {}), ('preprocess.tokenize', {}), ('preprocess.normalize', {'lemmagen_language': 'Slovenian', 'method': 4, 'snowball_language': 'English', 'udpipe_language': 'English', 'udpipe_tokenizer': False}), ('preprocess.filter', {'abs_end': 10, 'abs_start': 1, 'freq_type': 0, 'incl_num': False, 'invalidated': False, 'language': 'Slovene', 'lx_list': [], 'lx_path': None, 'methods': [0, 2], 'n_tokens': 100, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\\\'|\\"|‘|’|“|”|\\\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;|\\/|\\[|\\]', 'pos_tags': 'NOUN,VERB', 'rel_end': 0.9, 'rel_start': 0.1, 'sw_list': [], 'sw_path': None})]}, '__version__': 3}</properties>
+		<properties node_id="2" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAPAAAAB1AAABj8AAAPJAAADwAAAAeoAAAY/AAADyQAAAAAAAAAACgAAAAPA
+AAAB6gAABj8AAAPJlIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
