@@ -1,6 +1,6 @@
 +++
 title= "Explore Subpopulations with Distinct Risk Profiles"
-images =  ["/workflow_images/740_hierarhical_clustering.png"]
+images =  ["/workflows/images/740_hierarhical_clustering.png"]
 type = "workflows"
 blog =  ""
 video = ""

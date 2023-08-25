@@ -1,6 +1,6 @@
 +++
 title= "Twitter Data Analysis"
-images =  ["/workflow_images/twitter.png"]
+images =  ["/workflows/images/twitter.png"]
 type = "workflows"
 blog_link =  ""
 video = "https://youtu.be/HDkI6G4slzQ"

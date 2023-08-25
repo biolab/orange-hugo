@@ -1,6 +1,6 @@
 +++
 title= "Feature Ranking"
-images =  ["/workflow_images/feature-ranking.png"]
+images =  ["/workflows/images/feature-ranking.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

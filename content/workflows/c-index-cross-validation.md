@@ -1,6 +1,6 @@
 +++
 title= "Cross Validation for Survival Models"
-images =  ["/workflow_images/730_c_index_cross_validation.png"]
+images =  ["/workflows/images/730_c_index_cross_validation.png"]
 type = "workflows"
 blog =  ""
 video = ""

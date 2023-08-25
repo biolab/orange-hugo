@@ -1,6 +1,6 @@
 +++
 title= "Identify Differentially Expressed Genes with Volcano Plot"
-images =  ["/workflow_images/bioinformatics_volcano_plot.png"]
+images =  ["/workflows/images/bioinformatics_volcano_plot.png"]
 type = "workflows"
 blog =  ""
 video = ""

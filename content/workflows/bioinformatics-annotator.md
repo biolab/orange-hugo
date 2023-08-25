@@ -1,6 +1,6 @@
 +++
 title= "Annotate Cells Using Marker Genes"
-images =  ["/workflow_images/bioinformatics_annotator.png"]
+images =  ["/workflows/images/bioinformatics_annotator.png"]
 type = "workflows"
 blog =  ""
 video = ""

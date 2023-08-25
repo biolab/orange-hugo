@@ -1,6 +1,6 @@
 +++
 title= "Gene Set Enrichment Analysis"
-images =  ["/workflow_images/bioinformatics_gsea.png"]
+images =  ["/workflows/images/bioinformatics_gsea.png"]
 type = "workflows"
 blog =  ""
 video = ""

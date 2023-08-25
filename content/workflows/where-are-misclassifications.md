@@ -1,6 +1,6 @@
 +++
 title= "Where Are Misclassifications"
-images =  ["/workflow_images/misclassifications.png"]
+images =  ["/workflows/images/misclassifications.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

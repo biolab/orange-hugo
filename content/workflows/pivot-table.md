@@ -1,6 +1,6 @@
 +++
 title= "Pivot Table"
-images =  ["/workflow_images/pivot-table.png"]
+images =  ["/workflows/images/pivot-table.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

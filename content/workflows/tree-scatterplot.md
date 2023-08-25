@@ -1,6 +1,6 @@
 +++
 title= "Classification Tree"
-images =  ["/workflow_images/tree-scatterplot.png"]
+images =  ["/workflows/images/tree-scatterplot.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

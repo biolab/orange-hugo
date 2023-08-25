@@ -1,6 +1,6 @@
 +++
 title= "Train and Test Data"
-images =  ["/workflow_images/data-sampler.png"]
+images =  ["/workflows/images/data-sampler.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

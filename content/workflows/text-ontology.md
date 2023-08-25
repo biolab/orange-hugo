@@ -1,6 +1,6 @@
 +++
 title= "Ontology Generation from Keywords"
-images =  ["/workflow_images/text-ontology.png"]
+images =  ["/workflows/images/text-ontology.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

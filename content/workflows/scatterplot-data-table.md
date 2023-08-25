@@ -1,6 +1,6 @@
 +++
 title= "Interactive Visualizations"
-images =  ["/workflow_images/scatterplot-data-table.png"]
+images =  ["/workflows/images/scatterplot-data-table.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

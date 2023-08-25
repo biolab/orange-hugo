@@ -1,6 +1,6 @@
 +++
 title= "Semantic search"
-images =  ["/workflow_images/text-semantic-search.png", "/workflow_images/text-semantic-search-widget.png"]
+images =  ["/workflows/images/text-semantic-search.png", "/workflows/images/text-semantic-search-widget.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

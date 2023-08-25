@@ -1,6 +1,6 @@
 +++
 title= "Keyword-Based Text Document Scoring"
-images =  ["/workflow_images/text-keyword-based-scoring.png"]
+images =  ["/workflows/images/text-keyword-based-scoring.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

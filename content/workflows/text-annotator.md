@@ -1,6 +1,6 @@
 +++
 title= "Document Map Annotation"
-images =  ["/workflow_images/text-annotator.png"]
+images =  ["/workflows/images/text-annotator.png"]
 type = "workflows"
 blog_link =  ""
 video = ""
