@@ -1,6 +1,6 @@
 +++
 title= "Score Overexpressed Genes in Individual Samples"
-images =  ["/workflow_images/bioinformatics_gene_sets.png"]
+images =  ["/workflows/images/bioinformatics_gene_sets.png"]
 type = "workflows"
 blog =  ""
 video = ""

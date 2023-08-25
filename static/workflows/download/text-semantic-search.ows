@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Import Documents" qualified_name="orangecontrib.text.widgets.owimportdocuments.OWImportDocuments" project_name="Orange3-Text" version="" title="Import Documents" position="(142.0, 167.0)" />
+		<node id="1" name="Word List" qualified_name="orangecontrib.text.widgets.owwordlist.OWWordList" project_name="Orange3-Text" version="" title="Word List" position="(136.0, 302.0)" />
+		<node id="2" name="Semantic Viewer" qualified_name="orangecontrib.text.widgets.owsemanticviewer.OWSemanticViewer" project_name="Orange3-Text" version="" title="Semantic Viewer" position="(465.0, 233.0)" />
+		<node id="3" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(289.5, 167.5)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Words" sink_channel="Words" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="3" source_channel="Corpus" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="3" sink_node_id="2" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(156.0, 91.0)" end="(141.0, 130.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(79.0, 44.0, 198.0, 57.0)" font-family=".AppleSystemUIFont" font-size="16">Loads the documents from the server</text>
+		<arrow id="2" start="(247.0, 339.0)" end="(178.0, 319.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(255.0, 300.0, 162.0, 107.0)" font-family=".AppleSystemUIFont" font-size="16">Write down the words used for semantic search in documents</text>
+		<arrow id="4" start="(349.0, 91.99999999999999)" end="(300.0, 134.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(280.0, 45.0, 166.0, 69.0)" font-family=".AppleSystemUIFont" font-size="16">Set the document title variable</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV5AEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAtjdXJyZW50UGF0aJROjAhsZW1t
+YV9jYpSIjAZuZXJfY2KUiYwGcG9zX2NilImMDHJlY2VudF9wYXRoc5RdlIwLcmVjZW50X3VybHOU
+XZSMRmh0dHBzOi8vZmlsZS5iaW9sYWIuc2kvdGV4dC1zZW1hbnRpY3MvZGF0YS9wcm9wb3NhbHMt
+dG8tZ292ZXJubWVudC0xay+UYYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAB0QAA
+AXMAAAOqAAAC4AAAAdEAAAGPAAADqgAAAuAAAAAAAAAAAAXoAAAB0QAAAY8AAAOqAAAC4JSMBnNv
+dXJjZZRLAYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRn
+ZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAhsYW5ndWFnZZSMB0Vu
+Z2xpc2iUaA5LAXWMDmRvY3VtZW50c19oYXNolIoIGKmBIOexxqp1YmgTKYGUfZQoaBZ9lCiMCGxh
+bmd1YWdllIwHRW5nbGlzaJRoDksBdWgaigisDwcb8olbKXViZXUu
+</properties>
+		<properties node_id="1" format="pickle">gASVtAEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAGXAAAA6AAABBYAAALjAAABlwAAAQQAAAQWAAAC4wAAAAAAAAAABegAAAGX
+AAABBAAABBYAAALjlIwOc2VsZWN0ZWRfd29yZHOUj5SMEXVwZGF0ZV9ydWxlX2luZGV4lEsAjA93
+b3JkX2xpc3RfaW5kZXiUSwGMEXdvcmRfbGlzdF9saWJyYXJ5lF2UKH2UKIwEbmFtZZSMDlByb3Bl
+cnR5IHRheGVzlIwFd29yZHOUXZQojAhwcm9wZXJ0eZSMA3RheJSMBHJlbnSUjAlhYm9saXRpb26U
+ZYwIZmlsZW5hbWWUTnV9lChoC4wUVHJhZmZpYyBhbmQgdmVoaWNsZXOUaA1dlCiMB3ZlaGljbGWU
+jANjYXKUjAdiaWN5Y2xllIwIc3BlZWRpbmeUjANiYW6UjAZyZWR1Y2WUZWgTTnVlaA1dlChoF2gY
+aBloGmgbaBxljAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlHUu
+</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'display_index': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02^\x00\x00\x01q\x00\x00\x05\x84\x00\x00\x03;\x00\x00\x02^\x00\x00\x01\x8d\x00\x00\x05\x84\x00\x00\x03;\x00\x00\x00\x00\x00\x00\x00\x00\x05\xe8\x00\x00\x02^\x00\x00\x01\x8d\x00\x00\x05\x84\x00\x00\x03;', 'selection': [302], 'threshold': 0.5, '__version__': 1}</properties>
+		<properties node_id="3" format="pickle">gASVWgMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBFi
+b29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAhcAAAEZAAAD9gAAAq8AAAIXAAABNQAA
+A/YAAAKvAAAAAAAAAAAF6AAAAhcAAAE1AAAD9gAAAq+UjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwHRW5nbGlzaJRK/v///4aUjA50aXRsZV92YXJpYWJsZZSM
+BXRpdGxllEtnhpSMCnVzZWRfYXR0cnOUXZSMB2NvbnRlbnSUS2eGlGFK/f///4aUaAtLAXWMCmF0
+dHJpYnV0ZXOUfZSMBW1ldGFzlH2UKIwEbmFtZZRLA4wEcGF0aJRLA2gdSwOMCVRleHQgZmlsZZRL
+A4wGYXV0aG9ylEsDjAlkb3dudm90ZXOUSwKMFmVuZCBjb25zaWRlcmF0aW9uIGRhdGWUSwSMAmlk
+lEsCjA9udW1iZXIgY29tbWVudHOUSwKMDG51bWJlciB2aWV3c5RLAowNcHJvcG9zYWwgdHlwZZRL
+AYwIcmVzcG9uc2WUSwOMDXJlc3BvbnNlIGRhdGWUSwSMEXJlc3BvbnNlIGR1ZSBkYXRllEsEjAlz
+ZW50IGRhdGWUSwRoGUsDjAd1cHZvdGVzlEsCjAN1cmyUSwN1jA5kb2N1bWVudHNfaGFzaJSKCBip
+gSDnscaqaBWMAmVulHViaBApgZR9lChoE32UKGgVaBZK/v///4aUaBhOSv7///+GlGgbXZSMBFRl
+eHSUS2eGlGFK/f///4aUaAtLAXVoIH2UjAhDYXRlZ29yeZRLAXNoIn2UaDxLA3NoNIoIFtyU7JMM
+audoFYwCZW6UdWJldS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

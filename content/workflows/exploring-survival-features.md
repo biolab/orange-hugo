@@ -1,6 +1,6 @@
 +++
 title= "Exploring Survival Features"
-images =  ["/workflow_images/710_survival_features.png"]
+images =  ["/workflows/images/710_survival_features.png"]
 type = "workflows"
 blog =  ""
 video = ""

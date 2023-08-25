@@ -1,6 +1,6 @@
 +++
 title= "Cross Validation"
-images =  ["/workflow_images/cross-validation.png"]
+images =  ["/workflows/images/cross-validation.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

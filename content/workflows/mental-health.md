@@ -1,6 +1,6 @@
 +++
 title= "Mental health of tech employees in times of COVID-19"
-images =  ["/workflow_images/mental-health.png"]
+images =  ["/workflows/images/mental-health.png"]
 type = "workflows"
 blog_link =  "https://ocean.sagepub.com/blog/mental-health-of-tech-employees-in-times-of-covid-19"
 video = ""

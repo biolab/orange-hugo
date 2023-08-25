@@ -1,6 +1,6 @@
 +++
 title= "Semantic Word Map"
-images =  ["/workflow_images/text-semantic-word-map.png", "/workflow_images/text-semantic-word-map-tsne.png"]
+images =  ["/workflows/images/text-semantic-word-map.png", "/workflows/images/text-semantic-word-map-tsne.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

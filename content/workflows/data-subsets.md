@@ -1,6 +1,6 @@
 +++
 title= "Visalization of Data Subsets"
-images =  ["/workflow_images/scatterplot-visualize-subset.png"]
+images =  ["/workflows/images/scatterplot-visualize-subset.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

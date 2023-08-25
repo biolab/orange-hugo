@@ -1,6 +1,6 @@
 +++
 title= "Cluster Inspection"
-images =  ["/workflow_images/cluster-inspection.png"]
+images =  ["/workflows/images/cluster-inspection.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

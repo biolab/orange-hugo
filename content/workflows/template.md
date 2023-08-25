@@ -1,7 +1,7 @@
 +++
 title= "Workflow template"
 # Slideshow gallery appears when more then one image is in array
-images =  ["/workflow_images/clustering-and-tsne.png"]
+images =  ["/workflows/images/clustering-and-tsne.png"]
 type = "test"
 blog_link =  ""
 video = ""

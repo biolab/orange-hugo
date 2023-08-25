@@ -1,6 +1,6 @@
 +++
 title= "Text Classification"
-images =  ["/workflow_images/text-classification.png"]
+images =  ["/workflows/images/text-classification.png"]
 type = "workflows"
 blog_link =  ""
 video = "https://youtu.be/zO_zwKZCULo"

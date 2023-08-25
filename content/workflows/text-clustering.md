@@ -1,6 +1,6 @@
 +++
 title= "Text Clustering"
-images =  ["/workflow_images/text-clustering.png"]
+images =  ["/workflows/images/text-clustering.png"]
 type = "workflows"
 blog_link =  ""
 video = "https://youtu.be/rH_vQxQL6oM"

@@ -1,6 +1,6 @@
 +++
 title= "File and Data Table"
-images =  ["/workflow_images/file-and-data-table-widget.png"]
+images =  ["/workflows/images/file-and-data-table-widget.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

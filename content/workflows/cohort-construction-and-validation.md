@@ -1,6 +1,6 @@
 +++
 title= "Cohort Construction and Validation"
-images =  ["/workflow_images/720_cohort_construction_and_validation.png"]
+images =  ["/workflows/images/720_cohort_construction_and_validation.png"]
 type = "workflows"
 blog =  ""
 video = ""

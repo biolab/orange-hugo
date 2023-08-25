@@ -1,6 +1,6 @@
 +++
 title= "Text Preprocessing"
-images =  ["/workflow_images/text-preprocessing.png"]
+images =  ["/workflows/images/text-preprocessing.png"]
 type = "workflows"
 blog_link =  "/blog/2017/06/19/text-preprocessing/"
 video = "https://youtu.be/V70UwJZWkZ8"

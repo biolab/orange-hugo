@@ -1,6 +1,6 @@
 +++
 title= "Hierarchical Clustering"
-images =  ["/workflow_images/hierarchical-clustering.png"]
+images =  ["/workflows/images/hierarchical-clustering.png"]
 type = "workflows"
 blog_link =  ""
 video = ""

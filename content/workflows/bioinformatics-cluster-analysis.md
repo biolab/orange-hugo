@@ -1,6 +1,6 @@
 +++
 title= "Cluster gene expression and enrichment"
-images =  ["/workflow_images/bioinformatics_cluster_analysis.png"]
+images =  ["/workflows/images/bioinformatics_cluster_analysis.png"]
 type = "workflows"
 blog =  ""
 video = ""

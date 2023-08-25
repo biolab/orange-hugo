@@ -1,6 +1,6 @@
 +++
 title= "Find Homologs for Differentially Expressed Genes"
-images =  ["/workflow_images/bioinformatics_homologs.png"]
+images =  ["/workflows/images/bioinformatics_homologs.png"]
 type = "workflows"
 blog =  ""
 video = ""

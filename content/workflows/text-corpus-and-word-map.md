@@ -1,6 +1,6 @@
 +++
 title= "Corpus and Word Maps"
-images =  ["/workflow_images/text-corpus-and-word-map.png"]
+images =  ["/workflows/images/text-corpus-and-word-map.png"]
 type = "workflows"
 blog_link =  ""
 video = ""
