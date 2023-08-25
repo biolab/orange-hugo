@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(289.0, 259.0)" />
+		<node id="1" name="Kaplan-Meier Plot" qualified_name="orangecontrib.survival_analysis.widgets.owkaplanmeier.OWKaplanMeier" project_name="Orange3-Survival-Analysis" version="" title="Kaplan-Meier Plot" position="(429.0, 251.0)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(420.0, 352.0)" />
+		<node id="3" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(558.0, 251.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(190.0, 321.0)" end="(252.0, 260.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(110.0, 328.0, 166.0, 50.0)" font-family=".AppleSystemUIFont" font-size="16">Load German Breast Cancer study data.</text>
+		<arrow id="2" start="(327.0, 178.99999999999997)" end="(401.0, 214.99999999999994)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(205.0, 114.0, 203.0, 69.0)" font-family=".AppleSystemUIFont" font-size="16">Estimate and plot survival function from lifetime data.</text>
+		<arrow id="4" start="(517.0, 357.0000000000001)" end="(466.0, 355.0000000000001)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(522.0, 335.0, 101.0, 67.0)" font-family=".AppleSystemUIFont" font-size="16">Check out the data.</text>
+		<arrow id="6" start="(609.0, 175.00000000000003)" end="(572.0, 218.00000000000003)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(430.0, 107.0, 228.0, 116.0)" font-family=".AppleSystemUIFont" font-size="16">Explore features that best characterize the longest-surviving patients selected in Kaplan-Meier Plot.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x031\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00$\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01C\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00[\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00K\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xc6\x00\x00\x02\x7f\x00\x00\x05\xf6\x00\x00\x04C\x00\x00\x02\xc6\x00\x00\x02\x9b\x00\x00\x05\xf6\x00\x00\x04C\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x02\xc6\x00\x00\x02\x9b\x00\x00\x05\xf6\x00\x00\x04C', 'selected_id': 'core/gbsg2.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01D\x00\x00\x00\xed\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVWgUAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAOIAAACNgAABvMAAARfAAADiAAAAlIAAAbzAAAE
+XwAAAAAAAAAADXAAAAOIAAACUgAABvMAAARflIwSc2hvd19jZW5zb3JlZF9kYXRhlImMGHNob3df
+Y29uZmlkZW5jZV9pbnRlcnZhbJSIjBBzaG93X21lZGlhbl9saW5llImMBWdyYXBolH2UjAtfX3Zl
+cnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwH
+Q29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJZ3JvdXBfdmFylE5K/v///4aUaAh9lIwJc2Vs
+ZWN0aW9ulH2USwCMNW9yYW5nZWNvbnRyaWIuc3Vydml2YWxfYW5hbHlzaXMud2lkZ2V0cy5vd2th
+cGxhbm1laWVylIwRU2VsZWN0aW9uSW50ZXJ2YWyUk5SMFW51bXB5LmNvcmUubXVsdGlhcnJheZSM
+DF9yZWNvbnN0cnVjdJSTlIwFbnVtcHmUjAduZGFycmF5lJOUSwCFlEMBYpSHlFKUKEsBSyGFlGgf
+jAVkdHlwZZSTlIwCZjiUiYiHlFKUKEsDjAE8lE5OTkr/////Sv////9LAHSUYolCCAEAABkVP5Do
+fqJAAAAAAACEokAAAAAAAISiQAAAAAAAiKJAAAAAAACIokAAAAAAAJiiQAAAAAAAmKJAAAAAAACo
+okAAAAAAAKiiQAAAAAAAwqJAAAAAAADCokAAAAAAAAyjQAAAAAAADKNAAAAAAAAio0AAAAAAACKj
+QAAAAAAAMKNAAAAAAAAwo0AAAAAAAEajQAAAAAAARqNAAAAAAABOo0AAAAAAAE6jQAAAAAAA1qNA
+AAAAAADWo0AAAAAAAO6jQAAAAAAA7qNAAAAAAAD4o0AAAAAAAPijQAAAAAAABqRAAAAAAAAGpEAA
+AAAAAGikQAAAAAAAaKRAAAAAAADGpEAAAAAAAMakQJR0lGJoHmghSwCFlGgjh5RSlChLAUshhZRo
+K4lCCAEAAGxAyiJhutk/bEDKImG62T9sQMoiYbrZP2xAyiJhutk/4I3aVrpf2D/gjdpWul/YP+CN
+2la6X9g/4I3aVrpf2D/gjdpWul/YP+CN2la6X9g/4I3aVrpf2D/gjdpWul/YP+CN2la6X9g/4I3a
+Vrpf2D/gjdpWul/YP+CN2la6X9g/SRkrTsHv1T9JGStOwe/VP0kZK07B79U/SRkrTsHv1T9JGStO
+we/VP0kZK07B79U/SRkrTsHv1T9JGStOwe/VP0kZK07B79U/SRkrTsHv1T9JGStOwe/VP0kZK07B
+79U/SRkrTsHv1T9JGStOwe/VP0kZK07B79U/SRkrTsHv1T9JGStOwe/VP5R0lGKGlIGUc0r+////
+hpRzaApLAXWMCmF0dHJpYnV0ZXOUfZQojBhOdW1iZXIgb2YgUG9zaXRpdmUgTm9kZXOUSwKMGkFn
+ZSBvZiB0aGUgUGF0aWVudCBbeWVhcnNdlEsCjAtUdW1vciBHcmFkZZRLAYwcUHJvZ2VzdGVyb25l
+IFJlY2VwdG9yIFtmbW9sXZRLAowYRXN0cm9nZW4gUmVjZXB0b3IgW2Ztb2xdlEsCjA9UdW1vciBT
+aXplIFttbV2USwKMEU1lbm9wYXVzYWwgU3RhdHVzlEsBjBBIb3Jtb25hbCBUaGVyYXB5lEsBdYwF
+bWV0YXOUfZR1YmF1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x054\x00\x00\x02}\x00\x00\t\xae\x00\x00\x05\x11\x00\x00\x054\x00\x00\x02\x99\x00\x00\t\xae\x00\x00\x05\x11\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x054\x00\x00\x02\x99\x00\x00\t\xae\x00\x00\x05\x11', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVSwMAAAAAAAB9lCiMB2NvbXBhcmWUSwKMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNvcmRlcl9i
+eV9pbXBvcnRhbmNllIiMHG9yZGVyX2dyb3VwaW5nX2J5X2ltcG9ydGFuY2WUiYwTc2F2ZWRXaWRn
+ZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAE/AAAAiAAAAhWAAAEfwAABPwAAAI8AAAIVgAABH8AAAAA
+AAAAAA1wAAAE/AAAAjwAAAhWAAAEf5SMEHNob3dfYW5ub3RhdGlvbnOUiIwLc2hvd19sYWJlbHOU
+iIwNc2lnX3RocmVzaG9sZJRHP6mZmZmZmZqMCnNvcnRfZnJlcXOUiYwIc3RhdHRlc3SUSwCMCXN0
+cmV0Y2hlZJSIjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWF0dHJpYnV0ZZSM
+EEhvcm1vbmFsIFRoZXJhcHmUS2WGlIwJZ3JvdXBfdmFylIwIU2VsZWN0ZWSUS2WGlIwJc2VsZWN0
+aW9ulClK/v///4aUaA1LAXWMCmF0dHJpYnV0ZXOUfZQojBhOdW1iZXIgb2YgUG9zaXRpdmUgTm9k
+ZXOUSwKMGkFnZSBvZiB0aGUgUGF0aWVudCBbeWVhcnNdlEsCjAtUdW1vciBHcmFkZZRLAYwcUHJv
+Z2VzdGVyb25lIFJlY2VwdG9yIFtmbW9sXZRLAowYRXN0cm9nZW4gUmVjZXB0b3IgW2Ztb2xdlEsC
+jA9UdW1vciBTaXplIFttbV2USwKMEU1lbm9wYXVzYWwgU3RhdHVzlEsBaBhLAYwkUmVjdXJyZW5j
+ZSBGcmVlIFN1cnZpdmFsIFRpbWUgW2RheXNdlEsCjBBSZWN1cnJlbmNlIEV2ZW50lEsBdYwFbWV0
+YXOUfZRoG0sBc3ViaBIpgZR9lChoFX2UKGgXaCFLZoaUaBpOSv7///+GlGgdKUr+////hpRoDUsB
+dWgffZQoaCFLAmgiSwJoI0sBaCRLAmglSwJoJksCaCdLAWgYSwFoKEsCaClLAXVoKn2UdWJldS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

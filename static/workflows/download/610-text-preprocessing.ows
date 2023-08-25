@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="untitled" description="">
+	<nodes>
+		<node id="0" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(334.0, 252.0)" />
+		<node id="1" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(463.0, 253.0)" />
+		<node id="2" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(592.0, 253.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(326.99999999999994, 159.0)" end="(335.99999999999994, 219.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(269.0, 109.0, 116.0, 50.0)" font-family=".SF NS Text" font-size="16">Load Grimm's Tales corpus.</text>
+		<arrow id="2" start="(467.0, 360.0)" end="(463.0, 311.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(366.0, 368.0, 211.0, 111.0)" font-family=".SF NS Text" font-size="16">Create core units of analysis - tokens. Split the texts into words, remove stopwords and transform words to their base form.</text>
+		<arrow id="4" start="(597.0000000000001, 178.00000000000003)" end="(596.0000000000001, 221.00000000000003)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(539.0, 125.0, 150.0, 50.0)" font-family=".SF NS Text" font-size="16">Observe most frequent tokens.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVUAIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhn
+cmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAxMAAAGGAAAE2AAAAtUAAAMTAAABnAAA
+BNgAAALVAAAAAAAAAAAIAAAAAxMAAAGcAAAE2AAAAtWUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMDnRpdGxlX3ZhcmlhYmxllIwFVGl0bGWUS2eGlIwKdXNlZF9hdHRyc5RdlIwH
+Q29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0cmlidXRlc5R9lIwJQVRVIFRvcGljlEsBc4wF
+bWV0YXOUfZQoaBZLA4wIQWJzdHJhY3SUSwNoGksDjA1BVFUgTnVtZXJpY2FslEsDjAhBVFUgVHlw
+ZZRLAXV1YmgQKYGUfZQoaBN9lChoFU5K/v///4aUaBhdlIwEVGV4dJRLZ4aUYUr9////hpRoC0sB
+dWgdfZSMCENhdGVnb3J5lEsBc2ggfZRoKksDc3ViZXUu
+</properties>
+		<properties node_id="1" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02|\x00\x00\x01)\x00\x00\x05Z\x00\x00\x03R\x00\x00\x02|\x00\x00\x01?\x00\x00\x05Z\x00\x00\x03R\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x02|\x00\x00\x01?\x00\x00\x05Z\x00\x00\x03R', 'storedsettings': {'name': '', 'preprocessors': [('preprocess.transform', {}), ('preprocess.tokenize', {}), ('preprocess.normalize', {'method': 3, 'snowball_language': 'English', 'udpipe_language': 'English', 'udpipe_tokenizer': False}), ('preprocess.filter', {'end': 0.9, 'invalidated': False, 'language': 'English', 'lx_list': [], 'lx_path': None, 'methods': [0, 3], 'n_tokens': 100, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\'|"|‘|’|“|”|\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;|\\/|\\[|\\]', 'start': 0.1, 'sw_list': [], 'sw_path': None})]}, '__version__': 2}</properties>
+		<properties node_id="2" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAI0AAABKQAABbcAAAMyAAACNAAAAT8AAAW3AAADMgAAAAAAAAAACAAAAAI0
+AAABPwAABbcAAAMylIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

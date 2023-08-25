@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(92.0, 274.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(252.0, 274.0)" />
+		<node id="2" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(392.0, 274.0)" />
+		<node id="3" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(550.0, 273.0)" />
+		<node id="4" name="Sentiment Analysis" qualified_name="orangecontrib.text.widgets.owsentimentanalysis.OWSentimentAnalysis" project_name="Orange3-Text" version="" title="Sentiment Analysis" position="(722.0, 273.0)" />
+		<node id="5" name="As Timeseries" qualified_name="orangecontrib.timeseries.widgets.owtabletotimeseries.OWTableToTimeseries" project_name="Orange3-Timeseries" version="" title="As Timeseries" position="(903.0, 212.0)" />
+		<node id="6" name="Line Chart" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" project_name="Orange3-Timeseries" version="" title="Line Chart" position="(1035.0, 212.0)" />
+		<node id="7" name="Heat Map" qualified_name="Orange.widgets.visualize.owheatmap.OWHeatMap" project_name="Orange3" version="" title="Heat Map" position="(903.0, 313.0)" />
+		<node id="8" name="Corpus Viewer" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer" position="(1037.0, 313.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Corpus" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Corpus" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="4" sink_node_id="5" source_channel="Corpus" sink_channel="Data" enabled="true" />
+		<link id="4" source_node_id="5" sink_node_id="6" source_channel="Time series" sink_channel="Time series" enabled="true" />
+		<link id="5" source_node_id="4" sink_node_id="7" source_channel="Corpus" sink_channel="Data" enabled="true" />
+		<link id="6" source_node_id="7" sink_node_id="8" source_channel="Selected Data" sink_channel="Corpus" enabled="true" />
+		<link id="7" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Corpus" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(90.0, 197.0)" end="(90.0, 237.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(39.0, 139.0, 150.0, 50.0)" font-family=".SF NS Text" font-size="16">Load andersen.tab corpus.</text>
+		<text id="2" type="text/plain" rect="(94.0, 365.0, 140.0, 50.0)" font-family=".SF NS Text" font-size="16">Select The Little Match Seller.</text>
+		<arrow id="3" start="(165.0, 361.0)" end="(212.0, 304.0)" fill="#C1272D" />
+		<arrow id="4" start="(365.0, 197.0)" end="(395.0, 240.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(252.0, 160.0, 159.0, 33.0)" font-family=".SF NS Text" font-size="16">Split into sentences.</text>
+		<arrow id="6" start="(485.0, 383.0)" end="(513.0, 328.0)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(384.0, 388.0, 167.0, 53.0)" font-family=".SF NS Text" font-size="16">Make each sentence a row in the table.</text>
+		<arrow id="8" start="(683.0, 203.99999999999997)" end="(713.0, 239.99999999999994)" fill="#C1272D" />
+		<text id="9" type="text/plain" rect="(548.0, 160.0, 187.0, 50.0)" font-family=".SF NS Text" font-size="16">Compute sentiment for each sentence.</text>
+		<arrow id="10" start="(893.0, 128.0)" end="(973.0, 178.0)" fill="#C1272D" />
+		<text id="11" type="text/plain" rect="(777.0, 73.0, 211.0, 65.0)" font-family=".SF NS Text" font-size="16">Observe sentiment in time (from beginning to the end of the story).</text>
+		<arrow id="12" start="(801.9999999999999, 392.0)" end="(869.9999999999999, 340.0)" fill="#C1272D" />
+		<text id="13" type="text/plain" rect="(626.0, 354.0, 186.0, 70.0)" font-family=".SF NS Text" font-size="16">Cluster documents with similar sentiment and explore clusters.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVFQIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojAxh
+bmRlcnNlbi50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRh
+YpSMGGVsZWN0aW9uLXR3ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAxMAAAGGAAAE2AAAAtUAAAMTAAABnAAA
+BNgAAALVAAAAAAAAAAAIAAAAAxMAAAGcAAAE2AAAAtWUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMDnRpdGxlX3ZhcmlhYmxllIwFVGl0bGWUS2eGlIwKdXNlZF9hdHRyc5RdlIwH
+Q29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQoaBZLA2ga
+SwN1dWJoECmBlH2UKGgTfZQoaBVOSv7///+GlGgYXZSMBFRleHSUS2eGlGFK/f///4aUaAtLAXVo
+HX2UjAhDYXRlZ29yeZRLAXNoH32UaCZLA3N1YmV1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02f\x00\x00\x01)\x00\x00\x05\x85\x00\x00\x032\x00\x00\x02f\x00\x00\x01?\x00\x00\x05\x85\x00\x00\x032\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x02f\x00\x00\x01?\x00\x00\x05\x85\x00\x00\x032', 'select_rows': True, 'selected_cols': [0, 1], 'selected_rows': [0], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02|\x00\x00\x01)\x00\x00\x05o\x00\x00\x036\x00\x00\x02|\x00\x00\x01?\x00\x00\x05o\x00\x00\x036\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x02|\x00\x00\x01?\x00\x00\x05o\x00\x00\x036', 'storedsettings': {'name': '', 'preprocessors': [('preprocess.tokenize', {'method': 2, 'pattern': '\\w+'})]}, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02f\x00\x00\x00\xf3\x00\x00\x05\x85\x00\x00\x03i\x00\x00\x02f\x00\x00\x01\t\x00\x00\x05\x85\x00\x00\x03i\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x02f\x00\x00\x01\t\x00\x00\x05\x85\x00\x00\x03i', 'scriptLibrary': [{'name': 'Hello world', 'script': "print('Hello world')\n", 'filename': None}], 'scriptText': "import numpy as np\nfrom Orange.data import Domain, StringVariable\nfrom orangecontrib.text.corpus import Corpus\n\ntokens = in_data.tokens\nnew_domain = Domain(attributes=[], metas=[StringVariable('Sentences'), StringVariable('Title')])\n\ntitles = []\ncontent = []\n\nfor i, doc in enumerate(tokens):\n    for t in doc:\n        titles.append(in_data[i]['Title'].value)\n        content.append(t)\n\nmetas = np.column_stack((content, titles))\nout_data = Corpus.from_numpy(domain=new_domain, X=np.empty((len(content), 0)),\n                            metas=metas)\nout_data.set_text_features([StringVariable('Sentences')])", 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00m\x00\x00\x00m\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 2}</properties>
+		<properties node_id="4" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'liu_language': 'English', 'method_idx': 1, 'multi_language': 'English', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03-\x00\x00\x01\xb2\x00\x00\x04\xbe\x00\x00\x02\xaa\x00\x00\x03-\x00\x00\x01\xc8\x00\x00\x04\xbe\x00\x00\x02\xaa\x00\x00\x00\x00\x02\x00\x00\x00\x08\x00\x00\x00\x03-\x00\x00\x01\xc8\x00\x00\x04\xbe\x00\x00\x02\xaa', '__version__': 1}</properties>
+		<properties node_id="5" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'radio_sequential': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03b\x00\x00\x01\xbe\x00\x00\x04\x8a\x00\x00\x02\x9e\x00\x00\x03b\x00\x00\x01\xd4\x00\x00\x04\x8a\x00\x00\x02\x9e\x00\x00\x00\x00\x02\x00\x00\x00\x08\x00\x00\x00\x03b\x00\x00\x01\xd4\x00\x00\x04\x8a\x00\x00\x02\x9e', 'selected_attr': 'pos', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'attrs': {}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03@\x00\x00\x01\x8b\x00\x00\x06x\x00\x00\x02\xd1\x00\x00\x03@\x00\x00\x01\xa1\x00\x00\x06x\x00\x00\x02\xd1\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x03@\x00\x00\x01\xa1\x00\x00\x06x\x00\x00\x02\xd1', '__version__': 1}</properties>
+		<properties node_id="7" format="pickle">gASVYwMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMCGF2ZXJhZ2VzlIiMFWNvbF9jbHVzdGVyaW5n
+X21ldGhvZJSMBU5vbmVflIwMY29sb3JfY2VudGVylEsAjBBjb2x1bW5fbGFiZWxfcG9zlEsBjBJj
+b250cm9sQXJlYVZpc2libGWUiIwGbGVnZW5klIiMDG1lcmdlX2ttZWFuc5SJjA5tZXJnZV9rbWVh
+bnNfa5RLMowMcGFsZXR0ZV9uYW1llIwVbGluZWFyX2JneXdfMjBfOThfYzY2lIwVcm93X2NsdXN0
+ZXJpbmdfbWV0aG9klIwRT3JkZXJlZENsdXN0ZXJpbmeUjBNzYXZlZFdpZGdldEdlb21ldHJ5lENC
+AdnQywADAAAAAAI0AAAAowAABbcAAAO4AAACNAAAALkAAAW3AAADuAAAAAAAAAAACAAAAAI0AAAA
+uQAABbcAAAO4lIwNc2VsZWN0ZWRfcm93c5RdlChLE0sSSxZLHksmSyRljA50aHJlc2hvbGRfaGln
+aJRHP/AAAAAAAACMDXRocmVzaG9sZF9sb3eURwAAAAAAAAAAjAtfX3ZlcnNpb25fX5RLA4wQY29u
+dGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9
+lCiMBnZhbHVlc5R9lCiMFGFubm90YXRpb25fY29sb3JfdmFylE5K/v///4aUjA5hbm5vdGF0aW9u
+X3ZhcpROSv7///+GlIwbY29sdW1uX2Fubm90YXRpb25fY29sb3Jfa2V5lE5K/v///4aUjAxzcGxp
+dF9ieV92YXKUTkr+////hpSMEXNwbGl0X2NvbHVtbnNfa2V5lE5K/v///4aUaBVLA3WMCmF0dHJp
+YnV0ZXOUfZQojANwb3OUSwKMA25lZ5RLAowDbmV1lEsCjAhjb21wb3VuZJRLAnWMBW1ldGFzlH2U
+KIwJU2VudGVuY2VzlEsDjAVUaXRsZZRLA3V1YmgaKYGUfZQoaB19lChoH05K/v///4aUaCFOSv7/
+//+GlGgjTkr+////hpRoJU5K/v///4aUaCdOSv7///+GlGgVSwN1aCl9lChoK0sCaCxLAmgtSwJo
+LksCdWgvfZQoaDFLA2gySwN1dWJldS4=
+</properties>
+		<properties node_id="8" format="pickle">gASV+wEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAusAAADxAAAFpgAAA2sAAALrAAABBwAABaYAAANr
+AAAAAAAAAAAIAAAAAusAAAEHAAAFpgAAA2uUjAtzaG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RL
+AYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJST
+lCmBlH2UKIwGdmFsdWVzlH2UKIwQZGlzcGxheV9mZWF0dXJlc5RdlCiMA3Bvc5RLZoaUjANuZWeU
+S2aGlIwDbmV1lEtmhpSMCGNvbXBvdW5klEtmhpSMCVNlbnRlbmNlc5RLZ4aUjAVUaXRsZZRLZ4aU
+ZUr9////hpSMD2Rpc3BsYXlfaW5kaWNlc5RdlEsEYYwNcmVnZXhwX2ZpbHRlcpSMAJRK/////4aU
+jA5zZWFyY2hfaW5kaWNlc5RdlChLAEsBSwJLA0sESwVlaAZLAXWMCmF0dHJpYnV0ZXOUKGgSSwKG
+lGgUSwKGlGgWSwKGlGgYSwKGlHSUjAVtZXRhc5RoGksDhpRoHEsDhpSGlIwKY2xhc3NfdmFyc5Qp
+dWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

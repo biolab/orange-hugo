@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(164.0, 212.0)" />
+		<node id="1" name="Rank Survival Features" qualified_name="orangecontrib.survival_analysis.widgets.owranksurvivalfeatures.OWRankSurvivalFeatures" project_name="Orange3-Survival-Analysis" version="" title="Rank Survival Features" position="(315.0, 212.0)" />
+		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(477.0, 212.0)" />
+		<node id="3" name="Kaplan-Meier Plot" qualified_name="orangecontrib.survival_analysis.widgets.owkaplanmeier.OWKaplanMeier" project_name="Orange3-Survival-Analysis" version="" title="Kaplan-Meier Plot" position="(627.0, 211.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Reduced Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(278.00000000000006, 130.99999999999997)" end="(313.0, 176.99999999999991)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(110.0, 58.0, 336.0, 72.0)" font-family=".AppleSystemUIFont" font-size="16">Use univariate Cox Regression analysis to rank features by their statistical significance in relation to survival.</text>
+		<arrow id="2" start="(412.9999999999999, 301.0)" end="(458.99999999999983, 274.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(273.0, 302.0, 307.0, 69.0)" font-family=".AppleSystemUIFont" font-size="16">We are interested in the distribution of top-ranked survival feature.  Selecting patients in the distribution plot allows us to generate new groups of patients.</text>
+		<text id="4" type="text/plain" rect="(517.0, 58.0, 221.0, 69.0)" font-family=".AppleSystemUIFont" font-size="16">Compare survival curves of newly defined groups.</text>
+		<arrow id="5" start="(584.0, 118.0)" end="(618.0, 170.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x031\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00$\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01C\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00[\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00K\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04'\x00\x00\x02\xb5\x00\x00\x07W\x00\x00\x04y\x00\x00\x04'\x00\x00\x02\xd1\x00\x00\x07W\x00\x00\x04y\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x04'\x00\x00\x02\xd1\x00\x00\x07W\x00\x00\x04y", 'selected_id': 'core/gbsg2.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01D\x00\x00\x00\xed\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVTwIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjApuX3Nl
+bGVjdGVklEsUjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAWwAAACdwAACSsAAAS+
+AAAFsAAAApMAAAkrAAAEvgAAAAAAAAAADXAAAAWwAAACkwAACSsAAAS+lIwQc2VsZWN0aW9uX21l
+dGhvZJRLAYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdl
+dC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMDnNlbGVjdGVkX2F0dHJz
+lF2UjBhOdW1iZXIgb2YgUG9zaXRpdmUgTm9kZXOUS2aGlGFK/f///4aUaAdLAXWMCmF0dHJpYnV0
+ZXOUfZQoaBNLAowaQWdlIG9mIHRoZSBQYXRpZW50IFt5ZWFyc12USwKMC1R1bW9yIEdyYWRllEsB
+jBxQcm9nZXN0ZXJvbmUgUmVjZXB0b3IgW2Ztb2xdlEsCjBhFc3Ryb2dlbiBSZWNlcHRvciBbZm1v
+bF2USwKMD1R1bW9yIFNpemUgW21tXZRLAowRTWVub3BhdXNhbCBTdGF0dXOUSwGMEEhvcm1vbmFs
+IFRoZXJhcHmUSwGMJFJlY3VycmVuY2UgRnJlZSBTdXJ2aXZhbCBUaW1lIFtkYXlzXZRLAowQUmVj
+dXJyZW5jZSBFdmVudJRLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="2" format="pickle">gASVLgMAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMEGN1bXVs
+YXRpdmVfZGlzdHKUiYwTZml0dGVkX2Rpc3RyaWJ1dGlvbpRLAIwJaGlkZV9iYXJzlImMDWtkZV9z
+bW9vdGhpbmeUSwqME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABYEAAAJzAAAJLwAA
+BKwAAAWBAAACjwAACS8AAASsAAAAAAAAAAANcAAABYEAAAKPAAAJLwAABKyUjApzaG93X3Byb2Jz
+lImMDHNvcnRfYnlfZnJlcZSJjA9zdGFja2VkX2NvbHVtbnOUiYwLX192ZXJzaW9uX1+USwGMEGNv
+bnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGU
+fZQojAZ2YWx1ZXOUfZQojARjdmFylE5K/v///4aUjA5udW1iZXJfb2ZfYmluc5RLAEr+////hpSM
+CXNlbGVjdGlvbpSPlChLAEsBSwJLA0sEkEr+////hpSMA3ZhcpSMGE51bWJlciBvZiBQb3NpdGl2
+ZSBOb2Rlc5RLZoaUaAxLAXWMCmF0dHJpYnV0ZXOUfZQoaB5LAowkUmVjdXJyZW5jZSBGcmVlIFN1
+cnZpdmFsIFRpbWUgW2RheXNdlEsCjBBSZWN1cnJlbmNlIEV2ZW50lEsBdYwFbWV0YXOUfZR1YmgR
+KYGUfZQoaBR9lChoFk5K/v///4aUaBhLBUr+////hpRoGo+USv7///+GlGgdjA9UdW1vciBTaXpl
+IFttbV2US2aGlGgMSwF1aCB9lChoHksCjBxQcm9nZXN0ZXJvbmUgUmVjZXB0b3IgW2Ztb2xdlEsC
+jAtUdW1vciBHcmFkZZRLAWgtSwKMEEhvcm1vbmFsIFRoZXJhcHmUSwGMGEVzdHJvZ2VuIFJlY2Vw
+dG9yIFtmbW9sXZRLAowaQWdlIG9mIHRoZSBQYXRpZW50IFt5ZWFyc12USwKMEU1lbm9wYXVzYWwg
+U3RhdHVzlEsBaCJLAmgjSwF1aCR9lHViZXUu
+</properties>
+		<properties node_id="3" format="pickle">gASV8wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAXxAAACTwAACToAAATHAAAF8QAAAmsAAAk6AAAE
+xwAAAAAAAAAADXAAAAXxAAACawAACToAAATHlIwSc2hvd19jZW5zb3JlZF9kYXRhlImMGHNob3df
+Y29uZmlkZW5jZV9pbnRlcnZhbJSIjBBzaG93X21lZGlhbl9saW5llImMBWdyYXBolH2UjAtfX3Zl
+cnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SM
+B0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWdyb3VwX3ZhcpSMCFNlbGVjdGVklEtlhpRo
+CH2UjAlzZWxlY3Rpb26UfZRK/P///4aUc2gKSwF1jAphdHRyaWJ1dGVzlH2UjBhOdW1iZXIgb2Yg
+UG9zaXRpdmUgTm9kZXOUSwJzjAVtZXRhc5R9lChoFUsBjANCaW6USwF1dWJoDymBlH2UKGgSfZQo
+aBROSv7///+GlGgIfZRoGH2USvz///+GlHNoCksBdWgbfZRoHUsCc2gefZRoFUsBc3ViZXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

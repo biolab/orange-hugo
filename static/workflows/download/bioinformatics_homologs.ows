@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="GEO Data Sets" qualified_name="orangecontrib.bioinformatics.widgets.OWGEODatasets.OWGEODatasets" project_name="Orange3-Bioinformatics" version="" title="GEO Data Sets" position="(144.0, -63.0)" />
+		<node id="1" name="Genes" qualified_name="orangecontrib.bioinformatics.widgets.OWGenes.OWGenes" project_name="Orange3-Bioinformatics" version="" title="Genes" position="(309.0, -64.0)" />
+		<node id="2" name="Homologs" qualified_name="orangecontrib.bioinformatics.widgets.OWHomologs.OWHomologs" project_name="Orange3-Bioinformatics" version="" title="Homologs" position="(633.0, -64.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(783.0, -64.0)" />
+		<node id="4" name="Differential Expression" qualified_name="orangecontrib.bioinformatics.widgets.OWDifferentialExpression.OWDifferentialExpression" project_name="Orange3-Bioinformatics" version="" title="Differential Expression" position="(459.0, -64.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Expression Data" sink_channel="Data" enabled="true" source_channel_id="gds_data" sink_channel_id="data_table" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Genes" sink_channel="Data" enabled="true" source_channel_id="genes" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data_table" />
+		<link id="3" source_node_id="4" sink_node_id="2" source_channel="Data subset" sink_channel="Data" enabled="true" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(131.0, 58.0)" end="(147.0, -3.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(57.0, 61.0, 180.0, 53.0)" font-family="MS Shell Dlg 2" font-size="16">Load GDS3132 dataset. </text>
+		<text id="2" type="text/plain" rect="(225.0, -205.0, 192.0, 72.0)" font-family="MS Shell Dlg 2" font-size="16">Match input gene IDs with corresponding Entrez IDs.</text>
+		<arrow id="3" start="(290.0, -130.0)" end="(305.0, -95.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(495.0, 26.0, 171.0, 94.0)" font-family="MS Shell Dlg 2" font-size="16">Find human homologs for differentially expressed genes in mice.</text>
+		<arrow id="5" start="(543.0, 23.0)" end="(497.0, -9.0)" fill="#C1272D" />
+		<arrow id="6" start="(574.0, 25.0)" end="(619.0, -3.0)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(627.0, -181.0, 183.0, 50.0)" font-family="MS Shell Dlg 2" font-size="16">Inspect results.</text>
+		<arrow id="8" start="(725.0, -143.0)" end="(762.0, -98.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'gds_selection_states': {}, 'genes_as_rows': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xfc\x00\x00\x00&lt;\x00\x00\x0cl\x00\x00\x042\x00\x00\x07\xfd\x00\x00\x00U\x00\x00\x0ck\x00\x00\x041\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x07\xfd\x00\x00\x00U\x00\x00\x0ck\x00\x00\x041', 'search_pattern': 'mus mus', 'selected_gds': {'title': 'Neonatal lung response to cigarette smoke', 'description': 'Analysis of lungs from 2 week old animals exposed to cigarette smoke (CS) daily since birth. During infancy, exposure of humans to CS is associated with decreased lung function and increased incidences of respiratory illnesses. Results provide insight into the neonatal pulmonary response to CS.', 'type': 'Expression profiling by array', 'pubmed_id': '17975176', 'platform': 'GPL1261', 'platform_organism': 'Mus musculus', 'platform_technology_type': 'in situ oligonucleotide', 'feature_count': '45101', 'sample_organism': 'Mus musculus', 'sample_type': 'RNA', 'channel_count': '1', 'sample_count': '10', 'value_type': 'count', 'reference_series': 'GSE7310', 'order': 'none', 'update_date': 'Dec 23 2008', 'subsets': [{'dataset_id': 'GDS3132', 'description': 'control', 'sample_id': ['GSM176495', 'GSM176496', 'GSM176497', 'GSM176498'], 'type': 'agent', 'id': 'GDS3132_1'}, {'dataset_id': 'GDS3132', 'description': 'cigarette smoke', 'sample_id': ['GSM176499', 'GSM176500', 'GSM176501', 'GSM176502', 'GSM176503', 'GSM176504'], 'type': 'agent', 'id': 'GDS3132_2'}], 'taxid': '10090', 'genes': 26681, 'aggregation_function': 'mean', 'name': 'GDS3132', 'version': 1.0, 'instances': '10', 'variables': 26683, 'target': '', 'gene_as_attribute_name': True, 'gene_id_attribute': 'Entrez ID', 'url': 'http://file.biolab.si/geo/GDS3132.tab', 'compression': 'gz'}, 'splitter_settings': [b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00G\x00\x00\x00\x91\x01\x00\x00\x00\x07\x01\x00\x00\x00\x02\x01', b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01\xb5\x00\x00\x02\x10\x01\x00\x00\x00\x07\x01\x00\x00\x00\x01\x01'], '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVEAoAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFleGNs
+dWRlX3VubWF0Y2hlZJSIjBZyZXBsYWNlX2lkX3dpdGhfc3ltYm9slIiME3NhdmVkV2lkZ2V0R2Vv
+bWV0cnmUQ0IB2dDLAAMAAAAAAQAAAAB4AAAE/wAAArcAAAEAAAAAeAAABP8AAAK3AAAAAAAAAAAG
+AAAAAQAAAAB4AAAE/wAAAreUjA5zZWFyY2hfcGF0dGVybpSMAJSMEXNlbGVjdGVkX29yZ2FuaXNt
+lEsMjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEXNlbGVjdGVkX2dlbmVfY29s
+lIwFZ2VuZXOUS2eGlIwOdXNlX2F0dHJfbmFtZXOUiUr+////hpRoCksBdYwKYXR0cmlidXRlc5R9
+lCiMCUdTTTE3NjQ5NZRLAowJR1NNMTc2NDk2lEsCjAlHU00xNzY0OTeUSwKMCUdTTTE3NjQ5OJRL
+AowJR1NNMTc2NDk5lEsCjAlHU00xNzY1MDCUSwKMCUdTTTE3NjUwMZRLAowJR1NNMTc2NTAylEsC
+jAlHU00xNzY1MDOUSwKMCUdTTTE3NjUwNJRLAnWMBW1ldGFzlH2UKGgVSwOMCUVudHJleiBJRJRL
+A3V1YmgPKYGUfZQoaBJ9lChoFGgVS2eGlGgXiUr+////hpRoCksBdWgZfZQojAlHU00xMTM5MjGU
+SwKMCUdTTTExNTMyM5RLAowJR1NNMTE1MzI1lEsCjAlHU00xMTUzMjaUSwKMCUdTTTExNTMyN5RL
+AowJR1NNMTE1MzI4lEsCjAlHU00xMTUzMjmUSwKMCUdTTTExNTMzMJRLAowJR1NNMTE1MzMxlEsC
+jAlHU00xMTUzMzKUSwKMCUdTTTExNTMzM5RLAowJR1NNMTE1MzM0lEsCjAlHU00xMTUzMzWUSwKM
+CUdTTTExNTMzNpRLAowJR1NNMTE1MzM3lEsCjAlHU00xMTUzMziUSwKMCUdTTTExNTMzOZRLAowJ
+R1NNMTE1MzQwlEsCjAlHU00xMTUzNDGUSwJ1aCV9lChoFUsDaCdLA3V1YmgPKYGUfZQoaBJ9lCho
+FGgVS2eGlGgXiUr+////hpRoCksBdWgZfZQojAhHU002MzY3NZRLAowIR1NNNjM2NzaUSwKMCEdT
+TTYzNjc3lEsCjAhHU002MzY3OJRLAowIR1NNNjM2NzmUSwKMCEdTTTYzNjgwlEsCjAhHU002MzY4
+MZRLAowIR1NNNjM2ODKUSwKMCEdTTTYzNjgzlEsCjAhHU002MzY4NJRLAowIR1NNNjM2ODWUSwKM
+CEdTTTYzNjg2lEsCjAhHU002MzY4N5RLAowIR1NNNjM2ODiUSwKMCEdTTTYzNjg5lEsCjAhHU002
+MzY5MJRLAowIR1NNNjM2OTGUSwKMCEdTTTYzNjkylEsCjAhHU002MzY5M5RLAowIR1NNNjM2OTSU
+SwJ1aCV9lChoFUsDaCdLA3V1YmgPKYGUfZQoaBJ9lChoFGgVS2eGlGgXiUr+////hpRoCksBdWgZ
+fZQojAhHU00zMjg2MJRLAowIR1NNMzI4NjGUSwKMCEdTTTMyODYylEsCjAhHU00zMjg2M5RLAowI
+R1NNMzI4NjSUSwKMCEdTTTMyODY1lEsCjAhHU00zMjg2NpRLAowIR1NNMzI4NjeUSwKMCEdTTTMy
+ODY4lEsCjAhHU00zMjg2OZRLAnVoJX2UKGgVSwNoJ0sDdXViaA8pgZR9lChoEn2UKGgUaBVLZ4aU
+aBeJSv7///+GlGgKSwF1aBl9lCiMCEdTTTUxNzYzlEsCjAhHU001MTc2NJRLAowIR1NNNTE3NjWU
+SwKMCEdTTTUxNzY2lEsCjAhHU001MTc2N5RLAowIR1NNNTE3NjiUSwKMCEdTTTUxNzY5lEsCjAhH
+U001MTc3MJRLAowIR1NNNTE3NzGUSwKMCEdTTTUxNzcylEsCjAhHU001MTc3M5RLAowIR1NNNTE3
+NzSUSwKMCEdTTTUxNzc1lEsCjAhHU001MTc3NpRLAowIR1NNNTE3NzeUSwKMCEdTTTUxNzc4lEsC
+jAhHU001MTc3OZRLAowIR1NNNTE3ODCUSwKMCEdTTTUxNzgxlEsCjAhHU001MTc4MpRLAowIR1NN
+NTE3ODOUSwKMCEdTTTUxNzg0lEsCjAhHU001MTc4NZRLAowIR1NNNTE3ODaUSwKMCEdTTTUxNzg3
+lEsCjAhHU001MTc4OJRLAowIR1NNNTE3ODmUSwKMCEdTTTUxNzkwlEsCjAhHU001MTc5MZRLAowI
+R1NNNTE3OTKUSwJ1aCV9lChoFUsDaCdLA3V1YmgPKYGUfZQoaBJ9lChoFGgVS2eGlGgXiUr+////
+hpRoCksBdWgZfZQojAhHU00zMDM2MZRLAowIR1NNMzAzNjKUSwKMCEdTTTMwMzYzlEsCjAhHU00z
+MDM2NJRLAowIR1NNMzAzNjWUSwKMCEdTTTMwMzY2lEsCjAhHU00zMDM2N5RLAowIR1NNMzAzNjiU
+SwKMCEdTTTMwMzY5lEsCjAhHU00zMDM3MJRLAowIR1NNMzAzNzGUSwKMCEdTTTMwMzcylEsCjAhH
+U00zMDM3M5RLAowIR1NNMzAzNzSUSwJ1aCV9lChoFUsDaCdLA3V1YmgPKYGUfZQoaBJ9lChoFGgV
+S2eGlGgXiUr+////hpRoCksBdWgZfZQojAhHU00xOTAyM5RLAowIR1NNMTkwMjSUSwKMCEdTTTE5
+MDI1lEsCjAhHU00xOTAyNpRLAnVoJX2UKGgVSwNoJ0sDdXViaA8pgZR9lChoEn2UKGgUaBVLZ4aU
+aBeJSv7///+GlGgKSwF1aBl9lCiMBkdTTTU4MpRLAowGR1NNNTg5lEsCjAZHU001ODOUSwKMBkdT
+TTU5MJRLAowGR1NNNTg0lEsCjAZHU001OTGUSwKMBkdTTTU4NZRLAowGR1NNNTkylEsCjAZHU001
+ODaUSwKMBkdTTTU5M5RLAowGR1NNNTg3lEsCjAZHU001OTSUSwKMBkdTTTU4OJRLAowGR1NNNTk1
+lEsCjAZHU001OTaUSwKMBkdTTTYwM5RLAowGR1NNNTk3lEsCjAZHU002MDSUSwKMBkdTTTU5OJRL
+AowGR1NNNjA1lEsCjAZHU001OTmUSwKMBkdTTTYwNpRLAowGR1NNNjAwlEsCjAZHU002MDeUSwKM
+BkdTTTYwMZRLAowGR1NNNjA4lEsCjAZHU002MDKUSwKMBkdTTTYwOZRLAnVoJX2UKIwFZ2VuZXOU
+SwOMCUVudHJleiBJRJRLA3V1YmV1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x90\x00\x00\x00\x9e\x00\x00\x03c\x00\x00\x02\x91\x00\x00\x02\x90\x00\x00\x00\x9e\x00\x00\x03c\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\x90\x00\x00\x00\x9e\x00\x00\x03c\x00\x00\x02\x91', 'selected_organism': 'Homo sapiens', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01q\x00\x00\x00\x8a\x00\x00\x04\x90\x00\x00\x02\xe1\x00\x00\x01q\x00\x00\x00\x8a\x00\x00\x04\x90\x00\x00\x02\xe1\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01q\x00\x00\x00\x8a\x00\x00\x04\x90\x00\x00\x02\xe1', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASV6AIAAAAAAAB9lCiMC2FscGhhX3ZhbHVllEc/hHrhR64Ue4wLYXV0b19jb21taXSUiIwMY29t
+cHV0ZV9udWxslImMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAZuX2Jlc3SUS2SMEnBlcm11dGF0aW9u
+c19jb3VudJRLFIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABDAAAAE0AAAT1AAAD
+HgAAAQwAAABNAAAE9QAAAx4AAAAAAAAAAAYAAAABDAAAAE0AAAT1AAADHpSMC3Njb3JlX2luZGV4
+lEsBjAp0aHJlc2hvbGRzlH2UKIwLRm9sZCBDaGFuZ2WURz/gAAAAAAAAR0AAAAAAAAAAhpSMEWxv
+ZzIoRm9sZCBDaGFuZ2UplIwVbnVtcHkuY29yZS5tdWx0aWFycmF5lIwGc2NhbGFylJOUjAVudW1w
+eZSMBWR0eXBllJOUjAJmOJSJiIeUUpQoSwOMATyUTk5OSv////9K/////0sAdJRiQwjIwfwR11cB
+wJSGlFKUaBFoF0MIyMH8EddXAUCUhpRSlIaUjAZULXRlc3SUSv7///9LAoaUjA5ULXRlc3QgUC12
+YWx1ZZRHP4R64UeuFHtHP4R64UeuFHuGlIwFQU5PVkGUSwBLA4aUjA1BTk9WQSBQLXZhbHVllEsA
+Rz+EeuFHrhR7hpR1jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwTY3VycmVudF9n
+cm91cF9pbmRleJRLAIwRc3RvcmVkX3NlbGVjdGlvbnOUXZQoXZRLAGFdlEsAYWVoKUsBdYwFaXRl
+bXOUKIwFYWdlbnSUjA9jaWdhcmV0dGUgc21va2WUhpRoOYwHY29udHJvbJSGlIwFY2xhc3OUaDyG
+lGg+aDqGlJGUdWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
