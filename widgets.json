@@ -376,16 +376,17 @@
     "url": "melt"
    },
    {
-    "title": "Feature Constructor",
+    "title": "Formula",
     "category": "Transform",
     "keywords": [
      "feature constructor",
      "function",
-     "lambda"
+     "lambda",
+     "calculation"
     ],
     "background": "#FF9D5E",
-    "icon": "widget-icons/Transform-Feature Constructor.png",
-    "url": "featureconstructor"
+    "icon": "widget-icons/Transform-Formula.png",
+    "url": "formula"
    },
    {
     "title": "Create Class",
