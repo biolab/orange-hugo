@@ -1,11 +1,11 @@
 +++
 author = "Žan Mervič"
-date = "2023-08-23"
+date = "2023-09-18"
 draft = false
 title = "Orange Fairness - Dataset Bias"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-08-23-fairness-dataset-bias-thumb.png"
-frontPageImage = "/blog_img/2023/2023-08-23-fairness-dataset-bias-thumb.png"
+thumbImage = "/blog_img/2023/2023-09-18-fairness-dataset-bias-thumb.png"
+frontPageImage = "/blog_img/2023/2023-09-18-fairness-dataset-bias-thumb.png"
 blog = ["fairness", "dataset bias"]
 shortExcerpt = "Orange now supports methods for detecting and mitigating bias in machine learning."
 longExcerpt = "In an era where AI drives decisions impacting real lives, fairness in machine learning is paramount. Take the `Adult` dataset, which shows discrepancies in salary predictions based on gender. Addressing such concerns, Orange introduces a fairness add-on. Using new widgets, users can identify and mitigate biases in their datasets or model predictions."
@@ -42,7 +42,7 @@ This blog will introduce the first two fairness widgets: As Fairness Data and Da
 
 The As Fairness Widget does not do anything about fairness on its own. Instead, it allows users to designate fairness attributes in the dataset, which are essential for other fairness algorithms to operate.
 
-When inputting a dataset into the widget, one will see options for three attributes:
+When inputting a dataset into the widget, options for three attributes will appear:
 
 - Favorable Class Value: Define which class value is viewed as favorable.
 
@@ -50,20 +50,20 @@ When inputting a dataset into the widget, one will see options for three attribu
 
 - Privileged Protected Attribute Values: Specify values within the protected attribute deemed privileged.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-23-fairness-dataset-bias-as-fairness-data.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-18-fairness-dataset-bias-as-fairness-data.png" >}}
 
 #### 2. Dataset Bias Widget:
 
 Before training a model, it is crucial to understand if the data itself is skewed. The Dataset Bias widget aids in precisely that. After giving it a dataset as input, the widget will calculate two fairness metrics according to the dataset:
 
 - Disparate Impact (DI): Measures the ratio of favorable outcomes for an unprivileged group to that of the privileged group. An ideal value of 1.0 means the ratio of favorable outcomes is the same for both groups.
-  - If DI < 1.0: The privileged group receives favorable outcomes at a higher rate than the unprivileged group.
-  - If DI > 1.0: The privileged group receives favorable outcomes at a lower rate than the unprivileged group.
-- Statistical Parity Difference (SPD): This is very similar to disparate impact. Instead of the ratio, it measures the difference in favorable outcomes between the unprivileged and the privileged groups. An ideal value for this metric is 0.0, which means that the difference in favorable outcomes is the same for both groups.
-  - If SPD < 0: The privileged group has a higher rate of favorable outcomes compared to the unprivileged group.
-  - If SPD > 0: The privileged group has a lower rate of favorable outcomes compared to the unprivileged group.
+  - DI < 1.0: The privileged group receives favorable outcomes at a higher rate.
+  - DI > 1.0: The privileged group receives favorable outcomes at a lower rate.
+- Statistical Parity Difference (SPD): This is very similar to disparate impact. Instead of the ratio, it measures the difference in favorable outcomes between the unprivileged and the privileged groups. An ideal value for this metric is 0.
+  - SPD < 0: The privileged group has a higher rate of favorable outcomes.
+  - SPD > 0: The privileged group has a lower rate of favorable outcomes.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-23-fairness-dataset-bias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-18-fairness-dataset-bias.png" >}}
 
 For anyone interested in learning more about these metrics, other fairness metrics and ai fairness in general, we recommend reading the article [A Survey on Bias and Fairness in Machine Learning](https://arxiv.org/pdf/1908.09635.pdf).
 
@@ -76,11 +76,11 @@ For this example, we will utilize the [Adult dataset](https://archive.ics.uci.ed
 
 Using the As Fairness Data widget, we will define "sex" as the protected attribute and "male" as the privileged, protected attribute value. Subsequently, we will employ the Dataset Bias widget to compute the fairness metrics and a Box Plot for visualization.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-23-fairness-dataset-bias-use-case.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-18-fairness-dataset-bias-use-case.png" >}}
 
 The results show that the dataset exhibits bias: the disparate impact is 0.358, and the statistical parity difference stands at -0.196. In an ideal scenario signifying no bias, these values would be 1 and 0, respectively. We can further visualize the dataset's bias using the Box Plot.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-23-fairness-dataset-bias-box-plot.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-18-fairness-dataset-bias-box-plot.png" >}}
 
 The Box Plot illustrates the distribution of the target variable across both privileged and unprivileged groups. Hovering over the plot reveals that only 10.95% of the females in the dataset belong to the favorable class, in contrast to the 30.57% of males. By dividing the percentage of the favorable class for the unprivileged group by that of the privileged group, we arrive at a disparate impact value of 0.358—precisely what the Dataset Bias widget determined. We can do a similar calculation for the statistical parity difference.
 

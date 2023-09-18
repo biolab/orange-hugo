@@ -2,7 +2,7 @@
 title= "Dataset Bias Examination"
 images =  ["/workflows/images/fairness-dataset-bias.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-23-fairness-dataset-bias/"
+blog_link =  "/blog/2023/2023-09-18-fairness-dataset-bias/"
 video = ""
 download = "fairness-dataset-bias.ows"
 workflows = ["Fairness"]
