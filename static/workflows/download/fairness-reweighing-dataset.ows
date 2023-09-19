@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(392.25, 270.25)" />
+		<node id="1" name="Apply Domain" qualified_name="Orange.widgets.data.owtransform.OWTransform" project_name="Orange3" version="" title="Apply Domain" position="(666.0, 261.5)" />
+		<node id="2" name="Reweighing" qualified_name="orangecontrib.fairness.widgets.owreweighing.OWReweighing" project_name="Orange3-Fairness" version="" title="Reweighing" position="(525.25, 141.5)" />
+		<node id="3" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(853.0, 269.5)" />
+		<node id="4" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(991.0, 269.5)" />
+		<node id="5" name="Dataset Bias" qualified_name="orangecontrib.fairness.widgets.owdatasetbias.OWDatasetBias" project_name="Orange3-Fairness" version="" title="Dataset Bias" position="(905.0, 139.5)" />
+		<node id="6" name="Dataset Bias" qualified_name="orangecontrib.fairness.widgets.owdatasetbias.OWDatasetBias" project_name="Orange3-Fairness" version="" title="Dataset Bias" position="(668.75, 378.75)" />
+		<node id="7" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(190.0, 269.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data Sample" sink_channel="Data" enabled="true" source_channel_id="data_sample" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Preprocessed Data" sink_channel="Template Data" enabled="true" source_channel_id="data" sink_channel_id="template_data" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Transformed Data" sink_channel="Data" enabled="true" source_channel_id="transformed_data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="4" source_node_id="0" sink_node_id="1" source_channel="Remaining Data" sink_channel="Data" enabled="true" source_channel_id="remaining_data" sink_channel_id="data" />
+		<link id="5" source_node_id="1" sink_node_id="5" source_channel="Transformed Data" sink_channel="Data" enabled="true" source_channel_id="transformed_data" sink_channel_id="data" />
+		<link id="6" source_node_id="0" sink_node_id="6" source_channel="Remaining Data" sink_channel="Data" enabled="true" source_channel_id="remaining_data" sink_channel_id="data" />
+		<link id="7" source_node_id="7" sink_node_id="0" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(288.24999999999994, 341.75)" end="(357.49999999999994, 288.25)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(162.75, 337.5, 204.0, 54.0)" font-family="MS Shell Dlg 2" font-size="16">Split the data into training and validation sets.</text>
+		<arrow id="2" start="(399.99999999999994, 114.75000000000001)" end="(483.99999999999994, 129.75)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(241.0, 81.75, 209.0, 53.0)" font-family="MS Shell Dlg 2" font-size="16">Train a Reweighing model on the training data.</text>
+		<arrow id="4" start="(694.7500000000001, 103.5)" end="(675.2500000000001, 217.5)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(567.5, 31.0, 319.0, 72.0)" font-family="MS Shell Dlg 2" font-size="16">Use a fitted Reweighing model based on training data and compute the weights on validation data samples.</text>
+		<arrow id="6" start="(1013.0, 97.50000000000003)" end="(937.0, 134.5)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(930.0, 44.5, 229.0, 54.0)" font-family="MS Shell Dlg 2" font-size="16">Measure the validation dataset bias after Reweighing.</text>
+		<arrow id="8" start="(924.25, 383.75)" end="(888.25, 320.75)" fill="#C1272D" />
+		<arrow id="9" start="(932.2499999999999, 382.0)" end="(958.25, 321.0)" fill="#C1272D" />
+		<text id="10" type="text/plain" rect="(810.5, 388.5, 267.0, 74.0)" font-family="MS Shell Dlg 2" font-size="16">Explore how assigned weights differ between different protected group and class value pairs.</text>
+		<arrow id="11" start="(527.5, 412.5)" end="(618.75, 390.0)" fill="#C1272D" />
+		<text id="12" type="text/plain" rect="(420.5, 396.75, 170.0, 92.0)" font-family="MS Shell Dlg 2" font-size="16">Measure the validation dataset bias before Reweighing.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 10, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 70, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': None, 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="1" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02c\x00\x00\x012\x00\x00\x03\x9d\x00\x00\x01\xd5\x00\x00\x02d\x00\x00\x01P\x00\x00\x03\x9c\x00\x00\x01\xd4\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02d\x00\x00\x01P\x00\x00\x03\x9c\x00\x00\x01\xd4', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x17\xff\xff\xfa\r\x00\x00\x01\xe0\xff\xff\xfa\x84\x00\x00\x00\x18\xff\xff\xfa1\x00\x00\x01\xdf\xff\xff\xfa\x83\x00\x00\x00\x01\x00\x00\x00\x00\n\x00\x00\x00\x00\x18\xff\xff\xfa1\x00\x00\x01\xdf\xff\xff\xfa\x83', '__version__': 1}</properties>
+		<properties node_id="3" format="pickle">gASVpQYAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMEGN1bXVs
+YXRpdmVfZGlzdHKUiYwTZml0dGVkX2Rpc3RyaWJ1dGlvbpRLAIwJaGlkZV9iYXJzlImMDWtkZV9z
+bW9vdGhpbmeUSwqME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAb4AAACjAAAE9AAA
+AmAAAAG/AAAAwQAABPMAAAJfAAAAAAAAAAAGAAAAAb8AAADBAAAE8wAAAl+UjApzaG93X3Byb2Jz
+lImMDHNvcnRfYnlfZnJlcZSJjA9zdGFja2VkX2NvbHVtbnOUiIwLX192ZXJzaW9uX1+USwGMEGNv
+bnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGU
+fZQojAZ2YWx1ZXOUfZQojARjdmFylIwEcmFjZZRLZYaUjA5udW1iZXJfb2ZfYmluc5RLAEr+////
+hpSMCXNlbGVjdGlvbpSPlChLAEsBkEr+////hpSMA3ZhcpSMB3dlaWdodHOUS2aGlGgMSwF1jAph
+dHRyaWJ1dGVzlH2UKIwDc2V4lEsBjANhZ2WUSwKMB2FnZV9jYXSUSwGMBHJhY2WUSwGMDWp1dl9m
+ZWxfY291bnSUSwKMEGRlY2lsZV9zY29yZSAoMSmUSwKMDmp1dl9taXNkX2NvdW50lEsCjA9qdXZf
+b3RoZXJfY291bnSUSwKMEHByaW9yc19jb3VudCAoMSmUSwKMF2RheXNfYl9zY3JlZW5pbmdfYXJy
+ZXN0lEsCjBJjX2RheXNfZnJvbV9jb21wYXOUSwKMD2NfY2hhcmdlX2RlZ3JlZZRLAYwIaXNfcmVj
+aWSUSwGMD3JfY2hhcmdlX2RlZ3JlZZRLAYwScl9kYXlzX2Zyb21fYXJyZXN0lEsCjBBpc192aW9s
+ZW50X3JlY2lklEsBjBB2cl9jaGFyZ2VfZGVncmVllEsBjA52cl9jaGFyZ2VfZGVzY5RLAYwSdHlw
+ZV9vZl9hc3Nlc3NtZW50lEsBjBBkZWNpbGVfc2NvcmUgKDIplEsCjApzY29yZV90ZXh0lEsBjBR2
+X3R5cGVfb2ZfYXNzZXNzbWVudJRLAYwOdl9kZWNpbGVfc2NvcmWUSwKMDHZfc2NvcmVfdGV4dJRL
+AYwQcHJpb3JzX2NvdW50ICgyKZRLAowFc3RhcnSUSwKMA2VuZJRLAowFZXZlbnSUSwGMDnR3b195
+ZWFyX3JlY2lklEsBdYwFbWV0YXOUfZQojAJpZJRLAowVY29tcGFzX3NjcmVlbmluZ19kYXRllEsE
+jANkb2KUSwSMCWNfamFpbF9pbpRLBIwKY19qYWlsX291dJRLBIwOY19vZmZlbnNlX2RhdGWUSwSM
+DWNfYXJyZXN0X2RhdGWUSwSMDnJfb2ZmZW5zZV9kYXRllEsEjAlyX2phaWxfaW6USwSMCnJfamFp
+bF9vdXSUSwSMD3ZyX29mZmVuc2VfZGF0ZZRLBIwOc2NyZWVuaW5nX2RhdGWUSwSMEHZfc2NyZWVu
+aW5nX2RhdGWUSwSMCmluX2N1c3RvZHmUSwSMC291dF9jdXN0b2R5lEsEjARuYW1llEsDjAVmaXJz
+dJRLA4wEbGFzdJRLA4wNY19jYXNlX251bWJlcpRLA4wNY19jaGFyZ2VfZGVzY5RLA4wNcl9jYXNl
+X251bWJlcpRLA4wNcl9jaGFyZ2VfZGVzY5RLA4wOdnJfY2FzZV9udW1iZXKUSwOMB3dlaWdodHOU
+SwJ1dWJoESmBlH2UKGgUfZQojARjdmFylIwDc2V4lEtlhpSMDm51bWJlcl9vZl9iaW5zlEsASv7/
+//+GlIwJc2VsZWN0aW9ulI+UKEsASwGQSv7///+GlIwDdmFylGhZS2aGlGgMSwF1aCF9lCiMA2Fn
+ZZRLAowJd29ya2NsYXNzlEsBjAZmbmx3Z3SUSwKMCWVkdWNhdGlvbpRLAYwNZWR1Y2F0aW9uLW51
+bZRLAowObWFyaXRhbC1zdGF0dXOUSwGMCm9jY3VwYXRpb26USwGMDHJlbGF0aW9uc2hpcJRLAYwE
+cmFjZZRLAYwDc2V4lEsBjAxjYXBpdGFsLWdhaW6USwKMDGNhcGl0YWwtbG9zc5RLAowOaG91cnMt
+cGVyLXdlZWuUSwKMDm5hdGl2ZS1jb3VudHJ5lEsBjAF5lEsBdWhAfZSMB3dlaWdodHOUSwJzdWJl
+dS4=
+</properties>
+		<properties node_id="4" format="pickle">gASVhgYAAAAAAAB9lCiMB2NvbXBhcmWUSwKMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNvcmRlcl9i
+eV9pbXBvcnRhbmNllImMHG9yZGVyX2dyb3VwaW5nX2J5X2ltcG9ydGFuY2WUiYwTc2F2ZWRXaWRn
+ZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABPAAAAHsAAAO9AAACeQAAAT0AAACZAAADvAAAAngAAAAA
+AAAAAAYAAAABPQAAAJkAAAO8AAACeJSMEHNob3dfYW5ub3RhdGlvbnOUiIwLc2hvd19sYWJlbHOU
+iIwNc2lnX3RocmVzaG9sZJRHP6mZmZmZmZqMCnNvcnRfZnJlcXOUiYwIc3RhdHRlc3SUSwCMCXN0
+cmV0Y2hlZJSIjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWF0dHJpYnV0ZZSM
+DnR3b195ZWFyX3JlY2lklEtlhpSMCWdyb3VwX3ZhcpSMBHJhY2WUS2WGlIwJc2VsZWN0aW9ulClK
+/v///4aUaA1LAXWMCmF0dHJpYnV0ZXOUfZQojANzZXiUSwGMA2FnZZRLAowHYWdlX2NhdJRLAWgb
+SwGMDWp1dl9mZWxfY291bnSUSwKMEGRlY2lsZV9zY29yZSAoMSmUSwKMDmp1dl9taXNkX2NvdW50
+lEsCjA9qdXZfb3RoZXJfY291bnSUSwKMEHByaW9yc19jb3VudCAoMSmUSwKMF2RheXNfYl9zY3Jl
+ZW5pbmdfYXJyZXN0lEsCjBJjX2RheXNfZnJvbV9jb21wYXOUSwKMD2NfY2hhcmdlX2RlZ3JlZZRL
+AYwIaXNfcmVjaWSUSwGMD3JfY2hhcmdlX2RlZ3JlZZRLAYwScl9kYXlzX2Zyb21fYXJyZXN0lEsC
+jBBpc192aW9sZW50X3JlY2lklEsBjBB2cl9jaGFyZ2VfZGVncmVllEsBjA52cl9jaGFyZ2VfZGVz
+Y5RLAYwSdHlwZV9vZl9hc3Nlc3NtZW50lEsBjBBkZWNpbGVfc2NvcmUgKDIplEsCjApzY29yZV90
+ZXh0lEsBjBR2X3R5cGVfb2ZfYXNzZXNzbWVudJRLAYwOdl9kZWNpbGVfc2NvcmWUSwKMDHZfc2Nv
+cmVfdGV4dJRLAYwQcHJpb3JzX2NvdW50ICgyKZRLAowFc3RhcnSUSwKMA2VuZJRLAowFZXZlbnSU
+SwFoGEsBdYwFbWV0YXOUfZQojAJpZJRLAowVY29tcGFzX3NjcmVlbmluZ19kYXRllEsEjANkb2KU
+SwSMCWNfamFpbF9pbpRLBIwKY19qYWlsX291dJRLBIwOY19vZmZlbnNlX2RhdGWUSwSMDWNfYXJy
+ZXN0X2RhdGWUSwSMDnJfb2ZmZW5zZV9kYXRllEsEjAlyX2phaWxfaW6USwSMCnJfamFpbF9vdXSU
+SwSMD3ZyX29mZmVuc2VfZGF0ZZRLBIwOc2NyZWVuaW5nX2RhdGWUSwSMEHZfc2NyZWVuaW5nX2Rh
+dGWUSwSMCmluX2N1c3RvZHmUSwSMC291dF9jdXN0b2R5lEsEjARuYW1llEsDjAVmaXJzdJRLA4wE
+bGFzdJRLA4wNY19jYXNlX251bWJlcpRLA4wNY19jaGFyZ2VfZGVzY5RLA4wNcl9jYXNlX251bWJl
+cpRLA4wNcl9jaGFyZ2VfZGVzY5RLA4wOdnJfY2FzZV9udW1iZXKUSwOMB3dlaWdodHOUSwKMCFNl
+bGVjdGVklEsBdXViaBIpgZR9lChoFX2UKGgXjANzZXiUS2WGlGgajAF5lEtlhpRoHSlK/v///4aU
+aA1LAXVoH32UKIwDYWdllEsCjAl3b3JrY2xhc3OUSwGMBmZubHdndJRLAowJZWR1Y2F0aW9ulEsB
+jA1lZHVjYXRpb24tbnVtlEsCjA5tYXJpdGFsLXN0YXR1c5RLAYwKb2NjdXBhdGlvbpRLAYwMcmVs
+YXRpb25zaGlwlEsBjARyYWNllEsBjANzZXiUSwGMDGNhcGl0YWwtZ2FpbpRLAowMY2FwaXRhbC1s
+b3NzlEsCjA5ob3Vycy1wZXItd2Vla5RLAowObmF0aXZlLWNvdW50cnmUSwFoXEsBdWg8fZQojAd3
+ZWlnaHRzlEsCjAhTZWxlY3RlZJRLAXV1YmV1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x12\x00\x00\x00\xc3\x00\x00\x04\xf1\x00\x00\x01:\x00\x00\x04\x13\x00\x00\x00\xe1\x00\x00\x04\xf0\x00\x00\x019\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04\x13\x00\x00\x00\xe1\x00\x00\x04\xf0\x00\x00\x019', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x11\x00\x00\x00\xbd\x00\x00\x04\xf4\x00\x00\x014\x00\x00\x04\x12\x00\x00\x00\xdb\x00\x00\x04\xf3\x00\x00\x013\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04\x12\x00\x00\x00\xdb\x00\x00\x04\xf3\x00\x00\x013', '__version__': 1}</properties>
+		<properties node_id="7" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe1\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xff\x00\x00\x00\x80\x00\x00\x05\x00\x00\x00\x02\x92\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91', 'selected_id': 'core\\compas-scores-two-years.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
