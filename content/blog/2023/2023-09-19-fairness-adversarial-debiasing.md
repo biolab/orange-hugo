@@ -1,17 +1,17 @@
 +++
 author = "Žan Mervič"
-date = "2023-08-28"
+date = "2023-09-19"
 draft = false
 title = "Orange Fairness - Adversarial Debiasing"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-thumb.png"
-frontPageImage = "/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-thumb.png"
+thumbImage = "/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-thumb.png"
+frontPageImage = "/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-thumb.png"
 blog = ["fairness", "adversarial debiasing"]
 shortExcerpt = "Learn how to use the Adversarial Debiasing model in Orange for fairer machine learning."
 longExcerpt = "This blog post focuses on the Adversarial Debiasing model in Orange, a tool for enhancing fairness in your machine learning algorithms. We will walk through how to use it and explain the trade-offs that come with using fairness algorithms."
 +++
 
-In the [previous blog post](/blog/2023/2023-08-25-fairness-reweighing-preprocessor/), we talked about how to use the Reweighing widget as a preprocessor for a model. This blog post will discuss the Adversarial Debiasing model, a bias-aware model. We will also show how to use it in Orange.
+In the [previous blog post](/blog/2023/2023-09-19-fairness-reweighing-preprocessor/), we talked about how to use the Reweighing widget as a preprocessor for a model. This blog post will discuss the Adversarial Debiasing model, a bias-aware model. We will also show how to use it in Orange.
 
 ### Adversarial Debiasing:
 
@@ -19,7 +19,7 @@ In the [previous blog post](/blog/2023/2023-08-25-fairness-reweighing-preprocess
 
 The widget's interface is shown in the image below.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-28-fairness-adversarial-debiasing.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-adversarial-debiasing.png" >}}
 
 As seen from the image, there are some unique parameters for this widget:
 
@@ -36,9 +36,9 @@ For this example, we will use the [Adult dataset](https://archive.ics.uci.edu/ml
 
 We will train two Adversarial Debiasing models, one with and one without debiasing, and compare them to Random Forests.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-use-case.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-use-case.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-scores.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-scores.png" >}}
 
 Test and Score shows that debiasing improved fairness metrics, particularly Disparate Impact, and Statistical Parity Difference. Without debiasing, the results are similar to that of the Random Forest model. Disparate Impact moved from 0.294 to 1.051, while Statistical Parity Difference went from -0.180 to 0.006, indicating a near-zero bias between these groups regarding favorable outcomes.
 
@@ -54,9 +54,9 @@ When we use debiasing, there can also be a slight decrease in accuracy. This hap
 
 Next, let us look at the Box Plot widget. We will use it to show the Disparate Impact and Statistical Parity Difference, much like our previous blog approach.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-box-plot-bias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-box-plot-bias.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-28-fairness-adversarial-debiasing-box-plot-debias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-adversarial-debiasing-box-plot-debias.png" >}}
 
 From the first box plot we can see that when using the model without debiasing, males (the privileged group) tends to get classified with ">50K" (the favorable class) more often than females (the unprivileged grouo) do. This is reflected in the Disparate Impact and Statistical Parity Difference metrics which are 0.294 and -0.180, respectively, both below their optimal value, indicating bias towards the unprivileged group.
 

@@ -2,7 +2,7 @@
 title= "Adversarial Debiasing"
 images =  ["/workflows/images/fairness-adversarial-debiasing.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-28-fairness-adversarial-debiasing/"
+blog_link =  "/blog/2023/2023-09-19-fairness-adversarial-debiasing/"
 video = ""
 download = "fairness-adversarial-debiasing.ows"
 workflows = ["Fairness"]
