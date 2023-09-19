@@ -2,7 +2,7 @@
 title= "Hiding Protected Attribute"
 images =  ["/workflows/images/fairness-hiding-protected-attribute.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-31-fairness-hiding-protected-attribute/"
+blog_link =  "/blog/2023/2023-09-19-fairness-hiding-protected-attribute/"
 video = ""
 download = "fairness-hiding-protected-attribute.ows"
 workflows = ["Fairness"]
