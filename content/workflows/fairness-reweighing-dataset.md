@@ -2,7 +2,7 @@
 title= "Reweighing a Dataset"
 images =  ["/workflows/images/fairness-reweighing-dataset.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-24-fairness-reweighing-dataset/"
+blog_link =  "/blog/2023/2023-09-19-fairness-reweighing-dataset/"
 video = ""
 download = "fairness-reweighing-dataset.ows"
 workflows = ["Fairness"]

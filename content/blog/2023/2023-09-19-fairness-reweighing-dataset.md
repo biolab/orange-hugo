@@ -1,18 +1,18 @@
 +++
 author = "Žan Mervič"
-date = "2023-08-24"
+date = "2023-09-19"
 draft = false
 title = "Orange Fairness - Reweighing a Dataset"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-08-24-fairness-reweighing-dataset-thumb.png"
-frontPageImage = "/blog_img/2023/2023-08-24-fairness-reweighing-dataset-thumb.png"
+thumbImage = "/blog_img/2023/2023-09-19-fairness-reweighing-dataset-thumb.png"
+frontPageImage = "/blog_img/2023/2023-09-19-fairness-reweighing-dataset-thumb.png"
 blog = ["fairness", "reweighing"]
 shortExcerpt = "Introducing the Reweighing widget in Orange, a solution for dataset bias mitigation."
 longExcerpt = "Building on our exploration of the Orange fairness addon, this blog delves into the Reweighing widget. By adjusting weights for dataset instances, the widget addresses bias, focusing on underrepresented groups. Using the Compas dataset as an example, we demonstrate how bias decreases post-reweighting, presenting visual insights into the distribution of adjusted weights and their impact on dataset fairness."
 
 +++
 
-In the [previous blog post](/blog/2023/2023-08-23-fairness-dataset-bias/), we introduced the Orange fairness addon along with the Dataset Bias and As Fairness widgets. We also demonstrated how to use them to detect bias in a dataset and visualized the results for a better understanding. In this blog, we will introduce the Reweighing widget, which we can use to mitigate bias in a dataset, resulting in fairer machine learning models learning from it.
+In the [previous blog post](/blog/2023/2023-09-18-fairness-dataset-bias/), we introduced the Orange fairness addon along with the Dataset Bias and As Fairness widgets. We also demonstrated how to use them to detect bias in a dataset and visualized the results for a better understanding. In this blog, we will introduce the Reweighing widget, which we can use to mitigate bias in a dataset, resulting in fairer machine learning models learning from it.
 
 ### Reweighing:
 
@@ -30,15 +30,15 @@ For this illustration, we will use the [Compas dataset](https://github.com/propu
 
 Contrary to the example in the previous blog, we will not use the As Fairness widget to select fairness attributes. This is because datasets with a fairness tag come with default fairness attributes. Specifically, for the Compas dataset, "race" is identified as the protected attribute, with "Caucasian" set as the privileged, protected attribute value.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-24-fairness-reweighing-dataset-use-case.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-dataset-use-case.png" >}}
 
 From the results, we can see that after reweighing the dataset, bias decreased substantially, nearing zero. Let us start by highlighting instances with lower or higher weights in the distribution widget to understand how the reweighing process assigned weights. Following this, we will analyze which combinations of protected attributes and classes were allocated these distinct weights.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-24-fairness-reweighing-dataset-distributions.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-dataset-distributions.png" >}}
 
 In the distributions widget we selected instances which have been assigned a weight lower than 1.0. Let's inspect the selected instances using a box plot widget.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-24-fairness-reweighing-dataset-box-plot.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-dataset-box-plot.png" >}}
 
 The box plot widget reveals that lower weights were given to instances of unprivileged groups with unfavorable class values and privileged groups with favorable class values. The opposite is true for the higher weights. The results show that the reweighing algorithm assigned weights to the instances in a way that will encourage the model to prioritize learning from underrepresented groups while de-emphasizing overrepresented groups.
 
@@ -46,4 +46,4 @@ In the context of the dataset, the reweighing algorithm recognized that there we
 
 Another way to see the effects of using the Reweighing widget on a dataset is to use a Data Table widget, where we can see that a new meta attribute called weights has been added to the dataset. This attribute contains the weights assigned to each instance.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-24-fairness-reweighing-dataset-data-table.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-dataset-data-table.png" >}}
