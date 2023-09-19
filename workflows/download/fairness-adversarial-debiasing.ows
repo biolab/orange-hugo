@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(457.0, 289.0)" />
+		<node id="1" name="Adversarial Debiasing" qualified_name="orangecontrib.fairness.widgets.owadversarialdebiasing.OWAdversarialDebiasing" project_name="Orange3-Fairness" version="" title="Adversarial Debiasing" position="(180.0, 191.0)" />
+		<node id="2" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(743.0, 289.0)" />
+		<node id="3" name="Adversarial Debiasing" qualified_name="orangecontrib.fairness.widgets.owadversarialdebiasing.OWAdversarialDebiasing" project_name="Orange3-Fairness" version="" title="Adversarial Debiasing" position="(296.0, 140.0)" />
+		<node id="4" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(182.0, 301.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="0" source_channel="Learner" sink_channel="Learner" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Predictions" sink_channel="Data" enabled="true" source_channel_id="predictions" sink_channel_id="data" />
+		<link id="2" source_node_id="3" sink_node_id="0" source_channel="Learner" sink_channel="Learner" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="3" source_node_id="4" sink_node_id="0" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="train_data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(46.0, 427.0, 150.0, 32.0)" font-family="MS Shell Dlg 2" font-size="16">Load Adult dataset.</text>
+		<arrow id="1" start="(127.0, 419.0)" end="(165.0, 359.0)" fill="#C1272D" />
+		<arrow id="2" start="(135.0, 90.0)" end="(162.0, 156.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(80.0, 36.0, 196.0, 56.0)" font-family="MS Shell Dlg 2" font-size="16">Create a model with and without debiasing.</text>
+		<arrow id="4" start="(502.0, 195.0)" end="(469.0, 252.00000000000006)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(441.0, 136.0, 266.0, 55.0)" font-family="MS Shell Dlg 2" font-size="16">Evaluate the precision and potential bias in the model's predictions.</text>
+		<arrow id="6" start="(650.0, 373.0)" end="(705.0, 312.0)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(511.0, 378.0, 273.0, 75.0)" font-family="MS Shell Dlg 2" font-size="16">Use a Box Plot widget to compare the models and visualize the fairness metrics for a better understanding.</text>
+		<arrow id="8" start="(198.0, 88.0)" end="(257.0, 129.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVtAQAAAAAAAB9lCiMFGNvbXBhcmlzb25fY3JpdGVyaW9ulEsAjBJjb250cm9sQXJlYVZpc2li
+bGWUiIwNY3Zfc3RyYXRpZmllZJSIjAduX2ZvbGRzlEsCjAluX3JlcGVhdHOUSwOMCnJlc2FtcGxp
+bmeUSwCMBHJvcGWURz+5mZmZmZmajAtzYW1wbGVfc2l6ZZRLCYwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZRDQgHZ0MsAAwAAAAABpQAAANAAAAUxAAACzgAAAaYAAADuAAAFMAAAAs0AAAAAAAAAAAYAAAAB
+pgAAAO4AAAUwAAACzZSMEnNodWZmbGVfc3RyYXRpZmllZJSIjAh1c2Vfcm9wZZSJjAtzY29yZV90
+YWJsZZR9lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+U
+iYwCQ0GUiIwXUHJlY2lzaW9uUmVjYWxsRlN1cHBvcnSUiIwLVGFyZ2V0U2NvcmWUiIwJUHJlY2lz
+aW9ulIiMBlJlY2FsbJSIjAJGMZSIjANBVUOUiIwHTG9nTG9zc5SJjAtTcGVjaWZpY2l0eZSJjBdN
+YXR0aGV3c0NvcnJDb2VmZmljaWVudJSIjANNU0WUiIwEUk1TRZSIjANNQUWUiIwETUFQRZSIjAJS
+MpSIjAZDVlJNU0WUiYwPQ2x1c3RlcmluZ1Njb3JllIiMClNpbGhvdWV0dGWUiIwXQWRqdXN0ZWRN
+dXR1YWxJbmZvU2NvcmWUiIwbU3RhdGlzdGljYWxQYXJpdHlEaWZmZXJlbmNllIiMGkVxdWFsT3Bw
+b3J0dW5pdHlEaWZmZXJlbmNllIiMFUF2ZXJhZ2VPZGRzRGlmZmVyZW5jZZSIjA9EaXNwYXJhdGVJ
+bXBhY3SUiIwQQ29uY29yZGFuY2VJbmRleJSIdXOMC19fdmVyc2lvbl9flEsEjBBjb250ZXh0X3Nl
+dHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1
+ZXOUfZQojA9jbGFzc19zZWxlY3Rpb26UjCEoTm9uZSwgc2hvdyBhdmVyYWdlIG92ZXIgY2xhc3Nl
+cymUSv////+GlIwMZm9sZF9mZWF0dXJllE5K/v///4aUjBVmb2xkX2ZlYXR1cmVfc2VsZWN0ZWSU
+iUr+////hpRoDX2UaCxLBHWMCmF0dHJpYnV0ZXOUKIwDYWdllEsChpSMCXdvcmtjbGFzc5RLAYaU
+jAZmbmx3Z3SUSwKGlIwJZWR1Y2F0aW9ulEsBhpSMDWVkdWNhdGlvbi1udW2USwKGlIwObWFyaXRh
+bC1zdGF0dXOUSwGGlIwKb2NjdXBhdGlvbpRLAYaUjAxyZWxhdGlvbnNoaXCUSwGGlIwEcmFjZZRL
+AYaUjANzZXiUSwGGlIwMY2FwaXRhbC1nYWlulEsChpSMDGNhcGl0YWwtbG9zc5RLAoaUjA5ob3Vy
+cy1wZXItd2Vla5RLAoaUjA5uYXRpdmUtY291bnRyeZRLAYaUdJSMBW1ldGFzlCmMCmNsYXNzX3Zh
+cnOUjAF5lEsBhpSFlHViYXUu
+</properties>
+		<properties node_id="1" format="literal">{'auto_apply': False, 'batch_size': 128, 'controlAreaVisible': True, 'debias': True, 'hidden_layers_neurons': 100, 'lambda_index': 32, 'learner_name': 'Adversarial Debiasing Debias', 'number_of_epochs': 20, 'repeatable': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xa2\x00\x00\x01\n\x00\x00\x03^\x00\x00\x02%\x00\x00\x02\xa2\x00\x00\x01\n\x00\x00\x03^\x00\x00\x02%\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xa2\x00\x00\x01\n\x00\x00\x03^\x00\x00\x02%', '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVTwgAAAAAAAB9lCiMB2NvbXBhcmWUSwKMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNvcmRlcl9i
+eV9pbXBvcnRhbmNllImMHG9yZGVyX2dyb3VwaW5nX2J5X2ltcG9ydGFuY2WUiYwTc2F2ZWRXaWRn
+ZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAADJwAAAIAAAAWoAAACfgAAAygAAACeAAAFpwAAAn0AAAAA
+AAAAAAYAAAADKAAAAJ4AAAWnAAACfZSMEHNob3dfYW5ub3RhdGlvbnOUiIwLc2hvd19sYWJlbHOU
+iIwNc2lnX3RocmVzaG9sZJRHP6mZmZmZmZqMCnNvcnRfZnJlcXOUiYwIc3RhdHRlc3SUSwCMCXN0
+cmV0Y2hlZJSIjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWF0dHJpYnV0ZZSM
+GkFkdmVyc2FyaWFsIERlYmlhc2luZyBCaWFzlEtlhpSMCWdyb3VwX3ZhcpSMA3NleJRLZYaUjAlz
+ZWxlY3Rpb26UKUr+////hpRoDUsBdYwKYXR0cmlidXRlc5R9lCiMA2FnZZRLAowJd29ya2NsYXNz
+lEsBjAZmbmx3Z3SUSwKMCWVkdWNhdGlvbpRLAYwNZWR1Y2F0aW9uLW51bZRLAowObWFyaXRhbC1z
+dGF0dXOUSwGMCm9jY3VwYXRpb26USwGMDHJlbGF0aW9uc2hpcJRLAYwEcmFjZZRLAWgbSwGMDGNh
+cGl0YWwtZ2FpbpRLAowMY2FwaXRhbC1sb3NzlEsCjA5ob3Vycy1wZXItd2Vla5RLAowObmF0aXZl
+LWNvdW50cnmUSwGMAXmUSwF1jAVtZXRhc5R9lCiMHEFkdmVyc2FyaWFsIERlYmlhc2luZyBEZWJp
+YXOUSwFoGEsBjCNBZHZlcnNhcmlhbCBEZWJpYXNpbmcgRGViaWFzICg+NTBLKZRLAowkQWR2ZXJz
+YXJpYWwgRGViaWFzaW5nIERlYmlhcyAoPD01MEsplEsCjCFBZHZlcnNhcmlhbCBEZWJpYXNpbmcg
+QmlhcyAoPjUwSymUSwKMIkFkdmVyc2FyaWFsIERlYmlhc2luZyBCaWFzICg8PTUwSymUSwKMBEZv
+bGSUSwF1dWJoEimBlH2UKGgVfZQoaBeMFUFkdmVyc2FyaWFsIERlYmlhc2luZ5RLZYaUaBpoG0tl
+hpRoHSlK/v///4aUaA1LAXVoH32UKIwDYWdllEsCjAl3b3JrY2xhc3OUSwGMBmZubHdndJRLAowJ
+ZWR1Y2F0aW9ulEsBjA1lZHVjYXRpb24tbnVtlEsCjA5tYXJpdGFsLXN0YXR1c5RLAYwKb2NjdXBh
+dGlvbpRLAYwMcmVsYXRpb25zaGlwlEsBjARyYWNllEsBjANzZXiUSwGMDGNhcGl0YWwtZ2FpbpRL
+AowMY2FwaXRhbC1sb3NzlEsCjA5ob3Vycy1wZXItd2Vla5RLAowObmF0aXZlLWNvdW50cnmUSwFo
+LksBdWgvfZQojBVBZHZlcnNhcmlhbCBEZWJpYXNpbmeUSwGMGUFkdmVyc2FyaWFsIERlYmlhc2lu
+ZyAoMSmUSwGMHEFkdmVyc2FyaWFsIERlYmlhc2luZyAoPjUwSymUSwKMHUFkdmVyc2FyaWFsIERl
+Ymlhc2luZyAoPD01MEsplEsCjCBBZHZlcnNhcmlhbCBEZWJpYXNpbmcgKD41MEspICgxKZRLAowh
+QWR2ZXJzYXJpYWwgRGViaWFzaW5nICg8PTUwSykgKDEplEsCjARGb2xklEsBdXViaBIpgZR9lCho
+FX2UKIwJYXR0cmlidXRllIwVQWR2ZXJzYXJpYWwgRGViaWFzaW5nlEtlhpSMCWdyb3VwX3ZhcpSM
+A3NleJRLZYaUjAlzZWxlY3Rpb26UKUr+////hpRoDUsBdWgffZQojANhZ2WUSwKMCXdvcmtjbGFz
+c5RLAYwGZm5sd2d0lEsCjAllZHVjYXRpb26USwGMDWVkdWNhdGlvbi1udW2USwKMDm1hcml0YWwt
+c3RhdHVzlEsBjApvY2N1cGF0aW9ulEsBjAxyZWxhdGlvbnNoaXCUSwGMBHJhY2WUSwFoXEsBjAxj
+YXBpdGFsLWdhaW6USwKMDGNhcGl0YWwtbG9zc5RLAowOaG91cnMtcGVyLXdlZWuUSwKMDm5hdGl2
+ZS1jb3VudHJ5lEsBaC5LAXVoL32UKGhZSwGMGUFkdmVyc2FyaWFsIERlYmlhc2luZyAoMSmUSwGM
+HEFkdmVyc2FyaWFsIERlYmlhc2luZyAoPjUwSymUSwKMHUFkdmVyc2FyaWFsIERlYmlhc2luZyAo
+PD01MEsplEsCjCBBZHZlcnNhcmlhbCBEZWJpYXNpbmcgKDEpICg+NTBLKZRLAowhQWR2ZXJzYXJp
+YWwgRGViaWFzaW5nICgxKSAoPD01MEsplEsCjARGb2xklEsBdXViaBIpgZR9lChoFX2UKGhYaFlL
+ZYaUaFtoXEtlhpRoXilK/v///4aUaA1LAXVoH32UKGhhSwJoYksBaGNLAmhkSwFoZUsCaGZLAWhn
+SwFoaEsBaGlLAWhcSwFoaksCaGtLAmhsSwJobUsBaC5LAXVoL32UKIwVQWR2ZXJzYXJpYWwgRGVi
+aWFzaW5nlEsBjBxBZHZlcnNhcmlhbCBEZWJpYXNpbmcgKD41MEsplEsCjB1BZHZlcnNhcmlhbCBE
+ZWJpYXNpbmcgKDw9NTBLKZRLAmh0SwF1dWJldS4=
+</properties>
+		<properties node_id="3" format="literal">{'auto_apply': False, 'batch_size': 128, 'controlAreaVisible': True, 'debias': False, 'hidden_layers_neurons': 100, 'lambda_index': 28, 'learner_name': 'Adversarial Debiasing Bias', 'number_of_epochs': 20, 'repeatable': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xa1\x00\x00\x00\xec\x00\x00\x03_\x00\x00\x02&amp;\x00\x00\x02\xa2\x00\x00\x01\n\x00\x00\x03^\x00\x00\x02%\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xa2\x00\x00\x01\n\x00\x00\x03^\x00\x00\x02%', '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe1\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xff\x00\x00\x00\x80\x00\x00\x05\x00\x00\x00\x02\x92\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91', 'selected_id': 'core\\adult.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
