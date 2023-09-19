@@ -2,7 +2,7 @@
 title= "Reweighing as a preprocessor"
 images =  ["/workflows/images/fairness-reweighing-preprocessor.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-25-fairness-reweighing-preprocessor/"
+blog_link =  "/blog/2023/2023-09-19-fairness-reweighing-preprocessor/"
 video = ""
 download = "fairness-reweighing-preprocessor.ows"
 workflows = ["Fairness"]

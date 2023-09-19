@@ -1,17 +1,17 @@
 +++
 author = "Žan Mervič"
-date = "2023-08-25"
+date = "2023-09-19"
 draft = false
 title = "Orange Fairness - Reweighing as a preprocessor"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-thumb.png"
-frontPageImage = "/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-thumb.png"
+thumbImage = "/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-thumb.png"
+frontPageImage = "/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-thumb.png"
 blog = ["fairness", "reweighing"]
 shortExcerpt = "Expanding on the Orange fairness Reweighing widget: using it as a preprocessor and integrating new fairness scoring metrics."
 longExcerpt = "Diving deeper into the Orange fairness Reweighing widget, we explore its use as a preprocessor for models. Discover the new widgets and fairness scoring metrics; all illustrated using the German credit dataset, supplemented with visual insights through box plots."
 +++
 
-In the [previous blog post](/blog/2023/2023-08-24-fairness-reweighing-dataset/), we introduced the Orange fairness Reweighing widget and used it to reweigh a dataset. In this blog, we will explore another use case for the Reweighing widget: using it as a preprocessor for a specific model.
+In the [previous blog post](/blog/2023/2023-09-19-fairness-reweighing-dataset/), we introduced the Orange fairness Reweighing widget and used it to reweigh a dataset. In this blog, we will explore another use case for the Reweighing widget: using it as a preprocessor for a specific model.
 
 ### Fairness metrics:
 
@@ -48,9 +48,9 @@ We will use the [German credit dataset](http://archive.ics.uci.edu/dataset/144/s
 
 Like the previous blog, we will not use the As Fairness Data widget to select fairness attributes. Instead, we will use the default attributes, "sex" as the protected attribute and "male" as the privileged group, already defined in the dataset.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-use-case.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-use-case.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-scores.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-scores.png" >}}
 
 The results show that the model using reweighing as a preprocessor achieved better fairness scores than the model without reweighing at the cost of slightly lower accuracy. The Reweighing algorithm mainly focuses on the Disparate Impact and Statistical Parity Difference metrics, which reflect the ratio and difference between the favorable outcomes of the unprivileged and privileged groups. 
 
@@ -58,9 +58,9 @@ In this case the ratio of favorable outcomes went from 0.869 to 0.952, while the
 
 We can easily visualize the results using a box plot. For a clearer visualization, we have used the Edit Domain widget to merge all values of each protected group into one, which resulted in two groups: males and females.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-box-plot-bias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-box-plot-bias.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-25-fairness-reweighing-preprocessor-box-plot-debias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-reweighing-preprocessor-box-plot-debias.png" >}}
 
 The first box plot shows the ratio of favorable and unfavorable outcomes for the unprivileged and privileged groups for predictions from the model without reweighing. The second box plot shows the same for the model with reweighing. 
 
