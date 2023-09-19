@@ -1,18 +1,18 @@
 +++
 author = "Žan Mervič"
-date = "2023-08-30"
+date = "2023-09-19"
 draft = false
 title = "Orange Fairness - Equal Odds Postprocessing"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing.png"
-frontPageImage = "/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing.png"
+thumbImage = "/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing.png"
+frontPageImage = "/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing.png"
 blog = ["fairness", "equal odds postprocessing"]
 shortExcerpt = "Explore the Equal Odds Postprocessing widget in Orange, designed to fine-tune your model's fairness. We explain how the algorithm operates and showcase its effectiveness with an example using the German credit dataset."
 longExcerpt = "In this blog, we delve into the Equal Odds Postprocessing widget, a tool designed to enhance fairness in machine learning models. We break down how the algorithm works by modifying predictions to meet Equalized Odds criteria. Using a real-world example with the German credit dataset, we demonstrate its efficacy in improving fairness metrics while marginally affecting accuracy."
 +++
 
 
-In the [previous blog post](/blog/2023/2023-08-28-fairness-adversarial-debiasing/), we discussed the Adversarial Debiasing model, a bias-aware model. This blog post will discuss the Equal Odds Postprocessing widget, a bias-aware post-processor, which can be used with any model to mitigate bias in its predictions.
+In the [previous blog post](/blog/2023/2023-09-19-fairness-adversarial-debiasing/), we discussed the Adversarial Debiasing model, a bias-aware model. This blog post will discuss the Equal Odds Postprocessing widget, a bias-aware post-processor, which can be used with any model to mitigate bias in its predictions.
 
 ### Equal Odds Postprocessing:
 
@@ -44,9 +44,9 @@ For this example, we will use the [German credit dataset](http://archive.ics.uci
 
 We will train two Logistic Regression models, one with and one without the Equal Odds Postprocessing widget, and compare the predictions of these models.
 
-{{< window-screenshot src="/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing-use-case.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing-use-case.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing-scores.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing-scores.png" >}}
 
 The results show that the model using the Equal Odds Postprocessing widget has better fairness metrics than the model without it. Equal Odds Difference and Average Odds Difference are the main objectives of the Equal Odds Postprocessing algorithm, and we can see that they are much closer to zero when using the widget. We can also see that the Disparate Impact and Statistical Parity Difference metrics are much closer to their ideal values, which is a beneficial side effect rather than a direct result of the algorithm's optimization process and is not guaranteed to happen in all cases.
 
@@ -56,9 +56,9 @@ When using the Equal Odds Postprocessing, it is worth noting that the AUC value 
 
 Next, let us look at the mosaic display widget. We will use it to show the True Positive Rate for each group and thus the Equal Opportunity Difference metric, which is the difference of the True Positive Rates between unprivileged and privileged groups. To do this, we first had to use the Select Rows widget to keep only the instances with a positive class because we are not interested in the True Negative Rate. This was the result:
     
-{{< window-screenshot src="/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing-mosaic-bias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing-mosaic-bias.png" >}}
 
-{{< window-screenshot src="/blog_img/2023/2023-08-30-fairness-equal-odds-postprocessing-mosaic-debias.png" >}}
+{{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing-mosaic-debias.png" >}}
 
 In the visualizations, each column's red and blue parts represent the true and false positive rates, respectively, for each group. You can ignore the width of the columns as that represents the number of instances in each group, which is irrelevant to us. 
 

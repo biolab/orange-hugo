@@ -2,7 +2,7 @@
 title= "Equal Odds Postprocessing"
 images =  ["/workflows/images/fairness-equal-odds-postprocessing.png"]
 type = "workflows"
-blog_link =  "/blog/2023/2023-08-30-fairness-equal-odds-postprocessing/"
+blog_link =  "/blog/2023/2023-09-19-fairness-equal-odds-postprocessing/"
 video = ""
 download = "fairness-equal-odds-postprocessing.ows"
 workflows = ["Fairness"]
