@@ -58,8 +58,8 @@ def change_references(md_file, content, category, dest):
 
 
 from AnyQt.QtWidgets import QGraphicsScene
-from PyQt5.QtCore import QRectF, QSize, QSizeF, QPointF
-from PyQt5.QtGui import QColor, QPainter, QImage
+from AnyQt.QtCore import QRectF, QSize, QSizeF, QPointF
+from AnyQt.QtGui import QColor, QPainter, QImage
 
 from orangecanvas.registry import (
     WidgetDescription,
