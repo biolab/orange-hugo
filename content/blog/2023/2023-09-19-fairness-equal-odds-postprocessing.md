@@ -60,8 +60,8 @@ Next, let us look at the mosaic display widget. We will use it to show the True 
 
 {{< window-screenshot src="/blog_img/2023/2023-09-19-fairness-equal-odds-postprocessing-mosaic-debias.png" >}}
 
-In the visualizations, each column's red and blue parts represent the true and false positive rates, respectively, for each group. You can ignore the width of the columns as that represents the number of instances in each group, which is irrelevant to us. 
+In the visualizations, each column's red and blue parts represent the true positive and false negative rates, respectively, for each group. You can ignore the width of the columns as that represents the number of instances in each group, which is irrelevant to us. 
 
-In the first visualization, which represents predictions from the model without debiasing, we can see that the privileged group (>=26) has a higher True Positive Rate than the unprivileged group (<26). This can be considered unfair towards the unprivileged group because it means a loan candidate from the unprivileged group is more likely to be falsely rejected than a loan candidate from the privileged group.
+In the first visualization, which represents predictions from the model without debiasing, we can see that the privileged group (>=26) has a higher True Positive Rate than the unprivileged group (<26). This can be considered unfair towards the unprivileged group because it means a loan candidate from the unprivileged group is more likely to be falsely rejected, because of the higher false negative rate, than a loan candidate from the privileged group.
 
 In the second visualization, representing predictions from the model with debiasing, we can see that the True Positive Rate for the privileged group has decreased and is now almost equal to the True Positive Rate for the unprivileged group. While this means the model is now less accurate for the privileged group, it is as accurate as it is for the unprivileged group, which could be considered a fairer outcome.
