@@ -90,23 +90,32 @@ pip install orange3</code></pre>
             <div class="">
                 <div class="content">
                     <h2>Download the latest version for Mac</h2>
-                    <a id="recommended-download-mac" style="margin-top: 10px" class="btn btn-warning big-button-base"
-                        href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12-arm64.dmg">
-                        Download Orange {{$.Site.Params.version}} - Apple silicon
+
+                    <a id="recommended-download-mac-arm64" 
+                       href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12-arm64.dmg"
+                       style="margin-top: 10px; margin-bottom: 40px;" 
+                       class="btn btn-warning big-button-base hidden">
+                        Download Orange {{$.Site.Params.version}}
+                    </a>
+                    <a id="recommended-download-mac-intel" 
+                       href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12.dmg"
+                       style="margin-top: 10px; margin-bottom: 40px;" 
+                       class="btn btn-warning big-button-base hidden">
+                        Download Orange {{$.Site.Params.version}}
                     </a>
 
-                    <a id="recommended-download-mac" style="margin-top: 10px" class="btn btn-warning big-button-base"
-                        href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12.dmg">
-                        Download Orange {{$.Site.Params.version}} - Intel
-                    </a>
+                    <p class="mt-5">
+                    <b>Not sure which installer to select?</b>
+                    Click the Apple logo in the top-left corner of your screen, select About This Mac, and check the Chip or Processor field. If you see Apple, select the <b>Orange for Apple Silicon</b> installer. If you see Intel, select the <b>Orange for Intel</b>.
+                    </p>
 
-                    <h3><a id="standalone"></a>Bundle</h3>
+                    <h3>Orange for Apple silicon</h3>
                     <a id="recommended-download"
                         href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12-arm64.dmg">Orange3-{{$.Site.Params.version}}-Python3.9.12-arm64.dmg</a><br />
+
+                    <h3>Orange for Intel</h3>
                     <a id="recommended-download"
                         href="https://download.biolab.si/download/files/Orange3-{{$.Site.Params.version}}-Python3.9.12.dmg">Orange3-{{$.Site.Params.version}}-Python3.9.12.dmg</a><br />
-
-                    <p>A universal bundle with everything packed in and ready to use.</p>
 
                     <h3><a id="anaconda"></a>Anaconda</h3>
                     <p>If you are using python provided by <a
@@ -291,6 +300,42 @@ pip install orange3</code></pre>
             // }, 2000);
         // };
 
+        /* _getArchitecture trys to find out macos's acitecture 
+           it only "arm64" or "intel" if it is 100% sure about architecture
+           in all other cases it reutrns undefined */
+        async function _getArchitecture() {
+            try {
+                // this part works in Chrome (not working in Safari in Firefox)
+                const supportsUserAgentData = 'userAgentData' in navigator;
+                if (supportsUserAgentData && navigator.userAgentData) {
+                    userAgentData = await navigator.userAgentData.getHighEntropyValues(['architecture']);
+                    if (userAgentData.architecture) return userAgentData.architecture;
+                }
+                // this part works in Firefox - cannot identify intel
+                const w = document.createElement("canvas").getContext("webgl");
+                const d = w.getExtension('WEBGL_debug_renderer_info');
+                const g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+                if (g.match(/Apple/) && !g.match(/Apple GPU/)) return "arm";
+            } catch (exceptionVar) {
+                conole.log("Error identifying MacOS architecture.");
+            }
+        }
+   
+        /* For Macos try to gues the architecutre (arm or intel) and suggest the right installer.
+           If architecutre cannot be guessed show no button. */
+        if (hash == "macos") {
+            const architecture = _getArchitecture();
+            architecture.then(arch => {
+                if (arch === "x86_64") {
+                    const button = document.getElementById("recommended-download-mac-intel");
+                    button.classList.remove('hidden');
+                }
+                else if (arch === "arm") {
+                    const button = document.getElementById("recommended-download-mac-arm64");
+                    button.classList.remove('hidden');
+                }
+            });
+        }
     </script>
 </section>
 
