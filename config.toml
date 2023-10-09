@@ -8,7 +8,7 @@ disableKinds = ["taxonomyTerm"] #workflows and blog landing pages do not generat
 googleAnalytics = "G-J6PJZF75EX"
 
 [params]
-  version = "3.35.0"
+  version = "3.36.1"
 
 [markup.goldmark.renderer]
 unsafe = true
