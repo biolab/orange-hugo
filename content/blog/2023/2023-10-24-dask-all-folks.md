@@ -1,11 +1,11 @@
 +++
 author = "Noah Novšak"
-date = "2023-09-29"
+date = "2023-10-24"
 draft = false
 title = "Dask all Folks"
 type = "blog"
-thumbImage = "/blog_img/2023/2023-10-03-dask-all-folks.png"
-frontPageImage = "/blog_img/2023/2023-10-03-dask-all-folks.png"
+thumbImage = "/blog_img/2023/2023-10-24-dask-all-folks.png"
+frontPageImage = "/blog_img/2023/2023-10-24-dask-all-folks.png"
 blog = ["dask", "development"]
 shortExcerpt = "Loading datasets into Orange with Dask"
 longExcerpt = "Loading datasets into Orange with Dask"
