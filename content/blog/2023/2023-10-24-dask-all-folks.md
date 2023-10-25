@@ -11,9 +11,9 @@ shortExcerpt = "Loading datasets into Orange with Dask"
 longExcerpt = "Loading datasets into Orange with Dask"
 +++
 
-Today, we will delve into the exciting world of Dask once again, and explore how to finally bring your own data into Orange3.
+Today, we will delve into the exciting world of Dask once again, and explore how to finally bring your own data into Orange. Or, more precisely, into an [experimental version of Orange that supports Dask](https://github.com/biolab/orange3/wiki/Orange-with-Dask).
 
-If you've already set up your data as an Orange Table and you would just like to re-encode it to better support dask, then all you have to do is export it again as a `.hdf5` file. This is done either with the save widget or in _python_ like so:
+If you've already set up your data as an Orange Table and you would just like to re-encode it to better support dask, then all you have to do is export it again as a `.hdf5` file. This is done either with the *Save Data* widget (choose "Orange on-disk data" as the file type) or in _python_ like so:
 
 ```python
 table = Table('my_data.tab')
@@ -88,4 +88,4 @@ with h5py.File('my_data.hdf5', 'r+') as f:
     domain.create_dataset('attributes_args', data=attributes_args)
 ```
 
-That's it! Now you can create your own `.hdf5` datasets and start processing them in Orange.
+That's it! Now you can create your own `.hdf5` datasets and start processing them in Orange. Remember, you will need the experimental Orange version from the *dask* branch: [see installation instructions](https://github.com/biolab/orange3/wiki/Orange-with-Dask).
