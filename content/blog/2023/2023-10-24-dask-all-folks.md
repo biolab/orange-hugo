@@ -2,13 +2,13 @@
 author = "Noah Novšak"
 date = "2023-10-24"
 draft = false
-title = "Dask all Folks"
+title = "Dask all Folks: preparing large datasets"
 type = "blog"
 thumbImage = "/blog_img/2023/2023-10-24-dask-all-folks.png"
 frontPageImage = "/blog_img/2023/2023-10-24-dask-all-folks.png"
 blog = ["dask", "development"]
-shortExcerpt = "Loading datasets into Orange with Dask"
-longExcerpt = "Loading datasets into Orange with Dask"
+shortExcerpt = "Preparing large HDF5 datasets that load into Orange as on-disk data."
+longExcerpt = "Preparing large HDF5 datasets that load into Orange as on-disk data. This post outlines the specifics of the HDF5 format used by Orange and provides Python code that will help you prepare your own large datasets."
 +++
 
 Today, we will delve into the exciting world of Dask once again, and explore how to finally bring your own data into Orange. Or, more precisely, into an [experimental version of Orange that supports Dask](https://github.com/biolab/orange3/wiki/Orange-with-Dask).
