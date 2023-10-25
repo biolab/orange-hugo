@@ -14,12 +14,12 @@ longExcerpt = "Six new videos explaining hierarchical clustering in Orange are n
 The six videos explaining hierarchical clustering in Orange are a part of [Introduction to Data Science series](https://www.youtube.com/playlist?list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab). We are preparing the videos for an online course aimed at students interested in data science. The course does not assume any background knowledge in math, statistics, and computer science and is, therefore, aimed at data science beginners. We are designing the course as a part of [Explainable AI in Healthcare Management](http://xaim.eu). A grant from European Union supports its creation. 
 
 The six videos cover the topics of
-- [computation of distances in two-dimensions](https://www.youtube.com/watch?v=D-tE9i-_0Co&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=6),
-- [computation of distances between group of data instances](https://www.youtube.com/watch?v=sfcmsyorZV0&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=7),
-- [representing the results of clustering in the dendrogram](https://www.youtube.com/watch?v=elMeCdxE05A&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=8),
-- [hierarchical clustering in higher dimensions](https://www.youtube.com/watch?v=EBHbMkeSsbM&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=9),
-- [use of hierarchical clustering on socioeconomic data](https://www.youtube.com/watch?v=RwCJl4vonRA&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=10), and
-- [cluster explanation](https://www.youtube.com/watch?v=3SkjU2eBzNY&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=11).
+- [computation of distances in two-dimensions](https://www.youtube.com/watch?v=RaIejqIs0rs&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=5),
+- [computation of distances between group of data instances](https://www.youtube.com/watch?v=ZiOv5YAiE4I&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=6),
+- [representing the results of clustering in the dendrogram](https://www.youtube.com/watch?v=UYz5vIxH_UI&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=7),
+- [hierarchical clustering in higher dimensions](https://www.youtube.com/watch?v=ypAnhu_fB6I&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=8),
+- [use of hierarchical clustering on socioeconomic data](https://www.youtube.com/watch?v=j_iqLi-NHFs&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=9), and
+- [cluster explanation](https://www.youtube.com/watch?v=e58cKDfWzyA&list=PLmNPvQr9Tf-b_SuBdoRsuNhTmaHJ0eKab&index=10).
 
 We use two data sets in these videos. One includes imaginary data on student grades. Our task is to find student clusters and understand the characteristics of the students in each group.
 
