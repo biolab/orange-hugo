@@ -1,7 +1,6 @@
 # Orange Hugo website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/27f04dbe-e90b-48f2-9ac7-92197ee5f85d/deploy-status)](https://app.netlify.com/sites/jolly-hoover-82ac63/deploys)
-[![Build Status](https://travis-ci.org/biolab/orange-hugo.svg?branch=master)](https://travis-ci.org/biolab/orange-hugo)
+**Not acive; replaced by https://github.com/biolab/orange-web2/**
 
 ### Installation
 
